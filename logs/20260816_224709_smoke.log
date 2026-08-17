@@ -1,0 +1,45 @@
+[22:47:09] [INFO] 项目根：D:\project\cf_to_csgo
+[22:47:09] [INFO] 沙盒目录：D:\project\cf_to_csgo\data\tmp\20260816_224709
+[22:47:09] [====] ============================================================
+[22:47:09] [====] L0 环境自检
+[22:47:09] [====] ============================================================
+[22:47:09] [INFO] Python 3.14.6  (C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\python.exe)
+[22:47:09] [PASS] ffmpeg 可用（package_tts_migi / convert_audio 依赖）
+[22:47:09] [PASS] vgmstream-cli.exe 存在：D:\project\cf_to_csgo\tools\vgmstream\vgmstream-cli.exe
+[22:47:09] [PASS] vpk 库可导入（unpack_vpk_voices 依赖）
+[22:47:09] [PASS] CF 目录存在：D:\Program Files\CF(2)
+[22:47:09] [PASS] CS:GO 游戏目录存在：D:\steam\steamapps\common\csgo legacy
+[22:47:09] [====] ============================================================
+[22:47:09] [====] L1 脚本语法检查
+[22:47:09] [====] ============================================================
+[22:47:09] [PASS] 语法 OK：scripts\_paths.py
+[22:47:09] [PASS] 语法 OK：scripts\audio_clean\categorize_voices.py
+[22:47:09] [PASS] 语法 OK：scripts\audio_clean\clean_wavs.py
+[22:47:09] [PASS] 语法 OK：scripts\cf_extract\extract_all.py
+[22:47:09] [PASS] 语法 OK：scripts\cf_extract\extract_fmod.py
+[22:47:09] [PASS] 语法 OK：scripts\csgo_pack\convert_audio.py
+[22:47:09] [PASS] 语法 OK：scripts\csgo_pack\deploy_tts_voices.py
+[22:47:09] [PASS] 语法 OK：scripts\csgo_pack\fix_planting_voices.py
+[22:47:09] [PASS] 语法 OK：scripts\csgo_pack\package_tts_migi.py
+[22:47:09] [PASS] 语法 OK：scripts\csgo_pack\parse_vpk.py
+[22:47:09] [PASS] 语法 OK：scripts\csgo_pack\unpack_vpk_voices.py
+[22:47:09] [PASS] 语法 OK：scripts\gsi\gsi_voice_bot.py
+[22:47:09] [PASS] 语法 OK：scripts\gsi\gsi_voice_bot_debug.py
+[22:47:09] [INFO] 共检查 13 个脚本
+[22:47:09] [====] ============================================================
+[22:47:09] [====] L2 沙盒冒烟
+[22:47:09] [====] ============================================================
+[22:47:09] [PASS] audio_clean/clean_wavs.py 冒烟通过
+[22:47:10] [PASS] audio_clean/categorize_voices.py 冒烟通过
+[22:47:10] [PASS] csgo_pack/parse_vpk.py 冒烟通过
+[22:47:10] [PASS] csgo_pack/unpack_vpk_voices.py 冒烟通过
+[22:47:10] [PASS] csgo_pack/package_tts_migi.py 冒烟通过
+[22:47:10] [PASS] cf_extract/extract_all.py 冒烟通过
+[22:47:10] [PASS] cf_extract/extract_fmod.py 冒烟通过
+[22:47:10] [PASS] csgo_pack/convert_audio.py 冒烟通过
+[22:47:10] [PASS] csgo_pack/fix_planting_voices.py 冒烟通过
+[22:47:10] [PASS] gsi/gsi_voice_bot.py 模块可加载
+[22:47:10] [PASS] gsi/gsi_voice_bot_debug.py 模块可加载
+[22:47:10] [INFO] 沙盒已清理，只保留日志。
+[22:47:10] [INFO] 日志已写入：D:\project\cf_to_csgo\logs\20260816_224709_smoke.log
+[22:47:10] [SUMMARY] 通过 29 / 失败 0 / 跳过 0 / 警告 0（共 29 项）

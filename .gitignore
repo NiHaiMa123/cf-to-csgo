@@ -1,12 +1,6 @@
 # Game data and assets (too large for GitHub)
 data/
 
-# Build outputs
-build/
-
-# Logs
-logs/
-
 # OS files
 Thumbs.db
 Desktop.ini
@@ -22,7 +16,3 @@ Desktop.ini
 __pycache__/
 *.pyc
 *.pyo
-
-# Third-party tools (can be re-downloaded)
-tools/
-migi_tools/

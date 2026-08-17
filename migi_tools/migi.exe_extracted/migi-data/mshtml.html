@@ -1,0 +1,66 @@
+<style>
+	.frame
+	{
+		border-left: 1px solid #889180;
+		border-top: 1px solid #889180;
+		border-right: 1px solid #282e22;
+		border-bottom: 1px solid #282e22;
+		background-color: #4c5844;
+		color: white;
+		font-family: "Verdana";
+		font-weight: normal;
+		font-size: 16px;
+		margin: 0px;
+		padding: 12px;
+		overflow: hidden;
+	}
+	a
+	{
+		color: #c4b550
+	}
+	.center
+	{
+		margin: 0;
+		position: absolute;
+		bottom: -12px;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.button
+	{
+		cursor: pointer;
+		font-size: 12px;
+		height: 24px;
+		outline: none;
+		margin: 8px;
+		padding: 8px;
+		padding-bottom: 0px;
+	}
+</style>
+
+<body class="frame">
+	<h1>Couldn't find a suitable renderer.</h1>
+	<hr/>
+	<h3>Please install the following if missing:</h3>
+	<ul>
+		<li><a href="#" onclick="openURL('https://developer.microsoft.com/en-us/microsoft-edge/webview2/')">WebView2 Runtime</a></li>
+		<li><a href="#" onclick="openURL('https://dotnet.microsoft.com/download/dotnet-framework/net462')">.NET Framework 4.6.2 (Runtime)</a></li>
+	</ul>
+	<hr/>
+	<br/>
+	Check <a href="#" onclick="openURL('https://zoolsmith.github.io/MIGI3/0_Using_MIGI/2_Troubleshooting/')">the troubleshooting page of the manual</a> for more help.
+	<br/>
+	<br/>
+	Join <a href="#" onclick="openURL('http://zoolsmith.free.fr/discord')">ZooL's Discord</a> if this didn't help.
+	<br/>
+	<!--Or download the <a href="#" onclick="openURL('https://drive.google.com/drive/folders/1GKYQvl5NOUKKYmqiJjWXmUDKkRLJ_FFw')">old MIGI</a> if everything failed.-->
+	<div class="center">
+	<div onclick="quit()" class="frame button">CLOSE</div>
+	</div>
+</body>
+
+<script>
+	function openURL(url){ pywebview.api.openLink(url); }
+	function quit(){ pywebview.api.quit("main"); }
+</script>

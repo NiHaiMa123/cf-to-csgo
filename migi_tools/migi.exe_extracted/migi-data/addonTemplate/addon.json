@@ -1,0 +1,25 @@
+{
+	"name": "[GENERATED JSON] for ##ADDON_NAME##",
+	"author": "Author Name",
+	"social": "An URL to one of your social network profiles",
+	"authors":
+	[
+		{
+			"name": "Author with link and role", 
+			"social": "https://www.youtube.com/user/Valve", 
+			"role": "What they did go there"
+		},
+		{
+			"name": "Author with no info"
+		},
+		{
+			"name": "Author with no role", 
+			"social": "twitter.com/valvesoftware"
+		},
+		{
+			"name": "Author with no social", 
+			"role": "Another role"
+		}
+	],
+	"replacement": "What it replaces"
+}

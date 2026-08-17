@@ -1,0 +1,21 @@
+"GameInfo"
+{
+	game	"CS:GO MIGI"
+	title	"COUNTER-STRIKE'"
+	title2	""
+	type multiplayer_only
+	icon	"resource/game"
+	FileSystem
+	{
+		SteamAppId				730	
+		ToolsAppId				211
+		SearchPaths
+		{
+			mod+mod_write+default_write_path	|gameinfo_path|.
+			Game+Mod				|gameinfo_path|.
+			Game					|gameinfo_path|.
+			game_write				|gameinfo_path|.
+			Game					|all_source_engine_paths|csgo
+		}
+	}
+}

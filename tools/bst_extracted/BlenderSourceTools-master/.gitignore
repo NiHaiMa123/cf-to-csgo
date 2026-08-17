@@ -1,0 +1,7 @@
+__pycache__
+*.suo
+*.pyperf
+*.VC.*
+.vscode
+TestResults
+.vs
