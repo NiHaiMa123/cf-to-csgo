@@ -1,0 +1,154 @@
+schema: cf2.m4a1_s.mesh-map.v1
+status: provisional_c1
+purpose: "Separate CF view arms from the real weapon meshes before Source 1 rigging."
+
+source:
+  model: data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB
+  b3_report: work/m4a1_s_bornbeast/source_dump/b3_raw/PV-M4A1_S_BornBeast_Classic_export_report.json
+
+target:
+  slot: M4A1-S
+  model: weapons/v_rif_m4a1_s.mdl
+  official_arms_policy: "Use the official M4A1-S arms/gloves; CF hand and arm meshes stay excluded from the default bodygroup."
+  default_source_material: rif_m4a1_s
+  default_rigid_bone_candidate: v_weapon.M4A1_s_Parent
+
+classification:
+  confidence: provisional
+  semantic_part_review: required
+  note: "Blender MCP visual review confirms the main body and gives strong magazine/bolt candidates, but keeps all C2 rigid binding provisional. The remaining numbered pieces remain unclassified because their visual role is not mechanically unambiguous."
+
+visual_review:
+  method: blender_mcp_tcp
+  endpoint: 127.0.0.1:9876
+  scene: "Imported with Blender OBJ split_objects=true, split_groups=true"
+  overview: work/m4a1_s_bornbeast/reports/c1_blender_overview.png
+  previews: work/m4a1_s_bornbeast/reports/c1_blender_previews/
+  result: partial_semantic_review
+  confirmed_candidates:
+    - M4A1S_BornBeast01: magazine silhouette and position match v_weapon.M4A1_Clip
+    - M4A1S_BornBeast02: long receiver component is a bolt/charging candidate; keep v_weapon.M4A1_Bolt provisional
+  unresolved:
+    - M4A1S_BornBeast03
+    - M4A1S_BornBeast04
+    - M4A1S_BornBeast05
+    - M4A1S_BornBeast06
+    - M4A1S_BornBeast07
+    - M4A1S_BornBeast08
+
+meshes:
+  - mesh: Fview-hand2
+    group: PV-M4A1_S_BornBeast_Classic_Fview-hand2
+    role: cf_hand
+    export: false
+    bodygroup: cf_arms_optional
+    source_bone: null
+    source_material_slot: null
+    binding_status: excluded_official_source1_arms
+    review_required: false
+
+  - mesh: Fview-arm2
+    group: PV-M4A1_S_BornBeast_Classic_Fview-arm2
+    role: cf_arm
+    export: false
+    bodygroup: cf_arms_optional
+    source_bone: null
+    source_material_slot: null
+    binding_status: excluded_official_source1_arms
+    review_required: false
+
+  - mesh: M4A1S_BornBeast
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast
+    role: main_weapon_body_candidate
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+
+  - mesh: M4A1S_BornBeast01
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01
+    role: weapon_magazine_candidate
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+    visual_review: confirmed_candidate
+    visual_candidate_bone: v_weapon.M4A1_Clip
+    visual_preview: work/m4a1_s_bornbeast/reports/c1_blender_previews/M4A1S_BornBeast01.png
+
+  - mesh: M4A1S_BornBeast02
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02
+    role: weapon_bolt_candidate
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+    visual_review: provisional_candidate
+    visual_candidate_bone: v_weapon.M4A1_Bolt
+    visual_preview: work/m4a1_s_bornbeast/reports/c1_blender_previews/M4A1S_BornBeast02.png
+
+  - mesh: M4A1S_BornBeast03
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03
+    role: weapon_component_unclassified
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+
+  - mesh: M4A1S_BornBeast04
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04
+    role: weapon_component_unclassified
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+
+  - mesh: M4A1S_BornBeast05
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05
+    role: weapon_component_unclassified
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+
+  - mesh: M4A1S_BornBeast06
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06
+    role: weapon_component_unclassified
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+
+  - mesh: M4A1S_BornBeast07
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07
+    role: weapon_component_unclassified
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true
+
+  - mesh: M4A1S_BornBeast08
+    group: PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08
+    role: weapon_component_unclassified
+    export: true
+    bodygroup: weapon_default
+    source_bone: v_weapon.M4A1_s_Parent
+    source_material_slot: rif_m4a1_s
+    binding_status: rigid_candidate_pending_c2
+    review_required: true

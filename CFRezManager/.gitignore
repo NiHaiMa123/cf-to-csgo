@@ -1,0 +1,28 @@
+# Visual Studio / .NET build output
+.vs/
+bin/
+obj/
+artifacts/
+
+# User-local IDE state
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+__pycache__/
+*.pyc
+
+# Local reverse-engineering / analysis scratch data
+tools_downloads/
+_analysis/
+$dst/
+
+# Local REZ samples and extracted game data
+Pak-CF/
+Extracted/
+Output/

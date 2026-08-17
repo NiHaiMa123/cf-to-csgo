@@ -1,0 +1,3788 @@
+{
+ "affirmative": {
+  "anarchist": [
+   "affirmative01.wav",
+   "affirmative02.wav",
+   "affirmative03.wav"
+  ],
+  "balkan": [
+   "affirmative01.wav",
+   "affirmative02.wav",
+   "affirmative03.wav"
+  ],
+  "leet": [
+   "affirmative01.wav",
+   "affirmative02.wav",
+   "affirmative03.wav"
+  ],
+  "phoenix": [
+   "affirmative01.wav",
+   "affirmative02.wav",
+   "affirmative03.wav"
+  ],
+  "pirate": [
+   "affirmative01.wav",
+   "affirmative02.wav"
+  ],
+  "separatist": [
+   "affirmative01.wav",
+   "affirmative02.wav",
+   "affirmative03.wav"
+  ]
+ },
+ "agree": {
+  "anarchist": [
+   "agree01.wav",
+   "agree02.wav",
+   "agree03.wav",
+   "agree05.wav",
+   "agree07.wav",
+   "agree08.wav"
+  ],
+  "balkan": [
+   "agree01.wav",
+   "agree02.wav",
+   "agree03.wav",
+   "agree04.wav",
+   "agree05.wav",
+   "agree06.wav"
+  ],
+  "leet": [
+   "agree04.wav",
+   "agree05.wav",
+   "agree06.wav"
+  ],
+  "phoenix": [
+   "agree01.wav",
+   "agree02.wav",
+   "agree03.wav",
+   "agree04.wav",
+   "agree06.wav",
+   "agree07.wav"
+  ],
+  "pirate": [
+   "agree01.wav",
+   "agree02.wav",
+   "agree03.wav",
+   "agree04.wav",
+   "agree05.wav",
+   "agree06.wav",
+   "agree07.wav"
+  ],
+  "separatist": [
+   "agree01.wav",
+   "agree02.wav",
+   "agree03.wav",
+   "agree04.wav",
+   "agree05.wav"
+  ]
+ },
+ "blinded": {
+  "anarchist": [
+   "blinded01.wav",
+   "blinded02.wav",
+   "blinded03.wav",
+   "blinded04.wav",
+   "blinded06.wav"
+  ],
+  "balkan": [
+   "blinded01.wav",
+   "blinded02.wav",
+   "blinded03.wav"
+  ],
+  "leet": [
+   "blinded01.wav",
+   "blinded03.wav",
+   "blinded04.wav"
+  ],
+  "phoenix": [
+   "blinded01.wav",
+   "blinded05.wav",
+   "blinded06.wav"
+  ],
+  "pirate": [
+   "blinded01.wav",
+   "blinded02.wav",
+   "blinded04.wav",
+   "blinded05.wav",
+   "blinded06.wav"
+  ],
+  "separatist": [
+   "blinded01.wav",
+   "blinded02.wav",
+   "blinded03.wav",
+   "blinded04.wav",
+   "blinded06.wav",
+   "blinded08.wav"
+  ]
+ },
+ "clear": {
+  "anarchist": [
+   "clear01.wav"
+  ],
+  "balkan": [
+   "clear01.wav",
+   "clear02.wav",
+   "clear03.wav"
+  ],
+  "leet": [
+   "clear01.wav",
+   "clear02.wav"
+  ],
+  "phoenix": [
+   "clear01.wav",
+   "clear02.wav",
+   "clear03.wav"
+  ],
+  "pirate": [
+   "clear01.wav",
+   "clear02.wav",
+   "clear03.wav"
+  ],
+  "separatist": [
+   "clear01.wav",
+   "clear02.wav"
+  ]
+ },
+ "clearedarea": {
+  "anarchist": [
+   "clearedarea01.wav",
+   "clearedarea02.wav",
+   "clearedarea03.wav",
+   "clearedarea04.wav",
+   "clearedarea05.wav"
+  ],
+  "balkan": [
+   "clearedarea01.wav",
+   "clearedarea02.wav",
+   "clearedarea03.wav",
+   "clearedarea04.wav"
+  ],
+  "leet": [
+   "clearedarea01.wav",
+   "clearedarea02.wav",
+   "clearedarea03.wav"
+  ],
+  "phoenix": [
+   "clearedarea01.wav",
+   "clearedarea02.wav",
+   "clearedarea03.wav"
+  ],
+  "pirate": [
+   "clearedarea01.wav",
+   "clearedarea02.wav",
+   "clearedarea03.wav",
+   "clearedarea04.wav"
+  ],
+  "separatist": [
+   "clearedarea01.wav",
+   "clearedarea02.wav",
+   "clearedarea03.wav",
+   "clearedarea04.wav",
+   "clearedarea05.wav"
+  ]
+ },
+ "coveringfriend": {
+  "anarchist": [
+   "coveringfriend01.wav",
+   "coveringfriend02.wav",
+   "coveringfriend03.wav",
+   "coveringfriend04.wav"
+  ],
+  "balkan": [
+   "coveringfriend01.wav",
+   "coveringfriend02.wav",
+   "coveringfriend03.wav",
+   "coveringfriend04.wav"
+  ],
+  "leet": [
+   "coveringfriend01.wav",
+   "coveringfriend02.wav",
+   "coveringfriend03.wav"
+  ],
+  "phoenix": [
+   "coveringfriend01.wav",
+   "coveringfriend02.wav",
+   "coveringfriend03.wav"
+  ],
+  "pirate": [
+   "coveringfriend01.wav",
+   "coveringfriend03.wav",
+   "coveringfriend04.wav"
+  ],
+  "separatist": [
+   "coveringfriend01.wav",
+   "coveringfriend02.wav",
+   "coveringfriend03.wav"
+  ]
+ },
+ "coverme": {
+  "anarchist": [
+   "coverme01.wav",
+   "coverme02.wav",
+   "coverme03.wav"
+  ],
+  "balkan": [
+   "coverme01.wav",
+   "coverme02.wav",
+   "coverme03.wav"
+  ],
+  "leet": [
+   "coverme01.wav",
+   "coverme02.wav"
+  ],
+  "phoenix": [
+   "coverme01.wav",
+   "coverme02.wav",
+   "coverme03.wav"
+  ],
+  "pirate": [
+   "coverme01.wav",
+   "coverme02.wav",
+   "coverme03.wav"
+  ],
+  "professional": [
+   "coverme01.wav",
+   "coverme02.wav"
+  ],
+  "separatist": [
+   "coverme01.wav",
+   "coverme02.wav",
+   "coverme03.wav"
+  ]
+ },
+ "disagree": {
+  "anarchist": [
+   "disagree01.wav",
+   "disagree02.wav",
+   "disagree03.wav",
+   "disagree04.wav",
+   "disagree05.wav",
+   "disagree06.wav"
+  ],
+  "balkan": [
+   "disagree01.wav",
+   "disagree02.wav",
+   "disagree03.wav",
+   "disagree04.wav",
+   "disagree05.wav",
+   "disagree06.wav"
+  ],
+  "leet": [
+   "disagree01.wav",
+   "disagree02.wav",
+   "disagree03.wav",
+   "disagree04.wav"
+  ],
+  "phoenix": [
+   "disagree01.wav",
+   "disagree02.wav",
+   "disagree03.wav",
+   "disagree05.wav",
+   "disagree06.wav"
+  ],
+  "pirate": [
+   "disagree01.wav",
+   "disagree02.wav",
+   "disagree03.wav",
+   "disagree04.wav"
+  ],
+  "separatist": [
+   "disagree01.wav",
+   "disagree02.wav",
+   "disagree04.wav"
+  ]
+ },
+ "enemydown": {
+  "anarchist": [
+   "enemydown01.wav",
+   "enemydown02.wav",
+   "enemydown03.wav",
+   "enemydown04.wav",
+   "enemydown05.wav",
+   "enemydown06.wav",
+   "enemydown07.wav",
+   "enemydown08.wav",
+   "enemydown09.wav",
+   "enemydown10.wav",
+   "enemydown11.wav",
+   "enemydown12.wav"
+  ],
+  "balkan": [
+   "enemydown01.wav",
+   "enemydown02.wav",
+   "enemydown03.wav",
+   "enemydown04.wav",
+   "enemydown05.wav",
+   "enemydown06.wav",
+   "enemydown07.wav",
+   "enemydown08.wav",
+   "enemydown09.wav"
+  ],
+  "leet": [
+   "enemydown01.wav",
+   "enemydown02.wav",
+   "enemydown03.wav",
+   "enemydown04.wav",
+   "enemydown05.wav",
+   "enemydown06.wav",
+   "enemydown07.wav",
+   "enemydown08.wav"
+  ],
+  "phoenix": [
+   "enemydown01.wav",
+   "enemydown02.wav",
+   "enemydown03.wav",
+   "enemydown04.wav",
+   "enemydown05.wav",
+   "enemydown06.wav",
+   "enemydown07.wav",
+   "enemydown08.wav",
+   "enemydown09.wav"
+  ],
+  "pirate": [
+   "enemydown01.wav",
+   "enemydown02.wav",
+   "enemydown03.wav",
+   "enemydown04.wav",
+   "enemydown05.wav",
+   "enemydown06.wav",
+   "enemydown07.wav",
+   "enemydown08.wav"
+  ],
+  "separatist": [
+   "enemydown01.wav",
+   "enemydown02.wav",
+   "enemydown03.wav",
+   "enemydown04.wav",
+   "enemydown05.wav",
+   "enemydown06.wav",
+   "enemydown07.wav"
+  ]
+ },
+ "followingfriend": {
+  "anarchist": [
+   "followingfriend01.wav",
+   "followingfriend02.wav",
+   "followingfriend03.wav",
+   "followingfriend04.wav",
+   "followingfriend05.wav",
+   "followingfriend06.wav",
+   "followingfriend07.wav"
+  ],
+  "balkan": [
+   "followingfriend01.wav",
+   "followingfriend02.wav",
+   "followingfriend03.wav",
+   "followingfriend04.wav",
+   "followingfriend05.wav",
+   "followingfriend06.wav",
+   "followingfriend07.wav"
+  ],
+  "leet": [
+   "followingfriend01.wav",
+   "followingfriend02.wav",
+   "followingfriend03.wav",
+   "followingfriend04.wav",
+   "followingfriend05.wav"
+  ],
+  "phoenix": [
+   "followingfriend01.wav",
+   "followingfriend02.wav",
+   "followingfriend03.wav",
+   "followingfriend04.wav",
+   "followingfriend05.wav"
+  ],
+  "pirate": [
+   "followingfriend01.wav",
+   "followingfriend02.wav",
+   "followingfriend03.wav",
+   "followingfriend04.wav",
+   "followingfriend05.wav",
+   "followingfriend06.wav"
+  ],
+  "separatist": [
+   "followingfriend01.wav",
+   "followingfriend03.wav",
+   "followingfriend04.wav"
+  ]
+ },
+ "friendlyfire": {
+  "anarchist": [
+   "friendlyfire01.wav",
+   "friendlyfire02.wav",
+   "friendlyfire03.wav",
+   "friendlyfire04.wav",
+   "friendlyfire05.wav",
+   "friendlyfire06.wav",
+   "friendlyfire07.wav",
+   "friendlyfire08.wav",
+   "friendlyfire09.wav",
+   "friendlyfire10.wav",
+   "friendlyfire11.wav",
+   "friendlyfire12.wav",
+   "friendlyfire13.wav",
+   "friendlyfire14.wav",
+   "friendlyfire15.wav",
+   "friendlyfire16.wav",
+   "friendlyfire17.wav"
+  ],
+  "balkan": [
+   "friendlyfire01.wav",
+   "friendlyfire02.wav",
+   "friendlyfire03.wav",
+   "friendlyfire04.wav",
+   "friendlyfire05.wav",
+   "friendlyfire06.wav"
+  ],
+  "leet": [
+   "friendlyfire01.wav",
+   "friendlyfire03.wav",
+   "friendlyfire04.wav",
+   "friendlyfire06.wav",
+   "friendlyfire07.wav",
+   "friendlyfire08.wav"
+  ],
+  "phoenix": [
+   "friendlyfire01.wav",
+   "friendlyfire02.wav",
+   "friendlyfire03.wav",
+   "friendlyfire04.wav",
+   "friendlyfire05.wav",
+   "friendlyfire06.wav",
+   "friendlyfire07.wav"
+  ],
+  "pirate": [
+   "friendlyfire01.wav",
+   "friendlyfire02.wav",
+   "friendlyfire03.wav",
+   "friendlyfire04.wav",
+   "friendlyfire05.wav",
+   "friendlyfire06.wav",
+   "friendlyfire07.wav",
+   "friendlyfire08.wav",
+   "friendlyfire09.wav"
+  ],
+  "separatist": [
+   "friendlyfire01.wav",
+   "friendlyfire02.wav",
+   "friendlyfire03.wav",
+   "friendlyfire04.wav",
+   "friendlyfire05.wav",
+   "friendlyfire06.wav",
+   "friendlyfire07.wav",
+   "friendlyfire08.wav"
+  ]
+ },
+ "goingtoguardhostageescapezone": {
+  "anarchist": [
+   "goingtoguardhostageescapezone01.wav",
+   "goingtoguardhostageescapezone02.wav",
+   "goingtoguardhostageescapezone03.wav"
+  ],
+  "balkan": [
+   "goingtoguardhostageescapezone01.wav",
+   "goingtoguardhostageescapezone02.wav",
+   "goingtoguardhostageescapezone03.wav"
+  ],
+  "leet": [
+   "goingtoguardhostageescapezone01.wav",
+   "goingtoguardhostageescapezone02.wav",
+   "goingtoguardhostageescapezone03.wav"
+  ],
+  "phoenix": [
+   "goingtoguardhostageescapezone01.wav",
+   "goingtoguardhostageescapezone02.wav",
+   "goingtoguardhostageescapezone03.wav"
+  ],
+  "separatist": [
+   "goingtoguardhostageescapezone01.wav",
+   "goingtoguardhostageescapezone02.wav",
+   "goingtoguardhostageescapezone03.wav"
+  ]
+ },
+ "goingtoguardhostages": {
+  "anarchist": [
+   "goingtoguardhostages01.wav",
+   "goingtoguardhostages02.wav",
+   "goingtoguardhostages03.wav",
+   "goingtoguardhostages04.wav",
+   "goingtoguardhostages05.wav",
+   "goingtoguardhostages06.wav"
+  ],
+  "balkan": [
+   "goingtoguardhostages01.wav",
+   "goingtoguardhostages02.wav",
+   "goingtoguardhostages03.wav",
+   "goingtoguardhostages04.wav"
+  ],
+  "leet": [
+   "goingtoguardhostages01.wav",
+   "goingtoguardhostages02.wav",
+   "goingtoguardhostages03.wav",
+   "goingtoguardhostages04.wav"
+  ],
+  "separatist": [
+   "goingtoguardhostages01.wav",
+   "goingtoguardhostages02.wav",
+   "goingtoguardhostages03.wav",
+   "goingtoguardhostages04.wav"
+  ]
+ },
+ "guardinghostageescapezone": {
+  "anarchist": [
+   "guardinghostageescapezone01.wav",
+   "guardinghostageescapezone02.wav",
+   "guardinghostageescapezone03.wav",
+   "guardinghostageescapezone04.wav",
+   "guardinghostageescapezone05.wav"
+  ],
+  "balkan": [
+   "guardinghostageescapezone01.wav",
+   "guardinghostageescapezone02.wav",
+   "guardinghostageescapezone03.wav"
+  ],
+  "leet": [
+   "guardinghostageescapezone01.wav",
+   "guardinghostageescapezone02.wav",
+   "guardinghostageescapezone03.wav"
+  ],
+  "separatist": [
+   "guardinghostageescapezone02.wav",
+   "guardinghostageescapezone03.wav"
+  ]
+ },
+ "guardinghostages": {
+  "anarchist": [
+   "guardinghostages01.wav",
+   "guardinghostages02.wav",
+   "guardinghostages03.wav",
+   "guardinghostages04.wav",
+   "guardinghostages05.wav"
+  ],
+  "balkan": [
+   "guardinghostages01.wav",
+   "guardinghostages02.wav",
+   "guardinghostages03.wav",
+   "guardinghostages04.wav",
+   "guardinghostages05.wav"
+  ],
+  "leet": [
+   "guardinghostages01.wav",
+   "guardinghostages02.wav",
+   "guardinghostages03.wav",
+   "guardinghostages04.wav",
+   "guardinghostages05.wav"
+  ],
+  "separatist": [
+   "guardinghostages01.wav",
+   "guardinghostages02.wav",
+   "guardinghostages03.wav",
+   "guardinghostages04.wav",
+   "guardinghostages05.wav"
+  ]
+ },
+ "heardnoise": {
+  "anarchist": [
+   "heardnoise01.wav",
+   "heardnoise02.wav",
+   "heardnoise03.wav"
+  ],
+  "balkan": [
+   "heardnoise01.wav",
+   "heardnoise02.wav",
+   "heardnoise03.wav"
+  ],
+  "leet": [
+   "heardnoise01.wav",
+   "heardnoise02.wav",
+   "heardnoise03.wav"
+  ],
+  "phoenix": [
+   "heardnoise01.wav",
+   "heardnoise02.wav",
+   "heardnoise03.wav",
+   "heardnoise05.wav"
+  ],
+  "pirate": [
+   "heardnoise01.wav",
+   "heardnoise02.wav",
+   "heardnoise03.wav",
+   "heardnoise04.wav"
+  ],
+  "separatist": [
+   "heardnoise01.wav",
+   "heardnoise02.wav",
+   "heardnoise03.wav"
+  ]
+ },
+ "help": {
+  "anarchist": [
+   "help01.wav",
+   "help02.wav",
+   "help03.wav",
+   "help04.wav",
+   "help05.wav",
+   "help06.wav"
+  ],
+  "balkan": [
+   "help01.wav",
+   "help02.wav",
+   "help03.wav",
+   "help04.wav"
+  ],
+  "leet": [
+   "help01.wav",
+   "help02.wav",
+   "help03.wav",
+   "help04.wav"
+  ],
+  "phoenix": [
+   "help01.wav",
+   "help02.wav",
+   "help03.wav",
+   "help04.wav",
+   "help05.wav"
+  ],
+  "pirate": [
+   "help01.wav",
+   "help02.wav",
+   "help03.wav",
+   "help04.wav",
+   "help05.wav"
+  ],
+  "separatist": [
+   "help01.wav",
+   "help02.wav",
+   "help03.wav",
+   "help04.wav"
+  ]
+ },
+ "hostagedown": {
+  "anarchist": [
+   "hostagedown01.wav",
+   "hostagedown02.wav",
+   "hostagedown03.wav",
+   "hostagedown04.wav",
+   "hostagedown05.wav"
+  ],
+  "balkan": [
+   "hostagedown01.wav",
+   "hostagedown02.wav",
+   "hostagedown03.wav",
+   "hostagedown04.wav",
+   "hostagedown05.wav"
+  ],
+  "separatist": [
+   "hostagedown01.wav",
+   "hostagedown02.wav",
+   "hostagedown03.wav",
+   "hostagedown04.wav"
+  ]
+ },
+ "hostagesbeingtaken": {
+  "anarchist": [
+   "hostagesbeingtaken01.wav",
+   "hostagesbeingtaken02.wav",
+   "hostagesbeingtaken03.wav"
+  ],
+  "balkan": [
+   "hostagesbeingtaken01.wav",
+   "hostagesbeingtaken02.wav",
+   "hostagesbeingtaken03.wav",
+   "hostagesbeingtaken04.wav"
+  ],
+  "separatist": [
+   "hostagesbeingtaken01.wav",
+   "hostagesbeingtaken02.wav"
+  ]
+ },
+ "hostagestaken": {
+  "anarchist": [
+   "hostagestaken01.wav",
+   "hostagestaken02.wav",
+   "hostagestaken03.wav",
+   "hostagestaken04.wav"
+  ],
+  "balkan": [
+   "hostagestaken01.wav",
+   "hostagestaken02.wav",
+   "hostagestaken03.wav",
+   "hostagestaken04.wav"
+  ],
+  "separatist": [
+   "hostagestaken01.wav",
+   "hostagestaken02.wav",
+   "hostagestaken03.wav"
+  ]
+ },
+ "incombat": {
+  "anarchist": [
+   "incombat01.wav",
+   "incombat02.wav",
+   "incombat03.wav",
+   "incombat04.wav",
+   "incombat05.wav",
+   "incombat06.wav",
+   "incombat07.wav"
+  ],
+  "balkan": [
+   "incombat02.wav",
+   "incombat03.wav",
+   "incombat04.wav"
+  ],
+  "leet": [
+   "incombat01.wav",
+   "incombat02.wav",
+   "incombat03.wav",
+   "incombat04.wav",
+   "incombat05.wav",
+   "incombat06.wav"
+  ],
+  "phoenix": [
+   "incombat01.wav",
+   "incombat02.wav",
+   "incombat03.wav",
+   "incombat04.wav",
+   "incombat05.wav",
+   "incombat06.wav",
+   "incombat07.wav",
+   "incombat08.wav",
+   "incombat09.wav",
+   "incombat10.wav"
+  ],
+  "pirate": [
+   "incombat01.wav",
+   "incombat02.wav",
+   "incombat03.wav",
+   "incombat04.wav",
+   "incombat05.wav",
+   "incombat06.wav",
+   "incombat07.wav",
+   "incombat08.wav"
+  ],
+  "separatist": [
+   "incombat01.wav",
+   "incombat02.wav",
+   "incombat03.wav",
+   "incombat04.wav",
+   "incombat05.wav"
+  ]
+ },
+ "inposition": {
+  "anarchist": [
+   "inposition01.wav",
+   "inposition02.wav",
+   "inposition03.wav"
+  ],
+  "balkan": [
+   "inposition01.wav",
+   "inposition02.wav",
+   "inposition03.wav"
+  ],
+  "leet": [
+   "inposition01.wav",
+   "inposition02.wav",
+   "inposition03.wav"
+  ],
+  "phoenix": [
+   "inposition01.wav",
+   "inposition02.wav",
+   "inposition03.wav"
+  ],
+  "pirate": [
+   "inposition01.wav",
+   "inposition02.wav",
+   "inposition03.wav"
+  ],
+  "professional": [
+   "inposition01.wav"
+  ],
+  "separatist": [
+   "inposition01.wav",
+   "inposition02.wav",
+   "inposition03.wav"
+  ]
+ },
+ "killedfriend": {
+  "anarchist": [
+   "killedfriend01.wav",
+   "killedfriend02.wav",
+   "killedfriend03.wav",
+   "killedfriend04.wav",
+   "killedfriend05.wav",
+   "killedfriend06.wav"
+  ],
+  "balkan": [
+   "killedfriend01.wav",
+   "killedfriend02.wav",
+   "killedfriend03.wav"
+  ],
+  "leet": [
+   "killedfriend01.wav",
+   "killedfriend02.wav",
+   "killedfriend03.wav"
+  ],
+  "phoenix": [
+   "killedfriend01.wav",
+   "killedfriend02.wav",
+   "killedfriend03.wav",
+   "killedfriend04.wav",
+   "killedfriend05.wav"
+  ],
+  "pirate": [
+   "killedfriend01.wav",
+   "killedfriend02.wav",
+   "killedfriend03.wav",
+   "killedfriend04.wav",
+   "killedfriend05.wav"
+  ],
+  "separatist": [
+   "killedfriend01.wav",
+   "killedfriend02.wav",
+   "killedfriend03.wav"
+  ]
+ },
+ "lastmanstanding": {
+  "anarchist": [
+   "lastmanstanding01.wav",
+   "lastmanstanding02.wav",
+   "lastmanstanding03.wav",
+   "lastmanstanding04.wav",
+   "lastmanstanding05.wav",
+   "lastmanstanding06.wav",
+   "lastmanstanding07.wav"
+  ],
+  "balkan": [
+   "lastmanstanding01.wav",
+   "lastmanstanding02.wav",
+   "lastmanstanding03.wav",
+   "lastmanstanding04.wav",
+   "lastmanstanding05.wav",
+   "lastmanstanding06.wav"
+  ],
+  "leet": [
+   "lastmanstanding01.wav",
+   "lastmanstanding03.wav",
+   "lastmanstanding04.wav",
+   "lastmanstanding06.wav",
+   "lastmanstanding07.wav",
+   "lastmanstanding08.wav"
+  ],
+  "phoenix": [
+   "lastmanstanding01.wav",
+   "lastmanstanding02.wav",
+   "lastmanstanding03.wav",
+   "lastmanstanding04.wav",
+   "lastmanstanding05.wav",
+   "lastmanstanding06.wav",
+   "lastmanstanding07.wav"
+  ],
+  "pirate": [
+   "lastmanstanding01.wav",
+   "lastmanstanding02.wav",
+   "lastmanstanding03.wav",
+   "lastmanstanding04.wav",
+   "lastmanstanding05.wav",
+   "lastmanstanding06.wav",
+   "lastmanstanding07.wav",
+   "lastmanstanding08.wav"
+  ],
+  "separatist": [
+   "lastmanstanding01.wav",
+   "lastmanstanding02.wav",
+   "lastmanstanding03.wav",
+   "lastmanstanding04.wav",
+   "lastmanstanding05.wav",
+   "lastmanstanding06.wav"
+  ]
+ },
+ "lostenemy": {
+  "anarchist": [
+   "lostenemy01.wav",
+   "lostenemy02.wav",
+   "lostenemy03.wav"
+  ],
+  "balkan": [
+   "lostenemy01.wav",
+   "lostenemy02.wav",
+   "lostenemy03.wav",
+   "lostenemy04.wav"
+  ],
+  "leet": [
+   "lostenemy01.wav",
+   "lostenemy02.wav",
+   "lostenemy03.wav"
+  ],
+  "phoenix": [
+   "lostenemy01.wav",
+   "lostenemy02.wav",
+   "lostenemy03.wav",
+   "lostenemy04.wav"
+  ],
+  "pirate": [
+   "lostenemy01.wav",
+   "lostenemy02.wav",
+   "lostenemy03.wav",
+   "lostenemy04.wav"
+  ],
+  "separatist": [
+   "lostenemy01.wav",
+   "lostenemy02.wav",
+   "lostenemy03.wav"
+  ]
+ },
+ "negative": {
+  "anarchist": [
+   "negative01.wav",
+   "negative02.wav",
+   "negative03.wav",
+   "negative04.wav"
+  ],
+  "balkan": [
+   "negative01.wav",
+   "negative02.wav",
+   "negative03.wav",
+   "negative04.wav"
+  ],
+  "leet": [
+   "negative01.wav",
+   "negative02.wav",
+   "negative03.wav",
+   "negative04.wav"
+  ],
+  "phoenix": [
+   "negative01.wav",
+   "negative02.wav",
+   "negative03.wav",
+   "negative04.wav"
+  ],
+  "pirate": [
+   "negative01.wav",
+   "negative02.wav",
+   "negative03.wav",
+   "negative04.wav"
+  ],
+  "separatist": [
+   "negative01.wav",
+   "negative02.wav",
+   "negative03.wav",
+   "negative04.wav"
+  ]
+ },
+ "negativeno": {
+  "anarchist": [
+   "negativeno04.wav",
+   "negativeno05.wav"
+  ],
+  "leet": [
+   "negativeno03.wav",
+   "negativeno04.wav"
+  ],
+  "phoenix": [
+   "negativeno05.wav"
+  ],
+  "pirate": [
+   "negativeno04.wav",
+   "negativeno05.wav"
+  ]
+ },
+ "niceshot": {
+  "anarchist": [
+   "niceshot01.wav",
+   "niceshot02.wav",
+   "niceshot03.wav",
+   "niceshot04.wav",
+   "niceshot05.wav",
+   "niceshot06.wav",
+   "niceshot07.wav",
+   "niceshot08.wav",
+   "niceshot09.wav",
+   "niceshot10.wav",
+   "niceshot11.wav",
+   "niceshot12.wav",
+   "niceshot13.wav",
+   "niceshot14.wav"
+  ],
+  "balkan": [
+   "niceshot01.wav",
+   "niceshot02.wav",
+   "niceshot03.wav",
+   "niceshot04.wav",
+   "niceshot05.wav",
+   "niceshot06.wav",
+   "niceshot07.wav",
+   "niceshot08.wav",
+   "niceshot09.wav"
+  ],
+  "leet": [
+   "niceshot02.wav",
+   "niceshot03.wav",
+   "niceshot04.wav",
+   "niceshot05.wav",
+   "niceshot06.wav",
+   "niceshot07.wav",
+   "niceshot08.wav",
+   "niceshot09.wav",
+   "niceshot10.wav",
+   "niceshot11.wav",
+   "niceshot12.wav"
+  ],
+  "phoenix": [
+   "niceshot01.wav",
+   "niceshot02.wav",
+   "niceshot03.wav",
+   "niceshot04.wav",
+   "niceshot05.wav",
+   "niceshot06.wav",
+   "niceshot07.wav",
+   "niceshot08.wav",
+   "niceshot09.wav",
+   "niceshot10.wav",
+   "niceshot11.wav",
+   "niceshot12.wav",
+   "niceshot13.wav"
+  ],
+  "pirate": [
+   "niceshot01.wav",
+   "niceshot02.wav",
+   "niceshot03.wav",
+   "niceshot04.wav",
+   "niceshot05.wav",
+   "niceshot06.wav",
+   "niceshot07.wav",
+   "niceshot08.wav",
+   "niceshot09.wav",
+   "niceshot10.wav",
+   "niceshot11.wav",
+   "niceshot12.wav"
+  ],
+  "separatist": [
+   "niceshot01.wav",
+   "niceshot02.wav",
+   "niceshot03.wav",
+   "niceshot04.wav",
+   "niceshot05.wav",
+   "niceshot06.wav",
+   "niceshot07.wav",
+   "niceshot08.wav",
+   "niceshot09.wav",
+   "niceshot10.wav",
+   "niceshot11.wav"
+  ]
+ },
+ "onarollbrag": {
+  "anarchist": [
+   "onarollbrag01.wav",
+   "onarollbrag02.wav",
+   "onarollbrag03.wav",
+   "onarollbrag04.wav",
+   "onarollbrag05.wav",
+   "onarollbrag06.wav",
+   "onarollbrag07.wav",
+   "onarollbrag08.wav",
+   "onarollbrag09.wav",
+   "onarollbrag10.wav",
+   "onarollbrag11.wav",
+   "onarollbrag12.wav",
+   "onarollbrag13.wav",
+   "onarollbrag14.wav",
+   "onarollbrag15.wav"
+  ],
+  "balkan": [
+   "onarollbrag01.wav",
+   "onarollbrag02.wav",
+   "onarollbrag03.wav",
+   "onarollbrag04.wav",
+   "onarollbrag05.wav",
+   "onarollbrag08.wav",
+   "onarollbrag09.wav",
+   "onarollbrag10.wav",
+   "onarollbrag11.wav",
+   "onarollbrag12.wav",
+   "onarollbrag13.wav"
+  ],
+  "leet": [
+   "onarollbrag01.wav",
+   "onarollbrag02.wav",
+   "onarollbrag03.wav",
+   "onarollbrag04.wav",
+   "onarollbrag05.wav",
+   "onarollbrag06.wav",
+   "onarollbrag07.wav",
+   "onarollbrag08.wav",
+   "onarollbrag09.wav",
+   "onarollbrag10.wav",
+   "onarollbrag11.wav",
+   "onarollbrag12.wav"
+  ],
+  "phoenix": [
+   "onarollbrag01.wav",
+   "onarollbrag02.wav",
+   "onarollbrag03.wav",
+   "onarollbrag04.wav",
+   "onarollbrag05.wav",
+   "onarollbrag06.wav",
+   "onarollbrag07.wav",
+   "onarollbrag08.wav",
+   "onarollbrag09.wav",
+   "onarollbrag10.wav",
+   "onarollbrag11.wav",
+   "onarollbrag12.wav",
+   "onarollbrag13.wav",
+   "onarollbrag14.wav",
+   "onarollbrag15.wav"
+  ],
+  "pirate": [
+   "onarollbrag01.wav",
+   "onarollbrag02.wav",
+   "onarollbrag03.wav",
+   "onarollbrag04.wav",
+   "onarollbrag05.wav",
+   "onarollbrag06.wav",
+   "onarollbrag07.wav",
+   "onarollbrag08.wav",
+   "onarollbrag09.wav",
+   "onarollbrag10.wav",
+   "onarollbrag11.wav",
+   "onarollbrag12.wav",
+   "onarollbrag13.wav"
+  ],
+  "separatist": [
+   "onarollbrag01.wav",
+   "onarollbrag02.wav",
+   "onarollbrag03.wav",
+   "onarollbrag04.wav",
+   "onarollbrag05.wav",
+   "onarollbrag06.wav",
+   "onarollbrag07.wav",
+   "onarollbrag08.wav",
+   "onarollbrag09.wav"
+  ]
+ },
+ "oneenemyleft": {
+  "anarchist": [
+   "oneenemyleft01.wav",
+   "oneenemyleft02.wav",
+   "oneenemyleft03.wav",
+   "oneenemyleft07.wav",
+   "oneenemyleft10.wav"
+  ],
+  "balkan": [
+   "oneenemyleft03.wav",
+   "oneenemyleft04.wav",
+   "oneenemyleft05.wav",
+   "oneenemyleft06.wav",
+   "oneenemyleft07.wav",
+   "oneenemyleft10.wav",
+   "oneenemyleft11.wav"
+  ],
+  "leet": [
+   "oneenemyleft02.wav",
+   "oneenemyleft03.wav",
+   "oneenemyleft05.wav",
+   "oneenemyleft06.wav",
+   "oneenemyleft07.wav",
+   "oneenemyleft10.wav"
+  ],
+  "phoenix": [
+   "oneenemyleft04.wav",
+   "oneenemyleft05.wav",
+   "oneenemyleft06.wav",
+   "oneenemyleft08.wav",
+   "oneenemyleft10.wav",
+   "oneenemyleft11.wav",
+   "oneenemyleft12.wav"
+  ],
+  "pirate": [
+   "oneenemyleft01.wav",
+   "oneenemyleft02.wav",
+   "oneenemyleft03.wav",
+   "oneenemyleft06.wav",
+   "oneenemyleft07.wav",
+   "oneenemyleft08.wav",
+   "oneenemyleft10.wav",
+   "oneenemyleft11.wav",
+   "oneenemyleft12.wav"
+  ],
+  "separatist": [
+   "oneenemyleft01.wav",
+   "oneenemyleft02.wav",
+   "oneenemyleft03.wav",
+   "oneenemyleft04.wav",
+   "oneenemyleft05.wav",
+   "oneenemyleft06.wav",
+   "oneenemyleft08.wav",
+   "oneenemyleft09.wav"
+  ]
+ },
+ "onmyway": {
+  "anarchist": [
+   "onmyway01.wav",
+   "onmyway02.wav",
+   "onmyway03.wav",
+   "onmyway04.wav"
+  ],
+  "balkan": [
+   "onmyway01.wav",
+   "onmyway02.wav",
+   "onmyway03.wav"
+  ],
+  "leet": [
+   "onmyway01.wav",
+   "onmyway02.wav",
+   "onmyway03.wav"
+  ],
+  "phoenix": [
+   "onmyway01.wav",
+   "onmyway02.wav",
+   "onmyway03.wav",
+   "onmyway04.wav"
+  ],
+  "pirate": [
+   "onmyway01.wav",
+   "onmyway02.wav",
+   "onmyway03.wav",
+   "onmyway04.wav"
+  ],
+  "separatist": [
+   "onmyway01.wav",
+   "onmyway02.wav",
+   "onmyway04.wav"
+  ]
+ },
+ "peptalk": {
+  "anarchist": [
+   "peptalk01.wav",
+   "peptalk06.wav",
+   "peptalk10.wav"
+  ],
+  "balkan": [
+   "peptalk01.wav",
+   "peptalk03.wav",
+   "peptalk05.wav",
+   "peptalk06.wav"
+  ],
+  "leet": [
+   "peptalk01.wav",
+   "peptalk03.wav",
+   "peptalk04.wav",
+   "peptalk07.wav"
+  ],
+  "phoenix": [
+   "peptalk01.wav",
+   "peptalk02.wav",
+   "peptalk03.wav",
+   "peptalk07.wav"
+  ],
+  "pirate": [
+   "peptalk02.wav",
+   "peptalk06.wav",
+   "peptalk07.wav",
+   "peptalk09.wav"
+  ],
+  "separatist": [
+   "peptalk01.wav",
+   "peptalk03.wav",
+   "peptalk04.wav"
+  ]
+ },
+ "pinneddown": {
+  "anarchist": [
+   "pinneddown01.wav",
+   "pinneddown02.wav",
+   "pinneddown03.wav",
+   "pinneddown04.wav"
+  ],
+  "balkan": [
+   "pinneddown01.wav",
+   "pinneddown02.wav",
+   "pinneddown03.wav",
+   "pinneddown04.wav"
+  ],
+  "leet": [
+   "pinneddown01.wav",
+   "pinneddown02.wav",
+   "pinneddown03.wav",
+   "pinneddown04.wav"
+  ],
+  "phoenix": [
+   "pinneddown01.wav",
+   "pinneddown02.wav",
+   "pinneddown03.wav"
+  ],
+  "pirate": [
+   "pinneddown01.wav",
+   "pinneddown02.wav",
+   "pinneddown03.wav"
+  ],
+  "separatist": [
+   "pinneddown01.wav",
+   "pinneddown02.wav",
+   "pinneddown03.wav"
+  ]
+ },
+ "preventescapebrag": {
+  "anarchist": [
+   "preventescapebrag01.wav",
+   "preventescapebrag02.wav",
+   "preventescapebrag03.wav",
+   "preventescapebrag04.wav",
+   "preventescapebrag05.wav"
+  ],
+  "balkan": [
+   "preventescapebrag01.wav",
+   "preventescapebrag02.wav",
+   "preventescapebrag03.wav",
+   "preventescapebrag04.wav"
+  ],
+  "separatist": [
+   "preventescapebrag01.wav",
+   "preventescapebrag03.wav",
+   "preventescapebrag05.wav"
+  ]
+ },
+ "radio_enemyspotted": {
+  "anarchist": [
+   "radio_enemyspotted01.wav",
+   "radio_enemyspotted02.wav",
+   "radio_enemyspotted03.wav",
+   "radio_enemyspotted04.wav",
+   "radio_enemyspotted06.wav",
+   "radio_enemyspotted07.wav"
+  ],
+  "balkan": [
+   "radio_enemyspotted02.wav",
+   "radio_enemyspotted03.wav",
+   "radio_enemyspotted04.wav",
+   "radio_enemyspotted05.wav",
+   "radio_enemyspotted06.wav"
+  ],
+  "leet": [
+   "radio_enemyspotted02.wav",
+   "radio_enemyspotted03.wav",
+   "radio_enemyspotted04.wav",
+   "radio_enemyspotted05.wav",
+   "radio_enemyspotted06.wav"
+  ],
+  "phoenix": [
+   "radio_enemyspotted01.wav",
+   "radio_enemyspotted02.wav",
+   "radio_enemyspotted03.wav",
+   "radio_enemyspotted04.wav"
+  ],
+  "pirate": [
+   "radio_enemyspotted01.wav",
+   "radio_enemyspotted02.wav",
+   "radio_enemyspotted03.wav",
+   "radio_enemyspotted04.wav",
+   "radio_enemyspotted06.wav"
+  ]
+ },
+ "radio_followme": {
+  "anarchist": [
+   "radio_followme01.wav",
+   "radio_followme02.wav",
+   "radio_followme03.wav",
+   "radio_followme04.wav",
+   "radio_followme05.wav"
+  ],
+  "balkan": [
+   "radio_followme01.wav",
+   "radio_followme02.wav",
+   "radio_followme03.wav",
+   "radio_followme04.wav"
+  ],
+  "leet": [
+   "radio_followme02.wav",
+   "radio_followme03.wav",
+   "radio_followme04.wav",
+   "radio_followme06.wav"
+  ],
+  "phoenix": [
+   "radio_followme01.wav",
+   "radio_followme02.wav",
+   "radio_followme03.wav",
+   "radio_followme04.wav",
+   "radio_followme05.wav",
+   "radio_followme06.wav"
+  ],
+  "pirate": [
+   "radio_followme01.wav",
+   "radio_followme02.wav",
+   "radio_followme03.wav",
+   "radio_followme04.wav",
+   "radio_followme05.wav"
+  ]
+ },
+ "radio_letsgo": {
+  "anarchist": [
+   "radio_letsgo01.wav",
+   "radio_letsgo02.wav",
+   "radio_letsgo03.wav",
+   "radio_letsgo04.wav",
+   "radio_letsgo06.wav",
+   "radio_letsgo07.wav",
+   "radio_letsgo08.wav",
+   "radio_letsgo09.wav",
+   "radio_letsgo10.wav"
+  ],
+  "balkan": [
+   "radio_letsgo01.wav",
+   "radio_letsgo02.wav",
+   "radio_letsgo03.wav",
+   "radio_letsgo04.wav",
+   "radio_letsgo05.wav",
+   "radio_letsgo06.wav",
+   "radio_letsgo07.wav",
+   "radio_letsgo08.wav",
+   "radio_letsgo09.wav",
+   "radio_letsgo10.wav",
+   "radio_letsgo11.wav"
+  ],
+  "leet": [
+   "radio_letsgo01.wav",
+   "radio_letsgo02.wav",
+   "radio_letsgo03.wav",
+   "radio_letsgo04.wav",
+   "radio_letsgo05.wav",
+   "radio_letsgo06.wav",
+   "radio_letsgo07.wav",
+   "radio_letsgo08.wav",
+   "radio_letsgo09.wav",
+   "radio_letsgo10.wav",
+   "radio_letsgo11.wav",
+   "radio_letsgo12.wav",
+   "radio_letsgo13.wav"
+  ],
+  "phoenix": [
+   "radio_letsgo01.wav",
+   "radio_letsgo02.wav",
+   "radio_letsgo03.wav",
+   "radio_letsgo04.wav",
+   "radio_letsgo05.wav",
+   "radio_letsgo06.wav",
+   "radio_letsgo07.wav",
+   "radio_letsgo08.wav",
+   "radio_letsgo09.wav"
+  ],
+  "pirate": [
+   "radio_letsgo01.wav",
+   "radio_letsgo02.wav",
+   "radio_letsgo03.wav",
+   "radio_letsgo04.wav",
+   "radio_letsgo05.wav",
+   "radio_letsgo06.wav",
+   "radio_letsgo07.wav",
+   "radio_letsgo08.wav",
+   "radio_letsgo09.wav"
+  ]
+ },
+ "radio_locknload": {
+  "anarchist": [
+   "radio_locknload01.wav",
+   "radio_locknload02.wav",
+   "radio_locknload03.wav",
+   "radio_locknload04.wav",
+   "radio_locknload05.wav",
+   "radio_locknload06.wav",
+   "radio_locknload07.wav",
+   "radio_locknload08.wav",
+   "radio_locknload09.wav"
+  ],
+  "balkan": [
+   "radio_locknload01.wav",
+   "radio_locknload02.wav",
+   "radio_locknload03.wav",
+   "radio_locknload04.wav",
+   "radio_locknload06.wav",
+   "radio_locknload07.wav",
+   "radio_locknload08.wav",
+   "radio_locknload10.wav"
+  ],
+  "leet": [
+   "radio_locknload01.wav",
+   "radio_locknload02.wav",
+   "radio_locknload03.wav",
+   "radio_locknload04.wav",
+   "radio_locknload05.wav",
+   "radio_locknload06.wav",
+   "radio_locknload07.wav",
+   "radio_locknload08.wav",
+   "radio_locknload09.wav",
+   "radio_locknload10.wav"
+  ],
+  "phoenix": [
+   "radio_locknload01.wav",
+   "radio_locknload02.wav",
+   "radio_locknload03.wav",
+   "radio_locknload04.wav",
+   "radio_locknload05.wav",
+   "radio_locknload06.wav",
+   "radio_locknload07.wav",
+   "radio_locknload08.wav",
+   "radio_locknload09.wav",
+   "radio_locknload10.wav",
+   "radio_locknload11.wav",
+   "radio_locknload12.wav"
+  ],
+  "pirate": [
+   "radio_locknload01.wav",
+   "radio_locknload02.wav",
+   "radio_locknload03.wav",
+   "radio_locknload04.wav",
+   "radio_locknload05.wav",
+   "radio_locknload06.wav",
+   "radio_locknload07.wav",
+   "radio_locknload08.wav",
+   "radio_locknload09.wav",
+   "radio_locknload10.wav",
+   "radio_locknload11.wav",
+   "radio_locknload12.wav",
+   "radio_locknload13.wav",
+   "radio_locknload14.wav"
+  ]
+ },
+ "radio_needbackup": {
+  "anarchist": [
+   "radio_needbackup01.wav",
+   "radio_needbackup02.wav",
+   "radio_needbackup03.wav",
+   "radio_needbackup04.wav"
+  ],
+  "balkan": [
+   "radio_needbackup01.wav",
+   "radio_needbackup02.wav",
+   "radio_needbackup03.wav",
+   "radio_needbackup04.wav"
+  ],
+  "leet": [
+   "radio_needbackup01.wav",
+   "radio_needbackup02.wav",
+   "radio_needbackup03.wav",
+   "radio_needbackup04.wav"
+  ],
+  "phoenix": [
+   "radio_needbackup01.wav",
+   "radio_needbackup02.wav",
+   "radio_needbackup03.wav",
+   "radio_needbackup05.wav",
+   "radio_needbackup06.wav"
+  ],
+  "pirate": [
+   "radio_needbackup01.wav",
+   "radio_needbackup02.wav",
+   "radio_needbackup03.wav",
+   "radio_needbackup04.wav"
+  ]
+ },
+ "radio_takingfire": {
+  "anarchist": [
+   "radio_takingfire01.wav",
+   "radio_takingfire02.wav",
+   "radio_takingfire03.wav",
+   "radio_takingfire04.wav",
+   "radio_takingfire05.wav",
+   "radio_takingfire06.wav",
+   "radio_takingfire07.wav",
+   "radio_takingfire08.wav",
+   "radio_takingfire09.wav"
+  ],
+  "balkan": [
+   "radio_takingfire01.wav",
+   "radio_takingfire02.wav",
+   "radio_takingfire03.wav",
+   "radio_takingfire04.wav",
+   "radio_takingfire05.wav",
+   "radio_takingfire07.wav"
+  ],
+  "leet": [
+   "radio_takingfire01.wav",
+   "radio_takingfire02.wav",
+   "radio_takingfire03.wav",
+   "radio_takingfire04.wav",
+   "radio_takingfire05.wav",
+   "radio_takingfire06.wav",
+   "radio_takingfire07.wav"
+  ],
+  "phoenix": [
+   "radio_takingfire01.wav",
+   "radio_takingfire02.wav",
+   "radio_takingfire03.wav",
+   "radio_takingfire04.wav",
+   "radio_takingfire05.wav",
+   "radio_takingfire06.wav"
+  ],
+  "pirate": [
+   "radio_takingfire01.wav",
+   "radio_takingfire02.wav",
+   "radio_takingfire03.wav",
+   "radio_takingfire04.wav",
+   "radio_takingfire05.wav",
+   "radio_takingfire06.wav",
+   "radio_takingfire07.wav",
+   "radio_takingfire08.wav"
+  ]
+ },
+ "radiobotendclean": {
+  "anarchist": [
+   "radiobotendclean01.wav",
+   "radiobotendclean02.wav",
+   "radiobotendclean03.wav",
+   "radiobotendclean04.wav",
+   "radiobotendclean05.wav",
+   "radiobotendclean06.wav",
+   "radiobotendclean07.wav",
+   "radiobotendclean08.wav",
+   "radiobotendclean09.wav"
+  ],
+  "balkan": [
+   "radiobotendclean01.wav",
+   "radiobotendclean02.wav",
+   "radiobotendclean03.wav",
+   "radiobotendclean04.wav",
+   "radiobotendclean05.wav"
+  ],
+  "leet": [
+   "radiobotendclean01.wav",
+   "radiobotendclean02.wav",
+   "radiobotendclean03.wav",
+   "radiobotendclean04.wav",
+   "radiobotendclean05.wav",
+   "radiobotendclean06.wav"
+  ],
+  "phoenix": [
+   "radiobotendclean01.wav",
+   "radiobotendclean02.wav",
+   "radiobotendclean03.wav",
+   "radiobotendclean04.wav",
+   "radiobotendclean05.wav",
+   "radiobotendclean06.wav",
+   "radiobotendclean07.wav",
+   "radiobotendclean08.wav"
+  ],
+  "pirate": [
+   "radiobotendclean01.wav",
+   "radiobotendclean02.wav",
+   "radiobotendclean03.wav",
+   "radiobotendclean04.wav",
+   "radiobotendclean05.wav",
+   "radiobotendclean06.wav"
+  ],
+  "professional": [
+   "radiobotendclean01.wav",
+   "radiobotendclean02.wav",
+   "radiobotendclean03.wav",
+   "radiobotendclean04.wav",
+   "radiobotendclean05.wav",
+   "radiobotendclean06.wav",
+   "radiobotendclean07.wav",
+   "radiobotendclean10.wav",
+   "radiobotendclean11.wav"
+  ],
+  "separatist": [
+   "radiobotendclean01.wav",
+   "radiobotendclean02.wav",
+   "radiobotendclean03.wav",
+   "radiobotendclean04.wav",
+   "radiobotendclean05.wav",
+   "radiobotendclean06.wav"
+  ]
+ },
+ "radiobotendsolid": {
+  "anarchist": [
+   "radiobotendsolid01.wav",
+   "radiobotendsolid02.wav",
+   "radiobotendsolid03.wav",
+   "radiobotendsolid04.wav",
+   "radiobotendsolid05.wav",
+   "radiobotendsolid06.wav"
+  ],
+  "balkan": [
+   "radiobotendsolid01.wav",
+   "radiobotendsolid02.wav",
+   "radiobotendsolid03.wav",
+   "radiobotendsolid04.wav",
+   "radiobotendsolid05.wav"
+  ],
+  "leet": [
+   "radiobotendsolid01.wav",
+   "radiobotendsolid02.wav",
+   "radiobotendsolid03.wav",
+   "radiobotendsolid04.wav",
+   "radiobotendsolid05.wav",
+   "radiobotendsolid06.wav"
+  ],
+  "phoenix": [
+   "radiobotendsolid01.wav",
+   "radiobotendsolid02.wav",
+   "radiobotendsolid03.wav",
+   "radiobotendsolid04.wav",
+   "radiobotendsolid05.wav",
+   "radiobotendsolid06.wav"
+  ],
+  "pirate": [
+   "radiobotendsolid01.wav",
+   "radiobotendsolid02.wav",
+   "radiobotendsolid03.wav",
+   "radiobotendsolid04.wav",
+   "radiobotendsolid05.wav"
+  ],
+  "professional": [
+   "radiobotendsolid01.wav",
+   "radiobotendsolid02.wav",
+   "radiobotendsolid04.wav",
+   "radiobotendsolid05.wav",
+   "radiobotendsolid06.wav",
+   "radiobotendsolid07.wav",
+   "radiobotendsolid08.wav"
+  ],
+  "separatist": [
+   "radiobotendsolid01.wav",
+   "radiobotendsolid02.wav",
+   "radiobotendsolid03.wav",
+   "radiobotendsolid04.wav",
+   "radiobotendsolid05.wav"
+  ]
+ },
+ "radiobotfallback": {
+  "anarchist": [
+   "radiobotfallback01.wav",
+   "radiobotfallback02.wav",
+   "radiobotfallback04.wav"
+  ],
+  "balkan": [
+   "radiobotfallback01.wav",
+   "radiobotfallback02.wav",
+   "radiobotfallback04.wav"
+  ],
+  "leet": [
+   "radiobotfallback01.wav",
+   "radiobotfallback02.wav",
+   "radiobotfallback04.wav"
+  ],
+  "phoenix": [
+   "radiobotfallback01.wav",
+   "radiobotfallback02.wav",
+   "radiobotfallback03.wav"
+  ],
+  "pirate": [
+   "radiobotfallback01.wav",
+   "radiobotfallback02.wav",
+   "radiobotfallback04.wav"
+  ],
+  "professional": [
+   "radiobotfallback01.wav",
+   "radiobotfallback02.wav",
+   "radiobotfallback03.wav",
+   "radiobotfallback04.wav",
+   "radiobotfallback05.wav"
+  ],
+  "separatist": [
+   "radiobotfallback01.wav",
+   "radiobotfallback02.wav",
+   "radiobotfallback05.wav"
+  ]
+ },
+ "radiobothold": {
+  "anarchist": [
+   "radiobothold04.wav"
+  ],
+  "balkan": [
+   "radiobothold01.wav",
+   "radiobothold02.wav",
+   "radiobothold03.wav"
+  ],
+  "leet": [
+   "radiobothold01.wav",
+   "radiobothold02.wav",
+   "radiobothold03.wav"
+  ],
+  "phoenix": [
+   "radiobothold01.wav",
+   "radiobothold02.wav",
+   "radiobothold03.wav"
+  ],
+  "pirate": [
+   "radiobothold01.wav",
+   "radiobothold02.wav",
+   "radiobothold03.wav"
+  ],
+  "professional": [
+   "radiobothold02.wav",
+   "radiobothold03.wav",
+   "radiobothold04.wav"
+  ],
+  "separatist": [
+   "radiobothold01.wav",
+   "radiobothold02.wav",
+   "radiobothold03.wav"
+  ]
+ },
+ "radiobotregroup": {
+  "anarchist": [
+   "radiobotregroup01.wav",
+   "radiobotregroup02.wav",
+   "radiobotregroup03.wav"
+  ],
+  "balkan": [
+   "radiobotregroup01.wav",
+   "radiobotregroup02.wav",
+   "radiobotregroup03.wav"
+  ],
+  "leet": [
+   "radiobotregroup01.wav",
+   "radiobotregroup02.wav",
+   "radiobotregroup03.wav"
+  ],
+  "phoenix": [
+   "radiobotregroup01.wav",
+   "radiobotregroup02.wav",
+   "radiobotregroup03.wav"
+  ],
+  "pirate": [
+   "radiobotregroup01.wav",
+   "radiobotregroup02.wav",
+   "radiobotregroup03.wav"
+  ],
+  "professional": [
+   "radiobotregroup01.wav",
+   "radiobotregroup02.wav",
+   "radiobotregroup04.wav"
+  ],
+  "separatist": [
+   "radiobotregroup01.wav",
+   "radiobotregroup02.wav",
+   "radiobotregroup03.wav"
+  ]
+ },
+ "reportingin": {
+  "anarchist": [
+   "reportingin01.wav",
+   "reportingin02.wav",
+   "reportingin03.wav"
+  ],
+  "balkan": [
+   "reportingin01.wav",
+   "reportingin02.wav",
+   "reportingin03.wav"
+  ],
+  "leet": [
+   "reportingin01.wav",
+   "reportingin02.wav",
+   "reportingin03.wav"
+  ],
+  "phoenix": [
+   "reportingin01.wav",
+   "reportingin02.wav",
+   "reportingin03.wav",
+   "reportingin04.wav"
+  ],
+  "pirate": [
+   "reportingin01.wav",
+   "reportingin02.wav",
+   "reportingin03.wav",
+   "reportingin04.wav"
+  ],
+  "professional": [
+   "reportingin01.wav"
+  ],
+  "separatist": [
+   "reportingin01.wav",
+   "reportingin02.wav",
+   "reportingin03.wav"
+  ]
+ },
+ "requestreport": {
+  "anarchist": [
+   "requestreport01.wav",
+   "requestreport02.wav",
+   "requestreport03.wav",
+   "requestreport04.wav"
+  ],
+  "balkan": [
+   "requestreport01.wav",
+   "requestreport02.wav",
+   "requestreport03.wav",
+   "requestreport04.wav"
+  ],
+  "leet": [
+   "requestreport01.wav",
+   "requestreport02.wav",
+   "requestreport03.wav",
+   "requestreport04.wav"
+  ],
+  "phoenix": [
+   "requestreport01.wav",
+   "requestreport02.wav",
+   "requestreport03.wav"
+  ],
+  "pirate": [
+   "requestreport01.wav",
+   "requestreport02.wav",
+   "requestreport03.wav",
+   "requestreport04.wav"
+  ],
+  "separatist": [
+   "requestreport01.wav",
+   "requestreport02.wav",
+   "requestreport03.wav"
+  ]
+ },
+ "scaredemote": {
+  "anarchist": [
+   "scaredemote01.wav",
+   "scaredemote02.wav",
+   "scaredemote03.wav",
+   "scaredemote04.wav",
+   "scaredemote05.wav",
+   "scaredemote06.wav",
+   "scaredemote07.wav",
+   "scaredemote08.wav",
+   "scaredemote09.wav",
+   "scaredemote10.wav"
+  ],
+  "balkan": [
+   "scaredemote01.wav",
+   "scaredemote02.wav",
+   "scaredemote04.wav",
+   "scaredemote05.wav",
+   "scaredemote06.wav"
+  ],
+  "leet": [
+   "scaredemote01.wav",
+   "scaredemote02.wav",
+   "scaredemote03.wav",
+   "scaredemote04.wav",
+   "scaredemote05.wav",
+   "scaredemote07.wav"
+  ],
+  "phoenix": [
+   "scaredemote01.wav",
+   "scaredemote02.wav",
+   "scaredemote03.wav",
+   "scaredemote04.wav",
+   "scaredemote05.wav",
+   "scaredemote06.wav",
+   "scaredemote07.wav",
+   "scaredemote08.wav"
+  ],
+  "pirate": [
+   "scaredemote01.wav",
+   "scaredemote02.wav",
+   "scaredemote03.wav",
+   "scaredemote04.wav",
+   "scaredemote05.wav"
+  ],
+  "separatist": [
+   "scaredemote01.wav",
+   "scaredemote02.wav",
+   "scaredemote03.wav",
+   "scaredemote04.wav"
+  ]
+ },
+ "sniperkilled": {
+  "anarchist": [
+   "sniperkilled01.wav",
+   "sniperkilled02.wav",
+   "sniperkilled03.wav"
+  ],
+  "balkan": [
+   "sniperkilled01.wav",
+   "sniperkilled02.wav",
+   "sniperkilled03.wav",
+   "sniperkilled04.wav"
+  ],
+  "leet": [
+   "sniperkilled01.wav",
+   "sniperkilled02.wav",
+   "sniperkilled03.wav",
+   "sniperkilled04.wav"
+  ],
+  "phoenix": [
+   "sniperkilled01.wav",
+   "sniperkilled02.wav",
+   "sniperkilled03.wav",
+   "sniperkilled04.wav"
+  ],
+  "pirate": [
+   "sniperkilled01.wav",
+   "sniperkilled02.wav"
+  ],
+  "separatist": [
+   "sniperkilled01.wav",
+   "sniperkilled02.wav",
+   "sniperkilled03.wav",
+   "sniperkilled04.wav"
+  ]
+ },
+ "sniperwarning": {
+  "anarchist": [
+   "sniperwarning01.wav",
+   "sniperwarning02.wav",
+   "sniperwarning03.wav"
+  ],
+  "balkan": [
+   "sniperwarning01.wav",
+   "sniperwarning02.wav",
+   "sniperwarning03.wav"
+  ],
+  "leet": [
+   "sniperwarning01.wav",
+   "sniperwarning02.wav",
+   "sniperwarning03.wav",
+   "sniperwarning04.wav"
+  ],
+  "phoenix": [
+   "sniperwarning01.wav",
+   "sniperwarning02.wav",
+   "sniperwarning03.wav"
+  ],
+  "pirate": [
+   "sniperwarning01.wav",
+   "sniperwarning02.wav",
+   "sniperwarning03.wav",
+   "sniperwarning04.wav"
+  ],
+  "separatist": [
+   "sniperwarning01.wav",
+   "sniperwarning02.wav",
+   "sniperwarning05.wav"
+  ]
+ },
+ "t_death": {
+  "anarchist": [
+   "t_death01.wav",
+   "t_death02.wav",
+   "t_death03.wav",
+   "t_death04.wav",
+   "t_death05.wav"
+  ],
+  "balkan": [
+   "t_death01.wav",
+   "t_death02.wav",
+   "t_death03.wav",
+   "t_death04.wav"
+  ],
+  "leet": [
+   "t_death01.wav",
+   "t_death02.wav",
+   "t_death03.wav"
+  ],
+  "phoenix": [
+   "t_death01.wav",
+   "t_death02.wav",
+   "t_death03.wav",
+   "t_death04.wav",
+   "t_death05.wav"
+  ],
+  "pirate": [
+   "t_death01.wav",
+   "t_death02.wav",
+   "t_death03.wav",
+   "t_death04.wav"
+  ],
+  "professional": [
+   "t_death01.wav",
+   "t_death02.wav",
+   "t_death03.wav",
+   "t_death04.wav",
+   "t_death05.wav",
+   "t_death06.wav",
+   "t_death07.wav"
+  ],
+  "separatist": [
+   "t_death01.wav",
+   "t_death02.wav",
+   "t_death03.wav",
+   "t_death04.wav"
+  ]
+ },
+ "t_decoy": {
+  "anarchist": [
+   "t_decoy01.wav",
+   "t_decoy02.wav",
+   "t_decoy03.wav"
+  ],
+  "balkan": [
+   "t_decoy01.wav",
+   "t_decoy02.wav",
+   "t_decoy03.wav"
+  ],
+  "leet": [
+   "t_decoy01.wav",
+   "t_decoy02.wav",
+   "t_decoy03.wav"
+  ],
+  "phoenix": [
+   "t_decoy01.wav",
+   "t_decoy02.wav",
+   "t_decoy03.wav"
+  ],
+  "pirate": [
+   "t_decoy01.wav",
+   "t_decoy02.wav",
+   "t_decoy03.wav",
+   "t_decoy04.wav"
+  ],
+  "professional": [
+   "t_decoy01.wav",
+   "t_decoy02.wav",
+   "t_decoy03.wav"
+  ],
+  "separatist": [
+   "t_decoy01.wav",
+   "t_decoy02.wav",
+   "t_decoy03.wav"
+  ]
+ },
+ "t_flashbang": {
+  "anarchist": [
+   "t_flashbang01.wav",
+   "t_flashbang02.wav",
+   "t_flashbang03.wav"
+  ],
+  "balkan": [
+   "t_flashbang01.wav",
+   "t_flashbang02.wav",
+   "t_flashbang03.wav"
+  ],
+  "leet": [
+   "t_flashbang01.wav",
+   "t_flashbang03.wav",
+   "t_flashbang04.wav"
+  ],
+  "phoenix": [
+   "t_flashbang01.wav",
+   "t_flashbang02.wav",
+   "t_flashbang03.wav"
+  ],
+  "pirate": [
+   "t_flashbang01.wav",
+   "t_flashbang02.wav",
+   "t_flashbang03.wav"
+  ],
+  "professional": [
+   "t_flashbang01.wav",
+   "t_flashbang03.wav",
+   "t_flashbang04.wav"
+  ],
+  "separatist": [
+   "t_flashbang01.wav",
+   "t_flashbang02.wav",
+   "t_flashbang03.wav"
+  ]
+ },
+ "t_grenade": {
+  "anarchist": [
+   "t_grenade01.wav",
+   "t_grenade02.wav",
+   "t_grenade03.wav"
+  ],
+  "balkan": [
+   "t_grenade01.wav",
+   "t_grenade02.wav",
+   "t_grenade04.wav"
+  ],
+  "leet": [
+   "t_grenade01.wav",
+   "t_grenade02.wav",
+   "t_grenade03.wav",
+   "t_grenade05.wav"
+  ],
+  "phoenix": [
+   "t_grenade02.wav",
+   "t_grenade04.wav",
+   "t_grenade05.wav"
+  ],
+  "pirate": [
+   "t_grenade01.wav",
+   "t_grenade02.wav",
+   "t_grenade04.wav",
+   "t_grenade05.wav"
+  ],
+  "professional": [
+   "t_grenade01.wav",
+   "t_grenade02.wav",
+   "t_grenade05.wav",
+   "t_grenade06.wav"
+  ],
+  "separatist": [
+   "t_grenade01.wav",
+   "t_grenade02.wav",
+   "t_grenade03.wav",
+   "t_grenade04.wav"
+  ]
+ },
+ "t_molotov": {
+  "anarchist": [
+   "t_molotov01.wav",
+   "t_molotov02.wav",
+   "t_molotov03.wav",
+   "t_molotov04.wav",
+   "t_molotov05.wav",
+   "t_molotov06.wav",
+   "t_molotov07.wav",
+   "t_molotov08.wav"
+  ],
+  "balkan": [
+   "t_molotov01.wav",
+   "t_molotov02.wav",
+   "t_molotov04.wav"
+  ],
+  "leet": [
+   "t_molotov01.wav",
+   "t_molotov02.wav",
+   "t_molotov04.wav",
+   "t_molotov05.wav"
+  ],
+  "phoenix": [
+   "t_molotov01.wav",
+   "t_molotov02.wav",
+   "t_molotov03.wav",
+   "t_molotov04.wav",
+   "t_molotov05.wav",
+   "t_molotov07.wav"
+  ],
+  "pirate": [
+   "t_molotov01.wav",
+   "t_molotov02.wav",
+   "t_molotov03.wav",
+   "t_molotov06.wav"
+  ],
+  "professional": [
+   "t_molotov01.wav",
+   "t_molotov03.wav",
+   "t_molotov04.wav",
+   "t_molotov08.wav",
+   "t_molotov11.wav"
+  ],
+  "separatist": [
+   "t_molotov01.wav",
+   "t_molotov02.wav",
+   "t_molotov04.wav",
+   "t_molotov05.wav"
+  ]
+ },
+ "t_smoke": {
+  "anarchist": [
+   "t_smoke01.wav",
+   "t_smoke02.wav",
+   "t_smoke03.wav"
+  ],
+  "balkan": [
+   "t_smoke01.wav",
+   "t_smoke02.wav",
+   "t_smoke03.wav"
+  ],
+  "leet": [
+   "t_smoke01.wav",
+   "t_smoke02.wav",
+   "t_smoke03.wav"
+  ],
+  "phoenix": [
+   "t_smoke01.wav",
+   "t_smoke02.wav",
+   "t_smoke03.wav"
+  ],
+  "pirate": [
+   "t_smoke01.wav",
+   "t_smoke02.wav"
+  ],
+  "professional": [
+   "t_smoke01.wav",
+   "t_smoke03.wav",
+   "t_smoke04.wav",
+   "t_smoke05.wav"
+  ],
+  "separatist": [
+   "t_smoke01.wav",
+   "t_smoke02.wav",
+   "t_smoke03.wav"
+  ]
+ },
+ "thanks": {
+  "anarchist": [
+   "thanks01.wav",
+   "thanks02.wav",
+   "thanks03.wav"
+  ],
+  "balkan": [
+   "thanks01.wav",
+   "thanks02.wav",
+   "thanks03.wav",
+   "thanks04.wav"
+  ],
+  "leet": [
+   "thanks01.wav",
+   "thanks02.wav",
+   "thanks03.wav",
+   "thanks04.wav"
+  ],
+  "phoenix": [
+   "thanks01.wav",
+   "thanks02.wav",
+   "thanks04.wav"
+  ],
+  "pirate": [
+   "thanks01.wav",
+   "thanks04.wav",
+   "thanks05.wav"
+  ],
+  "separatist": [
+   "thanks01.wav",
+   "thanks02.wav",
+   "thanks03.wav"
+  ]
+ },
+ "threeenemiesleft": {
+  "anarchist": [
+   "threeenemiesleft01.wav",
+   "threeenemiesleft02.wav",
+   "threeenemiesleft05.wav"
+  ],
+  "balkan": [
+   "threeenemiesleft02.wav",
+   "threeenemiesleft03.wav",
+   "threeenemiesleft05.wav"
+  ],
+  "leet": [
+   "threeenemiesleft01.wav",
+   "threeenemiesleft02.wav",
+   "threeenemiesleft03.wav",
+   "threeenemiesleft05.wav"
+  ],
+  "phoenix": [
+   "threeenemiesleft01.wav",
+   "threeenemiesleft02.wav",
+   "threeenemiesleft04.wav",
+   "threeenemiesleft05.wav"
+  ],
+  "pirate": [
+   "threeenemiesleft01.wav",
+   "threeenemiesleft02.wav",
+   "threeenemiesleft05.wav"
+  ],
+  "separatist": [
+   "threeenemiesleft01.wav",
+   "threeenemiesleft02.wav",
+   "threeenemiesleft03.wav",
+   "threeenemiesleft04.wav",
+   "threeenemiesleft05.wav",
+   "threeenemiesleft07.wav"
+  ]
+ },
+ "tmap_cs_source": {
+  "anarchist": [
+   "tmap_cs_source07.wav",
+   "tmap_cs_source08.wav",
+   "tmap_cs_source09.wav",
+   "tmap_cs_source13.wav",
+   "tmap_cs_source14.wav",
+   "tmap_cs_source15.wav",
+   "tmap_cs_source19.wav",
+   "tmap_cs_source20.wav",
+   "tmap_cs_source21.wav",
+   "tmap_cs_source25.wav",
+   "tmap_cs_source26.wav",
+   "tmap_cs_source27.wav",
+   "tmap_cs_source28.wav",
+   "tmap_cs_source29.wav",
+   "tmap_cs_source30.wav",
+   "tmap_cs_source43.wav",
+   "tmap_cs_source44.wav",
+   "tmap_cs_source45.wav",
+   "tmap_cs_source46.wav",
+   "tmap_cs_source47.wav",
+   "tmap_cs_source48.wav",
+   "tmap_cs_source49.wav",
+   "tmap_cs_source50.wav",
+   "tmap_cs_source51.wav",
+   "tmap_cs_source55.wav",
+   "tmap_cs_source56.wav",
+   "tmap_cs_source57.wav",
+   "tmap_cs_source61.wav",
+   "tmap_cs_source62.wav",
+   "tmap_cs_source63.wav",
+   "tmap_cs_source64.wav",
+   "tmap_cs_source65.wav",
+   "tmap_cs_source66.wav",
+   "tmap_cs_source76.wav",
+   "tmap_cs_source77.wav",
+   "tmap_cs_source78.wav",
+   "tmap_cs_source81.wav",
+   "tmap_cs_source82.wav",
+   "tmap_cs_source83.wav",
+   "tmap_cs_source84.wav",
+   "tmap_cs_source85.wav",
+   "tmap_cs_source86.wav",
+   "tmap_cs_source87.wav",
+   "tmap_cs_source88.wav",
+   "tmap_cs_source89.wav",
+   "tmap_cs_source93.wav",
+   "tmap_cs_source94.wav",
+   "tmap_cs_source95.wav",
+   "tmap_cs_source96.wav",
+   "tmap_cs_source97.wav",
+   "tmap_cs_source98.wav"
+  ],
+  "balkan": [
+   "tmap_cs_source01.wav",
+   "tmap_cs_source02.wav",
+   "tmap_cs_source03.wav",
+   "tmap_cs_source04.wav",
+   "tmap_cs_source05.wav",
+   "tmap_cs_source06.wav",
+   "tmap_cs_source09.wav",
+   "tmap_cs_source10.wav",
+   "tmap_cs_source109.wav",
+   "tmap_cs_source11.wav",
+   "tmap_cs_source110.wav",
+   "tmap_cs_source111.wav",
+   "tmap_cs_source112.wav",
+   "tmap_cs_source113.wav",
+   "tmap_cs_source114.wav",
+   "tmap_cs_source115.wav",
+   "tmap_cs_source116.wav",
+   "tmap_cs_source117.wav",
+   "tmap_cs_source118.wav",
+   "tmap_cs_source119.wav",
+   "tmap_cs_source12.wav",
+   "tmap_cs_source120.wav",
+   "tmap_cs_source13.wav",
+   "tmap_cs_source130.wav",
+   "tmap_cs_source131.wav",
+   "tmap_cs_source132.wav",
+   "tmap_cs_source133.wav",
+   "tmap_cs_source134.wav",
+   "tmap_cs_source135.wav",
+   "tmap_cs_source136.wav",
+   "tmap_cs_source137.wav",
+   "tmap_cs_source138.wav",
+   "tmap_cs_source139.wav",
+   "tmap_cs_source14.wav",
+   "tmap_cs_source140.wav",
+   "tmap_cs_source141.wav",
+   "tmap_cs_source145.wav",
+   "tmap_cs_source146.wav",
+   "tmap_cs_source147.wav",
+   "tmap_cs_source148.wav",
+   "tmap_cs_source149.wav",
+   "tmap_cs_source15.wav",
+   "tmap_cs_source49.wav",
+   "tmap_cs_source50.wav",
+   "tmap_cs_source51.wav",
+   "tmap_cs_source55.wav",
+   "tmap_cs_source56.wav",
+   "tmap_cs_source57.wav",
+   "tmap_cs_source61.wav",
+   "tmap_cs_source62.wav",
+   "tmap_cs_source63.wav",
+   "tmap_cs_source64.wav",
+   "tmap_cs_source65.wav",
+   "tmap_cs_source66.wav",
+   "tmap_cs_source67.wav",
+   "tmap_cs_source68.wav",
+   "tmap_cs_source69.wav",
+   "tmap_cs_source70.wav",
+   "tmap_cs_source71.wav",
+   "tmap_cs_source72.wav",
+   "tmap_cs_source76.wav",
+   "tmap_cs_source77.wav",
+   "tmap_cs_source78.wav",
+   "tmap_cs_source91.wav",
+   "tmap_cs_source92.wav",
+   "tmap_cs_source93.wav",
+   "tmap_cs_source94.wav",
+   "tmap_cs_source95.wav",
+   "tmap_cs_source96.wav",
+   "tmap_cs_source97.wav",
+   "tmap_cs_source98.wav",
+   "tmap_cs_source99.wav"
+  ],
+  "leet": [
+   "tmap_cs_source01.wav",
+   "tmap_cs_source02.wav",
+   "tmap_cs_source03.wav",
+   "tmap_cs_source07.wav",
+   "tmap_cs_source08.wav",
+   "tmap_cs_source09.wav",
+   "tmap_cs_source10.wav",
+   "tmap_cs_source11.wav",
+   "tmap_cs_source12.wav",
+   "tmap_cs_source13.wav",
+   "tmap_cs_source14.wav",
+   "tmap_cs_source15.wav",
+   "tmap_cs_source22.wav",
+   "tmap_cs_source23.wav",
+   "tmap_cs_source24.wav",
+   "tmap_cs_source25.wav",
+   "tmap_cs_source26.wav",
+   "tmap_cs_source28.wav",
+   "tmap_cs_source32.wav",
+   "tmap_cs_source33.wav",
+   "tmap_cs_source34.wav",
+   "tmap_cs_source35.wav",
+   "tmap_cs_source36.wav",
+   "tmap_cs_source37.wav",
+   "tmap_cs_source41.wav",
+   "tmap_cs_source42.wav",
+   "tmap_cs_source43.wav",
+   "tmap_cs_source53.wav",
+   "tmap_cs_source54.wav",
+   "tmap_cs_source55.wav",
+   "tmap_cs_source62.wav",
+   "tmap_cs_source63.wav",
+   "tmap_cs_source65.wav",
+   "tmap_cs_source66.wav",
+   "tmap_cs_source67.wav",
+   "tmap_cs_source71.wav",
+   "tmap_cs_source73.wav",
+   "tmap_cs_source74.wav",
+   "tmap_cs_source75.wav"
+  ],
+  "phoenix": [
+   "tmap_cs_source01.wav",
+   "tmap_cs_source02.wav",
+   "tmap_cs_source03.wav",
+   "tmap_cs_source04.wav",
+   "tmap_cs_source05.wav",
+   "tmap_cs_source06.wav",
+   "tmap_cs_source07.wav",
+   "tmap_cs_source08.wav",
+   "tmap_cs_source09.wav",
+   "tmap_cs_source10.wav",
+   "tmap_cs_source103.wav",
+   "tmap_cs_source104.wav",
+   "tmap_cs_source105.wav",
+   "tmap_cs_source11.wav",
+   "tmap_cs_source15.wav",
+   "tmap_cs_source16.wav",
+   "tmap_cs_source17.wav",
+   "tmap_cs_source18.wav",
+   "tmap_cs_source19.wav",
+   "tmap_cs_source20.wav",
+   "tmap_cs_source34.wav",
+   "tmap_cs_source35.wav",
+   "tmap_cs_source36.wav",
+   "tmap_cs_source37.wav",
+   "tmap_cs_source38.wav",
+   "tmap_cs_source39.wav",
+   "tmap_cs_source40.wav",
+   "tmap_cs_source41.wav",
+   "tmap_cs_source42.wav",
+   "tmap_cs_source43.wav",
+   "tmap_cs_source44.wav",
+   "tmap_cs_source45.wav",
+   "tmap_cs_source52.wav",
+   "tmap_cs_source53.wav",
+   "tmap_cs_source54.wav",
+   "tmap_cs_source55.wav",
+   "tmap_cs_source56.wav",
+   "tmap_cs_source57.wav",
+   "tmap_cs_source62.wav",
+   "tmap_cs_source63.wav",
+   "tmap_cs_source64.wav",
+   "tmap_cs_source82.wav",
+   "tmap_cs_source83.wav",
+   "tmap_cs_source84.wav",
+   "tmap_cs_source95.wav"
+  ],
+  "pirate": [
+   "tmap_cs_source01.wav",
+   "tmap_cs_source02.wav",
+   "tmap_cs_source03.wav",
+   "tmap_cs_source04.wav",
+   "tmap_cs_source05.wav",
+   "tmap_cs_source06.wav",
+   "tmap_cs_source07.wav",
+   "tmap_cs_source08.wav",
+   "tmap_cs_source09.wav",
+   "tmap_cs_source10.wav",
+   "tmap_cs_source11.wav",
+   "tmap_cs_source12.wav",
+   "tmap_cs_source13.wav",
+   "tmap_cs_source14.wav",
+   "tmap_cs_source15.wav",
+   "tmap_cs_source16.wav",
+   "tmap_cs_source17.wav",
+   "tmap_cs_source18.wav",
+   "tmap_cs_source19.wav",
+   "tmap_cs_source20.wav",
+   "tmap_cs_source21.wav",
+   "tmap_cs_source22.wav",
+   "tmap_cs_source23.wav",
+   "tmap_cs_source24.wav",
+   "tmap_cs_source25.wav",
+   "tmap_cs_source26.wav",
+   "tmap_cs_source27.wav",
+   "tmap_cs_source28.wav",
+   "tmap_cs_source29.wav",
+   "tmap_cs_source30.wav",
+   "tmap_cs_source31.wav",
+   "tmap_cs_source32.wav",
+   "tmap_cs_source33.wav",
+   "tmap_cs_source34.wav",
+   "tmap_cs_source35.wav",
+   "tmap_cs_source36.wav",
+   "tmap_cs_source37.wav",
+   "tmap_cs_source38.wav",
+   "tmap_cs_source39.wav",
+   "tmap_cs_source40.wav",
+   "tmap_cs_source41.wav",
+   "tmap_cs_source42.wav",
+   "tmap_cs_source43.wav",
+   "tmap_cs_source44.wav",
+   "tmap_cs_source45.wav",
+   "tmap_cs_source46.wav",
+   "tmap_cs_source47.wav",
+   "tmap_cs_source48.wav",
+   "tmap_cs_source49.wav",
+   "tmap_cs_source50.wav",
+   "tmap_cs_source51.wav",
+   "tmap_cs_source52.wav",
+   "tmap_cs_source53.wav",
+   "tmap_cs_source54.wav",
+   "tmap_cs_source55.wav",
+   "tmap_cs_source56.wav",
+   "tmap_cs_source57.wav",
+   "tmap_cs_source58.wav",
+   "tmap_cs_source59.wav",
+   "tmap_cs_source60.wav",
+   "tmap_cs_source61.wav",
+   "tmap_cs_source62.wav"
+  ]
+ },
+ "twoenemiesleft": {
+  "anarchist": [
+   "twoenemiesleft01.wav",
+   "twoenemiesleft02.wav",
+   "twoenemiesleft03.wav",
+   "twoenemiesleft04.wav",
+   "twoenemiesleft05.wav"
+  ],
+  "balkan": [
+   "twoenemiesleft01.wav",
+   "twoenemiesleft02.wav",
+   "twoenemiesleft03.wav",
+   "twoenemiesleft04.wav",
+   "twoenemiesleft05.wav"
+  ],
+  "leet": [
+   "twoenemiesleft01.wav",
+   "twoenemiesleft02.wav",
+   "twoenemiesleft03.wav",
+   "twoenemiesleft04.wav",
+   "twoenemiesleft05.wav"
+  ],
+  "phoenix": [
+   "twoenemiesleft01.wav",
+   "twoenemiesleft02.wav",
+   "twoenemiesleft03.wav",
+   "twoenemiesleft04.wav",
+   "twoenemiesleft05.wav"
+  ],
+  "pirate": [
+   "twoenemiesleft01.wav",
+   "twoenemiesleft02.wav",
+   "twoenemiesleft03.wav",
+   "twoenemiesleft04.wav",
+   "twoenemiesleft05.wav"
+  ],
+  "separatist": [
+   "twoenemiesleft01.wav",
+   "twoenemiesleft02.wav",
+   "twoenemiesleft03.wav",
+   "twoenemiesleft04.wav",
+   "twoenemiesleft05.wav",
+   "twoenemiesleft06.wav"
+  ]
+ },
+ "waitinghere": {
+  "anarchist": [
+   "waitinghere01.wav",
+   "waitinghere02.wav",
+   "waitinghere03.wav",
+   "waitinghere04.wav"
+  ],
+  "balkan": [
+   "waitinghere01.wav",
+   "waitinghere02.wav",
+   "waitinghere03.wav"
+  ],
+  "leet": [
+   "waitinghere01.wav",
+   "waitinghere02.wav",
+   "waitinghere03.wav"
+  ],
+  "phoenix": [
+   "waitinghere01.wav",
+   "waitinghere02.wav",
+   "waitinghere03.wav"
+  ],
+  "pirate": [
+   "waitinghere01.wav",
+   "waitinghere02.wav",
+   "waitinghere03.wav",
+   "waitinghere04.wav",
+   "waitinghere05.wav"
+  ],
+  "professional": [
+   "waitinghere01.wav"
+  ],
+  "separatist": [
+   "waitinghere01.wav",
+   "waitinghere02.wav",
+   "waitinghere03.wav"
+  ]
+ },
+ "bombtickingdown": {
+  "balkan": [
+   "bombtickingdown01.wav",
+   "bombtickingdown02.wav",
+   "bombtickingdown03.wav",
+   "bombtickingdown04.wav"
+  ],
+  "leet": [
+   "bombtickingdown01.wav",
+   "bombtickingdown02.wav",
+   "bombtickingdown03.wav",
+   "bombtickingdown05.wav"
+  ],
+  "phoenix": [
+   "bombtickingdown01.wav",
+   "bombtickingdown02.wav",
+   "bombtickingdown03.wav",
+   "bombtickingdown04.wav",
+   "bombtickingdown05.wav"
+  ],
+  "pirate": [
+   "bombtickingdown01.wav",
+   "bombtickingdown02.wav",
+   "bombtickingdown03.wav",
+   "bombtickingdown04.wav",
+   "bombtickingdown05.wav",
+   "bombtickingdown06.wav"
+  ],
+  "separatist": [
+   "bombtickingdown01.wav",
+   "bombtickingdown02.wav",
+   "bombtickingdown03.wav",
+   "bombtickingdown04.wav"
+  ]
+ },
+ "defendingbombsitea": {
+  "balkan": [
+   "defendingbombsitea01.wav",
+   "defendingbombsitea02.wav",
+   "defendingbombsitea03.wav"
+  ],
+  "leet": [
+   "defendingbombsitea01.wav",
+   "defendingbombsitea02.wav",
+   "defendingbombsitea03.wav",
+   "defendingbombsitea04.wav"
+  ],
+  "phoenix": [
+   "defendingbombsitea01.wav",
+   "defendingbombsitea02.wav",
+   "defendingbombsitea03.wav",
+   "defendingbombsitea04.wav"
+  ],
+  "pirate": [
+   "defendingbombsitea01.wav",
+   "defendingbombsitea02.wav",
+   "defendingbombsitea03.wav"
+  ],
+  "separatist": [
+   "defendingbombsitea01.wav",
+   "defendingbombsitea02.wav",
+   "defendingbombsitea03.wav",
+   "defendingbombsitea04.wav",
+   "defendingbombsitea05.wav"
+  ]
+ },
+ "defendingbombsiteb": {
+  "balkan": [
+   "defendingbombsiteb01.wav",
+   "defendingbombsiteb02.wav",
+   "defendingbombsiteb03.wav",
+   "defendingbombsiteb04.wav"
+  ],
+  "leet": [
+   "defendingbombsiteb01.wav",
+   "defendingbombsiteb02.wav",
+   "defendingbombsiteb03.wav",
+   "defendingbombsiteb04.wav",
+   "defendingbombsiteb05.wav"
+  ],
+  "phoenix": [
+   "defendingbombsiteb01.wav",
+   "defendingbombsiteb02.wav",
+   "defendingbombsiteb03.wav",
+   "defendingbombsiteb04.wav",
+   "defendingbombsiteb05.wav"
+  ],
+  "separatist": [
+   "defendingbombsiteb01.wav",
+   "defendingbombsiteb02.wav",
+   "defendingbombsiteb03.wav"
+  ]
+ },
+ "goingtodefendbombsite": {
+  "balkan": [
+   "goingtodefendbombsite01.wav",
+   "goingtodefendbombsite02.wav",
+   "goingtodefendbombsite03.wav",
+   "goingtodefendbombsite04.wav"
+  ],
+  "leet": [
+   "goingtodefendbombsite01.wav",
+   "goingtodefendbombsite02.wav",
+   "goingtodefendbombsite03.wav",
+   "goingtodefendbombsite05.wav"
+  ],
+  "phoenix": [
+   "goingtodefendbombsite01.wav",
+   "goingtodefendbombsite02.wav",
+   "goingtodefendbombsite03.wav",
+   "goingtodefendbombsite04.wav"
+  ],
+  "pirate": [
+   "goingtodefendbombsite01.wav",
+   "goingtodefendbombsite02.wav",
+   "goingtodefendbombsite03.wav",
+   "goingtodefendbombsite04.wav"
+  ],
+  "separatist": [
+   "goingtodefendbombsite01.wav",
+   "goingtodefendbombsite02.wav",
+   "goingtodefendbombsite03.wav"
+  ]
+ },
+ "goingtoplantbomb": {
+  "balkan": [
+   "goingtoplantbomb01.wav",
+   "goingtoplantbomb02.wav",
+   "goingtoplantbomb03.wav"
+  ],
+  "leet": [
+   "goingtoplantbomb01.wav",
+   "goingtoplantbomb02.wav",
+   "goingtoplantbomb03.wav"
+  ],
+  "phoenix": [
+   "goingtoplantbomb01.wav",
+   "goingtoplantbomb02.wav",
+   "goingtoplantbomb03.wav"
+  ],
+  "pirate": [
+   "goingtoplantbomb01.wav",
+   "goingtoplantbomb02.wav",
+   "goingtoplantbomb03.wav"
+  ],
+  "separatist": [
+   "goingtoplantbomb01.wav",
+   "goingtoplantbomb02.wav",
+   "goingtoplantbomb03.wav"
+  ]
+ },
+ "goingtoplantbomba": {
+  "balkan": [
+   "goingtoplantbomba01.wav",
+   "goingtoplantbomba02.wav",
+   "goingtoplantbomba03.wav"
+  ],
+  "leet": [
+   "goingtoplantbomba01.wav",
+   "goingtoplantbomba02.wav",
+   "goingtoplantbomba03.wav"
+  ],
+  "phoenix": [
+   "goingtoplantbomba01.wav",
+   "goingtoplantbomba02.wav",
+   "goingtoplantbomba03.wav"
+  ],
+  "pirate": [
+   "goingtoplantbomba01.wav",
+   "goingtoplantbomba02.wav",
+   "goingtoplantbomba03.wav"
+  ],
+  "separatist": [
+   "goingtoplantbomba01.wav",
+   "goingtoplantbomba02.wav",
+   "goingtoplantbomba03.wav"
+  ]
+ },
+ "goingtoplantbombb": {
+  "balkan": [
+   "goingtoplantbombb01.wav",
+   "goingtoplantbombb02.wav"
+  ],
+  "leet": [
+   "goingtoplantbombb01.wav",
+   "goingtoplantbombb02.wav"
+  ],
+  "phoenix": [
+   "goingtoplantbombb01.wav",
+   "goingtoplantbombb02.wav"
+  ],
+  "separatist": [
+   "goingtoplantbombb01.wav",
+   "goingtoplantbombb02.wav"
+  ]
+ },
+ "plantingbomb": {
+  "balkan": [
+   "plantingbomb01.wav",
+   "plantingbomb02.wav",
+   "plantingbomb04.wav"
+  ],
+  "leet": [
+   "plantingbomb01.wav",
+   "plantingbomb02.wav"
+  ],
+  "phoenix": [
+   "plantingbomb01.wav",
+   "plantingbomb02.wav",
+   "plantingbomb03.wav",
+   "plantingbomb04.wav"
+  ],
+  "pirate": [
+   "plantingbomb01.wav",
+   "plantingbomb02.wav",
+   "plantingbomb05.wav"
+  ],
+  "separatist": [
+   "plantingbomb01.wav",
+   "plantingbomb02.wav",
+   "plantingbomb05.wav"
+  ]
+ },
+ "spottedloosebomb": {
+  "balkan": [
+   "spottedloosebomb01.wav",
+   "spottedloosebomb02.wav",
+   "spottedloosebomb04.wav",
+   "spottedloosebomb05.wav",
+   "spottedloosebomb06.wav"
+  ],
+  "leet": [
+   "spottedloosebomb01.wav",
+   "spottedloosebomb02.wav",
+   "spottedloosebomb03.wav",
+   "spottedloosebomb04.wav",
+   "spottedloosebomb05.wav",
+   "spottedloosebomb06.wav",
+   "spottedloosebomb07.wav"
+  ],
+  "phoenix": [
+   "spottedloosebomb01.wav",
+   "spottedloosebomb02.wav",
+   "spottedloosebomb03.wav",
+   "spottedloosebomb04.wav",
+   "spottedloosebomb05.wav",
+   "spottedloosebomb06.wav"
+  ],
+  "pirate": [
+   "spottedloosebomb01.wav",
+   "spottedloosebomb02.wav",
+   "spottedloosebomb03.wav",
+   "spottedloosebomb04.wav",
+   "spottedloosebomb05.wav",
+   "spottedloosebomb06.wav",
+   "spottedloosebomb07.wav",
+   "spottedloosebomb08.wav"
+  ],
+  "separatist": [
+   "spottedloosebomb01.wav",
+   "spottedloosebomb02.wav",
+   "spottedloosebomb03.wav",
+   "spottedloosebomb04.wav",
+   "spottedloosebomb05.wav",
+   "spottedloosebomb06.wav",
+   "spottedloosebomb07.wav"
+  ]
+ },
+ "tmap_cs_italy": {
+  "balkan": [
+   "tmap_cs_italy01.wav",
+   "tmap_cs_italy02.wav",
+   "tmap_cs_italy03.wav",
+   "tmap_cs_italy04.wav",
+   "tmap_cs_italy05.wav",
+   "tmap_cs_italy06.wav"
+  ],
+  "leet": [
+   "tmap_cs_italy01.wav",
+   "tmap_cs_italy02.wav"
+  ],
+  "professional": [
+   "tmap_cs_italy10.wav",
+   "tmap_cs_italy11.wav",
+   "tmap_cs_italy28.wav",
+   "tmap_cs_italy35.wav",
+   "tmap_cs_italy36.wav",
+   "tmap_cs_italy37.wav",
+   "tmap_cs_italy44.wav",
+   "tmap_cs_italy45.wav",
+   "tmap_cs_italy46.wav",
+   "tmap_cs_italy50.wav",
+   "tmap_cs_italy51.wav",
+   "tmap_cs_italy52.wav"
+  ],
+  "separatist": [
+   "tmap_cs_italy01.wav",
+   "tmap_cs_italy02.wav",
+   "tmap_cs_italy04.wav",
+   "tmap_cs_italy05.wav",
+   "tmap_cs_italy06.wav",
+   "tmap_cs_italy07.wav",
+   "tmap_cs_italy08.wav",
+   "tmap_cs_italy09.wav",
+   "tmap_cs_italy10.wav",
+   "tmap_cs_italy11.wav",
+   "tmap_cs_italy12.wav",
+   "tmap_cs_italy13.wav",
+   "tmap_cs_italy15.wav",
+   "tmap_cs_italy16.wav",
+   "tmap_cs_italy17.wav",
+   "tmap_cs_italy24.wav",
+   "tmap_cs_italy25.wav",
+   "tmap_cs_italy26.wav",
+   "tmap_cs_italy27.wav",
+   "tmap_cs_italy28.wav",
+   "tmap_cs_italy29.wav",
+   "tmap_cs_italy30.wav",
+   "tmap_cs_italy31.wav",
+   "tmap_cs_italy32.wav",
+   "tmap_cs_italy33.wav",
+   "tmap_cs_italy34.wav",
+   "tmap_cs_italy35.wav",
+   "tmap_cs_italy36.wav",
+   "tmap_cs_italy37.wav",
+   "tmap_cs_italy38.wav",
+   "tmap_cs_italy39.wav",
+   "tmap_cs_italy40.wav",
+   "tmap_cs_italy41.wav",
+   "tmap_cs_italy42.wav",
+   "tmap_cs_italy43.wav",
+   "tmap_cs_italy44.wav",
+   "tmap_cs_italy45.wav",
+   "tmap_cs_italy46.wav",
+   "tmap_cs_italy47.wav",
+   "tmap_cs_italy48.wav",
+   "tmap_cs_italy49.wav",
+   "tmap_cs_italy50.wav",
+   "tmap_cs_italy51.wav",
+   "tmap_cs_italy52.wav",
+   "tmap_cs_italy53.wav",
+   "tmap_cs_italy54.wav",
+   "tmap_cs_italy55.wav",
+   "tmap_cs_italy56.wav",
+   "tmap_cs_italy57.wav",
+   "tmap_cs_italy58.wav"
+  ]
+ },
+ "tmap_cs_office": {
+  "balkan": [
+   "tmap_cs_office01.wav",
+   "tmap_cs_office02.wav",
+   "tmap_cs_office03.wav"
+  ],
+  "leet": [
+   "tmap_cs_office01.wav",
+   "tmap_cs_office02.wav",
+   "tmap_cs_office03.wav",
+   "tmap_cs_office04.wav",
+   "tmap_cs_office05.wav",
+   "tmap_cs_office06.wav"
+  ],
+  "phoenix": [
+   "tmap_cs_office04.wav",
+   "tmap_cs_office05.wav",
+   "tmap_cs_office06.wav"
+  ],
+  "professional": [
+   "tmap_cs_office04.wav",
+   "tmap_cs_office05.wav",
+   "tmap_cs_office06.wav",
+   "tmap_cs_office10.wav",
+   "tmap_cs_office17.wav",
+   "tmap_cs_office18.wav",
+   "tmap_cs_office19.wav",
+   "tmap_cs_office20.wav",
+   "tmap_cs_office21.wav",
+   "tmap_cs_office22.wav",
+   "tmap_cs_office36.wav",
+   "tmap_cs_office37.wav",
+   "tmap_cs_office38.wav"
+  ]
+ },
+ "tmap_de_dust": {
+  "balkan": [
+   "tmap_de_dust04.wav",
+   "tmap_de_dust05.wav",
+   "tmap_de_dust06.wav",
+   "tmap_de_dust07.wav",
+   "tmap_de_dust08.wav",
+   "tmap_de_dust09.wav",
+   "tmap_de_dust11.wav",
+   "tmap_de_dust14.wav",
+   "tmap_de_dust15.wav",
+   "tmap_de_dust19.wav",
+   "tmap_de_dust20.wav",
+   "tmap_de_dust21.wav"
+  ],
+  "leet": [
+   "tmap_de_dust01.wav",
+   "tmap_de_dust02.wav",
+   "tmap_de_dust03.wav",
+   "tmap_de_dust04.wav",
+   "tmap_de_dust05.wav",
+   "tmap_de_dust06.wav",
+   "tmap_de_dust07.wav",
+   "tmap_de_dust08.wav",
+   "tmap_de_dust09.wav",
+   "tmap_de_dust10.wav",
+   "tmap_de_dust11.wav",
+   "tmap_de_dust12.wav",
+   "tmap_de_dust13.wav",
+   "tmap_de_dust14.wav",
+   "tmap_de_dust15.wav",
+   "tmap_de_dust17.wav",
+   "tmap_de_dust18.wav",
+   "tmap_de_dust19.wav",
+   "tmap_de_dust20.wav",
+   "tmap_de_dust21.wav",
+   "tmap_de_dust23.wav",
+   "tmap_de_dust24.wav",
+   "tmap_de_dust25.wav",
+   "tmap_de_dust26.wav",
+   "tmap_de_dust27.wav",
+   "tmap_de_dust28.wav",
+   "tmap_de_dust29.wav",
+   "tmap_de_dust30.wav",
+   "tmap_de_dust31.wav",
+   "tmap_de_dust32.wav",
+   "tmap_de_dust33.wav",
+   "tmap_de_dust34.wav",
+   "tmap_de_dust35.wav"
+  ],
+  "phoenix": [
+   "tmap_de_dust13.wav",
+   "tmap_de_dust14.wav",
+   "tmap_de_dust15.wav",
+   "tmap_de_dust16.wav",
+   "tmap_de_dust17.wav",
+   "tmap_de_dust18.wav",
+   "tmap_de_dust22.wav",
+   "tmap_de_dust23.wav",
+   "tmap_de_dust24.wav"
+  ]
+ },
+ "tmap_de_aztec": {
+  "leet": [
+   "tmap_de_aztec01.wav",
+   "tmap_de_aztec02.wav",
+   "tmap_de_aztec03.wav",
+   "tmap_de_aztec04.wav",
+   "tmap_de_aztec05.wav",
+   "tmap_de_aztec07.wav",
+   "tmap_de_aztec08.wav",
+   "tmap_de_aztec09.wav",
+   "tmap_de_aztec10.wav",
+   "tmap_de_aztec11.wav",
+   "tmap_de_aztec12.wav",
+   "tmap_de_aztec13.wav"
+  ],
+  "professional": [
+   "tmap_de_aztec04.wav",
+   "tmap_de_aztec05.wav",
+   "tmap_de_aztec06.wav"
+  ]
+ },
+ "tmap_de_bank": {
+  "leet": [
+   "tmap_de_bank01.wav",
+   "tmap_de_bank02.wav",
+   "tmap_de_bank03.wav"
+  ],
+  "professional": [
+   "tmap_de_bank01.wav",
+   "tmap_de_bank02.wav",
+   "tmap_de_bank03.wav",
+   "tmap_de_bank04.wav",
+   "tmap_de_bank05.wav",
+   "tmap_de_bank06.wav",
+   "tmap_de_bank07.wav",
+   "tmap_de_bank08.wav",
+   "tmap_de_bank09.wav",
+   "tmap_de_bank10.wav",
+   "tmap_de_bank11.wav",
+   "tmap_de_bank12.wav",
+   "tmap_de_bank15.wav",
+   "tmap_de_bank20.wav",
+   "tmap_de_bank23.wav",
+   "tmap_de_bank24.wav",
+   "tmap_de_bank25.wav",
+   "tmap_de_bank29.wav",
+   "tmap_de_bank30.wav",
+   "tmap_de_bank31.wav",
+   "tmap_de_bank32.wav",
+   "tmap_de_bank33.wav",
+   "tmap_de_bank34.wav",
+   "tmap_de_bank35.wav",
+   "tmap_de_bank36.wav",
+   "tmap_de_bank37.wav",
+   "tmap_de_bank38.wav"
+  ]
+ },
+ "radiobotwait": {
+  "pirate": [
+   "radiobotwait01.wav"
+  ]
+ },
+ "radiobombsite": {
+  "professional": [
+   "radiobombsite01.wav",
+   "radiobombsite02.wav",
+   "radiobombsite03.wav"
+  ]
+ },
+ "radiobotbombatsafe": {
+  "professional": [
+   "radiobotbombatsafe01.wav",
+   "radiobotbombatsafe02.wav",
+   "radiobotbombatsafe03.wav"
+  ]
+ },
+ "radiobotbombdefusing": {
+  "professional": [
+   "radiobotbombdefusing01.wav",
+   "radiobotbombdefusing02.wav",
+   "radiobotbombdefusing05.wav"
+  ]
+ },
+ "radiobotcheer": {
+  "professional": [
+   "radiobotcheer01.wav",
+   "radiobotcheer02.wav",
+   "radiobotcheer03.wav",
+   "radiobotcheer06.wav",
+   "radiobotcheer08.wav",
+   "radiobotcheer09.wav",
+   "radiobotcheer10.wav",
+   "radiobotcheer11.wav",
+   "radiobotcheer12.wav",
+   "radiobotcheer13.wav"
+  ]
+ },
+ "radiobotclear": {
+  "professional": [
+   "radiobotclear01.wav",
+   "radiobotclear02.wav",
+   "radiobotclear03.wav",
+   "radiobotclear04.wav",
+   "radiobotclear05.wav",
+   "radiobotclear06.wav",
+   "radiobotclear07.wav"
+  ]
+ },
+ "radiobotfollowme": {
+  "professional": [
+   "radiobotfollowme01.wav",
+   "radiobotfollowme02.wav",
+   "radiobotfollowme03.wav",
+   "radiobotfollowme04.wav",
+   "radiobotfollowme06.wav"
+  ]
+ },
+ "radiobotfollowyou": {
+  "professional": [
+   "radiobotfollowyou01.wav",
+   "radiobotfollowyou02.wav",
+   "radiobotfollowyou03.wav",
+   "radiobotfollowyou04.wav",
+   "radiobotfollowyou05.wav"
+  ]
+ },
+ "radiobotgo": {
+  "professional": [
+   "radiobotgo01.wav",
+   "radiobotgo02.wav",
+   "radiobotgo03.wav",
+   "radiobotgo04.wav",
+   "radiobotgo05.wav",
+   "radiobotgo06.wav",
+   "radiobotgo07.wav",
+   "radiobotgo08.wav",
+   "radiobotgo09.wav"
+  ]
+ },
+ "radiobotguarding": {
+  "professional": [
+   "radiobotguarding01.wav",
+   "radiobotguarding02.wav",
+   "radiobotguarding03.wav",
+   "radiobotguarding04.wav",
+   "radiobotguarding05.wav",
+   "radiobotguarding06.wav",
+   "radiobotguarding07.wav"
+  ]
+ },
+ "radiobotguardinga": {
+  "professional": [
+   "radiobotguardinga01.wav",
+   "radiobotguardinga02.wav",
+   "radiobotguardinga03.wav"
+  ]
+ },
+ "radiobotguardingb": {
+  "professional": [
+   "radiobotguardingb01.wav",
+   "radiobotguardingb02.wav",
+   "radiobotguardingb03.wav"
+  ]
+ },
+ "radiobotguardingc": {
+  "professional": [
+   "radiobotguardingc01.wav",
+   "radiobotguardingc02.wav",
+   "radiobotguardingc03.wav"
+  ]
+ },
+ "radiobothear": {
+  "professional": [
+   "radiobothear01.wav",
+   "radiobothear02.wav",
+   "radiobothear03.wav",
+   "radiobothear04.wav",
+   "radiobothear05.wav",
+   "radiobothear06.wav"
+  ]
+ },
+ "radiobotkill": {
+  "professional": [
+   "radiobotkill01.wav",
+   "radiobotkill04.wav",
+   "radiobotkill06.wav",
+   "radiobotkill07.wav",
+   "radiobotkill08.wav",
+   "radiobotkill09.wav",
+   "radiobotkill10.wav",
+   "radiobotkill11.wav"
+  ]
+ },
+ "radiobotkillcount": {
+  "professional": [
+   "radiobotkillcount02.wav",
+   "radiobotkillcount03.wav",
+   "radiobotkillcount04.wav",
+   "radiobotkillcount05.wav",
+   "radiobotkillcount07.wav",
+   "radiobotkillcount09.wav",
+   "radiobotkillcount10.wav",
+   "radiobotkillcount12.wav",
+   "radiobotkillcount13.wav",
+   "radiobotkillcount15.wav",
+   "radiobotkillcount16.wav",
+   "radiobotkillcount18.wav",
+   "radiobotkillcount19.wav",
+   "radiobotkillcount21.wav",
+   "radiobotkillcount22.wav",
+   "radiobotkillcount24.wav",
+   "radiobotkillcount25.wav",
+   "radiobotkillcount27.wav"
+  ]
+ },
+ "radiobotkillsniper": {
+  "professional": [
+   "radiobotkillsniper01.wav",
+   "radiobotkillsniper02.wav",
+   "radiobotkillsniper03.wav",
+   "radiobotkillsniper04.wav",
+   "radiobotkillsniper05.wav",
+   "radiobotkillsniper06.wav"
+  ]
+ },
+ "radiobotniceshot": {
+  "professional": [
+   "radiobotniceshot01.wav",
+   "radiobotniceshot02.wav",
+   "radiobotniceshot03.wav",
+   "radiobotniceshot04.wav",
+   "radiobotniceshot05.wav",
+   "radiobotniceshot06.wav",
+   "radiobotniceshot07.wav",
+   "radiobotniceshot08.wav",
+   "radiobotniceshot09.wav",
+   "radiobotniceshot10.wav",
+   "radiobotniceshot11.wav",
+   "radiobotniceshot12.wav",
+   "radiobotniceshot13.wav"
+  ]
+ },
+ "radiobotplanting": {
+  "professional": [
+   "radiobotplanting01.wav",
+   "radiobotplanting02.wav",
+   "radiobotplanting03.wav",
+   "radiobotplanting04.wav",
+   "radiobotplanting05.wav",
+   "radiobotplanting06.wav",
+   "radiobotplanting07.wav"
+  ]
+ },
+ "radiobotplantinggo": {
+  "professional": [
+   "radiobotplantinggo01.wav",
+   "radiobotplantinggo02.wav",
+   "radiobotplantinggo03.wav"
+  ]
+ },
+ "radiobotplantinggoa": {
+  "professional": [
+   "radiobotplantinggoa01.wav",
+   "radiobotplantinggoa02.wav"
+  ]
+ },
+ "radiobotplantinggob": {
+  "professional": [
+   "radiobotplantinggob01.wav",
+   "radiobotplantinggob02.wav"
+  ]
+ },
+ "radiobotplantinggoc": {
+  "professional": [
+   "radiobotplantinggoc01.wav",
+   "radiobotplantinggoc02.wav",
+   "radiobotplantinggoc03.wav"
+  ]
+ },
+ "radiobotplantinggosafe": {
+  "professional": [
+   "radiobotplantinggosafe01.wav",
+   "radiobotplantinggosafe02.wav",
+   "radiobotplantinggosafe03.wav"
+  ]
+ },
+ "radiobotpostflash": {
+  "professional": [
+   "radiobotpostflash01.wav",
+   "radiobotpostflash02.wav",
+   "radiobotpostflash03.wav",
+   "radiobotpostflash04.wav"
+  ]
+ },
+ "radiobotquery": {
+  "professional": [
+   "radiobotquery01.wav",
+   "radiobotquery02.wav",
+   "radiobotquery03.wav",
+   "radiobotquery04.wav"
+  ],
+  "separatist": [
+   "radiobotquery01.wav",
+   "radiobotquery04.wav",
+   "radiobotquery05.wav"
+  ]
+ },
+ "radiobotreponseattacking": {
+  "professional": [
+   "radiobotreponseattacking01.wav",
+   "radiobotreponseattacking02.wav",
+   "radiobotreponseattacking03.wav",
+   "radiobotreponseattacking04.wav",
+   "radiobotreponseattacking05.wav",
+   "radiobotreponseattacking06.wav",
+   "radiobotreponseattacking07.wav",
+   "radiobotreponseattacking08.wav",
+   "radiobotreponseattacking09.wav"
+  ]
+ },
+ "radiobotreponsecoverrequest": {
+  "professional": [
+   "radiobotreponsecoverrequest01.wav",
+   "radiobotreponsecoverrequest02.wav",
+   "radiobotreponsecoverrequest03.wav",
+   "radiobotreponsecoverrequest04.wav",
+   "radiobotreponsecoverrequest05.wav",
+   "radiobotreponsecoverrequest06.wav"
+  ]
+ },
+ "radiobotreponsenegative": {
+  "professional": [
+   "radiobotreponsenegative01.wav",
+   "radiobotreponsenegative02.wav",
+   "radiobotreponsenegative03.wav",
+   "radiobotreponsenegative05.wav",
+   "radiobotreponsenegative06.wav",
+   "radiobotreponsenegative07.wav",
+   "radiobotreponsenegative08.wav",
+   "radiobotreponsenegative09.wav",
+   "radiobotreponsenegative10.wav",
+   "radiobotreponsenegative12.wav",
+   "radiobotreponsenegative14.wav",
+   "radiobotreponsenegative16.wav",
+   "radiobotreponsenegative19.wav"
+  ]
+ },
+ "radiobotreponseomw": {
+  "professional": [
+   "radiobotreponseomw01.wav",
+   "radiobotreponseomw02.wav",
+   "radiobotreponseomw03.wav",
+   "radiobotreponseomw04.wav",
+   "radiobotreponseomw05.wav"
+  ]
+ },
+ "radiobotreponsepositive": {
+  "professional": [
+   "radiobotreponsepositive01.wav",
+   "radiobotreponsepositive02.wav",
+   "radiobotreponsepositive03.wav",
+   "radiobotreponsepositive04.wav",
+   "radiobotreponsepositive05.wav",
+   "radiobotreponsepositive06.wav",
+   "radiobotreponsepositive07.wav",
+   "radiobotreponsepositive08.wav",
+   "radiobotreponsepositive09.wav",
+   "radiobotreponsepositive10.wav"
+  ]
+ },
+ "radiobotreport": {
+  "professional": [
+   "radiobotreport01.wav",
+   "radiobotreport02.wav",
+   "radiobotreport03.wav",
+   "radiobotreport04.wav",
+   "radiobotreport05.wav",
+   "radiobotreport06.wav",
+   "radiobotreport07.wav",
+   "radiobotreport08.wav"
+  ]
+ },
+ "radiobotstart": {
+  "professional": [
+   "radiobotstart01.wav",
+   "radiobotstart02.wav",
+   "radiobotstart03.wav",
+   "radiobotstart04.wav",
+   "radiobotstart05.wav",
+   "radiobotstart06.wav",
+   "radiobotstart07.wav",
+   "radiobotstart08.wav",
+   "radiobotstart09.wav",
+   "radiobotstart10.wav"
+  ]
+ },
+ "radiobottarget": {
+  "professional": [
+   "radiobottarget01.wav",
+   "radiobottarget05.wav",
+   "radiobottarget06.wav",
+   "radiobottarget08.wav"
+  ]
+ },
+ "radiobotunderfire": {
+  "professional": [
+   "radiobotunderfire01.wav",
+   "radiobotunderfire02.wav",
+   "radiobotunderfire03.wav",
+   "radiobotunderfire04.wav",
+   "radiobotunderfire05.wav",
+   "radiobotunderfire06.wav",
+   "radiobotunderfire07.wav",
+   "radiobotunderfire08.wav",
+   "radiobotunderfire09.wav",
+   "radiobotunderfire10.wav",
+   "radiobotunderfire11.wav"
+  ]
+ },
+ "radiobotunderfirefriendly": {
+  "professional": [
+   "radiobotunderfirefriendly01.wav",
+   "radiobotunderfirefriendly02.wav",
+   "radiobotunderfirefriendly03.wav",
+   "radiobotunderfirefriendly04.wav",
+   "radiobotunderfirefriendly05.wav",
+   "radiobotunderfirefriendly06.wav",
+   "radiobotunderfirefriendly07.wav"
+  ]
+ },
+ "radiobotunderfiresniper": {
+  "professional": [
+   "radiobotunderfiresniper01.wav",
+   "radiobotunderfiresniper02.wav",
+   "radiobotunderfiresniper04.wav"
+  ]
+ },
+ "tmap_de_boathouse": {
+  "professional": [
+   "tmap_de_boathouse05.wav",
+   "tmap_de_boathouse06.wav",
+   "tmap_de_boathouse07.wav",
+   "tmap_de_boathouse08.wav",
+   "tmap_de_boathouse09.wav",
+   "tmap_de_boathouse10.wav",
+   "tmap_de_boathouse17.wav",
+   "tmap_de_boathouse18.wav",
+   "tmap_de_boathouse19.wav",
+   "tmap_de_boathouse23.wav",
+   "tmap_de_boathouse24.wav",
+   "tmap_de_boathouse25.wav",
+   "tmap_de_boathouse26.wav",
+   "tmap_de_boathouse27.wav",
+   "tmap_de_boathouse29.wav"
+  ]
+ },
+ "tmap_de_house": {
+  "professional": [
+   "tmap_de_house01.wav",
+   "tmap_de_house02.wav",
+   "tmap_de_house03.wav",
+   "tmap_de_house04.wav",
+   "tmap_de_house05.wav",
+   "tmap_de_house06.wav",
+   "tmap_de_house07.wav",
+   "tmap_de_house08.wav",
+   "tmap_de_house09.wav",
+   "tmap_de_house14.wav"
+  ]
+ },
+ "tmap_unknown": {
+  "professional": [
+   "tmap_unknown107.wav",
+   "tmap_unknown109.wav"
+  ]
+ },
+ "tmap_unknown114wav": {
+  "professional": [
+   "tmap_unknown114wav.wav"
+  ]
+ },
+ "chickenhate": {
+  "separatist": [
+   "chickenhate01.wav",
+   "chickenhate02.wav",
+   "chickenhate03.wav",
+   "chickenhate04.wav"
+  ]
+ },
+ "goingtoplantbombc": {
+  "separatist": [
+   "goingtoplantbombc01.wav",
+   "goingtoplantbombc02.wav",
+   "goingtoplantbombc03.wav"
+  ]
+ },
+ "radio.enemyspotted": {
+  "separatist": [
+   "radio.enemyspotted01.wav",
+   "radio.enemyspotted02.wav",
+   "radio.enemyspotted03.wav",
+   "radio.enemyspotted04.wav",
+   "radio.enemyspotted05.wav"
+  ]
+ },
+ "radio.followme": {
+  "separatist": [
+   "radio.followme01.wav",
+   "radio.followme02.wav",
+   "radio.followme03.wav",
+   "radio.followme04.wav"
+  ]
+ },
+ "radio.letsgo": {
+  "separatist": [
+   "radio.letsgo01.wav",
+   "radio.letsgo02.wav",
+   "radio.letsgo03.wav",
+   "radio.letsgo04.wav",
+   "radio.letsgo05.wav",
+   "radio.letsgo06.wav",
+   "radio.letsgo08.wav",
+   "radio.letsgo09.wav",
+   "radio.letsgo10.wav",
+   "radio.letsgo11.wav",
+   "radio.letsgo12.wav"
+  ]
+ },
+ "radio.locknload": {
+  "separatist": [
+   "radio.locknload01.wav",
+   "radio.locknload02.wav",
+   "radio.locknload03.wav",
+   "radio.locknload04.wav",
+   "radio.locknload05.wav",
+   "radio.locknload06.wav",
+   "radio.locknload07.wav",
+   "radio.locknload10.wav"
+  ]
+ },
+ "radio.needbackup": {
+  "separatist": [
+   "radio.needbackup01.wav",
+   "radio.needbackup02.wav",
+   "radio.needbackup03.wav"
+  ]
+ },
+ "radio.takingfire": {
+  "separatist": [
+   "radio.takingfire01.wav",
+   "radio.takingfire02.wav",
+   "radio.takingfire03.wav",
+   "radio.takingfire04.wav",
+   "radio.takingfire05.wav",
+   "radio.takingfire06.wav",
+   "radio.takingfire07.wav"
+  ]
+ },
+ "radiobotcompliment": {
+  "separatist": [
+   "radiobotcompliment01.wav"
+  ]
+ },
+ "tmap_de_inferno": {
+  "separatist": [
+   "tmap_de_inferno01.wav",
+   "tmap_de_inferno02.wav",
+   "tmap_de_inferno03.wav",
+   "tmap_de_inferno04.wav",
+   "tmap_de_inferno05.wav",
+   "tmap_de_inferno06.wav",
+   "tmap_de_inferno07.wav",
+   "tmap_de_inferno08.wav",
+   "tmap_de_inferno09.wav",
+   "tmap_de_inferno10.wav",
+   "tmap_de_inferno11.wav",
+   "tmap_de_inferno12.wav",
+   "tmap_de_inferno15.wav",
+   "tmap_de_inferno17.wav",
+   "tmap_de_inferno18.wav",
+   "tmap_de_inferno19.wav",
+   "tmap_de_inferno20.wav",
+   "tmap_de_inferno21.wav",
+   "tmap_de_inferno22.wav",
+   "tmap_de_inferno23.wav",
+   "tmap_de_inferno24.wav",
+   "tmap_de_inferno25.wav",
+   "tmap_de_inferno26.wav",
+   "tmap_de_inferno27.wav",
+   "tmap_de_inferno28.wav",
+   "tmap_de_inferno32.wav",
+   "tmap_de_inferno33.wav",
+   "tmap_de_inferno34.wav",
+   "tmap_de_inferno35.wav",
+   "tmap_de_inferno36.wav",
+   "tmap_de_inferno37.wav",
+   "tmap_de_inferno38.wav",
+   "tmap_de_inferno39.wav",
+   "tmap_de_inferno40.wav",
+   "tmap_de_inferno46.wav",
+   "tmap_de_inferno47.wav",
+   "tmap_de_inferno48.wav"
+  ]
+ }
+}

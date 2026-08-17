@@ -1,0 +1,828 @@
+{
+  "report_version": 1,
+  "report_id": "legacy_attempt_20260817",
+  "generated_at": "2026-08-17T21:05:55.468506+08:00",
+  "project_root": "D:\\project\\cf_to_csgo",
+  "scope": {
+    "weapon_id": "m4a1_s_bornbeast_classic",
+    "target_slot": "m4a1_s",
+    "purpose": "Freeze current failed attempt before rebuilding; read-only inventory.",
+    "deletion_performed": false,
+    "game_files_modified": false
+  },
+  "legacy_script": {
+    "path": "D:\\project\\cf_to_csgo\\scripts\\csgo_pack\\deploy_cf_m4a1_bornbeast_migi.py",
+    "status": "legacy_unsafe",
+    "release_entrypoint": false,
+    "reason": [
+      "copies AK models and renames them to M4A1-S/M4A4",
+      "copies AK sound directory as M4 audio",
+      "writes directly to the Steam MIGI addon directory",
+      "suppresses studiomdl/VTFCmd output"
+    ]
+  },
+  "local_failure_directory": {
+    "path": "D:\\project\\cf_to_csgo\\data\\out\\decompiled_m4a1_bornbeast",
+    "exists": true,
+    "files": [
+      {
+        "path": "bones_define.qci",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "csgo_hands.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 9003,
+        "sha256": "06fb57fb68ea7784ca5060172ca99764ccb98a9acded3927ac93bedef9606525"
+      },
+      {
+        "path": "PV-AK-47-Beast.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 1206722,
+        "sha256": "9f51f6db9576fbf2e8d699bac147d4d97d38177fe1992de4cf71f97a0e916a8a"
+      },
+      {
+        "path": "PV-AK-47-Beast_02.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 218668,
+        "sha256": "ef84575002084a5c5acbd6161f0eaf5c13750141dff77e2b1800b09a65d3864b"
+      },
+      {
+        "path": "PV-M4A1-BornBeast.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 1514449,
+        "sha256": "82f1b44264e4e4a4d5f6c327c362b3d96bc7c9dbaa3a8aebbda117672ed0997f"
+      },
+      {
+        "path": "v_rif_ak47_anims/ak47_draw.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 184901,
+        "sha256": "bf4814b2ec13fe84733e92549b64c42f53b952843eceb84d92c9f5dce1ef6d9b"
+      },
+      {
+        "path": "v_rif_ak47_anims/ak47_fire1.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 96959,
+        "sha256": "cfd54e6c9578b99fbb04a1f317d4eb5b95e6ab5daab966237b9c87e396cffa41"
+      },
+      {
+        "path": "v_rif_ak47_anims/ak47_fire2.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 96959,
+        "sha256": "cfd54e6c9578b99fbb04a1f317d4eb5b95e6ab5daab966237b9c87e396cffa41"
+      },
+      {
+        "path": "v_rif_ak47_anims/ak47_fire3.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 96959,
+        "sha256": "cfd54e6c9578b99fbb04a1f317d4eb5b95e6ab5daab966237b9c87e396cffa41"
+      },
+      {
+        "path": "v_rif_ak47_anims/ak47_idle.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 595346,
+        "sha256": "a98ff5a5017d7b7acf5d7c20e9668c2a050e546729edfe221412d014fb34eb8d"
+      },
+      {
+        "path": "v_rif_ak47_anims/ak47_reload.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 431092,
+        "sha256": "7490c06b63bba6bc68882717c0fe870975dea17a50f2eb928b3c440db59a9317"
+      },
+      {
+        "path": "v_rif_ak47_anims/lookat01.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 514747,
+        "sha256": "3d6882357d498e9d8abdcda5a0a3a21ebe50849b1d5e2158d780c362ef62bb97"
+      },
+      {
+        "path": "v_rif_ak47_anims/lookat01_beast.smd",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 497960,
+        "sha256": "14789f3728f2d2d541c1ad1317218b80c751dc0eec301b805ca9f9b3b8b14d1c"
+      },
+      {
+        "path": "v_rif_m4a1.qc",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 1643,
+        "sha256": "90eab4f4f3869676c70dbad173b64480b45076d6e15e8bec0b9fff6d6098740a"
+      },
+      {
+        "path": "v_rif_m4a1_s.qc",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 1647,
+        "sha256": "ace0582f96877abb4d03d5bafb771e2b69212063d66b2caf744950f8ace49e03"
+      }
+    ]
+  },
+  "deployed_addons": {
+    "m4a1_bornbeast": {
+      "path": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a1_bornbeast_4k",
+      "exists": true,
+      "files": [
+        {
+          "path": "materials/models/v_models/weapons/m4a1_bornbeast/eyes2.vmt",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 146,
+          "sha256": "76db5d91bf56e9cffaa46c77531f7046afec5af65469f13927ce0688c9232374"
+        },
+        {
+          "path": "materials/models/v_models/weapons/m4a1_bornbeast/pv-ak47-beast.vmt",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 584,
+          "sha256": "9064f43028e38a58c580d432e4364e58d6624c81b6b5c91516ef091a58054175"
+        },
+        {
+          "path": "materials/models/v_models/weapons/m4a1_bornbeast/pv-m4a1_s_bornbeast.vmt",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 607,
+          "sha256": "cf78a6e0da4a7e47e25a0297e7bbe3b896b81a2115302e5d7522c59162ad6402"
+        },
+        {
+          "path": "materials/models/v_models/weapons/m4a1_bornbeast/PV-M4A1_S_BornBeast.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 22369872,
+          "sha256": "4e1cd5509a678935e7b7f78fcc93bca619a79944d3a7abf0f22f08d0bbfacd84"
+        },
+        {
+          "path": "materials/models/v_models/weapons/m4a1_bornbeast/PV-M4A1_S_BornBeast_N.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 22369872,
+          "sha256": "695c1834804f96670da0f819890832c4506a6253f7dc93b59f64ff0ddd999ec5"
+        },
+        {
+          "path": "materials/models/weapons/v_models/rif_m4a1_s/m4a1_s.vmt",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 607,
+          "sha256": "cf78a6e0da4a7e47e25a0297e7bbe3b896b81a2115302e5d7522c59162ad6402"
+        },
+        {
+          "path": "materials/models/weapons/v_models/rif_m4a1_s/m4a1_s.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 22369872,
+          "sha256": "4e1cd5509a678935e7b7f78fcc93bca619a79944d3a7abf0f22f08d0bbfacd84"
+        },
+        {
+          "path": "materials/models/weapons/v_models/rif_m4a1_s/m4a1_s_normal.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 22369872,
+          "sha256": "695c1834804f96670da0f819890832c4506a6253f7dc93b59f64ff0ddd999ec5"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1.dx80.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 73061,
+          "sha256": "8171797885cdcb7ebbc257d5d04a6e89abbfcdd6ad42762fac0bbb852bc3ce70"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1.dx90.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 73061,
+          "sha256": "cee69d818c6959a880864668a6c9243abbbff3d2374eeadb99cd5e22bfea11f3"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 10116,
+          "sha256": "65db2ae124596511acc755ee83109d7d6b20000ee4e3cdea9c876c4876ee0337"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1.sw.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 73053,
+          "sha256": "0b302692c5877d36280509b1dc84b3e24fb9f2d475a949968281b36f7aefdf38"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1.vvd",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 290368,
+          "sha256": "65835d2d3999f71e5d42d9538c64b2062ab496625c3121027a53a5e1caf3db06"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1_s.dx80.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 73061,
+          "sha256": "bb87f71c638594629827ae4ff4cd22ca02abe98b769b74abdaa645c9866bf668"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1_s.dx90.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 73061,
+          "sha256": "f976383581dda5f63c3235a05bc8a6ada241ee4de74747b1e0b3fc0ebe40b6dd"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1_s.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 10120,
+          "sha256": "d8388b23f5dd4d1d358db01a99ebc07072a27a0ae0b1a1cffaed9d21ba4410d0"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1_s.sw.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 73053,
+          "sha256": "b47fead31c3f73f738192f0c9ae04f45eee4e94fb9150812110f28a04c03139a"
+        },
+        {
+          "path": "models/weapons/v_rif_m4a1_s.vvd",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 290368,
+          "sha256": "b3a37ba02098176e3d571574ae766bda4d3b21c67f86d9fbb7d0483c766052a6"
+        },
+        {
+          "path": "models/weapons/w_rif_m4a1.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 38160,
+          "sha256": "826e37e23b7725367073b36d699bf8104d459cc66df7ac145b752f075dea0ac5"
+        },
+        {
+          "path": "models/weapons/w_rif_m4a1_s.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 38160,
+          "sha256": "826e37e23b7725367073b36d699bf8104d459cc66df7ac145b752f075dea0ac5"
+        },
+        {
+          "path": "sound/weapons/m4a1/m4a1-1.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 21246,
+          "sha256": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08"
+        },
+        {
+          "path": "sound/weapons/m4a1/m4a1_boltpull.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 173656,
+          "sha256": "72b971c0c8cd2b9d7f09a850a4f8b032a9032a83890dfbc401e6216e9bc3d986"
+        },
+        {
+          "path": "sound/weapons/m4a1/m4a1_clipin.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 24540,
+          "sha256": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4"
+        },
+        {
+          "path": "sound/weapons/m4a1/m4a1_draw.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 38652,
+          "sha256": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e"
+        },
+        {
+          "path": "sound/weapons/m4a1/m4a1_unsil-1.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 21246,
+          "sha256": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08"
+        },
+        {
+          "path": "sound/weapons/m4a1_silencer/m4a1_boltpull.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 173656,
+          "sha256": "72b971c0c8cd2b9d7f09a850a4f8b032a9032a83890dfbc401e6216e9bc3d986"
+        },
+        {
+          "path": "sound/weapons/m4a1_silencer/m4a1_clipin.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 24540,
+          "sha256": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4"
+        },
+        {
+          "path": "sound/weapons/m4a1_silencer/m4a1_draw.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 38652,
+          "sha256": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e"
+        },
+        {
+          "path": "sound/weapons/m4a1_silencer/m4a1_silencer_01.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 21246,
+          "sha256": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08"
+        },
+        {
+          "path": "sound/weapons/m4a1_silencer/m4a1_silencer_02.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 21246,
+          "sha256": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08"
+        },
+        {
+          "path": "sound/weapons/m4a1_silencer/m4a1_silencer_03.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 21246,
+          "sha256": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08"
+        }
+      ]
+    },
+    "ak47_reference": {
+      "path": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_ak47_beast_4k",
+      "exists": true,
+      "files": [
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/eyes.vmt",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 152,
+          "sha256": "fca25a8d9b0942c586bbfbd88cca5942d011bbffe518820983cddd07bffc4ab0"
+        },
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/Eyes.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 1398288,
+          "sha256": "77ec2e433682c00646982bf2227306770455ed17e9434d4dcc47767172b65fc9"
+        },
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/eyes2.vmt",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 153,
+          "sha256": "d22bfe911da5696826e55693cfa04dd9e07295be87a1668951c6ec98967267fe"
+        },
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/Eyes2.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 1398352,
+          "sha256": "c711ac410dee95d5987a55b0a50f229ec98c7c276e744f4bdf43fe1a47107f46"
+        },
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/pv-ak47-beast.vmt",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 587,
+          "sha256": "6a6ad4810f47b18643d7ca1a2cd73169fdf9c6568ffe82de2639a7a1de196656"
+        },
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/PV-AK47-Beast.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 22369872,
+          "sha256": "44ab43abeb3280ab9210a678b5a55cabeb86c93c1cc43f6063c190d6d828be57"
+        },
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/PV-AK47-Beast_e.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 22369872,
+          "sha256": "3bb8fa4add31ddb32fa6c0266cd18b5740f7bdea84ef64e4d71327c158e4a6ff"
+        },
+        {
+          "path": "materials/models/v_models/weapons/ak47_beast/PV-AK47-Beast_N.vtf",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 22369872,
+          "sha256": "54fb3b40f2f0068c20baf3cf4e68eb35d030b825ecc375688ccbed6e374ac780"
+        },
+        {
+          "path": "models/weapons/v_rif_ak47.dx90.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 68317,
+          "sha256": "18885ac2e52fb6447a9d45c38679f015efa6f64d1ff6491b115aa8592968a51a"
+        },
+        {
+          "path": "models/weapons/v_rif_ak47.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 101812,
+          "sha256": "7909d7b9f018d50effa3bf140f482edb944cd3a0c5732e69348933f617cf2447"
+        },
+        {
+          "path": "models/weapons/v_rif_ak47.vvd",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 277056,
+          "sha256": "f3da5f4f997c48066417df2d0fc9ce4aa5953d853b6a64a2db7039b82962d439"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47.dx90.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 57036,
+          "sha256": "9056a3f58f2c392b6ddb02e4366dcea1174917407191e8de65ddcd855e3fc68e"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 38160,
+          "sha256": "826e37e23b7725367073b36d699bf8104d459cc66df7ac145b752f075dea0ac5"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47.vvd",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 233216,
+          "sha256": "18911306a27b6219484d5cef52f1fb887b05ade3fa8a56a466d60817f261e9a7"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_dropped.dx90.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 57036,
+          "sha256": "e255ee6a1717b2cb65591092e733d8cf2fe0b9b5a9fe52f95f6b80a50ce0098e"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_dropped.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 4592,
+          "sha256": "e08b0345b76270e2e7f499fd7ba5339837847fc14e763e21bf972c77b48d721a"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_dropped.phy",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 1519,
+          "sha256": "964f35cfedf5886a268e556518faaaf2882dd47ba0efef44ae901d14894b97bf"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_dropped.vvd",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 233216,
+          "sha256": "73a8c9d71d2234c168da353e79001943dbe0248742b7595c044100acf3d432e8"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_mag.dx90.vtx",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 3225,
+          "sha256": "5ad7216327c68f8c606e9ae7acefff058afd44c433b2270f6a995ac7727040e1"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_mag.mdl",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 1960,
+          "sha256": "438cd60e559ae81f0d48fbcd733e19ffc8a8729939f3665cce68058c5663f3f4"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_mag.phy",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 1042,
+          "sha256": "4bf3e6f08161f1a955534e0da4b856e55ce2eacc46bbdfcc12ff9b55e9d83600"
+        },
+        {
+          "path": "models/weapons/w_rif_ak47_mag.vvd",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 13376,
+          "sha256": "88545a9dde713dcdfe7840201c581f4febbc9792003b41dcb336456223097a07"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47-1-distant.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 180558,
+          "sha256": "2d0a13d636ceddb45c9439896616f7ddd528c78a0b2a1b58b831b252ccbba36f"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47-1.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 174250,
+          "sha256": "c12ef0ae65b4182b8aec0ae52c4fe213eca9afad187b7c1d0311227d736ec032"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47-2.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 111694,
+          "sha256": "389026110a2ca09675acb94bc25abc84d781a08b43b55da31584ef6cd28f71f8"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47_boltpull.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 61880,
+          "sha256": "55c6bc4a45b27099a9fe0066d9466e0276ba22f216dadc703adc39657b6776b7"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47_clipin.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 44222,
+          "sha256": "d7730278b03e6175fdffe6ce8022dd130137ad3a17d55ad3d9482ba8fef04c9d"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47_clipoud.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 23042,
+          "sha256": "b7e9a55216704d1803b31c09be774d5ec8d6aef279b0ac6615e7f61bbf177be8"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47_clipout.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 31148,
+          "sha256": "5818b193534c9faec1672365cf0649d4cea4ff056b0cf66db05ab42a17acb759"
+        },
+        {
+          "path": "sound/weapons/ak47/ak47_draw.wav",
+          "exists": true,
+          "is_file": true,
+          "is_directory": false,
+          "size_bytes": 39918,
+          "sha256": "40508fe85ff7d7fa3471fbe5f9c622464cc0b84ac631242d830f1ae55d42523b"
+        }
+      ]
+    }
+  },
+  "model_headers": [
+    {
+      "path": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a1_bornbeast_4k\\models\\weapons\\v_rif_m4a1_s.mdl",
+      "exists": true,
+      "size_bytes": 10120,
+      "sha256": "d8388b23f5dd4d1d358db01a99ebc07072a27a0ae0b1a1cffaed9d21ba4410d0",
+      "magic": "IDST",
+      "version": 49,
+      "internal_name": "weapons\\v_rif_m4a1_s.mdl",
+      "flags": 1,
+      "bone_count": 5,
+      "bone_index": 664,
+      "hitbox_set_count": 1,
+      "local_animation_count": 6,
+      "local_sequence_count": 6
+    },
+    {
+      "path": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a1_bornbeast_4k\\models\\weapons\\v_rif_m4a1.mdl",
+      "exists": true,
+      "size_bytes": 10116,
+      "sha256": "65db2ae124596511acc755ee83109d7d6b20000ee4e3cdea9c876c4876ee0337",
+      "magic": "IDST",
+      "version": 49,
+      "internal_name": "weapons\\v_rif_m4a1.mdl",
+      "flags": 1,
+      "bone_count": 5,
+      "bone_index": 664,
+      "hitbox_set_count": 1,
+      "local_animation_count": 6,
+      "local_sequence_count": 6
+    },
+    {
+      "path": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_ak47_beast_4k\\models\\weapons\\v_rif_ak47.mdl",
+      "exists": true,
+      "size_bytes": 101812,
+      "sha256": "7909d7b9f018d50effa3bf140f482edb944cd3a0c5732e69348933f617cf2447",
+      "magic": "IDST",
+      "version": 49,
+      "internal_name": "weapons\\v_rif_ak47.mdl",
+      "flags": 1,
+      "bone_count": 90,
+      "bone_index": 664,
+      "hitbox_set_count": 1,
+      "local_animation_count": 6,
+      "local_sequence_count": 6
+    }
+  ],
+  "source_structure": {
+    "m4_obj": {
+      "path": "D:\\project\\cf_to_csgo\\data\\out\\PV-M4A1_S_BornBeast_Classic.obj",
+      "exists": true,
+      "size_bytes": 697600,
+      "sha256": "64d0827e460d2b110ad936a9ad296fd2caf7cbc594cbf817af0b23d927b784f3",
+      "vertices": 4926,
+      "uvs": 4926,
+      "normals": 0,
+      "faces": 5342,
+      "groups": [
+        "PV-M4A1_S_BornBeast_Classic_Fview-hand2",
+        "PV-M4A1_S_BornBeast_Classic_Fview-arm2",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01"
+      ],
+      "material_usage": {
+        "Fview-hand2": 11
+      }
+    },
+    "m4_smd": {
+      "path": "D:\\project\\cf_to_csgo\\data\\out\\decompiled_m4a1_bornbeast\\PV-M4A1-BornBeast.smd",
+      "exists": true,
+      "size_bytes": 1514449,
+      "sha256": "82f1b44264e4e4a4d5f6c327c362b3d96bc7c9dbaa3a8aebbda117672ed0997f",
+      "nodes": 90,
+      "triangles": 5342,
+      "material_usage": {
+        "fview-hand2": 5342
+      },
+      "vertex_bone_usage": {
+        "2": 16026
+      }
+    },
+    "csgo_hands_smd": {
+      "path": "D:\\project\\cf_to_csgo\\data\\out\\decompiled_m4a1_bornbeast\\csgo_hands.smd",
+      "exists": true,
+      "size_bytes": 9003,
+      "sha256": "06fb57fb68ea7784ca5060172ca99764ccb98a9acded3927ac93bedef9606525",
+      "nodes": 90,
+      "triangles": 0,
+      "material_usage": {},
+      "vertex_bone_usage": {}
+    },
+    "ak_reference_smd": {
+      "path": "D:\\project\\cf_to_csgo\\data\\out\\decompiled_ak47_beast\\PV-AK-47-Beast.smd",
+      "exists": true,
+      "size_bytes": 1206722,
+      "sha256": "9f51f6db9576fbf2e8d699bac147d4d97d38177fe1992de4cf71f97a0e916a8a",
+      "nodes": 90,
+      "triangles": 4091,
+      "material_usage": {
+        "PV-AK47-Beast": 4091
+      },
+      "vertex_bone_usage": {
+        "2": 10983,
+        "3": 606,
+        "4": 78,
+        "5": 606
+      }
+    },
+    "bones_define_qci": {
+      "path": "D:\\project\\cf_to_csgo\\data\\out\\decompiled_m4a1_bornbeast\\bones_define.qci",
+      "exists": true,
+      "is_file": true,
+      "is_directory": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "hash_comparisons": [
+    {
+      "left": "D:\\project\\cf_to_csgo\\data\\out\\decompiled_ak47_beast\\v_rif_ak47_anims\\ak47_idle.smd",
+      "right": "D:\\project\\cf_to_csgo\\data\\out\\decompiled_m4a1_bornbeast\\v_rif_ak47_anims\\ak47_idle.smd",
+      "left_exists": true,
+      "right_exists": true,
+      "left_sha256": "a98ff5a5017d7b7acf5d7c20e9668c2a050e546729edfe221412d014fb34eb8d",
+      "right_sha256": "a98ff5a5017d7b7acf5d7c20e9668c2a050e546729edfe221412d014fb34eb8d",
+      "same_sha256": true
+    },
+    {
+      "left": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_ak47_beast_4k\\models\\weapons\\w_rif_ak47.mdl",
+      "right": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a1_bornbeast_4k\\models\\weapons\\w_rif_m4a1.mdl",
+      "left_exists": true,
+      "right_exists": true,
+      "left_sha256": "826e37e23b7725367073b36d699bf8104d459cc66df7ac145b752f075dea0ac5",
+      "right_sha256": "826e37e23b7725367073b36d699bf8104d459cc66df7ac145b752f075dea0ac5",
+      "same_sha256": true
+    }
+  ],
+  "accidental_root_outputs": {
+    "cleanup_action": "deferred_no_files_deleted",
+    "entries": [
+      {
+        "path": "D:\\project\\cf_to_csgo\\--out",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 161680,
+        "sha256": "2539be0cce18b1a796747945c1b1b52cac279e6bf2190155fd4502f464fe37bf"
+      },
+      {
+        "path": "D:\\project\\cf_to_csgo\\--out.mtl",
+        "exists": true,
+        "is_file": true,
+        "is_directory": false,
+        "size_bytes": 221,
+        "sha256": "aa757cd1dca01c5622bcb1a66a252c66b09fbac4912e198d40b7279e70f8300c"
+      },
+      {
+        "path": "D:\\project\\cf_to_csgo\\--out_textures",
+        "exists": true,
+        "is_file": false,
+        "is_directory": true
+      }
+    ]
+  },
+  "verification_notes": [
+    "Current M4 compiled MDLs are expected to report 5 bones and 6 local sequences.",
+    "The copied idle animation and dropped world model comparisons are recorded above.",
+    "The report itself is generated under work/m4a1_s_bornbeast/reports and does not alter source or game assets."
+  ]
+}

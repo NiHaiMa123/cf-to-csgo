@@ -1,0 +1,9 @@
+COMMAND: D:\project\cf_to_csgo\tools\CrowbarDecompiler\CrowbarDecompiler(1.1).exe D:\project\cf_to_csgo\build\m4a1_s_bornbeast\game_root\csgo\models\weapons\v_rif_m4a1_s.mdl D:\project\cf_to_csgo\build\m4a1_s_bornbeast\compiled_decompiled
+EXIT_CODE: 0
+
+--- STDOUT ---
+Working with model: D:\project\cf_to_csgo\build\m4a1_s_bornbeast\game_root\csgo\models\weapons\v_rif_m4a1_s.mdl
+Decompilation of model D:\project\cf_to_csgo\build\m4a1_s_bornbeast\game_root\csgo\models\weapons\v_rif_m4a1_s.mdl is done!
+
+--- STDERR ---
+

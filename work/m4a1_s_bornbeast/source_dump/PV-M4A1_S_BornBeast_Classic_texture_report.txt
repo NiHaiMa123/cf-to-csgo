@@ -1,0 +1,13 @@
+CF Rez Manager OBJ texture report
+
+Sources: 1
+Meshes: 11
+Texture references: 1
+Missing textures: 1
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: Fview-hand2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+

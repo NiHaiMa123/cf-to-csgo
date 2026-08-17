@@ -1,0 +1,324 @@
+{
+  "schema": "cf2.lithtech.b2-route-evaluation.v1",
+  "generated_at_utc": "2026-08-17T15:08:38.424769+00:00",
+  "inputs": {
+    "small_sample": {
+      "path": "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_BL.LTB",
+      "size_bytes": 53365,
+      "sha256": "ab426c43dbc9263b2e7e40a47363490660c7d7df7413971be315ab6f4f70ce36",
+      "diagnostic_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_BL_b2_report.json"
+    },
+    "target_m4a1_s": {
+      "path": "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB",
+      "size_bytes": 166113,
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "diagnostic_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_S_BornBeast_Classic_b1_report.json"
+    }
+  },
+  "route_1_external_converter": {
+    "status": "not_available_in_workspace",
+    "candidates": [
+      {
+        "name": "ltb2x.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\ltb2x.exe",
+        "exists": false
+      },
+      {
+        "name": "ltb2lta.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\ltb2lta.exe",
+        "exists": false
+      },
+      {
+        "name": "Model_Unpacker.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Model_Unpacker.exe",
+        "exists": false
+      },
+      {
+        "name": "noesis.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\noesis.exe",
+        "exists": false
+      },
+      {
+        "name": "ltb2x.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\LTB2X\\ltb2x.exe",
+        "exists": false
+      },
+      {
+        "name": "ltb2lta.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\LTB2X\\ltb2lta.exe",
+        "exists": false
+      },
+      {
+        "name": "Model_Unpacker.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\LTB2X\\Model_Unpacker.exe",
+        "exists": false
+      },
+      {
+        "name": "noesis.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\LTB2X\\noesis.exe",
+        "exists": false
+      },
+      {
+        "name": "ltb2x.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Noesis\\ltb2x.exe",
+        "exists": false
+      },
+      {
+        "name": "ltb2lta.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Noesis\\ltb2lta.exe",
+        "exists": false
+      },
+      {
+        "name": "Model_Unpacker.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Noesis\\Model_Unpacker.exe",
+        "exists": false
+      },
+      {
+        "name": "noesis.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Noesis\\noesis.exe",
+        "exists": false
+      },
+      {
+        "name": "ltb2x.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Model_Unpacker\\ltb2x.exe",
+        "exists": false
+      },
+      {
+        "name": "ltb2lta.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Model_Unpacker\\ltb2lta.exe",
+        "exists": false
+      },
+      {
+        "name": "Model_Unpacker.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Model_Unpacker\\Model_Unpacker.exe",
+        "exists": false
+      },
+      {
+        "name": "noesis.exe",
+        "path": "D:\\project\\cf_to_csgo\\tools\\Model_Unpacker\\noesis.exe",
+        "exists": false
+      }
+    ],
+    "stability_test": "not_run",
+    "license_review": "not_run",
+    "reason": "No LTB2X/Noesis/Model Unpacker executable was found in the project tools directory or PATH."
+  },
+  "route_2_native_decoder": {
+    "status": "static_geometry_normals_weights_and_bone_indices_proven",
+    "runs": {
+      "small_sample": {
+        "command": [
+          "D:\\project\\cf_to_csgo\\CFRezManager\\bin\\Debug\\net8.0-windows7.0\\CFRezManager.exe",
+          "--inspect-ltb",
+          "--input",
+          "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_BL.LTB",
+          "--output",
+          "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_BL_b2_report.json"
+        ],
+        "exit_code": 0,
+        "stdout_tail": "Report: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_BL_b2_report.json\nMeshes: 5\nVertices: 4162\nTriangles: 3183\n",
+        "stderr_tail": "",
+        "report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_BL_b2_report.json"
+      },
+      "target_m4a1_s": {
+        "command": [
+          "D:\\project\\cf_to_csgo\\CFRezManager\\bin\\Debug\\net8.0-windows7.0\\CFRezManager.exe",
+          "--inspect-ltb",
+          "--input",
+          "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB",
+          "--output",
+          "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_S_BornBeast_Classic_b1_report.json"
+        ],
+        "exit_code": 0,
+        "stdout_tail": "Report: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_S_BornBeast_Classic_b1_report.json\nMeshes: 11\nVertices: 4926\nTriangles: 5342\n",
+        "stderr_tail": "",
+        "report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\PV-M4A1_S_BornBeast_Classic_b1_report.json"
+      }
+    },
+    "models": {
+      "small_sample": {
+        "input": {
+          "path": "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_BL.LTB",
+          "extension": "ltb",
+          "size_bytes": 53365,
+          "sha256": "ab426c43dbc9263b2e7e40a47363490660c7d7df7413971be315ab6f4f70ce36"
+        },
+        "mesh_count": 5,
+        "vertex_count": 4162,
+        "triangle_count": 3183,
+        "coordinate_space": "raw LTB coordinates; decoder does not center, scale, or rotate",
+        "finite_vertex_positions": true,
+        "finite_normals": true,
+        "normal_vectors_nonzero": true,
+        "decoded_weight_sample_count": 1612,
+        "invalid_weight_sum_count": 4,
+        "bone_index_range_checked": true,
+        "decoded_bone_index_sample_count": 1612,
+        "bind_pose_roundtrip_checked": true,
+        "bind_pose_roundtrip_passed": true,
+        "bind_pose_max_error": null,
+        "capabilities": {
+          "normals": {
+            "status": "available",
+            "evidence": "decoded from the LTB vertex stream"
+          },
+          "tangents": {
+            "status": "missing",
+            "evidence": "no tangent field is decoded from LTB"
+          },
+          "bone_weights": {
+            "status": "partial",
+            "evidence": "up to three vertex weight values decoded"
+          },
+          "bone_indices": {
+            "status": "available",
+            "evidence": "decoded from packed per-vertex-range node-index records and validated against the LTB node-count header; 255 is the empty influence sentinel"
+          },
+          "skeleton_nodes": {
+            "status": "available",
+            "evidence": "decoded node names, preorder child counts, parent links, and 4x4 bind matrices"
+          },
+          "bind_pose": {
+            "status": "available",
+            "evidence": "weighted bind-pose round-trip was evaluated against the decoded node matrices"
+          },
+          "animation_clips": {
+            "status": "missing",
+            "evidence": "LTB animation blocks are not decoded"
+          },
+          "material_bindings": {
+            "status": "missing",
+            "evidence": "no direct material reference was decoded"
+          },
+          "coordinate_transform": {
+            "status": "available",
+            "evidence": "raw coordinates are preserved; OBJ exporter transform is reported separately"
+          }
+        }
+      },
+      "target_m4a1_s": {
+        "input": {
+          "path": "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB",
+          "extension": "ltb",
+          "size_bytes": 166113,
+          "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7"
+        },
+        "mesh_count": 11,
+        "vertex_count": 4926,
+        "triangle_count": 5342,
+        "coordinate_space": "raw LTB coordinates; decoder does not center, scale, or rotate",
+        "finite_vertex_positions": true,
+        "finite_normals": true,
+        "normal_vectors_nonzero": true,
+        "decoded_weight_sample_count": 1280,
+        "invalid_weight_sum_count": 4,
+        "bone_index_range_checked": true,
+        "decoded_bone_index_sample_count": 1280,
+        "bind_pose_roundtrip_checked": true,
+        "bind_pose_roundtrip_passed": true,
+        "bind_pose_max_error": null,
+        "capabilities": {
+          "normals": {
+            "status": "available",
+            "evidence": "decoded from the LTB vertex stream"
+          },
+          "tangents": {
+            "status": "missing",
+            "evidence": "no tangent field is decoded from LTB"
+          },
+          "bone_weights": {
+            "status": "partial",
+            "evidence": "up to three vertex weight values decoded"
+          },
+          "bone_indices": {
+            "status": "available",
+            "evidence": "decoded from packed per-vertex-range node-index records and validated against the LTB node-count header; 255 is the empty influence sentinel"
+          },
+          "skeleton_nodes": {
+            "status": "available",
+            "evidence": "decoded node names, preorder child counts, parent links, and 4x4 bind matrices"
+          },
+          "bind_pose": {
+            "status": "available",
+            "evidence": "weighted bind-pose round-trip was evaluated against the decoded node matrices"
+          },
+          "animation_clips": {
+            "status": "missing",
+            "evidence": "LTB animation blocks are not decoded"
+          },
+          "material_bindings": {
+            "status": "missing",
+            "evidence": "no direct material reference was decoded"
+          },
+          "coordinate_transform": {
+            "status": "available",
+            "evidence": "raw coordinates are preserved; OBJ exporter transform is reported separately"
+          }
+        }
+      }
+    },
+    "field_matrix": {
+      "normals": {
+        "small_sample": "available",
+        "target_m4a1_s": "available"
+      },
+      "tangents": {
+        "small_sample": "missing",
+        "target_m4a1_s": "missing"
+      },
+      "bone_weights": {
+        "small_sample": "partial",
+        "target_m4a1_s": "partial"
+      },
+      "bone_indices": {
+        "small_sample": "available",
+        "target_m4a1_s": "available"
+      },
+      "skeleton_nodes": {
+        "small_sample": "available",
+        "target_m4a1_s": "available"
+      },
+      "bind_pose": {
+        "small_sample": "available",
+        "target_m4a1_s": "available"
+      },
+      "animation_clips": {
+        "small_sample": "missing",
+        "target_m4a1_s": "missing"
+      },
+      "material_bindings": {
+        "small_sample": "missing",
+        "target_m4a1_s": "missing"
+      },
+      "coordinate_transform": {
+        "small_sample": "available",
+        "target_m4a1_s": "available"
+      }
+    },
+    "native_static_proof": true,
+    "weight_validation": {
+      "small_sample_invalid_weight_sum_count": 4,
+      "target_invalid_weight_sum_count": 4,
+      "bone_index_range_checked": true,
+      "small_sample_decoded_bone_index_sample_count": 1612,
+      "target_decoded_bone_index_sample_count": 1280,
+      "small_sample_bind_pose_roundtrip_passed": true,
+      "target_bind_pose_roundtrip_passed": true,
+      "target_bind_pose_max_error": null,
+      "reason": "Packed per-vertex-range indices are validated against the LTB node-count header; decoded node names, hierarchy, bind matrices, and residual fourth weights are included in the bind-pose check."
+    }
+  },
+  "decision_gate_g_b": {
+    "external_route_is_stable_and_licensed": false,
+    "native_route_can_support_static_r1_r2": true,
+    "skeleton_nodes_ready": true,
+    "bind_pose_ready": true,
+    "cf_animation_ready": false,
+    "recommendation": "Native geometry, weights, packed bone indices, the 57-node hierarchy, and bind-pose skinning are proven. Continue native animation-block decoding; use official CS:GO M4A1-S animations for R1/R2 and do not label them CF-original animations."
+  },
+  "unresolved_acceptance_items": [
+    "CF animation clip/frame continuity, keyframe decoding, and NaN/spike checks are not implemented",
+    "direct mesh-to-material/Shader bindings and tangent streams are not decoded",
+    "no external LTB converter is vendored; the native decoder is the reproducible route"
+  ]
+}

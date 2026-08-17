@@ -1,0 +1,40 @@
+{
+  "schema": "cf2.m4a1_s.c1-blender-mcp-review.v1",
+  "endpoint": "127.0.0.1:9876",
+  "protocol": "json_tcp",
+  "command": "execute_code",
+  "collection": "CF_C1_REVIEW",
+  "import": {
+    "path": "work/m4a1_s_bornbeast/source_dump/c1_split/weapon_only/PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+    "use_split_objects": true,
+    "use_split_groups": true,
+    "mesh_object_count": 9,
+    "mesh_objects": [
+      {"name": "M4A1S_BornBeast", "vertices": 3074, "faces": 3407, "dimensions": [1.5408, 5.0233, 18.5559]},
+      {"name": "M4A1S_BornBeast01", "vertices": 44, "faces": 36, "dimensions": [0.517, 4.0182, 1.917]},
+      {"name": "M4A1S_BornBeast02", "vertices": 133, "faces": 121, "dimensions": [1.194, 0.2215, 3.5233]},
+      {"name": "M4A1S_BornBeast03", "vertices": 165, "faces": 184, "dimensions": [0.6631, 0.6631, 3.1259]},
+      {"name": "M4A1S_BornBeast04", "vertices": 46, "faces": 52, "dimensions": [0.3242, 0.7324, 0.3789]},
+      {"name": "M4A1S_BornBeast05", "vertices": 46, "faces": 52, "dimensions": [0.3084, 0.7338, 0.3585]},
+      {"name": "M4A1S_BornBeast06", "vertices": 46, "faces": 52, "dimensions": [0.2956, 0.733, 0.3286]},
+      {"name": "M4A1S_BornBeast07", "vertices": 46, "faces": 52, "dimensions": [0.2694, 0.7375, 0.2875]},
+      {"name": "M4A1S_BornBeast08", "vertices": 46, "faces": 52, "dimensions": [0.2601, 0.7352, 0.2784]}
+    ]
+  },
+  "visual_outputs": {
+    "overview": "work/m4a1_s_bornbeast/reports/c1_blender_overview.png",
+    "previews": "work/m4a1_s_bornbeast/reports/c1_blender_previews/"
+  },
+  "semantic_review": {
+    "M4A1S_BornBeast": {"result": "main_weapon_body_confirmed"},
+    "M4A1S_BornBeast01": {"result": "magazine_candidate", "candidate_bone": "v_weapon.M4A1_Clip", "confidence": "high"},
+    "M4A1S_BornBeast02": {"result": "bolt_candidate", "candidate_bone": "v_weapon.M4A1_Bolt", "confidence": "medium"},
+    "M4A1S_BornBeast03": {"result": "unresolved"},
+    "M4A1S_BornBeast04": {"result": "unresolved_curved_piece"},
+    "M4A1S_BornBeast05": {"result": "unresolved_curved_piece"},
+    "M4A1S_BornBeast06": {"result": "unresolved_curved_piece"},
+    "M4A1S_BornBeast07": {"result": "unresolved_curved_piece"},
+    "M4A1S_BornBeast08": {"result": "unresolved_curved_piece"}
+  },
+  "next": "Keep mesh_map status provisional_c1; use visual candidate bones only after C2 animation/bone-motion validation."
+}

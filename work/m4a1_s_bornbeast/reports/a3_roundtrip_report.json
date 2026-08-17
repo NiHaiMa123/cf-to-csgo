@@ -1,0 +1,189 @@
+{
+  "schema": "cf2.m4a1_s.a3-roundtrip.v1",
+  "generated_at_utc": "2026-08-17T14:02:23.850577+00:00",
+  "toolchain": {
+    "studiomdl": "D:\\steam\\steamapps\\common\\csgo legacy\\bin\\studiomdl.exe",
+    "crowbar_decompiler": "D:\\project\\cf_to_csgo\\tools\\CrowbarDecompiler\\CrowbarDecompiler(1.1).exe",
+    "gameinfo": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\game_root\\csgo\\gameinfo.txt"
+  },
+  "isolation": {
+    "game_root": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\game_root",
+    "source1": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\source1",
+    "addon": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\addon",
+    "game_files_modified": false,
+    "migi_deployed": true,
+    "migi_addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a1_s_bornbeast_a3_tmp"
+  },
+  "compile": {
+    "command": [
+      "D:\\steam\\steamapps\\common\\csgo legacy\\bin\\studiomdl.exe",
+      "-game",
+      "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\game_root\\csgo",
+      "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a1_s\\decompiled\\v_rif_m4a1_s.qc"
+    ],
+    "cwd": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\source1",
+    "exit_code": 0,
+    "stdout": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\a3_studiomdl.stdout.log",
+    "stderr": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\a3_studiomdl.stderr.log",
+    "combined": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\a3_studiomdl.log"
+  },
+  "roundtrip_decompile": {
+    "command": [
+      "D:\\project\\cf_to_csgo\\tools\\CrowbarDecompiler\\CrowbarDecompiler(1.1).exe",
+      "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\game_root\\csgo\\models\\weapons\\v_rif_m4a1_s.mdl",
+      "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\compiled_decompiled"
+    ],
+    "cwd": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast",
+    "exit_code": 0,
+    "stdout": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\a3_roundtrip_decompiler.stdout.log",
+    "stderr": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\a3_roundtrip_decompiler.stderr.log",
+    "combined": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\a3_roundtrip_decompiler.log"
+  },
+  "official_mdl_header": {
+    "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a1_s\\source_vpk\\models\\weapons\\v_rif_m4a1_s.mdl",
+    "exists": true,
+    "size_bytes": 42864,
+    "sha256": "10a385f421b3fba2abd846f855cbfadb23e248c37803b31687ef67e6593476ac",
+    "magic": "IDST",
+    "version": 49,
+    "internal_name": "weapons\\v_rif_m4a1_s.mdl",
+    "bone_count": 58,
+    "local_animation_count": 13,
+    "local_sequence_count": 13
+  },
+  "compiled_mdl_header": {
+    "path": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast\\game_root\\csgo\\models\\weapons\\v_rif_m4a1_s.mdl",
+    "exists": true,
+    "size_bytes": 84056,
+    "sha256": "64e9d58ad9d428fde95ecba39af21a44e4ae83191e6bd52906883dd72c7d8c09",
+    "magic": "IDST",
+    "version": 49,
+    "internal_name": "weapons\\v_rif_m4a1_s.mdl",
+    "bone_count": 58,
+    "local_animation_count": 14,
+    "local_sequence_count": 13
+  },
+  "binary_header_comparison": {
+    "internal_name_match": true,
+    "bone_count_match": true,
+    "local_sequence_count_match": true,
+    "official_local_animation_count": 13,
+    "compiled_local_animation_count": 14,
+    "local_animation_count_note": "studiomdl emits one additional internal animation record; sequence/bone/attachment/material/bounds checks remain exact."
+  },
+  "compiled_addon_files": [
+    "materials/models/weapons/v_models/rif_m4a1_s/rif_m4a1_s.vmt",
+    "materials/models/weapons/v_models/rif_m4a1_s/rif_m4a1_s.vtf",
+    "materials/models/weapons/v_models/rif_m4a1_s/rif_m4a1_s_exponent.vtf",
+    "models/weapons/v_rif_m4a1_s.ani",
+    "models/weapons/v_rif_m4a1_s.dx80.vtx",
+    "models/weapons/v_rif_m4a1_s.dx90.vtx",
+    "models/weapons/v_rif_m4a1_s.mdl",
+    "models/weapons/v_rif_m4a1_s.sw.vtx",
+    "models/weapons/v_rif_m4a1_s.vvd"
+  ],
+  "comparison": {
+    "all_structural_checks_pass": true,
+    "checks": {
+      "internal_modelname": true,
+      "bone_count": true,
+      "bone_hierarchy": true,
+      "sequence_names": true,
+      "sequence_count": true,
+      "attachments": true,
+      "materials": true,
+      "bodygroups": true,
+      "qc_bbox": true
+    },
+    "source": {
+      "modelname": "weapons\\v_rif_m4a1_s.mdl",
+      "bone_count": 58,
+      "sequence_names": [
+        "idle_reposition_difference",
+        "idle",
+        "attach",
+        "detach",
+        "shoot1",
+        "shoot2",
+        "shoot3",
+        "reload",
+        "draw",
+        "draw_silenced",
+        "lookat01",
+        "lookat01_prepare",
+        "lookat01_loop"
+      ],
+      "attachments": [
+        [
+          "1",
+          "v_weapon.flash"
+        ],
+        [
+          "2",
+          "v_weapon.shelleject"
+        ],
+        [
+          "muzzle_flash2",
+          "v_weapon.flash"
+        ]
+      ],
+      "materials": [
+        "rif_m4a1_s"
+      ],
+      "bodygroups": [
+        "studio",
+        "silencer",
+        "magazine",
+        "clamped1"
+      ]
+    },
+    "compiled": {
+      "modelname": "weapons\\v_rif_m4a1_s.mdl",
+      "bone_count": 58,
+      "sequence_names": [
+        "idle_reposition_difference",
+        "idle",
+        "attach",
+        "detach",
+        "shoot1",
+        "shoot2",
+        "shoot3",
+        "reload",
+        "draw",
+        "draw_silenced",
+        "lookat01",
+        "lookat01_prepare",
+        "lookat01_loop"
+      ],
+      "attachments": [
+        [
+          "1",
+          "v_weapon.flash"
+        ],
+        [
+          "2",
+          "v_weapon.shelleject"
+        ],
+        [
+          "muzzle_flash2",
+          "v_weapon.flash"
+        ]
+      ],
+      "materials": [
+        "rif_m4a1_s"
+      ],
+      "bodygroups": [
+        "studio",
+        "silencer",
+        "magazine",
+        "clamped1"
+      ]
+    }
+  },
+  "manual_game_check": {
+    "status": "passed_user_confirmed",
+    "reason": "User launched the game with the new temporary MIGI addon and reported no model or animation problems.",
+    "old_addon_location": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp",
+    "confirmed_addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a1_s_bornbeast_a3_tmp"
+  }
+}

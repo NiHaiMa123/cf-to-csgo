@@ -1,0 +1,171 @@
+{
+  "schema": "cf2.m4a1_s.c2-binding-plan.v1",
+  "status": "provisional_candidates",
+  "skeleton_manifest": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c2_skeleton_manifest.json",
+  "mesh_map": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\mesh_map.yaml",
+  "mesh_map_sha256": "c21e19929f027119f1d8f3ed0c998b9ec29adaab83ef1b0fb6050559d856475f",
+  "blender_scene": {
+    "collection": "CF_C2_SKELETON",
+    "armature": "CF_C2_M4A1S_Armature",
+    "bone_count": 58,
+    "bone_names_unique": true,
+    "viewport_hidden": true,
+    "confirmation_viewport": "work/m4a1_s_bornbeast/reports/c2_skeleton_viewport.png",
+    "item2_main_parent_viewport": "work/m4a1_s_bornbeast/reports/c2_item2_main_parent.png",
+    "alignment_note": "Reference skeleton and CF mesh are intentionally not spatially aligned yet; final transform belongs to C3.",
+    "status": "canonical_reference_locked"
+  },
+  "rules": {
+    "weapon_body": "v_weapon.M4A1_s_Parent",
+    "magazine_candidate": "v_weapon.M4A1_Clip",
+    "bolt_candidate": "v_weapon.M4A1_Bolt",
+    "unresolved_components": "keep v_weapon.M4A1_s_Parent until animation confirms a dedicated bone",
+    "arms": "excluded from default path; use official Source 1 arms/gloves"
+  },
+  "automatic_acceptance": {
+    "M4A1S_BornBeast": {
+      "status": "accepted_provisional_parent_rigid",
+      "evidence": [
+        "B3 report BoneWeightCount is 0 for the whole body mesh",
+        "mesh role is main_weapon_body_candidate",
+        "official skeleton contains v_weapon.M4A1_s_Parent"
+      ],
+      "spatial_alignment": "deferred_to_C3"
+    },
+    "M4A1S_BornBeast01": {
+      "status": "accepted_provisional_clip_candidate",
+      "evidence": [
+        "C1 Blender preview matches a magazine silhouette and placement",
+        "official skeleton contains v_weapon.M4A1_Clip",
+        "B3 report preserves the complete 44-vertex/36-triangle group with no source weights"
+      ],
+      "final_weight": "deferred_to_C2_animation_check"
+    },
+    "M4A1S_BornBeast02": {
+      "status": "candidate_only",
+      "evidence": [
+        "C1 preview is compatible with a receiver/bolt component",
+        "official skeleton contains v_weapon.M4A1_Bolt"
+      ],
+      "final_weight": "deferred_to_C2_animation_check"
+    }
+  },
+  "bindings": [
+    {
+      "mesh": "Fview-hand2",
+      "export": false,
+      "bodygroup": "cf_arms_optional",
+      "binding_status": "excluded_official_source1_arms"
+    },
+    {
+      "mesh": "Fview-arm2",
+      "export": false,
+      "bodygroup": "cf_arms_optional",
+      "binding_status": "excluded_official_source1_arms"
+    },
+    {
+      "mesh": "M4A1S_BornBeast",
+      "export": true,
+      "role": "main_weapon_body_candidate",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_confidence": "parent_fallback",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast01",
+      "export": true,
+      "role": "weapon_magazine_candidate",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_Clip",
+      "candidate_confidence": "visual_review",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast02",
+      "export": true,
+      "role": "weapon_bolt_candidate",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_Bolt",
+      "candidate_confidence": "visual_review",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast03",
+      "export": true,
+      "role": "weapon_component_unclassified",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_confidence": "parent_fallback",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast04",
+      "export": true,
+      "role": "weapon_component_unclassified",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_confidence": "parent_fallback",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast05",
+      "export": true,
+      "role": "weapon_component_unclassified",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_confidence": "parent_fallback",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast06",
+      "export": true,
+      "role": "weapon_component_unclassified",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_confidence": "parent_fallback",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast07",
+      "export": true,
+      "role": "weapon_component_unclassified",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_confidence": "parent_fallback",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    },
+    {
+      "mesh": "M4A1S_BornBeast08",
+      "export": true,
+      "role": "weapon_component_unclassified",
+      "binding_mode": "rigid_single_bone_candidate",
+      "temporary_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_bone": "v_weapon.M4A1_s_Parent",
+      "candidate_confidence": "parent_fallback",
+      "weight_policy": "100_percent_single_bone_after_C2_validation",
+      "finalized": false
+    }
+  ],
+  "finalization_blockers": [
+    "CF animation clips are not decoded",
+    "M4A1S_BornBeast03-08 semantic roles are unresolved open fragments",
+    "candidate bone motion has not been validated against an exported animation"
+  ]
+}

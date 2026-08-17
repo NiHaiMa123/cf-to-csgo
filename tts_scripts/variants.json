@@ -1,0 +1,938 @@
+{
+"affirmative": [
+"affirmative01.wav",
+"affirmative02.wav",
+"affirmative03.wav"
+],
+"agree": [
+"agree01.wav",
+"agree02.wav",
+"agree03.wav",
+"agree04.wav",
+"agree05.wav",
+"agree06.wav",
+"agree07.wav",
+"agree08.wav"
+],
+"blinded": [
+"blinded01.wav",
+"blinded02.wav",
+"blinded03.wav",
+"blinded04.wav",
+"blinded05.wav",
+"blinded06.wav",
+"blinded08.wav"
+],
+"bombtickingdown": [
+"bombtickingdown01.wav",
+"bombtickingdown02.wav",
+"bombtickingdown03.wav",
+"bombtickingdown04.wav",
+"bombtickingdown05.wav",
+"bombtickingdown06.wav"
+],
+"chickenhate": [
+"chickenhate01.wav",
+"chickenhate02.wav",
+"chickenhate03.wav",
+"chickenhate04.wav"
+],
+"clear": [
+"clear01.wav",
+"clear02.wav",
+"clear03.wav"
+],
+"clearedarea": [
+"clearedarea01.wav",
+"clearedarea02.wav",
+"clearedarea03.wav",
+"clearedarea04.wav",
+"clearedarea05.wav"
+],
+"coveringfriend": [
+"coveringfriend01.wav",
+"coveringfriend02.wav",
+"coveringfriend03.wav",
+"coveringfriend04.wav"
+],
+"coverme": [
+"coverme01.wav",
+"coverme02.wav",
+"coverme03.wav"
+],
+"defendingbombsitea": [
+"defendingbombsitea01.wav",
+"defendingbombsitea02.wav",
+"defendingbombsitea03.wav",
+"defendingbombsitea04.wav",
+"defendingbombsitea05.wav"
+],
+"defendingbombsiteb": [
+"defendingbombsiteb01.wav",
+"defendingbombsiteb02.wav",
+"defendingbombsiteb03.wav",
+"defendingbombsiteb04.wav",
+"defendingbombsiteb05.wav"
+],
+"disagree": [
+"disagree01.wav",
+"disagree02.wav",
+"disagree03.wav",
+"disagree04.wav",
+"disagree05.wav",
+"disagree06.wav"
+],
+"enemydown": [
+"enemydown01.wav",
+"enemydown02.wav",
+"enemydown03.wav",
+"enemydown04.wav",
+"enemydown05.wav",
+"enemydown06.wav",
+"enemydown07.wav",
+"enemydown08.wav",
+"enemydown09.wav",
+"enemydown10.wav",
+"enemydown11.wav",
+"enemydown12.wav"
+],
+"followingfriend": [
+"followingfriend01.wav",
+"followingfriend02.wav",
+"followingfriend03.wav",
+"followingfriend04.wav",
+"followingfriend05.wav",
+"followingfriend06.wav",
+"followingfriend07.wav"
+],
+"friendlyfire": [
+"friendlyfire01.wav",
+"friendlyfire02.wav",
+"friendlyfire03.wav",
+"friendlyfire04.wav",
+"friendlyfire05.wav",
+"friendlyfire06.wav",
+"friendlyfire07.wav",
+"friendlyfire08.wav",
+"friendlyfire09.wav",
+"friendlyfire10.wav",
+"friendlyfire11.wav",
+"friendlyfire12.wav",
+"friendlyfire13.wav",
+"friendlyfire14.wav",
+"friendlyfire15.wav",
+"friendlyfire16.wav",
+"friendlyfire17.wav"
+],
+"goingtodefendbombsite": [
+"goingtodefendbombsite01.wav",
+"goingtodefendbombsite02.wav",
+"goingtodefendbombsite03.wav",
+"goingtodefendbombsite04.wav",
+"goingtodefendbombsite05.wav"
+],
+"goingtoguardhostageescapezone": [
+"goingtoguardhostageescapezone01.wav",
+"goingtoguardhostageescapezone02.wav",
+"goingtoguardhostageescapezone03.wav"
+],
+"goingtoguardhostages": [
+"goingtoguardhostages01.wav",
+"goingtoguardhostages02.wav",
+"goingtoguardhostages03.wav",
+"goingtoguardhostages04.wav",
+"goingtoguardhostages05.wav",
+"goingtoguardhostages06.wav"
+],
+"goingtoplantbomb": [
+"goingtoplantbomb01.wav",
+"goingtoplantbomb02.wav",
+"goingtoplantbomb03.wav"
+],
+"goingtoplantbomba": [
+"goingtoplantbomba01.wav",
+"goingtoplantbomba02.wav",
+"goingtoplantbomba03.wav"
+],
+"goingtoplantbombb": [
+"goingtoplantbombb01.wav",
+"goingtoplantbombb02.wav"
+],
+"goingtoplantbombc": [
+"goingtoplantbombc01.wav",
+"goingtoplantbombc02.wav",
+"goingtoplantbombc03.wav"
+],
+"guardinghostageescapezone": [
+"guardinghostageescapezone01.wav",
+"guardinghostageescapezone02.wav",
+"guardinghostageescapezone03.wav",
+"guardinghostageescapezone04.wav",
+"guardinghostageescapezone05.wav"
+],
+"guardinghostages": [
+"guardinghostages01.wav",
+"guardinghostages02.wav",
+"guardinghostages03.wav",
+"guardinghostages04.wav",
+"guardinghostages05.wav"
+],
+"heardnoise": [
+"heardnoise01.wav",
+"heardnoise02.wav",
+"heardnoise03.wav",
+"heardnoise04.wav",
+"heardnoise05.wav"
+],
+"help": [
+"help01.wav",
+"help02.wav",
+"help03.wav",
+"help04.wav",
+"help05.wav",
+"help06.wav"
+],
+"hostagedown": [
+"hostagedown01.wav",
+"hostagedown02.wav",
+"hostagedown03.wav",
+"hostagedown04.wav",
+"hostagedown05.wav"
+],
+"hostagesbeingtaken": [
+"hostagesbeingtaken01.wav",
+"hostagesbeingtaken02.wav",
+"hostagesbeingtaken03.wav",
+"hostagesbeingtaken04.wav"
+],
+"hostagestaken": [
+"hostagestaken01.wav",
+"hostagestaken02.wav",
+"hostagestaken03.wav",
+"hostagestaken04.wav"
+],
+"incombat": [
+"incombat01.wav",
+"incombat02.wav",
+"incombat03.wav",
+"incombat04.wav",
+"incombat05.wav",
+"incombat06.wav",
+"incombat07.wav",
+"incombat08.wav",
+"incombat09.wav",
+"incombat10.wav"
+],
+"inposition": [
+"inposition01.wav",
+"inposition02.wav",
+"inposition03.wav"
+],
+"killedfriend": [
+"killedfriend01.wav",
+"killedfriend02.wav",
+"killedfriend03.wav",
+"killedfriend04.wav",
+"killedfriend05.wav",
+"killedfriend06.wav"
+],
+"lastmanstanding": [
+"lastmanstanding01.wav",
+"lastmanstanding02.wav",
+"lastmanstanding03.wav",
+"lastmanstanding04.wav",
+"lastmanstanding05.wav",
+"lastmanstanding06.wav",
+"lastmanstanding07.wav",
+"lastmanstanding08.wav"
+],
+"lostenemy": [
+"lostenemy01.wav",
+"lostenemy02.wav",
+"lostenemy03.wav",
+"lostenemy04.wav"
+],
+"negative": [
+"negative01.wav",
+"negative02.wav",
+"negative03.wav",
+"negative04.wav"
+],
+"negativeno": [
+"negativeno03.wav",
+"negativeno04.wav",
+"negativeno05.wav"
+],
+"niceshot": [
+"niceshot01.wav",
+"niceshot02.wav",
+"niceshot03.wav",
+"niceshot04.wav",
+"niceshot05.wav",
+"niceshot06.wav",
+"niceshot07.wav",
+"niceshot08.wav",
+"niceshot09.wav",
+"niceshot10.wav",
+"niceshot11.wav",
+"niceshot12.wav",
+"niceshot13.wav",
+"niceshot14.wav"
+],
+"onarollbrag": [
+"onarollbrag01.wav",
+"onarollbrag02.wav",
+"onarollbrag03.wav",
+"onarollbrag04.wav",
+"onarollbrag05.wav",
+"onarollbrag06.wav",
+"onarollbrag07.wav",
+"onarollbrag08.wav",
+"onarollbrag09.wav",
+"onarollbrag10.wav",
+"onarollbrag11.wav",
+"onarollbrag12.wav",
+"onarollbrag13.wav",
+"onarollbrag14.wav",
+"onarollbrag15.wav"
+],
+"oneenemyleft": [
+"oneenemyleft01.wav",
+"oneenemyleft02.wav",
+"oneenemyleft03.wav",
+"oneenemyleft04.wav",
+"oneenemyleft05.wav",
+"oneenemyleft06.wav",
+"oneenemyleft07.wav",
+"oneenemyleft08.wav",
+"oneenemyleft09.wav",
+"oneenemyleft10.wav",
+"oneenemyleft11.wav",
+"oneenemyleft12.wav"
+],
+"onmyway": [
+"onmyway01.wav",
+"onmyway02.wav",
+"onmyway03.wav",
+"onmyway04.wav"
+],
+"peptalk": [
+"peptalk01.wav",
+"peptalk02.wav",
+"peptalk03.wav",
+"peptalk04.wav",
+"peptalk05.wav",
+"peptalk06.wav",
+"peptalk07.wav",
+"peptalk09.wav",
+"peptalk10.wav"
+],
+"pinneddown": [
+"pinneddown01.wav",
+"pinneddown02.wav",
+"pinneddown03.wav",
+"pinneddown04.wav"
+],
+"plantingbomb": [
+"plantingbomb01.wav",
+"plantingbomb02.wav",
+"plantingbomb03.wav",
+"plantingbomb04.wav",
+"plantingbomb05.wav"
+],
+"preventescapebrag": [
+"preventescapebrag01.wav",
+"preventescapebrag02.wav",
+"preventescapebrag03.wav",
+"preventescapebrag04.wav",
+"preventescapebrag05.wav"
+],
+"radio.enemyspotted": [
+"radio.enemyspotted01.wav",
+"radio.enemyspotted02.wav",
+"radio.enemyspotted03.wav",
+"radio.enemyspotted04.wav",
+"radio.enemyspotted05.wav"
+],
+"radio.followme": [
+"radio.followme01.wav",
+"radio.followme02.wav",
+"radio.followme03.wav",
+"radio.followme04.wav"
+],
+"radio.letsgo": [
+"radio.letsgo01.wav",
+"radio.letsgo02.wav",
+"radio.letsgo03.wav",
+"radio.letsgo04.wav",
+"radio.letsgo05.wav",
+"radio.letsgo06.wav",
+"radio.letsgo08.wav",
+"radio.letsgo09.wav",
+"radio.letsgo10.wav",
+"radio.letsgo11.wav",
+"radio.letsgo12.wav"
+],
+"radio.locknload": [
+"radio.locknload01.wav",
+"radio.locknload02.wav",
+"radio.locknload03.wav",
+"radio.locknload04.wav",
+"radio.locknload05.wav",
+"radio.locknload06.wav",
+"radio.locknload07.wav",
+"radio.locknload10.wav"
+],
+"radio.needbackup": [
+"radio.needbackup01.wav",
+"radio.needbackup02.wav",
+"radio.needbackup03.wav"
+],
+"radio.takingfire": [
+"radio.takingfire01.wav",
+"radio.takingfire02.wav",
+"radio.takingfire03.wav",
+"radio.takingfire04.wav",
+"radio.takingfire05.wav",
+"radio.takingfire06.wav",
+"radio.takingfire07.wav"
+],
+"radio_enemyspotted": [
+"radio_enemyspotted01.wav",
+"radio_enemyspotted02.wav",
+"radio_enemyspotted03.wav",
+"radio_enemyspotted04.wav",
+"radio_enemyspotted05.wav",
+"radio_enemyspotted06.wav",
+"radio_enemyspotted07.wav"
+],
+"radio_followme": [
+"radio_followme01.wav",
+"radio_followme02.wav",
+"radio_followme03.wav",
+"radio_followme04.wav",
+"radio_followme05.wav",
+"radio_followme06.wav"
+],
+"radio_letsgo": [
+"radio_letsgo01.wav",
+"radio_letsgo02.wav",
+"radio_letsgo03.wav",
+"radio_letsgo04.wav",
+"radio_letsgo05.wav",
+"radio_letsgo06.wav",
+"radio_letsgo07.wav",
+"radio_letsgo08.wav",
+"radio_letsgo09.wav",
+"radio_letsgo10.wav",
+"radio_letsgo11.wav",
+"radio_letsgo12.wav",
+"radio_letsgo13.wav"
+],
+"radio_locknload": [
+"radio_locknload01.wav",
+"radio_locknload02.wav",
+"radio_locknload03.wav",
+"radio_locknload04.wav",
+"radio_locknload05.wav",
+"radio_locknload06.wav",
+"radio_locknload07.wav",
+"radio_locknload08.wav",
+"radio_locknload09.wav",
+"radio_locknload10.wav",
+"radio_locknload11.wav",
+"radio_locknload12.wav",
+"radio_locknload13.wav",
+"radio_locknload14.wav"
+],
+"radio_needbackup": [
+"radio_needbackup01.wav",
+"radio_needbackup02.wav",
+"radio_needbackup03.wav",
+"radio_needbackup04.wav",
+"radio_needbackup05.wav",
+"radio_needbackup06.wav"
+],
+"radio_takingfire": [
+"radio_takingfire01.wav",
+"radio_takingfire02.wav",
+"radio_takingfire03.wav",
+"radio_takingfire04.wav",
+"radio_takingfire05.wav",
+"radio_takingfire06.wav",
+"radio_takingfire07.wav",
+"radio_takingfire08.wav",
+"radio_takingfire09.wav"
+],
+"radiobombsite": [
+"radiobombsite01.wav",
+"radiobombsite02.wav",
+"radiobombsite03.wav"
+],
+"radiobotbombatsafe": [
+"radiobotbombatsafe01.wav",
+"radiobotbombatsafe02.wav",
+"radiobotbombatsafe03.wav"
+],
+"radiobotbombdefusing": [
+"radiobotbombdefusing01.wav",
+"radiobotbombdefusing02.wav",
+"radiobotbombdefusing05.wav"
+],
+"radiobotcheer": [
+"radiobotcheer01.wav",
+"radiobotcheer02.wav",
+"radiobotcheer03.wav",
+"radiobotcheer06.wav",
+"radiobotcheer08.wav",
+"radiobotcheer09.wav",
+"radiobotcheer10.wav",
+"radiobotcheer11.wav",
+"radiobotcheer12.wav",
+"radiobotcheer13.wav"
+],
+"radiobotclear": [
+"radiobotclear01.wav",
+"radiobotclear02.wav",
+"radiobotclear03.wav",
+"radiobotclear04.wav",
+"radiobotclear05.wav",
+"radiobotclear06.wav",
+"radiobotclear07.wav"
+],
+"radiobotcompliment": [
+"radiobotcompliment01.wav"
+],
+"radiobotendclean": [
+"radiobotendclean01.wav",
+"radiobotendclean02.wav",
+"radiobotendclean03.wav",
+"radiobotendclean04.wav",
+"radiobotendclean05.wav",
+"radiobotendclean06.wav",
+"radiobotendclean07.wav",
+"radiobotendclean08.wav",
+"radiobotendclean09.wav",
+"radiobotendclean10.wav",
+"radiobotendclean11.wav"
+],
+"radiobotendsolid": [
+"radiobotendsolid01.wav",
+"radiobotendsolid02.wav",
+"radiobotendsolid03.wav",
+"radiobotendsolid04.wav",
+"radiobotendsolid05.wav",
+"radiobotendsolid06.wav",
+"radiobotendsolid07.wav",
+"radiobotendsolid08.wav"
+],
+"radiobotfallback": [
+"radiobotfallback01.wav",
+"radiobotfallback02.wav",
+"radiobotfallback03.wav",
+"radiobotfallback04.wav",
+"radiobotfallback05.wav"
+],
+"radiobotfollowme": [
+"radiobotfollowme01.wav",
+"radiobotfollowme02.wav",
+"radiobotfollowme03.wav",
+"radiobotfollowme04.wav",
+"radiobotfollowme06.wav"
+],
+"radiobotfollowyou": [
+"radiobotfollowyou01.wav",
+"radiobotfollowyou02.wav",
+"radiobotfollowyou03.wav",
+"radiobotfollowyou04.wav",
+"radiobotfollowyou05.wav"
+],
+"radiobotgo": [
+"radiobotgo01.wav",
+"radiobotgo02.wav",
+"radiobotgo03.wav",
+"radiobotgo04.wav",
+"radiobotgo05.wav",
+"radiobotgo06.wav",
+"radiobotgo07.wav",
+"radiobotgo08.wav",
+"radiobotgo09.wav"
+],
+"radiobotguarding": [
+"radiobotguarding01.wav",
+"radiobotguarding02.wav",
+"radiobotguarding03.wav",
+"radiobotguarding04.wav",
+"radiobotguarding05.wav",
+"radiobotguarding06.wav",
+"radiobotguarding07.wav"
+],
+"radiobotguardinga": [
+"radiobotguardinga01.wav",
+"radiobotguardinga02.wav",
+"radiobotguardinga03.wav"
+],
+"radiobotguardingb": [
+"radiobotguardingb01.wav",
+"radiobotguardingb02.wav",
+"radiobotguardingb03.wav"
+],
+"radiobotguardingc": [
+"radiobotguardingc01.wav",
+"radiobotguardingc02.wav",
+"radiobotguardingc03.wav"
+],
+"radiobothear": [
+"radiobothear01.wav",
+"radiobothear02.wav",
+"radiobothear03.wav",
+"radiobothear04.wav",
+"radiobothear05.wav",
+"radiobothear06.wav"
+],
+"radiobothold": [
+"radiobothold01.wav",
+"radiobothold02.wav",
+"radiobothold03.wav",
+"radiobothold04.wav"
+],
+"radiobotkill": [
+"radiobotkill01.wav",
+"radiobotkill04.wav",
+"radiobotkill06.wav",
+"radiobotkill07.wav",
+"radiobotkill08.wav",
+"radiobotkill09.wav",
+"radiobotkill10.wav",
+"radiobotkill11.wav"
+],
+"radiobotkillcount": [
+"radiobotkillcount02.wav",
+"radiobotkillcount03.wav",
+"radiobotkillcount04.wav",
+"radiobotkillcount05.wav",
+"radiobotkillcount07.wav",
+"radiobotkillcount09.wav",
+"radiobotkillcount10.wav",
+"radiobotkillcount12.wav",
+"radiobotkillcount13.wav",
+"radiobotkillcount15.wav",
+"radiobotkillcount16.wav",
+"radiobotkillcount18.wav",
+"radiobotkillcount19.wav",
+"radiobotkillcount21.wav",
+"radiobotkillcount22.wav",
+"radiobotkillcount24.wav",
+"radiobotkillcount25.wav",
+"radiobotkillcount27.wav"
+],
+"radiobotkillsniper": [
+"radiobotkillsniper01.wav",
+"radiobotkillsniper02.wav",
+"radiobotkillsniper03.wav",
+"radiobotkillsniper04.wav",
+"radiobotkillsniper05.wav",
+"radiobotkillsniper06.wav"
+],
+"radiobotniceshot": [
+"radiobotniceshot01.wav",
+"radiobotniceshot02.wav",
+"radiobotniceshot03.wav",
+"radiobotniceshot04.wav",
+"radiobotniceshot05.wav",
+"radiobotniceshot06.wav",
+"radiobotniceshot07.wav",
+"radiobotniceshot08.wav",
+"radiobotniceshot09.wav",
+"radiobotniceshot10.wav",
+"radiobotniceshot11.wav",
+"radiobotniceshot12.wav",
+"radiobotniceshot13.wav"
+],
+"radiobotplanting": [
+"radiobotplanting01.wav",
+"radiobotplanting02.wav",
+"radiobotplanting03.wav",
+"radiobotplanting04.wav",
+"radiobotplanting05.wav",
+"radiobotplanting06.wav",
+"radiobotplanting07.wav"
+],
+"radiobotplantinggo": [
+"radiobotplantinggo01.wav",
+"radiobotplantinggo02.wav",
+"radiobotplantinggo03.wav"
+],
+"radiobotplantinggoa": [
+"radiobotplantinggoa01.wav",
+"radiobotplantinggoa02.wav"
+],
+"radiobotplantinggob": [
+"radiobotplantinggob01.wav",
+"radiobotplantinggob02.wav"
+],
+"radiobotplantinggoc": [
+"radiobotplantinggoc01.wav",
+"radiobotplantinggoc02.wav",
+"radiobotplantinggoc03.wav"
+],
+"radiobotplantinggosafe": [
+"radiobotplantinggosafe01.wav",
+"radiobotplantinggosafe02.wav",
+"radiobotplantinggosafe03.wav"
+],
+"radiobotpostflash": [
+"radiobotpostflash01.wav",
+"radiobotpostflash02.wav",
+"radiobotpostflash03.wav",
+"radiobotpostflash04.wav"
+],
+"radiobotquery": [
+"radiobotquery01.wav",
+"radiobotquery02.wav",
+"radiobotquery03.wav",
+"radiobotquery04.wav",
+"radiobotquery05.wav"
+],
+"radiobotregroup": [
+"radiobotregroup01.wav",
+"radiobotregroup02.wav",
+"radiobotregroup03.wav",
+"radiobotregroup04.wav"
+],
+"radiobotreponseattacking": [
+"radiobotreponseattacking01.wav",
+"radiobotreponseattacking02.wav",
+"radiobotreponseattacking03.wav",
+"radiobotreponseattacking04.wav",
+"radiobotreponseattacking05.wav",
+"radiobotreponseattacking06.wav",
+"radiobotreponseattacking07.wav",
+"radiobotreponseattacking08.wav",
+"radiobotreponseattacking09.wav"
+],
+"radiobotreponsecoverrequest": [
+"radiobotreponsecoverrequest01.wav",
+"radiobotreponsecoverrequest02.wav",
+"radiobotreponsecoverrequest03.wav",
+"radiobotreponsecoverrequest04.wav",
+"radiobotreponsecoverrequest05.wav",
+"radiobotreponsecoverrequest06.wav"
+],
+"radiobotreponsenegative": [
+"radiobotreponsenegative01.wav",
+"radiobotreponsenegative02.wav",
+"radiobotreponsenegative03.wav",
+"radiobotreponsenegative05.wav",
+"radiobotreponsenegative06.wav",
+"radiobotreponsenegative07.wav",
+"radiobotreponsenegative08.wav",
+"radiobotreponsenegative09.wav",
+"radiobotreponsenegative10.wav",
+"radiobotreponsenegative12.wav",
+"radiobotreponsenegative14.wav",
+"radiobotreponsenegative16.wav",
+"radiobotreponsenegative19.wav"
+],
+"radiobotreponseomw": [
+"radiobotreponseomw01.wav",
+"radiobotreponseomw02.wav",
+"radiobotreponseomw03.wav",
+"radiobotreponseomw04.wav",
+"radiobotreponseomw05.wav"
+],
+"radiobotreponsepositive": [
+"radiobotreponsepositive01.wav",
+"radiobotreponsepositive02.wav",
+"radiobotreponsepositive03.wav",
+"radiobotreponsepositive04.wav",
+"radiobotreponsepositive05.wav",
+"radiobotreponsepositive06.wav",
+"radiobotreponsepositive07.wav",
+"radiobotreponsepositive08.wav",
+"radiobotreponsepositive09.wav",
+"radiobotreponsepositive10.wav"
+],
+"radiobotreport": [
+"radiobotreport01.wav",
+"radiobotreport02.wav",
+"radiobotreport03.wav",
+"radiobotreport04.wav",
+"radiobotreport05.wav",
+"radiobotreport06.wav",
+"radiobotreport07.wav",
+"radiobotreport08.wav"
+],
+"radiobotstart": [
+"radiobotstart01.wav",
+"radiobotstart02.wav",
+"radiobotstart03.wav",
+"radiobotstart04.wav",
+"radiobotstart05.wav",
+"radiobotstart06.wav",
+"radiobotstart07.wav",
+"radiobotstart08.wav",
+"radiobotstart09.wav",
+"radiobotstart10.wav"
+],
+"radiobottarget": [
+"radiobottarget01.wav",
+"radiobottarget05.wav",
+"radiobottarget06.wav",
+"radiobottarget08.wav"
+],
+"radiobotunderfire": [
+"radiobotunderfire01.wav",
+"radiobotunderfire02.wav",
+"radiobotunderfire03.wav",
+"radiobotunderfire04.wav",
+"radiobotunderfire05.wav",
+"radiobotunderfire06.wav",
+"radiobotunderfire07.wav",
+"radiobotunderfire08.wav",
+"radiobotunderfire09.wav",
+"radiobotunderfire10.wav",
+"radiobotunderfire11.wav"
+],
+"radiobotunderfirefriendly": [
+"radiobotunderfirefriendly01.wav",
+"radiobotunderfirefriendly02.wav",
+"radiobotunderfirefriendly03.wav",
+"radiobotunderfirefriendly04.wav",
+"radiobotunderfirefriendly05.wav",
+"radiobotunderfirefriendly06.wav",
+"radiobotunderfirefriendly07.wav"
+],
+"radiobotunderfiresniper": [
+"radiobotunderfiresniper01.wav",
+"radiobotunderfiresniper02.wav",
+"radiobotunderfiresniper04.wav"
+],
+"radiobotwait": [
+"radiobotwait01.wav"
+],
+"reportingin": [
+"reportingin01.wav",
+"reportingin02.wav",
+"reportingin03.wav",
+"reportingin04.wav"
+],
+"requestreport": [
+"requestreport01.wav",
+"requestreport02.wav",
+"requestreport03.wav",
+"requestreport04.wav"
+],
+"scaredemote": [
+"scaredemote01.wav",
+"scaredemote02.wav",
+"scaredemote03.wav",
+"scaredemote04.wav",
+"scaredemote05.wav",
+"scaredemote06.wav",
+"scaredemote07.wav",
+"scaredemote08.wav",
+"scaredemote09.wav",
+"scaredemote10.wav"
+],
+"sniperkilled": [
+"sniperkilled01.wav",
+"sniperkilled02.wav",
+"sniperkilled03.wav",
+"sniperkilled04.wav"
+],
+"sniperwarning": [
+"sniperwarning01.wav",
+"sniperwarning02.wav",
+"sniperwarning03.wav",
+"sniperwarning04.wav",
+"sniperwarning05.wav"
+],
+"spottedloosebomb": [
+"spottedloosebomb01.wav",
+"spottedloosebomb02.wav",
+"spottedloosebomb03.wav",
+"spottedloosebomb04.wav",
+"spottedloosebomb05.wav",
+"spottedloosebomb06.wav",
+"spottedloosebomb07.wav",
+"spottedloosebomb08.wav"
+],
+"t_death": [
+"t_death01.wav",
+"t_death02.wav",
+"t_death03.wav",
+"t_death04.wav",
+"t_death05.wav",
+"t_death06.wav",
+"t_death07.wav"
+],
+"t_decoy": [
+"t_decoy01.wav",
+"t_decoy02.wav",
+"t_decoy03.wav",
+"t_decoy04.wav"
+],
+"t_flashbang": [
+"t_flashbang01.wav",
+"t_flashbang02.wav",
+"t_flashbang03.wav",
+"t_flashbang04.wav"
+],
+"t_grenade": [
+"t_grenade01.wav",
+"t_grenade02.wav",
+"t_grenade03.wav",
+"t_grenade04.wav",
+"t_grenade05.wav",
+"t_grenade06.wav"
+],
+"t_molotov": [
+"t_molotov01.wav",
+"t_molotov02.wav",
+"t_molotov03.wav",
+"t_molotov04.wav",
+"t_molotov05.wav",
+"t_molotov06.wav",
+"t_molotov07.wav",
+"t_molotov08.wav",
+"t_molotov11.wav"
+],
+"t_smoke": [
+"t_smoke01.wav",
+"t_smoke02.wav",
+"t_smoke03.wav",
+"t_smoke04.wav",
+"t_smoke05.wav"
+],
+"thanks": [
+"thanks01.wav",
+"thanks02.wav",
+"thanks03.wav",
+"thanks04.wav",
+"thanks05.wav"
+],
+"threeenemiesleft": [
+"threeenemiesleft01.wav",
+"threeenemiesleft02.wav",
+"threeenemiesleft03.wav",
+"threeenemiesleft04.wav",
+"threeenemiesleft05.wav",
+"threeenemiesleft07.wav"
+],
+"twoenemiesleft": [
+"twoenemiesleft01.wav",
+"twoenemiesleft02.wav",
+"twoenemiesleft03.wav",
+"twoenemiesleft04.wav",
+"twoenemiesleft05.wav",
+"twoenemiesleft06.wav"
+],
+"waitinghere": [
+"waitinghere01.wav",
+"waitinghere02.wav",
+"waitinghere03.wav",
+"waitinghere04.wav",
+"waitinghere05.wav"
+]
+}

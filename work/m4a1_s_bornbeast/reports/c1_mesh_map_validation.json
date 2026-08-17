@@ -1,0 +1,17 @@
+{
+  "schema": "cf2.m4a1_s.c1-mesh-map-validation.v1",
+  "map": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\mesh_map.yaml",
+  "map_sha256": "c21e19929f027119f1d8f3ed0c998b9ec29adaab83ef1b0fb6050559d856475f",
+  "b3_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json",
+  "reference_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a1_s\\reference_report.json",
+  "passed": true,
+  "mesh_count": 11,
+  "cf_arm_meshes_excluded": [
+    "Fview-arm2",
+    "Fview-hand2"
+  ],
+  "weapon_meshes_exported": 9,
+  "semantic_part_review_pending": 9,
+  "official_material": "rif_m4a1_s",
+  "failures": []
+}
