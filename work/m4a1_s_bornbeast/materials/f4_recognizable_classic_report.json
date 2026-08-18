@@ -1,6 +1,8 @@
 {
   "schema": "cf2.m4a4.f4-recognizable-classic.v1",
-  "status": "staged_recognizable_classic_diffuse_red_selfillum",
+  "status": "staged_external_reference_prototype_material",
+  "final_target_identity": false,
+  "final_cf_material": false,
   "base_model": "D3 R1 full, user-confirmed",
   "external_source": {
     "page": "https://www.gamemodd.com/cs/skinsweapons/ak47/1082-m4a1-s-born-beast.html",
@@ -13,7 +15,8 @@
     "extraction_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\external\\cs16_texture_extract_report.json",
     "diffuse": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\external\\cs16_textures\\02_PV-M4A1_S_BORNBEAST.bmp.png",
     "diffuse_sha256": "be9084917d452445c7d4e57db9d9cf3efff0a129532457ab037d7eb4b8c64779",
-    "usage": "material reference/recovery only; external model and animation are not used"
+    "usage": "material reference/recovery only; external model and animation are not used",
+    "final_release_allowed": false
   },
   "source1": {
     "base_vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f4_recognizable_classic\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",

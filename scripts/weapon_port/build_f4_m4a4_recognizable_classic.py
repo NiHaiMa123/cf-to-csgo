@@ -163,7 +163,9 @@ def main() -> int:
 
     report = {
         "schema": "cf2.m4a4.f4-recognizable-classic.v1",
-        "status": "staged_recognizable_classic_diffuse_red_selfillum",
+        "status": "staged_external_reference_prototype_material",
+        "final_target_identity": False,
+        "final_cf_material": False,
         "base_model": "D3 R1 full, user-confirmed",
         "external_source": {
             "page": SOURCE_PAGE,
@@ -174,6 +176,7 @@ def main() -> int:
             "diffuse": str(SOURCE_DIFFUSE),
             "diffuse_sha256": sha256(SOURCE_DIFFUSE),
             "usage": "material reference/recovery only; external model and animation are not used",
+            "final_release_allowed": False,
         },
         "source1": {
             "base_vtf": str(base_vtf),

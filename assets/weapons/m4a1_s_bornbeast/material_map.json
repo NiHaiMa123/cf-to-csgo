@@ -1,11 +1,13 @@
 {
   "schema": "cf2.m4a4.material-map.v2",
-  "status": "f4_recognizable_classic_staged",
+  "status": "prototype_external_reference_material_staged",
+  "final_target_identity": false,
+  "final_cf_material": false,
   "policy": {
     "d3_r1_static": "The official rif_m4a1 material was used only as an explicit geometry visibility placeholder.",
     "f1_debug": "Use the decoded AlphaMap minimum-channel grayscale with a documented gamma lift only to review UV alignment and surface completeness.",
     "f3_faithful_translation": "Rejected as a recognizable base because Alpha-G resolves to an unrelated conventional weapon atlas.",
-    "f4_recognizable": "Use the audited classic diffuse recovered from the external GoldSrc port, plus a derived red-dominance self-illumination mask. Keep CF shader animation provisional."
+    "f4_recognizable": "REFERENCE/PROTOTYPE ONLY. Use the audited classic diffuse recovered from the external GoldSrc port to validate UV and Source 1 material behavior. It is forbidden as a final CF material input."
   },
   "slots": {
     "M4A1S_BornBeast": "rif_m4a1",
@@ -24,8 +26,9 @@
       "vmt": "build/m4a1_s_bornbeast_m4a4/f4_recognizable_classic/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
       "vtf": "build/m4a1_s_bornbeast_m4a4/f4_recognizable_classic/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
       "source": "work/m4a1_s_bornbeast/materials/derived/bornbeast_f4_classic_base.png",
+      "source_kind": "external_reference",
       "final_cf_material": false,
-      "purpose": "Recognizable classic black/gunmetal/silver/red appearance with static red self-illumination"
+      "purpose": "REFERENCE/PROTOTYPE UV and Source 1 material-chain validation; prohibited from final release"
     }
   },
   "evidence": {

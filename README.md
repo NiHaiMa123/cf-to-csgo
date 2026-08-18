@@ -4,6 +4,18 @@
 
 包含：CF REZ 解密解包、假 WAV 音频修复、CS:GO VPK 结构解析、MIGI 自动化封包部署及 GSI 游戏联动工具。
 
+## 当前项目方向
+
+项目当前优先目标不是立刻证明某一套候选资产就是最终雷神，而是先建立稳定、可重复的 **CF 武器 → CS:GO Legacy Source 1** 转换流水线。唯一权威进度、当前阶段和后续顺序见 [`plan.md`](plan.md)；README 以下内容主要是工具用法、历史实验和证据索引，不再单独维护另一套阶段状态。
+
+- Active runtime 已统一为 **M4A4**：`weapons/v_rif_m4a1.mdl`、官方 M4A4 57-bone skeleton 和 9 个 sequence。
+- 当前可运行版本是 `Prototype`：本地 CF 候选 LTB + 官方 M4A4 动作 + 参考材质，已经跑通编译、MIGI 和实机闭环。
+- 当前网络下载材质只允许用于 `REFERENCE/PROTOTYPE`；`final_cf_material=false`，不能视为最终 F 阶段完成。
+- 最终模型、材质、动画和声音必须来自本地 CF 原始资源；“真正雷神是哪套 LTB/DTX”是流水线稳定后独立执行的资产定位任务。
+- M4A1-S skeleton、C2/D2 和 silencer 相关内容均为历史研究证据，不是当前 M4A4 路线的 blocker，也不得重新成为 active route。
+
+当前唯一活动测试 addon：`p_cf_bornbeast_m4a4_f4_recognizable_tmp`。
+
 ---
 
 ## 📁 目录结构与组件说明
@@ -123,7 +135,7 @@ dotnet build .\CFRezManager\CFRezManager.csproj --no-restore
 python scripts/cf_ltb/evaluate_b2_routes.py
 ```
 
-该命令对 `PV-M4A1_BL.LTB` 与雷神目标 LTB 做字段级对照，并记录外部转换器可用性；结果写入 `work/m4a1_s_bornbeast/reports/b2_route_evaluation.json`。审计后的可信结论是：57-node hierarchy 真实存在；蒙皮记录中的 packed bone bytes 是直接 node index（`255` sentinel），显式 weights 在前、残差 weight 在后；bind matrix 是 row-major、column-vector、model/global-space bone-to-model bind，子级 local 应按 `inverse(parentGlobal) * childGlobal` 计算。报告中的 `7.4e-15` 回环误差是自验证结果，不能继续写成这些语义“已经被 validator 证明”。目标 LTB 实际含 8 个 CF clip，但正式 decoder 尚未输出关键帧；这只阻塞 R3/CF 原动作，R1/R2 继续使用官方 CS:GO 动作，不阻塞 C2/C3。
+该命令对 `PV-M4A1_BL.LTB` 与候选 LTB 做字段级对照，并记录外部转换器可用性；结果写入 `work/m4a1_s_bornbeast/reports/b2_route_evaluation.json`。审计后的可信结论是：57-node hierarchy 真实存在；蒙皮记录中的 packed bone bytes 是直接 node index（`255` sentinel），显式 weights 在前、残差 weight 在后；bind matrix 是 row-major、column-vector、model/global-space bone-to-model bind，子级 local 应按 `inverse(parentGlobal) * childGlobal` 计算。报告中的 `7.4e-15` 回环误差是自验证结果，不能继续写成这些语义“已经被 validator 证明”。目标 LTB 实际含 8 个 CF clip，但正式 decoder 尚未输出关键帧；它只阻塞未来 CF 原动作，不阻塞当前使用官方 M4A4 动作的 Prototype。
 
 项目没有把外部 LTB 转换器二进制混进源码树。`tools/third_party/ltb2lta_v2.4/` 仅作为组件登记目录；如果以后取得合法、可复现的工具包，应连同版本、来源、SHA-256 和许可说明放入该目录，再由报告记录，不要直接放到 `data/` 或游戏目录。
 
@@ -159,7 +171,7 @@ python scripts/cf_ltb/split_c1_meshes.py `
   --output-dir ".\work\m4a1_s_bornbeast\source_dump\c1_split"
 ```
 
-C1 默认只保留 9 个 CF 枪体 mesh；`Fview-hand2` 与 `Fview-arm2` 输出到独立的 `cf_arms_optional` staging，正式路径使用官方 M4A1-S 手臂/手套。当前编号枪体件的语义仍是 provisional，待 Blender/mesh inspection 后在 C2 固化弹匣、枪机、消音器和附件骨骼绑定。
+C1 默认只保留 9 个 CF 枪体 mesh；`Fview-hand2` 与 `Fview-arm2` 输出到独立的 `cf_arms_optional` staging，当前 M4A4 Prototype 不把 CF 手臂并入 weapon mesh。编号件中 01 已作为弹匣、02 已作为枪机/拉机柄；03–08 在 Prototype 中使用 Parent fallback，最终语义留到目标资产确认后处理。
 
 用户已启动 Blender MCP 时，可用下面的最小客户端确认端口并执行 Blender Python：
 
@@ -171,7 +183,7 @@ python scripts/cf_ltb/blender_mcp_call.py execute_code `
 
 本次 C1 复核使用 `use_split_objects=true`、`use_split_groups=true` 导入 weapon-only staging，并整理到 Blender 的 `CF_C1_REVIEW` collection；生成 `work/m4a1_s_bornbeast/reports/c1_blender_overview.png`、逐件预览目录和 `c1_blender_mcp_review.json`。结果确认主体、`M4A1S_BornBeast01`（弹匣）以及 `M4A1S_BornBeast02`（枪机/拉机柄）；03–08 的几何已单独检查，但 CF 动画关键帧尚未解码，因此其动态角色保持 unresolved，不能用尚未实现的 clip decoder 作为绑定证据。
 
-**骨架映射（阶段 C2，当前为 provisional）**：
+**历史骨架研究（旧阶段 C2；非 active runtime）**：
 
 ```powershell
 python scripts/cf_ltb/build_c2_skeleton_plan.py `
@@ -181,9 +193,9 @@ python scripts/cf_ltb/build_c2_skeleton_plan.py `
   --binding-output ".\work\m4a1_s_bornbeast\reports\c2_binding_plan.json"
 ```
 
-该步骤锁定官方 M4A1-S 的 58 根骨骼和必需机械骨骼集合，建立主枪身、弹匣、枪机及未决件的候选绑定。`c2_binding_plan.json` 不是最终权重文件：01→Clip 可锁定，02→Bolt 为高置信候选；main 整块→Parent 会把其中内置枪口/消音器和可能的扳机固定住，03–08→Parent 也只能作为 R1 静态降级。CF clip 未进入正式 decoder 不阻塞使用官方动作的 R1/R2/C3。
+该步骤曾以官方 M4A1-S 的 58 根骨骼研究主枪身、弹匣、枪机及未决件的候选绑定。`c2_binding_plan.json` 不是当前 M4A4 权重文件，也不是 active gate；可复用的网格语义结论已转入 M4A4 D3，silencer 相关结论只作为历史证据保留。
 
-**坐标标定（阶段 C3，PASS WITH REQUIRED QC OVERRIDE）**：
+**历史 M4A1-S 坐标标定（旧阶段 C3）**：
 
 ```powershell
 python scripts/cf_ltb/build_c3_alignment.py `
@@ -201,9 +213,9 @@ python scripts/cf_ltb/blender_mcp_call.py execute_code --timeout 120 `
 
 C3 只接受 B3 raw OBJ，并把同一个相似变换应用到全部 9 个枪体 mesh。固化轴向是 `Source X=CF X, Source Y=-CF Z, Source Z=CF Y`，统一 scale 为 `1.863360763`，再含约 `2.9456°` 的小修正；完整 column-vector 4×4 矩阵在 `assets/weapons/m4a1_s_bornbeast/c3_alignment_manifest.json`。自动报告位于 `work/m4a1_s_bornbeast/source_dump/c3_alignment/c3_alignment_report.json`，Blender 叠加证据位于 `work/m4a1_s_bornbeast/reports/c3/`。
 
-四标志点与包围盒 gate 已通过，官方裸枪口 `flash` 和 `shelleject` 也靠近 CF 表面。唯一强制例外是官方 QC 的 `$attachment "muzzle_flash2" ... 9.5 0 0`：它比 CF 实际内置枪口向前约 7.9 Source 单位，D 阶段必须将 local-X offset 改为约 `1.613`。这不等于 C2 消音器问题已经解决；R2 仍需拆分内置枪口/消音器或明确采用静态降级。
+四标志点与包围盒 gate 已通过，但该变换属于旧 M4A1-S reference。当前 M4A4 已使用独立的 `c3_alignment_m4a4_manifest.json`，不得复用这里的 scale、attachment offset 或 silencer 假设。
 
-**Blender 构建场景（阶段 D1，PASS WITH UV AND BOUNDARY ADVISORY）**：
+**历史 Blender 构建场景（旧阶段 D1）**：
 
 Blender MCP `127.0.0.1:9876` 在线时运行：
 
@@ -221,7 +233,7 @@ python scripts/cf_ltb/validate_d1_scene.py `
 
 产物位于 `work/m4a1_s_bornbeast/d1/`：可打开的 `d1_m4a1_s_bornbeast.blend`、`d1_export_scene.png` 和带 SHA-256 的 `d1_scene_report.json`。
 
-**导出前强制检查（阶段 D2）**：
+**历史 M4A1-S 导出前检查（旧阶段 D2）**：
 
 ```powershell
 # Blender 当前打开 D1 场景时，生成不修改场景的 preflight report
@@ -233,7 +245,7 @@ python scripts/cf_ltb/validate_d2_report.py `
   --report ".\work\m4a1_s_bornbeast\d2\d2_preflight_report.json" `
   --profile r1_static
 
-# 当前 R2 应返回 1；在 blocker 修完前不能把它改成通过
+# 历史 r2_full 结果仅供研究；不再是当前 M4A4 gate
 python scripts/cf_ltb/validate_d2_report.py `
   --report ".\work\m4a1_s_bornbeast\d2\d2_preflight_report.json" `
   --profile r2_full
@@ -284,9 +296,9 @@ python scripts/csgo_pack/build_d3_m4a4_r1.py --layer part05 --deploy-migi
 python scripts/csgo_pack/build_d3_m4a4_r1.py --layer full --deploy-migi
 ```
 
-D3 当前自动检查通过：主枪身 `M4A1S_BornBeast` 共 3,407 三角面，100% rigid 到 M4A4 的 `v_weapon.M4A1_Parent`；编译和回环均为 57 骨、9 序列、2 附件、3,407 面及 `rif_m4a1`。旧 M4A1-S C3 transform 已明确拒绝，因为两种官方模型的 Parent bind 不同；新 M4A4 独立拟合固化于 `c3_alignment_m4a4_manifest.json`，scale 为 `1.784443884`、轴向修正为 `2.4516°`。产物位于 `build/m4a1_s_bornbeast_m4a4/d3_r1_main/addon/`，报告位于 `work/m4a1_s_bornbeast/d3_m4a4/d3_r1_main_report.json`，并已逐文件一致地部署到 MIGI addon `p_cf_bornbeast_m4a4_d3_main_tmp`。用户已在 CS:GO Legacy 中确认主枪身、基础动作、FOV、枪口/抛壳及无消音器状态均没有问题；确认记录为 `d3_manual_game_check.json`。官方材质仍只是可见性占位，01–08 分件尚未加入。
+D3 主枪身自动检查通过：`M4A1S_BornBeast` 共 3,407 三角面，100% rigid 到 M4A4 的 `v_weapon.M4A1_Parent`；编译和回环均为 57 骨、9 序列、2 附件、3,407 面及 `rif_m4a1`。旧 M4A1-S C3 transform 已明确拒绝，因为两种官方模型的 Parent bind 不同；新 M4A4 独立拟合固化于 `c3_alignment_m4a4_manifest.json`。`p_cf_bornbeast_m4a4_d3_main_tmp` 是当时的分层测试 addon，现已归档；用户确认记录为 `d3_manual_game_check.json`。
 
-01 弹匣增量位于 `build/m4a1_s_bornbeast_m4a4/d3_r1_clip/`，报告为 `d3_r1_clip_report.json`。该层新增 44 个位置、36 个三角面并 rigid 到 `v_weapon.M4A1_Clip`；回环 SMD 中主枪身 10,221 corners 保持 bone 3，弹匣 108 corners 保持 bone 4。官方 Idle 的 Clip 最大变化为 `0`，Reload 为 `14.908203`。当前活动 MIGI addon 是 `p_cf_bornbeast_m4a4_d3_clip_tmp`，main-only 上一层已移到 `mods_temp`；用户已实机确认弹匣正常，证据和范围记录在 `d3_clip_manual_game_check.json`。
+01 弹匣增量位于 `build/m4a1_s_bornbeast_m4a4/d3_r1_clip/`，报告为 `d3_r1_clip_report.json`。该层新增 44 个位置、36 个三角面并 rigid 到 `v_weapon.M4A1_Clip`；回环 SMD 中主枪身 10,221 corners 保持 bone 3，弹匣 108 corners 保持 bone 4。官方 Idle 的 Clip 最大变化为 `0`，Reload 为 `14.908203`。该分层 addon 已归档；用户实机证据在 `d3_clip_manual_game_check.json`。
 
 截图中掉枪后仍是原版 M4A4 属于预期的未覆盖范围，而不是弹匣层失败：当前 addon 只有第一人称 `v_rif_m4a1.*`。本地官方 VPK 确认 M4A4 另有 `w_rif_m4a1.*`、落地武器 `w_rif_m4a1_dropped.*` 以及掉落弹匣 `w_rif_m4a1_mag.*`；世界模型必须单独提取、反编译、对齐并保留自己的碰撞/LOD，不能把 viewmodel 或 AK 模型直接改名。
 
@@ -312,7 +324,7 @@ F3 第一层由 `scripts/weapon_port/build_f3_m4a4_base_phong.py` 构建：修�
 
 F3 的引用闭包虽然通过，但实机只能看到不可识别的黑白拼块；复核纹理内容后确认 Alpha-G 实际是带 `ACCURACY INTERNATIONAL` 字样的另一把常规武器 atlas。因此 F3 被判定为“技术链路有效、外观语义错误”，不能继续作为雷神底色，addon 已移入 `mods_temp`。
 
-F4 改用可独立核验的经典外观来源：公开页面 `https://www.gamemodd.com/cs/skinsweapons/ak47/1082-m4a1-s-born-beast.html` 发布的 CS 1.6 包（页面署名 Smilegate、Nexon）。下载 RAR 的 SHA-256 为 `9820df6ffafc5a49051e7e64560118d399bbda6a65717f2120a89ccae5b91d85`；仓库新增 `scripts/weapon_port/extract_goldsrc_mdl_textures.py`，从 GoldSrc v10 MDL 的内嵌 8-bit palette 中提取 6 张纹理，报告为 `external/cs16_texture_extract_report.json`。其中 `PV-M4A1_S_BORNBEAST.bmp` 是完整 512² 经典黑/枪灰/银/红 atlas；只采用该材质，外部模型与动画均未进入项目构建。
+F4 改用可独立核验的网络参考来源：公开页面 `https://www.gamemodd.com/cs/skinsweapons/ak47/1082-m4a1-s-born-beast.html` 发布的 CS 1.6 包（页面署名 Smilegate、Nexon）。下载 RAR 的 SHA-256 为 `9820df6ffafc5a49051e7e64560118d399bbda6a65717f2120a89ccae5b91d85`；仓库新增 `scripts/weapon_port/extract_goldsrc_mdl_textures.py`，从 GoldSrc v10 MDL 的内嵌 8-bit palette 中提取 6 张纹理，报告为 `external/cs16_texture_extract_report.json`。其中 `PV-M4A1_S_BORNBEAST.bmp` 只用于 Prototype 可识别性与材质链验证；它不得进入最终 F 阶段，外部模型与动画也未进入项目构建。
 
 `scripts/weapon_port/build_f4_m4a4_recognizable_classic.py` 保持 D3 用户确认过的模型/动画不变，将经典 atlas 转为 DXT1 base VTF，并从红色优势像素派生独立 `$selfillummask`，配合低强度 Phong 形成首先可识别、静态发光的版本。报告和闭包为 `f4_recognizable_classic_report.json`、`f4_material_closure_report.json`；当前唯一活动 M4A4 addon 是 `p_cf_bornbeast_m4a4_f4_recognizable_tmp`。红光呼吸动画、CF CFG/PV shader 的像素级复刻仍留待后续。
 
@@ -324,7 +336,7 @@ F4 改用可独立核验的经典外观来源：公开页面 `https://www.gamemo
 * 运行 `python scripts/csgo_pack/unpack_vpk_voices.py`（基于 Python `vpk` 库，需先 `pip install vpk`），从游戏官方 `csgo/pak01_dir.vpk` 中批量提取所有 341 种语音指令（共 1.8 万个音频），输出到 `data/csgo_voices_unpacked`。
 * 运行 `python scripts/csgo_pack/parse_vpk.py`，可快速搜索特定人物或路径的内部文件名（如 `sound/player/vo/...`）。
 
-#### 2. 官方 M4A1-S 参考基线（阶段 A2）
+#### 2. 历史官方 M4A1-S 参考基线（旧阶段 A2）
 
 下面的流程只读取 CS:GO Legacy 官方 `pak01_dir.vpk`，输出到项目 `work/`，不会改写游戏目录，也不会使用 AK 参考 Mod：
 
