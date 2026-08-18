@@ -1,0 +1,19 @@
+{
+  "schema": "cf2.m4a4.d3-clip-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed",
+  "addon": "p_cf_bornbeast_m4a4_d3_clip_tmp",
+  "scope": "D3 R1 main plus 01 magazine",
+  "confirmed": [
+    "01 magazine behavior has no observed problem"
+  ],
+  "out_of_scope_observation": {
+    "dropped_weapon_remains_stock_m4a4": true,
+    "reason": "The current addon overrides only v_rif_m4a1; dropped weapons use the separate w_rif_m4a1_dropped model family."
+  },
+  "evidence": {
+    "image": "work/m4a1_s_bornbeast/d3_m4a4/evidence/d3_clip_user_confirmed.png",
+    "sha256": "2c24ec9ec2feceb349e5087c617e0347b1dfb70ea37f6d87e879f69c6a3c0d69"
+  },
+  "source": "User confirmation in Codex task: 弹夹正常，就是丢枪后还是原版m4a4。"
+}

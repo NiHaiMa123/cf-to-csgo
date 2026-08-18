@@ -1,0 +1,401 @@
+{
+  "schema": "cf2.m4a1_s.c3-alignment.v1",
+  "status": "provisional_visual_gate",
+  "policy": {
+    "shared_transform": true,
+    "weapon_mesh_count": 9,
+    "weapon_vertex_count": 3646,
+    "per_mesh_normalization": false,
+    "fit_target": "official M4A1-S weapon-only SMD geometry in bind pose, silencer attached",
+    "fit_method": "semantic-anchor initialized, deterministic trimmed bidirectional ICP"
+  },
+  "inputs": {
+    "raw_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+    "raw_obj_sha256": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+    "weapon_only_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c1_split\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+    "weapon_only_obj_sha256": "b653434f12bf33aedf8011b3dd14d3cc082b0310e4078477e8f2817ac8fe8aca",
+    "reference_smd": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a1_s\\decompiled\\v_rif_m4a1_s.smd",
+    "reference_smd_sha256": "75c63f2785ac066590653ae9f0a56543f995bc270d1e8d31f389e4c4a49068d1",
+    "silencer_smd": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a1_s\\decompiled\\v_rif_m4a1_s_silencer.smd",
+    "silencer_smd_sha256": "cd89079d61569ff4d7c0519a03af84fa6065ce3f428c386bdcc8dce9113a0451"
+  },
+  "coordinate_assumptions": {
+    "source": "raw LTB model coordinates from B3; no center/scale/rotation",
+    "target": "Source 1 SMD model coordinates in official M4A1-S bind pose",
+    "vector_convention": "report matrix uses homogeneous column vectors: p_source = M @ [p_cf, 1]",
+    "normal_transform": "rotation only followed by normalization; uniform positive scale",
+    "winding": "preserved because rotation determinant is positive",
+    "expected_discrete_axis_map": "Source X=CF X, Source Y=-CF Z, Source Z=CF Y"
+  },
+  "transform": {
+    "matrix_cf_to_source": [
+      [
+        1.862105978,
+        -0.068358027,
+        0.001355933,
+        -6.382142756
+      ],
+      [
+        0.003815603,
+        0.067001685,
+        -1.862151859,
+        -7.081012763
+      ],
+      [
+        0.068264922,
+        1.860900665,
+        0.067096543,
+        5.873086295
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_source_to_cf": [
+      [
+        0.53630334,
+        0.001098928,
+        0.019660914,
+        3.315075757
+      ],
+      [
+        -0.019687729,
+        0.01929709,
+        0.535956199,
+        -3.136723965
+      ],
+      [
+        0.000390521,
+        -0.536316555,
+        0.01932441,
+        -3.908665937
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation": [
+      [
+        0.999326601,
+        -0.036685342,
+        0.000727682
+      ],
+      [
+        0.002047699,
+        0.035957441,
+        -0.999351224
+      ],
+      [
+        0.036635376,
+        0.998679753,
+        0.036008348
+      ]
+    ],
+    "uniform_scale": 1.863360763,
+    "translation": [
+      -6.382142756,
+      -7.081012763,
+      5.873086295
+    ],
+    "rotation_determinant": 1.0,
+    "orthogonality_max_error": 1.1102230246251565e-15,
+    "expected_axis_delta_degrees": 2.9455848759087946,
+    "initial_axis_rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "semantic_anchors": {
+    "main_centroid": {
+      "cf_raw": [
+        1.430779,
+        -4.179652,
+        3.03172
+      ],
+      "source_reference": [
+        -3.316203,
+        -12.336336,
+        -1.605352
+      ],
+      "cf_transformed": [
+        -3.428057,
+        -13.001121,
+        -1.603741
+      ],
+      "error": 0.674131
+    },
+    "magazine_centroid": {
+      "cf_raw": [
+        1.503209,
+        -5.981171,
+        3.006761
+      ],
+      "source_reference": [
+        -3.09736,
+        -12.993878,
+        -5.118585
+      ],
+      "cf_transformed": [
+        -3.17007,
+        -13.075071,
+        -4.952919
+      ],
+      "error": 0.198303
+    },
+    "bolt_centroid": {
+      "cf_raw": [
+        1.32271,
+        -3.499572,
+        -0.100507
+      ],
+      "source_reference": [
+        -3.340461,
+        -6.817936,
+        -0.405811
+      ],
+      "cf_transformed": [
+        -3.68003,
+        -7.123284,
+        -0.555718
+      ],
+      "error": 0.480642
+    }
+  },
+  "four_landmarks": {
+    "right_hand_grip": {
+      "official_hand_bone": [
+        -3.857339,
+        -4.046579,
+        -6.415288
+      ],
+      "official_contact": [
+        -3.2822,
+        -4.3391,
+        -8.4743
+      ],
+      "nearest_cf_surface": [
+        -3.15147,
+        -5.09146,
+        -7.31462
+      ],
+      "surface_error": 1.388522,
+      "hand_bone_to_official_surface": 2.15775
+    },
+    "left_hand_foregrip": {
+      "official_hand_bone": [
+        -1.448884,
+        -16.907254,
+        -3.513371
+      ],
+      "official_contact": [
+        -2.2798,
+        -16.6774,
+        -2.3816
+      ],
+      "nearest_cf_surface": [
+        -2.41717,
+        -16.66482,
+        -2.00892
+      ],
+      "surface_error": 0.39739,
+      "hand_bone_to_official_surface": 1.42273
+    },
+    "magazine_interface": {
+      "official_clip_point": [
+        -3.106729,
+        -11.515109,
+        -2.67271
+      ],
+      "official_parent_point": [
+        -2.5931,
+        -11.2204,
+        -2.6087
+      ],
+      "cf_clip_point": [
+        -3.231857,
+        -11.223155,
+        -1.936737
+      ],
+      "cf_main_point": [
+        -3.722281,
+        -10.753736,
+        -2.048606
+      ],
+      "clip_point_error": 0.801593
+    },
+    "muzzle": {
+      "official_position": [
+        -3.307277,
+        -31.699028,
+        -1.410499
+      ],
+      "nearest_cf_surface": [
+        -3.30795,
+        -33.3132,
+        -1.04234
+      ],
+      "distance_to_cf_surface": 1.655625
+    }
+  },
+  "attachments": {
+    "flash": {
+      "official_position": [
+        -3.307277,
+        -31.699028,
+        -1.410499
+      ],
+      "nearest_cf_surface": [
+        -3.30795,
+        -33.3132,
+        -1.04234
+      ],
+      "distance_to_cf_surface": 1.655625
+    },
+    "muzzle_flash2_silenced": {
+      "official_position": [
+        -3.259866,
+        -41.198864,
+        -1.439807
+      ],
+      "nearest_cf_surface": [
+        -3.30795,
+        -33.3132,
+        -1.04234
+      ],
+      "distance_to_cf_surface": 7.895821
+    },
+    "shelleject": {
+      "official_position": [
+        -3.787656,
+        -12.496745,
+        -1.314481
+      ],
+      "nearest_cf_surface": [
+        -3.90735,
+        -12.6283,
+        -1.27971
+      ],
+      "distance_to_cf_surface": 0.181225
+    },
+    "recommended_muzzle_flash2_local_x_offset": 1.613005,
+    "official_muzzle_flash2_local_x_offset": 9.5,
+    "policy": "D-stage QC must override muzzle_flash2 offset for the baked CF muzzle; do not retain the official 9.5 offset.",
+    "interpretation": "flash is the official bare-muzzle bone; muzzle_flash2 is QC offset 9.5 along flash local X for the attached silencer."
+  },
+  "fit_metrics_source_units": {
+    "forward_median": 0.3320864020036768,
+    "forward_p90": 0.8772613179735497,
+    "reverse_median": 0.371772862851101,
+    "reverse_p90": 1.3496809716811153,
+    "symmetric_trimmed_mean": 0.31052052600602276,
+    "semantic_anchor_rms": 0.49152595518978287,
+    "selection_score": 0.48255461032244673
+  },
+  "bounds": {
+    "cf_raw_weapon": {
+      "min": [
+        0.768912,
+        -8.345875,
+        -4.619534
+      ],
+      "max": [
+        2.309702,
+        -2.365114,
+        13.936319
+      ],
+      "size": [
+        1.54079,
+        5.980761,
+        18.555853
+      ],
+      "center": [
+        1.539307,
+        -5.355494,
+        4.658393
+      ]
+    },
+    "cf_transformed_weapon": {
+      "min": [
+        -4.652421,
+        -33.313198,
+        -9.400762
+      ],
+      "max": [
+        -1.806895,
+        1.297579,
+        1.610693
+      ],
+      "size": [
+        2.845526,
+        34.610778,
+        11.011456
+      ],
+      "center": [
+        -3.229658,
+        -16.007809,
+        -3.895034
+      ]
+    },
+    "official_weapon_with_silencer": {
+      "min": [
+        -5.339801,
+        -40.963097,
+        -9.769798
+      ],
+      "max": [
+        -1.755402,
+        6.497502,
+        1.9364
+      ],
+      "size": [
+        3.584399,
+        47.460599,
+        11.706198
+      ],
+      "center": [
+        -3.547602,
+        -17.232798,
+        -3.916699
+      ]
+    }
+  },
+  "outputs": {
+    "aligned_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+    "reference_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment\\official_m4a1_s_weapon_reference.obj"
+  },
+  "gate": {
+    "offline_transform_reproducible": true,
+    "axis_mapping_plausible": true,
+    "positive_uniform_scale": true,
+    "four_landmarks_numeric_pass": true,
+    "attachment_review": true,
+    "bare_flash_and_shelleject_pass": true,
+    "official_silenced_flash_offset_compatible": false,
+    "default_fov_envelope_safe": true,
+    "result": "PASS_WITH_REQUIRED_QC_ATTACHMENT_OVERRIDE"
+  },
+  "provisional": [
+    "ICP is evidence for one shared transform, not proof that every decorative surface should match the stock M4A1-S.",
+    "Right-hand grip, left-hand foregrip, magazine interface and muzzle require Blender overlay confirmation.",
+    "Flash and shell-eject attachment positions and viewmodel clipping remain unaccepted until visual review."
+  ]
+}

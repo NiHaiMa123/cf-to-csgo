@@ -47,6 +47,14 @@ public partial class App : System.Windows.Application
             return;
         }
 
+        if (ImageDecodeCommand.IsInvocation(e.Args))
+        {
+            ShutdownMode = System.Windows.ShutdownMode.OnExplicitShutdown;
+            int exitCode = ImageDecodeCommand.Run(e.Args);
+            Shutdown(exitCode);
+            return;
+        }
+
         if (PreviewTool.IsPreviewInvocation(e.Args))
         {
             LocalizedText.UseSavedLanguage();

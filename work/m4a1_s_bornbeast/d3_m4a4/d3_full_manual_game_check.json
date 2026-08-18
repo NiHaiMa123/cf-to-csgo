@@ -1,0 +1,13 @@
+{
+  "schema": "cf2.m4a4.d3-full-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed_with_material_advisory",
+  "addon": "p_cf_bornbeast_m4a4_d3_full_tmp",
+  "scope": "D3 R1 full viewmodel geometry: all 9 CF weapon meshes",
+  "confirmed": [
+    "No visible position or animation regression was observed after adding all remaining static meshes",
+    "Magazine and bolt behavior remain acceptable in the full build"
+  ],
+  "advisory": "The official rif_m4a1 placeholder is too dark for a high-confidence surface-completeness review. Geometry is accepted for D3 R1; surface completeness must be checked again with the decoded CF diffuse material.",
+  "source": "User confirmation in Codex task: 没有问题，下一步"
+}

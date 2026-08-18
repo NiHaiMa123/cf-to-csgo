@@ -1,0 +1,10 @@
+{
+  "schema": "cf2.m4a4.d3-part05-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed",
+  "addon": "p_cf_bornbeast_m4a4_d3_part05_tmp",
+  "scope": "D3 R1 through static part05",
+  "confirmed": ["No obvious regression was observed for the part05 layer"],
+  "advisory": "The dark placeholder makes individual 04/05 differences difficult to perceive; remaining static parts may be tested as one batch.",
+  "source": "User confirmation in Codex task: 我看了好像都没什么区别"
+}

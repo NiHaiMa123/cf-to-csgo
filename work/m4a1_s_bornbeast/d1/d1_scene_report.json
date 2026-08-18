@@ -1,0 +1,560 @@
+{
+  "schema": "cf2.m4a1_s.d1-scene.v1",
+  "status": "PASS_WITH_UV_AND_BOUNDARY_ADVISORY",
+  "inputs": {
+    "aligned_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+    "aligned_obj_sha256": "65f6e752eee738546d1a557655b1ac2d9839c43d18d6a9c4b282f3e94d51fb6a",
+    "reference_smd": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a1_s\\decompiled\\v_rif_m4a1_s.smd",
+    "reference_smd_sha256": "75c63f2785ac066590653ae9f0a56543f995bc270d1e8d31f389e4c4a49068d1",
+    "c2_manifest": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c2_skeleton_manifest.json",
+    "c2_manifest_sha256": "8dbda19f9950282ac78712ab1a26ea4a48539fb5695b541ef3aeb984ccf01bf8",
+    "c3_manifest": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_manifest.json",
+    "c3_manifest_sha256": "ec4ac5e406269442dec200591029fb102c3b8246eb7d733ab979181f63c8188e"
+  },
+  "tools": {
+    "blender": "4.5.12 LTS",
+    "blender_source_tools": "3.4.3",
+    "blender_source_tools_source": "D:\\project\\cf_to_csgo\\tools\\bst_extracted\\BlenderSourceTools-master\\io_scene_valvesource",
+    "installation": "session-only import from repository; user add-on directory is not modified"
+  },
+  "scene_configuration": {
+    "unit_system": "NONE",
+    "scale_length": 1.0,
+    "up_axis": "Z",
+    "source_coordinate_input": "C3-aligned Source 1 SMD model space",
+    "obj_import_axes": {
+      "forward": "Y",
+      "up": "Z"
+    },
+    "smd_import_up_axis": "Z",
+    "export_axis_contract": "Z_UP_SMD",
+    "object_transforms_applied": true
+  },
+  "collections": {
+    "REFERENCE": [
+      "REFERENCE_M4A1S_00.004",
+      "REFERENCE_M4A1S_01"
+    ],
+    "CF_WEAPON": [
+      "M4A1S_BornBeast",
+      "M4A1S_BornBeast01",
+      "M4A1S_BornBeast02",
+      "M4A1S_BornBeast03",
+      "M4A1S_BornBeast04",
+      "M4A1S_BornBeast05",
+      "M4A1S_BornBeast06",
+      "M4A1S_BornBeast07",
+      "M4A1S_BornBeast08"
+    ],
+    "CSGO_ARMS": [
+      "CSGO_M4A1S_Canonical_Armature"
+    ],
+    "EXPORT": [
+      "EXPORT_M4A1S_BornBeast",
+      "EXPORT_M4A1S_BornBeast01",
+      "EXPORT_M4A1S_BornBeast02",
+      "EXPORT_M4A1S_BornBeast03",
+      "EXPORT_M4A1S_BornBeast04",
+      "EXPORT_M4A1S_BornBeast05",
+      "EXPORT_M4A1S_BornBeast06",
+      "EXPORT_M4A1S_BornBeast07",
+      "EXPORT_M4A1S_BornBeast08"
+    ],
+    "GUIDES": [
+      "GUIDE_D1_Camera",
+      "GUIDE_flash",
+      "GUIDE_muzzle_flash2_silenced",
+      "GUIDE_shelleject"
+    ]
+  },
+  "canonical_skeleton": {
+    "bone_count": 58,
+    "exact_name_parent_match": true,
+    "armature": "CSGO_M4A1S_Canonical_Armature"
+  },
+  "r1_rigid_bindings": {
+    "M4A1S_BornBeast": {
+      "bone": "v_weapon.M4A1_s_Parent",
+      "status": "temporary_static_parent",
+      "vertex_count": 3061,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast01": {
+      "bone": "v_weapon.M4A1_Clip",
+      "status": "locked_rigid_magazine",
+      "vertex_count": 44,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast02": {
+      "bone": "v_weapon.M4A1_Bolt",
+      "status": "provisional_rigid_bolt",
+      "vertex_count": 133,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast03": {
+      "bone": "v_weapon.M4A1_s_Parent",
+      "status": "acknowledged_static_downgrade",
+      "vertex_count": 165,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast04": {
+      "bone": "v_weapon.M4A1_s_Parent",
+      "status": "acknowledged_static_downgrade",
+      "vertex_count": 46,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast05": {
+      "bone": "v_weapon.M4A1_s_Parent",
+      "status": "acknowledged_static_downgrade",
+      "vertex_count": 46,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast06": {
+      "bone": "v_weapon.M4A1_s_Parent",
+      "status": "acknowledged_static_downgrade",
+      "vertex_count": 46,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast07": {
+      "bone": "v_weapon.M4A1_s_Parent",
+      "status": "acknowledged_static_downgrade",
+      "vertex_count": 46,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    },
+    "M4A1S_BornBeast08": {
+      "bone": "v_weapon.M4A1_s_Parent",
+      "status": "acknowledged_static_downgrade",
+      "vertex_count": 46,
+      "weight": 1.0,
+      "armature_modifier": "CSGO_M4A1S_Canonical_Armature"
+    }
+  },
+  "geometry": {
+    "meshes": [
+      {
+        "mesh": "M4A1S_BornBeast",
+        "before": {
+          "vertices": 3074,
+          "edges": 6290,
+          "faces": 3407,
+          "loops": 10221,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 16,
+          "boundary_edges": 2359,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999998308485231,
+          "normal_length_max": 1.0000001507578304
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 13,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 3061,
+          "edges": 6290,
+          "faces": 3407,
+          "loops": 10221,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 16,
+          "boundary_edges": 2359,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999998471466708,
+          "normal_length_max": 1.0000001315202012
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast01",
+        "before": {
+          "vertices": 44,
+          "edges": 75,
+          "faces": 36,
+          "loops": 108,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 42,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999377760086,
+          "normal_length_max": 1.0000001083246786
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 44,
+          "edges": 75,
+          "faces": 36,
+          "loops": 108,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 42,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999377760086,
+          "normal_length_max": 1.0000001083246786
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast02",
+        "before": {
+          "vertices": 133,
+          "edges": 244,
+          "faces": 121,
+          "loops": 363,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 125,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999196152171,
+          "normal_length_max": 1.0000000920263077
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 133,
+          "edges": 244,
+          "faces": 121,
+          "loops": 363,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 125,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999196152171,
+          "normal_length_max": 1.0000000920263077
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast03",
+        "before": {
+          "vertices": 165,
+          "edges": 340,
+          "faces": 184,
+          "loops": 552,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 128,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999238657125,
+          "normal_length_max": 1.0000000844593124
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 165,
+          "edges": 340,
+          "faces": 184,
+          "loops": 552,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 128,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999238657125,
+          "normal_length_max": 1.0000000844593124
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast04",
+        "before": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999275896672,
+          "normal_length_max": 1.000000096857543
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999273568365,
+          "normal_length_max": 1.0000000949948982
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast05",
+        "before": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999008141409,
+          "normal_length_max": 1.0000001378357315
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999008141409,
+          "normal_length_max": 1.0000001378357315
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast06",
+        "before": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999448191359,
+          "normal_length_max": 1.0000000707805132
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999448191359,
+          "normal_length_max": 1.0000000707805132
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast07",
+        "before": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999998733401219,
+          "normal_length_max": 1.0000000959262205
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999998733401219,
+          "normal_length_max": 1.0000000959262205
+        }
+      },
+      {
+        "mesh": "M4A1S_BornBeast08",
+        "before": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999254941913,
+          "normal_length_max": 1.0000000610016269
+        },
+        "cleanup": {
+          "duplicate_vertices_merged": 0,
+          "degenerate_geometry_faces_removed": 0,
+          "decoded_loop_normals_restored": true,
+          "hard_edge_angle_degrees": 45.0
+        },
+        "after": {
+          "vertices": 46,
+          "edges": 96,
+          "faces": 52,
+          "loops": 156,
+          "materials": 1,
+          "faces_without_material": 0,
+          "zero_area_geometry_faces": 0,
+          "zero_area_uv_faces": 0,
+          "boundary_edges": 36,
+          "complex_nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "zero_length_loop_normals": 0,
+          "normal_length_min": 0.9999999254941913,
+          "normal_length_max": 1.000000063329933
+        }
+      }
+    ],
+    "totals": {
+      "vertices": 3633,
+      "faces": 4008,
+      "zero_area_geometry_faces": 0,
+      "zero_area_uv_faces": 16,
+      "zero_length_loop_normals": 0,
+      "boundary_edges": 2834,
+      "complex_nonmanifold_edges": 0,
+      "duplicate_vertices_merged": 13,
+      "faces_removed": 0
+    }
+  },
+  "normal_policy": {
+    "source": "decoded LTB loop normals from C3 OBJ",
+    "cleanup": "restore exact loop normals when topology is unchanged; otherwise rebuild in Blender",
+    "hard_edges": "45-degree dihedral threshold",
+    "weighted_normal_modifier": "not applied; valid decoded LTB normals take precedence"
+  },
+  "outputs": {
+    "blend": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\d1\\d1_m4a1_s_bornbeast.blend",
+    "blend_sha256": "d3fa9544068be37ac0c8e664013a6fc2c09cc8576928240d83925b04c7fdc344",
+    "preview": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\d1\\d1_export_scene.png",
+    "preview_sha256": "e317147e8817140aa782ee06d75aac46643532ed81266cf36047442a884f998d"
+  },
+  "hard_failures": [],
+  "advisories": [
+    "Geometrically valid faces with zero-area UV remain. They are preserved to avoid deleting real weapon surfaces; R1 may retain them with the explicit placeholder material, while D2 r2_full requires CF material semantics.",
+    "Open boundary edges remain. They are retained because the reviewed CF source contains intentional open/mechanical shells; D2 must not silently treat them as watertight."
+  ],
+  "next_gate": "D2 must validate materials, rigid weights, movable-part bindings and Source export compatibility."
+}

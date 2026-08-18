@@ -1,0 +1,82 @@
+{
+  "schema": "cf2.goldsrc-mdl-texture-extract.v1",
+  "source": "D:/project/cf_to_csgo/work/m4a1_s_bornbeast/materials/external/cs16_extracted/v_m4a1-beast.mdl",
+  "source_sha256": "f59aadd8058a1b0aea55df8016e14dd9bda9a9815740fc522ddae40e53bfdb12",
+  "version": 10,
+  "declared_length": 1281456,
+  "texture_count": 6,
+  "textures": [
+    {
+      "index": 0,
+      "name": "CSLC_hand.bmp",
+      "flags": 0,
+      "size": [
+        400,
+        400
+      ],
+      "pixels_offset": 287152,
+      "output": "D:/project/cf_to_csgo/work/m4a1_s_bornbeast/materials/external/cs16_textures/00_CSLC_hand.bmp.png",
+      "sha256": "47eb5a3134f13f9ff56fe8aa45ca780eb88daf133c817057df7c5776e00dfa45"
+    },
+    {
+      "index": 1,
+      "name": "CSLC_glove.bmp",
+      "flags": 0,
+      "size": [
+        512,
+        512
+      ],
+      "pixels_offset": 447920,
+      "output": "D:/project/cf_to_csgo/work/m4a1_s_bornbeast/materials/external/cs16_textures/01_CSLC_glove.bmp.png",
+      "sha256": "1f66efe52da3d14abbbf0373d1e4adbb905c89961202842ee26c9f262e3c0c59"
+    },
+    {
+      "index": 2,
+      "name": "PV-M4A1_S_BORNBEAST.bmp",
+      "flags": 0,
+      "size": [
+        512,
+        512
+      ],
+      "pixels_offset": 710832,
+      "output": "D:/project/cf_to_csgo/work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png",
+      "sha256": "be9084917d452445c7d4e57db9d9cf3efff0a129532457ab037d7eb4b8c64779"
+    },
+    {
+      "index": 3,
+      "name": "smoke_kili.BMP",
+      "flags": 34,
+      "size": [
+        512,
+        512
+      ],
+      "pixels_offset": 973744,
+      "output": "D:/project/cf_to_csgo/work/m4a1_s_bornbeast/materials/external/cs16_textures/03_smoke_kili.BMP.png",
+      "sha256": "77f765a28ee94946ee29c3b4a63e32e4b137d835b0bb19031b2e3fa4959741b4"
+    },
+    {
+      "index": 4,
+      "name": "eye_kili.bmp",
+      "flags": 32,
+      "size": [
+        256,
+        153
+      ],
+      "pixels_offset": 1236656,
+      "output": "D:/project/cf_to_csgo/work/m4a1_s_bornbeast/materials/external/cs16_textures/04_eye_kili.bmp.png",
+      "sha256": "d273c2fda309f76f1c07c434a15929ee350638f1f6afb9020d0336f425ca9db2"
+    },
+    {
+      "index": 5,
+      "name": "CHROME_1.bmp",
+      "flags": 33,
+      "size": [
+        64,
+        64
+      ],
+      "pixels_offset": 1276592,
+      "output": "D:/project/cf_to_csgo/work/m4a1_s_bornbeast/materials/external/cs16_textures/05_CHROME_1.bmp.png",
+      "sha256": "8bb4d638714da2dcd0ec86aefa7a73f13e1114d424112d5a527522554ea47d29"
+    }
+  ]
+}

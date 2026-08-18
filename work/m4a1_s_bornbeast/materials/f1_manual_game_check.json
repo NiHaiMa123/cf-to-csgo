@@ -1,0 +1,11 @@
+{
+  "schema": "cf2.m4a4.f1-material-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_visual_check_but_superseded_by_decoder_correction",
+  "addon": "p_cf_bornbeast_m4a4_f1_material_debug_tmp",
+  "confirmed": [
+    "No visible UV, orientation, missing-face or animation problem was reported"
+  ],
+  "superseded_reason": "F2 audit proved that each auxiliary TGA has an inserted footer/header in the middle of its pixel stream. The old debug image was visually usable but not semantically decoded with the correct byte reconstruction.",
+  "source": "User confirmation in Codex task: 正常，下一步"
+}

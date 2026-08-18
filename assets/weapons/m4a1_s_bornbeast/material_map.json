@@ -1,0 +1,42 @@
+{
+  "schema": "cf2.m4a4.material-map.v2",
+  "status": "f4_recognizable_classic_staged",
+  "policy": {
+    "d3_r1_static": "The official rif_m4a1 material was used only as an explicit geometry visibility placeholder.",
+    "f1_debug": "Use the decoded AlphaMap minimum-channel grayscale with a documented gamma lift only to review UV alignment and surface completeness.",
+    "f3_faithful_translation": "Rejected as a recognizable base because Alpha-G resolves to an unrelated conventional weapon atlas.",
+    "f4_recognizable": "Use the audited classic diffuse recovered from the external GoldSrc port, plus a derived red-dominance self-illumination mask. Keep CF shader animation provisional."
+  },
+  "slots": {
+    "M4A1S_BornBeast": "rif_m4a1",
+    "M4A1S_BornBeast01": "rif_m4a1",
+    "M4A1S_BornBeast02": "rif_m4a1",
+    "M4A1S_BornBeast03": "rif_m4a1",
+    "M4A1S_BornBeast04": "rif_m4a1",
+    "M4A1S_BornBeast05": "rif_m4a1",
+    "M4A1S_BornBeast06": "rif_m4a1",
+    "M4A1S_BornBeast07": "rif_m4a1",
+    "M4A1S_BornBeast08": "rif_m4a1"
+  },
+  "source_materials": {
+    "rif_m4a1": {
+      "cdmaterials": "models/weapons/V_models/rif_m4a1/",
+      "vmt": "build/m4a1_s_bornbeast_m4a4/f4_recognizable_classic/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+      "vtf": "build/m4a1_s_bornbeast_m4a4/f4_recognizable_classic/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "source": "work/m4a1_s_bornbeast/materials/derived/bornbeast_f4_classic_base.png",
+      "final_cf_material": false,
+      "purpose": "Recognizable classic black/gunmetal/silver/red appearance with static red self-illumination"
+    }
+  },
+  "evidence": {
+    "decode_report": "work/m4a1_s_bornbeast/materials/material_decode_report.json",
+    "closure_report": "work/m4a1_s_bornbeast/materials/f1_material_closure_report.json",
+    "build_report": "work/m4a1_s_bornbeast/materials/f1_material_debug_report.json",
+    "f2_audit_report": "work/m4a1_s_bornbeast/materials/f2_material_audit_report.json",
+    "f3_report": "work/m4a1_s_bornbeast/materials/f3_base_phong_report.json",
+    "f3_closure_report": "work/m4a1_s_bornbeast/materials/f3_material_closure_report.json",
+    "external_texture_extract_report": "work/m4a1_s_bornbeast/materials/external/cs16_texture_extract_report.json",
+    "f4_report": "work/m4a1_s_bornbeast/materials/f4_recognizable_classic_report.json",
+    "f4_closure_report": "work/m4a1_s_bornbeast/materials/f4_material_closure_report.json"
+  }
+}

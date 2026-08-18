@@ -1,0 +1,156 @@
+{
+  "schema": "cf2.m4a4.d3-r1-clip.v1",
+  "generated_at_utc": "2026-08-18T13:09:59.559754+00:00",
+  "target": {
+    "slot": "m4a4",
+    "internal_modelname": "weapons/v_rif_m4a1.mdl",
+    "silencer_feature": "cancelled_not_present_in_m4a4_baseline"
+  },
+  "scope": "main_plus_clip",
+  "inputs": {
+    "official_reference_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\reference_report.json",
+    "target_manifest": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\m4a4_target_manifest.json",
+    "aligned_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+    "alignment_note": "Uses an independent official-M4A4 C3 fit; the old M4A1-S transform is explicitly rejected."
+  },
+  "mesh": {
+    "groups": [
+      {
+        "source_group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+        "rigid_bone_index": 3,
+        "rigid_bone_name": "v_weapon.M4A1_Parent",
+        "unique_position_indices": 3074,
+        "triangle_count": 3407
+      },
+      {
+        "source_group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01",
+        "rigid_bone_index": 4,
+        "rigid_bone_name": "v_weapon.M4A1_Clip",
+        "unique_position_indices": 44,
+        "triangle_count": 36
+      }
+    ],
+    "unique_position_indices": 3118,
+    "triangle_count": 3443,
+    "corner_count": 10329,
+    "material": [
+      "rif_m4a1"
+    ]
+  },
+  "compile": {
+    "exit_code": 0,
+    "command": [
+      "D:\\steam\\steamapps\\common\\csgo legacy\\bin\\studiomdl.exe",
+      "-game",
+      "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\d3_r1_clip\\game_root\\csgo",
+      "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\d3_r1_clip\\source1\\v_rif_m4a1.qc"
+    ],
+    "compiled_header": {
+      "magic": "IDST",
+      "version": 49,
+      "internal_name": "weapons\\v_rif_m4a1.mdl",
+      "bone_count": 57,
+      "local_animation_count": 9,
+      "local_sequence_count": 9,
+      "size_bytes": 58384,
+      "sha256": "44ea152f3604a218d7112379b89e99b540fc4e7d4b0e8e7e1f3cf481e3bc6388"
+    },
+    "addon_files": [
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_exponent.vtf",
+      "models/weapons/v_rif_m4a1.ani",
+      "models/weapons/v_rif_m4a1.dx80.vtx",
+      "models/weapons/v_rif_m4a1.dx90.vtx",
+      "models/weapons/v_rif_m4a1.mdl",
+      "models/weapons/v_rif_m4a1.sw.vtx",
+      "models/weapons/v_rif_m4a1.vvd"
+    ]
+  },
+  "roundtrip": {
+    "internal_modelname": "weapons\\v_rif_m4a1.mdl",
+    "bone_count": 57,
+    "sequence_count": 9,
+    "sequence_names": [
+      "idle",
+      "shoot1",
+      "shoot2",
+      "shoot3",
+      "reload",
+      "draw",
+      "lookat01",
+      "lookat01_prepare",
+      "lookat01_loop"
+    ],
+    "attachment_count": 2,
+    "triangle_count": 3443,
+    "materials": [
+      "rif_m4a1"
+    ]
+  },
+  "binding_and_animation_evidence": {
+    "roundtrip_primary_bone_corner_counts": {
+      "3": 10221,
+      "4": 108
+    },
+    "clip_bone_motion": {
+      "idle": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\decompiled\\v_rif_m4a1_anims\\idle.smd",
+        "bone_index": 4,
+        "sample_count": 2,
+        "max_component_delta": 0.0
+      },
+      "reload": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\decompiled\\v_rif_m4a1_anims\\reload.smd",
+        "bone_index": 4,
+        "sample_count": 93,
+        "max_component_delta": 14.908203
+      }
+    }
+  },
+  "deployment": {
+    "migi_deployed": true,
+    "migi_addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_d3_clip_tmp",
+    "game_files_modified": false,
+    "existing_identical_addon_accepted": true
+  },
+  "manual_game_check": {
+    "schema": "cf2.m4a4.d3-clip-manual-game-check.v1",
+    "recorded_date": "2026-08-18",
+    "status": "passed_user_confirmed",
+    "addon": "p_cf_bornbeast_m4a4_d3_clip_tmp",
+    "scope": "D3 R1 main plus 01 magazine",
+    "confirmed": [
+      "01 magazine behavior has no observed problem"
+    ],
+    "out_of_scope_observation": {
+      "dropped_weapon_remains_stock_m4a4": true,
+      "reason": "The current addon overrides only v_rif_m4a1; dropped weapons use the separate w_rif_m4a1_dropped model family."
+    },
+    "evidence": {
+      "image": "work/m4a1_s_bornbeast/d3_m4a4/evidence/d3_clip_user_confirmed.png",
+      "sha256": "2c24ec9ec2feceb349e5087c617e0347b1dfb70ea37f6d87e879f69c6a3c0d69"
+    },
+    "source": "User confirmation in Codex task: 弹夹正常，就是丢枪后还是原版m4a4。"
+  },
+  "validation": {
+    "compile_pass": true,
+    "internal_name_is_m4a4_slot": true,
+    "bone_count_is_official_m4a4": true,
+    "sequence_count_is_official_m4a4": true,
+    "mesh_bindings_match_layer": true,
+    "roundtrip_primary_bones_match_layer": true,
+    "clip_motion_semantics_match_layer": true,
+    "material_is_explicit_placeholder": true,
+    "independent_m4a4_c3_transform_locked": true,
+    "roundtrip_structure_matches": true,
+    "original_game_files_unmodified": true,
+    "all_automated_checks_pass": true
+  },
+  "provisional": [
+    "Official rif_m4a1 is a visibility placeholder, not the final CF material.",
+    "Main and 01 magazine are included; bolt and decorative groups 02-08 are deferred.",
+    "The CF main mesh contains its modeled muzzle/barrel silhouette; no detachable silencer feature is authored.",
+    "D3 R1 game behavior passed by explicit user confirmation; later mesh layers require their own checks."
+  ]
+}

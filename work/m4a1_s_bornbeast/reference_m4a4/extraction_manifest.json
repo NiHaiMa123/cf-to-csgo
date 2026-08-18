@@ -1,0 +1,58 @@
+{
+  "schema": "cf2.m4a4.reference-extraction.v1",
+  "generated_at_utc": "2026-08-18T12:39:00.740773+00:00",
+  "source": {
+    "vpk": "D:\\steam\\steamapps\\common\\csgo legacy\\csgo\\pak01_dir.vpk",
+    "vpk_size_bytes": 15920251
+  },
+  "target": {
+    "weapon": "M4A4",
+    "modelname": "weapons/v_rif_m4a1.mdl",
+    "first_person": true
+  },
+  "files": [
+    {
+      "vpk_path": "models/weapons/v_rif_m4a1.mdl",
+      "path": "source_vpk/models/weapons/v_rif_m4a1.mdl",
+      "size_bytes": 33768,
+      "sha256": "407908e5c20dc731a903e722503a7a63e7eca09e1a64830a018f44443f9c73da"
+    },
+    {
+      "vpk_path": "models/weapons/v_rif_m4a1.vvd",
+      "path": "source_vpk/models/weapons/v_rif_m4a1.vvd",
+      "size_bytes": 1175296,
+      "sha256": "75d6231aab39e899b558fc8aec5096016f8c6a6275ff5fdbcdb04bd1b84c5773"
+    },
+    {
+      "vpk_path": "models/weapons/v_rif_m4a1.dx90.vtx",
+      "path": "source_vpk/models/weapons/v_rif_m4a1.dx90.vtx",
+      "size_bytes": 274380,
+      "sha256": "1241711bf27d2bc94a66eb16901f7c01a900f9275393d2ef154badb065dd823c"
+    },
+    {
+      "vpk_path": "models/weapons/v_rif_m4a1.ani",
+      "path": "source_vpk/models/weapons/v_rif_m4a1.ani",
+      "size_bytes": 75144,
+      "sha256": "22a73476cfcfdfef0bc6ed3116ce0f2c1af2ac49861e31391f77ee532023a96a"
+    },
+    {
+      "vpk_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+      "path": "source_vpk/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+      "size_bytes": 452,
+      "sha256": "7cbe8c9555593b927aa98b5c609196cb1a3eb27849e953e9c5223b970609df68"
+    },
+    {
+      "vpk_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "path": "source_vpk/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "size_bytes": 5592664,
+      "sha256": "80bee59041c395c2ba989c17d5969db11478d210f5894c6fd074679e9ca996bd"
+    },
+    {
+      "vpk_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_exponent.vtf",
+      "path": "source_vpk/materials/models/weapons/v_models/rif_m4a1/rif_m4a1_exponent.vtf",
+      "size_bytes": 175008,
+      "sha256": "26cdc7a498c535521e71db4f8e0c26dac060968a6e692e2f7f581896d24c6f6d"
+    }
+  ],
+  "ak_reference_used": false
+}

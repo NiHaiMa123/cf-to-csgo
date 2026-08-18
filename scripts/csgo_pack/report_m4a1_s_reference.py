@@ -186,6 +186,9 @@ def main() -> int:
     global REFERENCE_DIR, DECOMPILED_DIR
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--reference-dir", type=Path, default=REFERENCE_DIR)
+    parser.add_argument("--weapon", default="M4A1-S")
+    parser.add_argument("--expected-modelname", default=r"weapons\v_rif_m4a1_s.mdl")
+    parser.add_argument("--schema", default="cf2.m4a1_s.reference-report.v1")
     args = parser.parse_args()
     REFERENCE_DIR = args.reference_dir.resolve()
     candidate = REFERENCE_DIR / "decompiled"
@@ -217,7 +220,7 @@ def main() -> int:
         if re.search(r"ak[-_]?47|ak47", text, re.I):
             ak_hits.append(path.relative_to(REFERENCE_DIR).as_posix())
     report = {
-        "schema": "cf2.m4a1_s.reference-report.v1",
+        "schema": args.schema,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "toolchain": {
             "decompiler": "CrowbarDecompiler 0.71 CMD edition (tools/CrowbarDecompiler/CrowbarDecompiler(1.1).exe)",
@@ -228,9 +231,9 @@ def main() -> int:
         },
         "source_manifest": "extraction_manifest.json",
         "target": {
-            "weapon": "M4A1-S",
+            "weapon": args.weapon,
             "internal_modelname": qc["modelname"],
-            "expected_modelname": "weapons\\v_rif_m4a1_s.mdl",
+            "expected_modelname": args.expected_modelname,
             "first_person": True,
         },
         "bones": {"count": qc["bone_count"], "hierarchy": qc["bones"]},
@@ -242,7 +245,10 @@ def main() -> int:
         "sequences": qc["sequences"],
         "smd_files": smds,
         "validation": {
-            "internal_name_is_m4a1_s": str(qc["modelname"]).replace("\\", "/").lower() == "weapons/v_rif_m4a1_s.mdl",
+            "internal_name_matches_expected": str(qc["modelname"]).replace("\\", "/").lower()
+            == args.expected_modelname.replace("\\", "/").lower(),
+            "internal_name_is_m4a1_s": str(qc["modelname"]).replace("\\", "/").lower()
+            == "weapons/v_rif_m4a1_s.mdl",
             "unexplained_ak_references": ak_hits,
             "ak_reference_used": False,
             "has_reference_mesh": any(item["kind"] == "mesh" for item in smds),

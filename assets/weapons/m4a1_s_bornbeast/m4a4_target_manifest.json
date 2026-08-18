@@ -1,0 +1,383 @@
+{
+  "schema": "cf2.m4a4.target-manifest.v1",
+  "source_weapon": "CF M4A1-S BornBeast Classic",
+  "runtime_target": {
+    "slot": "m4a4",
+    "modelname": "weapons/v_rif_m4a1.mdl"
+  },
+  "silencer_policy": "cancelled; no detachable silencer bone, bodygroup, attachment or sequence",
+  "official_reference": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\reference_report.json",
+  "canonical_skeleton": {
+    "bone_count": 57,
+    "hierarchy": [
+      {
+        "name": "v_weapon",
+        "parent": null,
+        "transform": "0 0 0 0 0 89.999982 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Forearm",
+        "parent": null,
+        "transform": "-6.304863 4.049507 -12.285725 -34.76347 -73.179432 -118.017268 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Hand",
+        "parent": "v_weapon.Bip01_R_Forearm",
+        "transform": "10.295582 0 0 5.472152 32.455368 110.86985 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.M4A1_Parent",
+        "parent": "v_weapon.Bip01_R_Hand",
+        "transform": "13.63739 4.182319 12.265556 -1.744796 92.906255 97.29347 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.M4A1_Clip",
+        "parent": "v_weapon.M4A1_Parent",
+        "transform": "0 1.843733 4.107859 0 0 -89.999982 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.M4A1_Bullets",
+        "parent": "v_weapon.M4A1_Clip",
+        "transform": "0 0 2.771 0 0 0 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.flash",
+        "parent": "v_weapon.M4A1_Parent",
+        "transform": "0.01581 5.09812 20.550781 -89.980215 -89.999982 0 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.shelleject",
+        "parent": "v_weapon.M4A1_Parent",
+        "transform": "-0.719085 5.300998 3.836287 0 160.000009 0 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.stattrack",
+        "parent": "v_weapon.M4A1_Parent",
+        "transform": "0.587728 4.545159 4.786211 0 0 -89.999982 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.uid",
+        "parent": "v_weapon.M4A1_Parent",
+        "transform": "0.73097 5.05762 -0.080116 0 0 -89.999982 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Forearm",
+        "parent": null,
+        "transform": "3.520265 -8.79537 -7.450874 -22.48527 -121.490665 -84.433125 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Hand",
+        "parent": "v_weapon.Bip01_L_Forearm",
+        "transform": "10.295583 0.000001 0 -13.353581 21.596954 -150.192062 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger0",
+        "parent": "v_weapon.Bip01_L_Hand",
+        "transform": "1.149521 0.416497 -1.414117 21.852837 17.469659 132.445783 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger01",
+        "parent": "v_weapon.Bip01_L_Finger0",
+        "transform": "1.263878 0 0 -6.871535 13.791721 -46.867491 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger02",
+        "parent": "v_weapon.Bip01_L_Finger01",
+        "transform": "1.188944 0 0 0.114369 14.402267 -0.564654 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger1",
+        "parent": "v_weapon.Bip01_L_Hand",
+        "transform": "3.773754 0.133216 -0.970574 -13.985839 -3.626132 5.55849 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger11",
+        "parent": "v_weapon.Bip01_L_Finger1",
+        "transform": "1.433456 0 0.000001 0.000002 11.623139 0 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger12",
+        "parent": "v_weapon.Bip01_L_Finger11",
+        "transform": "1.019161 0 0 0.000002 41.210049 0 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger2",
+        "parent": "v_weapon.Bip01_L_Hand",
+        "transform": "3.799511 0.014954 -0.039958 -12.335553 17.720386 -2.537973 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger21",
+        "parent": "v_weapon.Bip01_L_Finger2",
+        "transform": "1.774879 0.000003 0.000001 0.563962 34.753321 -0.924183 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger22",
+        "parent": "v_weapon.Bip01_L_Finger21",
+        "transform": "1.008846 0.000002 0 0.525292 32.383225 -0.94664 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger3",
+        "parent": "v_weapon.Bip01_L_Hand",
+        "transform": "3.632763 0.05905 0.757493 -6.842719 25.077159 -13.663555 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger31",
+        "parent": "v_weapon.Bip01_L_Finger3",
+        "transform": "1.500139 -0.000002 -0.000001 1.877757 41.612378 -3.914908 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger32",
+        "parent": "v_weapon.Bip01_L_Finger31",
+        "transform": "0.905663 -0.000002 0 1.804018 40.538307 -3.949454 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger4",
+        "parent": "v_weapon.Bip01_L_Hand",
+        "transform": "3.32333 0.233746 1.479075 7.19864 40.280996 -15.063004 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger41",
+        "parent": "v_weapon.Bip01_L_Finger4",
+        "transform": "0.963099 0 0 0.506492 30.97736 -5.497072 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Finger42",
+        "parent": "v_weapon.Bip01_L_Finger41",
+        "transform": "0.682895 0 -0.000001 0.50655 30.978391 -5.497073 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_ForeTwist",
+        "parent": null,
+        "transform": "3.520265 -8.79537 -7.450874 -22.485251 -121.490692 -138.424507 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.M4A1_Trigger",
+        "parent": "v_weapon.M4A1_Parent",
+        "transform": "0 2.627979 0.988434 0 0 -89.999982 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.M4A1_Bolt",
+        "parent": "v_weapon.M4A1_Parent",
+        "transform": "0 6.086907 -2.262866 0 0 -89.999982 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger0",
+        "parent": "v_weapon.Bip01_R_Hand",
+        "transform": "1.149523 0.416497 1.414116 -11.599356 45.391781 -101.413413 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger01",
+        "parent": "v_weapon.Bip01_R_Finger0",
+        "transform": "1.263877 0.000001 0 10.862356 31.816227 -1.964217 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger02",
+        "parent": "v_weapon.Bip01_R_Finger01",
+        "transform": "1.188943 0 0 0 16.914397 -0.000009 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger1",
+        "parent": "v_weapon.Bip01_R_Hand",
+        "transform": "3.773755 0.133215 0.970574 -1.459207 -6.952617 -0.024179 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger11",
+        "parent": "v_weapon.Bip01_R_Finger1",
+        "transform": "1.433459 0.000001 0 -0.562071 48.567754 0.831592 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger12",
+        "parent": "v_weapon.Bip01_R_Finger11",
+        "transform": "1.019161 -0.000001 0 -0.506323 47.889134 0.829531 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger2",
+        "parent": "v_weapon.Bip01_R_Hand",
+        "transform": "3.799515 0.014952 0.039958 9.82886 63.222403 16.023629 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger21",
+        "parent": "v_weapon.Bip01_R_Finger2",
+        "transform": "1.774881 0 0 -2.29653 79.017878 0.890088 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger22",
+        "parent": "v_weapon.Bip01_R_Finger21",
+        "transform": "1.008846 0.000001 0 -1.529394 48.580011 1.930751 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger3",
+        "parent": "v_weapon.Bip01_R_Hand",
+        "transform": "3.632765 0.059049 -0.757494 3.758946 79.467537 21.16684 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger31",
+        "parent": "v_weapon.Bip01_R_Finger3",
+        "transform": "1.500137 0.000001 0.000001 -3.188049 64.471207 3.503522 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger32",
+        "parent": "v_weapon.Bip01_R_Finger31",
+        "transform": "0.905663 0 -0.000001 -1.32628 38.449764 4.546422 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger4",
+        "parent": "v_weapon.Bip01_R_Hand",
+        "transform": "3.32333 0.233745 -1.479076 -1.044674 81.405159 25.961581 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger41",
+        "parent": "v_weapon.Bip01_R_Finger4",
+        "transform": "0.963099 -0.000001 0 -0.354142 37.60558 3.224775 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Finger42",
+        "parent": "v_weapon.Bip01_R_Finger41",
+        "transform": "0.682895 0 0 -1.323529 55.400204 2.962135 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_ForeTwist",
+        "parent": null,
+        "transform": "-6.304863 4.049507 -12.285725 -34.76347 -73.179432 -95.769723 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01",
+        "parent": null,
+        "transform": "3.706409 5.104027 -19.918226 2.780724 -131.511304 0.478134 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_Pelvis",
+        "parent": "v_weapon.Bip01",
+        "transform": "-0.000001 0 0 -89.999989 -89.999811 0 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_Spine",
+        "parent": "v_weapon.Bip01_Pelvis",
+        "transform": "3.562498 -0.816636 -0.000028 -0.230236 1.226121 0.561819 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_Spine1",
+        "parent": "v_weapon.Bip01_Spine",
+        "transform": "4.004024 -0.003177 -0.000071 0.268366 4.900144 1.259175 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_Spine2",
+        "parent": "v_weapon.Bip01_Spine1",
+        "transform": "4.004028 -0.003176 -0.000071 0.268822 4.898328 1.26627 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_Spine3",
+        "parent": "v_weapon.Bip01_Spine2",
+        "transform": "4.003751 -0.003187 0 0.000004 0.000004 -0.000031 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_Neck",
+        "parent": "v_weapon.Bip01_Spine3",
+        "transform": "5.029972 -0.763043 -0.000584 3.716917 39.117706 9.483532 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_Clavicle",
+        "parent": "v_weapon.Bip01_Neck",
+        "transform": "-0.905726 0.793273 1.051288 -60.362391 131.888562 10.176102 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_L_UpperArm",
+        "parent": "v_weapon.Bip01_L_Clavicle",
+        "transform": "5.773743 0.000002 0 9.354237 -75.645083 -68.067944 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_Clavicle",
+        "parent": "v_weapon.Bip01_Neck",
+        "transform": "-0.747116 0.391015 -1.3568 77.463648 163.985056 23.734291 0 0 0 0 0 0"
+      },
+      {
+        "name": "v_weapon.Bip01_R_UpperArm",
+        "parent": "v_weapon.Bip01_R_Clavicle",
+        "transform": "5.773742 -0.000001 -0.000001 -39.343836 -68.452969 16.299468 0 0 0 0 0 0"
+      }
+    ]
+  },
+  "sequences": [
+    "idle",
+    "shoot1",
+    "shoot2",
+    "shoot3",
+    "reload",
+    "draw",
+    "lookat01",
+    "lookat01_prepare",
+    "lookat01_loop"
+  ],
+  "attachments": [
+    {
+      "name": "1",
+      "bone": "v_weapon.flash",
+      "transform": "0 0 0 rotate 0 0 0"
+    },
+    {
+      "name": "2",
+      "bone": "v_weapon.shelleject",
+      "transform": "0 0 0 rotate 0 0 0"
+    }
+  ],
+  "material_placeholder": "rif_m4a1",
+  "c3_frame_compatibility": {
+    "basis": "M4A1-S and M4A4 bind transforms differ, so M4A4 was independently refitted against v_m4a1_model.smd.",
+    "old_vs_new_bind_transforms": {
+      "v_weapon.M4A1_Parent": {
+        "m4a1_s_bone": "v_weapon.M4A1_s_Parent",
+        "m4a4": "13.63739 4.182319 12.265556 -1.744796 92.906255 97.29347 0 0 0 0 0 0",
+        "m4a1_s": "4.48218 1.199705 -0.71507 -3.705268 92.93751 97.453802 0 0 0 0 0 0",
+        "exact_match": false
+      },
+      "v_weapon.M4A1_Clip": {
+        "m4a1_s_bone": "v_weapon.M4A1_Clip",
+        "m4a4": "0 1.843733 4.107859 0 0 -89.999982 0 0 0 0 0 0",
+        "m4a1_s": "0 1.83024 4.107862 0 0 -89.999982 0 0 0 0 0 0",
+        "exact_match": false
+      },
+      "v_weapon.M4A1_Bolt": {
+        "m4a1_s_bone": "v_weapon.M4A1_Bolt",
+        "m4a4": "0 6.086907 -2.262866 0 0 -89.999982 0 0 0 0 0 0",
+        "m4a1_s": "0 6.086906 -2.262868 0 0 -89.999982 0 0 0 0 0 0",
+        "exact_match": false
+      },
+      "v_weapon.M4A1_Trigger": {
+        "m4a1_s_bone": "v_weapon.M4A1_Trigger",
+        "m4a4": "0 2.627979 0.988434 0 0 -89.999982 0 0 0 0 0 0",
+        "m4a1_s": "0 2.627979 0.988428 0 0 -89.999982 0 0 0 0 0 0",
+        "exact_match": false
+      },
+      "v_weapon.flash": {
+        "m4a1_s_bone": "v_weapon.flash",
+        "m4a4": "0.01581 5.09812 20.550781 -89.980215 -89.999982 0 0 0 0 0 0 0",
+        "m4a1_s": "-0.336012 5.244594 23.040913 -89.980215 -89.999982 0 0 0 0 0 0 0",
+        "exact_match": false
+      },
+      "v_weapon.shelleject": {
+        "m4a1_s_bone": "v_weapon.shelleject",
+        "m4a4": "-0.719085 5.300998 3.836287 0 160.000009 0 0 0 0 0 0 0",
+        "m4a1_s": "-0.719085 5.300997 3.836285 0 160.000009 0 0 0 0 0 0 0",
+        "exact_match": false
+      }
+    },
+    "independent_m4a4_c3_manifest": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_m4a4_manifest.json",
+    "m4a1_s_only_bones_removed": [
+      "v_weapon.M4A1_Silencer",
+      "v_weapon.M4A1_s_Parent",
+      "v_weapon.v_weapon"
+    ]
+  },
+  "d3_r1_mesh_mapping": {
+    "M4A1S_BornBeast": "v_weapon.M4A1_Parent",
+    "M4A1S_BornBeast01": "v_weapon.M4A1_Clip",
+    "M4A1S_BornBeast02": "v_weapon.M4A1_Bolt",
+    "M4A1S_BornBeast03": "v_weapon.M4A1_Parent (R1 explicit static downgrade)",
+    "M4A1S_BornBeast04": "v_weapon.M4A1_Parent (R1 explicit static downgrade)",
+    "M4A1S_BornBeast05": "v_weapon.M4A1_Parent (R1 explicit static downgrade)",
+    "M4A1S_BornBeast06": "v_weapon.M4A1_Parent (R1 explicit static downgrade)",
+    "M4A1S_BornBeast07": "v_weapon.M4A1_Parent (R1 explicit static downgrade)",
+    "M4A1S_BornBeast08": "v_weapon.M4A1_Parent (R1 explicit static downgrade)"
+  },
+  "deferred_mesh_mapping": {}
+}

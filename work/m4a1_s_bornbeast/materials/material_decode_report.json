@@ -1,0 +1,220 @@
+{
+  "schema": "cf2.bornbeast.material-decode.v1",
+  "status": "decoded_with_explicit_container_assumptions",
+  "decoded": {
+    "diffuse": {
+      "source": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "source_sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+      "layout": "headerless_bgr24_512x256_complete_mip_chain_plus_163_trailing_bytes",
+      "mip_levels": [
+        {
+          "width": 512,
+          "height": 256,
+          "offset": 0,
+          "bytes": 393216
+        },
+        {
+          "width": 256,
+          "height": 128,
+          "offset": 393216,
+          "bytes": 98304
+        },
+        {
+          "width": 128,
+          "height": 64,
+          "offset": 491520,
+          "bytes": 24576
+        },
+        {
+          "width": 64,
+          "height": 32,
+          "offset": 516096,
+          "bytes": 6144
+        },
+        {
+          "width": 32,
+          "height": 16,
+          "offset": 522240,
+          "bytes": 1536
+        },
+        {
+          "width": 16,
+          "height": 8,
+          "offset": 523776,
+          "bytes": 384
+        },
+        {
+          "width": 8,
+          "height": 4,
+          "offset": 524160,
+          "bytes": 96
+        },
+        {
+          "width": 4,
+          "height": 2,
+          "offset": 524256,
+          "bytes": 24
+        },
+        {
+          "width": 2,
+          "height": 1,
+          "offset": 524280,
+          "bytes": 6
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "offset": 524286,
+          "bytes": 3
+        }
+      ],
+      "payload_bytes": 524289,
+      "trailing_bytes": 163,
+      "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_diffuse_bgr.png",
+      "output_sha256": "c749e044b5a9878fe482a6b90cda1f1f4ff4a116bff506cda4ae48af94cf20d6",
+      "mode": "RGB",
+      "size": [
+        512,
+        256
+      ],
+      "channel_extrema": [
+        [
+          255,
+          255
+        ],
+        [
+          9,
+          190
+        ],
+        [
+          67,
+          255
+        ]
+      ]
+    },
+    "alpha": {
+      "source": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "source_sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+      "layout": "bgr24_pixels_split_around_inserted_truevision_footer_and_header",
+      "payload_bytes": 3145728,
+      "footer_offset": 886822,
+      "header_offset": 886848,
+      "descriptor": 0,
+      "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_alpha_bgr.png",
+      "output_sha256": "ad28e6469a05fcc2e8c72118e9109f2bdcfad47c1e2a9f48f58af3cba1d079ad",
+      "mode": "RGB",
+      "size": [
+        1024,
+        1024
+      ],
+      "channel_extrema": [
+        [
+          255,
+          255
+        ],
+        [
+          0,
+          173
+        ],
+        [
+          255,
+          255
+        ]
+      ]
+    },
+    "normal": {
+      "source": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "source_sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+      "layout": "bgr24_pixels_split_around_inserted_truevision_footer_and_header",
+      "payload_bytes": 3145728,
+      "footer_offset": 2458386,
+      "header_offset": 2458412,
+      "descriptor": 0,
+      "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_normal_bgr.png",
+      "output_sha256": "c05e02846cecabcf1e761e4da3c4640e0902d59afede3a7e0f98cf7e5210104c",
+      "mode": "RGB",
+      "size": [
+        1024,
+        1024
+      ],
+      "channel_extrema": [
+        [
+          255,
+          255
+        ],
+        [
+          255,
+          255
+        ],
+        [
+          0,
+          108
+        ]
+      ]
+    },
+    "specular": {
+      "source": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "source_sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+      "layout": "bgr24_pixels_split_around_inserted_truevision_footer_and_header",
+      "payload_bytes": 3145728,
+      "footer_offset": 550349,
+      "header_offset": 550375,
+      "descriptor": 0,
+      "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_specular_bgr.png",
+      "output_sha256": "20e1a1e129502312dbdc1fba9a2121f0b8ea7939d1984be376d666f0f4133b8b",
+      "mode": "RGB",
+      "size": [
+        1024,
+        1024
+      ],
+      "channel_extrema": [
+        [
+          0,
+          214
+        ],
+        [
+          255,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ]
+    }
+  },
+  "derived_scalar_channels": {
+    "alpha": {
+      "source_channel": "G",
+      "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_alpha_g_scalar.png",
+      "output_sha256": "bc67f81704cd1914e2f07ca669762a0cabd91e375738464940f391819d7c35fe"
+    },
+    "normal": {
+      "source_channel": "B",
+      "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_normal_b_scalar.png",
+      "output_sha256": "d82de5e9be545dd4e29564b86cabe64a7742ba86f621bf05233ac08182d25bb7"
+    },
+    "specular": {
+      "source_channel": "R",
+      "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_specular_r_scalar.png",
+      "output_sha256": "9261ce6e20849f5b6b5e5690fd06595a83bc7c819989db31d375e17e615f9009"
+    }
+  },
+  "derived_debug": {
+    "output": "work/m4a1_s_bornbeast/materials/decoded/bornbeast_alpha_min_debug.png",
+    "output_sha256": "25e149e59159422db549b0aa118731c2231553adfa00a716748c7d4e2220ef1d",
+    "derivation": "per-pixel minimum of decoded AlphaMap RGB, gamma 0.55 shadow lift; UV/surface visibility debug only",
+    "final_material": false
+  },
+  "shader_cfg": {
+    "source": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+    "source_sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+    "bytes": 492,
+    "interpretation": "opaque_binary_not_text_not_yet_mapped_to_source1"
+  },
+  "excluded_candidates": [
+    "data/out/PV_M4A1_S_BornBeast_Raw.png (incorrect raw reinterpretation)",
+    "data/out/PV_M4A1_S_BornBeast_UltraHD_4K.png (legacy provenance)",
+    "data/out/PV_M4A1_S_BornBeast_Normal_4K.png (legacy provenance)"
+  ]
+}

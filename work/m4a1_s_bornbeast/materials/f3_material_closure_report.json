@@ -1,0 +1,31 @@
+{
+  "schema": "cf2.source1.material-closure.v1",
+  "qc": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f3_base_phong\\source1\\v_rif_m4a1.qc",
+  "smd": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f3_base_phong\\source1\\cf_bornbeast_full_m4a4.smd",
+  "addon": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f3_base_phong\\addon",
+  "cdmaterials": [
+    "models\\weapons\\V_models\\rif_m4a1\\"
+  ],
+  "smd_materials": [
+    "rif_m4a1"
+  ],
+  "closure": [
+    {
+      "smd_material": "rif_m4a1",
+      "vmt_candidates": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f3_base_phong\\addon\\materials\\models\\weapons\\V_models\\rif_m4a1\\rif_m4a1.vmt"
+      ],
+      "unique_vmt": true,
+      "texture_references": [
+        {
+          "parameter": "$basetexture",
+          "value": "models/weapons/v_models/rif_m4a1/rif_m4a1",
+          "vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f3_base_phong\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+          "exists": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

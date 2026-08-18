@@ -1,0 +1,40 @@
+{
+  "schema": "cf2.m4a4.f4-recognizable-classic.v1",
+  "status": "staged_recognizable_classic_diffuse_red_selfillum",
+  "base_model": "D3 R1 full, user-confirmed",
+  "external_source": {
+    "page": "https://www.gamemodd.com/cs/skinsweapons/ak47/1082-m4a1-s-born-beast.html",
+    "credits_as_published": [
+      "Smilegate",
+      "Nexon"
+    ],
+    "download_archive": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\external\\m4a1_s_bornbeast_cs16.rar",
+    "download_sha256": "9820df6ffafc5a49051e7e64560118d399bbda6a65717f2120a89ccae5b91d85",
+    "extraction_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\external\\cs16_texture_extract_report.json",
+    "diffuse": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\external\\cs16_textures\\02_PV-M4A1_S_BORNBEAST.bmp.png",
+    "diffuse_sha256": "be9084917d452445c7d4e57db9d9cf3efff0a129532457ab037d7eb4b8c64779",
+    "usage": "material reference/recovery only; external model and animation are not used"
+  },
+  "source1": {
+    "base_vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f4_recognizable_classic\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+    "base_vtf_sha256": "84073911c0f5a8e165ee2fb84481b487823c7956d0539e06c99febb21d7d7ed0",
+    "selfillum_mask_vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f4_recognizable_classic\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+    "selfillum_mask_vtf_sha256": "a7137386bfc0fd873d1f7ccc11eafcaff899f2c9630d5385aa53450f52be8265",
+    "vmt": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f4_recognizable_classic\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+    "phong": {
+      "boost": 0.55,
+      "exponent": 22
+    }
+  },
+  "material_closure_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\f4_material_closure_report.json",
+  "deployment": {
+    "migi_deployed": true,
+    "migi_addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_f4_recognizable_tmp",
+    "game_files_modified": false
+  },
+  "deferred": [
+    "Animated breathing/pulsing remains deferred; the red layer is static self-illumination.",
+    "The CF WeaponShader lookup and malformed local auxiliary maps are not used.",
+    "This stage targets immediate visual recognition, not pixel-identical CF shader recreation."
+  ]
+}

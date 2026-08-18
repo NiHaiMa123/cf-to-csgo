@@ -1,0 +1,11 @@
+{
+  "schema": "cf2.m4a4.f1-corrected-material-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed_with_grayscale_limit",
+  "addon": "p_cf_bornbeast_m4a4_f1_corrected_debug_tmp",
+  "confirmed": [
+    "The corrected grayscale debug material shows no reported problem"
+  ],
+  "limitation": "Because this gate intentionally uses a black-and-white scalar debug texture, the user could not confidently judge orientation from color cues. No visible whole-atlas displacement or other problem was observed.",
+  "source": "User confirmation in Codex task: 黑白颜色，看不出来是不是颠倒。如果就是这样，那没有问题"
+}

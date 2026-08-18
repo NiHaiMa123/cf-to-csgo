@@ -1,0 +1,50 @@
+{
+  "schema": "cf2.m4a1_s.c3-transform-manifest.v1",
+  "status": "locked_for_D_with_attachment_override",
+  "source_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment\\c3_alignment_report.json",
+  "source_report_sha256": "0e2863cdc3b4210771a98d40ae7f409dfaaa64a802b284b8edaaba406257aa3d",
+  "shared_transform_for_all_nine_weapon_meshes": true,
+  "matrix_convention": "homogeneous column vector; p_source = matrix_cf_to_source @ [p_cf, 1]",
+  "matrix_cf_to_source": [
+    [
+      1.862105978,
+      -0.068358027,
+      0.001355933,
+      -6.382142756
+    ],
+    [
+      0.003815603,
+      0.067001685,
+      -1.862151859,
+      -7.081012763
+    ],
+    [
+      0.068264922,
+      1.860900665,
+      0.067096543,
+      5.873086295
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 1.863360763,
+  "rotation_determinant": 1.0,
+  "axis_map": "Source X=CF X, Source Y=-CF Z, Source Z=CF Y, followed by 2.9456-degree fitted correction",
+  "normal_policy": "rotation only then normalize",
+  "winding_policy": "preserve; determinant is positive",
+  "binding_frame": "official M4A1-S bind pose with silencer visible",
+  "attachment_policy": {
+    "flash": "official flash bone is within C3 tolerance",
+    "shelleject": "official shelleject bone is within C3 tolerance",
+    "muzzle_flash2": "override QC local-X offset; official 9.5 does not match the baked CF muzzle",
+    "recommended_local_x_offset": 1.613005
+  },
+  "provisional": [
+    "The D-stage first compile must visually confirm the idle pose at real game FOV.",
+    "Silencer detach semantics still require a mesh split or an explicit static downgrade; C3 does not solve that C2 issue."
+  ]
+}

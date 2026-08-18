@@ -1,0 +1,37 @@
+{
+  "schema": "cf2.m4a4.f3-base-phong.v1",
+  "status": "staged_conservative_base_and_scalar_phong",
+  "base_model": "D3 R1 full, user-confirmed",
+  "source_texture": {
+    "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\derived\\bornbeast_f3_base_specular_rgba.png",
+    "sha256": "66af2a24b0ac8e5c797143024808467c473f2a5adc42e667dd10a4508545cf68",
+    "rgb": "gamma-0.55 lift of corrected AlphaMap G scalar",
+    "alpha": "corrected SpecularMap R scalar"
+  },
+  "source1": {
+    "vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f3_base_phong\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+    "vtf_sha256": "59af90d58082b9d99b9e2b3006505743d0e85e57b16ce95c5c4ee21387bd7381",
+    "format": "DXT5 RGBA, basemap alpha used as phong mask",
+    "vmt": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f3_base_phong\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+    "phong": {
+      "boost": 0.6,
+      "exponent": 18,
+      "fresnel_ranges": [
+        0.2,
+        0.5,
+        1.0
+      ]
+    }
+  },
+  "material_closure_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\f3_material_closure_report.json",
+  "deployment": {
+    "migi_deployed": true,
+    "migi_addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_f3_base_phong_tmp",
+    "game_files_modified": false
+  },
+  "deferred": [
+    "Normal-B is scalar and is not enabled as $bumpmap.",
+    "PV DTX red energy, CFG lookup strip, selfillum and animated proxies are not enabled.",
+    "This remains a Source 1 approximation, not a final CF shader recreation."
+  ]
+}

@@ -1,0 +1,85 @@
+[21:51:38] [INFO] 项目根：D:\project\cf_to_csgo
+[21:51:38] [INFO] 沙盒目录：D:\project\cf_to_csgo\data\tmp\20260818_215138
+[21:51:38] [====] ============================================================
+[21:51:38] [====] L0 环境自检
+[21:51:38] [====] ============================================================
+[21:51:38] [INFO] Python 3.12.13  (C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe)
+[21:51:38] [FAIL] ffmpeg 不在 PATH（package_tts_migi / convert_audio 需要）
+[21:51:38] [PASS] vgmstream-cli.exe 存在：D:\project\cf_to_csgo\tools\vgmstream\vgmstream-cli.exe
+[21:51:38] [FAIL] vpk 库不可导入（unpack_vpk_voices 需要：pip install vpk）
+[21:51:38] [PASS] CF 目录存在：D:\Program Files\CF(2)
+[21:51:38] [PASS] CS:GO 游戏目录存在：D:\steam\steamapps\common\csgo legacy
+[21:51:38] [====] ============================================================
+[21:51:38] [====] L1 脚本语法检查
+[21:51:38] [====] ============================================================
+[21:51:38] [PASS] 语法 OK：scripts\_paths.py
+[21:51:38] [PASS] 语法 OK：scripts\audio_clean\categorize_voices.py
+[21:51:38] [PASS] 语法 OK：scripts\audio_clean\clean_wavs.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_extract\extract_all.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_extract\extract_fmod.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\blender_mcp_call.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\build_c2_skeleton_plan.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\build_c3_alignment.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\build_c3_blender_scene.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\build_d1_blender_scene.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\build_d2_preflight_report.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\evaluate_b2_routes.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\split_c1_meshes.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\validate_b3_obj_roundtrip.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\validate_c1_mesh_map.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\validate_d1_scene.py
+[21:51:38] [PASS] 语法 OK：scripts\cf_ltb\validate_d2_report.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\build_custom_inspect.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\build_d3_m4a4_r1.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\build_m4a1_s_reference.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\compile_m4a1_s_roundtrip.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\convert_audio.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\convert_obj_to_smd.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\deploy_cf_ak47_beast_migi.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\deploy_cf_m4a1_bornbeast_migi.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\deploy_tts_voices.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\extract_m4a1_s_reference.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\extract_m4a4_reference.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\fix_planting_voices.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\freeze_legacy_attempt.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\package_tts_migi.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\parse_vpk.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\report_m4a1_s_reference.py
+[21:51:38] [PASS] 语法 OK：scripts\csgo_pack\unpack_vpk_voices.py
+[21:51:38] [PASS] 语法 OK：scripts\gsi\gsi_voice_bot.py
+[21:51:38] [PASS] 语法 OK：scripts\gsi\gsi_voice_bot_debug.py
+[21:51:38] [PASS] 语法 OK：scripts\weapon_port\build_f1_m4a4_material_debug.py
+[21:51:38] [PASS] 语法 OK：scripts\weapon_port\decode_bornbeast_materials.py
+[21:51:38] [PASS] 语法 OK：scripts\weapon_port\validate_materials.py
+[21:51:38] [INFO] 共检查 39 个脚本
+[21:51:38] [====] ============================================================
+[21:51:38] [====] L2 沙盒冒烟
+[21:51:38] [====] ============================================================
+[21:51:38] [PASS] audio_clean/clean_wavs.py 冒烟通过
+[21:51:38] [PASS] audio_clean/categorize_voices.py 冒烟通过
+[21:51:38] [PASS] csgo_pack/parse_vpk.py 冒烟通过
+[21:51:38] [FAIL] csgo_pack/unpack_vpk_voices.py 运行失败，退出码 1
+[21:51:38] [INFO] csgo_pack/unpack_vpk_voices.py 输出尾部：Traceback (most recent call last):
+  File "D:\project\cf_to_csgo\scripts\csgo_pack/unpack_vpk_voices.py", line 1, in <module>
+    import vpk
+ModuleNotFoundError: No module named 'vpk'
+[21:51:38] [FAIL] csgo_pack/package_tts_migi.py 运行失败，退出码 1
+[21:51:38] [INFO] csgo_pack/package_tts_migi.py 输出尾部：:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] 拒绝访问。
+[21:51:38] [PASS] cf_extract/extract_all.py 冒烟通过
+[21:51:38] [PASS] cf_extract/extract_fmod.py 冒烟通过
+[21:51:39] [PASS] csgo_pack/convert_audio.py 冒烟通过
+[21:51:39] [PASS] csgo_pack/fix_planting_voices.py 冒烟通过
+[21:51:39] [PASS] gsi/gsi_voice_bot.py 模块可加载
+[21:51:39] [PASS] gsi/gsi_voice_bot_debug.py 模块可加载
+[21:51:39] [INFO] 沙盒已清理，只保留日志。
+[21:51:39] [INFO] 日志已写入：D:\project\cf_to_csgo\logs\20260818_215138_smoke.log
+[21:51:39] [SUMMARY] 通过 51 / 失败 4 / 跳过 0 / 警告 0（共 55 项）
+[21:51:39] [DETAIL]   失败项：ffmpeg 不在 PATH（package_tts_migi / convert_audio 需要）
+[21:51:39] [DETAIL]   失败项：vpk 库不可导入（unpack_vpk_voices 需要：pip install vpk）
+[21:51:39] [DETAIL]   失败项：csgo_pack/unpack_vpk_voices.py 运行失败，退出码 1
+[21:51:39] [DETAIL]   失败项：csgo_pack/package_tts_migi.py 运行失败，退出码 1

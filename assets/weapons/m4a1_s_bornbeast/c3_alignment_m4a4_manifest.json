@@ -1,0 +1,51 @@
+{
+  "schema": "cf2.m4a4.c3-transform-manifest.v1",
+  "status": "locked_for_D_with_manual_attachment_gate",
+  "source_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\c3_alignment_report.json",
+  "source_report_sha256": "b9c970ae626735f819d006fbd3398ff163b4c26066791c485615d85d2d8243d6",
+  "shared_transform_for_all_nine_weapon_meshes": true,
+  "matrix_convention": "homogeneous column vector; p_source = matrix_cf_to_source @ [p_cf, 1]",
+  "matrix_cf_to_source": [
+    [
+      1.784059185,
+      0.034856661,
+      0.01256238,
+      -2.536612614
+    ],
+    [
+      0.011249821,
+      0.066854712,
+      -1.783155592,
+      -14.701850345
+    ],
+    [
+      -0.035302149,
+      1.782850369,
+      0.066620549,
+      19.652856554
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 1.784443884,
+  "rotation_determinant": 1.0,
+  "axis_map": "Source X=CF X, Source Y=-CF Z, Source Z=CF Y, followed by 2.4516-degree fitted correction",
+  "normal_policy": "rotation only then normalize",
+  "winding_policy": "preserve; determinant is positive",
+  "binding_frame": "official M4A4 bind pose",
+  "attachment_policy": {
+    "flash": "official flash bone is within C3 tolerance",
+    "shelleject": "official shelleject bone is within C3 tolerance",
+    "muzzle": "use official M4A4 flash bone; no detachable-silencer path",
+    "recommended_local_x_offset": -2.814951
+  },
+  "provisional": [
+    "The D-stage first compile must visually confirm the idle pose at real game FOV.",
+    "No detachable-silencer semantics are authored for the M4A4 target.",
+    "M4A4 hand/attachment numbers are diagnostic only: the decompiled SMD vertex domain and skeleton-global domain must not be mixed as an automated pass condition."
+  ]
+}

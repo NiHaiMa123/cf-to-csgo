@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/rif_m4a1/rif_m4a1"
+	"$phong" "1"
+	"$basemapalphaphongmask" "1"
+	"$phongboost" "0.6"
+	"$phongexponent" "18"
+	"$phongfresnelranges" "[0.2 0.5 1.0]"
+	"$phongdisablehalflambert" "1"
+}

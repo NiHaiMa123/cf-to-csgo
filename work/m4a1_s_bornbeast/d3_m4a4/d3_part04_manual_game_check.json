@@ -1,0 +1,10 @@
+{
+  "schema": "cf2.m4a4.d3-part04-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed",
+  "addon": "p_cf_bornbeast_m4a4_d3_part04_tmp",
+  "scope": "D3 R1 through static part04",
+  "confirmed": ["No positional or animation problem was observed for the part04 layer"],
+  "advisory": "Final surface-completeness review remains deferred until the CF material replaces the dark placeholder.",
+  "source": "User confirmation in Codex task: 没问题，下一步"
+}

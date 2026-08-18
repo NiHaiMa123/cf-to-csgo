@@ -1,0 +1,15 @@
+{
+  "schema": "cf2.m4a4.d3-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed",
+  "addon": "p_cf_bornbeast_m4a4_d3_main_tmp",
+  "scope": "D3 R1 main-body-only",
+  "confirmed": [
+    "M4A4 slot replacement is visible",
+    "idle position, orientation, scale and FOV have no observed problem",
+    "draw, fire, reload and inspect have no observed problem",
+    "muzzle flash and shell ejection have no observed problem",
+    "no unwanted M4A1-S silencer state or detach behavior was observed"
+  ],
+  "source": "User confirmation in Codex task: 没有问题"
+}

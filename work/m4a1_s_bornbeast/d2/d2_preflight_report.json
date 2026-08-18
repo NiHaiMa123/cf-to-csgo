@@ -1,0 +1,686 @@
+{
+  "schema": "cf2.m4a1_s.d2-preflight.v1",
+  "scene": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\d1\\d1_m4a1_s_bornbeast.blend",
+  "scene_sha256": "d3fa9544068be37ac0c8e664013a6fc2c09cc8576928240d83925b04c7fdc344",
+  "inputs": {
+    "mesh_map": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\mesh_map.yaml",
+      "sha256": "c21e19929f027119f1d8f3ed0c998b9ec29adaab83ef1b0fb6050559d856475f"
+    },
+    "material_map": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\material_map.json",
+      "sha256": "f05e25ebba220aefce5da7301e7d09697789a29eb33a06df230691463c05b8c1"
+    },
+    "c2_manifest": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c2_skeleton_manifest.json",
+      "sha256": "8dbda19f9950282ac78712ab1a26ea4a48539fb5695b541ef3aeb984ccf01bf8"
+    },
+    "c3_manifest": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_manifest.json",
+      "sha256": "ec4ac5e406269442dec200591029fb102c3b8246eb7d733ab979181f63c8188e"
+    },
+    "d1_report": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\d1\\d1_scene_report.json",
+      "sha256": "4d9e8239ec48211319b5fe6db0f053a3eee18a4a8cc3bafe93007a5d09ceeab4"
+    },
+    "reference_report": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a1_s\\reference_report.json",
+      "sha256": "8ddd8467461c9d81d16fe88ffb2b623cb441624e0b4ed93073b1a06327f175dd"
+    }
+  },
+  "global_checks": {
+    "mesh_set_exact": true,
+    "no_cf_arms_in_export": true,
+    "all_groups_controlled": true,
+    "all_faces_material_assigned": true,
+    "all_material_slots_mapped": true,
+    "all_mapped_targets_exist": true,
+    "normals_valid_and_nondefault": true,
+    "weights_normalized_valid_and_within_limit": true,
+    "r1_rigid_bindings_match": true,
+    "armature_modifiers_valid": true,
+    "canonical_skeleton_exact": true,
+    "object_transforms_identity": true,
+    "no_degenerate_or_complex_nonmanifold": true,
+    "zero_area_uv_count": 16,
+    "boundary_edge_count": 2834,
+    "c3_locked": true,
+    "muzzle_override_recorded": true
+  },
+  "zero_uv_assessment": {
+    "face_count": 16,
+    "clusters_by_long_axis": {
+      "M4A1S_BornBeast@Y=-9": 8,
+      "M4A1S_BornBeast@Y=-14": 8
+    },
+    "classification": "two_eight_triangle_collapsed_uv_caps",
+    "geometry_degenerate": false,
+    "r1_policy": "allowed only with the explicit official reference placeholder material",
+    "r2_policy": "material-dependent; verify the intended CF texel before preserving or re-unwrapping"
+  },
+  "meshes": [
+    {
+      "object": "EXPORT_M4A1S_BornBeast",
+      "source_mesh": "M4A1S_BornBeast",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 3061,
+      "face_count": 3407,
+      "material_slots": [
+        "M4A1S_BornBeast"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 1910,
+        "largest_direction_fraction": 0.03091674004500538,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": [
+          {
+            "polygon": 986,
+            "center": [
+              -3.977507,
+              -9.105651,
+              -0.280308
+            ],
+            "geometry_area": 0.0312571004
+          },
+          {
+            "polygon": 987,
+            "center": [
+              -3.981215,
+              -9.003039,
+              -0.184896
+            ],
+            "geometry_area": 0.031256862
+          },
+          {
+            "polygon": 988,
+            "center": [
+              -3.986358,
+              -8.998,
+              -0.044916
+            ],
+            "geometry_area": 0.0312571302
+          },
+          {
+            "polygon": 989,
+            "center": [
+              -3.989922,
+              -9.093482,
+              0.057633
+            ],
+            "geometry_area": 0.0312568955
+          },
+          {
+            "polygon": 990,
+            "center": [
+              -3.989819,
+              -9.233556,
+              0.06268
+            ],
+            "geometry_area": 0.0312567055
+          },
+          {
+            "polygon": 991,
+            "center": [
+              -3.986111,
+              -9.336166,
+              -0.032731
+            ],
+            "geometry_area": 0.0312568322
+          },
+          {
+            "polygon": 992,
+            "center": [
+              -3.980969,
+              -9.341208,
+              -0.172711
+            ],
+            "geometry_area": 0.0312563032
+          },
+          {
+            "polygon": 993,
+            "center": [
+              -3.977405,
+              -9.245724,
+              -0.27526
+            ],
+            "geometry_area": 0.0312567838
+          },
+          {
+            "polygon": 1920,
+            "center": [
+              -3.974116,
+              -13.763061,
+              -0.112494
+            ],
+            "geometry_area": 0.0312570632
+          },
+          {
+            "polygon": 1921,
+            "center": [
+              -3.977823,
+              -13.660449,
+              -0.017082
+            ],
+            "geometry_area": 0.0312567651
+          },
+          {
+            "polygon": 1922,
+            "center": [
+              -3.982965,
+              -13.655408,
+              0.122898
+            ],
+            "geometry_area": 0.0312570259
+          },
+          {
+            "polygon": 1923,
+            "center": [
+              -3.98653,
+              -13.750893,
+              0.225448
+            ],
+            "geometry_area": 0.0312568508
+          },
+          {
+            "polygon": 1924,
+            "center": [
+              -3.986427,
+              -13.890965,
+              0.230495
+            ],
+            "geometry_area": 0.0312567465
+          },
+          {
+            "polygon": 1925,
+            "center": [
+              -3.982718,
+              -13.993576,
+              0.135083
+            ],
+            "geometry_area": 0.0312571302
+          },
+          {
+            "polygon": 1926,
+            "center": [
+              -3.977576,
+              -13.998616,
+              -0.004896
+            ],
+            "geometry_area": 0.0312566049
+          },
+          {
+            "polygon": 1927,
+            "center": [
+              -3.974013,
+              -13.903133,
+              -0.107446
+            ],
+            "geometry_area": 0.0312568322
+          }
+        ]
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 2359,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_s_Parent"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_s_Parent": 3061
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_s_Parent",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "temporary_static_parent"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast01",
+      "source_mesh": "M4A1S_BornBeast01",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 44,
+      "face_count": 36,
+      "material_slots": [
+        "M4A1S_BornBeast01"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 17,
+        "largest_direction_fraction": 0.12962962962962962,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 42,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_Clip"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_Clip": 44
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_Clip",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "locked_rigid_magazine"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast02",
+      "source_mesh": "M4A1S_BornBeast02",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 133,
+      "face_count": 121,
+      "material_slots": [
+        "M4A1S_BornBeast02"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 64,
+        "largest_direction_fraction": 0.20110192837465565,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 125,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_Bolt"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_Bolt": 133
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_Bolt",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "provisional_rigid_bolt"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast03",
+      "source_mesh": "M4A1S_BornBeast03",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 165,
+      "face_count": 184,
+      "material_slots": [
+        "M4A1S_BornBeast03"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 88,
+        "largest_direction_fraction": 0.11413043478260869,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 128,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_s_Parent"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_s_Parent": 165
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_s_Parent",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "acknowledged_static_downgrade"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast04",
+      "source_mesh": "M4A1S_BornBeast04",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 46,
+      "face_count": 52,
+      "material_slots": [
+        "M4A1S_BornBeast04"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 43,
+        "largest_direction_fraction": 0.04487179487179487,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 36,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_s_Parent"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_s_Parent": 46
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_s_Parent",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "acknowledged_static_downgrade"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast05",
+      "source_mesh": "M4A1S_BornBeast05",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 46,
+      "face_count": 52,
+      "material_slots": [
+        "M4A1S_BornBeast05"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 44,
+        "largest_direction_fraction": 0.04487179487179487,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 36,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_s_Parent"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_s_Parent": 46
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_s_Parent",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "acknowledged_static_downgrade"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast06",
+      "source_mesh": "M4A1S_BornBeast06",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 46,
+      "face_count": 52,
+      "material_slots": [
+        "M4A1S_BornBeast06"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 42,
+        "largest_direction_fraction": 0.04487179487179487,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 36,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_s_Parent"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_s_Parent": 46
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_s_Parent",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "acknowledged_static_downgrade"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast07",
+      "source_mesh": "M4A1S_BornBeast07",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 46,
+      "face_count": 52,
+      "material_slots": [
+        "M4A1S_BornBeast07"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 43,
+        "largest_direction_fraction": 0.04487179487179487,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 36,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_s_Parent"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_s_Parent": 46
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_s_Parent",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "acknowledged_static_downgrade"
+    },
+    {
+      "object": "EXPORT_M4A1S_BornBeast08",
+      "source_mesh": "M4A1S_BornBeast08",
+      "controlled_by_mesh_map": true,
+      "vertex_count": 46,
+      "face_count": 52,
+      "material_slots": [
+        "M4A1S_BornBeast08"
+      ],
+      "faces_without_material": 0,
+      "mapped_source_materials": [
+        "rif_m4a1_s"
+      ],
+      "all_material_slots_mapped": true,
+      "mapped_targets_exist_in_official_reference": true,
+      "normal": {
+        "zero_length": 0,
+        "nonfinite": 0,
+        "distinct_rounded_directions": 42,
+        "largest_direction_fraction": 0.04487179487179487,
+        "flipped_against_face_normal": 0
+      },
+      "uv": {
+        "zero_area_faces": []
+      },
+      "topology": {
+        "degenerate_faces": 0,
+        "boundary_edges": 36,
+        "complex_nonmanifold_edges": 0
+      },
+      "weights": {
+        "vertex_groups": [
+          "v_weapon.M4A1_s_Parent"
+        ],
+        "bone_usage": {
+          "v_weapon.M4A1_s_Parent": 46
+        },
+        "invalid_weight_sum_vertices": [],
+        "invalid_bone_vertices": [],
+        "influence_overflow_vertices": [],
+        "expected_r1_bone": "v_weapon.M4A1_s_Parent",
+        "rigid_r1_match": true
+      },
+      "armature": {
+        "modifier_count": 1,
+        "targets_canonical_armature": true
+      },
+      "object_transform_identity": true,
+      "binding_status": "acknowledged_static_downgrade"
+    }
+  ],
+  "profiles": {
+    "r1_static": {
+      "passed": true,
+      "result": "PASS_WITH_EXPLICIT_DOWNGRADES",
+      "failures": [],
+      "advisories": [
+        "16 zero-area UV faces are allowed only for the official-material visibility compile; no CF material claim is permitted.",
+        "2834 open boundary edges are preserved; complex non-manifold edges are zero.",
+        "Main -> Parent keeps the baked muzzle/silencer static and is not R2-correct.",
+        "M4A1S_BornBeast03-08 -> Parent is an acknowledged static downgrade.",
+        "rif_m4a1_s is an official reference placeholder, not the translated CF material."
+      ]
+    },
+    "r2_full": {
+      "passed": false,
+      "result": "NO_GO",
+      "failures": [
+        "bolt_binding_still_provisional",
+        "collapsed_uv_caps_require_cf_material_semantics",
+        "components_03_08_use_parent_fallback",
+        "final_cf_material_map_missing",
+        "main_baked_silencer_not_split_from_parent"
+      ],
+      "advisories": [
+        "CF animation decoding is not an R2 blocker because R2 uses official M4A1-S animations."
+      ]
+    }
+  }
+}

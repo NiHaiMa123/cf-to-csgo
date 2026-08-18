@@ -1,0 +1,9 @@
+{
+  "schema": "cf2.m4a4.d3-bolt-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed",
+  "addon": "p_cf_bornbeast_m4a4_d3_bolt_tmp",
+  "scope": "D3 R1 main plus 01 magazine plus 02 bolt",
+  "confirmed": ["02 bolt/charging-handle layer has no observed problem"],
+  "source": "User confirmation in Codex task: 没问题，下一步"
+}

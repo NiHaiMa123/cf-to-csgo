@@ -1,0 +1,27 @@
+{
+  "schema": "cf2.m4a4.f1-material-debug.v1",
+  "status": "staged_for_uv_and_surface_visibility_only",
+  "base_model": "D3 R1 full, user-confirmed",
+  "source_decode_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\material_decode_report.json",
+  "debug_texture": {
+    "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\decoded\\bornbeast_alpha_min_debug.png",
+    "sha256": "25e149e59159422db549b0aa118731c2231553adfa00a716748c7d4e2220ef1d",
+    "final_material": false
+  },
+  "source1": {
+    "vmt": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f1_material_debug\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+    "vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f1_material_debug\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+    "vtf_sha256": "8040ae55ad2a3a52977053407db11edc55aa95e638248b767fe6ef05efc055c5"
+  },
+  "material_closure_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\f1_material_closure_report.json",
+  "deployment": {
+    "migi_deployed": true,
+    "migi_addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_f1_corrected_debug_tmp",
+    "game_files_modified": false
+  },
+  "limitations": [
+    "The base texture is a gamma-lifted per-pixel minimum of the CF AlphaMap channels.",
+    "Normal, specular, shader CFG and animated PV DTX are intentionally not enabled.",
+    "This build tests UV alignment and surface completeness, not final CF shader fidelity."
+  ]
+}

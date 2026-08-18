@@ -1,0 +1,157 @@
+{
+  "schema": "cf2.bornbeast.material-audit.v1",
+  "status": "pass_with_provisional_shader_mapping",
+  "decode_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\material_decode_report.json",
+  "decode_status": "decoded_with_explicit_container_assumptions",
+  "auxiliary_maps": {
+    "alpha": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\decoded\\bornbeast_alpha_bgr.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "channels": {
+        "R": {
+          "mean": 255.0,
+          "stddev": 0.0,
+          "min": 255,
+          "max": 255,
+          "white_ratio": 1.0,
+          "unique_values": 1
+        },
+        "G": {
+          "mean": 15.196126,
+          "stddev": 21.200617,
+          "min": 0,
+          "max": 173,
+          "white_ratio": 0.0,
+          "unique_values": 174
+        },
+        "B": {
+          "mean": 255.0,
+          "stddev": 0.0,
+          "min": 255,
+          "max": 255,
+          "white_ratio": 1.0,
+          "unique_values": 1
+        }
+      },
+      "variable_channel": "G",
+      "fixed_white_channels": [
+        "R",
+        "B"
+      ],
+      "layout_valid": true
+    },
+    "normal": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\decoded\\bornbeast_normal_bgr.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "channels": {
+        "R": {
+          "mean": 255.0,
+          "stddev": 0.0,
+          "min": 255,
+          "max": 255,
+          "white_ratio": 1.0,
+          "unique_values": 1
+        },
+        "G": {
+          "mean": 255.0,
+          "stddev": 0.0,
+          "min": 255,
+          "max": 255,
+          "white_ratio": 1.0,
+          "unique_values": 1
+        },
+        "B": {
+          "mean": 11.926539,
+          "stddev": 14.411007,
+          "min": 0,
+          "max": 108,
+          "white_ratio": 0.0,
+          "unique_values": 105
+        }
+      },
+      "variable_channel": "B",
+      "fixed_white_channels": [
+        "R",
+        "G"
+      ],
+      "layout_valid": true
+    },
+    "specular": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\decoded\\bornbeast_specular_bgr.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "channels": {
+        "R": {
+          "mean": 19.94169,
+          "stddev": 24.878455,
+          "min": 0,
+          "max": 214,
+          "white_ratio": 0.0,
+          "unique_values": 181
+        },
+        "G": {
+          "mean": 255.0,
+          "stddev": 0.0,
+          "min": 255,
+          "max": 255,
+          "white_ratio": 1.0,
+          "unique_values": 1
+        },
+        "B": {
+          "mean": 255.0,
+          "stddev": 0.0,
+          "min": 255,
+          "max": 255,
+          "white_ratio": 1.0,
+          "unique_values": 1
+        }
+      },
+      "variable_channel": "R",
+      "fixed_white_channels": [
+        "G",
+        "B"
+      ],
+      "layout_valid": true
+    }
+  },
+  "shader_cfg": {
+    "bytes": 492,
+    "pixels": 164,
+    "variable_channel": "B",
+    "r_all_white": true,
+    "g_all_white": true,
+    "b_unique_values": 19,
+    "interpretation": "one-dimensional RGB lookup strip; not a text shader configuration"
+  },
+  "official_local_reference": {
+    "source": "data/rf019/TEX/UI/WEAPONICON/BUYWEAPON_INFO_M4A1_S_BornBeast.DTX",
+    "decoded": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\materials\\reference\\BUYWEAPON_INFO_M4A1_S_BornBeast.png",
+    "sha256": "d1c3fe32152d9b6cabd846c162d4704d0ce660b288c065373a28f4465b8c89a9",
+    "size": [
+      256,
+      128
+    ],
+    "observed_palette": "black/gunmetal body, silver mechanical edges, red energy accents"
+  },
+  "source1_mapping": {
+    "alpha_g": "scalar atlas recovered; useful for visibility/albedo approximation, exact CF blend role still provisional",
+    "normal_b": "scalar map only; must not be passed directly to $bumpmap as a tangent-space RGB normal",
+    "specular_r": "scalar specular candidate; safe only after conservative Source phong test",
+    "cfg_b_strip": "lookup ramp candidate; no direct VMT parameter equivalence proven",
+    "pv_dtx": "red/pink detail or energy texture candidate with validated mip chain; animation/blend semantics provisional"
+  },
+  "gates": {
+    "corrected_alpha_debug_ready": true,
+    "direct_normal_map_use_allowed": false,
+    "direct_cfg_to_vmt_translation_allowed": false,
+    "final_material_claim_allowed": false
+  }
+}

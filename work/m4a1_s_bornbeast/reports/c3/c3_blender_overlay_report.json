@@ -1,0 +1,37 @@
+{
+  "schema": "cf2.m4a1_s.c3-blender-overlay.v1",
+  "status": "visual_overlay_reviewed",
+  "blender_version": "4.5.12 LTS",
+  "cf_weapon_objects": 9,
+  "reference_weapon_objects": 5,
+  "colors": {
+    "cf": "orange/red",
+    "official_reference": "transparent blue"
+  },
+  "images": [
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\c3\\c3_overlay_side.png",
+      "sha256": "22eb62697854d1758a2c2ad8747285b351db451e650088c4ff8437c81a7243ac"
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\c3\\c3_overlay_top.png",
+      "sha256": "525d988fce9a3ea3b54f3b2cfd1cbd3bc040c08372cb71eaf2656bc81dba6d44"
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\c3\\c3_overlay_perspective.png",
+      "sha256": "92b02801f903be4009011e6a8fa5a787d070e33a21d2a099f1b764320cce2b3c"
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\c3\\c3_attachment_side.png",
+      "sha256": "14d99b15a799607924b08a6dc62e72f20d4733c343010f9e5c95d3eaec588441"
+    }
+  ],
+  "blend": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reports\\c3\\c3_alignment_review.blend",
+  "observations": [
+    "Receiver, foregrip, magazine and bolt regions overlap without mirroring or a 90-degree error.",
+    "The CF silhouette is shorter than the official attached-silencer reference but stays inside its XYZ envelope.",
+    "Official bare flash and shell-eject locations are near CF geometry.",
+    "Official muzzle_flash2 offset 9.5 is visibly beyond the baked CF muzzle and requires a QC override."
+  ],
+  "result": "PASS_WITH_REQUIRED_QC_ATTACHMENT_OVERRIDE"
+}

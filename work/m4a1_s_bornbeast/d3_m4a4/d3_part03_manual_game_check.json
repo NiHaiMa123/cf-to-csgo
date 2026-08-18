@@ -1,0 +1,14 @@
+{
+  "schema": "cf2.m4a4.d3-part03-manual-game-check.v1",
+  "recorded_date": "2026-08-18",
+  "status": "passed_user_confirmed",
+  "addon": "p_cf_bornbeast_m4a4_d3_part03_tmp",
+  "scope": "D3 R1 through static part03",
+  "confirmed": ["No positional or animation problem was observed for the part03 layer"],
+  "advisory": {
+    "placeholder_material_is_too_dark": true,
+    "geometry_completeness_confidence": "limited",
+    "required_follow_up": "Repeat the completeness review after the final CF material is available"
+  },
+  "source": "User confirmation in Codex task: 枪体贴图黑不溜秋的，我也不知道是否完整，看着好像还行。没有问题。"
+}
