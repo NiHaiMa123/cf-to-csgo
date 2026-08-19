@@ -1,0 +1,57 @@
+{
+  "schema": "cf2.pipeline.package-manifest.v1",
+  "profile_id": "M4A4_CF_BornBeast_Final",
+  "timestamp_utc": "2026-08-18T16:32:48.358079+00:00",
+  "final_target_identity": true,
+  "final_cf_material": true,
+  "material_classification": "OFFICIAL_CF_LOCAL_CANONICAL_MATERIAL",
+  "runtime_slot": "m4a4",
+  "file_count": 9,
+  "files": [
+    {
+      "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+      "size_bytes": 345,
+      "sha256": "e76de12f33cb21738f2fdf37ad7405bb5397820e40e26c6f9b7d78e833329575"
+    },
+    {
+      "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "size_bytes": 1398352,
+      "sha256": "9a34546f6082d688b7c7b57befd39ef1fb4069d5f79792f1ecb2f4703add5d31"
+    },
+    {
+      "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf",
+      "size_bytes": 699288,
+      "sha256": "7335fae4c44cb83f09ff4338e09d651da2baa4789b03c2b7ae7ed3db6291225f"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.ani",
+      "size_bytes": 46528,
+      "sha256": "6a9f97b5d25f0669174be235a58e8549c13294016caf7668f1ee9a53dcd213ba"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.dx80.vtx",
+      "size_bytes": 56882,
+      "sha256": "060ec94783d34d40c1e4071bfe02f823bb42dd5d5ac969a0ce6480cb9a150d04"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.dx90.vtx",
+      "size_bytes": 56882,
+      "sha256": "ad0f556f08593a3189e1af6ef4e621d88bac4b46ef8ffd741c42f3c34c82e52a"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.mdl",
+      "size_bytes": 58392,
+      "sha256": "65283c375aaa0954d946d39d6e4168f81e83b66f376a4c3e0291b1ccd59d3e3d"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.sw.vtx",
+      "size_bytes": 56858,
+      "sha256": "bae06f029e9e3dcc075a04f49d7a9d2185cadc09430d42fcd65fe9a3b2bf2388"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.vvd",
+      "size_bytes": 232320,
+      "sha256": "9518d5eaedeafc5887c555ba1a6ff0efc250c36c2e40a6bd9f40e31413b37430"
+    }
+  ]
+}

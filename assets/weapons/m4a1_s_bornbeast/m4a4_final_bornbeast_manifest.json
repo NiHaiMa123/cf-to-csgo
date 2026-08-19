@@ -1,0 +1,126 @@
+{
+  "schema": "cf2.m4a4.final-manifest.v1",
+  "profile_id": "M4A4_CF_BornBeast_Final",
+  "status": "final_release_candidate",
+  "final_target_identity": true,
+  "final_cf_material": true,
+  "runtime": {
+    "slot": "m4a4",
+    "modelname": "weapons/v_rif_m4a1.mdl",
+    "active_addon": "p_cf_m4a4_bornbeast_final",
+    "migi_write_policy": "deploy_subcommand_only"
+  },
+  "inputs": {
+    "cf_ltb_source": {
+      "path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7"
+    },
+    "b3_raw_obj": {
+      "path": "work/m4a1_s_bornbeast/source_dump/b3_raw/PV-M4A1_S_BornBeast_Classic.obj",
+      "sha256": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9"
+    },
+    "b3_export_report": {
+      "path": "work/m4a1_s_bornbeast/source_dump/b3_raw/PV-M4A1_S_BornBeast_Classic_export_report.json",
+      "sha256": "23a254d35ba780ac034bc626f9e7aec5eb0c7860b1c12a597d4fdb6a73d0dd0c"
+    },
+    "aligned_obj": {
+      "path": "work/m4a1_s_bornbeast/source_dump/c3_alignment_m4a4/PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "sha256": "1b1b6cd24eb2ce4cf3e411d5eee45a8a27f3fa9637309f88900f376ee54f9f97"
+    },
+    "weapon_only_report": {
+      "path": "work/m4a1_s_bornbeast/source_dump/c1_split/weapon_only/PV-M4A1_S_BornBeast_Classic_weapon_only.json",
+      "sha256": "3d2262a9b457046292e94167a1162940ec8446d96879fd12511a37ebaee1be5f"
+    },
+    "alignment_manifest": {
+      "path": "assets/weapons/m4a1_s_bornbeast/c3_alignment_m4a4_manifest.json",
+      "sha256": "d92b337fe74edfc621d22b6d04aef6bc3e111a7a5a0d9411cadff9e7230551d1"
+    },
+    "m4a4_target_manifest": {
+      "path": "assets/weapons/m4a1_s_bornbeast/m4a4_target_manifest.json",
+      "sha256": "8a038bb51507c6c9290e043e4f3a2018a8ecb2b45cd391f6345f01d89caa2cdd"
+    },
+    "m4a4_reference_report": {
+      "path": "work/m4a1_s_bornbeast/reference_m4a4/reference_report.json",
+      "sha256": "2db4d0710f2229d438a0fdd82f570242f07334403c2cf4532e2ed5aa1a520e06"
+    },
+    "material_map": {
+      "path": "assets/weapons/m4a1_s_bornbeast/material_map.json",
+      "sha256": "a1c560fa39a42e9906d5954c50deddb84b586cbfff63beb3e60db601bc9111ef"
+    },
+    "local_cf_dtx": {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9"
+    },
+    "local_cf_alpha": {
+      "path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37"
+    },
+    "local_cf_specular": {
+      "path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6"
+    },
+    "local_cf_normal": {
+      "path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e"
+    },
+    "local_cf_shader": {
+      "path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87"
+    }
+  },
+  "toolchain": {
+    "d3_builder": {
+      "path": "scripts/csgo_pack/build_d3_m4a4_r1.py"
+    },
+    "p6_material_builder": {
+      "path": "scripts/weapon_port/build_p6_final_materials.py"
+    },
+    "material_validator": {
+      "path": "scripts/weapon_port/validate_materials.py"
+    }
+  },
+  "transform": {
+    "manifest_ref": "assets/weapons/m4a1_s_bornbeast/c3_alignment_m4a4_manifest.json",
+    "matrix_convention": "homogeneous column vector; p_source = matrix_cf_to_source @ [p_cf, 1]",
+    "source_space": "raw CF LTB model coordinates",
+    "target_space": "official M4A4 Source 1 bind-pose SMD coordinates",
+    "normal_policy": "rotation only then normalize",
+    "winding_policy": "preserve; positive determinant"
+  },
+  "mesh_bone_mapping": [
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast", "bone_index": 3, "bone": "v_weapon.M4A1_Parent", "static_fallback": false, "expected_triangles": 3407},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01", "bone_index": 4, "bone": "v_weapon.M4A1_Clip", "static_fallback": false, "expected_triangles": 36},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02", "bone_index": 29, "bone": "v_weapon.M4A1_Bolt", "static_fallback": false, "expected_triangles": 121},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03", "bone_index": 3, "bone": "v_weapon.M4A1_Parent", "static_fallback": true, "expected_triangles": 184},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04", "bone_index": 3, "bone": "v_weapon.M4A1_Parent", "static_fallback": true, "expected_triangles": 52},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05", "bone_index": 3, "bone": "v_weapon.M4A1_Parent", "static_fallback": true, "expected_triangles": 52},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06", "bone_index": 3, "bone": "v_weapon.M4A1_Parent", "static_fallback": true, "expected_triangles": 52},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07", "bone_index": 3, "bone": "v_weapon.M4A1_Parent", "static_fallback": true, "expected_triangles": 52},
+    {"group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08", "bone_index": 3, "bone": "v_weapon.M4A1_Parent", "static_fallback": true, "expected_triangles": 52}
+  ],
+  "material_policy": {
+    "classification": "OFFICIAL_CF_LOCAL_CANONICAL_MATERIAL",
+    "source_kind": "local_cf_raw_archive",
+    "final_cf_material": true,
+    "final_release_allowed": true,
+    "purpose": "production_release"
+  },
+  "expectations": {
+    "aligned_obj": {"vertices": 3646, "uvs": 3646, "normals": 3646, "triangles": 4008, "group_count": 9},
+    "runtime": {"bone_count": 57, "sequence_count": 9, "attachment_count": 2, "material": "rif_m4a1"},
+    "sequences": ["idle", "shoot1", "shoot2", "shoot3", "reload", "draw", "lookat01", "lookat01_prepare", "lookat01_loop"],
+    "attachments": {"1": "v_weapon.flash", "2": "v_weapon.shelleject"}
+  },
+  "outputs": {
+    "build_root": "build/m4a1_s_bornbeast_m4a4/p6_bornbeast_final",
+    "addon": "build/m4a1_s_bornbeast_m4a4/p6_bornbeast_final/addon",
+    "material_closure_report": "work/m4a1_s_bornbeast/p6_final_materials/p6_material_closure_report.json",
+    "p4_work_root": "work/m4a1_s_bornbeast/p6_bornbeast_final",
+    "check_report": "work/m4a1_s_bornbeast/p6_bornbeast_final/check_report.json",
+    "build_report": "work/m4a1_s_bornbeast/p6_bornbeast_final/build_report.json",
+    "validation_report": "work/m4a1_s_bornbeast/p6_bornbeast_final/validation_report.json",
+    "package_manifest": "work/m4a1_s_bornbeast/p6_bornbeast_final/staging/package_manifest.json",
+    "package_root": "work/m4a1_s_bornbeast/p6_bornbeast_final/package",
+    "staging_root": "work/m4a1_s_bornbeast/p6_bornbeast_final/staging"
+  }
+}

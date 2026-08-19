@@ -1,0 +1,86 @@
+WARNING: AppFramework : Unable to load module p4lib.dll!
+qdir:    "d:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\source1\"
+gamedir: "D:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\isolated_game\csgo\"
+g_path:  "D:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\source1\v_rif_m4a1.qc"
+Building binary model files...
+Working on "v_rif_m4a1.qc"
+SMD MODEL cf_bornbeast_full_m4a4.smd
+SMD MODEL v_rif_m4a1_anims\idle.smd
+SMD MODEL v_rif_m4a1_anims\shoot1.smd
+SMD MODEL v_rif_m4a1_anims\shoot2.smd
+SMD MODEL v_rif_m4a1_anims\shoot3.smd
+SMD MODEL v_rif_m4a1_anims\reload.smd
+SMD MODEL v_rif_m4a1_anims\draw.smd
+SMD MODEL v_rif_m4a1_anims\lookat01_safe.smd
+SMD MODEL v_rif_m4a1_anims\lookat01_prepare_safe.smd
+SMD MODEL v_rif_m4a1_anims\lookat01_loop_safe.smd
+Processing LOD for material: rif_m4a1
+---------------------
+writing D:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\isolated_game\csgo\models/weapons\v_rif_m4a1.mdl:
+bones        13436 bytes (57)
+   animation       x       y       ips    angle
+animations   23280 bytes (9 anims) (410 frames) [0:15]
+sequences     3692 bytes (9 seq) 
+hdr@00C1F59C=79690200
+ik/pose        164 bytes
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+hdr@00C1F59C=79690200
+textures        72 bytes
+keyvalues      220 bytes
+hdr@00C1F594=79690398
+hdr@00C1F59C=79690200
+bone transforms     7816 bytes
+bone flex driver       0 bytes
+bodygroup presets       0 bytes
+collision        0 bytes
+total        50588
+---------------------
+writing models/weapons\v_rif_m4a1.ani:
+blocks	         2
+total        27032
+---------------------
+writing D:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\isolated_game\csgo\models/weapons\v_rif_m4a1.vvd:
+vertices    174192 bytes (3629 vertices)
+tangents     58064 bytes (3629 vertices)
+total       232320 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\isolated_game\csgo\models/weapons\v_rif_m4a1.sw.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:             9 bytes
+strip groups:      33 bytes
+strips:            35 bytes
+verts:          32661 bytes
+indices:        24048 bytes
+bone changes:       8 bytes
+everything:     56858 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\isolated_game\csgo\models/weapons\v_rif_m4a1.dx80.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:             9 bytes
+strip groups:      33 bytes
+strips:            35 bytes
+verts:          32661 bytes
+indices:        24048 bytes
+bone changes:      32 bytes
+everything:     56882 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\isolated_game\csgo\models/weapons\v_rif_m4a1.dx90.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:             9 bytes
+strip groups:      33 bytes
+strips:            35 bytes
+verts:          32661 bytes
+indices:        24048 bytes
+bone changes:      32 bytes
+everything:     56882 bytes
+WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
+WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
+
+Completed "v_rif_m4a1.qc"

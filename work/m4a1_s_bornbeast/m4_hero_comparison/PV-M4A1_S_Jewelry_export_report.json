@@ -1,0 +1,245 @@
+{
+  "Schema": "cf2.lithtech.obj-export.v2",
+  "GeneratedAtUtc": "2026-08-18T16:37:18.2541583+00:00",
+  "ObjPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_hero_comparison\\PV-M4A1_S_Jewelry.obj",
+  "MtlPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_hero_comparison\\PV-M4A1_S_Jewelry.mtl",
+  "TextureDirectory": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_hero_comparison\\PV-M4A1_S_Jewelry_textures",
+  "TransformMode": "legacy_center_scale",
+  "Transform": {
+    "CenterX": 0,
+    "CenterY": 7.280725955963135,
+    "CenterZ": 4.632007837295532,
+    "Scale": 0.1472154729196669,
+    "InversePosition": "raw_x = (export_x / scale) \u002B center_x; raw_y = (export_y / scale) \u002B center_y; raw_z = (export_z / scale) \u002B center_z",
+    "InverseUv": "export_v = 1 - raw_v; raw_v = 1 - export_v"
+  },
+  "Sources": [
+    {
+      "Name": "PV-M4A1_S_Jewelry",
+      "ResourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "SourceByteCount": 266722,
+      "DecodedByteCount": 1123847,
+      "MeshCount": 7,
+      "VertexCount": 6402,
+      "TriangleCount": 6280
+    }
+  ],
+  "Meshes": [
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "MeshName": "Fview-hand2",
+      "GroupName": "PV-M4A1_S_Jewelry_Fview-hand2",
+      "MaterialName": "Fview-hand2",
+      "VertexCount": 1090,
+      "TriangleCount": 1060,
+      "UvCount": 1090,
+      "NormalCount": 1090,
+      "BoneWeightCount": 1090,
+      "BoneIndexCount": 1090,
+      "RawBounds": {
+        "Min": [
+          -14.260482788085938,
+          20.635520935058594,
+          -1.5058300495147705
+        ],
+        "Max": [
+          14.260482788085938,
+          22.2890567779541,
+          0.667119026184082
+        ]
+      },
+      "RawVertexChecksum": "2dfc50758d0a81aced08d1e86068df1ffe055aaddde7d9f632f5d11073cf01e2",
+      "RawUvChecksum": "c3f11e46e602b1597044e8b583224c4be891ab66aac673bc69999ed78f8bd67f",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "MeshName": "Fview-arm2",
+      "GroupName": "PV-M4A1_S_Jewelry_Fview-arm2",
+      "MaterialName": "Fview-arm2",
+      "VertexCount": 190,
+      "TriangleCount": 274,
+      "UvCount": 190,
+      "NormalCount": 190,
+      "BoneWeightCount": 190,
+      "BoneIndexCount": 190,
+      "RawBounds": {
+        "Min": [
+          -10.727269172668457,
+          20.647289276123047,
+          -1.3173489570617676
+        ],
+        "Max": [
+          10.727269172668457,
+          22.56444549560547,
+          0.6255469918251038
+        ]
+      },
+      "RawVertexChecksum": "55f57242d48bc651fff3191e40de4b383a23484c598269a4712e082903fd481c",
+      "RawUvChecksum": "7a157965b43f95926504a72328dd304d3477bcefb278ee921b62557247c1c60e",
+      "MaxPositionRoundTripError": 8.881784197001252E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "MeshName": "doll",
+      "GroupName": "PV-M4A1_S_Jewelry_doll",
+      "MaterialName": "doll",
+      "VertexCount": 1311,
+      "TriangleCount": 1587,
+      "UvCount": 1311,
+      "NormalCount": 1311,
+      "BoneWeightCount": 1311,
+      "BoneIndexCount": 1311,
+      "RawBounds": {
+        "Min": [
+          1.1194789409637451,
+          -3.247728109359741,
+          -0.8152750134468079
+        ],
+        "Max": [
+          1.8774290084838867,
+          -1.8496830463409424,
+          -0.08467700332403183
+        ]
+      },
+      "RawVertexChecksum": "af8fada92e282b41396d7481b06e1068c74a7c070fe2c2ca2cae97ca906a950a",
+      "RawUvChecksum": "ee61bac2446719784a98d79f3338d61120bce95dc851c189dee491ae4ef4eecf",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "MeshName": "M4A1_S_UltimateGold",
+      "GroupName": "PV-M4A1_S_Jewelry_M4A1_S_UltimateGold",
+      "MaterialName": "M4A1_S_UltimateGold",
+      "VertexCount": 2842,
+      "TriangleCount": 2120,
+      "UvCount": 2842,
+      "NormalCount": 2842,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.7440419793128967,
+          -7.3251848220825195,
+          -4.555816173553467
+        ],
+        "Max": [
+          2.214735984802246,
+          -2.3156869411468506,
+          13.819831848144531
+        ]
+      },
+      "RawVertexChecksum": "85bb9c590cbc4e7b9adb7f329bc2fffb1172656cf06d6600b3060df69ef15209",
+      "RawUvChecksum": "aafac728d92589b03a1adcca5b0a9022d7e913e7202c77d4eb95292327db0f61",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "MeshName": "Object002",
+      "GroupName": "PV-M4A1_S_Jewelry_Object002",
+      "MaterialName": "Object002",
+      "VertexCount": 56,
+      "TriangleCount": 44,
+      "UvCount": 56,
+      "NormalCount": 56,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.1617939472198486,
+          -8.0029935836792,
+          2.0371530055999756
+        ],
+        "Max": [
+          1.7642689943313599,
+          -4.268764019012451,
+          3.8671369552612305
+        ]
+      },
+      "RawVertexChecksum": "3704fa350ac94f044c4c94584062398f5e9132d5e7d497df35c0e47687c45563",
+      "RawUvChecksum": "aead3154227daa819101cf0424c51f8af88b359a76062501754d635e31dc4162",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "MeshName": "Object003",
+      "GroupName": "PV-M4A1_S_Jewelry_Object003",
+      "MaterialName": "Object003",
+      "VertexCount": 153,
+      "TriangleCount": 129,
+      "UvCount": 153,
+      "NormalCount": 153,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.0442010164260864,
+          -3.556575059890747,
+          -0.6962370276451111
+        ],
+        "Max": [
+          1.9177229404449463,
+          -3.324755907058716,
+          3.5356709957122803
+        ]
+      },
+      "RawVertexChecksum": "5b405e667eccc952729e6b28520340d80d35cd7d8e81f3b09373fcb29c0f1a09",
+      "RawUvChecksum": "5256e4d03441ef5f7d2822dc7c8ced24eff7e872527c00bf712205596747d5e2",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Jewelry.LTB",
+      "MeshName": "ROSE",
+      "GroupName": "PV-M4A1_S_Jewelry_ROSE",
+      "MaterialName": "ROSE",
+      "VertexCount": 760,
+      "TriangleCount": 1066,
+      "UvCount": 760,
+      "NormalCount": 760,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.11707603931427,
+          -4.381074905395508,
+          0.35931000113487244
+        ],
+        "Max": [
+          1.7762730121612549,
+          -3.6540489196777344,
+          3.938491106033325
+        ]
+      },
+      "RawVertexChecksum": "fe1b3768c4d555b4d5f6fee9ba9c9ff752389a8a48f779a52af17923f2c61e4a",
+      "RawUvChecksum": "d06316af8fd95e51b961cd8c2efd62cffee07592acde2261a90d8d9e4edb7460",
+      "MaxPositionRoundTripError": 4.440892098500626E-16,
+      "MaxUvRoundTripError": 0
+    }
+  ],
+  "Materials": [
+    "Fview-hand2",
+    "Fview-arm2",
+    "doll",
+    "M4A1_S_UltimateGold",
+    "Object002",
+    "Object003",
+    "ROSE"
+  ],
+  "TextureReferenceCount": 7,
+  "Totals": {
+    "VertexCount": 6402,
+    "TriangleCount": 6280,
+    "UvCount": 6402,
+    "NormalCount": 6402,
+    "BoneWeightCount": 2591,
+    "BoneIndexCount": 2591,
+    "MeshCount": 7,
+    "MaterialCount": 7
+  }
+}

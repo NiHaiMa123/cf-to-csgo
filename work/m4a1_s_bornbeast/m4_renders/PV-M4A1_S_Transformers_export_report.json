@@ -1,0 +1,361 @@
+{
+  "Schema": "cf2.lithtech.obj-export.v2",
+  "GeneratedAtUtc": "2026-08-18T16:38:35.6835809+00:00",
+  "ObjPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_renders\\PV-M4A1_S_Transformers.obj",
+  "MtlPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_renders\\PV-M4A1_S_Transformers.mtl",
+  "TextureDirectory": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_renders\\PV-M4A1_S_Transformers_textures",
+  "TransformMode": "legacy_center_scale",
+  "Transform": {
+    "CenterX": 0,
+    "CenterY": 7.021590232849121,
+    "CenterZ": 4.863703727722168,
+    "Scale": 0.14476104692240363,
+    "InversePosition": "raw_x = (export_x / scale) \u002B center_x; raw_y = (export_y / scale) \u002B center_y; raw_z = (export_z / scale) \u002B center_z",
+    "InverseUv": "export_v = 1 - raw_v; raw_v = 1 - export_v"
+  },
+  "Sources": [
+    {
+      "Name": "PV-M4A1_S_Transformers",
+      "ResourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "SourceByteCount": 152923,
+      "DecodedByteCount": 604808,
+      "MeshCount": 11,
+      "VertexCount": 4370,
+      "TriangleCount": 5250
+    }
+  ],
+  "Meshes": [
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "Fview-hand2",
+      "GroupName": "PV-M4A1_S_Transformers_Fview-hand2",
+      "MaterialName": "Fview-hand2",
+      "VertexCount": 1090,
+      "TriangleCount": 1060,
+      "UvCount": 1090,
+      "NormalCount": 1090,
+      "BoneWeightCount": 1090,
+      "BoneIndexCount": 1090,
+      "RawBounds": {
+        "Min": [
+          -14.260482788085938,
+          20.635520935058594,
+          -1.5058300495147705
+        ],
+        "Max": [
+          14.260482788085938,
+          22.2890567779541,
+          0.667119026184082
+        ]
+      },
+      "RawVertexChecksum": "2dfc50758d0a81aced08d1e86068df1ffe055aaddde7d9f632f5d11073cf01e2",
+      "RawUvChecksum": "c3f11e46e602b1597044e8b583224c4be891ab66aac673bc69999ed78f8bd67f",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "Fview-arm2",
+      "GroupName": "PV-M4A1_S_Transformers_Fview-arm2",
+      "MaterialName": "Fview-arm2",
+      "VertexCount": 190,
+      "TriangleCount": 274,
+      "UvCount": 190,
+      "NormalCount": 190,
+      "BoneWeightCount": 190,
+      "BoneIndexCount": 190,
+      "RawBounds": {
+        "Min": [
+          -10.727269172668457,
+          20.647289276123047,
+          -1.3173489570617676
+        ],
+        "Max": [
+          10.727269172668457,
+          22.56444549560547,
+          0.6255469918251038
+        ]
+      },
+      "RawVertexChecksum": "55f57242d48bc651fff3191e40de4b383a23484c598269a4712e082903fd481c",
+      "RawUvChecksum": "7a157965b43f95926504a72328dd304d3477bcefb278ee921b62557247c1c60e",
+      "MaxPositionRoundTripError": 8.881784197001252E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_Body",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_Body",
+      "MaterialName": "M4A1_transformers_Body",
+      "VertexCount": 2572,
+      "TriangleCount": 3262,
+      "UvCount": 2572,
+      "NormalCount": 2572,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.8278030157089233,
+          -7.519446849822998,
+          -5.116703987121582
+        ],
+        "Max": [
+          2.342231035232544,
+          -2.2014529705047607,
+          14.844111442565918
+        ]
+      },
+      "RawVertexChecksum": "1f7074f755bd836a3be644fea928605d7f825cce21dc1a9b1f305ef3b97afc03",
+      "RawUvChecksum": "eb9026c8f8e57fde5d11d1d780f8494802d25fa442328a2258cba95cdd64f468",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_MAG",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_MAG",
+      "MaterialName": "M4A1_transformers_MAG",
+      "VertexCount": 40,
+      "TriangleCount": 44,
+      "UvCount": 40,
+      "NormalCount": 40,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.2113540172576904,
+          -8.521265029907227,
+          2.2523550987243652
+        ],
+        "Max": [
+          1.7351770401000977,
+          -4.072679042816162,
+          4.153313159942627
+        ]
+      },
+      "RawVertexChecksum": "98f64826126fdea0202e597219b857cd4cf212fb8b4cebc61cf92e7f9718def2",
+      "RawUvChecksum": "80b4d96ccb80b35c51b283f05439c898f53827605746edf9dfb21891880caede",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_part05",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_part05",
+      "MaterialName": "M4A1_transformers_part05",
+      "VertexCount": 59,
+      "TriangleCount": 64,
+      "UvCount": 59,
+      "NormalCount": 59,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.9346169829368591,
+          -4.613800048828125,
+          -0.13003499805927277
+        ],
+        "Max": [
+          1.2707610130310059,
+          -3.681947946548462,
+          0.8016510009765625
+        ]
+      },
+      "RawVertexChecksum": "2eafacc1f78fb342312c5202c21fcb2c5d092644f030dcce543d04a23a3065c0",
+      "RawUvChecksum": "ee1d940e15dc2f620fee2a102c2c25cf011e666bd322fa426a72637226f1ee83",
+      "MaxPositionRoundTripError": 1.1102230246251565E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_Reload02",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_Reload02",
+      "MaterialName": "M4A1_transformers_Reload02",
+      "VertexCount": 77,
+      "TriangleCount": 122,
+      "UvCount": 77,
+      "NormalCount": 77,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.0916320085525513,
+          -4.351325988769531,
+          -0.1663540005683899
+        ],
+        "Max": [
+          1.8495370149612427,
+          -3.5934200286865234,
+          3.67273211479187
+        ]
+      },
+      "RawVertexChecksum": "19af00847d815403397c58dd9380865af2ea032f8e380e3e0316032b8066ce82",
+      "RawUvChecksum": "887a889673135686e2a07653ab0c5a110ca3264ef5a6f7dfd785c8c5bfaff6d4",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_part02",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_part02",
+      "MaterialName": "M4A1_transformers_part02",
+      "VertexCount": 84,
+      "TriangleCount": 118,
+      "UvCount": 84,
+      "NormalCount": 84,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.9464970231056213,
+          -3.9800119400024414,
+          5.056881904602051
+        ],
+        "Max": [
+          1.3256620168685913,
+          -3.2709999084472656,
+          6.968484878540039
+        ]
+      },
+      "RawVertexChecksum": "5a45ccf8c65f1edcac284f24a4f8974d4a014620912ffa83889ce58cf7f60ac6",
+      "RawUvChecksum": "d46ea43e104d4a4ac7dd469b0a57581a25fd280af1175d9a84502343efbd84b6",
+      "MaxPositionRoundTripError": 1.1102230246251565E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_part04",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_part04",
+      "MaterialName": "M4A1_transformers_part04",
+      "VertexCount": 75,
+      "TriangleCount": 64,
+      "UvCount": 75,
+      "NormalCount": 75,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.979777991771698,
+          -3.639430046081543,
+          4.016364097595215
+        ],
+        "Max": [
+          1.354504942893982,
+          -3.256182909011841,
+          5.263943195343018
+        ]
+      },
+      "RawVertexChecksum": "7750e82599db92c8a975a6bd48260c01ac5ca29caf8d0d7e5b3380a1fdac7bc1",
+      "RawUvChecksum": "5bef87b245e1d6137d4b943e9f2aee2712f7cd0c26067ce73a92827512016a48",
+      "MaxPositionRoundTripError": 0,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_part01",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_part01",
+      "MaterialName": "M4A1_transformers_part01",
+      "VertexCount": 84,
+      "TriangleCount": 118,
+      "UvCount": 84,
+      "NormalCount": 84,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.6208900213241577,
+          -3.980010986328125,
+          5.056880950927734
+        ],
+        "Max": [
+          2.0000550746917725,
+          -3.2709999084472656,
+          6.968483924865723
+        ]
+      },
+      "RawVertexChecksum": "1d20374c9d0e5361f65ef702d320f61605664f1e59535edc546454bc94064bb0",
+      "RawUvChecksum": "6c6d5caf14a90247443a92660b6a118cc29cb16729e0a062b6de3ccf38daf4f3",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_part03",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_part03",
+      "MaterialName": "M4A1_transformers_part03",
+      "VertexCount": 39,
+      "TriangleCount": 50,
+      "UvCount": 39,
+      "NormalCount": 39,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.5920469760894775,
+          -3.639430046081543,
+          4.016364097595215
+        ],
+        "Max": [
+          1.9667749404907227,
+          -3.2561819553375244,
+          5.263944149017334
+        ]
+      },
+      "RawVertexChecksum": "a258bf29c71de88804c9b8f2d25d854f2c130410eba779856d504126ead8db71",
+      "RawUvChecksum": "22c80fb73c02d74b862c8232609c9e8188a083be3f9f1809d4599c694c9e422d",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "MeshName": "M4A1_transformers_Reload01",
+      "GroupName": "PV-M4A1_S_Transformers_M4A1_transformers_Reload01",
+      "MaterialName": "M4A1_transformers_Reload01",
+      "VertexCount": 60,
+      "TriangleCount": 74,
+      "UvCount": 60,
+      "NormalCount": 60,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.9675869941711426,
+          -3.541064977645874,
+          -0.6944730281829834
+        ],
+        "Max": [
+          1.9801100492477417,
+          -3.383760929107666,
+          1.9496439695358276
+        ]
+      },
+      "RawVertexChecksum": "fb5d0812e8e99dd6343599a3e18f5cff66f3ce81445dc7d179504dfb866395e5",
+      "RawUvChecksum": "393fcbce6ceb200eeeba346465b522f38dc7cff41769ef3f74eaa6e8bca57fa5",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    }
+  ],
+  "Materials": [
+    "Fview-hand2",
+    "Fview-arm2",
+    "M4A1_transformers_Body",
+    "M4A1_transformers_MAG",
+    "M4A1_transformers_part05",
+    "M4A1_transformers_Reload02",
+    "M4A1_transformers_part02",
+    "M4A1_transformers_part04",
+    "M4A1_transformers_part01",
+    "M4A1_transformers_part03",
+    "M4A1_transformers_Reload01"
+  ],
+  "TextureReferenceCount": 11,
+  "Totals": {
+    "VertexCount": 4370,
+    "TriangleCount": 5250,
+    "UvCount": 4370,
+    "NormalCount": 4370,
+    "BoneWeightCount": 1280,
+    "BoneIndexCount": 1280,
+    "MeshCount": 11,
+    "MaterialCount": 11
+  }
+}

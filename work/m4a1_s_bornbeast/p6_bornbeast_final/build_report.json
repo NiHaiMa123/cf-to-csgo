@@ -1,0 +1,27 @@
+{
+  "schema": "cf2.pipeline.build-report.v1",
+  "profile_id": "M4A4_CF_BornBeast_Final",
+  "timestamp_utc": "2026-08-18T16:32:45.574898+00:00",
+  "build_root": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p6_bornbeast_final",
+  "addon_root": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p6_bornbeast_final\\addon",
+  "compiled_mdl": {
+    "magic": "IDST",
+    "version": 49,
+    "internal_name": "weapons\\v_rif_m4a1.mdl",
+    "bone_count": 57,
+    "local_animation_count": 9,
+    "local_sequence_count": 9,
+    "size_bytes": 58392,
+    "sha256": "65283c375aaa0954d946d39d6e4168f81e83b66f376a4c3e0291b1ccd59d3e3d"
+  },
+  "roundtrip_summary": {
+    "internal_modelname": "weapons\\v_rif_m4a1.mdl",
+    "bone_count": 57,
+    "sequence_count": 9,
+    "attachment_count": 2,
+    "materials": [
+      "rif_m4a1"
+    ]
+  },
+  "pass": true
+}

@@ -1,0 +1,103 @@
+CF Rez Manager OBJ texture report
+
+Sources: 1
+Meshes: 16
+Texture references: 16
+Missing textures: 16
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: Fview-hand2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: Fview-arm2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts3
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts5
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts2_03
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts4
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts2_02
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_02
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_08
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_07
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_06
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_03
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_04
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_05
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts1_01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+Mesh: parts2_01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast, PV-M4A1_Silencer_PrismBeast, M4A1_Silencer_PrismBeast
+  Exported: <missing>
+

@@ -1,0 +1,1484 @@
+{
+  "schema": "cf2.p5.asset-identification-report.v1",
+  "title": "CF Hero M4A1 Weapon & BornBeast Asset Identification Report",
+  "ui_icons": [
+    {
+      "name": "BUYWEAPON_INFO_M4A1-S-Beast",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1-S-Beast.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1-S-Beast.png",
+      "size_bytes": 24022,
+      "sha256": "e78ea9591d5890c743e97fe0ff7b09adaead1ff95f3740d35631d6e4a54cf571",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1-S-BornBeast",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1-S-BornBeast.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1-S-BornBeast.png",
+      "size_bytes": 23997,
+      "sha256": "32bfaa48e035a8623defe1f030443111824b906f28668802e56d0f6b3e9b2e1a",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1-S-Iron Beast",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1-S-Iron Beast.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1-S-Iron Beast.png",
+      "size_bytes": 24498,
+      "sha256": "380439a5d04867870c659e36d510064b86208700882c312951745519e521fb89",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1_S_BornBeast",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1_S_BornBeast.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1_S_BornBeast.png",
+      "size_bytes": 22464,
+      "sha256": "01afe70c9aa8b839dcdd790f67514462397e677a8763e3c0684579884c8c7f94",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1_S_IronBeast-NobleGold",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1_S_IronBeast-NobleGold.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1_S_IronBeast-NobleGold.png",
+      "size_bytes": 20272,
+      "sha256": "b553edfe35f8c76af888032364d428788d0774cd8ba50d18ebb04b90ce2c631d",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1_S_Jewelry",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1_S_Jewelry.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1_S_Jewelry.png",
+      "size_bytes": 23032,
+      "sha256": "40aeeb91eb595455488c90e1a38401c2d556fbf2b76630419238534a3cee82ed",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1_S_SonWukong",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1_S_SonWukong.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1_S_SonWukong.png",
+      "size_bytes": 23090,
+      "sha256": "16d44e190069e95fa9b30a6796ccafdf67ba2429f7c5d7e401ecac48152938ee",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1_S_Transformers",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1_S_Transformers.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1_S_Transformers.png",
+      "size_bytes": 24498,
+      "sha256": "380439a5d04867870c659e36d510064b86208700882c312951745519e521fb89",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1_Silencer_PrismBeast",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1_Silencer_PrismBeast.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1_Silencer_PrismBeast.png",
+      "size_bytes": 28808,
+      "sha256": "46c84aa786a6c8cf40fa3daf4602685a69257748fd100ca959c62661cff4eea8",
+      "decoded": true
+    },
+    {
+      "name": "BUYWEAPON_INFO_M4A1_Silnecer_Predator",
+      "dtx_path": "data\\rf019\\TEX\\UI\\WEAPONICON\\BUYWEAPON_INFO_M4A1_Silnecer_Predator.DTX",
+      "png_path": "work\\m4a1_s_bornbeast\\p5_asset_identification\\ui_icons\\BUYWEAPON_INFO_M4A1_Silnecer_Predator.png",
+      "size_bytes": 29028,
+      "sha256": "96f0f6c0714b2b04fe630d96ba8d244d59501c6553ec3c16daa0f44e201f2642",
+      "decoded": true
+    }
+  ],
+  "candidate_models": [
+    {
+      "name": "PV-M4A1_S_BornBeast",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast.LTB",
+      "size_bytes": 166113,
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast2",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "size_bytes": 275489,
+      "sha256": "6d685e93d15952bb5af82c047bcf8a65dce28c3783980f865ce1179c238f7774",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast2_sprint",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2_sprint.LTB",
+      "size_bytes": 153571,
+      "sha256": "f915de0e0a9b92ebb7324dee7dc05a01fc4dbedda76f014d32783826673a77d7",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_13thCarnival",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_13thCarnival.LTB",
+      "size_bytes": 166508,
+      "sha256": "2563cf3db26751c9a163fa0d3f81d3f0535a467fb353b6b70921124995996f71",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_CFS21",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_CFS21.LTB",
+      "size_bytes": 166485,
+      "sha256": "efdb7aa6253887544579a05576d80d409e44ced1f105dfb22f3aeeae8a226e47",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_Classic",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB",
+      "size_bytes": 166113,
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_FuXi",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_FuXi.LTB",
+      "size_bytes": 165885,
+      "sha256": "61cab3a6f0aa1b31ad4f4f47114a2b3c3866a818fa0f8863661c4317523efad2",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_HHUD",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_HHUD.LTB",
+      "size_bytes": 166485,
+      "sha256": "efdb7aa6253887544579a05576d80d409e44ced1f105dfb22f3aeeae8a226e47",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_IceSoul",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_IceSoul.LTB",
+      "size_bytes": 166286,
+      "sha256": "7b4b75d01be2f3dc0d4f00683a0c717a9c872270ce28dd268c947373882f7e7e",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_ImperialGold",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_ImperialGold.LTB",
+      "size_bytes": 168775,
+      "sha256": "413722d4a302ace275434ddac6e7e17d0ecba00cd97fa16d0e9602a27352b443",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_Legend18",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Legend18.LTB",
+      "size_bytes": 165885,
+      "sha256": "61cab3a6f0aa1b31ad4f4f47114a2b3c3866a818fa0f8863661c4317523efad2",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_MJXW",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_MJXW.LTB",
+      "size_bytes": 104817,
+      "sha256": "35cf5bd88978f01fbc699544d3b86ec340ba47542bea84529ede80344449d68c",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_Natalya",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Natalya.LTB",
+      "size_bytes": 166166,
+      "sha256": "fe8be550c9532d7d6ce5d0e0dc01b84d8270103cce07bb745c2a03d43d264a67",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_Shaolin",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Shaolin.LTB",
+      "size_bytes": 167170,
+      "sha256": "3630adf3a326f50308966deec64bd72a048a3350088fc8c71aa572346b6d98c0",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_TV",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_TV.LTB",
+      "size_bytes": 166113,
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_w10y",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_w10y.LTB",
+      "size_bytes": 104817,
+      "sha256": "35cf5bd88978f01fbc699544d3b86ec340ba47542bea84529ede80344449d68c",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_ZhaoYun",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_ZhaoYun.LTB",
+      "size_bytes": 166166,
+      "sha256": "fe8be550c9532d7d6ce5d0e0dc01b84d8270103cce07bb745c2a03d43d264a67",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast-NobleGold",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast-NobleGold.LTB",
+      "size_bytes": 152925,
+      "sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast2",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast2.LTB",
+      "size_bytes": 231116,
+      "sha256": "e7752ef8789dd3f4313ee389fee43abfbd568f36b62d45d047bb0d32a709641e",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_BirthdayBang",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_BirthdayBang.LTB",
+      "size_bytes": 153274,
+      "sha256": "cff638dd8b28ea2edbd3de7c26eecf137e0a2888db54824c5728bcdbbb6a8310",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_BR",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_BR.LTB",
+      "size_bytes": 159359,
+      "sha256": "372bd4935597baeba8138daa0b6fe8edba0f292ba4f4bc689bf636341ff0df79",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_Champ_Q9",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_Champ_Q9.LTB",
+      "size_bytes": 152925,
+      "sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_Gilt",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_Gilt.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_HuluXiongdi",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_HuluXiongdi.LTB",
+      "size_bytes": 184280,
+      "sha256": "c1d38385d65428539e767a891c9600649832c0a56d22d0780b17e9836c384081",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_ImperialGold",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_ImperialGold.LTB",
+      "size_bytes": 172515,
+      "sha256": "aa866c1ef2416cd96c30a0e57af3d19850b1741e7cd8a92c526fa4a74013eeda",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_NG_Xingpo",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_NG_Xingpo.LTB",
+      "size_bytes": 149921,
+      "sha256": "b6d043ae60037fc040b421baf3e2a31f0efa6d92a681b26786d41b2e3a32117d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_IronBeast_Virgo",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_IronBeast_Virgo.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Predator_GBA",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Predator_GBA.LTB",
+      "size_bytes": 208511,
+      "sha256": "4803643896f0b49f63b1f30b47e359d8607c99ed2d832ee341f6654e97f15c21"
+    },
+    {
+      "name": "PV-M4A1_S_PrismBeast_ImperialGold",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_PrismBeast_ImperialGold.LTB",
+      "size_bytes": 216933,
+      "sha256": "6b42e30d12e084b015a16d55c33fb61acfcf5a6db50f812e49a2fe89bae780d4"
+    },
+    {
+      "name": "PV-M4A1_S_PrismBeast_NG_Crystal",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_PrismBeast_NG_Crystal.LTB",
+      "size_bytes": 211786,
+      "sha256": "a2b2126a228af1fd54b397356bd6b94d6c2dfe43480b23498fee019263c17975"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_21WC",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_21WC.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_C24Tiger",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_C24Tiger.LTB",
+      "size_bytes": 152921,
+      "sha256": "1633604cd81599e39c05f464b688793e6204cce2f6dae05fae9a7abbc8639720",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_CF15th",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_CF15th.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_CFPass11",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_CFPass11.LTB",
+      "size_bytes": 152923,
+      "sha256": "da8d686852542832b311ebba7757477e8479647cd91f65bd089837996eba38e9",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_CFPL10th",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_CFPL10th.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_CFPL_LGD",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_CFPL_LGD.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_CFS10th",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_CFS10th.LTB",
+      "size_bytes": 152925,
+      "sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Classic",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Classic.LTB",
+      "size_bytes": 152933,
+      "sha256": "620778d78577ed10e5dd95df5b9a066ba18d006af57b71b9bb3dcc4303fdc464",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Cpunk",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Cpunk.LTB",
+      "size_bytes": 152925,
+      "sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Dihu",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Dihu.LTB",
+      "size_bytes": 152976,
+      "sha256": "d74e95121fe4573dadde6726a194e7f9ed0c4f82a7d6a2a0626b2195d7077881",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_DS",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_DS.LTB",
+      "size_bytes": 152923,
+      "sha256": "da8d686852542832b311ebba7757477e8479647cd91f65bd089837996eba38e9",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_EMP",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_EMP.LTB",
+      "size_bytes": 193483,
+      "sha256": "5496e287e8c3afa963df9ca107cdb9aa4c730593b353ea625b03911b26753735",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_HWG",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_HWG.LTB",
+      "size_bytes": 152923,
+      "sha256": "da8d686852542832b311ebba7757477e8479647cd91f65bd089837996eba38e9",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Ipdance",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Ipdance.LTB",
+      "size_bytes": 152875,
+      "sha256": "a723acd1bde40b5cec9830466f963ec5b91d9d6535245b4381f1ec442e7f29db",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Javelin",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Javelin.LTB",
+      "size_bytes": 152875,
+      "sha256": "a723acd1bde40b5cec9830466f963ec5b91d9d6535245b4381f1ec442e7f29db",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_JJXT",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_JJXT.LTB",
+      "size_bytes": 211172,
+      "sha256": "ca9deaf01a9d43d9888ecfb888988283ced52f713df8118ac21506c48c0087bb"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_LDHua",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_LDHua.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Limpid",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Limpid.LTB",
+      "size_bytes": 183742,
+      "sha256": "195cbee83e117a4a1f2f76af2c553326c4c7abdf7f6a6940c0a6a6e8e362952f",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Liubei",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Liubei.LTB",
+      "size_bytes": 152878,
+      "sha256": "fb00b88b3aef2c2f7182f12e96e2912c7f927271ae23b3bcf5365914dc5ff5a6",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Mengchai",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Mengchai.LTB",
+      "size_bytes": 152925,
+      "sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Ms2",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Ms2.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_MVP19",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_MVP19.LTB",
+      "size_bytes": 152925,
+      "sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_PB",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_PB.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_PC",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_PC.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_PC_BTF",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_PC_BTF.LTB",
+      "size_bytes": 149941,
+      "sha256": "c27ad6161a4540307bca27f07a3606c22a9d7920e6f1f114e1299fb340ce444c",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Pinbo",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Pinbo.LTB",
+      "size_bytes": 152919,
+      "sha256": "099c86b6927579f4611255c3215c996ba02947bd04fb5bee71b2e658e85fa622",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Qingchun",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Qingchun.LTB",
+      "size_bytes": 196284,
+      "sha256": "a4551eea3e15180b0399a4845f78586ef4e92cc5b86d1621293ca93d30e426a9",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Reaper",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Reaper.LTB",
+      "size_bytes": 149931,
+      "sha256": "8e745e151657c4da619685d1e0ab8ea3a4e7deaa92da031993f4a835a1d5dae6",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_SCP",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_SCP.LTB",
+      "size_bytes": 152919,
+      "sha256": "099c86b6927579f4611255c3215c996ba02947bd04fb5bee71b2e658e85fa622",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Sjingxue",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Sjingxue.LTB",
+      "size_bytes": 152925,
+      "sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_SRab",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_SRab.LTB",
+      "size_bytes": 193483,
+      "sha256": "5496e287e8c3afa963df9ca107cdb9aa4c730593b353ea625b03911b26753735",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Stellar",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Stellar.LTB",
+      "size_bytes": 233191,
+      "sha256": "91e4e3e3aecb90f232f5f425093983327304d91b3c5685853d0ca0f921776aa4",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_TCG",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_TCG.LTB",
+      "size_bytes": 155198,
+      "sha256": "ec0cb28e2ed1550dc092d41ff2631e0916638401bf66a233e9e4e317274189a9",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_TLand",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_TLand.LTB",
+      "size_bytes": 152933,
+      "sha256": "620778d78577ed10e5dd95df5b9a066ba18d006af57b71b9bb3dcc4303fdc464",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Virgo",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Virgo.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_YangJian",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_YangJian.LTB",
+      "size_bytes": 193483,
+      "sha256": "5496e287e8c3afa963df9ca107cdb9aa4c730593b353ea625b03911b26753735",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_YUQI",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_YUQI.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_ZDaBaiLu",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_ZDaBaiLu.LTB",
+      "size_bytes": 152923,
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Zeekr007GT",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers_Zeekr007GT.LTB",
+      "size_bytes": 220333,
+      "sha256": "907fb8eeb364696a6eb6b344a1a9d25f511b56a5495cd394f2c6d6b86ee35e0a",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_Silencer_Predator",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_Silencer_Predator.LTB",
+      "size_bytes": 277887,
+      "sha256": "8a5f3ecce92e324cea4c3ae49cb69c1c2fa771ebeb6ad75eb6cde02311c33041",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_Silencer_Predator_CFPassS12",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_Silencer_Predator_CFPassS12.LTB",
+      "size_bytes": 277887,
+      "sha256": "8a5f3ecce92e324cea4c3ae49cb69c1c2fa771ebeb6ad75eb6cde02311c33041",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_Silencer_Predator_Classic",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_Silencer_Predator_Classic.LTB",
+      "size_bytes": 277367,
+      "sha256": "f082e280caeb53cf6307b0d34bbfc5f87a9fc43d274da0a0f09e247111a6a847",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_Silencer_Predator_SW",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_Silencer_Predator_SW.LTB",
+      "size_bytes": 277887,
+      "sha256": "8a5f3ecce92e324cea4c3ae49cb69c1c2fa771ebeb6ad75eb6cde02311c33041",
+      "node_count": 0,
+      "mesh_count": 0,
+      "meshes": [],
+      "total_vertices": 0,
+      "total_triangles": 0,
+      "animation_count": 0,
+      "animations": []
+    },
+    {
+      "name": "PV-M4A1_Silencer_PrismBeast",
+      "ltb_path": "data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "size_bytes": 212206,
+      "sha256": "71116c83de4f06cdd937e7c25da2b7fa7c64ba9f186142413f86ac84b15531a1"
+    }
+  ],
+  "textures": [
+    {
+      "name": "AK47_Knife_BornBeast_02_ALPHA.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\AK47_Knife_BornBeast_02_ALPHA.TGA",
+      "size_bytes": 3145772,
+      "sha256": "79c9b0811a394dd410b603939c0a451985cd984e058a7f431d1e23d5ce5b0459",
+      "decoded_png": null
+    },
+    {
+      "name": "AK47_Knife_BornBeast_ALPHA.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\AK47_Knife_BornBeast_ALPHA.TGA",
+      "size_bytes": 3145772,
+      "sha256": "0275761e1c40844dd7bfa9eec782f648bcdaefdb5d45e7848fb87ea5d6b383b9",
+      "decoded_png": null
+    },
+    {
+      "name": "DesertEagle_BornBeast_Alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\DesertEagle_BornBeast_Alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "e5f66345b033255aa3a5488937b47c984faa19989a89e0681dd3bc5bbb211332",
+      "decoded_png": null
+    },
+    {
+      "name": "DesertEagle_BornBeast_NobleGold_Alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\DesertEagle_BornBeast_NobleGold_Alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "c5d96287fb6d40ac825aca95c0bd9f5a2427459c1e934380f8a99ba8388a91af",
+      "decoded_png": null
+    },
+    {
+      "name": "Knife_BornBeast_Alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\Knife_BornBeast_Alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "28537d395cdf856541c4eb4662b3df000884f36d9739a04ef8137fd884f70e65",
+      "decoded_png": null
+    },
+    {
+      "name": "Knife_BornBeast_NobleGold_Alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\Knife_BornBeast_NobleGold_Alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "0bf42cb33b083c966cf892c73d6a7a3f78aecdee6d6e24dcaffcfa7b8a78d291",
+      "decoded_png": null
+    },
+    {
+      "name": "M4A1_S_BornBeast_alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\M4A1_S_BornBeast_alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_BornBeast_NobleGold01_alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\M82A1_BornBeast_NobleGold01_alpha.TGA",
+      "size_bytes": 786476,
+      "sha256": "3a0e7572db1e936a4cc3b4f277277402d905d0657d18f02fc4b6d3cfb84fe703",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_BornBeast_NobleGold_alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\M82A1_BornBeast_NobleGold_alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "7bb75f469e25bc03dffcdfac1326c7c4705359bc42d9912ff9d51b21861c723e",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_S_BornBeast01_alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\M82A1_S_BornBeast01_alpha.TGA",
+      "size_bytes": 786476,
+      "sha256": "198a1c76941ab640bba2d86395e6011202bf1c0d237eb90465ad6bb5107a1265",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_S_BornBeast_alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\M82A1_S_BornBeast_alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "bb5da2fd01e152ad45c59c747df8bf8e314a95e0b909ca19e356fcb19a68256b",
+      "decoded_png": null
+    },
+    {
+      "name": "Shovel_BornBeast_Alpha.TGA",
+      "path": "data\\rf017\\ModelTextures\\AlphaMap\\Shovel_BornBeast_Alpha.TGA",
+      "size_bytes": 3145772,
+      "sha256": "e2d47e83ee67a03ad9bbc3319e231550db951d379720f92a79cdbc5a211b8ded",
+      "decoded_png": null
+    },
+    {
+      "name": "AK47_Knife_BornBeast_02_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\AK47_Knife_BornBeast_02_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "688bb5fe9df36e8d0ceeafb7f31561725b5be33850e21f248561197f5bffcea3",
+      "decoded_png": null
+    },
+    {
+      "name": "AK47_Knife_BornBeast_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\AK47_Knife_BornBeast_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "e7d10c09b6b068b3d8c46e756a0ba51d2b3069f85be067bbe1d4daacf3fdf16b",
+      "decoded_png": null
+    },
+    {
+      "name": "DesertEagle_BornBeast_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\DesertEagle_BornBeast_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "92e79a651128f6decd7f3be091e71fce795d79b660c6a22bd7ec02cd9d8fe134",
+      "decoded_png": null
+    },
+    {
+      "name": "DesertEagle_BornBeast_NobleGold_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\DesertEagle_BornBeast_NobleGold_N.TGA",
+      "size_bytes": 4194348,
+      "sha256": "efb7725b223734a535129a40221f258bfba52ad5ea622e0a60e546dba41bd992",
+      "decoded_png": null
+    },
+    {
+      "name": "Knife_BornBeast_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\Knife_BornBeast_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "c5d96287fb6d40ac825aca95c0bd9f5a2427459c1e934380f8a99ba8388a91af",
+      "decoded_png": null
+    },
+    {
+      "name": "Knife_BornBeast_NobleGold_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\Knife_BornBeast_NobleGold_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "54a17fd38574f26b6a7f0511262176ec03d20498ec99558c7c6c18e2405a2eab",
+      "decoded_png": null
+    },
+    {
+      "name": "M4A1_S_BornBeast_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\M4A1_S_BornBeast_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_BornBeast_NobleGold01_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\M82A1_BornBeast_NobleGold01_N.TGA",
+      "size_bytes": 786476,
+      "sha256": "f614a2345b5fd86936cc441fa3ce6ff693ace15804813c79ea863bd97d86d303",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_BornBeast_NobleGold_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\M82A1_BornBeast_NobleGold_N.TGA",
+      "size_bytes": 1764714,
+      "sha256": "4709f6c0908b7d1ebb07f7b53aa615cd0c480f3a0f5b35fc51396658c700b59a",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_S_BornBeast01_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\M82A1_S_BornBeast01_N.TGA",
+      "size_bytes": 786476,
+      "sha256": "5edb5580492e3614bf334642d10846a377f62d09882157ce71cdcc491567b3c1",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_S_BornBeast_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\M82A1_S_BornBeast_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "b662995652f73627aaa3b096c825d7900e1fe54809b2ebbfb40cee3b5e3f51d9",
+      "decoded_png": null
+    },
+    {
+      "name": "Shovel_BornBeast_N.TGA",
+      "path": "data\\rf017\\ModelTextures\\NormalMap\\Shovel_BornBeast_N.TGA",
+      "size_bytes": 3145772,
+      "sha256": "e71f009078f3fc70894d3b9471584feb7da40493d803f720a4d34d09f0b0efc8",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-AK47_Knife_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-AK47_Knife_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "ce9d3e4717f9793c9f5001a9fba558601299a8cd5504b262ca61cce9e35c43b7",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-AK47_Knife_BornBeast_02.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-AK47_Knife_BornBeast_02.DTX",
+      "size_bytes": 524452,
+      "sha256": "59871c188d318b3f9173ba78f789d346329f3be0a7a669bd3a76c706cd092c79",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-DesertEagle_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-DesertEagle_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "262d83189ad6ee75d9c9a9b2cddb0270a780c804a96c3811ebc97273b9b6410e",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-DesertEagle_BornBeast_NobleGold.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-DesertEagle_BornBeast_NobleGold.DTX",
+      "size_bytes": 524452,
+      "sha256": "879a9e97679020817bf9d1cbd1c54570fee0ea8182a3fa5a6b7140aaae61e162",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-Knife_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-Knife_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "45d700046a99e8662ec3a9fb28524de8b5f870ebac2e172d0a6e3cd3446a8e4d",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-Knife_BornBeast_NobleGold.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-Knife_BornBeast_NobleGold.DTX",
+      "size_bytes": 524452,
+      "sha256": "4a6b1edf932c202db590d19eadd6321d5f6c7af0f4968705e52785c880a8ebb2",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-M82A1_BornBeast_NobleGold.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M82A1_BornBeast_NobleGold.DTX",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-M82A1_BornBeast_NobleGold01.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M82A1_BornBeast_NobleGold01.DTX",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-M82A1_S_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M82A1_S_BornBeast.DTX",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-M82A1_S_BornBeast01.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M82A1_S_BornBeast01.DTX",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_png": null
+    },
+    {
+      "name": "PV-Shovel_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-Shovel_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "baa4b9d3390ed8af4ea5314ec03142360d00f7eaca87acbf802641848fa1a97f",
+      "decoded_png": null
+    },
+    {
+      "name": "AK47_Knife_BornBeast_02_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\AK47_Knife_BornBeast_02_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "c5d96287fb6d40ac825aca95c0bd9f5a2427459c1e934380f8a99ba8388a91af",
+      "decoded_png": null
+    },
+    {
+      "name": "AK47_Knife_BornBeast_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\AK47_Knife_BornBeast_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "54a17fd38574f26b6a7f0511262176ec03d20498ec99558c7c6c18e2405a2eab",
+      "decoded_png": null
+    },
+    {
+      "name": "DesertEagle_BornBeast_NobleGold_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\DesertEagle_BornBeast_NobleGold_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "92bbf0a3757cd80e6dc056fc47620deef5cf4f0cc060489d4c1f7f10b80e989f",
+      "decoded_png": null
+    },
+    {
+      "name": "DesertEagle_BornBeast_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\DesertEagle_BornBeast_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "f90c8c2bc4defa0e45580a6cc98114be993df1e1c08d7db68421c1c495be329e",
+      "decoded_png": null
+    },
+    {
+      "name": "Knife_BornBeast_NobleGold_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\Knife_BornBeast_NobleGold_S.TGA",
+      "size_bytes": 4194348,
+      "sha256": "153b290631197f9bf6755f7440e85b18b626ca38c94bdfcb7eb135488bdaa6c9",
+      "decoded_png": null
+    },
+    {
+      "name": "Knife_BornBeast_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\Knife_BornBeast_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "31003bbe73808c437fa3e5d594082e342469f482976e2c6afbdbdc50082ed5ed",
+      "decoded_png": null
+    },
+    {
+      "name": "M4A1_S_BornBeast_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\M4A1_S_BornBeast_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_BornBeast_NobleGold01_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\M82A1_BornBeast_NobleGold01_S.TGA",
+      "size_bytes": 786476,
+      "sha256": "503a39e9189aa521cd4aaf6b76b9b97379c356439752a14e62746c9e0f41042d",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_BornBeast_NobleGold_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\M82A1_BornBeast_NobleGold_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "0a00a2fab90d0dc28cefc9da75f46a558c6036420e3b2fb0b191a1b911f237d3",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_S_BornBeast01_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\M82A1_S_BornBeast01_S.TGA",
+      "size_bytes": 786476,
+      "sha256": "366298da94dae8ce34f13f1c22efb161c733bb79656a6750b97744dd5e38e574",
+      "decoded_png": null
+    },
+    {
+      "name": "M82A1_S_BornBeast_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\M82A1_S_BornBeast_S.TGA",
+      "size_bytes": 3145772,
+      "sha256": "6ba6eb96a374467239082b78932d14b7666266371d3fd6aa5025a9b387d5ae8c",
+      "decoded_png": null
+    },
+    {
+      "name": "Shovel_BornBeast_S.TGA",
+      "path": "data\\rf017\\ModelTextures\\SpecularMap\\Shovel_BornBeast_S.TGA",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-AK47_Knife_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-AK47_Knife_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "d2aca04131abda01a6737f450c85100d92c3caa6752c4370b9f43eb8dbcce2c0",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-AK47_Knife_BornBeast_DrumMag.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-AK47_Knife_BornBeast_DrumMag.DTX",
+      "size_bytes": 32932,
+      "sha256": "c768e2548ce40b6554cf8130c37e98fd211d2004570736a63f9b162484753a5c",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-DesertEagle_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-DesertEagle_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "8e686e22d482c12c3ca13c9d94079a82deee27ed272a01924b1ef32c92f98669",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-DesertEagle_BornBeast_NobleGold.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-DesertEagle_BornBeast_NobleGold.DTX",
+      "size_bytes": 32932,
+      "sha256": "2068d1c5b49ae4ff1a83b61d62dd90220848716dfd7bec30b56ebc1d39161447",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-Knife_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-Knife_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "63a8c316131f140f0be3f1ccb5971c01854d6120a7cfd6d876c58ddf06d9abb7",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-Knife_BornBeast_NobleGold.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-Knife_BornBeast_NobleGold.DTX",
+      "size_bytes": 32932,
+      "sha256": "77bfb5dff65a85bbfbb97ffc123d25de66c90f8a362f4f260e83fd0b59df6778",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-M4A1_S_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-M82A1_BornBeast_NobleGold.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-M82A1_BornBeast_NobleGold.DTX",
+      "size_bytes": 32932,
+      "sha256": "88ed217a3bef91767d974ab719992bc7bb10ee5df039c2fd73e084b2fdfd563b",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-M82A1_S_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-M82A1_S_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "3a149236827c7e1cc0edbc9a667ea265cc067bb2f40a193a6db82b292b4573dd",
+      "decoded_png": null
+    },
+    {
+      "name": "QV-Shovel_BornBeast.DTX",
+      "path": "data\\rf017\\ModelTextures\\WEAPONS\\QV-Shovel_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "065b918e088f268acbf4bc1cac376d11ad2f5b7f78718149e2c05f21c50b43b4",
+      "decoded_png": null
+    }
+  ],
+  "analysis": {
+    "hero_weapon_mapping": {
+      "M4A1-雷神": {
+        "english_internal_code": "M4A1_S_BornBeast / BornBeast",
+        "primary_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+        "primary_ltb_sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+        "buyweapon_icon": "work/m4a1_s_bornbeast/p5_asset_identification/ui_icons/BUYWEAPON_INFO_M4A1_S_BornBeast.png",
+        "mesh_count": 11,
+        "weapon_mesh_count": 9,
+        "arms_mesh_count": 2,
+        "weapon_triangles": 4008,
+        "weapon_vertices": 3646,
+        "features": "Classic blue/red glowing eyes, visible internal energy tube, segmented barrel and dynamic charging bolt."
+      },
+      "M4A1-黑龙": {
+        "english_internal_code": "M4A1_S_IronBeast / IronBeast",
+        "primary_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_IronBeast.LTB",
+        "buyweapon_icon": "work/m4a1_s_bornbeast/p5_asset_identification/ui_icons/BUYWEAPON_INFO_M4A1-S-Iron Beast.png",
+        "features": "Dark dragon scales, red glowing dragon eyes, organic beast silhouette."
+      },
+      "M4A1-黑骑士/死神": {
+        "english_internal_code": "M4A1_Silencer_Predator / Predator",
+        "primary_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_Silencer_Predator.LTB",
+        "buyweapon_icon": "work/m4a1_s_bornbeast/p5_asset_identification/ui_icons/BUYWEAPON_INFO_M4A1_Silnecer_Predator.png",
+        "features": "Armored knight mechanical frame, crimson energy vents, aggressive sharp muzzle."
+      },
+      "M4A1-千变": {
+        "english_internal_code": "M4A1_S_Transformers / Transformers",
+        "primary_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+        "buyweapon_icon": "work/m4a1_s_bornbeast/p5_asset_identification/ui_icons/BUYWEAPON_INFO_M4A1_S_Transformers.png",
+        "features": "Customizable multi-color panels, futuristic high-tech angular structure."
+      },
+      "M4A1-武圣": {
+        "english_internal_code": "M4A1_Silencer_PrismBeast / PrismBeast",
+        "primary_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_Silencer_PrismBeast.LTB",
+        "buyweapon_icon": "work/m4a1_s_bornbeast/p5_asset_identification/ui_icons/BUYWEAPON_INFO_M4A1_Silencer_PrismBeast.png",
+        "features": "Guan Yu style green/gold ornate dragon frame with secondary handgun attachment."
+      }
+    },
+    "recommendation": {
+      "target_weapon": "M4A1-雷神 (M4A1-S BornBeast Classic)",
+      "canonical_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+      "canonical_ltb_sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "ui_icon_dtx": "data/rf019/TEX/UI/WEAPONICON/BUYWEAPON_INFO_M4A1_S_BornBeast.DTX",
+      "ui_icon_sha256": "82a8523efd625d198ee52bb6c8888062ec7e0fc2ae8bfdc82bdf14d18ec06307",
+      "conclusion": "The LTB mesh used in Prototype-01 (PV-M4A1_S_BornBeast_Classic.LTB) is mathematically and visually proven to be the authentic, official CF M4A1-雷神 (BornBeast) model."
+    }
+  }
+}

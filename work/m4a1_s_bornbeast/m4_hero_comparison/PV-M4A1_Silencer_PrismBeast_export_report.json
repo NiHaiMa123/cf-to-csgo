@@ -1,0 +1,506 @@
+{
+  "Schema": "cf2.lithtech.obj-export.v2",
+  "GeneratedAtUtc": "2026-08-18T16:37:15.2283775+00:00",
+  "ObjPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_hero_comparison\\PV-M4A1_Silencer_PrismBeast.obj",
+  "MtlPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_hero_comparison\\PV-M4A1_Silencer_PrismBeast.mtl",
+  "TextureDirectory": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_hero_comparison\\PV-M4A1_Silencer_PrismBeast_textures",
+  "TransformMode": "legacy_center_scale",
+  "Transform": {
+    "CenterX": 0,
+    "CenterY": 7.143389701843262,
+    "CenterZ": 5.499668121337891,
+    "Scale": 0.14590440694145737,
+    "InversePosition": "raw_x = (export_x / scale) \u002B center_x; raw_y = (export_y / scale) \u002B center_y; raw_z = (export_z / scale) \u002B center_z",
+    "InverseUv": "export_v = 1 - raw_v; raw_v = 1 - export_v"
+  },
+  "Sources": [
+    {
+      "Name": "PV-M4A1_Silencer_PrismBeast",
+      "ResourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "SourceByteCount": 212206,
+      "DecodedByteCount": 742335,
+      "MeshCount": 16,
+      "VertexCount": 8553,
+      "TriangleCount": 8043
+    }
+  ],
+  "Meshes": [
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "Fview-hand2",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_Fview-hand2",
+      "MaterialName": "Fview-hand2",
+      "VertexCount": 1090,
+      "TriangleCount": 1060,
+      "UvCount": 1090,
+      "NormalCount": 1090,
+      "BoneWeightCount": 1090,
+      "BoneIndexCount": 1090,
+      "RawBounds": {
+        "Min": [
+          -14.260482788085938,
+          20.635520935058594,
+          -1.5058300495147705
+        ],
+        "Max": [
+          14.260482788085938,
+          22.2890567779541,
+          0.667119026184082
+        ]
+      },
+      "RawVertexChecksum": "2dfc50758d0a81aced08d1e86068df1ffe055aaddde7d9f632f5d11073cf01e2",
+      "RawUvChecksum": "c3f11e46e602b1597044e8b583224c4be891ab66aac673bc69999ed78f8bd67f",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "Fview-arm2",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_Fview-arm2",
+      "MaterialName": "Fview-arm2",
+      "VertexCount": 190,
+      "TriangleCount": 274,
+      "UvCount": 190,
+      "NormalCount": 190,
+      "BoneWeightCount": 190,
+      "BoneIndexCount": 190,
+      "RawBounds": {
+        "Min": [
+          -10.727269172668457,
+          20.647289276123047,
+          -1.3173489570617676
+        ],
+        "Max": [
+          10.727269172668457,
+          22.56444549560547,
+          0.6255469918251038
+        ]
+      },
+      "RawVertexChecksum": "55f57242d48bc651fff3191e40de4b383a23484c598269a4712e082903fd481c",
+      "RawUvChecksum": "7a157965b43f95926504a72328dd304d3477bcefb278ee921b62557247c1c60e",
+      "MaxPositionRoundTripError": 8.881784197001252E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts3",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts3",
+      "MaterialName": "parts3",
+      "VertexCount": 898,
+      "TriangleCount": 685,
+      "UvCount": 898,
+      "NormalCount": 898,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.9341130256652832,
+          -6.557631015777588,
+          -4.9170989990234375
+        ],
+        "Max": [
+          2.0151069164276123,
+          -3.231684923171997,
+          -0.7746809720993042
+        ]
+      },
+      "RawVertexChecksum": "e78a72e6238d6a85330f78bd9f5655e589cd2fb8dc2d8ff37b4bcb8c60173cb8",
+      "RawUvChecksum": "edf80b0a8ef1ceb3c19062aadcaeb494668b290b7da4d040f145485435a04f7f",
+      "MaxPositionRoundTripError": 8.881784197001252E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts5",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts5",
+      "MaterialName": "parts5",
+      "VertexCount": 172,
+      "TriangleCount": 136,
+      "UvCount": 172,
+      "NormalCount": 172,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.2091820240020752,
+          -8.277666091918945,
+          2.009390115737915
+        ],
+        "Max": [
+          1.740036964416504,
+          -3.876866102218628,
+          4.116086006164551
+        ]
+      },
+      "RawVertexChecksum": "06cfab140f8149c30aaa08c27f8c13e9a10cba1205598589fa96d2922aa9f770",
+      "RawUvChecksum": "6b308bf7ef3e5ad8aca609d1ac77c843b85b38272e1e2f48928f0999ef7ac58b",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts2_03",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts2_03",
+      "MaterialName": "parts2_03",
+      "VertexCount": 112,
+      "TriangleCount": 70,
+      "UvCount": 112,
+      "NormalCount": 112,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.9621750116348267,
+          -3.55576491355896,
+          -0.7392770051956177
+        ],
+        "Max": [
+          1.9870450496673584,
+          -3.3898520469665527,
+          1.8161909580230713
+        ]
+      },
+      "RawVertexChecksum": "1fa46f211983724a09fd97f5a374abb5729e7827f82f8443f943195589143764",
+      "RawUvChecksum": "cf68c09b59e329d1141b3923ec42385bbbb8f5effa591b525c1c3c99d6fa3252",
+      "MaxPositionRoundTripError": 4.440892098500626E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts4",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts4",
+      "MaterialName": "parts4",
+      "VertexCount": 767,
+      "TriangleCount": 598,
+      "UvCount": 767,
+      "NormalCount": 767,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.1623899936676025,
+          -3.2617440223693848,
+          -0.28951600193977356
+        ],
+        "Max": [
+          1.9655669927597046,
+          -2.233659029006958,
+          4.6873297691345215
+        ]
+      },
+      "RawVertexChecksum": "550b4e816311f1ece7142bfa271cd67979dadf718aaa1ba00a82d4a9907959d4",
+      "RawUvChecksum": "ded3a10cd7d489083c8ffa2fa3ba90c3bce42dc03d0d0de6b20eedadc8a2a23d",
+      "MaxPositionRoundTripError": 4.440892098500626E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts2_02",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts2_02",
+      "MaterialName": "parts2_02",
+      "VertexCount": 160,
+      "TriangleCount": 140,
+      "UvCount": 160,
+      "NormalCount": 160,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.0832949876785278,
+          -4.003137111663818,
+          1.263782024383545
+        ],
+        "Max": [
+          1.8659249544143677,
+          -3.6578569412231445,
+          2.616939067840576
+        ]
+      },
+      "RawVertexChecksum": "82737d2820b52b57d52885eb491c0e77e00af7c075b2150039366748aa95730d",
+      "RawUvChecksum": "4a7306f8b6e0199025d09ce3dc5d96fbab09be1a394bc51186ace0fa780816d9",
+      "MaxPositionRoundTripError": 4.440892098500626E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_02",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_02",
+      "MaterialName": "parts1_02",
+      "VertexCount": 98,
+      "TriangleCount": 102,
+      "UvCount": 98,
+      "NormalCount": 98,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.8125380277633667,
+          -3.937237024307251,
+          5.864109992980957
+        ],
+        "Max": [
+          2.1366820335388184,
+          -2.616919994354248,
+          10.784344673156738
+        ]
+      },
+      "RawVertexChecksum": "354cea4290362d25b348095da5eaa66497c28ec7d3e4fce88cca23f6985591d0",
+      "RawUvChecksum": "7d17bf08e540f7400bb92c57993226c6007e177ee768a6dbb2c3fd8a050372c1",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_08",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_08",
+      "MaterialName": "parts1_08",
+      "VertexCount": 56,
+      "TriangleCount": 50,
+      "UvCount": 56,
+      "NormalCount": 56,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.7718979716300964,
+          -4.1038618087768555,
+          5.40709114074707
+        ],
+        "Max": [
+          1.131993055343628,
+          -3.2017810344696045,
+          7.273932933807373
+        ]
+      },
+      "RawVertexChecksum": "f2450e65db6838c31bcc97215041dacff8161517feef8d587018dd36d9bb2e74",
+      "RawUvChecksum": "dbac66898c309bb57dd143aedbbba9432f3bb1c062fc57626030f16339df220e",
+      "MaxPositionRoundTripError": 1.1102230246251565E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_07",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_07",
+      "MaterialName": "parts1_07",
+      "VertexCount": 56,
+      "TriangleCount": 50,
+      "UvCount": 56,
+      "NormalCount": 56,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.7718979716300964,
+          -4.1038618087768555,
+          4.80830717086792
+        ],
+        "Max": [
+          1.131993055343628,
+          -3.2017810344696045,
+          6.675149917602539
+        ]
+      },
+      "RawVertexChecksum": "da3da044ee9ce68ba1f706d39098d46939f301d1157b502810a233c0418c30d8",
+      "RawUvChecksum": "cc97bc34690d8002418301de7d780d4001c04454cc52279e1dff51a7456e62f9",
+      "MaxPositionRoundTripError": 1.1102230246251565E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_06",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_06",
+      "MaterialName": "parts1_06",
+      "VertexCount": 56,
+      "TriangleCount": 50,
+      "UvCount": 56,
+      "NormalCount": 56,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.7718979716300964,
+          -4.1038618087768555,
+          4.224186897277832
+        ],
+        "Max": [
+          1.131993055343628,
+          -3.2017810344696045,
+          6.091030120849609
+        ]
+      },
+      "RawVertexChecksum": "0fb15772cde73f3e7dabde089699e977e9c787b08ee80de82f182703e6fa9cec",
+      "RawUvChecksum": "49d53cd676d87fea6fd9acf65caab20d0d8f002bd46e749e6bdf74cd52a28d9a",
+      "MaxPositionRoundTripError": 1.1102230246251565E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_03",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_03",
+      "MaterialName": "parts1_03",
+      "VertexCount": 56,
+      "TriangleCount": 50,
+      "UvCount": 56,
+      "NormalCount": 56,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.8172260522842407,
+          -4.1038618087768555,
+          4.224187850952148
+        ],
+        "Max": [
+          2.177320957183838,
+          -3.2017810344696045,
+          6.091030120849609
+        ]
+      },
+      "RawVertexChecksum": "cad15ca21317c61f0b480fed7178cc68107dc189538290f1493167749255d13d",
+      "RawUvChecksum": "cf58718c8e573dfcacecb3a8ce17a404355dcf865661f1b71d4af1f0260d96c9",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_04",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_04",
+      "MaterialName": "parts1_04",
+      "VertexCount": 56,
+      "TriangleCount": 50,
+      "UvCount": 56,
+      "NormalCount": 56,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.8172260522842407,
+          -4.1038618087768555,
+          4.808309078216553
+        ],
+        "Max": [
+          2.177320957183838,
+          -3.2017810344696045,
+          6.675149917602539
+        ]
+      },
+      "RawVertexChecksum": "703fc915d931ebe8e2c14688ec47f1e2898dee32b723d2c6a468f4bc88bf247e",
+      "RawUvChecksum": "01425696b06560a742a5dc7d90a1073357c5843d0f6462ebd06bb52ed4e97fde",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_05",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_05",
+      "MaterialName": "parts1_05",
+      "VertexCount": 56,
+      "TriangleCount": 50,
+      "UvCount": 56,
+      "NormalCount": 56,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.8172260522842407,
+          -4.1038618087768555,
+          5.40709114074707
+        ],
+        "Max": [
+          2.177320957183838,
+          -3.2017810344696045,
+          7.273932933807373
+        ]
+      },
+      "RawVertexChecksum": "f5c35635904ad6adf6a3e3e8bc92d8f407854ce0a788f55be32615cdad2ba085",
+      "RawUvChecksum": "09acb4cdf30be776469cf6c029f88b84011cf9f1b4ad4f1f79ac129ad45caaff",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts1_01",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts1_01",
+      "MaterialName": "parts1_01",
+      "VertexCount": 1998,
+      "TriangleCount": 2272,
+      "UvCount": 1998,
+      "NormalCount": 1998,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.6311900019645691,
+          -5.9460248947143555,
+          3.796647071838379
+        ],
+        "Max": [
+          2.3180289268493652,
+          -2.406126022338867,
+          14.672819137573242
+        ]
+      },
+      "RawVertexChecksum": "c70816a5f21b1540bf3afd2dece62b10ba745aa2a421a919fba2e62e35dcaadd",
+      "RawUvChecksum": "d042334c293f286c24e0956e91777d2fafda52e7d8d116c41cc0e97848eb97cb",
+      "MaxPositionRoundTripError": 2.220446049250313E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_Silencer_PrismBeast.LTB",
+      "MeshName": "parts2_01",
+      "GroupName": "PV-M4A1_Silencer_PrismBeast_parts2_01",
+      "MaterialName": "parts2_01",
+      "VertexCount": 2732,
+      "TriangleCount": 2406,
+      "UvCount": 2732,
+      "NormalCount": 2732,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.9829509854316711,
+          -7.467586994171143,
+          -1.4458290338516235
+        ],
+        "Max": [
+          2.284593105316162,
+          4.015893936157227,
+          15.916435241699219
+        ]
+      },
+      "RawVertexChecksum": "4f735bbc0b949288791074b5d8845b38985e8c30608a93ab8011b674b883fbd7",
+      "RawUvChecksum": "1b2a7b3873583c0ebf0c5564325ecc4ba6237de59067ff9ed1e12013648d1d52",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    }
+  ],
+  "Materials": [
+    "Fview-hand2",
+    "Fview-arm2",
+    "parts3",
+    "parts5",
+    "parts2_03",
+    "parts4",
+    "parts2_02",
+    "parts1_02",
+    "parts1_08",
+    "parts1_07",
+    "parts1_06",
+    "parts1_03",
+    "parts1_04",
+    "parts1_05",
+    "parts1_01",
+    "parts2_01"
+  ],
+  "TextureReferenceCount": 16,
+  "Totals": {
+    "VertexCount": 8553,
+    "TriangleCount": 8043,
+    "UvCount": 8553,
+    "NormalCount": 8553,
+    "BoneWeightCount": 1280,
+    "BoneIndexCount": 1280,
+    "MeshCount": 16,
+    "MaterialCount": 16
+  }
+}

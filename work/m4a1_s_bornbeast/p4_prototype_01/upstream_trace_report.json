@@ -1,0 +1,470 @@
+{
+  "schema": "cf2.p4.upstream-trace.v1",
+  "task": "P4-T03",
+  "profile_id": "Prototype-01",
+  "status": "PASS",
+  "passed": true,
+  "run_id": "run_20260819_144941_648227",
+  "run_root": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227",
+  "steps": [
+    {
+      "name": "b3_export",
+      "command": [
+        "D:\\project\\cf_to_csgo\\CFRezManager\\bin\\Debug\\net8.0-windows7.0\\CFRezManager.exe",
+        "--export-obj",
+        "--raw-transform",
+        "--root",
+        "D:\\project\\cf_to_csgo\\data\\rf016",
+        "--model",
+        "Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+        "--output",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj"
+      ],
+      "cwd": "D:\\project\\cf_to_csgo",
+      "started_utc": "2026-08-19T14:49:41.649228+00:00",
+      "finished_utc": "2026-08-19T14:49:51.331086+00:00",
+      "exit_code": 0,
+      "stdout_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\b3_export.stdout.log",
+      "stderr_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\b3_export.stderr.log",
+      "input_hashes": {
+        "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+        "D:\\project\\cf_to_csgo\\CFRezManager\\bin\\Debug\\net8.0-windows7.0\\CFRezManager.exe": "5476d53345bbbbcdd033dabf40508f1472ccf9847adff139ffe70cc70036bc1c"
+      },
+      "output_hashes": {
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json": "c04cf27cee964995620fa384521daceb3c77475ef693bacafd4e630c72057724"
+      },
+      "stdout_tail": "OBJ: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj\nMTL: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.mtl\nTexture folder: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_textures\nTexture report: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_texture_report.txt\nMapping report: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_mapping_candidates.txt\nExport report: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json\nSummary: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_cli_export_result.txt\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "b3_roundtrip",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "D:\\project\\cf_to_csgo\\scripts\\cf_ltb\\validate_b3_obj_roundtrip.py",
+        "--report",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json",
+        "--obj",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj"
+      ],
+      "cwd": "D:\\project\\cf_to_csgo",
+      "started_utc": "2026-08-19T14:49:51.335095+00:00",
+      "finished_utc": "2026-08-19T14:49:51.415671+00:00",
+      "exit_code": 0,
+      "stdout_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\b3_roundtrip.stdout.log",
+      "stderr_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\b3_roundtrip.stderr.log",
+      "input_hashes": {
+        "D:\\project\\cf_to_csgo\\scripts\\cf_ltb\\validate_b3_obj_roundtrip.py": "592d13dbf1d0d29850ef29d4674f756ed44eca9f770f0940e43f02cdc3d8edd7",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json": "c04cf27cee964995620fa384521daceb3c77475ef693bacafd4e630c72057724"
+      },
+      "output_hashes": {
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9"
+      },
+      "stdout_tail": "{\n  \"report\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\b3_raw\\\\PV-M4A1_S_BornBeast_Classic_export_report.json\",\n  \"obj\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\b3_raw\\\\PV-M4A1_S_BornBeast_Classic.obj\",\n  \"passed\": true,\n  \"groups\": 11,\n  \"vertices\": 4926,\n  \"uvs\": 4926,\n  \"normals\": 4926,\n  \"faces\": 5342,\n  \"failures\": []\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "c1_split",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "D:\\project\\cf_to_csgo\\scripts\\cf_ltb\\split_c1_meshes.py",
+        "--obj",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+        "--map",
+        "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\mesh_map.yaml",
+        "--output-dir",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only"
+      ],
+      "cwd": "D:\\project\\cf_to_csgo",
+      "started_utc": "2026-08-19T14:49:51.419670+00:00",
+      "finished_utc": "2026-08-19T14:49:51.495780+00:00",
+      "exit_code": 0,
+      "stdout_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\c1_split.stdout.log",
+      "stderr_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\c1_split.stderr.log",
+      "input_hashes": {
+        "D:\\project\\cf_to_csgo\\scripts\\cf_ltb\\split_c1_meshes.py": "f7e11da5d25c7c5d325823052726ef85c94f3a2647a6b890734b79fcecf180f4",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+        "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\mesh_map.yaml": "c21e19929f027119f1d8f3ed0c998b9ec29adaab83ef1b0fb6050559d856475f"
+      },
+      "output_hashes": {
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\PV-M4A1_S_BornBeast_Classic_c1_split_report.json": "74b6c9982ecebd540f66d317efc7f1471967e20cf0418ac797f37339a1409be2",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only": "09b2f976b0cc7448a874008eea9f58b992979f72c437f78ca789a0e7970af3d3"
+      },
+      "stdout_tail": "      \"mtl\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c1_weapon_only\\\\weapon_only\\\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl\"\n    },\n    {\n      \"group\": \"PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01\",\n      \"material\": \"M4A1S_BornBeast01\",\n      \"vertices\": 44,\n      \"uvs\": 44,\n      \"normals\": 44,\n      \"triangles\": 36,\n      \"obj\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c1_weapon_only\\\\weapon_only\\\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj\",\n      \"mtl\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c1_weapon_only\\\\weapon_only\\\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl\"\n    }\n  ],\n  \"cf_arms_optional\": [\n    {\n      \"group\": \"PV-M4A1_S_BornBeast_Classic_Fview-hand2\",\n      \"material\": \"Fview-hand2\",\n      \"vertices\": 1090,\n      \"uvs\": 1090,\n      \"normals\": 1090,\n      \"triangles\": 1060,\n      \"obj\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c1_weapon_only\\\\cf_arms_optional\\\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.obj\",\n      \"mtl\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c1_weapon_only\\\\cf_arms_optional\\\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.mtl\"\n    },\n    {\n      \"group\": \"PV-M4A1_S_BornBeast_Classic_Fview-arm2\",\n      \"material\": \"Fview-arm2\",\n      \"vertices\": 190,\n      \"uvs\": 190,\n      \"normals\": 190,\n      \"triangles\": 274,\n      \"obj\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c1_weapon_only\\\\cf_arms_optional\\\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.obj\",\n      \"mtl\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c1_weapon_only\\\\cf_arms_optional\\\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.mtl\"\n    }\n  ],\n  \"failures\": []\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "c3_fixed_transform",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "D:\\project\\cf_to_csgo\\scripts\\cf_ltb\\apply_c3_fixed_transform.py",
+        "--input",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+        "--transform-manifest",
+        "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_m4a4_manifest.json",
+        "--output",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+        "--reference-aligned-obj",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+        "--report",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\c3_fixed_transform_report.json"
+      ],
+      "cwd": "D:\\project\\cf_to_csgo",
+      "started_utc": "2026-08-19T14:49:51.529309+00:00",
+      "finished_utc": "2026-08-19T14:49:51.635909+00:00",
+      "exit_code": 0,
+      "stdout_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\c3_fixed_transform.stdout.log",
+      "stderr_log": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\logs\\c3_fixed_transform.stderr.log",
+      "input_hashes": {
+        "D:\\project\\cf_to_csgo\\scripts\\cf_ltb\\apply_c3_fixed_transform.py": "3ba4e9a05ead58e614d96d7817bf5128766437b7321b9720c34b74302fb6de41",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj": "b653434f12bf33aedf8011b3dd14d3cc082b0310e4078477e8f2817ac8fe8aca",
+        "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_m4a4_manifest.json": "d92b337fe74edfc621d22b6d04aef6bc3e111a7a5a0d9411cadff9e7230551d1",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj": "1b1b6cd24eb2ce4cf3e411d5eee45a8a27f3fa9637309f88900f376ee54f9f97"
+      },
+      "output_hashes": {
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj": "5c0a1561098e399625ffe11c76a29d3e77930c4f6861bc2ba9d5da1040acb61b",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\c3_fixed_transform_report.json": "fc0d88d471840b4e5fbdfe081080c7dbccac00e02a72f13cf40927436ed9e2d3"
+      },
+      "stdout_tail": "{\n  \"passed\": true,\n  \"output\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c3_aligned\\\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj\",\n  \"report\": \"D:\\\\project\\\\cf_to_csgo\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\runs\\\\run_20260819_144941_648227\\\\c3_aligned\\\\c3_fixed_transform_report.json\"\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "failures": [],
+  "inputs": {
+    "cf_ltb": {
+      "path": "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB",
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7"
+    },
+    "mesh_map": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\mesh_map.yaml",
+      "sha256": "c21e19929f027119f1d8f3ed0c998b9ec29adaab83ef1b0fb6050559d856475f"
+    },
+    "alignment_manifest": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_m4a4_manifest.json",
+      "sha256": "d92b337fe74edfc621d22b6d04aef6bc3e111a7a5a0d9411cadff9e7230551d1"
+    },
+    "frozen_aligned_reference": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "sha256": "1b1b6cd24eb2ce4cf3e411d5eee45a8a27f3fa9637309f88900f376ee54f9f97"
+    }
+  },
+  "outputs": {
+    "b3_raw_obj": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+      "sha256": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9"
+    },
+    "b3_export_report": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json",
+      "sha256": "c04cf27cee964995620fa384521daceb3c77475ef693bacafd4e630c72057724"
+    },
+    "c1_weapon_only_obj": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "sha256": "b653434f12bf33aedf8011b3dd14d3cc082b0310e4078477e8f2817ac8fe8aca"
+    },
+    "c1_split_report": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\PV-M4A1_S_BornBeast_Classic_c1_split_report.json",
+      "sha256": "74b6c9982ecebd540f66d317efc7f1471967e20cf0418ac797f37339a1409be2"
+    },
+    "c3_aligned_obj": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "sha256": "5c0a1561098e399625ffe11c76a29d3e77930c4f6861bc2ba9d5da1040acb61b"
+    },
+    "c3_fixed_transform_report": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\c3_fixed_transform_report.json",
+      "sha256": "fc0d88d471840b4e5fbdfe081080c7dbccac00e02a72f13cf40927436ed9e2d3"
+    }
+  },
+  "semantic_stats": {
+    "b3_raw": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+      "sha256": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+      "vertices": 4926,
+      "uvs": 4926,
+      "normals": 4926,
+      "triangles": 5342,
+      "group_count": 11,
+      "groups": {
+        "PV-M4A1_S_BornBeast_Classic_Fview-arm2": {
+          "triangles": 274,
+          "material_slots": [
+            "Fview-arm2"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_Fview-hand2": {
+          "triangles": 1060,
+          "material_slots": [
+            "Fview-hand2"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+          "triangles": 3407,
+          "material_slots": [
+            "M4A1S_BornBeast"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+          "triangles": 36,
+          "material_slots": [
+            "M4A1S_BornBeast01"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+          "triangles": 121,
+          "material_slots": [
+            "M4A1S_BornBeast02"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+          "triangles": 184,
+          "material_slots": [
+            "M4A1S_BornBeast03"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast04"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast05"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast06"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast07"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast08"
+          ]
+        }
+      },
+      "material_slots": [
+        "Fview-arm2",
+        "Fview-hand2",
+        "M4A1S_BornBeast",
+        "M4A1S_BornBeast01",
+        "M4A1S_BornBeast02",
+        "M4A1S_BornBeast03",
+        "M4A1S_BornBeast04",
+        "M4A1S_BornBeast05",
+        "M4A1S_BornBeast06",
+        "M4A1S_BornBeast07",
+        "M4A1S_BornBeast08"
+      ],
+      "bounds": {
+        "min": [
+          -14.260482788085938,
+          -8.345874786376953,
+          -4.619534015655518
+        ],
+        "max": [
+          14.260482788085938,
+          22.56444549560547,
+          13.936319351196289
+        ]
+      }
+    },
+    "c1_weapon_only": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "sha256": "b653434f12bf33aedf8011b3dd14d3cc082b0310e4078477e8f2817ac8fe8aca",
+      "vertices": 3646,
+      "uvs": 3646,
+      "normals": 3646,
+      "triangles": 4008,
+      "group_count": 9,
+      "groups": {
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+          "triangles": 3407,
+          "material_slots": [
+            "M4A1S_BornBeast"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+          "triangles": 36,
+          "material_slots": [
+            "M4A1S_BornBeast01"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+          "triangles": 121,
+          "material_slots": [
+            "M4A1S_BornBeast02"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+          "triangles": 184,
+          "material_slots": [
+            "M4A1S_BornBeast03"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast04"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast05"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast06"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast07"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast08"
+          ]
+        }
+      },
+      "material_slots": [
+        "M4A1S_BornBeast",
+        "M4A1S_BornBeast01",
+        "M4A1S_BornBeast02",
+        "M4A1S_BornBeast03",
+        "M4A1S_BornBeast04",
+        "M4A1S_BornBeast05",
+        "M4A1S_BornBeast06",
+        "M4A1S_BornBeast07",
+        "M4A1S_BornBeast08"
+      ],
+      "bounds": {
+        "min": [
+          0.7689120173454285,
+          -8.345874786376953,
+          -4.619534015655518
+        ],
+        "max": [
+          2.309701919555664,
+          -2.3651139736175537,
+          13.936319351196289
+        ]
+      }
+    },
+    "c3_aligned": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "sha256": "5c0a1561098e399625ffe11c76a29d3e77930c4f6861bc2ba9d5da1040acb61b",
+      "vertices": 3646,
+      "uvs": 3646,
+      "normals": 3646,
+      "triangles": 4008,
+      "group_count": 9,
+      "groups": {
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+          "triangles": 3407,
+          "material_slots": [
+            "M4A1S_BornBeast"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+          "triangles": 36,
+          "material_slots": [
+            "M4A1S_BornBeast01"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+          "triangles": 121,
+          "material_slots": [
+            "M4A1S_BornBeast02"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+          "triangles": 184,
+          "material_slots": [
+            "M4A1S_BornBeast03"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast04"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast05"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast06"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast07"
+          ]
+        },
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+          "triangles": 52,
+          "material_slots": [
+            "M4A1S_BornBeast08"
+          ]
+        }
+      },
+      "material_slots": [
+        "M4A1S_BornBeast",
+        "M4A1S_BornBeast01",
+        "M4A1S_BornBeast02",
+        "M4A1S_BornBeast03",
+        "M4A1S_BornBeast04",
+        "M4A1S_BornBeast05",
+        "M4A1S_BornBeast06",
+        "M4A1S_BornBeast07",
+        "M4A1S_BornBeast08"
+      ],
+      "bounds": {
+        "min": [
+          -1.229129562,
+          -39.821458984,
+          4.884446046
+        ],
+        "max": [
+          1.438001726,
+          -6.676649387,
+          15.413852736
+        ]
+      }
+    }
+  },
+  "policies": {
+    "source_is_manifest_ltb": true,
+    "fresh_run_outputs": true,
+    "automatic_icp": false,
+    "automatic_normalize": false,
+    "per_mesh_center_scale": false,
+    "implicit_winding_flip": false,
+    "excluded_cf_arm_groups": [
+      "Fview-hand2",
+      "Fview-arm2"
+    ]
+  }
+}

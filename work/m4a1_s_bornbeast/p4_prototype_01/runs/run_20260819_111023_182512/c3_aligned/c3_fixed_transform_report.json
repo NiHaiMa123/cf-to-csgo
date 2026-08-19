@@ -1,0 +1,255 @@
+{
+  "schema": "cf2.p4.c3-fixed-transform.v1",
+  "method": "frozen_matrix",
+  "inputs": {
+    "weapon_only_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_111023_182512\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+    "weapon_only_obj_sha256": "b653434f12bf33aedf8011b3dd14d3cc082b0310e4078477e8f2817ac8fe8aca",
+    "transform_manifest": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_m4a4_manifest.json",
+    "transform_manifest_sha256": "d92b337fe74edfc621d22b6d04aef6bc3e111a7a5a0d9411cadff9e7230551d1",
+    "reference_aligned_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+    "reference_aligned_obj_sha256": "1b1b6cd24eb2ce4cf3e411d5eee45a8a27f3fa9637309f88900f376ee54f9f97"
+  },
+  "policy": {
+    "shared_transform": true,
+    "per_mesh_normalization": false,
+    "automatic_icp": false,
+    "automatic_center_or_scale": false,
+    "winding": "preserve",
+    "normal_policy": "rotation only then normalize"
+  },
+  "tolerance": 1e-05,
+  "reference_available": true,
+  "transform": {
+    "matrix_cf_to_source": [
+      [
+        1.784059185,
+        0.034856661,
+        0.01256238,
+        -2.536612614
+      ],
+      [
+        0.011249821,
+        0.066854712,
+        -1.783155592,
+        -14.701850345
+      ],
+      [
+        -0.035302149,
+        1.782850369,
+        0.066620549,
+        19.652856554
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.784443884,
+    "rotation_determinant": 1.000000000650344
+  },
+  "source_stats": {
+    "vertices": 3646,
+    "uvs": 3646,
+    "normals": 3646,
+    "triangles": 4008,
+    "group_count": 9,
+    "groups": {
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+        "triangles": 3407,
+        "material": "M4A1S_BornBeast",
+        "vertices": 3074
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast04",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+        "triangles": 121,
+        "material": "M4A1S_BornBeast02",
+        "vertices": 133
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+        "triangles": 184,
+        "material": "M4A1S_BornBeast03",
+        "vertices": 165
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast07",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast08",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast05",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast06",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+        "triangles": 36,
+        "material": "M4A1S_BornBeast01",
+        "vertices": 44
+      }
+    },
+    "bounds": {
+      "min": [
+        0.7689120173454285,
+        -8.345874786376953,
+        -4.619534015655518
+      ],
+      "max": [
+        2.309701919555664,
+        -2.3651139736175537,
+        13.936319351196289
+      ]
+    }
+  },
+  "output_stats": {
+    "vertices": 3646,
+    "uvs": 3646,
+    "normals": 3646,
+    "triangles": 4008,
+    "group_count": 9,
+    "groups": {
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+        "triangles": 3407,
+        "material": "M4A1S_BornBeast",
+        "vertices": 3074
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast04",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+        "triangles": 121,
+        "material": "M4A1S_BornBeast02",
+        "vertices": 133
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+        "triangles": 184,
+        "material": "M4A1S_BornBeast03",
+        "vertices": 165
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast07",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast08",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast05",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast06",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+        "triangles": 36,
+        "material": "M4A1S_BornBeast01",
+        "vertices": 44
+      }
+    },
+    "bounds": {
+      "min": [
+        -1.229129562,
+        -39.821458984,
+        4.884446046
+      ],
+      "max": [
+        1.438001726,
+        -6.676649387,
+        15.413852736
+      ]
+    }
+  },
+  "reference_stats": {
+    "vertices": 3646,
+    "uvs": 3646,
+    "normals": 3646,
+    "triangles": 4008,
+    "group_count": 9,
+    "groups": {
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+        "triangles": 3407,
+        "material": "M4A1S_BornBeast",
+        "vertices": 3074
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast04",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+        "triangles": 121,
+        "material": "M4A1S_BornBeast02",
+        "vertices": 133
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+        "triangles": 184,
+        "material": "M4A1S_BornBeast03",
+        "vertices": 165
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast07",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast08",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast05",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+        "triangles": 52,
+        "material": "M4A1S_BornBeast06",
+        "vertices": 46
+      },
+      "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+        "triangles": 36,
+        "material": "M4A1S_BornBeast01",
+        "vertices": 44
+      }
+    },
+    "bounds": {
+      "min": [
+        -1.22912956,
+        -39.821458986,
+        4.884446049
+      ],
+      "max": [
+        1.438001729,
+        -6.676649387,
+        15.413852737
+      ]
+    }
+  },
+  "comparison": {
+    "max_position_error": 4.0000000117723644e-09
+  },
+  "passed": true,
+  "failures": []
+}

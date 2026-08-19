@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/rif_m4a1/rif_m4a1"
+	"$phong" "1"
+	"$phongboost" "0.55"
+	"$phongexponent" "22"
+	"$phongfresnelranges" "[0.2 0.45 1.0]"
+	"$phongalbedotint" "1"
+	"$selfillum" "1"
+	"$selfillummask" "models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum"
+	"$selfillumtint" "[1.0 0.08 0.035]"
+}

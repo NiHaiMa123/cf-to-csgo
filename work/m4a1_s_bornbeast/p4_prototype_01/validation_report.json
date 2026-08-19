@@ -1,0 +1,1661 @@
+{
+  "schema": "cf2.p4.validation-report.v2",
+  "task_id": "P4-T05",
+  "profile_id": "Prototype-01",
+  "manifest": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\prototype_01_manifest.json",
+  "generated_at": "2026-08-19T14:50:47.578023+00:00",
+  "run_id": "run_20260819_144941_648227",
+  "pass": true,
+  "errors": [],
+  "gates": {
+    "dependency_chain": {
+      "expected": {
+        "task": "P4-T03",
+        "all_trace_steps_exit": 0,
+        "fresh_run": true
+      },
+      "actual": {
+        "manifest_sha256": "9f2b7e4fcae9fc38daca4acfdf521a9a58b8820b757bf9d88beb363b70b84d09",
+        "build_report_exists": true,
+        "trace_exists": true,
+        "build_pass": true,
+        "trace_pass": true,
+        "run_id_match": true,
+        "run_root_match": true,
+        "step_exit_codes": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "trace_output_hashes": {
+          "b3_raw_obj": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+          "b3_export_report": "c04cf27cee964995620fa384521daceb3c77475ef693bacafd4e630c72057724",
+          "c1_weapon_only_obj": "b653434f12bf33aedf8011b3dd14d3cc082b0310e4078477e8f2817ac8fe8aca",
+          "c1_split_report": "74b6c9982ecebd540f66d317efc7f1471967e20cf0418ac797f37339a1409be2",
+          "c3_aligned_obj": "5c0a1561098e399625ffe11c76a29d3e77930c4f6861bc2ba9d5da1040acb61b",
+          "c3_fixed_transform_report": "fc0d88d471840b4e5fbdfe081080c7dbccac00e02a72f13cf40927436ed9e2d3"
+        }
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\build_report.json",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\upstream_trace_report.json"
+      ]
+    },
+    "b3_semantics": {
+      "expected": {
+        "groups": [
+          "PV-M4A1_S_BornBeast_Classic_Fview-hand2",
+          "PV-M4A1_S_BornBeast_Classic_Fview-arm2",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01"
+        ],
+        "totals": {
+          "VertexCount": 4926,
+          "TriangleCount": 5342,
+          "UvCount": 4926,
+          "NormalCount": 4926,
+          "BoneWeightCount": 1280,
+          "BoneIndexCount": 1280,
+          "MeshCount": 11,
+          "MaterialCount": 11
+        }
+      },
+      "actual": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+        "sha256": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+        "vertices": 4926,
+        "uvs": 4926,
+        "normals": 4926,
+        "triangles": 5342,
+        "group_count": 11,
+        "groups": {
+          "PV-M4A1_S_BornBeast_Classic_Fview-arm2": {
+            "vertices": 190,
+            "uvs": 190,
+            "normals": 190,
+            "triangles": 274,
+            "material_slots": [
+              "Fview-arm2"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_Fview-hand2": {
+            "vertices": 1090,
+            "uvs": 1090,
+            "normals": 1090,
+            "triangles": 1060,
+            "material_slots": [
+              "Fview-hand2"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+            "vertices": 3074,
+            "uvs": 3074,
+            "normals": 3074,
+            "triangles": 3407,
+            "material_slots": [
+              "M4A1S_BornBeast"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+            "vertices": 44,
+            "uvs": 44,
+            "normals": 44,
+            "triangles": 36,
+            "material_slots": [
+              "M4A1S_BornBeast01"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+            "vertices": 133,
+            "uvs": 133,
+            "normals": 133,
+            "triangles": 121,
+            "material_slots": [
+              "M4A1S_BornBeast02"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+            "vertices": 165,
+            "uvs": 165,
+            "normals": 165,
+            "triangles": 184,
+            "material_slots": [
+              "M4A1S_BornBeast03"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast04"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast05"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast06"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast07"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast08"
+            ]
+          }
+        },
+        "material_slots": [
+          "Fview-arm2",
+          "Fview-hand2",
+          "M4A1S_BornBeast",
+          "M4A1S_BornBeast01",
+          "M4A1S_BornBeast02",
+          "M4A1S_BornBeast03",
+          "M4A1S_BornBeast04",
+          "M4A1S_BornBeast05",
+          "M4A1S_BornBeast06",
+          "M4A1S_BornBeast07",
+          "M4A1S_BornBeast08"
+        ],
+        "invalid_faces": 0
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\b3_roundtrip_report.json"
+      ]
+    },
+    "c1_weapon_only_semantics": {
+      "expected": {
+        "groups": [
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07",
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08"
+        ],
+        "aligned_obj": {
+          "vertices": 3646,
+          "uvs": 3646,
+          "normals": 3646,
+          "triangles": 4008,
+          "group_count": 9
+        }
+      },
+      "actual": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+        "sha256": "b653434f12bf33aedf8011b3dd14d3cc082b0310e4078477e8f2817ac8fe8aca",
+        "vertices": 3646,
+        "uvs": 3646,
+        "normals": 3646,
+        "triangles": 4008,
+        "group_count": 9,
+        "groups": {
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+            "vertices": 3074,
+            "uvs": 3074,
+            "normals": 3074,
+            "triangles": 3407,
+            "material_slots": [
+              "M4A1S_BornBeast"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+            "vertices": 44,
+            "uvs": 44,
+            "normals": 44,
+            "triangles": 36,
+            "material_slots": [
+              "M4A1S_BornBeast01"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+            "vertices": 133,
+            "uvs": 133,
+            "normals": 133,
+            "triangles": 121,
+            "material_slots": [
+              "M4A1S_BornBeast02"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+            "vertices": 165,
+            "uvs": 165,
+            "normals": 165,
+            "triangles": 184,
+            "material_slots": [
+              "M4A1S_BornBeast03"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast04"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast05"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast06"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast07"
+            ]
+          },
+          "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+            "vertices": 46,
+            "uvs": 46,
+            "normals": 46,
+            "triangles": 52,
+            "material_slots": [
+              "M4A1S_BornBeast08"
+            ]
+          }
+        },
+        "material_slots": [
+          "M4A1S_BornBeast",
+          "M4A1S_BornBeast01",
+          "M4A1S_BornBeast02",
+          "M4A1S_BornBeast03",
+          "M4A1S_BornBeast04",
+          "M4A1S_BornBeast05",
+          "M4A1S_BornBeast06",
+          "M4A1S_BornBeast07",
+          "M4A1S_BornBeast08"
+        ],
+        "invalid_faces": 0
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c1_weapon_only\\PV-M4A1_S_BornBeast_Classic_c1_split_report.json"
+      ]
+    },
+    "c3_matrix_and_semantics": {
+      "expected": {
+        "policy": {
+          "automatic_icp": false,
+          "automatic_center_or_scale": false,
+          "per_mesh_normalization": false,
+          "winding": "preserve",
+          "normal_policy": "rotation only then normalize"
+        },
+        "transform": {
+          "schema": "cf2.m4a4.c3-transform-manifest.v1",
+          "status": "locked_for_D_with_manual_attachment_gate",
+          "source_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\c3_alignment_report.json",
+          "source_report_sha256": "b9c970ae626735f819d006fbd3398ff163b4c26066791c485615d85d2d8243d6",
+          "shared_transform_for_all_nine_weapon_meshes": true,
+          "matrix_convention": "homogeneous column vector; p_source = matrix_cf_to_source @ [p_cf, 1]",
+          "matrix_cf_to_source": [
+            [
+              1.784059185,
+              0.034856661,
+              0.01256238,
+              -2.536612614
+            ],
+            [
+              0.011249821,
+              0.066854712,
+              -1.783155592,
+              -14.701850345
+            ],
+            [
+              -0.035302149,
+              1.782850369,
+              0.066620549,
+              19.652856554
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "uniform_scale": 1.784443884,
+          "rotation_determinant": 1.0,
+          "axis_map": "Source X=CF X, Source Y=-CF Z, Source Z=CF Y, followed by 2.4516-degree fitted correction",
+          "normal_policy": "rotation only then normalize",
+          "winding_policy": "preserve; determinant is positive",
+          "binding_frame": "official M4A4 bind pose",
+          "attachment_policy": {
+            "flash": "official flash bone is within C3 tolerance",
+            "shelleject": "official shelleject bone is within C3 tolerance",
+            "muzzle": "use official M4A4 flash bone; no detachable-silencer path",
+            "recommended_local_x_offset": -2.814951
+          },
+          "provisional": [
+            "The D-stage first compile must visually confirm the idle pose at real game FOV.",
+            "No detachable-silencer semantics are authored for the M4A4 target.",
+            "M4A4 hand/attachment numbers are diagnostic only: the decompiled SMD vertex domain and skeleton-global domain must not be mixed as an automated pass condition."
+          ]
+        },
+        "stats": {
+          "vertices": 3646,
+          "uvs": 3646,
+          "normals": 3646,
+          "triangles": 4008,
+          "group_count": 9
+        }
+      },
+      "actual": {
+        "policy": {
+          "shared_transform": true,
+          "per_mesh_normalization": false,
+          "automatic_icp": false,
+          "automatic_center_or_scale": false,
+          "winding": "preserve",
+          "normal_policy": "rotation only then normalize"
+        },
+        "transform": {
+          "matrix_cf_to_source": [
+            [
+              1.784059185,
+              0.034856661,
+              0.01256238,
+              -2.536612614
+            ],
+            [
+              0.011249821,
+              0.066854712,
+              -1.783155592,
+              -14.701850345
+            ],
+            [
+              -0.035302149,
+              1.782850369,
+              0.066620549,
+              19.652856554
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "uniform_scale": 1.784443884,
+          "rotation_determinant": 1.000000000650344
+        },
+        "stats": {
+          "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+          "sha256": "5c0a1561098e399625ffe11c76a29d3e77930c4f6861bc2ba9d5da1040acb61b",
+          "vertices": 3646,
+          "uvs": 3646,
+          "normals": 3646,
+          "triangles": 4008,
+          "group_count": 9,
+          "groups": {
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast": {
+              "vertices": 3074,
+              "uvs": 3074,
+              "normals": 3074,
+              "triangles": 3407,
+              "material_slots": [
+                "M4A1S_BornBeast"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01": {
+              "vertices": 44,
+              "uvs": 44,
+              "normals": 44,
+              "triangles": 36,
+              "material_slots": [
+                "M4A1S_BornBeast01"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02": {
+              "vertices": 133,
+              "uvs": 133,
+              "normals": 133,
+              "triangles": 121,
+              "material_slots": [
+                "M4A1S_BornBeast02"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03": {
+              "vertices": 165,
+              "uvs": 165,
+              "normals": 165,
+              "triangles": 184,
+              "material_slots": [
+                "M4A1S_BornBeast03"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04": {
+              "vertices": 46,
+              "uvs": 46,
+              "normals": 46,
+              "triangles": 52,
+              "material_slots": [
+                "M4A1S_BornBeast04"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05": {
+              "vertices": 46,
+              "uvs": 46,
+              "normals": 46,
+              "triangles": 52,
+              "material_slots": [
+                "M4A1S_BornBeast05"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06": {
+              "vertices": 46,
+              "uvs": 46,
+              "normals": 46,
+              "triangles": 52,
+              "material_slots": [
+                "M4A1S_BornBeast06"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07": {
+              "vertices": 46,
+              "uvs": 46,
+              "normals": 46,
+              "triangles": 52,
+              "material_slots": [
+                "M4A1S_BornBeast07"
+              ]
+            },
+            "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08": {
+              "vertices": 46,
+              "uvs": 46,
+              "normals": 46,
+              "triangles": 52,
+              "material_slots": [
+                "M4A1S_BornBeast08"
+              ]
+            }
+          },
+          "material_slots": [
+            "M4A1S_BornBeast",
+            "M4A1S_BornBeast01",
+            "M4A1S_BornBeast02",
+            "M4A1S_BornBeast03",
+            "M4A1S_BornBeast04",
+            "M4A1S_BornBeast05",
+            "M4A1S_BornBeast06",
+            "M4A1S_BornBeast07",
+            "M4A1S_BornBeast08"
+          ],
+          "invalid_faces": 0
+        },
+        "comparison": {
+          "max_position_error": 4.0000000117723644e-09
+        }
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_m4a4_manifest.json",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\c3_fixed_transform_report.json",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\c3_aligned\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj"
+      ]
+    },
+    "smd_skeleton": {
+      "expected": {
+        "node_count": 57,
+        "nodes": [
+          {
+            "index": 0,
+            "name": "v_weapon",
+            "parent_index": -1
+          },
+          {
+            "index": 1,
+            "name": "v_weapon.Bip01_R_Forearm",
+            "parent_index": -1
+          },
+          {
+            "index": 2,
+            "name": "v_weapon.Bip01_R_Hand",
+            "parent_index": 1
+          },
+          {
+            "index": 3,
+            "name": "v_weapon.M4A1_Parent",
+            "parent_index": 2
+          },
+          {
+            "index": 4,
+            "name": "v_weapon.M4A1_Clip",
+            "parent_index": 3
+          },
+          {
+            "index": 5,
+            "name": "v_weapon.M4A1_Bullets",
+            "parent_index": 4
+          },
+          {
+            "index": 6,
+            "name": "v_weapon.flash",
+            "parent_index": 3
+          },
+          {
+            "index": 7,
+            "name": "v_weapon.shelleject",
+            "parent_index": 3
+          },
+          {
+            "index": 8,
+            "name": "v_weapon.stattrack",
+            "parent_index": 3
+          },
+          {
+            "index": 9,
+            "name": "v_weapon.uid",
+            "parent_index": 3
+          },
+          {
+            "index": 10,
+            "name": "v_weapon.Bip01_L_Forearm",
+            "parent_index": -1
+          },
+          {
+            "index": 11,
+            "name": "v_weapon.Bip01_L_Hand",
+            "parent_index": 10
+          },
+          {
+            "index": 12,
+            "name": "v_weapon.Bip01_L_Finger0",
+            "parent_index": 11
+          },
+          {
+            "index": 13,
+            "name": "v_weapon.Bip01_L_Finger01",
+            "parent_index": 12
+          },
+          {
+            "index": 14,
+            "name": "v_weapon.Bip01_L_Finger02",
+            "parent_index": 13
+          },
+          {
+            "index": 15,
+            "name": "v_weapon.Bip01_L_Finger1",
+            "parent_index": 11
+          },
+          {
+            "index": 16,
+            "name": "v_weapon.Bip01_L_Finger11",
+            "parent_index": 15
+          },
+          {
+            "index": 17,
+            "name": "v_weapon.Bip01_L_Finger12",
+            "parent_index": 16
+          },
+          {
+            "index": 18,
+            "name": "v_weapon.Bip01_L_Finger2",
+            "parent_index": 11
+          },
+          {
+            "index": 19,
+            "name": "v_weapon.Bip01_L_Finger21",
+            "parent_index": 18
+          },
+          {
+            "index": 20,
+            "name": "v_weapon.Bip01_L_Finger22",
+            "parent_index": 19
+          },
+          {
+            "index": 21,
+            "name": "v_weapon.Bip01_L_Finger3",
+            "parent_index": 11
+          },
+          {
+            "index": 22,
+            "name": "v_weapon.Bip01_L_Finger31",
+            "parent_index": 21
+          },
+          {
+            "index": 23,
+            "name": "v_weapon.Bip01_L_Finger32",
+            "parent_index": 22
+          },
+          {
+            "index": 24,
+            "name": "v_weapon.Bip01_L_Finger4",
+            "parent_index": 11
+          },
+          {
+            "index": 25,
+            "name": "v_weapon.Bip01_L_Finger41",
+            "parent_index": 24
+          },
+          {
+            "index": 26,
+            "name": "v_weapon.Bip01_L_Finger42",
+            "parent_index": 25
+          },
+          {
+            "index": 27,
+            "name": "v_weapon.Bip01_L_ForeTwist",
+            "parent_index": -1
+          },
+          {
+            "index": 28,
+            "name": "v_weapon.M4A1_Trigger",
+            "parent_index": 3
+          },
+          {
+            "index": 29,
+            "name": "v_weapon.M4A1_Bolt",
+            "parent_index": 3
+          },
+          {
+            "index": 30,
+            "name": "v_weapon.Bip01_R_Finger0",
+            "parent_index": 2
+          },
+          {
+            "index": 31,
+            "name": "v_weapon.Bip01_R_Finger01",
+            "parent_index": 30
+          },
+          {
+            "index": 32,
+            "name": "v_weapon.Bip01_R_Finger02",
+            "parent_index": 31
+          },
+          {
+            "index": 33,
+            "name": "v_weapon.Bip01_R_Finger1",
+            "parent_index": 2
+          },
+          {
+            "index": 34,
+            "name": "v_weapon.Bip01_R_Finger11",
+            "parent_index": 33
+          },
+          {
+            "index": 35,
+            "name": "v_weapon.Bip01_R_Finger12",
+            "parent_index": 34
+          },
+          {
+            "index": 36,
+            "name": "v_weapon.Bip01_R_Finger2",
+            "parent_index": 2
+          },
+          {
+            "index": 37,
+            "name": "v_weapon.Bip01_R_Finger21",
+            "parent_index": 36
+          },
+          {
+            "index": 38,
+            "name": "v_weapon.Bip01_R_Finger22",
+            "parent_index": 37
+          },
+          {
+            "index": 39,
+            "name": "v_weapon.Bip01_R_Finger3",
+            "parent_index": 2
+          },
+          {
+            "index": 40,
+            "name": "v_weapon.Bip01_R_Finger31",
+            "parent_index": 39
+          },
+          {
+            "index": 41,
+            "name": "v_weapon.Bip01_R_Finger32",
+            "parent_index": 40
+          },
+          {
+            "index": 42,
+            "name": "v_weapon.Bip01_R_Finger4",
+            "parent_index": 2
+          },
+          {
+            "index": 43,
+            "name": "v_weapon.Bip01_R_Finger41",
+            "parent_index": 42
+          },
+          {
+            "index": 44,
+            "name": "v_weapon.Bip01_R_Finger42",
+            "parent_index": 43
+          },
+          {
+            "index": 45,
+            "name": "v_weapon.Bip01_R_ForeTwist",
+            "parent_index": -1
+          },
+          {
+            "index": 46,
+            "name": "v_weapon.Bip01",
+            "parent_index": -1
+          },
+          {
+            "index": 47,
+            "name": "v_weapon.Bip01_Pelvis",
+            "parent_index": 46
+          },
+          {
+            "index": 48,
+            "name": "v_weapon.Bip01_Spine",
+            "parent_index": 47
+          },
+          {
+            "index": 49,
+            "name": "v_weapon.Bip01_Spine1",
+            "parent_index": 48
+          },
+          {
+            "index": 50,
+            "name": "v_weapon.Bip01_Spine2",
+            "parent_index": 49
+          },
+          {
+            "index": 51,
+            "name": "v_weapon.Bip01_Spine3",
+            "parent_index": 50
+          },
+          {
+            "index": 52,
+            "name": "v_weapon.Bip01_Neck",
+            "parent_index": 51
+          },
+          {
+            "index": 53,
+            "name": "v_weapon.Bip01_L_Clavicle",
+            "parent_index": 52
+          },
+          {
+            "index": 54,
+            "name": "v_weapon.Bip01_L_UpperArm",
+            "parent_index": 53
+          },
+          {
+            "index": 55,
+            "name": "v_weapon.Bip01_R_Clavicle",
+            "parent_index": 52
+          },
+          {
+            "index": 56,
+            "name": "v_weapon.Bip01_R_UpperArm",
+            "parent_index": 55
+          }
+        ]
+      },
+      "actual": {
+        "node_count": 57,
+        "nodes": [
+          {
+            "index": 0,
+            "name": "v_weapon",
+            "parent_index": -1
+          },
+          {
+            "index": 1,
+            "name": "v_weapon.Bip01_R_Forearm",
+            "parent_index": -1
+          },
+          {
+            "index": 2,
+            "name": "v_weapon.Bip01_R_Hand",
+            "parent_index": 1
+          },
+          {
+            "index": 3,
+            "name": "v_weapon.M4A1_Parent",
+            "parent_index": 2
+          },
+          {
+            "index": 4,
+            "name": "v_weapon.M4A1_Clip",
+            "parent_index": 3
+          },
+          {
+            "index": 5,
+            "name": "v_weapon.M4A1_Bullets",
+            "parent_index": 4
+          },
+          {
+            "index": 6,
+            "name": "v_weapon.flash",
+            "parent_index": 3
+          },
+          {
+            "index": 7,
+            "name": "v_weapon.shelleject",
+            "parent_index": 3
+          },
+          {
+            "index": 8,
+            "name": "v_weapon.stattrack",
+            "parent_index": 3
+          },
+          {
+            "index": 9,
+            "name": "v_weapon.uid",
+            "parent_index": 3
+          },
+          {
+            "index": 10,
+            "name": "v_weapon.Bip01_L_Forearm",
+            "parent_index": -1
+          },
+          {
+            "index": 11,
+            "name": "v_weapon.Bip01_L_Hand",
+            "parent_index": 10
+          },
+          {
+            "index": 12,
+            "name": "v_weapon.Bip01_L_Finger0",
+            "parent_index": 11
+          },
+          {
+            "index": 13,
+            "name": "v_weapon.Bip01_L_Finger01",
+            "parent_index": 12
+          },
+          {
+            "index": 14,
+            "name": "v_weapon.Bip01_L_Finger02",
+            "parent_index": 13
+          },
+          {
+            "index": 15,
+            "name": "v_weapon.Bip01_L_Finger1",
+            "parent_index": 11
+          },
+          {
+            "index": 16,
+            "name": "v_weapon.Bip01_L_Finger11",
+            "parent_index": 15
+          },
+          {
+            "index": 17,
+            "name": "v_weapon.Bip01_L_Finger12",
+            "parent_index": 16
+          },
+          {
+            "index": 18,
+            "name": "v_weapon.Bip01_L_Finger2",
+            "parent_index": 11
+          },
+          {
+            "index": 19,
+            "name": "v_weapon.Bip01_L_Finger21",
+            "parent_index": 18
+          },
+          {
+            "index": 20,
+            "name": "v_weapon.Bip01_L_Finger22",
+            "parent_index": 19
+          },
+          {
+            "index": 21,
+            "name": "v_weapon.Bip01_L_Finger3",
+            "parent_index": 11
+          },
+          {
+            "index": 22,
+            "name": "v_weapon.Bip01_L_Finger31",
+            "parent_index": 21
+          },
+          {
+            "index": 23,
+            "name": "v_weapon.Bip01_L_Finger32",
+            "parent_index": 22
+          },
+          {
+            "index": 24,
+            "name": "v_weapon.Bip01_L_Finger4",
+            "parent_index": 11
+          },
+          {
+            "index": 25,
+            "name": "v_weapon.Bip01_L_Finger41",
+            "parent_index": 24
+          },
+          {
+            "index": 26,
+            "name": "v_weapon.Bip01_L_Finger42",
+            "parent_index": 25
+          },
+          {
+            "index": 27,
+            "name": "v_weapon.Bip01_L_ForeTwist",
+            "parent_index": -1
+          },
+          {
+            "index": 28,
+            "name": "v_weapon.M4A1_Trigger",
+            "parent_index": 3
+          },
+          {
+            "index": 29,
+            "name": "v_weapon.M4A1_Bolt",
+            "parent_index": 3
+          },
+          {
+            "index": 30,
+            "name": "v_weapon.Bip01_R_Finger0",
+            "parent_index": 2
+          },
+          {
+            "index": 31,
+            "name": "v_weapon.Bip01_R_Finger01",
+            "parent_index": 30
+          },
+          {
+            "index": 32,
+            "name": "v_weapon.Bip01_R_Finger02",
+            "parent_index": 31
+          },
+          {
+            "index": 33,
+            "name": "v_weapon.Bip01_R_Finger1",
+            "parent_index": 2
+          },
+          {
+            "index": 34,
+            "name": "v_weapon.Bip01_R_Finger11",
+            "parent_index": 33
+          },
+          {
+            "index": 35,
+            "name": "v_weapon.Bip01_R_Finger12",
+            "parent_index": 34
+          },
+          {
+            "index": 36,
+            "name": "v_weapon.Bip01_R_Finger2",
+            "parent_index": 2
+          },
+          {
+            "index": 37,
+            "name": "v_weapon.Bip01_R_Finger21",
+            "parent_index": 36
+          },
+          {
+            "index": 38,
+            "name": "v_weapon.Bip01_R_Finger22",
+            "parent_index": 37
+          },
+          {
+            "index": 39,
+            "name": "v_weapon.Bip01_R_Finger3",
+            "parent_index": 2
+          },
+          {
+            "index": 40,
+            "name": "v_weapon.Bip01_R_Finger31",
+            "parent_index": 39
+          },
+          {
+            "index": 41,
+            "name": "v_weapon.Bip01_R_Finger32",
+            "parent_index": 40
+          },
+          {
+            "index": 42,
+            "name": "v_weapon.Bip01_R_Finger4",
+            "parent_index": 2
+          },
+          {
+            "index": 43,
+            "name": "v_weapon.Bip01_R_Finger41",
+            "parent_index": 42
+          },
+          {
+            "index": 44,
+            "name": "v_weapon.Bip01_R_Finger42",
+            "parent_index": 43
+          },
+          {
+            "index": 45,
+            "name": "v_weapon.Bip01_R_ForeTwist",
+            "parent_index": -1
+          },
+          {
+            "index": 46,
+            "name": "v_weapon.Bip01",
+            "parent_index": -1
+          },
+          {
+            "index": 47,
+            "name": "v_weapon.Bip01_Pelvis",
+            "parent_index": 46
+          },
+          {
+            "index": 48,
+            "name": "v_weapon.Bip01_Spine",
+            "parent_index": 47
+          },
+          {
+            "index": 49,
+            "name": "v_weapon.Bip01_Spine1",
+            "parent_index": 48
+          },
+          {
+            "index": 50,
+            "name": "v_weapon.Bip01_Spine2",
+            "parent_index": 49
+          },
+          {
+            "index": 51,
+            "name": "v_weapon.Bip01_Spine3",
+            "parent_index": 50
+          },
+          {
+            "index": 52,
+            "name": "v_weapon.Bip01_Neck",
+            "parent_index": 51
+          },
+          {
+            "index": 53,
+            "name": "v_weapon.Bip01_L_Clavicle",
+            "parent_index": 52
+          },
+          {
+            "index": 54,
+            "name": "v_weapon.Bip01_L_UpperArm",
+            "parent_index": 53
+          },
+          {
+            "index": 55,
+            "name": "v_weapon.Bip01_R_Clavicle",
+            "parent_index": 52
+          },
+          {
+            "index": 56,
+            "name": "v_weapon.Bip01_R_UpperArm",
+            "parent_index": 55
+          }
+        ]
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\cf_bornbeast_full_m4a4.smd",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\decompiled\\v_m4a1_model.smd"
+      ]
+    },
+    "smd_manifest_bone_corners": {
+      "expected": {
+        "mapping": [
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": false,
+            "expected_triangles": 3407
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01",
+            "bone_index": 4,
+            "bone": "v_weapon.M4A1_Clip",
+            "static_fallback": false,
+            "expected_triangles": 36
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02",
+            "bone_index": 29,
+            "bone": "v_weapon.M4A1_Bolt",
+            "static_fallback": false,
+            "expected_triangles": 121
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "expected_triangles": 184
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "expected_triangles": 52
+          }
+        ],
+        "primary_corners": {
+          "3": 11553,
+          "4": 108,
+          "29": 363
+        }
+      },
+      "actual": {
+        "mapping": [
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": false,
+            "triangles": 3407,
+            "corners": 10221,
+            "used_vertex_count": 3074,
+            "expected_triangles": 3407
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01",
+            "bone_index": 4,
+            "bone": "v_weapon.M4A1_Clip",
+            "static_fallback": false,
+            "triangles": 36,
+            "corners": 108,
+            "used_vertex_count": 44,
+            "expected_triangles": 36
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02",
+            "bone_index": 29,
+            "bone": "v_weapon.M4A1_Bolt",
+            "static_fallback": false,
+            "triangles": 121,
+            "corners": 363,
+            "used_vertex_count": 133,
+            "expected_triangles": 121
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "triangles": 184,
+            "corners": 552,
+            "used_vertex_count": 165,
+            "expected_triangles": 184
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "triangles": 52,
+            "corners": 156,
+            "used_vertex_count": 46,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "triangles": 52,
+            "corners": 156,
+            "used_vertex_count": 46,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "triangles": 52,
+            "corners": 156,
+            "used_vertex_count": 46,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "triangles": 52,
+            "corners": 156,
+            "used_vertex_count": 46,
+            "expected_triangles": 52
+          },
+          {
+            "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08",
+            "bone_index": 3,
+            "bone": "v_weapon.M4A1_Parent",
+            "static_fallback": true,
+            "triangles": 52,
+            "corners": 156,
+            "used_vertex_count": 46,
+            "expected_triangles": 52
+          }
+        ],
+        "primary_corners": {
+          "3": 11553,
+          "4": 108,
+          "29": 363
+        }
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\build_report.json",
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\cf_bornbeast_full_m4a4.smd"
+      ]
+    },
+    "qc_modelname": {
+      "expected": "weapons/v_rif_m4a1.mdl",
+      "actual": "weapons\\v_rif_m4a1.mdl",
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\v_rif_m4a1.qc"
+      ]
+    },
+    "qc_body_smd_and_material_path": {
+      "expected": {
+        "body_smd": "cf_bornbeast_full_m4a4.smd",
+        "cdmaterials": [
+          "models\\weapons\\V_models\\rif_m4a1\\"
+        ]
+      },
+      "actual": {
+        "body_smd": "cf_bornbeast_full_m4a4.smd",
+        "cdmaterials": [
+          "models\\weapons\\V_models\\rif_m4a1\\"
+        ]
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\v_rif_m4a1.qc",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\decompiled\\v_rif_m4a1.qc"
+      ]
+    },
+    "sequence_names_and_count": {
+      "expected": [
+        "idle",
+        "shoot1",
+        "shoot2",
+        "shoot3",
+        "reload",
+        "draw",
+        "lookat01",
+        "lookat01_prepare",
+        "lookat01_loop"
+      ],
+      "actual": {
+        "qc": [
+          "idle",
+          "shoot1",
+          "shoot2",
+          "shoot3",
+          "reload",
+          "draw",
+          "lookat01",
+          "lookat01_prepare",
+          "lookat01_loop"
+        ],
+        "roundtrip": [
+          "idle",
+          "shoot1",
+          "shoot2",
+          "shoot3",
+          "reload",
+          "draw",
+          "lookat01",
+          "lookat01_prepare",
+          "lookat01_loop"
+        ]
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\v_rif_m4a1.qc",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\compiled_decompiled\\reference_report.json"
+      ]
+    },
+    "attachment_names_and_bones": {
+      "expected": [
+        {
+          "name": "1",
+          "bone": "v_weapon.flash"
+        },
+        {
+          "name": "2",
+          "bone": "v_weapon.shelleject"
+        }
+      ],
+      "actual": {
+        "qc": [
+          {
+            "name": "1",
+            "bone": "v_weapon.flash"
+          },
+          {
+            "name": "2",
+            "bone": "v_weapon.shelleject"
+          }
+        ],
+        "reference": [
+          {
+            "name": "1",
+            "bone": "v_weapon.flash"
+          },
+          {
+            "name": "2",
+            "bone": "v_weapon.shelleject"
+          }
+        ],
+        "roundtrip": [
+          {
+            "name": "1",
+            "bone": "v_weapon.flash"
+          },
+          {
+            "name": "2",
+            "bone": "v_weapon.shelleject"
+          }
+        ]
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\v_rif_m4a1.qc",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\decompiled\\v_rif_m4a1.qc",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\compiled_decompiled\\reference_report.json"
+      ]
+    },
+    "complete_binary_set": {
+      "expected": {
+        "v_rif_m4a1.mdl": true,
+        "v_rif_m4a1.vvd": true,
+        "v_rif_m4a1.ani": true,
+        "v_rif_m4a1.dx80.vtx": true,
+        "v_rif_m4a1.dx90.vtx": true,
+        "v_rif_m4a1.sw.vtx": true
+      },
+      "actual": {
+        "v_rif_m4a1.mdl": true,
+        "v_rif_m4a1.vvd": true,
+        "v_rif_m4a1.ani": true,
+        "v_rif_m4a1.dx80.vtx": true,
+        "v_rif_m4a1.dx90.vtx": true,
+        "v_rif_m4a1.sw.vtx": true
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon\\models\\weapons"
+      ]
+    },
+    "mdl_and_roundtrip_semantics": {
+      "expected": {
+        "internal_name": "weapons\\v_rif_m4a1.mdl",
+        "bone_count": 57,
+        "local_sequence_count": 9,
+        "attachment_count": 2,
+        "material": "rif_m4a1",
+        "triangle_count": 4008
+      },
+      "actual": {
+        "internal_name": "weapons\\v_rif_m4a1.mdl",
+        "bone_count": 57,
+        "local_sequence_count": 9,
+        "attachment_count": 2,
+        "material": "rif_m4a1",
+        "triangle_count": 4008
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon\\models\\weapons\\v_rif_m4a1.mdl",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_144941_648227\\compiled_decompiled\\reference_report.json"
+      ]
+    },
+    "material_closure": {
+      "expected": {
+        "pass": true,
+        "all_vmt_vtf_references_exist": true
+      },
+      "actual": {
+        "schema": "cf2.source1.material-closure.v1",
+        "qc": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\v_rif_m4a1.qc",
+        "smd": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\cf_bornbeast_full_m4a4.smd",
+        "addon": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon",
+        "cdmaterials": [
+          "models\\weapons\\V_models\\rif_m4a1\\"
+        ],
+        "smd_materials": [
+          "rif_m4a1"
+        ],
+        "closure": [
+          {
+            "smd_material": "rif_m4a1",
+            "vmt_candidates": [
+              "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon\\materials\\models\\weapons\\V_models\\rif_m4a1\\rif_m4a1.vmt"
+            ],
+            "unique_vmt": true,
+            "texture_references": [
+              {
+                "parameter": "$basetexture",
+                "value": "models/weapons/v_models/rif_m4a1/rif_m4a1",
+                "vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+                "exists": true
+              },
+              {
+                "parameter": "$selfillummask",
+                "value": "models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum",
+                "vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+                "exists": true
+              }
+            ],
+            "pass": true
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\material_closure_report.json",
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\v_rif_m4a1.qc",
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\source1\\cf_bornbeast_full_m4a4.smd"
+      ]
+    },
+    "prototype_material_provenance": {
+      "expected": {
+        "final_target_identity": false,
+        "final_cf_material": false,
+        "classification": "EXTERNAL_REFERENCE / PROTOTYPE MATERIAL"
+      },
+      "actual": {
+        "final_target_identity": false,
+        "final_cf_material": false,
+        "classification": "EXTERNAL_REFERENCE / PROTOTYPE MATERIAL",
+        "build_report_policy": "EXTERNAL_REFERENCE / PROTOTYPE MATERIAL"
+      },
+      "pass": true,
+      "status": "checked",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\prototype_01_manifest.json",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\build_report.json"
+      ]
+    },
+    "addon_staging_hashes": {
+      "expected": {
+        "files": {
+          "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt": {
+            "size_bytes": 345,
+            "sha256": "5da1293da0d7768e8e99bf17ee6e0d064534e57fa08b9cc98fc9f2b904df1dc9"
+          },
+          "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf": {
+            "size_bytes": 175000,
+            "sha256": "84073911c0f5a8e165ee2fb84481b487823c7956d0539e06c99febb21d7d7ed0"
+          },
+          "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf": {
+            "size_bytes": 175000,
+            "sha256": "a7137386bfc0fd873d1f7ccc11eafcaff899f2c9630d5385aa53450f52be8265"
+          },
+          "models/weapons/v_rif_m4a1.ani": {
+            "size_bytes": 27032,
+            "sha256": "681c730108798e0b4e767c348503b5f5c0ce62c5ac8b48b7268c2e16efc7f408"
+          },
+          "models/weapons/v_rif_m4a1.dx80.vtx": {
+            "size_bytes": 56882,
+            "sha256": "a2b84b5863540d45a246594dcda7898beb52e50bd9e760e68d4ad5759ff43659"
+          },
+          "models/weapons/v_rif_m4a1.dx90.vtx": {
+            "size_bytes": 56882,
+            "sha256": "3682a7d649e0bacebb54aa2dc59bce0e75ce90b63216ad2f297764459ee99a29"
+          },
+          "models/weapons/v_rif_m4a1.mdl": {
+            "size_bytes": 50588,
+            "sha256": "9ac365192a3be10411e982fbb60cd4b74872c3b27da50590c3d4045c5b3fbd3b"
+          },
+          "models/weapons/v_rif_m4a1.sw.vtx": {
+            "size_bytes": 56858,
+            "sha256": "e8ebfc750063fe93cf02503f2aea472367597d9f82fe4cba5e085741706d0c78"
+          },
+          "models/weapons/v_rif_m4a1.vvd": {
+            "size_bytes": 232320,
+            "sha256": "606dac97ea65459625a7489d23472d01647acc2cca9ff89d529103ce0164564b"
+          }
+        },
+        "status": "equal_when_staging_exists"
+      },
+      "actual": {
+        "addon": {
+          "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt": {
+            "size_bytes": 345,
+            "sha256": "5da1293da0d7768e8e99bf17ee6e0d064534e57fa08b9cc98fc9f2b904df1dc9"
+          },
+          "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf": {
+            "size_bytes": 175000,
+            "sha256": "84073911c0f5a8e165ee2fb84481b487823c7956d0539e06c99febb21d7d7ed0"
+          },
+          "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf": {
+            "size_bytes": 175000,
+            "sha256": "a7137386bfc0fd873d1f7ccc11eafcaff899f2c9630d5385aa53450f52be8265"
+          },
+          "models/weapons/v_rif_m4a1.ani": {
+            "size_bytes": 27032,
+            "sha256": "681c730108798e0b4e767c348503b5f5c0ce62c5ac8b48b7268c2e16efc7f408"
+          },
+          "models/weapons/v_rif_m4a1.dx80.vtx": {
+            "size_bytes": 56882,
+            "sha256": "a2b84b5863540d45a246594dcda7898beb52e50bd9e760e68d4ad5759ff43659"
+          },
+          "models/weapons/v_rif_m4a1.dx90.vtx": {
+            "size_bytes": 56882,
+            "sha256": "3682a7d649e0bacebb54aa2dc59bce0e75ce90b63216ad2f297764459ee99a29"
+          },
+          "models/weapons/v_rif_m4a1.mdl": {
+            "size_bytes": 50588,
+            "sha256": "9ac365192a3be10411e982fbb60cd4b74872c3b27da50590c3d4045c5b3fbd3b"
+          },
+          "models/weapons/v_rif_m4a1.sw.vtx": {
+            "size_bytes": 56858,
+            "sha256": "e8ebfc750063fe93cf02503f2aea472367597d9f82fe4cba5e085741706d0c78"
+          },
+          "models/weapons/v_rif_m4a1.vvd": {
+            "size_bytes": 232320,
+            "sha256": "606dac97ea65459625a7489d23472d01647acc2cca9ff89d529103ce0164564b"
+          }
+        },
+        "staging": {}
+      },
+      "pass": true,
+      "status": "deferred_until_package",
+      "evidence": [
+        "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon",
+        "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging"
+      ]
+    }
+  },
+  "legacy_checks": {
+    "check_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\check_report.json",
+    "material_closure_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\material_closure_report.json"
+  }
+}

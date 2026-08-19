@@ -1,0 +1,97 @@
+{
+  "schema": "cf2.pipeline.deploy-report.v1",
+  "task_id": "P4-T06",
+  "profile_id": "Prototype-01",
+  "generated_at": "2026-08-19T14:50:47.730722+00:00",
+  "pass": true,
+  "action": "created",
+  "reason": null,
+  "target": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_p4_inspect_safe_02",
+  "staging_root": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging",
+  "package_manifest": {
+    "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging\\package_manifest.json",
+    "sha256": "5f39bed000532c3f28ab85ac017e0db7269fdbe54af15e1aa900f562ed4063ea"
+  },
+  "payload_hash_policy": {
+    "package_manifest_excluded": true,
+    "excluded_names": [
+      "package_manifest.json"
+    ]
+  },
+  "run_binding": {
+    "run_id": "run_20260819_144941_648227",
+    "manifest": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\prototype_01_manifest.json",
+      "sha256": "9f2b7e4fcae9fc38daca4acfdf521a9a58b8820b757bf9d88beb363b70b84d09",
+      "exists": true,
+      "profile_id": "Prototype-01",
+      "run_id": null
+    },
+    "reports": {
+      "check": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\check_report.json",
+        "sha256": "a718d715ff6610a7dbed850b66a44a60443233a27754e1c69f818a1fe943f266",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": null
+      },
+      "build": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\build_report.json",
+        "sha256": "99596816b4338dda658732b357d896682de9cae0871d578f4ab99f0606567fdc",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": "run_20260819_144941_648227",
+        "run_id_match": true
+      },
+      "validate": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\validation_report.json",
+        "sha256": "2960ce9c4b0a27212805d37a05256848c4a91a90b307d512b876307425782267",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": "run_20260819_144941_648227",
+        "run_id_match": true
+      },
+      "upstream_trace": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\upstream_trace_report.json",
+        "sha256": "5787953babbb8c9f006a61660c9888e548498beec2082631e04da3acfc5787c5",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": "run_20260819_144941_648227",
+        "run_id_match": true
+      }
+    }
+  },
+  "staging": {
+    "file_count": 9,
+    "hashes": {
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt": "5da1293da0d7768e8e99bf17ee6e0d064534e57fa08b9cc98fc9f2b904df1dc9",
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf": "84073911c0f5a8e165ee2fb84481b487823c7956d0539e06c99febb21d7d7ed0",
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf": "a7137386bfc0fd873d1f7ccc11eafcaff899f2c9630d5385aa53450f52be8265",
+      "models/weapons/v_rif_m4a1.ani": "681c730108798e0b4e767c348503b5f5c0ce62c5ac8b48b7268c2e16efc7f408",
+      "models/weapons/v_rif_m4a1.dx80.vtx": "a2b84b5863540d45a246594dcda7898beb52e50bd9e760e68d4ad5759ff43659",
+      "models/weapons/v_rif_m4a1.dx90.vtx": "3682a7d649e0bacebb54aa2dc59bce0e75ce90b63216ad2f297764459ee99a29",
+      "models/weapons/v_rif_m4a1.mdl": "9ac365192a3be10411e982fbb60cd4b74872c3b27da50590c3d4045c5b3fbd3b",
+      "models/weapons/v_rif_m4a1.sw.vtx": "e8ebfc750063fe93cf02503f2aea472367597d9f82fe4cba5e085741706d0c78",
+      "models/weapons/v_rif_m4a1.vvd": "606dac97ea65459625a7489d23472d01647acc2cca9ff89d529103ce0164564b"
+    }
+  },
+  "target_before": {
+    "file_count": 0,
+    "hashes": {}
+  },
+  "target_after": {
+    "file_count": 9,
+    "hashes": {
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt": "5da1293da0d7768e8e99bf17ee6e0d064534e57fa08b9cc98fc9f2b904df1dc9",
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf": "84073911c0f5a8e165ee2fb84481b487823c7956d0539e06c99febb21d7d7ed0",
+      "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf": "a7137386bfc0fd873d1f7ccc11eafcaff899f2c9630d5385aa53450f52be8265",
+      "models/weapons/v_rif_m4a1.ani": "681c730108798e0b4e767c348503b5f5c0ce62c5ac8b48b7268c2e16efc7f408",
+      "models/weapons/v_rif_m4a1.dx80.vtx": "a2b84b5863540d45a246594dcda7898beb52e50bd9e760e68d4ad5759ff43659",
+      "models/weapons/v_rif_m4a1.dx90.vtx": "3682a7d649e0bacebb54aa2dc59bce0e75ce90b63216ad2f297764459ee99a29",
+      "models/weapons/v_rif_m4a1.mdl": "9ac365192a3be10411e982fbb60cd4b74872c3b27da50590c3d4045c5b3fbd3b",
+      "models/weapons/v_rif_m4a1.sw.vtx": "e8ebfc750063fe93cf02503f2aea472367597d9f82fe4cba5e085741706d0c78",
+      "models/weapons/v_rif_m4a1.vvd": "606dac97ea65459625a7489d23472d01647acc2cca9ff89d529103ce0164564b"
+    }
+  },
+  "post_deploy_hashes_match": true
+}

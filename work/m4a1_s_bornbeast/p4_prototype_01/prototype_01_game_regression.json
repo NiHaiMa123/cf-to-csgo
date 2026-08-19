@@ -1,0 +1,51 @@
+{
+  "schema": "cf2.p4.prototype-game-regression.v1",
+  "task_id": "P4-T08",
+  "profile_id": "Prototype-01",
+  "status": "GAME_GATE_REWORK_REQUIRED",
+  "generated_from": {
+    "automatic_deploy": "work/m4a1_s_bornbeast/p4_prototype_01/deploy_report.json",
+    "automatic_deploy_pass": true,
+    "addon": "p_cf_bornbeast_m4a4_p4_inspect_safe_02",
+    "target": "D:/steam/steamapps/common/csgo legacy/migi/csgo/addons/p_cf_bornbeast_m4a4_p4_inspect_safe_02",
+    "payload_files": 9,
+    "user_confirmation": "inspect_retest_failed_no_visible_change",
+    "previous_revision": {
+      "addon": "p_cf_bornbeast_m4a4_p4_inspect_safe_01",
+      "inspect_status": "not_tested",
+      "issue": "safe_idle_fallback 使用一帧 idle，按 F 时没有可见 Inspect 动作。"
+    }
+  },
+  "activation_instructions": {
+      "enable_only_for_this_test": "p_cf_bornbeast_m4a4_p4_inspect_safe_02",
+    "move_conflicting_m4a4_addons_to_mods_temp": ["p_cf_bornbeast_m4a4_p4_review_01", "p_cf_m4a4_bornbeast_final"],
+    "historical_mods_temp": "do_not_use_as_evidence_or_overwrite"
+  },
+  "checks": [
+    {"id": "model_fov", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "uv_material", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "idle", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "draw", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "fire_shoot1", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "fire_shoot2", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "fire_shoot3", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "reload_clip", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "bolt", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "inspect", "status": "fail", "user_evidence": "用户反馈：按 F 没反应/画面没有变化。"},
+    {"id": "muzzle", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "shell_eject", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "console_errors", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
+    {"id": "rollback_after_disable", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"}
+  ],
+  "pass_policy": "Only explicit user confirmation may change a check from not_tested to pass; automatic animation or compile evidence cannot substitute for game confirmation.",
+  "blender_review": {
+    "status": "REWORK_REQUIRED",
+    "scene": "work/m4a1_s_bornbeast/blender_arm_reference/inspect_clean_review.blend",
+    "retarget_attempt_report": "work/m4a1_s_bornbeast/blender_arm_reference/retarget_attempt_report.json",
+    "animation": "work/m4a1_s_bornbeast/p4_prototype_01/runs/run_20260819_144941_648227/source1/v_rif_m4a1_anims/lookat01_safe.smd",
+    "frames_checked": [1, 40, 80, 120, 159],
+    "finding": "MCP 导入后确认 weapon Inspect 有 160 帧且枪体会运动；直接 local transform 复制会在 frame 80 脱离。进一步尝试模型空间 retarget（全骨骼和前臂链两种）后，frame 40/80/120 仍无法保持双手与枪体接触，因此 retarget 尚未通过。",
+    "is_game_evidence": false
+  },
+  "retest_required": ["完成 Blender retarget/保守动作并通过 frame 1/40/80/120/159 接触检查后，再重新部署 addon 做 Inspect 实机确认"]
+}

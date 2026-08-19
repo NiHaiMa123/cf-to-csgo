@@ -1,6 +1,8 @@
 # CF 武器 → CS:GO Legacy Source 1 转换流水线计划
 
-> 最后更新：2026-08-18
+> 最后更新：2026-08-19
+>
+> 当前状态：**P4-T08 Inspect REWORK_REQUIRED；Blender 已确认 safe_02 的外部手臂层级错位，P4 总 Gate 仍未完成**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -41,45 +43,36 @@
 5. **MIGI 与游戏内闭环**
    - 当前游戏内能正常看到 CF 枪模、贴图和官方 M4A4 动作。
    - 构建目录与活动 MIGI addon 已做逐文件哈希一致性检查。
-   - 当前唯一活动测试 addon：`p_cf_bornbeast_m4a4_f4_recognizable_tmp`。
+   - 当前唯一活动测试 addon：`p_cf_bornbeast_m4a4_p4_inspect_safe_02`（MIGI 不提供单独禁用按钮；旧版本已移入 `mods_temp`）。
    - 上述实机可运行版本正式冻结为 **`Prototype-01`**：它是技术验证样机，不保证资产身份就是最终“雷神”，也可能是黑骑士或其他 M4 变体；当前阶段不再以枪型准确性为主线。
 
 ### 当前正在做
 
-**P4：流水线稳定化与单入口回归。**
+**P4：通用流水线稳定化与 REWORK 修复（执行 `P4_TASKS.md` 验收清单）。**
 
-当前不再继续猜目标枪，也不因 B1/B2/C2 技术债推翻已经成立的 `Prototype-01`。工作重点是把已有脚本串成稳定、可重复、失败即停止的通用流水线：
-
-- 统一输入 manifest、构建目录、报告目录和 MIGI staging 规则；
-- 固化从 LTB 静态导出到 M4A4 Source 1 编译的可重复命令；
-- 把 mesh、UV、bone mapping、sequence、attachment、material closure、编译产物和 MIGI 包检查纳入同一验证入口；
-- 用 `Prototype-01` 作为 golden fixture，验证干净构建不会依赖 Blender 当前会话、旧 addon 或手工复制；
-- 补齐 Idle、Draw、Fire、Reload、Inspect、Clip、Bolt、muzzle、shell eject 的一次性实机回归记录；
-- 保持现有可运行包不回退，新增构建必须输出到新 staging 后才允许替换活动 addon。
+- **当前权威状态**：`P4-T08 GAME_GATE_REWORK_REQUIRED / P4 总 Gate 未完成`。
+- **现场基线状态**：
+  - D3/F4 原型 (`p_cf_bornbeast_m4a4_f4_recognizable_tmp`)：`user_confirmed_previous_stage`（已知可运行视觉基线，必须保留）；
+  - P4 staging (`work/m4a1_s_bornbeast/p4_prototype_01/staging`)：`automated_only_not_user_confirmed`（虽与历史 MOD 一致，但完整流水线、语义 Gate 和实机行为未经证明）；
+  - 历史 final MOD (`p_cf_m4a4_bornbeast_final`)：`mods_temp/out_of_scope_unreviewed`（已按 MIGI 现场规则停用，不属于 P4 验收范围，不得作为输入或通过证据）。
+- **已完成**：P4-T01 至 P4-T07。T05 的 15 个语义 Gate、T06 的 package/staging/deploy 安全边界、T07 的 17 个负向 mutation 和双 run 语义可复现性均已通过。
+  - **当前正在做**：P4 自动 Gate 已通过；safe_01 的 idle 回退导致按 F 无可见动作。safe_02 虽保留了官方 160 帧 weapon Inspect，但 Blender MCP 检查显示直接复制 local transform 会错位；进一步尝试模型空间 retarget 后，frame 40/80/120 仍不能保持双手握枪，因此没有生成新的生产 addon。
+  - **下一步**：基于实际枪体接触点重新设计 Inspect retarget，或明确采用 Prototype 的冻结/无动作 Inspect；在 Blender 的 frame 1/40/80/120/159 通过接触检查前，不再要求用户重复测试游戏 addon。其他已通过项目保持冻结。
+- **后续再做**：Blender 检查通过后重新生成唯一测试 addon，再进行一次用户实机 Inspect Gate；通过后才进入 P4-T09 文档与冻结。
+- **已知技术债**：冻结 C3 aligned OBJ 仅作为可选回归参考；缺失时仍执行矩阵/语义 Gate，但数值比较会在报告中标记为 skipped。B1/B2/C2 技术债和 03–08 Parent fallback 仍不阻塞 Prototype 主线。Crowbar 0.71 启动时要求 `%APPDATA%\ZeqMacaw` 可写；受限自动化环境执行 T04 时必须授予该目录写权限。当前真实构建 run `run_20260819_134459_016321` 已完成 Crowbar 回环且不含 recovery 标记。
 
 ### 下一步
 
-1. 新增统一的 `Prototype-01` manifest，明确：
-   - CF 输入 LTB；
-   - M4A4 reference；
-   - mesh→bone mapping；
-   - 坐标变换；
-   - `EXTERNAL_REFERENCE / PROTOTYPE MATERIAL` 来源与 `final_cf_material=false`；
-   - build/work/MIGI staging 输出。
-2. 建立单入口 `check → build → validate → package`，默认不写 Steam/MIGI。
-3. 从项目输入重新跑一遍干净构建，并与当前已通过包比较结构与关键哈希。
-4. 做一次完整而非逐零件的实机矩阵，关闭 `Prototype-01` 功能门。
-5. 冻结该版本为首个“流水线参考样本”，然后再开始最终雷神资产定位。
+1. 修复并在 Blender 中验证 Inspect 的手臂/手指 retarget（safe_02 当前不接受）；
+2. 生成新的隔离 addon 后再完成一次 Inspect 实机确认；
+3. 经独立 Reviewer 审计通过后，进入 P4-T09 文档与冻结；
+4. 在 Inspect 返工通过前，保持 `REWORK_REQUIRED`，不宣称 Prototype 冻结。
 
 ### 后续再做
 
-- 在本地 CF 原始资源中定位真正目标雷神的 LTB/DTX/TGA/CFG/WAV；
-- 用户提供明确参考图或贴图后，对候选资产做批量缩略图、几何和纹理指纹比对；
-- 用最终本地 CF 资产替换 `Prototype-01` 输入并重跑同一流水线；
-- 解析 CF animation clips，并在需要时替换官方 M4A4 fallback 动作；
-- 修 B1 rigid bone index、B2 bind/animation 语义和 C2 未决分件的最终骨骼映射；
-- 制作第三人称、落地武器和掉落弹匣模型；
-- 完成最终材质、动态红光、音效、性能档位和发布包。
+- **P5：最终雷神资产定位与来源确认**（在本地 CF 原始资源中定位真正目标雷神的 LTB/DTX/TGA/CFG/WAV 并完成来源证明）；
+- **P6：最终官方雷神资产替换与发布闭环**（用最终本地 CF 资产替换 `Prototype-01` 输入并重跑同一流水线，完成最终材质与发布包）；
+- **P7：增强特性**（CF 原版动画、音效集成、第三人称/落地武器/掉落弹匣模型与自定义 Inspect 等）。
 
 ### 当前 `Prototype-01` 与“最终雷神”的区别
 

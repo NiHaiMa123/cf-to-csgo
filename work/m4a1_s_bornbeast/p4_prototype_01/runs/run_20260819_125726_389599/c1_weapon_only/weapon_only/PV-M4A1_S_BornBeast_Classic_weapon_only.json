@@ -1,0 +1,96 @@
+{
+  "bucket": "weapon_only",
+  "source_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+  "meshes": [
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+      "material": "M4A1S_BornBeast",
+      "vertices": 3074,
+      "uvs": 3074,
+      "normals": 3074,
+      "triangles": 3407,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04",
+      "material": "M4A1S_BornBeast04",
+      "vertices": 46,
+      "uvs": 46,
+      "normals": 46,
+      "triangles": 52,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02",
+      "material": "M4A1S_BornBeast02",
+      "vertices": 133,
+      "uvs": 133,
+      "normals": 133,
+      "triangles": 121,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03",
+      "material": "M4A1S_BornBeast03",
+      "vertices": 165,
+      "uvs": 165,
+      "normals": 165,
+      "triangles": 184,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07",
+      "material": "M4A1S_BornBeast07",
+      "vertices": 46,
+      "uvs": 46,
+      "normals": 46,
+      "triangles": 52,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08",
+      "material": "M4A1S_BornBeast08",
+      "vertices": 46,
+      "uvs": 46,
+      "normals": 46,
+      "triangles": 52,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05",
+      "material": "M4A1S_BornBeast05",
+      "vertices": 46,
+      "uvs": 46,
+      "normals": 46,
+      "triangles": 52,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06",
+      "material": "M4A1S_BornBeast06",
+      "vertices": 46,
+      "uvs": 46,
+      "normals": 46,
+      "triangles": 52,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01",
+      "material": "M4A1S_BornBeast01",
+      "vertices": 44,
+      "uvs": 44,
+      "normals": 44,
+      "triangles": 36,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_125726_389599\\c1_weapon_only\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.mtl"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "cf2.p6.final-materials-report.v1",
+  "timestamp_utc": "2026-08-18T16:32:45.213732+00:00",
+  "final_cf_material": true,
+  "final_target_identity": true,
+  "local_cf_sources": {
+    "dtx": "data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1_S_BornBeast.DTX",
+    "dtx_sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+    "alpha_tga": "data\\rf017\\ModelTextures\\AlphaMap\\M4A1_S_BornBeast_alpha.TGA",
+    "alpha_sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+    "specular_tga": "data\\rf017\\ModelTextures\\SpecularMap\\M4A1_S_BornBeast_S.TGA",
+    "specular_sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+    "normal_tga": "data\\rf017\\ModelTextures\\NormalMap\\M4A1_S_BornBeast_N.TGA",
+    "normal_sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+    "shader_cfg": "data\\rf017\\ModelTextures\\Shader\\WeaponShader\\M4A1_S_BornBeast.CFG",
+    "shader_sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87"
+  },
+  "compiled_vtfs": {
+    "base_vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f4_recognizable_classic\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+    "base_vtf_sha256": "9a34546f6082d688b7c7b57befd39ef1fb4069d5f79792f1ecb2f4703add5d31",
+    "selfillum_vtf": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f4_recognizable_classic\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+    "selfillum_vtf_sha256": "7335fae4c44cb83f09ff4338e09d651da2baa4789b03c2b7ae7ed3db6291225f",
+    "vmt": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\f4_recognizable_classic\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt"
+  },
+  "closure_report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p6_final_materials\\p6_material_closure_report.json",
+  "pass": true
+}

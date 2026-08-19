@@ -1,0 +1,133 @@
+CF Rez Manager OBJ texture report
+
+Sources: 1
+Meshes: 21
+Texture references: 21
+Missing textures: 21
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Fview-hand2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Fview-arm2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: frontside01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object336
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object344
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object361
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object362
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object363
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object364
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object365
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object366
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object367
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object368
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object343
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object345
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object351
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object352
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object354
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object357
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: Object359
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_Silencer_Predator_Classic.LTB
+Mesh: middle01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_Silencer_Predator_Classic, PV-M4A1_Silencer_Predator_Classic, M4A1_Silencer_Predator_Classic
+  Exported: <missing>
+

@@ -1,0 +1,245 @@
+{
+  "Schema": "cf2.lithtech.obj-export.v2",
+  "GeneratedAtUtc": "2026-08-18T16:38:12.8778258+00:00",
+  "ObjPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_renders\\PV-M4A1_S_BornBeast2.obj",
+  "MtlPath": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_renders\\PV-M4A1_S_BornBeast2.mtl",
+  "TextureDirectory": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\m4_renders\\PV-M4A1_S_BornBeast2_textures",
+  "TransformMode": "legacy_center_scale",
+  "Transform": {
+    "CenterX": 0,
+    "CenterY": 7.203574180603027,
+    "CenterZ": 4.336654186248779,
+    "Scale": 0.14647606596394708,
+    "InversePosition": "raw_x = (export_x / scale) \u002B center_x; raw_y = (export_y / scale) \u002B center_y; raw_z = (export_z / scale) \u002B center_z",
+    "InverseUv": "export_v = 1 - raw_v; raw_v = 1 - export_v"
+  },
+  "Sources": [
+    {
+      "Name": "PV-M4A1_S_BornBeast2",
+      "ResourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "SourceByteCount": 275489,
+      "DecodedByteCount": 1039359,
+      "MeshCount": 7,
+      "VertexCount": 9270,
+      "TriangleCount": 8905
+    }
+  ],
+  "Meshes": [
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "MeshName": "Fview-hand2",
+      "GroupName": "PV-M4A1_S_BornBeast2_Fview-hand2",
+      "MaterialName": "Fview-hand2",
+      "VertexCount": 1090,
+      "TriangleCount": 1060,
+      "UvCount": 1090,
+      "NormalCount": 1090,
+      "BoneWeightCount": 1090,
+      "BoneIndexCount": 1090,
+      "RawBounds": {
+        "Min": [
+          -14.260482788085938,
+          20.635520935058594,
+          -1.5058300495147705
+        ],
+        "Max": [
+          14.260482788085938,
+          22.2890567779541,
+          0.667119026184082
+        ]
+      },
+      "RawVertexChecksum": "2dfc50758d0a81aced08d1e86068df1ffe055aaddde7d9f632f5d11073cf01e2",
+      "RawUvChecksum": "c3f11e46e602b1597044e8b583224c4be891ab66aac673bc69999ed78f8bd67f",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "MeshName": "Fview-arm2",
+      "GroupName": "PV-M4A1_S_BornBeast2_Fview-arm2",
+      "MaterialName": "Fview-arm2",
+      "VertexCount": 190,
+      "TriangleCount": 274,
+      "UvCount": 190,
+      "NormalCount": 190,
+      "BoneWeightCount": 190,
+      "BoneIndexCount": 190,
+      "RawBounds": {
+        "Min": [
+          -10.727269172668457,
+          20.647289276123047,
+          -1.3173489570617676
+        ],
+        "Max": [
+          10.727269172668457,
+          22.56444549560547,
+          0.6255469918251038
+        ]
+      },
+      "RawVertexChecksum": "55f57242d48bc651fff3191e40de4b383a23484c598269a4712e082903fd481c",
+      "RawUvChecksum": "7a157965b43f95926504a72328dd304d3477bcefb278ee921b62557247c1c60e",
+      "MaxPositionRoundTripError": 8.881784197001252E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "MeshName": "PV-M4A1_S_BornBeast003",
+      "GroupName": "PV-M4A1_S_BornBeast2_PV-M4A1_S_BornBeast003",
+      "MaterialName": "PV-M4A1_S_BornBeast003",
+      "VertexCount": 7208,
+      "TriangleCount": 6824,
+      "UvCount": 7208,
+      "NormalCount": 7208,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.8975899815559387,
+          -7.433035850524902,
+          -4.349515914916992
+        ],
+        "Max": [
+          1.9426989555358887,
+          -2.3707809448242188,
+          13.02282428741455
+        ]
+      },
+      "RawVertexChecksum": "aa04d51bcd918a91cac9fdc9d4b6a9487a3317b043353bc77ee9dbfa025bc1a3",
+      "RawUvChecksum": "c18d6b252a926e54e6235af806804609885802dea6da44159a9a54d09803c4e7",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "MeshName": "mac",
+      "GroupName": "PV-M4A1_S_BornBeast2_mac",
+      "MaterialName": "mac",
+      "VertexCount": 397,
+      "TriangleCount": 372,
+      "UvCount": 397,
+      "NormalCount": 397,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.0347950458526611,
+          -8.157297134399414,
+          2.658381938934326
+        ],
+        "Max": [
+          1.7756990194320679,
+          -5.214840888977051,
+          4.865239143371582
+        ]
+      },
+      "RawVertexChecksum": "0c83e206eda44aab77e76676e790854f05afb5f16b0fdefb1aa7be3513e5cdd6",
+      "RawUvChecksum": "c3b41a7d74d66308298b1cb56a3b4e20300177509c991b5d76950699943ac49e",
+      "MaxPositionRoundTripError": 1.7763568394002505E-15,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "MeshName": "reload",
+      "GroupName": "PV-M4A1_S_BornBeast2_reload",
+      "MaterialName": "reload",
+      "VertexCount": 141,
+      "TriangleCount": 129,
+      "UvCount": 141,
+      "NormalCount": 141,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          1.0130980014801025,
+          -3.667778968811035,
+          0.04638800024986267
+        ],
+        "Max": [
+          1.802098035812378,
+          -3.4986588954925537,
+          3.133718967437744
+        ]
+      },
+      "RawVertexChecksum": "b2ed66d24030c1fe0d7c4efe174904a04d64a6868972541deb5fcbf959f17f93",
+      "RawUvChecksum": "17259025f20adf26d092d7dcd9f027645d82dcb28ad2a266dec1a56bfa75518b",
+      "MaxPositionRoundTripError": 4.440892098500626E-16,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "MeshName": "obj01",
+      "GroupName": "PV-M4A1_S_BornBeast2_obj01",
+      "MaterialName": "obj01",
+      "VertexCount": 152,
+      "TriangleCount": 170,
+      "UvCount": 152,
+      "NormalCount": 152,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.8697360157966614,
+          -5.248709201812744,
+          2.788733959197998
+        ],
+        "Max": [
+          1.0567330121994019,
+          -4.65103006362915,
+          3.386414051055908
+        ]
+      },
+      "RawVertexChecksum": "1204f504eb89f96291ac71760a424d9311a2ed196d0398de7f6201afc9bc309d",
+      "RawUvChecksum": "99795faaf9f697a64dd7ca327f21a1b1a78cab92c708f7967e90fa64f40a3c70",
+      "MaxPositionRoundTripError": 0,
+      "MaxUvRoundTripError": 0
+    },
+    {
+      "SourcePath": "Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast2.LTB",
+      "MeshName": "obj02",
+      "GroupName": "PV-M4A1_S_BornBeast2_obj02",
+      "MaterialName": "obj02",
+      "VertexCount": 92,
+      "TriangleCount": 76,
+      "UvCount": 92,
+      "NormalCount": 92,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          0.9467790126800537,
+          -3.926647901535034,
+          1.4646509885787964
+        ],
+        "Max": [
+          1.1028029918670654,
+          -3.7425050735473633,
+          2.1163370609283447
+        ]
+      },
+      "RawVertexChecksum": "f74a8f5d36881b78f631ee4c7d11692ca61118a6a02d1ab434cf9007bfa84b2f",
+      "RawUvChecksum": "6c69017f84bc745b92762ddf3d8576f9f1566c2922524a8a23a880e4f3e66c7a",
+      "MaxPositionRoundTripError": 1.1102230246251565E-16,
+      "MaxUvRoundTripError": 0
+    }
+  ],
+  "Materials": [
+    "Fview-hand2",
+    "Fview-arm2",
+    "PV-M4A1_S_BornBeast003",
+    "mac",
+    "reload",
+    "obj01",
+    "obj02"
+  ],
+  "TextureReferenceCount": 7,
+  "Totals": {
+    "VertexCount": 9270,
+    "TriangleCount": 8905,
+    "UvCount": 9270,
+    "NormalCount": 9270,
+    "BoneWeightCount": 1280,
+    "BoneIndexCount": 1280,
+    "MeshCount": 7,
+    "MaterialCount": 7
+  }
+}

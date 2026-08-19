@@ -1,0 +1,57 @@
+{
+  "PV-M4A1_S_BornBeast": {
+    "nodes": 0,
+    "node_names": [],
+    "meshes": 0,
+    "mesh_names": [],
+    "total_verts": 0,
+    "total_tris": 0,
+    "animations": []
+  },
+  "PV-M4A1_S_BornBeast2": {
+    "nodes": 0,
+    "node_names": [],
+    "meshes": 0,
+    "mesh_names": [],
+    "total_verts": 0,
+    "total_tris": 0,
+    "animations": []
+  },
+  "PV-M4A1_Silencer_Predator": {
+    "nodes": 0,
+    "node_names": [],
+    "meshes": 0,
+    "mesh_names": [],
+    "total_verts": 0,
+    "total_tris": 0,
+    "animations": []
+  },
+  "PV-M4A1_S_IronBeast-NobleGold": {
+    "nodes": 0,
+    "node_names": [],
+    "meshes": 0,
+    "mesh_names": [],
+    "total_verts": 0,
+    "total_tris": 0,
+    "animations": []
+  },
+  "PV-M4A1_Silencer_PrismBeast": {},
+  "PV-M4A1_S_Transformers": {
+    "nodes": 0,
+    "node_names": [],
+    "meshes": 0,
+    "mesh_names": [],
+    "total_verts": 0,
+    "total_tris": 0,
+    "animations": []
+  },
+  "PV-M4A1_S_Jewelry": {
+    "nodes": 0,
+    "node_names": [],
+    "meshes": 0,
+    "mesh_names": [],
+    "total_verts": 0,
+    "total_tris": 0,
+    "animations": []
+  }
+}

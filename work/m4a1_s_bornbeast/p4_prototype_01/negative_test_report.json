@@ -1,0 +1,180 @@
+{
+  "schema": "cf2.p4.t07-report.v1",
+  "task_id": "P4-T07",
+  "mutation_count": 17,
+  "passed_mutations": 17,
+  "failed_mutations": [],
+  "mutations": [
+    {
+      "name": "ltb_hash",
+      "expected_stage": "manifest_contract",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "Input hash mismatch: 'cf_ltb_source' expected 0000000000000000000000000000000000000000000000000000000000000000, got 5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7"
+      ],
+      "stdout": "manifest contract rejected mutation"
+    },
+    {
+      "name": "b3_triangle",
+      "expected_stage": "b3_semantics",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "b3_semantics"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_b3_triangle_a5n2jaac\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"b3_semantics\"\n  ]\n}\n"
+    },
+    {
+      "name": "b3_group",
+      "expected_stage": "b3_semantics",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "b3_semantics"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_b3_group_7_zas221\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"b3_semantics\"\n  ]\n}\n"
+    },
+    {
+      "name": "b3_uv_index",
+      "expected_stage": "b3_semantics",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "b3_semantics"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_b3_uv_index_d_wgz67w\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"b3_semantics\"\n  ]\n}\n"
+    },
+    {
+      "name": "b3_missing_normal",
+      "expected_stage": "b3_semantics",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "b3_semantics"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_b3_missing_normal_wf0_7awr\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"b3_semantics\"\n  ]\n}\n"
+    },
+    {
+      "name": "mapping_parent_clip_swap",
+      "expected_stage": "smd_manifest_bone_corners",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "smd_manifest_bone_corners"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_mapping_parent_clip_swap_ydgkbb6d\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"smd_manifest_bone_corners\"\n  ]\n}\n"
+    },
+    {
+      "name": "c3_matrix_convention",
+      "expected_stage": "c3_matrix_and_semantics",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "c3_matrix_and_semantics"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_c3_matrix_convention_q0i5engi\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"c3_matrix_and_semantics\"\n  ]\n}\n"
+    },
+    {
+      "name": "c3_negative_determinant",
+      "expected_stage": "c3_matrix_and_semantics",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "c3_matrix_and_semantics"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_c3_negative_determinant_bxvvi199\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"c3_matrix_and_semantics\"\n  ]\n}\n"
+    },
+    {
+      "name": "sequence_name_same_count",
+      "expected_stage": "sequence_names_and_count",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "sequence_names_and_count"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_sequence_name_same_count_7bsn01iw\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"sequence_names_and_count\"\n  ]\n}\n"
+    },
+    {
+      "name": "attachment_bone_same_count",
+      "expected_stage": "attachment_names_and_bones",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "attachment_names_and_bones"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_attachment_bone_same_count_ao8ye8zv\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"attachment_names_and_bones\"\n  ]\n}\n"
+    },
+    {
+      "name": "missing_sw_vtx",
+      "expected_stage": "complete_binary_set",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "complete_binary_set"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_missing_sw_vtx_r__ho5xy\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"complete_binary_set\"\n  ]\n}\n"
+    },
+    {
+      "name": "missing_ani",
+      "expected_stage": "complete_binary_set",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "complete_binary_set"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_missing_ani_fhb_z8_x\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"complete_binary_set\"\n  ]\n}\n"
+    },
+    {
+      "name": "missing_vtf_material_closure",
+      "expected_stage": "material_closure",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "material_closure"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_missing_vtf_material_closure_swdf3m9u\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"material_closure\"\n  ]\n}\n"
+    },
+    {
+      "name": "final_cf_material",
+      "expected_stage": "manifest_contract",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "P4 contract requires final_cf_material=false, got: True"
+      ],
+      "stdout": "manifest contract rejected mutation"
+    },
+    {
+      "name": "output_repo_root",
+      "expected_stage": "manifest_contract",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "Output 'build_root' cannot point to 'work/' root: 'work'",
+        "Output 'build_root' must resolve exactly to 'D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01', got 'D:\\project\\cf_to_csgo\\work'"
+      ],
+      "stdout": "manifest contract rejected mutation"
+    },
+    {
+      "name": "deploy_without_target",
+      "expected_stage": "deploy_guard",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "explicit_target_required"
+      ]
+    },
+    {
+      "name": "deploy_different_existing_content",
+      "expected_stage": "deploy_guard",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "different_content_rejected"
+      ]
+    }
+  ],
+  "isolation": "temporary shadow project for artifact mutations; deploy guards use temporary game root; no active addon touched",
+  "pass": true
+}

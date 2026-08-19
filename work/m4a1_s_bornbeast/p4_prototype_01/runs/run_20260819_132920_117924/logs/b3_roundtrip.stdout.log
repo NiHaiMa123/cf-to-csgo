@@ -1,0 +1,11 @@
+{
+  "report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_132920_117924\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json",
+  "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_132920_117924\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+  "passed": true,
+  "groups": 11,
+  "vertices": 4926,
+  "uvs": 4926,
+  "normals": 4926,
+  "faces": 5342,
+  "failures": []
+}

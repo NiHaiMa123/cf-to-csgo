@@ -1,0 +1,49 @@
+CF Rez Manager OBJ texture report
+
+Sources: 1
+Meshes: 7
+Texture references: 7
+Missing textures: 7
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast2.LTB
+Mesh: Fview-hand2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast2, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast2, PV-M4A1_S_BornBeast2, M4A1_S_BornBeast2
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast2.LTB
+Mesh: Fview-arm2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast2, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast2, PV-M4A1_S_BornBeast2, M4A1_S_BornBeast2
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast2.LTB
+Mesh: PV-M4A1_S_BornBeast003
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast2, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast2, PV-M4A1_S_BornBeast2, M4A1_S_BornBeast2
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast2.LTB
+Mesh: mac
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast2, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast2, PV-M4A1_S_BornBeast2, M4A1_S_BornBeast2
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast2.LTB
+Mesh: reload
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast2, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast2, PV-M4A1_S_BornBeast2, M4A1_S_BornBeast2
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast2.LTB
+Mesh: obj01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast2, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast2, PV-M4A1_S_BornBeast2, M4A1_S_BornBeast2
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast2.LTB
+Mesh: obj02
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast2, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast2, PV-M4A1_S_BornBeast2, M4A1_S_BornBeast2
+  Exported: <missing>
+

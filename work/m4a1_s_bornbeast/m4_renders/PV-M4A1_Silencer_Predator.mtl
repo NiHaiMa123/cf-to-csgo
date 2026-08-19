@@ -1,0 +1,190 @@
+# Exported by CF Rez Manager
+
+newmtl Fview-hand2
+Ka 0 0 0
+Kd 0.48999999999999999 0.71999999999999997 0.93999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Fview-arm2
+Ka 0 0 0
+Kd 0.95999999999999996 0.65000000000000002 0.35999999999999999
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl frontside01
+Ka 0 0 0
+Kd 0.53000000000000003 0.82999999999999996 0.56999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object336
+Ka 0 0 0
+Kd 0.84999999999999998 0.55000000000000004 0.84999999999999998
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object344
+Ka 0 0 0
+Kd 0.94999999999999996 0.81999999999999995 0.41999999999999998
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object361
+Ka 0 0 0
+Kd 0.46999999999999997 0.82999999999999996 0.83999999999999997
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object362
+Ka 0 0 0
+Kd 0.48999999999999999 0.71999999999999997 0.93999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object363
+Ka 0 0 0
+Kd 0.95999999999999996 0.65000000000000002 0.35999999999999999
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object364
+Ka 0 0 0
+Kd 0.53000000000000003 0.82999999999999996 0.56999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object365
+Ka 0 0 0
+Kd 0.84999999999999998 0.55000000000000004 0.84999999999999998
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object366
+Ka 0 0 0
+Kd 0.94999999999999996 0.81999999999999995 0.41999999999999998
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object367
+Ka 0 0 0
+Kd 0.46999999999999997 0.82999999999999996 0.83999999999999997
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object368
+Ka 0 0 0
+Kd 0.48999999999999999 0.71999999999999997 0.93999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object343
+Ka 0 0 0
+Kd 0.95999999999999996 0.65000000000000002 0.35999999999999999
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object345
+Ka 0 0 0
+Kd 0.53000000000000003 0.82999999999999996 0.56999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object351
+Ka 0 0 0
+Kd 0.84999999999999998 0.55000000000000004 0.84999999999999998
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object352
+Ka 0 0 0
+Kd 0.94999999999999996 0.81999999999999995 0.41999999999999998
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object354
+Ka 0 0 0
+Kd 0.46999999999999997 0.82999999999999996 0.83999999999999997
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object357
+Ka 0 0 0
+Kd 0.48999999999999999 0.71999999999999997 0.93999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl Object359
+Ka 0 0 0
+Kd 0.95999999999999996 0.65000000000000002 0.35999999999999999
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png
+
+newmtl middle01
+Ka 0 0 0
+Kd 0.53000000000000003 0.82999999999999996 0.56999999999999995
+Ks 0.05 0.05 0.05
+Ns 16
+d 1
+illum 2
+map_Kd PV-M4A1_Silencer_Predator_textures/PV-M4A1_Silencer_Predator.png

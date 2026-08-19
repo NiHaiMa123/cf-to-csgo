@@ -1,0 +1,246 @@
+CF Rez Manager texture mapping candidate report
+
+Sources: 1
+Meshes: 16
+Decoded texture references: 0
+Indexed textures: 82
+Global mapping table candidates: 0
+Mapping file hits: 14
+Raw exact model reference hits: 0
+
+Source Resources
+- Models\PLAYERVIEW\PV-M4A1_Silencer_PrismBeast.LTB
+
+Most Likely Mapping Files
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_GirlCrush_BL.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_GirlCrush_GR.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_Girlcrush_SP.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH-NGold_BL.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH-NGold_GR.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH_BL.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH_GR.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_Girlcrush_BL.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_GirlCrush_GR.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_Girlcrush_SP.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH-NGold_BL.CFG
+  Reason: decoded text mentions model terms
+- score 150: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH-NGold_GR.CFG
+  Reason: decoded text mentions model terms
+
+Model Search Terms
+- PV-M4A1_Silencer_PrismBeast
+- Fview-hand2
+- Fview-arm2
+- PLAYERVIEW
+- prismbeast
+- parts1_01
+- parts1_02
+- parts1_03
+- parts1_04
+- parts1_05
+- parts1_06
+- parts1_07
+- parts1_08
+- parts2_01
+- parts2_02
+- parts2_03
+- silencer
+- Models
+- parts1
+- parts2
+- parts3
+- parts4
+- parts5
+- fview
+- hand2
+- arm2
+- m4a1
+
+Direct Texture References
+- <none found in decoded model meshes>
+
+Material Hints From Model
+- <none>
+
+Texture Name Guesses
+- score 2: Models/PLAYERVIEW/AI_chicago/AI2_train01.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI2_train02.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI2_train03.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI2_train04.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_01.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_02.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_03.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_04.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_04_01.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_05.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_08.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_09.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_100.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_101.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_102.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_103.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_104.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_105.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_106.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_107.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_108.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_109.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_111.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_112.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_113.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_114.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_115.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_116.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_117.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_118.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_119.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_12.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_120.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_121.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_122.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_123.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_125.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_126.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_127.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_128.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_129.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_13.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_130.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_131.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_132.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_133.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_134.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_135.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_136.DTX
+- score 2: Models/PLAYERVIEW/AI_chicago/AI_chicago_137.DTX
+
+Sibling Directory Texture Candidates
+- <none>
+
+Likely Global Mapping Tables
+- <none>
+
+Likely Shader Or Material Configs
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\Arm_Armoured_Index0.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: Blue_crystal.dds, Armoured_hand_s.png, Armoured_hand_n.png, Armoured_hand_Alpha.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\Arm_Armoured_Index1.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: Blue_crystal.dds, Armoured_hand_s.png, Armoured_hand_n.png, Armoured_hand_Alpha.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\Arm_Armoured_Index2.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: Blue_crystal.dds, Armoured_arm_S.png, Armoured_arm_n.png, Armoured_arm_alpha.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\Arm_Armoured_Index3.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: Blue_crystal.dds, Armoured_hand_s.png, Armoured_hand_n.png, Armoured_hand_Alpha.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_GirlCrush_BL.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: Gold_map.dds, FVIEW_ARM_Girlcrush_BL_S.PNG, FVIEW_ARM_Girlcrush_BL_N.PNG, FVIEW_ARM_Girlcrush_BL_ALPHA.PNG
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_GirlCrush_GR.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_ARM_GirlCrush_GR_S.png, FVIEW_ARM_GirlCrush_GR_N.png, FVIEW_ARM_GirlCrush_GR_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_Girlcrush_SP.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_ARM_Girlcrush_SP_S.png, FVIEW_ARM_Girlcrush_SP_N.png, FVIEW_ARM_Girlcrush_SP_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH-NGold_BL.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_ARM_WangLH-NGold_BL_S.png, FVIEW_ARM_WangLH-NGold_BL_N.png, FVIEW_ARM_WangLH-NGold_BL_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH-NGold_GR.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_ARM_WangLH-NGold_GR_S.png, FVIEW_ARM_WangLH-NGold_GR_N.png, FVIEW_ARM_WangLH-NGold_GR_Alpha.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH_BL.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_ARM_WangLH_BL_S.png, FVIEW_ARM_WangLH_BL_N.png, FVIEW_ARM_WangLH_BL_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH_GR.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_ARM_WangLH_GR_S.png, FVIEW_ARM_WangLH_GR_N.png, FVIEW_ARM_WangLH_GR_Alpha.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_Girlcrush_BL.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_HAND_Girlcrush_BL_S.PNG, FVIEW_HAND_Girlcrush_BL_N.PNG, FVIEW_HAND_Girlcrush_BL_ALPHA.PNG
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_GirlCrush_GR.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_HAND_GirlCrush_GR_S.png, FVIEW_HAND_GirlCrush_GR_N.png, FVIEW_HAND_GirlCrush_GR_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_Girlcrush_SP.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_HAND_Girlcrush_SP_S.png, FVIEW_HAND_Girlcrush_SP_N.png, FVIEW_HAND_Girlcrush_SP_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH-NGold_BL.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_HAND_WangLH-NGold_BL_S.png, FVIEW_HAND_WangLH-NGold_BL_N.png, FVIEW_HAND_WangLH-NGold_BL_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH-NGold_GR.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_HAND_WangLH-NGold_GR_S.png, FVIEW_HAND_WangLH-NGold_GR_N.png, FVIEW_HAND_WangLH-NGold_GR_Alpha.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH_BL.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_HAND_WangLH_BL_S.png, FVIEW_HAND_WangLH_BL_N.png, FVIEW_HAND_WangLH_BL_ALPHA.png
+- score 12: Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH_GR.CFG
+  Textures: 4, Keywords: 2
+  Texture refs: LobbyCube.dds, FVIEW_HAND_WangLH_GR_S.png, FVIEW_HAND_WangLH_GR_N.png, FVIEW_HAND_WangLH_GR_Alpha.png
+
+Raw Exact Model Reference Hits
+- <none>
+
+Companion Mapping Files Near Source
+- <none>
+
+Mapping Candidate Files
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_GirlCrush_BL.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_ARM_Girlcrush_BL_S.PNG EnvCubeMapName0=Gold_map.dds NormalMapName0=FVIEW_ARM_Girlcrush_BL_N.PNG AlphaMapName0=FVIEW_ARM_Girlcru
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_GirlCrush_GR.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_ARM_GirlCrush_GR_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_ARM_GirlCrush_GR_N.png AlphaMapName0=FVIEW_ARM_GirlCr
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_Girlcrush_SP.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_ARM_Girlcrush_SP_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_ARM_Girlcrush_SP_N.png AlphaMapName0=FVIEW_ARM_Girlcr
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH-NGold_BL.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_ARM_WangLH-NGold_BL_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_ARM_WangLH-NGold_BL_N.png AlphaMapName0=FVIEW_ARM_
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH-NGold_GR.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_ARM_WangLH-NGold_GR_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_ARM_WangLH-NGold_GR_N.png AlphaMapName0=FVIEW_ARM_
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH_BL.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_ARM_WangLH_BL_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_ARM_WangLH_BL_N.png AlphaMapName0=FVIEW_ARM_WangLH_BL_AL
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_ARM_WangLH_GR.CFG
+  Matched model terms: fview
+  Snippet: TextureTileY=1 [HalfLambert] Power=3 Base=0.78 [Textures] SpecularMapName0=FVIEW_ARM_WangLH_GR_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_ARM_Wa
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_Girlcrush_BL.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_HAND_Girlcrush_BL_S.PNG EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_HAND_Girlcrush_BL_N.PNG AlphaMapName0=FVIEW_HAND_Gir
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_GirlCrush_GR.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_HAND_GirlCrush_GR_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_HAND_GirlCrush_GR_N.png AlphaMapName0=FVIEW_HAND_Gir
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_Girlcrush_SP.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_HAND_Girlcrush_SP_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_HAND_Girlcrush_SP_N.png AlphaMapName0=FVIEW_HAND_Gir
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH-NGold_BL.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_HAND_WangLH-NGold_BL_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_HAND_WangLH-NGold_BL_N.png AlphaMapName0=FVIEW_HA
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH-NGold_GR.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_HAND_WangLH-NGold_GR_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_HAND_WangLH-NGold_GR_N.png AlphaMapName0=FVIEW_HA
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH_BL.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_HAND_WangLH_BL_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_HAND_WangLH_BL_N.png AlphaMapName0=FVIEW_HAND_WangLH_BL
+- Models\PLAYERVIEW\ArmModel\Shader\FVIEW_HAND_WangLH_GR.CFG
+  Matched model terms: fview
+  Snippet: [Textures] SpecularMapName0=FVIEW_HAND_WangLH_GR_S.png EnvCubeMapName0=LobbyCube.dds NormalMapName0=FVIEW_HAND_WangLH_GR_N.png AlphaMapName0=FVIEW_HAND_WangLH_GR
+
+How to read this report:
+- If direct texture references are empty, the model format parser did not find texture paths inside the model.
+- Likely global mapping tables are ranked by files that mention both model-like resources and texture-like resources.
+- Shader/material configs may only mention texture resources; these are separated from full model-to-texture tables.
+- Raw exact model reference hits search file bytes for exact model terms before text decoding; these are strong mapping-table suspects.
+- Companion files are small config/table-like files near the selected model path and may hold local material bindings.
+- If mapping candidate files mention both model terms and texture terms, those files are likely the external binding tables.
+- If texture guesses look correct but no mapping file hits appear, the binding may be packed in an unsupported binary table.

@@ -1,0 +1,130 @@
+{
+  "schema": "cf2.pipeline.package-manifest.v2",
+  "profile_id": "Prototype-01",
+  "timestamp_utc": "2026-08-19T14:50:47.712751+00:00",
+  "run_binding": {
+    "run_id": "run_20260819_144941_648227",
+    "manifest": {
+      "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\prototype_01_manifest.json",
+      "sha256": "9f2b7e4fcae9fc38daca4acfdf521a9a58b8820b757bf9d88beb363b70b84d09",
+      "exists": true,
+      "profile_id": "Prototype-01",
+      "run_id": null
+    },
+    "reports": {
+      "check": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\check_report.json",
+        "sha256": "a718d715ff6610a7dbed850b66a44a60443233a27754e1c69f818a1fe943f266",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": null
+      },
+      "build": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\build_report.json",
+        "sha256": "99596816b4338dda658732b357d896682de9cae0871d578f4ab99f0606567fdc",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": "run_20260819_144941_648227",
+        "run_id_match": true
+      },
+      "validate": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\validation_report.json",
+        "sha256": "2960ce9c4b0a27212805d37a05256848c4a91a90b307d512b876307425782267",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": "run_20260819_144941_648227",
+        "run_id_match": true
+      },
+      "upstream_trace": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\upstream_trace_report.json",
+        "sha256": "5787953babbb8c9f006a61660c9888e548498beec2082631e04da3acfc5787c5",
+        "exists": true,
+        "profile_id": "Prototype-01",
+        "run_id": "run_20260819_144941_648227",
+        "run_id_match": true
+      }
+    }
+  },
+  "source_addon": {
+    "path": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon",
+    "file_count": 9,
+    "payload_tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70"
+  },
+  "final_target_identity": false,
+  "final_cf_material": false,
+  "material_classification": "EXTERNAL_REFERENCE / PROTOTYPE MATERIAL",
+  "runtime_slot": "m4a4",
+  "payload": {
+    "file_count": 9,
+    "tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70",
+    "package_manifest_excluded": true,
+    "excluded_names": [
+      "package_manifest.json"
+    ],
+    "hash_policy": "canonical relative path, size_bytes and sha256; manifest excluded to avoid self-reference"
+  },
+  "package_roots": {
+    "package_root": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\package",
+      "payload_tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70"
+    },
+    "staging_root": {
+      "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging",
+      "payload_tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70"
+    },
+    "payload_hashes_equal": true
+  },
+  "file_count": 9,
+  "files": [
+    {
+      "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+      "size_bytes": 345,
+      "sha256": "5da1293da0d7768e8e99bf17ee6e0d064534e57fa08b9cc98fc9f2b904df1dc9"
+    },
+    {
+      "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "size_bytes": 175000,
+      "sha256": "84073911c0f5a8e165ee2fb84481b487823c7956d0539e06c99febb21d7d7ed0"
+    },
+    {
+      "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf",
+      "size_bytes": 175000,
+      "sha256": "a7137386bfc0fd873d1f7ccc11eafcaff899f2c9630d5385aa53450f52be8265"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.ani",
+      "size_bytes": 27032,
+      "sha256": "681c730108798e0b4e767c348503b5f5c0ce62c5ac8b48b7268c2e16efc7f408"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.dx80.vtx",
+      "size_bytes": 56882,
+      "sha256": "a2b84b5863540d45a246594dcda7898beb52e50bd9e760e68d4ad5759ff43659"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.dx90.vtx",
+      "size_bytes": 56882,
+      "sha256": "3682a7d649e0bacebb54aa2dc59bce0e75ce90b63216ad2f297764459ee99a29"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.mdl",
+      "size_bytes": 50588,
+      "sha256": "9ac365192a3be10411e982fbb60cd4b74872c3b27da50590c3d4045c5b3fbd3b"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.sw.vtx",
+      "size_bytes": 56858,
+      "sha256": "e8ebfc750063fe93cf02503f2aea472367597d9f82fe4cba5e085741706d0c78"
+    },
+    {
+      "relative_path": "models/weapons/v_rif_m4a1.vvd",
+      "size_bytes": 232320,
+      "sha256": "606dac97ea65459625a7489d23472d01647acc2cca9ff89d529103ce0164564b"
+    }
+  ],
+  "self_hash_policy": {
+    "included_in_payload_file_set": false,
+    "sha256_recorded_after_write": "deploy_report.json when deploy executes",
+    "reason": "including package_manifest.json in its own file list would create a circular hash; deploy_report records the written manifest hash externally"
+  }
+}

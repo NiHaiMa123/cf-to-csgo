@@ -1,0 +1,26 @@
+{
+  "bucket": "cf_arms_optional",
+  "source_obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_130138_760431\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+  "meshes": [
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_Fview-hand2",
+      "material": "Fview-hand2",
+      "vertices": 1090,
+      "uvs": 1090,
+      "normals": 1090,
+      "triangles": 1060,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_130138_760431\\c1_weapon_only\\cf_arms_optional\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_130138_760431\\c1_weapon_only\\cf_arms_optional\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.mtl"
+    },
+    {
+      "group": "PV-M4A1_S_BornBeast_Classic_Fview-arm2",
+      "material": "Fview-arm2",
+      "vertices": 190,
+      "uvs": 190,
+      "normals": 190,
+      "triangles": 274,
+      "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_130138_760431\\c1_weapon_only\\cf_arms_optional\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.obj",
+      "mtl": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_130138_760431\\c1_weapon_only\\cf_arms_optional\\PV-M4A1_S_BornBeast_Classic_cf_arms_optional.mtl"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "cf2.pipeline.check-report.v1",
+  "profile_id": "M4A4_CF_BornBeast_Final",
+  "timestamp_utc": "2026-08-18T16:32:43.145867+00:00",
+  "pass": true,
+  "errors": [],
+  "details": {
+    "inputs": {
+      "cf_ltb_source": {
+        "path": "D:\\project\\cf_to_csgo\\data\\rf016\\Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB",
+        "exists": true,
+        "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+        "hash_match": true
+      },
+      "b3_raw_obj": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\b3_raw\\PV-M4A1_S_BornBeast_Classic.obj",
+        "exists": true,
+        "sha256": "031616f2c9e36c008cc56b8e9c9f085fa9a74a1a846a2d17f8c25ab1a0c702d9",
+        "hash_match": true
+      },
+      "b3_export_report": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\b3_raw\\PV-M4A1_S_BornBeast_Classic_export_report.json",
+        "exists": true,
+        "sha256": "23a254d35ba780ac034bc626f9e7aec5eb0c7860b1c12a597d4fdb6a73d0dd0c",
+        "hash_match": true
+      },
+      "aligned_obj": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c3_alignment_m4a4\\PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+        "exists": true,
+        "sha256": "1b1b6cd24eb2ce4cf3e411d5eee45a8a27f3fa9637309f88900f376ee54f9f97",
+        "hash_match": true
+      },
+      "weapon_only_report": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c1_split\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.json",
+        "exists": true,
+        "sha256": "3d2262a9b457046292e94167a1162940ec8446d96879fd12511a37ebaee1be5f",
+        "hash_match": true
+      },
+      "alignment_manifest": {
+        "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\c3_alignment_m4a4_manifest.json",
+        "exists": true,
+        "sha256": "d92b337fe74edfc621d22b6d04aef6bc3e111a7a5a0d9411cadff9e7230551d1",
+        "hash_match": true
+      },
+      "m4a4_target_manifest": {
+        "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\m4a4_target_manifest.json",
+        "exists": true,
+        "sha256": "8a038bb51507c6c9290e043e4f3a2018a8ecb2b45cd391f6345f01d89caa2cdd",
+        "hash_match": true
+      },
+      "m4a4_reference_report": {
+        "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\reference_m4a4\\reference_report.json",
+        "exists": true,
+        "sha256": "2db4d0710f2229d438a0fdd82f570242f07334403c2cf4532e2ed5aa1a520e06",
+        "hash_match": true
+      },
+      "material_map": {
+        "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\material_map.json",
+        "exists": true,
+        "sha256": "a1c560fa39a42e9906d5954c50deddb84b586cbfff63beb3e60db601bc9111ef",
+        "hash_match": true
+      },
+      "local_cf_dtx": {
+        "path": "D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1_S_BornBeast.DTX",
+        "exists": true,
+        "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+        "hash_match": true
+      },
+      "local_cf_alpha": {
+        "path": "D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\AlphaMap\\M4A1_S_BornBeast_alpha.TGA",
+        "exists": true,
+        "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+        "hash_match": true
+      },
+      "local_cf_specular": {
+        "path": "D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\M4A1_S_BornBeast_S.TGA",
+        "exists": true,
+        "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+        "hash_match": true
+      },
+      "local_cf_normal": {
+        "path": "D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\NormalMap\\M4A1_S_BornBeast_N.TGA",
+        "exists": true,
+        "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+        "hash_match": true
+      },
+      "local_cf_shader": {
+        "path": "D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\Shader\\WeaponShader\\M4A1_S_BornBeast.CFG",
+        "exists": true,
+        "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+        "hash_match": true
+      }
+    },
+    "toolchain": {
+      "studiomdl": {
+        "path": "D:\\steam\\steamapps\\common\\csgo legacy\\bin\\studiomdl.exe",
+        "exists": true
+      },
+      "crowbar_decompiler": {
+        "path": "D:\\project\\cf_to_csgo\\tools\\CrowbarDecompiler\\CrowbarDecompiler(1.1).exe",
+        "exists": true
+      },
+      "vtfcmd": {
+        "path": "D:\\project\\cf_to_csgo\\tools\\VTFEdit\\VTFCmd.exe",
+        "exists": true
+      }
+    },
+    "topology": {
+      "vertices": 3646,
+      "uvs": 3646,
+      "normals": 3646,
+      "triangles": 4008,
+      "group_count": 9,
+      "groups": [
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast01",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast02",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast03",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast04",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast05",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast06",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast07",
+        "PV-M4A1_S_BornBeast_Classic_M4A1S_BornBeast08"
+      ],
+      "leaked_arms": [],
+      "pass": true
+    },
+    "skeleton": {
+      "canonical_bone_count": 57,
+      "target_slot": "m4a4",
+      "modelname": "weapons/v_rif_m4a1.mdl"
+    }
+  }
+}

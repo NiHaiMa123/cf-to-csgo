@@ -1,0 +1,17 @@
+CF Rez Manager command-line OBJ export
+
+Source root: D:\project\cf_to_csgo\data\rf016
+Model query: Models\PLAYERVIEW\PV-M4A1_S_BornBeast.LTB
+Raw transform: False
+OBJ: D:\project\cf_to_csgo\work\m4a1_s_bornbeast\m4_hero_comparison\PV-M4A1_S_BornBeast.obj
+MTL: D:\project\cf_to_csgo\work\m4a1_s_bornbeast\m4_hero_comparison\PV-M4A1_S_BornBeast.mtl
+Texture folder: D:\project\cf_to_csgo\work\m4a1_s_bornbeast\m4_hero_comparison\PV-M4A1_S_BornBeast_textures
+Export report: D:\project\cf_to_csgo\work\m4a1_s_bornbeast\m4_hero_comparison\PV-M4A1_S_BornBeast_export_report.json
+
+Sources: 1
+Meshes: 11
+Vertices: 4926
+Triangles: 5342
+Textures exported: 11
+Missing textures: 0
+Skipped matched files: 0

@@ -1,0 +1,20 @@
+{
+  "schema": "cf2.blender-inspect-retarget-attempt.v1",
+  "status": "REWORK_REQUIRED",
+  "sequence_contract": {
+    "qc": "work/m4a1_s_bornbeast/p4_prototype_01/runs/run_20260819_144941_648227/source1/v_rif_m4a1.qc",
+    "lookat01_source": "v_rif_m4a1_anims\\lookat01_safe.smd",
+    "lookat01_frames": 160,
+    "qc_reference_verified": true
+  },
+  "scene": "work/m4a1_s_bornbeast/blender_arm_reference/inspect_clean_review.blend",
+  "frames_checked": [1, 40, 80, 120, 159],
+  "methods_attempted": [
+    "source model-space deltas retargeted to all common arms bones with fingers held relative to the hand",
+    "source forearm model-space deltas applied to target forearm/hand/finger chains"
+  ],
+  "finding": "Both methods can match the clean grip at the initial frame, but the target hands do not remain on the weapon through the middle of the Inspect clip; frame 40/80/120 still show hand-to-weapon separation or incorrect contact. Direct local-transform copying is invalid for the two hierarchies.",
+  "production_changes": [],
+  "new_game_addon": null,
+  "next_required": "Use actual weapon-contact constraints/attachment points (or an intentionally frozen/no-op Prototype Inspect) before any production SMD/QC change. Re-run Blender contact checks before deploying another MIGI addon."
+}

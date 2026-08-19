@@ -1,0 +1,58 @@
+{
+  "schema": "cf2.pipeline.validation-report.v1",
+  "profile_id": "M4A4_CF_BornBeast_Final",
+  "timestamp_utc": "2026-08-18T16:32:48.315880+00:00",
+  "pass": true,
+  "errors": [],
+  "checks": {
+    "material_closure": {
+      "pass": true,
+      "report": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p6_final_materials\\p6_material_closure_report.json"
+    },
+    "binaries": {
+      "mdl_exists": true,
+      "vvd_exists": true,
+      "vtx_exists": true,
+      "pass": true
+    },
+    "mdl_header": {
+      "details": {
+        "magic": "IDST",
+        "version": 49,
+        "internal_name": "weapons\\v_rif_m4a1.mdl",
+        "bone_count": 57,
+        "local_animation_count": 9,
+        "local_sequence_count": 9,
+        "size_bytes": 58392,
+        "sha256": "65283c375aaa0954d946d39d6e4168f81e83b66f376a4c3e0291b1ccd59d3e3d"
+      },
+      "pass": true
+    },
+    "bone_corners": {
+      "actual": {
+        "3": 11553,
+        "4": 108,
+        "29": 363
+      },
+      "expected": {
+        "3": 11553,
+        "4": 108,
+        "29": 363
+      },
+      "pass": true
+    },
+    "animation_semantics": {
+      "clip_idle_delta": 0.0,
+      "clip_reload_delta": 14.908203,
+      "bolt_idle_delta": 0.0,
+      "bolt_fire_delta": 0.0,
+      "bolt_draw_delta": 2.261719,
+      "pass": true
+    },
+    "policy_flags": {
+      "pass": true,
+      "is_final_release": true,
+      "is_prototype": false
+    }
+  }
+}
