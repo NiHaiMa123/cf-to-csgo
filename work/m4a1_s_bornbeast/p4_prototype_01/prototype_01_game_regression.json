@@ -2,7 +2,7 @@
   "schema": "cf2.p4.prototype-game-regression.v1",
   "task_id": "P4-T08",
   "profile_id": "Prototype-01",
-  "status": "READY_FOR_USER_GATE",
+  "status": "passed_user_confirmed",
   "generated_from": {
     "automatic_deploy": "work/m4a1_s_bornbeast/p4_prototype_01/deploy_report.json",
     "automatic_deploy_pass": true,
@@ -10,7 +10,7 @@
     "target": "D:/steam/steamapps/common/csgo legacy/migi/csgo/addons/p_cf_bornbeast_m4a4_p4_frozen_noop_01",
     "payload_files": 9,
     "inspect_policy": "frozen_noop_safe",
-    "user_confirmation": null,
+    "user_confirmation": "passed_user_confirmed: 用户确认当前 frozen/no-op addon 的 6 项 P4 实机 Gate 均没有问题。",
     "previous_revision": {
       "addon": "p_cf_bornbeast_m4a4_p4_inspect_safe_01",
       "inspect_status": "superseded_by_frozen_noop_policy",
@@ -32,7 +32,7 @@
     {"id": "fire_shoot3", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
     {"id": "reload_clip", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
     {"id": "bolt", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
-    {"id": "inspect", "status": "pass_with_risk", "user_evidence": "用户反馈：按 F 没反应/画面没有变化；该行为符合 frozen/no-op P4 策略。尚缺按 F 后继续射击、换弹、切枪的明确确认。"},
+    {"id": "inspect", "status": "passed_user_confirmed", "user_evidence": "用户确认：按 F 后没有崩溃或明显运行错误；没有可见 Inspect 动作符合 frozen/no-op 预期；武器状态正常返回，并可继续射击、换弹、切枪。"},
     {"id": "muzzle", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
     {"id": "shell_eject", "status": "pass", "user_evidence": "除了 F 时手指有穿模，其他没问题。"},
     {"id": "console_errors", "status": "not_tested", "user_evidence": "现有用户原话未单独确认控制台清洁度。"},
@@ -48,5 +48,5 @@
     "finding": "MCP 导入后确认 weapon Inspect 有 160 帧且枪体会运动；直接 local transform 复制会在 frame 80 脱离。进一步尝试模型空间 retarget（全骨骼和前臂链两种）后，frame 40/80/120 仍无法保持双手与枪体接触。该视觉 retarget 问题移入 P7，不再阻塞 P4 frozen/no-op。",
     "is_game_evidence": false
   },
-  "retest_required": ["用户确认 frozen/no-op Inspect 后无错误/崩溃且仍可继续射击、换弹、切枪；真正 Blender retarget/接触检查留到 P7"]
+  "retest_required": ["完成 RV-01～RV-06 独立 Review 并确认无 blocker；真正 Blender retarget/接触检查留到 P7"]
 }

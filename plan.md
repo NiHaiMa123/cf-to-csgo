@@ -2,7 +2,7 @@
 
 > 最后更新：2026-08-20
 >
-> 当前状态：**P4-T08 `FROZEN_NOOP_SAFE / READY_FOR_USER_GATE`；P4 最终冻结等待用户最小实机确认 + 独立 Reviewer**
+> 当前状态：**P4-T08 用户 Gate 已确认；RV-01～RV-06 Review 待完成；P4 尚未 `PASS / FROZEN`**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -56,19 +56,19 @@
   - T07 实际执行 **17 个负向 mutation**，覆盖 16 类必测错误场景，17/17 均被预期 Gate 拒绝；
   - 两次独立正向 build 的语义复现证据已完成。
 
-- **P4-T08：`READY_FOR_USER_GATE`。**
+- **P4-T08：`passed_user_confirmed`。**
   - manifest 默认 `inspect_policy=frozen_noop_safe`；
   - 当前候选 addon：`p_cf_bornbeast_m4a4_p4_frozen_noop_01`；
   - 当前 frozen/no-op build run：`run_20260819_170013_270792`；
   - 自动构建、Crowbar 回环、15/15 validation、package/staging 和 deploy 证据已生成；
-  - **尚缺用户对“变更后的 Inspect 行为”做最小实机确认。**
+  - 用户已确认 frozen/no-op Inspect 没有崩溃或明显运行错误，武器状态正常返回，并可继续射击、换弹、切枪；无可见动作符合当前策略预期。
 
 - **P4-T09：文档预收口完成，最终冻结未完成。**
   - README / Plan / P4 证据索引已收口；
   - P4/P5/P6/P7 的边界已重新分离；
-  - P4 最终 `PASS / FROZEN` 必须等待 T08 用户确认以及独立 Reviewer 结论。
+  - P4 最终 `PASS / FROZEN` 现在只等待独立 Reviewer 结论；本轮 Review 已按用户要求停止。
 
-- **独立 Reviewer：尚未完成。**
+- **独立 Reviewer：尚未完成（本轮按用户要求停止）。**
   - 按 `P4_TASKS.md` 的 RV-01～RV-06 执行；
   - Reviewer 不重做实现，只审 diff、manifest 字段消费、证据链、少量高风险反例和报告真实性。
 
@@ -103,11 +103,9 @@
 
 ### 1.5 下一步
 
-1. 用户完成 1.3 的最小实机确认；
-2. 更新 `prototype_01_game_regression.json`，只记录用户实际确认的事实；
-3. 独立 Reviewer 执行 RV-01～RV-06；
-4. 若无 blocker，将 P4-T08 / T09 / 总 Gate 改为完成，并把 P4 标记为 `PASS / FROZEN`；
-5. P4 冻结后进入 P5，定位最终雷神本地 CF 资产。
+1. 独立 Reviewer 执行 RV-01～RV-06；
+2. 若无 blocker，将 P4-T09 / 总 Gate 改为完成，并把 P4 标记为 `PASS / FROZEN`；
+3. P4 冻结后进入 P5，定位最终雷神本地 CF 资产。
 
 ---
 

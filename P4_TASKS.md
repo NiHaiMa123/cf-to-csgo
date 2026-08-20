@@ -1,6 +1,6 @@
 # P4 修复与验收任务清单
 
-> 状态：**P4-T08 `READY_FOR_USER_GATE` / frozen-noop addon 已部署；T09 最终冻结等待用户 Gate + 独立 Reviewer**
+> 状态：**P4-T08 `passed_user_confirmed` / frozen-noop addon 已部署；T09 最终冻结等待独立 Reviewer**
 >
 > 适用对象：P4 执行 Agent、独立 Reviewer、Chat/Sol Planner/Reviewer
 >
@@ -194,7 +194,7 @@ Crowbar 0.71 运行时需要 `%APPDATA%\ZeqMacaw` 可写；受限 Agent 环境�
 - `work/m4a1_s_bornbeast/p4_prototype_01/negative_test_report.json`
 - `work/m4a1_s_bornbeast/p4_prototype_01/reproducibility_report.json`
 
-### P4-T08：用户实机 Gate — READY_FOR_USER_GATE
+### P4-T08：用户实机 Gate — PASSED_USER_CONFIRMED
 
 **P4 目标只验收 changed-runtime 安全，不再验收可见 Inspect retarget。**
 
@@ -204,16 +204,16 @@ Crowbar 0.71 运行时需要 `%APPDATA%\ZeqMacaw` 可写；受限 Agent 环境�
 - current addon：`p_cf_bornbeast_m4a4_p4_frozen_noop_01`；
 - current run：`run_20260819_170013_270792`；
 - build / Crowbar roundtrip / 15/15 validation / package / staging / deploy 已完成；
-- `prototype_01_game_regression.json` 当前仍是 `READY_FOR_USER_GATE`，不得提前改成用户 PASS。
+- `prototype_01_game_regression.json` 已记录用户确认；该确认只覆盖本节 changed-runtime Gate，不代表 Inspect retarget 或最终资产完成。
 
 用户只需针对新 frozen/no-op 变量明确确认：
 
-- [ ] 按 F 后没有崩溃或明显运行错误；
-- [ ] 无可见 Inspect 动作属于预期；
-- [ ] 武器状态能返回；
-- [ ] 按 F 后仍能射击；
-- [ ] 按 F 后仍能换弹；
-- [ ] 按 F 后仍能切枪。
+- [x] 按 F 后没有崩溃或明显运行错误；
+- [x] 无可见 Inspect 动作属于预期；
+- [x] 武器状态能返回；
+- [x] 按 F 后仍能射击；
+- [x] 按 F 后仍能换弹；
+- [x] 按 F 后仍能切枪。
 
 此前已经确认且本次未改变的模型/FOV、UV、Idle、Draw、Fire、Reload、Bolt、muzzle、shell 等历史功能不要求为了 frozen/no-op 再完整重跑一次；Reviewer 可以检查这些历史证据是否仍与当前构建变量隔离。
 
@@ -226,7 +226,7 @@ Inspect 的可见动作、手指穿模、Blender frame 1/40/80/120/159 接触检
 - [x] P4 Inspect frozen/no-op 边界写清，真正 retarget 移入 P7。
 - [x] B1/B2/C2 和 03–08 Parent fallback 保持显式技术债，不伪装成已解决。
 - [x] `Prototype-01` 保持 `final_target_identity=false`、`final_cf_material=false`。
-- [ ] T08 用户 changed-runtime Gate 完成后更新用户证据。
+- [x] T08 用户 changed-runtime Gate 完成后更新用户证据。
 - [ ] 独立 Reviewer 完成 RV-01～RV-06。
 - [ ] 只有上述两项结束且无 blocker，才把 P4 改为 `PASS / FROZEN`。
 
@@ -305,10 +305,9 @@ Reviewer 不得顺手修复发现的问题；修复退回执行者，修复后�
 
 ### 尚未满足
 
-- [ ] P4-T08：用户明确确认 frozen/no-op Inspect 后没有崩溃/状态锁死，且仍可射击、换弹、切枪；
 - [ ] RV-01～RV-06：独立 Reviewer 完成并允许冻结；
 - [ ] P4-T09：根据真实 T08 + Reviewer 结果写入最终 `PASS / FROZEN` 状态。
 
-在上述三项完成前，当前统一结论为：
+在上述两项完成前，当前统一结论为：
 
-> **P4 自动技术闭环已完成，当前为 `READY_FOR_USER_GATE`。尚不能标记 `PASS / FROZEN`；真正 Inspect retarget 已移入 P7，不再是 P4 blocker。**
+> **P4 自动技术闭环和 T08 用户 Gate 已完成，当前为 `REVIEW_PENDING`。尚不能标记 `PASS / FROZEN`；真正 Inspect retarget 已移入 P7，不再是 P4 blocker。**
