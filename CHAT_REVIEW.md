@@ -4,7 +4,7 @@
 >
 > 项目唯一权威进度以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 与本地 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
-> **默认 Planner / Reviewer = Chat/Sol；Codex/Luna = 本地执行与证据生产。**
+> **默认 Planner / Reviewer = Chat/Sol；Codex/Luna = 本地执行、Web reference 搜索、用户 Gate 交互与证据生产。**
 
 ---
 
@@ -13,163 +13,141 @@
 截至 2026-08-20：
 
 - P4：**`PASS / FROZEN`**；
-- P4 最终 Review：**`PASS WITH RISK`，允许冻结**；
-- P5：**`READY_TO_START` — 最终雷神资产定位**；
+- P5：**ACTIVE — 最终雷神资产定位**；
+- P5-T01：`EXECUTION_PASS / REVIEWED`；
+- P5-T02：`READY_FOR_LUNA`；
 - P6：等待 P5 final asset identity；
 - P7：visible Inspect / 手臂手指 retarget / CF 原动画等增强范围。
 
-P4 最终证据：
+当前 P5 执行入口：
 
-- [`P4_STATUS.md`](P4_STATUS.md)
-- [`P4_REVIEW_RESULT.md`](P4_REVIEW_RESULT.md)
-- [`P4_RV04_TEST_SPECS.md`](P4_RV04_TEST_SPECS.md)
-- `work/m4a1_s_bornbeast/p4_prototype_01/rv04_chat_review_report.json`
-
-除非发现 P4 frozen contract 自身回归，否则 Chat/Sol 不因 P5 资产身份或 P7 视觉问题重新打开 P4。
+- [`P5_TASKS.md`](P5_TASKS.md)
+- [`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)
+- [`CODEX_TASKS.md`](CODEX_TASKS.md)
 
 ---
 
-## 2. Chat/Sol 的默认职责
+## 2. Chat/Sol 的职责
 
 Chat/Sol 负责：
 
-- 每轮先读取最新 GitHub authoritative state；
-- 设计阶段 Plan、Task Spec、Test Spec 和 acceptance criteria；
-- 静态审查代码、manifest、report、hash 和 provenance；
-- 决定哪些步骤必须交给本地 Luna 执行；
-- 审查 Luna 返回的 raw evidence；
-- 输出阶段 Review：`PASS / PASS WITH RISK / REWORK`；
-- 只有证据满足 Gate 后才更新 authoritative status。
+- 维护阶段 Plan / Task Spec / acceptance criteria；
+- 读取 Luna push 的 evidence；
+- 处理真正的 BLOCKED / INVALID；
+- 设计 T03 provenance closure；
+- 做 P5-T04 final identity Review；
+- 只有证据满足 Gate 后才更新最终 authoritative status。
 
 Chat/Sol 不得：
 
-- 未执行就声称运行过 Blender/Crowbar/studiomdl/MIGI/本地 `data/**`；
-- 把 Test Spec 设计完成写成测试已通过；
-- 把 Luna 的“我做完了”当作唯一证据；
-- 为了得到 PASS 临时降低 Gate；
-- 用聊天记忆覆盖最新仓库状态。
+- 未执行就声称运行过本地 `data/**` / Blender / parser；
+- 把文件名/跨服英文名直接升级成 final identity；
+- 用聊天记忆覆盖最新仓库状态；
+- 为了得到 PASS 临时降低 Gate。
 
 ---
 
-## 3. 与 Luna / Codex 的职责分离
+## 3. P5 的关键流程边界
 
-标准闭环：
+“先 Web Search 官网图鉴、给用户看实际目标图、等用户确认”已经固化到 Luna 的 P5-T02 Task Spec。
+
+因此 Chat/Sol **不需要每次替 Luna 手工执行这个流程**。
+
+正确闭环：
 
 ```text
-Chat/Sol 读最新 GitHub
-  -> 设计任务 / 测试 / 验收
-  -> Luna 在本地环境和 data/** 执行
-  -> Luna push 代码/报告/证据，不上传 data 原资产
-  -> Chat/Sol 重读 GitHub
-  -> 判定 / 下一轮任务
+Chat/Sol 发布一次明确 Task Spec
+  -> Luna Web Search CF 官方武器百科
+  -> Luna 展示真实官网图片
+  -> 用户确认目标 reference
+  -> Luna 本地 candidate 缩圈 / 去重
+  -> Luna 生成最简百科式贴图侧视图
+  -> Luna 展示本地 shortlist
+  -> 用户确认本地视觉候选
+  -> Luna push evidence
+  -> Chat/Sol 设计/Review T03/T04
 ```
 
-需要本地执行时，Chat/Sol 应把推理结果编译成机械执行协议，而不是让 Luna 自己决定“测什么算通过”。
-
-Codex Sol 只有用户明确点名做额外 independent audit / milestone audit 时才进入 Reviewer 角色；不是默认 Gate。
+两个 USER GATE 都属于 Luna 的**同一个交互式执行任务**，不是每次都回 Plan 端写新指令。
 
 ---
 
-## 4. 当前 P5 目标
+## 4. Official reference policy
 
-P5 回答：
-
-> **真正雷神对应本地 CF 哪套 LTB / DTX / TGA / CFG / Shader / WAV / 动画资源？**
-
-P5 不允许“看起来像”直接升级为 final。必须建立多证据身份链：
-
-1. 原始本地路径与 SHA-256；
-2. 模型轮廓和关键机械件；
-3. mesh / 分件 / 顶点等结构特征；
-4. 贴图 atlas 的雷神视觉特征；
-5. UV 与 atlas 对应关系；
-6. Shader / CFG / material 资源关联；
-7. 同变体声音/动画命名和目录关联；
-8. 候选排除原因。
-
-网络截图、Wiki、第三方 MOD 只能作为 visual reference，不能作为 final source provenance。
-
----
-
-## 5. P5 推荐任务结构
-
-Chat/Sol 应先把 P5 拆成可独立验收的任务，例如：
+P5 目标图必须优先并强制落到：
 
 ```text
-P5-T01  参考特征定义
-P5-T02  本地候选路径/命名扫描
-P5-T03  LTB 几何候选摘要与排序
-P5-T04  DTX/TGA atlas 候选关联
-P5-T05  模型 ↔ 贴图 ↔ Shader/CFG 交叉闭包
-P5-T06  声音/动画/同变体目录关联
-P5-T07  candidate matrix + 排除证据
-P5-T08  Chat/Sol final identity Review
+https://cf.qq.com/cp/a20250701wqbk/index.html
 ```
 
-实际任务编号和细节以 Chat/Sol 下一次写入的 P5 Task Spec 为准，Luna 不自行创造替代 Gate。
-
----
-
-## 6. P5 本地 Task Spec 最低字段
-
-交给 Luna 的每个任务至少写清：
+或该官方武器百科的详情页：
 
 ```text
-task_id
-purpose / hypothesis
-scope
-allowed local roots
-search / extraction operation
-must_preserve
-expected output schema
-candidate ranking rule
-evidence fields
-PASS / FAIL / INVALID 或 COMPLETE / INCOMPLETE
-forbidden changes
-upload allowlist
+https://cf.qq.com/cp/a20250701wqbk/page.html?itemid=<ITEM_ID>
 ```
 
-如果要生成候选预览，必须明确允许的输出形式；不要要求上传 `data/**` 原始资产。
+Luna 必须 Web Search / 浏览器搜索，而不是仅凭模型记忆。
+
+用户看到的目标图必须是：
+
+- 官方详情页实际加载的网上图片；
+- 或该详情页直接引用的腾讯 CDN 图片。
+
+禁止把 AI 生成图、Wiki 图、媒体截图作为 USER REFERENCE GATE 的最终目标图。
+
+第三方资料只能帮助发现关键词/别名，不能单独建立官方 identity anchor。
 
 ---
 
-## 7. P5 Review 判定原则
+## 5. Local visual identification policy
 
-### 可以 PASS 的证据
+用户确认官方目标图后，Luna 才开始本地 visual matching。
 
-- 多条独立本地证据指向同一变体；
-- 模型和贴图不是仅靠文件名猜测，而有轮廓/机械结构/UV/atlas 支撑；
-- final path/hash 可重复定位；
-- candidate matrix 记录高相似候选和排除理由；
-- 网络 reference 与本地 asset provenance 明确分离。
+首轮强调**最低成本**：
 
-### 必须 REWORK 的情况
+```text
+T01 index/matrix
+  -> M4/M4A1 PLAYERVIEW filter
+  -> exclude BL/GR/WOMAN/arms/QV
+  -> SHA dedup
+  -> geometry cluster
+  -> 1 representative / cluster
+  -> 1 orthographic side view / representative
+  -> apply real local diffuse when available
+  -> contact sheet
+```
 
-- 只靠名称包含 `Thor/Leishen/BornBeast` 等字样就宣称 final；
-- 把外部 GoldSrc/CS1.6 MOD 资源写成 CF final；
-- 无 hash / 原始路径；
-- 不记录被排除候选，导致下轮 Agent 重复猜测；
-- 模型和贴图来自不同变体却被拼成同一 final；
-- Luna 自行降低身份 Gate。
+不要首轮做：
 
----
+- 四视图；
+- 动画；
+- IK；
+- Source retarget；
+- Cycles 高质量渲染；
+- 大范围 resource graph。
 
-## 8. P4 冻结风险的处理
-
-P4 最终保留的非阻塞风险继续记录，但不阻塞 P5：
-
-- CLI Inspect-policy override；
-- toolchain 尚未完全 manifest-driven；
-- console clean 未单独用户测试；
-- addon-disable rollback 未单独用户测试；
-- manifest byte hash 的 checkout/EOL 可移植性。
-
-只有当这些风险在 P5/P6 实际触发错误时，才创建最小 hardening task；不要预防性重写整个 P4。
+先用视觉把候选锁小，再进入 T03 closure。
 
 ---
 
-## 9. 当前下一步
+## 6. P5 Review principle
 
-Chat/Sol 的下一步不是继续 Review P4，而是：
+最终 `IDENTITY_CONFIRMED` 至少需要：
 
-> **设计并写入 P5 的第一轮资产定位 Task Spec，然后交 Luna 在本地 `data/**` 执行候选扫描与证据生产。**
+1. 用户确认的官方目标 reference；
+2. 用户确认的本地视觉 candidate；
+3. 本地 model path + SHA-256；
+4. 本地 texture/material path + SHA-256；
+5. Shader/CFG/material 关联；
+6. 声音/动画/其他同 family 资源至少路径级关联或明确 unresolved；
+7. 高相似排除项及排除原因。
+
+`USER_VISUAL_MATCH_CONFIRMED` 仍不是最终 identity；最终结论属于 P5-T04 Chat/Sol Review。
+
+---
+
+## 7. 当前下一步
+
+Chat/Sol 当前不需要再手工找雷神官网图。
+
+> **Luna 读取最新 `P5_T02_TASK_SPEC.md`，从 Mandatory Web Search 开始执行；到两个用户 Gate 时直接与用户交互，完成 T02 后再把证据交回 Chat/Sol。**
