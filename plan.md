@@ -2,7 +2,7 @@
 
 > 最后更新：2026-08-20
 >
-> 当前状态：**P4 `PASS / FROZEN`；P5 `READY_TO_START`**
+> 当前状态：**P4 `PASS / FROZEN`；P5 `ACTIVE` — T01 已完成，T02 `READY_FOR_LUNA`**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -10,9 +10,9 @@
 >
 > 当前内部模型名：`weapons/v_rif_m4a1.mdl`
 >
-> 当前核心目标：**P4 已冻结转换技术流水线；现在进入 P5，准确定位真正雷神对应的本地 CF 模型、贴图、Shader、声音等原始资产，然后在 P6 只替换输入重跑冻结流水线。**
+> 当前核心目标：**P4 已冻结转换技术流水线；P5 现在通过“官方图鉴 Web Search → 用户确认目标图 → 本地候选缩圈/去重 → 百科式贴图侧视比对 → provenance closure”准确定位真正雷神本地 CF 资产。**
 
-本文第 1 节是项目唯一 authoritative progress/status。README 负责工具说明和证据索引；`CODEX_TASKS.md` 负责本地执行 Agent；`CHAT_REVIEW.md` 负责 Chat/Sol 的计划、Review 和测试设计；`P4_STATUS.md` / `P4_REVIEW_RESULT.md` 保留 P4 冻结证据。
+本文第 1 节是项目唯一 authoritative progress/status。README 负责工具说明和证据索引；`CODEX_TASKS.md` 负责本地执行 Agent；`CHAT_REVIEW.md` 负责 Chat/Sol 的计划、Review 和测试设计；`P5_TASKS.md` / `P5_T02_TASK_SPEC.md` 负责当前 P5 执行合同；`P4_STATUS.md` / `P4_REVIEW_RESULT.md` 保留 P4 冻结证据。
 
 ---
 
@@ -96,34 +96,155 @@ P4 冻结**不证明**：
 
 除非后续发现 frozen contract 本身回归，否则 P5/P7 问题不得重新打开 P4。
 
-### 1.2 P5 — READY_TO_START
+### 1.2 P5 — ACTIVE
 
 P5：**最终雷神资产定位。**
 
-目标不是继续改流水线，而是在本地 `data/**` 中建立最终资产身份链：
+#### P5-T01 — EXECUTION_PASS / REVIEWED
+
+Luna 已完成本地广召回：
+
+- `data/**` 只读 inventory：165082 files；
+- 召回 2856 candidates；
+- 其中 1281 LTB；
+- 441 canonical LTB 尝试轻量 inspect；
+- candidate index / matrix / scan report / execution evidence 已生成；
+- 没有 candidate 被写成最终身份。
+
+T01 score 仅用于广召回历史排序，**不等于身份置信度**。
+
+任何 `Transformers`、`BornBeast`、`Thor`、`Leishen` 等名字或此前跨服别名讨论都只保留为候选线索，不再提前固定 PRIMARY。
+
+#### P5-T02 — READY_FOR_LUNA
+
+正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
+
+P5-T02 是一个**交互式多阶段任务**，Luna 可以在两个用户 Gate 之间继续执行，不需要每次返回 Chat/Sol 改 Plan。
+
+强制流程：
 
 ```text
-用户/参考视觉特征
-  -> 本地 CF 候选文件扫描
-  -> 模型轮廓 / mesh / 机械件特征比对
-  -> DTX/TGA atlas / UV / Shader 名称比对
-  -> 同变体声音/动画/配置关联
-  -> 原始路径 + SHA-256 + 证据
-  -> 最终雷神资产集合
+Luna Web Search
+  -> CF 官方武器百科详情页
+  -> 官网实际加载的真实目标武器图片
+  -> USER REFERENCE GATE
+  -> 用户确认目标图
+  -> 复用 T01 本地候选
+  -> M4/M4A1 PLAYERVIEW 缩圈
+  -> exact SHA + geometry 去重
+  -> 每个独特 cluster 生成一张最简百科式贴图正交侧视图
+  -> contact sheet / visual shortlist
+  -> USER LOCAL-CANDIDATE GATE
+  -> 用户确认本地候选
+  -> T03 provenance closure
 ```
 
-P5 退出条件：
+##### Official reference Gate
 
-1. 最终第一人称枪模候选有明确本地 CF 原始路径与 SHA-256；
-2. 模型轮廓、关键机械结构、mesh/分件与雷神参考相符；
-3. 最终贴图/atlas 有本地 CF 路径与 SHA-256，视觉特征与模型 UV 可以对应；
-4. Shader/CFG/材质关联可追溯；
-5. 与该变体关联的声音/动画资源至少完成路径级关联和来源说明；
-6. 网络截图、第三方 MOD、Wiki 只能作为识别 reference，不能进入 final asset provenance；
-7. 形成 P5 candidate matrix，排除项必须记录排除原因，避免 Agent 下一轮重新搜索已否决候选；
-8. Chat/Sol Review 允许把最终资产集合交给 P6。
+目标官方入口：
 
-当前下一步：**Chat/Sol 先设计 P5 的 candidate-scan / evidence task；Luna 再在本地 `data/**` 执行。**
+```text
+https://cf.qq.com/cp/a20250701wqbk/index.html
+```
+
+详情页形态通常为：
+
+```text
+https://cf.qq.com/cp/a20250701wqbk/page.html?itemid=<ITEM_ID>
+```
+
+规则：
+
+- Luna 必须实际使用 Web Search / 浏览器搜索；
+- 搜不到普通搜索结果时可使用官网站内功能或检查官方 HTML/JS/Network；
+- Luna 必须把**官网详情页实际加载的真实网络图片**给用户看；
+- 禁止 AI 生成图、重绘图代替 reference；
+- 第三方 Wiki/媒体/论坛只能帮助发现搜索线索，不能绕过官方图鉴 Gate；
+- 用户未确认官方目标图前不得开始本地 candidate visual matching。
+
+正常等待状态：
+
+```text
+AWAITING_USER_REFERENCE_CONFIRMATION
+```
+
+这不是 blocker。
+
+##### Local candidate Gate
+
+用户确认官方图后，Luna 直接继续：
+
+1. 复用 T01 candidate index/matrix；
+2. 聚焦第一人称 M4/M4A1 `PLAYERVIEW` 候选；
+3. 排除/归档 `_BL`、`_GR`、`WOMAN`、纯手臂、QV/第三人称；
+4. exact SHA 去重；
+5. parser 可用时按 geometry signature 聚类；
+6. 每个 unique cluster 首轮只渲染一个 representative；
+7. 首轮只生成一张与百科图方向一致的正交侧面图；
+8. 优先应用本地 CF diffuse/主颜色纹理；
+9. 生成 contact sheet / Top shortlist 给用户；
+10. 用户明确选择后写 `USER_VISUAL_MATCH_CONFIRMED`。
+
+首轮侧视图强调最低成本：
+
+```text
+768x384 或 1024x512
+透明/白背景
+无手臂
+无动画
+无 IK
+无 Source retarget
+无复杂灯光
+不做四视图
+不做 Cycles 高质量渲染
+```
+
+灰模可以做便宜几何排除，但没有真实纹理的 candidate 不能仅凭灰模完成最终视觉确认。
+
+#### P5-T03 — BLOCKED_BY_T02
+
+对用户视觉确认的本地 candidate 建立：
+
+```text
+model LTB
+  -> diffuse / DTX / TGA
+  -> Alpha / Normal / Specular
+  -> Shader / CFG / material
+  -> QV / world family
+  -> sound WAV
+  -> animation / config references
+```
+
+每个本地资源记录 relative path、SHA-256、size、relation、source class 和 unresolved reason。
+
+#### P5-T04 — BLOCKED_BY_T03
+
+由 Chat/Sol 最终 identity review，只允许输出：
+
+```text
+IDENTITY_CONFIRMED
+IDENTITY_PROBABLE_NEEDS_EVIDENCE
+REWORK_CANDIDATE_SEARCH
+```
+
+只有 `IDENTITY_CONFIRMED` 才允许进入 P6。
+
+#### P5 退出条件
+
+1. 官方武器百科目标图已经用户确认；
+2. 最终第一人称本地候选已经用户视觉确认；
+3. 最终第一人称枪模有明确本地 CF 原始路径与 SHA-256；
+4. 模型轮廓、关键机械结构与官方 reference 相符；
+5. 最终贴图/atlas 有本地 CF 路径与 SHA-256，视觉特征与模型 UV 可对应；
+6. Shader/CFG/材质关联可追溯；
+7. 与该变体关联的声音/动画资源至少完成路径级关联和来源说明；
+8. 网络图片只作为 reference，不进入 final game asset provenance；
+9. candidate matrix / exclusion history 能解释高相似候选为何被排除；
+10. Chat/Sol Review 允许把最终资产集合交给 P6。
+
+当前下一步：
+
+> **Luna 拉取最新 `master`，读取 `P5_T02_TASK_SPEC.md`，从 Mandatory Web Search 开始。找到官网真实目标图后直接给用户确认；用户确认后在同一任务中继续本地侧视候选识别。**
 
 ---
 
@@ -153,6 +274,17 @@ Track A 的首个 Prototype 已在 P4 冻结。
 
 Track B 当前由 P5 执行。未完成时禁止把 `Prototype-01` 改名为“最终雷神”，但不得因此回退 P4 已通过的 Track A 证据。
 
+Track B 的视觉入口固定为：
+
+```text
+官方图鉴 Web Search
+  -> 用户目标图确认
+  -> 本地统一侧视表达
+  -> 用户本地候选确认
+```
+
+不得以内部英文命名猜测代替这两个视觉 Gate。
+
 ---
 
 ## 3. 资产来源政策
@@ -164,15 +296,19 @@ Track B 当前由 P5 执行。未完成时禁止把 `Prototype-01` 改名为“�
 
 ### 只允许作为 reference
 
+- CF 官方武器百科网页与图片；
 - 网络截图；
 - Wiki / 展示页；
 - 第三方 MOD；
 - 网络 GoldSrc/CS1.6 贴图。
 
-这些可用于候选识别、UV/视觉方向判断和 Prototype 调试，但必须保持 reference/prototype 标签。
+其中 CF 官方武器百科是 P5 的目标视觉 identity anchor；其他网络来源只能用于补充搜索线索/对照。
+
+这些 reference 不能进入 final game asset provenance。
 
 ### 禁止
 
+- 使用 AI 生成/重绘图片冒充官方目标 reference；
 - 将第三方 MOD 模型、贴图、动画或声音写成最终 CF 资产；
 - 用第三方 MOD 成功运行证明本地 CF parser 语义正确；
 - 用改名复制其他 CS:GO 武器满足最终验收；
@@ -205,9 +341,9 @@ M4A4 57-bone reference、对齐变换、mesh→bone mapping、attachment 和官�
 
 manifest-driven fresh build、语义 Gate、package/deploy、negative mutation、reproducibility、用户 Gate、独立 Review。
 
-### P5：最终雷神资产定位 — ACTIVE NEXT
+### P5：最终雷神资产定位 — ACTIVE
 
-本地候选模型/贴图/Shader/声音身份确认与 provenance。
+官方目标图确认、本地候选缩圈/去重、百科式贴图侧视比对、用户候选确认、资源 provenance closure。
 
 ### P6：最终资产替换与发布质量
 
@@ -251,7 +387,7 @@ manifest-driven fresh build、语义 Gate、package/deploy、negative mutation�
 | CLI Inspect policy 可 override manifest | contract 可进一步硬化 | 否 | 通用化/下一轮 pipeline hardening |
 | toolchain 未完全 manifest-driven | provenance 可追踪但契约不完全 | 否 | 通用化前 |
 | manifest byte SHA 跨 checkout/EOL 有歧义 | provenance 可读性问题 | 否 | 增加 canonical hash / Git blob identity |
-| 当前候选身份未最终确认 | 不能称最终雷神 | **是 P5 核心任务** | P5 |
+| 最终雷神身份未确认 | 不能称 final | **是 P5 核心任务** | P5 |
 | 当前材质是外部 reference | 不能用于 final 发布 | **是 P5/P6 核心任务** | P5/P6 |
 | world/drop model 仍为官方 M4A4 | 第一人称 P4 不受影响 | 否 | P7 |
 
@@ -290,6 +426,8 @@ manifest-driven fresh build、语义 Gate、package/deploy、negative mutation�
 
 ### 8.2 P5 Asset Identity DoD
 
+- 官方 CF 武器百科目标图已由用户明确确认；
+- 本地 candidate 已通过统一百科式侧视比对并由用户确认；
 - 最终模型、贴图、Shader、声音等均有可信本地 CF provenance；
 - candidate matrix 能解释为什么最终候选胜出以及其他高相似候选为何排除；
 - 模型轮廓、关键机械件和 UV/atlas 形成互相支持的身份链；
