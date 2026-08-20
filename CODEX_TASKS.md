@@ -15,9 +15,10 @@
 - P4：**`PASS / FROZEN`**；
 - P4 最终 Review：`PASS WITH RISK`，允许冻结；
 - P5：**ACTIVE — 最终雷神资产定位**；
-- P5-T01：**READY_FOR_LUNA**；
+- P5-T01：**EXECUTION_PASS / REVIEWED**；
+- P5-T02：**READY_FOR_LUNA**；
 - P5 任务流：[`P5_TASKS.md`](P5_TASKS.md)；
-- 当前正式执行协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)；
+- 当前正式执行协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)；
 - P4 visible Inspect / 手指 retarget 属于 P7，不是当前任务；
 - P4 frozen baseline 不得因为 P5/P7 问题被自行重写。
 
@@ -67,8 +68,8 @@ Codex Sol 默认也不承担额外独立 Review。
 1. 读取 `AGENTS.md`；
 2. 读取 `plan.md` 第 1 节；
 3. 读取本文件 `CODEX_TASKS.md`；
-4. 读取当前阶段任务流；P5 当前为 `P5_TASKS.md`；
-5. 读取用户/Chat 明确指定的 Task Spec；当前默认是 `P5_T01_TASK_SPEC.md`；
+4. 读取当前阶段任务流 `P5_TASKS.md`；
+5. 读取当前默认 Task Spec：`P5_T02_TASK_SPEC.md`；
 6. `git status --short --branch`；
 7. tracked 工作区可安全同步时执行 `git fetch origin` + `git pull --rebase origin master`；
 8. 再严格执行 Task Spec。
@@ -77,33 +78,68 @@ Codex Sol 默认也不承担额外独立 Review。
 
 ---
 
-## 5. 当前 P5 执行原则
+## 5. 当前 P5 identity correction
+
+P5-T01 完成后，Chat/Sol 使用外部 identity reference 纠正了 T01 原始 recall ranking：
+
+```text
+M4A1-雷神  -> M4A1-S Transformers
+M4A1-黑骑士 -> M4A1-S Born Beast
+```
+
+因此：
+
+- T01 的 BornBeast 高分只代表 M4A1/历史配置召回强，不代表雷神身份；
+- `PV-M4A1_S_Transformers.LTB` 是当前 T02 PRIMARY；
+- `PV-M4A1_S_Transformers_Classic.LTB` 是 same-family control；
+- `PV-M4A1_S_BornBeast.LTB` 是 negative control；
+- Luna 不得按 T01 排名继续自己挑 Top 30，也不得自行扩大 T02 候选。
+
+---
+
+## 6. 当前 P5-T02 任务
+
+正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
+
+执行目标：
+
+```text
+verify frozen input hashes
+  -> export PRIMARY / same-family / negative-control LTB
+  -> structure compare
+  -> Blender 4.5 standardized multiview previews
+  -> verify exact local Transformers DTX/TGA/CFG resource family
+  -> review_sheet.png + JSON evidence
+  -> push
+  -> STOP for Chat/Sol review
+```
+
+特别禁止：
+
+- 继续全量扫描 `data/**`；
+- 把 Transformers 的某个其他皮肤 / suffix variant 擅自加入候选；
+- 修改 P4 frozen pipeline；
+- Steam / MIGI deploy；
+- Luna 自行写 `IDENTITY_CONFIRMED`；
+- 自行进入 T03。
+
+---
+
+## 7. 当前 P5 执行原则
 
 P5 目标是**最终雷神本地 CF 资产身份定位**，不是继续改 P4 pipeline。
-
-Luna 可能被要求在 `data/**` 中执行：
-
-- 文件名/路径候选扫描；
-- LTB mesh/分件/顶点/机械结构摘要；
-- DTX/TGA/纹理 atlas 特征提取；
-- CFG/Shader/material 关联搜索；
-- WAV/动画/同变体资源关联；
-- SHA-256、size、相对路径记录；
-- 候选缩略图/导出预览/机器可读 candidate matrix 生成。
 
 必须遵守：
 
 1. 原始 `data/**` 不上传；
 2. 可以上传路径、hash、size、解析报告、Task Spec 明确允许的预览图/缩略图和 candidate matrix；
 3. 不把网络第三方 MOD 当作 final source；
-4. 不把 Prototype 当前 BornBeast 候选自动当成最终雷神；
-5. 被排除的候选必须记录排除原因，防止后续 Agent 重复搜索；
-6. 最终资产身份由 Chat/Sol 根据证据判定，Luna 只报告候选事实；
-7. T01 只做候选召回与轻量摘要，不自行开始 Blender 全量渲染。
+4. 最终资产身份由 Chat/Sol 根据证据判定，Luna 只报告候选事实；
+5. T02 只处理固定三个模型和 exact-match Transformers 资源族，不做全量 Blender。
 
 ---
 
-## 6. Chat → Codex 委托协议
+## 8. Chat → Codex 委托协议
 
 当 Chat/Sol 给出 Task/Test Spec 时，至少应包含：
 
@@ -131,32 +167,7 @@ Luna 执行时：
 
 ---
 
-## 7. 当前 P5-T01 任务
-
-当前已经发布正式 Task Spec：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
-
-执行目标：
-
-```text
-官方身份锚点：M4A1-雷神
-  -> data/** 本地 inventory
-  -> M4/M4A1/PLAYERVIEW/配置引用候选召回
-  -> 候选 SHA-256 + 轻量 LTB 摘要 + reference edges
-  -> candidate_index.json / candidate_matrix.csv / scan_report.md / execution.json
-  -> push
-  -> STOP，等待 Chat/Sol 选择 T02 候选
-```
-
-特别禁止：
-
-- 仅凭 `LEISHEN` / `THOR` / `M4A1` 文件名宣布最终身份；
-- T01 阶段全量 Blender 渲染；
-- 修改 P4 frozen pipeline；
-- 自行进入 P5-T02。
-
----
-
-## 8. Git / data 规则摘要
+## 9. Git / data 规则摘要
 
 完整规则见 [`AGENTS.md`](AGENTS.md)。特别强调：
 
@@ -172,8 +183,8 @@ Luna 执行时：
 
 ---
 
-## 9. 当前默认停止条件
+## 10. 当前默认停止条件
 
-完成 `P5_T01_TASK_SPEC.md` 后：
+完成 `P5_T02_TASK_SPEC.md` 后：
 
-> **Luna 只提交 Task Spec upload allowlist 内的证据，然后停止。不得自行开始 P5-T02，不得自行宣布最终雷神。**
+> **Luna 只提交 Task Spec upload allowlist 内的派生证据，然后停止。不得自行开始 P5-T03，不得自行宣布最终雷神。**
