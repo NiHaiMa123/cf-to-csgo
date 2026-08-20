@@ -1,116 +1,135 @@
 # P5_TASKS.md — 最终雷神资产定位任务流
 
-> 当前阶段：**P5 — 最终雷神本地 CF 资产定位**
+> 当前阶段：**P5 — ACTIVE**
 >
 > Planner / Reviewer：**Chat/Sol**
 >
 > Local Executor：**Luna / 普通 Codex Agent**
 >
-> 项目唯一 authoritative progress/status 仍以 [`plan.md`](plan.md) 第 1 节为准；Git 与 `data/**` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
+> 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准；Git 与 `data/**` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 
 ---
 
-## 1. P5 核心原则
+## 1. 固定业务流程
 
-P5 不是根据文件名、跨服英文名或模型记忆猜“哪个是雷神”，而是建立可重复的资产身份链。
-
-固定流程：
+P5 的标准识别顺序统一为：
 
 ```text
-Luna Web Search
-  -> CF 官方武器百科详情页
-  -> 官网实际加载的目标武器图片
-  -> 用户确认目标图
-  -> 本地候选缩圈 / 去重
-  -> 最简百科式贴图正交侧视图
-  -> contact sheet / visual shortlist
-  -> 用户确认本地候选
-  -> model / texture / shader / sound provenance closure
-  -> Chat/Sol final identity review
+P5-T01  官方图鉴 Web Search + 用户确认目标图
+    ↓
+P5-T02  本地候选缩圈 / 去重 / 百科式侧视图 + 用户确认本地候选
+    ↓
+P5-T03  Resource Graph / provenance closure
+    ↓
+P5-T04  Chat/Sol final identity review
 ```
 
-强制规则：
+关键原则：
 
-- **官网图鉴搜索属于 Luna 的执行任务，不属于每次都由 Chat/Plan 端代做的规划步骤。**
-- 目标图必须是 Web Search 找到的真实网络图片；禁止生成图代替。
-- USER REFERENCE GATE 必须落在 CF 官方武器百科详情页及其实际加载图片。
-- 第三方 Wiki、Fandom、Bilibili、贴吧、媒体页只能帮助发现搜索线索，不能绕过官方图鉴 Gate。
-- 只有用户确认官网目标图后，Luna 才能继续本地 candidate matching。
-- 任何 `Transformers`、`BornBeast`、`Thor`、`Leishen` 等内部/英文 token 都只能作为候选线索，不能提前固定最终身份。
+- Web Search 是 T01 的强制执行步骤；
+- 必须找到 CF 官方武器百科详情页及其实际加载的真实武器图片；
+- 给用户看的目标图必须是网上找到的真实图片，禁止 AI 生成图代替；
+- 用户确认官方目标图之前，不能开始本地视觉匹配；
+- 内部英文名、跨服名、文件名、T01 legacy score 都只能作为候选线索；
+- 本地候选首轮采用最低成本的单张正交侧视图，不做四视图、动画、IK、Source retarget 或高质量渲染；
+- 最终身份必须经 T03 provenance + T04 Review，不能仅凭“看起来像”。
 
 ---
 
-## 2. P5-T01 — 本地广召回
-
-状态：**EXECUTION_PASS / REVIEWED**。
-
-执行协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
-
-执行提交：
-
-```text
-ab7e2ef3394991ef0b4468f34cf4d6849b917dc2
-```
-
-已完成：
-
-- `data/**` 只读 inventory：165082 files；
-- 召回 2856 candidates；
-- 其中 1281 LTB；
-- 441 canonical LTB 尝试轻量 inspect；
-- 生成 candidate index / matrix / report / execution evidence；
-- 未把任何 candidate 写成最终确认。
-
-T01 的 score 只用于**广召回历史排序**，不能作为最终 identity confidence。
-
-历史讨论中出现过 `Transformers` / `BornBeast` 等跨服别名假设；从 P5-T02 起这些都降级为普通候选线索，必须重新经过官方目标图 + 本地视觉比对验证。
-
----
-
-## 3. P5-T02 — 官方目标图确认 + 本地百科式侧视候选锁定
+## 2. P5-T01 — 官方 CF 武器百科目标图确认
 
 状态：**READY_FOR_LUNA**。
 
-正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
+正式协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
 
-### T02-A：Mandatory official Web Search
-
-Luna 必须先搜索：
+Luna 必须：
 
 ```text
-M4A1-雷神
-https://cf.qq.com/cp/a20250701wqbk/index.html
+Web Search
+  -> CF 官方武器百科
+  -> 官方详情页
+  -> 官网实际加载图片
+  -> 把真实网络图片给用户看
+  -> 等用户确认
 ```
 
-目标是定位官方武器百科详情页、`itemid`（若可取得）和该详情页实际加载的武器图片。
-
-然后在 Codex 对话里**直接给用户看真实官网图片**并等待确认。
-
-正常状态：
+正常等待状态：
 
 ```text
 AWAITING_USER_REFERENCE_CONFIRMATION
 ```
 
-这不是 blocker，不需要回 Chat 重新设计。
+用户否决时，Luna 在同一个 T01 中继续搜索，不需要回 Chat/Sol 改 Plan。
 
-### T02-B：候选缩圈与去重
-
-用户确认官网目标图后，Luna 直接继续：
-
-- 复用 T01 candidate index/matrix；
-- 聚焦 M4/M4A1 第一人称 `PLAYERVIEW` 候选；
-- 排除/归档 `_BL`、`_GR`、`WOMAN`、纯手臂、QV/第三人称等；
-- exact SHA 去重；
-- 可用时再按 geometry signature 聚类；
-- 每个独特 cluster 首轮只保留一个 representative 渲染。
-
-### T02-C：最快百科式侧视图
-
-首轮每个 unique representative 只生成**一张**标准侧面图：
+T01 完成条件：
 
 ```text
-orthographic side view
+PASS / USER_REFERENCE_CONFIRMED
+```
+
+证据输出：
+
+```text
+work/p5_leishen/t01_reference/official_reference.json
+work/p5_leishen/t01_reference/reference_report.md
+```
+
+---
+
+## 3. 历史本地广召回 — LEGACY PRE-SCAN
+
+此前 Luna 已经以旧 `P5-T01` 编号执行过一次本地 `data/**` 广召回。为避免重扫 16 万文件，该执行结果继续保留，但不再定义为当前 T01。
+
+兼容说明：[`P5_LEGACY_PRE_SCAN.md`](P5_LEGACY_PRE_SCAN.md)。
+
+历史提交：
+
+```text
+ab7e2ef3394991ef0b4468f34cf4d6849b917dc2
+```
+
+历史输出：
+
+```text
+work/p5_leishen/t01/candidate_index.json
+work/p5_leishen/t01/candidate_matrix.csv
+work/p5_leishen/t01/scan_report.md
+work/p5_leishen/t01/execution.json
+```
+
+这些文件现在只是 **T02 candidate pool**。
+
+旧 score 不代表 identity confidence。
+
+---
+
+## 4. P5-T02 — 本地候选缩圈与百科式侧视锁定
+
+状态：**BLOCKED_BY_T01_USER_REFERENCE**。
+
+正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
+
+用户确认 T01 官方目标图后，Luna 可以直接进入 T02，不需要 Chat/Sol 再改状态。
+
+T02 流程：
+
+```text
+读取 confirmed official reference
+  -> 复用 LEGACY PRE-SCAN
+  -> 聚焦 M4/M4A1 PLAYERVIEW
+  -> 排除 BL/GR/WOMAN/纯手臂/QV
+  -> exact SHA 去重
+  -> geometry signature 聚类（可用时）
+  -> 每个 unique cluster 只渲染一个 representative
+  -> 应用本地 diffuse/主纹理
+  -> 百科式正交侧视 PNG
+  -> contact sheet / Top 5–15
+  -> 用户确认本地候选
+```
+
+首轮渲染目标：
+
+```text
 768x384 或 1024x512
 透明/白背景
 无手臂
@@ -118,35 +137,27 @@ orthographic side view
 无 IK
 无 Source retarget
 无复杂灯光
+无 Cycles
 ```
 
-优先把本地 CF diffuse/主颜色纹理通过模型 UV 应用到 mesh 后渲染，而不是直接比较方块 atlas。
-
-如果某候选暂时无法解析纹理，可先生成灰模/轮廓用于便宜排除，但不能仅凭灰模最终确认。
-
-### T02-D：第二个人工视觉 Gate
-
-Luna 生成 contact sheet / Top shortlist 后，把本地实际侧视候选给用户看。
-
-用户确认后状态为：
+用户确认后状态：
 
 ```text
 USER_VISUAL_MATCH_CONFIRMED
 ```
 
-仍然不是最终 `IDENTITY_CONFIRMED`；T03 还要闭合 provenance。
+仍不是最终 `IDENTITY_CONFIRMED`。
 
 ---
 
-## 4. P5-T03 — Resource Graph / provenance closure
+## 5. P5-T03 — Resource Graph / provenance closure
 
 状态：`BLOCKED_BY_T02`。
 
 对用户视觉确认的本地 candidate 建立：
 
 ```text
-confirmed display target
-  -> PLAYERVIEW model LTB
+PLAYERVIEW model LTB
   -> diffuse / DTX / TGA
   -> Alpha / Normal / Specular
   -> Shader / CFG / material
@@ -155,7 +166,7 @@ confirmed display target
   -> animation / config references
 ```
 
-每个本地资源至少记录：
+每个资源记录：
 
 ```text
 relative_path
@@ -166,15 +177,13 @@ source_class
 confidence / unresolved reason
 ```
 
-最终来源只能是本地 CF 原始资产；网络图片只保留 reference URL/hash，不进入 final game asset provenance。
-
 ---
 
-## 5. P5-T04 — Final identity Review
+## 6. P5-T04 — Final identity Review
 
 状态：`BLOCKED_BY_T03`。
 
-由 Chat/Sol 根据 T02 用户视觉 Gate + T03 provenance evidence 最终输出之一：
+由 Chat/Sol 最终输出之一：
 
 ```text
 IDENTITY_CONFIRMED
@@ -182,22 +191,7 @@ IDENTITY_PROBABLE_NEEDS_EVIDENCE
 REWORK_CANDIDATE_SEARCH
 ```
 
-只有 `IDENTITY_CONFIRMED` 才允许进入 P6 替换 final inputs。
-
----
-
-## 6. 证据强度
-
-从强到弱：
-
-1. 用户确认的 CF 官方武器百科目标图；
-2. 本地模型标准侧面轮廓/机械结构与官方图匹配；
-3. 本地真实 diffuse/纹理映射后的颜色/纹路/Logo/发光区域匹配；
-4. 本地配置/resource graph 明确闭合同一 model/texture/shader family；
-5. QV/sound/animation 等同变体资源关联；
-6. 路径/文件名/跨服英文 token。
-
-文件名和英文 token 永远不能单独得到 final identity。
+只有 `IDENTITY_CONFIRMED` 才允许进入 P6。
 
 ---
 
@@ -205,37 +199,29 @@ REWORK_CANDIDATE_SEARCH
 
 ### Luna / Codex
 
-Luna 负责完整 T02 交互式执行：
+负责：
 
-```text
-Web Search
-  -> 给用户看真实官网图片
-  -> 等用户确认
-  -> 本地缩圈 / 去重 / 单侧面批量渲染
-  -> 给用户看本地候选
-  -> 等用户确认
-  -> push evidence
-  -> STOP
-```
+- T01 Web Search 和官方图片展示；
+- 两个用户 Gate 的交互等待与继续执行；
+- T02 本地候选缩圈/去重/实际模型侧视图生成；
+- 证据产出；
+- 不上传 `data/**`。
 
-两个用户 Gate 都属于同一个 Task Spec，**不需要每个 Gate 都返回 Chat/Sol 改 Plan。**
-
-Luna 不得：
+不得：
 
 - 生成目标 reference 图；
-- 用户未确认官网图就开始本地视觉锁定；
-- 预锁 `Transformers` / `BornBeast` 等名字；
-- 修改 P4 frozen pipeline；
-- 上传 `data/**`；
+- 未确认官方目标图就进入 T02；
+- 凭文件名预锁候选；
 - 自行写最终 `IDENTITY_CONFIRMED`；
-- T02 完成后自行进入 T03。
+- 修改 P4 frozen pipeline。
 
 ### Chat/Sol
 
-Chat/Sol 负责：
+负责：
 
-- 维护 Task Spec / acceptance criteria；
-- 当 Task Spec 真正遇到 BLOCKED/INVALID 时重新设计；
-- T03/T04 的 provenance 和最终 identity review。
+- Task Spec / acceptance criteria；
+- T03 provenance 审查；
+- T04 最终 identity Review；
+- 真正 BLOCKED/INVALID 时重新设计流程。
 
-Chat/Sol **不需要**在每一把武器上重复手工执行“先搜官网图给用户确认”这一步；该行为已经固化为 Luna 的 T02 执行协议。
+正常的用户确认 Gate 不需要返回 Chat/Sol 重写 Plan。
