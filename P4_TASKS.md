@@ -158,30 +158,30 @@ Crowbar 0.71 运行时需要 `%APPDATA%\ZeqMacaw` 可写；受限 Agent 环境�
 
 ### P4-T07：执行者自动测试 — PASS
 
-要求的最低覆盖是 **16 类错误场景**；当前实际脚本执行 **17 个 mutation**，其中 deploy 安全边界拆成多个独立 mutation。因此“16 类要求”和“17 个实际测试”不是两个不同 Gate。
+当前权威报告 `negative_test_report.json` 记录 `mutation_count=17`、`passed_mutations=17`。旧清单曾把“缺 sw.vtx 或 ANI”合并写成一个要求，因此出现过“16 项”文字；现统一以实际报告的 **17 个 mutation / 17 PASS** 为准。
 
-已覆盖：
+实际 17 项为：
 
-1. LTB hash 错误；
-2. B3 triangle mutation；
-3. group 名错误；
-4. UV 错误；
-5. normal 错误；
-6. mesh/bone mapping 错误；
-7. C3 matrix convention 错误；
-8. negative determinant / winding 风险；
-9. sequence 数量不变但名称错误；
-10. attachment 数量不变但 bone/语义错误；
-11. Source 二进制缺失；
-12. VMT→VTF 闭包错误；
-13. Prototype/final provenance 错误；
-14. output path 边界错误；
-15. deploy 未指定合法目标；
-16. deploy 已存在不同内容目标；
-17. T07 脚本中拆分执行的另一项高风险边界 mutation。
+1. `ltb_hash`；
+2. `b3_triangle`；
+3. `b3_group`；
+4. `b3_uv_index`；
+5. `b3_missing_normal`；
+6. `mapping_parent_clip_swap`；
+7. `c3_matrix_convention`；
+8. `c3_negative_determinant`；
+9. `sequence_name_same_count`；
+10. `attachment_bone_same_count`；
+11. `missing_sw_vtx`；
+12. `missing_ani`；
+13. `missing_vtf_material_closure`；
+14. `final_cf_material`；
+15. `output_repo_root`；
+16. `deploy_without_target`；
+17. `deploy_different_existing_content`。
 
 - [x] 17/17 mutation 均非零退出，并命中预期阶段/Gate。
-- [x] mutation 在临时 shadow project / 临时 MIGI 根执行，不污染真实环境。
+- [x] mutation 在临时 shadow project / 临时 game root 执行，不污染真实环境。
 - [x] 两次独立正向 build 已完成语义复现比较。
 
 正向 run：
@@ -297,7 +297,7 @@ Reviewer 不得顺手修复发现的问题；修复退回执行者，修复后�
 - [x] `check → build → validate → package` 可从 manifest 指定本地 LTB 开始在 fresh run 中完成；
 - [x] 无 MIGI/旧 build/旧 aligned OBJ 隐式输入；
 - [x] 两次独立正向 build 语义复现证据完成；
-- [x] 16 类必测错误场景已覆盖，实际 17 个负向 mutation 全部被预期 Gate 阻止；
+- [x] T07 实际 17 个负向 mutation 全部被预期 Gate 阻止；
 - [x] package / staging / 明确 deploy 目标形成 hash/provenance 闭环；
 - [x] frozen/no-op Inspect 自动构建与 15/15 validation 通过；
 - [x] Plan / README / P4 文档预收口完成；
