@@ -1,67 +1,68 @@
-# P4_TASKS.md — 兼容入口 / 角色路由
+# P4_TASKS.md — P4 冻结入口 / 角色路由
 
-> **不要再把本文件当作一个混合的 P4 Task + Review 清单执行。**
+> P4 已于 2026-08-20 完成独立 Review，最终结论为 **`PASS WITH RISK`**，项目状态为 **`PASS / FROZEN`**。
 >
-> 过去本文件同时写了本地执行任务和独立 Reviewer 任务，导致 Luna / Codex Sol / Chat Sol 容易互相接管职责。自 2026-08-20 起，职责正式拆分。
+> 本文件不再作为待执行 P4 Task 清单；它只保留角色路由和冻结入口。
 
-## 先判断你是谁
+## P4 最终状态
 
-### 如果你运行在 Codex / 本地 Agent 环境
+- P4-T01～T09：完成；
+- T08：`passed_user_confirmed`；
+- RV-01：PASS；
+- RV-02：PASS WITH NON-BLOCKING RISK；
+- RV-03：PASS；
+- RV-04：PASS，4/4 独立反例；
+- RV-05：PASS WITH NON-BLOCKING RISK；
+- RV-06：`PASS WITH RISK`；
+- P4：**`PASS / FROZEN`**。
 
-包括：
+详细证据：
 
-- Luna；
-- 普通 Codex Agent；
-- 用户明确调用的 Codex Sol。
+- [`P4_STATUS.md`](P4_STATUS.md)
+- [`P4_REVIEW_RESULT.md`](P4_REVIEW_RESULT.md)
+- [`P4_RV04_TEST_SPECS.md`](P4_RV04_TEST_SPECS.md)
+- `work/m4a1_s_bornbeast/p4_prototype_01/rv04_chat_review_report.json`
 
-**读取并遵守：[`CODEX_TASKS.md`](CODEX_TASKS.md)**
-
-默认规则：
-
-- Luna = 本地执行器 / 证据生产器；
-- 不要自行执行 RV-01～RV-06 完整 Review；
-- 不要自行把 P4 标成 `PASS / FROZEN`；
-- Codex Sol 只有在用户明确点名“Codex Sol 独立 review / milestone audit”时才进入额外审计模式。
-
-### 如果你是 ChatGPT 对话中的 Chat / Sol
-
-**读取并遵守：[`CHAT_REVIEW.md`](CHAT_REVIEW.md)**
-
-默认规则：
-
-- Chat/Sol = 当前 P4 默认独立 Reviewer；
-- 负责 RV-01～RV-06、测试设计、证据判定和最终冻结建议；
-- 需要本地执行时，把精确 Test Spec 交给 Luna；
-- 不得把未执行的本地测试写成 PASS。
+项目唯一 authoritative progress/status 仍是 [`plan.md`](plan.md) 第 1 节。
 
 ---
 
-## 当前 P4 状态
+## 角色路由
 
-项目唯一 authoritative progress/status 仍是 [`plan.md`](plan.md) 第 1 节；简要快照见 [`P4_STATUS.md`](P4_STATUS.md)。
+### Codex / Luna / 本地 Agent
 
-截至当前：
+读取并遵守：[`CODEX_TASKS.md`](CODEX_TASKS.md)
 
-- P4-T01～T07：完成；
-- P4-T08：`passed_user_confirmed`；
-- P4-T09：预收口完成，最终冻结待 Review；
-- 当前总状态：`REVIEW_PENDING / NOT_YET_FROZEN`；
-- 真正 Inspect retarget / 手指穿模属于 P7，不是 P4 blocker；
-- 默认下一步：**Chat/Sol 按 `CHAT_REVIEW.md` 做 RV-01～RV-06。**
+默认角色：**本地执行器 / 证据生产器**。
 
-如果 RV-04 需要本地高风险反例：
+- 不自行重新打开 P4；
+- 不自行做新的 P4 Review；
+- 不因为 P5 资产识别或 P7 Inspect 问题修改 P4 frozen baseline；
+- 只执行用户或 Chat/Sol 明确交付的 P5/P6/P7 本地任务。
 
-```text
-Chat/Sol 固定 Test Spec
-  → Luna / 本地 Codex 执行
-  → push 原始证据
-  → Chat/Sol 判定 PASS / FAIL / INVALID
-```
+### ChatGPT Chat / Sol
+
+读取并遵守：[`CHAT_REVIEW.md`](CHAT_REVIEW.md)
+
+默认角色：**Planner / Test Designer / Reviewer**。
+
+当前 active work 已转入 P5：最终雷神资产定位。
+
+### Codex Sol
+
+Codex Sol 不是默认额外 Gate。只有用户明确要求“Codex Sol 独立 review / milestone audit”时才执行额外审计，并与 Chat/Sol Review 分开记录。
 
 ---
 
-## 历史说明
+## P4 冻结边界
 
-拆分前的完整 P4 T01～T09 + RV-01～RV-06 混合清单仍保存在 Git 历史中（2026-08-20 之前的 `P4_TASKS.md` 版本），不作为当前 Agent 的角色指令继续执行。
+P4 frozen/no-op 只证明转换技术链与 changed-runtime 安全，不证明：
 
-所有 Agent 还必须遵守根目录 [`AGENTS.md`](AGENTS.md) 的 Git 同步和本地 `data/` 保护规则。
+- 当前候选是最终雷神；
+- 当前网络参考材质是最终 CF 材质；
+- visible Inspect / 手指 retarget 已解决；
+- CF 原动画/声音/世界模型已最终化。
+
+这些属于 P5/P6/P7，不能作为理由回滚 P4。
+
+所有 Agent 继续遵守根目录 [`AGENTS.md`](AGENTS.md) 的 Git 同步与 `data/` 本地保护规则。
