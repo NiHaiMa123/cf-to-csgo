@@ -2,210 +2,148 @@
 
 > 本文件只给 **Codex 环境中的 Agent** 使用，包括 Luna、本地执行 Agent，以及用户明确调用时的 Codex Sol。
 >
-> 项目唯一权威进度仍以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 和 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
+> 项目唯一权威进度以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 与 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
-> **默认独立 Reviewer 不是 Codex Sol，而是 Chat/Sol；Chat 侧 Review 规则见 [`CHAT_REVIEW.md`](CHAT_REVIEW.md)。**
+> **默认 Planner / Reviewer = Chat/Sol；默认本地 Executor = Luna / 普通 Codex Agent。**
 
 ---
 
-## 1. 角色必须先分清
+## 1. 当前阶段
 
-### 1.1 Luna / 普通 Codex Agent
+截至 2026-08-20：
 
-默认角色：**本地执行器 + 证据生产器**。
+- P4：**`PASS / FROZEN`**；
+- P4 最终 Review：`PASS WITH RISK`，允许冻结；
+- P5：**`READY_TO_START` — 最终雷神资产定位**；
+- P4 visible Inspect / 手指 retarget 属于 P7，不是当前任务；
+- P4 frozen baseline 不得因为 P5/P7 问题被自行重写。
+
+P4 证据：[`P4_STATUS.md`](P4_STATUS.md)、[`P4_REVIEW_RESULT.md`](P4_REVIEW_RESULT.md)。
+
+---
+
+## 2. Luna / 普通 Codex Agent 的默认角色
+
+角色：**本地执行器 + 证据生产器**。
 
 职责：
 
-- 拉取最新 `master`；
-- 读取本地 `data/` 和本地工具链；
-- 运行 Blender、Crowbar、`studiomdl`、MIGI、Python 测试和其他只能在用户机器执行的操作；
-- 按 Chat/Sol 已经固定好的测试协议执行；
-- 保存 command、stdout/stderr、exit code、run id、hash、report；
-- 将允许上传的代码/报告/证据提交到 GitHub；
-- 遇到失败按 `BLOCKED` / `INVALID` / `EXECUTION_FAIL` 如实返回。
+- 安全拉取最新 `master`；
+- 读取本地 `data/**` 和本地工具链；
+- 运行只能在用户机器执行的扫描、解析、Blender、Crowbar、`studiomdl`、MIGI、Python 等任务；
+- 严格执行用户或 Chat/Sol 已经固定的 Task/Test Spec；
+- 保留 command、stdout/stderr、exit code、run id、hash、report；
+- 只提交允许上传的代码、报告和证据；
+- `data/**` 原始资产永远不上传。
 
-Luna **不是默认独立 Reviewer**。不得因为看到 `RV-01～RV-06`、`REVIEW_PENDING` 或“需要 Review”就自行开始完整 Review，更不得自行把 P4 标成 `PASS / FROZEN`。
+Luna **不是默认 Reviewer**，不得自行：
 
-### 1.2 Codex Sol
+- 重新 Review P4；
+- 把某个 P5 候选直接声明为“最终雷神”；
+- 降低 Chat/Sol 已设定的 candidate / identity acceptance criteria；
+- 因看到某个候选“看起来像”就跳过 provenance；
+- 修改 `plan.md` 的阶段最终状态，除非任务明确要求执行一个已经由 Reviewer 判定的状态更新。
 
-Codex Sol 默认也**不承担本项目的独立 Review**。
+---
 
-只有用户明确说出类似以下指令时，Codex Sol 才进入额外独立审计模式：
+## 3. Codex Sol
 
-- “用 Codex Sol 做一次独立 review”；
+Codex Sol 默认也不承担额外独立 Review。
+
+只有用户明确说出类似：
+
+- “用 Codex Sol 做独立 review”；
 - “让 Codex Sol 做 milestone audit”；
-- 其他同等明确、指定 **Codex Sol** 为 Reviewer 的指令。
 
-否则：
-
-- 不要因为模型能力更强就主动接管 Chat/Sol Review；
-- 不要重复 Chat/Sol 已经完成或正在进行的 Review；
-- 不要把 Codex Sol 审计当成 P4 的默认必选 Gate。
-
-如用户显式要求 Codex Sol 审计，结果必须标记为 `CODEX_SOL_AUDIT`，与 `CHAT_REVIEW.md` 中的 Chat/Sol Review 分开记录。
+才进入额外审计模式。结果必须单独标记 `CODEX_SOL_AUDIT`，不能覆盖 Chat/Sol 的正式 Review 记录。
 
 ---
 
-## 2. 当前 P4 状态
-
-截至 2026-08-20 当前 `master`：
-
-- P4-T01～T07：自动技术闭环已完成；
-- P4-T08：`passed_user_confirmed`；
-- 当前 addon：`p_cf_bornbeast_m4a4_p4_frozen_noop_01`；
-- 当前 frozen/no-op run：`run_20260819_170013_270792`；
-- 用户已确认按 F 后无崩溃/明显运行错误，状态能返回，并可继续射击、换弹、切枪；
-- 真正可见 Inspect、手指穿模、Blender retarget 属于 P7，不是 P4 blocker；
-- 当前 P4 总状态：`REVIEW_PENDING / NOT_YET_FROZEN`；
-- **默认下一步是 Chat/Sol 执行 RV-01～RV-06 Review，而不是 Luna 自行 Review。**
-
-因此，在没有新的 Chat 任务或用户明确要求前，Codex/Luna 的默认动作是：**不要继续改 P4 实现。**
-
----
-
-## 3. Codex 启动顺序
-
-每次开始新任务时按以下顺序：
+## 4. 每次启动顺序
 
 1. 读取 `AGENTS.md`；
 2. 读取 `plan.md` 第 1 节；
-3. 读取 `P4_STATUS.md`（若当前仍处于 P4）；
-4. 读取本文件 `CODEX_TASKS.md`；
+3. 读取本文件 `CODEX_TASKS.md`；
+4. 如果任务涉及已冻结 P4，先读 `P4_STATUS.md`；
 5. `git status --short --branch`；
-6. 在 tracked 工作区可安全同步时执行 `git fetch origin` + `git pull --rebase origin master`；
-7. 再执行用户或 Chat/Sol 明确交付的本地任务。
+6. tracked 工作区可安全同步时执行 `git fetch origin` + `git pull --rebase origin master`；
+7. 再执行用户或 Chat/Sol 明确交付的任务。
 
-不要把聊天记忆、旧日志、旧分支或旧 MOD 当作当前任务源。
+不要把聊天记忆、旧分支、旧 MOD、历史报告或本地未提交实验当作 authoritative task source。
 
 ---
 
-## 4. Chat → Codex 的测试委托协议
+## 5. 当前 P5 执行原则
 
-当 Chat/Sol Review 需要本地执行（典型是 RV-04），Codex/Luna 只执行 **已经固定的 Test Spec**。
+P5 目标是**最终雷神本地 CF 资产身份定位**，不是继续改 P4 pipeline。
 
-每个 Test Spec 至少必须包含：
+Luna 可能被要求在 `data/**` 中执行：
+
+- 文件名/路径候选扫描；
+- LTB mesh/分件/顶点/机械结构摘要；
+- DTX/TGA/纹理 atlas 特征提取；
+- CFG/Shader/material 关联搜索；
+- WAV/动画/同变体资源关联；
+- SHA-256、size、相对路径记录；
+- 候选缩略图/导出预览/机器可读 candidate matrix 生成。
+
+必须遵守：
+
+1. 原始 `data/**` 不上传；
+2. 可以上传路径、hash、size、解析报告、允许的预览图/缩略图和 candidate matrix；
+3. 不把网络第三方 MOD 当作 final source；
+4. 不把 Prototype 当前 BornBeast 候选自动当成最终雷神；
+5. 被排除的候选必须记录排除原因，防止后续 Agent 重复搜索；
+6. 最终资产身份由 Chat/Sol 根据证据判定，Luna 只报告候选事实。
+
+---
+
+## 6. Chat → Codex 委托协议
+
+当 Chat/Sol 给出 Task/Test Spec 时，至少应包含：
 
 ```text
-test_id
-purpose / hypothesis
-baseline
-input identity / hash
-mutation or operation
-must_preserve invariants
-exact command / action
-expected failing gate or expected result
-PASS criteria
-FAIL criteria
-INVALID criteria
-required evidence
+task_id
+purpose
+scope
+input roots / allowed data paths
+operation / search strategy
+must_preserve
+expected outputs
+evidence fields
+PASS / FAIL / INVALID 或 candidate ranking 规则
 forbidden changes
+upload allowlist
 ```
 
-Luna 执行规则：
+Luna 执行时：
 
-1. 不改变 test target；
-2. 不降低 acceptance criteria；
-3. 不把难做的 mutation 换成更简单但不同语义的 mutation；
-4. 不修改生产 Gate 来让测试通过；
-5. unrelated error 时标记 `INVALID`，不是 PASS；
-6. 完成后只返回原始证据和执行事实，不替 Chat/Sol 做最终 Reviewer 判定。
-
-### 4.1 RV-04 的最低本地执行范围
-
-如果 Chat/Sol 委托当前 P4 的 RV-04，至少执行 4 个高风险反例，且必须覆盖：
-
-1. 路径越界 / 递归删除安全；
-2. sequence 或 attachment 的“数量不变但语义错误”；
-3. mesh / bone mapping 错误；
-4. material closure 或 provenance 错误。
-
-具体 mutation、命令和验收由 `CHAT_REVIEW.md` 的 Reviewer 在执行前固定；Luna 不自行选择替代测试。
+- 不改变任务目标；
+- 不私自扩大扫描到不相关用户目录；
+- 不把困难步骤换成语义不同的简单步骤；
+- unrelated error 标记 `INVALID/BLOCKED`；
+- 只返回执行事实和证据，不替 Reviewer 做最终身份结论。
 
 ---
 
-## 5. 本地证据要求
+## 7. Git / data 规则摘要
 
-环境依赖任务优先保存：
+完整规则见 [`AGENTS.md`](AGENTS.md)。特别强调：
 
-```text
-run_id
-git_commit
-input_relative_path
-input_sha256
-command
-cwd
-exit_code
-stdout/stderr log
-output hashes
-report path + report hash
-tool version
-```
-
-涉及 `data/` 时：
-
-- 可以记录相对路径、SHA-256、size、ID；
-- 不上传原始 `data/**`；
-- 不把 hash 误写成对资产语义正确性的证明。
-
-Codex/Luna 允许输出的最终状态主要是：
-
-- `EXECUTOR_DONE`
-- `BLOCKED`
-- `INVALID`
-- `EXECUTION_FAIL`
-
-**不要输出 `REVIEW_PASS`、`P4_FROZEN` 或等价最终 Reviewer 结论，除非用户明确把 Codex Sol 指定为独立 Reviewer。**
-
----
-
-## 6. Git / 上传 / 拉取
-
-完整规则见 `AGENTS.md`。本文件再次强调当前项目最重要的边界：
-
-- `data/**` 永远本地-only，不上传、不删除；
-- GitHub 没有 `data/` 不等于本地应删除；
-- pull 前先看 `git status`；
-- 本地和远端同一 tracked 文件都改过时停止自动合并并报告冲突；
+- `data/**` 永远 local-only；
+- GitHub 没有 `data/` 不等于本地应该删除；
+- pull 前检查 `git status`；
+- 同一 tracked 文件本地/远端都改过时停止自动处理冲突；
 - push 前精确 `git add -- <paths>`；
 - 禁止 `git add .`、`git add -A`、`git add --all`；
 - 默认禁止 `git reset --hard`、`git clean -fd`、`git clean -fdx`、`git restore .`、`git checkout -- .`；
 - 不 force-push；
-- 不用 mirror/delete 同步方式破坏本地 ignored 数据。
-
----
-
-## 7. 当前 P4 已完成执行事实（供 Codex 定位，不是 Review 结论）
-
-- T01：现场隔离 / 权威状态修正；
-- T02：manifest 契约、tool/input hash、输出路径安全、deploy guard；
-- T03：manifest LTB → B3 → C1 → C3 fresh run；
-- T04：Source 1 单入口 build、隔离 `studiomdl`、Crowbar roundtrip；
-- T05：15 个自动语义 Gate；
-- T06：package / staging / explicit deploy hash/provenance 闭环；
-- T07：17 个负向 mutation 17/17 被预期 Gate 拒绝 + 双正向 run 语义复现；
-- T08：frozen/no-op changed-runtime 用户 Gate 已确认；
-- T09：文档预收口完成，最终冻结等待 Chat/Sol Review。
-
-主要证据位于：
-
-```text
-work/m4a1_s_bornbeast/p4_prototype_01/
-  check_report.json
-  build_report.json
-  validation_report.json
-  upstream_trace_report.json
-  manifest_contract_report.json
-  negative_test_report.json
-  reproducibility_report.json
-  package_manifest.json
-  deploy_report.json
-  prototype_01_game_regression.json
-```
+- 不使用 mirror/delete 同步破坏 ignored 本地资产。
 
 ---
 
 ## 8. 当前默认停止条件
 
-在 `CHAT_REVIEW.md` 没有产生新的本地执行委托前：
+在 Chat/Sol 还没有发布明确 P5 Task Spec 前：
 
-> **Codex/Luna 停止继续实现 P4，不自行做 RV-01～RV-06，不重新做 Inspect retarget。等待 Chat/Sol Review 或用户新的明确任务。**
+> **Luna 不自行扫描并宣布最终雷神、不继续修改 P4、不开始 P6。等待 Chat/Sol 的 P5 任务。**
