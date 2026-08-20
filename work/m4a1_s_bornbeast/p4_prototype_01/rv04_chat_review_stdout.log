@@ -1,0 +1,63 @@
+pygame-ce 2.5.8 (SDL 2.32.10, Python 3.14.6)
+{
+  "schema": "cf2.p4.chat-rv04-independent.v1",
+  "review_id": "RV-04",
+  "generated_at_utc": "2026-08-20T11:43:57.646437+00:00",
+  "implementation_base": "10aa99b770e575300ca3c28324ef3de3d5b70c6b",
+  "git_head": "1c1c728552255863af02f85b46c9810984801bb9",
+  "critical_diff_from_base": false,
+  "baseline": {
+    "manifest": "assets\\weapons\\m4a1_s_bornbeast\\prototype_01_manifest.json",
+    "manifest_sha256": "a621ce314d0235223f40787803eed4d483841d332ebb89f2500a8070f7b426fe",
+    "build_run_id": "run_20260819_170013_270792",
+    "build_report_sha256": "47905c9aa09ceddd357d309d3c6256fffb55b6be46890a37ca816217039296cd"
+  },
+  "cases": [
+    {
+      "name": "rv04_output_root_guard",
+      "expected_stage": "manifest_contract",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "Output 'build_root' cannot point to 'work/' root: 'work'",
+        "Output 'build_root' must resolve exactly to 'D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01', got 'D:\\project\\cf_to_csgo\\work'"
+      ],
+      "stdout": "manifest contract rejected mutation"
+    },
+    {
+      "name": "rv04_sequence_same_count",
+      "expected_stage": "sequence_names_and_count",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "sequence_names_and_count"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_rv04_sequence_same_count_0qv7i51r\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"sequence_names_and_count\"\n  ]\n}\n"
+    },
+    {
+      "name": "rv04_mapping_parent_clip_swap",
+      "expected_stage": "smd_manifest_bone_corners",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "smd_manifest_bone_corners"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_rv04_mapping_parent_clip_swap_519rjdby\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"smd_manifest_bone_corners\"\n  ]\n}\n"
+    },
+    {
+      "name": "rv04_missing_vtf_material_closure",
+      "expected_stage": "material_closure",
+      "exit_code": 1,
+      "passed": true,
+      "failed_gates": [
+        "material_closure"
+      ],
+      "stdout": "{\n  \"report\": \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\cf2_t07_rv04_missing_vtf_material_closure_mlld3_38\\\\work\\\\m4a1_s_bornbeast\\\\p4_prototype_01\\\\validation_report.json\",\n  \"pass\": false,\n  \"failed_gates\": [\n    \"material_closure\"\n  ]\n}\n"
+    }
+  ],
+  "case_count": 4,
+  "passed_cases": 4,
+  "pass": true,
+  "isolation": "Each case used a fresh tempfile/shadow helper; active build, data and MIGI were not mutation targets.",
+  "final_judge": "CHAT_SOL_PENDING"
+}
