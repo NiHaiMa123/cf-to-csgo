@@ -34,38 +34,59 @@ P5 不是“根据文件名猜雷神”，而是建立可追溯的 **asset ident
 
 ### P5-T01 — 官方身份锚点与本地候选召回
 
-状态：**READY_FOR_LUNA**。
+状态：**EXECUTION_PASS / REVIEWED**。
 
-正式执行协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
+执行协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
 
-目标：
+执行提交：`ab7e2ef3394991ef0b4468f34cf4d6849b917dc2`。
 
-- 固定目标身份为 **M4A1-雷神**；
-- 记录官方 CF 武器图鉴 reference URL；
-- 在本地 `data/**` 建立与 M4/M4A1/PLAYERVIEW/配置引用相关的候选集合；
-- 生成 machine-readable candidate index / matrix；
-- 只做候选排序，不做最终身份宣告。
+结果：
+
+- `data/**` 只读扫描 165082 个文件；
+- 召回 2856 个候选，其中 1281 个 LTB；
+- 441 个 canonical LTB 尝试轻量 inspect；
+- candidate index / matrix / report / execution evidence 已生成；
+- 无 candidate 被 Luna 误写成最终确认。
+
+Chat/Sol Review 后补充了关键 alias correction：
+
+```text
+国服 M4A1-雷神  -> M4A1-S Transformers
+国服 M4A1-黑骑士 -> M4A1-S Born Beast
+```
+
+因此 T01 的原始 score 只保留为召回历史，不再代表 T02 identity priority。`BornBeast` 降级为 negative control，标准 `M4A1_S_Transformers` 资源族成为主候选。
 
 ### P5-T02 — 候选模型/贴图特征提取与视觉比对
 
-状态：`BLOCKED_BY_T01`。
+状态：**READY_FOR_LUNA**。
 
-预期输入：T01 排名前列候选。
+正式执行协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
 
-预期工作：
+冻结候选集合：
 
-- 对少量 LTB 候选提取 mesh、vertex、triangle、bounds、node/material 特征；
-- 必要时统一导出 OBJ，并生成标准多视图；
-- 将关联 DTX/TGA 转为可审查缩略图/contact sheet；
-- Chat/Sol 对照官方图鉴/用户 reference 做模型轮廓、机械结构、配色、Logo/发光区域等比对。
+1. PRIMARY：`PV-M4A1_S_Transformers.LTB`；
+2. SAME-FAMILY CONTROL：`PV-M4A1_S_Transformers_Classic.LTB`；
+3. NEGATIVE CONTROL：`PV-M4A1_S_BornBeast.LTB`。
 
-T02 不允许全量 Blender 渲染整个 `data/**`。
+并核对 exact-match 本地资源族：
+
+```text
+PV-M4A1_S_Transformers.DTX
+M4A1_S_Transformers_Alpha.TGA
+M4A1_S_Transformers_N.TGA
+M4A1_S_Transformers_S.TGA
+M4A1_S_Transformers.CFG
+QV-M4A1_S_Transformers.LTB / DTX
+```
+
+T02 只生成少量结构报告和标准多视图派生预览，不再全量扫描或批量渲染。
 
 ### P5-T03 — Resource Graph / provenance 收敛
 
-状态：`BLOCKED_BY_T02`。
+状态：`BLOCKED_BY_T02_REVIEW`。
 
-对 Top candidate 建立：
+对 T02 通过的主候选建立：
 
 ```text
 weapon identity
@@ -98,12 +119,13 @@ weapon identity
 
 1. 官方 item/resource ID 与本地配置/资源引用直接闭合；
 2. 本地配置/资源 graph 明确指向同一 LTB/texture set；
-3. 模型独特轮廓与机械结构匹配；
-4. atlas/纹理/Logo/发光区域与 reference 匹配，且 UV/材质引用可对应；
-5. 同变体 Shader/声音/动画路径关联；
-6. 文件名/目录名关键词。
+3. 跨服/内部英文 alias 与本地 resource family 精确一致；
+4. 模型独特轮廓与机械结构匹配；
+5. atlas/纹理/Logo/发光区域与 reference 匹配，且 UV/材质引用可对应；
+6. 同变体 Shader/声音/动画路径关联；
+7. 文件名/目录名关键词。
 
-文件名只用于 candidate recall，不作为最终身份证明。
+文件名只用于 candidate recall，不作为最终身份证明。但当外部 alias 已独立建立后，`M4A1_S_Transformers` 的 exact family token 是重要的交叉证据。
 
 ---
 
@@ -113,14 +135,14 @@ weapon identity
 
 - 严格按当前 Task Spec 扫描和产出本地证据；
 - 不自行扩大 scope；
-- 不把 Top 1 候选写成“最终雷神”；
+- 不把 Top candidate 写成“最终雷神”；
 - 不修改 P4 frozen pipeline；
 - 不上传 `data/**`；
-- 完成后 push 允许的 index/report，然后停止等待 Chat/Sol。
+- 完成后 push 允许的 index/report/derived previews，然后停止等待 Chat/Sol。
 
 ### Chat/Sol
 
 - 设计每个阶段 Task Spec；
 - 审查候选排序和证据质量；
-- 决定何时值得进行 OBJ/Blender/纹理视觉比对；
+- 决定少量 OBJ/Blender/纹理视觉比对范围；
 - 最终做 identity judgement。
