@@ -1,4 +1,4 @@
-# P5_T02_TASK_SPEC.md — 雷神主候选几何 / 贴图视觉验证
+# P5_T02_TASK_SPEC.md — 雷神视觉候选锁定
 
 > task_id: `P5-T02`
 >
@@ -6,418 +6,231 @@
 >
 > Executor: **Luna / 本地 Codex Agent**
 >
-> 当前状态: **READY_FOR_LUNA**
+> 当前状态: **BLOCKED_BY_USER_REFERENCE_CONFIRMATION**
 
 ---
 
 ## 1. Purpose
 
-P5-T01 已完成广召回。T02 不再按 T01 原始 score 全量扩散，而是使用 Chat/Sol 新确认的身份别名信息收敛到 `M4A1_S_Transformers` 资源族，并生成可供 Chat/Sol 做视觉 / 几何身份 Review 的本地派生证据。
+P5-T01 已完成广召回。P5-T02 改为“先确认目标长什么样，再做本地统一侧视图比对”。
 
-本任务回答：
+本任务禁止从跨服英文名、文件名或 T01 score 直接推导最终内部资源名。
 
-> “本地标准 `M4A1_S_Transformers` 第一人称模型与其本地贴图资源，是否在几何结构、材质族和视觉表现上与国服 `M4A1-雷神` reference 一致？”
+正确顺序：
 
-本任务仍 **不允许 Luna 输出 `IDENTITY_CONFIRMED`**；最终身份结论属于 P5-T04 / Chat-Sol Review。
+```text
+Web Search / 官方武器百科
+  -> Chat/Sol 选出“认为是目标武器”的参考图
+  -> USER_REFERENCE_CONFIRMATION_GATE
+  -> 用户明确确认“对，就是这把”
+  -> 本地 M4/M4A1 PLAYERVIEW 候选缩小范围
+  -> 按文件 hash / geometry signature 去重
+  -> 最简静态灰模标准侧视图
+  -> contact sheet
+  -> Chat/Sol / 用户视觉排除
+  -> Top 少量候选再加载本地贴图生成材质侧视图
+  -> 锁定 Top 1~3
+  -> P5-T03 resource graph / provenance
+```
 
 ---
 
-## 2. Identity anchor correction after T01
+## 2. Mandatory Web / User confirmation gate
 
-目标国服 display identity：
+目标 display identity：
 
 ```text
 M4A1-雷神
 ```
 
-官方 reference：
+官方武器百科入口：
 
 ```text
 https://cf.qq.com/cp/a20250701wqbk/index.html
 ```
 
-T01 之后 Chat/Sol 补充确认的跨服 / 内部英文别名关系：
+在任何本地 T02 执行前，Chat/Sol MUST：
 
-```text
-M4A1-雷神  -> M4A1-S Transformers
-M4A1-黑骑士 -> M4A1-S Born Beast
-```
+1. 使用 Web Search / Image Search 查找 `M4A1-雷神`；
+2. 优先官方 CF / 腾讯素材；官方页不可抓取时可使用可信公开页面作为 identification reference；
+3. 把 Chat/Sol 认为正确的目标武器图片直接展示给用户；
+4. 等待用户明确确认；
+5. 只有用户确认后，Chat/Sol 才把本 spec 状态改成 `READY_FOR_LUNA`。
 
-参考别名页：
+用户未确认前：
 
-```text
-https://crossfirefps.fandom.com/wiki/M4A1-S_Transformers
-https://crossfirefps.fandom.com/wiki/M4A1-S_Born_Beast
-```
+> **Luna MUST NOT 执行 P5-T02。**
 
-这些网页只作为 identity reference，不进入 final game asset provenance。最终模型、贴图、Shader 等仍必须来自本地 `data/**`。
+如果用户说“不是这把”，Chat/Sol 重新 Web Search 并再次展示候选图；不得进入本地模型比对。
 
-因此：
+重要纠正：
 
-- `BornBeast` 从 T01 高分候选降级为 **negative control / 黑骑士对照**；
-- `M4A1_S_Transformers` 成为 T02 **primary identity candidate family**；
-- T01 score 仅表示召回优先级，不再作为 T02 identity confidence。
+- 先前文档中把 `M4A1-雷神 -> M4A1-S Transformers` 写成确定映射，证据不足；
+- 公开跨服命名存在冲突，因此该映射目前撤销为 `UNVERIFIED_ALIAS`；
+- `Transformers`、`BornBeast`、`Steel/Iron Beast` 等名字只能作为本地 candidate token，不能在用户确认前冻结为目标族。
 
 ---
 
-## 3. Frozen candidate set
+## 3. After-user-confirmation local scope
 
-T02 **只处理以下明确候选**，不得继续全量扫描或自行增加几十个变体。
+用户确认目标图后，Luna 先做廉价缩圈，不直接全量 Blender 渲染。
 
-### CANDIDATE-A — PRIMARY
-
-第一人称模型：
+允许读取：
 
 ```text
-data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB
-sha256=a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8
+data/rf016/Models/PLAYERVIEW/**
 ```
 
-T01 light summary：
+仅召回第一人称 M4/M4A1 相关 LTB，例如 basename/path 含：
 
 ```text
-mesh_count=11
-triangle_count=5250
+M4
+M4A1
+M4A1_S
+M4A1-S
 ```
 
-同名本地资源：
+默认排除 presentation / hand variants：
 
 ```text
-data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX
-sha256=eb11343c9c4fe1bc3abcc41130c17e581bdb3ead12ff817fa06f7446bdd2f7b8
-
-data/rf017/ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA
-sha256=261b2adf7fe470fd2e06fcad3d16f438720d3d4166abc81ea37abe7758c40c2c
-
-data/rf017/ModelTextures/NormalMap/M4A1_S_Transformers_N.TGA
-sha256=4a06a775b87e7046fe09b52578396e1563d0dff4f71e0d898c62762e300504cc
-
-data/rf017/ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA
-sha256=af6589df59929072d1833690bfeb7c46b21996079305f58a1ca599c56c176b5f
-
-data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG
-sha256=f53e0ea00fa3677dd77acf77570ab1ddf7944410db41e11e1d103592dea3940d
+*_BL.LTB
+*_GR.LTB
+*_WOMAN_BL.LTB
+*_WOMAN_GR.LTB
 ```
 
-辅助第三人称 / QV 资源，只做 family provenance，不作为第一人称主候选：
+除非它们是唯一可用版本。
 
-```text
-data/rf016/Models/WEAPONS/QV-M4A1_S_Transformers.LTB
-sha256=3e8479d64e751c1e0270c716e82f16030f6ceb4aaf187e344a15361f0d5ee0b2
-
-data/rf017/ModelTextures/WEAPONS/QV-M4A1_S_Transformers.DTX
-sha256=6651dd76f0883dde96afbaba9dec22ba8d00241f23f78506c713da6497c3adc5
-```
-
-### CANDIDATE-B — SAME-FAMILY CONTROL
-
-```text
-data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Transformers_Classic.LTB
-sha256=620778d78577ed10e5dd95df5b9a066ba18d006af57b71b9bb3dcc4303fdc464
-mesh_count=11
-triangle_count=5250
-```
-
-用途：证明 suffix variant 与标准无 suffix 资源的关系，防止错误选择某个皮肤 / 变体为标准雷神。
-
-### CANDIDATE-C — NEGATIVE CONTROL
-
-```text
-data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB
-sha256=5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7
-mesh_count=11
-triangle_count=5342
-```
-
-用途：该资源族对应国服黑骑士，不是标准雷神；用于检查视觉 Review 能否区分两个英雄级 M4 家族。
+不得扫描仓库外目录；不得修改 `data/**`；不得修改 P4 frozen pipeline。
 
 ---
 
-## 4. Scope / safety
+## 4. Phase A — deduplicate before rendering
 
-### 允许读取
+对缩圈后的 canonical M4/M4A1 PLAYERVIEW LTB：
 
-仅：
-
-- 第 3 节列出的候选模型 / 贴图 / Shader 文件；
-- 为导出 / 渲染所需的仓库现有 parser / CFRezManager / Blender；
-- P5-T01 输出；
-- 当前任务文档。
-
-### 允许写入
-
-只写：
+1. 记录 relative path / size / SHA-256；
+2. 优先按完全相同 SHA-256 去重；
+3. 对不同文件 hash 使用已有 parser 生成 geometry signature，至少：
 
 ```text
-work/p5_leishen/t02/**
-scripts/p5/**   # 仅在需要新增可复用的 T02 派生/渲染脚本时
-```
-
-### 禁止
-
-- 修改 `data/**`；
-- 修改 P4 frozen pipeline / manifest / build evidence；
-- Steam / MIGI deploy；
-- 继续扫描整个 `data/**`；
-- 自行把其他 Transformers reskin 加入 T02；
-- 将网络图片或第三方 MOD 文件作为 final asset。
-
----
-
-## 5. Phase A — input identity verification
-
-执行前重新计算第 3 节所有已列输入的 SHA-256。
-
-若任一主候选 / 主贴图 / Shader 的实际 hash 与本 spec 不同：
-
-```text
-BLOCKED_INPUT_CHANGED
-```
-
-并停止，不自行更新 hash。
-
-输出到 `t02_identity_inputs.json`：
-
-```text
-relative_path
-expected_sha256
-actual_sha256
-size_bytes
-role
-hash_match
-```
-
----
-
-## 6. Phase B — model export and structural evidence
-
-使用 P4 已验证过的 CFRezManager export 能力，分别导出 A / B / C 到独立派生目录。
-
-优先命令形式沿用当前仓库已验证 route：
-
-```text
-CFRezManager.exe --export-obj --raw-transform --root data/rf016 --model <Models/PLAYERVIEW/...LTB> --output <work/p5_leishen/t02/...obj>
-```
-
-不得修改原 LTB。
-
-每个候选必须记录：
-
-```text
-LTB path + SHA256
-OBJ path + SHA256
-mesh/group names
-vertex / uv / normal / triangle counts
-material names / slots
+mesh_count
+vertex_count
+triangle_count
 bounds
-obvious hand/arm groups if detectable
-export command
-exit code
+mesh/group names if available
 ```
 
-生成：
+4. 几何完全相同或高度同构的皮肤/活动 suffix 变体聚为一组；
+5. 每个 geometry cluster 第一轮只渲染一个 representative。
+
+输出：
 
 ```text
-work/p5_leishen/t02/model_compare.json
+work/p5_leishen/t02/candidate_clusters.json
 ```
 
-如果某个 control export 失败：记录 `not_available`，但 A 主候选 export 失败则 T02 为 `BLOCKED_PRIMARY_EXPORT`。
+目标是把数百 M4 候选压缩成“独特枪体”集合，而不是把所有皮肤重复渲染。
 
 ---
 
-## 7. Phase C — standard visual previews
+## 5. Phase B — fastest geometry side-view pass
 
-### 7.1 Render rule
+第一轮视觉只看几何，不贴图。
 
-使用 Blender 4.5（可 GUI/MCP/headless，优先可重复脚本）为 A / B / C 各生成统一相机 / 归一化尺度的派生预览。
-
-至少四视图：
+对每个 geometry representative：
 
 ```text
-right_side
-left_side
-top
-front_3q
+LTB -> existing parser/export -> static weapon mesh -> orthographic side view PNG
 ```
 
 要求：
 
-- 背景简单；
-- 不做艺术灯光；
-- 相同 projection / framing / scale policy；
-- 优先隐藏明显 `hand/arm/sleeve/wrist/Fview-*` 组，只比较武器本体；
-- 如果无法可靠识别手臂组，同时额外保留完整模型图，但不得删除枪体；
-- 不修改模型几何；
-- 不做 IK / 动作 / Source retarget。
+- 隐藏明显 hand/arm/sleeve 组；
+- 正交投影；
+- 固定朝向；
+- 自动 fit 到相同画布；
+- 简单白色或透明背景；
+- 单色灰模 / silhouette；
+- 不需要骨骼动作；
+- 不需要 IK；
+- 不需要 Source retarget；
+- 不需要 Cycles / 艺术灯光。
 
-分辨率建议 1024×1024，每候选四张即可，不需要高质量 Cycles。
-
-### 7.2 Material / texture rule
-
-PRIMARY A 优先尝试使用 LTB export 产生的 MTL / 派生纹理进行材质预览。
-
-同时核对 exact-match 本地资源族：
+建议单图：
 
 ```text
-PV-M4A1_S_Transformers.DTX
-M4A1_S_Transformers_Alpha.TGA
-M4A1_S_Transformers_N.TGA
-M4A1_S_Transformers_S.TGA
-M4A1_S_Transformers.CFG
+512x256 或 768x384
 ```
 
-如果仓库 / 本地已有安全 DTX 解码能力：
+第一轮核心输出：
 
-- 可以把 exact DTX 转为 PNG 派生预览；
-- 记录 decoder/tool path + hash + command。
+```text
+work/p5_leishen/t02/geometry_contact_sheet.png
+work/p5_leishen/t02/geometry_candidates.json
+```
 
-如果没有现成 DTX decoder：
-
-- **不要为了 T02 临时造一个大型专有格式 decoder**；
-- 标记 `direct_dtx_preview=not_available`；
-- 使用 LTB export 的材质/纹理派生结果做视觉 Review；
-- T03 再处理完整 DTX/Shader graph。
-
-TGA Alpha / Normal / Specular 可以生成只读派生缩略图/contact sheet，但不要把它们误当 diffuse。
+contact sheet 每格必须显示短 candidate id，路径映射写入 JSON。
 
 ---
 
-## 8. Phase D — local resource-family evidence
+## 6. Mandatory visual review between geometry and textures
 
-生成 `resource_family.json`，至少证明本地标准 family 同时存在：
+Luna 生成 geometry contact sheet 后必须 STOP 并 push。
 
-```text
-PV model: PV-M4A1_S_Transformers.LTB
-PV diffuse/resource: PV-M4A1_S_Transformers.DTX
-Alpha: M4A1_S_Transformers_Alpha.TGA
-Normal: M4A1_S_Transformers_N.TGA
-Specular: M4A1_S_Transformers_S.TGA
-Shader: M4A1_S_Transformers.CFG
-QV model: QV-M4A1_S_Transformers.LTB
-QV texture: QV-M4A1_S_Transformers.DTX
-```
+Chat/Sol 读取图片后：
 
-字段：
+- 与用户已确认的 Web reference 比较枪托、机匣、护木、枪口、弹匣、提把/瞄具、独特装饰结构和整体比例；
+- 选 Top 3~10；
+- 必要时把 contact sheet / 少量候选给用户再次确认。
 
-```text
-relative_path
-sha256
-size_bytes
-role
-family_token = M4A1_S_Transformers
-exists
-```
-
-这属于 provenance evidence，不等于单独完成 identity confirmation。
+在 Chat/Sol 发布下一条明确 Task Spec 前，Luna不得进入材质阶段。
 
 ---
 
-## 9. Required outputs
+## 7. Phase C — textured side-view only for finalists
 
-统一目录：
+只有 Chat/Sol 固定 Top 少量候选后，才允许：
 
-```text
-work/p5_leishen/t02/
-```
+1. 找候选对应本地 DTX/TGA/CFG；
+2. 使用现有安全解码能力转成派生 PNG；
+3. 将 diffuse / alpha 等按可验证方式映射到模型 UV；
+4. 生成与官方百科尽量同方向的标准侧面图；
+5. 生成 `textured_contact_sheet.png`。
 
-必须提交：
-
-```text
-t02_identity_inputs.json
-model_compare.json
-resource_family.json
-execution.json
-review_sheet.png
-```
-
-`review_sheet.png` 必须至少包含 A/B/C 的统一视图并明确标签：
-
-```text
-A PRIMARY — M4A1_S_Transformers
-B SAME-FAMILY CONTROL — Transformers_Classic
-C NEGATIVE CONTROL — BornBeast / 黑骑士 family
-```
-
-允许额外提交：
-
-```text
-previews/*.png
-texture_previews/*.png
-scripts/p5/*.py
-```
-
-前提是均为派生证据，不是原始 `data/**` 文件复制。
+不为第一轮筛选临时开发大型 DTX/Shader 系统；如果当前能力不足，标记 `not_available`，由下一 Task Spec处理。
 
 ---
 
-## 10. Executor result semantics
+## 8. Evidence semantics
 
-### `EXECUTION_PASS`
+视觉相似只负责 candidate identification，不单独证明 final provenance。
 
-仅表示：
+最终仍需 P5-T03 闭合：
 
-1. 输入 hash 验证通过；
-2. PRIMARY A 成功导出并形成结构摘要；
-3. A/B/C 有足够统一派生预览供 Chat/Sol 审查；
-4. exact `M4A1_S_Transformers` 本地 model/texture/shader family 被记录；
-5. 原始 `data/**` 未修改/上传；
-6. Luna 没有自行声明最终身份。
+```text
+confirmed visual candidate
+  -> local LTB
+  -> local DTX/TGA
+  -> Shader/CFG
+  -> QV / sound / animation / config associations
+  -> path + SHA-256
+```
 
-### `BLOCKED`
-
-包括：
-
-- 主候选 hash 已变化；
-- PRIMARY A 无法导出；
-- Blender / 导出环境完全不可用，无法生成任何可审查视觉证据。
-
-### `INVALID`
-
-包括：
-
-- 修改了 `data/**`；
-- 用第三方 MOD 替代本地 primary；
-- 更换了候选集合或放宽标准而未按 spec；
-- Luna 自行写 `IDENTITY_CONFIRMED`。
+Luna 在 T02 任何阶段都不得写 `IDENTITY_CONFIRMED`。
 
 ---
 
-## 11. Upload allowlist
+## 9. Current stop rule
 
-只允许：
-
-```text
-work/p5_leishen/t02/t02_identity_inputs.json
-work/p5_leishen/t02/model_compare.json
-work/p5_leishen/t02/resource_family.json
-work/p5_leishen/t02/execution.json
-work/p5_leishen/t02/review_sheet.png
-work/p5_leishen/t02/previews/*.png
-work/p5_leishen/t02/texture_previews/*.png
-scripts/p5/*.py
-```
-
-禁止：
+当前状态是：
 
 ```text
-data/**
-原始 LTB / DTX / TGA / CFG
-.blend 大文件（除非 Chat/Sol 后续明确要求）
-Steam/MIGI 输出
-无关缓存/日志
+BLOCKED_BY_USER_REFERENCE_CONFIRMATION
 ```
 
----
+所以此刻 Luna 的唯一正确行为：
 
-## 12. Stop rule
+> pull 最新 master -> 读取本 spec -> 发现用户 reference 尚未确认 -> 不扫描、不导出、不渲染、不修改文件 -> STOP。
 
-Luna 完成 T02 后：
-
-1. 精确提交 allowlist 文件；
-2. push `master`；
-3. 返回 commit SHA；
-4. **停止**；
-5. 不自行执行 T03；
-6. 不自行修改 `plan.md` 为 `IDENTITY_CONFIRMED`。
-
-之后由 Chat/Sol 读取 `review_sheet.png` + JSON 证据，做 P5-T02 identity review，并决定是否进入 T03。
+只有 Chat/Sol 在用户明确确认目标图片后更新本文件状态，才允许开始本地 T02。
