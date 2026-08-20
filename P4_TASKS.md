@@ -1,6 +1,6 @@
 # P4 修复与验收任务清单
 
-> 状态：**P4 REWORK / 未通过 Gate**
+> 状态：**P4-T08 READY_FOR_USER_GATE / 新 frozen addon 已部署；P7 retarget 不属于 P4 Gate**
 >
 > 适用对象：下一位 P4 执行者及其独立 Reviewer
 >
@@ -32,7 +32,7 @@
 
 ### 0.3 当前活动 MIGI 状态
 
-- 当前 `migi/csgo/addons` 内唯一的 M4A4 测试 addon：`p_cf_bornbeast_m4a4_p4_inspect_safe_02`。
+- 当前测试 addon：`p_cf_bornbeast_m4a4_p4_frozen_noop_01`；旧 safe/review/final addon 仍按现场规则放入 `mods_temp`，不得并行启用。
 - `p_cf_bornbeast_m4a4_p4_inspect_safe_01`、`p_cf_bornbeast_m4a4_p4_review_01` 和 `p_cf_m4a4_bornbeast_final` 已按 MIGI 现场规则可恢复地移入 `migi/csgo/mods_temp`。
 - final MOD 属于 Antigravity 越过 P4 后生成的 P6/final 路线，不属于本任务验收范围，尚未经过本项目当前要求的独立 Review。
 - P4 执行者不得把 final MOD 当输入、golden fixture、参考材质或实机通过证据，也不得覆盖 `mods_temp` 中的历史版本。
@@ -355,46 +355,27 @@ P4 的 `build` 必须真正覆盖：
 
 ### P4-T08：用户实机 Gate
 
-**目标**：只由用户确认游戏内事实。
+**目标**：只由用户确认游戏内的 Prototype 运行安全。P4 不验收 Inspect 的可见动作、手指不穿模或 retarget 质量；这些属于 P7。
 
-**执行内容**：
+**当前证据与验收**：
 
-- [x] 自动部分全部通过后，生成全新 addon：`p_cf_bornbeast_m4a4_p4_review_01`。
-- [x] 不覆盖 `mods_temp` 中历史 MOD，不覆盖 active final MOD。
-- [x] 已明确说明本次测试应启用的 addon；由于 MIGI 无单独禁用按钮，`p_cf_m4a4_bornbeast_final` 已可恢复地移动到 `mods_temp`。
-- [x] 逐项等待用户确认：模型/FOV、UV、Idle、Draw、三条 Fire、Reload/Clip、Bolt、Inspect、muzzle、shell eject、控制台错误、关闭 addon 后回滚。
-- [x] 每一项已记录用户原话；Inspect 明确记录为失败，其余项目记录为通过。
-- [ ] 禁止由程序或执行者把自动动画 delta 推断成“用户已在游戏里看到”。
-
-**产物**：
-
-- `prototype_01_game_regression.json`
-
-**2026-08-19 执行结果：用户 Gate 已检查，Inspect 需要返工。**
-
-- 新 addon 已部署到 `D:/steam/steamapps/common/csgo legacy/migi/csgo/addons/p_cf_bornbeast_m4a4_p4_review_01`，9 个 payload 文件逐文件复核通过。
-- `mods_temp` 历史目录和 `p_cf_m4a4_bornbeast_final` 均未覆盖。
-- 用户确认：除按 F 触发 Inspect 时手指穿模外，其他项目没有问题；历史报告记录 13 项 `pass`、Inspect 1 项 `fail`，没有把编译、动画 delta 或自动报告冒充用户实机确认。
-- 已验证 `safe_idle_fallback` 会把 Inspect 变成一帧 idle，导致按 F 无可见动作；`safe_finger_neutralized` 虽保留官方 160 帧 weapon lookat 动作，但 Blender MCP 的独立双骨架检查显示：weapon 57-bone 层级与外部 48-bone 手臂层级不同，直接复用 local transform 在 frame 80 产生明显手枪脱离/穿插。随后尝试模型空间 retarget（全骨骼和前臂链）仍在 frame 40/80/120 失去握枪接触，详见 `work/m4a1_s_bornbeast/blender_arm_reference/retarget_attempt_report.json`。`p_cf_bornbeast_m4a4_p4_inspect_safe_02` 因此保持 `REWORK_REQUIRED`，没有生成新 addon，也不得继续作为已修复版本要求用户重复测试；其他已通过项目不回退。
-
-**验收**：
-
-- 只有用户明确确认的条目为 PASS。
-- 任一用户明确报告的实机缺陷使当前状态变为 `GAME_GATE_REWORK_REQUIRED`，不得以其他项目通过抵消。
-- 没有截图/日志/用户确认时，控制台清洁度不得写 PASS。
-- 未完成全部实机项时，P4 总状态保持 `PASS_WITH_PENDING_GAME_GATE`，不能写冻结完成。
+- 自动构建已使用 manifest 的 `inspect_policy=frozen_noop_safe`，报告见 `build_report.json`、`validation_report.json`、`package/staging/`。
+- 用户实机记录见 `prototype_01_game_regression.json`。`按 F 没有可见变化` 对 frozen/no-op 是预期；仍须用户确认无错误/崩溃且可继续射击、换弹、切枪。
+- MIGI 无禁用按钮；测试只启用新 frozen addon，其余 addon 放入 `mods_temp`。未把 Blender retarget 或可见动作当作 P4 Gate。
+- 当前状态：`READY_FOR_USER_GATE`；部署报告见 `deploy_report.json`，用户尚未确认，不得写成实机 PASS。
 
 ### P4-T09：文档与冻结
 
-**前置条件**：P4-T01 至 P4-T08 全部通过。
+**前置条件**：P4-T01 至 P4-T08 的自动证据完成；T08 若缺少用户状态恢复确认，只能标记 `PASS_WITH_RISK`，不得伪造实机 PASS。
 
 **执行内容**：
 
-- [ ] README 只记录真实命令、路径、报告和限制。
-- [ ] Plan 第 1 节保持唯一权威状态；删除 P5/P6/P7 越界完成声明和矛盾状态。
-- [ ] P4 只有在自动 Gate + 用户实机 Gate 都完成后才改成 `PASS / FROZEN`。
-- [ ] 保留 B1/B2/C2 技术债为非阻塞项，不伪装成已解决。
-- [ ] `Prototype-01` 继续保持 `final_target_identity=false`、`final_cf_material=false`。
+- [x] README 只记录真实命令、路径、报告和限制；P4 只保留证据索引，不复制完整流水线细节。
+- [x] Plan 第 1 节保持唯一权威状态；删除 P5/P6/P7 越界完成声明和矛盾状态。
+- [x] P4 Inspect 的 frozen/no-op 边界已写清；真正 Inspect retarget/视觉验收移入 P7，不再阻塞 P4。
+- [ ] P4 只有在自动 Gate + 用户确认“无错误且可继续操作”的实机 Gate 都完成后才改成 `PASS / FROZEN`。
+- [x] 保留 B1/B2/C2 技术债为非阻塞项，不伪装成已解决。
+- [x] `Prototype-01` 继续保持 `final_target_identity=false`、`final_cf_material=false`。
 
 ---
 

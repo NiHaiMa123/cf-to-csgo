@@ -24,6 +24,7 @@ ALLOWED_TOP_LEVEL_KEYS = {
     "schema",
     "profile_id",
     "status",
+    "inspect_policy",
     "final_target_identity",
     "final_cf_material",
     "runtime",
@@ -38,7 +39,7 @@ ALLOWED_TOP_LEVEL_KEYS = {
 
 ALLOWED_INPUT_ITEM_KEYS = {"path", "sha256", "role", "optional"}
 ALLOWED_TOOL_ITEM_KEYS = {"path", "sha256", "role", "version"}
-ALLOWED_RUNTIME_KEYS = {"slot", "modelname", "active_addon", "migi_write_policy"}
+ALLOWED_RUNTIME_KEYS = {"slot", "modelname", "baseline_addon", "migi_write_policy"}
 ALLOWED_MATERIAL_POLICY_KEYS = {"classification", "source_kind", "final_cf_material", "final_release_allowed", "purpose"}
 ALLOWED_TRANSFORM_KEYS = {"manifest_ref", "matrix_convention", "source_space", "target_space", "normal_policy", "winding_policy"}
 ALLOWED_MESH_MAP_KEYS = {"group", "bone_index", "bone", "static_fallback", "expected_triangles"}
@@ -61,7 +62,7 @@ ALLOWED_OUTPUT_KEYS = {
 }
 
 REQUIRED_TOP_LEVEL_KEYS = set(ALLOWED_TOP_LEVEL_KEYS)
-REQUIRED_RUNTIME_KEYS = {"slot", "modelname", "active_addon", "migi_write_policy"}
+REQUIRED_RUNTIME_KEYS = {"slot", "modelname", "baseline_addon", "migi_write_policy"}
 REQUIRED_MATERIAL_POLICY_KEYS = set(ALLOWED_MATERIAL_POLICY_KEYS)
 REQUIRED_TRANSFORM_KEYS = set(ALLOWED_TRANSFORM_KEYS)
 REQUIRED_MESH_MAP_KEYS = set(ALLOWED_MESH_MAP_KEYS)
@@ -88,7 +89,7 @@ EXPECTED_SOURCE_SPACE = "raw CF LTB model coordinates"
 EXPECTED_TARGET_SPACE = "official M4A4 Source 1 bind-pose SMD coordinates"
 EXPECTED_NORMAL_POLICY = "rotation only then normalize"
 EXPECTED_WINDING_POLICY = "preserve; positive determinant"
-EXPECTED_RUNTIME_ADDON = "p_cf_bornbeast_m4a4_f4_recognizable_tmp"
+EXPECTED_INSPECT_POLICY = "frozen_noop_safe"
 EXPECTED_MIGI_WRITE_POLICY = "deploy_subcommand_only"
 EXPECTED_SEQUENCE_NAMES = (
     "idle",
@@ -262,6 +263,13 @@ def validate_manifest_contract(manifest_path: Path | str) -> tuple[bool, dict[st
         errors.append(f"status must be '{EXPECTED_STATUS}', got: '{manifest.get('status')}'")
     field_consumption["status"] = {"consumer": "manifest_contract", "value": manifest.get("status")}
 
+    if manifest.get("inspect_policy") != EXPECTED_INSPECT_POLICY:
+        errors.append(f"inspect_policy must be '{EXPECTED_INSPECT_POLICY}', got: '{manifest.get('inspect_policy')}'")
+    field_consumption["inspect_policy"] = {
+        "consumer": "manifest_contract_and_pipeline_default",
+        "value": manifest.get("inspect_policy"),
+    }
+
     # 3. P4 Mandatory boolean flags
     if manifest.get("final_target_identity") is not False:
         errors.append(f"P4 contract requires final_target_identity=false, got: {manifest.get('final_target_identity')}")
@@ -286,11 +294,9 @@ def validate_manifest_contract(manifest_path: Path | str) -> tuple[bool, dict[st
             errors.append(f"runtime.slot must be 'm4a4', got: '{runtime.get('slot')}'")
         if runtime.get("modelname") != "weapons/v_rif_m4a1.mdl":
             errors.append(f"runtime.modelname must be 'weapons/v_rif_m4a1.mdl', got: '{runtime.get('modelname')}'")
-        addon = runtime.get("active_addon")
+        addon = runtime.get("baseline_addon")
         if not isinstance(addon, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", addon or "") or addon in {".", ".."}:
-            errors.append("runtime.active_addon must be a single safe addon directory name")
-        if runtime.get("active_addon") != EXPECTED_RUNTIME_ADDON:
-            errors.append(f"runtime.active_addon must be '{EXPECTED_RUNTIME_ADDON}', got: '{runtime.get('active_addon')}'")
+            errors.append("runtime.baseline_addon must be a single safe addon directory name")
         if runtime.get("migi_write_policy") != EXPECTED_MIGI_WRITE_POLICY:
             errors.append(f"runtime.migi_write_policy must be '{EXPECTED_MIGI_WRITE_POLICY}', got: '{runtime.get('migi_write_policy')}'")
     field_consumption["runtime"] = {

@@ -213,12 +213,6 @@ $sequence "draw" {
 
 $sequence "lookat01" {
 	"v_rif_m4a1_anims\lookat01.smd"
-	{ event AE_CL_SET_STATTRAK_GLOW 0 "1" }
-	{ event AE_CL_SET_STATTRAK_GLOW 92 "0" }
-	{ event AE_BEGIN_TAUNT_LOOP 91 "0.306666" }
-	{ event 5004 2 "Weapon_M4A1.WeaponMove1" }
-	{ event 5004 92 "Weapon_M4A1.WeaponMove2" }
-	{ event 5004 116 "Weapon_M4A1.WeaponMove3" }
 	fadein 0.3
 	fadeout 0.3
 	fps 30
@@ -246,6 +240,6 @@ $keyvalues
 	}
 	qc_path 
 	{
-		"value"		"d:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_144941_648227\source1\v_rif_m4a1.qc"
+		"value"		"d:\project\cf_to_csgo\work\m4a1_s_bornbeast\p4_prototype_01\runs\run_20260819_170013_270792\source1\v_rif_m4a1.qc"
 	}
 }

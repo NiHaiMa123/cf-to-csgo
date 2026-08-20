@@ -1,7 +1,7 @@
 {
   "schema": "cf2.pipeline.check-report.v1",
   "profile_id": "Prototype-01",
-  "timestamp_utc": "2026-08-19T14:50:47.447657+00:00",
+  "timestamp_utc": "2026-08-19T17:01:49.961561+00:00",
   "pass": true,
   "errors": [],
   "details": {
@@ -10,7 +10,7 @@
       "task_id": "P4-T02",
       "profile_id": "Prototype-01",
       "manifest_path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\prototype_01_manifest.json",
-      "generated_at": "2026-08-19T14:50:47.429643+00:00",
+      "generated_at": "2026-08-19T17:01:49.944083+00:00",
       "pass": true,
       "errors": [],
       "field_consumption_matrix": {
@@ -26,6 +26,10 @@
           "consumer": "manifest_contract",
           "value": "active_technical_validation_sample"
         },
+        "inspect_policy": {
+          "consumer": "manifest_contract_and_pipeline_default",
+          "value": "frozen_noop_safe"
+        },
         "final_target_identity": {
           "consumer": "manifest_contract_and_package",
           "value": false
@@ -39,7 +43,7 @@
           "values": {
             "slot": "m4a4",
             "modelname": "weapons/v_rif_m4a1.mdl",
-            "active_addon": "p_cf_bornbeast_m4a4_f4_recognizable_tmp",
+            "baseline_addon": "p_cf_bornbeast_m4a4_f4_recognizable_tmp",
             "migi_write_policy": "deploy_subcommand_only"
           }
         },
@@ -447,7 +451,7 @@
       "runtime": {
         "slot": "m4a4",
         "modelname": "weapons/v_rif_m4a1.mdl",
-        "active_addon": "p_cf_bornbeast_m4a4_f4_recognizable_tmp",
+        "baseline_addon": "p_cf_bornbeast_m4a4_f4_recognizable_tmp",
         "migi_write_policy": "deploy_subcommand_only"
       },
       "material_policy": {

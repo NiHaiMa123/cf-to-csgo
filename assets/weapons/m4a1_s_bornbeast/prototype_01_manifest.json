@@ -2,12 +2,13 @@
   "schema": "cf2.m4a4.prototype-manifest.v1",
   "profile_id": "Prototype-01",
   "status": "active_technical_validation_sample",
+  "inspect_policy": "frozen_noop_safe",
   "final_target_identity": false,
   "final_cf_material": false,
   "runtime": {
     "slot": "m4a4",
     "modelname": "weapons/v_rif_m4a1.mdl",
-    "active_addon": "p_cf_bornbeast_m4a4_f4_recognizable_tmp",
+    "baseline_addon": "p_cf_bornbeast_m4a4_f4_recognizable_tmp",
     "migi_write_policy": "deploy_subcommand_only"
   },
   "inputs": {

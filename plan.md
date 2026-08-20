@@ -1,8 +1,8 @@
 # CF 武器 → CS:GO Legacy Source 1 转换流水线计划
 
-> 最后更新：2026-08-19
+> 最后更新：2026-08-20
 >
-> 当前状态：**P4-T08 Inspect REWORK_REQUIRED；Blender 已确认 safe_02 的外部手臂层级错位，P4 总 Gate 仍未完成**
+> 当前状态：**P4-T08 frozen/no-op safe 已部署，READY_FOR_USER_GATE；P7 承接真正 Inspect retarget**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -43,36 +43,35 @@
 5. **MIGI 与游戏内闭环**
    - 当前游戏内能正常看到 CF 枪模、贴图和官方 M4A4 动作。
    - 构建目录与活动 MIGI addon 已做逐文件哈希一致性检查。
-   - 当前唯一活动测试 addon：`p_cf_bornbeast_m4a4_p4_inspect_safe_02`（MIGI 不提供单独禁用按钮；旧版本已移入 `mods_temp`）。
+   - 当前 Prototype 测试 addon 以 P4 package/staging 为准；MIGI 不提供单独禁用按钮，不使用的 addon 必须移入 `mods_temp`。
    - 上述实机可运行版本正式冻结为 **`Prototype-01`**：它是技术验证样机，不保证资产身份就是最终“雷神”，也可能是黑骑士或其他 M4 变体；当前阶段不再以枪型准确性为主线。
 
 ### 当前正在做
 
 **P4：通用流水线稳定化与 REWORK 修复（执行 `P4_TASKS.md` 验收清单）。**
 
-- **当前权威状态**：`P4-T08 GAME_GATE_REWORK_REQUIRED / P4 总 Gate 未完成`。
+- **当前权威状态**：`P4-T08 FROZEN_NOOP_SAFE / READY_FOR_USER_GATE；P4 总 Gate 等待用户确认 Inspect 后仍可继续射击、换弹、切枪`。
 - **现场基线状态**：
   - D3/F4 原型 (`p_cf_bornbeast_m4a4_f4_recognizable_tmp`)：`user_confirmed_previous_stage`（已知可运行视觉基线，必须保留）；
   - P4 staging (`work/m4a1_s_bornbeast/p4_prototype_01/staging`)：`automated_only_not_user_confirmed`（虽与历史 MOD 一致，但完整流水线、语义 Gate 和实机行为未经证明）；
   - 历史 final MOD (`p_cf_m4a4_bornbeast_final`)：`mods_temp/out_of_scope_unreviewed`（已按 MIGI 现场规则停用，不属于 P4 验收范围，不得作为输入或通过证据）。
-- **已完成**：P4-T01 至 P4-T07。T05 的 15 个语义 Gate、T06 的 package/staging/deploy 安全边界、T07 的 17 个负向 mutation 和双 run 语义可复现性均已通过。
-  - **当前正在做**：P4 自动 Gate 已通过；safe_01 的 idle 回退导致按 F 无可见动作。safe_02 虽保留了官方 160 帧 weapon Inspect，但 Blender MCP 检查显示直接复制 local transform 会错位；进一步尝试模型空间 retarget 后，frame 40/80/120 仍不能保持双手握枪，因此没有生成新的生产 addon。
-  - **下一步**：基于实际枪体接触点重新设计 Inspect retarget，或明确采用 Prototype 的冻结/无动作 Inspect；在 Blender 的 frame 1/40/80/120/159 通过接触检查前，不再要求用户重复测试游戏 addon。其他已通过项目保持冻结。
-- **后续再做**：Blender 检查通过后重新生成唯一测试 addon，再进行一次用户实机 Inspect Gate；通过后才进入 P4-T09 文档与冻结。
-- **已知技术债**：冻结 C3 aligned OBJ 仅作为可选回归参考；缺失时仍执行矩阵/语义 Gate，但数值比较会在报告中标记为 skipped。B1/B2/C2 技术债和 03–08 Parent fallback 仍不阻塞 Prototype 主线。Crowbar 0.71 启动时要求 `%APPDATA%\ZeqMacaw` 可写；受限自动化环境执行 T04 时必须授予该目录写权限。当前真实构建 run `run_20260819_134459_016321` 已完成 Crowbar 回环且不含 recovery 标记。
+- **已完成**：P4-T01 至 P4-T09 的自动文档/策略收口。T05 的 15 个语义 Gate、T06 的 package/staging/deploy 安全边界、T07 的 17 个负向 mutation 和双 run 语义可复现性均已通过；T08 已明确 frozen/no-op safe，T09 已更新本计划和证据索引。
+  - **当前正在做**：用户实机确认新 addon `p_cf_bornbeast_m4a4_p4_frozen_noop_01`：按 F 后无崩溃、无错误、武器状态可恢复并可继续射击/换弹/切枪。按 F 没有可见动作是当前 P4 策略的预期行为。
+  - **下一步**：完成上述最小用户确认后，冻结 P4 Prototype 流水线；不要在 P4 继续做 Inspect retarget。
+- **后续再做**：P7 再处理真正 Inspect 的手臂/手指 retarget、可见动作和穿模；Blender MCP 的 frame 1/40/80/120/159 接触检查属于 P7 验收，不回灌 P4。
+- **已知技术债**：冻结 C3 aligned OBJ 仅作为可选回归参考；缺失时仍执行矩阵/语义 Gate，但数值比较会在报告中标记为 skipped。B1/B2/C2 技术债和 03–08 Parent fallback 仍不阻塞 Prototype 主线。Crowbar 0.71 启动时要求 `%APPDATA%\ZeqMacaw` 可写；受限自动化环境执行 T04 时必须授予该目录写权限。当前 frozen/no-op 构建 run `run_20260819_170013_270792` 已完成 Crowbar 回环和 15/15 validation，并已部署 `p_cf_bornbeast_m4a4_p4_frozen_noop_01`；当前等待用户实机 Gate。
 
 ### 下一步
 
-1. 修复并在 Blender 中验证 Inspect 的手臂/手指 retarget（safe_02 当前不接受）；
-2. 生成新的隔离 addon 后再完成一次 Inspect 实机确认；
-3. 经独立 Reviewer 审计通过后，进入 P4-T09 文档与冻结；
-4. 在 Inspect 返工通过前，保持 `REWORK_REQUIRED`，不宣称 Prototype 冻结。
+1. 用户确认 frozen/no-op Inspect 不造成错误、崩溃或状态异常（新 addon 已部署）；
+2. 由独立 Reviewer 按 `P4_TASKS.md` RV-01～RV-06 做轻量审计；
+3. P4 通过后冻结当前 Prototype；真正 Inspect retarget 只在 P7 开始。
 
 ### 后续再做
 
 - **P5：最终雷神资产定位与来源确认**（在本地 CF 原始资源中定位真正目标雷神的 LTB/DTX/TGA/CFG/WAV 并完成来源证明）；
 - **P6：最终官方雷神资产替换与发布闭环**（用最终本地 CF 资产替换 `Prototype-01` 输入并重跑同一流水线，完成最终材质与发布包）；
-- **P7：增强特性**（CF 原版动画、音效集成、第三人称/落地武器/掉落弹匣模型与自定义 Inspect 等）。
+- **P7：增强特性**（CF 原版动画、音效集成、第三人称/落地武器/掉落弹匣模型，以及真正 Inspect retarget、可见动作和手部接触/穿模验收）。
 
 ### 当前 `Prototype-01` 与“最终雷神”的区别
 

@@ -14,7 +14,14 @@
 - 最终模型、材质、动画和声音必须来自本地 CF 原始资源；“真正雷神是哪套 LTB/DTX”是流水线稳定后独立执行的资产定位任务。
 - M4A1-S skeleton、C2/D2 和 silencer 相关内容均为历史研究证据，不是当前 M4A4 路线的 blocker，也不得重新成为 active route。
 
-当前唯一活动测试 addon：`p_cf_bornbeast_m4a4_f4_recognizable_tmp`。
+Prototype 的权威构建输入/输出由 [`assets/weapons/m4a1_s_bornbeast/prototype_01_manifest.json`](assets/weapons/m4a1_s_bornbeast/prototype_01_manifest.json) 和 [`P4_TASKS.md`](P4_TASKS.md) 定义；MIGI 现场状态只在 `plan.md` 记录。
+
+### P4 证据索引（不重复维护阶段状态）
+
+- 流水线入口：`scripts/weapon_port/pipeline.py`；P4 安全 Inspect：`--inspect-policy frozen_noop_safe`（`safe_idle_fallback` 兼容别名）。
+- 自动闭环报告：`work/m4a1_s_bornbeast/p4_prototype_01/{check_report,build_report,validation_report,upstream_trace_report}.json`。
+- 当前 package/staging：`work/m4a1_s_bornbeast/p4_prototype_01/{package,staging}/`；当前唯一 BornBeast addon 为 `p_cf_bornbeast_m4a4_p4_frozen_noop_01`，部署记录和用户 Gate 见 `deploy_report.json`、`prototype_01_game_regression.json`。
+- 用户实机记录：`prototype_01_game_regression.json`；Inspect 可见动作/手部 retarget 已明确移入 P7，P4 只验收触发后的安全状态。
 
 ---
 
@@ -326,7 +333,7 @@ F3 的引用闭包虽然通过，但实机只能看到不可识别的黑白拼�
 
 F4 改用可独立核验的网络参考来源：公开页面 `https://www.gamemodd.com/cs/skinsweapons/ak47/1082-m4a1-s-born-beast.html` 发布的 CS 1.6 包（页面署名 Smilegate、Nexon）。下载 RAR 的 SHA-256 为 `9820df6ffafc5a49051e7e64560118d399bbda6a65717f2120a89ccae5b91d85`；仓库新增 `scripts/weapon_port/extract_goldsrc_mdl_textures.py`，从 GoldSrc v10 MDL 的内嵌 8-bit palette 中提取 6 张纹理，报告为 `external/cs16_texture_extract_report.json`。其中 `PV-M4A1_S_BORNBEAST.bmp` 只用于 Prototype 可识别性与材质链验证；它不得进入最终 F 阶段，外部模型与动画也未进入项目构建。
 
-`scripts/weapon_port/build_f4_m4a4_recognizable_classic.py` 保持 D3 用户确认过的模型/动画不变，将经典 atlas 转为 DXT1 base VTF，并从红色优势像素派生独立 `$selfillummask`，配合低强度 Phong 形成首先可识别、静态发光的版本。报告和闭包为 `f4_recognizable_classic_report.json`、`f4_material_closure_report.json`；当前唯一活动 M4A4 addon 是 `p_cf_bornbeast_m4a4_f4_recognizable_tmp`。红光呼吸动画、CF CFG/PV shader 的像素级复刻仍留待后续。
+`scripts/weapon_port/build_f4_m4a4_recognizable_classic.py` 及其 `f4_*_report.json` 仅作为 Prototype 历史视觉证据；不把某个外部 addon 名称写入 README 的静态状态。MIGI 当前启用项以 `plan.md` 为准，不使用的 addon 放入 `mods_temp`。
 
 ---
 

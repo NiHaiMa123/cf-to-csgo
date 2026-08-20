@@ -1,12 +1,12 @@
 {
   "schema": "cf2.pipeline.package-manifest.v2",
   "profile_id": "Prototype-01",
-  "timestamp_utc": "2026-08-19T14:50:47.712751+00:00",
+  "timestamp_utc": "2026-08-19T17:01:50.242592+00:00",
   "run_binding": {
-    "run_id": "run_20260819_144941_648227",
+    "run_id": "run_20260819_170013_270792",
     "manifest": {
       "path": "D:\\project\\cf_to_csgo\\assets\\weapons\\m4a1_s_bornbeast\\prototype_01_manifest.json",
-      "sha256": "9f2b7e4fcae9fc38daca4acfdf521a9a58b8820b757bf9d88beb363b70b84d09",
+      "sha256": "9b39d597a602894375d89b4e3a573c78da9b3540c6c0fb1d4248a4fa5c55600d",
       "exists": true,
       "profile_id": "Prototype-01",
       "run_id": null
@@ -14,33 +14,33 @@
     "reports": {
       "check": {
         "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\check_report.json",
-        "sha256": "a718d715ff6610a7dbed850b66a44a60443233a27754e1c69f818a1fe943f266",
+        "sha256": "3e9e31fb44249ecfac71016d48fae3cbc7318cad1d522df2b20d420de77cd736",
         "exists": true,
         "profile_id": "Prototype-01",
         "run_id": null
       },
       "build": {
         "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\build_report.json",
-        "sha256": "99596816b4338dda658732b357d896682de9cae0871d578f4ab99f0606567fdc",
+        "sha256": "47905c9aa09ceddd357d309d3c6256fffb55b6be46890a37ca816217039296cd",
         "exists": true,
         "profile_id": "Prototype-01",
-        "run_id": "run_20260819_144941_648227",
+        "run_id": "run_20260819_170013_270792",
         "run_id_match": true
       },
       "validate": {
         "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\validation_report.json",
-        "sha256": "2960ce9c4b0a27212805d37a05256848c4a91a90b307d512b876307425782267",
+        "sha256": "442d93a7f2200ba9cde9eb1116aad2b999b31a576ec5d362e35032ef2fc99e60",
         "exists": true,
         "profile_id": "Prototype-01",
-        "run_id": "run_20260819_144941_648227",
+        "run_id": "run_20260819_170013_270792",
         "run_id_match": true
       },
       "upstream_trace": {
         "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\upstream_trace_report.json",
-        "sha256": "5787953babbb8c9f006a61660c9888e548498beec2082631e04da3acfc5787c5",
+        "sha256": "b5b65b7617c43b76f0393a18709645d9c60bec1a4f8df9190c9291b6dfba196c",
         "exists": true,
         "profile_id": "Prototype-01",
-        "run_id": "run_20260819_144941_648227",
+        "run_id": "run_20260819_170013_270792",
         "run_id_match": true
       }
     }
@@ -48,7 +48,7 @@
   "source_addon": {
     "path": "D:\\project\\cf_to_csgo\\build\\m4a1_s_bornbeast_m4a4\\p4_prototype_01\\addon",
     "file_count": 9,
-    "payload_tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70"
+    "payload_tree_sha256": "067fd9ca04c3908376707ce626df5a28622b37786acc5277ae0d30e87319a2f3"
   },
   "final_target_identity": false,
   "final_cf_material": false,
@@ -56,7 +56,7 @@
   "runtime_slot": "m4a4",
   "payload": {
     "file_count": 9,
-    "tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70",
+    "tree_sha256": "067fd9ca04c3908376707ce626df5a28622b37786acc5277ae0d30e87319a2f3",
     "package_manifest_excluded": true,
     "excluded_names": [
       "package_manifest.json"
@@ -66,11 +66,11 @@
   "package_roots": {
     "package_root": {
       "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\package",
-      "payload_tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70"
+      "payload_tree_sha256": "067fd9ca04c3908376707ce626df5a28622b37786acc5277ae0d30e87319a2f3"
     },
     "staging_root": {
       "path": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging",
-      "payload_tree_sha256": "adab382ea511ad5ef016898fe04f6049d37b3400a9c665713ef1c19f40ae4c70"
+      "payload_tree_sha256": "067fd9ca04c3908376707ce626df5a28622b37786acc5277ae0d30e87319a2f3"
     },
     "payload_hashes_equal": true
   },
@@ -83,8 +83,8 @@
     },
     {
       "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
-      "size_bytes": 175000,
-      "sha256": "84073911c0f5a8e165ee2fb84481b487823c7956d0539e06c99febb21d7d7ed0"
+      "size_bytes": 349776,
+      "sha256": "6e8261ddab5eb43b06563564caef2bf5a929d27866a9326ef3a4066bdd608cc3"
     },
     {
       "relative_path": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf",
@@ -93,33 +93,33 @@
     },
     {
       "relative_path": "models/weapons/v_rif_m4a1.ani",
-      "size_bytes": 27032,
-      "sha256": "681c730108798e0b4e767c348503b5f5c0ce62c5ac8b48b7268c2e16efc7f408"
+      "size_bytes": 13664,
+      "sha256": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc"
     },
     {
       "relative_path": "models/weapons/v_rif_m4a1.dx80.vtx",
       "size_bytes": 56882,
-      "sha256": "a2b84b5863540d45a246594dcda7898beb52e50bd9e760e68d4ad5759ff43659"
+      "sha256": "a0fd546b637ba9a0820e8ef2cc5f5a8e0c9493532c9a0148d171e9784f10050f"
     },
     {
       "relative_path": "models/weapons/v_rif_m4a1.dx90.vtx",
       "size_bytes": 56882,
-      "sha256": "3682a7d649e0bacebb54aa2dc59bce0e75ce90b63216ad2f297764459ee99a29"
+      "sha256": "74a726311f79bf029ac5c1db492f4f2408adcfe44fb3840e273722b73850cfee"
     },
     {
       "relative_path": "models/weapons/v_rif_m4a1.mdl",
-      "size_bytes": 50588,
-      "sha256": "9ac365192a3be10411e982fbb60cd4b74872c3b27da50590c3d4045c5b3fbd3b"
+      "size_bytes": 43048,
+      "sha256": "3e38d73283ca7162d76822357687cffededf35078cf91fd32400264e84f24111"
     },
     {
       "relative_path": "models/weapons/v_rif_m4a1.sw.vtx",
       "size_bytes": 56858,
-      "sha256": "e8ebfc750063fe93cf02503f2aea472367597d9f82fe4cba5e085741706d0c78"
+      "sha256": "bcaea069538db24fc39e2c83dacb84f1ac06c7235030f82144f7774e7ace7c9a"
     },
     {
       "relative_path": "models/weapons/v_rif_m4a1.vvd",
       "size_bytes": 232320,
-      "sha256": "606dac97ea65459625a7489d23472d01647acc2cca9ff89d529103ce0164564b"
+      "sha256": "64245b10798ab1d78998a037a6f3c79b42aa50dbed903c74d80498964c9e1b13"
     }
   ],
   "self_hash_policy": {

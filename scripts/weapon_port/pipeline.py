@@ -542,14 +542,88 @@ def _neutralize_inspect_fingers(source1: Path) -> dict[str, Any]:
     }
 
 
+def _freeze_inspect_to_idle(source1: Path) -> dict[str, Any]:
+    """Create deterministic one-frame, idle-only Inspect clips.
+
+    This is intentionally a P4 safety policy, not an animation solution.  The
+    look-at sequence names remain present so the runtime state can enter and
+    leave Inspect; out-of-range Inspect-only QC events are removed, while the
+    clips contain the known-safe idle bind pose and therefore have no visible
+    retarget motion.
+    """
+    anim_dir = source1 / "v_rif_m4a1_anims"
+    idle = anim_dir / "idle.smd"
+    if not idle.is_file():
+        raise SystemExit(f"Frozen Inspect policy requires idle SMD: {idle}")
+    idle_text = idle.read_text(encoding="utf-8", errors="replace")
+    pose = _read_smd_pose(idle)
+    generated: list[dict[str, Any]] = []
+    for filename in ("lookat01.smd", "lookat01_prepare.smd", "lookat01_loop.smd"):
+        target = anim_dir / filename.replace(".smd", "_frozen.smd")
+        target.write_text(idle_text, encoding="utf-8")
+        generated.append({
+            "source": "idle.smd",
+            "output": target.name,
+            "frame_count": 1,
+            "bone_count": len(pose),
+        })
+    return {
+        "mode": "frozen_noop_safe",
+        "frame_count": 1,
+        "bone_count": len(pose),
+        "generated": generated,
+        "visible_motion_expected": False,
+        "p4_gate": "runtime safety/state return only; visual retarget is deferred to P7",
+    }
+
+
 def apply_inspect_policy(qc_text: str, policy: str, source1: Path) -> tuple[str, dict[str, Any]]:
     """Apply an explicit Prototype Inspect policy without touching references."""
     if policy == "official":
         return qc_text, {"mode": "official", "replaced_sequences": []}
-    if policy == "safe_idle_fallback":
-        # Keep the old CLI spelling reproducible, but no longer produce a
-        # no-op Inspect.  It now aliases the motion-preserving safety pass.
-        policy = "safe_finger_neutralized"
+    if policy in {"safe_idle_fallback", "frozen_noop_safe"}:
+        # safe_idle_fallback is retained as a compatibility spelling, but it
+        # now has the documented frozen/no-op semantics rather than silently
+        # selecting the unsafe motion-preserving experiment.
+        safety_report = _freeze_inspect_to_idle(source1)
+        replaced: list[str] = []
+        for sequence_name in ("lookat01", "lookat01_prepare", "lookat01_loop"):
+            pattern = re.compile(
+                rf'(\$sequence\s+"{re.escape(sequence_name)}"\s*\{{\s*)"[^"]+\.smd"',
+                flags=re.IGNORECASE,
+            )
+
+            def replacement(match: re.Match[str]) -> str:
+                replaced.append(sequence_name)
+                safe_name = f"v_rif_m4a1_anims\\{sequence_name}_frozen.smd"
+                return f'{match.group(1)}"{safe_name}"'
+
+            qc_text, count = pattern.subn(replacement, qc_text, count=1)
+            if count != 1:
+                raise SystemExit(f"Inspect policy could not find QC sequence body: {sequence_name}")
+            # The frozen clip has one frame. Official Inspect event frames
+            # would therefore make studiomdl reject the QC as out-of-range.
+            # P4 removes only these Inspect events; P7 may restore them when
+            # a real multi-frame retargeted Inspect is available.
+            block_pattern = re.compile(
+                rf'(\$sequence\s+"{re.escape(sequence_name)}"\s*\{{)(.*?)(^\}})',
+                flags=re.IGNORECASE | re.MULTILINE | re.DOTALL,
+            )
+
+            def remove_events(block_match: re.Match[str]) -> str:
+                body = block_match.group(2)
+                body = re.sub(
+                    r'^\s*\{\s*event\b[^\r\n]*\}\s*\r?\n',
+                    '',
+                    body,
+                    flags=re.IGNORECASE | re.MULTILINE,
+                )
+                return block_match.group(1) + body + block_match.group(3)
+
+            qc_text = block_pattern.sub(remove_events, qc_text, count=1)
+        safety_report["replaced_sequences"] = replaced
+        safety_report["removed_events"] = True
+        return qc_text, safety_report
     if policy != "safe_finger_neutralized":
         raise SystemExit(f"Unsupported Inspect policy: {policy}")
 
@@ -1716,9 +1790,9 @@ def main() -> int:
     common.add_argument("--vtfcmd", type=Path, help="Path to VTFCmd.exe")
     common.add_argument(
         "--inspect-policy",
-        choices=("official", "safe_finger_neutralized", "safe_idle_fallback"),
-        default="official",
-        help="Inspect/lookat animation policy; safe_finger_neutralized preserves motion while neutralizing finger bones (safe_idle_fallback is a legacy alias)",
+        choices=("official", "frozen_noop_safe", "safe_idle_fallback", "safe_finger_neutralized"),
+        default=None,
+        help="Inspect policy override; when omitted, use manifest.inspect_policy, then official",
     )
 
     subparsers.add_parser("check", parents=[common], help="Validate inputs and manifest contract without building")
@@ -1735,6 +1809,8 @@ def main() -> int:
     args = parser.parse_args()
     manifest_path = args.manifest
     manifest = load_manifest(manifest_path)
+    if args.inspect_policy is None:
+        args.inspect_policy = manifest.get("inspect_policy", "official")
 
     handlers = {
         "check": cmd_check,

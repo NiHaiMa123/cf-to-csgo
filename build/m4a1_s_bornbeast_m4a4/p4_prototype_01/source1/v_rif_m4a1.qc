@@ -212,27 +212,21 @@ $sequence "draw" {
 }
 
 $sequence "lookat01" {
-	"v_rif_m4a1_anims\lookat01_safe.smd"
-	{ event AE_CL_SET_STATTRAK_GLOW 0 "1" }
-	{ event AE_CL_SET_STATTRAK_GLOW 92 "0" }
-	{ event AE_BEGIN_TAUNT_LOOP 91 "0.306666" }
-	{ event 5004 2 "Weapon_M4A1.WeaponMove1" }
-	{ event 5004 92 "Weapon_M4A1.WeaponMove2" }
-	{ event 5004 116 "Weapon_M4A1.WeaponMove3" }
+	"v_rif_m4a1_anims\lookat01_frozen.smd"
 	fadein 0.3
 	fadeout 0.3
 	fps 30
 }
 
 $sequence "lookat01_prepare" {
-	"v_rif_m4a1_anims\lookat01_prepare_safe.smd"
+	"v_rif_m4a1_anims\lookat01_prepare_frozen.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 30
 }
 
 $sequence "lookat01_loop" {
-	"v_rif_m4a1_anims\lookat01_loop_safe.smd"
+	"v_rif_m4a1_anims\lookat01_loop_frozen.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 15
