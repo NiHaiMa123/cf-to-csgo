@@ -14,7 +14,10 @@
 
 - P4：**`PASS / FROZEN`**；
 - P4 最终 Review：`PASS WITH RISK`，允许冻结；
-- P5：**`READY_TO_START` — 最终雷神资产定位**；
+- P5：**ACTIVE — 最终雷神资产定位**；
+- P5-T01：**READY_FOR_LUNA**；
+- P5 任务流：[`P5_TASKS.md`](P5_TASKS.md)；
+- 当前正式执行协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)；
 - P4 visible Inspect / 手指 retarget 属于 P7，不是当前任务；
 - P4 frozen baseline 不得因为 P5/P7 问题被自行重写。
 
@@ -64,10 +67,11 @@ Codex Sol 默认也不承担额外独立 Review。
 1. 读取 `AGENTS.md`；
 2. 读取 `plan.md` 第 1 节；
 3. 读取本文件 `CODEX_TASKS.md`；
-4. 如果任务涉及已冻结 P4，先读 `P4_STATUS.md`；
-5. `git status --short --branch`；
-6. tracked 工作区可安全同步时执行 `git fetch origin` + `git pull --rebase origin master`；
-7. 再执行用户或 Chat/Sol 明确交付的任务。
+4. 读取当前阶段任务流；P5 当前为 `P5_TASKS.md`；
+5. 读取用户/Chat 明确指定的 Task Spec；当前默认是 `P5_T01_TASK_SPEC.md`；
+6. `git status --short --branch`；
+7. tracked 工作区可安全同步时执行 `git fetch origin` + `git pull --rebase origin master`；
+8. 再严格执行 Task Spec。
 
 不要把聊天记忆、旧分支、旧 MOD、历史报告或本地未提交实验当作 authoritative task source。
 
@@ -90,11 +94,12 @@ Luna 可能被要求在 `data/**` 中执行：
 必须遵守：
 
 1. 原始 `data/**` 不上传；
-2. 可以上传路径、hash、size、解析报告、允许的预览图/缩略图和 candidate matrix；
+2. 可以上传路径、hash、size、解析报告、Task Spec 明确允许的预览图/缩略图和 candidate matrix；
 3. 不把网络第三方 MOD 当作 final source；
 4. 不把 Prototype 当前 BornBeast 候选自动当成最终雷神；
 5. 被排除的候选必须记录排除原因，防止后续 Agent 重复搜索；
-6. 最终资产身份由 Chat/Sol 根据证据判定，Luna 只报告候选事实。
+6. 最终资产身份由 Chat/Sol 根据证据判定，Luna 只报告候选事实；
+7. T01 只做候选召回与轻量摘要，不自行开始 Blender 全量渲染。
 
 ---
 
@@ -126,7 +131,32 @@ Luna 执行时：
 
 ---
 
-## 7. Git / data 规则摘要
+## 7. 当前 P5-T01 任务
+
+当前已经发布正式 Task Spec：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
+
+执行目标：
+
+```text
+官方身份锚点：M4A1-雷神
+  -> data/** 本地 inventory
+  -> M4/M4A1/PLAYERVIEW/配置引用候选召回
+  -> 候选 SHA-256 + 轻量 LTB 摘要 + reference edges
+  -> candidate_index.json / candidate_matrix.csv / scan_report.md / execution.json
+  -> push
+  -> STOP，等待 Chat/Sol 选择 T02 候选
+```
+
+特别禁止：
+
+- 仅凭 `LEISHEN` / `THOR` / `M4A1` 文件名宣布最终身份；
+- T01 阶段全量 Blender 渲染；
+- 修改 P4 frozen pipeline；
+- 自行进入 P5-T02。
+
+---
+
+## 8. Git / data 规则摘要
 
 完整规则见 [`AGENTS.md`](AGENTS.md)。特别强调：
 
@@ -142,8 +172,8 @@ Luna 执行时：
 
 ---
 
-## 8. 当前默认停止条件
+## 9. 当前默认停止条件
 
-在 Chat/Sol 还没有发布明确 P5 Task Spec 前：
+完成 `P5_T01_TASK_SPEC.md` 后：
 
-> **Luna 不自行扫描并宣布最终雷神、不继续修改 P4、不开始 P6。等待 Chat/Sol 的 P5 任务。**
+> **Luna 只提交 Task Spec upload allowlist 内的证据，然后停止。不得自行开始 P5-T02，不得自行宣布最终雷神。**
