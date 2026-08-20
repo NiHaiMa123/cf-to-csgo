@@ -1,0 +1,26 @@
+{
+  "schema": "cf2.p5.t01.official-reference.v1",
+  "task_id": "P5-T01",
+  "target_display_name": "M4A1-雷神",
+  "official_page_url": "https://cf.qq.com/cp/a20250701wqbk/page.html?itemid=2010044601",
+  "itemid": 2010044601,
+  "official_image_url": "https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png",
+  "image_source_domain": "mcdn.gtimg.com",
+  "page_to_image_relation": "The official weapon-detail API record for item 2010044601 returns propInfo.szName=M4A1-雷神 and szBigPic=C0457.png with imageUrlPrefix=https://mcdn.gtimg.com/bbcdn/cf/serial/. The official detail page uses that prefix plus szBigPic for the displayed weapon image.",
+  "user_confirmation": "confirmed",
+  "confirmed_at": "2026-08-21T00:20:27.5509734+08:00",
+  "search_queries": [
+    "M4A1-雷神 CF 武器百科",
+    "site:cf.qq.com/cp/a20250701wqbk M4A1 雷神",
+    "site:cf.qq.com/cp/a20250701wqbk \"M4A1-雷神\""
+  ],
+  "source_notes": [
+    "The mandatory official web-search queries were attempted. The official detail page was then inspected through its official page configuration and weapon-list/detail APIs because the search index did not expose the detail record directly.",
+    "Official page configuration: https://comm.ams.game.qq.com/ide/page/42_Yp63SX; list chart 420348/token geaxDj; detail chart 424626/token 0H7HvV.",
+    "Official list request with sWeaponName=M4A1-雷神 returned the exact item name M4A1-雷神, item id 2010044601, and image C0457.png.",
+    "Official detail request for itemid 2010044601 returned propInfo.szName=M4A1-雷神, iWeaponId=2010044601, szBigPic=C0457.png, and the description of the silver M4A1 with blue lightning.",
+    "The CDN image https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png responded 200 image/png with Content-Length 125896.",
+    "The browser inspected the confirmed official detail page at itemid=2010044601; its rendered weapon-name element was M4A1-雷神 and pageAssets observed the actual loaded image URL https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png.",
+    "The user explicitly confirmed this reference in the current task on 2026-08-21. The reference shown for confirmation was the official remote image. No generated image or third-party MOD asset was used."
+  ]
+}

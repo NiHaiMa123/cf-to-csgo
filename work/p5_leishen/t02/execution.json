@@ -1,0 +1,131 @@
+{
+  "schema": "cf2.p5.t02.execution.v1",
+  "task_id": "P5-T02",
+  "status": "AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION",
+  "started_at": "2026-08-20T16:35:22.913+00:00",
+  "completed_at": "2026-08-20T16:35:25.571+00:00",
+  "preconditions": {
+    "t01_user_reference": "confirmed",
+    "official_page_present": true,
+    "official_image_present": true,
+    "legacy_index_present": true,
+    "legacy_matrix_present": true
+  },
+  "inputs": {
+    "official_reference_json": "work/p5_leishen/t01_reference/official_reference.json",
+    "official_reference_sha256": "7a2f00a3ea0fe0dbfb02d8b2a45275bb0f2d292cfb4c7a2b6c3a45cbd7612d6f",
+    "candidate_index": "work/p5_leishen/t01/candidate_index.json",
+    "candidate_index_sha256": "2bfcf1562c099eb4e6fca8923c78311effd1ffac2cd81812ac08731919cb6016",
+    "candidate_matrix": "work/p5_leishen/t01/candidate_matrix.csv",
+    "candidate_matrix_sha256": "99d6b9447b787e2a0db4b092fa4536828762a700f4194da010ae09b8d4e725b2"
+  },
+  "narrowing": {
+    "filtered_records": 185,
+    "exact_sha_clusters": 136,
+    "shortlist_count": 15,
+    "source_rescan": false,
+    "data_modified": false
+  },
+  "decoder": {
+    "component": "CFRezManager LithTechModelDecoder via temporary reflection runner",
+    "outer_compression": "standard Python LZMA FORMAT_ALONE decompression before decoder",
+    "runner_path_local_only": "work/p5_leishen/t02/.runner/bin/Release/net8.0/P5T02ModelReader.dll"
+  },
+  "render": {
+    "width": 768,
+    "height": 384,
+    "background": "white",
+    "camera": "orthographic side",
+    "animation": false,
+    "ik": false,
+    "retarget": false,
+    "complex_lighting": false,
+    "cycles": false,
+    "texture_status": "not_available",
+    "provenance": "actual local LTB geometry; no AI/generated image"
+  },
+  "outputs": {
+    "candidate_clusters": "work/p5_leishen/t02/candidate_clusters.json",
+    "visual_shortlist": "work/p5_leishen/t02/visual_shortlist.json",
+    "contact_sheet": "work/p5_leishen/t02/contact_sheet.png",
+    "previews": "work/p5_leishen/t02/previews/*.png"
+  },
+  "decode_errors": [],
+  "identity_status": "CANDIDATE_ONLY",
+  "next_action": "show contact_sheet.png and visual_shortlist.json to user; wait for explicit local candidate confirmation; do not write IDENTITY_CONFIRMED",
+  "texture_probe": {
+    "status": "inconclusive_for_final_identity",
+    "source_dtx": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+    "source_dtx_sha256": "eb11343c9c4fe1bc3abcc41130c17e581bdb3ead12ff817fa06f7446bdd2f7b8",
+    "reports": {
+      "C029": {
+        "width": 768,
+        "height": 384,
+        "texture_status": "raw_pv_dtx_uv_diagnostic_not_validated_diffuse",
+        "texture_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "uv_flip": "v -> 1-v",
+        "projection": "orthographic side",
+        "model_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+        "preview_path": "work/p5_leishen/t02/previews/C029_PV-M4A1_S_IronBeast_Gilt_pv_dtx_uv_diagnostic.png"
+      },
+      "C103": {
+        "width": 768,
+        "height": 384,
+        "texture_status": "raw_pv_dtx_uv_diagnostic_not_validated_diffuse",
+        "texture_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "uv_flip": "v -> 1-v",
+        "projection": "orthographic side",
+        "model_sha256": "8e745e151657c4da619685d1e0ab8ea3a4e7deaa92da031993f4a835a1d5dae6",
+        "preview_path": "work/p5_leishen/t02/previews/C103_PV-M4A1_S_Transformers_Reaper_pv_dtx_uv_diagnostic.png"
+      }
+    },
+    "finding": "actual local PV DTX was UV-applied to C029/C103; it is mask/lookup-like rather than a validated color diffuse, so no local identity confirmation was written"
+  },
+  "shader_probe": {
+    "status": "diagnostic_only",
+    "reports": {
+      "C029": {
+        "preview_path": "work/p5_leishen/t02/previews/C029_PV-M4A1_S_IronBeast_Gilt_scalar_shader_diagnostic.png",
+        "width": 768,
+        "height": 384,
+        "texture_status": "scalar_map_shader_approximation_not_final_diffuse",
+        "alpha_map": "data/rf017/ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+        "specular_map": "data/rf017/ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+        "uv_flip": "v -> 1-v",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "provenance": "local LTB geometry + local AlphaMap G / SpecularMap R; no generated or external model texture",
+        "model_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8"
+      },
+      "C103": {
+        "preview_path": "work/p5_leishen/t02/previews/C103_PV-M4A1_S_Transformers_Reaper_scalar_shader_diagnostic.png",
+        "width": 768,
+        "height": 384,
+        "texture_status": "scalar_map_shader_approximation_not_final_diffuse",
+        "alpha_map": "data/rf017/ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+        "specular_map": "data/rf017/ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+        "uv_flip": "v -> 1-v",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "provenance": "local LTB geometry + local AlphaMap G / SpecularMap R; no generated or external model texture",
+        "model_sha256": "8e745e151657c4da619685d1e0ab8ea3a4e7deaa92da031993f4a835a1d5dae6"
+      }
+    },
+    "final_diffuse_available": false,
+    "identity_status": "CANDIDATE_ONLY",
+    "note": "Scalar maps improve local surface diagnostics but do not close the missing color diffuse/shader lookup mapping."
+  },
+  "handoff": {
+    "user_feedback": "用户无法仅凭当前 C029/C103 灰模、原始 PV DTX UV 诊断和标量 Alpha/Specular 材质诊断分出候选；需要有效彩色 diffuse/shader mapping 才能继续确认。",
+    "status": "AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION",
+    "candidate_decision": null,
+    "final_identity_confirmed": false,
+    "texture_probe_result": "inconclusive_for_final_identity",
+    "next_gate": "obtain defensible local color diffuse/shader lookup mapping or explicit user local-candidate choice",
+    "prohibited_transition": "do not write USER_VISUAL_MATCH_CONFIRMED or IDENTITY_CONFIRMED from the current diagnostics"
+  }
+}

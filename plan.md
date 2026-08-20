@@ -1,8 +1,8 @@
 # CF 武器 → CS:GO Legacy Source 1 转换流水线计划
 
-> 最后更新：2026-08-20
+> 最后更新：2026-08-21
 >
-> 当前状态：**P4 `PASS / FROZEN`；P5 `ACTIVE` — T01 `READY_FOR_LUNA`，T02 等待 T01 用户目标图确认**
+> 当前状态：**P4 `PASS / FROZEN`；P5 `ACTIVE` — T01 `PASS / USER_REFERENCE_CONFIRMED`；T02 `ACTIVE / AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION`（C029/C103 尚未分出）**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -111,7 +111,7 @@ P5-T04  Chat/Sol final identity review
 
 此前以旧 `P5-T01` 名义完成的本地广召回不作废，现统一归档为 `LEGACY PRE-SCAN`，详见 [`P5_LEGACY_PRE_SCAN.md`](P5_LEGACY_PRE_SCAN.md)。其 candidate index/matrix 供新 T02 复用，避免重新扫描全部 16 万文件。
 
-#### P5-T01 — READY_FOR_LUNA
+#### P5-T01 — PASS / USER_REFERENCE_CONFIRMED
 
 正式协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
 
@@ -197,7 +197,7 @@ work/p5_leishen/t01/execution.json
 
 任何 `Transformers`、`BornBeast`、`Thor`、`Leishen` 等名字或此前跨服别名讨论都只保留为候选线索，不提前固定 PRIMARY。
 
-#### P5-T02 — BLOCKED_BY_T01_USER_REFERENCE
+#### P5-T02 — ACTIVE — AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
 
 正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
 
@@ -237,6 +237,8 @@ T02 强制流程：
 核心目标是把本地“方块贴图/atlas”通过原模型 UV 还原到枪体表面，再生成与百科图相似的标准侧视表达。
 
 如果纹理暂时无法解析，可以用灰模/轮廓做便宜几何排除，但不能仅凭灰模完成最终本地候选确认。
+
+当前执行记录：T01 官方详情页及其实际加载图片已由用户确认。T02 已完成候选缩圈、exact SHA 去重、几何聚类和本地侧视诊断；当前用户反馈仍无法仅凭 C029/C103 的灰模、原始 PV DTX UV 诊断和标量 Alpha/Specular 材质诊断分出候选。原始 PV DTX 目前只能作为未验证的 mask/lookup-like 输入，标量贴图只能作诊断，尚无可用于最终视觉确认的有效彩色 diffuse/shader mapping。因此不写入 `USER_VISUAL_MATCH_CONFIRMED`，也不提前固定本地身份。
 
 第二个正常等待状态：
 
@@ -295,7 +297,7 @@ REWORK_CANDIDATE_SEARCH
 
 当前下一步：
 
-> **Luna 拉取最新 `master`，读取 `P5_T01_TASK_SPEC.md`，从 Mandatory Web Search 开始。找到 CF 官方武器百科真实目标图后直接给用户确认；用户确认后 Luna 生成 T01 evidence，并可直接进入 `P5_T02_TASK_SPEC.md` 做本地侧视候选识别。**
+> **继续获取可验证的本地彩色 diffuse/shader lookup mapping，或等待用户在可辨识的本地候选图上确认 C029/C103；确认前保持 T02 `AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION`，不得进入 T03。**
 
 ---
 

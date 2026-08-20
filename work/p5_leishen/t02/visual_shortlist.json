@@ -1,0 +1,523 @@
+{
+  "schema": "cf2.p5.t02.visual-shortlist.v1",
+  "task_id": "P5-T02",
+  "status": "AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION",
+  "official_reference": {
+    "page": "https://cf.qq.com/cp/a20250701wqbk/page.html?itemid=2010044601",
+    "image": "https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png",
+    "user_confirmation": "confirmed"
+  },
+  "selection_policy": "legacy rank top-10 plus rank-stratified late samples and one late-rank sanity sample; no filename-only identity lock",
+  "texture_policy": "UV/material hints were not available through this decoder pass; previews are explicitly gray geometry fallback and cannot alone confirm final local identity",
+  "candidates": [
+    {
+      "cluster_id": "C001",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "model_sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "legacy_rank": 1,
+      "member_count": 3,
+      "variant_tokens": [
+        "BornBeast",
+        "Classic",
+        "TV"
+      ],
+      "geometry_signature": "geomsha256:ee78f7ab657018759ef082959a6ccd221c534bd701fa3fbbf6592ae50fa5b365",
+      "preview_path": "work/p5_leishen/t02/previews/C001_PV-M4A1_S_BornBeast.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 9,
+        "rendered_triangle_count": 4008,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C002",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-EliteMOS_M4A1_IronBeast.LTB",
+      "model_sha256": "f2d1a99c29e1042653630d40d773a009fc5928b44d2ab572494d2c531acccd9b",
+      "legacy_rank": 6,
+      "member_count": 1,
+      "variant_tokens": [
+        "EliteMOS",
+        "IronBeast"
+      ],
+      "geometry_signature": "geomsha256:92ae54e2a4f2878475eae94736168f5598a72b4a2396e54be230a3402075acc2",
+      "preview_path": "work/p5_leishen/t02/previews/C002_PV-EliteMOS_M4A1_IronBeast.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 4624,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C003",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-GunNiang_B_M4A1_S_IronBeast.LTB",
+      "model_sha256": "f8ad721143dd025d971c11c8c556ea9d4c957f0b06dbcef93650f7f3d42c31c7",
+      "legacy_rank": 7,
+      "member_count": 1,
+      "variant_tokens": [
+        "B",
+        "GunNiang",
+        "IronBeast"
+      ],
+      "geometry_signature": "geomsha256:423049824a9ca9d0f4109737b30959344d64e3d8b2a91aa7566e9d925cfc559a",
+      "preview_path": "work/p5_leishen/t02/previews/C003_PV-GunNiang_B_M4A1_S_IronBeast.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 7245,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C004",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_BORNBEAST_NG_WIND.LTB",
+      "model_sha256": "9356a07229b956061558e47b5a97fdda86d096afe25d8b20700e412c5ccd75c2",
+      "legacy_rank": 8,
+      "member_count": 1,
+      "variant_tokens": [
+        "BORNBEAST",
+        "NG",
+        "WIND"
+      ],
+      "geometry_signature": "geomsha256:07d9d7864dd302263202d557b0bede0bf7213fe01e68a38b384b89ff2163d60d",
+      "preview_path": "work/p5_leishen/t02/previews/C004_PV-M4A1_BORNBEAST_NG_WIND.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 1849,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C005",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_AngelicBeast.LTB",
+      "model_sha256": "8ded4b86b7e49d7b7f7638a823fa03468d43172df11715ba7e25f93665cba474",
+      "legacy_rank": 9,
+      "member_count": 1,
+      "variant_tokens": [
+        "AngelicBeast"
+      ],
+      "geometry_signature": "geomsha256:442861dcf10285f0f09a7825fa8327d4a930a0cd164159202a0bdc5a7a2aa1f5",
+      "preview_path": "work/p5_leishen/t02/previews/C005_PV-M4A1_S_AngelicBeast.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 5,
+        "rendered_triangle_count": 9834,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C006",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Beast.LTB",
+      "model_sha256": "28d16db9f522e7fe318060804f6572ce88edda299a20639d44a356acdc30e751",
+      "legacy_rank": 11,
+      "member_count": 1,
+      "variant_tokens": [
+        "Beast"
+      ],
+      "geometry_signature": "geomsha256:07d9d7864dd302263202d557b0bede0bf7213fe01e68a38b384b89ff2163d60d",
+      "preview_path": "work/p5_leishen/t02/previews/C006_PV-M4A1_S_Beast.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 1849,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C007",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Beast_Champion.LTB",
+      "model_sha256": "5484f97e21100d4ac521590af6983d367fa65b24ad633b53c5ff643a01fa3745",
+      "legacy_rank": 12,
+      "member_count": 2,
+      "variant_tokens": [
+        "Beast",
+        "Champion",
+        "GoldenWind",
+        "NG"
+      ],
+      "geometry_signature": "geomsha256:07d9d7864dd302263202d557b0bede0bf7213fe01e68a38b384b89ff2163d60d",
+      "preview_path": "work/p5_leishen/t02/previews/C007_PV-M4A1_S_Beast_Champion.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 1849,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C008",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Beast_Medusa.LTB",
+      "model_sha256": "855a71a38e679924d637adcee44dd6d3e46dbfb070cb8c6b02c88094b72ea7f3",
+      "legacy_rank": 13,
+      "member_count": 1,
+      "variant_tokens": [
+        "Beast",
+        "Medusa"
+      ],
+      "geometry_signature": "geomsha256:07d9d7864dd302263202d557b0bede0bf7213fe01e68a38b384b89ff2163d60d",
+      "preview_path": "work/p5_leishen/t02/previews/C008_PV-M4A1_S_Beast_Medusa.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 1849,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C009",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Beast_QingLong.LTB",
+      "model_sha256": "d415f91ffa962344c666cea2ea438c90f653d04f8d5b0a506b4eacb75c717fa0",
+      "legacy_rank": 15,
+      "member_count": 2,
+      "variant_tokens": [
+        "Beast",
+        "Darken",
+        "QingLong"
+      ],
+      "geometry_signature": "geomsha256:a5e477053251a90470f4acd4cb36132458b9b7dbf717bd847168992f1d613a35",
+      "preview_path": "work/p5_leishen/t02/previews/C009_PV-M4A1_S_Beast_QingLong.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 7,
+        "rendered_triangle_count": 10679,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C010",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Beast_QingLong2_NG.LTB",
+      "model_sha256": "6d9621f431c70fadb5fe5dfdaac8d508a3d98397e4eaf59758a76880bd55976e",
+      "legacy_rank": 16,
+      "member_count": 1,
+      "variant_tokens": [
+        "Beast",
+        "NG",
+        "QingLong2"
+      ],
+      "geometry_signature": "geomsha256:07d9d7864dd302263202d557b0bede0bf7213fe01e68a38b384b89ff2163d60d",
+      "preview_path": "work/p5_leishen/t02/previews/C010_PV-M4A1_S_Beast_QingLong2_NG.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 1849,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C035",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-NANO_M4A1_IronBeast.LTB",
+      "model_sha256": "1efe59d159134f34ed38b95c74e06ca448471cde2a00519b94fcf379eebe8697",
+      "legacy_rank": 52,
+      "member_count": 1,
+      "variant_tokens": [
+        "IronBeast",
+        "NANO"
+      ],
+      "geometry_signature": "geomsha256:92ae54e2a4f2878475eae94736168f5598a72b4a2396e54be230a3402075acc2",
+      "preview_path": "work/p5_leishen/t02/previews/C035_PV-NANO_M4A1_IronBeast.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 4624,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C069",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Flamingo.LTB",
+      "model_sha256": "3901384ab11fc018ec3cb9a63dff14dc1bcd7a0392280113fed091b71123ef50",
+      "legacy_rank": 316,
+      "member_count": 1,
+      "variant_tokens": [
+        "Flamingo"
+      ],
+      "geometry_signature": "geomsha256:07d9d7864dd302263202d557b0bede0bf7213fe01e68a38b384b89ff2163d60d",
+      "preview_path": "work/p5_leishen/t02/previews/C069_PV-M4A1_S_Flamingo.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 3,
+        "rendered_triangle_count": 1849,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    },
+    {
+      "cluster_id": "C103",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Transformers_Reaper.LTB",
+      "model_sha256": "8e745e151657c4da619685d1e0ab8ea3a4e7deaa92da031993f4a835a1d5dae6",
+      "legacy_rank": 377,
+      "member_count": 1,
+      "variant_tokens": [
+        "Reaper",
+        "Transformers"
+      ],
+      "geometry_signature": "geomsha256:aabe80678b5614d81d86d418dc0aa310d2d27781dc8173e114e50967b043c0db",
+      "preview_path": "work/p5_leishen/t02/previews/C103_PV-M4A1_S_Transformers_Reaper.png",
+      "texture_status": "raw_pv_dtx_uv_diagnostic_not_validated_diffuse",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 9,
+        "rendered_triangle_count": 3916,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      },
+      "texture_probe": {
+        "width": 768,
+        "height": 384,
+        "texture_status": "raw_pv_dtx_uv_diagnostic_not_validated_diffuse",
+        "texture_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "uv_flip": "v -> 1-v",
+        "projection": "orthographic side",
+        "model_sha256": "8e745e151657c4da619685d1e0ab8ea3a4e7deaa92da031993f4a835a1d5dae6",
+        "preview_path": "work/p5_leishen/t02/previews/C103_PV-M4A1_S_Transformers_Reaper_pv_dtx_uv_diagnostic.png"
+      },
+      "shader_diagnostic": {
+        "preview_path": "work/p5_leishen/t02/previews/C103_PV-M4A1_S_Transformers_Reaper_scalar_shader_diagnostic.png",
+        "width": 768,
+        "height": 384,
+        "texture_status": "scalar_map_shader_approximation_not_final_diffuse",
+        "alpha_map": "data/rf017/ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+        "specular_map": "data/rf017/ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+        "uv_flip": "v -> 1-v",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "provenance": "local LTB geometry + local AlphaMap G / SpecularMap R; no generated or external model texture",
+        "model_sha256": "8e745e151657c4da619685d1e0ab8ea3a4e7deaa92da031993f4a835a1d5dae6"
+      }
+    },
+    {
+      "cluster_id": "C029",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_IronBeast_Gilt.LTB",
+      "model_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "legacy_rank": 44,
+      "member_count": 15,
+      "variant_tokens": [
+        "21WC",
+        "CF15th",
+        "CFPL",
+        "CFPL10th",
+        "Gilt",
+        "IronBeast",
+        "Ironbeast",
+        "LDHua",
+        "LGD",
+        "Ms2",
+        "Olive",
+        "PB",
+        "PC",
+        "Transformers",
+        "Virgo",
+        "YUQI",
+        "ZDaBaiLu"
+      ],
+      "geometry_signature": "geomsha256:b9b349c9ca5980d3658f6b144f3ecbc1d3c07966fc6cc2dbac92856f2eac3d0e",
+      "preview_path": "work/p5_leishen/t02/previews/C029_PV-M4A1_S_IronBeast_Gilt.png",
+      "texture_status": "raw_pv_dtx_uv_diagnostic_not_validated_diffuse",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 9,
+        "rendered_triangle_count": 3916,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      },
+      "texture_probe": {
+        "width": 768,
+        "height": 384,
+        "texture_status": "raw_pv_dtx_uv_diagnostic_not_validated_diffuse",
+        "texture_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "uv_flip": "v -> 1-v",
+        "projection": "orthographic side",
+        "model_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+        "preview_path": "work/p5_leishen/t02/previews/C029_PV-M4A1_S_IronBeast_Gilt_pv_dtx_uv_diagnostic.png"
+      },
+      "shader_diagnostic": {
+        "preview_path": "work/p5_leishen/t02/previews/C029_PV-M4A1_S_IronBeast_Gilt_scalar_shader_diagnostic.png",
+        "width": 768,
+        "height": 384,
+        "texture_status": "scalar_map_shader_approximation_not_final_diffuse",
+        "alpha_map": "data/rf017/ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+        "specular_map": "data/rf017/ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+        "uv_flip": "v -> 1-v",
+        "weapon_mesh_count": 9,
+        "triangle_count": 3916,
+        "provenance": "local LTB geometry + local AlphaMap G / SpecularMap R; no generated or external model texture",
+        "model_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8"
+      }
+    },
+    {
+      "cluster_id": "C011",
+      "representative_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Beast_TianShen.LTB",
+      "model_sha256": "269f3fb851745237e6c1599b3ee60e1d6652f651daf8c26d3fe04f2b4575c638",
+      "legacy_rank": 18,
+      "member_count": 1,
+      "variant_tokens": [
+        "Beast",
+        "TianShen"
+      ],
+      "geometry_signature": "geomsha256:9dc12ef6cab6b510151abd61fe6118894d4e41e631bf5a93d76549c22a59f811",
+      "preview_path": "work/p5_leishen/t02/previews/C011_PV-M4A1_S_Beast_TianShen.png",
+      "texture_status": "not_available",
+      "visual_gate_role": "comparison_candidate_only",
+      "identity_status": "CANDIDATE_ONLY",
+      "render_report": {
+        "render_width": 768,
+        "render_height": 384,
+        "weapon_mesh_count": 2,
+        "rendered_triangle_count": 6816,
+        "excluded_mesh_names": [
+          "Fview-hand2",
+          "Fview-arm2"
+        ],
+        "projection": "orthographic side; world Z horizontal, world Y vertical, world X depth",
+        "texture_status": "not_available"
+      }
+    }
+  ],
+  "user_gate": {
+    "required": true,
+    "state": "AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION",
+    "identity_confirmed": false
+  },
+  "texture_probe": {
+    "status": "inconclusive_for_final_identity",
+    "reason": "PV DTX decodes as a one-channel/lookup-like mask under the repository's validated headerless BGR24 layout; no direct color diffuse is available",
+    "source": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+    "model_texture_mapping": "C029 exact SHA family and C103 mesh material family both point to Transformers DTX; C103 remains mapping-inferred"
+  },
+  "shader_probe": {
+    "status": "diagnostic_only",
+    "maps": [
+      "data/rf017/ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+      "data/rf017/ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA"
+    ],
+    "final_diffuse_available": false,
+    "identity_status": "CANDIDATE_ONLY"
+  }
+}
