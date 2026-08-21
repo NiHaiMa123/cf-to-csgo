@@ -4,9 +4,11 @@
 >
 > Planner / Reviewer: **Chat/Sol**
 >
-> Executor: **Luna / 本地 Codex Agent**
+> Executor: **Any user-selected Local Executor Agent with local repository/data/tool access**
 >
 > 当前状态: **PAUSED_BY_P4_M01**
+
+> 本 Task 不绑定 Luna、Codex 或任何具体模型/Agent。恢复执行时，由用户当前选择的 Local Executor 从最新 `master` 和已有 evidence 继续。
 
 ---
 
@@ -28,7 +30,7 @@ P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 
 后，T02 才恢复为 ACTIVE。
 
-Luna 当前不得：
+当前 Local Executor 不得：
 
 - 继续让用户在 C029/C103 灰模间强选；
 - 重跑 T01 Web Search；
@@ -206,7 +208,7 @@ NATIVE_TEXTURE_RECOVERY_INCOMPLETE
 
 ## 8. USER LOCAL-CANDIDATE GATE
 
-只有至少一个 finalist 通过 §7 后，Luna 才展示：
+只有至少一个 finalist 通过 §7 后，Local Executor 才展示：
 
 ```text
 confirmed official reference
@@ -288,7 +290,7 @@ user_visual_confirmation.json
 - 用户看到 native-material candidate 并明确确认；
 - candidate path/SHA/material evidence 已记录；
 - 没有 external pixels；
-- Luna 没有自行写最终 identity。
+- Local Executor 没有自行写最终 identity。
 
 ### BLOCKED / RETURN CHAT-SOL
 
@@ -305,7 +307,7 @@ user_visual_confirmation.json
 - 用 AI 生成/补全纹理；
 - 修改/上传 `data/**`；
 - 灰模强制用户确认；
-- Luna 自行写 `IDENTITY_CONFIRMED`。
+- Local Executor 自行写 `IDENTITY_CONFIRMED`。
 
 ---
 
