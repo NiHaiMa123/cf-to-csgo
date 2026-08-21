@@ -4,150 +4,177 @@
 >
 > 项目唯一权威进度以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 与本地 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
-> **默认 Planner / Reviewer = Chat/Sol；Codex/Luna = 本地执行、Web reference 搜索、用户 Gate 交互与证据生产。**
+> **默认 Planner / Reviewer = Chat/Sol；Codex/Luna = 本地执行与证据生产。**
 
 ---
 
 ## 1. 当前阶段
 
-截至 2026-08-20：
+截至 2026-08-21：
 
-- P4：**`PASS / FROZEN`**；
-- P5：**ACTIVE — 最终雷神资产定位**；
-- P5-T01：`EXECUTION_PASS / REVIEWED`；
-- P5-T02：`READY_FOR_LUNA`；
-- P6：等待 P5 final asset identity；
-- P7：visible Inspect / 手臂手指 retarget / CF 原动画等增强范围。
+```text
+P4 baseline   PASS / FROZEN
+P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE  <- 当前任务
+P5-T01        PASS / USER_REFERENCE_CONFIRMED
+P5-T02        PAUSED_BY_P4_M01
+P5-T03        BLOCKED_BY_T02
+P5-T04        BLOCKED_BY_T03
+```
 
-当前 P5 执行入口：
+Native material recovery 是 P4-M01 的 hard requirement；`REQUIRED` 不作为独立 lifecycle status。
 
-- [`P5_TASKS.md`](P5_TASKS.md)
-- [`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)
+当前执行入口：
+
+- [`P4_TASKS.md`](P4_TASKS.md)
+- [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)
 - [`CODEX_TASKS.md`](CODEX_TASKS.md)
+
+P5 资料当前用于后续 handoff，不是 Luna 的第一执行入口。
 
 ---
 
-## 2. Chat/Sol 的职责
+## 2. 为什么当前返回 P4
+
+P4 的历史 Review 只验收了 conversion/build/package/MIGI/runtime 技术链。后续 evidence 确认 P4 可识别 BornBeast material 使用过 external CS1.6 texture，因此 native CF material fidelity 没有闭合。
+
+用户明确要求：原生贴图正确还原不能跳过，并要求当前先回 P4 解决基础材质恢复方法。
+
+因此：
+
+```text
+P4 baseline 继续 frozen
+P4-M01 单独 reopen native material lane
+P5-T02 暂停
+```
+
+Chat/Sol 不得把 P4-M01 描述成“P4 整体失败”或“推翻历史 RV-06”；也不得把历史 P4 `PASS / FROZEN` 描述成“原生材质已通过”。
+
+---
+
+## 3. Chat/Sol 当前职责
 
 Chat/Sol 负责：
 
-- 维护阶段 Plan / Task Spec / acceptance criteria；
-- 读取 Luna push 的 evidence；
-- 处理真正的 BLOCKED / INVALID；
-- 设计 T03 provenance closure；
-- 做 P5-T04 final identity Review；
-- 只有证据满足 Gate 后才更新最终 authoritative status。
+- 维护 `plan.md` / Task Spec / acceptance criteria；
+- 读取 Luna push 的 P4-M01 code/evidence；
+- 判断 DTX/TGA/container/binding/CFG/shader 证据是否真的成立；
+- 拒绝“能显示成图 = 格式正确”一类弱证据；
+- 拒绝 external texture 进入 final provenance；
+- 在 P4-M01 满足 DoD 后判定是否 `PASS / NATIVE_MATERIAL_RECOVERED`；
+- 只有 P4-M01 PASS 后才恢复 P5-T02；
+- 后续继续负责 P5-T03/T04。
 
 Chat/Sol 不得：
 
-- 未执行就声称运行过本地 `data/**` / Blender / parser；
-- 把文件名/跨服英文名直接升级成 final identity；
-- 用聊天记忆覆盖最新仓库状态；
-- 为了得到 PASS 临时降低 Gate。
+- 声称自己实际读取了本地 `data/**` bytes，除非有本地执行 evidence；
+- 用聊天记忆覆盖 master；
+- 用文件名/别名代替 material binding evidence；
+- 为得到 PASS 临时降低 native-material gate；
+- 把 external CS1.6 reference 的像素当作 local CF 输出；
+- 因材质任务重写 frozen skeleton/sequence/runtime contract。
 
 ---
 
-## 3. P5 的关键流程边界
+## 4. P4-M01 Review principle
 
-“先 Web Search 官网图鉴、给用户看实际目标图、等用户确认”已经固化到 Luna 的 P5-T02 Task Spec。
+P4-M01 的最终问题是：
 
-因此 Chat/Sol **不需要每次替 Luna 手工执行这个流程**。
+> **BornBeast 是否已经能仅使用 local CF 资源 + verified semantics，得到可重复、可解释、0 external pixels 的正确原生材质。**
 
-正确闭环：
+最低必须看到：
+
+1. provenance audit；
+2. native material inventory；
+3. DTX interpretation matrix；
+4. TGA interpretation matrix；
+5. material binding report；
+6. CFG reverse report；
+7. variant differential evidence；
+8. shader hypotheses；
+9. `native_material_closure.json`；
+10. 所有关键输入 path/hash/size 与输出 hash。
+
+### 不足以 PASS 的证据
+
+- raw DTX 能排成一张图；
+- raw CFG 能画成彩条；
+- 某个 channel 看起来像 mask；
+- 外部纹理贴到模型上看起来正确；
+- 用户肉眼觉得“差不多”；
+- 文件名能对上 BornBeast；
+- Source VMT/VTF closure 只证明引用存在。
+
+### 可以支持 PASS 的证据
+
+- binary/container 结构自洽；
+- 不同 decoder / upstream bytes 交叉验证；
+- LTB slot/index/render-style binding；
+- same-geometry variant differential；
+- CFG 字段/record 语义能解释不同样本变化；
+- clean-output 重建一致；
+- final visible color 没有任何 external pixel 来源。
+
+---
+
+## 5. External BornBeast texture 的正确用途
+
+历史 CS1.6 BornBeast texture 只能是：
 
 ```text
-Chat/Sol 发布一次明确 Task Spec
-  -> Luna Web Search CF 官方武器百科
-  -> Luna 展示真实官网图片
-  -> 用户确认目标 reference
-  -> Luna 本地 candidate 缩圈 / 去重
-  -> Luna 生成最简百科式贴图侧视图
-  -> Luna 展示本地 shortlist
-  -> 用户确认本地视觉候选
-  -> Luna push evidence
-  -> Chat/Sol 设计/Review T03/T04
+reference_only / differential_control
 ```
 
-两个 USER GATE 都属于 Luna 的**同一个交互式执行任务**，不是每次都回 Plan 端写新指令。
+允许：
+
+- 比较大区域配色、纹理分区、能量/高光位置；
+- 判断某个 local map 更像 base/mask/lookup；
+- 帮助决定下一条 hypothesis。
+
+禁止：
+
+- 采样 RGB；
+- 抠图；
+- texture bake；
+- 训练/拟合 local texture；
+- 作为 Source final base texture；
+- 进入 `source_class=local_cf`。
 
 ---
 
-## 4. Official reference policy
+## 6. P4-M01 -> P5-T02 handoff
 
-P5 目标图必须优先并强制落到：
+只有 Chat/Sol Review 明确写：
 
 ```text
-https://cf.qq.com/cp/a20250701wqbk/index.html
+P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 ```
 
-或该官方武器百科的详情页：
+才允许恢复 P5-T02。
+
+恢复后的 T02 不再重复 BornBeast 基础逆向，而是：
 
 ```text
-https://cf.qq.com/cp/a20250701wqbk/page.html?itemid=<ITEM_ID>
+validated P4-M01 method
+-> M4A1_S_Transformers family
+-> Transformers-specific extension if necessary
+-> native-material finalist render
+-> USER LOCAL-CANDIDATE GATE
 ```
 
-Luna 必须 Web Search / 浏览器搜索，而不是仅凭模型记忆。
-
-用户看到的目标图必须是：
-
-- 官方详情页实际加载的网上图片；
-- 或该详情页直接引用的腾讯 CDN 图片。
-
-禁止把 AI 生成图、Wiki 图、媒体截图作为 USER REFERENCE GATE 的最终目标图。
-
-第三方资料只能帮助发现关键词/别名，不能单独建立官方 identity anchor。
+如果方法无法迁移，不得退回 external texture；应记录迁移失败证据并重新设计 Transformers-specific extension。
 
 ---
 
-## 5. Local visual identification policy
+## 7. 历史 P5 状态
 
-用户确认官方目标图后，Luna 才开始本地 visual matching。
+P5-T01 已完成，official reference evidence 已固定。不要重跑 Mandatory Web Search，除非用户明确否决现有 reference 或 evidence 损坏。
 
-首轮强调**最低成本**：
+P5 LEGACY PRE-SCAN 继续保留为候选池，不重扫全部 `data/**`。
 
-```text
-T01 index/matrix
-  -> M4/M4A1 PLAYERVIEW filter
-  -> exclude BL/GR/WOMAN/arms/QV
-  -> SHA dedup
-  -> geometry cluster
-  -> 1 representative / cluster
-  -> 1 orthographic side view / representative
-  -> apply real local diffuse when available
-  -> contact sheet
-```
-
-不要首轮做：
-
-- 四视图；
-- 动画；
-- IK；
-- Source retarget；
-- Cycles 高质量渲染；
-- 大范围 resource graph。
-
-先用视觉把候选锁小，再进入 T03 closure。
+C029/C103 当前只是 geometry/material candidate evidence；在 native material 恢复前不要要求用户强选。
 
 ---
 
-## 6. P5 Review principle
+## 8. 当前下一步
 
-最终 `IDENTITY_CONFIRMED` 至少需要：
-
-1. 用户确认的官方目标 reference；
-2. 用户确认的本地视觉 candidate；
-3. 本地 model path + SHA-256；
-4. 本地 texture/material path + SHA-256；
-5. Shader/CFG/material 关联；
-6. 声音/动画/其他同 family 资源至少路径级关联或明确 unresolved；
-7. 高相似排除项及排除原因。
-
-`USER_VISUAL_MATCH_CONFIRMED` 仍不是最终 identity；最终结论属于 P5-T04 Chat/Sol Review。
-
----
-
-## 7. 当前下一步
-
-Chat/Sol 当前不需要再手工找雷神官网图。
-
-> **Luna 读取最新 `P5_T02_TASK_SPEC.md`，从 Mandatory Web Search 开始执行；到两个用户 Gate 时直接与用户交互，完成 T02 后再把证据交回 Chat/Sol。**
+> **等待/审查 Luna 按 `P4_M01_TASK_SPEC.md` 生成的 BornBeast native-material evidence。当前不执行 P5-T02 用户候选 Gate，不重做 T01，不进入 P5-T03。**
