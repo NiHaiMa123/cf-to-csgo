@@ -4,11 +4,11 @@
 >
 > Planner / Reviewer: **Chat/Sol**
 >
-> Executor: **Luna / 本地 Codex Agent**
+> Executor: **Any user-selected Local Executor Agent with Web/Search capability**
 >
 > 当前状态: **PASS / USER_REFERENCE_CONFIRMED — COMPLETED**
 
-> 本文件保留 T01 的完成协议和 acceptance criteria。它**不是当前执行入口**。当前执行任务见 [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。
+> 本文件保留 T01 的完成协议和 acceptance criteria。它**不是当前执行入口**。当前执行任务见 [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。Executor identity 不是 T01 acceptance criterion；历史实际执行者如有记录，只属于 provenance。
 
 ---
 
@@ -23,7 +23,7 @@ T01 不扫描本地 `data/**`，不根据内部英文名猜身份，不进入模
 完成顺序：
 
 ```text
-Luna Web Search
+Local Executor Web Search
 -> CF 官方武器百科
 -> 官方详情页
 -> 官网实际加载的真实武器图片
@@ -60,7 +60,7 @@ T01 PASS 必须具备：
 1. 官方 `cf.qq.com` 武器百科详情页；
 2. 详情页显示的武器名称；
 3. 详情页实际加载/引用的武器展示图片；
-4. Luna 实际执行 Web Search / 官方网页查找；
+4. Local Executor 实际执行 Web Search / 官方网页查找；
 5. 图片展示给用户；
 6. 用户明确确认；
 7. evidence 已写入上述两个 tracked report；
