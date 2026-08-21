@@ -2,173 +2,184 @@
 
 > 最后更新：2026-08-21
 >
-> 当前状态：**P4 `PASS / FROZEN`；P5 `ACTIVE` — T01 `PASS / USER_REFERENCE_CONFIRMED`；T02 `ACTIVE / NATIVE_TEXTURE_RECOVERY_REQUIRED`**
+> 项目唯一 authoritative progress/status：**本文件第 1 节**
+>
+> 当前执行任务：**P4-M01 — BornBeast 原生 CF 材质恢复基准**
+>
+> 当前状态：**P4 baseline `PASS / FROZEN`；P4-M01 `ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED`；P5 `ACTIVE` 但 T02 `PAUSED_BY_P4_M01`**
 >
 > 当前运行槽位：**M4A4**
 >
 > 冻结技术样机：**`Prototype-01`**
 >
 > 当前内部模型名：`weapons/v_rif_m4a1.mdl`
->
-> 当前核心目标：**P4 已冻结转换技术流水线；P5 现在按“官方图鉴 Web Search → 用户确认目标图 → 本地候选缩圈/去重 → 本地 CF 原生材质正确还原 → 原生材质侧视比对 → 用户确认本地候选 → provenance closure”定位真正雷神本地 CF 资产。**
-
-本文第 1 节是项目唯一 authoritative progress/status。README 负责工具说明和证据索引；`CODEX_TASKS.md` 负责本地执行 Agent；`CHAT_REVIEW.md` 负责 Chat/Sol 的计划、Review 和测试设计；`P5_TASKS.md`、`P5_T01_TASK_SPEC.md`、`P5_T02_TASK_SPEC.md` 负责当前 P5 执行合同；`P4_STATUS.md` / `P4_REVIEW_RESULT.md` 保留 P4 冻结证据。
 
 ---
 
 ## 1. 唯一权威进度
 
-### 1.1 P4 — PASS / FROZEN
+### 1.1 状态总表
 
-P4：通用流水线稳定化与冻结验收，已完成。
+| 阶段 / Task | 当前状态 | 含义 |
+|---|---|---|
+| P0–P3 | DONE / HISTORICAL | Source 1 基线、CF 静态导出、M4A4 映射、历史编译/材质引用基础 |
+| P4 baseline | **PASS / FROZEN** | 几何→Source 1→package→MIGI 技术链已冻结 |
+| **P4-M01** | **ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED** | 当前执行：用 BornBeast 真正闭合 CF 原生材质解码/绑定/shader 语义 |
+| P5-T01 | PASS / USER_REFERENCE_CONFIRMED | 雷神官方目标图已确认 |
+| P5 LEGACY PRE-SCAN | EXECUTION_PASS / PRESERVED_FOR_REUSE | 本地广召回候选池保留 |
+| P5-T02 | **PAUSED_BY_P4_M01** | 候选缩圈已做；等待可复用原生材质恢复方法后继续 Transformers |
+| P5-T03 | BLOCKED_BY_T02 | 完整 Resource Graph / provenance closure |
+| P5-T04 | BLOCKED_BY_T03 | Chat/Sol final identity review |
+| P6 | BLOCKED_BY_P5 | 最终资产替换与发布质量 |
+| P7 | FUTURE | visible Inspect、手指 IK/retarget、CF 原动画等增强 |
 
-#### 自动技术闭环
-
-- P4-T01～T07：完成；
-- manifest 契约、输入/工具 hash、输出路径与 destructive-operation guard 已建立；
-- `build` 从 manifest 指定本地 CF LTB fresh 执行 B3 → C1 → C3，不以旧 aligned OBJ / MIGI / build 充数；
-- Source 1 build、Crowbar roundtrip、15 个语义 Gate 通过；
-- package / staging / deploy provenance 闭合；
-- T07 执行 17 个负向 mutation，17/17 被预期 Gate 拒绝；
-- 两次独立正向 build 的语义 snapshot 一致。
-
-#### P4-T08 用户 Gate
-
-状态：`passed_user_confirmed`。
-
-当前冻结 addon：
-
-`p_cf_bornbeast_m4a4_p4_frozen_noop_01`
-
-冻结 build run：
-
-`run_20260819_170013_270792`
-
-用户已确认 frozen/no-op Inspect：
-
-- 无崩溃或明显运行错误；
-- 无可见 Inspect 动作符合当前策略预期；
-- 武器状态正常返回；
-- 之后仍可射击、换弹、切枪。
-
-不把以下内容伪装成已完成：
-
-- `console_errors`：`not_tested`；
-- addon 停用后的 rollback：`not_tested`；
-- 真正可见 Inspect、手指接触/穿模、Blender retarget：P7。
-
-#### 独立 Review
-
-Chat/Sol 最终 Review：**`PASS WITH RISK`，允许 P4 `PASS / FROZEN`。**
-
-- RV-01：PASS；
-- RV-02：PASS WITH NON-BLOCKING RISK；
-- RV-03：PASS；
-- RV-04：PASS，4/4 独立高风险反例精准命中预定 Gate；
-- RV-05：PASS WITH NON-BLOCKING RISK；
-- RV-06：PASS WITH RISK，允许冻结。
-
-Implementation Review baseline：
-
-`10aa99b770e575300ca3c28324ef3de3d5b70c6b`
-
-RV-04 evidence commit：
-
-`fd61d6ae7567a01c585e1144e2cab88ddb6aa85d`
-
-最终 Review：[`P4_REVIEW_RESULT.md`](P4_REVIEW_RESULT.md)
-
-P4 最终快照：[`P4_STATUS.md`](P4_STATUS.md)
-
-#### P4 冻结边界
-
-P4 冻结只证明：
-
-> 一个已知 CF M4 Prototype 可以通过当前 manifest-driven 流水线稳定进入 CS:GO Legacy M4A4，并形成可追踪、可验证、可部署的 Source 1 addon。
-
-P4 冻结**不证明**：
-
-- 当前候选就是最终雷神；
-- 当前网络参考材质是最终 CF 材质；
-- CF 原动画已接入；
-- visible Inspect / 手指 retarget 已解决；
-- 世界模型/掉落模型已经最终化。
-
-除非后续发现 frozen contract 本身回归，否则 P5/P7 问题不得重新打开 P4。
-
-### 1.2 P5 — ACTIVE
-
-P5：**最终雷神资产定位。**
-
-当前 P5 任务编号已经按业务流程重新整理：
+当前 Agent 启动入口：
 
 ```text
-P5-T01  官方图鉴 Web Search + 用户确认目标图
-P5-T02  本地候选缩圈/去重/原生材质正确还原 + 用户确认本地候选
-P5-T03  Resource Graph / provenance closure
-P5-T04  Chat/Sol final identity review
+AGENTS.md
+-> plan.md 第 1 节
+-> CODEX_TASKS.md
+-> P4_TASKS.md
+-> P4_M01_TASK_SPEC.md
 ```
 
-此前以旧 `P5-T01` 名义完成的本地广召回不作废，现统一归档为 `LEGACY PRE-SCAN`，详见 [`P5_LEGACY_PRE_SCAN.md`](P5_LEGACY_PRE_SCAN.md)。其 candidate index/matrix 供新 T02 复用，避免重新扫描全部 16 万文件。
+`P5_T02_TASK_SPEC.md` 当前是**暂停后的恢复协议**，不是 Luna 现在的第一执行入口。
+
+---
+
+### 1.2 P4 baseline — PASS / FROZEN
+
+P4 baseline 已完成 P4-T01～T09、用户 Gate 和独立 Review。历史最终结论：`PASS WITH RISK`，允许 `PASS / FROZEN`。
+
+冻结实现/证据：
+
+```text
+Implementation baseline: 10aa99b770e575300ca3c28324ef3de3d5b70c6b
+frozen build run:       run_20260819_170013_270792
+RV-04 evidence commit:  fd61d6ae7567a01c585e1144e2cab88ddb6aa85d
+frozen addon:           p_cf_bornbeast_m4a4_p4_frozen_noop_01
+runtime slot:           M4A4
+internal model:         weapons/v_rif_m4a1.mdl
+```
+
+P4 baseline **已经证明**：
+
+- manifest-driven 本地 CF LTB fresh build；
+- M4A4 Source skeleton / sequence / attachment contract；
+- mesh→bone、SMD/QC、studiomdl、Crowbar roundtrip；
+- validation / package / staging / deploy provenance；
+- destructive-operation guards / negative tests；
+- frozen/no-op Inspect changed-runtime 用户 Gate。
+
+P4 baseline **从未证明**：
+
+- Prototype 就是最终雷神；
+- CF 原生材质已经正确解码；
+- 第三方/网络材质可以成为 final；
+- visible Inspect / 手指接触 / Blender retarget 已解决；
+- CF 原动画/声音/world model 已最终化。
+
+因此 P4 baseline 继续冻结。P4-M01 不修改或否定上述技术证据。
+
+---
+
+### 1.3 P4-M01 — ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED
+
+#### 为什么明确返回 P4
+
+后续 provenance 审计确认，P4 可识别 BornBeast Prototype 曾使用：
+
+```text
+work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png
+```
+
+作为 base/self-illum 派生输入，再转换为 Source VTF。
+
+这说明 P4 的**模型/编译/MIGI 技术链成立**，但 P4 的**CF native material fidelity 尚未闭合**。
+
+用户已明确要求：贴图正确还原不能跳过，并要求当前任务先返回 P4 解决这一基础问题。因此新增：
+
+```text
+P4-M01 = post-freeze corrective material task
+```
+
+正式协议：[`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。
+
+#### P4-M01 核心目标
+
+用 BornBeast 作为 controlled benchmark：
+
+```text
+本地 BornBeast LTB / UV
++ 本地 PV DTX
++ 本地 Alpha / Normal / Specular TGA
++ 本地 WeaponShader CFG
++ 本地同族 variant
+-> 恢复真实 container / pixel format
+-> 恢复 material binding
+-> 逆 CFG / render-style 语义
+-> 建立可解释 shader hypothesis
+-> 0 external pixels 的 native material render
+-> 可重复 closure
+```
+
+P4-M01 的优势是：已有稳定几何/UV，同时有外部 CS1.6 flatten texture 可以**仅作为 reference/differential control**，帮助判断本地资源角色；它不得提供最终像素。
+
+#### P4-M01 必须尝试的技术路线
+
+1. **P4 provenance audit**：反查 external/local/derived/Source 输出链；
+2. **BornBeast native inventory**：完整枚举 DTX/TGA/CFG/lookup/detail/effect 等同族资源；
+3. **DTX 重新验证**：正式 LithTech DTX header/version/pixel-format 路径 vs headerless payload hypothesis；
+4. **TGA 重新验证**：验证旧“插入 header/footer”解释、通道和真实 map 角色；
+5. **LTB material binding**：恢复 mesh/piece → slot/index → texture/shader 的结构关系；
+6. **WeaponShader CFG binary reverse**：raw RGB strip 只算可视化，不算 semantic decode；
+7. **同几何不同皮肤 differential**：利用外观变化定位真正变化的文件/字段；
+8. **offline shader hypotheses**：base/lookup/alpha/normal/specular/tint/emissive 分层 A/B；
+9. **native material closure**：所有 visible color 输入都来自 local CF / verified semantics；
+10. closure 后再做 **Source 1 integration test**，且不得覆盖历史 frozen addon。
+
+当前继续状态：
+
+```text
+P4-M01 = ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+```
+
+P4-M01 PASS 必须是：
+
+```text
+P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
+```
+
+然后才恢复 P5-T02。
+
+---
+
+### 1.4 P5 — ACTIVE，但 T02 暂停等待 P4-M01
+
+P5 目标仍是：**最终雷神资产定位**。
+
+标准顺序：
+
+```text
+P5-T01  官方图鉴 Web Search + 用户确认目标图                 PASS
+P5 LEGACY PRE-SCAN                                          PASS / REUSE
+P5-T02  本地候选缩圈 + native material finalist + 用户确认   PAUSED_BY_P4_M01
+P5-T03  Resource Graph / provenance closure                 BLOCKED_BY_T02
+P5-T04  Chat/Sol final identity review                      BLOCKED_BY_T03
+```
 
 #### P5-T01 — PASS / USER_REFERENCE_CONFIRMED
 
-正式协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
-
-T01 只做**官方视觉身份锚点确认**：
-
-```text
-Luna Web Search
-  -> CF 官方武器百科
-  -> 官方详情页
-  -> 官网实际加载的真实武器图片
-  -> 展示给用户
-  -> USER REFERENCE GATE
-```
-
-目标官方入口：
-
-```text
-https://cf.qq.com/cp/a20250701wqbk/index.html
-```
-
-详情页形态可能类似：
-
-```text
-https://cf.qq.com/cp/a20250701wqbk/page.html?itemid=<ITEM_ID>
-```
-
-规则：
-
-- Luna 必须实际使用 Web Search / 浏览器搜索；
-- 普通搜索找不到时可使用官网站内功能或检查官方 HTML/JS/Network；
-- 必须找到官方详情页实际加载/引用的真实武器图片；
-- 给用户看的图必须是真实网络图片，禁止 AI 生成、重绘或合成图代替；
-- 第三方 Wiki/媒体/论坛只能提供搜索线索，不能绕过官方图鉴 Gate；
-- 用户未确认官方目标图前不得进入本地 candidate visual matching。
-
-正常等待状态：
-
-```text
-AWAITING_USER_REFERENCE_CONFIRMATION
-```
-
-用户否决时，Luna 在同一个 T01 中继续搜索，不需要返回 Chat/Sol 改 Plan。
-
-T01 完成条件：
-
-```text
-PASS / USER_REFERENCE_CONFIRMED
-```
-
-证据：
+固定 evidence：
 
 ```text
 work/p5_leishen/t01_reference/official_reference.json
 work/p5_leishen/t01_reference/reference_report.md
 ```
 
-#### LEGACY PRE-SCAN — EXECUTION_PASS / PRESERVED_FOR_REUSE
+官方目标为用户已确认的 `M4A1-雷神`。除非 evidence 损坏或用户明确否决，不重跑 Web Search。
+
+#### LEGACY PRE-SCAN — PRESERVED_FOR_REUSE
 
 历史提交：
 
@@ -176,15 +187,16 @@ work/p5_leishen/t01_reference/reference_report.md
 ab7e2ef3394991ef0b4468f34cf4d6849b917dc2
 ```
 
-历史本地广召回：
+历史结果：
 
-- `data/**` inventory：165082 files；
-- recalled candidates：2856；
-- LTB candidates：1281；
-- canonical LTB inspected：441；
-- 未把任何 candidate 写成最终身份。
+```text
+data/** inventory       165082 files
+recalled candidates      2856
+LTB candidates           1281
+canonical LTB inspected   441
+```
 
-历史输出：
+输出：
 
 ```text
 work/p5_leishen/t01/candidate_index.json
@@ -193,98 +205,61 @@ work/p5_leishen/t01/scan_report.md
 work/p5_leishen/t01/execution.json
 ```
 
-这些输出现在只是 T02 的 candidate pool；旧 score 仅代表召回优先级，不等于身份置信度。
+旧 score 只是 recall priority，不是 identity confidence。
 
-任何 `Transformers`、`BornBeast`、`Thor`、`Leishen` 等名字或此前跨服别名讨论都只保留为候选线索，不提前固定 PRIMARY。
+#### P5-T02 — PAUSED_BY_P4_M01
 
-#### P5-T02 — ACTIVE — NATIVE_TEXTURE_RECOVERY_REQUIRED
-
-正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
-
-用户确认 T01 官方目标图后，Luna 可以**直接进入 T02**，不需要 Chat/Sol 再改 Plan。
-
-T02 当前强制流程：
+已经完成：
 
 ```text
-读取 T01 confirmed official reference
-  -> 复用 LEGACY PRE-SCAN candidate index/matrix
-  -> M4/M4A1 PLAYERVIEW 缩圈
-  -> exact SHA / geometry cluster
-  -> C029/C103 等 finalist geometry diagnostics
-  -> P4 BornBeast material provenance audit
-  -> Transformers / IronBeast 本地原生材质族 inventory
-  -> DTX container / pixel-format 交叉验证
-  -> LTB material / texture binding 恢复
-  -> WeaponShader CFG 二进制语义分析
-  -> 同几何不同皮肤 differential analysis
-  -> offline native shader hypotheses
-  -> NATIVE MATERIAL ACCEPTANCE GATE
-  -> 原生材质百科式正交侧视 PNG
-  -> USER LOCAL-CANDIDATE GATE
+confirmed official reference
+-> legacy pre-scan reuse
+-> M4/M4A1 PLAYERVIEW narrowing
+-> exact SHA / geometry cluster
+-> C029/C103 finalist diagnostics
 ```
 
-几何首轮诊断仍强调最低成本：
+已知诊断不能完成 identity：
 
 ```text
-768x384 或 1024x512
-透明/白背景
-统一方向 / fit
-无手臂
-无动画
-无 IK
-无 Source retarget
-无复杂灯光
-不做四视图
-不做 Cycles 高质量渲染
+C029/C103 gray geometry                    diagnostic_only
+headerless-BGR24 Transformers DTX          unvalidated hypothesis
+raw DTX + UV                               diagnostic_only
+Alpha/Specular scalar approximation        diagnostic_only
+raw-rgb-strip CFG preview                  not semantic decoding
 ```
 
-但灰模、raw DTX UV diagnostic、Alpha/Specular 标量近似都只能用于排除和逆向，不得完成 T02。最终 finalist 必须使用**可追溯、可重复、仅由本地 CF 原生输入及已验证 shader/CFG 语义构成的材质**。
+当前**不继续让用户在灰模/伪材质之间强选**。
 
-当前执行记录：T01 官方详情页及其实际加载图片已由用户确认。T02 已完成候选缩圈、exact SHA 去重、几何聚类和 C029/C103 本地侧视诊断。当前 `PV-M4A1_S_Transformers.DTX` 的 headerless BGR24 解释只能作为 hypothesis，raw PV DTX 更像未验证的 mask/lookup-like 输入，Alpha/Specular 只能作为诊断；同时 P4 build evidence 已确认 BornBeast Prototype 曾使用 `materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png` 派生 Source base/self-illum，因此 P4 只证明转换/MIGI 技术链，不证明 CF 原生材质解码正确。
-
-当前继续状态：
+P4-M01 PASS 后，P5-T02 恢复：
 
 ```text
-NATIVE_TEXTURE_RECOVERY_INCOMPLETE
+读取 P4-M01 validated material-recovery method
+-> apply to M4A1_S_Transformers family
+-> Transformers-specific DTX/TGA/CFG/binding differential
+-> native material acceptance gate
+-> native-material side render
+-> USER LOCAL-CANDIDATE GATE
+-> USER_VISUAL_MATCH_CONFIRMED
 ```
 
-这不是允许跳过的 soft risk。Luna 必须继续原生材质逆向，不能进入 T03，也不能要求用户仅凭灰模/伪材质在 C029/C103 之间强选。
+若 P4-M01 方法对 Transformers 不可直接迁移，T02 可以做**变体特有扩展**，但不能退回 external texture，也不能把未验证格式当作正确 diffuse。
 
-只有至少一个 finalist 通过 `Native material acceptance gate` 后，T02 才进入：
+#### P5-T03 / T04
 
-```text
-AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
-```
-
-用户确认某个本地候选后只写：
-
-```text
-USER_VISUAL_MATCH_CONFIRMED
-```
-
-仍不是最终 `IDENTITY_CONFIRMED`。
-
-#### P5-T03 — BLOCKED_BY_T02
-
-对用户视觉确认的本地 candidate 建立：
+T03 只在 T02 native material + user visual gate 完成后建立完整：
 
 ```text
 model LTB
-  -> diffuse / lookup / DTX / TGA
-  -> Alpha / Normal / Specular / emissive / detail
-  -> Shader / CFG / material
-  -> QV / world family
-  -> sound WAV
-  -> animation / config references
+-> diffuse/base/lookup/DTX/TGA
+-> Alpha/Normal/Specular/emissive/detail
+-> Shader/CFG/material
+-> QV/world
+-> WAV
+-> animation/config
 ```
 
-每个本地资源记录 relative path、SHA-256、size、relation、source class 和 unresolved reason。
-
-T03 不得被用来补做 T02 已要求的“最终可辨识原生材质恢复”。
-
-#### P5-T04 — BLOCKED_BY_T03
-
-由 Chat/Sol 最终 identity review，只允许输出：
+T04 由 Chat/Sol 输出：
 
 ```text
 IDENTITY_CONFIRMED
@@ -292,220 +267,181 @@ IDENTITY_PROBABLE_NEEDS_EVIDENCE
 REWORK_CANDIDATE_SEARCH
 ```
 
-只有 `IDENTITY_CONFIRMED` 才允许进入 P6。
-
-#### P5 退出条件
-
-1. 官方武器百科目标图已经用户确认；
-2. 最终第一人称本地候选已通过本地 CF 原生材质 hard gate 并由用户视觉确认；
-3. 最终第一人称枪模有明确本地 CF 原始路径与 SHA-256；
-4. 模型轮廓、关键机械结构与官方 reference 相符；
-5. 最终 visible color / lookup / texture 输入均有本地 CF provenance，视觉特征与模型 UV 可对应；
-6. Shader/CFG/材质关联可追溯；
-7. 与该变体关联的声音/动画资源至少完成路径级关联和来源说明；
-8. 网络图片、CS1.6/MOD texture 只作为 reference，不进入 final game asset provenance；
-9. candidate matrix / exclusion history 能解释高相似候选为何被排除；
-10. Chat/Sol Review 允许把最终资产集合交给 P6。
-
-当前下一步：
-
-> **继续执行 P5-T02 原生材质恢复：先完成 P4 external-material provenance audit，然后对 Transformers 做完整本地材质 inventory、DTX 解码交叉验证、LTB binding 恢复、WeaponShader CFG 二进制分析和同几何皮肤差分；在 Native material acceptance gate 通过前保持 `NATIVE_TEXTURE_RECOVERY_INCOMPLETE`，不得进入 T03。**
+只有 `IDENTITY_CONFIRMED` 才进入 P6。
 
 ---
 
-## 2. 两条任务线必须分离
+## 2. 三条工作线与依赖关系
 
-### Track A：转换技术流水线
+### Track A — Source 1 conversion baseline
 
-回答“任意已知 CF 武器资产能否稳定进入 CS:GO Source 1”。
+回答：**已知 CF 武器资产能否稳定进入 CS:GO Legacy Source 1。**
 
-```text
-CF 输入清单
-  -> LTB/纹理/音频检查
-  -> mesh/UV/normal/material slot 导出
-  -> Source 坐标与目标骨架映射
-  -> SMD/QC/VMT/VTF
-  -> 隔离 studiomdl
-  -> 编译后回环/语义校验
-  -> package / staging / deploy
-  -> 实机回归
-```
-
-Track A 的首个 Prototype 已在 P4 冻结。
-
-### Track B：最终目标资产定位
-
-回答“真正雷神对应本地哪套 LTB/DTX/TGA/CFG/WAV”。
-
-Track B 当前由 P5 执行。未完成时禁止把 `Prototype-01` 改名为“最终雷神”，但不得因此回退 P4 已通过的 Track A 证据。
-
-Track B 的视觉入口固定为：
+状态：P4 baseline 已冻结。
 
 ```text
-官方图鉴 Web Search
-  -> 用户目标图确认
-  -> 本地候选缩圈
-  -> 本地 CF 原生材质正确还原
-  -> 原生材质统一侧视表达
-  -> 用户本地候选确认
+CF LTB
+-> mesh/UV/normal
+-> M4A4 skeleton mapping
+-> SMD/QC/VMT/VTF
+-> studiomdl
+-> roundtrip validation
+-> package/staging/deploy
+-> runtime gate
 ```
 
-不得以内部英文命名猜测代替视觉 Gate，也不得以外部 MOD 贴图代替本地 CF 原生材质 Gate。
+### Track B — Native material recovery
+
+回答：**CF 原生纹理/材质究竟如何被解释、绑定和组合。**
+
+当前：P4-M01 ACTIVE。
+
+先 BornBeast benchmark，方法稳定后再迁移到 Transformers。
+
+### Track C — Final Leishen identity
+
+回答：**真正雷神对应本地哪套 LTB/DTX/TGA/CFG/WAV。**
+
+当前：P5 ACTIVE，但 T02 暂停等待 Track B。
+
+依赖：
+
+```text
+Track A frozen technical baseline
+       +
+Track B validated native material method
+       +
+P5 official reference / candidate evidence
+       -> final identity
+```
 
 ---
 
 ## 3. 资产来源政策
 
-### 正式允许
+### final 允许来源
 
-- 本地 CF 原始资源：最终模型、材质、动画和音效的唯一正式来源；
-- 本地 CS:GO Legacy VPK：目标 skeleton、sequence、attachment、QC 和 runtime 兼容基线。
+- 本地 CF 原始资源：模型、材质、动画、声音的唯一 final 来源；
+- 本地 CS:GO Legacy VPK：目标 skeleton、sequence、attachment、QC/runtime compatibility 基线。
 
-### 只允许作为 reference
+### reference-only
 
-- CF 官方武器百科网页与图片；
-- 网络截图；
-- Wiki / 展示页；
+- CF 官方武器百科图片；
+- Wiki/媒体/论坛截图；
 - 第三方 MOD；
-- 网络 GoldSrc/CS1.6 贴图。
+- 网络 GoldSrc/CS1.6 texture；
+- P4 external BornBeast texture。
 
-其中 CF 官方武器百科是 P5 的目标视觉 identity anchor；其他网络来源只能用于补充搜索线索/对照。
-
-这些 reference 不能进入 final game asset provenance。
+reference 可以用于搜索、视觉对照、differential hypothesis；**不能提供最终像素或资源 provenance**。
 
 ### 禁止
 
-- 使用 AI 生成/重绘图片冒充官方目标 reference；
-- 将第三方 MOD 模型、贴图、动画或声音写成最终 CF 资产；
-- 用第三方 MOD 成功运行证明本地 CF parser 语义正确；
-- 用改名复制其他 CS:GO 武器满足最终验收；
-- 在 manifest/report 中省略外部来源；
-- 为了资产身份准确而删除/重写 P4 已通过的技术闭环。
+- AI 生成/重绘 texture 填洞；
+- external texture 作为 final base color；
+- 从 external 图采样/烘焙颜色后冒充 local CF；
+- 用第三方 MOD 成功运行证明 CF parser 语义正确；
+- 在 report 中隐去 external source；
+- 修改/删除 `data/**` 来配合 Git；
+- 为当前任务覆盖历史 P4 frozen evidence。
 
 ---
 
-## 4. 阶段定义与退出条件
+## 4. P4 frozen contract 与 P4-M01 可修改边界
 
-本节只定义阶段；当前进度只看第 1 节。
+### 继续冻结
 
-### P0：Source 1 基线与安全构建
+- M4A4 runtime slot；
+- 57-bone reference；
+- sequence / attachment contract；
+- frozen build/package/deploy evidence；
+- RV-01～RV-06 历史 Review；
+- `p_cf_bornbeast_m4a4_p4_frozen_noop_01`。
 
-官方参考提取、反编译、隔离编译、回环报告、安全 MIGI deploy 和 M4A4 runtime contract。
+### P4-M01 可修改/新增
 
-### P1：CF 静态资源导出
+- CFRezManager DTX/TGA/CFG/LTB material inspection/decoder；
+- 与 material recovery 直接相关的脚本；
+- 新测试；
+- `work/m4a1_s_bornbeast/p4_m01_native_material/**` 派生 evidence；
+- closure 后新的、独立命名的 native-material test addon。
 
-LTB node/mesh、position、normal、UV、winding、material slot 可导出，weapon mesh 与 CF 手臂可分离。
-
-### P2：M4A4 Source 映射
-
-M4A4 57-bone reference、对齐变换、mesh→bone mapping、attachment 和官方动作兼容。
-
-### P3：编译、材质引用、MIGI 与历史实机基线
-
-9 mesh viewmodel、官方 M4A4 sequence、VMT/VTF 引用闭包、MIGI 和历史游戏内基线。
-
-### P4：通用流水线稳定化 — FROZEN
-
-manifest-driven fresh build、语义 Gate、package/deploy、negative mutation、reproducibility、用户 Gate、独立 Review。
-
-### P5：最终雷神资产定位 — ACTIVE
-
-官方目标图确认、本地候选缩圈/去重、本地 CF 原生材质恢复、原生材质侧视比对、用户候选确认、资源 provenance closure。
-
-### P6：最终资产替换与发布质量
-
-只替换 manifest final 输入重跑冻结流水线；最终本地 CF mesh/UV/material 正确；final addon 不依赖网络 MOD 文件。
-
-### P7：增强范围
-
-- visible Inspect；
-- 手臂/手指 retarget、接触与穿模；
-- CF 原版动画；
-- 动态红光 / Shader 近似；
-- CF 音效与事件同步；
-- 第三人称/落地模型/掉落弹匣；
-- LOD、性能档位与批量武器转换。
+如果必须改变 frozen skeleton/build/runtime contract 才能恢复材质，P4-M01 必须停止并返回 Chat/Sol，不得静默修改 baseline。
 
 ---
 
-## 5. P4 冻结合同
+## 5. 已知关键事实与当前判断
 
-- manifest 记录输入路径/hash、M4A4 runtime、mesh→bone、transform、material policy、输出路径和工具 provenance；
-- `final_target_identity=false`、`final_cf_material=false` 保持机器可读；
-- `check/build/validate/package` 只写受控 `work/`、`build/`；
-- `deploy` 必须显式安全目标，不能覆盖内容不同的 addon；
-- 上游失败下游不得继续；
-- 报告绑定 run id、manifest、输入/输出 hash 和实际 Gate；
-- 自动证据不得冒充用户实机确认；
-- P4 frozen/no-op Inspect 只保证状态安全，不宣称 visual retarget。
-
-后续阶段只能在明确版本化变更时修改该合同。
+1. P4 build/report 已证明 external CS1.6 texture 进入过 Prototype material derivation；
+2. P4 material closure 过去只证明 Source `SMD -> VMT -> VTF` 引用存在，不证明 VTF 像素来自正确 CF native decode；
+3. `DtxThumbnailDecoder.cs` 已有 LithTech DTX header/version 与 BGRA/RGBA/Palette/DXT1/3/5 路径；
+4. 当前 P5 probe 的 headerless BGR24 解释必须被重新验证；
+5. `CfgBinaryStripDecoder.cs` 明确只是 raw RGB strip renderer，不能作为 WeaponShader CFG semantic decode；
+6. BornBeast 本地 Alpha/Normal/Specular 的旧特殊 TGA 解释也需要重新交叉验证；
+7. 同几何不同 skin 是恢复 binding/shader 语义的重要 differential evidence；
+8. C029/C103 当前不需要用户强选，先解决 material method。
 
 ---
 
-## 6. 已知技术债与阻塞级别
+## 6. 技术债与阻塞级别
 
-| 技术债 | 当前判断 | 阻塞 P5？ | 计划处理 |
-|---|---|---:|---|
-| B1 rigid mesh bone index 尚未正式进入 decoder/report | 通用语义不完整 | 否 | 第二种武器/最终资产需要时 |
-| B2 bind validator 有自验证风险 | 不能单独证明通用矩阵 | 否 | 不同骨架前 |
-| CF animation clips 尚未完整解码 | 无法直接使用 CF 原动作 | 否 | P7 |
-| 03–08 精确机械语义未证明 | Parent fallback 仅适合 Prototype | 否 | P5/P6 根据 final asset 修正 |
-| CLI Inspect policy 可 override manifest | contract 可进一步硬化 | 否 | 通用化/下一轮 pipeline hardening |
-| toolchain 未完全 manifest-driven | provenance 可追踪但契约不完全 | 否 | 通用化前 |
-| manifest byte SHA 跨 checkout/EOL 有歧义 | provenance 可读性问题 | 否 | 增加 canonical hash / Git blob identity |
-| 最终雷神身份未确认 | 不能称 final | **是 P5 核心任务** | P5 |
-| P4 Prototype 材质使用 external CS1.6 source，且 native CF shader/texture 尚未正确闭合 | 不能证明 final CF 材质 fidelity | **是 P5/P6 核心任务** | P5/P6 |
-| world/drop model 仍为官方 M4A4 | 第一人称 P4 不受影响 | 否 | P7 |
-
-修债原则：只修会影响当前阶段 Gate、final asset 替换或跨武器复用的问题；不得因为技术债存在就重写 P4 frozen 基线。
+| 项目 | 当前判断 | 当前 blocker |
+|---|---|---:|
+| Native DTX/TGA interpretation 未验证闭环 | 直接影响材质正确性 | **P4-M01** |
+| WeaponShader CFG 只有 raw-strip visualization | 缺 semantic decode | **P4-M01** |
+| LTB material/texture/render-style binding 不完整 | 不能证明资源组合 | **P4-M01** |
+| BornBeast Prototype external material provenance | 已确认，不能 final | **P4-M01** |
+| Transformers native material 未恢复 | P5 finalist 无法正确渲染 | **P5-T02，等待 P4-M01** |
+| 最终雷神 identity 未确认 | 不能进入 P6 | **P5** |
+| CF animation clips 未完整解码 | 不影响当前材质任务 | P7 |
+| 03–08 精确机械语义未证明 | Prototype Parent fallback | P6/P7 视 final asset 处理 |
+| visible Inspect / 手指穿模 | 不影响当前材质任务 | P7 |
+| world/drop model | 第一人称当前不受影响 | P7 |
 
 ---
 
-## 7. 冻结 Active Runtime 决策
+## 7. Definition of Done
 
-- Active slot：M4A4；
-- Model name：`weapons/v_rif_m4a1.mdl`；
-- Reference skeleton：官方 M4A4 57 bones；
-- Main：`v_weapon.M4A1_Parent`；
-- Clip：`v_weapon.M4A1_Clip`；
-- Bolt：`v_weapon.M4A1_Bolt`；
-- 03–08：Prototype Parent fallback；
-- P4 Inspect：`frozen_noop_safe`；
-- visible Inspect / hand retarget：P7；
-- 当前网络贴图：`EXTERNAL_REFERENCE / PROTOTYPE MATERIAL`；
-- 当前 Prototype：`final_target_identity=false`、`final_cf_material=false`。
+### 7.1 P4 baseline — DONE
 
-任何未来修改若改变这些决定，必须显式版本化 manifest/profile 与证据，不得静默切换 slot、skeleton 或状态机。
+保持历史 `PASS / FROZEN`；不因 P4-M01 材质纠偏而取消。
+
+### 7.2 P4-M01 DoD
+
+必须满足：
+
+- BornBeast native material inputs 完整 inventory；
+- DTX/TGA interpretation 有结构证据；
+- mesh/material binding 有结构证据；
+- CFG/render-style 语义达到足够可重建程度；
+- visible color 全部来自 local CF / verified semantics；
+- 0 external pixels；
+- clean-output 可重复生成；
+- 原生材质渲染能稳定辨认 BornBeast 的主要颜色分区、图案和高光/能量区域；
+- external CS1.6 texture 只作为 reference；
+- 输出 `native_material_closure.json`；
+- Chat/Sol Review 允许恢复 P5-T02。
+
+### 7.3 P5 Asset Identity DoD
+
+- T01 official reference 已确认；
+- P4-M01 material method 已 PASS；
+- Transformers native material finalist 已恢复；
+- 用户确认本地 candidate；
+- model/material/shader/sound/config provenance 闭合；
+- 高相似候选排除理由可解释；
+- Chat/Sol T04 输出 `IDENTITY_CONFIRMED`。
+
+### 7.4 最终雷神 DoD
+
+- 枪体和材质来自经确认的本地 CF 原始资源；
+- final addon 不依赖 external MOD texture；
+- mesh/UV/bones/attachments/material/sound 达到发布质量；
+- 必要的 Source 1 shader approximation 与 CF native resource semantics 分开记录；
+- frozen pipeline 可从 final inputs 生成独立 MIGI 发布包；
+- 自动证据 + 用户实机证据 + provenance 同时成立。
 
 ---
 
-## 8. Definition of Done
+## 8. 当前唯一下一步
 
-### 8.1 P4 Prototype-01 — DONE
-
-- manifest 指定本地 LTB 可重复生成 M4A4 Source 1 addon；
-- check/build/validate/package、negative mutation、reproducibility 通过；
-- model/UV/Prototype material、Idle/Fire/Reload/Clip/Bolt/attachments 可用；
-- frozen/no-op 用户状态恢复 Gate 通过；
-- 独立 Review `PASS WITH RISK`，风险明确且非阻塞；
-- 候选身份和第三方材质明确非 final。
-
-### 8.2 P5 Asset Identity DoD
-
-- 官方 CF 武器百科目标图已由用户明确确认；
-- 本地 finalist 已通过可重复、0 external pixels 的 native CF material acceptance gate；
-- 本地 candidate 已通过原生材质统一百科式侧视比对并由用户确认；
-- 最终模型、贴图、Shader、声音等均有可信本地 CF provenance；
-- candidate matrix 能解释为什么最终候选胜出以及其他高相似候选为何排除；
-- 模型轮廓、关键机械件和 UV/atlas/shader inputs 形成互相支持的身份链；
-- Chat/Sol Review 允许进入 P6。
-
-### 8.3 最终雷神 DoD
-
-- 枪体和材质均来自经确认的本地 CF 原始资源；
-- 不依赖网络 MOD final 文件；
-- mesh、UV、动态件、骨骼、attachments、动作、材质和音效达到发布质量；
-- Prototype fallback 被替换或作为明确限制写入发布说明；
-- 冻结流水线可从 final 输入生成独立 MIGI 发布包；
-- 自动报告与实机证据共同成立，且资产身份有独立 provenance。
+> **Luna 不继续 P5 C029/C103 视觉强选。当前返回 P4，执行 `P4_M01_TASK_SPEC.md`：以 BornBeast 为基准完成 provenance audit、DTX/TGA 重新验证、LTB material binding、WeaponShader CFG binary reverse、同族 differential 和 offline shader hypotheses，直到得到 0 external pixels、可重复的 `NATIVE_MATERIAL_RECOVERED` closure。完成并 push evidence 后，再由 Chat/Sol Review 是否恢复 P5-T02。**
