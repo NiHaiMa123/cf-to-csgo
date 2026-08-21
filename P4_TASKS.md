@@ -1,68 +1,148 @@
-# P4_TASKS.md — P4 冻结入口 / 角色路由
+# P4_TASKS.md — P4 baseline 冻结 + P4-M01 材质纠偏入口
 
-> P4 已于 2026-08-20 完成独立 Review，最终结论为 **`PASS WITH RISK`**，项目状态为 **`PASS / FROZEN`**。
+> 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准。
 >
-> 本文件不再作为待执行 P4 Task 清单；它只保留角色路由和冻结入口。
+> P4 baseline 历史结论仍为 **`PASS / FROZEN`**。
+>
+> 用户于 2026-08-21 明确授权一个 post-freeze corrective task：**P4-M01 — BornBeast 原生 CF 材质恢复基准**。
 
-## P4 最终状态
+---
 
-- P4-T01～T09：完成；
+## 1. 当前 P4 结构
+
+```text
+P4 baseline   PASS / FROZEN
+    |
+    +-- conversion/build/package/MIGI/runtime contract      frozen
+    +-- native CF material fidelity                         NOT proven historically
+
+P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED
+```
+
+P4-M01 不是重新跑 P4-T01～T09，也不是推翻 RV-01～RV-06。
+
+---
+
+## 2. 历史 frozen baseline
+
+保留：
+
+- P4-T01～T09：历史完成；
 - T08：`passed_user_confirmed`；
-- RV-01：PASS；
-- RV-02：PASS WITH NON-BLOCKING RISK；
-- RV-03：PASS；
-- RV-04：PASS，4/4 独立反例；
-- RV-05：PASS WITH NON-BLOCKING RISK；
-- RV-06：`PASS WITH RISK`；
-- P4：**`PASS / FROZEN`**。
+- RV-01～RV-06：历史完成；
+- 最终历史 Review：`PASS WITH RISK`；
+- frozen addon：`p_cf_bornbeast_m4a4_p4_frozen_noop_01`；
+- runtime：M4A4；
+- `final_target_identity=false`；
+- `final_cf_material=false`。
 
-详细证据：
+历史证据：
 
 - [`P4_STATUS.md`](P4_STATUS.md)
 - [`P4_REVIEW_RESULT.md`](P4_REVIEW_RESULT.md)
 - [`P4_RV04_TEST_SPECS.md`](P4_RV04_TEST_SPECS.md)
-- `work/m4a1_s_bornbeast/p4_prototype_01/rv04_chat_review_report.json`
 
-项目唯一 authoritative progress/status 仍是 [`plan.md`](plan.md) 第 1 节。
-
----
-
-## 角色路由
-
-### Codex / Luna / 本地 Agent
-
-读取并遵守：[`CODEX_TASKS.md`](CODEX_TASKS.md)
-
-默认角色：**本地执行器 / 证据生产器**。
-
-- 不自行重新打开 P4；
-- 不自行做新的 P4 Review；
-- 不因为 P5 资产识别或 P7 Inspect 问题修改 P4 frozen baseline；
-- 只执行用户或 Chat/Sol 明确交付的 P5/P6/P7 本地任务。
-
-### ChatGPT Chat / Sol
-
-读取并遵守：[`CHAT_REVIEW.md`](CHAT_REVIEW.md)
-
-默认角色：**Planner / Test Designer / Reviewer**。
-
-当前 active work 已转入 P5：最终雷神资产定位。
-
-### Codex Sol
-
-Codex Sol 不是默认额外 Gate。只有用户明确要求“Codex Sol 独立 review / milestone audit”时才执行额外审计，并与 Chat/Sol Review 分开记录。
+这些文件记录 baseline 历史，不能拿来证明 native material 已正确恢复。
 
 ---
 
-## P4 冻结边界
+## 3. 当前任务：P4-M01
 
-P4 frozen/no-op 只证明转换技术链与 changed-runtime 安全，不证明：
+正式协议：
 
-- 当前候选是最终雷神；
-- 当前网络参考材质是最终 CF 材质；
-- visible Inspect / 手指 retarget 已解决；
-- CF 原动画/声音/世界模型已最终化。
+[`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)
 
-这些属于 P5/P6/P7，不能作为理由回滚 P4。
+目标：
 
-所有 Agent 继续遵守根目录 [`AGENTS.md`](AGENTS.md) 的 Git 同步与 `data/` 本地保护规则。
+> 在不使用 external pixels 的前提下，仅用 local CF BornBeast LTB/DTX/TGA/CFG 等资源恢复正确、可重复、可解释的 native material，并产出可迁移到 P5 Transformers 的方法。
+
+固定技术路线：
+
+```text
+provenance audit
+-> native material inventory
+-> DTX revalidation
+-> TGA revalidation
+-> LTB material binding
+-> WeaponShader CFG binary reverse
+-> variant differential
+-> offline shader hypotheses
+-> native material closure
+-> optional Source 1 integration check after closure
+```
+
+---
+
+## 4. Frozen 与可修改边界
+
+### 不得修改
+
+```text
+历史 frozen run/package/deploy evidence
+p_cf_bornbeast_m4a4_p4_frozen_noop_01
+M4A4 skeleton/sequence/attachment contract
+RV-01 ~ RV-06 历史证据
+```
+
+### P4-M01 允许
+
+```text
+CFRezManager/Decoders/** 中与材质恢复直接相关的代码
+相关 inspection/export code
+scripts/material_recovery/**
+材质恢复专用脚本/测试
+work/m4a1_s_bornbeast/p4_m01_native_material/**
+closure 后独立命名的新材质测试 addon
+```
+
+如果必须改 frozen conversion contract 才能继续，停止并返回 Chat/Sol。
+
+---
+
+## 5. 角色路由
+
+### Luna / Codex
+
+读取：
+
+```text
+AGENTS.md
+plan.md
+CODEX_TASKS.md
+P4_TASKS.md
+P4_M01_TASK_SPEC.md
+```
+
+当前只执行 P4-M01，不继续 P5 C029/C103 用户强选。
+
+### Chat/Sol
+
+读取：
+
+```text
+AGENTS.md
+plan.md
+CHAT_REVIEW.md
+P4_M01_TASK_SPEC.md
+```
+
+负责 evidence Review 和是否允许 `P4-M01 PASS` / 恢复 P5-T02。
+
+---
+
+## 6. Handoff
+
+只有 Chat/Sol 判定：
+
+```text
+P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
+```
+
+才恢复：
+
+```text
+P5-T02
+-> apply validated method to M4A1_S_Transformers
+```
+
+所有 Agent 继续遵守 [`AGENTS.md`](AGENTS.md) 的 master-only handoff 与 `data/**` 本地保护规则。
