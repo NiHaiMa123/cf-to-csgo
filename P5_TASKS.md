@@ -1,6 +1,6 @@
 # P5_TASKS.md — 最终雷神资产定位任务流
 
-> 当前阶段：**P5 — ACTIVE**
+> 当前阶段：**P5 — ACTIVE，但 P5-T02 `PAUSED_BY_P4_M01`**
 >
 > Planner / Reviewer：**Chat/Sol**
 >
@@ -10,40 +10,51 @@
 
 ---
 
-## 1. 固定业务流程
+## 1. 当前依赖关系
 
-P5 的标准识别顺序统一为：
+P5 本身没有取消，但当前执行先回 P4 做 native material benchmark：
 
 ```text
-P5-T01  官方图鉴 Web Search + 用户确认目标图
-    ↓
-P5-T02  本地候选缩圈 / 原生材质正确还原 / 用户确认本地候选
-    ↓
-P5-T03  Resource Graph / provenance closure
-    ↓
-P5-T04  Chat/Sol final identity review
+P4 baseline       PASS / FROZEN
+P4-M01            ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED
+    ↓ PASS 后
+P5-T02            RESUME
 ```
 
-关键原则：
-
-- Web Search 是 T01 的强制执行步骤；
-- 必须找到 CF 官方武器百科详情页及其实际加载的真实武器图片；
-- 给用户看的目标图必须是网上找到的真实图片，禁止 AI 生成图代替；
-- 用户确认官方目标图之前，不能开始本地视觉匹配；
-- 内部英文名、跨服名、文件名、legacy score 都只能作为候选线索；
-- 本地候选首轮采用最低成本的单张正交侧视图，不做四视图、动画、IK、Source retarget 或高质量渲染；
-- **最终候选确认前必须正确恢复本地 CF 原生材质；灰模、mask-like DTX、Alpha/Specular 近似和外部 MOD texture 均不能通过 T02；**
-- 最终身份仍必须经 T03 provenance + T04 Review，不能仅凭“看起来像”。
+原因：P4 BornBeast Prototype 的可识别材质曾使用 external CS1.6 texture，因此不能直接把未知的 DTX/TGA/CFG 解释迁移到雷神并要求用户视觉确认。
 
 ---
 
-## 2. P5-T01 — 官方 CF 武器百科目标图确认
+## 2. P5 标准识别顺序
 
-状态：**PASS / USER_REFERENCE_CONFIRMED**。
+```text
+P5-T01  官方图鉴 Web Search + 用户确认目标图                 PASS
+    ↓
+P5 LEGACY PRE-SCAN                                           PASS / REUSE
+    ↓
+P5-T02  本地候选缩圈 + native material finalist + 用户确认   PAUSED_BY_P4_M01
+    ↓
+P5-T03  Resource Graph / provenance closure                  BLOCKED_BY_T02
+    ↓
+P5-T04  Chat/Sol final identity review                       BLOCKED_BY_T03
+```
+
+P5 的原则：
+
+- official reference 必须来自官方 CF 页面并经用户确认；
+- 文件名/跨服名/legacy score 只能作线索；
+- 灰模只用于几何排除；
+- native material 未闭合时不能进行最终本地候选 Gate；
+- external MOD texture 不能成为 final material；
+- `USER_VISUAL_MATCH_CONFIRMED` 仍不是最终 `IDENTITY_CONFIRMED`。
+
+---
+
+## 3. P5-T01 — PASS / USER_REFERENCE_CONFIRMED
 
 正式协议：[`P5_T01_TASK_SPEC.md`](P5_T01_TASK_SPEC.md)。
 
-已固定 evidence：
+固定 evidence：
 
 ```text
 work/p5_leishen/t01_reference/official_reference.json
@@ -54,13 +65,9 @@ work/p5_leishen/t01_reference/reference_report.md
 
 ---
 
-## 3. 历史本地广召回 — LEGACY PRE-SCAN
+## 4. LEGACY PRE-SCAN — PRESERVED_FOR_REUSE
 
-此前 Luna 已经以旧 `P5-T01` 编号执行过一次本地 `data/**` 广召回。为避免重扫 16 万文件，该执行结果继续保留，但不再定义为当前 T01。
-
-兼容说明：[`P5_LEGACY_PRE_SCAN.md`](P5_LEGACY_PRE_SCAN.md)。
-
-历史输出：
+历史本地广召回继续作为 T02 candidate pool：
 
 ```text
 work/p5_leishen/t01/candidate_index.json
@@ -69,121 +76,109 @@ work/p5_leishen/t01/scan_report.md
 work/p5_leishen/t01/execution.json
 ```
 
-这些文件现在只是 **T02 candidate pool**；旧 score 不代表 identity confidence。
+旧 score 不代表 identity confidence，不重新扫描全部 16 万文件，除非 evidence 缺失或明显失效。
 
 ---
 
-## 4. P5-T02 — 本地候选缩圈 + 原生材质恢复
+## 5. P5-T02 — PAUSED_BY_P4_M01
 
-状态：**ACTIVE / NATIVE_TEXTURE_RECOVERY_REQUIRED**。
+正式恢复协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
 
-正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
-
-已完成：
+已经完成：
 
 ```text
 confirmed official reference
-  -> LEGACY PRE-SCAN reuse
-  -> M4/M4A1 PLAYERVIEW narrowing
-  -> exact SHA dedup
-  -> geometry clusters
-  -> C029/C103 finalist diagnostics
+-> legacy pre-scan reuse
+-> M4/M4A1 PLAYERVIEW narrowing
+-> exact SHA dedup
+-> geometry clusters
+-> C029/C103 finalist diagnostics
 ```
 
-当前诊断结论不能完成 T02：
+当前不能通过的诊断：
 
 ```text
-C029/C103 gray geometry                  diagnostic_only
-raw PV-M4A1_S_Transformers.DTX + UV      diagnostic_only
-Alpha/Specular approximation             diagnostic_only
-WeaponShader CFG raw-rgb-strip preview   not semantic decoding
+C029/C103 gray geometry                    diagnostic_only
+headerless-BGR24 Transformers DTX          unvalidated hypothesis
+raw PV DTX + UV                            diagnostic_only
+Alpha/Specular scalar approximation        diagnostic_only
+WeaponShader CFG raw-rgb-strip preview     not semantic decoding
 ```
 
-当前必须继续：
+因此当前停止：
 
 ```text
-P4 material provenance audit
-  -> native Transformers material inventory
-  -> DTX decode/container cross-validation
-  -> LTB material/texture binding recovery
-  -> WeaponShader CFG binary analysis
-  -> same-geometry skin differential analysis
-  -> offline native shader hypotheses
-  -> native material acceptance gate
-  -> native-material finalist render
-  -> user local-candidate confirmation
+USER LOCAL-CANDIDATE GATE
 ```
 
-### 4.1 P4 provenance warning
-
-P4 BornBeast/黑骑士 Prototype 的技术流水线可继续冻结，但其最终材质 fidelity 不能当作 native CF decoder evidence。
-
-P4 build evidence 已显示 external source：
-
-```text
-work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png
-```
-
-被用于派生 Prototype base/self-illum texture。
-
-因此 external CS1.6/网络 MOD 资源：
-
-- 可以用于视觉参考/差分 control；
-- **不得成为雷神最终材质输入；**
-- 不得被标为 `local_cf`。
-
-### 4.2 T02 native material hard gate
-
-最终可辨识材质必须做到：
-
-```text
-LTB geometry/UV            local CF
-visible color inputs       local CF / verified CFG constants
-Alpha/Normal/Specular      local CF when used
-lookup/detail/emissive     local CF when used
-shader/material binding    evidence-backed
-external pixels            NONE
-reconstruction             reproducible
-```
-
-如果尚未满足，状态写：
-
-```text
-NATIVE_TEXTURE_RECOVERY_INCOMPLETE
-```
-
-这是继续执行状态，不允许跳过到 T03，也不要求用户仅凭灰模强选。
-
-通过 native material gate 后才进入：
-
-```text
-AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
-```
-
-用户确认后状态：
-
-```text
-USER_VISUAL_MATCH_CONFIRMED
-```
-
-仍不是最终 `IDENTITY_CONFIRMED`。
+不要要求用户在灰模/伪材质之间强选。
 
 ---
 
-## 5. P5-T03 — Resource Graph / provenance closure
+## 6. 当前为什么先做 P4-M01
 
-状态：`BLOCKED_BY_T02`。
+BornBeast 是更合适的材质逆向 benchmark：
 
-T03 在 T02 已经完成“可辨识原生材质恢复”的前提下，对用户视觉确认的本地 candidate 建立完整资源图：
+- 几何/UV 已稳定；
+- 本地 DTX/TGA/CFG 资源已知；
+- 已有历史解码脚本和失败/诊断 evidence；
+- 有 external CS1.6 flatten texture 可作 `reference_only / differential_control`；
+- 能先把 material method 验证清楚，再应用到 Transformers。
+
+当前 Luna 应读取：
+
+```text
+P4_M01_TASK_SPEC.md
+```
+
+而不是继续执行 T02。
+
+---
+
+## 7. P4-M01 PASS 后如何恢复 T02
+
+Chat/Sol 只有在判定：
+
+```text
+P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
+```
+
+后才把 T02 改为 active。
+
+T02 恢复后固定路线：
+
+```text
+read validated P4-M01 decoder/binding/shader method
+-> apply to M4A1_S_Transformers family
+-> verify Transformers-specific DTX/TGA/CFG/material binding
+-> extend method only where evidence requires
+-> native material acceptance gate
+-> native-material orthographic finalist render
+-> USER LOCAL-CANDIDATE GATE
+-> USER_VISUAL_MATCH_CONFIRMED
+```
+
+如果 P4-M01 方法对 Transformers 不完全通用：
+
+- 可以做 Transformers-specific extension；
+- 必须继续使用 local CF evidence；
+- 不允许退回 external texture；
+- 不允许因为“看起来像”就跳过格式/binding 验证。
+
+---
+
+## 8. P5-T03 — BLOCKED_BY_T02
+
+T03 只在 T02 native-material + user visual gate 完成后建立完整 Resource Graph：
 
 ```text
 PLAYERVIEW model LTB
-  -> base/lookup/diffuse family
-  -> Alpha / Normal / Specular / emissive / detail
-  -> Shader / CFG / material
-  -> QV / world family
-  -> sound WAV
-  -> animation / config references
+-> base/diffuse/lookup/DTX/TGA
+-> Alpha/Normal/Specular/emissive/detail
+-> Shader/CFG/material/render-style
+-> QV/world
+-> WAV
+-> animation/config
 ```
 
 每个资源记录：
@@ -194,16 +189,14 @@ sha256
 size_bytes
 relation
 source_class
-confidence / unresolved reason
+confidence / unresolved_reason
 ```
 
-T03 不得被用来补做 T02 本应完成的“最终可辨识 native material reconstruction”。
+T03 不得被用来补做 T02 本应完成的 native material reconstruction。
 
 ---
 
-## 6. P5-T04 — Final identity Review
-
-状态：`BLOCKED_BY_T03`。
+## 9. P5-T04 — BLOCKED_BY_T03
 
 由 Chat/Sol 最终输出之一：
 
@@ -217,36 +210,33 @@ REWORK_CANDIDATE_SEARCH
 
 ---
 
-## 7. 角色边界
+## 10. 角色边界
 
 ### Luna / Codex
 
-负责：
+当前：执行 P4-M01，不执行 T02 用户 Gate。
 
-- 已完成 T01 evidence 的读取；
-- T02 本地候选缩圈/去重；
-- DTX/TGA/CFG/LTB material binding 的本地逆向；
-- native material hypothesis 和可重复 render；
-- 两个用户 Gate 的交互等待与继续执行；
-- 证据产出；
-- 不上传 `data/**`。
+P4-M01 PASS 后：按 `P5_T02_TASK_SPEC.md` 恢复 Transformers native material + candidate work。
 
 不得：
 
-- 生成目标 reference 图；
-- 凭文件名预锁候选；
-- 用网络/CS1.6/MOD texture 作为最终材质；
-- 仅凭灰模或 scalar approximation 通过 T02；
-- 自行写最终 `IDENTITY_CONFIRMED`；
-- 修改 P4 frozen conversion pipeline。
+- 重跑已完成 T01；
+- external texture 作为 final；
+- 灰模/scalar approximation 通过 T02；
+- 自行写最终 identity；
+- 修改 P4 frozen conversion contract。
 
 ### Chat/Sol
 
 负责：
 
-- Task Spec / acceptance criteria；
-- T03 provenance 审查；
-- T04 最终 identity Review；
-- 真正 BLOCKED/INVALID 时重新设计流程。
+- P4-M01 evidence Review；
+- 判断 material method 是否足够可靠/可迁移；
+- P4-M01 PASS 后重新激活 T02；
+- T03/T04 后续 Review。
 
-正常的 native texture hypothesis 失败不需要返回 Chat/Sol；记录 evidence 后继续下一条路线。
+---
+
+## 11. 当前下一步
+
+> **P5 当前不继续执行。先完成 `P4_M01_TASK_SPEC.md`，建立可信 native material method；通过后再恢复 `P5_T02_TASK_SPEC.md`。**
