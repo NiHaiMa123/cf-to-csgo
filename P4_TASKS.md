@@ -103,7 +103,9 @@ closure 后独立命名的新材质测试 addon
 
 ## 5. 角色路由
 
-### Luna / Codex
+### Local Executor Agent
+
+由用户选择，不绑定 Luna、Codex 或任何具体模型。只要能访问本地仓库与 `data/**`、运行项目工具链、保留 evidence 并按规则 push 到 `master`，即可执行当前任务。
 
 读取：
 
