@@ -14,6 +14,26 @@ The keywords **MUST**, **MUST NOT**, **SHOULD**, and **SHOULD NOT** are normativ
 6. An agent MUST NOT mark a Gate, task, test, or milestone `PASS` only because a previous conversation or report said it passed. PASS requires the evidence required by the repository's current acceptance criteria.
 7. Superseded/failed states MUST NOT be silently revived. If repository evidence conflicts, the newest authoritative state and explicit evidence take precedence.
 
+### 1.1 Master-only agent synchronization
+
+This repository is an **agent-to-agent data exchange channel**, not a human feature-branch development workflow. Chat/Sol, Codex/Luna, Blender agents, and other automation exchange project state through one shared branch.
+
+1. **`master` is the sole authoritative synchronization branch for all agents.**
+2. All agents MUST read, fetch, pull, commit, push, review, and hand off project state against `master`.
+3. Agents MUST NOT create or use feature branches, topic branches, long-lived work branches, or pull requests as an agent handoff mechanism unless the user explicitly requests a branch/PR workflow.
+4. Work that exists only on a non-`master` branch MUST be treated as **not delivered and not authoritative** for other agents.
+5. An agent MUST NOT instruct another agent to check out a non-`master` branch in order to receive normal project state.
+6. If a platform/tooling constraint forces creation of a temporary branch or pull request, that branch/PR is **transport-only**. The same operation MUST merge the intended scoped change into `master` before handoff whenever the platform permits; agents MUST NOT leave normal project state stranded outside `master`.
+7. After any temporary transport branch is merged, subsequent synchronization MUST return to `master`, normally with:
+
+```bash
+git checkout master
+git fetch origin
+git pull --rebase origin master
+```
+
+8. A user instruction explicitly requesting a different branch/PR workflow overrides this subsection for that specific operation only.
+
 ## 2. `data/` is local-only
 
 1. `data/` and everything below it are local-only project inputs/assets.
@@ -85,7 +105,7 @@ Recommended clean-worktree flow:
 ```bash
 git status --short --branch
 git fetch origin
-git pull --rebase
+git pull --rebase origin master
 ```
 
 If local and remote changes conflict:
@@ -120,7 +140,8 @@ git diff --cached --name-only
 6. Verify that no raw local-only assets, secrets, caches, unintended binaries, or unrelated user files are staged.
 7. Commit messages SHOULD describe the actual scoped change.
 8. MUST NOT force-push (`git push --force` or equivalent) unless the user explicitly authorizes that specific operation.
-9. If the remote branch advanced after local work began, fetch/rebase or otherwise reconcile deliberately; do not overwrite remote history.
+9. If `origin/master` advanced after local work began, fetch/rebase or otherwise reconcile deliberately; do not overwrite remote history.
+10. Normal agent work MUST be pushed to `master`; a non-`master` branch is not a completed handoff state under §1.1.
 
 ## 7. Destructive Git/filesystem operations are forbidden by default
 
@@ -166,10 +187,10 @@ A hash proves input identity/consistency, not semantic correctness. Remote revie
 Preferred project loop:
 
 ```text
-Chat/Sol: read latest GitHub -> reason/design Plan or test spec
-    -> Local Luna/Codex: pull safely -> execute against local environment/data
-    -> Local executor: commit/push scoped code + evidence (never data/)
-    -> Chat/Sol: re-read latest GitHub -> review code/evidence -> decide next action
+Chat/Sol: read latest origin/master -> reason/design Plan or test spec -> commit/push scoped change to master
+    -> Local Luna/Codex: update master safely -> execute against local environment/data
+    -> Local executor: commit/push scoped code + evidence to master (never data/)
+    -> Chat/Sol: re-read latest origin/master -> review code/evidence -> decide next action
 ```
 
 For environment-dependent Review tasks, the separation of responsibility is intentional:
