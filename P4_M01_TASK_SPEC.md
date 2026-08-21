@@ -8,7 +8,7 @@
 >
 > Executor: **Luna / 本地 Codex Agent**
 >
-> 当前状态: **ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED**
+> 当前状态: **ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE**
 
 ---
 
