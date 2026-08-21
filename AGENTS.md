@@ -1,6 +1,6 @@
 # AGENTS.md — Agent Git / Sync Policy
 
-This file defines repository-wide rules for all AI agents and automation operating on this project, including Chat/Sol reviewers and planners, Codex/Luna/local executors, Blender agents, and future agents.
+This file defines repository-wide rules for all AI agents and automation operating on this project, including Chat/Sol reviewers and planners, user-selected local executor agents, Blender agents, and future agents.
 
 The keywords **MUST**, **MUST NOT**, **SHOULD**, and **SHOULD NOT** are normative.
 
@@ -16,7 +16,7 @@ The keywords **MUST**, **MUST NOT**, **SHOULD**, and **SHOULD NOT** are normativ
 
 ### 1.1 Master-only agent synchronization
 
-This repository is an **agent-to-agent data exchange channel**, not a human feature-branch development workflow. Chat/Sol, Codex/Luna, Blender agents, and other automation exchange project state through one shared branch.
+This repository is an **agent-to-agent data exchange channel**, not a human feature-branch development workflow. Chat/Sol, user-selected local executor agents, Blender agents, and other automation exchange project state through one shared branch.
 
 1. **`master` is the sole authoritative synchronization branch for all agents.**
 2. All agents MUST read, fetch, pull, commit, push, review, and hand off project state against `master`.
@@ -33,6 +33,13 @@ git pull --rebase origin master
 ```
 
 8. A user instruction explicitly requesting a different branch/PR workflow overrides this subsection for that specific operation only.
+
+### 1.2 Executor selection is agent-agnostic
+
+1. Current and future task specifications MUST define the local executor by **capability and role**, not by binding the task to Luna or any other named model/agent, unless the user explicitly requests a specific executor for that task.
+2. A user-selected local executor is acceptable when it can access the local repository and required local-only inputs, run the required toolchain/commands, preserve evidence, and synchronize scoped results through `master`.
+3. Switching from one local executor agent to another MUST NOT require changing task acceptance criteria, provenance rules, or authoritative project state.
+4. Historical evidence MAY retain the actual executor name when that name is part of the historical record. Such historical names MUST NOT be interpreted as a requirement for current or future execution.
 
 ## 2. `data/` is local-only
 
@@ -74,7 +81,7 @@ Remote Chat/Sol agents primarily act as **planner, test designer, static reviewe
 
 ## 4. Local executor role
 
-Local Luna/Codex/Blender/automation agents primarily act as **executor and evidence producer** when a task depends on the user's machine or ignored assets.
+Any user-selected local executor agent primarily acts as **executor and evidence producer** when a task depends on the user's machine or ignored assets.
 
 1. Follow the provided Plan/Test/Review specification exactly unless it is impossible or unsafe.
 2. MUST NOT silently change the test target, mutation, acceptance criteria, or evidence requirements.
@@ -82,6 +89,7 @@ Local Luna/Codex/Blender/automation agents primarily act as **executor and evide
 4. MUST preserve raw command output, exit code, relevant report files, hashes, and run identity when the specification requires them.
 5. MUST NOT modify production code merely to make a negative test pass unless the task explicitly authorizes a fix.
 6. After execution, commit only the intended tracked code/spec/report/evidence files. Local-only assets remain local.
+7. The executor MAY be replaced mid-project by another capable agent. The replacement executor MUST resume from latest authoritative `master` state and existing evidence instead of restarting completed work without reason.
 
 ## 5. Pull / download synchronization policy
 
@@ -188,7 +196,7 @@ Preferred project loop:
 
 ```text
 Chat/Sol: read latest origin/master -> reason/design Plan or test spec -> commit/push scoped change to master
-    -> Local Luna/Codex: update master safely -> execute against local environment/data
+    -> User-selected local executor: update master safely -> execute against local environment/data
     -> Local executor: commit/push scoped code + evidence to master (never data/)
     -> Chat/Sol: re-read latest origin/master -> review code/evidence -> decide next action
 ```
@@ -196,7 +204,7 @@ Chat/Sol: read latest origin/master -> reason/design Plan or test spec -> commit
 For environment-dependent Review tasks, the separation of responsibility is intentional:
 
 - Sol/reviewer decides **what must be tested and what counts as success**.
-- Luna/local executor performs **the specified operation and captures raw evidence**.
+- The local executor performs **the specified operation and captures raw evidence**.
 - Sol/reviewer evaluates **whether the evidence satisfies the unchanged criteria**.
 
 ## 10. Stop conditions

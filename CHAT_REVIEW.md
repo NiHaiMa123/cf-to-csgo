@@ -4,7 +4,7 @@
 >
 > 项目唯一权威进度以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 与本地 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
-> **默认 Planner / Reviewer = Chat/Sol；Codex/Luna = 本地执行与证据生产。**
+> **默认 Planner / Reviewer = Chat/Sol；用户选择的 Local Executor Agent = 本地执行与证据生产。**
 
 ---
 
@@ -29,7 +29,7 @@ Native material recovery 是 P4-M01 的 hard requirement；`REQUIRED` 不作为�
 - [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)
 - [`CODEX_TASKS.md`](CODEX_TASKS.md)
 
-P5 资料当前用于后续 handoff，不是 Luna 的第一执行入口。
+P5 资料当前用于后续 handoff，不是当前 Local Executor 的第一执行入口。
 
 ---
 
@@ -56,7 +56,7 @@ Chat/Sol 不得把 P4-M01 描述成“P4 整体失败”或“推翻历史 RV-06
 Chat/Sol 负责：
 
 - 维护 `plan.md` / Task Spec / acceptance criteria；
-- 读取 Luna push 的 P4-M01 code/evidence；
+- 读取 Local Executor push 的 P4-M01 code/evidence；
 - 判断 DTX/TGA/container/binding/CFG/shader 证据是否真的成立；
 - 拒绝“能显示成图 = 格式正确”一类弱证据；
 - 拒绝 external texture 进入 final provenance；
@@ -177,4 +177,4 @@ C029/C103 当前只是 geometry/material candidate evidence；在 native materia
 
 ## 8. 当前下一步
 
-> **等待/审查 Luna 按 `P4_M01_TASK_SPEC.md` 生成的 BornBeast native-material evidence。当前不执行 P5-T02 用户候选 Gate，不重做 T01，不进入 P5-T03。**
+> **等待/审查用户当前选择的 Local Executor Agent 按 `P4_M01_TASK_SPEC.md` 生成的 BornBeast native-material evidence。当前不执行 P5-T02 用户候选 Gate，不重做 T01，不进入 P5-T03。**

@@ -1,10 +1,12 @@
-# P4_RV04_TEST_SPECS.md — Chat/Sol → Luna 独立反例执行协议
+# P4_RV04_TEST_SPECS.md — Chat/Sol → Local Executor 独立反例执行协议
 
 > Test Designer / Final Judge：**Chat/Sol**  
-> Executor：**Luna / 本地 Codex Agent**  
+> Executor：**Any user-selected Local Executor Agent**  
 > Implementation baseline：`10aa99b770e575300ca3c28324ef3de3d5b70c6b`
 
-本文件只定义 P4 RV-04 的本地机械执行。Luna 不得修改 test target、expected gate、PASS/FAIL/INVALID 规则，不得自行给 RV-04 或 P4 最终结论。
+> 本文件是历史 RV-04 Test Spec。Executor 名称不构成当前或未来 Agent 绑定；实际历史执行者如在 evidence 中记录，保留其 provenance。
+
+本文件只定义 P4 RV-04 的本地机械执行。Local Executor 不得修改 test target、expected gate、PASS/FAIL/INVALID 规则，不得自行给 RV-04 或 P4 最终结论。
 
 ## 1. 执行前基线保护
 
@@ -117,7 +119,7 @@ Expected Gate：`material_closure`。
 
 PASS：exit 非零且 failed gates 精确包含该 Gate。
 
-## 3. Luna 统一 runner
+## 3. Local Executor 统一 runner
 
 在 `%TEMP%` 创建临时 Python 文件，不 git add。仓库根目录执行。脚本内容：
 
@@ -211,7 +213,7 @@ work/m4a1_s_bornbeast/p4_prototype_01/rv04_chat_review_stdout.log
 work/m4a1_s_bornbeast/p4_prototype_01/rv04_chat_review_report.json
 ```
 
-Luna 执行后只允许精确提交这两个新证据文件：
+Local Executor 执行后只允许精确提交这两个新证据文件：
 
 ```text
 work/m4a1_s_bornbeast/p4_prototype_01/rv04_chat_review_report.json

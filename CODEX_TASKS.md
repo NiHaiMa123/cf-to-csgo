@@ -1,10 +1,10 @@
-# CODEX_TASKS.md — Codex / Luna 本地执行合同
+# CODEX_TASKS.md — Local Executor 本地执行合同
 
-> 本文件只给 **Codex 环境中的 Agent** 使用，包括 Luna、本地执行 Agent，以及用户明确调用时的 Codex Sol。
+> 本文件给**任何用户选择的、具备本地执行能力的 Agent** 使用；不绑定 Luna、Codex 或其他具体模型/Agent。
 >
 > 项目唯一权威进度以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 与 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
-> **默认 Planner / Reviewer = Chat/Sol；默认本地 Executor = Luna / 普通 Codex Agent。**
+> **默认 Planner / Reviewer = Chat/Sol；默认本地 Executor = 用户当前选择的可执行本地任务的 Agent。**
 
 ---
 
@@ -29,11 +29,13 @@ P4 baseline 的 geometry / Source build / package / MIGI 技术证据继续冻�
 
 ---
 
-## 2. Luna 当前角色
+## 2. 当前本地 Executor 角色
 
 角色：**本地材质逆向执行器 + 证据生产器**。
 
-Luna 负责：
+任何用户选择的 Agent 只要能访问本地仓库与 `data/**`、执行项目工具链并按要求保存证据，就可以承担该角色。切换 Agent 不改变 Task Spec、acceptance criteria 或 authoritative state。
+
+本地 Executor 负责：
 
 - 安全同步最新 `master`；
 - 严格执行 `P4_M01_TASK_SPEC.md`；
@@ -45,7 +47,7 @@ Luna 负责：
 - 完成后把 scoped code/evidence push 到 `master`；
 - `data/**` 原始资产永不上传。
 
-Luna 不得：
+本地 Executor 不得：
 
 - 继续要求用户在 C029/C103 灰模之间强选；
 - 重跑已完成的雷神 T01 Web Search；
@@ -191,7 +193,7 @@ P4-M01 = ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
 P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 ```
 
-Luna 只提交 evidence，不自行把 authoritative `plan.md` 改成 PASS；最终状态由 Chat/Sol Review。
+本地 Executor 只提交 evidence，不自行把 authoritative `plan.md` 改成 PASS；最终状态由 Chat/Sol Review。
 
 真正 BLOCKED 才返回：
 

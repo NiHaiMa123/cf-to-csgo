@@ -136,9 +136,11 @@ P4-M01 PASS 后才恢复 P5-T02，把经过验证的方法应用到 Transformers
 
 ## 5. 角色路由
 
-- Codex / Luna：读取 [`CODEX_TASKS.md`](CODEX_TASKS.md) 和 [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)，执行 P4-M01。
+- Local Executor Agent：由用户选择；读取 [`CODEX_TASKS.md`](CODEX_TASKS.md) 和 [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)，执行 P4-M01。当前任务不绑定 Luna、Codex 或任何具体模型。
 - Chat/Sol：读取 [`CHAT_REVIEW.md`](CHAT_REVIEW.md)，Review P4-M01 evidence，并决定是否恢复 P5-T02。
 - P5-T02 当前：`PAUSED_BY_P4_M01`。
+
+历史文档中若保留某次实际执行者名称，只表示历史 provenance，不代表当前 Executor 要求。
 
 ---
 
