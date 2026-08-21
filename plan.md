@@ -147,10 +147,40 @@ P4-M01 的优势是：已有稳定几何/UV，同时有外部 CS1.6 flatten text
 9. **native material closure**：所有 visible color 输入都来自 local CF / verified semantics；
 10. closure 后再做 **Source 1 integration test**，且不得覆盖历史 frozen addon。
 
+#### 当前执行进展（截至 2026-08-22，Local Executor）
+
+按 `P4_M01_TASK_SPEC.md` A→I 路线执行，全部证据已提交 `master`（commit 632ede4），
+工作目录 `work/m4a1_s_bornbeast/p4_m01_native_material/`（含 evidence JSON 与
+previews 派生图）与 `scripts/material_recovery/`（8 个确定性脚本）已上传，无 `data/**` 原始资产上传。
+
+各步骤结论：
+
+- **A provenance**：P4 Prototype-01 材质完全来自 external CS1.6 灰图（`final_cf_material=false`）；新 native 链全部 local_cf。
+- **B inventory**：BornBeast native 族完整 = LTB + base DTX + alpha/normal/specular TGA + weapon CFG。
+- **C DTX**：`PV-M4A1_S_BornBeast.DTX` = headerless BGR24 512×256 完整 mip chain + 163 尾部；非 LithTech header、非 LZMA（独立复现 repo decoder 判定）。
+- **D TGA**：三张 TGA = headerless BGR24 + 嵌入 44 字节标准 TGA 块（用 TRUEVISION 魔法字定位，非假设）；精确重建 1024²。通道：alpha=G、normal=B、specular=R。
+- **E binding**：LTB 内**无内嵌材质引用**（LZMA 解压 + 字符串扫描仅见 mesh/动画名）；绑定经文件名+目录约定恢复，4 个语义槽标 PROVISIONAL。
+- **F CFG**：weapon CFG = 164 像素 RGB 颜色查找 ramp（非文本/浮点）；BornBeast(黄)/Transformers(品红)/Jewelry(黄) 三向差异化已量化。
+- **G variant**：58 个 M4A1_S 皮肤共用同一 5 文件骨架；**雷神 Transformers 缺 alpha 层**（直接服务 P5 缩圈）。
+- **H hypotheses**：确定性 native-only 渲染器（base+spec、base+cfg emissive），external 仅作色域对照。
+- **I closure**：spec §4-I 8 条件中 6 项 PASS、条件 7（可辨认 BornBeast）**PENDING_USER_VISUAL_GATE**、条件 8 PASS。base DTX 已验证为**高饱和紫蓝色 special/energy 层**，非完整 albedo。
+
+#### 卡点（当前 BLOCKED 项：closure 条件 7 视觉确认）
+
+用户视觉检查 `previews/` 派生图后反馈：**base DTX 解码结果近乎纯色紫，看不出枪体结构/图案**。两个待验证假设：
+
+1. **解码仍不正确** —— 512×256 BGR24 的尺寸/朝向/stride 假设可能错，把本应含高频细节的图解成了色块；
+2. **native base 本就如此** —— PV DTX 确为特殊/能量层，可辨认细节在别的层或某种组合里，尚未找对。
+
+按用户最新指令：**停止继续分析**，先固化当前情况并上传，等待用户对 `previews/` 各图（尤其 `native_base_dtx.png`、`native_alpha.png`、`native_specular.png`、`cfg_ramp_BornBeast.png`、`hypotheses/h1_full_base_spec.png`）做图质确认，再决定下一步。
+
+J 步骤（Source 1 integration on `p4_m01_native_material_test` addon）按 spec §4-J 在 closure 通过前**不执行**，且不得覆盖 frozen addon。
+
 当前继续状态：
 
 ```text
 P4-M01 = ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+         (closure 条件7 待用户视觉确认：base DTX 解码疑似纯色，需图质排查)
 ```
 
 P4-M01 PASS 必须是：
