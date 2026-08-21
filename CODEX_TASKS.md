@@ -13,7 +13,7 @@
 截至 2026-08-21：
 
 - P4 baseline：**`PASS / FROZEN`**；
-- **P4-M01：`ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED`，这是当前唯一执行任务；**
+- **P4-M01：`ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`，这是当前唯一执行任务；**
 - P5-T01：`PASS / USER_REFERENCE_CONFIRMED`；
 - P5-T02：`PAUSED_BY_P4_M01`；
 - P5-T03/T04：继续 blocked；
@@ -25,7 +25,7 @@
 P4_M01_TASK_SPEC.md
 ```
 
-P4 baseline 的 geometry / Source build / package / MIGI 技术证据继续冻结；P4-M01 只重新打开 native CF material decode / binding / shader fidelity。
+P4 baseline 的 geometry / Source build / package / MIGI 技术证据继续冻结；P4-M01 只重新打开 native CF material decode / binding / shader fidelity。Native material recovery 是当前 hard requirement，但 `REQUIRED` 不作为单独 lifecycle status。
 
 ---
 
