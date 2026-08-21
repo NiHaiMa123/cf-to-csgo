@@ -14,12 +14,14 @@
 
 ```text
 P4 baseline   PASS / FROZEN
-P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED   <- 当前任务
+P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE  <- 当前任务
 P5-T01        PASS / USER_REFERENCE_CONFIRMED
 P5-T02        PAUSED_BY_P4_M01
 P5-T03        BLOCKED_BY_T02
 P5-T04        BLOCKED_BY_T03
 ```
+
+Native material recovery 是 P4-M01 的 hard requirement；`REQUIRED` 不作为独立 lifecycle status。
 
 当前执行入口：
 
