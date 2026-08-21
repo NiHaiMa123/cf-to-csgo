@@ -52,7 +52,7 @@ AGENTS.md
 -> P4_M01_TASK_SPEC.md
 ```
 
-`P5_T02_TASK_SPEC.md` 当前是**暂停后的恢复协议**，不是 Luna 现在的第一执行入口。
+`P5_T02_TASK_SPEC.md` 当前是**暂停后的恢复协议**，不是当前 Local Executor 的第一执行入口。
 
 ---
 
@@ -453,4 +453,4 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 
 ## 8. 当前唯一下一步
 
-> **Luna 不继续 P5 C029/C103 视觉强选。当前返回 P4，执行 `P4_M01_TASK_SPEC.md`：以 BornBeast 为基准完成 provenance audit、DTX/TGA 重新验证、LTB material binding、WeaponShader CFG binary reverse、同族 differential 和 offline shader hypotheses，直到得到 0 external pixels、可重复的 `NATIVE_MATERIAL_RECOVERED` closure。完成并 push evidence 后，再由 Chat/Sol Review 是否恢复 P5-T02。**
+> **当前 Local Executor 不继续 P5 C029/C103 视觉强选。当前返回 P4，执行 `P4_M01_TASK_SPEC.md`：以 BornBeast 为基准完成 provenance audit、DTX/TGA 重新验证、LTB material binding、WeaponShader CFG binary reverse、同族 differential 和 offline shader hypotheses，直到得到 0 external pixels、可重复的 `NATIVE_MATERIAL_RECOVERED` closure。完成并 push evidence 后，再由 Chat/Sol Review 是否恢复 P5-T02。**
