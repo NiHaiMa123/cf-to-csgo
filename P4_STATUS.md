@@ -65,8 +65,10 @@ work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bm
 
 ```text
 P4 baseline   PASS / FROZEN
-P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED
+P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
 ```
+
+Native material recovery 是 hard requirement；`REQUIRED` 不作为独立 lifecycle status。
 
 正式任务：[`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。
 
