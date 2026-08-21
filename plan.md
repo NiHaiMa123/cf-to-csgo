@@ -2,7 +2,7 @@
 
 > 最后更新：2026-08-21
 >
-> 当前状态：**P4 `PASS / FROZEN`；P5 `ACTIVE` — T01 `PASS / USER_REFERENCE_CONFIRMED`；T02 `ACTIVE / AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION`（C029/C103 尚未分出）**
+> 当前状态：**P4 `PASS / FROZEN`；P5 `ACTIVE` — T01 `PASS / USER_REFERENCE_CONFIRMED`；T02 `ACTIVE / NATIVE_TEXTURE_RECOVERY_REQUIRED`**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -10,7 +10,7 @@
 >
 > 当前内部模型名：`weapons/v_rif_m4a1.mdl`
 >
-> 当前核心目标：**P4 已冻结转换技术流水线；P5 现在按“官方图鉴 Web Search → 用户确认目标图 → 本地候选缩圈/去重 → 百科式贴图侧视比对 → 用户确认本地候选 → provenance closure”定位真正雷神本地 CF 资产。**
+> 当前核心目标：**P4 已冻结转换技术流水线；P5 现在按“官方图鉴 Web Search → 用户确认目标图 → 本地候选缩圈/去重 → 本地 CF 原生材质正确还原 → 原生材质侧视比对 → 用户确认本地候选 → provenance closure”定位真正雷神本地 CF 资产。**
 
 本文第 1 节是项目唯一 authoritative progress/status。README 负责工具说明和证据索引；`CODEX_TASKS.md` 负责本地执行 Agent；`CHAT_REVIEW.md` 负责 Chat/Sol 的计划、Review 和测试设计；`P5_TASKS.md`、`P5_T01_TASK_SPEC.md`、`P5_T02_TASK_SPEC.md` 负责当前 P5 执行合同；`P4_STATUS.md` / `P4_REVIEW_RESULT.md` 保留 P4 冻结证据。
 
@@ -104,7 +104,7 @@ P5：**最终雷神资产定位。**
 
 ```text
 P5-T01  官方图鉴 Web Search + 用户确认目标图
-P5-T02  本地候选缩圈/去重/百科式侧视图 + 用户确认本地候选
+P5-T02  本地候选缩圈/去重/原生材质正确还原 + 用户确认本地候选
 P5-T03  Resource Graph / provenance closure
 P5-T04  Chat/Sol final identity review
 ```
@@ -197,29 +197,33 @@ work/p5_leishen/t01/execution.json
 
 任何 `Transformers`、`BornBeast`、`Thor`、`Leishen` 等名字或此前跨服别名讨论都只保留为候选线索，不提前固定 PRIMARY。
 
-#### P5-T02 — ACTIVE — AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
+#### P5-T02 — ACTIVE — NATIVE_TEXTURE_RECOVERY_REQUIRED
 
 正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
 
 用户确认 T01 官方目标图后，Luna 可以**直接进入 T02**，不需要 Chat/Sol 再改 Plan。
 
-T02 强制流程：
+T02 当前强制流程：
 
 ```text
 读取 T01 confirmed official reference
   -> 复用 LEGACY PRE-SCAN candidate index/matrix
   -> M4/M4A1 PLAYERVIEW 缩圈
-  -> 排除 BL/GR/WOMAN/纯手臂/QV
-  -> exact SHA 去重
-  -> geometry signature 聚类（可用时）
-  -> 每个 unique cluster 只渲染一个 representative
-  -> 本地 diffuse/主纹理 + UV
-  -> 百科式正交侧视 PNG
-  -> contact sheet / Top 5–15
+  -> exact SHA / geometry cluster
+  -> C029/C103 等 finalist geometry diagnostics
+  -> P4 BornBeast material provenance audit
+  -> Transformers / IronBeast 本地原生材质族 inventory
+  -> DTX container / pixel-format 交叉验证
+  -> LTB material / texture binding 恢复
+  -> WeaponShader CFG 二进制语义分析
+  -> 同几何不同皮肤 differential analysis
+  -> offline native shader hypotheses
+  -> NATIVE MATERIAL ACCEPTANCE GATE
+  -> 原生材质百科式正交侧视 PNG
   -> USER LOCAL-CANDIDATE GATE
 ```
 
-首轮侧视图强调最低成本：
+几何首轮诊断仍强调最低成本：
 
 ```text
 768x384 或 1024x512
@@ -234,13 +238,19 @@ T02 强制流程：
 不做 Cycles 高质量渲染
 ```
 
-核心目标是把本地“方块贴图/atlas”通过原模型 UV 还原到枪体表面，再生成与百科图相似的标准侧视表达。
+但灰模、raw DTX UV diagnostic、Alpha/Specular 标量近似都只能用于排除和逆向，不得完成 T02。最终 finalist 必须使用**可追溯、可重复、仅由本地 CF 原生输入及已验证 shader/CFG 语义构成的材质**。
 
-如果纹理暂时无法解析，可以用灰模/轮廓做便宜几何排除，但不能仅凭灰模完成最终本地候选确认。
+当前执行记录：T01 官方详情页及其实际加载图片已由用户确认。T02 已完成候选缩圈、exact SHA 去重、几何聚类和 C029/C103 本地侧视诊断。当前 `PV-M4A1_S_Transformers.DTX` 的 headerless BGR24 解释只能作为 hypothesis，raw PV DTX 更像未验证的 mask/lookup-like 输入，Alpha/Specular 只能作为诊断；同时 P4 build evidence 已确认 BornBeast Prototype 曾使用 `materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png` 派生 Source base/self-illum，因此 P4 只证明转换/MIGI 技术链，不证明 CF 原生材质解码正确。
 
-当前执行记录：T01 官方详情页及其实际加载图片已由用户确认。T02 已完成候选缩圈、exact SHA 去重、几何聚类和本地侧视诊断；当前用户反馈仍无法仅凭 C029/C103 的灰模、原始 PV DTX UV 诊断和标量 Alpha/Specular 材质诊断分出候选。原始 PV DTX 目前只能作为未验证的 mask/lookup-like 输入，标量贴图只能作诊断，尚无可用于最终视觉确认的有效彩色 diffuse/shader mapping。因此不写入 `USER_VISUAL_MATCH_CONFIRMED`，也不提前固定本地身份。
+当前继续状态：
 
-第二个正常等待状态：
+```text
+NATIVE_TEXTURE_RECOVERY_INCOMPLETE
+```
+
+这不是允许跳过的 soft risk。Luna 必须继续原生材质逆向，不能进入 T03，也不能要求用户仅凭灰模/伪材质在 C029/C103 之间强选。
+
+只有至少一个 finalist 通过 `Native material acceptance gate` 后，T02 才进入：
 
 ```text
 AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
@@ -260,8 +270,8 @@ USER_VISUAL_MATCH_CONFIRMED
 
 ```text
 model LTB
-  -> diffuse / DTX / TGA
-  -> Alpha / Normal / Specular
+  -> diffuse / lookup / DTX / TGA
+  -> Alpha / Normal / Specular / emissive / detail
   -> Shader / CFG / material
   -> QV / world family
   -> sound WAV
@@ -269,6 +279,8 @@ model LTB
 ```
 
 每个本地资源记录 relative path、SHA-256、size、relation、source class 和 unresolved reason。
+
+T03 不得被用来补做 T02 已要求的“最终可辨识原生材质恢复”。
 
 #### P5-T04 — BLOCKED_BY_T03
 
@@ -285,19 +297,19 @@ REWORK_CANDIDATE_SEARCH
 #### P5 退出条件
 
 1. 官方武器百科目标图已经用户确认；
-2. 最终第一人称本地候选已经用户视觉确认；
+2. 最终第一人称本地候选已通过本地 CF 原生材质 hard gate 并由用户视觉确认；
 3. 最终第一人称枪模有明确本地 CF 原始路径与 SHA-256；
 4. 模型轮廓、关键机械结构与官方 reference 相符；
-5. 最终贴图/atlas 有本地 CF 路径与 SHA-256，视觉特征与模型 UV 可对应；
+5. 最终 visible color / lookup / texture 输入均有本地 CF provenance，视觉特征与模型 UV 可对应；
 6. Shader/CFG/材质关联可追溯；
 7. 与该变体关联的声音/动画资源至少完成路径级关联和来源说明；
-8. 网络图片只作为 reference，不进入 final game asset provenance；
+8. 网络图片、CS1.6/MOD texture 只作为 reference，不进入 final game asset provenance；
 9. candidate matrix / exclusion history 能解释高相似候选为何被排除；
 10. Chat/Sol Review 允许把最终资产集合交给 P6。
 
 当前下一步：
 
-> **继续获取可验证的本地彩色 diffuse/shader lookup mapping，或等待用户在可辨识的本地候选图上确认 C029/C103；确认前保持 T02 `AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION`，不得进入 T03。**
+> **继续执行 P5-T02 原生材质恢复：先完成 P4 external-material provenance audit，然后对 Transformers 做完整本地材质 inventory、DTX 解码交叉验证、LTB binding 恢复、WeaponShader CFG 二进制分析和同几何皮肤差分；在 Native material acceptance gate 通过前保持 `NATIVE_TEXTURE_RECOVERY_INCOMPLETE`，不得进入 T03。**
 
 ---
 
@@ -332,11 +344,13 @@ Track B 的视觉入口固定为：
 ```text
 官方图鉴 Web Search
   -> 用户目标图确认
-  -> 本地统一侧视表达
+  -> 本地候选缩圈
+  -> 本地 CF 原生材质正确还原
+  -> 原生材质统一侧视表达
   -> 用户本地候选确认
 ```
 
-不得以内部英文命名猜测代替这两个视觉 Gate。
+不得以内部英文命名猜测代替视觉 Gate，也不得以外部 MOD 贴图代替本地 CF 原生材质 Gate。
 
 ---
 
@@ -396,7 +410,7 @@ manifest-driven fresh build、语义 Gate、package/deploy、negative mutation�
 
 ### P5：最终雷神资产定位 — ACTIVE
 
-官方目标图确认、本地候选缩圈/去重、百科式贴图侧视比对、用户候选确认、资源 provenance closure。
+官方目标图确认、本地候选缩圈/去重、本地 CF 原生材质恢复、原生材质侧视比对、用户候选确认、资源 provenance closure。
 
 ### P6：最终资产替换与发布质量
 
@@ -441,7 +455,7 @@ manifest-driven fresh build、语义 Gate、package/deploy、negative mutation�
 | toolchain 未完全 manifest-driven | provenance 可追踪但契约不完全 | 否 | 通用化前 |
 | manifest byte SHA 跨 checkout/EOL 有歧义 | provenance 可读性问题 | 否 | 增加 canonical hash / Git blob identity |
 | 最终雷神身份未确认 | 不能称 final | **是 P5 核心任务** | P5 |
-| 当前材质是外部 reference | 不能用于 final 发布 | **是 P5/P6 核心任务** | P5/P6 |
+| P4 Prototype 材质使用 external CS1.6 source，且 native CF shader/texture 尚未正确闭合 | 不能证明 final CF 材质 fidelity | **是 P5/P6 核心任务** | P5/P6 |
 | world/drop model 仍为官方 M4A4 | 第一人称 P4 不受影响 | 否 | P7 |
 
 修债原则：只修会影响当前阶段 Gate、final asset 替换或跨武器复用的问题；不得因为技术债存在就重写 P4 frozen 基线。
@@ -480,10 +494,11 @@ manifest-driven fresh build、语义 Gate、package/deploy、negative mutation�
 ### 8.2 P5 Asset Identity DoD
 
 - 官方 CF 武器百科目标图已由用户明确确认；
-- 本地 candidate 已通过统一百科式侧视比对并由用户确认；
+- 本地 finalist 已通过可重复、0 external pixels 的 native CF material acceptance gate；
+- 本地 candidate 已通过原生材质统一百科式侧视比对并由用户确认；
 - 最终模型、贴图、Shader、声音等均有可信本地 CF provenance；
 - candidate matrix 能解释为什么最终候选胜出以及其他高相似候选为何排除；
-- 模型轮廓、关键机械件和 UV/atlas 形成互相支持的身份链；
+- 模型轮廓、关键机械件和 UV/atlas/shader inputs 形成互相支持的身份链；
 - Chat/Sol Review 允许进入 P6。
 
 ### 8.3 最终雷神 DoD
