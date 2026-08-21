@@ -6,7 +6,7 @@
 >
 > 当前执行任务：**P4-M01 — BornBeast 原生 CF 材质恢复基准**
 >
-> 当前状态：**P4 baseline `PASS / FROZEN`；P4-M01 `ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED`；P5 `ACTIVE` 但 T02 `PAUSED_BY_P4_M01`**
+> 当前状态：**P4 baseline `PASS / FROZEN`；P4-M01 `ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`；P5 `ACTIVE` 但 T02 `PAUSED_BY_P4_M01`**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -24,7 +24,7 @@
 |---|---|---|
 | P0–P3 | DONE / HISTORICAL | Source 1 基线、CF 静态导出、M4A4 映射、历史编译/材质引用基础 |
 | P4 baseline | **PASS / FROZEN** | 几何→Source 1→package→MIGI 技术链已冻结 |
-| **P4-M01** | **ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED** | 当前执行：用 BornBeast 真正闭合 CF 原生材质解码/绑定/shader 语义 |
+| **P4-M01** | **ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE** | 当前执行：用 BornBeast 真正闭合 CF 原生材质解码/绑定/shader 语义；native material recovery 是 hard requirement |
 | P5-T01 | PASS / USER_REFERENCE_CONFIRMED | 雷神官方目标图已确认 |
 | P5 LEGACY PRE-SCAN | EXECUTION_PASS / PRESERVED_FOR_REUSE | 本地广召回候选池保留 |
 | P5-T02 | **PAUSED_BY_P4_M01** | 候选缩圈已做；等待可复用原生材质恢复方法后继续 Transformers |
@@ -32,6 +32,15 @@
 | P5-T04 | BLOCKED_BY_T03 | Chat/Sol final identity review |
 | P6 | BLOCKED_BY_P5 | 最终资产替换与发布质量 |
 | P7 | FUTURE | visible Inspect、手指 IK/retarget、CF 原动画等增强 |
+
+状态命名规则：
+
+```text
+NATIVE_MATERIAL_RECOVERY_INCOMPLETE = 当前正在执行、尚未满足 native material closure
+NATIVE_MATERIAL_RECOVERED            = P4-M01 completion result（需 Chat/Sol Review）
+```
+
+“native material recovery required”只描述 hard gate，不再作为独立状态名使用。
 
 当前 Agent 启动入口：
 
@@ -83,7 +92,7 @@ P4 baseline **从未证明**：
 
 ---
 
-### 1.3 P4-M01 — ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED
+### 1.3 P4-M01 — ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
 
 #### 为什么明确返回 P4
 
