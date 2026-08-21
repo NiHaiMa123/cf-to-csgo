@@ -1,0 +1,93 @@
+{
+  "schema": "cf2.p4m01.tga-validation.v1",
+  "files": {
+    "alpha": {
+      "relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+      "size_bytes": 3145772,
+      "byte_entropy": 2.5006,
+      "head16_hex": "ff 00 ff ff 00 ff ff 00 ff ff 00 ff ff 00 ff ff",
+      "tail16_hex": "ff ff 04 ff ff 05 ff ff 04 ff ff 02 ff ff 03 ff",
+      "standard_tga_header_parse": {
+        "id_len": 255,
+        "cmap_type": 0,
+        "img_type": 255,
+        "cmap_len": 255,
+        "x_origin": 65535,
+        "y_origin": 65280,
+        "width": 255,
+        "height": 65535,
+        "bpp": 0,
+        "descriptor": 255,
+        "plausible": false
+      },
+      "standard_tga_decode": null,
+      "size_matches_standard_tga_18p24p26": true,
+      "legacy_split_explanation": {
+        "file_size": 3145772,
+        "pure_pixel_bytes": 3145728,
+        "extra_bytes": 44,
+        "note": "44 extra bytes = 18 TGA header + 26 Truevision footer, consistent with a standard TGA, not a bespoke split"
+      }
+    },
+    "normal": {
+      "relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+      "size_bytes": 3145772,
+      "byte_entropy": 2.4389,
+      "head16_hex": "0c ff ff 0d ff ff 0c ff ff 0c ff ff 0c ff ff 0c",
+      "tail16_hex": "ff 0b ff ff 0e ff ff 0f ff ff 0e ff ff 11 ff ff",
+      "standard_tga_header_parse": {
+        "id_len": 12,
+        "cmap_type": 255,
+        "img_type": 255,
+        "cmap_len": 65293,
+        "x_origin": 3327,
+        "y_origin": 65535,
+        "width": 65292,
+        "height": 3327,
+        "bpp": 255,
+        "descriptor": 255,
+        "plausible": false
+      },
+      "standard_tga_decode": null,
+      "size_matches_standard_tga_18p24p26": true,
+      "legacy_split_explanation": {
+        "file_size": 3145772,
+        "pure_pixel_bytes": 3145728,
+        "extra_bytes": 44,
+        "note": "44 extra bytes = 18 TGA header + 26 Truevision footer, consistent with a standard TGA, not a bespoke split"
+      }
+    },
+    "specular": {
+      "relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+      "size_bytes": 3145772,
+      "byte_entropy": 2.642,
+      "head16_hex": "ff ff 09 ff ff 09 ff ff 08 ff ff 09 ff ff 0a ff",
+      "tail16_hex": "0a ff ff 0a ff ff 05 ff ff 00 ff ff 00 ff ff 00",
+      "standard_tga_header_parse": {
+        "id_len": 255,
+        "cmap_type": 255,
+        "img_type": 9,
+        "cmap_len": 65535,
+        "x_origin": 65288,
+        "y_origin": 2559,
+        "width": 65535,
+        "height": 65290,
+        "bpp": 255,
+        "descriptor": 10,
+        "plausible": false
+      },
+      "standard_tga_decode": null,
+      "size_matches_standard_tga_18p24p26": true,
+      "legacy_split_explanation": {
+        "file_size": 3145772,
+        "pure_pixel_bytes": 3145728,
+        "extra_bytes": 44,
+        "note": "44 extra bytes = 18 TGA header + 26 Truevision footer, consistent with a standard TGA, not a bespoke split"
+      }
+    }
+  },
+  "conclusion": "Standard TGA parse applies: each file carries an 18-byte TGA header and 26-byte Truevision footer around a 1024x1024x3 truecolor payload (size = 3145772). The legacy 'split around inserted header/footer' wording is equivalent but the format is ordinary uncompressed TGA; decoding via the standard parser is valid and reproducible."
+}

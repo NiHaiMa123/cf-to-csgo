@@ -1,0 +1,31 @@
+{
+  "schema": "cf2.p4m01.native-material-closure.v1",
+  "weapon": "BornBeast (PV-M4A1_S_BornBeast)",
+  "conditions_sec4_I": {
+    "1_geometry_uv_local_ltb": "PASS - PV-M4A1_S_BornBeast.LTB (local_cf, sha 5dbcee45)",
+    "2_visible_color_from_local_cf": "PASS - base/alpha/normal/specular/cfg all local_cf",
+    "3_each_map_path_sha": "PASS - recorded in native_material_inventory.json + material_binding_report.json",
+    "4_material_binding_structural_evidence": "PASS(convention) - LTB has no inline refs; binding via filename+directory (verified)",
+    "5_no_external_pixels": "PASS - H hypotheses use local_cf only; external used reference_only",
+    "6_clean_reproducible": "PASS - deterministic Python scripts; inputs sha-pinned",
+    "7_recognizable_bornbeast": "PENDING_USER_VISUAL_GATE - native base is a high-saturation purple/blue special/energy layer (not a full auto-albedo like the external CS1.6 grey). Native-only render is purple-toned; human visual confirmation required to assert 'recognizable BornBeast'.",
+    "8_external_reference_only_visual": "PASS - external CS1.6 compared for color domain only, never in generation"
+  },
+  "base_dtx_role_finding": "Verified (not assumed): PV-M4A1_S_BornBeast.DTX = 512x256 BGR24 full mip chain + 163-byte trailer; NOT a LithTech header DTX, NOT LZMA; color domain mean_sat=213 (high-saturation purple/blue). vs external CS1.6 mean_sat=11.5 (grey metal). The native base DTX is a SPECIAL/ENERGY layer, not a complete albedo. BornBeast native identity is carried by the layer combination (base + specular.R highlight + CFG-ramp emissive).",
+  "recommended_state": "NATIVE_MATERIAL_RECOVERED (pending Chat/Sol review + user visual gate)",
+  "executor_authority_note": "Local executor records evidence + recommended state only. Authoritative plan.md status change to PASS/NATIVE_MATERIAL_RECOVERED is owned by Chat/Sol per CODEX_TASKS sec 7.",
+  "evidence_chain": [
+    "evidence/provenance_audit.json (A)",
+    "evidence/native_material_inventory.json (B)",
+    "evidence/dtx_validation.json (C)",
+    "evidence/tga_decode_matrix.json (D)",
+    "evidence/material_binding_report.json (E)",
+    "evidence/cfg_reverse_report.json (F)",
+    "evidence/variant_diff_report.json (G)",
+    "evidence/shader_hypotheses.json (H)",
+    "previews/native_base_dtx.png, native_alpha.png, native_normal.png, native_specular.png",
+    "previews/cfg_ramp_BornBeast.png",
+    "previews/hypotheses/h1_full_base_spec.png, h2_full_base_emissive.png"
+  ],
+  "next_step": "Chat/Sol review of evidence -> if accepted, resume P5-T02 applying this method to M4A1_S_Transformers (Leishen). Optional step J (Source1 integration on NEW addon p4_m01_native_material_test) may follow."
+}

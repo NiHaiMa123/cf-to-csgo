@@ -1,0 +1,780 @@
+{
+  "schema": "cf2.p4m01.dtx-validation.v1",
+  "source": {
+    "relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+    "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+    "size_bytes": 524452,
+    "class": "local_cf",
+    "role": "bornbeast_base_color_candidate"
+  },
+  "csharp_header_parse": {
+    "passed": false,
+    "reason": "offset0 int32=1996429943 is not a supported DTX version magic",
+    "parsed": null
+  },
+  "lzma_check": {
+    "byte_entropy": 5.1527,
+    "high_entropy_like_compressed": false,
+    "conclusion": "not_lzma_compressed (low-entropy pixel stream)"
+  },
+  "head16_hex": "77 1a ff 76 1a ff 76 1b ff 77 1b ff 77 1b ff 76",
+  "tail16_hex": "80 14 ff 80 14 ff 7f 15 ff 7f 14 ff 7d 14 ff 7e",
+  "mip_chain_candidates": [
+    {
+      "interpretation": "BGR/RGB24 512x256 full-mip",
+      "w": 512,
+      "h": 256,
+      "bpp": 24,
+      "mip_chain_bytes": 524289,
+      "file_bytes": 524452,
+      "trailer_bytes": 163,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.999689,
+      "levels": [
+        {
+          "level": 0,
+          "w": 512,
+          "h": 256,
+          "bytes": 393216
+        },
+        {
+          "level": 1,
+          "w": 256,
+          "h": 128,
+          "bytes": 98304
+        },
+        {
+          "level": 2,
+          "w": 128,
+          "h": 64,
+          "bytes": 24576
+        },
+        {
+          "level": 3,
+          "w": 64,
+          "h": 32,
+          "bytes": 6144
+        },
+        {
+          "level": 4,
+          "w": 32,
+          "h": 16,
+          "bytes": 1536
+        },
+        {
+          "level": 5,
+          "w": 16,
+          "h": 8,
+          "bytes": 384
+        },
+        {
+          "level": 6,
+          "w": 8,
+          "h": 4,
+          "bytes": 96
+        },
+        {
+          "level": 7,
+          "w": 4,
+          "h": 2,
+          "bytes": 24
+        },
+        {
+          "level": 8,
+          "w": 2,
+          "h": 1,
+          "bytes": 6
+        },
+        {
+          "level": 9,
+          "w": 1,
+          "h": 1,
+          "bytes": 3
+        }
+      ]
+    },
+    {
+      "interpretation": "BGR/RGB32 512x256 full-mip",
+      "w": 512,
+      "h": 256,
+      "bpp": 32,
+      "mip_chain_bytes": 699052,
+      "file_bytes": 524452,
+      "trailer_bytes": -174600,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 1.332919
+    },
+    {
+      "interpretation": "BGR/RGB24 256x512 full-mip",
+      "w": 256,
+      "h": 512,
+      "bpp": 24,
+      "mip_chain_bytes": 524289,
+      "file_bytes": 524452,
+      "trailer_bytes": 163,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.999689,
+      "levels": [
+        {
+          "level": 0,
+          "w": 256,
+          "h": 512,
+          "bytes": 393216
+        },
+        {
+          "level": 1,
+          "w": 128,
+          "h": 256,
+          "bytes": 98304
+        },
+        {
+          "level": 2,
+          "w": 64,
+          "h": 128,
+          "bytes": 24576
+        },
+        {
+          "level": 3,
+          "w": 32,
+          "h": 64,
+          "bytes": 6144
+        },
+        {
+          "level": 4,
+          "w": 16,
+          "h": 32,
+          "bytes": 1536
+        },
+        {
+          "level": 5,
+          "w": 8,
+          "h": 16,
+          "bytes": 384
+        },
+        {
+          "level": 6,
+          "w": 4,
+          "h": 8,
+          "bytes": 96
+        },
+        {
+          "level": 7,
+          "w": 2,
+          "h": 4,
+          "bytes": 24
+        },
+        {
+          "level": 8,
+          "w": 1,
+          "h": 2,
+          "bytes": 6
+        },
+        {
+          "level": 9,
+          "w": 1,
+          "h": 1,
+          "bytes": 3
+        }
+      ]
+    },
+    {
+      "interpretation": "BGR/RGB32 256x512 full-mip",
+      "w": 256,
+      "h": 512,
+      "bpp": 32,
+      "mip_chain_bytes": 699052,
+      "file_bytes": 524452,
+      "trailer_bytes": -174600,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 1.332919
+    },
+    {
+      "interpretation": "BGR/RGB24 1024x256 full-mip",
+      "w": 1024,
+      "h": 256,
+      "bpp": 24,
+      "mip_chain_bytes": 1048581,
+      "file_bytes": 524452,
+      "trailer_bytes": -524129,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 1.999384
+    },
+    {
+      "interpretation": "BGR/RGB32 1024x256 full-mip",
+      "w": 1024,
+      "h": 256,
+      "bpp": 32,
+      "mip_chain_bytes": 1398108,
+      "file_bytes": 524452,
+      "trailer_bytes": -873656,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 2.665845
+    },
+    {
+      "interpretation": "BGR/RGB24 256x1024 full-mip",
+      "w": 256,
+      "h": 1024,
+      "bpp": 24,
+      "mip_chain_bytes": 1048581,
+      "file_bytes": 524452,
+      "trailer_bytes": -524129,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 1.999384
+    },
+    {
+      "interpretation": "BGR/RGB32 256x1024 full-mip",
+      "w": 256,
+      "h": 1024,
+      "bpp": 32,
+      "mip_chain_bytes": 1398108,
+      "file_bytes": 524452,
+      "trailer_bytes": -873656,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 2.665845
+    },
+    {
+      "interpretation": "BGR/RGB24 1024x512 full-mip",
+      "w": 1024,
+      "h": 512,
+      "bpp": 24,
+      "mip_chain_bytes": 2097153,
+      "file_bytes": 524452,
+      "trailer_bytes": -1572701,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 3.998751
+    },
+    {
+      "interpretation": "BGR/RGB32 1024x512 full-mip",
+      "w": 1024,
+      "h": 512,
+      "bpp": 32,
+      "mip_chain_bytes": 2796204,
+      "file_bytes": 524452,
+      "trailer_bytes": -2271752,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 5.331668
+    },
+    {
+      "interpretation": "BGR/RGB24 512x512 full-mip",
+      "w": 512,
+      "h": 512,
+      "bpp": 24,
+      "mip_chain_bytes": 1048575,
+      "file_bytes": 524452,
+      "trailer_bytes": -524123,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 1.999373
+    },
+    {
+      "interpretation": "BGR/RGB32 512x512 full-mip",
+      "w": 512,
+      "h": 512,
+      "bpp": 32,
+      "mip_chain_bytes": 1398100,
+      "file_bytes": 524452,
+      "trailer_bytes": -873648,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 2.66583
+    },
+    {
+      "interpretation": "BGR/RGB24 256x256 full-mip",
+      "w": 256,
+      "h": 256,
+      "bpp": 24,
+      "mip_chain_bytes": 262143,
+      "file_bytes": 524452,
+      "trailer_bytes": 262309,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.499842,
+      "levels": [
+        {
+          "level": 0,
+          "w": 256,
+          "h": 256,
+          "bytes": 196608
+        },
+        {
+          "level": 1,
+          "w": 128,
+          "h": 128,
+          "bytes": 49152
+        },
+        {
+          "level": 2,
+          "w": 64,
+          "h": 64,
+          "bytes": 12288
+        },
+        {
+          "level": 3,
+          "w": 32,
+          "h": 32,
+          "bytes": 3072
+        },
+        {
+          "level": 4,
+          "w": 16,
+          "h": 16,
+          "bytes": 768
+        },
+        {
+          "level": 5,
+          "w": 8,
+          "h": 8,
+          "bytes": 192
+        },
+        {
+          "level": 6,
+          "w": 4,
+          "h": 4,
+          "bytes": 48
+        },
+        {
+          "level": 7,
+          "w": 2,
+          "h": 2,
+          "bytes": 12
+        },
+        {
+          "level": 8,
+          "w": 1,
+          "h": 1,
+          "bytes": 3
+        }
+      ]
+    },
+    {
+      "interpretation": "BGR/RGB32 256x256 full-mip",
+      "w": 256,
+      "h": 256,
+      "bpp": 32,
+      "mip_chain_bytes": 349524,
+      "file_bytes": 524452,
+      "trailer_bytes": 174928,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.666456,
+      "levels": [
+        {
+          "level": 0,
+          "w": 256,
+          "h": 256,
+          "bytes": 262144
+        },
+        {
+          "level": 1,
+          "w": 128,
+          "h": 128,
+          "bytes": 65536
+        },
+        {
+          "level": 2,
+          "w": 64,
+          "h": 64,
+          "bytes": 16384
+        },
+        {
+          "level": 3,
+          "w": 32,
+          "h": 32,
+          "bytes": 4096
+        },
+        {
+          "level": 4,
+          "w": 16,
+          "h": 16,
+          "bytes": 1024
+        },
+        {
+          "level": 5,
+          "w": 8,
+          "h": 8,
+          "bytes": 256
+        },
+        {
+          "level": 6,
+          "w": 4,
+          "h": 4,
+          "bytes": 64
+        },
+        {
+          "level": 7,
+          "w": 2,
+          "h": 2,
+          "bytes": 16
+        },
+        {
+          "level": 8,
+          "w": 1,
+          "h": 1,
+          "bytes": 4
+        }
+      ]
+    },
+    {
+      "interpretation": "BGR/RGB24 1024x1024 full-mip",
+      "w": 1024,
+      "h": 1024,
+      "bpp": 24,
+      "mip_chain_bytes": 4194303,
+      "file_bytes": 524452,
+      "trailer_bytes": -3669851,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 7.997496
+    },
+    {
+      "interpretation": "BGR/RGB32 1024x1024 full-mip",
+      "w": 1024,
+      "h": 1024,
+      "bpp": 32,
+      "mip_chain_bytes": 5592404,
+      "file_bytes": 524452,
+      "trailer_bytes": -5067952,
+      "fits": false,
+      "exact": false,
+      "coverage_ratio": 10.663329
+    },
+    {
+      "interpretation": "BGR/RGB24 128x64 full-mip",
+      "w": 128,
+      "h": 64,
+      "bpp": 24,
+      "mip_chain_bytes": 32769,
+      "file_bytes": 524452,
+      "trailer_bytes": 491683,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.062482,
+      "levels": [
+        {
+          "level": 0,
+          "w": 128,
+          "h": 64,
+          "bytes": 24576
+        },
+        {
+          "level": 1,
+          "w": 64,
+          "h": 32,
+          "bytes": 6144
+        },
+        {
+          "level": 2,
+          "w": 32,
+          "h": 16,
+          "bytes": 1536
+        },
+        {
+          "level": 3,
+          "w": 16,
+          "h": 8,
+          "bytes": 384
+        },
+        {
+          "level": 4,
+          "w": 8,
+          "h": 4,
+          "bytes": 96
+        },
+        {
+          "level": 5,
+          "w": 4,
+          "h": 2,
+          "bytes": 24
+        },
+        {
+          "level": 6,
+          "w": 2,
+          "h": 1,
+          "bytes": 6
+        },
+        {
+          "level": 7,
+          "w": 1,
+          "h": 1,
+          "bytes": 3
+        }
+      ]
+    },
+    {
+      "interpretation": "BGR/RGB32 128x64 full-mip",
+      "w": 128,
+      "h": 64,
+      "bpp": 32,
+      "mip_chain_bytes": 43692,
+      "file_bytes": 524452,
+      "trailer_bytes": 480760,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.08331,
+      "levels": [
+        {
+          "level": 0,
+          "w": 128,
+          "h": 64,
+          "bytes": 32768
+        },
+        {
+          "level": 1,
+          "w": 64,
+          "h": 32,
+          "bytes": 8192
+        },
+        {
+          "level": 2,
+          "w": 32,
+          "h": 16,
+          "bytes": 2048
+        },
+        {
+          "level": 3,
+          "w": 16,
+          "h": 8,
+          "bytes": 512
+        },
+        {
+          "level": 4,
+          "w": 8,
+          "h": 4,
+          "bytes": 128
+        },
+        {
+          "level": 5,
+          "w": 4,
+          "h": 2,
+          "bytes": 32
+        },
+        {
+          "level": 6,
+          "w": 2,
+          "h": 1,
+          "bytes": 8
+        },
+        {
+          "level": 7,
+          "w": 1,
+          "h": 1,
+          "bytes": 4
+        }
+      ]
+    },
+    {
+      "interpretation": "BGR/RGB24 64x128 full-mip",
+      "w": 64,
+      "h": 128,
+      "bpp": 24,
+      "mip_chain_bytes": 32769,
+      "file_bytes": 524452,
+      "trailer_bytes": 491683,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.062482,
+      "levels": [
+        {
+          "level": 0,
+          "w": 64,
+          "h": 128,
+          "bytes": 24576
+        },
+        {
+          "level": 1,
+          "w": 32,
+          "h": 64,
+          "bytes": 6144
+        },
+        {
+          "level": 2,
+          "w": 16,
+          "h": 32,
+          "bytes": 1536
+        },
+        {
+          "level": 3,
+          "w": 8,
+          "h": 16,
+          "bytes": 384
+        },
+        {
+          "level": 4,
+          "w": 4,
+          "h": 8,
+          "bytes": 96
+        },
+        {
+          "level": 5,
+          "w": 2,
+          "h": 4,
+          "bytes": 24
+        },
+        {
+          "level": 6,
+          "w": 1,
+          "h": 2,
+          "bytes": 6
+        },
+        {
+          "level": 7,
+          "w": 1,
+          "h": 1,
+          "bytes": 3
+        }
+      ]
+    },
+    {
+      "interpretation": "BGR/RGB32 64x128 full-mip",
+      "w": 64,
+      "h": 128,
+      "bpp": 32,
+      "mip_chain_bytes": 43692,
+      "file_bytes": 524452,
+      "trailer_bytes": 480760,
+      "fits": true,
+      "exact": false,
+      "coverage_ratio": 0.08331,
+      "levels": [
+        {
+          "level": 0,
+          "w": 64,
+          "h": 128,
+          "bytes": 32768
+        },
+        {
+          "level": 1,
+          "w": 32,
+          "h": 64,
+          "bytes": 8192
+        },
+        {
+          "level": 2,
+          "w": 16,
+          "h": 32,
+          "bytes": 2048
+        },
+        {
+          "level": 3,
+          "w": 8,
+          "h": 16,
+          "bytes": 512
+        },
+        {
+          "level": 4,
+          "w": 4,
+          "h": 8,
+          "bytes": 128
+        },
+        {
+          "level": 5,
+          "w": 2,
+          "h": 4,
+          "bytes": 32
+        },
+        {
+          "level": 6,
+          "w": 1,
+          "h": 2,
+          "bytes": 8
+        },
+        {
+          "level": 7,
+          "w": 1,
+          "h": 1,
+          "bytes": 4
+        }
+      ]
+    }
+  ],
+  "ascii_scan": {
+    "total_strings_len_ge_4": 0,
+    "interesting_metadata_strings": [],
+    "sample_head_ascii": "w..v..v..w..w..v..w..v..w..u..v..u...\"..(../..8..G..P..T..T..Q..N..O..T..W..T..O..G..@..9../..(..#.w..a..K..K..N..K..K..N..K..N."
+  },
+  "recommended_interpretation": {
+    "interpretation": "BGR/RGB24 512x256 full-mip",
+    "w": 512,
+    "h": 256,
+    "bpp": 24,
+    "mip_chain_bytes": 524289,
+    "file_bytes": 524452,
+    "trailer_bytes": 163,
+    "fits": true,
+    "exact": false,
+    "coverage_ratio": 0.999689,
+    "levels": [
+      {
+        "level": 0,
+        "w": 512,
+        "h": 256,
+        "bytes": 393216
+      },
+      {
+        "level": 1,
+        "w": 256,
+        "h": 128,
+        "bytes": 98304
+      },
+      {
+        "level": 2,
+        "w": 128,
+        "h": 64,
+        "bytes": 24576
+      },
+      {
+        "level": 3,
+        "w": 64,
+        "h": 32,
+        "bytes": 6144
+      },
+      {
+        "level": 4,
+        "w": 32,
+        "h": 16,
+        "bytes": 1536
+      },
+      {
+        "level": 5,
+        "w": 16,
+        "h": 8,
+        "bytes": 384
+      },
+      {
+        "level": 6,
+        "w": 8,
+        "h": 4,
+        "bytes": 96
+      },
+      {
+        "level": 7,
+        "w": 4,
+        "h": 2,
+        "bytes": 24
+      },
+      {
+        "level": 8,
+        "w": 2,
+        "h": 1,
+        "bytes": 6
+      },
+      {
+        "level": 9,
+        "w": 1,
+        "h": 1,
+        "bytes": 3
+      }
+    ]
+  },
+  "conclusion": "headerless_pixel_payload: file begins with raw color bytes, no LithTech DTX version header, not LZMA; a 512x256 RGB24 full mip chain explains the byte count with a small trailer (164 bytes)."
+}

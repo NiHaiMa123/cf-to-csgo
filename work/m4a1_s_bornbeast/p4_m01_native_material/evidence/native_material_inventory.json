@@ -1,0 +1,64 @@
+{
+  "schema": "cf2.p4m01.native-material-inventory.v1",
+  "weapon": "BornBeast (PV-M4A1_S_BornBeast)",
+  "base_name": "M4A1_S_BornBeast",
+  "scope": "local_cf only; external CS1.6 textures are reference_only",
+  "family_member_count": 6,
+  "items": [
+    {
+      "asset_role": "geometry",
+      "relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "present": true,
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "size_bytes": 166113,
+      "source_class": "local_cf",
+      "interpreted_role": "source_mesh_uv"
+    },
+    {
+      "asset_role": "base_dtx",
+      "relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "present": true,
+      "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+      "size_bytes": 524452,
+      "source_class": "local_cf",
+      "interpreted_role": "base_color_or_special_layer_512x256 (role TBD: see dtx_validation)"
+    },
+    {
+      "asset_role": "alpha",
+      "relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "present": true,
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+      "size_bytes": 3145772,
+      "source_class": "local_cf",
+      "interpreted_role": "alpha_or_visibility_atlas_1024 (variable channel G)"
+    },
+    {
+      "asset_role": "normal",
+      "relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "present": true,
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+      "size_bytes": 3145772,
+      "source_class": "local_cf",
+      "interpreted_role": "normal_map_1024 (variable channel B; NOT direct tangent normal)"
+    },
+    {
+      "asset_role": "specular",
+      "relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "present": true,
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+      "size_bytes": 3145772,
+      "source_class": "local_cf",
+      "interpreted_role": "specular_map_1024 (variable channel R)"
+    },
+    {
+      "asset_role": "shader_cfg",
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "present": true,
+      "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+      "size_bytes": 492,
+      "source_class": "local_cf",
+      "interpreted_role": "weapon_shader_cfg_rgb_ramp_164px (gradient lookup; semantic slot TBD)"
+    }
+  ],
+  "note": "Inventory covers the complete native material family found on local data. No separate lookup/detail/emissive/overlay/mask files exist for BornBeast (only PrismBeast has MaskMap entries). Emissive/energy character derives from the base DTX special layer + the CFG color ramp."
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "cf2.p4m01.provenance-audit.v1",
+  "p4_prototype_01_material_chain": {
+    "external_reference_input": {
+      "relative_path": "work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png",
+      "sha256": "be9084917d452445c7d4e57db9d9cf3efff0a129532457ab037d7eb4b8c64779",
+      "source_class": "external_reference",
+      "used_for": "derive_prototype_textures -> bornbeast_base / bornbeast_selfillum_mask"
+    },
+    "derived_png": {
+      "work\\m4a1_s_bornbeast\\p4_prototype_01\\derived_textures\\bornbeast_base.png": "b2a5b214d9453ed7c451d0254e7cf846171cf46401ed9f34fe03116fd17c5370",
+      "work\\m4a1_s_bornbeast\\p4_prototype_01\\derived_textures\\bornbeast_selfillum_mask.png": "ba27bd390401857671de50d42948f1b4e6af7dc6a87435f0e8d383b25ee81d2c"
+    },
+    "vtf_outputs": {
+      "work\\m4a1_s_bornbeast\\p4_prototype_01\\runs\\run_20260819_170013_270792\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1\\bornbeast_base.vtf": "6e8261ddab5eb43b06563564caef2bf5a929d27866a9326ef3a4066bdd608cc3"
+    },
+    "material_policy": {
+      "classification": "EXTERNAL_REFERENCE / PROTOTYPE MATERIAL",
+      "source_kind": "external_goldsrc_cs16_reference",
+      "final_cf_material": false,
+      "final_release_allowed": false,
+      "purpose": "UV, geometry and Source 1 material-chain debugging only"
+    }
+  },
+  "p4_provenance_gap": "P4 Prototype-01 built its material ENTIRELY from one external CS1.6 flatten texture (final_cf_material=false). No local CF BornBeast DTX/TGA/CFG was used. This is exactly the gap P4-M01 corrects.",
+  "p4_m01_native_chain": {
+    "geometry_ltb": {
+      "relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "source_class": "local_cf",
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7"
+    },
+    "base_dtx": {
+      "relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "source_class": "local_cf",
+      "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9"
+    },
+    "alpha_tga": {
+      "relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "source_class": "local_cf",
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37"
+    },
+    "normal_tga": {
+      "relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "source_class": "local_cf",
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e"
+    },
+    "specular_tga": {
+      "relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "source_class": "local_cf",
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6"
+    },
+    "weapon_strip_cfg": {
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "source_class": "local_cf",
+      "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87"
+    },
+    "all_inputs_local_cf": true,
+    "external_pixels_in_generation": false
+  }
+}

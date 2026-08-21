@@ -1,0 +1,121 @@
+{
+  "schema": "cf2.p4m01.tga-decode.v1",
+  "method": "locate TRUEVISION magic by byte search; excise 44-byte embedded TGA header(18)+footer(26); decode remaining 3145728 bytes as BGR24 1024x1024",
+  "files": {
+    "alpha": {
+      "relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+      "size_bytes": 3145772,
+      "embedded_tga_block": {
+        "header_at": 886812,
+        "truevision_magic_at": 886830,
+        "footer_end_at": 886856,
+        "block_len": 44,
+        "note": "headerless BGR24 pixel stream with mid-stream standard TGA header+footer"
+      },
+      "pure_pixel_bytes": 3145728,
+      "expected_1024x1024x3": 3145728,
+      "reconstructed_ok": true,
+      "decoded_preview": "work\\m4a1_s_bornbeast\\p4_m01_native_material\\previews\\native_alpha.png",
+      "decoded_preview_sha256": "dc2f8dc326f38914a80f0a7b2b38151b9152886e0b318a15279f009100c110a6",
+      "channel_stats_bgr_rgb": [
+        {
+          "mean": 255.0,
+          "min": 0,
+          "max": 255,
+          "unique": 4
+        },
+        {
+          "mean": 15.2,
+          "min": 0,
+          "max": 173,
+          "unique": 174
+        },
+        {
+          "mean": 255.0,
+          "min": 0,
+          "max": 255,
+          "unique": 2
+        }
+      ],
+      "variable_channel": 1
+    },
+    "normal": {
+      "relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+      "size_bytes": 3145772,
+      "embedded_tga_block": {
+        "header_at": 2458376,
+        "truevision_magic_at": 2458394,
+        "footer_end_at": 2458420,
+        "block_len": 44,
+        "note": "headerless BGR24 pixel stream with mid-stream standard TGA header+footer"
+      },
+      "pure_pixel_bytes": 3145728,
+      "expected_1024x1024x3": 3145728,
+      "reconstructed_ok": true,
+      "decoded_preview": "work\\m4a1_s_bornbeast\\p4_m01_native_material\\previews\\native_normal.png",
+      "decoded_preview_sha256": "1dc64e2f588ca1cc4215efe74505176fbf2bfd98cfbf5a724701bbb83504f6ec",
+      "channel_stats_bgr_rgb": [
+        {
+          "mean": 255.0,
+          "min": 0,
+          "max": 255,
+          "unique": 2
+        },
+        {
+          "mean": 255.0,
+          "min": 0,
+          "max": 255,
+          "unique": 4
+        },
+        {
+          "mean": 11.93,
+          "min": 0,
+          "max": 108,
+          "unique": 105
+        }
+      ],
+      "variable_channel": 2
+    },
+    "specular": {
+      "relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+      "size_bytes": 3145772,
+      "embedded_tga_block": {
+        "header_at": 550339,
+        "truevision_magic_at": 550357,
+        "footer_end_at": 550383,
+        "block_len": 44,
+        "note": "headerless BGR24 pixel stream with mid-stream standard TGA header+footer"
+      },
+      "pure_pixel_bytes": 3145728,
+      "expected_1024x1024x3": 3145728,
+      "reconstructed_ok": true,
+      "decoded_preview": "work\\m4a1_s_bornbeast\\p4_m01_native_material\\previews\\native_specular.png",
+      "decoded_preview_sha256": "a41ef515b2cad42b481181bf6e0e88e5c1fba598d33da2172e195ce0d80bd2e3",
+      "channel_stats_bgr_rgb": [
+        {
+          "mean": 19.94,
+          "min": 0,
+          "max": 214,
+          "unique": 181
+        },
+        {
+          "mean": 255.0,
+          "min": 0,
+          "max": 255,
+          "unique": 2
+        },
+        {
+          "mean": 255.0,
+          "min": 0,
+          "max": 255,
+          "unique": 4
+        }
+      ],
+      "variable_channel": 0
+    }
+  },
+  "conclusion": "Proven (not assumed): BornBeast TGA maps are headerless BGR24 pixel streams with an embedded standard TGA block; correct native decode removes that block. All three reconstruct to exactly 1024x1024x3 pixels."
+}

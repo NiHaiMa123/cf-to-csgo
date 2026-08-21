@@ -1,0 +1,313 @@
+{
+  "schema": "cf2.p4m01.cfg-reverse.v1",
+  "method": "3-byte BGR record decode; ramp color-sequence extraction; byte-level differential across skins",
+  "cfgs": {
+    "BornBeast": {
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+      "size_bytes": 492,
+      "record_size_bytes": 3,
+      "record_count": 164,
+      "interpretation": "rgb_color_lookup_ramp (164 px * 3-byte BGR)",
+      "is_text": false,
+      "is_float": false,
+      "ramp_summary": {
+        "pixel_count": 164,
+        "unique_colors": 19,
+        "first_color_bgr": [
+          255,
+          255,
+          15
+        ],
+        "last_color_bgr": [
+          255,
+          255,
+          14
+        ],
+        "dominant_channel_family": "R",
+        "monotonic_rgb_delta": [
+          0,
+          0,
+          -1
+        ],
+        "sample_sequence_first12_bgr": [
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            14
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            14
+          ],
+          [
+            255,
+            255,
+            14
+          ]
+        ]
+      },
+      "ramp_preview": "work\\m4a1_s_bornbeast\\p4_m01_native_material\\previews\\cfg_ramp_BornBeast.png",
+      "ramp_preview_sha256": "ef022ec3b38fa5df9f1d1396efed1575bdf8565527aa1597d8fa078292538416"
+    },
+    "Transformers": {
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG",
+      "sha256": "f53e0ea00fa3677dd77acf77570ab1ddf7944410db41e11e1d103592dea3940d",
+      "size_bytes": 506,
+      "record_size_bytes": 3,
+      "record_count": 168,
+      "interpretation": "rgb_color_lookup_ramp (164 px * 3-byte BGR)",
+      "is_text": false,
+      "is_float": false,
+      "ramp_summary": {
+        "pixel_count": 168,
+        "unique_colors": 18,
+        "first_color_bgr": [
+          255,
+          18,
+          255
+        ],
+        "last_color_bgr": [
+          255,
+          16,
+          255
+        ],
+        "dominant_channel_family": "R",
+        "monotonic_rgb_delta": [
+          0,
+          -2,
+          0
+        ],
+        "sample_sequence_first12_bgr": [
+          [
+            255,
+            18,
+            255
+          ],
+          [
+            255,
+            18,
+            255
+          ],
+          [
+            255,
+            18,
+            255
+          ],
+          [
+            255,
+            18,
+            255
+          ],
+          [
+            255,
+            19,
+            255
+          ],
+          [
+            255,
+            19,
+            255
+          ],
+          [
+            255,
+            20,
+            255
+          ],
+          [
+            255,
+            19,
+            255
+          ],
+          [
+            255,
+            19,
+            255
+          ],
+          [
+            255,
+            19,
+            255
+          ],
+          [
+            255,
+            19,
+            255
+          ],
+          [
+            255,
+            19,
+            255
+          ]
+        ]
+      },
+      "ramp_preview": "work\\m4a1_s_bornbeast\\p4_m01_native_material\\previews\\cfg_ramp_Transformers.png",
+      "ramp_preview_sha256": "9c48d4a03b00f10ee7ad93009e55f0209f7eca6c0c633f60d1240cb7f9079e76"
+    },
+    "Jewelry": {
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Jewelry.CFG",
+      "sha256": "e8aa3c5e48208d6add42038c09551e74e397712b022cb6b099b2e2c34fc0209f",
+      "size_bytes": 642,
+      "record_size_bytes": 3,
+      "record_count": 214,
+      "interpretation": "rgb_color_lookup_ramp (164 px * 3-byte BGR)",
+      "is_text": false,
+      "is_float": false,
+      "ramp_summary": {
+        "pixel_count": 214,
+        "unique_colors": 16,
+        "first_color_bgr": [
+          255,
+          255,
+          15
+        ],
+        "last_color_bgr": [
+          255,
+          255,
+          24
+        ],
+        "dominant_channel_family": "R",
+        "monotonic_rgb_delta": [
+          0,
+          0,
+          9
+        ],
+        "sample_sequence_first12_bgr": [
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            14
+          ],
+          [
+            255,
+            255,
+            14
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            14
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ],
+          [
+            255,
+            255,
+            15
+          ]
+        ]
+      },
+      "ramp_preview": "work\\m4a1_s_bornbeast\\p4_m01_native_material\\previews\\cfg_ramp_Jewelry.png",
+      "ramp_preview_sha256": "677ec6380cc42d4325f431468d76805528e96650150dd27244a9b9cfcaadd498"
+    }
+  },
+  "differential": {
+    "BornBeast_vs_Transformers": {
+      "len_a": 492,
+      "len_b": 506,
+      "compared_bytes": 492,
+      "differing_bytes": 328,
+      "diff_ratio": 0.6667
+    },
+    "BornBeast_vs_Jewelry": {
+      "len_a": 492,
+      "len_b": 642,
+      "compared_bytes": 492,
+      "differing_bytes": 147,
+      "diff_ratio": 0.2988
+    },
+    "Transformers_vs_Jewelry": {
+      "len_a": 506,
+      "len_b": 642,
+      "compared_bytes": 506,
+      "differing_bytes": 337,
+      "diff_ratio": 0.666
+    }
+  },
+  "conclusion": "Each weapon CFG is a 164-pixel RGB color lookup ramp (3-byte BGR records), not text and not float. Per spec F this is a visualizable ramp, not a proven Source1 shader-parameter mapping; the precise engine binding of this ramp (tint/emissive/energy gradient) requires the LTB material-binding evidence (step E), which is currently MISSING in the LTB decoder. Differential across skins quantifies how hero skins (BornBeast/Transformers) relate to a traditional skin (Jewelry) at the byte level.",
+  "semantic_binding_status": "PROVISIONAL_NOT_PROVEN"
+}

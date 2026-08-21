@@ -1,0 +1,26 @@
+{
+  "schema": "cf2.p4m01.material-binding.v1",
+  "method": "CF naming convention + directory structure (LTB contains no embedded material references; verified by LZMA decompress + ASCII string scan returning only mesh/animation names).",
+  "ltb_inline_references": "NONE (mesh names + animation names only)",
+  "binding_group": {
+    "base_name": "M4A1_S_BornBeast",
+    "geometry_ltb": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+    "base_color_or_special": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+    "alpha": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+    "normal": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+    "specular": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+    "weapon_shader_cfg": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG"
+  },
+  "binding_evidence": [
+    "All six assets share the literal base name 'M4A1_S_BornBeast'.",
+    "Directory encodes role: ModelTextures/PLAYERVIEW -> base DTX; AlphaMap/NormalMap/SpecularMap -> TGAs; Shader/WeaponShader -> CFG.",
+    "Geometry LTB 'PV-M4A1_S_BornBeast.LTB' matches the same weapon and provides the UV space the maps sample."
+  ],
+  "unresolved_semantic_slots": [
+    "Exact CF engine mapping of base DTX (albedo vs detail/energy layer).",
+    "Exact shader parameter the CFG 164px RGB ramp drives (tint/emissive/energy gradient).",
+    "Whether alpha.specmap uses additive/multiply/lerp vs base.",
+    "These require engine/render-style semantics not present in local data and are flagged PROVISIONAL, per spec E (no guessing)."
+  ],
+  "binding_confidence": "STRUCTURAL (filename+directory) \u2014 not decode-proven per-pixel by an inline LTB material table."
+}
