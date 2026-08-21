@@ -16,8 +16,10 @@ P4 baseline   PASS / FROZEN
     +-- conversion/build/package/MIGI/runtime contract      frozen
     +-- native CF material fidelity                         NOT proven historically
 
-P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED
+P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
 ```
+
+Native material recovery 是 P4-M01 的 hard requirement；`REQUIRED` 不作为独立 lifecycle status。
 
 P4-M01 不是重新跑 P4-T01～T09，也不是推翻 RV-01～RV-06。
 
