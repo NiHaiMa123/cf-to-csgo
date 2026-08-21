@@ -6,9 +6,11 @@
 >
 > Planner / Reviewer: **Chat/Sol**
 >
-> Executor: **Luna / 本地 Codex Agent**
+> Executor: **Any user-selected Local Executor Agent with local repository/data/tool access**
 >
 > 当前状态: **ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE**
+
+> 本 Task **不绑定 Luna、Codex 或任何具体模型/Agent**。Executor 可以更换；更换后必须从最新 `master` 与已有 evidence 继续，不得因更换 Agent 无理由重跑已完成工作。
 
 ---
 
@@ -82,7 +84,7 @@ reference_only / differential_control
 
 ## 4. Mandatory execution path
 
-Luna 必须按下列路线执行。单条 hypothesis 失败不是 BLOCKED；记录 rejection evidence 后继续下一条。
+本地 Executor 必须按下列路线执行。单条 hypothesis 失败不是 BLOCKED；记录 rejection evidence 后继续下一条。
 
 ### A. P4 material provenance audit
 
