@@ -8,13 +8,15 @@
 >
 > RV-04 evidence commit: `fd61d6ae7567a01c585e1144e2cab88ddb6aa85d`
 
+> **Historical applicability note (2026-08-21):** 本文件是 2026-08-20 P4 baseline 的历史最终 Review，不是当前执行入口。其 `PASS / FROZEN` 继续适用于 conversion/build/package/MIGI/runtime contract。2026-08-21 用户明确授权的 [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md) 是一个 post-freeze native-material corrective task，用于补做当时未声明为已通过的 CF 原生材质 fidelity；它不追溯性撤销本 Review，也不受本文件“当时无需 reopen P4”措辞的禁止。当前状态只看 [`plan.md`](plan.md) 第 1 节。
+
 ## Final result
 
 **`PASS WITH RISK`**
 
-**P4 may be marked `PASS / FROZEN`.**
+**P4 baseline may be marked `PASS / FROZEN`.**
 
-No identified risk requires reopening P4 before entering P5. The remaining items are explicit technical/provenance debt or out-of-scope runtime checks and must not be silently reclassified as solved.
+At the time of this Review, no identified risk required reopening the reviewed conversion baseline before entering P5. The remaining items were explicit technical/provenance debt or out-of-scope runtime checks and must not be silently reclassified as solved.
 
 ## RV-01 — PASS
 
@@ -66,6 +68,8 @@ local CF LTB
 
 Build, validation, package and deploy bind the same run identity and payload; package/staging/deployed payload hashes close. No evidence was found that the current build secretly used an old MIGI addon or old aligned OBJ instead of the fresh upstream run.
 
+This chain did **not** establish that the visible material pixels were produced by a correct native CF material decode; that claim was outside the reviewed baseline and is now handled by P4-M01.
+
 ## RV-04 — PASS
 
 New independent local execution was performed from the Chat/Sol-fixed protocol in `P4_RV04_TEST_SPECS.md`.
@@ -83,6 +87,8 @@ All 4 required high-risk cases passed and hit the exact expected Gate:
 4. critical VTF removed -> `material_closure` rejected it.
 
 Each case exited non-zero for the target reason. The report records `case_count=4`, `passed_cases=4`, `pass=true`, and `critical_diff_from_base=false`.
+
+Important: RV04-04 proved that Source material references reject a missing VTF. It did **not** prove the VTF's pixels or upstream CF material interpretation were semantically correct.
 
 ## RV-05 — PASS WITH NON-BLOCKING RISK
 
@@ -102,16 +108,17 @@ Historical build/package reports record one byte-level manifest SHA while the la
 
 This does not invalidate the semantic frozen artifact, but future provenance tooling should prefer a canonical/normalized manifest hash (or record both Git blob identity and working-tree SHA-256) so cross-checkout line-ending differences cannot create ambiguity.
 
-## RV-06 — FINAL
+## RV-06 — FINAL HISTORICAL BASELINE RESULT
 
 1. **Conclusion:** `PASS WITH RISK`
-2. **Unmet blocker IDs:** none
-3. **Non-blocking risks:**
+2. **Unmet blocker IDs:** none for the reviewed baseline
+3. **Non-blocking risks at Review time:**
    - explicit CLI Inspect-policy override is not independently pinned by T05;
    - toolchain contract is not yet fully manifest-driven;
    - `console_errors` not separately user-tested;
    - addon-disable rollback not separately user-tested;
    - byte-level manifest hash portability should be normalized for future provenance.
 4. **T08 user Gate:** satisfied for the defined frozen/no-op changed-runtime scope.
-5. **Allow P4 `PASS / FROZEN`:** **YES**.
-6. **Next phase:** P5 final Leishen asset identification. Do not reopen P4 for visible Inspect/hand-retarget work; that remains P7.
+5. **Allow P4 baseline `PASS / FROZEN`:** **YES**.
+6. **Historical next phase at 2026-08-20:** P5 final Leishen asset identification.
+7. **2026-08-21 scoped correction:** native material fidelity is now explicitly handled by P4-M01 while the reviewed conversion baseline remains frozen.
