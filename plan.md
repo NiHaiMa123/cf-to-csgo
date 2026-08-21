@@ -1,12 +1,12 @@
 # CF 武器 → CS:GO Legacy Source 1 转换流水线计划
 
-> 最后更新：2026-08-21
+> 最后更新：2026-08-22
 >
 > 项目唯一 authoritative progress/status：**本文件第 1 节**
 >
-> 当前执行任务：**P4-M01 — BornBeast 原生 CF 材质恢复基准**
+> 当前执行任务：**P4-M01-R1 — BornBeast native material evidence correction**
 >
-> 当前状态：**P4 baseline `PASS / FROZEN`；P4-M01 `ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`；P5 `ACTIVE` 但 T02 `PAUSED_BY_P4_M01`**
+> 当前状态：**P4 baseline `PASS / FROZEN`；P4-M01 `ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`；P4-M01-R1 `ACTIVE / REWORK_REQUIRED`；P5 `ACTIVE` 但 T02 `PAUSED_BY_P4_M01`**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -24,7 +24,8 @@
 |---|---|---|
 | P0–P3 | DONE / HISTORICAL | Source 1 基线、CF 静态导出、M4A4 映射、历史编译/材质引用基础 |
 | P4 baseline | **PASS / FROZEN** | 几何→Source 1→package→MIGI 技术链已冻结 |
-| **P4-M01** | **ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE** | 当前执行：用 BornBeast 真正闭合 CF 原生材质解码/绑定/shader 语义；native material recovery 是 hard requirement |
+| **P4-M01** | **ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE** | 当前父任务：用 BornBeast 闭合 CF 原生材质解码/绑定/shader 语义 |
+| **P4-M01-R1** | **ACTIVE / REWORK_REQUIRED** | 当前具体执行：修正上一轮 DTX/TGA/binding/CFG 证据等级与实现错误；不是用户视觉 Gate |
 | P5-T01 | PASS / USER_REFERENCE_CONFIRMED | 雷神官方目标图已确认 |
 | P5 LEGACY PRE-SCAN | EXECUTION_PASS / PRESERVED_FOR_REUSE | 本地广召回候选池保留 |
 | P5-T02 | **PAUSED_BY_P4_M01** | 候选缩圈已做；等待可复用原生材质恢复方法后继续 Transformers |
@@ -36,11 +37,12 @@
 状态命名规则：
 
 ```text
-NATIVE_MATERIAL_RECOVERY_INCOMPLETE = 当前正在执行、尚未满足 native material closure
+NATIVE_MATERIAL_RECOVERY_INCOMPLETE = P4-M01 正在执行、尚未满足 native material closure
+REWORK_REQUIRED                     = 已有探索性 evidence，但关键结论必须纠正/重新验证
 NATIVE_MATERIAL_RECOVERED            = P4-M01 completion result（需 Chat/Sol Review）
 ```
 
-“native material recovery required”只描述 hard gate，不再作为独立状态名使用。
+“native material recovery required”只描述 hard gate，不作为独立状态名使用。
 
 当前 Agent 启动入口：
 
@@ -50,6 +52,7 @@ AGENTS.md
 -> CODEX_TASKS.md
 -> P4_TASKS.md
 -> P4_M01_TASK_SPEC.md
+-> P4_M01_REWORK_R1.md   <- 当前具体执行入口
 ```
 
 `P5_T02_TASK_SPEC.md` 当前是**暂停后的恢复协议**，不是当前 Local Executor 的第一执行入口。
@@ -112,7 +115,7 @@ work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bm
 P4-M01 = post-freeze corrective material task
 ```
 
-正式协议：[`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。
+正式主协议：[`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。
 
 #### P4-M01 核心目标
 
@@ -147,43 +150,70 @@ P4-M01 的优势是：已有稳定几何/UV，同时有外部 CS1.6 flatten text
 9. **native material closure**：所有 visible color 输入都来自 local CF / verified semantics；
 10. closure 后再做 **Source 1 integration test**，且不得覆盖历史 frozen addon。
 
-#### 当前执行进展（截至 2026-08-22，Local Executor）
+#### 2026-08-22 执行产出与 Chat/Sol Review
 
-按 `P4_M01_TASK_SPEC.md` A→I 路线执行，全部证据已提交 `master`（commit 632ede4），
-工作目录 `work/m4a1_s_bornbeast/p4_m01_native_material/`（含 evidence JSON 与
-previews 派生图）与 `scripts/material_recovery/`（8 个确定性脚本）已上传，无 `data/**` 原始资产上传。
+Local Executor 在 commit：
 
-各步骤结论：
+```text
+632ede449578f688cea7e6b5f40cbf03700aaaa5
+```
 
-- **A provenance**：P4 Prototype-01 材质完全来自 external CS1.6 灰图（`final_cf_material=false`）；新 native 链全部 local_cf。
-- **B inventory**：BornBeast native 族完整 = LTB + base DTX + alpha/normal/specular TGA + weapon CFG。
-- **C DTX**：`PV-M4A1_S_BornBeast.DTX` = headerless BGR24 512×256 完整 mip chain + 163 尾部；非 LithTech header、非 LZMA（独立复现 repo decoder 判定）。
-- **D TGA**：三张 TGA = headerless BGR24 + 嵌入 44 字节标准 TGA 块（用 TRUEVISION 魔法字定位，非假设）；精确重建 1024²。通道：alpha=G、normal=B、specular=R。
-- **E binding**：LTB 内**无内嵌材质引用**（LZMA 解压 + 字符串扫描仅见 mesh/动画名）；绑定经文件名+目录约定恢复，4 个语义槽标 PROVISIONAL。
-- **F CFG**：weapon CFG = 164 像素 RGB 颜色查找 ramp（非文本/浮点）；BornBeast(黄)/Transformers(品红)/Jewelry(黄) 三向差异化已量化。
-- **G variant**：58 个 M4A1_S 皮肤共用同一 5 文件骨架；**雷神 Transformers 缺 alpha 层**（直接服务 P5 缩圈）。
-- **H hypotheses**：确定性 native-only 渲染器（base+spec、base+cfg emissive），external 仅作色域对照。
-- **I closure**：spec §4-I 8 条件中 6 项 PASS、条件 7（可辨认 BornBeast）**PENDING_USER_VISUAL_GATE**、条件 8 PASS。base DTX 已验证为**高饱和紫蓝色 special/energy 层**，非完整 albedo。
+提交了 `scripts/material_recovery/**`、`work/m4a1_s_bornbeast/p4_m01_native_material/**` 和 A→I 探索性 evidence；随后 commit：
 
-#### 卡点（当前 BLOCKED 项：closure 条件 7 视觉确认）
+```text
+39e14ff6c594ad81f1b077aeeaea5645d81e02be
+```
 
-用户视觉检查 `previews/` 派生图后反馈：**base DTX 解码结果近乎纯色紫，看不出枪体结构/图案**。两个待验证假设：
+把其结论记录进本 Plan。
 
-1. **解码仍不正确** —— 512×256 BGR24 的尺寸/朝向/stride 假设可能错，把本应含高频细节的图解成了色块；
-2. **native base 本就如此** —— PV DTX 确为特殊/能量层，可辨认细节在别的层或某种组合里，尚未找对。
+这批产出**保留并复用**，不是作废：
 
-按用户最新指令：**停止继续分析**，先固化当前情况并上传，等待用户对 `previews/` 各图（尤其 `native_base_dtx.png`、`native_alpha.png`、`native_specular.png`、`cfg_ramp_BornBeast.png`、`hypotheses/h1_full_base_spec.png`）做图质确认，再决定下一步。
+- `data/**` 未上传；
+- A provenance audit 有效并可复用；
+- B inventory 可作为后续扫描起点；
+- G variant inventory/differential 有支持价值；
+- 脚本、hash、LTB variant dumps 和 previews 保留为历史探索 evidence。
 
-J 步骤（Source 1 integration on `p4_m01_native_material_test` addon）按 spec §4-J 在 closure 通过前**不执行**，且不得覆盖 frozen addon。
+但 Chat/Sol Review 判定：旧结论把多个 hypothesis / byte-count fit / filename convention 提升成了 verified，因此**不能接受“6/8 PASS，只差用户视觉 Gate”**。
+
+当前正式 Review 分级：
+
+| Step | 当前 Review 状态 | 原因 |
+|---|---|---|
+| A provenance | **ACCEPT / REUSE** | external P4 material chain 与 new local-only evidence 基础有效 |
+| B inventory | **REUSE_WITH_CAUTION** | 可复用，但“未发现资源”不能自动等于“确定不存在” |
+| C DTX | **REWORK** | 旧脚本未真实复现 `DtxThumbnailDecoder` version/LZMA；512×256 vs 256×512 未证明；trailer accounting 需重做 |
+| D TGA | **FAIL / REWORK** | 旧删除区间与正式 `TgaThumbnailDecoder.TryRepairInsertedFooterHeader` 的 footer/header 布局不一致 |
+| E binding | **INCOMPLETE** | basename+directory 只能支持 resource-family association，不能满足 structural material binding |
+| F CFG | **INCOMPLETE** | 492/506/642 长度 framing 不自洽；`len//3` 会丢 trailing bytes；RGB/BGR 与 semantic slot 未闭合 |
+| G variant differential | **ACCEPT AS SUPPORTING EVIDENCE / REUSE** | 原始 family/path/hash/diff 数据可继续使用 |
+| H shader hypotheses | **DIAGNOSTIC_ONLY** | additive、120、0.5、midcolor 等公式没有 engine semantic evidence |
+| I closure | **NOT READY** | C/D/E/F 未闭合，不能进入用户视觉 acceptance |
+| J Source 1 integration | **DEFERRED** | I 真正通过前不执行 |
+
+当前具体纠错协议：[`P4_M01_REWORK_R1.md`](P4_M01_REWORK_R1.md)。
+
+#### 当前不是用户视觉 Gate
+
+旧 preview 出现“近乎纯色紫”只能作为异常信号，不能让用户决定：
+
+```text
+解码到底正确
+或 native base 本来就是 energy layer
+```
+
+binary/container/decode/binding/shader semantics 必须先由技术 evidence 解决。
 
 当前继续状态：
 
 ```text
-P4-M01 = ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-         (closure 条件7 待用户视觉确认：base DTX 解码疑似纯色，需图质排查)
+P4-M01    = ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+P4-M01-R1 = ACTIVE / REWORK_REQUIRED
 ```
 
-P4-M01 PASS 必须是：
+下一位 Local Executor **不得从零开始**：默认复用 commit `632ede4` 的 A/G、hash/path、inventory、variant dumps、脚本骨架；重点纠正 C/D/E/F，然后重建 H/I。
+
+P4-M01 PASS 仍必须是：
 
 ```text
 P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
@@ -333,7 +363,7 @@ CF LTB
 
 回答：**CF 原生纹理/材质究竟如何被解释、绑定和组合。**
 
-当前：P4-M01 ACTIVE。
+当前：P4-M01 ACTIVE，具体处于 P4-M01-R1 evidence rework。
 
 先 BornBeast benchmark，方法稳定后再迁移到 Transformers。
 
@@ -412,12 +442,13 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 
 1. P4 build/report 已证明 external CS1.6 texture 进入过 Prototype material derivation；
 2. P4 material closure 过去只证明 Source `SMD -> VMT -> VTF` 引用存在，不证明 VTF 像素来自正确 CF native decode；
-3. `DtxThumbnailDecoder.cs` 已有 LithTech DTX header/version 与 BGRA/RGBA/Palette/DXT1/3/5 路径；
-4. 当前 P5 probe 的 headerless BGR24 解释必须被重新验证；
-5. `CfgBinaryStripDecoder.cs` 明确只是 raw RGB strip renderer，不能作为 WeaponShader CFG semantic decode；
-6. BornBeast 本地 Alpha/Normal/Specular 的旧特殊 TGA 解释也需要重新交叉验证；
-7. 同几何不同 skin 是恢复 binding/shader 语义的重要 differential evidence；
-8. C029/C103 当前不需要用户强选，先解决 material method。
+3. `DtxThumbnailDecoder.cs` 正式支持的 LithTech DTX version 是 `-2/-3/-5`，旧 R0/R1 前脚本不得用正数 version 集合冒充正式 parser；
+4. 当前 headerless BGR24 只能作为待验证 hypothesis，尺寸/orientation/LZMA/trailer 均需 R1 结构证据；
+5. `TgaThumbnailDecoder.cs` 的 inserted repair 使用 `footerOffset = TRUEVISION - 8`、`headerOffset = footerOffset + 26`；旧 `TRUEVISION - 18` 删除法需要纠正；
+6. `CfgBinaryStripDecoder.cs` 只是 raw RGB strip renderer，不能作为 WeaponShader CFG semantic decode；
+7. basename+directory 可支持 resource-family association，但不能自动满足 material binding structural gate；
+8. 同几何不同 skin 是恢复 binding/shader 语义的重要 differential evidence；
+9. C029/C103 当前不需要用户强选，先解决 material method。
 
 ---
 
@@ -425,9 +456,10 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 
 | 项目 | 当前判断 | 当前 blocker |
 |---|---|---:|
-| Native DTX/TGA interpretation 未验证闭环 | 直接影响材质正确性 | **P4-M01** |
-| WeaponShader CFG 只有 raw-strip visualization | 缺 semantic decode | **P4-M01** |
-| LTB material/texture/render-style binding 不完整 | 不能证明资源组合 | **P4-M01** |
+| Native DTX interpretation 未验证闭环 | R1-C formal parser/LZMA/dimension/orientation/trailer | **P4-M01-R1** |
+| TGA repair/decode 旧实现存在 offset/layout 错误 | R1-D 必须按正式 decoder 重做 | **P4-M01-R1** |
+| WeaponShader CFG framing/semantic binding 未闭合 | 506-byte 等样本不能用 `len//3` 丢 bytes | **P4-M01-R1** |
+| LTB material/texture/render-style binding 不完整 | filename convention 不等于 structural binding | **P4-M01-R1** |
 | BornBeast Prototype external material provenance | 已确认，不能 final | **P4-M01** |
 | Transformers native material 未恢复 | P5 finalist 无法正确渲染 | **P5-T02，等待 P4-M01** |
 | 最终雷神 identity 未确认 | 不能进入 P6 | **P5** |
@@ -457,7 +489,7 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 - clean-output 可重复生成；
 - 原生材质渲染能稳定辨认 BornBeast 的主要颜色分区、图案和高光/能量区域；
 - external CS1.6 texture 只作为 reference；
-- 输出 `native_material_closure.json`；
+- 输出经过 R1 修正后的 `native_material_closure_r1.json` 或后续 superseding closure；
 - Chat/Sol Review 允许恢复 P5-T02。
 
 ### 7.3 P5 Asset Identity DoD
@@ -483,4 +515,4 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 
 ## 8. 当前唯一下一步
 
-> **当前 Local Executor 不继续 P5 C029/C103 视觉强选。当前返回 P4，执行 `P4_M01_TASK_SPEC.md`：以 BornBeast 为基准完成 provenance audit、DTX/TGA 重新验证、LTB material binding、WeaponShader CFG binary reverse、同族 differential 和 offline shader hypotheses，直到得到 0 external pixels、可重复的 `NATIVE_MATERIAL_RECOVERED` closure。完成并 push evidence 后，再由 Chat/Sol Review 是否恢复 P5-T02。**
+> **当前 Local Executor 读取 `P4_M01_REWORK_R1.md`，从 commit `632ede4` 的已有 evidence 继续，不从零重跑。优先完成 R1-C DTX formal revalidation、R1-D TGA repair correction、R1-E material structural binding、R1-F CFG exact framing/semantic binding；之后重新生成 R1-H shader hypotheses 与 R1-I closure。当前不要求用户确认紫色 preview，不执行 J，不恢复 P5-T02。完成并 push scoped code/evidence 后，由 Chat/Sol 再 Review。**
