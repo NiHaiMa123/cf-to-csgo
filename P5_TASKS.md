@@ -16,7 +16,7 @@ P5 本身没有取消，但当前执行先回 P4 做 native material benchmark�
 
 ```text
 P4 baseline       PASS / FROZEN
-P4-M01            ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED
+P4-M01            ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
     ↓ PASS 后
 P5-T02            RESUME
 ```
