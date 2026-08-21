@@ -4,7 +4,7 @@
 >
 > Planner / Reviewer：**Chat/Sol**
 >
-> Local Executor：**Luna / 普通 Codex Agent**
+> Local Executor：**用户选择的具备本地执行能力的 Agent，不绑定具体模型/Agent**
 >
 > 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准；Git 与 `data/**` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 
@@ -125,7 +125,7 @@ BornBeast 是更合适的材质逆向 benchmark：
 - 有 external CS1.6 flatten texture 可作 `reference_only / differential_control`；
 - 能先把 material method 验证清楚，再应用到 Transformers。
 
-当前 Luna 应读取：
+当前 Local Executor 应读取：
 
 ```text
 P4_M01_TASK_SPEC.md
@@ -212,7 +212,7 @@ REWORK_CANDIDATE_SEARCH
 
 ## 10. 角色边界
 
-### Luna / Codex
+### Local Executor Agent
 
 当前：执行 P4-M01，不执行 T02 用户 Gate。
 
@@ -239,4 +239,4 @@ P4-M01 PASS 后：按 `P5_T02_TASK_SPEC.md` 恢复 Transformers native material 
 
 ## 11. 当前下一步
 
-> **P5 当前不继续执行。先完成 `P4_M01_TASK_SPEC.md`，建立可信 native material method；通过后再恢复 `P5_T02_TASK_SPEC.md`。**
+> **P5 当前不继续执行。先由用户当前选择的 Local Executor 完成 `P4_M01_TASK_SPEC.md`，建立可信 native material method；通过后再恢复 `P5_T02_TASK_SPEC.md`。**
