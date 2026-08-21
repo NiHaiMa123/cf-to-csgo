@@ -12,259 +12,221 @@
 
 截至 2026-08-21：
 
-- P4：**`PASS / FROZEN`**，但其材质 fidelity/provenance 不能作为原生 CF 贴图解码已完成的证据；
-- P5：**ACTIVE — 最终雷神资产定位**；
-- P5-T01：**`PASS / USER_REFERENCE_CONFIRMED`**；
-- 当前任务：**P5-T02 `ACTIVE / NATIVE_TEXTURE_RECOVERY_REQUIRED`**；
-- 当前正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)；
-- 历史本地广召回：[`P5_LEGACY_PRE_SCAN.md`](P5_LEGACY_PRE_SCAN.md)，T02 继续复用；
-- 当前 C029/C103 灰模、raw PV DTX UV diagnostic、Alpha/Specular approximation 均为 `diagnostic_only`；
-- **原生贴图/材质正确还原是 T02 hard gate，不允许跳到 T03；**
-- P4 visible Inspect / 手指 retarget 属于 P7，不是当前任务。
+- P4 baseline：**`PASS / FROZEN`**；
+- **P4-M01：`ACTIVE / NATIVE_MATERIAL_RECOVERY_REQUIRED`，这是当前唯一执行任务；**
+- P5-T01：`PASS / USER_REFERENCE_CONFIRMED`；
+- P5-T02：`PAUSED_BY_P4_M01`；
+- P5-T03/T04：继续 blocked；
+- P7 visible Inspect / 手指 retarget / CF 原动画不是当前任务。
+
+当前正式协议：
+
+```text
+P4_M01_TASK_SPEC.md
+```
+
+P4 baseline 的 geometry / Source build / package / MIGI 技术证据继续冻结；P4-M01 只重新打开 native CF material decode / binding / shader fidelity。
 
 ---
 
-## 2. Luna 默认角色
+## 2. Luna 当前角色
 
-角色：**本地执行器 + 用户 Gate 交互执行器 + 证据生产器**。
+角色：**本地材质逆向执行器 + 证据生产器**。
 
 Luna 负责：
 
-- 安全拉取最新 `master`；
-- 严格执行当前 Task Spec；
-- 读取本地 `data/**`、运行本地 parser/CFRezManager/Blender/Python/C# 等；
-- 对本地 CF 原生 DTX/TGA/CFG/LTB/material binding 做可验证逆向；
-- 保留命令、hash、报告和派生预览；
-- 只有在 native material gate 通过后才把最终候选图给用户确认；
-- `data/**` 原始资产永远不上传。
+- 安全同步最新 `master`；
+- 严格执行 `P4_M01_TASK_SPEC.md`；
+- 读取本地 `data/**`；
+- 对 BornBeast DTX/TGA/CFG/LTB material binding 做可验证逆向；
+- 必要时最小扩展 CFRezManager decoder/inspection code；
+- 构建 deterministic offline shader hypotheses；
+- 保存命令、offset、hash、报告、派生预览和 rejection evidence；
+- 完成后把 scoped code/evidence push 到 `master`；
+- `data/**` 原始资产永不上传。
 
-Luna 不是最终 Reviewer，不得：
+Luna 不得：
 
-- 生成目标 reference 图；
-- 用模型记忆代替已有 official reference evidence；
-- 把第三方/网络/CS1.6 MOD 图片冒充本地 CF 材质；
-- 仅凭文件名预锁 identity；
-- 仅凭灰模、mask-like DTX 或 Alpha/Specular 近似要求用户强选；
-- 自行写最终 `IDENTITY_CONFIRMED`；
-- 修改 P4 frozen conversion pipeline。
-
----
-
-## 3. 当前 P5 编号
-
-```text
-P5-T01  官方图鉴 Web Search + 用户确认目标图                    PASS
-P5-T02  本地候选缩圈 + 原生材质恢复 + 用户确认本地候选          ACTIVE
-P5-T03  Resource Graph / provenance closure                    BLOCKED_BY_T02
-P5-T04  Chat/Sol final identity review                         BLOCKED_BY_T03
-```
-
-此前以旧 `P5-T01` 名义完成的本地广召回现在统一视为：
-
-```text
-LEGACY PRE-SCAN
-```
-
-其输出不作废，但旧 score 只代表 recall priority，不代表 identity confidence。
+- 继续要求用户在 C029/C103 灰模之间强选；
+- 重跑已完成的雷神 T01 Web Search；
+- 把 external CS1.6/MOD texture 当 BornBeast 或雷神 final input；
+- 从 external reference 抠色、采样、烘焙后冒充 local CF；
+- 把 `CfgBinaryStripDecoder` 的 raw strip 当 CFG semantic decode；
+- 仅凭“能显示成图片”宣布 DTX/TGA 格式正确；
+- 覆盖历史 frozen addon / P4 evidence；
+- 修改 frozen M4A4 skeleton/sequence/attachment/build contract；
+- 自行恢复 P5-T02 或写最终 `IDENTITY_CONFIRMED`。
 
 ---
 
-## 4. 每次启动顺序
+## 3. 每次启动顺序
 
-1. 读取 `AGENTS.md`；
-2. 读取 `plan.md` 第 1 节；
-3. 读取本文件 `CODEX_TASKS.md`；
-4. 读取 `P5_TASKS.md`；
-5. **当前必须读取 `P5_T02_TASK_SPEC.md`；**
-6. 读取：
+1. `git status --short --branch`；
+2. 确认当前分支为 `master`；
+3. tracked worktree 可安全同步时：
 
-```text
-work/p5_leishen/t01_reference/official_reference.json
-work/p5_leishen/t02/execution.json
-work/p5_leishen/t02/visual_shortlist.json
+```bash
+git fetch origin
+git pull --rebase origin master
 ```
 
-7. `git status --short --branch`；
-8. tracked 工作区可安全同步时执行 `git fetch origin` + `git pull --rebase origin master`；
-9. 从 **P4 material provenance audit + native texture recovery** 继续，不重做已完成 T01 Web Search。
+4. 读取 [`AGENTS.md`](AGENTS.md)；
+5. 读取 [`plan.md`](plan.md) 第 1 节；
+6. 读取本文件；
+7. 读取 [`P4_TASKS.md`](P4_TASKS.md)；
+8. **读取 [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)；**
+9. 读取 P4 BornBeast 历史 material evidence：
 
-不要把聊天记忆、旧分支、旧 MOD、历史别名猜测或旧 candidate score 当作 authoritative identity。
+```text
+work/m4a1_s_bornbeast/p4_prototype_01/build_report.json
+work/m4a1_s_bornbeast/materials/material_decode_report.json
+work/m4a1_s_bornbeast/materials/**
+assets/weapons/m4a1_s_bornbeast/prototype_01_manifest.json
+```
+
+10. 从 P4-M01 provenance audit 开始/继续。
+
+`P5_TASKS.md` 和 `P5_T02_TASK_SPEC.md` 当前只用于理解后续 handoff，不是当前第一执行入口。
 
 ---
 
-## 5. T01 已完成
+## 4. 当前任务：P4-M01 Native Material Recovery
 
-官方目标 evidence 已固定：
+### 已知事实
 
-```text
-work/p5_leishen/t01_reference/official_reference.json
-```
-
-用户已确认 `M4A1-雷神` 官方详情页和官方图片。除非 evidence 损坏或用户明确否决，不重跑 T01。
-
----
-
-## 6. P5-T02 — 当前必须执行的原生材质硬 Gate
-
-正式协议：[`P5_T02_TASK_SPEC.md`](P5_T02_TASK_SPEC.md)。
-
-当前已完成：
-
-```text
-LEGACY PRE-SCAN reuse
-  -> M4/M4A1 PLAYERVIEW 缩圈
-  -> exact SHA clusters
-  -> geometry shortlist
-  -> C029/C103 finalist diagnostics
-```
-
-当前未完成：
-
-```text
-native CF color/material reconstruction
-```
-
-下一步固定为：
-
-```text
-P4 external-material provenance audit
-  -> Transformers native material-family inventory
-  -> re-test DTX container/pixel-format interpretation
-  -> recover LTB material/texture binding
-  -> reverse/analyze WeaponShader CFG semantics
-  -> differential analysis across same-geometry skin variants
-  -> offline native shader hypotheses
-  -> Native material acceptance gate
-  -> native-material finalist render
-  -> USER LOCAL-CANDIDATE GATE
-```
-
-### P4 已知 provenance 风险
-
-P4 Prototype build report 中存在以下 external 输入：
+P4 历史可识别材质使用过：
 
 ```text
 work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png
 ```
 
-它曾被用于生成 `bornbeast_base.png` / self-illum，再转换成 Source VTF。
-
 因此：
 
-- P4 仍证明 conversion/build/package/MIGI 技术链；
-- P4 不证明 native CF texture fidelity；
-- external texture 只能作为 differential/reference，禁止进入雷神最终材质。
-
-### 当前 texture/shader diagnostics 的语义
-
-以下均不能 PASS：
-
 ```text
-C029/C103 gray geometry
-PV-M4A1_S_Transformers.DTX interpreted only as headerless BGR24
-raw PV DTX + UV diagnostic
-Alpha/Specular scalar shader approximation
-raw-rgb-strip CFG preview
+P4 conversion/runtime chain = valid frozen evidence
+P4 native CF material fidelity = not closed
 ```
 
-特别注意：仓库已有 `CFRezManager/Decoders/Images/DtxThumbnailDecoder.cs`，支持 LithTech DTX header/version 与多种 pixel formats。当前 headerless BGR24 解释必须与正式 decoder / 更上游原始 bytes 交叉验证。
+当前必须在 BornBeast 上解决 native material method，再把方法交给 P5 Transformers。
 
-### T02 正常继续状态
-
-只要还在做材质逆向而非环境完全不可用，状态写：
+### 固定执行路线
 
 ```text
-NATIVE_TEXTURE_RECOVERY_INCOMPLETE
+A. P4 material provenance audit
+-> B. BornBeast local material-family inventory
+-> C. DTX container/pixel-format revalidation
+-> D. TGA interpretation revalidation
+-> E. LTB material/texture/render-style binding recovery
+-> F. WeaponShader CFG binary semantic reverse
+-> G. same-geometry / variant differential analysis
+-> H. deterministic offline shader hypotheses
+-> I. native material closure (0 external pixels)
+-> J. Source 1 integration check on a NEW test addon, only after closure
 ```
 
-**这不是允许跳过的 soft risk。**
-
-只有 native material acceptance gate 通过后，才能给用户最终候选图并等待：
-
-```text
-AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
-```
-
-用户确认后只能写：
-
-```text
-USER_VISUAL_MATCH_CONFIRMED
-```
-
-不能写最终 `IDENTITY_CONFIRMED`。
+详细 acceptance/rejection 规则只看 `P4_M01_TASK_SPEC.md`。
 
 ---
 
-## 7. Native material evidence principle
+## 5. 关键 decoder 语义
 
-最终可见颜色的每个输入必须属于：
+仓库已有：
 
 ```text
-local_cf
-或
-verified deterministic derivative of local_cf / decoded CFG semantics
+CFRezManager/Decoders/Images/DtxThumbnailDecoder.cs
+CFRezManager/Decoders/Images/TgaThumbnailDecoder.cs
+CFRezManager/Decoders/Config/CfgTextDecoder.cs
+CFRezManager/Decoders/Config/CfgBinaryStripDecoder.cs
 ```
 
-允许：
+注意：
 
-- 本地 LTB geometry/UV；
-- 本地 DTX/TGA/CFG；
-- 本地 Alpha/Normal/Specular/lookup/detail/emissive/effect；
-- 从这些输入确定性生成的离线 diagnostic/render。
-
-禁止作为最终材质输入：
-
-- CS1.6/CSGO MOD texture；
-- 网络下载 texture；
-- 官方百科 PNG；
-- AI 生成/补全 texture；
-- 从 external texture 采样或烘焙出的颜色。
-
-外部图只可用于 reference / differential hypothesis，不属于 final provenance。
+- `DtxThumbnailDecoder` 已有 LithTech DTX header/version 和 BGRA/RGBA/Palette/DXT1/3/5 路径；旧 headerless BGR24 解释必须交叉验证；
+- `CfgBinaryStripDecoder` 源码只是 raw RGB strip detector/renderer，**不是 shader CFG parser**；
+- 旧 BornBeast TGA 特殊布局解释也必须重新验证；
+- decoder 产出 PNG 只证明“某种解释能输出像素”，不证明解释语义正确。
 
 ---
 
-## 8. 最简侧面图原则
+## 6. P4 frozen 边界
+
+P4-M01 不允许修改：
 
 ```text
-1 unique candidate = 1 orthographic side PNG
-768x384 或 1024x512
-透明/白背景
-统一方向/fit
-无手臂
-无动画
-无 IK
-无 Source retarget
-无复杂灯光
-无 Cycles
+历史 P4 frozen run/package/deploy evidence
+p_cf_bornbeast_m4a4_p4_frozen_noop_01
+M4A4 runtime slot
+57-bone Source reference
+sequence/attachment contract
+RV-01 ~ RV-06 历史证据
 ```
 
-但 finalist 必须使用通过 native material gate 的材质，不能用灰模完成最终确认。
+允许新增/修改：
+
+```text
+CFRezManager/Decoders/** （与材质恢复直接相关）
+相关 inspection/export code
+scripts/material_recovery/**
+材质恢复专用新增脚本/测试
+work/m4a1_s_bornbeast/p4_m01_native_material/**
+```
+
+如果材质恢复必须改变 frozen conversion contract，返回 Chat/Sol，不自行修改。
+
+---
+
+## 7. 状态语义
+
+正常继续：
+
+```text
+P4-M01 = ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+```
+
+单个 DTX/CFG/shader hypothesis 失败不需要停；保存 rejection evidence 后继续。
+
+通过：
+
+```text
+P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
+```
+
+Luna 只提交 evidence，不自行把 authoritative `plan.md` 改成 PASS；最终状态由 Chat/Sol Review。
+
+真正 BLOCKED 才返回：
+
+- BornBeast 必要本地原始资源缺失；
+- 多条独立路线都无法访问/解释必要 bytes；
+- 必须改变 frozen conversion contract；
+- Task Spec 本身需要修改。
+
+---
+
+## 8. P5 handoff
+
+P4-M01 经 Chat/Sol Review PASS 后，才恢复：
+
+```text
+P5-T02
+-> apply validated material-recovery method to M4A1_S_Transformers
+-> Transformers-specific extension if required
+-> native material finalist
+-> USER LOCAL-CANDIDATE GATE
+```
+
+在此之前 P5-T02 保持 `PAUSED_BY_P4_M01`。
 
 ---
 
 ## 9. Git / data 规则摘要
 
-完整规则见 [`AGENTS.md`](AGENTS.md)。特别强调：
+完整规则见 `AGENTS.md`。特别强调：
 
+- Agent handoff 只认 `master`；
 - `data/**` 永远 local-only；
-- pull 前检查 `git status`；
 - push 前精确 `git add -- <paths>`；
-- 禁止 `git add .`、`git add -A`、`git add --all`；
-- 默认禁止 destructive Git clean/reset；
+- 禁止 `git add .` / `git add -A` / `git add --all`；
 - 不 force-push；
-- 不使用 mirror/delete 同步破坏 ignored 本地资产。
-
----
-
-## 10. 返回 Chat/Sol 的条件
-
-正常材质逆向中的失败 hypothesis 不需要返回 Chat/Sol，记录 rejection evidence 后继续下一条。
-
-只有以下情况才返回：
-
-- 本地原始 Transformers 资产缺失，无法继续；
-- DTX/CFG/绑定结构经多条独立路线仍无法取得可验证进展；
-- 需要改变 Task Spec；
-- 出现 INVALID 条件；
-- T02 native-material + user visual evidence 全部完成，需要进入 T03/T04 Review。
+- 不 destructive reset/clean；
+- 不使用 mirror/delete 同步；
+- 原始 LTB/DTX/TGA/CFG 不上传，只上传代码、报告、hash 和派生预览。
