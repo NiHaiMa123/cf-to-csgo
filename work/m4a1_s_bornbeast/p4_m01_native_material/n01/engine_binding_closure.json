@@ -1,4 +1,4 @@
-﻿{
+{
   "schema": "cf2.p4m01.n01.engine-binding-closure.v2",
   "task_id": "P4-M01-N01",
   "phase": 5,
@@ -22,5 +22,12 @@
       "evidence": "All 237 WeaponShader CFGs match single-phase mod-3 binary strips. Specific CFG consumers (LUT vs Parameters) remain OPEN_UNRESOLVED."
     }
   },
-  "next_step": "Awaiting Chat/Sol review for N01 Phase 1-3 findings."
+  "next_step": "Awaiting Chat/Sol review for N01 Phase 1-3 findings.",
+  "executor_provenance": {
+    "executor_model": "MiniMax-M3",
+    "executor_harness": "Claude Code",
+    "executor_family": "MiniMax",
+    "model_id_source": "harness runtime value (system prompt)",
+    "commit_footer_model_provenance": "NON_AUTHORITATIVE"
+  }
 }

@@ -754,5 +754,12 @@
       "evidence_grade_cross_skin_difference": "DIFFERENTIAL_SUPPORTED",
       "evidence_grade_semantic_interpretation": "OPEN_UNRESOLVED"
     }
+  },
+  "executor_provenance": {
+    "executor_model": "MiniMax-M3",
+    "executor_harness": "Claude Code",
+    "executor_family": "MiniMax",
+    "model_id_source": "harness runtime value (system prompt)",
+    "commit_footer_model_provenance": "NON_AUTHORITATIVE"
   }
 }

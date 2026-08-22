@@ -1,6 +1,21 @@
 # N01 Phase 1 — Consumer search report
 
-Schema: `cf2.p4m01.n01.consumer-candidate.v2`
+Schema: `cf2.p4m01.n01.consumer-candidate.v3`
+
+## Executor provenance
+
+```text
+executor_model                = MiniMax-M3
+executor_harness             = Claude Code
+executor_family              = MiniMax
+model_id_source              = harness runtime value (system prompt)
+commit_footer_model_provenance = NON_AUTHORITATIVE
+```
+
+The `executor_model` value is the harness runtime value, **not**
+the `Co-Authored-By:` trailer of any commit. Future runs that show a
+different runtime model MUST update this section. The trailer alone
+is never authoritative for actual executor identity.
 
 ## Scope
 
@@ -16,13 +31,26 @@ Excluded from native-binding accounting (reported separately as
 `DERIVED_OUTPUT_HIT`): `data/out/`, `out/`, `work/`, `reports/`, `logs/`.
 Also excluded: low-value/UI/radio/lobbynotice paths.
 
-## Scan scope summary
+## Scan scope summary (per M2 cleanup: three independent counters)
 
-- config files scanned (post-low-value filter): **102382**
-- config files decoded as text: **261**
-- config_index keys (per cfg file with real parsed mappings): 18
+- **all_files_seen_post_low_value_filter**: **102382** — every file
+  (any extension) that survived the low-value/UI/radio path filter
+  during `os.walk(data/)`. Includes models, textures, audio banks,
+  voice files, etc.
+- **config_candidates_seen**: **261** — subset whose
+  extension is in CONFIG_EXT (`.cfg/.ini/.txt`) AND
+  `is_likely_model_texture_config(rel, ext)` returned True.
+- **config_candidates_decoded**: **18** — subset of
+  config_candidates_seen whose content decoded as text AND produced
+  at least one real `(model_key, [texture_refs])` mapping.
+- config_index keys (cfg files with real parsed mappings): 18
 - config_index total mapping tuples: 72
-- raw-needle scan: 355 files seen, 355 decoded
+- **raw_needle_scope**: **355** files seen, **355** decoded
+  (text-decodeable subset).
+
+Each count above is the literal output of one of the three
+independent counters in `build_consumer_index()` / `build_corpus()`;
+no count is hand-derived.
 
 Regression guards (assertions) executed before reporting:
 
@@ -33,7 +61,8 @@ Regression guards (assertions) executed before reporting:
 - `DERIVED_OUTPUT_HIT` rows are reported separately from native
   consumer hits and never count as binding evidence;
 - raw-needle scan splits hits into `hits_by_extension`,
-  `hits_by_resource_family`, and `hits_by_consumer`.
+  `hits_by_resource_family`, and `hits_by_consumer`;
+- three independent scope counters with explicit legend (M2 cleanup).
 
 ## Consumer candidates examined
 

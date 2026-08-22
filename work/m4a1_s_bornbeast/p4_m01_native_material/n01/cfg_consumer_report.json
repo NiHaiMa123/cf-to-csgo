@@ -162,5 +162,12 @@
     "evidence_grade": "OPEN_UNRESOLVED",
     "note": "The local corpus does not expose a CF runtime/engine binary that consumes WeaponShader CFGs. The repo's own decoders (CfgTextDecoder / CfgBinaryStripDecoder) only describe byte patterns; they do not constitute an engine-side consumer."
   },
-  "conclusion": "Only the structural fact is established. Semantic interpretation of CFG remains OPEN_UNRESOLVED. Source 1 mapping choices are explicit conversion-design candidates, NOT recovered CF facts."
+  "conclusion": "Only the structural fact is established. Semantic interpretation of CFG remains OPEN_UNRESOLVED. Source 1 mapping choices are explicit conversion-design candidates, NOT recovered CF facts.",
+  "executor_provenance": {
+    "executor_model": "MiniMax-M3",
+    "executor_harness": "Claude Code",
+    "executor_family": "MiniMax",
+    "model_id_source": "harness runtime value (system prompt)",
+    "commit_footer_model_provenance": "NON_AUTHORITATIVE"
+  }
 }

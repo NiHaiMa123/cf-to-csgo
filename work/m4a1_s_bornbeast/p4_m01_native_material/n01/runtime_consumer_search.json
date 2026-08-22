@@ -109,22 +109,7 @@
   },
   "result": {
     "handoff_status": "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS",
-    "rationale": (
-      "All consumer-side evidence in the local corpus has been exhausted: "
-      "no CF client executable, no engine module, no .rez archive, no shader "
-      "package, no weapon-format material/resource table. The only structural "
-      "consumer evidence available is from the repo's own decoders "
-      "(LithTechModelTextureConfigIndex, LithTechTextureMappingScanner, "
-      "LithTechDatTextureReferenceIndex, CfgTextDecoder, "
-      "LithTechModelDecoder), none of which is an engine-side consumer. "
-      "Therefore the original CF runtime/resource system that consumes "
-      "post_mesh_short_id, WeaponShader CFG, and the texture family cannot be "
-      "located from the local corpus. Further progress requires either "
-      "extracting and statically analyzing the original CF client, or obtaining "
-      "another documented source for the engine binding contract. Per the "
-      "continuation spec, this status MUST NOT be retroactively downgraded to "
-      "PASS / READY_FOR_NATIVE_MATERIAL_COMPOSITION by the local executor."
-    ),
+    "rationale": "All consumer-side evidence in the local corpus has been exhausted: no CF client executable, no engine module, no .rez archive, no shader package, no weapon-format material/resource table. The only structural consumer evidence available is from the repo's own decoders (LithTechModelTextureConfigIndex, LithTechTextureMappingScanner, LithTechDatTextureReferenceIndex, CfgTextDecoder, LithTechModelDecoder), none of which is an engine-side consumer. Therefore the original CF runtime/resource system that consumes post_mesh_short_id, WeaponShader CFG, and the texture family cannot be located from the local corpus. Further progress requires either extracting and statically analyzing the original CF client, or obtaining another documented source for the engine binding contract. Per the continuation spec, this status MUST remain BLOCKED until direct/accepted Path-B evidence is established; the local executor is not authorized to flip closure to PASS or to any readiness-for-composition state.",
     "allowed_next_outcomes": [
       "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS (current)",
       "DIRECT_CONSUMER_CANDIDATE_FOUND (if user supplies CF client / engine module + analysis tooling)",
@@ -140,6 +125,14 @@
     "237/237 CFG single-phase mod-3 structure (STRUCTURALLY_VERIFIED)",
     "engine_binding_closure.status = OPEN_UNRESOLVED (ACCEPT)"
   ],
+  "executor_provenance": {
+    "executor_model": "MiniMax-M3",
+    "executor_harness": "Claude Code",
+    "executor_family": "MiniMax",
+    "model_id_source": "harness runtime value (system prompt)",
+    "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+    "note": "executor_model is the harness runtime value, NOT the commit footer Co-Authored-By trailer. Future runs that show a different runtime model MUST update this field; the footer alone is never authoritative."
+  },
   "data_discipline": {
     "raw_data_uploaded": false,
     "local_only_input_provenance_recorded": true,

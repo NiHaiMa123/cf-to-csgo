@@ -345,8 +345,18 @@ def build_consumer_index(data_root: str):
     raw_needles: set = set()
     material_candidates: list = []
     mapping_table_candidates: list = []
-    files_scanned = 0
-    files_decoded = 0
+    # Per M2 cleanup: separate three independent counters so the report
+    # can label each scope correctly:
+    #   - all_files_seen_post_low_value_filter: every file (any extension)
+    #     surviving the low-value/UI/radio path filter.
+    #   - config_candidates_seen: subset whose extension is in CONFIG_EXT
+    #     AND is_likely_model_texture_config(rel, ext).
+    #   - config_candidates_decoded: subset of config_candidates_seen whose
+    #     content was successfully decoded as text AND contained
+    #     extractable model/texture mappings that produced real entries.
+    all_files_seen = 0
+    config_candidates_seen = 0
+    config_candidates_decoded = 0
     for root, _dirs, files in os.walk(data_root):
         for fn in files:
             p = os.path.join(root, fn)
@@ -356,10 +366,11 @@ def build_consumer_index(data_root: str):
                 continue
             if is_low_value_mapping_path(rel):
                 continue
-            files_scanned += 1
+            all_files_seen += 1
             scan_metadata[rel] = {"ext": ext}
             if ext in CONFIG_EXT and is_likely_model_texture_config(rel, ext):
                 scan_metadata[rel]["scanned"] = True
+                config_candidates_seen += 1
             if is_likely_model_texture_config(rel, ext):
                 # read for explicit ModelTextureMappings
                 raw = _safe_read(p, 8 * 1024 * 1024)
@@ -371,7 +382,6 @@ def build_consumer_index(data_root: str):
                     continue
                 if text is None:
                     continue
-                files_decoded += 1
                 mappings = extract_model_texture_mappings(text)
                 if mappings:
                     # Only accept tuples whose texture list is a real list of
@@ -385,6 +395,7 @@ def build_consumer_index(data_root: str):
                         real_mappings.append((mk, textures))
                     if real_mappings:
                         config_index[rel] = real_mappings
+                        config_candidates_decoded += 1
                         for key, textures in real_mappings:
                             if key:
                                 raw_needles.add(
@@ -403,8 +414,10 @@ def build_consumer_index(data_root: str):
         "raw_needles": raw_needles,
         "material_candidates": material_candidates,
         "mapping_table_candidates": mapping_table_candidates,
-        "files_scanned": files_scanned,
-        "files_decoded": files_decoded,
+        # Three independent counters (per M2 cleanup):
+        "all_files_seen_post_low_value_filter": all_files_seen,
+        "config_candidates_seen": config_candidates_seen,
+        "config_candidates_decoded": config_candidates_decoded,
     }
 
 
@@ -554,14 +567,17 @@ def main():
     raw_needles = idx_bundle["raw_needles"]
     material_candidates = idx_bundle["material_candidates"]
     mapping_table_candidates = idx_bundle["mapping_table_candidates"]
-    files_scanned_total = idx_bundle["files_scanned"]
-    files_decoded_total = idx_bundle["files_decoded"]
+    # Per M2 cleanup: three independent, machine-reproducible counters.
+    all_files_seen = idx_bundle["all_files_seen_post_low_value_filter"]
+    config_candidates_seen = idx_bundle["config_candidates_seen"]
+    config_candidates_decoded = idx_bundle["config_candidates_decoded"]
     print(f"  config items indexed: {sum(len(v) for v in cfg_idx.values())}")
     print(f"  raw model-name needles: {len(raw_needles)}")
     print(f"  material-table candidates: {len(material_candidates)}")
     print(f"  mapping-table candidates: {len(mapping_table_candidates)}")
-    print(f"  files scanned (post-low-value filter): {files_scanned_total}")
-    print(f"  config files decoded as text: {files_decoded_total}")
+    print(f"  [scope=all_files_seen_post_low_value_filter]               = {all_files_seen}")
+    print(f"  [scope=config_candidates_seen (.cfg/.ini/.txt cfg-like)]   = {config_candidates_seen}")
+    print(f"  [scope=config_candidates_decoded (text + real mappings)]   = {config_candidates_decoded}")
 
     # ----- regression guard: schema must not contain the legacy _ALL_ key -----
     assert "_ALL_" not in cfg_idx, (
@@ -669,27 +685,36 @@ def main():
 
     # candidate consumer matrix
     matrix = {
-        "schema": "cf2.p4m01.n01.consumer-candidate.v2",
+        "schema": "cf2.p4m01.n01.consumer-candidate.v3",
         "scan_scope": {
             "scan_root": DATA,
             "include_extensions": sorted(text_extensions),
-            "exclude_paths": (
-                "low-value/UI/radio/lobbynotice prefixes AND "
-                "derived outputs: data/out/, out/, work/, reports/, logs/"
-            ),
-            "files_scanned_post_filter": files_scanned_total,
-            "files_decoded_as_text": files_decoded_total,
+            "exclude_paths": "low-value/UI/radio/lobbynotice prefixes AND derived outputs: data/out/, out/, work/, reports/, logs/",
+            # Per M2 cleanup: three independent, machine-reproducible counters
+            # with explicit scope labels. Each value is the literal counter
+            # name produced by build_consumer_index(); do not collapse them.
+            "all_files_seen_post_low_value_filter": all_files_seen,
+            "config_candidates_seen": config_candidates_seen,
+            "config_candidates_decoded": config_candidates_decoded,
             "raw_scan_files_seen": scanned,
             "raw_scan_files_decoded": decoded,
             "config_index_keys": sorted(cfg_idx.keys()),
             "config_index_total_mapping_tuples": sum(len(v) for v in cfg_idx.values()),
             "scan_metadata_count": len(scan_metadata),
+            "scope_legend": {
+                "all_files_seen_post_low_value_filter": "Every file (any extension) that survived the low-value/UI/radio path filter during os.walk over data/. Includes models, textures, audio banks, voice files, etc.",
+                "config_candidates_seen": "Subset of all_files_seen whose extension is in CONFIG_EXT and is_likely_model_texture_config(rel, ext).",
+                "config_candidates_decoded": "Subset of config_candidates_seen whose content was successfully decoded as text AND produced at least one real (model_key, [texture_refs]) mapping.",
+                "raw_scan_files_seen": "Files walked during raw-needle scan over .cfg/.dat/.ini/.lta/.txt in data/, after low-value and derived-output exclusion.",
+                "raw_scan_files_decoded": "Subset of raw_scan_files_seen whose content decoded as text."
+            },
             "regression_assertions": [
                 "no legacy '_ALL_' key in config_index",
                 "no 1-char texture ref under any config entry",
                 "schema/type guard in look_up_texture",
                 "derived outputs reported separately (DERIVED_OUTPUT_HIT)",
                 "raw scan splits hits_by_extension / hits_by_resource_family / hits_by_consumer",
+                "three independent scope counters with explicit legend",
             ],
         },
         "consumer_resource_families": [
@@ -792,6 +817,16 @@ def main():
         "DERIVED_OUTPUT_HIT_examples": {
             label: raw_grep_derived_outputs[label][:5] for label in targets
         },
+        # Per M3 cleanup: embed executor provenance so every regeneration
+        # of this JSON carries it. The Co-Authored-By trailer alone is
+        # NEVER authoritative.
+        "executor_provenance": {
+            "executor_model": "MiniMax-M3",
+            "executor_harness": "Claude Code",
+            "executor_family": "MiniMax",
+            "model_id_source": "harness runtime value (system prompt)",
+            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+        },
     }
 
     out_json = os.path.join(N01_DIR, "consumer_candidate_matrix.json")
@@ -803,7 +838,22 @@ def main():
     lines = [
         "# N01 Phase 1 — Consumer search report",
         "",
-        "Schema: `cf2.p4m01.n01.consumer-candidate.v2`",
+        "Schema: `cf2.p4m01.n01.consumer-candidate.v3`",
+        "",
+        "## Executor provenance",
+        "",
+        "```text",
+        "executor_model                = MiniMax-M3",
+        "executor_harness             = Claude Code",
+        "executor_family              = MiniMax",
+        "model_id_source              = harness runtime value (system prompt)",
+        "commit_footer_model_provenance = NON_AUTHORITATIVE",
+        "```",
+        "",
+        "The `executor_model` value is the harness runtime value, **not**",
+        "the `Co-Authored-By:` trailer of any commit. Future runs that show a",
+        "different runtime model MUST update this section. The trailer alone",
+        "is never authoritative for actual executor identity.",
         "",
         "## Scope",
         "",
@@ -819,13 +869,26 @@ def main():
         "`DERIVED_OUTPUT_HIT`): `data/out/`, `out/`, `work/`, `reports/`, `logs/`.",
         "Also excluded: low-value/UI/radio/lobbynotice paths.",
         "",
-        "## Scan scope summary",
+        "## Scan scope summary (per M2 cleanup: three independent counters)",
         "",
-        f"- config files scanned (post-low-value filter): **{files_scanned_total}**",
-        f"- config files decoded as text: **{files_decoded_total}**",
-        f"- config_index keys (per cfg file with real parsed mappings): {len(cfg_idx)}",
+        f"- **all_files_seen_post_low_value_filter**: **{all_files_seen}** — every file",
+        "  (any extension) that survived the low-value/UI/radio path filter",
+        "  during `os.walk(data/)`. Includes models, textures, audio banks,",
+        "  voice files, etc.",
+        f"- **config_candidates_seen**: **{config_candidates_seen}** — subset whose",
+        "  extension is in CONFIG_EXT (`.cfg/.ini/.txt`) AND",
+        "  `is_likely_model_texture_config(rel, ext)` returned True.",
+        f"- **config_candidates_decoded**: **{config_candidates_decoded}** — subset of",
+        "  config_candidates_seen whose content decoded as text AND produced",
+        "  at least one real `(model_key, [texture_refs])` mapping.",
+        f"- config_index keys (cfg files with real parsed mappings): {len(cfg_idx)}",
         f"- config_index total mapping tuples: {sum(len(v) for v in cfg_idx.values())}",
-        f"- raw-needle scan: {scanned} files seen, {decoded} decoded",
+        f"- **raw_needle_scope**: **{scanned}** files seen, **{decoded}** decoded",
+        "  (text-decodeable subset).",
+        "",
+        "Each count above is the literal output of one of the three",
+        "independent counters in `build_consumer_index()` / `build_corpus()`;",
+        "no count is hand-derived.",
         "",
         "Regression guards (assertions) executed before reporting:",
         "",
@@ -836,7 +899,8 @@ def main():
         "- `DERIVED_OUTPUT_HIT` rows are reported separately from native",
         "  consumer hits and never count as binding evidence;",
         "- raw-needle scan splits hits into `hits_by_extension`,",
-        "  `hits_by_resource_family`, and `hits_by_consumer`.",
+        "  `hits_by_resource_family`, and `hits_by_consumer`;",
+        "- three independent scope counters with explicit legend (M2 cleanup).",
         "",
         "## Consumer candidates examined",
         "",

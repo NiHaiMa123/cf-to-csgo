@@ -124,5 +124,12 @@
     "WeaponShader CFG = shader parameter & color LUT profile (now HYPOTHESIS only)",
     "CFG -> phongboost/phongexponent/selfillum as recovered CF fact (now SOURCE1_DESIGN_CANDIDATE only)",
     "BlueDiamond sample_count == BornBeast sample_count == 164 (factually wrong; BlueDiamond is 166)"
-  ]
+  ],
+  "executor_provenance": {
+    "executor_model": "MiniMax-M3",
+    "executor_harness": "Claude Code",
+    "executor_family": "MiniMax",
+    "model_id_source": "harness runtime value (system prompt)",
+    "commit_footer_model_provenance": "NON_AUTHORITATIVE"
+  }
 }

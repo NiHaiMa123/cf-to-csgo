@@ -1,5 +1,5 @@
 {
-  "schema": "cf2.p4m01.n01.consumer-candidate.v2",
+  "schema": "cf2.p4m01.n01.consumer-candidate.v3",
   "scan_scope": {
     "scan_root": "D:\\project\\cf_to_csgo\\data",
     "include_extensions": [
@@ -10,8 +10,9 @@
       ".txt"
     ],
     "exclude_paths": "low-value/UI/radio/lobbynotice prefixes AND derived outputs: data/out/, out/, work/, reports/, logs/",
-    "files_scanned_post_filter": 102382,
-    "files_decoded_as_text": 261,
+    "all_files_seen_post_low_value_filter": 102382,
+    "config_candidates_seen": 261,
+    "config_candidates_decoded": 18,
     "raw_scan_files_seen": 355,
     "raw_scan_files_decoded": 355,
     "config_index_keys": [
@@ -36,12 +37,20 @@
     ],
     "config_index_total_mapping_tuples": 72,
     "scan_metadata_count": 102382,
+    "scope_legend": {
+      "all_files_seen_post_low_value_filter": "Every file (any extension) that survived the low-value/UI/radio path filter during os.walk over data/. Includes models, textures, audio banks, voice files, etc.",
+      "config_candidates_seen": "Subset of all_files_seen whose extension is in CONFIG_EXT and is_likely_model_texture_config(rel, ext).",
+      "config_candidates_decoded": "Subset of config_candidates_seen whose content was successfully decoded as text AND produced at least one real (model_key, [texture_refs]) mapping.",
+      "raw_scan_files_seen": "Files walked during raw-needle scan over .cfg/.dat/.ini/.lta/.txt in data/, after low-value and derived-output exclusion.",
+      "raw_scan_files_decoded": "Subset of raw_scan_files_seen whose content decoded as text."
+    },
     "regression_assertions": [
       "no legacy '_ALL_' key in config_index",
       "no 1-char texture ref under any config entry",
       "schema/type guard in look_up_texture",
       "derived outputs reported separately (DERIVED_OUTPUT_HIT)",
-      "raw scan splits hits_by_extension / hits_by_resource_family / hits_by_consumer"
+      "raw scan splits hits_by_extension / hits_by_resource_family / hits_by_consumer",
+      "three independent scope counters with explicit legend"
     ]
   },
   "consumer_resource_families": [
@@ -145,32 +154,32 @@
     "schema_note": "Per-target hit counts split by extension / resource family / consumer (cf2.p4m01.n01.consumer-candidate.v2).",
     "by_extension": {
       "BornBeast": {
-        ".lta": 0,
-        ".cfg": 0,
         ".txt": 0,
+        ".dat": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".dat": 0
+        ".cfg": 0
       },
       "Transformers": {
-        ".lta": 0,
-        ".cfg": 0,
         ".txt": 0,
+        ".dat": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".dat": 0
+        ".cfg": 0
       },
       "Jewelry": {
-        ".lta": 0,
-        ".cfg": 0,
         ".txt": 0,
+        ".dat": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".dat": 0
+        ".cfg": 0
       },
       "M4A1_S_BlueDiamond": {
-        ".lta": 0,
-        ".cfg": 0,
         ".txt": 0,
+        ".dat": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".dat": 0
+        ".cfg": 0
       }
     },
     "by_resource_family": {
@@ -226,32 +235,32 @@
   },
   "raw_grep_examples": {
     "BornBeast": {
-      ".lta": [],
-      ".cfg": [],
       ".txt": [],
+      ".dat": [],
+      ".lta": [],
       ".ini": [],
-      ".dat": []
+      ".cfg": []
     },
     "Transformers": {
-      ".lta": [],
-      ".cfg": [],
       ".txt": [],
+      ".dat": [],
+      ".lta": [],
       ".ini": [],
-      ".dat": []
+      ".cfg": []
     },
     "Jewelry": {
-      ".lta": [],
-      ".cfg": [],
       ".txt": [],
+      ".dat": [],
+      ".lta": [],
       ".ini": [],
-      ".dat": []
+      ".cfg": []
     },
     "M4A1_S_BlueDiamond": {
-      ".lta": [],
-      ".cfg": [],
       ".txt": [],
+      ".dat": [],
+      ".lta": [],
       ".ini": [],
-      ".dat": []
+      ".cfg": []
     }
   },
   "DERIVED_OUTPUT_HIT_examples": {
@@ -276,5 +285,12 @@
     "Transformers": [],
     "Jewelry": [],
     "M4A1_S_BlueDiamond": []
+  },
+  "executor_provenance": {
+    "executor_model": "MiniMax-M3",
+    "executor_harness": "Claude Code",
+    "executor_family": "MiniMax",
+    "model_id_source": "harness runtime value (system prompt)",
+    "commit_footer_model_provenance": "NON_AUTHORITATIVE"
   }
 }

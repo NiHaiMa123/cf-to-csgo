@@ -335,7 +335,17 @@ def run_phase2_differential():
                 "evidence_grade_cross_skin_difference": "DIFFERENTIAL_SUPPORTED",
                 "evidence_grade_semantic_interpretation": "OPEN_UNRESOLVED"
             }
-        }
+        },
+        # Per M3 cleanup: embed executor provenance so every regeneration
+        # of this JSON carries it. The Co-Authored-By trailer alone is
+        # NEVER authoritative.
+        "executor_provenance": {
+            "executor_model": "MiniMax-M3",
+            "executor_harness": "Claude Code",
+            "executor_family": "MiniMax",
+            "model_id_source": "harness runtime value (system prompt)",
+            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+        },
     }
 
     diff_path = os.path.join(N01_DIR, "weapon_material_differential.json")
@@ -431,6 +441,16 @@ def run_phase3_cfg_consumer(diffs):
             "mapping choices are explicit conversion-design candidates, "
             "NOT recovered CF facts."
         ),
+        # Per M3 cleanup: embed executor provenance so every regeneration
+        # of this JSON carries it. The Co-Authored-By trailer alone is
+        # NEVER authoritative.
+        "executor_provenance": {
+            "executor_model": "MiniMax-M3",
+            "executor_harness": "Claude Code",
+            "executor_family": "MiniMax",
+            "model_id_source": "harness runtime value (system prompt)",
+            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+        },
     }
     # ----- regression guard: no false-PASS / overclaim phrases -----
     text_blob = json.dumps(cfg_report, ensure_ascii=False)
@@ -580,6 +600,16 @@ def run_phase4_channel_semantics():
             "WeaponShader CFG = shader parameter & color LUT profile",
             "CFG -> phongboost/phongexponent/selfillum as recovered CF fact",
         ],
+        # Per M3 cleanup: embed executor provenance so every regeneration
+        # of this JSON carries it. The Co-Authored-By trailer alone is
+        # NEVER authoritative.
+        "executor_provenance": {
+            "executor_model": "MiniMax-M3",
+            "executor_harness": "Claude Code",
+            "executor_family": "MiniMax",
+            "model_id_source": "harness runtime value (system prompt)",
+            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+        },
     }
     # ----- regression guard: no false-PASS status without Path-B evidence -----
     text_blob = json.dumps(semantics_report, ensure_ascii=False)
@@ -658,6 +688,16 @@ def run_phase5_engine_binding_closure():
             "Closure status MUST NOT be flipped to PASS / READY without "
             "direct/accepted Path-B evidence."
         ),
+        # Per M3 cleanup: embed executor provenance so every regeneration
+        # of this JSON carries it. The Co-Authored-By trailer alone is
+        # NEVER authoritative.
+        "executor_provenance": {
+            "executor_model": "MiniMax-M3",
+            "executor_harness": "Claude Code",
+            "executor_family": "MiniMax",
+            "model_id_source": "harness runtime value (system prompt)",
+            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+        },
     }
     # ----- regression guard: no false-PASS status -----
     text_blob = json.dumps(closure_report, ensure_ascii=False)
