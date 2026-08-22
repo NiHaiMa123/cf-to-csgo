@@ -55,8 +55,8 @@
   "hypotheses": {
     "H1_base_flat": {
       "formula": "out.rgb = base_dtx record bytes rendered as-is (no mixing constants; channel order unresolved)",
-      "evidence_class": "VERIFIED_DECODE_ONLY",
-      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/h1_base_x_spec_r1.png",
+      "evidence_class": "EVIDENCE_SUPPORTED_LAYOUT_HYPOTHESIS / DIAGNOSTIC_LAYER_RENDER",
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/h1_base_flat_r1.png",
       "preview_sha256": "d7d3827a3f4bd6c7626bcd60857ada152d154fd9aee0e57d31bd1b592994d52e",
       "replaces_R0": "H1 'out = base + specular.R*120' retracted: additive 120 had no engine evidence"
     },

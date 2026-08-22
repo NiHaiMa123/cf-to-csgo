@@ -7,16 +7,17 @@ review, this version:
   1. actually implements the row-width candidate scan in the committed
      script (widths 64..2048 step 4, full score matrix in the report);
   2. runs the channel census over the ENTIRE file including the tail;
-  3. computes cross-row continuity over ALL varying channels at every pixel
-     column instead of a fixed byte phase;
-  4. documents the corpus-level size invariant size % 2048 == 164 found for
-     every non-empty PV DTX member;
+  3. computes cross-row continuity over BOTH varying record offsets
+     separately instead of a fixed byte phase;
+  4. documents the corpus-level packing pattern size % 2048 == 164 observed
+     for 1043/1046 (99.71%) non-empty PV DTX members — a dominant statistic
+     with three retained outliers, NOT a universal invariant;
   5. keeps evidence grades honest: headerless/not-LZMA stay VERIFIED,
      width-1024 / single-image are STRONG_HYPOTHESIS backed by the committed
      reproducible scan, BGR wording replaced by '3-byte pixel-like records'
      while channel order is unproven.
 
-Outputs r1/dtx_revalidation_r1.json (schema v4) + preview PNGs.
+Outputs r1/dtx_revalidation_r1.json + preview PNGs.
 """
 from __future__ import annotations
 
@@ -357,6 +358,18 @@ def main():
                 round(runner["avg_vertical_delta"] / winner["avg_vertical_delta"], 3)
                 if runner else None
             ),
+            "nearest_distinct_stride_margin": next(
+                (
+                    {
+                        "width_px": r["width_px"],
+                        "ratio_vs_winner": round(
+                            r["avg_vertical_delta"] / winner["avg_vertical_delta"], 3)
+                    }
+                    for r in scan
+                    if r["width_px"] != W and r["width_px"] % W != 0 and W % r["width_px"] != 0
+                ),
+                None,
+            ),
             "note": (
                 "multiples of the true stride also score well by construction "
                 "(e.g., 2048); the smallest coherent winner is taken"
@@ -396,9 +409,10 @@ def main():
             "not_lzma_compressed": "VERIFIED_STRUCTURAL",
             "three_byte_pixel_like_records_fixed_ff_slot": "VERIFIED_STRUCTURAL (full-file census)",
             "row_stride_1024": (
-                "STRONG_HYPOTHESIS — reproducible committed scan winner with "
-                ">3x margin vs nearest distinct stride; multiples of 1024 "
-                "score similarly by construction"
+                "STRONG_HYPOTHESIS — reproducible committed scan winner; "
+                "measured margin ~1.62x vs overall runner-up 2048 (which "
+                "scores well by construction as a multiple of the true "
+                "stride) and ~2.55x vs nearest non-multiple stride 2044"
             ),
             "single_continuous_image_no_mips": (
                 "STRONG_HYPOTHESIS — continuity measured over both varying "
@@ -424,9 +438,9 @@ def main():
             "STRONG_HYPOTHESIS pending any engine-side confirmation. The file "
             "ends with a 2212-byte region of pixel-rhythm data whose exact "
             "semantics are open, bounded by the dominant corpus packing "
-            "pattern size % 2048 == 164 observed for 1043/1046 non-empty PV "
-            "DTX files. Channel order remains unresolved; 'BGR24' is not "
-            "claimed."
+            "pattern size % 2048 == 164 observed for 1043/1046 (99.71%) of "
+            "non-empty PV DTX files. Channel order remains unresolved; "
+            "'BGR24' is not claimed."
         ),
     }
 

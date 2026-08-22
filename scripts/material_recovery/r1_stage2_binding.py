@@ -17,16 +17,18 @@ across the local corpus, recording:
      PieceIndex. This is direct engine-format evidence that CF binds
      per-piece texture sets via named CFG fields.
 
-  B. NEGATIVE (explicit): no weapon-side text material CFG and no config/
-     dat/table file naming any M4A1_S_BornBeast texture path exists in the
-     local data dirs (full scans documented with file counts).
+  B. NEGATIVE (explicit, scope-limited): no weapon-side text material CFG
+     and no config/dat/lta file naming any M4A1_S_BornBeast texture path
+     exists in the SCANNED config-like/dat/lta corpus (355 files, <=64 MiB
+     each). This does NOT exclude mappings in unscanned binary resource
+     classes.
 
   C. LTB numeric field: stays PROVISIONAL as a slot identifier; the arm
      corpus shows the same post-index length-prefixed-string structure with
      empty strings, so the field is general LTB structure whose weapon
      instance happens to carry single digits.
 
-Outputs r1/material_binding_r1.json (schema v2).
+Outputs r1/material_binding_r1.json (schema v3).
 """
 from __future__ import annotations
 

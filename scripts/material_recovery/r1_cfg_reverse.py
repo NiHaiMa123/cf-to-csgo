@@ -92,14 +92,25 @@ def analyze(path):
         first_v = next(i for i in range(n) if i % 3 == ph)
         last_v = n - 1 - ((n - 1 - ph) % 3) if n > ph else None
         count_phase = len(range(ph, n, 3))
+        trailing = (n - 1 - last_v) if last_v is not None else None
         rec["accounting_phase_origin"] = {
             "first_varying_offset": first_v,
             "last_varying_offset": last_v,
             "leading_bytes_before_first_sample": first_v,
             "sample_count_complete": count_phase,
-            "trailing_bytes_after_last_sample": n - 1 - last_v if last_v is not None else None,
-            "identity": f"{n} = {first_v} + {count_phase}*3 + {n - 1 - last_v}"
-                        if last_v is not None else None,
+            "trailing_bytes_after_last_sample": trailing,
+            # span accounting: samples are single bytes spaced 3 apart, so the
+            # self-consistent identity is span-based, NOT sample_count*3
+            "identity": (
+                f"{n} = {first_v} + ({count_phase}-1)*3 + 1 + {trailing}"
+                if last_v is not None and count_phase > 0 else None
+            ),
+            "identity_note": (
+                "samples are single byte positions spaced 3 bytes apart; the "
+                "span formula first + (count-1)*3 + 1 + trailing is the "
+                "arithmetically correct identity. v4's "
+                "'n = first + count*3 + trailing' double-counted one stride."
+            ),
             "off_by_one_note": (
                 "count uses range(ph, n, 3): includes the LAST varying byte; "
                 "v3 dropped it whenever (n-h)%3 != 0"

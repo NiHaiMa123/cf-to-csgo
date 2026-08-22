@@ -3,18 +3,21 @@
 """P4-M01-R1-H/I: rebuild layer previews + shader hypotheses + R1 closure.
 
 Uses ONLY the corrected R1 decodes:
-  - base DTX  : headerless BGR24, width 1024, single continuous image
-                (level-0 plane 1024x170 rows; partial tail excluded);
+  - base DTX  : headerless 3-byte pixel-like records, row stride 1024
+                (STRONG_HYPOTHESIS), single continuous image (170 full rows;
+                trailing region excluded); channel order OPEN;
   - alpha/normal/specular : formal TryRepairInsertedFooterHeader port,
-                1024x1024 BGR24 planes;
-  - CFG       : stride-3 scalar strip (diagnostic only).
+                1024x1024 planes; storage byte order per TGA spec, but each
+                map's SHADER ROLE is a separate, still-provisional question;
+  - CFG       : lossless varying-phase sequence (diagnostic only).
 
 Hypotheses are rebuilt from scratch with explicit evidence classes:
   H1' base-only flat render (no additive constants — the R0 '+specular*120'
       and '*0.5' magic numbers are dropped as unsupported);
-  H2' base modulated by specular scalar (multiplicative, evidence-tagged as
-      approximation); normal/alpha shown separately.
-Every output is tagged verified / approximation / diagnostic.
+  H2' base modulated by specular variable channel (multiplicative, tagged
+      approximation/diagnostic); normal/alpha shown separately.
+Every output is tagged hypothesis / approximation / diagnostic — none of
+these previews asserts engine composition semantics.
 
 Outputs r1/shader_hypotheses_r1.json, r1/native_material_closure_r1.json,
 previews/h1_base_flat.png, h2_base_x_spec.png, layers_*.png.
@@ -166,10 +169,11 @@ def main():
                              "sha256": sha256_of(p), "class": "DIAGNOSTIC_ONLY"}
 
     # ---- hypotheses
-    # H1': base flat (verified decode, no invented mixing constants)
+    # H1': base flat render (no invented mixing constants)
     p = os.path.join(PREVIEW_DIR, "h1_base_flat_r1.png")
     save_png(p, base, bw, bh)
     h1_sha = sha256_of(p)
+    h1_path = os.path.relpath(p, REPO).replace("\\", "/")
 
     # H2': base * (specular variable channel normalized) — multiplicative approximation
     # specular plane: find the varying channel by PIXEL-INDEX sampling (each
@@ -201,12 +205,13 @@ def main():
     p = os.path.join(PREVIEW_DIR, "h2_base_x_spec_r1.png")
     save_png(p, out, bw, bh)
     h2_sha = sha256_of(p)
+    h2_path = os.path.relpath(p, REPO).replace("\\", "/")
 
     hypotheses = {
         "H1_base_flat": {
             "formula": "out.rgb = base_dtx record bytes rendered as-is (no mixing constants; channel order unresolved)",
-            "evidence_class": "VERIFIED_DECODE_ONLY",
-            "preview": os.path.relpath(p, REPO).replace("\\", "/").replace("h2", "h1"),
+            "evidence_class": "EVIDENCE_SUPPORTED_LAYOUT_HYPOTHESIS / DIAGNOSTIC_LAYER_RENDER",
+            "preview": h1_path,
             "preview_sha256": h1_sha,
             "replaces_R0": "H1 'out = base + specular.R*120' retracted: additive 120 had no engine evidence",
         },
@@ -218,7 +223,7 @@ def main():
                 "channel counters; v2 samples by pixel index so each sample "
                 "reads all three bytes of a pixel"
             ),
-            "preview": os.path.relpath(p, REPO).replace("\\", "/"),
+            "preview": h2_path,
             "preview_sha256": h2_sha,
             "replaces_R0": "H2 'base + cfg_midcolor*lum*0.5' retracted: additive emissive with 0.5 factor had no engine evidence",
         },

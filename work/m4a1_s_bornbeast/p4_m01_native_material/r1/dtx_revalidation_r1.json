@@ -161,6 +161,10 @@
       "avg_vertical_delta": 3.6042
     },
     "winner_margin_ratio": 1.621,
+    "nearest_distinct_stride_margin": {
+      "width_px": 2044,
+      "ratio_vs_winner": 2.553
+    },
     "note": "multiples of the true stride also score well by construction (e.g., 2048); the smallest coherent winner is taken"
   },
   "accepted_layout_hypothesis": {
@@ -248,12 +252,12 @@
     "headerless_no_lithtech_header": "VERIFIED_STRUCTURAL",
     "not_lzma_compressed": "VERIFIED_STRUCTURAL",
     "three_byte_pixel_like_records_fixed_ff_slot": "VERIFIED_STRUCTURAL (full-file census)",
-    "row_stride_1024": "STRONG_HYPOTHESIS — reproducible committed scan winner with >3x margin vs nearest distinct stride; multiples of 1024 score similarly by construction",
+    "row_stride_1024": "STRONG_HYPOTHESIS — reproducible committed scan winner; measured margin ~1.62x vs overall runner-up 2048 (which scores well by construction as a multiple of the true stride) and ~2.55x vs nearest non-multiple stride 2044",
     "single_continuous_image_no_mips": "STRONG_HYPOTHESIS — continuity measured over both varying record offsets shows no seam at any row boundary; alternative mip layouts rejected by the committed scan",
     "terminal_region_semantics": "OPEN_UNRESOLVED",
     "channel_order_bgr_vs_rgb": "OPEN_UNRESOLVED",
     "corpus_size_mod_2048_equals_164": "VERIFIED_CORPUS_STATISTIC (1043/1046 = 99.71%), NOT universal; three outliers (mod 550/672/676) retained",
     "engine_role_color_layer": "EVIDENCE_SUPPORTED_HYPOTHESIS"
   },
-  "conclusion": "The BornBeast PV DTX carries no LithTech DTX header and is not LZMA (both verified against real decoder ports). Its payload is a stream of 3-byte pixel-like records with one fixed-FF slot across the entire file. A committed, reproducible width scan selects row stride 1024 as the smallest strong winner, and continuity over both varying record offsets supports a single continuous image with no mips; these two remain graded STRONG_HYPOTHESIS pending any engine-side confirmation. The file ends with a 2212-byte region of pixel-rhythm data whose exact semantics are open, bounded by the dominant corpus packing pattern size % 2048 == 164 observed for 1043/1046 non-empty PV DTX files. Channel order remains unresolved; 'BGR24' is not claimed."
+  "conclusion": "The BornBeast PV DTX carries no LithTech DTX header and is not LZMA (both verified against real decoder ports). Its payload is a stream of 3-byte pixel-like records with one fixed-FF slot across the entire file. A committed, reproducible width scan selects row stride 1024 as the smallest strong winner, and continuity over both varying record offsets supports a single continuous image with no mips; these two remain graded STRONG_HYPOTHESIS pending any engine-side confirmation. The file ends with a 2212-byte region of pixel-rhythm data whose exact semantics are open, bounded by the dominant corpus packing pattern size % 2048 == 164 observed for 1043/1046 (99.71%) of non-empty PV DTX files. Channel order remains unresolved; 'BGR24' is not claimed."
 }
