@@ -1,4 +1,4 @@
-# P4_M01_N01_CONTINUATION.md — 46fcace review; final documentation cleanup then blocker freeze
+# P4_M01_N01_CONTINUATION.md — 95b6bb3 review; one final scope-guard fix before blocker freeze
 
 > parent_task: `P4-M01`
 >
@@ -8,9 +8,9 @@
 >
 > Executor: **Any user-selected Local Executor Agent with local repository/data/tool access**
 >
-> 当前状态: **ACTIVE / FINAL_DOCUMENTATION_CLEANUP; SUBSTANTIVE_BLOCKER = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS**
+> 当前状态: **ACTIVE / FINAL_SCOPE_GUARD; SUBSTANTIVE_BLOCKER = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS**
 >
-> 本文件是 [`P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`](P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md) 的当前 continuation / Review overlay。若历史任务说明与本文件冲突，以本文件为准。P4-M01 尚未 PASS；P5-T02 继续暂停。
+> 本文件是 [`P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`](P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md) 的当前 continuation / Review overlay。若历史说明冲突，以本文件为准。P4-M01 尚未 PASS；P5-T02 继续暂停。
 
 ---
 
@@ -19,281 +19,227 @@
 最新 Local Executor 提交：
 
 ```text
-46fcacebbc631fc05e0d491470b5e5482bca4533
-P4-M01-N01: minor evidence cleanup - M1 JSON validity, M2 scope counters, M3 executor provenance
+95b6bb363a5f00daf01193f53e2a27cff9cea3f8
+P4-M01-N01: final documentation cleanup - F1 provenance parameterization, F2 closure wording, F3 counter-subset guard
 ```
 
-本轮实际 executor provenance：
+本轮 executor provenance：
 
 ```text
-executor_model  = MiniMax-M3
-executor_family = MiniMax
+executor_model   = MiniMax-M3
+executor_family  = MiniMax
 executor_harness = Claude Code
 ```
 
-commit footer 中自动出现的：
-
-```text
-Co-Authored-By: Claude Opus 4.8 (1M context)
-```
-
-继续定义为：
+commit footer 继续定义为：
 
 ```text
 NON_AUTHORITATIVE_FOR_EXECUTOR_MODEL
 ```
 
-模型 provenance 只能来自实际 harness/runtime 显示值；没有可靠值就写 `unspecified`。
-
 ---
 
-## 2. Chat/Sol 对 46fcace 的正式结论
+## 2. Chat/Sol 对 95b6bb3 的正式结论
 
 ```text
-46fcace technical cleanup                 ACCEPT
-M1 JSON validity                          ACCEPT
-M2 scan-count correction                  ACCEPT
-M3 current-run provenance                 ACCEPT
-N01 substantive consumer result           BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-P4-M01-N01 PASS                           NO
-READY_FOR_NATIVE_MATERIAL_COMPOSITION     NO
-P4-M01                                    ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-P5-T02                                    PAUSED_BY_P4_M01
+F1 reusable provenance parameterization      ACCEPT
+F2 runtime-overclaim removal                 ACCEPT
+F2 blocker next_step                         ACCEPT
+F2 generator/report consistency              ACCEPT
+F3 current 261 / 18 evidence                 ACCEPT
+F3 subset implementation                     MINOR_REWORK
+
+N01 evidence/documentation                   ACCEPT_WITH_ONE_MINOR_CODE_GUARD_FIX
+N01 substantive                              BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+P4-M01-N01 PASS                              NO
+P4-M01                                       ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+P5-T02                                       PAUSED_BY_P4_M01
 ```
 
-### 2.1 已接受并冻结，不要重跑
+### 已接受并冻结
+
+以下全部不再修改其 substantive conclusion：
 
 ```text
-_ALL_ / "scanned" pseudo-hit fix                     ACCEPT
-config mapping / scan metadata separation            ACCEPT
-derived-output isolation                             ACCEPT
-hits_by_extension/resource_family/consumer split     ACCEPT
-BornBeast/Transformers/Jewelry/BlueDiamond text hits 0  ACCEPT / SCOPED_NEGATIVE
-.dat consumer hits 0                                 ACCEPT / SCOPED_NEGATIVE
-BornBeast derived-output hits 4                      ACCEPT / DERIVED_OUTPUT_HIT ONLY
-JSON evidence parse cleanup                          ACCEPT
-CFG measured lineage                                 ACCEPT
-BornBeast CFG phase 2 / 164                          ACCEPT / OBSERVED
-Transformers CFG phase 1 / 169                       ACCEPT / OBSERVED
-Jewelry CFG phase 2 / 214                            ACCEPT / OBSERVED
-BlueDiamond CFG phase 2 / 166                        ACCEPT / OBSERVED
-CFG semantic downgrade                               ACCEPT
-channel semantics Layer A/B/C split                  ACCEPT
-false-PASS generator guard                           ACCEPT
-LTB post-mesh short field                            ACCEPT / STRUCTURAL
-repo parser does not consume short id                ACCEPT / TOOL-CODE OBSERVATION
-repo ObjExporter path mirroring                      ACCEPT / TOOL-BEHAVIOR ONLY
-ArmModel PieceIndex + multi-map positive control     ACCEPT
-237/237 WeaponShader mod-3 structural fact           ACCEPT
-engine_binding_closure.status OPEN_UNRESOLVED        ACCEPT
+executor provenance: CLI > env > unspecified           ACCEPT
+no generic MiniMax-M3/Claude Code hardcoded default    ACCEPT
+commit footer provenance NON_AUTHORITATIVE             ACCEPT
+engine_binding_closure schema v3                       ACCEPT
+repo directory mirroring = TOOL_BEHAVIOR               ACCEPT
+original CF runtime mirroring = OPEN_UNRESOLVED        ACCEPT
+substantive blocker = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS ACCEPT
+next_step waits for new runtime/client artifact        ACCEPT
+ArmModel positive-control boundary                     ACCEPT
+CFG/channel evidence grades                            ACCEPT
+current config counters 102382 / 261 / 18 / 355        ACCEPT
+current target 0-hit / derived-output accounting       ACCEPT
 ```
 
 ---
 
-## 3. 当前 substantive blocker — 已确认
+## 3. 当前唯一执行任务：F3 structural subset guard
 
-当前 local `data/` corpus 已完成 bounded、read-only 静态检查，没有发现可用于原 CF engine-side consumer tracing 的：
-
-```text
-CF client executable
-CF engine/runtime DLL/module
-original runtime/REZ bundle containing consumer code
-compiled shader/runtime package
-weapon-format material/resource table
-```
-
-所以当前材料不足以证明：
-
-```text
-post_mesh_short_id / piece identity
--> original CF material/shader resolver
--> texture family binding
--> WeaponShader CFG semantic consumer
-```
-
-正式 substantive 状态：
-
-```text
-BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-```
-
-这是“输入不足导致阻塞”，不是 PASS，也不是新的 FAIL。没有新增 runtime artifact 时，禁止重复扫描当前 repo/data corpus，禁止继续用 basename/path heuristic 替代原游戏 consumer。
-
----
-
-## 4. 当前唯一执行任务：Final Documentation / Provenance Cleanup
-
-下一位 Executor **只做 F1–F2；F3 是推荐 regression guard**。完成后停止。
-
-### F1 — provenance generator 不得硬编码 MiniMax-M3
-
-`46fcace` 当前报告中的 MiniMax-M3 provenance 对本轮是正确的，但生成脚本把本轮模型写死在通用 generator 中，未来换模型重跑会产生错误 provenance。
-
-涉及至少：
-
-```text
-scripts/material_recovery/n01_phase1_consumer_search.py
-scripts/material_recovery/n01_phase1_to_phase5_runner.py
-```
-
-要求改成运行时可配置，例如任一等价方案：
-
-```text
-CLI args:
-  --executor-model
-  --executor-harness
-  --executor-family
-
-或 environment:
-  N01_EXECUTOR_MODEL
-  N01_EXECUTOR_HARNESS
-  N01_EXECUTOR_FAMILY
-```
-
-固定 fallback：
-
-```text
-executor_model  = unspecified
-executor_harness = unspecified
-executor_family = unspecified
-```
-
-不得把某次 benchmark identity 固化成通用脚本默认值。
-
-当前 `46fcace` 已生成的 report 可以继续保留 MiniMax-M3，因为它描述的是这次真实运行；只有未来 regeneration 才读取参数/环境变量。
-
-必须保留：
-
-```text
-commit_footer_model_provenance = NON_AUTHORITATIVE
-```
-
-### F2 — 清理 `engine_binding_closure.json` 的 runtime overclaim / stale next_step
-
-当前文件仍有过时措辞：
-
-```text
-CrossFire LithTech runtime appears to resolve the 5-map material family via deterministic directory mirroring.
-```
-
-这超出当前证据。当前只接受：
-
-```text
-repository exporter performs deterministic Models/... -> ModelTextures/... path mirroring
-= TOOL_BEHAVIOR / STRUCTURAL_CORRESPONDENCE
-```
-
-原 CF runtime binding 必须继续：
-
-```text
-OPEN_UNRESOLVED / BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-```
-
-因此把该项改成类似：
-
-```text
-status = TOOL_BEHAVIOR / STRUCTURAL_CORRESPONDENCE
-evidence = repo exporter performs deterministic filename/path mirroring; this is not proof of the original CrossFire runtime binding
-original_cf_runtime_binding = OPEN_UNRESOLVED
-```
-
-同时把 stale：
-
-```text
-next_step = Awaiting Chat/Sol review for N01 Phase 1-3 findings
-```
-
-改成：
-
-```text
-next_step = BLOCKED pending new original CF runtime/client artifact or equivalent documented consumer contract
-```
-
-`status` 必须继续：
-
-```text
-OPEN_UNRESOLVED
-```
-
-### F3 — 推荐：scope-counter regression guard
-
-`config_candidates_decoded` 应当严格是 `config_candidates_seen` 的子集。建议让计数发生在同一个 candidate predicate 下，并加：
+`95b6bb3` 增加了：
 
 ```python
 assert config_candidates_decoded <= config_candidates_seen
 ```
 
-这只是 future-regression cleanup，不改变 46fcace 当前 261 / 18 的已接受观测。
+但当前 `build_consumer_index()` 的 predicate 仍不一致：
+
+```python
+if ext in CONFIG_EXT and is_likely_model_texture_config(rel, ext):
+    config_candidates_seen += 1
+
+if is_likely_model_texture_config(rel, ext):
+    ...
+    if real_mappings:
+        config_candidates_decoded += 1
+```
+
+`is_likely_model_texture_config()` 还允许：
+
+```text
+.cft .fcf .csv .dat .xml .json .lua .ref .apf
+```
+
+所以 `config_candidates_decoded` 在代码结构上并不保证属于 `config_candidates_seen`；单独的数值 assert 不能证明集合包含关系。
+
+### 必须修法
+
+统一 candidate predicate，例如：
+
+```python
+is_config_candidate = (
+    ext in CONFIG_EXT
+    and is_likely_model_texture_config(rel, ext)
+)
+
+if is_config_candidate:
+    config_candidates_seen += 1
+    scan_metadata[rel]["scanned"] = True
+
+    raw = _safe_read(...)
+    ...
+    if real_mappings:
+        config_candidates_decoded += 1
+```
+
+关键要求：
+
+```text
+config_candidates_seen
+config_candidates_decoded
+config_index
+```
+
+必须使用同一个 `is_config_candidate` scope；decoded 必须由 control flow 保证为 seen 的真子集，而不是只靠：
+
+```python
+assert decoded <= seen
+```
+
+assert 可以继续保留，作为 regression guard。
+
+### 当前 evidence 不得改变
+
+除非统一 predicate 后机械重跑确实产生变化，否则应保持：
+
+```text
+all_files_seen_post_low_value_filter = 102382
+config_candidates_seen               = 261
+config_candidates_decoded            = 18
+raw_scan_files_seen                   = 355
+raw_scan_files_decoded                = 355
+```
+
+若数字变化，必须解释是 predicate scope correction 的机械结果，不得手工维持旧数字。
 
 ---
 
-## 5. Final cleanup acceptance criteria
+## 4. 不得顺手做的事项
 
-必须满足：
+本轮只修 F3。禁止：
 
 ```text
-[ ] 通用 generator 不再硬编码 MiniMax-M3 / Claude Code
-[ ] provenance 未提供时稳定 fallback 为 unspecified
-[ ] 当前 MiniMax 运行报告仍可保留 MiniMax-M3 历史 provenance
-[ ] commit footer 继续 NON_AUTHORITATIVE
-[ ] engine_binding_closure 不再暗示 original CF runtime mirroring 已被证明
-[ ] engine_binding_closure.next_step 指向 runtime-artifact blocker
-[ ] engine_binding_closure.status 仍为 OPEN_UNRESOLVED
-[ ] CFG/channel grades未升级
-[ ] 无 READY_FOR_NATIVE_MATERIAL_COMPOSITION
-[ ] 无 P4-M01-N01 PASS / P4-M01 PASS / P5-T02 resumed
+- 再做 runtime/client 搜索；
+- 再扫同一 repo/data corpus；
+- 重跑或重解释 CFG semantic；
+- 修改 F1 provenance policy；
+- 把 repo ObjExporter mirroring 升级为原 CF runtime proof；
+- 输出 READY_FOR_NATIVE_MATERIAL_COMPOSITION；
+- 标 P4-M01-N01 PASS；
+- 标 P4-M01 PASS；
+- 恢复 P5-T02。
+```
+
+---
+
+## 5. F3 acceptance criteria
+
+必须全部满足：
+
+```text
+[ ] seen / decoded / config_index 共用同一个 config-candidate predicate
+[ ] decoded 在 control flow 上只能发生于 seen candidate
+[ ] `assert config_candidates_decoded <= config_candidates_seen` 保留
+[ ] 当前或新生成 report 的 scope legend 与代码 predicate 一致
+[ ] JSON evidence 可正常 parse
+[ ] engine_binding_closure.status = OPEN_UNRESOLVED
+[ ] N01 substantive = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
 [ ] data/** 未 staged / 上传
 ```
 
-完成后推荐状态：
+推荐只修改：
 
 ```text
-N01 evidence cleanup = COMPLETE / FROZEN
-N01 substantive state = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+scripts/material_recovery/n01_phase1_consumer_search.py
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/consumer_candidate_matrix.json
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/consumer_search_report.md
 ```
 
-然后停止，不创建新的 N01 repo/data search run。
+只有机械 regeneration 必需时才触碰其他 evidence。
 
 ---
 
-## 6. Blocker 解除条件
+## 6. 完成后的强制状态
 
-只有获得新的、与原 CF consumer 等级相当的输入，才重新打开 substantive N01：
+F3 经 Chat/Sol Review 接受后：
 
 ```text
-CrossFire client executable
+N01 evidence cleanup = COMPLETE / FROZEN
+N01 substantive      = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+```
+
+然后当前 corpus 的 N01 工作停止。
+
+Blocker 只有在获得新输入时解除：
+
+```text
+CF client .exe
 engine/render/resource DLL/module
-original runtime bundle / archive containing consumer code
+original runtime bundle/archive with consumer code
 shader/runtime package
-可靠 documented material/piece binding contract
+reliable documented material/piece binding contract
 ```
 
-安全边界：
+重新打开时固定路线：
 
 ```text
-只做静态、只读分析
-不执行未知 client binary
-不上传 binary/raw data/**
-只提交 relative path / SHA256 / size / string offsets / xref / call-chain evidence
-```
-
-重新打开后的固定路线：
-
-```text
-strings / resource names
+strings/resource names
 -> static xref
 -> loader/resolver call chain
 -> piece/material key use
 -> texture family / WeaponShader consumer contract
 ```
 
-不得回到 basename heuristic 当 engine proof。
+仅静态、只读；不执行未知 binary；不上传 raw binary/data/**。
 
 ---
 
 ## 7. Git / data discipline
 
-继续严格遵守 `AGENTS.md`：
+严格遵守 `AGENTS.md`：
 
 ```text
 master only
@@ -304,42 +250,22 @@ no force push
 no raw CF assets/runtime binaries
 ```
 
-启动：
-
-```bash
-git status --short --branch
-git fetch origin
-git pull --rebase origin master
-```
-
 提交前：
 
 ```bash
-git status
+git status --short --branch
 git diff --cached --name-only
 ```
 
-只 stage F1/F2/F3 涉及的 tracked script/report/evidence。
+只 stage F3 明确涉及的 tracked script/report/evidence。
 
 ---
 
-## 8. 当前状态 / 下次 Review 起点
+## 8. 下次 Review 起点
 
 ```text
-P4 baseline        PASS / FROZEN
-P4-M01             ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-P4-M01-R1          ACCEPTED / COMPLETE
-P4-M01-N01 Phase 0 ACCEPT / FROZEN
-P4-M01-N01         ACTIVE / FINAL_DOCUMENTATION_CLEANUP
-N01 substantive    BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-P5-T02             PAUSED_BY_P4_M01
+base = 95b6bb363a5f00daf01193f53e2a27cff9cea3f8
+review only F3 scope-guard commits after this base
 ```
 
-下一次 Chat/Sol Review：
-
-```text
-base = 46fcacebbc631fc05e0d491470b5e5482bca4533
-review only final-cleanup commits after this base
-```
-
-F1/F2 完成并接受后，当前 corpus 的 N01 work 冻结；等待新增 runtime artifact。
+F3 完成后不要自行创建新的 N01 task；等待 Chat/Sol 将 N01 evidence lane 正式冻结。
