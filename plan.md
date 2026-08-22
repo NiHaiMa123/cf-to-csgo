@@ -478,6 +478,155 @@ validate existing LTC decoder on current runtime samples
 
 只有现有 decoder 与真实 runtime sample 不一致时，才进入 LTC format differential reverse。
 
+## 4.10 N02-B-R1 / N02-C Review freeze 与 N02-D/E rework boundary
+
+Review 接受：
+
+```text
+4d7c8b64d44c7d1848f1abb5182f511e5a91107f  P4-M01-N02-B-R1
+2a4054dba6cc03bedb43201aa89692c6e0a36e88  P4-M01-N02-C
+```
+
+N02-B-R1 已确认当前 runtime `rez/Butes/*.ltc` 的真实 decode chain：
+
+```text
+raw magic 54 83 B2 E1
+-> CrossFire wrapper XOR unlock
+-> unlocked 00 00 00 00 header
+-> LithTechLtcNativeDecoder
+-> readable LTA/Bute-style text
+```
+
+当前样本：
+
+```text
+73 / 73 wrapper unlock success
+73 / 73 native decode success
+73 / 73 Bute/LTA-style parse success
+```
+
+因此以下长期事实可以冻结：
+
+```text
+current CF runtime Bute config layer exists                    VERIFIED_RUNTIME_INPUT
+repo CrossFire LTC wrapper + native decoder works on 73/73    STRUCTURALLY_VERIFIED
+weapon/resource relations exist in decoded Bute records        DIRECT_CONFIG_RELATION
+```
+
+N02-C 在 `bf005.ltc` 中找到 10 个 M4A1-family Weapon records，并直接读取：
+
+```text
+ModelFileName
+SkinFileName
+PViewModelFileName
+PViewSkinFileName
+RenderStyleFileName
+PViewRenderStyleFileName
+```
+
+因此可以冻结：
+
+```text
+M4A1-family runtime config records found     ACCEPTED / COMPLETE
+M4A1 config -> resource-path relation        DIRECT_CONFIG_RELATION
+BornBeast direct config reference            NOT FOUND IN THIS SCOPED LAYER
+```
+
+注意：`BornBeast / Transformers / Jewelry / BlueDiamond` 在该 decoded Bute layer 中未命中，只是对声明 scope 的 bounded negative；不能推出这些 family 不存在于其他 config/material/runtime layer。
+
+### N02-D / N02-E Review 结论
+
+以下提交 **不冻结**：
+
+```text
+be1b150b0cc4e67e4861779079887f1cf243d9a1  P4-M01-N02-D
+2f94db91099814523d9137f2c67f3ebfed7de869  P4-M01-N02-E
+```
+
+状态统一为：
+
+```text
+P4-M01-N02-D = REVIEW_REWORK_REQUIRED
+P4-M01-N02-E = REVIEW_REWORK_REQUIRED
+```
+
+原因 1：N02-D 的 REZ recursion 没有把 directory parent path 写入 file entry，最终 index 实际为：
+
+```text
+lowercase basename -> REZ entries
+```
+
+而不是：
+
+```text
+archive-relative full logical path -> REZ entries
+```
+
+因此它不能区分例如：
+
+```text
+Models/PlayerView/PV-M4A1.LTB
+ModelTextures/PlayerView/PV-M4A1.DTX
+```
+
+只按 basename 命中的结果不能升级为 exact runtime path binding。
+
+原因 2：对没有扩展名的 `ModelFileName / PViewModelFileName`，N02-D 使用：
+
+```text
+.ltb / .dtx / .tga / .lto / .ltc / .rez / .dat
+```
+
+宽泛 fallback。该策略会把 model path 引向非 model artifact；在没有 consumer semantics 证据时不成立。返工后 extensionless model path 默认只允许按 field semantics 尝试 exact logical path + `.ltb`，其他扩展名必须另有证据。
+
+原因 3：N02-E 直接继承 N02-D 的候选 entry，因此其 payload hash 虽然是对选中 offset/size 的真实机械测量，但 **不能反向修复错误或过宽的 path selector**。
+
+N02-E 当前可保留为未冻结观测：
+
+```text
+29 selected unique REZ entries
+12 catalog-MD5 matches
+17 catalog-MD5 mismatches
+0 skipped
+0 selected payload SHA256 matches known P4 BornBeast source LTB SHA256
+```
+
+但不能把这组数字解释为：
+
+```text
+M4A1 exact runtime artifact closure
+BornBeast runtime non-identity closure
+```
+
+直到 N02-D-R1 通过 full-path revalidation。
+
+另外 N02-E 报告存在内部文字不一致：统计为 `12 MATCH / 17 MISMATCH / 0 skipped`，verdict 段却写成“全部 match 或 skipped”；该结论文本不得引用为冻结事实。
+
+对 DTX MD5 mismatch 的 `LZX` 解释当前仅为：
+
+```text
+HYPOTHESIS / NEEDS_FORMAT_OR_CONSUMER_EVIDENCE
+```
+
+不能冻结为“REZ directory MD5 一定计算在某个 pre/post compression representation”之类的 engine fact。
+
+当前有效 closure 边界：
+
+```text
+runtime root acquisition            ACCEPTED
+LTC wrapper/native decode           ACCEPTED
+runtime Bute config parse           ACCEPTED
+M4A1 config -> resource path        ACCEPTED
+exact REZ full-path binding         REWORK_REQUIRED
+payload identity based on N02-D     NOT FROZEN
+mesh/piece -> material binding      OPEN_UNRESOLVED
+CFG/render semantic closure         OPEN_UNRESOLVED
+BornBeast native material closure   OPEN_UNRESOLVED
+P4-M01                              INCOMPLETE
+```
+
+下一轮先修复 exact REZ path binding；在该 Gate 重新通过前，不继续使用 N02-E 作为后续 material/identity inference 的基础。
+
 ---
 
 # 5. P5 — 最终 M4A1-雷神资产识别
@@ -662,6 +811,10 @@ ea11ba143d859193213f24ab92248ff8a576b135  runtime-consumer bounded search
 65292c742d545459974c56aec494d1d9c44039a8  final config-scope guard
 ab7e2ef3394991ef0b4468f34cf4d6849b917dc2  P5 legacy pre-scan
 a561924a9c0795932f328de929bee510f6e2719a  N02-A runtime root + artifact inventory
+4d7c8b64d44c7d1848f1abb5182f511e5a91107f  N02-B-R1 wrapper + native LTC decode accepted
+2a4054dba6cc03bedb43201aa89692c6e0a36e88  N02-C M4A1 runtime config binding accepted
+be1b150b0cc4e67e4861779079887f1cf243d9a1  N02-D REVIEW_REWORK_REQUIRED
+2f94db91099814523d9137f2c67f3ebfed7de869  N02-E REVIEW_REWORK_REQUIRED
 ```
 
 ---
