@@ -7,58 +7,46 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N02-D
-Title: M4A1 Runtime Binding -> REZ Asset Existence Verification
+Task ID: P4-M01-N02-E
+Title: M4A1 Runtime Artifact Payload SHA Verification
 State: ACTIVE
 Parent: P4-M01-N02 Runtime Bute Semantic Recovery
-Depends on: P4-M01-N02-C ACCEPTED / COMPLETE
+Depends on: P4-M01-N02-D ACCEPTED / COMPLETE
 ```
 
 # 2. Previous milestone accepted
 
-N02-C 已确认：
+N02-D 已确认：
 
 ```text
-bf005.ltc weapon records extracted
-M4A1-family records found = 10
-runtime Bute binding fields recovered
-BornBeast direct binding = NOT FOUND
-status = M4A1_CONFIG_FOUND_ASSET_MAPPING_OPEN
+M4A1 family runtime binding paths = 60
+REZ entries checked = 60
+DIRECT_RUNTIME_ARTIFACT = 60
+ARCHIVE_INDEX_ONLY = 0
+NOT_FOUND_IN_SCOPED_RUNTIME = 0
+status = M4A1_RUNTIME_ARTIFACT_CONFIRMED
 ```
 
-已冻结事实：
+已冻结：
 
 ```text
-CF runtime weapon config layer is readable
-M4A1 family resource references exist in Bute records
-filename similarity is not binding proof
+bf005.ltc M4A1 records reference real CF runtime assets
+runtime Bute binding -> REZ artifact relation confirmed
 BornBeast identity remains open
 ```
 
 # 3. Current Goal
 
-验证 N02-C 找到的 runtime binding 是否对应真实 CF runtime artifact。
-
-不要进入 shader、DLL、EXE、client execution。
+在不进行完整 REZ 解包的情况下，读取已确认 runtime artifact 的 payload，建立 SHA 级证据。
 
 目标：
 
 ```text
-bf005 M4A1 Weapon Record
-        -> referenced runtime path
-        -> REZ archive existence
-        -> artifact inventory evidence
-```
-
-重点回答：
-
-```text
-Models\\weapons\\m4a1.ltb
-Models\\PlayerView\\pv-m4a1
-M4A1_Silencer.ltb
-pv-m4a1_silencer
-以及相关 DTX
-是否真实存在于当前 CF runtime REZ 中？
+M4A1 runtime artifact
+        -> REZ entry metadata
+        -> bounded payload read
+        -> SHA256
+        -> compare with existing evidence
 ```
 
 # 4. Scope
@@ -66,23 +54,24 @@ pv-m4a1_silencer
 只使用：
 
 ```text
-D:\\Program Files\\CF(2)
-existing REZ inventory
-N02-C outputs
+D:\Program Files\CF(2)
+N02-D REZ index outputs
+N02-C weapon bindings
+existing P4 manifests
 ```
 
 允许：
 
 ```text
-bounded archive lookup
-path/index inspection
-SHA evidence collection
+read exact entry offset + size
+hash payload
+compare known SHA
 ```
 
 禁止：
 
 ```text
-full REZ bulk extraction
+full REZ extraction
 DLL/EXE reverse
 FXO shader reverse
 CF client execution
@@ -91,98 +80,67 @@ memory dump
 
 # 5. Required Analysis
 
-## 5.1 Runtime path lookup
+## 5.1 Payload verification
 
-针对 N02-C 输出中的：
-
-```text
-ModelFileName
-SkinFileName
-PViewModelFileName
-PViewSkinFileName
-RenderStyleFileName
-```
-
-建立：
+优先验证：
 
 ```text
-runtime binding path
--> REZ/archive source
--> exists/not exists
--> hash if extracted
+PV-M4A1 / m4a1 LTB
+M4A1 related DTX
+RenderStyle resources
 ```
 
-## 5.2 Evidence classification
-
-每个结果必须标记：
+记录：
 
 ```text
-DIRECT_RUNTIME_ARTIFACT
-ARCHIVE_INDEX_ONLY
-NOT_FOUND_IN_SCOPED_RUNTIME
+runtime path
+REZ archive
+offset
+size
+sha256
+existing relation
 ```
 
-不要把 basename match 当成 binding。
+## 5.2 BornBeast relation
 
-## 5.3 BornBeast relation
-
-继续保持：
+继续保持证据等级：
 
 ```text
-runtime m4a1 path
-!= BornBeast proof
+runtime M4A1 artifact
+!=
+BornBeast proof
 ```
 
-只有发现：
-
-```text
-runtime config
-+ exact artifact
-+ existing BornBeast source relation
-```
-
-才提升证据等级。
+只有 payload hash 与已有 BornBeast source evidence 建立明确关系时，才能提升结论。
 
 # 6. Expected Output
 
 输出目录：
 
 ```text
-work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n02d_rez_asset_lookup/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n02e_payload_hash/
 ```
 
 至少：
 
 ```text
-runtime_asset_lookup.json
-rez_binding_report.md
+payload_hash_verification.json
+payload_hash_report.md
 ```
 
 # 7. Completion States
 
-## A. Runtime artifact confirmed
+## A. Payload relation confirmed
 
 ```text
-M4A1_RUNTIME_ARTIFACT_CONFIRMED
+M4A1_RUNTIME_PAYLOAD_VERIFIED
 ```
 
-要求：
-
-- runtime path
-- archive source
-- evidence
-
-## B. Config exists but artifact unresolved
+## B. Runtime artifact confirmed but payload relation open
 
 ```text
-M4A1_CONFIG_FOUND_ARTIFACT_UNRESOLVED
+M4A1_RUNTIME_ARTIFACT_CONFIRMED_PAYLOAD_OPEN
 ```
-
-要求：
-
-- searched scope
-- missing reason
-- next highest-value target
 
 完成后 STOP，等待 Review。
 
@@ -190,8 +148,7 @@ M4A1_CONFIG_FOUND_ARTIFACT_UNRESOLVED
 
 - 不宣布 P4-M01 PASS；
 - 不进入 P5 identity confirmation；
-- 不使用视觉相似证明绑定；
-- 不重新逆 LTC；
+- 不用文件名相似替代 hash 证据；
 - 不修改长期 pipeline。
 
 # 9. Handoff
@@ -202,7 +159,7 @@ M4A1_CONFIG_FOUND_ARTIFACT_UNRESOLVED
 status
 commit SHA
 changed files
-runtime path lookup result
-REZ evidence
+payload hash result
+BornBeast relation result
 next highest-value investigation target
 ```
