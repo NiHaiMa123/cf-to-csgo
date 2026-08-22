@@ -63,7 +63,13 @@ Regression guards (assertions) executed before reporting:
   consumer hits and never count as binding evidence;
 - raw-needle scan splits hits into `hits_by_extension`,
   `hits_by_resource_family`, and `hits_by_consumer`;
-- three independent scope counters with explicit legend (M2 cleanup).
+- three independent scope counters with explicit legend (M2 cleanup);
+- `is_config_candidate` is the SINGLE structural predicate that
+  gates `config_candidates_seen`, `config_candidates_decoded`,
+  and `config_index` (F3 cleanup);
+- `len(config_index_keys) == config_candidates_decoded` and
+  `config_candidates_decoded <= config_candidates_seen` both
+  hold by structural invariant.
 
 ## Consumer candidates examined
 

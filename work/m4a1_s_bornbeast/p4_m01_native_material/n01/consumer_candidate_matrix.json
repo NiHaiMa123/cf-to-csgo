@@ -39,10 +39,24 @@
     "scan_metadata_count": 102382,
     "scope_legend": {
       "all_files_seen_post_low_value_filter": "Every file (any extension) that survived the low-value/UI/radio path filter during os.walk over data/. Includes models, textures, audio banks, voice files, etc.",
-      "config_candidates_seen": "Subset of all_files_seen whose extension is in CONFIG_EXT and is_likely_model_texture_config(rel, ext).",
-      "config_candidates_decoded": "Subset of config_candidates_seen whose content was successfully decoded as text AND produced at least one real (model_key, [texture_refs]) mapping.",
+      "config_candidates_seen": "Subset of all_files_seen gated by the single structural predicate `is_config_candidate = (ext in CONFIG_EXT and is_likely_model_texture_config(rel, ext))`. Incremented exactly once when the predicate is true.",
+      "config_candidates_decoded": "Strict subset of config_candidates_seen (same structural predicate). Incremented when the file was successfully decoded as text AND produced at least one real (model_key, [texture_refs]) mapping.",
+      "config_index_keys": "Each successful decode produces one entry. By the structural predicate invariant, len(config_index_keys) == config_candidates_decoded.",
       "raw_scan_files_seen": "Files walked during raw-needle scan over .cfg/.dat/.ini/.lta/.txt in data/, after low-value and derived-output exclusion.",
       "raw_scan_files_decoded": "Subset of raw_scan_files_seen whose content decoded as text."
+    },
+    "scope_predicate": {
+      "name": "is_config_candidate",
+      "definition": "(ext in CONFIG_EXT) and is_likely_model_texture_config(rel, ext)",
+      "guards_outputs": [
+        "config_candidates_seen",
+        "config_candidates_decoded",
+        "config_index"
+      ],
+      "regression_assertions": [
+        "config_candidates_decoded <= config_candidates_seen",
+        "len(config_index_keys) == config_candidates_decoded"
+      ]
     },
     "regression_assertions": [
       "no legacy '_ALL_' key in config_index",
@@ -50,7 +64,9 @@
       "schema/type guard in look_up_texture",
       "derived outputs reported separately (DERIVED_OUTPUT_HIT)",
       "raw scan splits hits_by_extension / hits_by_resource_family / hits_by_consumer",
-      "three independent scope counters with explicit legend"
+      "three independent scope counters with explicit legend",
+      "is_config_candidate is the SINGLE structural predicate for seen/decoded/config_index",
+      "len(config_index_keys) == config_candidates_decoded"
     ]
   },
   "consumer_resource_families": [
@@ -154,32 +170,32 @@
     "schema_note": "Per-target hit counts split by extension / resource family / consumer (cf2.p4m01.n01.consumer-candidate.v2).",
     "by_extension": {
       "BornBeast": {
-        ".cfg": 0,
         ".dat": 0,
         ".txt": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".lta": 0
+        ".cfg": 0
       },
       "Transformers": {
-        ".cfg": 0,
         ".dat": 0,
         ".txt": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".lta": 0
+        ".cfg": 0
       },
       "Jewelry": {
-        ".cfg": 0,
         ".dat": 0,
         ".txt": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".lta": 0
+        ".cfg": 0
       },
       "M4A1_S_BlueDiamond": {
-        ".cfg": 0,
         ".dat": 0,
         ".txt": 0,
+        ".lta": 0,
         ".ini": 0,
-        ".lta": 0
+        ".cfg": 0
       }
     },
     "by_resource_family": {
@@ -235,32 +251,32 @@
   },
   "raw_grep_examples": {
     "BornBeast": {
-      ".cfg": [],
       ".dat": [],
       ".txt": [],
+      ".lta": [],
       ".ini": [],
-      ".lta": []
+      ".cfg": []
     },
     "Transformers": {
-      ".cfg": [],
       ".dat": [],
       ".txt": [],
+      ".lta": [],
       ".ini": [],
-      ".lta": []
+      ".cfg": []
     },
     "Jewelry": {
-      ".cfg": [],
       ".dat": [],
       ".txt": [],
+      ".lta": [],
       ".ini": [],
-      ".lta": []
+      ".cfg": []
     },
     "M4A1_S_BlueDiamond": {
-      ".cfg": [],
       ".dat": [],
       ".txt": [],
+      ".lta": [],
       ".ini": [],
-      ".lta": []
+      ".cfg": []
     }
   },
   "DERIVED_OUTPUT_HIT_examples": {

@@ -432,6 +432,14 @@ def build_consumer_index(data_root: str):
          (separated; never returned as texture refs)
        - raw_needles: set of all model-name needles used to byte-grep any file
        - material_candidates / mapping_table_candidates: lists for the matrix
+
+    Per F3 scope-guard cleanup: a SINGLE `is_config_candidate` predicate
+    governs config_candidates_seen, config_candidates_decoded, and
+    config_index. Any file outside that predicate is GUARANTEED not to
+    affect any of those three outputs. The numeric
+    `assert decoded <= seen` regression guard is preserved as a
+    secondary invariant; it no longer substitutes for this structural
+    guarantee.
     """
     config_index: "dict[str, list[tuple]]" = {}
     scan_metadata: "dict[str, dict]" = {}
@@ -461,42 +469,56 @@ def build_consumer_index(data_root: str):
                 continue
             all_files_seen += 1
             scan_metadata[rel] = {"ext": ext}
-            if ext in CONFIG_EXT and is_likely_model_texture_config(rel, ext):
+            # F3 cleanup: a single structural predicate. Everything
+            # written into config_candidates_seen / config_candidates_decoded
+            # / config_index is gated exclusively by this branch.
+            is_config_candidate = (
+                ext in CONFIG_EXT
+                and is_likely_model_texture_config(rel, ext)
+            )
+            if is_config_candidate:
                 scan_metadata[rel]["scanned"] = True
                 config_candidates_seen += 1
-            if is_likely_model_texture_config(rel, ext):
                 # read for explicit ModelTextureMappings
                 raw = _safe_read(p, 8 * 1024 * 1024)
                 if raw is None:
-                    continue
-                try:
-                    text = _decode_text(raw)
-                except Exception:
-                    continue
-                if text is None:
-                    continue
-                mappings = extract_model_texture_mappings(text)
-                if mappings:
-                    # Only accept tuples whose texture list is a real list of
-                    # resource-path strings; reject anything else.
-                    real_mappings = []
-                    for mk, textures in mappings:
-                        if not isinstance(textures, list):
-                            continue
-                        if not all(isinstance(t, str) and len(t) > 3 for t in textures):
-                            continue
-                        real_mappings.append((mk, textures))
-                    if real_mappings:
-                        config_index[rel] = real_mappings
-                        config_candidates_decoded += 1
-                        for key, textures in real_mappings:
-                            if key:
-                                raw_needles.add(
-                                    key.split("|")[0] if "|" in key else key
-                                )
-                                for tk in [os.path.basename(k) for k in (key,)]:
-                                    if tk:
-                                        raw_needles.add(tk)
+                    # Read failure is silent inside this branch, just skip
+                    # decode-attempt tracking; the file is still 'seen'.
+                    pass
+                else:
+                    try:
+                        text = _decode_text(raw)
+                    except Exception:
+                        text = None
+                    if text is not None:
+                        mappings = extract_model_texture_mappings(text)
+                        if mappings:
+                            # Only accept tuples whose texture list is a
+                            # real list of resource-path strings; reject
+                            # anything else.
+                            real_mappings = []
+                            for mk, textures in mappings:
+                                if not isinstance(textures, list):
+                                    continue
+                                if not all(isinstance(t, str) and len(t) > 3 for t in textures):
+                                    continue
+                                real_mappings.append((mk, textures))
+                            if real_mappings:
+                                config_index[rel] = real_mappings
+                                config_candidates_decoded += 1
+                                for key, textures in real_mappings:
+                                    if key:
+                                        raw_needles.add(
+                                            key.split("|")[0] if "|" in key else key
+                                        )
+                                        for tk in [os.path.basename(k) for k in (key,)]:
+                                            if tk:
+                                                raw_needles.add(tk)
+            # Other structural predicates stay outside the
+            # is_config_candidate branch. material_candidates remains
+            # gated by is_likely_model_texture_config (same as before
+            # F3 cleanup) to preserve its 255-value history.
+            if is_likely_model_texture_config(rel, ext):
                 if is_likely_material_table(rel, ext):
                     material_candidates.append(rel)
             if is_likely_model_mapping_table(rel, ext):
@@ -675,12 +697,21 @@ def main(argv=None):
     all_files_seen = idx_bundle["all_files_seen_post_low_value_filter"]
     config_candidates_seen = idx_bundle["config_candidates_seen"]
     config_candidates_decoded = idx_bundle["config_candidates_decoded"]
-    # Per F3 cleanup: config_candidates_decoded MUST be a subset of
-    # config_candidates_seen by definition; if this fails the counter
-    # bookkeeping has a bug. This does NOT change the 261/18 evidence.
+    # Per F3 cleanup: seen/decoded/config_index now share a single
+    # structural predicate (is_config_candidate) inside build_consumer_index.
+    # Numeric regression guards below preserve the historical 261/18 evidence
+    # and provide a defense-in-depth layer for bookkeeping bugs.
     assert config_candidates_decoded <= config_candidates_seen, (
         f"regression: config_candidates_decoded ({config_candidates_decoded}) "
         f"exceeds config_candidates_seen ({config_candidates_seen})"
+    )
+    # Stronger structural invariant: every successfully decoded config
+    # candidate must produce exactly one config_index entry. With the
+    # unified is_config_candidate predicate, len(cfg_idx) must equal
+    # config_candidates_decoded exactly.
+    assert len(cfg_idx) == config_candidates_decoded, (
+        f"regression: config_index key count ({len(cfg_idx)}) does not "
+        f"match config_candidates_decoded ({config_candidates_decoded})"
     )
     print(f"  config items indexed: {sum(len(v) for v in cfg_idx.values())}")
     print(f"  raw model-name needles: {len(raw_needles)}")
@@ -814,10 +845,24 @@ def main(argv=None):
             "scan_metadata_count": len(scan_metadata),
             "scope_legend": {
                 "all_files_seen_post_low_value_filter": "Every file (any extension) that survived the low-value/UI/radio path filter during os.walk over data/. Includes models, textures, audio banks, voice files, etc.",
-                "config_candidates_seen": "Subset of all_files_seen whose extension is in CONFIG_EXT and is_likely_model_texture_config(rel, ext).",
-                "config_candidates_decoded": "Subset of config_candidates_seen whose content was successfully decoded as text AND produced at least one real (model_key, [texture_refs]) mapping.",
+                "config_candidates_seen": "Subset of all_files_seen gated by the single structural predicate `is_config_candidate = (ext in CONFIG_EXT and is_likely_model_texture_config(rel, ext))`. Incremented exactly once when the predicate is true.",
+                "config_candidates_decoded": "Strict subset of config_candidates_seen (same structural predicate). Incremented when the file was successfully decoded as text AND produced at least one real (model_key, [texture_refs]) mapping.",
+                "config_index_keys": "Each successful decode produces one entry. By the structural predicate invariant, len(config_index_keys) == config_candidates_decoded.",
                 "raw_scan_files_seen": "Files walked during raw-needle scan over .cfg/.dat/.ini/.lta/.txt in data/, after low-value and derived-output exclusion.",
                 "raw_scan_files_decoded": "Subset of raw_scan_files_seen whose content decoded as text."
+            },
+            "scope_predicate": {
+                "name": "is_config_candidate",
+                "definition": "(ext in CONFIG_EXT) and is_likely_model_texture_config(rel, ext)",
+                "guards_outputs": [
+                    "config_candidates_seen",
+                    "config_candidates_decoded",
+                    "config_index"
+                ],
+                "regression_assertions": [
+                    "config_candidates_decoded <= config_candidates_seen",
+                    "len(config_index_keys) == config_candidates_decoded"
+                ]
             },
             "regression_assertions": [
                 "no legacy '_ALL_' key in config_index",
@@ -826,6 +871,8 @@ def main(argv=None):
                 "derived outputs reported separately (DERIVED_OUTPUT_HIT)",
                 "raw scan splits hits_by_extension / hits_by_resource_family / hits_by_consumer",
                 "three independent scope counters with explicit legend",
+                "is_config_candidate is the SINGLE structural predicate for seen/decoded/config_index",
+                "len(config_index_keys) == config_candidates_decoded",
             ],
         },
         "consumer_resource_families": [
@@ -1007,7 +1054,13 @@ def main(argv=None):
         "  consumer hits and never count as binding evidence;",
         "- raw-needle scan splits hits into `hits_by_extension`,",
         "  `hits_by_resource_family`, and `hits_by_consumer`;",
-        "- three independent scope counters with explicit legend (M2 cleanup).",
+        "- three independent scope counters with explicit legend (M2 cleanup);",
+        "- `is_config_candidate` is the SINGLE structural predicate that",
+        "  gates `config_candidates_seen`, `config_candidates_decoded`,",
+        "  and `config_index` (F3 cleanup);",
+        "- `len(config_index_keys) == config_candidates_decoded` and",
+        "  `config_candidates_decoded <= config_candidates_seen` both",
+        "  hold by structural invariant.",
         "",
         "## Consumer candidates examined",
         "",
