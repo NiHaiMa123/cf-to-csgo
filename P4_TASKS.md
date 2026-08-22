@@ -4,7 +4,7 @@
 >
 > P4 baseline 历史结论仍为 **`PASS / FROZEN`**。
 >
-> 当前具体执行子任务：**P4-M01-N01 — Engine Material Consumer & Binding Closure**。
+> 当前具体执行子任务：**P4-M01-N01 — Phase 1 consumer discovery**。
 
 ---
 
@@ -18,17 +18,19 @@ P4 baseline   PASS / FROZEN
 
 P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
     |
-    +-- P4-M01-R1   ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF
+    +-- P4-M01-R1          ACCEPTED / COMPLETE
     |
-    +-- P4-M01-N01  ACTIVE / ENGINE_BINDING_INVESTIGATION   <- CURRENT
+    +-- P4-M01-N01 Phase 0 ACCEPT / FROZEN
+    |
+    +-- P4-M01-N01         ACTIVE / PHASE1_CONSUMER_DISCOVERY   <- CURRENT
 ```
 
 当前文件关系：
 
 ```text
 P4_M01_TASK_SPEC.md                         parent contract
-P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md     current direct execution spec
-P4_M01_R1_CONTINUATION.md                   final R1 Review / predecessor record
+P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md     original N01 technical route
+P4_M01_N01_CONTINUATION.md                  current Review / execution overlay
 ```
 
 ---
@@ -52,32 +54,40 @@ P4-M01/N01 不重新证明或修改 frozen conversion chain。
 
 ---
 
-## 3. R1 handoff
+## 3. R1 / N01 Phase 0 handoff
 
-R1 已完成核心 correction：
+最新 Phase-0 cleanup 提交：
 
-- TGA formal repair；
-- DTX formal route/LZMA/full-file periodicity/width scan/双变化 channel continuity；
-- DTX `1043/1046` dominant statistic；
-- CFG phase != record boundary；
-- CFG off-by-one；
-- H2 pixel-index sampling；
-- ArmModel explicit `[Textures]/PieceIndex` positive control；
-- binding negative scope correction。
+```text
+2344d61a1ba1dc84ddcd5a85eaed5b352f823d19
+```
+
+Chat/Sol 已接受：
+
+```text
+CFG phase-origin span accounting
+DTX measured-margin / dominant-stat wording
+H1 preview path + evidence downgrade
+shader stale wording cleanup
+binding scope wording cleanup
+```
 
 因此：
 
 ```text
-P4-M01-R1 = ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01
+P4-M01-R1          = ACCEPTED / COMPLETE
+P4-M01-N01 Phase 0 = ACCEPT / FROZEN
 ```
 
-剩余 minor cleanup 见 N01 Phase 0，不再展开新的 R1 investigation。
+该提交没有进入 Phase 1，因此 N01 substantive work 仍未开始。下一位 Executor **禁止重跑 Phase 0**。
 
 ---
 
-## 4. 当前 N01
+## 4. 当前 N01 — Phase 1+
 
-正式协议：[`P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`](P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md)。
+原始协议：[`P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`](P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md)。
+
+当前 overlay：[`P4_M01_N01_CONTINUATION.md`](P4_M01_N01_CONTINUATION.md)。
 
 目标：
 
@@ -89,10 +99,9 @@ weapon mesh/piece
 -> channel/storage/binding semantics
 ```
 
-固定顺序：
+当前固定顺序：
 
 ```text
-Phase 0  R1 consistency cleanup
 Phase 1  consumer call/data-path discovery
 Phase 2  ArmModel positive control + weapon-family differential
 Phase 3  WeaponShader CFG consumer identification
@@ -100,7 +109,14 @@ Phase 4  storage/channel/binding semantics
 Phase 5  engine binding closure
 ```
 
-Phase 0 通过后同一轮直接进入 Phase 1。
+本轮最低 handoff：
+
+```text
+Phase 1 outputs
++ Phase 2 weapon_material_differential.json
+```
+
+若 Phase 1/2 找到 credible consumer candidate，可同一轮继续 Phase 3–5。
 
 ---
 
@@ -114,31 +130,33 @@ DTX 1024/no-mips                        STRONG_HYPOTHESIS
 DTX channel/tail                        OPEN
 TGA formal repair                       ACCEPT / STRUCTURAL
 CFG 237/237 single mod-3 phase          VERIFIED_STRUCTURAL
-CFG record boundary                     OPEN
+CFG phase != record boundary            ACCEPT
+CFG 164/169/214 sample extraction       ACCEPT
 ArmModel text material format           VERIFIED_STRUCTURAL
 weapon post-mesh short field            VERIFIED_STRUCTURAL
 short field == texture slot             PROVISIONAL
 weapon slot -> texture-set              OPEN
-H2 pixel-index fix                      ACCEPT / DIAGNOSTIC_ONLY
+H1/H2 previews                          DIAGNOSTIC / HYPOTHESIS-CLASS
 ```
 
 ---
 
-## 6. N01 允许/禁止
+## 6. N01 允许 / 禁止
 
 允许：
 
 ```text
-CFRezManager/Decoders/** material-related changes
+CFRezManager/Decoders/** material-consumer related changes
 inspection/export code
 scripts/material_recovery/**
 work/m4a1_s_bornbeast/p4_m01_native_material/n01/**
-必要的 scoped tests
+必要 scoped tests
 ```
 
 禁止：
 
 ```text
+重跑 N01 Phase 0
 重跑 TGA formal repair
 重跑 DTX header/LZMA/width scan
 用 basename 直接判 binding
@@ -153,7 +171,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/n01/**
 
 ## 7. N01 Review gate
 
-至少需要看到：
+期望最终 evidence：
 
 ```text
 consumer_candidate_matrix.json
