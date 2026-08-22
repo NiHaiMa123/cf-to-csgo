@@ -159,26 +159,65 @@ def width_scan(data: bytes) -> list:
 
 
 def continuity_all_channels(data: bytes, width: int) -> dict:
-    """Mean/max cross-boundary deltas computed over ALL bytes of every row
-    boundary (not a fixed phase), plus tail-boundary delta."""
+    """Cross-boundary deltas computed over BOTH varying record offsets
+    separately (offsets mod3==0 and mod3==1 per the full-file census), plus
+    tail-boundary delta. v4 of this function sampled range(0, rb, 6), which
+    always lands on offset mod3==0 and misses the second varying channel;
+    that mismatch between claim and code is fixed here by measuring each
+    varying offset explicitly."""
     rb = width * 3
     rows = len(data) // rb
-    deltas = []
-    for b in range(rows - 1):
-        above = data[b * rb:(b + 1) * rb]
-        below = data[(b + 1) * rb:(b + 2) * rb]
-        s = sum(abs(above[i] - below[i]) for i in range(0, rb, 6))
-        deltas.append(s / (rb // 6))
+
+    def boundary_stats(offset_mod: int):
+        deltas = []
+        step_points = rb // 6 + 1  # ~1/6 of columns sampled per row pair
+        for b in range(rows - 1):
+            above_base = b * rb
+            below_base = above_base + rb
+            s = cnt = 0
+            for x in range(0, width, 6):
+                o = above_base + x * 3 + offset_mod
+                o2 = below_base + x * 3 + offset_mod
+                if o2 >= len(data):
+                    break
+                s += abs(data[o] - data[o2])
+                cnt += 1
+            if cnt:
+                deltas.append(s / cnt)
+        return deltas
+
+    per_channel = {}
+    for off in (0, 1):  # the two non-FF record offsets per full-file census
+        d = boundary_stats(off)
+        per_channel[f"offset_mod3_{off}"] = {
+            "avg_cross_boundary_delta": round(sum(d) / len(d), 3),
+            "max_cross_boundary_delta": round(max(d), 3),
+        }
+
+    # tail boundary: last full row vs trailing region, both offsets
     above = data[(rows - 1) * rb:rows * rb]
-    below = data[rows * rb:rows * rb + rb]
-    m = max(1, min(rb, len(below)) // 6)
-    tail_delta = sum(abs(above[i] - below[i])
-                     for i in range(0, min(rb, len(below)), 6)) / m
+    below = data[rows * rb:]
+    tail = {}
+    for off in (0, 1):
+        s = cnt = 0
+        for x in range(0, width, 6):
+            o = x * 3 + off
+            if o >= len(below):
+                break
+            s += abs(above[o] - below[o])
+            cnt += 1
+        if cnt:
+            tail[f"offset_mod3_{off}"] = round(s / cnt, 3)
+
+    all_avg = [v["avg_cross_boundary_delta"] for v in per_channel.values()]
+    all_max = [v["max_cross_boundary_delta"] for v in per_channel.values()]
     return {
+        "method": "per-varying-record-offset sampling (offsets mod3==0 and mod3==1), every 6th pixel column",
         "row_boundaries_checked": rows - 1,
-        "avg_cross_boundary_delta": round(sum(deltas) / len(deltas), 3),
-        "max_cross_boundary_delta": round(max(deltas), 3),
-        "tail_boundary_delta": round(tail_delta, 3),
+        "per_offset": per_channel,
+        "avg_cross_boundary_delta_both_offsets": round(sum(all_avg) / len(all_avg), 3),
+        "max_cross_boundary_delta_both_offsets": round(max(all_max), 3),
+        "tail_boundary_delta_per_offset": tail,
     }
 
 
@@ -195,12 +234,23 @@ def corpus_size_invariant() -> dict:
         nonempty += 1
         mod = sz % 2048
         dist[mod] = dist.get(mod, 0) + 1
+    dominant_mod = max(dist, key=dist.get)
+    dominant_count = dist[dominant_mod]
+    outliers = {str(k): v for k, v in sorted(dist.items()) if k != dominant_mod}
     return {
         "non_empty_pv_dtx_files": nonempty,
         "size_mod_2048_distribution": dict(sorted(dist.items(), key=lambda kv: -kv[1])),
-        "invariant_note": (
-            "every non-empty PLAYERVIEW DTX in the local corpus has size "
-            "== 164 (mod 2048); empty members are 0-byte placeholders"
+        "dominant_pattern": {
+            "mod_value": dominant_mod,
+            "count": dominant_count,
+            "share": f"{dominant_count}/{nonempty} ({dominant_count / nonempty:.2%})",
+            "outliers_retained": outliers,
+        },
+        "statistic_note": (
+            "DOMINANT CORPUS STATISTIC, not a universal invariant: "
+            f"{dominant_count}/{nonempty} non-empty PLAYERVIEW DTX files "
+            f"have size % 2048 == {dominant_mod}; the listed outliers are "
+            "real members of the corpus and are retained"
         ),
     }
 
@@ -249,14 +299,17 @@ def main():
     runner = next((r for r in scan if r["width_px"] != W), None)
 
     report = {
-        "schema": "cf2.p4m01.r1.dtx-revalidation.v4",
+        "schema": "cf2.p4m01.r1.dtx-revalidation.v5",
         "supersedes_commit": SUPERSEDES_COMMIT,
-        "supersedes_report_schema": SUPERSEDES_REPORT_SCHEMA,
+        "supersedes_report_schema": "cf2.p4m01.r1.dtx-revalidation.v4",
         "continuation_review_reason": (
-            "v3 report claimed an exhaustive width scan and full-file census "
-            "that were not fully present in the committed script; evidence "
-            "grades exceeded what the code supported. This version commits "
-            "the actual scans and downgrades grades accordingly."
+            "v4's continuity function sampled range(0, rb, 6), which only "
+            "ever lands on offset mod3==0 and misses the second varying "
+            "channel while the report claimed all-channel coverage; and its "
+            "'every non-empty DTX size%2048==164' wording contradicted its "
+            "own 1043/1046 data. v5 measures both varying offsets explicitly "
+            "and restates the corpus fact as a dominant statistic with the "
+            "three outliers retained."
         ),
         "source": {
             "relative_path": SRC_REL,
@@ -317,7 +370,7 @@ def main():
             ),
             "full_rows_at_winner_width": full_rows,
             "leftover_bytes": leftover,
-            "continuity_evidence_all_channels": cont,
+            "continuity_evidence_both_varying_offsets": cont,
             "preview": prev_rel.replace("/", "\\"),
             "preview_sha256": sha256_of(os.path.join(REPO, prev_rel.replace("/", "\\"))),
             "leftover_region_analysis": {
@@ -327,7 +380,7 @@ def main():
                 "semantics": "OPEN_UNRESOLVED",
             },
         },
-        "corpus_size_invariant": invariant,
+        "corpus_size_statistic": invariant,
         "rejected_interpretations": [
             {"interpretation": "LithTech DTX header (versions -2/-3/-5)",
              "reason": "real parser port rejects offset0"},
@@ -348,13 +401,16 @@ def main():
                 "score similarly by construction"
             ),
             "single_continuous_image_no_mips": (
-                "STRONG_HYPOTHESIS — all-channel continuity shows no seam at "
-                "any row boundary; alternative mip layouts rejected by the "
-                "committed scan"
+                "STRONG_HYPOTHESIS — continuity measured over both varying "
+                "record offsets shows no seam at any row boundary; alternative "
+                "mip layouts rejected by the committed scan"
             ),
             "terminal_region_semantics": "OPEN_UNRESOLVED",
             "channel_order_bgr_vs_rgb": "OPEN_UNRESOLVED",
-            "corpus_size_mod_2048_equals_164": "VERIFIED_STRUCTURAL (1043 files)",
+            "corpus_size_mod_2048_equals_164": (
+                "VERIFIED_CORPUS_STATISTIC (1043/1046 = 99.71%), NOT universal; "
+                "three outliers (mod 550/672/676) retained"
+            ),
             "engine_role_color_layer": "EVIDENCE_SUPPORTED_HYPOTHESIS",
         },
         "conclusion": (
@@ -363,12 +419,14 @@ def main():
             "a stream of 3-byte pixel-like records with one fixed-FF slot "
             "across the entire file. A committed, reproducible width scan "
             "selects row stride 1024 as the smallest strong winner, and "
-            "all-channel continuity supports a single continuous image with "
-            "no mips; these two remain graded STRONG_HYPOTHESIS pending any "
-            "engine-side confirmation. The file ends with a 2212-byte region "
-            "of pixel-rhythm data whose exact semantics are open, bounded by "
-            "the corpus-wide packing invariant size ≡ 164 (mod 2048). Channel "
-            "order remains unresolved; 'BGR24' is no longer claimed."
+            "continuity over both varying record offsets supports a single "
+            "continuous image with no mips; these two remain graded "
+            "STRONG_HYPOTHESIS pending any engine-side confirmation. The file "
+            "ends with a 2212-byte region of pixel-rhythm data whose exact "
+            "semantics are open, bounded by the dominant corpus packing "
+            "pattern size % 2048 == 164 observed for 1043/1046 non-empty PV "
+            "DTX files. Channel order remains unresolved; 'BGR24' is not "
+            "claimed."
         ),
     }
 

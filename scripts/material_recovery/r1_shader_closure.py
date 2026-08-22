@@ -110,15 +110,23 @@ def repair_tga(rel):
 
 
 def cfg_strip():
+    """Diagnostic CFG strip extraction aligned with r1_cfg_reverse.py v4.
+
+    Uses the same lossless varying-phase sequence as the CFG report: the
+    full phase sequence INCLUDING 0xFF-valued samples (no filtering). The
+    0xFF members render as white separators in the strip, honestly showing
+    the padding structure instead of hiding it.
+    """
     raw = open(os.path.join(REPO, CFG_REL.replace("/", "\\")), "rb").read()
     n = len(raw)
-    best_phase, best_cnt = 0, -1
+    phase = None
     for ph in range(3):
-        c = sum(1 for i in range(ph, n, 3) if raw[i] != 0xFF)
-        if c > best_cnt:
-            best_cnt, best_phase = c, ph
-    vals = [raw[i] for i in range(best_phase, n, 3) if raw[i] != 0xFF]
-    return vals
+        if all(raw[i] == 0xFF for i in range(n) if i % 3 != ph):
+            phase = ph
+            break
+    if phase is None:
+        return []
+    return [raw[i] for i in range(phase, n, 3)]
 
 
 def main():
@@ -237,8 +245,10 @@ def main():
         "external_pixels_used": False,
         "conclusion": (
             "Layer previews regenerated exclusively through R1-corrected "
-            "decoders. All R0 additive/magic-constant formulas are retracted. "
-            "Remaining composition semantics await stage-2 binding evidence."
+            "decoders; cfg_strip diagnostic uses the lossless phase sequence "
+            "(0xFF members included, rendered as white separators). All R0 "
+            "additive/magic-constant formulas are retracted. Remaining "
+            "composition semantics await stage-2 binding evidence."
         ),
     }
     out1 = os.path.join(R1_DIR, "shader_hypotheses_r1.json")
@@ -248,13 +258,16 @@ def main():
 
     # ---- R1-I closure
     closure = {
-        "schema": "cf2.p4m01.r1.native-material-closure.v2",
+        "schema": "cf2.p4m01.r1.native-material-closure.v3",
         "supersedes_commit": SUPERSEDES_COMMIT,
-        "supersedes_report_schema": "cf2.p4m01.r1.native-material-closure.v1",
+        "supersedes_report_schema": "cf2.p4m01.r1.native-material-closure.v2",
         "continuation_review_reason": (
-            "v1 evidence grades exceeded what committed code supported; v2 "
-            "aligns grades with the targeted-rework scripts (dtx v4, cfg v3, "
-            "binding v2) and keeps every unresolved item unresolved."
+            "v2 repeated two incorrect statements from its inputs: the "
+            "universal 'every non-empty PV DTX size%2048==164' claim (actual: "
+            "1043/1046 dominant statistic) and the CFG '492=2+163*3+1 exact "
+            "framing' claim (v3 cfg report conflated mod-3 phase with record "
+            "boundary and dropped a final sample). v3 aligns with dtx v5 / "
+            "cfg v4 / binding v3 and keeps all OPEN items open."
         ),
         "conditions_sec4_I": {
             "1_geometry_uv_local_ltb": {
@@ -272,9 +285,9 @@ def main():
                     "engine text-material format with PieceIndex VERIFIED "
                     "(ArmModel CFGs); LTB numeric field is general structure "
                     "but its slot meaning and weapon slot->texture-set "
-                    "mapping are OPEN; explicit negative results recorded "
-                    "(no weapon-side material CFG, no config referencing "
-                    "BornBeast texture paths in local data)"
+                    "mapping are OPEN; negative result is scoped to the "
+                    "scanned config-like/dat/lta corpus (355 files) and does "
+                    "not extend to unscanned binary resource classes"
                 ),
             },
             "5_no_external_pixels": {"status": "PASS", "evidence": "generation used local_cf inputs only"},
@@ -298,31 +311,31 @@ def main():
             "8_external_reference_only_visual": {"status": "PASS", "evidence": "no external input in any generation path"},
         },
         "key_findings_targeted_rework": [
-            "DTX: headerless + not-LZMA VERIFIED via real decoder ports; width-1024/no-mips downgraded to STRONG_HYPOTHESIS backed by a committed reproducible scan (full score matrix in report)",
-            "DTX: corpus invariant — every non-empty PLAYERVIEW DTX has size == 164 (mod 2048); trailing region semantics OPEN",
-            "CFG: fixed-layout truncation model fits 237/237 exactly; 492=2+163*3+1 etc.; scalar+padding PREFERRED_NOT_PROVEN vs color-triplet NOT_REFUTED_BUT_WEAKENED; corpus values confined to [0,42]",
-            "Binding: engine text material format ([Textures]/PieceIndex) VERIFIED from ArmModel CFGs; no weapon-side equivalent found locally (explicit negative)",
-            "H2 sampling bug (step=97 phase rotation) fixed via pixel-index sampling; previews stay DIAGNOSTIC_ONLY",
+            "DTX: headerless + not-LZMA + 3-byte pixel-like periodicity VERIFIED; width-1024/no-mips remain STRONG_HYPOTHESIS (committed scan); continuity now measured per varying offset",
+            "DTX corpus packing pattern: 1043/1046 non-empty PV DTX have size%2048==164 — dominant statistic, NOT universal; 3 outliers retained (mod 550/672/676)",
+            "CFG: single-phase mod-3 pattern verified 237/237 with lossless accounting (BornBeast 164 samples incl. last byte, Transformers 169, Jewelry 214); record boundary UNRESOLVED across H-CFG-A/B/C; scalar+padding stays PREFERRED_NOT_PROVEN",
+            "Binding: ArmModel [Textures]/PieceIndex format VERIFIED; weapon-side mapping absent from scanned config-like corpus only (scope-limited negative)",
+            "H2 pixel-index fix retained (accepted); cfg_strip diagnostic now uses lossless phase sequence including 0xFF members; previews stay DIAGNOSTIC_ONLY",
         ],
-        "recommended_state": "CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE (targeted rework delivered; closure still blocked on stage-2 slot->texture-set evidence and channel-order confirmation)",
+        "recommended_state": "CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE (closure blocked on stage-2 slot->texture-set evidence, CFG consumer identification, and channel-order confirmation)",
         "executor_authority_note": "Local executor records evidence + recommended state only; authoritative plan.md change belongs to Chat/Sol.",
         "executor_provenance": {
             "harness": "Claude Code",
             "model_note": "recorded per CODEX_TASKS sec 8 guidance; task remains agent-agnostic",
         },
         "evidence_chain": [
-            "r1/dtx_revalidation_r1.json (schema v4)",
-            "r1/tga_repair_r1.json (unchanged this round; R1-D accepted)",
-            "r1/material_binding_r1.json (schema v2)",
-            "r1/cfg_reverse_r1.json (schema v3)",
+            "r1/dtx_revalidation_r1.json (schema v5)",
+            "r1/tga_repair_r1.json (unchanged; R1-D accepted)",
+            "r1/material_binding_r1.json (schema v3)",
+            "r1/cfg_reverse_r1.json (schema v4)",
             "r1/shader_hypotheses_r1.json (schema v2)",
             "previews/** under r1/",
         ],
         "open_items_for_next_round": [
             "weapon-side material/texture-set binding (slot->texture-set resolution or stronger differential proof)",
+            "CFG record boundary determination (H-CFG-A vs B vs C) and semantic consumer identification",
             "channel-order confirmation for DTX/TGA planes",
-            "DTX trailing-region semantics (bounded by size≡164 mod 2048 invariant)",
-            "CFG semantic consumer identification",
+            "DTX trailing-region semantics (dominant 1043/1046 packing pattern context)",
             "composed native render vs user visual gate (after technical closure)",
         ],
     }

@@ -70,5 +70,5 @@
     }
   },
   "external_pixels_used": false,
-  "conclusion": "Layer previews regenerated exclusively through R1-corrected decoders. All R0 additive/magic-constant formulas are retracted. Remaining composition semantics await stage-2 binding evidence."
+  "conclusion": "Layer previews regenerated exclusively through R1-corrected decoders; cfg_strip diagnostic uses the lossless phase sequence (0xFF members included, rendered as white separators). All R0 additive/magic-constant formulas are retracted. Remaining composition semantics await stage-2 binding evidence."
 }

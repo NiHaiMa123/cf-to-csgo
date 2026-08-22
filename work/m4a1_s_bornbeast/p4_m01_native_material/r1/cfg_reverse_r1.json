@@ -1,103 +1,214 @@
 {
-  "schema": "cf2.p4m01.r1.cfg-reverse.v3",
+  "schema": "cf2.p4m01.r1.cfg-reverse.v4",
   "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
-  "supersedes_report_schema": "cf2.p4m01.r1.cfg-reverse.v2",
-  "continuation_review_reason": "v2 filtered legitimate 0xFF-valued samples before counting and named the padding model 'exact framing resolved'. This version keeps every byte, gives exact triplet accounting, and treats color-triplet vs scalar+padding as competing hypotheses.",
+  "supersedes_report_schema": "cf2.p4m01.r1.cfg-reverse.v3",
+  "continuation_review_reason": "v3 mislabeled the varying-byte mod-3 phase as a record head gap ('head_partial_bytes') and its slot extraction dropped the last varying sample when (n-h)%3!=0 (BornBeast reported 163 instead of 164). v4 separates phase from framing claims and computes lossless accounting under both candidate record origins.",
   "verified_structural_core": {
-    "statement": "every one of the 237 WeaponShader CFGs fits a fixed record layout: all non-0xFF bytes sit at positions == h (mod 3) for exactly one head gap h in {0,1,2}; the rest of the file is constant 0xFF",
+    "statement": "all 237 WeaponShader CFGs: non-0xFF bytes occupy exactly one fixed offset-mod-3 phase per file; the other two phases are constant 0xFF across the entire file",
     "files_fitting": 237,
-    "corpus_files": 237
+    "corpus_files": 237,
+    "only_this_is_verified": true
   },
-  "exact_triplet_accounting_primary": {
+  "primary_accounting": {
     "M4A1_S_BornBeast": {
-      "head_partial_bytes": 2,
-      "full_triplets": 163,
-      "tail_partial_bytes": 1,
-      "identity": "492 = 2 + 163*3 + 1"
+      "size_bytes": 492,
+      "varying_byte_phase": 2,
+      "byte0_origin": {
+        "identity": "492 = 164*3",
+        "full_triplets": 164,
+        "tail_bytes": 0
+      },
+      "phase_origin": {
+        "first_varying_offset": 2,
+        "last_varying_offset": 491,
+        "leading_bytes_before_first_sample": 2,
+        "sample_count_complete": 164,
+        "trailing_bytes_after_last_sample": 0,
+        "identity": "492 = 2 + 164*3 + 0",
+        "off_by_one_note": "count uses range(ph, n, 3): includes the LAST varying byte; v3 dropped it whenever (n-h)%3 != 0"
+      },
+      "sequence_stats": {
+        "length": 164,
+        "ff_valued_samples_kept": 0,
+        "nonff_count": 164,
+        "min_nonff": 6,
+        "max": 33,
+        "unique": 19,
+        "first16": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          14,
+          15,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14,
+          15,
+          15
+        ],
+        "last8": [
+          8,
+          9,
+          11,
+          11,
+          13,
+          14,
+          13,
+          14
+        ]
+      },
+      "byte0_triplet_view": {
+        "unique_values_per_channel": [
+          1,
+          1,
+          19
+        ],
+        "varying_channels_under_byte0_origin": [
+          2
+        ],
+        "note": "under H-CFG-A the two constant channels are the fixed-FF ones"
+      }
     },
     "M4A1_S_Transformers": {
-      "head_partial_bytes": 1,
-      "full_triplets": 168,
-      "tail_partial_bytes": 1,
-      "identity": "506 = 1 + 168*3 + 1"
+      "size_bytes": 506,
+      "varying_byte_phase": 1,
+      "byte0_origin": {
+        "identity": "506 = 168*3 + 2",
+        "full_triplets": 168,
+        "tail_bytes": 2
+      },
+      "phase_origin": {
+        "first_varying_offset": 1,
+        "last_varying_offset": 505,
+        "leading_bytes_before_first_sample": 1,
+        "sample_count_complete": 169,
+        "trailing_bytes_after_last_sample": 0,
+        "identity": "506 = 1 + 169*3 + 0",
+        "off_by_one_note": "count uses range(ph, n, 3): includes the LAST varying byte; v3 dropped it whenever (n-h)%3 != 0"
+      },
+      "sequence_stats": {
+        "length": 169,
+        "ff_valued_samples_kept": 0,
+        "nonff_count": 169,
+        "min_nonff": 7,
+        "max": 33,
+        "unique": 18,
+        "first16": [
+          18,
+          18,
+          18,
+          18,
+          19,
+          19,
+          20,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          18,
+          18
+        ],
+        "last8": [
+          15,
+          16,
+          17,
+          17,
+          17,
+          17,
+          16,
+          15
+        ]
+      },
+      "byte0_triplet_view": {
+        "unique_values_per_channel": [
+          1,
+          18,
+          1
+        ],
+        "varying_channels_under_byte0_origin": [
+          1
+        ],
+        "note": "under H-CFG-A the two constant channels are the fixed-FF ones"
+      }
     },
     "M4A1_S_Jewelry": {
-      "head_partial_bytes": 2,
-      "full_triplets": 213,
-      "tail_partial_bytes": 1,
-      "identity": "642 = 2 + 213*3 + 1"
-    }
-  },
-  "primary_value_slots_kept": {
-    "M4A1_S_BornBeast": {
-      "slot_count": 163,
-      "slots_equal_ff": 0,
-      "first16": [
-        15,
-        15,
-        15,
-        15,
-        15,
-        14,
-        15,
-        15,
-        15,
-        15,
-        14,
-        14,
-        14,
-        14,
-        15,
-        15
-      ]
-    },
-    "M4A1_S_Transformers": {
-      "slot_count": 168,
-      "slots_equal_ff": 0,
-      "first16": [
-        18,
-        18,
-        18,
-        18,
-        19,
-        19,
-        20,
-        19,
-        19,
-        19,
-        19,
-        19,
-        19,
-        19,
-        18,
-        18
-      ]
-    },
-    "M4A1_S_Jewelry": {
-      "slot_count": 213,
-      "slots_equal_ff": 0,
-      "first16": [
-        15,
-        15,
-        15,
-        15,
-        14,
-        14,
-        15,
-        14,
-        15,
-        15,
-        15,
-        15,
-        16,
-        15,
-        15,
-        15
-      ]
+      "size_bytes": 642,
+      "varying_byte_phase": 2,
+      "byte0_origin": {
+        "identity": "642 = 214*3",
+        "full_triplets": 214,
+        "tail_bytes": 0
+      },
+      "phase_origin": {
+        "first_varying_offset": 2,
+        "last_varying_offset": 641,
+        "leading_bytes_before_first_sample": 2,
+        "sample_count_complete": 214,
+        "trailing_bytes_after_last_sample": 0,
+        "identity": "642 = 2 + 214*3 + 0",
+        "off_by_one_note": "count uses range(ph, n, 3): includes the LAST varying byte; v3 dropped it whenever (n-h)%3 != 0"
+      },
+      "sequence_stats": {
+        "length": 214,
+        "ff_valued_samples_kept": 0,
+        "nonff_count": 214,
+        "min_nonff": 12,
+        "max": 28,
+        "unique": 16,
+        "first16": [
+          15,
+          15,
+          15,
+          15,
+          14,
+          14,
+          15,
+          14,
+          15,
+          15,
+          15,
+          15,
+          16,
+          15,
+          15,
+          15
+        ],
+        "last8": [
+          25,
+          24,
+          24,
+          24,
+          24,
+          25,
+          24,
+          24
+        ]
+      },
+      "byte0_triplet_view": {
+        "unique_values_per_channel": [
+          1,
+          1,
+          16
+        ],
+        "varying_channels_under_byte0_origin": [
+          2
+        ],
+        "note": "under H-CFG-A the two constant channels are the fixed-FF ones"
+      }
     }
   },
   "corpus_value_statistics": {
-    "total_slot_samples": 40714,
+    "total_phase_samples": 40880,
+    "ff_valued_samples_kept": 0,
     "nonff_value_range": [
       0,
       42
@@ -108,68 +219,53 @@
       "1": 62,
       "2": 26,
       "3": 21,
-      "4": 473,
-      "5": 2029,
-      "6": 1076,
-      "7": 1075,
-      "8": 737,
-      "9": 583,
-      "10": 281,
-      "11": 449,
-      "12": 1258,
-      "13": 2810,
-      "14": 9637,
-      "15": 7275,
-      "16": 2320,
-      "17": 1657,
-      "18": 1557,
-      "19": 856
-    },
-    "note": "values never reach 100 across the whole corpus — a strong quantization signature inconsistent with arbitrary color bytes and consistent with small fixed-point scalars or a limited palette index range; does not by itself choose between H-CFG-A/B"
+      "4": 476,
+      "5": 2036,
+      "6": 1080,
+      "7": 1077,
+      "8": 739,
+      "9": 586,
+      "10": 283,
+      "11": 450,
+      "12": 1265,
+      "13": 2822,
+      "14": 9685,
+      "15": 7302,
+      "16": 2329,
+      "17": 1664,
+      "18": 1564,
+      "19": 857
+    }
   },
-  "competing_hypotheses_matrix": {
-    "H-CFG-A_color_triplets_two_fixed_FF_channels": {
-      "supported_by": [
-        "fixed 3-byte record grid",
-        "two positions permanently 0xFF could be saturated G/B channels",
-        "smooth near-gradual value sequences along the strip"
-      ],
-      "against": [
-        "corpus values confined to [0,42]: implausible color range for 237 varied skins",
-        "(v,255,255)-style colors would be extreme saturated hues unlike any weapon tint usage",
-        "no cross-skin correlation even between same-geometry skins (r in [-0.42, 0.45])"
-      ],
-      "status": "NOT_REFUTED_BUT_WEAKENED"
+  "competing_framing_hypotheses": {
+    "H-CFG-A_byte0_rgb_bgr_triplets": {
+      "statement": "records are byte-0-origin 3-byte colors; the varying phase h is one color channel; other two channels saturate at 0xFF",
+      "status": "OPEN_NOT_REFUTED"
     },
-    "H-CFG-B_scalar_samples_plus_padding": {
-      "supported_by": [
-        "fixed record grid with single varying byte per record",
-        "small value domain [0,42] fits fixed-point scalars/index ramps",
-        "per-file content independence matches per-skin parameterization",
-        "engine material system proven to exist (ArmModel text CFGs use float params)"
-      ],
-      "against": [
-        "why padding is 0xFF rather than 0x00 is unexplained",
-        "no engine-side consumer identified yet for weapon strips"
-      ],
+    "H-CFG-B_scalar_plus_padding": {
+      "statement": "scalar samples on a stride-3 grid with two padding bytes; record boundary itself unproven",
       "status": "PREFERRED_NOT_PROVEN"
     },
+    "H-CFG-C_other_periodic_packing": {
+      "statement": "any other 3-byte periodic container/packing consistent with the observed mod-3 pattern",
+      "status": "OPEN"
+    },
     "shared_core_either_way": [
-      "237/237 files fit fixed-layout truncation model exactly",
-      "492 = 2 + 163*3 + 1; 506 = 1 + 168*3 + 1; 642 = 2 + 213*3 + 1"
+      "237/237 files show the single-phase mod-3 pattern",
+      "record BOUNDARY is not proven by the phase evidence alone"
     ]
   },
   "cross_skin_strip_correlations_resampled128": {
-    "M4A1_S_BornBeast_vs_M4A1_S_Transformers": -0.084,
-    "M4A1_S_BornBeast_vs_M4A1_S_Jewelry": -0.424,
-    "M4A1_S_Transformers_vs_M4A1_S_Jewelry": -0.246
+    "M4A1_S_BornBeast_vs_M4A1_S_Transformers": -0.088,
+    "M4A1_S_BornBeast_vs_M4A1_S_Jewelry": -0.422,
+    "M4A1_S_Transformers_vs_M4A1_S_Jewelry": -0.241
   },
   "engine_material_format_context": {
-    "finding": "LZMA-compressed TEXT material CFGs exist for ArmModel (rf016 .../ArmModel/Shader/*.CFG): sections [Textures] (SpecularMapName0/EnvCubeMapName0/NormalMapName0/AlphaMapName0), [Techniques] flags, [Properties] float params incl. PieceIndex — explicit per-piece texture binding",
-    "weapon_equivalent_found": false,
-    "implication": "CF has an explicit material-binding format; weapons ship a different binary strip whose consumer is still unknown. No weapon-side text CFG was found anywhere in local data."
+    "finding": "LZMA-compressed TEXT material CFGs exist for ArmModel (rf016 .../ArmModel/Shader/*.CFG): sections [Textures] with SpecularMapName0/EnvCubeMapName0/NormalMapName0/AlphaMapName0, [Techniques] flags, [Properties] float params incl. PieceIndex — explicit per-piece texture binding",
+    "weapon_equivalent_found_in_scanned_corpus": false,
+    "implication": "CF has an explicit material-binding format; weapons ship a different binary strip whose consumer remains unknown"
   },
   "semantic_binding_status": "UNRESOLVED_PROVISIONAL",
-  "framing_status": "STRUCTURAL_CORE_VERIFIED (fixed layout + exact accounting); semantic interpretation remains a two-hypothesis competition",
-  "conclusion": "All 237 WeaponShader CFGs fit one fixed record layout with exact triplet accounting and zero exceptions. Value slots keep their 0xFF members unfiltered. The scalar+padding reading is preferred but not proven; the color-triplet reading survives but is weakened by the tiny value domain. Semantic binding stays explicitly unresolved."
+  "framing_status": "MOD3_PATTERN_VERIFIED_237_of_237; record boundary UNRESOLVED (three-hypothesis competition); no 'exact framing' claim",
+  "conclusion": "All 237 files show the single-phase mod-3 pattern (verified). Complete phase sequences: BornBeast 164 samples (last varying byte included), Transformers 169, Jewelry 214 — matching the byte-0-origin triplet counts 492=164*3, 506=168*3+2, 642=214*3 with no off-by-one loss. Record boundary remains unresolved across H-CFG-A/B/C; semantic binding stays UNRESOLVED_PROVISIONAL."
 }

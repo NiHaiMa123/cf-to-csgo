@@ -168,8 +168,27 @@ def scan_for_weapon_text_materials():
                         bornbeast_ref_hits.append({"file": rel, "refs": refs[:10]})
     return {
         "files_scanned": scanned,
+        "scan_scope": {
+            "extensions": CFG_EXTS + [".dat", ".lta"],
+            "size_limit_bytes": 64 * 1024 * 1024,
+            "corpus": (
+                "config-like/dat/lta files across data/rf* directories; this "
+                "is the ONLY scope covered by this negative result"
+            ),
+            "scope_limitation": (
+                "binary resource classes (DTX/TGA/LTB payloads, world "
+                "geometry, FMOD banks, etc.) are NOT covered by this scan; "
+                "no claim is made about mapping files outside the scanned "
+                "config-like corpus"
+            ),
+        },
         "material_format_hits_outside_armmodel": material_hits,
         "bornbeast_texture_reference_hits": bornbeast_ref_hits,
+        "negative_statement": (
+            "no BornBeast weapon-side explicit material mapping found in the "
+            f"scanned config-like/dat/lta corpus ({scanned} files); this does "
+            "NOT exclude mappings stored in unscanned binary resource classes"
+        ),
     }
 
 
@@ -179,13 +198,14 @@ def main():
     neg = scan_for_weapon_text_materials()
 
     report = {
-        "schema": "cf2.p4m01.r1.material-binding.v2",
+        "schema": "cf2.p4m01.r1.material-binding.v3",
         "supersedes_commit": SUPERSEDES_COMMIT,
-        "supersedes_report_schema": "cf2.p4m01.r1.material-binding.v1",
+        "supersedes_report_schema": "cf2.p4m01.r1.material-binding.v2",
         "continuation_review_reason": (
-            "stage-2 must use existing mapping/config infrastructure "
-            "semantics and record explicit negative results; numeric-field "
-            "meaning must stay provisional."
+            "v2's negative result was worded as 'anywhere in local data' "
+            "although the scan covered only config-like/dat/lta files; v3 "
+            "scopes the negative to the actual corpus and keeps the "
+            "ArmModel positive evidence unchanged."
         ),
         "A_engine_material_format_positive_evidence": {
             "description": (
@@ -222,17 +242,21 @@ def main():
         },
         "evidence_grade": {
             "engine_has_explicit_material_format": "VERIFIED_STRUCTURAL (text CFGs decoded)",
-            "weapon_side_mapping_file_exists_locally": "NEGATIVE_RESULT (not found)",
+            "weapon_side_mapping_in_scanned_config_corpus": (
+                "NEGATIVE_RESULT scoped to the scanned config-like/dat/lta "
+                "corpus only; not an exhaustive local-data negative"
+            ),
             "ltb_numeric_field_is_general_structure": "VERIFIED_STRUCTURAL",
             "numeric_field_equals_texture_slot": "PROVISIONAL",
             "closure_condition_4": "NOT_PASS",
         },
         "conclusion": (
             "Stage-2 produced one positive (the engine's explicit text "
-            "material format with PieceIndex) and two clean negatives (no "
-            "weapon-side material CFG, no config/dat file referencing "
-            "BornBeast textures anywhere in local data). The LTB numeric "
-            "field remains provisional; closure condition 4 must not pass."
+            "material format with PieceIndex) and one scope-limited negative "
+            "(no weapon-side material CFG and no BornBeast texture reference "
+            f"in the scanned config-like/dat/lta corpus, {neg['files_scanned']} "
+            "files). The LTB numeric field remains provisional; closure "
+            "condition 4 must not pass. Weapon slot->texture-set stays OPEN."
         ),
     }
 
