@@ -7,63 +7,65 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N02-E-R1
-Title: LTB Material Resource Binding Evidence Recovery
+Task ID: P4-M01-N02-E-R2
+Title: Resolve partial material binding through bounded native resource verification
 State: ACTIVE
 Parent: P4-M01 Native Material Recovery
-Depends on: P4-M01-N02-D-R2
+Depends on: P4-M01-N02-E-R1
 ```
 
 # 2. Current execution status
 
-N02-D-R1 已完成 REZ basename-only binding 修复，当前边界已明确：
+N02-E-R1 已完成 LTB material binding boundary analysis。
+
+结论：
 
 ```text
-M4A1 runtime config
- -> exact REZ logical path
- -> runtime artifact
+MATERIAL_BINDING_PARTIAL
 ```
 
-该链路可以进入下一阶段，但不能直接推出：
+已确认：
 
 ```text
-runtime M4A1 = BornBeast identity
-runtime path = material closure
+PV-M4A1.LTB
+ -> piece/model structure evidence
+ -> material relation boundary
+```
+
+但未确认：
+
+```text
+piece
+ -> exact texture resource
+ -> native DTX/TGA
 ```
 
 # 3. Current goal
 
-本轮目标：建立 LTB 内部资源关系证据。
+本轮目标：补齐 native resource closure。
 
 回答：
 
 ```text
-PV-M4A1.LTB
- -> piece/model structure
- -> texture/material reference
- -> DTX/TGA resource path
-```
-
-需要确认：
-
-```text
-1. LTB 是否包含 material/texture slot relation；
-2. piece index 与 texture reference 是否存在确定关系；
-3. runtime resource graph 能否从 model 延伸到材质资源；
-4. 哪些关系只能保持 OPEN_UNRESOLVED。
+LTB piece/material candidate
+ -> runtime resource payload
+ -> SHA verified asset
+ -> native material graph
 ```
 
 # 4. Required Work
 
-优先使用：
+优先执行 bounded verification：
 
 ```text
-existing LTB parser
-Jupiter reference implementation
-current CF runtime LTB samples
+REZ directory evidence
+ -> locate matching payload
+ -> read bounded bytes
+ -> SHA256
+ -> compare local CF material assets
 ```
 
-输出 evidence：
+输出：
 
 ```text
 work/.../material_binding/
@@ -72,9 +74,10 @@ work/.../material_binding/
 至少包含：
 
 ```text
-ltb structure report
-piece/material relation report
-resource graph candidate
+payload verification report
+resource graph update
+confirmed relations
+remaining ambiguity
 confidence level
 ```
 
@@ -82,24 +85,24 @@ confidence level
 
 - 不进入 P5 identity confirmation；
 - 不宣布 P4-M01 PASS；
-- 不把 M4A1 runtime binding 等同 BornBeast identity；
+- 不把 runtime M4A1 binding 等同 BornBeast identity；
 - 不逆 DLL/EXE；
 - 不逆 FXO shader；
-- 不继续无目标全盘扫描；
-- 不把 filename similarity 当 proof；
-- 不冻结 CFG shader semantics。
+- 不进行无目标全盘扫描；
+- 不冻结 CFG shader semantics；
+- 不使用 filename similarity 作为 proof。
 
 # 6. Completion State
 
 ```text
-A. MATERIAL_BINDING_CONFIRMED
-   LTB -> material -> texture relation established
+A. NATIVE_RESOURCE_CONFIRMED
+   payload/material relation established
 
 B. MATERIAL_BINDING_PARTIAL
-   only part of graph confirmed
+   evidence improved but closure incomplete
 
 C. REWORK_REQUIRED
-   parser/evidence path invalid
+   verification path invalid
 ```
 
 完成后返回：
