@@ -1,0 +1,1797 @@
+{
+  "status": "M4A1_RUNTIME_ARTIFACT_CONFIRMED",
+  "runtime_source": "rez/Butes/bf005.ltc (decoded via N02-B-R1 pipeline)",
+  "rez_index_scope": {
+    "rez_dir": "rez/ rez2/ rez3/ rez4/ rez5/ rez6/",
+    "rez_count_indexed": 475,
+    "unique_basenames_indexed": 225863,
+    "total_entries": 252505,
+    "elapsed_seconds": 17.66
+  },
+  "summary": {
+    "m4a1_paths_total": 60,
+    "direct_runtime_artifact": 60,
+    "archive_index_only": 0,
+    "not_found_in_scoped_runtime": 0
+  },
+  "lookups": [
+    {
+      "WeaponName": "M4A1",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\m4a1.ltb",
+      "runtime_path_normalised": "Models/weapons/m4a1.ltb",
+      "basename": "m4a1.ltb",
+      "basename_lc": "m4a1.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1.LTB",
+          "data_offset": 241927119,
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\l-m4a1.dtx",
+      "runtime_path_normalised": "ModelTextures/weapons/l-m4a1.dtx",
+      "basename": "l-m4a1.dtx",
+      "basename_lc": "l-m4a1.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "L-M4A1.DTX",
+          "data_offset": 73750408,
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1",
+      "basename": "pv-m4a1",
+      "basename_lc": "pv-m4a1",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.LTB",
+          "data_offset": 148659089,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.DTX",
+          "data_offset": 176175336,
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/pv-m4a1.dtx",
+      "basename": "pv-m4a1.dtx",
+      "basename_lc": "pv-m4a1.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.DTX",
+          "data_offset": 176175336,
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\m4a1.ltb",
+      "runtime_path_normalised": "Models/weapons/m4a1.ltb",
+      "basename": "m4a1.ltb",
+      "basename_lc": "m4a1.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1.LTB",
+          "data_offset": 241927119,
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\l-m4a1.dtx",
+      "runtime_path_normalised": "ModelTextures/weapons/l-m4a1.dtx",
+      "basename": "l-m4a1.dtx",
+      "basename_lc": "l-m4a1.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "L-M4A1.DTX",
+          "data_offset": 73750408,
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1",
+      "basename": "pv-m4a1",
+      "basename_lc": "pv-m4a1",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.LTB",
+          "data_offset": 148659089,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.DTX",
+          "data_offset": 176175336,
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/pv-m4a1.dtx",
+      "basename": "pv-m4a1.dtx",
+      "basename_lc": "pv-m4a1.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.DTX",
+          "data_offset": 176175336,
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "runtime_path_normalised": "Models/weapons/M4A1_Silencer.ltb",
+      "basename": "M4A1_Silencer.ltb",
+      "basename_lc": "m4a1_silencer.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1_SILENCER.LTB",
+          "data_offset": 241943677,
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\L-M4A1_Silencer.DTX",
+      "runtime_path_normalised": "ModelTextures/weapons/L-M4A1_Silencer.DTX",
+      "basename": "L-M4A1_Silencer.DTX",
+      "basename_lc": "l-m4a1_silencer.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "L-M4A1_SILENCER.DTX",
+          "data_offset": 73783340,
+          "size": 32932,
+          "id": 0,
+          "md5": "BF0E80517626F05CE9A21F4BF9066E86"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1_silencer",
+      "basename": "pv-m4a1_silencer",
+      "basename_lc": "pv-m4a1_silencer",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.LTB",
+          "data_offset": 150117098,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 181388072,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "rez_size": 1940536776,
+          "rez_file_count": 5426,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 1209241725,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/pv-m4a1.dtx",
+      "basename": "pv-m4a1.dtx",
+      "basename_lc": "pv-m4a1.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.DTX",
+          "data_offset": 176175336,
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "runtime_path_normalised": "Models/weapons/M4A1_Silencer.ltb",
+      "basename": "M4A1_Silencer.ltb",
+      "basename_lc": "m4a1_silencer.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1_SILENCER.LTB",
+          "data_offset": 241943677,
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\L-M4A1_Silencer_camo.DTX",
+      "runtime_path_normalised": "ModelTextures/weapons/L-M4A1_Silencer_camo.DTX",
+      "basename": "L-M4A1_Silencer_camo.DTX",
+      "basename_lc": "l-m4a1_silencer_camo.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "data_offset": 73816272,
+          "size": 32932,
+          "id": 0,
+          "md5": "56498E817DA6ED661D6D3B5098974F79"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "rez_size": 1940536776,
+          "rez_file_count": 5426,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "data_offset": 1896805242,
+          "size": 32932,
+          "id": 0,
+          "md5": "92A6162F9381436C72320E4874B3E104"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1_silencer",
+      "basename": "pv-m4a1_silencer",
+      "basename_lc": "pv-m4a1_silencer",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.LTB",
+          "data_offset": 150117098,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 181388072,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "rez_size": 1940536776,
+          "rez_file_count": 5426,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 1209241725,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1-camo.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/pv-m4a1-camo.dtx",
+      "basename": "pv-m4a1-camo.dtx",
+      "basename_lc": "pv-m4a1-camo.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1-CAMO.DTX",
+          "data_offset": 173880428,
+          "size": 524452,
+          "id": 0,
+          "md5": "1AEB11A4CC8B21D2A7DE05DCEA919D3D"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "runtime_path_normalised": "Models/weapons/M4A1_Silencer.ltb",
+      "basename": "M4A1_Silencer.ltb",
+      "basename_lc": "m4a1_silencer.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1_SILENCER.LTB",
+          "data_offset": 241943677,
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\m4a1_qq.DTX",
+      "runtime_path_normalised": "ModelTextures/weapons/m4a1_qq.DTX",
+      "basename": "m4a1_qq.DTX",
+      "basename_lc": "m4a1_qq.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1_QQ.DTX",
+          "data_offset": 74727224,
+          "size": 41124,
+          "id": 0,
+          "md5": "BAE2E92D4AC646354EF784B25E7AF22B"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1_silencer",
+      "basename": "pv-m4a1_silencer",
+      "basename_lc": "pv-m4a1_silencer",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.LTB",
+          "data_offset": 150117098,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 181388072,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "rez_size": 1940536776,
+          "rez_file_count": 5426,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 1209241725,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-m4a1_qq.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/PV-m4a1_qq.dtx",
+      "basename": "PV-m4a1_qq.dtx",
+      "basename_lc": "pv-m4a1_qq.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_QQ.DTX",
+          "data_offset": 180142232,
+          "size": 164004,
+          "id": 0,
+          "md5": "6B3B91852C8237B17F2AB655F18EE2AE"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1-CUSTOM.ltb",
+      "runtime_path_normalised": "Models/weapons/M4A1-CUSTOM.ltb",
+      "basename": "M4A1-CUSTOM.ltb",
+      "basename_lc": "m4a1-custom.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1-CUSTOM.LTB",
+          "data_offset": 241897543,
+          "size": 29576,
+          "id": 0,
+          "md5": "19A34256C538D38066C7FC1D8C9B19F7"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\l-m4a1.dtx",
+      "runtime_path_normalised": "ModelTextures/weapons/l-m4a1.dtx",
+      "basename": "l-m4a1.dtx",
+      "basename_lc": "l-m4a1.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "L-M4A1.DTX",
+          "data_offset": 73750408,
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\PV-M4A1-CUSTOM",
+      "runtime_path_normalised": "Models/PlayerView/PV-M4A1-CUSTOM",
+      "basename": "PV-M4A1-CUSTOM",
+      "basename_lc": "pv-m4a1-custom",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1-CUSTOM.LTB",
+          "data_offset": 147924271,
+          "size": 64927,
+          "id": 0,
+          "md5": "F28DDAB62708572ABC5DA88F7DA2D24C"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1-CUSTOM.DTX",
+          "data_offset": 174404880,
+          "size": 131236,
+          "id": 0,
+          "md5": "8AE7E66D9658810A4420483269EC9751"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+          "rez_size": 1931848826,
+          "rez_file_count": 6818,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1-CUSTOM.DTX",
+          "data_offset": 1179088571,
+          "size": 131236,
+          "id": 0,
+          "md5": "8AE7E66D9658810A4420483269EC9751"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/pv-m4a1.dtx",
+      "basename": "pv-m4a1.dtx",
+      "basename_lc": "pv-m4a1.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.DTX",
+          "data_offset": 176175336,
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\m4a1.ltb",
+      "runtime_path_normalised": "Models/weapons/m4a1.ltb",
+      "basename": "m4a1.ltb",
+      "basename_lc": "m4a1.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1.LTB",
+          "data_offset": 241927119,
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ]
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_gold.dtx",
+      "runtime_path_normalised": "ModelTextures/weapons/QV-RI_m4a1_gold.dtx",
+      "basename": "QV-RI_m4a1_gold.dtx",
+      "basename_lc": "qv-ri_m4a1_gold.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "QV-RI_M4A1_GOLD.DTX",
+          "data_offset": 104962804,
+          "size": 82084,
+          "id": 0,
+          "md5": "FA1801AB9D3FD0F3F236A17699DAB10C"
+        }
+      ]
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1",
+      "basename": "pv-m4a1",
+      "basename_lc": "pv-m4a1",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.LTB",
+          "data_offset": 148659089,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1.DTX",
+          "data_offset": 176175336,
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ]
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_gold.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/PV-RI_m4a1_gold.dtx",
+      "basename": "PV-RI_m4a1_gold.dtx",
+      "basename_lc": "pv-ri_m4a1_gold.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-RI_M4A1_GOLD.DTX",
+          "data_offset": 49030536,
+          "size": 262308,
+          "id": 0,
+          "md5": "E2FDB69324BDCE61AB92FF4EC158FF93"
+        }
+      ]
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "runtime_path_normalised": "Models/weapons/M4A1_Silencer.ltb",
+      "basename": "M4A1_Silencer.ltb",
+      "basename_lc": "m4a1_silencer.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1_SILENCER.LTB",
+          "data_offset": 241943677,
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_bronze.dtx",
+      "runtime_path_normalised": "ModelTextures/weapons/QV-RI_m4a1_silencer_bronze.dtx",
+      "basename": "QV-RI_m4a1_silencer_bronze.dtx",
+      "basename_lc": "qv-ri_m4a1_silencer_bronze.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "data_offset": 105044888,
+          "size": 65700,
+          "id": 0,
+          "md5": "F7778D04AA8541EF2432B743B7929F39"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1_silencer",
+      "basename": "pv-m4a1_silencer",
+      "basename_lc": "pv-m4a1_silencer",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.LTB",
+          "data_offset": 150117098,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 181388072,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "rez_size": 1940536776,
+          "rez_file_count": 5426,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 1209241725,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_bronze.dtx",
+      "runtime_path_normalised": "ModelTextures/PlayerView/PV-RI_m4a1_silencer_bronze.dtx",
+      "basename": "PV-RI_m4a1_silencer_bronze.dtx",
+      "basename_lc": "pv-ri_m4a1_silencer_bronze.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "data_offset": 49292844,
+          "size": 327844,
+          "id": 0,
+          "md5": "E8FD2627C5BE9D4E50544BB3FAE7B7A9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "runtime_path_normalised": "Models/weapons/M4A1_Silencer.ltb",
+      "basename": "M4A1_Silencer.ltb",
+      "basename_lc": "m4a1_silencer.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1_SILENCER.LTB",
+          "data_offset": 241943677,
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_silver.dtx",
+      "runtime_path_normalised": "ModelTextures/weapons/QV-RI_m4a1_silencer_silver.dtx",
+      "basename": "QV-RI_m4a1_silencer_silver.dtx",
+      "basename_lc": "qv-ri_m4a1_silencer_silver.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "data_offset": 105258372,
+          "size": 65700,
+          "id": 0,
+          "md5": "8AD3934D9E0E2D9138E7C41063E1EF6F"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1_silencer",
+      "basename": "pv-m4a1_silencer",
+      "basename_lc": "pv-m4a1_silencer",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.LTB",
+          "data_offset": 150117098,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 181388072,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "rez_size": 1940536776,
+          "rez_file_count": 5426,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 1209241725,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_silver.DTX",
+      "runtime_path_normalised": "ModelTextures/PlayerView/PV-RI_m4a1_silencer_silver.DTX",
+      "basename": "PV-RI_m4a1_silencer_silver.DTX",
+      "basename_lc": "pv-ri_m4a1_silencer_silver.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "data_offset": 50210840,
+          "size": 327844,
+          "id": 0,
+          "md5": "74B37FEE7A865C83FEB49CF3D1CE46D6"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "runtime_path_normalised": "Models/weapons/M4A1_Silencer.ltb",
+      "basename": "M4A1_Silencer.ltb",
+      "basename_lc": "m4a1_silencer.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "M4A1_SILENCER.LTB",
+          "data_offset": 241943677,
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_crystal.DTX",
+      "runtime_path_normalised": "ModelTextures/weapons/QV-RI_m4a1_silencer_crystal.DTX",
+      "basename": "QV-RI_m4a1_silencer_crystal.DTX",
+      "basename_lc": "qv-ri_m4a1_silencer_crystal.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "data_offset": 105110588,
+          "size": 65700,
+          "id": 0,
+          "md5": "5B8FA5E97DA1A9073C11A403560E52CD"
+        }
+      ]
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "runtime_path_normalised": "Models/PlayerView/pv-m4a1_silencer",
+      "basename": "pv-m4a1_silencer",
+      "basename_lc": "pv-m4a1_silencer",
+      "ext": "",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.LTB",
+          "data_offset": 150117098,
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 181388072,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "rez_size": 1940536776,
+          "rez_file_count": 5426,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-M4A1_SILENCER.DTX",
+          "data_offset": 1209241725,
+          "size": 32932,
+          "id": 0,
+          "md5": "589B86B4462F861C5DFDAD7A5A70FBAF"
+        }
+      ]
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_crystal.DTX",
+      "runtime_path_normalised": "ModelTextures/PlayerView/PV-RI_m4a1_silencer_crystal.DTX",
+      "basename": "PV-RI_m4a1_silencer_crystal.DTX",
+      "basename_lc": "pv-ri_m4a1_silencer_crystal.dtx",
+      "ext": ".dtx",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "rez_size": 196985580,
+          "rez_file_count": 4417,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "data_offset": 49620688,
+          "size": 327844,
+          "id": 0,
+          "md5": "F89155D2AF2C033BACBB40E39807DA3B"
+        }
+      ]
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "runtime_path_normalised": "RS//NinjaTranslucent.ltb",
+      "basename": "NinjaTranslucent.ltb",
+      "basename_lc": "ninjatranslucent.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 8960,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "rez_size": 255883357,
+          "rez_file_count": 4551,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "NINJATRANSLUCENT.LTB",
+          "data_offset": 46327084,
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ]
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "runtime_path_normalised": "RS//PVModelDefault.ltb",
+      "basename": "PVModelDefault.ltb",
+      "basename_lc": "pvmodeldefault.ltb",
+      "ext": ".ltb",
+      "verdict": "DIRECT_RUNTIME_ARTIFACT",
+      "rez_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "rez_size": 26778,
+          "rez_file_count": 80,
+          "rez_file_type": "RezMgr Version 1 Copyright (C) 1995 MONOLITH INC.",
+          "rez_version": 1,
+          "name": "PVMODELDEFAULT.LTB",
+          "data_offset": 9893,
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-08-22T15:03:14.208430+00:00",
+  "script": "scripts\\material_recovery\\n02d_rez_asset_lookup.py"
+}
