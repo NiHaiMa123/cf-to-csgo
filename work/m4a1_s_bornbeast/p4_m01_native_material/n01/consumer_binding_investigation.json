@@ -1,0 +1,37 @@
+﻿{
+  "schema": "cf2.p4m01.n01.binding-investigation.v1",
+  "task_id": "P4-M01-N01",
+  "phase": 3,
+  "summary": "Investigation of binding key generation, consumption, and engine mapping for LTB weapon materials.",
+  "investigation_results": [
+    {
+      "candidate_consumer": "LithTechModelDecoder.cs (LTB Parser)",
+      "source_path": "CFRezManager/Decoders/LithTech/Models/LithTechModelDecoder.cs",
+      "reference_direction": "LTB binary byte stream -> mesh structures",
+      "raw_key_info": "The post-mesh short ASCII string (e.g. '0', '1', '2') at offset (base + 85 + vc*32 + fc*6). Length prefixed by 1 byte.",
+      "producer": "The original LithTech exporter from Maya/3dsMax generates this field to tag meshes with sub-material or Piece IDs.",
+      "consumer": "CF Client Engine (C++). The C# repository's LithTechModelDecoder DOES NOT consume it. It is skipped in GetLtbMeshPostDataEndCandidates (finalSectionSize skip) and not exposed in the parsed mesh object.",
+      "actual_target_hits": "BornBeast, Transformers, Jewelry all contain these numeric suffixes (0-8) at the end of their mesh blocks.",
+      "control_hits": "BlueDiamond LTB also contains these.",
+      "scan_scope_count": "Manual code tracing of GetLtbMeshPostDataEndCandidates in LithTechModelDecoder.cs",
+      "status": "rejected_as_repo_consumer",
+      "evidence_class": "STRUCTURALLY_VERIFIED",
+      "reason": "The repository parser identifies the bytes to calculate the block length but discards the semantic value."
+    },
+    {
+      "candidate_consumer": "LithTechObjExporter.ExpandSourceResourceTexturePathCandidates",
+      "source_path": "CFRezManager/Decoders/LithTech/Models/LithTechObjExporter.cs",
+      "reference_direction": "LTB filename -> Texture Family (DTX/TGA/CFG)",
+      "raw_key_info": "The file path of the LTB model itself (e.g. Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB).",
+      "producer": "The file system / VFS layout of CrossFire.",
+      "consumer": "LithTechObjExporter.cs (EnumerateTextureCandidates)",
+      "actual_target_hits": "Maps BornBeast LTB to PV-M4A1_S_BornBeast.DTX. It maps ALL meshes in the LTB to the EXACT SAME texture file, because mesh.TexturePath is null for LTB.",
+      "control_hits": "Maps BlueDiamond LTB to its corresponding DTX.",
+      "scan_scope_count": "Code tracing of EnumerateTextureCandidates and ExpandSourceResourceTexturePathCandidates.",
+      "status": "accepted_as_repo_binding_mechanism",
+      "evidence_class": "OBSERVED / STRUCTURAL_CORRESPONDENCE",
+      "reason": "Because the LTB parser drops the short ID, the repo's exporter relies entirely on filename mirroring (Models/ -> ModelTextures/). It applies the same texture family to all sub-meshes of the weapon."
+    }
+  ],
+  "conclusion": "The actual C# repository does NOT use the LTB short IDs to map textures. It uses filename mirroring, applying one texture family (DTX, Alpha, Normal, Specular, CFG) to the entire weapon model. The short IDs likely correspond to engine 'PieceIndex' for shader variation, but are not consumed by the current open-source tooling to resolve file paths."
+}

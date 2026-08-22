@@ -87,13 +87,13 @@ def is_likely_model_texture_config(path: str, ext: str) -> bool:
     n = normalize_path(path)
     if is_ui_path(n):
         return False
-    e = ext.lower().lstrip(".")
-    if e not in {"cfg", "ini", "txt", "cft", "fcf", "csv", "dat",
-                  "xml", "json", "lua", "ref", "apf"}:
+    e = ext.lower()
+    if e not in {".cfg", ".ini", ".txt", ".cft", ".fcf", ".csv", ".dat",
+                  ".xml", ".json", ".lua", ".ref", ".apf"}:
         return False
     if "/modeltextures/" in n.lower():
         return True
-    if "/models/" in n.lower() and e in {"cfg", "ini", "txt"}:
+    if "/models/" in n.lower() and e in {".cfg", ".ini", ".txt"}:
         return True
     low = n.lower()
     return any(k in low for k in
@@ -105,7 +105,7 @@ def is_likely_model_texture_path(path: str, ext: str) -> bool:
     n = normalize_path(path).lower()
     if is_ui_path(n):
         return False
-    e = ext.lower().lstrip(".")
+    e = ext.lower()
     if e not in TEXTURE_EXT:
         return False
     return any(k in n for k in
@@ -124,7 +124,7 @@ def is_likely_model_mapping_table(path: str, ext: str) -> bool:
     n = normalize_path(path)
     if is_low_value_mapping_path(n):
         return False
-    e = ext.lower().lstrip(".")
+    e = ext.lower()
     if e not in PREFERRED_MAP_EXT:
         return False
     if not any(m in n for m in ("/Table/", "/Table_", "/Butes/")):
@@ -345,7 +345,7 @@ def build_consumer_index(data_root: str):
         for fn in files:
             p = os.path.join(root, fn)
             rel = os.path.relpath(p, data_root).replace("\\", "/")
-            ext = os.path.splitext(fn)[1].lower().lstrip(".")
+            ext = os.path.splitext(fn)[1].lower()
             if not ext:
                 continue
             if is_low_value_mapping_path(rel):
@@ -425,13 +425,15 @@ def look_up_texture(model_keys, config_index):
     return ordered
 
 
-def build_corpus(data_root: str):
+def build_corpus(data_root: str, extensions: set):
     """Walk all files and yield (rel, ext, abs_path, raw bytes safe)."""
     for root, _dirs, files in os.walk(data_root):
         for fn in files:
+            ext = os.path.splitext(fn)[1].lower()
+            if ext not in extensions:
+                continue
             p = os.path.join(root, fn)
             rel = os.path.relpath(p, data_root).replace("\\", "/")
-            ext = os.path.splitext(fn)[1].lower().lstrip(".")
             raw = _safe_read(p, 8 * 1024 * 1024)
             if raw is None:
                 continue
@@ -439,6 +441,14 @@ def build_corpus(data_root: str):
 
 
 def main():
+    # Self-test for extensions
+    assert ".dtx" in TEXTURE_EXT
+    assert ".tga" in TEXTURE_EXT
+    assert ".cfg" in CONFIG_EXT
+    assert ".txt" in CONFIG_EXT
+    assert ".cft" in PREFERRED_MAP_EXT
+    assert is_likely_model_texture_path("a/weapons/test.dtx", ".dtx")
+    
     print("Phase 1 consumer discovery ...")
     cfg_idx, raw_needles, material_candidates, mapping_table_candidates = build_consumer_index(DATA)
     print(f"  config items indexed: {sum(len(v) for v in cfg_idx.values())}")
@@ -462,13 +472,11 @@ def main():
 
     # Raw byte grep for the canonical weapons across all .cfg/.ini/.txt/.dat/.lta
     raw_grep_hits = defaultdict(list)
-    text_extensions = {"cfg", "ini", "txt", "dat", "lta"}
+    text_extensions = {".cfg", ".ini", ".txt", ".dat", ".lta"}
     needles_by_stem = {label: stem for label, stem in targets.items()}
     print("  raw needle scan ...")
     scanned = 0
-    for rel, ext, p, raw in build_corpus(DATA):
-        if ext not in text_extensions:
-            continue
+    for rel, ext, p, raw in build_corpus(DATA, text_extensions):
         if is_low_value_mapping_path(rel):
             continue
         scanned += 1

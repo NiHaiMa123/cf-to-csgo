@@ -148,158 +148,6 @@ def scan_arm_model_positive_control():
     return results
 
 
-def run_phase1_consumer_discovery():
-    """Phase 1: Consumer discovery across codebase and data."""
-    print("Running Phase 1: Consumer Discovery...")
-    
-    # Check text config / index in repo Decoders
-    consumer_families = [
-        {
-            "candidate_consumer": "LithTechModelTextureConfigIndex.CreateResolver",
-            "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechModelTextureConfigIndex.cs",
-            "input_resource_type": ".cfg / .ini / .txt config files",
-            "reference_direction": "model stem/part base -> parsed textures list",
-            "mechanism": "Builds in-memory index from text config mapping rules; resolves model name to texture candidates using scoring formula",
-            "BornBeast_hit": "NEGATIVE (no .cfg/.ini maps BornBeast in scanned text configs)",
-            "Transformers_hit": "NEGATIVE (no .cfg/.ini maps Transformers in scanned text configs)",
-            "Jewelry_hit": "NEGATIVE (no .cfg/.ini maps Jewelry in scanned text configs)",
-            "Control_hit": "NEGATIVE",
-            "evidence_class": "SCOPED_NEGATIVE_FOR_WEAPONS",
-            "status": "verified_code_behavior",
-            "reason": "Text-based model texture config index works for models with explicit text mapping configs, but CF weapon models do not use text config tables; they use directory mirroring + naming conventions and binary shader CFGs."
-        },
-        {
-            "candidate_consumer": "LithTechTextureMappingScanner.FindGlobalMappingTableCandidates",
-            "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechTextureMappingScanner.cs",
-            "input_resource_type": "Table_*.csv, Character*.cfg, Weapon*.cft, etc.",
-            "reference_direction": "mapping table file -> model-to-texture mapping rows",
-            "mechanism": "Scores global candidate tables using weighted term frequencies (model*8 + texture*3 + keyword*10)",
-            "BornBeast_hit": "NEGATIVE (0 hits in weapon tables)",
-            "Transformers_hit": "NEGATIVE (0 hits)",
-            "Jewelry_hit": "NEGATIVE (0 hits)",
-            "Control_hit": "NEGATIVE",
-            "evidence_class": "SCOPED_NEGATIVE_FOR_WEAPONS",
-            "status": "verified_code_behavior",
-            "reason": "Weapon models in CF are not referenced by global text CSV/CFT mapping tables in client data."
-        },
-        {
-            "candidate_consumer": "LithTechDatTextureReferenceIndex.ExtractTextureReferences",
-            "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechDatTextureReferenceIndex.cs",
-            "input_resource_type": ".dat world files",
-            "reference_direction": "world dat bytes -> texture paths",
-            "mechanism": "LZMA decompress + scan for texture extensions (.dtx, .tga, etc.)",
-            "BornBeast_hit": "NEGATIVE (0 hits in 67 .dat files)",
-            "Transformers_hit": "NEGATIVE (0 hits)",
-            "Jewelry_hit": "NEGATIVE (0 hits)",
-            "Control_hit": "NEGATIVE",
-            "evidence_class": "SCOPED_NEGATIVE_FOR_WEAPONS",
-            "status": "verified_code_behavior",
-            "reason": ".dat files represent world level geometry and bsp textures, not player weapon models."
-        },
-        {
-            "candidate_consumer": "CfgBinaryStripDecoder.TryDetect",
-            "source_code_path": "CFRezManager/Decoders/Config/CfgBinaryStripDecoder.cs",
-            "input_resource_type": "ModelTextures/Shader/WeaponShader/*.CFG",
-            "reference_direction": "WeaponShader CFG file -> binary mod-3 sample strip",
-            "mechanism": "Detects 3-byte periodicity where non-0xFF bytes occupy a single phase; extracts sample byte sequence",
-            "BornBeast_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG -> 164 samples, phase 0)",
-            "Transformers_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG -> 169 samples, phase 2)",
-            "Jewelry_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Jewelry.CFG -> 214 samples, phase 1)",
-            "Control_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BlueDiamond.CFG -> 164 samples, phase 0)",
-            "evidence_class": "STRUCTURALLY_VERIFIED",
-            "status": "accepted_binary_consumer",
-            "reason": "All 237 weapon shader CFGs in the client corpus strictly adhere to this format. Verified 100% across all 237 files."
-        },
-        {
-            "candidate_consumer": "LithTechModelDecoder.FindTexturePath + FindMaterialHints",
-            "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechModelDecoder.cs",
-            "input_resource_type": ".LTA model files",
-            "reference_direction": "mesh node -> TexturePath / MaterialHint strings",
-            "mechanism": "Reads ASCII LTA syntax tree for embedded texture assignments",
-            "BornBeast_hit": "NOT_APPLICABLE (BornBeast is binary LTB)",
-            "Transformers_hit": "NOT_APPLICABLE (Transformers is binary LTB)",
-            "Jewelry_hit": "NOT_APPLICABLE (Jewelry is binary LTB)",
-            "Control_hit": "NOT_APPLICABLE",
-            "evidence_class": "STRUCTURAL_LIMITATION",
-            "status": "accepted_for_lta_only",
-            "reason": "CF weapon models are distributed as binary LZMA-compressed LTB, not ASCII LTA."
-        },
-        {
-            "candidate_consumer": "LithTechObjExporter.ExpandSourceResourceTexturePathCandidates & Mirroring",
-            "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechObjExporter.cs:438",
-            "input_resource_type": "Models/PLAYERVIEW/PV-*.LTB",
-            "reference_direction": "Models/PLAYERVIEW/PV-{Name}.LTB -> ModelTextures/PLAYERVIEW/PV-{Name}.DTX + aux maps",
-            "mechanism": "Replaces Models/ prefix with ModelTextures/ and maps LTB to DTX, AlphaMap, NormalMap, SpecularMap, and WeaponShader CFG",
-            "BornBeast_hit": "POSITIVE (Complete 5-map family resolved: DTX, Alpha, Normal, Specular, WeaponShader CFG)",
-            "Transformers_hit": "POSITIVE (Complete 5-map family resolved)",
-            "Jewelry_hit": "POSITIVE (Complete 5-map family resolved)",
-            "Control_hit": "POSITIVE (Complete 5-map family resolved for BlueDiamond)",
-            "evidence_class": "STRUCTURALLY_VERIFIED_AND_ENGINE_CONSISTENT",
-            "status": "primary_engine_binding_mechanism",
-            "reason": "CrossFire's LithTech runtime uses direct directory mirroring (Models/ -> ModelTextures/) coupled with multi-texture subdirectories (AlphaMap/, NormalMap/, SpecularMap/, Shader/WeaponShader/) matching the weapon skin basename."
-        },
-        {
-            "candidate_consumer": "ArmModel Text Shader Material Consumer (Positive Control)",
-            "source_code_path": "data/rf016/Models/PLAYERVIEW/ArmModel/Shader/*.CFG",
-            "input_resource_type": "ArmModel/Shader/*.CFG (LZMA text)",
-            "reference_direction": "[Textures] (SpecularMapName0, EnvCubeMapName0, NormalMapName0, AlphaMapName0) + [Properties] PieceIndex -> Engine Shader",
-            "mechanism": "Explicit text-based shader material configuration referencing all auxiliary maps by relative path and associating them with PieceIndex",
-            "BornBeast_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-            "Transformers_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-            "Jewelry_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-            "Control_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-            "evidence_class": "ENGINE_FORMAT_POSITIVE_CONTROL",
-            "status": "architectural_ground_truth",
-            "reason": "Provides definitive proof that CrossFire's rendering engine implements a multi-channel shader pipeline comprising Base/Diffuse, AlphaMap, NormalMap, SpecularMap, and EnvCubeMap per PieceIndex."
-        }
-    ]
-
-    matrix_out = {
-        "schema": "cf2.p4m01.n01.consumer-candidate.v2",
-        "task_id": "P4-M01-N01",
-        "phase": 1,
-        "summary": "Systematic investigation of all candidate code paths, config resolvers, indexers, and decoders for CF weapon materials.",
-        "candidate_matrix": consumer_families,
-    }
-    matrix_path = os.path.join(N01_DIR, "consumer_candidate_matrix.json")
-    with open(matrix_path, "w", encoding="utf-8") as f:
-        json.dump(matrix_out, f, indent=2, ensure_ascii=False)
-    print(f"  Wrote {matrix_path}")
-
-    # Generate consumer_search_report.md
-    report_md = [
-        "# N01 Phase 1 — Engine Material Consumer Search Report",
-        "",
-        "## Executive Summary",
-        "",
-        "In Phase 1, we conducted an exhaustive investigation across all candidate consumer code paths, indexers, table scanners, decoders, and data files in the repository and local `data/` corpus.",
-        "",
-        "### Key Findings",
-        "1. **Directory Mirroring & Subdirectory Architecture**: CrossFire weapon models (`Models/PLAYERVIEW/PV-{Weapon}.LTB`) do not rely on global text CSV/CFT mapping tables. Instead, the engine resolves textures through a strictly structured directory mirroring convention: `Models/` maps to `ModelTextures/`, alongside dedicated auxiliary map directories: `AlphaMap/`, `NormalMap/`, `SpecularMap/`, and `Shader/WeaponShader/`.",
-        "2. **WeaponShader CFG Consumer**: All 237 `WeaponShader/*.CFG` files in the corpus are single-phase mod-3 binary strips (verified by `CfgBinaryStripDecoder`). They contain deterministic sample byte sequences matching the weapon skin family.",
-        "3. **Architectural Positive Control (ArmModel)**: The text-based shader configs in `ArmModel/Shader/*.CFG` prove the engine's 5-texture shader architecture (`Base/Diffuse`, `AlphaMap`, `NormalMap`, `SpecularMap`, `EnvCubeMap`) and explicit `PieceIndex` association.",
-        "4. **Mesh Texture Slot IDs**: Every weapon mesh inside the binary LTB contains a post-index length-prefixed numeric slot ID (`'0'` through `'8'`).",
-        "",
-        "## Candidate Consumer Evaluation Matrix",
-        "",
-        "| Consumer Family | Input Resource | Direction | Status | Evidence Class |",
-        "|---|---|---|---|---|",
-        "| `LithTechModelTextureConfigIndex` | `.cfg / .ini / .txt` | Key -> Textures | SCOPED_NEGATIVE | Scanned 355 text configs; 0 weapon hits |",
-        "| `LithTechTextureMappingScanner` | Global tables | Row -> Textures | SCOPED_NEGATIVE | No weapon mapping tables |",
-        "| `LithTechDatTextureReferenceIndex` | `.dat` world files | Bytes -> Textures | SCOPED_NEGATIVE | World BSP only |",
-        "| `CfgBinaryStripDecoder` | `WeaponShader/*.CFG` | File -> Samples | **ACCEPTED** | **STRUCTURALLY_VERIFIED (237/237 files)** |",
-        "| `LithTechObjExporter` Mirroring | `Models/` -> `ModelTextures/` | Model -> Texture Family | **ACCEPTED** | **STRUCTURALLY_VERIFIED & CONSISTENT** |",
-        "| `ArmModel` Shader Material | `ArmModel/Shader/*.CFG` | Section -> Maps + Piece | **ACCEPTED** | **ENGINE_FORMAT_POSITIVE_CONTROL** |",
-        "",
-        "## Conclusion for Phase 2",
-        "Direct text-table scanning yields a definitive negative for weapon models, confirming that weapon binding is governed by structural LTB mesh slot IDs combined with directory-mirroring texture families and WeaponShader binary profiles. Phase 2 conducts full structural/differential validation across 5 weapon targets.",
-    ]
-    report_path = os.path.join(N01_DIR, "consumer_search_report.md")
-    with open(report_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(report_md))
-    print(f"  Wrote {report_path}")
-
-
 def run_phase2_differential():
     """Phase 2: ArmModel positive control + 5 weapon differential analysis."""
     print("Running Phase 2: Positive Control + Weapon Differential...")
@@ -482,13 +330,21 @@ def run_phase2_differential():
     with open(diff_path, "w", encoding="utf-8") as f:
         json.dump(diff_out, f, indent=2, ensure_ascii=False)
     print(f"  Wrote {diff_path}")
+    return target_differentials
 
 
-def run_phase3_cfg_consumer():
+def run_phase3_cfg_consumer(diffs):
     """Phase 3: WeaponShader CFG Consumer Analysis."""
     print("Running Phase 3: CFG Consumer Analysis...")
+    
+    # Check consistency gate
+    def get_cfg_info(target):
+        if diffs[target]["weapon_shader_cfg"]:
+            return diffs[target]["weapon_shader_cfg"]["binary_strip_info"]
+        return None
+    
     cfg_report = {
-        "schema": "cf2.p4m01.n01.cfg-consumer-report.v1",
+        "schema": "cf2.p4m01.n01.cfg-consumer-report.v2",
         "task_id": "P4-M01-N01",
         "phase": 3,
         "summary": "Evaluation of WeaponShader binary CFG consumer hypotheses against structural and differential evidence.",
@@ -499,10 +355,10 @@ def run_phase3_cfg_consumer():
             "non_mod3_counterexamples": 0,
         },
         "sample_counts_by_target": {
-            "M4A1_S_BornBeast": {"samples": 164, "phase": 0, "size": 496, "min_val": 0, "max_val": 42},
-            "M4A1_S_Transformers": {"samples": 169, "phase": 2, "size": 512, "min_val": 0, "max_val": 42},
-            "M4A1_S_Jewelry": {"samples": 214, "phase": 1, "size": 647, "min_val": 0, "max_val": 42},
-            "M4A1_S_BlueDiamond": {"samples": 164, "phase": 0, "size": 496, "min_val": 0, "max_val": 42},
+            "M4A1_S_BornBeast": get_cfg_info("BornBeast"),
+            "M4A1_S_Transformers": get_cfg_info("Transformers"),
+            "M4A1_S_Jewelry": get_cfg_info("Jewelry"),
+            "M4A1_S_BlueDiamond": get_cfg_info("BlueDiamond_Control"),
         },
         "hypotheses_evaluation": [
             {
@@ -530,7 +386,6 @@ def run_phase3_cfg_consumer():
     with open(cfg_path, "w", encoding="utf-8") as f:
         json.dump(cfg_report, f, indent=2, ensure_ascii=False)
     print(f"  Wrote {cfg_path}")
-
 
 def run_phase4_channel_semantics():
     """Phase 4: Channel & Storage Semantics Layering."""
@@ -647,14 +502,9 @@ def run_phase5_engine_binding_closure():
 
 
 def main():
-    print("=== P4-M01-N01 Complete Execution (Phase 1 - 5) ===")
-    run_phase1_consumer_discovery()
-    run_phase2_differential()
-    run_phase3_cfg_consumer()
-    run_phase4_channel_semantics()
-    run_phase5_engine_binding_closure()
-    print("=== Completed all N01 Phases successfully ===")
-
-
+    print("=== P4-M01-N01 Execution (Phase 2 - 3) ===")
+    diffs = run_phase2_differential()
+    run_phase3_cfg_consumer(diffs)
+    print("=== Completed N01 Phase 2 & 3. Did not auto-run Phase 4/5 closure. ===")
 if __name__ == "__main__":
     main()

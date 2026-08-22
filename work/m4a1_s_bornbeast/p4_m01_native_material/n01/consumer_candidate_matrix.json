@@ -1,106 +1,323 @@
 {
-  "schema": "cf2.p4m01.n01.consumer-candidate.v2",
-  "task_id": "P4-M01-N01",
-  "phase": 1,
-  "summary": "Systematic investigation of all candidate code paths, config resolvers, indexers, and decoders for CF weapon materials.",
-  "candidate_matrix": [
+  "schema": "cf2.p4m01.n01.consumer-candidate.v1",
+  "consumer_resource_families": [
     {
-      "candidate_consumer": "LithTechModelTextureConfigIndex.CreateResolver",
-      "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechModelTextureConfigIndex.cs",
-      "input_resource_type": ".cfg / .ini / .txt config files",
-      "reference_direction": "model stem/part base -> parsed textures list",
-      "mechanism": "Builds in-memory index from text config mapping rules; resolves model name to texture candidates using scoring formula",
-      "BornBeast_hit": "NEGATIVE (no .cfg/.ini maps BornBeast in scanned text configs)",
-      "Transformers_hit": "NEGATIVE (no .cfg/.ini maps Transformers in scanned text configs)",
-      "Jewelry_hit": "NEGATIVE (no .cfg/.ini maps Jewelry in scanned text configs)",
-      "Control_hit": "NEGATIVE",
-      "evidence_class": "SCOPED_NEGATIVE_FOR_WEAPONS",
-      "status": "verified_code_behavior",
-      "reason": "Text-based model texture config index works for models with explicit text mapping configs, but CF weapon models do not use text config tables; they use directory mirroring + naming conventions and binary shader CFGs."
+      "family": "LithTechModelTextureConfigIndex.CreateResolver",
+      "source": "CFRezManager/Decoders/LithTech/Models/LithTechModelTextureConfigIndex.cs",
+      "flow": "BuildIndex -> per .cfg/.ini/.txt candidate parse ExtractModelTextureMappings + ExtractTextureReferences -> AddModelTextureMapping -> per query Resolve",
+      "input_resource_type": ".cfg/.ini/.txt with mapping-like text",
+      "reference_direction": "model stem (or numbered/family base) -> textures",
+      "BornBeast_hit": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ],
+      "Transformers_hit": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ],
+      "Jewelry_hit": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ],
+      "M4A1_S_BlueDiamond_hit": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ],
+      "evidence_class": "direct text-config resolver",
+      "status": "open",
+      "reason": "config index built from local corpus; targeted hits are zero or bear witness this resolver does not see BornBeast weapon side as a direct keyed mapping"
     },
     {
-      "candidate_consumer": "LithTechTextureMappingScanner.FindGlobalMappingTableCandidates",
-      "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechTextureMappingScanner.cs",
-      "input_resource_type": "Table_*.csv, Character*.cfg, Weapon*.cft, etc.",
-      "reference_direction": "mapping table file -> model-to-texture mapping rows",
-      "mechanism": "Scores global candidate tables using weighted term frequencies (model*8 + texture*3 + keyword*10)",
-      "BornBeast_hit": "NEGATIVE (0 hits in weapon tables)",
-      "Transformers_hit": "NEGATIVE (0 hits)",
-      "Jewelry_hit": "NEGATIVE (0 hits)",
-      "Control_hit": "NEGATIVE",
-      "evidence_class": "SCOPED_NEGATIVE_FOR_WEAPONS",
-      "status": "verified_code_behavior",
-      "reason": "Weapon models in CF are not referenced by global text CSV/CFT mapping tables in client data."
+      "family": "LithTechTextureMappingScanner.FindGlobalMappingTableCandidates",
+      "source": "CFRezManager/Decoders/LithTech/Models/LithTechTextureMappingScanner.cs:1087",
+      "flow": "ScanReference -> text refs -> score formula model*8 + texture*3 + keyword*10 + path bonus - low-value penalty",
+      "input_resource_type": "any text-decodeable resource mentioning model extension",
+      "reference_direction": "candidate text/file -> model-name terms + texture extensions + binding keywords",
+      "material_candidates": [
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index0.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index1.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index2.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index3.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_GirlCrush_BL.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_GirlCrush_GR.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_Girlcrush_SP.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_WangLH-NGold_BL.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_WangLH-NGold_GR.CFG",
+        "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_WangLH_BL.CFG"
+      ],
+      "mapping_table_candidates": [],
+      "evidence_class": "global table scanner",
+      "status": "scanned"
     },
     {
-      "candidate_consumer": "LithTechDatTextureReferenceIndex.ExtractTextureReferences",
-      "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechDatTextureReferenceIndex.cs",
-      "input_resource_type": ".dat world files",
-      "reference_direction": "world dat bytes -> texture paths",
-      "mechanism": "LZMA decompress + scan for texture extensions (.dtx, .tga, etc.)",
-      "BornBeast_hit": "NEGATIVE (0 hits in 67 .dat files)",
-      "Transformers_hit": "NEGATIVE (0 hits)",
-      "Jewelry_hit": "NEGATIVE (0 hits)",
-      "Control_hit": "NEGATIVE",
-      "evidence_class": "SCOPED_NEGATIVE_FOR_WEAPONS",
-      "status": "verified_code_behavior",
-      "reason": ".dat files represent world level geometry and bsp textures, not player weapon models."
+      "family": "LithTechDatTextureReferenceIndex.ExtractTextureReferences",
+      "source": "CFRezManager/Decoders/LithTech/Models/LithTechDatTextureReferenceIndex.cs",
+      "flow": "Per .dat file: LZMA prepare -> per-line scan for texture extensions within resource-path bytes",
+      "input_resource_type": ".dat files (world)",
+      "reference_direction": "dat body bytes -> texture file paths",
+      "BornBeast_hit_count": 4,
+      "evidence_class": "raw-byte needle search",
+      "status": "scanned"
     },
     {
-      "candidate_consumer": "CfgBinaryStripDecoder.TryDetect",
-      "source_code_path": "CFRezManager/Decoders/Config/CfgBinaryStripDecoder.cs",
-      "input_resource_type": "ModelTextures/Shader/WeaponShader/*.CFG",
-      "reference_direction": "WeaponShader CFG file -> binary mod-3 sample strip",
-      "mechanism": "Detects 3-byte periodicity where non-0xFF bytes occupy a single phase; extracts sample byte sequence",
-      "BornBeast_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG -> 164 samples, phase 0)",
-      "Transformers_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG -> 169 samples, phase 2)",
-      "Jewelry_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Jewelry.CFG -> 214 samples, phase 1)",
-      "Control_hit": "POSITIVE (rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BlueDiamond.CFG -> 164 samples, phase 0)",
-      "evidence_class": "STRUCTURALLY_VERIFIED",
-      "status": "accepted_binary_consumer",
-      "reason": "All 237 weapon shader CFGs in the client corpus strictly adhere to this format. Verified 100% across all 237 files."
+      "family": "CfgTextDecoder.TryDecode",
+      "source": "CFRezManager/Decoders/Config/CfgTextDecoder.cs",
+      "flow": "TryDecodeStructuredText OR TryDecodeRezPhase OR TryDecodeEncText OR CfgBinaryStripDecoder.TryDetect",
+      "input_resource_type": ".cfg files",
+      "evidence_class": "structural decoder",
+      "note": "WeaponShader/*.CFG go through CfgBinaryStripDecoder.TryDetect because their byte pattern matches the strip heuristic (non-FF bytes occupy one mod-3 phase). No [Textures]/[Techniques]/[Properties] text is found there.",
+      "status": "scanned"
     },
     {
-      "candidate_consumer": "LithTechModelDecoder.FindTexturePath + FindMaterialHints",
-      "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechModelDecoder.cs",
-      "input_resource_type": ".LTA model files",
-      "reference_direction": "mesh node -> TexturePath / MaterialHint strings",
-      "mechanism": "Reads ASCII LTA syntax tree for embedded texture assignments",
-      "BornBeast_hit": "NOT_APPLICABLE (BornBeast is binary LTB)",
-      "Transformers_hit": "NOT_APPLICABLE (Transformers is binary LTB)",
-      "Jewelry_hit": "NOT_APPLICABLE (Jewelry is binary LTB)",
-      "Control_hit": "NOT_APPLICABLE",
-      "evidence_class": "STRUCTURAL_LIMITATION",
-      "status": "accepted_for_lta_only",
-      "reason": "CF weapon models are distributed as binary LZMA-compressed LTB, not ASCII LTA."
-    },
-    {
-      "candidate_consumer": "LithTechObjExporter.ExpandSourceResourceTexturePathCandidates & Mirroring",
-      "source_code_path": "CFRezManager/Decoders/LithTech/Models/LithTechObjExporter.cs:438",
-      "input_resource_type": "Models/PLAYERVIEW/PV-*.LTB",
-      "reference_direction": "Models/PLAYERVIEW/PV-{Name}.LTB -> ModelTextures/PLAYERVIEW/PV-{Name}.DTX + aux maps",
-      "mechanism": "Replaces Models/ prefix with ModelTextures/ and maps LTB to DTX, AlphaMap, NormalMap, SpecularMap, and WeaponShader CFG",
-      "BornBeast_hit": "POSITIVE (Complete 5-map family resolved: DTX, Alpha, Normal, Specular, WeaponShader CFG)",
-      "Transformers_hit": "POSITIVE (Complete 5-map family resolved)",
-      "Jewelry_hit": "POSITIVE (Complete 5-map family resolved)",
-      "Control_hit": "POSITIVE (Complete 5-map family resolved for BlueDiamond)",
-      "evidence_class": "STRUCTURALLY_VERIFIED_AND_ENGINE_CONSISTENT",
-      "status": "primary_engine_binding_mechanism",
-      "reason": "CrossFire's LithTech runtime uses direct directory mirroring (Models/ -> ModelTextures/) coupled with multi-texture subdirectories (AlphaMap/, NormalMap/, SpecularMap/, Shader/WeaponShader/) matching the weapon skin basename."
-    },
-    {
-      "candidate_consumer": "ArmModel Text Shader Material Consumer (Positive Control)",
-      "source_code_path": "data/rf016/Models/PLAYERVIEW/ArmModel/Shader/*.CFG",
-      "input_resource_type": "ArmModel/Shader/*.CFG (LZMA text)",
-      "reference_direction": "[Textures] (SpecularMapName0, EnvCubeMapName0, NormalMapName0, AlphaMapName0) + [Properties] PieceIndex -> Engine Shader",
-      "mechanism": "Explicit text-based shader material configuration referencing all auxiliary maps by relative path and associating them with PieceIndex",
-      "BornBeast_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-      "Transformers_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-      "Jewelry_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-      "Control_hit": "POSITIVE_CONTROL_ARCHITECTURAL_PROOF",
-      "evidence_class": "ENGINE_FORMAT_POSITIVE_CONTROL",
-      "status": "architectural_ground_truth",
-      "reason": "Provides definitive proof that CrossFire's rendering engine implements a multi-channel shader pipeline comprising Base/Diffuse, AlphaMap, NormalMap, SpecularMap, and EnvCubeMap per PieceIndex."
+      "family": "LithTechModelDecoder.FindTexturePath + FindMaterialHints",
+      "source": "CFRezManager/Decoders/LithTech/Models/LithTechModelDecoder.cs:1583",
+      "flow": "Per mesh: scan LTA subtree for texture-path and material-hint atoms",
+      "input_resource_type": ".lta (model text) — bornbeast weapon is .LTB",
+      "reference_direction": "mesh atom -> texture path string",
+      "evidence_class": "mesh-level parser",
+      "status": "open",
+      "reason": "BornBeast PV uses .LTB (binary), not .LTA. The .LTB parser does not expose texture/material hints — only mesh geometry. Therefore this consumer cannot resolve weapon material on .LTB."
     }
-  ]
+  ],
+  "targets": {
+    "BornBeast": {
+      "stem": "M4A1_S_BornBeast",
+      "keys_tried": [
+        "M4A1_S_BornBeast"
+      ],
+      "hits": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ]
+    },
+    "Transformers": {
+      "stem": "M4A1_S_Transformers",
+      "keys_tried": [
+        "M4A1_S_Transformers"
+      ],
+      "hits": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ]
+    },
+    "Jewelry": {
+      "stem": "M4A1_S_Jewelry",
+      "keys_tried": [
+        "M4A1_S_Jewelry"
+      ],
+      "hits": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ]
+    },
+    "M4A1_S_BlueDiamond": {
+      "stem": "M4A1_S_BlueDiamond",
+      "keys_tried": [
+        "M4A1_S_BlueDiamond"
+      ],
+      "hits": [
+        [
+          "_ALL_",
+          "s"
+        ],
+        [
+          "_ALL_",
+          "c"
+        ],
+        [
+          "_ALL_",
+          "a"
+        ],
+        [
+          "_ALL_",
+          "n"
+        ],
+        [
+          "_ALL_",
+          "e"
+        ],
+        [
+          "_ALL_",
+          "d"
+        ]
+      ]
+    }
+  },
+  "raw_grep_hits_summary": {
+    "BornBeast": 4
+  },
+  "raw_grep_examples": {
+    "BornBeast": [
+      {
+        "file": "out/PV-M4A1_S_BornBeast_Classic_BL_mapping_candidates.txt",
+        "snippet": "urces\r - Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic_BL.LTB\r \r Most Likely Mapping Files\r - score 150: M"
+      },
+      {
+        "file": "out/PV-M4A1_S_BornBeast_Classic_BL_texture_report.txt",
+        "snippet": " Source: Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic_BL.LTB\r Mesh: Fview-hand2\r   Reference: <none>\r   I"
+      },
+      {
+        "file": "out/PV-M4A1_S_BornBeast_Classic_mapping_candidates.txt",
+        "snippet": "urces\r - Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB\r \r Most Likely Mapping Files\r - score 150: Mode"
+      },
+      {
+        "file": "out/PV-M4A1_S_BornBeast_Classic_texture_report.txt",
+        "snippet": " Source: Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB\r Mesh: Fview-hand2\r   Reference: <none>\r   Infe"
+      }
+    ]
+  }
 }
