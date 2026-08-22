@@ -15,29 +15,28 @@
 ```text
 P4 baseline   PASS / FROZEN
 P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-P4-M01-R1     ACTIVE / REWORK_REQUIRED                       <- 当前具体任务
+P4-M01-R1     ACTIVE / TARGETED_REWORK_REQUIRED              <- 当前具体任务
 P5-T01        PASS / USER_REFERENCE_CONFIRMED
 P5-T02        PAUSED_BY_P4_M01
 P5-T03        BLOCKED_BY_T02
 P5-T04        BLOCKED_BY_T03
 ```
 
-当前执行入口：
+当前执行/Review 入口：
 
 - [`P4_TASKS.md`](P4_TASKS.md)
 - [`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)
 - [`P4_M01_REWORK_R1.md`](P4_M01_REWORK_R1.md)
+- [`P4_M01_R1_CONTINUATION.md`](P4_M01_R1_CONTINUATION.md) ← 当前 targeted continuation
 - [`CODEX_TASKS.md`](CODEX_TASKS.md)
 
 P5 资料当前用于后续 handoff，不是当前 Local Executor 的第一执行入口。
 
 ---
 
-## 2. 为什么当前返回 P4
+## 2. 为什么当前仍在 P4-M01
 
-P4 的历史 Review 只验收了 conversion/build/package/MIGI/runtime 技术链。后续 evidence 确认 P4 可识别 BornBeast material 使用过 external CS1.6 texture，因此 native CF material fidelity 没有闭合。
-
-用户明确要求：原生贴图正确还原不能跳过，并要求当前先回 P4 解决基础材质恢复方法。
+P4 的历史 Review 只验收 conversion/build/package/MIGI/runtime 技术链。后续 evidence 确认 P4 可识别 BornBeast material 曾使用 external CS1.6 texture，因此 native CF material fidelity 没有闭合。
 
 因此：
 
@@ -47,7 +46,7 @@ P4-M01 单独 reopen native material lane
 P5-T02 暂停
 ```
 
-Chat/Sol 不得把 P4-M01 描述成“P4 整体失败”或“推翻历史 RV-06”；也不得把历史 P4 `PASS / FROZEN` 描述成“原生材质已通过”。
+Chat/Sol 不得把 P4-M01 描述成“P4 整体失败”，也不得把历史 P4 `PASS / FROZEN` 描述成“原生材质已通过”。
 
 ---
 
@@ -61,9 +60,9 @@ Chat/Sol 负责：
 - 拒绝“能显示成图 = 格式正确”一类弱证据；
 - 拒绝 external texture 进入 final provenance；
 - 拒绝把 hypothesis / naming convention / byte-count fit 直接升级成 verified；
+- 确认 report 中的关键验证是否真的存在于提交脚本、能重跑；
 - 在 P4-M01 满足 DoD 后判定是否 `PASS / NATIVE_MATERIAL_RECOVERED`；
-- 只有 P4-M01 PASS 后才恢复 P5-T02；
-- 后续继续负责 P5-T03/T04。
+- 只有 P4-M01 PASS 后才恢复 P5-T02。
 
 Chat/Sol 不得：
 
@@ -78,7 +77,7 @@ Chat/Sol 不得：
 
 ## 4. P4-M01 Review principle
 
-P4-M01 的最终问题是：
+最终问题：
 
 > **BornBeast 是否已经能仅使用 local CF 资源 + verified semantics，得到可重复、可解释、0 external pixels 的正确原生材质。**
 
@@ -93,7 +92,8 @@ P4-M01 的最终问题是：
 7. variant differential evidence；
 8. shader hypotheses；
 9. `native_material_closure.json` 或 superseding R1 closure；
-10. 所有关键输入 path/hash/size 与输出 hash。
+10. 所有关键输入 path/hash/size 与输出 hash；
+11. 报告中的关键“verified”步骤存在于提交脚本或正式 decoder，并可复现。
 
 ### 不足以 PASS 的证据
 
@@ -103,9 +103,11 @@ P4-M01 的最终问题是：
 - 外部纹理贴到模型上看起来正确；
 - 用户肉眼觉得“差不多”；
 - 文件名能对上 BornBeast；
-- Source VMT/VTF closure 只证明引用存在；
-- basename+directory convention 没有 engine/结构 evidence；
-- byte count/mip size 恰好 fit 但 dimension/orientation/container 未证明。
+- basename+directory 没有 engine/结构 evidence；
+- byte count/mip size 恰好 fit；
+- report 声称做过某个 scan，但最终提交脚本没有该 scan；
+- post-mesh numeric field 存在，就直接命名为 texture slot；
+- 237 个 CFG 有 mod-3 pattern，就直接认定 scalar+padding。
 
 ### 可以支持 PASS 的证据
 
@@ -119,17 +121,11 @@ P4-M01 的最终问题是：
 
 ---
 
-## 5. 2026-08-22 P4-M01 R1 Review correction
+## 5. R0 Review 历史
 
-Local Executor commit：
+commit `632ede449578f688cea7e6b5f40cbf03700aaaa5` 提供了有价值 exploration evidence，但其旧 `6/8 PASS，只差用户视觉 Gate` 不被接受。
 
-```text
-632ede449578f688cea7e6b5f40cbf03700aaaa5
-```
-
-提供了有价值的 exploration evidence，但 Chat/Sol 不接受其 `native_material_closure.json` 的“6/8 PASS，只差用户视觉 Gate”结论。
-
-正式 Review 分级：
+当时正式分级：
 
 ```text
 A provenance              ACCEPT / REUSE
@@ -138,54 +134,110 @@ C DTX                      REWORK
 D TGA                      FAIL / REWORK
 E material binding         INCOMPLETE
 F CFG reverse              INCOMPLETE
-G variant differential     ACCEPT AS SUPPORTING EVIDENCE / REUSE
+G variant differential     ACCEPT / REUSE
 H shader hypotheses        DIAGNOSTIC_ONLY
 I native closure           NOT READY
 J Source1 integration      DEFERRED
 ```
 
-关键 Review 原因：
+该历史 Review 保留，用于理解为什么存在 R1。
 
-### DTX
+---
 
-- 正式 `DtxThumbnailDecoder` 的版本值是 `-2/-3/-5`；旧脚本使用正数版本集合，不能称为正式 parser 复现；
-- LZMA 不能用 entropy 代替 `LzmaAloneDecoder`；
-- `512x256` 与 `256x512` raw RGB24 full-mip byte count 一样，旧 evidence 没有证明尺寸/orientation；
-- trailer accounting 曾出现 163/164 不一致。
+## 6. 2026-08-22 对 commit bded9e8 的当前 Review
 
-### TGA
+Local Executor commit：
 
-正式 `TgaThumbnailDecoder.TryRepairInsertedFooterHeader` 使用：
+```text
+bded9e8a6f7f95997d9717eb8f35beb02619f153
+```
+
+本轮整体评价：**有效推进，但未完成 R1**。正式分级：
+
+```text
+A provenance              ACCEPT / REUSE
+B inventory               REUSE_WITH_CAUTION
+C DTX                      PARTIAL_ACCEPT / TARGETED_REWORK
+D TGA                      ACCEPT / STRUCTURAL
+E material binding         STAGE1_PARTIAL_ACCEPT / STAGE2_OPEN
+F CFG reverse              PARTIAL_ACCEPT / REFRAME
+G variant differential     ACCEPT / REUSE
+H shader hypotheses        DIAGNOSTIC_ONLY / REWORK
+I native closure           NOT READY / CONTINUE
+J Source1 integration      DEFERRED
+```
+
+详细 Review 与下一步以 [`P4_M01_R1_CONTINUATION.md`](P4_M01_R1_CONTINUATION.md) 为准。
+
+### C — DTX
+
+接受：
+
+- 正式 DTX version/LZMA 路线纠正；
+- 旧 `512x256 full-mip + 163-byte trailer` 结论撤销；
+- 3-byte periodic pixel-like structure 有强支持。
+
+不接受为最终 VERIFIED：
+
+- `1024 width`；
+- `single continuous image / no mips`；
+- `BGR24` channel order。
+
+核心原因：`dtx_revalidation_r1.json` 声称 `64..2048 exhaustive width scan`，但最终提交的 `r1_dtx_revalidate.py` 直接固定 `W=1024`，没有保存该 scan 的可重跑实现；channel census 又只采样前 300k bytes，而结论扩展到 whole file/tail。
+
+### D — TGA
+
+接受 formal repair correction：
 
 ```text
 footerOffset = TRUEVISION signature - 8
 headerOffset = footerOffset + 26
 ```
 
-旧脚本使用 `TRUEVISION - 18 ... +26` 删除 44 bytes，和正式 decoder 不一致。长度恰好恢复到 `1024*1024*3` 不能证明像素正确。
+三张 BornBeast TGA 已按正式结构重建并记录 offsets。默认不重跑，除非后续 evidence 冲突。
 
-因此旧 TGA channel role / preview / 依赖它们的 H1/H2 不作为 closure evidence。
+### E — material binding
 
-### Binding
+接受：LTB 中存在 mesh-associated post-mesh numeric field 的结构 evidence。
 
-filename+directory relation 只能支持 resource-family association，不等于 Task Spec E 要求的 structural material binding。
+仍需证明：
 
-### CFG
+```text
+numeric field semantics == texture slot
+model/slot -> actual DTX/TGA/CFG texture set
+```
 
-- BornBeast 492 bytes；Transformers 506 bytes；Jewelry 642 bytes；
-- `len // 3` 会对 506-byte 样本静默丢 2 bytes；
-- “每个 CFG 都是 164-pixel ramp”与样本长度矛盾；
-- RGB/BGR 语义与 engine semantic slot 未闭合。
+下一轮优先利用现有 `LithTechModelTextureConfigIndex`、`LithTechTextureMappingScanner`、`LithTechDatTextureReferenceIndex`、`TextureReferenceResolver`、`LithTechModelTextureLoader`，不要只靠 basename 推测 engine lookup。
 
-### H/I
+### F — CFG
 
-旧 H1/H2 的 additive、120、0.5、midcolor 等是探索公式，不是 engine semantics。C/D/E/F 未通过前，I 不能进入用户视觉 Gate。
+237-file corpus 的 mod-3/3-byte periodic pattern 是有价值 evidence，但当前至少存在两个竞争解释：
 
-当前具体纠错任务以 [`P4_M01_REWORK_R1.md`](P4_M01_REWORK_R1.md) 为准。
+```text
+RGB/BGR triplets with two fixed-FF channels
+vs
+scalar + padding/alignment
+```
+
+当前脚本通过 `if raw[i] != 0xFF` 删除样本，因此 `sample_count` 不能直接视为完整 record/texel count。必须保留全部 bytes 后重新 accounting。
+
+### H — shader hypotheses
+
+`r1_shader_closure.py` 使用 `step = 97` 做 byte sampling；因为 `97 % 3 == 1`，采样起点会在三个 byte phases 间轮换，污染 channel census。修复后 H2 仍为 diagnostic approximation，不能替代 engine semantics。
+
+### I — closure
+
+Local Executor 正确把状态写成：
+
+```text
+CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+```
+
+Chat/Sol 同意这一点。当前不是 final user visual gate。
 
 ---
 
-## 6. External BornBeast texture 的正确用途
+## 7. External BornBeast texture 的正确用途
 
 历史 CS1.6 BornBeast texture 只能是：
 
@@ -210,7 +262,28 @@ reference_only / differential_control
 
 ---
 
-## 7. P4-M01 -> P5-T02 handoff
+## 8. Executor / harness provenance
+
+任务继续保持 agent-agnostic。
+
+用户报告 commit `bded9e8` 实际执行组合：
+
+```text
+Harness: Claude Code
+Model:   GLM-5.3-Flash internal beta / multimodal
+```
+
+commit footer 残留的：
+
+```text
+Co-Authored-By: Claude Opus 4.8 (1M context)
+```
+
+不是可靠 executor provenance。后续 benchmark 若需记录模型/Agent，显式写 `executor_harness` / `executor_model`；不得仅从 co-author footer 推断。
+
+---
+
+## 9. P4-M01 -> P5-T02 handoff
 
 只有 Chat/Sol Review 明确写：
 
@@ -220,7 +293,7 @@ P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 
 才允许恢复 P5-T02。
 
-恢复后的 T02 不再重复 BornBeast 基础逆向，而是：
+恢复后的 T02：
 
 ```text
 validated P4-M01 method
@@ -230,20 +303,10 @@ validated P4-M01 method
 -> USER LOCAL-CANDIDATE GATE
 ```
 
-如果方法无法迁移，不得退回 external texture；应记录迁移失败证据并重新设计 Transformers-specific extension。
+如果方法无法迁移，不得退回 external texture。
 
 ---
 
-## 8. 历史 P5 状态
+## 10. 当前下一步
 
-P5-T01 已完成，official reference evidence 已固定。不要重跑 Mandatory Web Search，除非用户明确否决现有 reference 或 evidence 损坏。
-
-P5 LEGACY PRE-SCAN 继续保留为候选池，不重扫全部 `data/**`。
-
-C029/C103 当前只是 geometry/material candidate evidence；在 native material 恢复前不要要求用户强选。
-
----
-
-## 9. 当前下一步
-
-> **Review 下一位 Local Executor 按 `P4_M01_REWORK_R1.md` 生成的 corrected evidence。优先检查 R1-C DTX、R1-D TGA、R1-E material binding、R1-F CFG framing/semantics，再看重建后的 H/I。当前不把用户视觉确认为 blocker，不执行 P5-T02 用户候选 Gate，不进入 P5-T03。**
+> **Review 下一位 Local Executor 按 `P4_M01_R1_CONTINUATION.md` 从 commit `bded9e8` 继续产生的 targeted evidence。优先检查：DTX width/stride scan 是否真正可重跑；CFG 是否保留完整 triplets/0xFF 并比较 triplet-vs-scalar；stage-2 binding 是否利用现有 mapping/config infrastructure；H2 phase-mixing bug 是否修复。R1-D TGA 默认不重跑。当前不进入用户 final visual Gate、不执行 J、不恢复 P5-T02。**
