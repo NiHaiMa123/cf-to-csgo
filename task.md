@@ -1,6 +1,7 @@
 # task.md — 当前执行任务
 
-> 本文件只描述 **当前下一步**：执行 Agent 现在应该解决什么、为什么、可以尝试哪些实现路径、需要返回什么 evidence。  
+> 本文件只描述 **一轮可独立 Review 的当前任务**。  
+> Executor 完成本文件后必须提交 evidence 并停止；由领导/Review Agent 决定哪些结果冻结进 `plan.md`，再重写下一轮 `task.md`。  
 > 长期 pipeline 与冻结事实看 [`plan.md`](plan.md)。Git 操作看 [`AGENTS.md`](AGENTS.md)。
 
 ---
@@ -8,79 +9,53 @@
 # 1. 当前任务
 
 ```text
-Task ID: P4-M01-N02
-Title: Runtime Artifact Acquisition & Static Triage
-State: ACTIVE / RUNTIME_ARTIFACT_ACQUISITION
-Parent: P4-M01 Native Material Recovery
+Task ID: P4-M01-N02-A
+Title: Runtime Root Discovery & Candidate Inventory
+State: ACTIVE
+Parent: P4-M01-N02 Runtime Artifact Acquisition
 ```
 
-目标：**主动找到能解除 N01 `BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS` 的新输入，并把最有价值的 runtime/client/shader consumer 候选交回 Review。**
+目标：**在本机找到可信的 CrossFire 安装/runtime root，并建立可供下一轮静态分析选择目标的 runtime artifact inventory。**
 
-当前不是继续分析旧 `data/**`。旧 corpus 的 basename/config/CFG curve-fitting 搜索已经冻结。
+本轮只解决“新输入在哪里、有哪些候选”。
+
+本轮 **不要求** 继续做 strings/xref/反编译/CFG consumer tracing；这些应在 Review 后按 evidence 单独生成下一轮任务。
 
 ---
 
-# 2. Executor 需要解决的问题
+# 2. 本轮需要回答
 
 尽可能回答：
 
-1. 本机是否存在完整 CF 安装/runtime root？
-2. 哪些 EXE/DLL/archive/shader 文件最可能包含 model/material/resource consumer？
-3. 哪些候选直接或间接出现 `LTB / DTX / CFG / ModelTextures / WeaponShader / RenderStyle / PieceIndex` 等证据？
-4. 是否能找到值得继续追的 static xref / loader / resolver / shader consumer？
-5. 如果当前环境确实没有足够输入，缺口能否被明确限定，而不是只说“没找到”？
+1. 本机是否存在完整或部分 CF client/runtime 安装目录？
+2. 找到了哪些可信 root，依据是什么？
+3. root 内有哪些值得后续静态分析的 EXE/DLL/archive/shader 类 artifact？
+4. 哪些候选最值得下一轮优先分析？
+5. 如果找不到，搜索范围是否足以形成 bounded negative？
 
 ---
 
-# 3. 实现原则
+# 3. 可尝试实现路径
 
-这不是固定 A→B→C 状态机。Executor 应根据已发现 evidence 动态选择**信息增益最高**的下一动作。
+以下是策略池，不是固定顺序。根据本机线索选择信息增益最高的方法即可。
 
-优先原则：
-
-```text
-direct consumer evidence
-> string/import/resource/xref relation
-> engine/render/resource module evidence
-> archive/shader structural evidence
-> filename/path inference
-```
-
-当某条路线出现强线索时，允许直接深入，不需要机械跑完其他路线。
-
-每次扩展搜索最好能说明：
-
-```text
-current evidence
-hypothesis
-why this action is useful
-result
-how result changes next action
-```
-
----
-
-# 4. 可尝试实现路径 Strategy Pool
-
-下面是**可选策略池，不是固定顺序**。Executor 可组合、跳过、扩展；也允许提出其他有明确 rationale 的 static/read-only 方法。
-
-## 4.1 找安装/runtime root
+## 3.1 Root discovery
 
 可尝试：
 
-- repo/config/report 中已有路径线索；
+- repo/config/report 中已有的 source/install path 线索；
 - Windows uninstall registry / App Paths；
 - Desktop / Start Menu `.lnk` target；
-- WeGame/launcher manifest/config；
-- 常见 Tencent/WeGame/CrossFire 安装目录；
+- WeGame / launcher manifest、配置或安装记录；
+- 常见 Tencent / WeGame / CrossFire 目录；
 - 枚举 fixed drives 后做有界目录名搜索；
-- 如果 CF/WeGame 本来已经运行，只读查询 executable / loaded module path。
+- 如果 CF / WeGame **本来已经运行**，只读查询 executable path / loaded module path。
 
-目标不是启动游戏，只是定位真实 client/runtime 文件。
+不要为了定位路径而启动游戏或未知程序。
 
-## 4.2 Runtime inventory
+## 3.2 Candidate inventory
 
-重点对象：
+对可信 root 优先 inventory：
 
 ```text
 *.exe
@@ -89,159 +64,38 @@ how result changes next action
 *.pak
 *.pck
 *.bin
-shader/effect/renderstyle related files
-*.fx *.fxc *.cso *.shader *.shd
+*.fx
+*.fxc
+*.cso
+*.shader
+*.shd
+renderstyle / shader / effect related files or directories
 ```
 
-避免再次把整套音频/贴图当新搜索目标。
+避免重新扫描整套音频、贴图或旧 `data/**` corpus。
 
-每个候选尽量记录：
+每个 artifact 尽量记录：
 
 ```text
-path alias / relative path
-size
+root_id
+path_alias / relative path
+size_bytes
 sha256
-file type / magic
-version/product/description
+extension
+file magic / PE flag / archive flag if easy to obtain
+version / product / description if available
 signer if available
-candidate role
-why candidate
+candidate_role
+why_candidate
 ```
 
-## 4.3 PE/module 静态 triage
-
-可使用本机已有工具，例如：
-
-```text
-PowerShell Get-Item / Get-FileHash / Get-AuthenticodeSignature
-dumpbin
-llvm-readobj / llvm-objdump
-objdump
-Python pefile
-Ghidra / IDA / Binary Ninja / radare2 / rizin
-```
-
-优先检查：
-
-```text
-imports / exports
-sections
-resources/version metadata
-ASCII + UTF-16 strings
-```
-
-高价值 needles 包括但不限于：
-
-```text
-WeaponShader
-ModelTextures
-AlphaMap
-NormalMap
-SpecularMap
-PieceIndex
-RenderStyle
-PLAYERVIEW
-.LTB
-.DTX
-.CFG
-texture
-material
-resource
-shader
-```
-
-## 4.4 String → Xref → Consumer
-
-如果任何模块出现高价值 string/resource evidence，优先追：
-
-```text
-string/resource
--> xref
--> containing function
--> caller/callee
--> file/archive loader
--> resource/material resolver
--> piece/material key/index use
-```
-
-重点问题：
-
-```text
-谁打开 LTB / DTX / CFG？
-谁构造 ModelTextures / WeaponShader 路径？
-weapon piece/short-id/index 如何进入 resolver？
-CFG bytes 被按什么长度/类型读取并传给 shader？
-```
-
-一旦出现可信 consumer candidate，应停止无边界扩张并准备 handoff。
-
-## 4.5 Imports / Module relation
-
-如果主 EXE 没有直接 strings：
-
-- 查看 `CreateFile/ReadFile/fopen` 等 loader API；
-- 查看 Direct3D shader/texture API；
-- 根据 imports 找实际 engine/render/resource DLL；
-- 根据 ProductName/FileDescription/模块关系缩小范围；
-- 优先追被 client 加载且实际承担资源/渲染职责的 DLL。
-
-## 4.6 Archive / package route
-
-如果 consumer 可能不直接散落在安装目录：
-
-- 识别 `.rez/.pak/.pck/.bin` magic/TOC；
-- 优先复用仓库已有 CFRezManager 只读能力；
-- 查 embedded PE / shader / renderstyle / config；
-- 提取到 local-only 临时目录后再做 hash/static triage。
-
-Raw runtime/archive 不提交 Git。
-
-## 4.7 Shader route
-
-如果找到 shader/effect/renderstyle package，可尝试：
-
-- DXBC/CTAB/constant table/resource name dump；
-- shader parameter / sampler / constant register 名称；
-- normal/specular/alpha/emissive 等参数关系；
-- CFG sample/count 是否和 shader constants/LUT/resource slots 有结构对应。
-
-即使还没闭合 piece binding，能闭合 CFG consumer 的一部分也有价值。
-
-## 4.8 Launcher / manifest route
-
-如果当前目录只有 launcher 或 client 被隐藏/按需下载：
-
-- 检查 patch/version/download/module manifest；
-- 定位真实 game executable / engine modules / runtime package；
-- 不读取账号凭证，不触发 patch/update，不执行未知客户端。
-
-## 4.9 Protected / packed client
-
-如果主 EXE 明显 packed/protected：
-
-- 记录 pack/protection evidence；
-- 优先转向未保护 DLL、shader、archive、旧版本/备份客户端；
-- 可以比较不同版本 artifact inventory 来判断 consumer 从哪个模块迁移。
-
-本任务禁止进程注入、anti-cheat bypass、运行时内存 dump 或执行未知脱壳器。
-
-## 4.10 其他路线
-
-Executor 可以采用 plan 未列出的实现，只要满足：
-
-```text
-static/read-only
-有明确 hypothesis/rationale
-能产生可审计 evidence
-不重复已冻结旧 corpus 的低价值搜索
-不突破用户数据/Git安全边界
-```
+本轮允许根据目录、文件类型、版本信息和模块命名做 **候选排序**，但这些只能是 triage，不是 runtime binding proof。
 
 ---
 
-# 5. 建议输出
+# 4. 建议实现
 
-推荐新增一个可重复脚本，而不是只做一次性命令：
+如果一次性命令不足以稳定复现，优先新增或完善：
 
 ```text
 scripts/material_recovery/n02_runtime_artifact_acquire.py
@@ -253,102 +107,93 @@ scripts/material_recovery/n02_runtime_artifact_acquire.py
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/
 ```
 
-可输出：
+本轮建议输出：
 
 ```text
 artifact_inventory.json
-string_hits.json
-candidate_rank.json
-static_xref_report.json        if applicable
 acquisition_report.md
 ```
 
-不要求所有文件都必须存在；输出应与实际采用的方法匹配。
-
-Raw EXE/DLL/REZ/PAK/PCK/shader package 留本机，不提交。
+可以增加实际有价值的辅助 JSON，但不要为了凑格式生成空报告。
 
 ---
 
-# 6. Handoff / Completion
+# 5. Completion / Handoff
 
-## A. 找到可信 consumer candidate
+## A. 找到可信 runtime root 和候选
 
 返回：
 
 ```text
-RUNTIME_CONSUMER_CANDIDATE_FOUND
+RUNTIME_INVENTORY_READY_FOR_REVIEW
 ```
 
 至少给出：
 
 ```text
-artifact identity/path alias
-sha256 + size
-string/import/resource evidence
-xref/function/RVA or equivalent static trace
-为什么它值得继续追
-当前仍有哪些 alternative explanations
-推荐下一条 deeper tracing point
+root(s) + discovery evidence
+artifact counts by type
+inventory path
+Top candidate list
+每个 Top candidate 的 path alias + SHA256 + size + why_candidate
+本轮未覆盖的范围
 ```
 
-然后停止扩大搜索，commit/push scoped code + evidence，交回领导/Review Agent。
+完成后 **停止**。不要自行继续做 deep strings/xref/decompile。
 
-## B. 找到 runtime artifact，但需要更深静态逆向
-
-返回：
+领导 Agent Review 后再决定下一轮，例如：
 
 ```text
-RUNTIME_ARTIFACT_FOUND_NEEDS_DEEPER_STATIC_ANALYSIS
+N02-B PE / strings static triage
+N02-B archive/shader triage
+N02-B launcher/runtime-root expansion
 ```
 
-必须明确列出 top candidate(s) 和具体下一追踪点，例如 function/RVA/string/xref/module relation；不能只写“需要逆向”。
-
-## C. 本机没有找到足够输入
+## B. 没找到可信 runtime root
 
 只有形成 bounded negative 后才返回：
 
 ```text
-NO_RUNTIME_ARTIFACT_FOUND_LOCALLY
+NO_RUNTIME_ROOT_FOUND_LOCALLY
 ```
 
-报告至少说明：
+至少说明：
 
 ```text
-searched roots + discovery method
-candidate counts/types
-PE/archive/shader coverage
-needles/methods used
-important negatives
-excluded areas + reason
-```
-
-并明确指出下一次需要用户提供的是哪类输入，例如：
-
-```text
-另一版本完整 CF 客户端
-旧客户端备份
-完整 runtime/REZ package
-明确的 engine/render/resource module
-可信 documented/reverse-engineered binding contract
+检查过哪些 discovery source
+扫描过哪些盘/目录范围
+排除了什么以及为什么
+是否只发现 launcher / updater / unrelated Tencent components
+下一轮最需要用户补充的具体输入
 ```
 
 ---
 
-# 7. 禁止事项
+# 6. 本轮禁止事项
 
-- 不重复旧 `data/**` 的 basename/config/CFG curve-fitting 扫描；
-- 不把文件名/目录邻近当 runtime binding proof；
+- 不重复旧 `data/**` 的 basename/config/CFG curve-fitting 搜索；
 - 不执行未知 CF client/runtime binary；
+- 不触发 launcher patch/update；
 - 不做进程注入、anti-cheat bypass、runtime memory dump；
-- 不上传 raw client/runtime/archive/shader binary；
+- 不上传 raw EXE/DLL/REZ/PAK/PCK/shader binary；
+- 不把目录邻近/文件名当 material binding proof；
 - 不自行宣布 `P4-M01 = NATIVE_MATERIAL_RECOVERED`；
 - 不恢复 P5-T02；
-- 不修改 `plan.md` 的冻结事实，除非任务明确要求更新长期 pipeline/冻结结论。
+- 不修改 `plan.md`。
 
 ---
 
-# 8. 角色边界
+# 7. Executor 交回内容
 
-执行 Agent：读取 `README.md -> AGENTS.md -> plan.md -> task.md`，执行本文件，产出代码/evidence，不自行重规划整个项目。
+完成后只需交回：
 
-领导/规划/Review Agent：读取最新代码/evidence，对照 `plan.md` 的长期 Gate Review 结果，然后**重写 `task.md` 为下一步**；只有长期 pipeline、Gate 或冻结事实变化时才修改 `plan.md`。
+```text
+status
+commit SHA
+新增/修改的 scoped files
+inventory/report 路径
+Top candidates 或 bounded negative 摘要
+需要领导 Review 的关键判断点
+```
+
+然后停止，等待下一轮 `task.md`。
