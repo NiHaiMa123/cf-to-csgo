@@ -4,9 +4,9 @@
 >
 > 项目唯一 authoritative progress/status：**本文件第 1 节**
 >
-> 当前执行任务：**P4-M01-N01 — Engine Material Consumer & Binding Closure**
+> 当前执行任务：**P4-M01-N01 — Phase 1 consumer discovery**
 >
-> 当前状态：**P4 baseline `PASS / FROZEN`；P4-M01 `ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`；P4-M01-R1 `ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01`；P4-M01-N01 `ACTIVE / ENGINE_BINDING_INVESTIGATION`；P5-T02 `PAUSED_BY_P4_M01`**
+> 当前状态：**P4 baseline `PASS / FROZEN`；P4-M01 `ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`；P4-M01-R1 `ACCEPTED / COMPLETE`；P4-M01-N01 Phase 0 `ACCEPT / FROZEN`；P4-M01-N01 `ACTIVE / PHASE1_CONSUMER_DISCOVERY`；P5-T02 `PAUSED_BY_P4_M01`**
 >
 > 当前运行槽位：**M4A4**
 >
@@ -25,8 +25,9 @@
 | P0–P3 | DONE / HISTORICAL | Source 1 基线、CF 静态导出、M4A4 映射、历史编译/材质引用基础 |
 | P4 baseline | **PASS / FROZEN** | 几何→Source 1→package→MIGI 技术链已冻结 |
 | **P4-M01** | **ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE** | BornBeast 原生 CF 材质恢复 benchmark |
-| P4-M01-R1 | **ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01** | 核心 evidence correction 已完成；剩余 consistency cleanup 已并入 N01 Phase 0 |
-| **P4-M01-N01** | **ACTIVE / ENGINE_BINDING_INVESTIGATION** | **当前唯一具体执行任务：真实 material consumer / binding / CFG semantic consumer / channel semantics** |
+| P4-M01-R1 | **ACCEPTED / COMPLETE** | evidence correction 已完成，不再进入 R1 cleanup loop |
+| P4-M01-N01 Phase 0 | **ACCEPT / FROZEN** | R1 final consistency cleanup 已经 Chat/Sol Review 接受 |
+| **P4-M01-N01** | **ACTIVE / PHASE1_CONSUMER_DISCOVERY** | **当前唯一具体执行任务：真实 material consumer / binding / CFG semantic consumer / channel semantics** |
 | P5-T01 | PASS / USER_REFERENCE_CONFIRMED | 雷神官方目标图已确认 |
 | P5 LEGACY PRE-SCAN | EXECUTION_PASS / PRESERVED_FOR_REUSE | 本地广召回候选池保留 |
 | P5-T02 | **PAUSED_BY_P4_M01** | 等 P4-M01 原生材质方法闭合后继续 Transformers |
@@ -39,7 +40,7 @@
 
 ```text
 NATIVE_MATERIAL_RECOVERY_INCOMPLETE = P4-M01 尚未完成 native material closure
-ENGINE_BINDING_INVESTIGATION        = 正在定位 engine/resource consumer 与 binding semantics
+PHASE1_CONSUMER_DISCOVERY           = 正在定位真实 engine/config/resource consumer
 NATIVE_MATERIAL_RECOVERED           = P4-M01 completion result，必须经 Chat/Sol Review
 ```
 
@@ -51,10 +52,11 @@ AGENTS.md
 -> CODEX_TASKS.md
 -> P4_TASKS.md
 -> P4_M01_TASK_SPEC.md
--> P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md   <- CURRENT
+-> P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md
+-> P4_M01_N01_CONTINUATION.md   <- CURRENT direct entry
 ```
 
-R1 历史/Review 需要时再读：
+R1 历史需要时再读：
 
 ```text
 P4_M01_REWORK_R1.md
@@ -111,7 +113,7 @@ work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bm
 
 P4-M01 主协议：[`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。
 
-核心目标不变：
+核心目标：
 
 ```text
 local BornBeast LTB / UV
@@ -137,15 +139,28 @@ external CS1.6 texture 只允许 `reference_only / differential_control`。
 bded9e8a6f7f95997d9717eb8f35beb02619f153   first R1 correction
 8af3cd0b6c2f7ecc12a90b24e5b70c4e2d99dd8f   targeted continuation
 0dc5793b6e47cb20da9e44aebcec2195194bd6f2   narrow rework
+2344d61a1ba1dc84ddcd5a85eaed5b352f823d19   N01 Phase-0 final consistency cleanup
 ```
 
-Chat/Sol 对 `0dc5793` 的结论：R1 的**核心 evidence correction 已接受**，不再继续进行大规模 R1 返工。剩余少量公式/path/docstring/evidence-label cleanup 被并入 N01 Phase 0。
+Chat/Sol 对 `2344d61` 的结论：Phase 0 cleanup 已接受；R1 正式结束。
 
 ```text
-P4-M01-R1 = ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01
+P4-M01-R1          = ACCEPTED / COMPLETE
+P4-M01-N01 Phase 0 = ACCEPT / FROZEN
 ```
 
-这不等于 P4-M01 PASS。
+`2344d61` 没有进入 N01 Phase 1，因此 substantive N01 work 仍未开始；这不是 blocker，下一位 Executor 直接从 Phase 1 继续。
+
+#### 当前 executor benchmark context
+
+用户当前准备切换：
+
+```text
+Model: MiniMax M3
+Harness: unspecified / user-selected
+```
+
+模型信息只用于 benchmark/provenance；Task 保持 agent-agnostic。不得从 commit footer 推断真实 executor。
 
 #### 当前可复用 evidence baseline
 
@@ -180,17 +195,19 @@ non-0xFF bytes occupy one fixed offset-mod-3 phase per file;
 other two phases are constant 0xFF.
 ```
 
-R1 已修正 `phase != record boundary` 和 off-by-one；当前：
+R1/N01 Phase0 已完成：
 
 ```text
-BornBeast varying-phase samples     164
-Transformers                        169
-Jewelry                             214
-record boundary                     OPEN
-H-CFG-A RGB/BGR triplets            OPEN
-H-CFG-B scalar + padding            PREFERRED_NOT_PROVEN
-H-CFG-C other periodic packing      OPEN
-semantic consumer                   OPEN
+phase != record boundary                ACCEPT
+BornBeast varying-phase samples         164
+Transformers                            169
+Jewelry                                 214
+phase-origin span accounting            ACCEPT
+record boundary                         OPEN
+H-CFG-A RGB/BGR triplets                OPEN
+H-CFG-B scalar + padding                PREFERRED_NOT_PROVEN
+H-CFG-C other periodic packing          OPEN
+semantic consumer                       OPEN
 ```
 
 **Engine material positive control**
@@ -203,7 +220,7 @@ ArmModel LZMA text CFG 已证明 CF 存在：
 [Properties] PieceIndex
 ```
 
-这是真实 engine-format positive evidence；不能直接等同 weapon format。
+这是 engine-format positive evidence；不能直接等同 weapon format。
 
 **Weapon binding**
 
@@ -217,18 +234,21 @@ weapon mesh/piece -> texture set        OPEN
 
 ---
 
-### 1.4 P4-M01-N01 — ACTIVE / ENGINE_BINDING_INVESTIGATION
+### 1.4 P4-M01-N01 — ACTIVE / PHASE1_CONSUMER_DISCOVERY
 
-当前正式任务：[`P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`](P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md)。
+原始任务：[`P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`](P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md)。
 
-N01 不再以“修 R1 报告”为主，而是直接回答：
+当前 overlay：[`P4_M01_N01_CONTINUATION.md`](P4_M01_N01_CONTINUATION.md)。
+
+N01 当前直接回答：
 
 > **CF weapon 的 model/piece、texture family、WeaponShader CFG 究竟由哪个 engine/config/resource path 关联和消费？**
 
-固定执行顺序：
+Phase 0 已冻结，不再执行。
+
+当前固定顺序：
 
 ```text
-Phase 0  R1 final consistency cleanup
 Phase 1  consumer call/data-path discovery
 Phase 2  ArmModel positive control + weapon-family differential
 Phase 3  WeaponShader CFG consumer identification
@@ -236,20 +256,20 @@ Phase 4  storage/channel/binding semantics
 Phase 5  engine binding closure
 ```
 
-Phase 0 只处理：
+当前最低 handoff：
 
-- CFG phase-origin identity 公式；
-- DTX `>3x`/旧 `every` 等措辞；
-- H1 preview path/SHA、H1 evidence class；
-- shader/binding 旧 docstring；
-- regenerate affected reports/closure。
+```text
+Phase 1 outputs
++ Phase 2 weapon_material_differential.json
+```
 
-**Phase 0 通过后，Executor 同一轮直接进入 Phase 1，不等待下一次 Chat/Sol 状态切换。**
+不能只做 candidate list 后停止。
 
 N01 substantive priority：
 
 ```text
 consumer/reference evidence
+> structural binding
 > same-family differential
 > bounded binary hypothesis
 > preview appearance
@@ -351,7 +371,7 @@ CF LTB
 
 ### Track B — Native material recovery
 
-状态：**P4-M01 ACTIVE；当前 P4-M01-N01**。
+状态：**P4-M01 ACTIVE；当前 P4-M01-N01 Phase 1**。
 
 回答：CF 原生 texture/material 如何被解释、绑定和组合。
 
@@ -430,8 +450,9 @@ work/m4a1_s_bornbeast/p4_m01_native_material/**
 
 | 项目 | 当前判断 | Blocker |
 |---|---|---:|
-| R1 evidence consistency | 核心纠错已接受；minor cleanup 进 N01 Phase 0 | N01 preflight |
-| weapon material consumer | 未定位/未闭合 | **P4-M01-N01** |
+| R1 evidence consistency | **ACCEPTED / COMPLETE** | — |
+| N01 Phase 0 | **ACCEPT / FROZEN** | — |
+| weapon material consumer | 未定位/未闭合 | **P4-M01-N01 Phase 1** |
 | weapon piece→texture-set binding | LTB field provisional；ArmModel positive control 已有 | **P4-M01-N01** |
 | WeaponShader CFG consumer/semantic | mod-3 structural fact 已证，consumer 未知 | **P4-M01-N01** |
 | DTX/TGA channel/binding semantics | storage/layout 部分已证，engine role/order 未闭合 | **P4-M01-N01** |
@@ -484,4 +505,4 @@ P4-M01 PASS 后才恢复 Transformers/native finalist/user gate/provenance closu
 
 ## 7. 当前唯一下一步
 
-> **Local Executor 同步最新 `master`，读取 `P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`。先完成 Phase 0 的 R1 minor consistency cleanup，然后同一轮直接进入 Phase 1：沿仓库现有 texture config/mapping/index/resolver/decoder 调用与本地 resource relation 寻找真实 weapon material consumer；以 ArmModel explicit `[Textures]/PieceIndex` 为 positive control，对 BornBeast/Transformers/Jewelry/简单 M4A1-S control 做 same-family differential；优先定位 WeaponShader CFG consumer、piece/material binding key 与 texture-set relation，再闭合 storage/channel semantics。不要重跑 TGA、DTX header/LZMA/width scan，也不要无边界盲扫 `data/**`。完成后 push scoped code/evidence 到 `master`，由 Chat/Sol Review N01。当前不执行 J、不恢复 P5-T02、不请求 final user visual gate。**
+> **Local Executor 同步最新 `master`，读取 `P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md` 与当前 `P4_M01_N01_CONTINUATION.md`。N01 Phase 0 已 `ACCEPT / FROZEN`，禁止重跑；直接从 Phase 1 开始，沿仓库现有 texture config/mapping/index/resolver/decoder 调用与本地 resource relation 寻找真实 weapon material consumer。随后必须完成 Phase 2：以 ArmModel explicit `[Textures]/PieceIndex` 为 positive control，对 BornBeast/Transformers/Jewelry/简单 M4A1-S control 做 same-family differential。当前最低 handoff 是 Phase 1 两个 consumer outputs + Phase 2 `weapon_material_differential.json`；不能只生成 candidate list 就停止。若已找到 credible consumer candidate，可同轮继续 Phase 3–5。不要重跑 TGA、DTX header/LZMA/width scan，不要无边界盲扫 `data/**`。完成后 push scoped code/evidence 到 `master`，由 Chat/Sol Review N01。当前不执行 J、不恢复 P5-T02、不请求 final user visual gate。**
