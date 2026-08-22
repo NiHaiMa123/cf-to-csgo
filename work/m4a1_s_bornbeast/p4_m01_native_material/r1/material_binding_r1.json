@@ -1,0 +1,216 @@
+{
+  "schema": "cf2.p4m01.r1.material-binding.v1",
+  "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
+  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/material_binding_report.json",
+  "review_reason": "R0 relied on basename+directory convention only. R1 adds binary structure: per-mesh numeric texture-slot IDs embedded in the LTB.",
+  "structural_finding": {
+    "description": "each weapon mesh block ends with a u8-length-prefixed ASCII digit string ('0'..'8') immediately after its index buffer",
+    "extraction_layout": {
+      "mesh_name": "u16 length + chars",
+      "vertex_count": "u16 @ mesh_base+49",
+      "face_count": "u16 @ mesh_base+53",
+      "vertex_data": "@ mesh_base+85, stride 32 bytes (pos12 normal12 uv8)",
+      "index_data": "faceCount*3 * u16 after vertices",
+      "slot_tail": "u8 charCount + ASCII digits right after index data"
+    },
+    "slot_sets_identical_across_variants": true,
+    "interpretation": "the LTB binds each mesh to a numeric texture slot; the engine resolves slot->texture outside the LTB (two-stage binding). The basename convention plausibly names the texture SET, but the mesh->slot half is now proven structure, not inference."
+  },
+  "ltbs": {
+    "BornBeast": {
+      "relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+      "size_bytes": 166113,
+      "decoded_bytes": 725544,
+      "weapon_meshes": [
+        {
+          "name_offset": 64479,
+          "mesh_name": "M4A1S_BornBeast",
+          "vertex_count": 3074,
+          "face_count": 3407,
+          "slot_tail_len": 1,
+          "slot_id_string": "0"
+        },
+        {
+          "name_offset": 183393,
+          "mesh_name": "M4A1S_BornBeast04",
+          "vertex_count": 46,
+          "face_count": 52,
+          "slot_tail_len": 1,
+          "slot_id_string": "2"
+        },
+        {
+          "name_offset": 185283,
+          "mesh_name": "M4A1S_BornBeast02",
+          "vertex_count": 133,
+          "face_count": 121,
+          "slot_tail_len": 1,
+          "slot_id_string": "7"
+        },
+        {
+          "name_offset": 190371,
+          "mesh_name": "M4A1S_BornBeast03",
+          "vertex_count": 165,
+          "face_count": 184,
+          "slot_tail_len": 1,
+          "slot_id_string": "1"
+        },
+        {
+          "name_offset": 196861,
+          "mesh_name": "M4A1S_BornBeast07",
+          "vertex_count": 46,
+          "face_count": 52,
+          "slot_tail_len": 1,
+          "slot_id_string": "5"
+        },
+        {
+          "name_offset": 198751,
+          "mesh_name": "M4A1S_BornBeast08",
+          "vertex_count": 46,
+          "face_count": 52,
+          "slot_tail_len": 1,
+          "slot_id_string": "6"
+        },
+        {
+          "name_offset": 200641,
+          "mesh_name": "M4A1S_BornBeast05",
+          "vertex_count": 46,
+          "face_count": 52,
+          "slot_tail_len": 1,
+          "slot_id_string": "3"
+        },
+        {
+          "name_offset": 202531,
+          "mesh_name": "M4A1S_BornBeast06",
+          "vertex_count": 46,
+          "face_count": 52,
+          "slot_tail_len": 1,
+          "slot_id_string": "4"
+        },
+        {
+          "name_offset": 204421,
+          "mesh_name": "M4A1S_BornBeast01",
+          "vertex_count": 44,
+          "face_count": 36,
+          "slot_tail_len": 1,
+          "slot_id_string": "8"
+        }
+      ],
+      "slot_id_multiset": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "inline_texture_path_refs": []
+    },
+    "Transformers": {
+      "relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "size_bytes": 152923,
+      "decoded_bytes": 604808,
+      "weapon_meshes": [
+        {
+          "name_offset": 64479,
+          "mesh_name": "M4A1_transformers_Body",
+          "vertex_count": 2572,
+          "face_count": 3262,
+          "slot_tail_len": 1,
+          "slot_id_string": "0"
+        },
+        {
+          "name_offset": 166466,
+          "mesh_name": "M4A1_transformers_MAG",
+          "vertex_count": 40,
+          "face_count": 44,
+          "slot_tail_len": 1,
+          "slot_id_string": "8"
+        },
+        {
+          "name_offset": 168120,
+          "mesh_name": "M4A1_transformers_part05",
+          "vertex_count": 59,
+          "face_count": 64,
+          "slot_tail_len": 1,
+          "slot_id_string": "2"
+        },
+        {
+          "name_offset": 170505,
+          "mesh_name": "M4A1_transformers_Reload02",
+          "vertex_count": 77,
+          "face_count": 122,
+          "slot_tail_len": 1,
+          "slot_id_string": "1"
+        },
+        {
+          "name_offset": 173816,
+          "mesh_name": "M4A1_transformers_part02",
+          "vertex_count": 84,
+          "face_count": 118,
+          "slot_tail_len": 1,
+          "slot_id_string": "6"
+        },
+        {
+          "name_offset": 177325,
+          "mesh_name": "M4A1_transformers_part04",
+          "vertex_count": 75,
+          "face_count": 64,
+          "slot_tail_len": 1,
+          "slot_id_string": "5"
+        },
+        {
+          "name_offset": 180222,
+          "mesh_name": "M4A1_transformers_part01",
+          "vertex_count": 84,
+          "face_count": 118,
+          "slot_tail_len": 1,
+          "slot_id_string": "3"
+        },
+        {
+          "name_offset": 183731,
+          "mesh_name": "M4A1_transformers_part03",
+          "vertex_count": 39,
+          "face_count": 50,
+          "slot_tail_len": 1,
+          "slot_id_string": "4"
+        },
+        {
+          "name_offset": 185392,
+          "mesh_name": "M4A1_transformers_Reload01",
+          "vertex_count": 60,
+          "face_count": 74,
+          "slot_tail_len": 1,
+          "slot_id_string": "7"
+        }
+      ],
+      "slot_id_multiset": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "inline_texture_path_refs": []
+    }
+  },
+  "binding_chain": {
+    "stage_1_mesh_to_slot": "STRUCTURAL_EVIDENCE (embedded numeric field)",
+    "stage_2_slot_to_texture_set": "UNRESOLVED_ENGINE_SIDE — no inline texture refs in LTB; resolution presumably by engine resource lookup keyed on the weapon/skin name. Cross-skin slot-set identity supports this."
+  },
+  "closure_impact": "Task-Spec-E condition upgraded from INCOMPLETE to STRUCTURAL_FOR_STAGE_1: mesh/piece -> slot index is now evidence-backed. Full mesh->material-slot->texture-file closure still requires stage-2 evidence (engine/config side) OR a differential proof that swapping the texture set changes exactly these slots' appearance. Do NOT mark condition-4 PASS on this alone.",
+  "evidence_grade": {
+    "mesh_to_numeric_slot_binding": "VERIFIED_STRUCTURAL",
+    "no_inline_texture_paths_in_ltb": "VERIFIED_STRUCTURAL",
+    "slot_to_texture_file_mapping": "OPEN_UNRESOLVED"
+  },
+  "conclusion": "BornBeast and Transformers LTBs embed identical per-mesh slot-ID sets {0..8} as trailing records of each weapon mesh. Stage-1 binding is structural; stage-2 (slot->DTX/TGA/CFG set) remains an engine-side lookup that local evidence strongly associates with the shared basename but does not yet prove."
+}

@@ -1,0 +1,199 @@
+{
+  "schema": "cf2.p4m01.r1.cfg-reverse.v2",
+  "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
+  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/cfg_reverse_report.json",
+  "review_reason": "R0 asserted 'every CFG is a 164-pixel BGR ramp' although lengths are 492/506/642 and its len//3 decode dropped trailing bytes and mixed RGB/BGR order. R1 re-derived framing from the full corpus.",
+  "framing_model": {
+    "statement": "each CFG is a stride-3 series of isolated scalar samples embedded in an otherwise constant 0xFF field; non-FF bytes occur only at positions == dominant_phase (mod 3) for one phase per file; head/tail are partial periods",
+    "corpus_files_analyzed": 237,
+    "total_samples_outside_dominant_phase": 0,
+    "header_or_footer_fields": "NONE",
+    "length_mod3_distribution": {
+      "0": 84,
+      "1": 76,
+      "2": 77
+    },
+    "dominant_phase_distribution": {
+      "2": 96,
+      "1": 71,
+      "0": 70
+    },
+    "sample_count_range": [
+      43,
+      241
+    ],
+    "implication_for_lengths": "arbitrary file length is expected under this model; the 492/506/642 inconsistency that undermined R0 dissolves"
+  },
+  "primary_cfgs": {
+    "M4A1_S_BornBeast": {
+      "size_bytes": 492,
+      "phase_analysis": [
+        {
+          "phase": 0,
+          "sample_count": 0,
+          "violations": 164
+        },
+        {
+          "phase": 1,
+          "sample_count": 0,
+          "violations": 164
+        },
+        {
+          "phase": 2,
+          "sample_count": 164,
+          "violations": 0
+        }
+      ],
+      "dominant_phase": 2,
+      "violations_outside_phase": 0,
+      "sample_count": 164,
+      "head_gap_bytes": 2,
+      "tail_gap_bytes": 1,
+      "value_min": 6,
+      "value_max": 33,
+      "value_unique": 19,
+      "fraction_steps_within_2": 0.9632,
+      "first16_values": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        14,
+        15,
+        15,
+        15,
+        15,
+        14,
+        14,
+        14,
+        14,
+        15,
+        15
+      ],
+      "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG"
+    },
+    "M4A1_S_Transformers": {
+      "size_bytes": 506,
+      "phase_analysis": [
+        {
+          "phase": 0,
+          "sample_count": 0,
+          "violations": 169
+        },
+        {
+          "phase": 1,
+          "sample_count": 169,
+          "violations": 0
+        },
+        {
+          "phase": 2,
+          "sample_count": 0,
+          "violations": 169
+        }
+      ],
+      "dominant_phase": 1,
+      "violations_outside_phase": 0,
+      "sample_count": 169,
+      "head_gap_bytes": 1,
+      "tail_gap_bytes": 1,
+      "value_min": 7,
+      "value_max": 33,
+      "value_unique": 18,
+      "fraction_steps_within_2": 0.9643,
+      "first16_values": [
+        18,
+        18,
+        18,
+        18,
+        19,
+        19,
+        20,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        18,
+        18
+      ],
+      "sha256": "f53e0ea00fa3677dd77acf77570ab1ddf7944410db41e11e1d103592dea3940d",
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG"
+    },
+    "M4A1_S_Jewelry": {
+      "size_bytes": 642,
+      "phase_analysis": [
+        {
+          "phase": 0,
+          "sample_count": 0,
+          "violations": 214
+        },
+        {
+          "phase": 1,
+          "sample_count": 0,
+          "violations": 214
+        },
+        {
+          "phase": 2,
+          "sample_count": 214,
+          "violations": 0
+        }
+      ],
+      "dominant_phase": 2,
+      "violations_outside_phase": 0,
+      "sample_count": 214,
+      "head_gap_bytes": 2,
+      "tail_gap_bytes": 1,
+      "value_min": 12,
+      "value_max": 28,
+      "value_unique": 16,
+      "fraction_steps_within_2": 0.9671,
+      "first16_values": [
+        15,
+        15,
+        15,
+        15,
+        14,
+        14,
+        15,
+        14,
+        15,
+        15,
+        15,
+        15,
+        16,
+        15,
+        15,
+        15
+      ],
+      "sha256": "e8aa3c5e48208d6add42038c09551e74e397712b022cb6b099b2e2c34fc0209f",
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Jewelry.CFG"
+    }
+  },
+  "exact_byte_differentials": {
+    "M4A1_S_BornBeast_vs_M4A1_S_Transformers": {
+      "len_a": 492,
+      "len_b": 506,
+      "differing_prefix_bytes": 328,
+      "prefix_diff_ratio": 0.6667
+    },
+    "M4A1_S_BornBeast_vs_M4A1_S_Jewelry": {
+      "len_a": 492,
+      "len_b": 642,
+      "differing_prefix_bytes": 147,
+      "prefix_diff_ratio": 0.2988
+    },
+    "M4A1_S_Transformers_vs_M4A1_S_Jewelry": {
+      "len_a": 506,
+      "len_b": 642,
+      "differing_prefix_bytes": 337,
+      "prefix_diff_ratio": 0.666
+    }
+  },
+  "semantic_binding_status": "UNRESOLVED_PROVISIONAL",
+  "semantic_note": "value sequences are near-smooth gradients (>=96% steps within +/-2), supporting a 1-D gradient/lookup-strip interpretation as a diagnostic render; which engine parameter consumes this strip is still unbound pending R1-E stage-2 evidence",
+  "conclusion": "Framing resolved structurally across all 237 WeaponShader CFGs with zero samples outside their dominant phase. R0's uniform '164-pixel BGR ramp' claim is superseded by an exact model with no dropped bytes and explicit per-file phase. Semantic slot binding remains explicitly unresolved."
+}

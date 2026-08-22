@@ -1,0 +1,63 @@
+{
+  "schema": "cf2.p4m01.r1.native-material-closure.v1",
+  "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
+  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/native_material_closure.json",
+  "conditions_sec4_I": {
+    "1_geometry_uv_local_ltb": {
+      "status": "PASS",
+      "evidence": "PV-M4A1_S_BornBeast.LTB local_cf; slot-ID structure documented in material_binding_r1.json"
+    },
+    "2_visible_color_from_local_cf_or_verified_semantics": {
+      "status": "PASS_FOR_LAYERS_OPEN_FOR_COMPOSITION",
+      "evidence": "all decoded layers are local_cf; composition formulas are explicitly hypothesis-classed"
+    },
+    "3_each_map_path_sha": {
+      "status": "PASS",
+      "evidence": "recorded in this report's inputs"
+    },
+    "4_material_binding_structural_evidence": {
+      "status": "PARTIAL_STAGE1_ONLY",
+      "evidence": "mesh->numeric-slot binding VERIFIED_STRUCTURAL (identical {0..8} sets across BornBeast/Transformers LTBs); slot->texture-set mapping remains engine-side OPEN; condition must NOT be marked full PASS"
+    },
+    "5_no_external_pixels": {
+      "status": "PASS",
+      "evidence": "generation used local_cf inputs only"
+    },
+    "6_clean_reproducible": {
+      "status": "PASS",
+      "evidence": "deterministic scripts scripts/material_recovery/r1_*.py; inputs sha-pinned"
+    },
+    "7_recognizable_bornbeast_render": {
+      "status": "LAYER_RECOGNIZABLE_FULL_COMPOSITION_PENDING",
+      "evidence": "base atlas clearly renders weapon shape; alpha/normal/specular show coherent part detail; a composed final look requires resolved engine semantics and is NOT claimed here"
+    },
+    "8_external_reference_only_visual": {
+      "status": "PASS",
+      "evidence": "no external input in any generation path"
+    }
+  },
+  "key_findings_r1": [
+    "DTX: headerless BGR24 width-1024 single continuous image; no mips; R0 '512x256 mip chain' retracted",
+    "TGA: formal [footer][header] repair implemented; R0 10-byte-shifted excision retracted",
+    "LTB: per-mesh numeric texture-slot IDs {0..8} embedded — first structural binding evidence",
+    "CFG: stride-3 scalar samples in 0xFF field, per-file phase, no header; R0 uniform-ramp claim superseded",
+    "all R0 shader formulas with invented constants retracted"
+  ],
+  "recommended_state": "CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE (R1 corrections delivered; full closure still blocked on slot->texture-set stage-2 evidence)",
+  "executor_authority_note": "Local executor records evidence + recommended state only; authoritative plan.md change belongs to Chat/Sol.",
+  "evidence_chain": [
+    "r1/dtx_revalidation_r1.json",
+    "r1/tga_repair_r1.json",
+    "r1/material_binding_r1.json",
+    "r1/cfg_reverse_r1.json",
+    "r1/shader_hypotheses_r1.json",
+    "previews/** under r1/"
+  ],
+  "open_items_for_next_round": [
+    "slot->texture-set resolution (engine/config side or differential proof)",
+    "channel-order (BGR vs RGB) confirmation for DTX/TGA planes",
+    "DTX terminal-row/tail 2212-byte structure",
+    "CFG semantic parameter identification",
+    "composed native render vs user visual gate (after technical closure)"
+  ]
+}

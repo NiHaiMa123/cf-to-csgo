@@ -1,0 +1,205 @@
+{
+  "schema": "cf2.p4m01.r1.tga-repair.v1",
+  "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
+  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/tga_decode_matrix.json",
+  "review_reason": "R0 excised [TRUEVISION-18, TRUEVISION+26) as header+footer. The real TryRepairInsertedFooterHeader uses footerOffset=sig-8, headerOffset=footerOffset+26 (= sig+18), i.e. block layout is [footer][header], not [header][footer]. R0 therefore removed the wrong 44 bytes (10-byte shift at the start), corrupting the pixel stream even though total length matched.",
+  "method": "byte-equivalent port of TryRepairInsertedFooterHeader/TryBuildRepairedTga/DecodeUncompressed; repaired TGAs decoded and hashed; no external inputs",
+  "files": {
+    "alpha": {
+      "relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+      "size_bytes": 3145772,
+      "lzma_is_compressed": false,
+      "repair": {
+        "ok": true,
+        "signature_offset": 886830,
+        "footer_offset": 886822,
+        "header_offset": 886848,
+        "image_data_offset": 18,
+        "parsed_header": {
+          "id_length": 0,
+          "color_map_type": 0,
+          "image_type": 2,
+          "width": 1024,
+          "height": 1024,
+          "pixel_depth": 24,
+          "descriptor": 0
+        },
+        "source_pixel_bytes": 3,
+        "pixel_bytes": 3145728,
+        "repaired_total": 3145746,
+        "available_pixel_bytes": 3145728
+      },
+      "decode": {
+        "ok": true,
+        "width": 1024,
+        "height": 1024,
+        "descriptor": 0,
+        "origin_right": false,
+        "origin_top": false,
+        "channel_stats_after_formal_repair": [
+          {
+            "mean": 255.0,
+            "min": 255,
+            "max": 255,
+            "unique": 1
+          },
+          {
+            "mean": 15.2,
+            "min": 0,
+            "max": 173,
+            "unique": 174
+          },
+          {
+            "mean": 255.0,
+            "min": 255,
+            "max": 255,
+            "unique": 1
+          }
+        ],
+        "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/native_alpha_r1.png",
+        "preview_sha256": "ecbd4a387fcf2068c0903a13068b27f951be11c1282c404ddce851846f10ddd6"
+      },
+      "r0_vs_r1_offsets": {
+        "truevision_signature_at": 886830,
+        "r0_excision_start": 886812,
+        "r0_excision_end": 886856,
+        "formal_footer_offset": 886822,
+        "formal_header_offset": 886848,
+        "delta_r0start_vs_formal_footer": 10,
+        "note": "R0 deleted [sig-18, sig+26); formal decoder keeps bytes [sig-18,sig-8) (last 10 bytes of R0's 'header') as PIXEL DATA and starts its 18-byte header at sig+18. Pixel streams differ."
+      }
+    },
+    "normal": {
+      "relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e",
+      "size_bytes": 3145772,
+      "lzma_is_compressed": false,
+      "repair": {
+        "ok": true,
+        "signature_offset": 2458394,
+        "footer_offset": 2458386,
+        "header_offset": 2458412,
+        "image_data_offset": 18,
+        "parsed_header": {
+          "id_length": 0,
+          "color_map_type": 0,
+          "image_type": 2,
+          "width": 1024,
+          "height": 1024,
+          "pixel_depth": 24,
+          "descriptor": 0
+        },
+        "source_pixel_bytes": 3,
+        "pixel_bytes": 3145728,
+        "repaired_total": 3145746,
+        "available_pixel_bytes": 3145728
+      },
+      "decode": {
+        "ok": true,
+        "width": 1024,
+        "height": 1024,
+        "descriptor": 0,
+        "origin_right": false,
+        "origin_top": false,
+        "channel_stats_after_formal_repair": [
+          {
+            "mean": 11.93,
+            "min": 0,
+            "max": 108,
+            "unique": 105
+          },
+          {
+            "mean": 255.0,
+            "min": 255,
+            "max": 255,
+            "unique": 1
+          },
+          {
+            "mean": 255.0,
+            "min": 255,
+            "max": 255,
+            "unique": 1
+          }
+        ],
+        "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/native_normal_r1.png",
+        "preview_sha256": "d097b6c9b4e71fe3b3b9ae68910d2b6f8786f261b600c52db08a31e53d9fcbdc"
+      },
+      "r0_vs_r1_offsets": {
+        "truevision_signature_at": 2458394,
+        "r0_excision_start": 2458376,
+        "r0_excision_end": 2458420,
+        "formal_footer_offset": 2458386,
+        "formal_header_offset": 2458412,
+        "delta_r0start_vs_formal_footer": 10,
+        "note": "R0 deleted [sig-18, sig+26); formal decoder keeps bytes [sig-18,sig-8) (last 10 bytes of R0's 'header') as PIXEL DATA and starts its 18-byte header at sig+18. Pixel streams differ."
+      }
+    },
+    "specular": {
+      "relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6",
+      "size_bytes": 3145772,
+      "lzma_is_compressed": false,
+      "repair": {
+        "ok": true,
+        "signature_offset": 550357,
+        "footer_offset": 550349,
+        "header_offset": 550375,
+        "image_data_offset": 18,
+        "parsed_header": {
+          "id_length": 0,
+          "color_map_type": 0,
+          "image_type": 2,
+          "width": 1024,
+          "height": 1024,
+          "pixel_depth": 24,
+          "descriptor": 0
+        },
+        "source_pixel_bytes": 3,
+        "pixel_bytes": 3145728,
+        "repaired_total": 3145746,
+        "available_pixel_bytes": 3145728
+      },
+      "decode": {
+        "ok": true,
+        "width": 1024,
+        "height": 1024,
+        "descriptor": 0,
+        "origin_right": false,
+        "origin_top": false,
+        "channel_stats_after_formal_repair": [
+          {
+            "mean": 255.0,
+            "min": 255,
+            "max": 255,
+            "unique": 1
+          },
+          {
+            "mean": 255.0,
+            "min": 255,
+            "max": 255,
+            "unique": 1
+          },
+          {
+            "mean": 19.94,
+            "min": 0,
+            "max": 214,
+            "unique": 181
+          }
+        ],
+        "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/native_specular_r1.png",
+        "preview_sha256": "015df3ab439e3529e79fbaf7788391b6b9fdeeba93b7a3affd3992df0d82447c"
+      },
+      "r0_vs_r1_offsets": {
+        "truevision_signature_at": 550357,
+        "r0_excision_start": 550339,
+        "r0_excision_end": 550383,
+        "formal_footer_offset": 550349,
+        "formal_header_offset": 550375,
+        "delta_r0start_vs_formal_footer": 10,
+        "note": "R0 deleted [sig-18, sig+26); formal decoder keeps bytes [sig-18,sig-8) (last 10 bytes of R0's 'header') as PIXEL DATA and starts its 18-byte header at sig+18. Pixel streams differ."
+      }
+    }
+  },
+  "conclusion": "All three BornBeast maps repair and decode through the formal decoder logic; repaired headers carry plausible width/height/descriptor and the decoded planes show single-variable-channel structure consistent with mask/scalar roles. R0 previews and channel-role claims are superseded; new channel-role determination is deferred to R1-H."
+}

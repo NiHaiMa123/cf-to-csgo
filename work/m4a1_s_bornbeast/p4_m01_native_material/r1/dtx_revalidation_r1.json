@@ -1,0 +1,89 @@
+{
+  "schema": "cf2.p4m01.r1.dtx-revalidation.v3",
+  "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
+  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/dtx_validation.json",
+  "review_reason": "R0 claimed 'headerless BGR24 512x256 full-mip + trailer'. R1 proved with real-decoder ports and structural scans: no DTX header, not LZMA, level-0 row stride 1024 (exhaustive width scan, >3x margin), and NO mip chain — the whole payload is one continuous image.",
+  "source": {
+    "relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+    "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+    "size_bytes": 524452,
+    "class": "local_cf"
+  },
+  "formal_parser_results": {
+    "lzma_alone_detector": {
+      "is_compressed": false,
+      "logic": "byte-equivalent port of LzmaAloneDecoder.TryReadHeader",
+      "first_byte": "0x77"
+    },
+    "dtx_thumbnail_decoder_header": {
+      "parsed": false,
+      "reason": "offset0 int32=1996429943 is not a supported DTX version (-2/-3/-5)",
+      "logic": "port of DtxThumbnailDecoder.TryReadHeader versions {-2,-3,-5}"
+    }
+  },
+  "pixel_record_structure": {
+    "channel_census_sampled_300k": {
+      "offset_mod3_0": {
+        "unique": 187
+      },
+      "offset_mod3_1": {
+        "unique": 169
+      },
+      "offset_mod3_2": {
+        "unique": 1
+      }
+    },
+    "finding": "byte offset %3==2 constant 0xFF; 3-byte records; one fixed channel (FF) throughout entire file including tail"
+  },
+  "layout_resolution": {
+    "method": "1) exhaustive row-width scan 64..2048 by vertical smoothness of varying channels -> width=1024 wins by >3x margin; 2) cross-boundary continuity over all row boundaries -> no seam anywhere; content flows continuously past former 'mip boundaries'; 3) therefore single continuous image, not a mip chain.",
+    "accepted_layout": {
+      "interpretation": "headerless BGR24 image, width=1024, height>=171 rows of pixel data",
+      "full_rows_at_width_1024": 170,
+      "leftover_bytes_after_full_rows": 2212,
+      "height_fraction_note": "524452/3072 = 170.674 rows: the file does not decompose into an integer count of 1024-wide BGR24 rows. The final 2212 bytes keep the 3-byte pixel rhythm and continue the image content smoothly, so the exact terminal structure (partial row, embedded metadata, or container padding) remains OPEN.",
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/dtx_level0_as_1024x170.png",
+      "preview_sha256": "d7d3827a3f4bd6c7626bcd60857ada152d154fd9aee0e57d31bd1b592994d52e"
+    },
+    "continuity_evidence": {
+      "avg_cross_boundary_delta": 3.001,
+      "max_cross_boundary_delta": 6.227,
+      "boundary_count_checked": 169,
+      "row170_to_tail_delta": 2.097,
+      "conclusion": "no seam at any boundary; single continuous picture"
+    }
+  },
+  "rejected_interpretations": [
+    {
+      "interpretation": "BGR24 512x256 full-mip (R0)",
+      "reason": "level-0 stride wrong: renders as diagonal shear bands; smoothness vertical delta 30.75 vs 2.12 at width 1024"
+    },
+    {
+      "interpretation": "BGR24 1024x128 full-mip chain (interim R1 draft)",
+      "reason": "cross-boundary continuity shows no reset at byte 393216; region after it continues the same image at width 1024 (region scan winner 1024 again)"
+    },
+    {
+      "interpretation": "BGR24 256x512",
+      "reason": "horizontal striping artifacts under direct render"
+    },
+    {
+      "interpretation": "DXT1/Palette8/DXT3/5",
+      "reason": "block statistics (~34% c0>c1) match byte noise, not opaque image blocks; palette impossible with two varying channels"
+    },
+    {
+      "interpretation": "RGBA32/BGRA32 any power-of-two dims",
+      "reason": "no near-fit accounting; 4-byte records contradicted by fixed-FF every third byte"
+    }
+  ],
+  "evidence_grade": {
+    "headerless_no_lithtech_header": "VERIFIED_STRUCTURAL",
+    "not_lzma_compressed": "VERIFIED_STRUCTURAL",
+    "pixel_record_3_bytes_fixed_channel": "VERIFIED_STRUCTURAL",
+    "row_stride_1024": "VERIFIED_STRUCTURAL",
+    "single_continuous_image_no_mips": "VERIFIED_STRUCTURAL",
+    "exact_height_and_tail_semantics": "OPEN_UNRESOLVED (fractional-row remainder documented)",
+    "channel_order_bgr_vs_rgb": "UNRESOLVED",
+    "engine_role_color_layer": "EVIDENCE_SUPPORTED (weapon-shaped atlas render); binding via slot-ID convention remains provisional"
+  },
+  "conclusion": "PV-M4A1_S_BornBeast.DTX is a headerless, uncompressed stream of 3-byte pixel records with one fixed 0xFF channel, forming a single continuous 1024-wide color image (>=171 rows incl. partial tail). Both R0 claims ('512x256', 'full mip chain') are retracted. Exact terminal-row/tail semantics remain open but account for only 2212 bytes (0.42%). No external pixels involved."
+}

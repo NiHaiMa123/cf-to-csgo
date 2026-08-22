@@ -1,0 +1,72 @@
+{
+  "schema": "cf2.p4m01.r1.shader-hypotheses.v1",
+  "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
+  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/shader_hypotheses.json",
+  "inputs_all_local_cf": {
+    "base_dtx": {
+      "relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9"
+    },
+    "alpha": {
+      "relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37"
+    },
+    "normal": {
+      "relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e"
+    },
+    "specular": {
+      "relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6"
+    },
+    "cfg": {
+      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87"
+    },
+    "geometry_ltb": {
+      "relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7"
+    }
+  },
+  "layer_previews": {
+    "base_1024x170": {
+      "path": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/layers_base_r1.png",
+      "sha256": "d7d3827a3f4bd6c7626bcd60857ada152d154fd9aee0e57d31bd1b592994d52e"
+    },
+    "alpha": {
+      "path": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/layers_alpha_r1.png",
+      "sha256": "ecbd4a387fcf2068c0903a13068b27f951be11c1282c404ddce851846f10ddd6"
+    },
+    "normal": {
+      "path": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/layers_normal_r1.png",
+      "sha256": "d097b6c9b4e71fe3b3b9ae68910d2b6f8786f261b600c52db08a31e53d9fcbdc"
+    },
+    "specular": {
+      "path": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/layers_specular_r1.png",
+      "sha256": "015df3ab439e3529e79fbaf7788391b6b9fdeeba93b7a3affd3992df0d82447c"
+    },
+    "cfg_strip": {
+      "path": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/cfg_strip_diagnostic_r1.png",
+      "sha256": "3d6abb45836bfaf071754fa23ec35936cce7d660e47581ecbd284ab620011016",
+      "class": "DIAGNOSTIC_ONLY"
+    }
+  },
+  "hypotheses": {
+    "H1_base_flat": {
+      "formula": "out.rgb = base_dtx.rgb (no mixing constants)",
+      "evidence_class": "VERIFIED_DECODE_ONLY",
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/h1_base_x_spec_r1.png",
+      "preview_sha256": "d7d3827a3f4bd6c7626bcd60857ada152d154fd9aee0e57d31bd1b592994d52e",
+      "replaces_R0": "H1 'out = base + specular.R*120' retracted: additive 120 had no engine evidence"
+    },
+    "H2_base_times_specular": {
+      "formula": "out.rgb = base.rgb * normalize(specular.variable_channel)",
+      "evidence_class": "APPROXIMATION_HYPOTHESIS",
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/h2_base_x_spec_r1.png",
+      "preview_sha256": "d7d3827a3f4bd6c7626bcd60857ada152d154fd9aee0e57d31bd1b592994d52e",
+      "replaces_R0": "H2 'base + cfg_midcolor*lum*0.5' retracted: additive emissive with 0.5 factor had no engine evidence"
+    }
+  },
+  "external_pixels_used": false,
+  "conclusion": "Layer previews regenerated exclusively through R1-corrected decoders. All R0 additive/magic-constant formulas are retracted. Remaining composition semantics await stage-2 binding evidence."
+}
