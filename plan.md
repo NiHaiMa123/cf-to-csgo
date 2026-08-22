@@ -160,7 +160,7 @@ P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 
 ---
 
-# 4. P4-M01-R1 / N01 — 冻结技术结论
+# 4. P4-M01-R1 / N01 / N02 — 冻结技术结论
 
 ## 4.1 R1
 
@@ -283,15 +283,94 @@ BlueDiamond    text-config hits = 0
 BornBeast derived-output hits  = 4 / DERIVED_OUTPUT_HIT only
 ```
 
-状态：
+N01 在关闭当时的状态：
 
 ```text
-P4-M01-N01 evidence    = COMPLETE / FROZEN
-N01 substantive        = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-engine binding closure = OPEN_UNRESOLVED
+P4-M01-N01 evidence      = COMPLETE / FROZEN
+N01 old-corpus search    = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+engine binding closure   = OPEN_UNRESOLVED
 ```
 
-这意味着旧 corpus 已达到当前证据边界；它不意味着项目没有后续路径。具体下一步由 `task.md` 定义。
+这只描述 **旧 `data/**` corpus 的证据边界**；N02-A 后已取得新的本机 runtime 输入，不能再把整个 P4-M01 路线概括为“没有 runtime artifact”。
+
+## 4.8 N02-A runtime acquisition freeze
+
+Review 接受提交：
+
+```text
+a561924a9c0795932f328de929bee510f6e2719a
+P4-M01-N02-A = ACCEPTED / COMPLETE
+```
+
+可信 runtime root：
+
+```text
+D:\Program Files\CF(2)
+```
+
+选择依据为本机只读观测同时存在：
+
+```text
+CF executable signal
+REZ signal
+rez/ directory
+link.ini
+```
+
+N02-A 在该 root 建立 depth<=6、限定扩展名的 runtime artifact inventory：
+
+```text
+total candidates = 2273
+.bin             = 1291
+.rez             = 476
+.dll             = 272
+.ltc             = 73
+.pak             = 58
+.dat             = 44
+.exe             = 27
+.fxo             = 14
+.ini             = 8
+.lta             = 5
+.fx              = 3
+.lto             = 2
+```
+
+SHA256：
+
+```text
+2262 / 2273 captured
+11 omitted = files >512 MiB, recorded explicitly as null
+```
+
+对 P4-M01 信息增益最高的新输入：
+
+```text
+73 x rez/Butes/*.ltc
+35 x bf-prefixed .ltc within that set
+rez/bf000.lta = 30,002 bytes
+17 shader-bearing files (.fx/.fxo)
+272 DLL + 27 EXE available for later static consumer tracing
+476 REZ available for later bounded archive work
+```
+
+接受的边界：
+
+- `rez/Butes/*.ltc` 的存在是 **真实 runtime artifact evidence**；
+- 它们此前未被 N01 的 unpacked `data/**` config scope 覆盖，因此重新打开 config 路线；
+- `bf` 文件名族只构成候选排序信号，**尚不能**证明 BornBeast / bdf / weapon binding；
+- shader/EXE/DLL/REZ 目前只是 inventory candidate，尚无 strings/xref/decompile consumer proof；
+- 其余 9 个硬编码候选 root 不存在只形成该探测集合内的 bounded negative，不代表对整机所有可能安装位置的穷尽证明。
+
+当前状态更新为：
+
+```text
+runtime artifact acquisition blocker = CLEARED_FOR_STATIC_TRIAGE
+engine binding closure               = OPEN_UNRESOLVED
+CFG/render semantic closure          = OPEN_UNRESOLVED
+P4-M01                                = INCOMPLETE
+```
+
+后续应优先从低成本、直接相关的 runtime config 证据开始；只有 config 路线不足时，再升级到 PE / shader / archive consumer tracing。
 
 ---
 
@@ -435,11 +514,12 @@ assets/weapons/m4a1_s_bornbeast/prototype_01_manifest.json
 work/m4a1_s_bornbeast/p4_prototype_01/
 ```
 
-## P4-M01 / N01
+## P4-M01 / N01 / N02
 
 ```text
 work/m4a1_s_bornbeast/p4_m01_native_material/
 work/m4a1_s_bornbeast/p4_m01_native_material/n01/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/
 ```
 
 ## P5
@@ -464,6 +544,7 @@ ea11ba143d859193213f24ab92248ff8a576b135  runtime-consumer bounded search
 95b6bb363a5f00daf01193f53e2a27cff9cea3f8  provenance/closure cleanup
 65292c742d545459974c56aec494d1d9c44039a8  final config-scope guard
 ab7e2ef3394991ef0b4468f34cf4d6849b917dc2  P5 legacy pre-scan
+a561924a9c0795932f328de929bee510f6e2719a  N02-A runtime root + artifact inventory
 ```
 
 ---
