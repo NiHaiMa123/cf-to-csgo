@@ -64,12 +64,15 @@ def save_png(path, px, w, h):
 
 
 def load_base():
-    """Corrected DTX read: width-1024 continuous image, 170 full rows."""
+    """Corrected DTX read: width-1024 continuous image, 170 full rows.
+
+    Channel order is UNRESOLVED (R1 continuation): bytes are emitted as-is
+    into the PNG's (r,g,b) slots with the fixed-FF byte in the third slot.
+    This is a pixel-like-record rendering, not a claimed BGR24 decode.
+    """
     raw = open(os.path.join(REPO, BASE_REL.replace("/", "\\")), "rb").read()
     w, h = 1024, 170
     plane = raw[:w * h * 3]
-    # bytes are (B?, G?, 0xFF): emit RGB with fixed channel last per byte order
-    # channel order unresolved; render as-is mapped to (r,g,b)=(b0,b1,255)
     return plane, w, h
 
 
@@ -161,12 +164,15 @@ def main():
     h1_sha = sha256_of(p)
 
     # H2': base * (specular variable channel normalized) — multiplicative approximation
-    # specular plane: one varying channel; find it
+    # specular plane: find the varying channel by PIXEL-INDEX sampling (each
+    # sample reads all 3 bytes of a pixel, so byte phases never mix — this
+    # fixes the v1 bug where step=97 rotated the sampling phase).
     counts = [{}, {}, {}]
-    step = 97  # sample stride for speed
-    for i in range(0, len(specular), step):
+    n_pixels = sw * sh
+    for pi in range(0, n_pixels, 7):
+        base_o = pi * 3
         for c in range(3):
-            counts[c][specular[i + c]] = counts[c].get(specular[i + c], 0) + 1
+            counts[c][specular[base_o + c]] = counts[c].get(specular[base_o + c], 0) + 1
     var_ch = max(range(3), key=lambda c: len(counts[c]))
     spec_var = [specular[i + var_ch] for i in range(0, sw * sh * 3, 3)]
     max_v = max(spec_var) or 1
@@ -190,7 +196,7 @@ def main():
 
     hypotheses = {
         "H1_base_flat": {
-            "formula": "out.rgb = base_dtx.rgb (no mixing constants)",
+            "formula": "out.rgb = base_dtx record bytes rendered as-is (no mixing constants; channel order unresolved)",
             "evidence_class": "VERIFIED_DECODE_ONLY",
             "preview": os.path.relpath(p, REPO).replace("\\", "/").replace("h2", "h1"),
             "preview_sha256": h1_sha,
@@ -198,7 +204,12 @@ def main():
         },
         "H2_base_times_specular": {
             "formula": "out.rgb = base.rgb * normalize(specular.variable_channel)",
-            "evidence_class": "APPROXIMATION_HYPOTHESIS",
+            "evidence_class": "APPROXIMATION_HYPOTHESIS_DIAGNOSTIC_ONLY",
+            "sampling_fix_note": (
+                "v1 used step=97 (97%3==1) which rotated byte phases across "
+                "channel counters; v2 samples by pixel index so each sample "
+                "reads all three bytes of a pixel"
+            ),
             "preview": os.path.relpath(p, REPO).replace("\\", "/"),
             "preview_sha256": h2_sha,
             "replaces_R0": "H2 'base + cfg_midcolor*lum*0.5' retracted: additive emissive with 0.5 factor had no engine evidence",
@@ -206,9 +217,13 @@ def main():
     }
 
     shader_report = {
-        "schema": "cf2.p4m01.r1.shader-hypotheses.v1",
+        "schema": "cf2.p4m01.r1.shader-hypotheses.v2",
         "supersedes_commit": SUPERSEDES_COMMIT,
-        "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/shader_hypotheses.json",
+        "supersedes_report_schema": "cf2.p4m01.r1.shader-hypotheses.v1",
+        "continuation_review_reason": (
+            "v1 H2 census used step=97 causing byte-phase mixing; fixed by "
+            "pixel-index sampling. Previews remain DIAGNOSTIC_ONLY."
+        ),
         "inputs_all_local_cf": {
             "base_dtx": {"relative_path": BASE_REL, "sha256": sha256_of(os.path.join(REPO, BASE_REL.replace('/', '\\')))},
             "alpha": {"relative_path": TGA["alpha"], "sha256": sha256_of(os.path.join(REPO, TGA['alpha'].replace('/', '\\')))},
@@ -233,65 +248,81 @@ def main():
 
     # ---- R1-I closure
     closure = {
-        "schema": "cf2.p4m01.r1.native-material-closure.v1",
+        "schema": "cf2.p4m01.r1.native-material-closure.v2",
         "supersedes_commit": SUPERSEDES_COMMIT,
-        "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/native_material_closure.json",
+        "supersedes_report_schema": "cf2.p4m01.r1.native-material-closure.v1",
+        "continuation_review_reason": (
+            "v1 evidence grades exceeded what committed code supported; v2 "
+            "aligns grades with the targeted-rework scripts (dtx v4, cfg v3, "
+            "binding v2) and keeps every unresolved item unresolved."
+        ),
         "conditions_sec4_I": {
             "1_geometry_uv_local_ltb": {
                 "status": "PASS",
-                "evidence": "PV-M4A1_S_BornBeast.LTB local_cf; slot-ID structure documented in material_binding_r1.json",
+                "evidence": "PV-M4A1_S_BornBeast.LTB local_cf; post-mesh numeric-field structure documented in material_binding_r1.json (meaning provisional)",
             },
             "2_visible_color_from_local_cf_or_verified_semantics": {
                 "status": "PASS_FOR_LAYERS_OPEN_FOR_COMPOSITION",
-                "evidence": "all decoded layers are local_cf; composition formulas are explicitly hypothesis-classed",
+                "evidence": "all decoded layers are local_cf; composition formulas remain hypothesis-classed",
             },
             "3_each_map_path_sha": {"status": "PASS", "evidence": "recorded in this report's inputs"},
             "4_material_binding_structural_evidence": {
-                "status": "PARTIAL_STAGE1_ONLY",
+                "status": "NOT_PASS_STAGE1_ONLY",
                 "evidence": (
-                    "mesh->numeric-slot binding VERIFIED_STRUCTURAL (identical "
-                    "{0..8} sets across BornBeast/Transformers LTBs); slot->"
-                    "texture-set mapping remains engine-side OPEN; condition "
-                    "must NOT be marked full PASS"
+                    "engine text-material format with PieceIndex VERIFIED "
+                    "(ArmModel CFGs); LTB numeric field is general structure "
+                    "but its slot meaning and weapon slot->texture-set "
+                    "mapping are OPEN; explicit negative results recorded "
+                    "(no weapon-side material CFG, no config referencing "
+                    "BornBeast texture paths in local data)"
                 ),
             },
             "5_no_external_pixels": {"status": "PASS", "evidence": "generation used local_cf inputs only"},
             "6_clean_reproducible": {
                 "status": "PASS",
-                "evidence": "deterministic scripts scripts/material_recovery/r1_*.py; inputs sha-pinned",
+                "evidence": (
+                    "deterministic scripts scripts/material_recovery/"
+                    "r1_dtx_revalidate.py, r1_tga_repair.py, r1_stage2_binding.py, "
+                    "r1_cfg_reverse.py, r1_shader_closure.py; inputs sha-pinned; "
+                    "all scans cited by reports exist in the committed scripts"
+                ),
             },
             "7_recognizable_bornbeast_render": {
                 "status": "LAYER_RECOGNIZABLE_FULL_COMPOSITION_PENDING",
                 "evidence": (
-                    "base atlas clearly renders weapon shape; alpha/normal/"
-                    "specular show coherent part detail; a composed final look "
-                    "requires resolved engine semantics and is NOT claimed here"
+                    "base atlas clearly renders weapon shape at the scanned "
+                    "stride; alpha/normal/specular show coherent detail; a "
+                    "composed final look requires resolved engine semantics"
                 ),
             },
             "8_external_reference_only_visual": {"status": "PASS", "evidence": "no external input in any generation path"},
         },
-        "key_findings_r1": [
-            "DTX: headerless BGR24 width-1024 single continuous image; no mips; R0 '512x256 mip chain' retracted",
-            "TGA: formal [footer][header] repair implemented; R0 10-byte-shifted excision retracted",
-            "LTB: per-mesh numeric texture-slot IDs {0..8} embedded — first structural binding evidence",
-            "CFG: stride-3 scalar samples in 0xFF field, per-file phase, no header; R0 uniform-ramp claim superseded",
-            "all R0 shader formulas with invented constants retracted",
+        "key_findings_targeted_rework": [
+            "DTX: headerless + not-LZMA VERIFIED via real decoder ports; width-1024/no-mips downgraded to STRONG_HYPOTHESIS backed by a committed reproducible scan (full score matrix in report)",
+            "DTX: corpus invariant — every non-empty PLAYERVIEW DTX has size == 164 (mod 2048); trailing region semantics OPEN",
+            "CFG: fixed-layout truncation model fits 237/237 exactly; 492=2+163*3+1 etc.; scalar+padding PREFERRED_NOT_PROVEN vs color-triplet NOT_REFUTED_BUT_WEAKENED; corpus values confined to [0,42]",
+            "Binding: engine text material format ([Textures]/PieceIndex) VERIFIED from ArmModel CFGs; no weapon-side equivalent found locally (explicit negative)",
+            "H2 sampling bug (step=97 phase rotation) fixed via pixel-index sampling; previews stay DIAGNOSTIC_ONLY",
         ],
-        "recommended_state": "CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE (R1 corrections delivered; full closure still blocked on slot->texture-set stage-2 evidence)",
+        "recommended_state": "CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE (targeted rework delivered; closure still blocked on stage-2 slot->texture-set evidence and channel-order confirmation)",
         "executor_authority_note": "Local executor records evidence + recommended state only; authoritative plan.md change belongs to Chat/Sol.",
+        "executor_provenance": {
+            "harness": "Claude Code",
+            "model_note": "recorded per CODEX_TASKS sec 8 guidance; task remains agent-agnostic",
+        },
         "evidence_chain": [
-            "r1/dtx_revalidation_r1.json",
-            "r1/tga_repair_r1.json",
-            "r1/material_binding_r1.json",
-            "r1/cfg_reverse_r1.json",
-            "r1/shader_hypotheses_r1.json",
+            "r1/dtx_revalidation_r1.json (schema v4)",
+            "r1/tga_repair_r1.json (unchanged this round; R1-D accepted)",
+            "r1/material_binding_r1.json (schema v2)",
+            "r1/cfg_reverse_r1.json (schema v3)",
+            "r1/shader_hypotheses_r1.json (schema v2)",
             "previews/** under r1/",
         ],
         "open_items_for_next_round": [
-            "slot->texture-set resolution (engine/config side or differential proof)",
-            "channel-order (BGR vs RGB) confirmation for DTX/TGA planes",
-            "DTX terminal-row/tail 2212-byte structure",
-            "CFG semantic parameter identification",
+            "weapon-side material/texture-set binding (slot->texture-set resolution or stronger differential proof)",
+            "channel-order confirmation for DTX/TGA planes",
+            "DTX trailing-region semantics (bounded by size≡164 mod 2048 invariant)",
+            "CFG semantic consumer identification",
             "composed native render vs user visual gate (after technical closure)",
         ],
     }

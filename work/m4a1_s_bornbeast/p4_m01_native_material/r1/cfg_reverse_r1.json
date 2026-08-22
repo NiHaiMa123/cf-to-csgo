@@ -1,59 +1,38 @@
 {
-  "schema": "cf2.p4m01.r1.cfg-reverse.v2",
+  "schema": "cf2.p4m01.r1.cfg-reverse.v3",
   "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
-  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/cfg_reverse_report.json",
-  "review_reason": "R0 asserted 'every CFG is a 164-pixel BGR ramp' although lengths are 492/506/642 and its len//3 decode dropped trailing bytes and mixed RGB/BGR order. R1 re-derived framing from the full corpus.",
-  "framing_model": {
-    "statement": "each CFG is a stride-3 series of isolated scalar samples embedded in an otherwise constant 0xFF field; non-FF bytes occur only at positions == dominant_phase (mod 3) for one phase per file; head/tail are partial periods",
-    "corpus_files_analyzed": 237,
-    "total_samples_outside_dominant_phase": 0,
-    "header_or_footer_fields": "NONE",
-    "length_mod3_distribution": {
-      "0": 84,
-      "1": 76,
-      "2": 77
-    },
-    "dominant_phase_distribution": {
-      "2": 96,
-      "1": 71,
-      "0": 70
-    },
-    "sample_count_range": [
-      43,
-      241
-    ],
-    "implication_for_lengths": "arbitrary file length is expected under this model; the 492/506/642 inconsistency that undermined R0 dissolves"
+  "supersedes_report_schema": "cf2.p4m01.r1.cfg-reverse.v2",
+  "continuation_review_reason": "v2 filtered legitimate 0xFF-valued samples before counting and named the padding model 'exact framing resolved'. This version keeps every byte, gives exact triplet accounting, and treats color-triplet vs scalar+padding as competing hypotheses.",
+  "verified_structural_core": {
+    "statement": "every one of the 237 WeaponShader CFGs fits a fixed record layout: all non-0xFF bytes sit at positions == h (mod 3) for exactly one head gap h in {0,1,2}; the rest of the file is constant 0xFF",
+    "files_fitting": 237,
+    "corpus_files": 237
   },
-  "primary_cfgs": {
+  "exact_triplet_accounting_primary": {
     "M4A1_S_BornBeast": {
-      "size_bytes": 492,
-      "phase_analysis": [
-        {
-          "phase": 0,
-          "sample_count": 0,
-          "violations": 164
-        },
-        {
-          "phase": 1,
-          "sample_count": 0,
-          "violations": 164
-        },
-        {
-          "phase": 2,
-          "sample_count": 164,
-          "violations": 0
-        }
-      ],
-      "dominant_phase": 2,
-      "violations_outside_phase": 0,
-      "sample_count": 164,
-      "head_gap_bytes": 2,
-      "tail_gap_bytes": 1,
-      "value_min": 6,
-      "value_max": 33,
-      "value_unique": 19,
-      "fraction_steps_within_2": 0.9632,
-      "first16_values": [
+      "head_partial_bytes": 2,
+      "full_triplets": 163,
+      "tail_partial_bytes": 1,
+      "identity": "492 = 2 + 163*3 + 1"
+    },
+    "M4A1_S_Transformers": {
+      "head_partial_bytes": 1,
+      "full_triplets": 168,
+      "tail_partial_bytes": 1,
+      "identity": "506 = 1 + 168*3 + 1"
+    },
+    "M4A1_S_Jewelry": {
+      "head_partial_bytes": 2,
+      "full_triplets": 213,
+      "tail_partial_bytes": 1,
+      "identity": "642 = 2 + 213*3 + 1"
+    }
+  },
+  "primary_value_slots_kept": {
+    "M4A1_S_BornBeast": {
+      "slot_count": 163,
+      "slots_equal_ff": 0,
+      "first16": [
         15,
         15,
         15,
@@ -70,39 +49,12 @@
         14,
         15,
         15
-      ],
-      "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
-      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG"
+      ]
     },
     "M4A1_S_Transformers": {
-      "size_bytes": 506,
-      "phase_analysis": [
-        {
-          "phase": 0,
-          "sample_count": 0,
-          "violations": 169
-        },
-        {
-          "phase": 1,
-          "sample_count": 169,
-          "violations": 0
-        },
-        {
-          "phase": 2,
-          "sample_count": 0,
-          "violations": 169
-        }
-      ],
-      "dominant_phase": 1,
-      "violations_outside_phase": 0,
-      "sample_count": 169,
-      "head_gap_bytes": 1,
-      "tail_gap_bytes": 1,
-      "value_min": 7,
-      "value_max": 33,
-      "value_unique": 18,
-      "fraction_steps_within_2": 0.9643,
-      "first16_values": [
+      "slot_count": 168,
+      "slots_equal_ff": 0,
+      "first16": [
         18,
         18,
         18,
@@ -119,39 +71,12 @@
         19,
         18,
         18
-      ],
-      "sha256": "f53e0ea00fa3677dd77acf77570ab1ddf7944410db41e11e1d103592dea3940d",
-      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG"
+      ]
     },
     "M4A1_S_Jewelry": {
-      "size_bytes": 642,
-      "phase_analysis": [
-        {
-          "phase": 0,
-          "sample_count": 0,
-          "violations": 214
-        },
-        {
-          "phase": 1,
-          "sample_count": 0,
-          "violations": 214
-        },
-        {
-          "phase": 2,
-          "sample_count": 214,
-          "violations": 0
-        }
-      ],
-      "dominant_phase": 2,
-      "violations_outside_phase": 0,
-      "sample_count": 214,
-      "head_gap_bytes": 2,
-      "tail_gap_bytes": 1,
-      "value_min": 12,
-      "value_max": 28,
-      "value_unique": 16,
-      "fraction_steps_within_2": 0.9671,
-      "first16_values": [
+      "slot_count": 213,
+      "slots_equal_ff": 0,
+      "first16": [
         15,
         15,
         15,
@@ -168,32 +93,83 @@
         15,
         15,
         15
-      ],
-      "sha256": "e8aa3c5e48208d6add42038c09551e74e397712b022cb6b099b2e2c34fc0209f",
-      "relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Jewelry.CFG"
+      ]
     }
   },
-  "exact_byte_differentials": {
-    "M4A1_S_BornBeast_vs_M4A1_S_Transformers": {
-      "len_a": 492,
-      "len_b": 506,
-      "differing_prefix_bytes": 328,
-      "prefix_diff_ratio": 0.6667
+  "corpus_value_statistics": {
+    "total_slot_samples": 40714,
+    "nonff_value_range": [
+      0,
+      42
+    ],
+    "values_ge_100": 0,
+    "nonff_histogram_top": {
+      "0": 5,
+      "1": 62,
+      "2": 26,
+      "3": 21,
+      "4": 473,
+      "5": 2029,
+      "6": 1076,
+      "7": 1075,
+      "8": 737,
+      "9": 583,
+      "10": 281,
+      "11": 449,
+      "12": 1258,
+      "13": 2810,
+      "14": 9637,
+      "15": 7275,
+      "16": 2320,
+      "17": 1657,
+      "18": 1557,
+      "19": 856
     },
-    "M4A1_S_BornBeast_vs_M4A1_S_Jewelry": {
-      "len_a": 492,
-      "len_b": 642,
-      "differing_prefix_bytes": 147,
-      "prefix_diff_ratio": 0.2988
+    "note": "values never reach 100 across the whole corpus — a strong quantization signature inconsistent with arbitrary color bytes and consistent with small fixed-point scalars or a limited palette index range; does not by itself choose between H-CFG-A/B"
+  },
+  "competing_hypotheses_matrix": {
+    "H-CFG-A_color_triplets_two_fixed_FF_channels": {
+      "supported_by": [
+        "fixed 3-byte record grid",
+        "two positions permanently 0xFF could be saturated G/B channels",
+        "smooth near-gradual value sequences along the strip"
+      ],
+      "against": [
+        "corpus values confined to [0,42]: implausible color range for 237 varied skins",
+        "(v,255,255)-style colors would be extreme saturated hues unlike any weapon tint usage",
+        "no cross-skin correlation even between same-geometry skins (r in [-0.42, 0.45])"
+      ],
+      "status": "NOT_REFUTED_BUT_WEAKENED"
     },
-    "M4A1_S_Transformers_vs_M4A1_S_Jewelry": {
-      "len_a": 506,
-      "len_b": 642,
-      "differing_prefix_bytes": 337,
-      "prefix_diff_ratio": 0.666
-    }
+    "H-CFG-B_scalar_samples_plus_padding": {
+      "supported_by": [
+        "fixed record grid with single varying byte per record",
+        "small value domain [0,42] fits fixed-point scalars/index ramps",
+        "per-file content independence matches per-skin parameterization",
+        "engine material system proven to exist (ArmModel text CFGs use float params)"
+      ],
+      "against": [
+        "why padding is 0xFF rather than 0x00 is unexplained",
+        "no engine-side consumer identified yet for weapon strips"
+      ],
+      "status": "PREFERRED_NOT_PROVEN"
+    },
+    "shared_core_either_way": [
+      "237/237 files fit fixed-layout truncation model exactly",
+      "492 = 2 + 163*3 + 1; 506 = 1 + 168*3 + 1; 642 = 2 + 213*3 + 1"
+    ]
+  },
+  "cross_skin_strip_correlations_resampled128": {
+    "M4A1_S_BornBeast_vs_M4A1_S_Transformers": -0.084,
+    "M4A1_S_BornBeast_vs_M4A1_S_Jewelry": -0.424,
+    "M4A1_S_Transformers_vs_M4A1_S_Jewelry": -0.246
+  },
+  "engine_material_format_context": {
+    "finding": "LZMA-compressed TEXT material CFGs exist for ArmModel (rf016 .../ArmModel/Shader/*.CFG): sections [Textures] (SpecularMapName0/EnvCubeMapName0/NormalMapName0/AlphaMapName0), [Techniques] flags, [Properties] float params incl. PieceIndex — explicit per-piece texture binding",
+    "weapon_equivalent_found": false,
+    "implication": "CF has an explicit material-binding format; weapons ship a different binary strip whose consumer is still unknown. No weapon-side text CFG was found anywhere in local data."
   },
   "semantic_binding_status": "UNRESOLVED_PROVISIONAL",
-  "semantic_note": "value sequences are near-smooth gradients (>=96% steps within +/-2), supporting a 1-D gradient/lookup-strip interpretation as a diagnostic render; which engine parameter consumes this strip is still unbound pending R1-E stage-2 evidence",
-  "conclusion": "Framing resolved structurally across all 237 WeaponShader CFGs with zero samples outside their dominant phase. R0's uniform '164-pixel BGR ramp' claim is superseded by an exact model with no dropped bytes and explicit per-file phase. Semantic slot binding remains explicitly unresolved."
+  "framing_status": "STRUCTURAL_CORE_VERIFIED (fixed layout + exact accounting); semantic interpretation remains a two-hypothesis competition",
+  "conclusion": "All 237 WeaponShader CFGs fit one fixed record layout with exact triplet accounting and zero exceptions. Value slots keep their 0xFF members unfiltered. The scalar+padding reading is preferred but not proven; the color-triplet reading survives but is weakened by the tiny value domain. Semantic binding stays explicitly unresolved."
 }

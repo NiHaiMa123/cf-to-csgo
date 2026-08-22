@@ -1,7 +1,8 @@
 {
-  "schema": "cf2.p4m01.r1.shader-hypotheses.v1",
+  "schema": "cf2.p4m01.r1.shader-hypotheses.v2",
   "supersedes_commit": "632ede449578f688cea7e6b5f40cbf03700aaaa5",
-  "supersedes_report": "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/shader_hypotheses.json",
+  "supersedes_report_schema": "cf2.p4m01.r1.shader-hypotheses.v1",
+  "continuation_review_reason": "v1 H2 census used step=97 causing byte-phase mixing; fixed by pixel-index sampling. Previews remain DIAGNOSTIC_ONLY.",
   "inputs_all_local_cf": {
     "base_dtx": {
       "relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
@@ -53,7 +54,7 @@
   },
   "hypotheses": {
     "H1_base_flat": {
-      "formula": "out.rgb = base_dtx.rgb (no mixing constants)",
+      "formula": "out.rgb = base_dtx record bytes rendered as-is (no mixing constants; channel order unresolved)",
       "evidence_class": "VERIFIED_DECODE_ONLY",
       "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/h1_base_x_spec_r1.png",
       "preview_sha256": "d7d3827a3f4bd6c7626bcd60857ada152d154fd9aee0e57d31bd1b592994d52e",
@@ -61,9 +62,10 @@
     },
     "H2_base_times_specular": {
       "formula": "out.rgb = base.rgb * normalize(specular.variable_channel)",
-      "evidence_class": "APPROXIMATION_HYPOTHESIS",
+      "evidence_class": "APPROXIMATION_HYPOTHESIS_DIAGNOSTIC_ONLY",
+      "sampling_fix_note": "v1 used step=97 (97%3==1) which rotated byte phases across channel counters; v2 samples by pixel index so each sample reads all three bytes of a pixel",
       "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/r1/previews/h2_base_x_spec_r1.png",
-      "preview_sha256": "d7d3827a3f4bd6c7626bcd60857ada152d154fd9aee0e57d31bd1b592994d52e",
+      "preview_sha256": "fee13227bb2ad6d88daf14dfbecc00fab619a2df4226d00fd26f979926f877ae",
       "replaces_R0": "H2 'base + cfg_midcolor*lum*0.5' retracted: additive emissive with 0.5 factor had no engine evidence"
     }
   },

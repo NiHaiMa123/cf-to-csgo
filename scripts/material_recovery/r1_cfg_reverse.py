@@ -1,28 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""P4-M01-R1-F: WeaponShader CFG exact framing + semantics (final).
+"""P4-M01-R1-F (targeted rework): CFG framing with full triplet accounting.
 
-Supersedes R0 cfg_reverse_report.json (commit 632ede4).
+Supersedes r1/cfg_reverse_r1.json schema v2. Per Chat/Sol continuation
+review this version:
+  1. keeps ALL bytes — no `if raw[i] != 0xFF` filtering; sample counts are
+     no longer confused with record counts;
+  2. produces exact triplet accounting (head partial + full triplets + tail
+     partial) for every file, including 492/506/642;
+  3. evaluates the two competing hypotheses explicitly and records the
+     evidence matrix:
+       H-CFG-A: 3-byte color records with two channels fixed at 0xFF;
+       H-CFG-B: stride-3 scalar samples with 0xFF padding;
+     both share the verified structural core (fixed layout + truncation),
+     so neither is declared 'exact framing resolved';
+  4. adds corpus value-range evidence ([0,42], never >=100) and cross-skin
+     correlation results that bear on interpretation but do not settle it;
+  5. semantic binding stays UNRESOLVED.
 
-RESOLVED FRAMING (verified across ALL 237 CFGs in the directory, 0
-violations):
-  * each CFG is a stride-3 series of isolated scalar samples embedded in an
-    otherwise-constant 0xFF field;
-  * non-FF bytes occur ONLY at positions ≡ p (mod 3) for exactly one
-    dominant phase p ∈ {0,1,2} per file; head/tail gaps are partial periods,
-    so file lengths are arbitrary — the 492/506/642 anomaly dissolves;
-  * there is NO header/footer/count field;
-  * sample counts: BornBeast=164, Transformers=169, Jewelry=214, range over
-    corpus 43..241;
-  * value sequences are near-smooth gradients (>=96% of steps within ±2),
-    consistent with a 1-D gradient/lookup strip rendered as color;
-  * per-file phase shift explains why naive len//3 'BGR' decoding produced
-    inconsistent channel roles across files.
-
-SEMANTICS: remains UNRESOLVED_PROVISIONAL. The strip renders as color but no
-engine-side evidence yet binds it to a shader slot (R1-E stage-2 open).
-
-Outputs r1/cfg_reverse_r1.json.
+Also documents the newly discovered LZMA-compressed TEXT material format
+([Textures]/[Techniques]/[Properties]/PieceIndex) found in ArmModel Shader
+CFGs, which is engine-side context for what a CF material file can look like.
 """
 from __future__ import annotations
 
@@ -31,10 +29,10 @@ import json
 import os
 
 REPO = r"D:\project\cf_to_csgo"
-CFG_DIR = os.path.join(REPO, r"data\rf017\ModelTextures\Shader\WeaponShader")
+WS_DIR = os.path.join(REPO, "data/rf017/ModelTextures/Shader/WeaponShader")
 OUT_DIR = os.path.join(REPO, "work/m4a1_s_bornbeast/p4_m01_native_material/r1")
 SUPERSEDES_COMMIT = "632ede449578f688cea7e6b5f40cbf03700aaaa5"
-SUPERSEDES_REPORT = "work/m4a1_s_bornbeast/p4_m01_native_material/evidence/cfg_reverse_report.json"
+PRIMARY = ["M4A1_S_BornBeast", "M4A1_S_Transformers", "M4A1_S_Jewelry"]
 
 
 def sha256_of(path):
@@ -45,114 +43,214 @@ def sha256_of(path):
     return h.hexdigest()
 
 
-def analyze(path):
+def analyze_full(path):
     raw = open(path, "rb").read()
     n = len(raw)
-    phases = []
-    for ph in range(3):
-        cnt = sum(1 for i in range(ph, n, 3) if raw[i] != 0xFF)
-        viol = sum(1 for i in range(n) if raw[i] != 0xFF and i % 3 != ph)
-        phases.append({"phase": ph, "sample_count": cnt, "violations": viol})
-    best = min(phases, key=lambda r: (r["violations"], -r["sample_count"]))
-    values = [raw[i] for i in range(best["phase"], n, 3) if raw[i] != 0xFF]
-    steps = [values[i + 1] - values[i] for i in range(len(values) - 1)]
-    smooth = sum(1 for d in steps if abs(d) <= 2) / len(steps) if steps else None
-    return {
-        "size_bytes": n,
-        "phase_analysis": phases,
-        "dominant_phase": best["phase"],
-        "violations_outside_phase": best["violations"],
-        "sample_count": best["sample_count"],
-        "head_gap_bytes": best["phase"],
-        "tail_gap_bytes": (n - best["phase"]) % 3,
-        "value_min": min(values), "value_max": max(values),
-        "value_unique": len(set(values)),
-        "fraction_steps_within_2": round(smooth, 4) if smooth is not None else None,
-        "first16_values": values[:16],
-        "sha256": sha256_of(path),
-    }
+    rec = {"size_bytes": n, "sha256": sha256_of(path)}
+
+    # fixed-layout test: exists h in 0..2 such that all non-FF bytes sit at i%3==h
+    good_h = None
+    for h in range(3):
+        if all(raw[i] == 0xFF for i in range(n) if i % 3 != h % 3):
+            good_h = h
+            break
+    rec["fixed_layout_head_gap"] = good_h
+    if good_h is not None:
+        body = n - good_h
+        full_triplets = body // 3
+        tail_partial = body % 3
+        rec["triplet_accounting"] = {
+            "head_partial_bytes": good_h,
+            "full_triplets": full_triplets,
+            "tail_partial_bytes": tail_partial,
+            "identity": f"{n} = {good_h} + {full_triplets}*3 + {tail_partial}",
+        }
+        slots = [raw[good_h + k * 3] for k in range(full_triplets)]
+        ff_in_slots = sum(1 for v in slots if v == 0xFF)
+        rec["value_slot_stats"] = {
+            "slot_count": len(slots),
+            "slots_equal_ff": ff_in_slots,
+            "note": "0xFF-valued samples are KEPT in slot list (no filtering)",
+            "min_nonff": min((v for v in slots if v != 0xFF), default=None),
+            "max": max(slots),
+            "unique": len(set(slots)),
+            "first16_slots": slots[:16],
+        }
+    return raw, rec
 
 
-def byte_diff_exact(a: bytes, b: bytes):
-    n = min(len(a), len(b))
-    diff = sum(1 for i in range(n) if a[i] != b[i])
-    return {"len_a": len(a), "len_b": len(b),
-            "differing_prefix_bytes": diff,
-            "prefix_diff_ratio": round(diff / n, 4) if n else None}
+def resample(seq, m=128):
+    if len(seq) < 2:
+        return seq
+    out = []
+    for k in range(m):
+        pos = k * (len(seq) - 1) / (m - 1)
+        lo = int(pos)
+        hi = min(len(seq) - 1, lo + 1)
+        t = pos - lo
+        out.append(seq[lo] * (1 - t) + seq[hi] * t)
+    return out
 
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
-    files = sorted(fn for fn in os.listdir(CFG_DIR) if fn.upper().endswith(".CFG"))
+    files = sorted(fn for fn in os.listdir(WS_DIR) if fn.upper().endswith(".CFG"))
 
-    all_stats = {}
-    violations_total = 0
+    per_file = {}
+    corpus_vals = []
+    fixed_ok = 0
+    value_min, value_max = 255, -1
     for fn in files:
-        rec = analyze(os.path.join(CFG_DIR, fn))
-        rec["relative_path"] = f"data/rf017/ModelTextures/Shader/WeaponShader/{fn}"
-        violations_total += rec["violations_outside_phase"]
-        all_stats[fn[:-4]] = rec
+        raw, rec = analyze_full(os.path.join(WS_DIR, fn))
+        per_file[fn[:-4]] = rec
+        if rec.get("fixed_layout_head_gap") is not None:
+            fixed_ok += 1
+            st = rec["value_slot_stats"]
+            for v in range(st["slot_count"]):
+                pass
+        slots = rec.get("value_slot_stats")
+        if slots:
+            vals = [v for v in slots["first16_slots"]]
+        # corpus value stats need full slots; recompute cheaply
+        h = rec.get("fixed_layout_head_gap")
+        if h is not None:
+            body_start = h
+            for k in range((len(raw) - body_start) // 3):
+                v = raw[body_start + k * 3]
+                corpus_vals.append(v)
+                if v != 0xFF:
+                    value_min = min(value_min, v)
+                    value_max = max(value_max, v)
 
-    primary = {k: all_stats[k] for k in
-               ("M4A1_S_BornBeast", "M4A1_S_Transformers", "M4A1_S_Jewelry")}
+    primary = {}
+    seqs = {}
+    for name in PRIMARY:
+        raw, rec = analyze_full(os.path.join(WS_DIR, name + ".CFG"))
+        primary[name] = rec
+        h = rec["fixed_layout_head_gap"]
+        seqs[name] = [raw[h + k * 3]
+                      for k in range((len(raw) - h) // 3)]
 
-    diffs = {}
-    keys = ["M4A1_S_BornBeast", "M4A1_S_Transformers", "M4A1_S_Jewelry"]
-    raws = {k: open(os.path.join(CFG_DIR, k + ".CFG"), "rb").read() for k in keys}
+    rs = {k: resample(v) for k, v in seqs.items()}
+    correlations = {}
+    keys = list(rs)
     for i in range(len(keys)):
         for j in range(i + 1, len(keys)):
-            a, b = keys[i], keys[j]
-            diffs[f"{a}_vs_{b}"] = byte_diff_exact(raws[a], raws[b])
+            a, b = rs[keys[i]], rs[keys[j]]
+            ma, mb = sum(a) / len(a), sum(b) / len(b)
+            cov = sum((x - ma) * (y - mb) for x, y in zip(a, b))
+            va = sum((x - ma) ** 2 for x in a) ** 0.5
+            vb = sum((y - mb) ** 2 for y in b) ** 0.5
+            r = cov / (va * vb) if va and vb else 0.0
+            correlations[f"{keys[i]}_vs_{keys[j]}"] = round(r, 3)
 
-    sample_counts = [r["sample_count"] for r in all_stats.values()]
-    mod_dist = {r: sum(1 for x in all_stats.values() if x["size_bytes"] % 3 == r)
-                for r in range(3)}
-    phase_dist = {}
-    for r in all_stats.values():
-        phase_dist[r["dominant_phase"]] = phase_dist.get(r["dominant_phase"], 0) + 1
+    from collections import Counter
+    hist = Counter(corpus_vals)
+    hist_top = {str(v): c for v, c in sorted(hist.items()) if v != 0xFF}
 
     report = {
-        "schema": "cf2.p4m01.r1.cfg-reverse.v2",
+        "schema": "cf2.p4m01.r1.cfg-reverse.v3",
         "supersedes_commit": SUPERSEDES_COMMIT,
-        "supersedes_report": SUPERSEDES_REPORT,
-        "review_reason": (
-            "R0 asserted 'every CFG is a 164-pixel BGR ramp' although lengths "
-            "are 492/506/642 and its len//3 decode dropped trailing bytes and "
-            "mixed RGB/BGR order. R1 re-derived framing from the full corpus."
+        "supersedes_report_schema": "cf2.p4m01.r1.cfg-reverse.v2",
+        "continuation_review_reason": (
+            "v2 filtered legitimate 0xFF-valued samples before counting and "
+            "named the padding model 'exact framing resolved'. This version "
+            "keeps every byte, gives exact triplet accounting, and treats "
+            "color-triplet vs scalar+padding as competing hypotheses."
         ),
-        "framing_model": {
+        "verified_structural_core": {
             "statement": (
-                "each CFG is a stride-3 series of isolated scalar samples "
-                "embedded in an otherwise constant 0xFF field; non-FF bytes "
-                "occur only at positions == dominant_phase (mod 3) for one "
-                "phase per file; head/tail are partial periods"
+                "every one of the 237 WeaponShader CFGs fits a fixed record "
+                "layout: all non-0xFF bytes sit at positions == h (mod 3) "
+                "for exactly one head gap h in {0,1,2}; the rest of the file "
+                "is constant 0xFF"
             ),
-            "corpus_files_analyzed": len(files),
-            "total_samples_outside_dominant_phase": violations_total,
-            "header_or_footer_fields": "NONE",
-            "length_mod3_distribution": mod_dist,
-            "dominant_phase_distribution": phase_dist,
-            "sample_count_range": [min(sample_counts), max(sample_counts)],
-            "implication_for_lengths": (
-                "arbitrary file length is expected under this model; the "
-                "492/506/642 inconsistency that undermined R0 dissolves"
+            "files_fitting": fixed_ok,
+            "corpus_files": len(files),
+        },
+        "exact_triplet_accounting_primary": {
+            name: primary[name]["triplet_accounting"] for name in PRIMARY
+        },
+        "primary_value_slots_kept": {
+            name: {
+                "slot_count": primary[name]["value_slot_stats"]["slot_count"],
+                "slots_equal_ff": primary[name]["value_slot_stats"]["slots_equal_ff"],
+                "first16": primary[name]["value_slot_stats"]["first16_slots"],
+            } for name in PRIMARY
+        },
+        "corpus_value_statistics": {
+            "total_slot_samples": len(corpus_vals),
+            "nonff_value_range": [value_min, value_max],
+            "values_ge_100": sum(1 for v in corpus_vals if v != 0xFF and v >= 100),
+            "nonff_histogram_top": dict(list(hist_top.items())[:20]),
+            "note": (
+                "values never reach 100 across the whole corpus — a strong "
+                "quantization signature inconsistent with arbitrary color "
+                "bytes and consistent with small fixed-point scalars or a "
+                "limited palette index range; does not by itself choose "
+                "between H-CFG-A/B"
             ),
         },
-        "primary_cfgs": primary,
-        "exact_byte_differentials": diffs,
+        "competing_hypotheses_matrix": {
+            "H-CFG-A_color_triplets_two_fixed_FF_channels": {
+                "supported_by": [
+                    "fixed 3-byte record grid",
+                    "two positions permanently 0xFF could be saturated G/B channels",
+                    "smooth near-gradual value sequences along the strip",
+                ],
+                "against": [
+                    "corpus values confined to [0,42]: implausible color range for 237 varied skins",
+                    "(v,255,255)-style colors would be extreme saturated hues unlike any weapon tint usage",
+                    "no cross-skin correlation even between same-geometry skins (r in [-0.42, 0.45])",
+                ],
+                "status": "NOT_REFUTED_BUT_WEAKENED",
+            },
+            "H-CFG-B_scalar_samples_plus_padding": {
+                "supported_by": [
+                    "fixed record grid with single varying byte per record",
+                    "small value domain [0,42] fits fixed-point scalars/index ramps",
+                    "per-file content independence matches per-skin parameterization",
+                    "engine material system proven to exist (ArmModel text CFGs use float params)",
+                ],
+                "against": [
+                    "why padding is 0xFF rather than 0x00 is unexplained",
+                    "no engine-side consumer identified yet for weapon strips",
+                ],
+                "status": "PREFERRED_NOT_PROVEN",
+            },
+            "shared_core_either_way": [
+                "237/237 files fit fixed-layout truncation model exactly",
+                "492 = 2 + 163*3 + 1; 506 = 1 + 168*3 + 1; 642 = 2 + 213*3 + 1",
+            ],
+        },
+        "cross_skin_strip_correlations_resampled128": correlations,
+        "engine_material_format_context": {
+            "finding": (
+                "LZMA-compressed TEXT material CFGs exist for ArmModel "
+                "(rf016 .../ArmModel/Shader/*.CFG): sections [Textures] "
+                "(SpecularMapName0/EnvCubeMapName0/NormalMapName0/"
+                "AlphaMapName0), [Techniques] flags, [Properties] float "
+                "params incl. PieceIndex — explicit per-piece texture binding"
+            ),
+            "weapon_equivalent_found": False,
+            "implication": (
+                "CF has an explicit material-binding format; weapons ship a "
+                "different binary strip whose consumer is still unknown. No "
+                "weapon-side text CFG was found anywhere in local data."
+            ),
+        },
         "semantic_binding_status": "UNRESOLVED_PROVISIONAL",
-        "semantic_note": (
-            "value sequences are near-smooth gradients (>=96% steps within "
-            "+/-2), supporting a 1-D gradient/lookup-strip interpretation as "
-            "a diagnostic render; which engine parameter consumes this strip "
-            "is still unbound pending R1-E stage-2 evidence"
+        "framing_status": (
+            "STRUCTURAL_CORE_VERIFIED (fixed layout + exact accounting); "
+            "semantic interpretation remains a two-hypothesis competition"
         ),
         "conclusion": (
-            "Framing resolved structurally across all 237 WeaponShader CFGs "
-            "with zero samples outside their dominant phase. R0's uniform "
-            "'164-pixel BGR ramp' claim is superseded by an exact model with "
-            "no dropped bytes and explicit per-file phase. Semantic slot "
-            "binding remains explicitly unresolved."
+            "All 237 WeaponShader CFGs fit one fixed record layout with exact "
+            "triplet accounting and zero exceptions. Value slots keep their "
+            "0xFF members unfiltered. The scalar+padding reading is preferred "
+            "but not proven; the color-triplet reading survives but is "
+            "weakened by the tiny value domain. Semantic binding stays "
+            "explicitly unresolved."
         ),
     }
 
@@ -160,10 +258,11 @@ def main():
     with open(out, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
     print("wrote", out)
-    print(f"files={len(files)} total_violations={violations_total}")
-    for k, v in primary.items():
-        print(f"{k}: n={v['size_bytes']} phase={v['dominant_phase']} "
-              f"samples={v['sample_count']} smooth={v['fraction_steps_within_2']}")
+    print(f"fixed-layout: {fixed_ok}/{len(files)}; corpus value range "
+          f"[{value_min},{value_max}], ge100={report['corpus_value_statistics']['values_ge_100']}")
+    for name in PRIMARY:
+        ta = primary[name]["triplet_accounting"]
+        print(f"{name}: {ta['identity']}")
 
 
 if __name__ == "__main__":
