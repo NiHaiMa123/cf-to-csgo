@@ -2,80 +2,179 @@
 
 将 **CrossFire（穿越火线）资源**提取、分析并转换为 **CS:GO Legacy Source 1 / MIGI** 可用 Mod 的工具与研究仓库。
 
-仓库同时包含 REZ/音频处理、LTB 模型分析、Source 1 构建、MIGI 部署、原生材质逆向和最终武器资产定位工作。
+仓库包含 REZ/音频处理、LTB 模型分析、Source 1 构建、MIGI 部署、原生材质逆向和最终武器资产定位工作。
 
-## 从哪里开始读
+---
 
-根目录只保留 3 个 Markdown，避免多个 Task/Review 文档互相覆盖：
+# 1. 先看这 4 个 Markdown
+
+根目录只保留 4 个职责明确的 Markdown：
 
 ```text
-README.md   你正在看的项目入口与工具概览
-AGENTS.md   所有 Agent 必须遵守的 Git / data / evidence 安全规则
-plan.md     唯一权威的项目状态、完整流程、当前 task / blocker 与后续执行协议
+README.md  项目介绍 + 文档职责 + 领导 Agent / 执行 Agent 协作方式
+AGENTS.md  只规定 Git 操作与本地文件保护
+plan.md    静态长期蓝图：完整 pipeline、Gate、冻结事实、关键技术结论
+task.md    动态当前任务：下一步要做什么、可尝试路径、输出和验收要求
 ```
 
-**人阅读：** `README.md -> plan.md`  
-**Agent 执行：** `AGENTS.md -> plan.md`
+这四个文件故意分开，避免“长期计划、当前任务、Git 规则、Review 历史”混在一个文件里反复覆盖。
 
-不要根据旧聊天记录猜当前任务；状态只看最新 `master` 的 `plan.md`。
+---
 
-## 当前进度，一句话说明
+# 2. 两类 Agent 怎么工作
 
-**CF 枪模 -> Source 1 编译 -> MIGI 部署这条技术链已经跑通并冻结；旧静态 corpus 卡在“CF 原游戏如何把 weapon piece、贴图族和 WeaponShader CFG 绑定/消费起来”，但当前不是被动等待，而是执行 `P4-M01-N02` 主动寻找新的 CF runtime/client/shader 输入。**
+## 领导 / Planning / Review Agent
 
-N02 会从本机 CF 安装环境、注册表/快捷方式、EXE/DLL、原始 runtime/REZ 包、shader/renderstyle 包等多条路线建立 inventory 和静态 triage；找到可信 consumer candidate 后再重新打开 N01 的深层 consumer tracing。不会再让不同模型重复扫描同一批旧 `data/**`。
+适合 Chat/Sol 或其他负责全局规划与 Review 的 Agent。
 
-详细状态、具体搜索顺序、失败分支、输出和 Gate 全部见 [`plan.md`](plan.md) §6。
+每一轮应：
 
-## 主流程
+```text
+1. 读取 README.md
+2. 读取 plan.md，理解长期 pipeline / Gate / frozen facts
+3. 读取 task.md，知道当前执行目标
+4. 读取最新 executor commit / evidence
+5. Review 当前结果
+6. 决定下一步
+7. 重写 task.md
+```
+
+只有以下情况才修改 `plan.md`：
+
+```text
+长期 pipeline 发生变化
+阶段 Gate 发生变化
+某个关键事实正式冻结 / 被新 counterevidence 推翻
+长期阶段关系发生变化
+```
+
+不要把每一轮临时尝试、executor checklist、短期分支都写进 `plan.md`。
+
+## 执行 / Local Executor Agent
+
+适合 Claude Code、Codex、MiniMax、Gemini、Luna 或其他能访问本地 repo / data / toolchain 的 Agent。
+
+启动顺序：
+
+```text
+README.md
+-> AGENTS.md
+-> plan.md
+-> task.md
+```
+
+执行 Agent 应：
+
+```text
+理解 plan 的长期上下文
+-> 只执行 task.md 当前任务
+-> 根据 task 中的策略池自主选择高信息增益实现路线
+-> 产出代码 / report / evidence
+-> 精确 commit + push master
+-> 停止并交回领导 Agent Review
+```
+
+执行 Agent **不负责自行重规划整个项目**，也不应该因为一条实现路径失败就把“下一步怎么办”重新抛给用户；`task.md` 会给出目标、边界、可尝试路线和 handoff 条件。
+
+---
+
+# 3. 跨领导 Agent / 执行 Agent 的交接协议
+
+标准循环：
+
+```text
+领导 Agent
+  read plan + current task + latest evidence
+  -> Review
+  -> 写新的 task.md
+  -> push master
+
+执行 Agent
+  pull master
+  -> read AGENTS + plan + task
+  -> execute
+  -> commit code/evidence
+  -> push master
+
+领导 Agent
+  re-read latest master
+  -> Review
+  -> 写下一轮 task.md
+```
+
+这样即使更换：
+
+```text
+Sol -> 其他 planning model
+MiniMax -> Gemini -> Luna -> Codex
+```
+
+也不依赖聊天记忆。任何新 Agent 只要读这 4 个 Markdown 和最新 evidence，就能恢复正确上下文。
+
+---
+
+# 4. 项目长期 Pipeline
+
+简化主链：
 
 ```text
 CF 原始资源
-  -> REZ / 音频 / LTB / DTX / TGA / CFG 提取与解析
-  -> 武器模型 / UV / 骨骼 / 动作关系
-  -> CS:GO Source 1 SMD / QC / VMT / VTF
-  -> studiomdl / validation / package
-  -> MIGI deploy / runtime Gate
-  -> runtime artifact acquisition / static triage
-  -> CF 原生材质恢复
-  -> 最终雷神资产确认
-  -> 发布质量
-  -> Inspect / IK / CF 原动画等增强
+-> REZ / LTB / DTX / TGA / CFG / audio
+-> model / UV / skeleton / animation evidence
+-> Source 1 SMD / QC / VMT / VTF
+-> compile / validate / package / MIGI
+-> native CF material recovery
+-> final M4A1-雷神 identity
+-> release quality
+-> Inspect / IK / CF original animation/sound enhancements
 ```
 
-目前：
+详细 pipeline、已完成 Gate、冻结 commit、N01/DTX/TGA/CFG 关键结论全部见 [`plan.md`](plan.md)。
+
+当前执行内容不要从 README 猜，**只看 [`task.md`](task.md)**。
+
+---
+
+# 5. 当前技术大状态
+
+长期上已经确认：
 
 ```text
-Source 1 conversion baseline       PASS / FROZEN
-BornBeast native material          INCOMPLETE
-N01 old-corpus consumer search     BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-N02 runtime artifact acquisition   ACTIVE
-Leishen candidate flow             PAUSED waiting for material method
+CF weapon -> Source 1 -> MIGI baseline = PASS / FROZEN
+BornBeast native material closure      = INCOMPLETE
+old-corpus engine consumer search      = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+P5 final Leishen flow                  = waiting for native material method
 ```
 
-## 主要目录
+当前下一步由 `task.md` 单独维护，因此 README 不复制 task 细节，避免入口说明过期。
+
+---
+
+# 6. 主要目录
 
 ```text
-CFRezManager/              C# CF 资源管理器、LTB/DTX/TGA/CFG 等 decoder/inspection
+CFRezManager/              C# CF resource manager / decoder / inspection
 scripts/
-  cf_extract/              CF REZ / FMOD 等提取
-  audio_clean/             音频修复、清洗、分类
-  cf_ltb/                  LTB 诊断与模型研究辅助
-  weapon_port/             CF weapon -> Source 1 构建流水线
-  material_recovery/       BornBeast / N01/N02 原生材质与 runtime 证据研究脚本
-  csgo_pack/               CS:GO / MIGI 打包相关
-  gsi/                     游戏状态联动
-assets/weapons/            可审计的武器 manifest / mapping
-work/                      受版本控制的运行报告、evidence、派生结果
-data/                      本地 CF 原始/解包数据；永不上传 GitHub
-migi_tools/                MIGI 工具链
-tools/                     第三方工具
-tests/                     冒烟 / 回归测试
+  cf_extract/              CF REZ / FMOD extraction
+  audio_clean/             audio repair / cleanup
+  cf_ltb/                  LTB diagnostics
+  weapon_port/             CF weapon -> Source 1 pipeline
+  material_recovery/       native material / runtime evidence research
+  csgo_pack/               CS:GO / MIGI packaging
+  gsi/                     game-state integration
+assets/weapons/            auditable weapon manifests / mappings
+work/                      tracked reports / evidence / derived outputs
+data/                      local CF inputs; never upload
+migi_tools/                MIGI toolchain
+tools/                     third-party tools
+tests/                     smoke / regression tests
 ```
 
-## 常用入口
+---
 
-项目级冒烟检查：
+# 7. 常用入口
+
+项目冒烟：
 
 ```powershell
 python tests/run_smoke.py
@@ -87,30 +186,42 @@ python tests/run_smoke.py
 dotnet build .\CFRezManager\CFRezManager.csproj --no-restore
 ```
 
-武器 Source 1 流水线入口：
+Source 1 武器流水线：
 
 ```text
 scripts/weapon_port/pipeline.py
 ```
 
-原生材质 / runtime evidence 研究入口：
+材质/runtime evidence：
 
 ```text
 scripts/material_recovery/
 ```
 
-具体要不要执行、执行哪一段、哪些结果已经冻结，**先看 `plan.md`，不要直接从脚本名推断当前任务。**
+---
 
-## 数据与证据规则
+# 8. 文档维护原则
 
-`data/**` 是本地输入，永远不得上传。提交的 evidence 应使用相对路径、SHA-256、size、run id、git commit 等描述输入身份，而不是提交 CF 原始资产。
+不要再新增：
 
-CF client EXE/DLL、原始 runtime/archive 和 proprietary shader package 同样不得作为 raw binary 提交；N02 只提交 metadata/hash/string offset/xref/call-chain 等证据。
+```text
+P4_TASKS.md
+P4_M01_CONTINUATION.md
+REVIEW_FINAL_2.md
+TASK_SPEC_REWORK_3.md
+```
 
-外部 MOD 贴图、官网图片、网络图片和 AI 生成图片只能作为参考，不能进入最终 CF 原生材质像素。完整安全规则见 [`AGENTS.md`](AGENTS.md)。
+类似的根目录流程文档。
 
-## 文档策略
+正确做法：
 
-过去根目录存在大量 `P4_*`、`P5_*`、`*_TASK_SPEC.md`、`*_CONTINUATION.md` 和 Review 文档。它们的有效结论已经合并到 `plan.md`，旧文件从当前树删除；需要追溯某一次历史协议或 Review 时使用 Git history 和对应 evidence commit。
+```text
+长期事实 / pipeline / Gate -> plan.md
+当前下一步                  -> task.md
+Git 规则                     -> AGENTS.md
+入口与角色说明               -> README.md
+运行细节 / evidence           -> work/**
+历史逐轮过程                  -> Git history
+```
 
-`work/**` 下的 Markdown/JSON 报告属于运行 evidence，不按“根目录流程文档”清理。
+这套结构就是为了支持长期的“领导 Agent 负责 plan/review、执行 Agent 负责落地”的跨模型协作。
