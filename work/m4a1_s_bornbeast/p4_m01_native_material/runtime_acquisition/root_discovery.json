@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-08-22T13:40:17.488168+00:00",
+  "script": "scripts\\material_recovery\\n02_runtime_artifact_acquire.py",
+  "candidates": [
+    {
+      "root_id": "cf_default",
+      "path": "D:\\Program Files\\CF(2)",
+      "source": "scripts/_paths.py:cf_dir()",
+      "why_candidate": "default CF install used by every cf_extract/audio_clean script",
+      "exists": true,
+      "trustworthy": true,
+      "trust_reason": "present: cf-exe=True rez=True rez_dir=True link.ini=True"
+    },
+    {
+      "root_id": "cf_legacy_d_game",
+      "path": "D:\\game\\7launch\\Counter-Strike 2",
+      "source": "user mention (memory 2026-08-16: directory removed)",
+      "why_candidate": "known-removed historical root — listed to prove bounded negative",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "wegame_default",
+      "path": "D:\\WeGame",
+      "source": "Tencent typical path",
+      "why_candidate": "possible WeGame shell",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "wegame_program",
+      "path": "C:\\Program Files\\WeGame",
+      "source": "Tencent typical path",
+      "why_candidate": "possible WeGame shell",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "tgp_default",
+      "path": "D:\\TGP",
+      "source": "Tencent TGP legacy path",
+      "why_candidate": "possible TGP shell",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "qqgame_default",
+      "path": "D:\\QQGame",
+      "source": "Tencent typical path",
+      "why_candidate": "possible QQGame shell",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "cf_alt_pf86",
+      "path": "C:\\Program Files (x86)\\CrossFire",
+      "source": "Tencent variant",
+      "why_candidate": "alternate CrossFire install",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "cf_alt_pf",
+      "path": "C:\\Program Files\\CrossFire",
+      "source": "Tencent variant",
+      "why_candidate": "alternate CrossFire install",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "cf_alt_root",
+      "path": "C:\\CrossFire",
+      "source": "Tencent variant",
+      "why_candidate": "alternate CrossFire install",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    },
+    {
+      "root_id": "cf_alt_d",
+      "path": "D:\\CrossFire",
+      "source": "Tencent variant",
+      "why_candidate": "alternate CrossFire install",
+      "exists": false,
+      "trustworthy": false,
+      "trust_reason": null
+    }
+  ],
+  "selected": {
+    "root_id": "cf_default",
+    "path": "D:\\Program Files\\CF(2)",
+    "trust_reason": "present: cf-exe=True rez=True rez_dir=True link.ini=True"
+  }
+}
