@@ -17,19 +17,17 @@ P4 baseline        PASS / FROZEN
 P4-M01             ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
 P4-M01-R1          ACCEPTED / COMPLETE
 P4-M01-N01 Phase 0 ACCEPT / FROZEN
-P4-M01-N01         ACTIVE / FINAL_DOCUMENTATION_CLEANUP   <- CURRENT
+P4-M01-N01         ACTIVE / FINAL_SCOPE_GUARD   <- CURRENT
 N01 substantive    BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
 P5-T01             PASS / USER_REFERENCE_CONFIRMED
 P5-T02             PAUSED_BY_P4_M01
 P5-T03/T04         BLOCKED
 ```
 
-当前协议：
+当前 direct entry：
 
 ```text
-P4_M01_TASK_SPEC.md                         parent contract
-P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md     original N01 acceptance/evidence rules
-P4_M01_N01_CONTINUATION.md                  CURRENT direct execution / Review overlay
+P4_M01_N01_CONTINUATION.md
 ```
 
 ---
@@ -39,29 +37,28 @@ P4_M01_N01_CONTINUATION.md                  CURRENT direct execution / Review ov
 最新已 Review Local Executor 提交：
 
 ```text
-46fcacebbc631fc05e0d491470b5e5482bca4533
-P4-M01-N01: minor evidence cleanup - M1 JSON validity, M2 scope counters, M3 executor provenance
+95b6bb363a5f00daf01193f53e2a27cff9cea3f8
+P4-M01-N01: final documentation cleanup - F1 provenance parameterization, F2 closure wording, F3 counter-subset guard
 ```
 
 Chat/Sol verdict：
 
 ```text
-46fcace technical cleanup                 ACCEPT
-M1 JSON validity                          ACCEPT
-M2 scope/count correction                 ACCEPT
-M3 current-run provenance                 ACCEPT
-N01 substantive result                    BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-P4-M01-N01 PASS                           NO
+F1 provenance parameterization      ACCEPT
+F2 closure wording/blocker          ACCEPT
+F3 current evidence                 ACCEPT
+F3 implementation                   MINOR_REWORK
+N01 substantive                     BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
 ```
 
-下一次 Review 只看 `46fcace` 之后的 final-cleanup 提交。
+下一次 Review 只看 `95b6bb3` 之后的 F3 scope-guard commit。
 
 ---
 
 ## 3. 启动顺序
 
-1. `git status --short --branch`；
-2. 确认当前分支 `master`；
+1. `git status --short --branch`
+2. 确认 `master`
 3. tracked worktree 可安全同步时：
 
 ```bash
@@ -75,132 +72,86 @@ git pull --rebase origin master
 AGENTS.md
 plan.md 第 1 节
 CODEX_TASKS.md
-P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md
-P4_M01_N01_CONTINUATION.md   <- CURRENT direct entry
+P4_M01_N01_CONTINUATION.md
 ```
 
-5. **不要重跑 N01 Phase 0 / Phase 1–5，不要重新扫描同一 repo/data corpus。**
+5. **不要重跑 N01 Phase 0/1–5，不要重新扫描当前 corpus。**
 
 ---
 
-## 4. 当前唯一任务：Final Documentation / Provenance Cleanup
+## 4. 当前唯一任务：F3 config-candidate scope guard
 
-### F1 — 通用 generator provenance 参数化
+当前 bug 是两个 counter 没有被同一个 predicate 结构约束：
 
-当前 `46fcace` 报告中的：
+```python
+if ext in CONFIG_EXT and is_likely_model_texture_config(rel, ext):
+    config_candidates_seen += 1
 
-```text
-executor_model = MiniMax-M3
-executor_harness = Claude Code
+if is_likely_model_texture_config(rel, ext):
+    ...
+    if real_mappings:
+        config_candidates_decoded += 1
 ```
 
-对本轮历史 evidence 是正确的。
+而 `is_likely_model_texture_config()` 允许 `.cft/.fcf/.csv/.dat/.xml/.json/.lua/.ref/.apf` 等额外扩展名。
 
-但通用 generator 不能把 MiniMax-M3/Claude Code 写死。至少检查：
-
-```text
-scripts/material_recovery/n01_phase1_consumer_search.py
-scripts/material_recovery/n01_phase1_to_phase5_runner.py
-```
-
-改成运行时参数或环境变量，例如：
-
-```text
---executor-model / N01_EXECUTOR_MODEL
---executor-harness / N01_EXECUTOR_HARNESS
---executor-family / N01_EXECUTOR_FAMILY
-```
-
-没有输入时必须：
-
-```text
-unspecified
-```
-
-禁止默认伪造某一模型身份。
-
-必须继续写：
-
-```text
-commit_footer_model_provenance = NON_AUTHORITATIVE
-```
-
-不要修改历史 commit footer；不要用 `Co-Authored-By: Claude Opus ...` 推断 executor。
-
-### F2 — engine-binding closure 文案与 blocker 对齐
-
-修：
-
-```text
-work/m4a1_s_bornbeast/p4_m01_native_material/n01/engine_binding_closure.json
-```
-
-不得再写成原 CF runtime 已被证明使用 directory mirroring。
-
-当前接受的事实只有：
-
-```text
-repo exporter performs deterministic Models/... -> ModelTextures/... mirroring
-= TOOL_BEHAVIOR / STRUCTURAL_CORRESPONDENCE
-```
-
-原 CF runtime binding：
-
-```text
-OPEN_UNRESOLVED
-BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-```
-
-同时把 stale：
-
-```text
-next_step = Awaiting Chat/Sol review for N01 Phase 1-3 findings
-```
-
-替换为：
-
-```text
-next_step = blocked pending a new original CF runtime/client artifact or equivalent documented consumer contract
-```
-
-`engine_binding_closure.status` 必须保持：
-
-```text
-OPEN_UNRESOLVED
-```
-
-### F3 — 推荐 regression guard
-
-让：
-
-```text
-config_candidates_decoded
-```
-
-严格是：
-
-```text
-config_candidates_seen
-```
-
-的子集；建议增加：
+因此当前：
 
 ```python
 assert config_candidates_decoded <= config_candidates_seen
 ```
 
-该项不改变已接受的 261 / 18 本轮 evidence。
+只检查数值关系，不能证明 decoded 真的是 seen 的集合子集。
+
+### 必须改成
+
+定义一次：
+
+```python
+is_config_candidate = (
+    ext in CONFIG_EXT
+    and is_likely_model_texture_config(rel, ext)
+)
+```
+
+然后：
+
+```text
+config_candidates_seen
+config_candidates_decoded
+config_index
+```
+
+全部只在 `is_config_candidate` 分支中产生。
+
+保留：
+
+```python
+assert config_candidates_decoded <= config_candidates_seen
+```
+
+但它只作为 regression guard，不再代替 structural control-flow guarantee。
 
 ---
 
-## 5. 不得破坏的已接受结果
+## 5. 必须保持的已接受结果
 
-必须保持：
+除非统一 predicate 后机械重跑产生可解释变化，否则保持：
 
 ```text
-BornBeast/Transformers/Jewelry/BlueDiamond text-config hits = 0
+all_files_seen_post_low_value_filter = 102382
+config_candidates_seen               = 261
+config_candidates_decoded            = 18
+raw_scan_files_seen                   = 355
+raw_scan_files_decoded                = 355
+```
+
+并保持：
+
+```text
+four target text-config hits = 0
 .dat consumer hits = 0
-BornBeast derived-output hits = 4, DERIVED_OUTPUT_HIT only
+BornBeast DERIVED_OUTPUT_HIT = 4
 CFG BornBeast = phase 2 / 164
 CFG Transformers = phase 1 / 169
 CFG Jewelry = phase 2 / 214
@@ -212,54 +163,72 @@ engine_binding_closure.status = OPEN_UNRESOLVED
 N01 substantive = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
 ```
 
-不得出现：
-
-```text
-READY_FOR_NATIVE_MATERIAL_COMPOSITION
-P4-M01-N01 PASS
-P4-M01 PASS
-P5-T02 resumed
-original CF runtime mirroring = verified
-```
+如果 counter 因 predicate 修正而变化，必须记录机械原因；禁止手改回旧数字。
 
 ---
 
-## 6. Final-cleanup handoff
+## 6. 禁止事项
 
-F1/F2 完成后：
-
-```text
-N01 evidence cleanup = COMPLETE / FROZEN
-N01 substantive = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-```
-
-commit + push scoped changes 到 `master`，然后停止。
-
-没有新的 CF runtime/client artifact 时，禁止：
+本轮不要：
 
 ```text
-再次扫描当前 repo/data
-再次曲线拟合 CFG 试图升级 semantic
-把 ObjExporter heuristic 当 runtime proof
-创建新的 N01 Phase 1–5 run
+重新做 runtime consumer search
+重复扫描 repo/data
+重新解释 CFG
+修改 F1 provenance policy
+修改已接受 F2 closure boundary
+把 ObjExporter mirroring 当 original CF runtime proof
+输出 READY_FOR_NATIVE_MATERIAL_COMPOSITION
+标 P4-M01-N01 PASS
+标 P4-M01 PASS
 恢复 P5-T02
 ```
 
 ---
 
-## 7. Blocker 解除后才允许继续
+## 7. Handoff / 完成条件
 
-只有出现新输入才重新打开 substantive reverse：
+F3 完成后 commit + push scoped changes 到 `master`，然后停止。
+
+Chat/Sol Review acceptance criteria：
+
+```text
+seen/decoded/config_index 共用同一个 config candidate predicate
+decoded control flow 严格位于 seen candidate scope 内
+assert decoded <= seen 保留
+report/JSON scope legend 与代码一致
+关键 JSON parse PASS
+engine_binding_closure.status = OPEN_UNRESOLVED
+N01 substantive = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+data/** 未 staged / 上传
+```
+
+接受后状态将更新为：
+
+```text
+N01 evidence cleanup = COMPLETE / FROZEN
+N01 substantive      = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+```
+
+当前 corpus 不再分配 N01 substantive task。
+
+---
+
+## 8. Blocker 解除条件
+
+只有新增：
 
 ```text
 CF client .exe
 engine/render/resource DLL/module
-original runtime bundle
+original runtime bundle/archive with consumer code
 shader/runtime package
-可靠 documented material/piece binding contract
+reliable documented material/piece binding contract
 ```
 
-新路线：
+才重新打开 N01。
+
+新路线固定为：
 
 ```text
 strings/resource names
@@ -273,7 +242,7 @@ strings/resource names
 
 ---
 
-## 8. Git / data discipline
+## 9. Git / data discipline
 
 严格遵守 `AGENTS.md`：
 
@@ -281,28 +250,25 @@ strings/resource names
 master only
 never upload data/**
 no git add . / -A / --all
-no force push
 no destructive reset/clean
-no raw CF assets/runtime binaries
+no force push
 ```
 
-提交前至少：
+提交前：
 
 ```bash
-git status
+git status --short --branch
 git diff --cached --name-only
 ```
 
-只 stage F1/F2/F3 明确需要的 tracked script/report/evidence。
+只 stage F3 明确需要的 tracked script/report/evidence。
 
 ---
 
-## 9. Handoff / next Review
-
-下一次 Chat/Sol Review：
+## 10. Next Review
 
 ```text
-base = 46fcacebbc631fc05e0d491470b5e5482bca4533
+base = 95b6bb363a5f00daf01193f53e2a27cff9cea3f8
 ```
 
-F1/F2 接受后，当前 corpus 的 N01 work 冻结，等待新增 runtime artifact。
+F3 完成后不要自行继续新的 N01 task；等待 Chat/Sol freeze。
