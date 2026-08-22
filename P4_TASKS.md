@@ -1,10 +1,10 @@
-# P4_TASKS.md — P4 baseline 冻结 + P4-M01 材质纠偏入口
+# P4_TASKS.md — P4 baseline 冻结 + P4-M01 当前入口
 
 > 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准。
 >
 > P4 baseline 历史结论仍为 **`PASS / FROZEN`**。
 >
-> 当前具体执行子任务：**P4-M01-R1 — targeted continuation after commit 8af3cd0 Review**。
+> 当前具体执行子任务：**P4-M01-N01 — Engine Material Consumer & Binding Closure**。
 
 ---
 
@@ -13,23 +13,23 @@
 ```text
 P4 baseline   PASS / FROZEN
     |
-    +-- conversion/build/package/MIGI/runtime contract      frozen
-    +-- native CF material fidelity                         NOT proven historically
+    +-- conversion/build/package/MIGI/runtime contract       frozen
+    +-- native CF material fidelity                          not proven historically
 
 P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
     |
-    +-- P4-M01-R1   ACTIVE / TARGETED_REWORK_REQUIRED      <- CURRENT
+    +-- P4-M01-R1   ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF
+    |
+    +-- P4-M01-N01  ACTIVE / ENGINE_BINDING_INVESTIGATION   <- CURRENT
 ```
 
 当前文件关系：
 
 ```text
-P4_M01_TASK_SPEC.md          parent contract
-P4_M01_REWORK_R1.md          original R1 correction contract
-P4_M01_R1_CONTINUATION.md    current post-8af3 continuation/review overlay
+P4_M01_TASK_SPEC.md                         parent contract
+P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md     current direct execution spec
+P4_M01_R1_CONTINUATION.md                   final R1 Review / predecessor record
 ```
-
-若旧 R1 文档与 continuation 的当前状态/下一步冲突，以 continuation 与 `plan.md` 第 1 节为准。
 
 ---
 
@@ -38,210 +38,140 @@ P4_M01_R1_CONTINUATION.md    current post-8af3 continuation/review overlay
 继续冻结：
 
 ```text
-P4-T01~T09 historical completion
-RV-01~RV-06 historical evidence
+Implementation baseline 10aa99b770e575300ca3c28324ef3de3d5b70c6b
+run_20260819_170013_270792
+fd61d6ae7567a01c585e1144e2cab88ddb6aa85d
 p_cf_bornbeast_m4a4_p4_frozen_noop_01
 M4A4 runtime slot
-57-bone Source reference
+57-bone reference
 sequence/attachment contract
+RV-01 ~ RV-06
 ```
 
-P4-M01 不推翻 conversion/build/package/MIGI baseline，只修 native material lane。
+P4-M01/N01 不重新证明或修改 frozen conversion chain。
 
 ---
 
-## 3. P4-M01 目标
+## 3. R1 handoff
 
-仅使用 local CF BornBeast LTB/DTX/TGA/CFG 等资源，恢复可重复、可解释、0 external pixels 的 native material，并产出可迁移到 P5 Transformers 的方法。
+R1 已完成核心 correction：
 
-历史 external CS1.6 texture 只能 reference/differential control，不能进入 final pixels。
+- TGA formal repair；
+- DTX formal route/LZMA/full-file periodicity/width scan/双变化 channel continuity；
+- DTX `1043/1046` dominant statistic；
+- CFG phase != record boundary；
+- CFG off-by-one；
+- H2 pixel-index sampling；
+- ArmModel explicit `[Textures]/PieceIndex` positive control；
+- binding negative scope correction。
+
+因此：
+
+```text
+P4-M01-R1 = ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01
+```
+
+剩余 minor cleanup 见 N01 Phase 0，不再展开新的 R1 investigation。
 
 ---
 
-## 4. R1 历史与最新 Review
+## 4. 当前 N01
 
-历史 exploration：
+正式协议：[`P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md`](P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md)。
 
-```text
-632ede449578f688cea7e6b5f40cbf03700aaaa5
-```
-
-first R1 correction：
+目标：
 
 ```text
-bded9e8a6f7f95997d9717eb8f35beb02619f153
+weapon mesh/piece
+-> real material/binding key
+-> local texture family
+-> WeaponShader CFG/material resource consumer
+-> channel/storage/binding semantics
 ```
 
-latest targeted continuation：
+固定顺序：
 
 ```text
-8af3cd0b6c2f7ecc12a90b24e5b70c4e2d99dd8f
+Phase 0  R1 consistency cleanup
+Phase 1  consumer call/data-path discovery
+Phase 2  ArmModel positive control + weapon-family differential
+Phase 3  WeaponShader CFG consumer identification
+Phase 4  storage/channel/binding semantics
+Phase 5  engine binding closure
 ```
 
-Chat/Sol 最新正式分级：
-
-```text
-A provenance              ACCEPT / REUSE
-B inventory               REUSE_WITH_CAUTION
-C DTX                      PARTIAL_ACCEPT / NARROW_TARGETED_REWORK
-D TGA                      ACCEPT / STRUCTURAL
-E material binding         STAGE2_PARTIAL_ACCEPT / OPEN
-F CFG reverse              REWORK / FRAMING_BUG
-G variant differential     ACCEPT / REUSE
-H shader hypotheses        H2_FIX_ACCEPTED / DIAGNOSTIC_ONLY
-I native closure           NOT READY / CONTINUE
-J Source1 integration      DEFERRED
-```
-
-详细技术要求只看 [`P4_M01_R1_CONTINUATION.md`](P4_M01_R1_CONTINUATION.md)。
+Phase 0 通过后同一轮直接进入 Phase 1。
 
 ---
 
-## 5. 已接受，不要重跑
+## 5. 当前已接受 baseline
 
 ```text
-A provenance
-G variant differential
-R1-D formal TGA repair
-DTX formal header/LZMA verification
-DTX whole-file 3-byte census
-DTX committed 64..2048 width scan
-H2 pixel-index sampling fix
-ArmModel text material-format discovery
+DTX no formal LithTech header           VERIFIED_STRUCTURAL
+DTX not LZMA                            VERIFIED_STRUCTURAL
+DTX 3-byte periodic payload             VERIFIED_STRUCTURAL
+DTX 1024/no-mips                        STRONG_HYPOTHESIS
+DTX channel/tail                        OPEN
+TGA formal repair                       ACCEPT / STRUCTURAL
+CFG 237/237 single mod-3 phase          VERIFIED_STRUCTURAL
+CFG record boundary                     OPEN
+ArmModel text material format           VERIFIED_STRUCTURAL
+weapon post-mesh short field            VERIFIED_STRUCTURAL
+short field == texture slot             PROVISIONAL
+weapon slot -> texture-set              OPEN
+H2 pixel-index fix                      ACCEPT / DIAGNOSTIC_ONLY
 ```
-
-### TGA
-
-正式关系已接受：
-
-```text
-footerOffset = TRUEVISION signature - 8
-headerOffset = footerOffset + 26
-```
-
-### DTX
-
-`1024 width / no-mips` 可继续作为 `STRONG_HYPOTHESIS`；不需要重跑 width scan。本轮只修 continuity 实现与 corpus statement。
-
-### H2
-
-旧 `step=97` byte-phase mixing 已在 `8af3cd0` 修复，默认不再返工。
 
 ---
 
-## 6. 当前 targeted work
+## 6. N01 允许/禁止
 
-### F — CFG FIRST
-
-保留：237/237 CFG 的 non-FF bytes 集中在单一 mod-3 phase。
-
-必须修：当前脚本把 varying phase `h` 当 record head gap，导致错误 accounting/off-by-one。
-
-BornBeast：
+允许：
 
 ```text
-492 = 164*3
-varying positions 2,5,...,491 = 164 samples
-```
-
-当前 `492 = 2 + 163*3 + 1` / 163 samples 不接受。
-
-必须区分：
-
-```text
-phase index != record boundary
-```
-
-至少保留：
-
-```text
-H-CFG-A byte0-origin RGB/BGR triplets
-H-CFG-B scalar + padding/alignment, boundary unproven
-H-CFG-C other 3-byte periodic packing
-```
-
-只允许把 mod-3 corpus pattern 写 VERIFIED。
-
-### C — DTX narrow fix
-
-- `continuity_all_channels()` 当前 `range(0, rb, 6)` 只覆盖 mod3==0；改成两个变化 channels 或完整 pixels；
-- corpus 是 `1043/1046` size%2048==164，不能写 every/universal；
-- 2212-byte tail/channel order 可继续 OPEN。
-
-### E — Stage-2 scope correction
-
-保留 ArmModel `[Textures]/[Properties]/PieceIndex` positive evidence。
-
-weapon slot->texture-set 仍 OPEN。
-
-negative result 只能限定到实际扫描的 config-like/dat/lta corpus（当前 355 files），不能写 entire local data exhaustive negative。
-
-### H — alignment only
-
-H2 fix 已接受。只需让 `cfg_strip()` 不再使用与新版 CFG policy 冲突的旧 `if raw[i] != 0xFF` extraction。
-
-### I — closure
-
-重生 closure，修正：
-
-```text
-DTX every -> 1043/1046 dominant statistic
-CFG exact head-gap framing -> record boundary unresolved
-```
-
-继续 `CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`，除非新 evidence 真正达到 closure。
-
----
-
-## 7. Frozen / 可修改边界
-
-不得修改 frozen conversion/runtime contract。
-
-P4-M01/R1 可修改：
-
-```text
-CFRezManager/Decoders/** 与材质恢复直接相关代码
+CFRezManager/Decoders/** material-related changes
 inspection/export code
 scripts/material_recovery/**
-work/m4a1_s_bornbeast/p4_m01_native_material/**
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/**
+必要的 scoped tests
 ```
 
-`data/**` 永远 local-only。
-
----
-
-## 8. Agent 路由
-
-Local Executor 读取：
+禁止：
 
 ```text
-AGENTS.md
-plan.md
-CODEX_TASKS.md
-P4_TASKS.md
-P4_M01_TASK_SPEC.md
-P4_M01_REWORK_R1.md
-P4_M01_R1_CONTINUATION.md
+重跑 TGA formal repair
+重跑 DTX header/LZMA/width scan
+用 basename 直接判 binding
+把 CFG phase 当 record boundary
+用 external pixels 做 final
+无边界 blind scan data/**
+修改 P4 frozen contract
+恢复 P5-T02
 ```
-
-从 commit `8af3cd0` 继续，不从零重跑。
-
-Chat/Sol 负责最终 evidence Review 与状态决定。
 
 ---
 
-## 9. Handoff
+## 7. N01 Review gate
 
-只有 Chat/Sol 判定：
+至少需要看到：
+
+```text
+consumer_candidate_matrix.json
+consumer_search_report.md
+weapon_material_differential.json
+cfg_consumer_report.json
+channel_semantics_report.json
+engine_binding_closure.json
+```
+
+N01 PASS 只允许进入 P4-M01 native composition/final closure；**不自动等于 P4-M01 PASS**。
+
+只有 Chat/Sol 明确判：
 
 ```text
 P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 ```
 
-才恢复：
+才恢复 P5-T02。
 
-```text
-P5-T02 -> M4A1_S_Transformers native material
-```
-
-当前继续 `P5-T02 = PAUSED_BY_P4_M01`。
+所有 Agent 继续遵守 [`AGENTS.md`](AGENTS.md) 的 master-only handoff 与 `data/**` local-only 规则。
