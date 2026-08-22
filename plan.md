@@ -25,7 +25,7 @@
 | P0–P3 | DONE / HISTORICAL | Source 1 基线、CF 静态导出、M4A4 映射、历史编译/材质引用基础 |
 | P4 baseline | **PASS / FROZEN** | 几何→Source 1→package→MIGI 技术链已冻结 |
 | **P4-M01** | **ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE** | 当前父任务：用 BornBeast 闭合 CF 原生材质解码/绑定/shader 语义 |
-| **P4-M01-R1** | **ACTIVE / TARGETED_REWORK_REQUIRED** | R1 已有部分 evidence 被接受；当前只修剩余 DTX/CFG/stage-2 binding/H2 问题 |
+| **P4-M01-R1** | **ACTIVE / TARGETED_REWORK_REQUIRED** | R1 已有多数基础纠错完成；当前集中修 CFG framing bug、DTX continuity/report consistency、binding negative scope 与 closure 对齐 |
 | P5-T01 | PASS / USER_REFERENCE_CONFIRMED | 雷神官方目标图已确认 |
 | P5 LEGACY PRE-SCAN | EXECUTION_PASS / PRESERVED_FOR_REUSE | 本地广召回候选池保留 |
 | P5-T02 | **PAUSED_BY_P4_M01** | 候选缩圈已做；等待可复用原生材质恢复方法后继续 Transformers |
@@ -57,7 +57,7 @@ AGENTS.md
 
 `P4_M01_R1_CONTINUATION.md` 不是 R2；它是同一个 R1 在最新 Review 后的 continuation overlay。
 
-`P5_T02_TASK_SPEC.md` 当前是**暂停后的恢复协议**，不是当前 Local Executor 的第一执行入口。
+`P5_T02_TASK_SPEC.md` 当前是暂停后的恢复协议，不是当前 Local Executor 的第一执行入口。
 
 ---
 
@@ -76,7 +76,7 @@ runtime slot:           M4A4
 internal model:         weapons/v_rif_m4a1.mdl
 ```
 
-P4 baseline **已经证明**：
+P4 baseline 已经证明：
 
 - manifest-driven 本地 CF LTB fresh build；
 - M4A4 Source skeleton / sequence / attachment contract；
@@ -85,7 +85,7 @@ P4 baseline **已经证明**：
 - destructive-operation guards / negative tests；
 - frozen/no-op Inspect changed-runtime 用户 Gate。
 
-P4 baseline **从未证明**：
+P4 baseline 从未证明：
 
 - Prototype 就是最终雷神；
 - CF 原生材质已经正确解码；
@@ -109,7 +109,7 @@ work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bm
 
 作为 base/self-illum 派生输入，再转换为 Source VTF。
 
-这说明 P4 的**模型/编译/MIGI 技术链成立**，但 P4 的**CF native material fidelity 尚未闭合**。
+这说明 P4 的模型/编译/MIGI 技术链成立，但 P4 的 CF native material fidelity 尚未闭合。
 
 正式主协议：[`P4_M01_TASK_SPEC.md`](P4_M01_TASK_SPEC.md)。
 
@@ -141,43 +141,54 @@ Local Executor 在 commit：
 
 提交了 A→I 探索性代码/evidence；随后 `39e14ff6c594ad81f1b077aeeaea5645d81e02be` 一度把状态描述成“6/8 PASS，只差用户视觉 Gate”。
 
-Chat/Sol Review 不接受该 closure，创建：
-
-[`P4_M01_REWORK_R1.md`](P4_M01_REWORK_R1.md)
+Chat/Sol Review 不接受该 closure，创建 [`P4_M01_REWORK_R1.md`](P4_M01_REWORK_R1.md)。
 
 R0 中继续复用：A provenance、B inventory 起点、G variant differential、hash/path、脚本骨架和历史 evidence；旧错误结论不删除但被 supersede。
 
-#### commit bded9e8 — R1 有效推进，但未完成
-
-当前 Local Executor continuation commit：
+#### first R1 correction — bded9e8
 
 ```text
 bded9e8a6f7f95997d9717eb8f35beb02619f153
 ```
 
-新增：
+该轮有效纠正 TGA、DTX formal parser/LZMA、LTB numeric-field evidence、CFG corpus analysis，并正确保持 `CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`。Chat/Sol 随后将 R1 收敛为 targeted continuation。
+
+#### latest targeted continuation — 8af3cd0
+
+最新 Local Executor 提交：
 
 ```text
-scripts/material_recovery/r1_*.py
-work/m4a1_s_bornbeast/p4_m01_native_material/r1/**
+8af3cd0b6c2f7ecc12a90b24e5b70c4e2d99dd8f
 ```
 
-该轮没有上传 `data/**`，也没有自行改 `plan.md` 宣布 PASS。Chat/Sol 当前正式 Review：
+该轮实际完成：
+
+- DTX width scan `64..2048 step4` 真正进入提交脚本；
+- DTX whole-file mod-3 census；
+- DTX `1024/no-mips` 主动降级为 strong hypothesis；
+- CFG 不再简单过滤后宣称 semantic resolved，并增加 competing hypotheses；
+- 找到 ArmModel LZMA text material CFG 的 `[Textures]/[Techniques]/[Properties]/PieceIndex` 显式格式；
+- H2 `step=97` byte-phase mixing 已改为 pixel-index sampling；
+- closure 继续推荐 `CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE`。
+
+但 Chat/Sol Review 仍发现 CFG framing bug 与若干 report/code scope mismatch，因此 R1 尚未完成。
+
+当前正式分级：
 
 | Step | 当前 Review 状态 | 当前判断 |
 |---|---|---|
 | A provenance | **ACCEPT / REUSE** | 不重跑 |
 | B inventory | **REUSE_WITH_CAUTION** | 作为扫描起点 |
-| C DTX | **PARTIAL_ACCEPT / TARGETED_REWORK** | formal header/LZMA 纠错有效；1024 stride/no-mip 关键 scan 未进入最终可重跑脚本；tail/channel order 仍 open |
-| D TGA | **ACCEPT / STRUCTURAL** | 已按正式 footer/header offset 纠正，旧 10-byte-shifted repair 被 supersede |
-| E binding | **STAGE1_PARTIAL_ACCEPT / STAGE2_OPEN** | mesh-associated numeric field 是真实结构 evidence；`= texture slot` 与 slot/model→texture set 仍需 engine/config proof |
-| F CFG | **PARTIAL_ACCEPT / REFRAME** | 237-file 3-byte periodic/mod-3 发现有效；RGB/BGR triplets vs scalar+padding 仍是竞争解释 |
-| G variant differential | **ACCEPT / REUSE** | supporting evidence 保留 |
-| H shader hypotheses | **DIAGNOSTIC_ONLY / REWORK** | 旧 magic constants 已撤销；H2 `step=97` 存在 byte-phase mixing bug |
-| I closure | **NOT READY / CONTINUE** | 正确保持 `NATIVE_MATERIAL_RECOVERY_INCOMPLETE` |
+| C DTX | **PARTIAL_ACCEPT / NARROW_TARGETED_REWORK** | formal route/full-file census/width scan 接受；continuity 实际只采一个 mod-3 channel；1043/1046 corpus pattern 被误写成 every；tail/channel order 仍 open |
+| D TGA | **ACCEPT / STRUCTURAL** | formal footer/header repair 已接受，不重跑 |
+| E binding | **STAGE2_PARTIAL_ACCEPT / OPEN** | ArmModel explicit material format 是有效 positive evidence；weapon-side binding 仍 open；negative result 需限定实际扫描 corpus |
+| F CFG | **REWORK / FRAMING_BUG** | 237-file mod-3 fact 保留；当前把 varying phase 当 record head gap，造成 off-by-one 丢最后 sample |
+| G variant differential | **ACCEPT / REUSE** | supporting evidence |
+| H shader hypotheses | **H2_FIX_ACCEPTED / DIAGNOSTIC_ONLY** | pixel-index sampling fix 接受；不要重修 |
+| I closure | **NOT READY / CONTINUE** | closure v2 含 DTX universal statement 与 CFG exact framing 错误，需重生 |
 | J Source 1 integration | **DEFERRED** | I 真正通过前不执行 |
 
-详细 Review 与精确执行要求：[`P4_M01_R1_CONTINUATION.md`](P4_M01_R1_CONTINUATION.md)。
+详细技术要求：[`P4_M01_R1_CONTINUATION.md`](P4_M01_R1_CONTINUATION.md)。
 
 #### 当前已接受，不要无理由重跑
 
@@ -185,65 +196,108 @@ work/m4a1_s_bornbeast/p4_m01_native_material/r1/**
 A provenance audit
 G variant inventory/differential
 R1-D formal TGA repair/decode correction
-R1-E 已抽取的 mesh-associated numeric-field census
+DTX formal -2/-3/-5 header route
+DTX LZMA verification
+DTX whole-file 3-byte census
+DTX committed 64..2048 width candidate scan
+H2 pixel-index sampling fix
+ArmModel explicit text material-format discovery
 ```
 
-R1-D 的正式关系：
+R1-D 正式关系：
 
 ```text
 footerOffset = TRUEVISION signature - 8
 headerOffset = footerOffset + 26
 ```
 
-BornBeast Alpha/Normal/Specular 已按该结构恢复为 1024×1024 / 24bpp，并记录 offset/hash。后续 channel engine semantics 可继续验证，但不需要再做旧 TGA offset 纠错。
+BornBeast Alpha/Normal/Specular 已按该结构恢复为 1024×1024 / 24bpp，并记录 offset/hash。
 
 #### 当前剩余 targeted work
 
-**R1-C DTX**
+**R1-F CFG — FIRST**
 
-已接受：正式 `-2/-3/-5` header route、LZMA 纠错、旧 `512x256 full mip + 163-byte trailer` 撤销、3-byte periodic pixel-like structure 有强支持。
-
-仍需：
-
-- 把 report 声称的 width/stride candidate scan 真正提交成可重跑代码；
-- 输出关键 width 候选完整 score/rejection matrix；
-- full-file + 2212-byte tail periodicity；
-- continuity/correlation 覆盖所有变化 channel；
-- terminal remainder semantics；
-- RGB/BGR/channel order。
-
-在这些 evidence 完成前，`1024 width / single continuous image / no mips` 维持 strong hypothesis，不升级为最终 engine-verified fact。
-
-**R1-E stage-2 binding**
-
-接受“存在 mesh-associated post-mesh numeric field”这一结构事实；其含义是否为 texture slot 仍 provisional。
-
-下一轮优先使用现有基础设施：
+当前最重要实现级问题是：
 
 ```text
-CFRezManager/Decoders/LithTech/Models/LithTechModelTextureConfigIndex.cs
-CFRezManager/Decoders/LithTech/Models/LithTechTextureMappingScanner.cs
-CFRezManager/Decoders/LithTech/Models/LithTechDatTextureReferenceIndex.cs
-CFRezManager/Decoders/LithTech/Models/TextureReferenceResolver.cs
-CFRezManager/Decoders/LithTech/Models/LithTechModelTextureLoader.cs
+phase index != record boundary
 ```
 
-目标是证明 model/skin/numeric field → DTX/TGA/CFG texture set 的 engine/config/resource-table 关系，或产出明确 negative result。
+237/237 CFG 的真实 structural fact 可保留：所有 non-0xFF bytes 位于单一 `offset mod 3` phase，另两 phase 为 FF。
 
-**R1-F CFG**
-
-237 个 WeaponShader CFG 的 3-byte periodic/mod-3 pattern 保留，但至少要同时测试：
+但当前脚本把 phase `h` 解释成 `head_partial_bytes`。BornBeast 实际：
 
 ```text
-H-CFG-A = RGB/BGR color triplets，其中两 channel 固定/近固定 0xFF
-H-CFG-B = scalar samples + padding/alignment
+492 = 164*3
+varying positions = 2,5,...,491 -> 164 samples
 ```
 
-当前脚本 `if raw[i] != 0xFF` 会删除合法值为 255 的 sample，因此不能把过滤后数量称为完整 record/texel count。必须保留完整 bytes，并精确 accounting 492/506/642。
+当前报告却写：
+
+```text
+492 = 2 + 163*3 + 1
+slot_count = 163
+```
+
+因此 offset 491 被漏掉。下一轮必须保留完整 bytes，并至少同时保留：
+
+```text
+H-CFG-A = byte0-origin RGB/BGR triplets；h 是 varying channel
+H-CFG-B = scalar + padding/alignment；record boundary 未证明
+H-CFG-C = other 3-byte periodic packing
+```
+
+只允许把 mod-3 corpus pattern 写 VERIFIED；CFG semantic consumer 继续 OPEN。
+
+**R1-C DTX — narrow fix only**
+
+不要重跑 formal parser/LZMA/width scan。
+
+只修：
+
+- `continuity_all_channels()` 当前 `range(0, rb, 6)` 只采 mod3==0，需覆盖两个变化 channel 或完整 pixels；
+- corpus 是 `1043/1046` non-empty PV DTX 满足 `size%2048==164`，不能写 every/universal；
+- 三个 outlier `550/672/676` 必须保留；
+- 2212-byte tail 与 RGB/BGR order 可以继续 OPEN，不要求为本轮 PASS 强行破解。
+
+`1024 stride / single continuous image / no mips` 当前继续作为 strong hypothesis。
+
+**R1-E stage-2 binding — scope correction**
+
+接受 ArmModel explicit material CFG positive evidence：
+
+```text
+[Textures] named map references
+[Techniques]
+[Properties] PieceIndex
+```
+
+但 weapon LTB numeric field == PieceIndex/texture slot 仍未证明，weapon slot→texture-set 仍 OPEN。
+
+当前 negative scan 只覆盖 config-like/dat/lta corpus：
+
+```text
+.cfg .ini .txt .xml .csv .ref .lua .apf .cft .fcf .dat .lta
+<=64 MiB
+355 files in current run
+```
+
+只能写 `not found in the scanned config-like/dat/lta corpus`，不能写 `anywhere in local data`。
 
 **R1-H shader diagnostic**
 
-`r1_shader_closure.py` 使用 `step = 97`；因 `97 % 3 == 1`，采样起点在三个 byte phases 间轮换，variable-channel census 不可靠。改成 pixel-index 或 `3*k` byte stride。修后 H2 仍是 approximation/diagnostic，除非 E/F 得到 engine semantics。
+H2 phase-mixing fix 已 ACCEPT。下一轮不要再修该 bug，只需在 CFG framing 修正后让 `cfg_strip()` 与无损 CFG policy 对齐；H1/H2 继续 diagnostic-only。
+
+**R1-I closure**
+
+下一版 closure 必须删除/修正：
+
+```text
+"every non-empty PV DTX size%2048==164"
+"CFG 492=2+163*3+1 exact framing"
+```
+
+open 项继续 open。当前不是用户 final visual Gate。
 
 #### 当前状态
 
@@ -252,7 +306,7 @@ P4-M01    = ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
 P4-M01-R1 = ACTIVE / TARGETED_REWORK_REQUIRED
 ```
 
-当前**不是用户 final visual Gate**。不要执行 J，不恢复 P5-T02。
+不要执行 J，不恢复 P5-T02。
 
 P4-M01 真正 PASS 必须是：
 
@@ -266,7 +320,7 @@ P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 
 ### 1.4 P5 — ACTIVE，但 T02 暂停等待 P4-M01
 
-P5 目标仍是：**最终雷神资产定位**。
+P5 目标仍是：最终雷神资产定位。
 
 标准顺序：
 
@@ -375,7 +429,7 @@ REWORK_CANDIDATE_SEARCH
 
 ### Track A — Source 1 conversion baseline
 
-回答：**已知 CF 武器资产能否稳定进入 CS:GO Legacy Source 1。**
+回答：已知 CF 武器资产能否稳定进入 CS:GO Legacy Source 1。
 
 状态：P4 baseline 已冻结。
 
@@ -392,7 +446,7 @@ CF LTB
 
 ### Track B — Native material recovery
 
-回答：**CF 原生纹理/材质究竟如何被解释、绑定和组合。**
+回答：CF 原生纹理/材质究竟如何被解释、绑定和组合。
 
 当前：P4-M01 ACTIVE，具体处于 P4-M01-R1 targeted continuation。
 
@@ -400,7 +454,7 @@ CF LTB
 
 ### Track C — Final Leishen identity
 
-回答：**真正雷神对应本地哪套 LTB/DTX/TGA/CFG/WAV。**
+回答：真正雷神对应本地哪套 LTB/DTX/TGA/CFG/WAV。
 
 当前：P5 ACTIVE，但 T02 暂停等待 Track B。
 
@@ -432,7 +486,7 @@ P5 official reference / candidate evidence
 - 网络 GoldSrc/CS1.6 texture；
 - P4 external BornBeast texture。
 
-reference 可以用于搜索、视觉对照、differential hypothesis；**不能提供最终像素或资源 provenance**。
+reference 可以用于搜索、视觉对照、differential hypothesis；不能提供最终像素或资源 provenance。
 
 ### 禁止
 
@@ -473,13 +527,13 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 
 1. P4 build/report 已证明 external CS1.6 texture 进入过 Prototype material derivation；
 2. P4 material closure 过去只证明 Source `SMD -> VMT -> VTF` 引用存在，不证明 VTF 像素来自正确 CF native decode；
-3. 正式 `DtxThumbnailDecoder.cs` 支持 LithTech DTX version `-2/-3/-5`；BornBeast PV DTX 不满足该正式 header，且 R1 evidence 强支持 uncompressed 3-byte periodic pixel-like payload；
-4. 旧 `512x256 full-mip + 163-byte trailer` 已撤销；`1024 stride / single image / no mips` 当前是 strong hypothesis，需把关键 scan 真正纳入可重跑脚本；2212-byte tail 与 channel order 仍 open；
-5. `TgaThumbnailDecoder.cs` inserted repair 使用 `footerOffset = TRUEVISION - 8`、`headerOffset = footerOffset + 26`；R1-D 已按该逻辑纠正并接受；
-6. LTB 中存在 mesh-associated post-mesh numeric field；其确切语义是否为 texture slot、以及 stage-2 texture-set binding 尚未证明；
-7. 237-file WeaponShader CFG corpus 存在稳定 3-byte periodic/mod-3 结构；RGB/BGR triplets 与 scalar+padding 仍需竞争验证，semantic parameter 未闭合；
-8. `r1_shader_closure.py` H2 的 `step=97` 存在 byte-phase mixing bug，修复后仍只算 diagnostic approximation；
-9. 同几何不同 skin 是恢复 binding/shader 语义的重要 differential evidence；
+3. 正式 `DtxThumbnailDecoder.cs` 支持 LithTech DTX version `-2/-3/-5`；BornBeast PV DTX 不满足该正式 header，且 R1 evidence 验证其 not-LZMA 与 whole-file 3-byte periodic structure；
+4. 旧 `512x256 full-mip + 163-byte trailer` 已撤销；提交脚本的 width scan 支持 `1024 stride / single image / no mips` 为 strong hypothesis；2212-byte tail 与 channel order 仍 open；
+5. `1043/1046` non-empty PLAYERVIEW DTX 满足 `size%2048==164`，这是 dominant corpus statistic，不是 universal invariant；
+6. `TgaThumbnailDecoder.cs` inserted repair 使用 `footerOffset = TRUEVISION - 8`、`headerOffset = footerOffset + 26`；R1-D 已接受；
+7. ArmModel Shader CFG 证明 CF 存在 explicit `[Textures]/PieceIndex` material format；weapon-side slot→texture-set binding 仍未闭合；
+8. 237-file WeaponShader CFG corpus 存在稳定 3-byte periodic/mod-3 structure；当前 `head_partial_bytes` framing 是错误解释，phase 与 record boundary 必须分开；
+9. H2 `step=97` phase-mixing bug 已在 `8af3cd0` 按 pixel index 修复；H2 仍是 diagnostic approximation；
 10. C029/C103 当前不需要用户强选，先解决 material method。
 
 ---
@@ -488,18 +542,16 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 
 | 项目 | 当前判断 | 当前 blocker |
 |---|---|---:|
-| Native DTX width/no-mip/tail/channel order | R1-C targeted reproducibility + tail analysis | **P4-M01-R1** |
+| CFG record framing / semantic consumer | mod-3 fact 已证；phase-vs-boundary bug + semantic consumer 未闭合 | **P4-M01-R1** |
+| Native DTX continuity/tail/channel order | width scan 已提交；continuity claim 与实现需对齐，tail/order open | **P4-M01-R1** |
 | TGA formal repair | **R1-D ACCEPT / STRUCTURAL**；不再是当前 blocker | — |
-| WeaponShader CFG framing/semantic binding | triplet-vs-scalar + full-byte accounting + engine semantic | **P4-M01-R1** |
-| LTB/material stage-2 binding | numeric field 结构已发现，engine/config texture-set mapping 未闭合 | **P4-M01-R1** |
-| Shader H2 diagnostic implementation | `step=97` phase-mixing bug | **P4-M01-R1** |
+| LTB/material stage-2 binding | ArmModel explicit format 已发现；weapon mapping 未闭合 | **P4-M01-R1** |
+| H2 phase-mixing implementation | **FIX ACCEPTED**；不再是 blocker | — |
 | BornBeast Prototype external material provenance | 已确认，不能 final | **P4-M01** |
 | Transformers native material 未恢复 | P5 finalist 无法正确渲染 | **P5-T02，等待 P4-M01** |
 | 最终雷神 identity 未确认 | 不能进入 P6 | **P5** |
 | CF animation clips 未完整解码 | 不影响当前材质任务 | P7 |
-| 03–08 精确机械语义未证明 | Prototype Parent fallback | P6/P7 视 final asset 处理 |
 | visible Inspect / 手指穿模 | 不影响当前材质任务 | P7 |
-| world/drop model | 第一人称当前不受影响 | P7 |
 
 ---
 
@@ -548,4 +600,4 @@ reference 可以用于搜索、视觉对照、differential hypothesis；**不能
 
 ## 8. 当前唯一下一步
 
-> **当前 Local Executor 同步最新 `master`，读取 `P4_M01_R1_CONTINUATION.md`，从 commit `bded9e8` 和现有 R1 evidence 继续，不从零重跑。顺序：①把 DTX width/stride scan 与 full-file/tail evidence 真正提交成可重跑代码；②CFG 保留完整 3-byte triplets/合法 `0xFF`，比较 RGB/BGR-triplet vs scalar+padding；③利用仓库现有 mapping/config/index/resolver 基础设施攻 stage-2 binding；④修复 H2 `step=97` byte-phase mixing bug；⑤重建 closure，open 项继续保持 open。R1-D TGA 默认不重跑。当前不要求用户 final visual Gate，不执行 J，不恢复 P5-T02。完成并 push scoped code/evidence 后，由 Chat/Sol 再 Review。**
+> **当前 Local Executor 同步最新 `master`，读取 `P4_M01_R1_CONTINUATION.md`，从 commit `8af3cd0` 继续，不从零重跑。顺序：①先修 CFG phase-vs-record-boundary framing bug 与 off-by-one sample loss，保持 competing framing hypotheses；②修 DTX continuity 使其真正覆盖两个变化 channels/all pixels，并把 `1043/1046` 写成 dominant statistic；③把 stage-2 binding negative result 限定到实际 scanned config-like/dat/lta corpus，保留 ArmModel explicit material-format positive evidence；④保留已接受的 H2 pixel-index fix，只对齐 `cfg_strip()` extraction；⑤重生 closure，所有 open 项继续 open。R1-D TGA、DTX formal header/LZMA、DTX width scan、H2 phase fix 默认不重跑。当前不要求用户 final visual Gate，不执行 J，不恢复 P5-T02。完成并 push scoped code/evidence 后，由 Chat/Sol 再 Review。**
