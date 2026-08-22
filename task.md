@@ -7,60 +7,75 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N02-D-R2
-Title: Accept path-aware REZ binding evidence and define material closure route
+Task ID: P4-M01-N02-E-R1
+Title: LTB Material Resource Binding Evidence Recovery
 State: ACTIVE
-Parent: P4-M01-N02 Runtime Bute Semantic Recovery
-Depends on: P4-M01-N02-D-R1
+Parent: P4-M01 Native Material Recovery
+Depends on: P4-M01-N02-D-R2
 ```
 
 # 2. Current execution status
 
-N02-D-R1 已完成 basename-only lookup 的技术返工。
-
-对应提交：
-
-```text
-f468e96f2d956ee82f69f8372c9c7c36423897ec
-P4-M01-N02-D-R1: path-aware REZ binding closure for 60/60 M4A1 family
-```
-
-当前已具备：
-
-```text
-- REZ directory hierarchy preservation
-- archive-relative full logical path
-- exact path matching
-- extensionless model .ltb restriction
-- multiple archive ambiguity reporting
-```
-
-# 3. Current goal
-
-本轮继续作为 Review gate，不扩大逆向范围。
-
-需要确认：
+N02-D-R1 已完成 REZ basename-only binding 修复，当前边界已明确：
 
 ```text
 M4A1 runtime config
  -> exact REZ logical path
  -> runtime artifact
- -> material/resource binding boundary
 ```
 
-明确哪些事实可以升级为 frozen evidence，哪些仍保持 OPEN_UNRESOLVED。
-
-# 4. Required Review
-
-检查：
+该链路可以进入下一阶段，但不能直接推出：
 
 ```text
-1. path normalization 是否具有可重复规则；
-2. Models/ModelTextures virtual root strip 是否有边界；
-3. extensionless model resolution 是否严格限制 .ltb；
-4. exact path binding 与 unresolved 数量是否一致；
-5. 是否存在 archive duplicate ambiguity；
-6. 当前 binding 是否足够进入 material resource tracing。
+runtime M4A1 = BornBeast identity
+runtime path = material closure
+```
+
+# 3. Current goal
+
+本轮目标：建立 LTB 内部资源关系证据。
+
+回答：
+
+```text
+PV-M4A1.LTB
+ -> piece/model structure
+ -> texture/material reference
+ -> DTX/TGA resource path
+```
+
+需要确认：
+
+```text
+1. LTB 是否包含 material/texture slot relation；
+2. piece index 与 texture reference 是否存在确定关系；
+3. runtime resource graph 能否从 model 延伸到材质资源；
+4. 哪些关系只能保持 OPEN_UNRESOLVED。
+```
+
+# 4. Required Work
+
+优先使用：
+
+```text
+existing LTB parser
+Jupiter reference implementation
+current CF runtime LTB samples
+```
+
+输出 evidence：
+
+```text
+work/.../material_binding/
+```
+
+至少包含：
+
+```text
+ltb structure report
+piece/material relation report
+resource graph candidate
+confidence level
 ```
 
 # 5. Forbidden
@@ -68,41 +83,23 @@ M4A1 runtime config
 - 不进入 P5 identity confirmation；
 - 不宣布 P4-M01 PASS；
 - 不把 M4A1 runtime binding 等同 BornBeast identity；
-- 不扩大无目标 corpus scan；
 - 不逆 DLL/EXE；
 - 不逆 FXO shader；
-- 不重新进行 LZX/DTX 语义推断；
-- 不使用 filename similarity 作为 proof。
+- 不继续无目标全盘扫描；
+- 不把 filename similarity 当 proof；
+- 不冻结 CFG shader semantics。
 
-# 6. Expected Output
-
-输出：
-
-```text
-work/.../n02d_r1_path_binding/review_report.md
-```
-
-报告必须包含：
+# 6. Completion State
 
 ```text
-path binding verdict
-frozen facts
-remaining ambiguity
-material binding gap
-next highest-value investigation
-```
+A. MATERIAL_BINDING_CONFIRMED
+   LTB -> material -> texture relation established
 
-# 7. Completion State
-
-```text
-A. ACCEPTED / COMPLETE
-   exact runtime path binding frozen
-
-B. PARTIAL
-   unresolved paths remain open
+B. MATERIAL_BINDING_PARTIAL
+   only part of graph confirmed
 
 C. REWORK_REQUIRED
-   path evidence invalid
+   parser/evidence path invalid
 ```
 
 完成后返回：
@@ -111,9 +108,9 @@ C. REWORK_REQUIRED
 status
 commit SHA
 changed files
-frozen facts
+confirmed relations
 remaining blockers
-next single highest-value target
+next highest-value target
 ```
 
 完成后 STOP，等待 Planner/Reviewer。
