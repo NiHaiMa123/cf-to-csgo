@@ -1,10 +1,10 @@
 # CODEX_TASKS.md — Local Executor 本地执行合同
 
-> 本文件给任何用户选择的、具备本地执行能力的 Agent 使用；不绑定 Luna、Codex、GLM 或其他具体模型/Agent。
+> 本文件给任何用户选择的、具备本地执行能力的 Agent 使用；不绑定具体模型。
 >
-> 项目唯一权威进度以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 与 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
+> 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准；Git/data 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
-> 默认 Planner / Reviewer = **Chat/Sol**；默认本地 Executor = 用户当前选择的可执行本地任务的 Agent。
+> Planner / Reviewer = **Chat/Sol**；Local Executor = 用户当前选择的本地执行 Agent。
 
 ---
 
@@ -15,29 +15,30 @@
 ```text
 P4 baseline   PASS / FROZEN
 P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-P4-M01-R1     ACTIVE / TARGETED_REWORK_REQUIRED   <- CURRENT
+P4-M01-R1     ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01
+P4-M01-N01    ACTIVE / ENGINE_BINDING_INVESTIGATION   <- CURRENT
 P5-T01        PASS / USER_REFERENCE_CONFIRMED
 P5-T02        PAUSED_BY_P4_M01
 P5-T03/T04    BLOCKED
 ```
 
-协议顺序：
+当前协议：
 
 ```text
-P4_M01_TASK_SPEC.md          parent contract
-P4_M01_REWORK_R1.md          original R1 correction contract
-P4_M01_R1_CONTINUATION.md    current direct execution/review overlay
+P4_M01_TASK_SPEC.md                         parent contract
+P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md     CURRENT direct execution spec
+P4_M01_R1_CONTINUATION.md                   predecessor/final R1 Review only
 ```
 
-`P4_M01_R1_CONTINUATION.md` 不是 R2；当前版本已经包含 Chat/Sol 对 commit `8af3cd0b6c2f7ecc12a90b24e5b70c4e2d99dd8f` 的 Review。
+R1 不再是当前 substantive task。
 
 ---
 
-## 2. 每次启动
+## 2. 每次启动顺序
 
 1. `git status --short --branch`；
-2. 确认 `master`；
-3. 安全同步：
+2. 确认当前分支 `master`；
+3. tracked worktree 可安全同步时：
 
 ```bash
 git fetch origin
@@ -48,221 +49,217 @@ git pull --rebase origin master
 
 ```text
 AGENTS.md
-plan.md 第1节
+plan.md 第 1 节
 CODEX_TASKS.md
 P4_TASKS.md
 P4_M01_TASK_SPEC.md
-P4_M01_REWORK_R1.md
-P4_M01_R1_CONTINUATION.md   <- current direct entry
+P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md
 ```
 
-5. 复用：
+5. 只在需要理解 predecessor evidence 时读取：
 
 ```text
-commit 632ede4 historical exploration evidence
-commit bded9e8 first R1 correction
-commit 8af3cd0 latest targeted continuation
+P4_M01_REWORK_R1.md
+P4_M01_R1_CONTINUATION.md
 scripts/material_recovery/r1_*.py
 work/m4a1_s_bornbeast/p4_m01_native_material/r1/**
 ```
 
-不要从头重跑 R1。
+6. 不从 A/B/C/D/F 全量重跑。
 
 ---
 
-## 3. 当前正式 Review
+## 3. 当前角色
 
-```text
-A provenance              ACCEPT / REUSE
-B inventory               REUSE_WITH_CAUTION
-C DTX                      PARTIAL_ACCEPT / NARROW_TARGETED_REWORK
-D TGA                      ACCEPT / STRUCTURAL
-E material binding         STAGE2_PARTIAL_ACCEPT / OPEN
-F CFG reverse              REWORK / FRAMING_BUG
-G variant differential     ACCEPT / REUSE
-H shader hypotheses        H2_FIX_ACCEPTED / DIAGNOSTIC_ONLY
-I native closure           NOT READY / CONTINUE
-J Source1 integration      DEFERRED
-```
+Local Executor = **engine material consumer / binding reverse executor + evidence producer**。
 
-详细技术要求只看 [`P4_M01_R1_CONTINUATION.md`](P4_M01_R1_CONTINUATION.md)。
+负责：
 
----
+- 先完成 N01 Phase 0 的 R1 minor consistency cleanup；
+- Phase 0 self-check 通过后，**同一轮直接进入 Phase 1，不等待 Chat/Sol 再切状态**；
+- 沿现有 decoder/index/mapping/resolver 与本地 resource relation 定位真实 consumer；
+- 用 ArmModel material CFG 作为 positive control，不直接套用 weapon；
+- 做 BornBeast / Transformers / Jewelry / 简单 control 的 same-family differential；
+- 寻找 piece/material key → texture set → WeaponShader CFG/resource role 的 evidence；
+- 区分 storage byte order、map binding role、shader composition semantics；
+- 保存 raw offset/value/hash/path、consumer candidate、negative evidence、rejection evidence；
+- push scoped code/evidence 到 `master`。
 
-## 4. 当前唯一执行顺序
+不得：
 
-### 1) R1-F CFG — FIRST
-
-保留已证明事实：
-
-```text
-237/237 WeaponShader CFG:
-all non-0xFF bytes occupy one fixed offset-mod-3 phase;
-the other two phases are 0xFF.
-```
-
-必须修当前 `r1_cfg_reverse.py`：
-
-- `good_h` 是 varying byte phase，不是已证明的 record head gap；
-- 禁止再把 `h` 命名/解释成 `head_partial_bytes`，除非有独立 framing evidence；
-- 当前 BornBeast `492 = 2 + 163*3 + 1` 解释会漏 offset 491 的最后一个 varying sample；
-- 所有 bytes 必须 100% accounting；
-- primary 至少保留 byte-0-origin accounting：
-
-```text
-BornBeast     492 = 164*3
-Transformers  506 = 168*3 + 2
-Jewelry       642 = 214*3
-```
-
-- varying-phase sample sequence 也必须完整计算，不能 off-by-one；
-- 保持竞争 hypothesis：
-
-```text
-H-CFG-A RGB/BGR triplets, h = varying color channel
-H-CFG-B scalar + padding/alignment, record boundary unproven
-H-CFG-C other 3-byte periodic packing
-```
-
-只允许把 **3-byte periodic/mod-3 structural pattern** 写 VERIFIED。CFG semantic consumer 继续 OPEN。
-
-### 2) R1-C DTX — narrow fix only
-
-不要重跑 formal DTX/LZMA 或 width candidate scan；这些已经有效提交。
-
-只修：
-
-- `continuity_all_channels()` 当前 `range(0, rb, 6)` 只采 mod3==0；改成真正覆盖两个变化 channel或完整 pixels；
-- report 的 `all-channel` 描述必须与代码一致；
-- corpus 数据是：
-
-```text
-1046 non-empty PV DTX
-1043 size%2048 == 164
-3 outliers: 550 / 672 / 676
-```
-
-因此只能写 `1043/1046 = 99.71% dominant pattern`，禁止再写 `every` / universal invariant；
-- 2212-byte tail 与 channel order 可继续 OPEN，不要求为本轮 PASS 强行破解。
-
-### 3) R1-E Stage-2 — scope correction
-
-保留 ArmModel text material CFG positive evidence：
-
-```text
-[Textures] named texture fields
-[Techniques]
-[Properties] PieceIndex
-```
-
-这证明 CF 存在 explicit per-piece material format。
-
-但 weapon slot→texture-set 仍 OPEN。
-
-negative result 只能描述实际扫描范围：
-
-```text
-scanned config-like/dat/lta corpus
-.cfg .ini .txt .xml .csv .ref .lua .apf .cft .fcf .dat .lta
-<=64 MiB
-355 files in current run
-```
-
-禁止写 `no mapping anywhere in local data`。
-
-### 4) R1-H — accepted fix, no repeat
-
-commit `8af3cd0` 已把旧 `step=97` byte-phase mixing 改为 pixel-index sampling：
-
-```text
-H2 phase-mixing fix = ACCEPTED
-```
-
-不要再次重修。只在 CFG 修正后把 `cfg_strip()` 的旧 `if raw[i] != 0xFF` extraction 与新 CFG policy 对齐。
-
-H1/H2 继续 `DIAGNOSTIC_ONLY`，不代表 engine composition semantics。
-
-### 5) R1-I closure
-
-重生 closure，删除/修正旧错误陈述：
-
-```text
-"every PV DTX size%2048==164"
-"CFG 492=2+163*3+1 exact framing"
-```
-
-所有 OPEN 项继续 OPEN。
-
----
-
-## 5. 默认不要重跑
-
-```text
-A provenance
-B full inventory rescan
-G variant differential
-R1-D formal TGA repair
-DTX formal header/LZMA verification
-DTX committed width candidate scan
-H2 pixel-index sampling fix
-ArmModel text material-format discovery
-```
-
-除非新 evidence 明确冲突。
-
----
-
-## 6. Executor 不得
-
-- 上传/修改/删除 `data/**`；
-- `git add .` / `git add -A` / `git add --all`；
-- force push / destructive reset/clean；
-- 重跑 accepted work 只为了产生更多文件；
-- 把 CFG mod-3 phase 自动当 record boundary；
-- 把 `scalar+padding` 写成 exact framing；
-- 把 1043/1046 写成 every/universal；
-- 把 scanned config-like negative 写成整个 local data 的 exhaustive negative；
-- 把 LTB numeric field 自动命名为 verified texture slot；
+- 重跑已接受的 TGA formal repair；
+- 重跑 DTX formal header/LZMA/width scan；
+- 再把 CFG mod-3 phase 当 record boundary；
+- 用 basename convention 直接证明 binding；
+- 为得到 PASS 无边界扫描整个 `data/**`；
+- 把 external texture 作为 final pixels；
 - 把 diagnostic preview 当 engine semantics；
-- 请求用户 final visual gate；
-- 执行 J / 恢复 P5-T02；
-- 自行把 `plan.md` 改成 PASS。
+- 修改 P4 frozen skeleton/sequence/runtime contract；
+- 自行恢复 P5-T02；
+- 自行把 `plan.md` 改成 P4-M01 PASS。
 
 ---
 
-## 7. 完成后提交
+## 4. N01 Phase 0 — 只做 final consistency cleanup
 
-只 push scoped code/evidence。报告必须保留 supersedes/review_reason/input hashes，并保证关键 claim 能在提交代码中重跑。
-
-完成后推荐状态仍只能由 Executor写为 evidence recommendation，例如：
+必须先修：
 
 ```text
-CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+CFG phase-origin identity formula
+DTX >3x / stale every wording
+H1 preview path + SHA consistency
+H1 evidence class downgrade
+shader stale BGR24/scalar-strip comments
+binding stale full-local-data comments
 ```
 
-最终 P4-M01 状态由 Chat/Sol Review 决定。
+CFG sample count `164/169/214` 已正确，不要退回旧 extraction。
 
----
-
-## 8. Executor provenance
-
-任务保持 agent-agnostic。用户报告当前实测组合是：
+Phase 0 gate：
 
 ```text
-Harness: Claude Code
-Model: GLM-5.3-Flash internal beta / multimodal
+formula arithmetic self-consistent
+path exists and SHA matches
+comments == report evidence grade
+no universal/exact-framing stale claim
+open item remains open
 ```
 
-`bded9e8` 和 `8af3cd0` footer 中的 `Co-Authored-By: Claude Opus 4.8` 不是可靠实际模型 provenance。后续如记录 benchmark，显式写 `executor_harness` / `executor_model`，不要复制错误 footer。
+然后直接进入 Phase 1。
 
 ---
 
-## 9. P5 handoff
+## 5. N01 substantive route
 
-只有 Chat/Sol 明确判定：
+固定顺序：
+
+```text
+Phase 1  consumer call/data-path discovery
+Phase 2  ArmModel positive control + weapon-family differential
+Phase 3  WeaponShader CFG consumer identification
+Phase 4  storage/channel/binding semantics
+Phase 5  engine binding closure
+```
+
+优先利用：
+
+```text
+LithTechModelTextureConfigIndex.cs
+LithTechTextureMappingScanner.cs
+LithTechDatTextureReferenceIndex.cs
+TextureReferenceResolver.cs
+LithTechModelTextureLoader.cs
+LithTechModelDecoder.cs
+CfgTextDecoder.cs
+CfgBinaryStripDecoder.cs
+```
+
+重点是找到真实调用/数据关系，不是把类名写进报告。
+
+输出优先：
+
+```text
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/consumer_candidate_matrix.json
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/consumer_search_report.md
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/weapon_material_differential.json
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/cfg_consumer_report.json
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/channel_semantics_report.json
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/engine_binding_closure.json
+```
+
+---
+
+## 6. Evidence policy
+
+优先级：
+
+```text
+engine/resource consumer evidence
+> structural binding
+> same-family differential
+> bounded binary hypothesis
+> preview appearance
+```
+
+允许状态：
+
+```text
+OBSERVED
+STRUCTURALLY_VERIFIED
+DIFFERENTIAL_SUPPORTED
+SEMANTICALLY_VERIFIED
+PROVISIONAL
+HYPOTHESIS
+NEGATIVE_RESULT_SCOPED
+OPEN_UNRESOLVED
+```
+
+仅 basename、视觉相似、长度 fit、单一相关性不能升级为 binding PASS。
+
+---
+
+## 7. 已接受 baseline，不要重跑
+
+```text
+A provenance audit
+R1-D formal TGA repair
+DTX formal -2/-3/-5 route
+DTX not-LZMA
+DTX whole-file 3-byte periodicity
+DTX committed width scan
+DTX 1043/1046 dominant statistic
+CFG 237/237 single-phase mod-3 structural fact
+CFG phase-vs-boundary correction
+CFG 164/169/214 complete phase samples
+H2 pixel-index fix
+ArmModel [Textures]/PieceIndex positive control
+355-file config-like negative scope definition
+G variant inventory/differential evidence
+```
+
+仍 open：
+
+```text
+weapon material consumer
+weapon piece/material -> texture-set binding
+WeaponShader CFG consumer/semantic
+DTX/TGA channel/binding semantics
+DTX tail semantics
+native composition closure
+```
+
+---
+
+## 8. Git / data
+
+- Agent handoff 只认 `master`；
+- `data/**` 永远 local-only；
+- push 前精确 `git add -- <paths>`；
+- 禁止 `git add .` / `-A` / `--all`；
+- 不 force-push；
+- 不 destructive reset/clean；
+- 不上传原始 LTB/DTX/TGA/CFG；
+- 不删除历史 evidence 隐藏错误；
+- 新报告保持 supersedes/provenance 链。
+
+---
+
+## 9. Handoff
+
+N01 完成后 Local Executor 只提交：
+
+```text
+corrected Phase-0 evidence
+N01 consumer/binding code + reports
+recommended state
+```
+
+Chat/Sol 决定 N01 是否 PASS，以及是否进入 P4-M01 native composition/final closure。
+
+只有最终：
 
 ```text
 P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 ```
 
-才恢复 `P5-T02`。当前继续 `PAUSED_BY_P4_M01`。
+才恢复 P5-T02。
