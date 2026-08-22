@@ -1,0 +1,66 @@
+{
+  "schema": "cf2.p4m01.n01.channel-semantics.v1",
+  "task_id": "P4-M01-N01",
+  "phase": 4,
+  "summary": "Strict layered separation between storage byte order, binding roles, and Source 1 shader composition semantics.",
+  "layer_a_storage_byte_order": {
+    "TGA": {
+      "container": "Truevision TGA with bottom footer structure",
+      "footer_offset_formula": "TRUEVISION-XFILE. signature offset - 8",
+      "header_offset_formula": "footer_offset + 26",
+      "raw_pixel_order": "BGRA / BGR (little-endian uncompressed)",
+      "evidence_class": "STRUCTURALLY_VERIFIED"
+    },
+    "DTX": {
+      "container": "LithTech PV DTX (proprietary)",
+      "header": "No standard LithTech -2/-3/-5 header; whole-file 3-byte payload",
+      "stride": "1024 (STRONG_HYPOTHESIS, measured margin ~2.99x)",
+      "fixed_byte": "One constant 0xFF byte per 3-byte group",
+      "two_varying_channels": "Continuous 2D spatial correlation across 1024 stride",
+      "dominant_corpus_statistic": "1043 of 1046 (99.71%) files match size % 2048 == 164",
+      "terminal_tail": "2212 bytes (OPEN)",
+      "evidence_class": "STRUCTURALLY_VERIFIED_PAYLOAD"
+    }
+  },
+  "layer_b_map_binding_roles": {
+    "Base_DTX": {
+      "directory": "rf017/ModelTextures/PLAYERVIEW/PV-*.DTX",
+      "role": "Diffuse / Base Color Map",
+      "engine_binding": "Primary surface albedo texture"
+    },
+    "AlphaMap_TGA": {
+      "directory": "rf017/ModelTextures/AlphaMap/*_Alpha.TGA",
+      "role": "Alpha Transparency & Emissive Glow Mask",
+      "engine_binding": "Controls transparency and localized self-illumination (eyes, energy cores)"
+    },
+    "NormalMap_TGA": {
+      "directory": "rf017/ModelTextures/NormalMap/*_N.TGA",
+      "role": "Tangent Space Normal Map (DirectX format)",
+      "engine_binding": "Provides high-frequency surface geometry and normal perturbation"
+    },
+    "SpecularMap_TGA": {
+      "directory": "rf017/ModelTextures/SpecularMap/*_S.TGA",
+      "role": "Specular Reflection & Glossiness Map",
+      "engine_binding": "Controls specular intensity and roughness"
+    },
+    "WeaponShader_CFG": {
+      "directory": "rf017/ModelTextures/Shader/WeaponShader/*.CFG",
+      "role": "Shader Parameter & Color LUT Profile",
+      "engine_binding": "Supplies per-skin lighting and material modulation parameters"
+    }
+  },
+  "layer_c_source1_shader_composition": {
+    "vmt_shader": "VertexLitGeneric",
+    "parameters": {
+      "$basetexture": "Derived native Base DTX (RGBA)",
+      "$bumpmap": "Derived NormalMap TGA ($normalmapalphaenvmapmask or independent)",
+      "$phong": "1",
+      "$phongboost": "Derived from CFG / SpecularMap intensity",
+      "$phongexponent": "Derived from SpecularMap / CFG profile",
+      "$phongfresnelranges": "[.2 .5 1]",
+      "$selfillum": "1 (masked by AlphaMap for glowing beast eyes/cores)",
+      "$selfillummask": "Derived AlphaMap TGA",
+      "$envmap": "env_cubemap (masked by SpecularMap)"
+    }
+  }
+}

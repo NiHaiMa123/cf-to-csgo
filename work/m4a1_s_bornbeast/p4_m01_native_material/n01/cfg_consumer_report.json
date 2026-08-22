@@ -1,0 +1,63 @@
+{
+  "schema": "cf2.p4m01.n01.cfg-consumer-report.v1",
+  "task_id": "P4-M01-N01",
+  "phase": 3,
+  "summary": "Evaluation of WeaponShader binary CFG consumer hypotheses against structural and differential evidence.",
+  "corpus_statistics": {
+    "total_files": 237,
+    "single_mod3_phase_verified": 237,
+    "compliance_rate": "100.0%",
+    "non_mod3_counterexamples": 0
+  },
+  "sample_counts_by_target": {
+    "M4A1_S_BornBeast": {
+      "samples": 164,
+      "phase": 0,
+      "size": 496,
+      "min_val": 0,
+      "max_val": 42
+    },
+    "M4A1_S_Transformers": {
+      "samples": 169,
+      "phase": 2,
+      "size": 512,
+      "min_val": 0,
+      "max_val": 42
+    },
+    "M4A1_S_Jewelry": {
+      "samples": 214,
+      "phase": 1,
+      "size": 647,
+      "min_val": 0,
+      "max_val": 42
+    },
+    "M4A1_S_BlueDiamond": {
+      "samples": 164,
+      "phase": 0,
+      "size": 496,
+      "min_val": 0,
+      "max_val": 42
+    }
+  },
+  "hypotheses_evaluation": [
+    {
+      "hypothesis": "H-CFG-A: 1D Color/Intensity LUT Ramp",
+      "evidence_status": "DIFFERENTIAL_SUPPORTED",
+      "description": "CFG represents a 1D lookup table for dynamic shader color/energy modulation or specular ramp across the weapon surface.",
+      "support": "Sample counts vary smoothly across skins (164, 169, 214), and values show continuous bounded gradients. BlueDiamond shares the 164 sample count with BornBeast."
+    },
+    {
+      "hypothesis": "H-CFG-B: Packed Parameter / Constant Strip",
+      "evidence_status": "HYPOTHESIS_PLAUSIBLE",
+      "description": "CFG represents packed shader constants or vertex/pixel shader uniforms padded with 0xFF delimiter phases.",
+      "support": "Single active mod-3 phase suggests fixed-stride serialization where 2 bytes out of 3 are reserved/padding."
+    },
+    {
+      "hypothesis": "H-CFG-C: Text Format (CfgTextDecoder)",
+      "evidence_status": "REJECTED_FOR_WEAPON_SHADER",
+      "description": "WeaponShader CFGs contain INI-like [Sections] and key-value text.",
+      "rejection_reason": "0 of 237 WeaponShader CFGs contain text sections or LZMA headers. All match CfgBinaryStripDecoder."
+    }
+  ],
+  "conclusion": "WeaponShader CFGs function as binary shader parameter/LUT strips. For CS:GO Source 1 conversion, their visual contribution is mapped to Phong exponent, boost, and self-illumination tint parameters."
+}

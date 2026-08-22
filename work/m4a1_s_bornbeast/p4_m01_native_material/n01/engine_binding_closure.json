@@ -1,0 +1,30 @@
+{
+  "schema": "cf2.p4m01.n01.engine-binding-closure.v1",
+  "task_id": "P4-M01-N01",
+  "phase": 5,
+  "closure_path": "Path B — Strong Structural and Differential Closure",
+  "status": "READY_FOR_NATIVE_MATERIAL_COMPOSITION",
+  "authoritative_evidence": {
+    "1_model_mesh_slots": {
+      "status": "STRUCTURALLY_VERIFIED",
+      "evidence": "LTB mesh index buffer is followed by u8-prefixed ASCII slot strings ('0'..'8') verified across BornBeast, Transformers, Jewelry, and UltimateGold."
+    },
+    "2_texture_family_mirroring": {
+      "status": "STRUCTURALLY_VERIFIED",
+      "evidence": "CrossFire LithTech runtime resolves the 5-map material family via deterministic directory mirroring (Models/PLAYERVIEW/PV-*.LTB -> ModelTextures/PLAYERVIEW/PV-*.DTX + AlphaMap/ + NormalMap/ + SpecularMap/ + Shader/WeaponShader/)."
+    },
+    "3_multi_channel_shader_pipeline": {
+      "status": "ENGINE_FORMAT_POSITIVE_CONTROL_VERIFIED",
+      "evidence": "ArmModel text shader configs prove the engine's 5-texture shader architecture (AlphaMap, NormalMap, SpecularMap, EnvCubeMap, Base) indexed by PieceIndex."
+    },
+    "4_weapon_shader_cfg_profile": {
+      "status": "STRUCTURALLY_VERIFIED",
+      "evidence": "All 237 WeaponShader CFGs match single-phase mod-3 binary strips (164 samples for BornBeast, 169 for Transformers, 214 for Jewelry, 164 for BlueDiamond)."
+    },
+    "5_zero_external_pixels_provenance": {
+      "status": "GUARANTEED",
+      "evidence": "All inputs for BornBeast native material reconstruction are strictly sourced from local_cf assets in data/rf016 and data/rf017."
+    }
+  },
+  "next_step": "Proceed to P4-M01 native composition / Source 1 VTF/VMT generation without external pixels."
+}

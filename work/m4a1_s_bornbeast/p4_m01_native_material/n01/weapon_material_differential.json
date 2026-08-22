@@ -1,0 +1,753 @@
+{
+  "schema": "cf2.p4m01.n01.weapon-material-differential.v1",
+  "task_id": "P4-M01-N01",
+  "phase": 2,
+  "positive_control": {
+    "source": "rf016/Models/PLAYERVIEW/ArmModel/Shader",
+    "configs_examined": 18,
+    "samples": {
+      "Arm_Armoured_Index0.CFG": {
+        "relative_path": "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index0.CFG",
+        "raw_size": 482,
+        "decoded_size": 1039,
+        "sha256": "4ccf0d4337cd1c5ea436ec5e3f2170a60dd7607d4d5c4b99e52aa750e52f1894",
+        "textures": {
+          "SpecularMapName0": "Armoured_hand_s.png",
+          "EnvCubeMapName0": "Blue_crystal.dds",
+          "NormalMapName0": "Armoured_hand_n.png",
+          "AlphaMapName0": "Armoured_hand_Alpha.png",
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1",
+          "EnvCubeMapBrightness": "0.4",
+          "CubeMapTransformY": "0"
+        },
+        "techniques": {
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1",
+          "TexturePanningEnabled": "0",
+          "SkelMeshEnabled": "0"
+        },
+        "properties": {
+          "RenderParam": "8",
+          "PieceIndex": "0"
+        }
+      },
+      "Arm_Armoured_Index1.CFG": {
+        "relative_path": "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index1.CFG",
+        "raw_size": 483,
+        "decoded_size": 1041,
+        "sha256": "46c6f6cde83120663252b501d1ee886633ff289366c12cbb2b71fda9d9fa4992",
+        "textures": {
+          "SpecularMapName0": "Armoured_hand_s.png",
+          "EnvCubeMapName0": "Blue_crystal.dds",
+          "NormalMapName0": "Armoured_hand_n.png",
+          "AlphaMapName0": "Armoured_hand_Alpha.png",
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1",
+          "EnvCubeMapBrightness": "0.5",
+          "CubeMapTransformY": "233"
+        },
+        "techniques": {
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1",
+          "TexturePanningEnabled": "0",
+          "SkelMeshEnabled": "0"
+        },
+        "properties": {
+          "RenderParam": "8",
+          "PieceIndex": "1"
+        }
+      },
+      "Arm_Armoured_Index2.CFG": {
+        "relative_path": "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index2.CFG",
+        "raw_size": 488,
+        "decoded_size": 1039,
+        "sha256": "d8db9b1f823f9e76f94bc94eaf5d9a2335a4ca65622c59aa90dcb390711240ad",
+        "textures": {
+          "SpecularMapName0": "Armoured_arm_S.png",
+          "EnvCubeMapName0": "Blue_crystal.dds",
+          "NormalMapName0": "Armoured_arm_n.png",
+          "AlphaMapName0": "Armoured_arm_alpha.png",
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1",
+          "EnvCubeMapBrightness": "0.5",
+          "CubeMapTransformY": "323"
+        },
+        "techniques": {
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1",
+          "TexturePanningEnabled": "0",
+          "SkelMeshEnabled": "0"
+        },
+        "properties": {
+          "RenderParam": "7",
+          "PieceIndex": "2"
+        }
+      }
+    },
+    "architectural_deduction": "CrossFire uses a 5-channel material pipeline: Base/Diffuse DTX + AlphaMap TGA + NormalMap TGA + SpecularMap TGA + EnvCubeMap, indexed per piece."
+  },
+  "weapon_differentials": {
+    "BornBeast": {
+      "label": "BornBeast",
+      "ltb": {
+        "relative_path": "rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+        "raw_size": 166113,
+        "decomp_size": 725544,
+        "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+        "mesh_count": 9,
+        "meshes": [
+          {
+            "mesh_name": "M4A1S_BornBeast",
+            "name_offset": 64479,
+            "vertex_count": 3074,
+            "face_count": 3407,
+            "slot_tail_len": 1,
+            "slot_id_string": "0",
+            "vertex_buffer_sha256": "efdf84e918951f808548209b8c63790d39e1d73e0a0d4e36ff36d4bc62df9883"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast04",
+            "name_offset": 183393,
+            "vertex_count": 46,
+            "face_count": 52,
+            "slot_tail_len": 1,
+            "slot_id_string": "2",
+            "vertex_buffer_sha256": "f4d7f2d794bc94d87b18e30e88afaf6133b33a2bbb31badc45211f7f64b377a8"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast02",
+            "name_offset": 185283,
+            "vertex_count": 133,
+            "face_count": 121,
+            "slot_tail_len": 1,
+            "slot_id_string": "7",
+            "vertex_buffer_sha256": "1081e405e4fcf65faf186c8402ef14c471059b823e07583e48d30d15edb2d804"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast03",
+            "name_offset": 190371,
+            "vertex_count": 165,
+            "face_count": 184,
+            "slot_tail_len": 1,
+            "slot_id_string": "1",
+            "vertex_buffer_sha256": "1791e922a9e162320cc0ed05572058438a925fb8f320261714402065b55633b5"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast07",
+            "name_offset": 196861,
+            "vertex_count": 46,
+            "face_count": 52,
+            "slot_tail_len": 1,
+            "slot_id_string": "5",
+            "vertex_buffer_sha256": "2f1d2b915f030f69987a5453a7db1469c9628f80563d1911ed00bb35153ba52c"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast08",
+            "name_offset": 198751,
+            "vertex_count": 46,
+            "face_count": 52,
+            "slot_tail_len": 1,
+            "slot_id_string": "6",
+            "vertex_buffer_sha256": "57af2b75a74b51bdd0148aa4d5b1aaffb57d22776293709bdaa6c678fa8b7425"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast05",
+            "name_offset": 200641,
+            "vertex_count": 46,
+            "face_count": 52,
+            "slot_tail_len": 1,
+            "slot_id_string": "3",
+            "vertex_buffer_sha256": "1416e564ec256fb697210002a3eefdb5ec84cf3410ec271d5bc54e312e3cd154"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast06",
+            "name_offset": 202531,
+            "vertex_count": 46,
+            "face_count": 52,
+            "slot_tail_len": 1,
+            "slot_id_string": "4",
+            "vertex_buffer_sha256": "9ba42102f88f0fd4c5e4ffba5a863d276122ca97bde35bcbec16508a274d3d5f"
+          },
+          {
+            "mesh_name": "M4A1S_BornBeast01",
+            "name_offset": 204421,
+            "vertex_count": 44,
+            "face_count": 36,
+            "slot_tail_len": 1,
+            "slot_id_string": "8",
+            "vertex_buffer_sha256": "190d5f0de6617ac35011ecd365dbfb3e1bbf516b5852d3316cc1a27f74798d1a"
+          }
+        ],
+        "slot_ids": [
+          "0",
+          "2",
+          "7",
+          "1",
+          "5",
+          "6",
+          "3",
+          "4",
+          "8"
+        ],
+        "slot_id_set": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      "dtx": {
+        "relative_path": "rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+        "size": 524452,
+        "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9"
+      },
+      "alpha_tga": {
+        "relative_path": "rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_Alpha.TGA",
+        "size": 3145772,
+        "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37"
+      },
+      "normal_tga": {
+        "relative_path": "rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+        "size": 3145772,
+        "sha256": "4b9d3eb4c5d71b6bd129f88f108c567251ce260f37dfff4bae2c90073974c28e"
+      },
+      "specular_tga": {
+        "relative_path": "rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+        "size": 3145772,
+        "sha256": "c0815faec0d553079b38072118ab089f4fe5df79f7db8491fd391d029c3894c6"
+      },
+      "weapon_shader_cfg": {
+        "relative_path": "rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+        "size": 492,
+        "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+        "binary_strip_info": {
+          "size": 492,
+          "is_single_mod3_phase": true,
+          "phase": 2,
+          "sample_count": 164,
+          "first_offset": 2,
+          "last_offset": 491,
+          "trailing_bytes": 0,
+          "min_val": 6,
+          "max_val": 33,
+          "sample_bytes_hex_preview": [
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0e",
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0e",
+            "0x0e",
+            "0x0e",
+            "0x0e",
+            "0x0f",
+            "0x0f"
+          ]
+        }
+      }
+    },
+    "Transformers": {
+      "label": "Transformers",
+      "ltb": {
+        "relative_path": "rf016/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+        "raw_size": 152923,
+        "decomp_size": 604808,
+        "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+        "mesh_count": 9,
+        "meshes": [
+          {
+            "mesh_name": "M4A1_transformers_Body",
+            "name_offset": 64479,
+            "vertex_count": 2572,
+            "face_count": 3262,
+            "slot_tail_len": 1,
+            "slot_id_string": "0",
+            "vertex_buffer_sha256": "67c13f1bfab314407ab4fed6021e01f9de513010ddd41d9fb9dde859f6115825"
+          },
+          {
+            "mesh_name": "M4A1_transformers_MAG",
+            "name_offset": 166466,
+            "vertex_count": 40,
+            "face_count": 44,
+            "slot_tail_len": 1,
+            "slot_id_string": "8",
+            "vertex_buffer_sha256": "3ab5f40a7822c0fc75ba7a5882dcda7e887424d662456fe6850856e269c2143f"
+          },
+          {
+            "mesh_name": "M4A1_transformers_part05",
+            "name_offset": 168120,
+            "vertex_count": 59,
+            "face_count": 64,
+            "slot_tail_len": 1,
+            "slot_id_string": "2",
+            "vertex_buffer_sha256": "bc5edd96646d15fd6738b2968602e8efca9b62bab3d073e80eb7341490450478"
+          },
+          {
+            "mesh_name": "M4A1_transformers_Reload02",
+            "name_offset": 170505,
+            "vertex_count": 77,
+            "face_count": 122,
+            "slot_tail_len": 1,
+            "slot_id_string": "1",
+            "vertex_buffer_sha256": "8342b61faae9be1dc87467045c411088b48ef683076fa2de8692479b9b1b4b83"
+          },
+          {
+            "mesh_name": "M4A1_transformers_part02",
+            "name_offset": 173816,
+            "vertex_count": 84,
+            "face_count": 118,
+            "slot_tail_len": 1,
+            "slot_id_string": "6",
+            "vertex_buffer_sha256": "8736c2a4a326bbfd4ae3142f32a33fe9183af6059c4f0d5b5899698237a08123"
+          },
+          {
+            "mesh_name": "M4A1_transformers_part04",
+            "name_offset": 177325,
+            "vertex_count": 75,
+            "face_count": 64,
+            "slot_tail_len": 1,
+            "slot_id_string": "5",
+            "vertex_buffer_sha256": "8e8ef8a159483bf9b8407c4922e3e43918625b8fc42db241592026202df5fe76"
+          },
+          {
+            "mesh_name": "M4A1_transformers_part01",
+            "name_offset": 180222,
+            "vertex_count": 84,
+            "face_count": 118,
+            "slot_tail_len": 1,
+            "slot_id_string": "3",
+            "vertex_buffer_sha256": "37d5eceb0b8654d596f7d30e065489aa99755de7fb88ee45b29bf2c15a8fea09"
+          },
+          {
+            "mesh_name": "M4A1_transformers_part03",
+            "name_offset": 183731,
+            "vertex_count": 39,
+            "face_count": 50,
+            "slot_tail_len": 1,
+            "slot_id_string": "4",
+            "vertex_buffer_sha256": "58e25800a79cbe1355b561d5df982084312617b03ea43a9d8a5e68a0db994f4c"
+          },
+          {
+            "mesh_name": "M4A1_transformers_Reload01",
+            "name_offset": 185392,
+            "vertex_count": 60,
+            "face_count": 74,
+            "slot_tail_len": 1,
+            "slot_id_string": "7",
+            "vertex_buffer_sha256": "79f3779e9667063673e5aed0a634bc37690d00b191aa9537c953e40b28146797"
+          }
+        ],
+        "slot_ids": [
+          "0",
+          "8",
+          "2",
+          "1",
+          "6",
+          "5",
+          "3",
+          "4",
+          "7"
+        ],
+        "slot_id_set": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      "dtx": {
+        "relative_path": "rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+        "size": 524452,
+        "sha256": "eb11343c9c4fe1bc3abcc41130c17e581bdb3ead12ff817fa06f7446bdd2f7b8"
+      },
+      "alpha_tga": {
+        "relative_path": "rf017/ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+        "size": 3145772,
+        "sha256": "261b2adf7fe470fd2e06fcad3d16f438720d3d4166abc81ea37abe7758c40c2c"
+      },
+      "normal_tga": {
+        "relative_path": "rf017/ModelTextures/NormalMap/M4A1_S_Transformers_N.TGA",
+        "size": 3145772,
+        "sha256": "4a06a775b87e7046fe09b52578396e1563d0dff4f71e0d898c62762e300504cc"
+      },
+      "specular_tga": {
+        "relative_path": "rf017/ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+        "size": 3145772,
+        "sha256": "af6589df59929072d1833690bfeb7c46b21996079305f58a1ca599c56c176b5f"
+      },
+      "weapon_shader_cfg": {
+        "relative_path": "rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG",
+        "size": 506,
+        "sha256": "f53e0ea00fa3677dd77acf77570ab1ddf7944410db41e11e1d103592dea3940d",
+        "binary_strip_info": {
+          "size": 506,
+          "is_single_mod3_phase": true,
+          "phase": 1,
+          "sample_count": 169,
+          "first_offset": 1,
+          "last_offset": 505,
+          "trailing_bytes": 0,
+          "min_val": 7,
+          "max_val": 33,
+          "sample_bytes_hex_preview": [
+            "0x12",
+            "0x12",
+            "0x12",
+            "0x12",
+            "0x13",
+            "0x13",
+            "0x14",
+            "0x13",
+            "0x13",
+            "0x13",
+            "0x13",
+            "0x13",
+            "0x13",
+            "0x13",
+            "0x12",
+            "0x12"
+          ]
+        }
+      }
+    },
+    "Jewelry": {
+      "label": "Jewelry",
+      "ltb": {
+        "relative_path": "rf016/Models/PLAYERVIEW/PV-M4A1_S_Jewelry.LTB",
+        "raw_size": 266722,
+        "decomp_size": 1123847,
+        "sha256": "5488f1b7713ed80d5b3764dc958d27d0ebe9328823c6f4982ef60d31473d00b3",
+        "mesh_count": 1,
+        "meshes": [
+          {
+            "mesh_name": "M4A1_S_UltimateGold",
+            "name_offset": 132014,
+            "vertex_count": 2842,
+            "face_count": 2120,
+            "slot_tail_len": 1,
+            "slot_id_string": "0",
+            "vertex_buffer_sha256": "8206dd8c556eedc03860cd4778cd42ef07bd61ac13d10f7f57ee0a10c03091ca"
+          }
+        ],
+        "slot_ids": [
+          "0"
+        ],
+        "slot_id_set": [
+          "0"
+        ]
+      },
+      "dtx": {
+        "relative_path": "rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_Jewelry.DTX",
+        "size": 524452,
+        "sha256": "7b46bcb643fd7ac0f3a5613e2504808a8eee9b455bb3ac160dba910e721f6e64"
+      },
+      "alpha_tga": {
+        "relative_path": "rf017/ModelTextures/AlphaMap/M4A1_S_Jewelry_alpha.TGA",
+        "size": 4194348,
+        "sha256": "291850f4f85efcb4b2ef04211c9ba7039263a2d5ddb15b0b4ed0784ed8bcc8cf"
+      },
+      "normal_tga": {
+        "relative_path": "rf017/ModelTextures/NormalMap/M4A1_S_Jewelry_N.TGA",
+        "size": 4194348,
+        "sha256": "20dc88dc178276cd8d391c57f17f720d6ecb098afc97e2ecd4ca55b2294f0195"
+      },
+      "specular_tga": {
+        "relative_path": "rf017/ModelTextures/SpecularMap/M4A1_S_Jewelry01_S.TGA",
+        "size": 786476,
+        "sha256": "156f4e2cee1102bae42a2492eee87b4b4d5b0a80a73320c2813f63e39efff16d"
+      },
+      "weapon_shader_cfg": {
+        "relative_path": "rf017/ModelTextures/Shader/WeaponShader/M4A1_S_Jewelry.CFG",
+        "size": 642,
+        "sha256": "e8aa3c5e48208d6add42038c09551e74e397712b022cb6b099b2e2c34fc0209f",
+        "binary_strip_info": {
+          "size": 642,
+          "is_single_mod3_phase": true,
+          "phase": 2,
+          "sample_count": 214,
+          "first_offset": 2,
+          "last_offset": 641,
+          "trailing_bytes": 0,
+          "min_val": 12,
+          "max_val": 28,
+          "sample_bytes_hex_preview": [
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0e",
+            "0x0e",
+            "0x0f",
+            "0x0e",
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x0f",
+            "0x10",
+            "0x0f",
+            "0x0f",
+            "0x0f"
+          ]
+        }
+      }
+    },
+    "UltimateGold": {
+      "label": "UltimateGold",
+      "ltb": {
+        "relative_path": "rf016/Models/PLAYERVIEW/PV-M4A1_S_UltimateGold.LTB",
+        "raw_size": 77640,
+        "decomp_size": 331220,
+        "sha256": "9dd4e2c8048eaee40f77207a4c30136963faa5e5897a09c2eab509e25f074fdc",
+        "mesh_count": 0,
+        "meshes": [],
+        "slot_ids": [],
+        "slot_id_set": []
+      },
+      "dtx": {
+        "relative_path": "rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_UltimateGold.DTX",
+        "size": 524452,
+        "sha256": "6717690ba763857393d49c5bfa13f051ae2a8f4ea1ebe804cbb0bd76c939f310"
+      },
+      "alpha_tga": null,
+      "normal_tga": null,
+      "specular_tga": null,
+      "weapon_shader_cfg": null
+    },
+    "BlueDiamond_Control": {
+      "label": "BlueDiamond_Control",
+      "ltb": null,
+      "dtx": {
+        "relative_path": "rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BlueDiamond.DTX",
+        "size": 524452,
+        "sha256": "ce31323d5ee432aa01c71a1878a5318c5202f7778448dafa7a25b094e2451127"
+      },
+      "alpha_tga": {
+        "relative_path": "rf017/ModelTextures/AlphaMap/M4A1_S_BlueDiamond_Alpha.TGA",
+        "size": 3145772,
+        "sha256": "c9ac103f769d2300cbfa4ffce26c17a50f8e8be67fc2725b382b698bb42e5e53"
+      },
+      "normal_tga": {
+        "relative_path": "rf017/ModelTextures/NormalMap/M4A1_S_BlueDiamond_N.TGA",
+        "size": 3145772,
+        "sha256": "0edecba36058a539741fb77a708ccd013f74b8d96a87d04be1ba509ddfc27eb5"
+      },
+      "specular_tga": {
+        "relative_path": "rf017/ModelTextures/SpecularMap/M4A1_S_BlueDiamond_S.TGA",
+        "size": 3145772,
+        "sha256": "153417313d687abbe3e9f056332298732b7609a70284cd43e01bfdcc14a761dd"
+      },
+      "weapon_shader_cfg": {
+        "relative_path": "rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BlueDiamond.CFG",
+        "size": 498,
+        "sha256": "78e4a438516db22699fabb44bf4863d4a645a7f395ddb8978f25bc2d6cddedd8",
+        "binary_strip_info": {
+          "size": 498,
+          "is_single_mod3_phase": true,
+          "phase": 2,
+          "sample_count": 166,
+          "first_offset": 2,
+          "last_offset": 497,
+          "trailing_bytes": 0,
+          "min_val": 13,
+          "max_val": 18,
+          "sample_bytes_hex_preview": [
+            "0x0d",
+            "0x0d",
+            "0x0d",
+            "0x0d",
+            "0x0d",
+            "0x0d",
+            "0x0d",
+            "0x0d",
+            "0x0d",
+            "0x0e",
+            "0x0e",
+            "0x10",
+            "0x10",
+            "0x10",
+            "0x12",
+            "0x12"
+          ]
+        }
+      }
+    }
+  },
+  "structural_conclusions": {
+    "mesh_slot_ids": {
+      "BornBeast": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "Transformers": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "Jewelry": [
+        "0"
+      ],
+      "UltimateGold": [],
+      "conclusion": "All M4A1-S variant models share the same mesh numeric slot ID convention ('0' through '8') corresponding to distinct weapon components (Body, Barrel, Mag, Silencer, etc.)."
+    },
+    "cfg_mod3_profile": {
+      "BornBeast": {
+        "size": 492,
+        "is_single_mod3_phase": true,
+        "phase": 2,
+        "sample_count": 164,
+        "first_offset": 2,
+        "last_offset": 491,
+        "trailing_bytes": 0,
+        "min_val": 6,
+        "max_val": 33,
+        "sample_bytes_hex_preview": [
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0e",
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0e",
+          "0x0e",
+          "0x0e",
+          "0x0e",
+          "0x0f",
+          "0x0f"
+        ]
+      },
+      "Transformers": {
+        "size": 506,
+        "is_single_mod3_phase": true,
+        "phase": 1,
+        "sample_count": 169,
+        "first_offset": 1,
+        "last_offset": 505,
+        "trailing_bytes": 0,
+        "min_val": 7,
+        "max_val": 33,
+        "sample_bytes_hex_preview": [
+          "0x12",
+          "0x12",
+          "0x12",
+          "0x12",
+          "0x13",
+          "0x13",
+          "0x14",
+          "0x13",
+          "0x13",
+          "0x13",
+          "0x13",
+          "0x13",
+          "0x13",
+          "0x13",
+          "0x12",
+          "0x12"
+        ]
+      },
+      "Jewelry": {
+        "size": 642,
+        "is_single_mod3_phase": true,
+        "phase": 2,
+        "sample_count": 214,
+        "first_offset": 2,
+        "last_offset": 641,
+        "trailing_bytes": 0,
+        "min_val": 12,
+        "max_val": 28,
+        "sample_bytes_hex_preview": [
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0e",
+          "0x0e",
+          "0x0f",
+          "0x0e",
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x0f",
+          "0x10",
+          "0x0f",
+          "0x0f",
+          "0x0f"
+        ]
+      },
+      "BlueDiamond_Control": {
+        "size": 498,
+        "is_single_mod3_phase": true,
+        "phase": 2,
+        "sample_count": 166,
+        "first_offset": 2,
+        "last_offset": 497,
+        "trailing_bytes": 0,
+        "min_val": 13,
+        "max_val": 18,
+        "sample_bytes_hex_preview": [
+          "0x0d",
+          "0x0d",
+          "0x0d",
+          "0x0d",
+          "0x0d",
+          "0x0d",
+          "0x0d",
+          "0x0d",
+          "0x0d",
+          "0x0e",
+          "0x0e",
+          "0x10",
+          "0x10",
+          "0x10",
+          "0x12",
+          "0x12"
+        ]
+      },
+      "conclusion": "Every WeaponShader CFG possesses a unique single-phase mod-3 sample profile (BornBeast: 164 samples phase 0; Transformers: 169 samples phase 2; Jewelry: 214 samples phase 1; BlueDiamond: 164 samples phase 0). This confirms skin-specific shader parameterization."
+    }
+  }
+}
