@@ -19,6 +19,7 @@ Generates:
 """
 from __future__ import annotations
 
+import argparse
 import collections
 import glob
 import hashlib
@@ -27,11 +28,83 @@ import lzma
 import os
 import re
 import struct
+import sys
 
 REPO = r"D:\project\cf_to_csgo"
 DATA = os.path.join(REPO, "data")
 N01_DIR = os.path.join(REPO, "work/m4a1_s_bornbeast/p4_m01_native_material/n01")
 os.makedirs(N01_DIR, exist_ok=True)
+
+
+# ---------------------------------------------------------------------------
+# F1 cleanup: executor provenance parameterization
+# ---------------------------------------------------------------------------
+# Priority order:
+#   1. --executor-* CLI flag
+#   2. N01_EXECUTOR_* environment variable
+#   3. literal "unspecified"
+# A generic N01 generator MUST NOT bake in any specific model identity.
+EXECUTOR_UNSPECIFIED = "unspecified"
+EXECUTOR_ENV_VARS = {
+    "executor_model": "N01_EXECUTOR_MODEL",
+    "executor_harness": "N01_EXECUTOR_HARNESS",
+    "executor_family": "N01_EXECUTOR_FAMILY",
+}
+
+
+def _resolve_executor_field(field_name, cli_value):
+    if cli_value is not None and str(cli_value).strip():
+        return str(cli_value).strip()
+    env_name = EXECUTOR_ENV_VARS[field_name]
+    env_value = os.environ.get(env_name, "").strip()
+    if env_value:
+        return env_value
+    return EXECUTOR_UNSPECIFIED
+
+
+def resolve_executor_provenance(args=None):
+    """Return the executor_provenance dict to embed in this run's outputs.
+
+    `args` may be a argparse.Namespace produced by parse_executor_args().
+    """
+    model = _resolve_executor_field(
+        "executor_model",
+        getattr(args, "executor_model", None) if args is not None else None,
+    )
+    harness = _resolve_executor_field(
+        "executor_harness",
+        getattr(args, "executor_harness", None) if args is not None else None,
+    )
+    family = _resolve_executor_field(
+        "executor_family",
+        getattr(args, "executor_family", None) if args is not None else None,
+    )
+    if model == EXECUTOR_UNSPECIFIED:
+        source = "no CLI flag and no N01_EXECUTOR_MODEL env var; using 'unspecified'"
+    else:
+        source = "CLI flag / N01_EXECUTOR_MODEL env var"
+    return {
+        "executor_model": model,
+        "executor_harness": harness,
+        "executor_family": family,
+        "model_id_source": source,
+        "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+    }
+
+
+def parse_executor_args(argv=None):
+    parser = argparse.ArgumentParser(
+        description=(
+            "N01 Phase 1-5 runner. Pass --executor-* to override the "
+            "default 'unspecified' provenance. Without flags, every "
+            "provenance field is written as 'unspecified'."
+        ),
+        add_help=True,
+    )
+    parser.add_argument("--executor-model", default=None)
+    parser.add_argument("--executor-harness", default=None)
+    parser.add_argument("--executor-family", default=None)
+    return parser.parse_args(argv)
 
 
 def sha256_of(path: str) -> str:
@@ -148,8 +221,10 @@ def scan_arm_model_positive_control():
     return results
 
 
-def run_phase2_differential():
+def run_phase2_differential(executor_provenance=None):
     """Phase 2: ArmModel positive control + 5 weapon differential analysis."""
+    if executor_provenance is None:
+        executor_provenance = resolve_executor_provenance()
     print("Running Phase 2: Positive Control + Weapon Differential...")
 
     # 1. ArmModel Positive Control
@@ -336,16 +411,11 @@ def run_phase2_differential():
                 "evidence_grade_semantic_interpretation": "OPEN_UNRESOLVED"
             }
         },
-        # Per M3 cleanup: embed executor provenance so every regeneration
-        # of this JSON carries it. The Co-Authored-By trailer alone is
-        # NEVER authoritative.
-        "executor_provenance": {
-            "executor_model": "MiniMax-M3",
-            "executor_harness": "Claude Code",
-            "executor_family": "MiniMax",
-            "model_id_source": "harness runtime value (system prompt)",
-            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
-        },
+        # Per F1 cleanup: provenance is resolved at runtime from
+        # --executor-* CLI flags / N01_EXECUTOR_* env vars, with a
+        # default of "unspecified". The Co-Authored-By trailer is NEVER
+        # authoritative.
+        "executor_provenance": executor_provenance,
     }
 
     diff_path = os.path.join(N01_DIR, "weapon_material_differential.json")
@@ -355,7 +425,7 @@ def run_phase2_differential():
     return target_differentials
 
 
-def run_phase3_cfg_consumer(diffs):
+def run_phase3_cfg_consumer(diffs, executor_provenance=None):
     """Phase 3: WeaponShader CFG Consumer Analysis (graded).
 
     Per Chat/Sol 69c03d review:
@@ -365,6 +435,8 @@ def run_phase3_cfg_consumer(diffs):
       - Source1 VMT mapping is SOURCE1_DESIGN_CANDIDATE; do not state
         "CFG -> Phong exponent / boost / selfillum" as a recovered CF fact.
     """
+    if executor_provenance is None:
+        executor_provenance = resolve_executor_provenance()
     print("Running Phase 3: CFG Consumer Analysis (graded) ...")
 
     def get_cfg_info(target):
@@ -441,16 +513,11 @@ def run_phase3_cfg_consumer(diffs):
             "mapping choices are explicit conversion-design candidates, "
             "NOT recovered CF facts."
         ),
-        # Per M3 cleanup: embed executor provenance so every regeneration
-        # of this JSON carries it. The Co-Authored-By trailer alone is
-        # NEVER authoritative.
-        "executor_provenance": {
-            "executor_model": "MiniMax-M3",
-            "executor_harness": "Claude Code",
-            "executor_family": "MiniMax",
-            "model_id_source": "harness runtime value (system prompt)",
-            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
-        },
+        # Per F1 cleanup: provenance is resolved at runtime from
+        # --executor-* CLI flags / N01_EXECUTOR_* env vars, with a
+        # default of "unspecified". The Co-Authored-By trailer is NEVER
+        # authoritative.
+        "executor_provenance": executor_provenance,
     }
     # ----- regression guard: no false-PASS / overclaim phrases -----
     text_blob = json.dumps(cfg_report, ensure_ascii=False)
@@ -473,7 +540,7 @@ def run_phase3_cfg_consumer(diffs):
         json.dump(cfg_report, f, indent=2, ensure_ascii=False)
     print(f"  Wrote {cfg_path}")
 
-def run_phase4_channel_semantics():
+def run_phase4_channel_semantics(executor_provenance=None):
     """Phase 4: Channel & Storage Semantics Layering.
 
     Per Chat/Sol 69c03d review: this generator was a future regression hazard
@@ -498,6 +565,8 @@ def run_phase4_channel_semantics():
     `READY_FOR_NATIVE_MATERIAL_COMPOSITION` or any other PASS-equivalent
     status without explicit direct/accepted Path-B evidence.
     """
+    if executor_provenance is None:
+        executor_provenance = resolve_executor_provenance()
     print("Running Phase 4: Channel & Storage Semantics (graded) ...")
     semantics_report = {
         "schema": "cf2.p4m01.n01.channel-semantics.v2",
@@ -600,16 +669,11 @@ def run_phase4_channel_semantics():
             "WeaponShader CFG = shader parameter & color LUT profile",
             "CFG -> phongboost/phongexponent/selfillum as recovered CF fact",
         ],
-        # Per M3 cleanup: embed executor provenance so every regeneration
-        # of this JSON carries it. The Co-Authored-By trailer alone is
-        # NEVER authoritative.
-        "executor_provenance": {
-            "executor_model": "MiniMax-M3",
-            "executor_harness": "Claude Code",
-            "executor_family": "MiniMax",
-            "model_id_source": "harness runtime value (system prompt)",
-            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
-        },
+        # Per F1 cleanup: provenance is resolved at runtime from
+        # --executor-* CLI flags / N01_EXECUTOR_* env vars, with a
+        # default of "unspecified". The Co-Authored-By trailer is NEVER
+        # authoritative.
+        "executor_provenance": executor_provenance,
     }
     # ----- regression guard: no false-PASS status without Path-B evidence -----
     text_blob = json.dumps(semantics_report, ensure_ascii=False)
@@ -625,7 +689,7 @@ def run_phase4_channel_semantics():
     print(f"  Wrote {semantics_path}")
 
 
-def run_phase5_engine_binding_closure():
+def run_phase5_engine_binding_closure(executor_provenance=None):
     """Phase 5: Final Engine Binding Closure (graded only).
 
     Per Chat/Sol 69c03d review: the previous version of this generator
@@ -641,12 +705,15 @@ def run_phase5_engine_binding_closure():
     function. It is kept here for completeness and manual regeneration.
     """
     print("Running Phase 5: Engine Binding Closure (graded) ...")
+    if executor_provenance is None:
+        executor_provenance = resolve_executor_provenance()
     closure_report = {
-        "schema": "cf2.p4m01.n01.engine-binding-closure.v2",
+        "schema": "cf2.p4m01.n01.engine-binding-closure.v3",
         "task_id": "P4-M01-N01",
         "phase": 5,
         "closure_path": "Path B - Incomplete",
         "status": "OPEN_UNRESOLVED",
+        "substantive_blocker": "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS",
         "authoritative_evidence": {
             "1_model_mesh_slots": {
                 "status": "STRUCTURALLY_VERIFIED",
@@ -659,19 +726,29 @@ def run_phase5_engine_binding_closure():
                 ),
             },
             "2_texture_family_mirroring": {
-                "status": "OBSERVED / STRUCTURAL_CORRESPONDENCE",
+                "status": "TOOL_BEHAVIOR / STRUCTURAL_CORRESPONDENCE",
                 "evidence": (
-                    "CrossFire LithTech runtime appears to resolve the "
-                    "5-map material family via deterministic directory "
-                    "mirroring. The C# exporter uses this heuristic to "
-                    "assign the same material to all sub-meshes."
+                    "The REPO EXPORTER (LithTechObjExporter."
+                    "ExpandSourceResourceTexturePathCandidates + "
+                    "EnumerateTextureCandidates) performs deterministic "
+                    "Models/PLAYERVIEW/PV-*.LTB -> ModelTextures/PLAYERVIEW/"
+                    "PV-*.DTX (+ AlphaMap/ + NormalMap/ + SpecularMap/ + "
+                    "Shader/WeaponShader/) mirroring and applies one texture "
+                    "family to all sub-meshes because the LTB parser drops "
+                    "the post-mesh short IDs. This is repo/tool behavior, "
+                    "NOT a recovered property of the original CF runtime."
                 ),
+                "original_cf_runtime_mirroring": "OPEN_UNRESOLVED",
+                "original_cf_runtime_blocker": "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS",
             },
             "3_multi_channel_shader_pipeline": {
                 "status": "ENGINE_FORMAT_POSITIVE_CONTROL_VERIFIED",
                 "evidence": (
                     "ArmModel text shader configs prove the engine's "
-                    "5-texture shader architecture indexed by PieceIndex."
+                    "5-texture shader architecture indexed by PieceIndex. "
+                    "This is an engine-format positive control for ArmModel "
+                    "only; the WEAPON format uses binary WeaponShader CFG "
+                    "and is not directly equivalent."
                 ),
             },
             "4_weapon_shader_cfg_profile": {
@@ -684,20 +761,29 @@ def run_phase5_engine_binding_closure():
             },
         },
         "next_step": (
-            "Awaiting Chat/Sol review for N01 Phase 1-3 findings. "
-            "Closure status MUST NOT be flipped to PASS / READY without "
-            "direct/accepted Path-B evidence."
+            "blocked pending a new original CF runtime/client artifact or "
+            "equivalent documented consumer contract. Closure status MUST NOT "
+            "be flipped to PASS / READY without direct/accepted Path-B evidence."
         ),
-        # Per M3 cleanup: embed executor provenance so every regeneration
-        # of this JSON carries it. The Co-Authored-By trailer alone is
-        # NEVER authoritative.
-        "executor_provenance": {
-            "executor_model": "MiniMax-M3",
-            "executor_harness": "Claude Code",
-            "executor_family": "MiniMax",
-            "model_id_source": "harness runtime value (system prompt)",
-            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+        "forbidden_claim": {
+            "claim_text_pattern": (
+                "the assertion that the original CF runtime binding is "
+                "verified solely by the repo exporter's deterministic "
+                "directory mirroring"
+            ),
+            "why_forbidden": (
+                "The local corpus does not contain any CF client "
+                ".exe/.dll/.rez/.bin/.pak or engine module. The mirroring "
+                "evidence above describes the REPO'S OWN EXPORTER, not the "
+                "original CF runtime. Treating this as verified would be a "
+                "false-PASS."
+            ),
         },
+        # Per F1 cleanup: provenance is resolved at runtime from
+        # --executor-* CLI flags / N01_EXECUTOR_* env vars, with a
+        # default of "unspecified". The Co-Authored-By trailer is NEVER
+        # authoritative.
+        "executor_provenance": executor_provenance,
     }
     # ----- regression guard: no false-PASS status -----
     text_blob = json.dumps(closure_report, ensure_ascii=False)
@@ -707,16 +793,40 @@ def run_phase5_engine_binding_closure():
     assert closure_report["status"] != "READY_FOR_NATIVE_MATERIAL_COMPOSITION", (
         "regression: engine_binding_closure status flipped to READY_FOR_NATIVE_MATERIAL_COMPOSITION"
     )
+    # F2 cleanup: must NOT contain the literal forbidden claim phrasing
+    # except inside the forbidden_claim.claim_text_pattern reference.
+    forbidden_pattern = "original CF runtime mirroring = verified"
+    if forbidden_pattern in text_blob:
+        # Allowed only inside forbidden_claim reference, never as actual claim
+        non_ref_count = (
+            text_blob.count(forbidden_pattern)
+            - text_blob.count("\"claim_text_pattern\"")
+        )
+        assert non_ref_count == 0, (
+            f"regression: engine_binding_closure contains literal forbidden "
+            f"phrase outside forbidden_claim reference"
+        )
+    # F2 cleanup: must NOT contain the old 'runtime appears to resolve' framing
+    assert "CrossFire LithTech runtime appears to resolve" not in text_blob, (
+        "regression: engine_binding_closure used old 'runtime appears to "
+        "resolve' framing; F2 cleanup requires repo/tool behavior wording."
+    )
     closure_path = os.path.join(N01_DIR, "engine_binding_closure.json")
     with open(closure_path, "w", encoding="utf-8") as f:
         json.dump(closure_report, f, indent=2, ensure_ascii=False)
     print(f"  Wrote {closure_path}")
 
 
-def main():
+def main(argv=None):
+    # ----- F1 cleanup: parse CLI flags and resolve executor provenance -----
+    args = parse_executor_args(argv)
+    executor_provenance = resolve_executor_provenance(args)
+    print("executor provenance:")
+    for k, v in executor_provenance.items():
+        print(f"  {k}: {v}")
     print("=== P4-M01-N01 Execution (Phase 2 - 3) ===")
-    diffs = run_phase2_differential()
-    run_phase3_cfg_consumer(diffs)
+    diffs = run_phase2_differential(executor_provenance=executor_provenance)
+    run_phase3_cfg_consumer(diffs, executor_provenance=executor_provenance)
     # Phase 4 / 5 generators are intentionally NOT auto-invoked from main().
     # They are graded generators (no false-PASS) but should only be triggered
     # by manual regeneration, never by an automated run.
@@ -726,4 +836,4 @@ def main():
     print("    (Phase 4 / Phase 5 generators available as manual functions, both")
     print("    graded: NO false-PASS, no READY_FOR_NATIVE_MATERIAL_COMPOSITION.)")
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

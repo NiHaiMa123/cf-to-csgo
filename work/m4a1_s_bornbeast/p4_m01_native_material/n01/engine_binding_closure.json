@@ -1,33 +1,40 @@
 {
-  "schema": "cf2.p4m01.n01.engine-binding-closure.v2",
+  "schema": "cf2.p4m01.n01.engine-binding-closure.v3",
   "task_id": "P4-M01-N01",
   "phase": 5,
   "closure_path": "Path B - Incomplete",
   "status": "OPEN_UNRESOLVED",
+  "substantive_blocker": "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS",
   "authoritative_evidence": {
     "1_model_mesh_slots": {
       "status": "STRUCTURALLY_VERIFIED",
       "evidence": "LTB mesh index buffer is followed by u8-prefixed ASCII slot strings ('0'..'8') verified across BornBeast, Transformers, Jewelry, and UltimateGold. However, no open-source C# repo code consumes these IDs to map texture files."
     },
     "2_texture_family_mirroring": {
-      "status": "OBSERVED / STRUCTURAL_CORRESPONDENCE",
-      "evidence": "CrossFire LithTech runtime appears to resolve the 5-map material family via deterministic directory mirroring. The C# exporter uses this heuristic to assign the same material to all sub-meshes."
+      "status": "TOOL_BEHAVIOR / STRUCTURAL_CORRESPONDENCE",
+      "evidence": "The REPO EXPORTER (LithTechObjExporter.ExpandSourceResourceTexturePathCandidates + EnumerateTextureCandidates) performs deterministic Models/PLAYERVIEW/PV-*.LTB -> ModelTextures/PLAYERVIEW/PV-*.DTX (+ AlphaMap/ + NormalMap/ + SpecularMap/ + Shader/WeaponShader/) mirroring and applies one texture family to all sub-meshes because the LTB parser drops the post-mesh short IDs. This is repo/tool behavior, NOT a recovered property of the original CF runtime.",
+      "original_cf_runtime_mirroring": "OPEN_UNRESOLVED",
+      "original_cf_runtime_blocker": "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS"
     },
     "3_multi_channel_shader_pipeline": {
       "status": "ENGINE_FORMAT_POSITIVE_CONTROL_VERIFIED",
-      "evidence": "ArmModel text shader configs prove the engine's 5-texture shader architecture indexed by PieceIndex."
+      "evidence": "ArmModel text shader configs prove the engine's 5-texture shader architecture indexed by PieceIndex. This is an engine-format positive control for ArmModel only; the WEAPON format uses binary WeaponShader CFG and is not directly equivalent."
     },
     "4_weapon_shader_cfg_profile": {
       "status": "STRUCTURALLY_VERIFIED",
       "evidence": "All 237 WeaponShader CFGs match single-phase mod-3 binary strips. Specific CFG consumers (LUT vs Parameters) remain OPEN_UNRESOLVED."
     }
   },
-  "next_step": "Awaiting Chat/Sol review for N01 Phase 1-3 findings.",
+  "forbidden_claim": {
+    "claim_text_pattern": "the assertion that the original CF runtime binding is verified solely by the repo exporter's deterministic directory mirroring",
+    "why_forbidden": "The local corpus does not contain any CF client .exe/.dll/.rez/.bin/.pak or engine module. The mirroring evidence above describes the REPO'S OWN EXPORTER, not the original CF runtime. Treating this as verified would be a false-PASS."
+  },
+  "next_step": "blocked pending a new original CF runtime/client artifact or equivalent documented consumer contract",
   "executor_provenance": {
     "executor_model": "MiniMax-M3",
     "executor_harness": "Claude Code",
     "executor_family": "MiniMax",
-    "model_id_source": "harness runtime value (system prompt)",
+    "model_id_source": "CLI flag at run time",
     "commit_footer_model_provenance": "NON_AUTHORITATIVE"
   }
 }

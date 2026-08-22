@@ -154,32 +154,32 @@
     "schema_note": "Per-target hit counts split by extension / resource family / consumer (cf2.p4m01.n01.consumer-candidate.v2).",
     "by_extension": {
       "BornBeast": {
-        ".txt": 0,
+        ".cfg": 0,
         ".dat": 0,
-        ".lta": 0,
+        ".txt": 0,
         ".ini": 0,
-        ".cfg": 0
+        ".lta": 0
       },
       "Transformers": {
-        ".txt": 0,
+        ".cfg": 0,
         ".dat": 0,
-        ".lta": 0,
+        ".txt": 0,
         ".ini": 0,
-        ".cfg": 0
+        ".lta": 0
       },
       "Jewelry": {
-        ".txt": 0,
+        ".cfg": 0,
         ".dat": 0,
-        ".lta": 0,
+        ".txt": 0,
         ".ini": 0,
-        ".cfg": 0
+        ".lta": 0
       },
       "M4A1_S_BlueDiamond": {
-        ".txt": 0,
+        ".cfg": 0,
         ".dat": 0,
-        ".lta": 0,
+        ".txt": 0,
         ".ini": 0,
-        ".cfg": 0
+        ".lta": 0
       }
     },
     "by_resource_family": {
@@ -235,32 +235,32 @@
   },
   "raw_grep_examples": {
     "BornBeast": {
-      ".txt": [],
+      ".cfg": [],
       ".dat": [],
-      ".lta": [],
+      ".txt": [],
       ".ini": [],
-      ".cfg": []
+      ".lta": []
     },
     "Transformers": {
-      ".txt": [],
+      ".cfg": [],
       ".dat": [],
-      ".lta": [],
+      ".txt": [],
       ".ini": [],
-      ".cfg": []
+      ".lta": []
     },
     "Jewelry": {
-      ".txt": [],
+      ".cfg": [],
       ".dat": [],
-      ".lta": [],
+      ".txt": [],
       ".ini": [],
-      ".cfg": []
+      ".lta": []
     },
     "M4A1_S_BlueDiamond": {
-      ".txt": [],
+      ".cfg": [],
       ".dat": [],
-      ".lta": [],
+      ".txt": [],
       ".ini": [],
-      ".cfg": []
+      ".lta": []
     }
   },
   "DERIVED_OUTPUT_HIT_examples": {
@@ -290,7 +290,7 @@
     "executor_model": "MiniMax-M3",
     "executor_harness": "Claude Code",
     "executor_family": "MiniMax",
-    "model_id_source": "harness runtime value (system prompt)",
+    "model_id_source": "CLI flag / N01_EXECUTOR_MODEL env var",
     "commit_footer_model_provenance": "NON_AUTHORITATIVE"
   }
 }

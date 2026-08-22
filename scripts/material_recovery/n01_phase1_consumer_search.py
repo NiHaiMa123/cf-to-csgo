@@ -28,9 +28,11 @@ Outputs (N01 Phase 1, mandatory):
 """
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
+import sys
 from collections import Counter, defaultdict
 from typing import Optional
 
@@ -38,6 +40,97 @@ REPO = r"D:\project\cf_to_csgo"
 N01_DIR = os.path.join(REPO, "work/m4a1_s_bornbeast/p4_m01_native_material/n01")
 DATA = os.path.join(REPO, "data")
 os.makedirs(N01_DIR, exist_ok=True)
+
+
+# ---------------------------------------------------------------------------
+# F1: executor provenance parameterization
+# ---------------------------------------------------------------------------
+# Per Chat/Sol F1 cleanup: a generic N01 generator MUST NOT bake in any
+# specific model identity. Every provenance field falls back to
+# "unspecified" when no CLI arg / env var is supplied, so historical runs
+# can never be mis-attributed to a default executor.
+#
+# Priority order:
+#   1. --executor-* CLI flag (highest)
+#   2. N01_EXECUTOR_* environment variable
+#   3. literal "unspecified"
+#
+# The literal commit_footer_model_provenance = "NON_AUTHORITATIVE"
+# reminder is ALWAYS written, regardless of how the model field was
+# resolved. Historical commit footers are never rewritten.
+EXECUTOR_UNSPECIFIED = "unspecified"
+EXECUTOR_ENV_VARS = {
+    "executor_model": "N01_EXECUTOR_MODEL",
+    "executor_harness": "N01_EXECUTOR_HARNESS",
+    "executor_family": "N01_EXECUTOR_FAMILY",
+}
+
+
+def _resolve_executor_field(field_name: str, cli_value):
+    """Resolve a single executor provenance field.
+
+    Returns the CLI value if non-empty; otherwise the env var if
+    non-empty; otherwise the literal string "unspecified".
+    """
+    if cli_value is not None and str(cli_value).strip():
+        return str(cli_value).strip()
+    env_name = EXECUTOR_ENV_VARS[field_name]
+    env_value = os.environ.get(env_name, "").strip()
+    if env_value:
+        return env_value
+    return EXECUTOR_UNSPECIFIED
+
+
+def resolve_executor_provenance(args=None):
+    """Return the executor_provenance dict to embed in this run's outputs.
+
+    `args` may be a argparse.Namespace produced by parse_executor_args().
+    """
+    model = _resolve_executor_field("executor_model",
+                                   getattr(args, "executor_model", None)
+                                   if args is not None else None)
+    harness = _resolve_executor_field("executor_harness",
+                                      getattr(args, "executor_harness", None)
+                                      if args is not None else None)
+    family = _resolve_executor_field("executor_family",
+                                     getattr(args, "executor_family", None)
+                                     if args is not None else None)
+    if model == EXECUTOR_UNSPECIFIED:
+        source = "no CLI flag and no N01_EXECUTOR_MODEL env var; using 'unspecified'"
+    else:
+        source = "CLI flag / N01_EXECUTOR_MODEL env var"
+    return {
+        "executor_model": model,
+        "executor_harness": harness,
+        "executor_family": family,
+        "model_id_source": source,
+        "commit_footer_model_provenance": "NON_AUTHORITATIVE",
+    }
+
+
+def parse_executor_args(argv=None):
+    """Parse only the executor-related CLI flags; ignore the rest."""
+    parser = argparse.ArgumentParser(
+        description=(
+            "N01 Phase 1 consumer search. Pass --executor-* to override "
+            "the default 'unspecified' provenance. Without flags, the "
+            "generator writes 'unspecified' for every field."
+        ),
+        add_help=True,
+    )
+    parser.add_argument(
+        "--executor-model", default=None,
+        help="Executor model id (overrides N01_EXECUTOR_MODEL).",
+    )
+    parser.add_argument(
+        "--executor-harness", default=None,
+        help="Executor harness (overrides N01_EXECUTOR_HARNESS).",
+    )
+    parser.add_argument(
+        "--executor-family", default=None,
+        help="Executor family (overrides N01_EXECUTOR_FAMILY).",
+    )
+    return parser.parse_args(argv)
 
 # Sourced from the repo's LithTechResourceHeuristics.try/low-value gates
 TEXTURE_EXT = {".dtx", ".dds", ".tga", ".png", ".jpg", ".jpeg", ".bmp", ".bin"}
@@ -537,7 +630,18 @@ def build_corpus(data_root: str, extensions: set, exclude_derived: bool = True):
             yield rel, ext, p, raw
 
 
-def main():
+def main(argv=None):
+    # ----- F1 cleanup: parse CLI flags and resolve executor provenance -----
+    args = parse_executor_args(argv)
+    executor_provenance = resolve_executor_provenance(args)
+    print("executor provenance:")
+    for k, v in executor_provenance.items():
+        print(f"  {k}: {v}")
+
+    # ----- F3 cleanup: regression guard for scope-counter subset invariant -----
+    # Will be re-checked after build_consumer_index() so we can use the
+    # actual numbers; declared here so the failure surface is explicit.
+
     # ----- self-tests for fixed extensions / heuristic helpers -----
     assert ".dtx" in TEXTURE_EXT
     assert ".tga" in TEXTURE_EXT
@@ -571,6 +675,13 @@ def main():
     all_files_seen = idx_bundle["all_files_seen_post_low_value_filter"]
     config_candidates_seen = idx_bundle["config_candidates_seen"]
     config_candidates_decoded = idx_bundle["config_candidates_decoded"]
+    # Per F3 cleanup: config_candidates_decoded MUST be a subset of
+    # config_candidates_seen by definition; if this fails the counter
+    # bookkeeping has a bug. This does NOT change the 261/18 evidence.
+    assert config_candidates_decoded <= config_candidates_seen, (
+        f"regression: config_candidates_decoded ({config_candidates_decoded}) "
+        f"exceeds config_candidates_seen ({config_candidates_seen})"
+    )
     print(f"  config items indexed: {sum(len(v) for v in cfg_idx.values())}")
     print(f"  raw model-name needles: {len(raw_needles)}")
     print(f"  material-table candidates: {len(material_candidates)}")
@@ -817,16 +928,11 @@ def main():
         "DERIVED_OUTPUT_HIT_examples": {
             label: raw_grep_derived_outputs[label][:5] for label in targets
         },
-        # Per M3 cleanup: embed executor provenance so every regeneration
-        # of this JSON carries it. The Co-Authored-By trailer alone is
-        # NEVER authoritative.
-        "executor_provenance": {
-            "executor_model": "MiniMax-M3",
-            "executor_harness": "Claude Code",
-            "executor_family": "MiniMax",
-            "model_id_source": "harness runtime value (system prompt)",
-            "commit_footer_model_provenance": "NON_AUTHORITATIVE",
-        },
+        # Per F1 cleanup: provenance is resolved at runtime from
+        # --executor-* CLI flags / N01_EXECUTOR_* env vars, with a
+        # default of "unspecified". The Co-Authored-By trailer is NEVER
+        # authoritative.
+        "executor_provenance": executor_provenance,
     }
 
     out_json = os.path.join(N01_DIR, "consumer_candidate_matrix.json")
@@ -843,17 +949,18 @@ def main():
         "## Executor provenance",
         "",
         "```text",
-        "executor_model                = MiniMax-M3",
-        "executor_harness             = Claude Code",
-        "executor_family              = MiniMax",
-        "model_id_source              = harness runtime value (system prompt)",
-        "commit_footer_model_provenance = NON_AUTHORITATIVE",
+        f"executor_model                = {executor_provenance['executor_model']}",
+        f"executor_harness             = {executor_provenance['executor_harness']}",
+        f"executor_family              = {executor_provenance['executor_family']}",
+        f"model_id_source              = {executor_provenance['model_id_source']}",
+        f"commit_footer_model_provenance = {executor_provenance['commit_footer_model_provenance']}",
         "```",
         "",
-        "The `executor_model` value is the harness runtime value, **not**",
-        "the `Co-Authored-By:` trailer of any commit. Future runs that show a",
-        "different runtime model MUST update this section. The trailer alone",
-        "is never authoritative for actual executor identity.",
+        "If a field shows `unspecified`, the generator received neither a",
+        "`--executor-*` CLI flag nor a `N01_EXECUTOR_*` environment variable",
+        "for that field. The generator MUST NOT default to any specific model",
+        "identity. The `Co-Authored-By:` trailer of any commit is NEVER",
+        "authoritative for actual executor identity.",
         "",
         "## Scope",
         "",
@@ -1044,4 +1151,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

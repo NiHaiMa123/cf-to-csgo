@@ -8,14 +8,15 @@ Schema: `cf2.p4m01.n01.consumer-candidate.v3`
 executor_model                = MiniMax-M3
 executor_harness             = Claude Code
 executor_family              = MiniMax
-model_id_source              = harness runtime value (system prompt)
+model_id_source              = CLI flag / N01_EXECUTOR_MODEL env var
 commit_footer_model_provenance = NON_AUTHORITATIVE
 ```
 
-The `executor_model` value is the harness runtime value, **not**
-the `Co-Authored-By:` trailer of any commit. Future runs that show a
-different runtime model MUST update this section. The trailer alone
-is never authoritative for actual executor identity.
+If a field shows `unspecified`, the generator received neither a
+`--executor-*` CLI flag nor a `N01_EXECUTOR_*` environment variable
+for that field. The generator MUST NOT default to any specific model
+identity. The `Co-Authored-By:` trailer of any commit is NEVER
+authoritative for actual executor identity.
 
 ## Scope
 

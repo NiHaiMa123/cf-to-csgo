@@ -129,9 +129,9 @@
     "executor_model": "MiniMax-M3",
     "executor_harness": "Claude Code",
     "executor_family": "MiniMax",
-    "model_id_source": "harness runtime value (system prompt)",
+    "model_id_source": "CLI flag at run time",
     "commit_footer_model_provenance": "NON_AUTHORITATIVE",
-    "note": "executor_model is the harness runtime value, NOT the commit footer Co-Authored-By trailer. Future runs that show a different runtime model MUST update this field; the footer alone is never authoritative."
+    "note": "executor_model is the value passed to --executor-model / N01_EXECUTOR_MODEL at the time of this run, NOT the commit footer Co-Authored-By trailer. The footer alone is never authoritative."
   },
   "data_discipline": {
     "raw_data_uploaded": false,

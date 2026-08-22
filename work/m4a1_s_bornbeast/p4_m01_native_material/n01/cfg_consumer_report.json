@@ -167,7 +167,7 @@
     "executor_model": "MiniMax-M3",
     "executor_harness": "Claude Code",
     "executor_family": "MiniMax",
-    "model_id_source": "harness runtime value (system prompt)",
+    "model_id_source": "CLI flag / N01_EXECUTOR_MODEL env var",
     "commit_footer_model_provenance": "NON_AUTHORITATIVE"
   }
 }
