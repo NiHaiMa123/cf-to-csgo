@@ -1,0 +1,627 @@
+{
+  "runtime_source": "rez/Butes/bf005.ltc",
+  "decoder_pipeline": "CrossFireLtcDecoder.TryUnlockCrossFirePayload -> LithTechLtcNativeDecoder.TryDecode",
+  "m4_family_records_count": 10,
+  "m4a1_family_present": true,
+  "bornbeast_substring_in_any_binding_value": false,
+  "direct_config_references_to_bornbeast_named_asset": false,
+  "records": [
+    {
+      "WeaponName": "M4A1",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "v_rif_m4a1.vvd",
+            "v_rif_m4a1.sw.vtx",
+            "v_rif_m4a1.dx90.vtx",
+            "m4a1_s_bornbeast.cfg",
+            "rif_m4a1.vtf",
+            "v_rif_m4a1.mdl",
+            "v_rif_m4a1.dx80.vtx",
+            "m4a1_s_bornbeast_alpha.tga",
+            "rif_m4a1_selfillum.vtf",
+            "rif_m4a1.vmt",
+            "pv-m4a1_s_bornbeast.dtx",
+            "v_rif_m4a1.ani",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "v_m4a1_model.smd",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "m4a1_s_bornbeast_s.tga",
+            "m4a1_s_bornbeast_cs16.rar",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "m4a1_s_bornbeast_n.tga",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'm4a1.ltb' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "Models\\weapons\\m4a1.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'l-m4a1.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\l-m4a1.dtx"
+        },
+        "PViewModelFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "pv-m4a1_s_bornbeast.dtx",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'pv-m4a1' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "Models\\PlayerView\\pv-m4a1"
+        },
+        "PViewSkinFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "pv-m4a1_s_bornbeast.dtx",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'pv-m4a1.dtx' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "ModelTextures\\PlayerView\\pv-m4a1.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": true
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "v_rif_m4a1.vvd",
+            "v_rif_m4a1.sw.vtx",
+            "v_rif_m4a1.dx90.vtx",
+            "m4a1_s_bornbeast.cfg",
+            "rif_m4a1.vtf",
+            "v_rif_m4a1.mdl",
+            "v_rif_m4a1.dx80.vtx",
+            "m4a1_s_bornbeast_alpha.tga",
+            "rif_m4a1_selfillum.vtf",
+            "rif_m4a1.vmt",
+            "pv-m4a1_s_bornbeast.dtx",
+            "v_rif_m4a1.ani",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "v_m4a1_model.smd",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "m4a1_s_bornbeast_s.tga",
+            "m4a1_s_bornbeast_cs16.rar",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "m4a1_s_bornbeast_n.tga",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'm4a1.ltb' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "Models\\weapons\\m4a1.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'l-m4a1.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\l-m4a1.dtx"
+        },
+        "PViewModelFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "pv-m4a1_s_bornbeast.dtx",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'pv-m4a1' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "Models\\PlayerView\\pv-m4a1"
+        },
+        "PViewSkinFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "pv-m4a1_s_bornbeast.dtx",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'pv-m4a1.dtx' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "ModelTextures\\PlayerView\\pv-m4a1.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": true
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1_silencer.ltb' not in known P4/N01 evidence",
+          "value": "Models\\weapons\\M4A1_Silencer.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'l-m4a1_silencer.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\L-M4A1_Silencer.DTX"
+        },
+        "PViewModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1_silencer' not in known P4/N01 evidence",
+          "value": "Models\\PlayerView\\pv-m4a1_silencer"
+        },
+        "PViewSkinFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "pv-m4a1_s_bornbeast.dtx",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'pv-m4a1.dtx' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "ModelTextures\\PlayerView\\pv-m4a1.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": true
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1_silencer.ltb' not in known P4/N01 evidence",
+          "value": "Models\\weapons\\M4A1_Silencer.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'l-m4a1_silencer_camo.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\L-M4A1_Silencer_camo.DTX"
+        },
+        "PViewModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1_silencer' not in known P4/N01 evidence",
+          "value": "Models\\PlayerView\\pv-m4a1_silencer"
+        },
+        "PViewSkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1-camo.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\PlayerView\\pv-m4a1-camo.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": false
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1_silencer.ltb' not in known P4/N01 evidence",
+          "value": "Models\\weapons\\M4A1_Silencer.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1_qq.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\m4a1_qq.DTX"
+        },
+        "PViewModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1_silencer' not in known P4/N01 evidence",
+          "value": "Models\\PlayerView\\pv-m4a1_silencer"
+        },
+        "PViewSkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1_qq.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\PlayerView\\PV-m4a1_qq.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": false
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1-custom.ltb' not in known P4/N01 evidence",
+          "value": "Models\\weapons\\M4A1-CUSTOM.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'l-m4a1.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\l-m4a1.dtx"
+        },
+        "PViewModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1-custom' not in known P4/N01 evidence",
+          "value": "Models\\PlayerView\\PV-M4A1-CUSTOM"
+        },
+        "PViewSkinFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "pv-m4a1_s_bornbeast.dtx",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'pv-m4a1.dtx' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "ModelTextures\\PlayerView\\pv-m4a1.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": true
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "v_rif_m4a1.vvd",
+            "v_rif_m4a1.sw.vtx",
+            "v_rif_m4a1.dx90.vtx",
+            "m4a1_s_bornbeast.cfg",
+            "rif_m4a1.vtf",
+            "v_rif_m4a1.mdl",
+            "v_rif_m4a1.dx80.vtx",
+            "m4a1_s_bornbeast_alpha.tga",
+            "rif_m4a1_selfillum.vtf",
+            "rif_m4a1.vmt",
+            "pv-m4a1_s_bornbeast.dtx",
+            "v_rif_m4a1.ani",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "v_m4a1_model.smd",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "m4a1_s_bornbeast_s.tga",
+            "m4a1_s_bornbeast_cs16.rar",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "m4a1_s_bornbeast_n.tga",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'm4a1.ltb' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "Models\\weapons\\m4a1.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'qv-ri_m4a1_gold.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\QV-RI_m4a1_gold.dtx"
+        },
+        "PViewModelFileName": {
+          "match_type": "PARTIAL_BASENAME",
+          "evidence_grade": "WEAK",
+          "matched_basenames": [
+            "pv-m4a1_s_bornbeast.dtx",
+            "02_pv-m4a1_s_bornbeast.bmp.png",
+            "pv-m4a1_s_bornbeast_classic.ltb",
+            "pv-m4a1_s_bornbeast_classic_export_report.json",
+            "pv-m4a1_s_bornbeast_classic_weapon_only.json",
+            "pv-m4a1_s_bornbeast_classic.obj",
+            "pv-m4a1_s_bornbeast_classic_c3_aligned.obj"
+          ],
+          "match_explanation": "basename 'pv-m4a1' shares prefix with known P4/N01 evidence; not a direct config reference",
+          "value": "Models\\PlayerView\\pv-m4a1"
+        },
+        "PViewSkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-ri_m4a1_gold.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\PlayerView\\PV-RI_m4a1_gold.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": true
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1_silencer.ltb' not in known P4/N01 evidence",
+          "value": "Models\\weapons\\M4A1_Silencer.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'qv-ri_m4a1_silencer_bronze.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_bronze.dtx"
+        },
+        "PViewModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1_silencer' not in known P4/N01 evidence",
+          "value": "Models\\PlayerView\\pv-m4a1_silencer"
+        },
+        "PViewSkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-ri_m4a1_silencer_bronze.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_bronze.dtx"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": false
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1_silencer.ltb' not in known P4/N01 evidence",
+          "value": "Models\\weapons\\M4A1_Silencer.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'qv-ri_m4a1_silencer_silver.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_silver.dtx"
+        },
+        "PViewModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1_silencer' not in known P4/N01 evidence",
+          "value": "Models\\PlayerView\\pv-m4a1_silencer"
+        },
+        "PViewSkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-ri_m4a1_silencer_silver.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_silver.DTX"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": false
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "binding_fields": {
+        "ModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'm4a1_silencer.ltb' not in known P4/N01 evidence",
+          "value": "Models\\weapons\\M4A1_Silencer.ltb"
+        },
+        "SkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'qv-ri_m4a1_silencer_crystal.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_crystal.DTX"
+        },
+        "PViewModelFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-m4a1_silencer' not in known P4/N01 evidence",
+          "value": "Models\\PlayerView\\pv-m4a1_silencer"
+        },
+        "PViewSkinFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pv-ri_m4a1_silencer_crystal.dtx' not in known P4/N01 evidence",
+          "value": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_crystal.DTX"
+        },
+        "RenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'ninjatranslucent.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\NinjaTranslucent.ltb"
+        },
+        "PViewRenderStyleFileName": {
+          "match_type": "NO_MATCH",
+          "evidence_grade": "NONE",
+          "matched_basenames": [],
+          "match_explanation": "basename 'pvmodeldefault.ltb' not in known P4/N01 evidence",
+          "value": "RS\\\\PVModelDefault.ltb"
+        }
+      },
+      "direct_config_reference": false,
+      "any_partial_match": false
+    }
+  ],
+  "generated_at": "2026-08-22T14:46:36.845335+00:00",
+  "script": "scripts\\material_recovery\\n02c_m4a1_weapon_correlation.py"
+}

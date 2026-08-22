@@ -1,0 +1,259 @@
+{
+  "known_basenames_count": 51,
+  "direct_config_references": [],
+  "p4_bornbeast_ltb_in_existing_evidence": {
+    "source_label": "p4_baseline_inventory",
+    "field_path": ".repository_p4_inputs.files.cf_ltb_source.path",
+    "value": "D:\\project\\cf_to_csgo\\data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+    "ext": ".ltb"
+  },
+  "p4_bornbeast_assets_in_existing_evidence": [
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.cf_ltb_source.path",
+      "value": "D:\\project\\cf_to_csgo\\data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+      "ext": ".ltb"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.cf_ltb_source.rel_path",
+      "value": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+      "ext": ".ltb"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.b3_raw_obj.path",
+      "value": "D:\\project\\cf_to_csgo\\work/m4a1_s_bornbeast/source_dump/b3_raw/PV-M4A1_S_BornBeast_Classic.obj",
+      "ext": ".obj"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.b3_raw_obj.rel_path",
+      "value": "work/m4a1_s_bornbeast/source_dump/b3_raw/PV-M4A1_S_BornBeast_Classic.obj",
+      "ext": ".obj"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.aligned_obj.path",
+      "value": "D:\\project\\cf_to_csgo\\work/m4a1_s_bornbeast/source_dump/c3_alignment_m4a4/PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "ext": ".obj"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.aligned_obj.rel_path",
+      "value": "work/m4a1_s_bornbeast/source_dump/c3_alignment_m4a4/PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "ext": ".obj"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.external_diffuse.path",
+      "value": "D:\\project\\cf_to_csgo\\work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png",
+      "ext": ".png"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".repository_p4_inputs.files.external_diffuse.rel_path",
+      "value": "work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png",
+      "ext": ".png"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".d3_f4_baseline.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+      "ext": ".vmt"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".d3_f4_baseline.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".d3_f4_baseline.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".d3_f4_baseline.files.models/weapons/v_rif_m4a1.mdl.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\models\\weapons\\v_rif_m4a1.mdl",
+      "ext": ".mdl"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".p4_staging.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt.path",
+      "value": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+      "ext": ".vmt"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".p4_staging.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf.path",
+      "value": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".p4_staging.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf.path",
+      "value": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".p4_staging.files.models/weapons/v_rif_m4a1.mdl.path",
+      "value": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_prototype_01\\staging\\models\\weapons\\v_rif_m4a1.mdl",
+      "ext": ".mdl"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_f4_recognizable_tmp.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+      "ext": ".vmt"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_f4_recognizable_tmp.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_f4_recognizable_tmp.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_f4_recognizable_tmp.files.models/weapons/v_rif_m4a1.mdl.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_f4_recognizable_tmp\\models\\weapons\\v_rif_m4a1.mdl",
+      "ext": ".mdl"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_p4_pipeline_tmp.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_p4_pipeline_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+      "ext": ".vmt"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_p4_pipeline_tmp.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_p4_pipeline_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_p4_pipeline_tmp.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_p4_pipeline_tmp\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".mods_temp_inventory.mods.p_cf_bornbeast_m4a4_p4_pipeline_tmp.files.models/weapons/v_rif_m4a1.mdl.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\mods_temp\\p_cf_bornbeast_m4a4_p4_pipeline_tmp\\models\\weapons\\v_rif_m4a1.mdl",
+      "ext": ".mdl"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".active_migi_addon.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a4_bornbeast_final\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vmt",
+      "ext": ".vmt"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".active_migi_addon.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a4_bornbeast_final\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".active_migi_addon.files.materials/models/weapons/v_models/rif_m4a1/rif_m4a1_selfillum.vtf.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a4_bornbeast_final\\materials\\models\\weapons\\v_models\\rif_m4a1\\rif_m4a1_selfillum.vtf",
+      "ext": ".vtf"
+    },
+    {
+      "source_label": "p4_baseline_inventory",
+      "field_path": ".active_migi_addon.files.models/weapons/v_rif_m4a1.mdl.path",
+      "value": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_m4a4_bornbeast_final\\models\\weapons\\v_rif_m4a1.mdl",
+      "ext": ".mdl"
+    },
+    {
+      "source_label": "prototype_01_manifest",
+      "field_path": ".inputs.cf_ltb_source.path",
+      "value": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+      "ext": ".ltb"
+    },
+    {
+      "source_label": "prototype_01_manifest",
+      "field_path": ".inputs.aligned_obj.path",
+      "value": "work/m4a1_s_bornbeast/source_dump/c3_alignment_m4a4/PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "ext": ".obj"
+    },
+    {
+      "source_label": "prototype_01_manifest",
+      "field_path": ".inputs.external_diffuse.path",
+      "value": "work/m4a1_s_bornbeast/materials/external/cs16_textures/02_PV-M4A1_S_BORNBEAST.bmp.png",
+      "ext": ".png"
+    },
+    {
+      "source_label": "m4a4_final_bornbeast_manifest",
+      "field_path": ".inputs.cf_ltb_source.path",
+      "value": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB",
+      "ext": ".ltb"
+    },
+    {
+      "source_label": "m4a4_final_bornbeast_manifest",
+      "field_path": ".inputs.b3_raw_obj.path",
+      "value": "work/m4a1_s_bornbeast/source_dump/b3_raw/PV-M4A1_S_BornBeast_Classic.obj",
+      "ext": ".obj"
+    },
+    {
+      "source_label": "m4a4_final_bornbeast_manifest",
+      "field_path": ".inputs.aligned_obj.path",
+      "value": "work/m4a1_s_bornbeast/source_dump/c3_alignment_m4a4/PV-M4A1_S_BornBeast_Classic_c3_aligned.obj",
+      "ext": ".obj"
+    },
+    {
+      "source_label": "m4a4_final_bornbeast_manifest",
+      "field_path": ".inputs.local_cf_dtx.path",
+      "value": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "ext": ".dtx"
+    },
+    {
+      "source_label": "m4a4_final_bornbeast_manifest",
+      "field_path": ".inputs.local_cf_alpha.path",
+      "value": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "ext": ".tga"
+    },
+    {
+      "source_label": "m4a4_final_bornbeast_manifest",
+      "field_path": ".inputs.local_cf_specular.path",
+      "value": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "ext": ".tga"
+    },
+    {
+      "source_label": "m4a4_final_bornbeast_manifest",
+      "field_path": ".inputs.local_cf_normal.path",
+      "value": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "ext": ".tga"
+    },
+    {
+      "source_label": "material_map",
+      "field_path": ".source_materials.rif_m4a1.vmt",
+      "value": "build/m4a1_s_bornbeast_m4a4/f4_recognizable_classic/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+      "ext": ".vmt"
+    },
+    {
+      "source_label": "material_map",
+      "field_path": ".source_materials.rif_m4a1.vtf",
+      "value": "build/m4a1_s_bornbeast_m4a4/f4_recognizable_classic/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "ext": ".vtf"
+    }
+  ],
+  "notes": [
+    "bf005.ltc binds M4A1 family records to 'Models\\weapons\\m4a1.ltb' / 'Models\\weapons\\M4A1_Silencer.ltb' and 'Models\\PlayerView\\pv-m4a1' / 'pv-m4a1_silencer'.",
+    "P4 evidence already lists the BornBeast source LTB at 'data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic.LTB' — this is a **DERIVED** asset, not a baseline runtime record.",
+    "Substring search for 'BornBeast' across all 73 decoded rez/Butes/*.ltc returns 0 hits — BornBeast is not present in the runtime Bute text layer."
+  ],
+  "generated_at": "2026-08-22T14:46:36.846130+00:00",
+  "script": "scripts\\material_recovery\\n02c_m4a1_weapon_correlation.py"
+}
