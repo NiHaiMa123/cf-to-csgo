@@ -1,0 +1,1883 @@
+{
+  "task": "P4-M01-N02-D-R1",
+  "runtime_source": "rez/Butes/bf005.ltc (decoded via N02-B-R1 pipeline)",
+  "rez_index_scope": {
+    "rez_dirs": "rez/ rez2/ rez3/ rez4/ rez5/ rez6/",
+    "rez_count_indexed": 475,
+    "total_entries": 252505,
+    "unique_full_paths": 243508,
+    "unique_basenames": 225863,
+    "elapsed_seconds": 16.56
+  },
+  "normalisation_rule": {
+    "slash_unify": "backslash -> forward slash",
+    "case_normalise": "uppercase for REZ-side comparison",
+    "virtual_root_strip": [
+      "Models/  (LithTech Models virtual root)",
+      "ModelTextures/  (LithTech ModelTextures virtual root)"
+    ],
+    "virtual_root_keep": [
+      "RS/  (literal REZ subdir in rf002.rez)"
+    ],
+    "extensionless_model_rule": "ModelFileName / PViewModelFileName: only .LTB allowed as suffix when value has no extension; no other fallback."
+  },
+  "rez_summary_per_archive": {
+    "LOBBYNOTICE.REZ": {
+      "file_count": 60,
+      "size": 27410639
+    },
+    "RB001.REZ": {
+      "file_count": 1333,
+      "size": 44849160
+    },
+    "rf001.rez": {
+      "file_count": 1,
+      "size": 13410342
+    },
+    "rf002.rez": {
+      "file_count": 80,
+      "size": 26778
+    },
+    "rf003.rez": {
+      "file_count": 1,
+      "size": 17943368
+    },
+    "RF004.REZ": {
+      "file_count": 93,
+      "size": 3540204
+    },
+    "RF005.REZ": {
+      "file_count": 26036,
+      "size": 315599275
+    },
+    "rf005_1.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf005_2.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf006.rez": {
+      "file_count": 1,
+      "size": 7652954
+    },
+    "rf007.rez": {
+      "file_count": 595,
+      "size": 41950261
+    },
+    "rf008.rez": {
+      "file_count": 768,
+      "size": 39611178
+    },
+    "rf009.rez": {
+      "file_count": 1106,
+      "size": 78767677
+    },
+    "rf010.rez": {
+      "file_count": 748,
+      "size": 57148007
+    },
+    "rf011.rez": {
+      "file_count": 326,
+      "size": 20778015
+    },
+    "rf012.rez": {
+      "file_count": 679,
+      "size": 46969111
+    },
+    "rf013.rez": {
+      "file_count": 754,
+      "size": 49325429
+    },
+    "rf014.rez": {
+      "file_count": 1,
+      "size": 13052343
+    },
+    "rf015.rez": {
+      "file_count": 1,
+      "size": 7439862
+    },
+    "RF016.REZ": {
+      "file_count": 10922,
+      "size": 1483581207
+    },
+    "rf017.rez": {
+      "file_count": 4417,
+      "size": 196985580
+    },
+    "rf017_1.rez": {
+      "file_count": 0,
+      "size": 209166780
+    },
+    "RF017_10.REZ": {
+      "file_count": 0,
+      "size": 207636844
+    },
+    "RF017_11.REZ": {
+      "file_count": 0,
+      "size": 209650022
+    },
+    "RF017_12.REZ": {
+      "file_count": 0,
+      "size": 208676788
+    },
+    "RF017_13.REZ": {
+      "file_count": 0,
+      "size": 125383036
+    },
+    "rf017_2.rez": {
+      "file_count": 0,
+      "size": 206689673
+    },
+    "rf017_3.rez": {
+      "file_count": 0,
+      "size": 209320138
+    },
+    "rf017_4.rez": {
+      "file_count": 0,
+      "size": 207690064
+    },
+    "rf017_5.rez": {
+      "file_count": 0,
+      "size": 208554027
+    },
+    "rf017_6.rez": {
+      "file_count": 0,
+      "size": 209376906
+    },
+    "rf017_7.rez": {
+      "file_count": 0,
+      "size": 209514862
+    },
+    "rf017_8.rez": {
+      "file_count": 0,
+      "size": 209382768
+    },
+    "rf017_9.rez": {
+      "file_count": 0,
+      "size": 209427012
+    },
+    "rf018.rez": {
+      "file_count": 3766,
+      "size": 351850428
+    },
+    "rf019.rez": {
+      "file_count": 7940,
+      "size": 172521365
+    },
+    "rf020.rez": {
+      "file_count": 1205,
+      "size": 119285696
+    },
+    "rf021.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf022.rez": {
+      "file_count": 1,
+      "size": 10365827
+    },
+    "rf023.rez": {
+      "file_count": 1,
+      "size": 2313968
+    },
+    "rf024.rez": {
+      "file_count": 1187,
+      "size": 77605139
+    },
+    "rf025.rez": {
+      "file_count": 1,
+      "size": 11977296
+    },
+    "rf026.rez": {
+      "file_count": 1,
+      "size": 12401368
+    },
+    "rf027.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf028.rez": {
+      "file_count": 1,
+      "size": 17841631
+    },
+    "rf029.rez": {
+      "file_count": 1427,
+      "size": 126247630
+    },
+    "rf030.rez": {
+      "file_count": 1309,
+      "size": 13939280
+    },
+    "rf031.rez": {
+      "file_count": 824,
+      "size": 10769067
+    },
+    "rf032.rez": {
+      "file_count": 469,
+      "size": 15220989
+    },
+    "rf033.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF034.REZ": {
+      "file_count": 1,
+      "size": 6780620
+    },
+    "RF035.REZ": {
+      "file_count": 1,
+      "size": 2981834
+    },
+    "RF036.REZ": {
+      "file_count": 1,
+      "size": 10652044
+    },
+    "rf037.rez": {
+      "file_count": 938,
+      "size": 1322974
+    },
+    "RF038.REZ": {
+      "file_count": 1,
+      "size": 3738438
+    },
+    "rf039.rez": {
+      "file_count": 1,
+      "size": 2626908
+    },
+    "rf040.rez": {
+      "file_count": 465,
+      "size": 27382932
+    },
+    "rf041.rez": {
+      "file_count": 707,
+      "size": 46605366
+    },
+    "rf042.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf043.rez": {
+      "file_count": 1,
+      "size": 9700662
+    },
+    "rf044.rez": {
+      "file_count": 1167,
+      "size": 96631496
+    },
+    "rf045.rez": {
+      "file_count": 1,
+      "size": 11791452
+    },
+    "rf046.rez": {
+      "file_count": 868,
+      "size": 78962183
+    },
+    "rf047.rez": {
+      "file_count": 1,
+      "size": 2838109
+    },
+    "rf048.rez": {
+      "file_count": 1,
+      "size": 4199692
+    },
+    "RF049.REZ": {
+      "file_count": 1591,
+      "size": 166459072
+    },
+    "rf050.rez": {
+      "file_count": 428,
+      "size": 37294540
+    },
+    "rf051.rez": {
+      "file_count": 1,
+      "size": 14337088
+    },
+    "rf052.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf053.rez": {
+      "file_count": 1,
+      "size": 3051569
+    },
+    "rf054.rez": {
+      "file_count": 1,
+      "size": 11717056
+    },
+    "rf055.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf056.rez": {
+      "file_count": 1,
+      "size": 7349129
+    },
+    "RF057.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf058.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF059.REZ": {
+      "file_count": 1,
+      "size": 16982335
+    },
+    "rf060.rez": {
+      "file_count": 778,
+      "size": 57846978
+    },
+    "rf061.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf062.rez": {
+      "file_count": 1,
+      "size": 10098751
+    },
+    "rf063.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf064.rez": {
+      "file_count": 1758,
+      "size": 110471006
+    },
+    "rf065.rez": {
+      "file_count": 1,
+      "size": 11872689
+    },
+    "rf066.rez": {
+      "file_count": 1347,
+      "size": 90098354
+    },
+    "rf067.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf068.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf069.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf070.rez": {
+      "file_count": 1,
+      "size": 13118902
+    },
+    "rf071.rez": {
+      "file_count": 1,
+      "size": 11953062
+    },
+    "RF072.REZ": {
+      "file_count": 1424,
+      "size": 73335793
+    },
+    "RF073.REZ": {
+      "file_count": 182,
+      "size": 1506758
+    },
+    "RF074.REZ": {
+      "file_count": 1345,
+      "size": 95595088
+    },
+    "RF075.REZ": {
+      "file_count": 1,
+      "size": 3404504
+    },
+    "RF076.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF077.REZ": {
+      "file_count": 2,
+      "size": 14292418
+    },
+    "RF078.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF079.REZ": {
+      "file_count": 1,
+      "size": 10983330
+    },
+    "RF080.REZ": {
+      "file_count": 3840,
+      "size": 277233112
+    },
+    "RF081.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF082.REZ": {
+      "file_count": 1,
+      "size": 14361492
+    },
+    "RF083.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF084.REZ": {
+      "file_count": 1,
+      "size": 17866469
+    },
+    "RF085.REZ": {
+      "file_count": 2,
+      "size": 3294437
+    },
+    "RF086.REZ": {
+      "file_count": 916,
+      "size": 32605415
+    },
+    "RF087.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF088.REZ": {
+      "file_count": 1,
+      "size": 2135415
+    },
+    "RF089.REZ": {
+      "file_count": 1,
+      "size": 2081228
+    },
+    "RF090.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF091.REZ": {
+      "file_count": 3,
+      "size": 3027588
+    },
+    "RF092.REZ": {
+      "file_count": 3,
+      "size": 1257159
+    },
+    "RF093.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF094.REZ": {
+      "file_count": 1,
+      "size": 1686307
+    },
+    "RF095.REZ": {
+      "file_count": 2723,
+      "size": 137014391
+    },
+    "RF096.REZ": {
+      "file_count": 1,
+      "size": 523390
+    },
+    "RF097.REZ": {
+      "file_count": 1,
+      "size": 17050182
+    },
+    "RF098.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF099.REZ": {
+      "file_count": 1,
+      "size": 9926628
+    },
+    "RF100.REZ": {
+      "file_count": 503,
+      "size": 2526774
+    },
+    "rf101.rez": {
+      "file_count": 977,
+      "size": 52300692
+    },
+    "rf102.rez": {
+      "file_count": 1,
+      "size": 8244057
+    },
+    "rf103.rez": {
+      "file_count": 1,
+      "size": 15407463
+    },
+    "rf104.rez": {
+      "file_count": 2,
+      "size": 2112069
+    },
+    "RF105.REZ": {
+      "file_count": 1,
+      "size": 9256446
+    },
+    "rf106.rez": {
+      "file_count": 1,
+      "size": 15719808
+    },
+    "rf107.rez": {
+      "file_count": 1,
+      "size": 7995387
+    },
+    "rf108.rez": {
+      "file_count": 1,
+      "size": 7900120
+    },
+    "rf109.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf110.rez": {
+      "file_count": 1,
+      "size": 5646280
+    },
+    "rf111.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf112.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf113.rez": {
+      "file_count": 1,
+      "size": 5975643
+    },
+    "rf114.rez": {
+      "file_count": 1,
+      "size": 5026660
+    },
+    "rf115.rez": {
+      "file_count": 1,
+      "size": 1755139
+    },
+    "rf116.rez": {
+      "file_count": 1,
+      "size": 9717932
+    },
+    "RF117.REZ": {
+      "file_count": 2,
+      "size": 1356957
+    },
+    "RF118.REZ": {
+      "file_count": 3,
+      "size": 22421148
+    },
+    "RF119.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF120.REZ": {
+      "file_count": 3,
+      "size": 17655055
+    },
+    "RF121.REZ": {
+      "file_count": 3,
+      "size": 27146659
+    },
+    "RF122.REZ": {
+      "file_count": 1,
+      "size": 14187950
+    },
+    "RF123.REZ": {
+      "file_count": 1,
+      "size": 15847559
+    },
+    "RF124.REZ": {
+      "file_count": 1,
+      "size": 1695495
+    },
+    "RF125.REZ": {
+      "file_count": 1,
+      "size": 2520193
+    },
+    "RF126.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF127.REZ": {
+      "file_count": 1,
+      "size": 2145659
+    },
+    "RF128.REZ": {
+      "file_count": 1,
+      "size": 1162614
+    },
+    "RF129.REZ": {
+      "file_count": 2,
+      "size": 1618637
+    },
+    "RF130.REZ": {
+      "file_count": 1,
+      "size": 14897893
+    },
+    "RF131.REZ": {
+      "file_count": 1,
+      "size": 5254875
+    },
+    "RF132.REZ": {
+      "file_count": 1,
+      "size": 14483280
+    },
+    "RF133.REZ": {
+      "file_count": 1,
+      "size": 10731138
+    },
+    "RF134.REZ": {
+      "file_count": 1,
+      "size": 7430095
+    },
+    "RF135.REZ": {
+      "file_count": 5,
+      "size": 17798459
+    },
+    "RF136.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF137.REZ": {
+      "file_count": 1,
+      "size": 26403351
+    },
+    "RF138.REZ": {
+      "file_count": 1,
+      "size": 2691214
+    },
+    "RF139.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF140.REZ": {
+      "file_count": 1,
+      "size": 18253183
+    },
+    "RF141.REZ": {
+      "file_count": 1,
+      "size": 13289822
+    },
+    "RF142.REZ": {
+      "file_count": 4,
+      "size": 18686084
+    },
+    "RF143.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF144.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF145.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF146.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF147.REZ": {
+      "file_count": 4,
+      "size": 20030358
+    },
+    "RF148.REZ": {
+      "file_count": 1,
+      "size": 8662738
+    },
+    "RF149.REZ": {
+      "file_count": 1,
+      "size": 3014973
+    },
+    "RF150.REZ": {
+      "file_count": 463,
+      "size": 39397150
+    },
+    "RF151.REZ": {
+      "file_count": 2,
+      "size": 17494616
+    },
+    "RF152.REZ": {
+      "file_count": 558,
+      "size": 5701313
+    },
+    "RF153.REZ": {
+      "file_count": 1,
+      "size": 13258236
+    },
+    "RF154.REZ": {
+      "file_count": 1,
+      "size": 9125386
+    },
+    "RF155.REZ": {
+      "file_count": 1,
+      "size": 7072632
+    },
+    "RF156.REZ": {
+      "file_count": 1,
+      "size": 17712221
+    },
+    "RF157.REZ": {
+      "file_count": 3,
+      "size": 21796101
+    },
+    "RF158.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF159.REZ": {
+      "file_count": 2,
+      "size": 19063120
+    },
+    "RF160.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF161.REZ": {
+      "file_count": 1,
+      "size": 8987570
+    },
+    "RF162.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF163.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF164.REZ": {
+      "file_count": 1,
+      "size": 13336257
+    },
+    "RF165.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF166.REZ": {
+      "file_count": 1,
+      "size": 12566862
+    },
+    "RF167.REZ": {
+      "file_count": 1,
+      "size": 6693480
+    },
+    "RF168.REZ": {
+      "file_count": 1,
+      "size": 22043211
+    },
+    "RF169.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF170.REZ": {
+      "file_count": 1,
+      "size": 10690129
+    },
+    "RF171.REZ": {
+      "file_count": 42,
+      "size": 724684
+    },
+    "RF172.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF173.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF174.REZ": {
+      "file_count": 1,
+      "size": 9345682
+    },
+    "RF175.REZ": {
+      "file_count": 1,
+      "size": 11882436
+    },
+    "RF176.REZ": {
+      "file_count": 1,
+      "size": 18516698
+    },
+    "RF177.REZ": {
+      "file_count": 1,
+      "size": 14006829
+    },
+    "RF178.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF179.REZ": {
+      "file_count": 2,
+      "size": 19681481
+    },
+    "RF180.REZ": {
+      "file_count": 1,
+      "size": 11046559
+    },
+    "RF181.REZ": {
+      "file_count": 1,
+      "size": 10552775
+    },
+    "RF182.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF183.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF184.REZ": {
+      "file_count": 5,
+      "size": 53492
+    },
+    "RF185.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf186.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf187.rez": {
+      "file_count": 1,
+      "size": 9472723
+    },
+    "rf188.rez": {
+      "file_count": 2,
+      "size": 3153521
+    },
+    "rf189.rez": {
+      "file_count": 1,
+      "size": 5179549
+    },
+    "rf190.rez": {
+      "file_count": 1,
+      "size": 19295159
+    },
+    "rf191.rez": {
+      "file_count": 1,
+      "size": 13710077
+    },
+    "rf192.rez": {
+      "file_count": 34426,
+      "size": 1994583320
+    },
+    "rf193.rez": {
+      "file_count": 3,
+      "size": 17031888
+    },
+    "rf194.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf195.rez": {
+      "file_count": 1,
+      "size": 12358043
+    },
+    "rf196.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf197.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf198.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf199.rez": {
+      "file_count": 1,
+      "size": 8823709
+    },
+    "rf200.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf201.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "rf202.rez": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF204.REZ": {
+      "file_count": 3,
+      "size": 8039070
+    },
+    "RF205.REZ": {
+      "file_count": 3,
+      "size": 7686441
+    },
+    "RF206.REZ": {
+      "file_count": 3,
+      "size": 9860156
+    },
+    "RF207.REZ": {
+      "file_count": 1,
+      "size": 14695770
+    },
+    "RF208.REZ": {
+      "file_count": 1,
+      "size": 13109581
+    },
+    "RF209.REZ": {
+      "file_count": 1,
+      "size": 14715351
+    },
+    "RF210.REZ": {
+      "file_count": 3,
+      "size": 17143125
+    },
+    "RF211.REZ": {
+      "file_count": 1,
+      "size": 10800291
+    },
+    "RF212.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF213.REZ": {
+      "file_count": 1,
+      "size": 8778048
+    },
+    "RF214.REZ": {
+      "file_count": 1,
+      "size": 12603153
+    },
+    "RF215.REZ": {
+      "file_count": 3,
+      "size": 21428937
+    },
+    "RF216.REZ": {
+      "file_count": 1,
+      "size": 13037192
+    },
+    "RF217.REZ": {
+      "file_count": 2,
+      "size": 5348400
+    },
+    "RF218.REZ": {
+      "file_count": 1,
+      "size": 11232910
+    },
+    "RF219.REZ": {
+      "file_count": 1,
+      "size": 7969691
+    },
+    "RF220.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF221.REZ": {
+      "file_count": 3,
+      "size": 13850204
+    },
+    "RF222.REZ": {
+      "file_count": 1,
+      "size": 9911398
+    },
+    "RF223.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF224.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF225.REZ": {
+      "file_count": 5,
+      "size": 14924319
+    },
+    "RF226.REZ": {
+      "file_count": 1,
+      "size": 7374819
+    },
+    "RF227.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF228.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF229.REZ": {
+      "file_count": 1,
+      "size": 10351919
+    },
+    "RF230.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF231.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF232.REZ": {
+      "file_count": 1,
+      "size": 3986488
+    },
+    "RF233.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF234.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF235.REZ": {
+      "file_count": 2,
+      "size": 15310666
+    },
+    "RF236.REZ": {
+      "file_count": 2,
+      "size": 7644751
+    },
+    "RF237.REZ": {
+      "file_count": 2,
+      "size": 11635225
+    },
+    "RF238.REZ": {
+      "file_count": 4,
+      "size": 3387224
+    },
+    "RF239.REZ": {
+      "file_count": 1,
+      "size": 17697540
+    },
+    "RF240.REZ": {
+      "file_count": 3,
+      "size": 8005831
+    },
+    "RF241.REZ": {
+      "file_count": 1,
+      "size": 3463246
+    },
+    "RF242.REZ": {
+      "file_count": 1,
+      "size": 2531562
+    },
+    "RF243.REZ": {
+      "file_count": 1,
+      "size": 1762552
+    },
+    "RF244.REZ": {
+      "file_count": 1,
+      "size": 2609144
+    },
+    "RF245.REZ": {
+      "file_count": 1,
+      "size": 2625599
+    },
+    "RF246.REZ": {
+      "file_count": 1,
+      "size": 2747685
+    },
+    "RF247.REZ": {
+      "file_count": 1,
+      "size": 136708270
+    },
+    "RF248.REZ": {
+      "file_count": 521,
+      "size": 18651032
+    },
+    "RF249.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF250.REZ": {
+      "file_count": 1,
+      "size": 2028439
+    },
+    "RF251.REZ": {
+      "file_count": 2,
+      "size": 270365
+    },
+    "RF252.REZ": {
+      "file_count": 1,
+      "size": 2737511
+    },
+    "RF253.REZ": {
+      "file_count": 1,
+      "size": 94904773
+    },
+    "RF254.REZ": {
+      "file_count": 1,
+      "size": 1882931
+    },
+    "RF255.REZ": {
+      "file_count": 5,
+      "size": 4447467
+    },
+    "RF256.REZ": {
+      "file_count": 1,
+      "size": 1787657
+    },
+    "RF257.REZ": {
+      "file_count": 2,
+      "size": 1633439
+    },
+    "RF258.REZ": {
+      "file_count": 1,
+      "size": 3253286
+    },
+    "RF259.REZ": {
+      "file_count": 1,
+      "size": 10713535
+    },
+    "RF260.REZ": {
+      "file_count": 1,
+      "size": 2159415
+    },
+    "RF261.REZ": {
+      "file_count": 1,
+      "size": 2277488
+    },
+    "RF262.REZ": {
+      "file_count": 2,
+      "size": 5082
+    },
+    "RF263.REZ": {
+      "file_count": 1,
+      "size": 1545584
+    },
+    "RF264.REZ": {
+      "file_count": 1,
+      "size": 1558783
+    },
+    "RF265.REZ": {
+      "file_count": 2,
+      "size": 4938847
+    },
+    "RF266.REZ": {
+      "file_count": 4722,
+      "size": 326244824
+    },
+    "RF267.REZ": {
+      "file_count": 1,
+      "size": 248911
+    },
+    "RF268.REZ": {
+      "file_count": 1,
+      "size": 947666
+    },
+    "RF269.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF270.REZ": {
+      "file_count": 1,
+      "size": 2166287
+    },
+    "RF271.REZ": {
+      "file_count": 1,
+      "size": 2482195
+    },
+    "RF272.REZ": {
+      "file_count": 1,
+      "size": 2367218
+    },
+    "RF273.REZ": {
+      "file_count": 1,
+      "size": 5600597
+    },
+    "RF274.REZ": {
+      "file_count": 1,
+      "size": 4158219
+    },
+    "RF275.REZ": {
+      "file_count": 7,
+      "size": 5691340
+    },
+    "RF276.REZ": {
+      "file_count": 1,
+      "size": 1193151
+    },
+    "RF277.REZ": {
+      "file_count": 1,
+      "size": 1075159
+    },
+    "RF278.REZ": {
+      "file_count": 1,
+      "size": 3037224
+    },
+    "RF279.REZ": {
+      "file_count": 1,
+      "size": 2946768
+    },
+    "RF280.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF281.REZ": {
+      "file_count": 1,
+      "size": 41693920
+    },
+    "RF282.REZ": {
+      "file_count": 2,
+      "size": 2584785
+    },
+    "RF283.REZ": {
+      "file_count": 4,
+      "size": 6172633
+    },
+    "RF284.REZ": {
+      "file_count": 598,
+      "size": 196998625
+    },
+    "RF285.REZ": {
+      "file_count": 1,
+      "size": 4013215
+    },
+    "RF286.REZ": {
+      "file_count": 1,
+      "size": 2696519
+    },
+    "RF287.REZ": {
+      "file_count": 1,
+      "size": 3641877
+    },
+    "RF288.REZ": {
+      "file_count": 1,
+      "size": 7716080
+    },
+    "RF290.REZ": {
+      "file_count": 3,
+      "size": 6122104
+    },
+    "RF291.REZ": {
+      "file_count": 1,
+      "size": 3730101
+    },
+    "RF292.REZ": {
+      "file_count": 1,
+      "size": 2845014
+    },
+    "RF293.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF294.REZ": {
+      "file_count": 2,
+      "size": 3301680
+    },
+    "RF295.REZ": {
+      "file_count": 1,
+      "size": 21957020
+    },
+    "RF296.REZ": {
+      "file_count": 1,
+      "size": 236
+    },
+    "RF297.REZ": {
+      "file_count": 5,
+      "size": 11053227
+    },
+    "RF298.REZ": {
+      "file_count": 8,
+      "size": 8370240
+    },
+    "RF299.REZ": {
+      "file_count": 1,
+      "size": 4785725
+    },
+    "RF300.REZ": {
+      "file_count": 1,
+      "size": 2686167
+    },
+    "RF301.REZ": {
+      "file_count": 1,
+      "size": 3028332
+    },
+    "RF302.REZ": {
+      "file_count": 1,
+      "size": 3101095
+    },
+    "RF303.REZ": {
+      "file_count": 1,
+      "size": 2772744
+    },
+    "RF304.REZ": {
+      "file_count": 1,
+      "size": 3143515
+    },
+    "RF305.REZ": {
+      "file_count": 1,
+      "size": 2892189
+    },
+    "RF306.REZ": {
+      "file_count": 1,
+      "size": 2318095
+    },
+    "RF307.REZ": {
+      "file_count": 1,
+      "size": 2957493
+    },
+    "RF308.REZ": {
+      "file_count": 1,
+      "size": 2679086
+    },
+    "RF309.REZ": {
+      "file_count": 6,
+      "size": 8897671
+    },
+    "RF310.REZ": {
+      "file_count": 1,
+      "size": 2481201
+    },
+    "RF311.REZ": {
+      "file_count": 1,
+      "size": 39878452
+    },
+    "RF312.REZ": {
+      "file_count": 3,
+      "size": 4292069
+    },
+    "RF313.REZ": {
+      "file_count": 1,
+      "size": 16632336
+    },
+    "RF314.REZ": {
+      "file_count": 1,
+      "size": 21337198
+    },
+    "RF315.REZ": {
+      "file_count": 8,
+      "size": 19510078
+    },
+    "RF316.REZ": {
+      "file_count": 1,
+      "size": 3293184
+    },
+    "RF317.REZ": {
+      "file_count": 1,
+      "size": 2898725
+    },
+    "RF318.REZ": {
+      "file_count": 1,
+      "size": 10899336
+    },
+    "RF319.REZ": {
+      "file_count": 1,
+      "size": 1368738
+    },
+    "RF320.REZ": {
+      "file_count": 1,
+      "size": 3650658
+    },
+    "RF321.REZ": {
+      "file_count": 4,
+      "size": 197282
+    },
+    "RF322.REZ": {
+      "file_count": 1,
+      "size": 3172154
+    },
+    "RF323.REZ": {
+      "file_count": 1,
+      "size": 3896968
+    },
+    "RF324.REZ": {
+      "file_count": 6,
+      "size": 13578519
+    },
+    "RF325.REZ": {
+      "file_count": 10,
+      "size": 22344608
+    },
+    "RF326.REZ": {
+      "file_count": 1,
+      "size": 6264156
+    },
+    "RF327.REZ": {
+      "file_count": 1,
+      "size": 4222437
+    },
+    "RF328.REZ": {
+      "file_count": 1,
+      "size": 3283245
+    },
+    "RF329.REZ": {
+      "file_count": 1,
+      "size": 6501132
+    },
+    "RF330.REZ": {
+      "file_count": 1,
+      "size": 11731565
+    },
+    "RF331.REZ": {
+      "file_count": 1,
+      "size": 4403188
+    },
+    "RF332.REZ": {
+      "file_count": 2,
+      "size": 81814076
+    },
+    "RF333.REZ": {
+      "file_count": 1,
+      "size": 2800984
+    },
+    "RF334.REZ": {
+      "file_count": 1,
+      "size": 4530970
+    },
+    "RF335.REZ": {
+      "file_count": 8,
+      "size": 13512391
+    },
+    "RF336.REZ": {
+      "file_count": 1,
+      "size": 9953091
+    },
+    "RF337.REZ": {
+      "file_count": 3,
+      "size": 9903772
+    },
+    "RF338.REZ": {
+      "file_count": 1,
+      "size": 3549778
+    },
+    "RF339.REZ": {
+      "file_count": 12,
+      "size": 21757405
+    },
+    "RF340.REZ": {
+      "file_count": 2,
+      "size": 154710160
+    },
+    "RF341.REZ": {
+      "file_count": 1,
+      "size": 20363546
+    },
+    "RF342.REZ": {
+      "file_count": 1,
+      "size": 6015679
+    },
+    "RF343.REZ": {
+      "file_count": 1,
+      "size": 6142548
+    },
+    "RF344.REZ": {
+      "file_count": 2,
+      "size": 132214237
+    },
+    "RF345.REZ": {
+      "file_count": 2,
+      "size": 100904607
+    },
+    "RF346.REZ": {
+      "file_count": 2,
+      "size": 139322948
+    },
+    "RF347.REZ": {
+      "file_count": 1,
+      "size": 33423950
+    },
+    "RF348.REZ": {
+      "file_count": 1,
+      "size": 6642076
+    },
+    "RF349.REZ": {
+      "file_count": 16,
+      "size": 89492872
+    },
+    "RF350.REZ": {
+      "file_count": 2,
+      "size": 159539924
+    },
+    "RF351.REZ": {
+      "file_count": 1,
+      "size": 134900545
+    },
+    "RF352.REZ": {
+      "file_count": 1,
+      "size": 5103073
+    },
+    "RF353.REZ": {
+      "file_count": 1,
+      "size": 8211852
+    },
+    "RF354.REZ": {
+      "file_count": 1,
+      "size": 35208978
+    },
+    "RF355.REZ": {
+      "file_count": 9,
+      "size": 548077398
+    },
+    "RF356.REZ": {
+      "file_count": 1,
+      "size": 34829835
+    },
+    "RF357.REZ": {
+      "file_count": 1,
+      "size": 47888585
+    },
+    "RF358.REZ": {
+      "file_count": 1,
+      "size": 12638275
+    },
+    "RF359.REZ": {
+      "file_count": 1,
+      "size": 22119318
+    },
+    "RF360.REZ": {
+      "file_count": 1,
+      "size": 4686956
+    },
+    "RF361.REZ": {
+      "file_count": 1,
+      "size": 8793257
+    },
+    "RF362.REZ": {
+      "file_count": 1,
+      "size": 13233384
+    },
+    "RF363.REZ": {
+      "file_count": 308,
+      "size": 11140801
+    },
+    "RF364.REZ": {
+      "file_count": 1,
+      "size": 14724406
+    },
+    "RF365.REZ": {
+      "file_count": 1,
+      "size": 6684868
+    },
+    "RF366.REZ": {
+      "file_count": 1,
+      "size": 6811780
+    },
+    "RF367.REZ": {
+      "file_count": 1,
+      "size": 8723293
+    },
+    "RF368.REZ": {
+      "file_count": 1794,
+      "size": 86888945
+    },
+    "RF369.REZ": {
+      "file_count": 1,
+      "size": 2718375
+    },
+    "RF370.REZ": {
+      "file_count": 1,
+      "size": 2441506
+    },
+    "RF371.REZ": {
+      "file_count": 1,
+      "size": 1718076
+    },
+    "RF372.REZ": {
+      "file_count": 1,
+      "size": 3153248
+    },
+    "RF373.REZ": {
+      "file_count": 1,
+      "size": 3456791
+    },
+    "RF374.REZ": {
+      "file_count": 3,
+      "size": 1504011
+    },
+    "RF375.REZ": {
+      "file_count": 1,
+      "size": 5274381
+    },
+    "RF376.REZ": {
+      "file_count": 1,
+      "size": 3034590
+    },
+    "RF377.REZ": {
+      "file_count": 3,
+      "size": 1878092
+    },
+    "RF378.REZ": {
+      "file_count": 1,
+      "size": 2283812
+    },
+    "RF379.REZ": {
+      "file_count": 1,
+      "size": 2083774
+    },
+    "RF380.REZ": {
+      "file_count": 1,
+      "size": 2949943
+    },
+    "RF381.REZ": {
+      "file_count": 1,
+      "size": 1617313
+    },
+    "RF382.REZ": {
+      "file_count": 1,
+      "size": 2665144
+    },
+    "RF383.REZ": {
+      "file_count": 1,
+      "size": 2172494
+    },
+    "RF384.REZ": {
+      "file_count": 1,
+      "size": 1540339
+    },
+    "RF385.REZ": {
+      "file_count": 1,
+      "size": 2393158
+    },
+    "RF386.REZ": {
+      "file_count": 1,
+      "size": 5176162
+    },
+    "RF387.REZ": {
+      "file_count": 1,
+      "size": 2704842
+    },
+    "RF388.REZ": {
+      "file_count": 1,
+      "size": 1179482
+    },
+    "RF389.REZ": {
+      "file_count": 1,
+      "size": 685428
+    },
+    "RF390.REZ": {
+      "file_count": 1,
+      "size": 1020392
+    },
+    "RF391.REZ": {
+      "file_count": 1,
+      "size": 2232654
+    },
+    "RF392.REZ": {
+      "file_count": 1,
+      "size": 1441979
+    },
+    "RF393.REZ": {
+      "file_count": 1,
+      "size": 1554807
+    },
+    "RF394.REZ": {
+      "file_count": 1,
+      "size": 2536459
+    },
+    "RF395.REZ": {
+      "file_count": 1,
+      "size": 2424648
+    },
+    "RF396.REZ": {
+      "file_count": 1,
+      "size": 2875459
+    },
+    "RF397.REZ": {
+      "file_count": 9,
+      "size": 39147654
+    },
+    "RF398.REZ": {
+      "file_count": 1,
+      "size": 2666156
+    },
+    "RF399.REZ": {
+      "file_count": 1,
+      "size": 1755147
+    },
+    "RF400.REZ": {
+      "file_count": 1,
+      "size": 1471007
+    },
+    "RF401.REZ": {
+      "file_count": 14,
+      "size": 1157621332
+    },
+    "RF402.REZ": {
+      "file_count": 3,
+      "size": 1266097
+    },
+    "RF403.REZ": {
+      "file_count": 1,
+      "size": 481159
+    },
+    "RF404.REZ": {
+      "file_count": 1,
+      "size": 686363
+    },
+    "RF405.REZ": {
+      "file_count": 1,
+      "size": 3783145
+    },
+    "RF406.REZ": {
+      "file_count": 1,
+      "size": 3282288
+    },
+    "RF407.REZ": {
+      "file_count": 1,
+      "size": 8271308
+    },
+    "RF408.REZ": {
+      "file_count": 1,
+      "size": 8482228
+    },
+    "RF409.REZ": {
+      "file_count": 3,
+      "size": 1888374
+    },
+    "RF410.REZ": {
+      "file_count": 1,
+      "size": 2162145
+    },
+    "RF411.REZ": {
+      "file_count": 1,
+      "size": 2956242
+    },
+    "RF412.REZ": {
+      "file_count": 1,
+      "size": 1243785
+    },
+    "RF413.REZ": {
+      "file_count": 1,
+      "size": 34251168
+    },
+    "RF414.REZ": {
+      "file_count": 1,
+      "size": 14467360
+    },
+    "RF415.REZ": {
+      "file_count": 1,
+      "size": 13198067
+    },
+    "RF416.REZ": {
+      "file_count": 1,
+      "size": 5634953
+    },
+    "RF417.REZ": {
+      "file_count": 44,
+      "size": 88286
+    },
+    "RF418.REZ": {
+      "file_count": 3,
+      "size": 4100
+    },
+    "RF419.REZ": {
+      "file_count": 1,
+      "size": 10195679
+    },
+    "RF420.REZ": {
+      "file_count": 1,
+      "size": 5805876
+    },
+    "RF421.REZ": {
+      "file_count": 1,
+      "size": 4851424
+    },
+    "RF422.REZ": {
+      "file_count": 1,
+      "size": 7378301
+    },
+    "RF423.REZ": {
+      "file_count": 1,
+      "size": 4732343
+    },
+    "RF424.REZ": {
+      "file_count": 1,
+      "size": 13778748
+    },
+    "RF425.REZ": {
+      "file_count": 3,
+      "size": 911007
+    },
+    "RF426.REZ": {
+      "file_count": 1,
+      "size": 6949980
+    },
+    "RF427.REZ": {
+      "file_count": 2,
+      "size": 17114875
+    },
+    "RF428.REZ": {
+      "file_count": 2,
+      "size": 6729082
+    },
+    "RF429.REZ": {
+      "file_count": 2,
+      "size": 5516762
+    },
+    "RF430.REZ": {
+      "file_count": 241,
+      "size": 2515538
+    },
+    "RF431.REZ": {
+      "file_count": 2,
+      "size": 4543307
+    },
+    "RF432.REZ": {
+      "file_count": 2,
+      "size": 4244055
+    },
+    "RF433.REZ": {
+      "file_count": 1,
+      "size": 3583561
+    },
+    "RF434.REZ": {
+      "file_count": 1,
+      "size": 3803259
+    },
+    "RF435.REZ": {
+      "file_count": 1,
+      "size": 3135573
+    },
+    "RF436.REZ": {
+      "file_count": 1,
+      "size": 3099997
+    },
+    "RF437.REZ": {
+      "file_count": 1,
+      "size": 2907946
+    },
+    "RF438.REZ": {
+      "file_count": 1,
+      "size": 2694087
+    },
+    "RF439.REZ": {
+      "file_count": 1,
+      "size": 13643605
+    },
+    "RF440.REZ": {
+      "file_count": 1,
+      "size": 9500552
+    },
+    "RF442.REZ": {
+      "file_count": 1,
+      "size": 7312442
+    },
+    "RF017.REZ": {
+      "file_count": 5684,
+      "size": 1683437200
+    },
+    "RF018.REZ": {
+      "file_count": 2118,
+      "size": 213810851
+    },
+    "RF019.REZ": {
+      "file_count": 16648,
+      "size": 233200351
+    },
+    "RF192.REZ": {
+      "file_count": 5482,
+      "size": 690931423
+    },
+    "RF500.REZ": {
+      "file_count": 0,
+      "size": 31045
+    }
+  },
+  "binding_count_total": 60,
+  "binding_unique_weapon_field_pairs": 60,
+  "verdict_counts": {
+    "EXACT_PATH_BINDING": 49,
+    "EXTENSIONLESS_LTB_RESOLVED": 10,
+    "EXACT_PATH_MULTIPLE_ARCHIVES": 1
+  },
+  "distinct_weapon_field_full_path_bound": 60,
+  "distinct_weapon_field_basename_only": 0,
+  "distinct_weapon_field_missing": 0,
+  "archive_ambiguity_count": 1,
+  "generated_at": "2026-08-22T17:13:41.734437+00:00",
+  "script": "scripts\\material_recovery\\n02d_r1_path_aware_rez_binding.py"
+}

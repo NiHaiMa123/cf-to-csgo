@@ -1,0 +1,2699 @@
+{
+  "status": "M4A1_RUNTIME_PATH_BINDING_CONFIRMED",
+  "runtime_source": "rez/Butes/bf005.ltc (decoded via N02-B-R1 pipeline)",
+  "rez_index_scope": {
+    "rez_count_indexed": 475,
+    "total_entries": 252505,
+    "unique_full_paths": 243508,
+    "unique_basenames": 225863,
+    "elapsed_seconds": 16.56
+  },
+  "normalisation_rule": {
+    "slash_unify": "backslash -> forward slash",
+    "case_normalise": "uppercase for REZ-side comparison",
+    "virtual_root_strip": [
+      "Models/  (LithTech Models virtual root)",
+      "ModelTextures/  (LithTech ModelTextures virtual root)"
+    ],
+    "virtual_root_keep": [
+      "RS/  (literal REZ subdir in rf002.rez)"
+    ],
+    "extensionless_model_rule": "ModelFileName / PViewModelFileName: only .LTB allowed as suffix when value has no extension; no other fallback."
+  },
+  "summary": {
+    "binding_count": 60,
+    "unique_weapon_field_pairs": 60,
+    "verdict_counts": {
+      "EXACT_PATH_BINDING": 49,
+      "EXTENSIONLESS_LTB_RESOLVED": 10,
+      "EXACT_PATH_MULTIPLE_ARCHIVES": 1
+    },
+    "distinct_weapon_field_full_path_bound": 60,
+    "distinct_weapon_field_basename_only": 0,
+    "distinct_weapon_field_missing": 0
+  },
+  "archive_ambiguity": [
+    {
+      "WeaponName": "M4A1-S",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\L-M4A1_Silencer_camo.DTX",
+      "normalised": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+      "rez_paths": [
+        "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+        "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ"
+      ]
+    }
+  ],
+  "per_weapon_field_verdict": [
+    {
+      "WeaponName": "M4A1",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_MULTIPLE_ARCHIVES"
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "ModelFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewModelFileName",
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED"
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewSkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "RenderStyleFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "SkinFileName",
+      "verdict": "EXACT_PATH_BINDING"
+    }
+  ],
+  "bindings": [
+    {
+      "WeaponName": "M4A1",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\m4a1.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\m4a1.ltb",
+        "literal": "Models/weapons/m4a1.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/m4a1.ltb",
+        "upper": "WEAPONS/M4A1.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\l-m4a1.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\l-m4a1.dtx",
+        "literal": "ModelTextures/weapons/l-m4a1.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/l-m4a1.dtx",
+        "upper": "WEAPONS/L-M4A1.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/L-M4A1.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/L-M4A1.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1",
+        "literal": "Models/PlayerView/pv-m4a1",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1",
+        "upper": "PLAYERVIEW/PV-M4A1",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+        "literal": "ModelTextures/PlayerView/pv-m4a1.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1.dtx",
+        "upper": "PLAYERVIEW/PV-M4A1.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-M4A1.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\m4a1.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\m4a1.ltb",
+        "literal": "Models/weapons/m4a1.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/m4a1.ltb",
+        "upper": "WEAPONS/M4A1.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\l-m4a1.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\l-m4a1.dtx",
+        "literal": "ModelTextures/weapons/l-m4a1.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/l-m4a1.dtx",
+        "upper": "WEAPONS/L-M4A1.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/L-M4A1.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/L-M4A1.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1",
+        "literal": "Models/PlayerView/pv-m4a1",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1",
+        "upper": "PLAYERVIEW/PV-M4A1",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+        "literal": "ModelTextures/PlayerView/pv-m4a1.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1.dtx",
+        "upper": "PLAYERVIEW/PV-M4A1.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-M4A1.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-B",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\M4A1_Silencer.ltb",
+        "literal": "Models/weapons/M4A1_Silencer.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/M4A1_Silencer.ltb",
+        "upper": "WEAPONS/M4A1_SILENCER.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1_SILENCER.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1_SILENCER.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\L-M4A1_Silencer.DTX",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\L-M4A1_Silencer.DTX",
+        "literal": "ModelTextures/weapons/L-M4A1_Silencer.DTX",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/L-M4A1_Silencer.DTX",
+        "upper": "WEAPONS/L-M4A1_SILENCER.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/L-M4A1_SILENCER.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER.DTX",
+          "name": "L-M4A1_SILENCER.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "BF0E80517626F05CE9A21F4BF9066E86"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER.DTX",
+          "name": "L-M4A1_SILENCER.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "BF0E80517626F05CE9A21F4BF9066E86"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/L-M4A1_SILENCER.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1_silencer",
+        "literal": "Models/PlayerView/pv-m4a1_silencer",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1_silencer",
+        "upper": "PLAYERVIEW/PV-M4A1_SILENCER",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1_SILENCER",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1_SILENCER.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+        "literal": "ModelTextures/PlayerView/pv-m4a1.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1.dtx",
+        "upper": "PLAYERVIEW/PV-M4A1.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-M4A1.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\M4A1_Silencer.ltb",
+        "literal": "Models/weapons/M4A1_Silencer.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/M4A1_Silencer.ltb",
+        "upper": "WEAPONS/M4A1_SILENCER.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1_SILENCER.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1_SILENCER.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\L-M4A1_Silencer_camo.DTX",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\L-M4A1_Silencer_camo.DTX",
+        "literal": "ModelTextures/weapons/L-M4A1_Silencer_camo.DTX",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/L-M4A1_Silencer_camo.DTX",
+        "upper": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "56498E817DA6ED661D6D3B5098974F79"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "92A6162F9381436C72320E4874B3E104"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "56498E817DA6ED661D6D3B5098974F79"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "92A6162F9381436C72320E4874B3E104"
+        }
+      ],
+      "verdict": "EXACT_PATH_MULTIPLE_ARCHIVES",
+      "verdict_reason": "full path 'WEAPONS/L-M4A1_SILENCER_CAMO.DTX' exists in 2 distinct REZ archives; no load-order evidence, ambiguity reported",
+      "archive_count": 2
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1_silencer",
+        "literal": "Models/PlayerView/pv-m4a1_silencer",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1_silencer",
+        "upper": "PLAYERVIEW/PV-M4A1_SILENCER",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1_SILENCER",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1_SILENCER.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1-camo.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\pv-m4a1-camo.dtx",
+        "literal": "ModelTextures/PlayerView/pv-m4a1-camo.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1-camo.dtx",
+        "upper": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+          "name": "PV-M4A1-CAMO.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "1AEB11A4CC8B21D2A7DE05DCEA919D3D"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+          "name": "PV-M4A1-CAMO.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "1AEB11A4CC8B21D2A7DE05DCEA919D3D"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-M4A1-CAMO.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-S",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\M4A1_Silencer.ltb",
+        "literal": "Models/weapons/M4A1_Silencer.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/M4A1_Silencer.ltb",
+        "upper": "WEAPONS/M4A1_SILENCER.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1_SILENCER.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1_SILENCER.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\m4a1_qq.DTX",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\m4a1_qq.DTX",
+        "literal": "ModelTextures/weapons/m4a1_qq.DTX",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/m4a1_qq.DTX",
+        "upper": "WEAPONS/M4A1_QQ.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/M4A1_QQ.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/M4A1_QQ.DTX",
+          "name": "M4A1_QQ.DTX",
+          "size": 41124,
+          "id": 0,
+          "md5": "BAE2E92D4AC646354EF784B25E7AF22B"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/M4A1_QQ.DTX",
+          "name": "M4A1_QQ.DTX",
+          "size": 41124,
+          "id": 0,
+          "md5": "BAE2E92D4AC646354EF784B25E7AF22B"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1_QQ.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1_silencer",
+        "literal": "Models/PlayerView/pv-m4a1_silencer",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1_silencer",
+        "upper": "PLAYERVIEW/PV-M4A1_SILENCER",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1_SILENCER",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1_SILENCER.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-m4a1_qq.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\PV-m4a1_qq.dtx",
+        "literal": "ModelTextures/PlayerView/PV-m4a1_qq.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/PV-m4a1_qq.dtx",
+        "upper": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+          "name": "PV-M4A1_QQ.DTX",
+          "size": 164004,
+          "id": 0,
+          "md5": "6B3B91852C8237B17F2AB655F18EE2AE"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+          "name": "PV-M4A1_QQ.DTX",
+          "size": 164004,
+          "id": 0,
+          "md5": "6B3B91852C8237B17F2AB655F18EE2AE"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-M4A1_QQ.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-QQ»áÔ±",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1-CUSTOM.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\M4A1-CUSTOM.ltb",
+        "literal": "Models/weapons/M4A1-CUSTOM.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/M4A1-CUSTOM.ltb",
+        "upper": "WEAPONS/M4A1-CUSTOM.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1-CUSTOM.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1-CUSTOM.LTB",
+          "name": "M4A1-CUSTOM.LTB",
+          "size": 29576,
+          "id": 0,
+          "md5": "19A34256C538D38066C7FC1D8C9B19F7"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1-CUSTOM.LTB",
+          "name": "M4A1-CUSTOM.LTB",
+          "size": 29576,
+          "id": 0,
+          "md5": "19A34256C538D38066C7FC1D8C9B19F7"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1-CUSTOM.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\l-m4a1.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\l-m4a1.dtx",
+        "literal": "ModelTextures/weapons/l-m4a1.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/l-m4a1.dtx",
+        "upper": "WEAPONS/L-M4A1.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/L-M4A1.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932,
+          "id": 0,
+          "md5": "5DAE6B278CBDDF6B8BD80429FBD7E3CF"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/L-M4A1.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\PV-M4A1-CUSTOM",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\PV-M4A1-CUSTOM",
+        "literal": "Models/PlayerView/PV-M4A1-CUSTOM",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/PV-M4A1-CUSTOM",
+        "upper": "PLAYERVIEW/PV-M4A1-CUSTOM",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1-CUSTOM",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "name": "PV-M4A1-CUSTOM.LTB",
+          "size": 64927,
+          "id": 0,
+          "md5": "F28DDAB62708572ABC5DA88F7DA2D24C"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1-CUSTOM.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\pv-m4a1.dtx",
+        "literal": "ModelTextures/PlayerView/pv-m4a1.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1.dtx",
+        "upper": "PLAYERVIEW/PV-M4A1.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452,
+          "id": 0,
+          "md5": "35DD8FFDC846ACFD17E4BFF57B98B832"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-M4A1.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "M4A1-Custom",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\m4a1.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\m4a1.ltb",
+        "literal": "Models/weapons/m4a1.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/m4a1.ltb",
+        "upper": "WEAPONS/M4A1.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558,
+          "id": 0,
+          "md5": "A23982936F54BC95399359F4FEF6BBCC"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_gold.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\QV-RI_m4a1_gold.dtx",
+        "literal": "ModelTextures/weapons/QV-RI_m4a1_gold.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/QV-RI_m4a1_gold.dtx",
+        "upper": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+          "name": "QV-RI_M4A1_GOLD.DTX",
+          "size": 82084,
+          "id": 0,
+          "md5": "FA1801AB9D3FD0F3F236A17699DAB10C"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+          "name": "QV-RI_M4A1_GOLD.DTX",
+          "size": 82084,
+          "id": 0,
+          "md5": "FA1801AB9D3FD0F3F236A17699DAB10C"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/QV-RI_M4A1_GOLD.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1",
+        "literal": "Models/PlayerView/pv-m4a1",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1",
+        "upper": "PLAYERVIEW/PV-M4A1",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_gold.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\PV-RI_m4a1_gold.dtx",
+        "literal": "ModelTextures/PlayerView/PV-RI_m4a1_gold.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/PV-RI_m4a1_gold.dtx",
+        "upper": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+          "name": "PV-RI_M4A1_GOLD.DTX",
+          "size": 262308,
+          "id": 0,
+          "md5": "E2FDB69324BDCE61AB92FF4EC158FF93"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+          "name": "PV-RI_M4A1_GOLD.DTX",
+          "size": 262308,
+          "id": 0,
+          "md5": "E2FDB69324BDCE61AB92FF4EC158FF93"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-RI_M4A1_GOLD.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "»Æ½ðM4A1",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\M4A1_Silencer.ltb",
+        "literal": "Models/weapons/M4A1_Silencer.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/M4A1_Silencer.ltb",
+        "upper": "WEAPONS/M4A1_SILENCER.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1_SILENCER.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1_SILENCER.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_bronze.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_bronze.dtx",
+        "literal": "ModelTextures/weapons/QV-RI_m4a1_silencer_bronze.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/QV-RI_m4a1_silencer_bronze.dtx",
+        "upper": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 65700,
+          "id": 0,
+          "md5": "F7778D04AA8541EF2432B743B7929F39"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 65700,
+          "id": 0,
+          "md5": "F7778D04AA8541EF2432B743B7929F39"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1_silencer",
+        "literal": "Models/PlayerView/pv-m4a1_silencer",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1_silencer",
+        "upper": "PLAYERVIEW/PV-M4A1_SILENCER",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1_SILENCER",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1_SILENCER.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_bronze.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_bronze.dtx",
+        "literal": "ModelTextures/PlayerView/PV-RI_m4a1_silencer_bronze.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/PV-RI_m4a1_silencer_bronze.dtx",
+        "upper": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 327844,
+          "id": 0,
+          "md5": "E8FD2627C5BE9D4E50544BB3FAE7B7A9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 327844,
+          "id": 0,
+          "md5": "E8FD2627C5BE9D4E50544BB3FAE7B7A9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÇàÍ­M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\M4A1_Silencer.ltb",
+        "literal": "Models/weapons/M4A1_Silencer.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/M4A1_Silencer.ltb",
+        "upper": "WEAPONS/M4A1_SILENCER.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1_SILENCER.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1_SILENCER.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_silver.dtx",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_silver.dtx",
+        "literal": "ModelTextures/weapons/QV-RI_m4a1_silencer_silver.dtx",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/QV-RI_m4a1_silencer_silver.dtx",
+        "upper": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 65700,
+          "id": 0,
+          "md5": "8AD3934D9E0E2D9138E7C41063E1EF6F"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 65700,
+          "id": 0,
+          "md5": "8AD3934D9E0E2D9138E7C41063E1EF6F"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1_silencer",
+        "literal": "Models/PlayerView/pv-m4a1_silencer",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1_silencer",
+        "upper": "PLAYERVIEW/PV-M4A1_SILENCER",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1_SILENCER",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1_SILENCER.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_silver.DTX",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_silver.DTX",
+        "literal": "ModelTextures/PlayerView/PV-RI_m4a1_silencer_silver.DTX",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/PV-RI_m4a1_silencer_silver.DTX",
+        "upper": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 327844,
+          "id": 0,
+          "md5": "74B37FEE7A865C83FEB49CF3D1CE46D6"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 327844,
+          "id": 0,
+          "md5": "74B37FEE7A865C83FEB49CF3D1CE46D6"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "ÒøÉ«M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "ModelFileName",
+      "runtime_path": "Models\\weapons\\M4A1_Silencer.ltb",
+      "normalisation": {
+        "raw": "Models\\weapons\\M4A1_Silencer.ltb",
+        "literal": "Models/weapons/M4A1_Silencer.ltb",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/M4A1_Silencer.ltb",
+        "upper": "WEAPONS/M4A1_SILENCER.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "WEAPONS/M4A1_SILENCER.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926,
+          "id": 0,
+          "md5": "848703A34A2A8B50028D217D8D270FB9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/M4A1_SILENCER.LTB' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "SkinFileName",
+      "runtime_path": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_crystal.DTX",
+      "normalisation": {
+        "raw": "ModelTextures\\weapons\\QV-RI_m4a1_silencer_crystal.DTX",
+        "literal": "ModelTextures/weapons/QV-RI_m4a1_silencer_crystal.DTX",
+        "stripped_virtual_root": true,
+        "after_strip": "weapons/QV-RI_m4a1_silencer_crystal.DTX",
+        "upper": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 65700,
+          "id": 0,
+          "md5": "5B8FA5E97DA1A9073C11A403560E52CD"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 65700,
+          "id": 0,
+          "md5": "5B8FA5E97DA1A9073C11A403560E52CD"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewModelFileName",
+      "runtime_path": "Models\\PlayerView\\pv-m4a1_silencer",
+      "normalisation": {
+        "raw": "Models\\PlayerView\\pv-m4a1_silencer",
+        "literal": "Models/PlayerView/pv-m4a1_silencer",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/pv-m4a1_silencer",
+        "upper": "PLAYERVIEW/PV-M4A1_SILENCER",
+        "ext": ""
+      },
+      "exact_path_query": "PLAYERVIEW/PV-M4A1_SILENCER",
+      "extensionless_ltb_query": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+      "exact_path_hits": [],
+      "extensionless_ltb_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777,
+          "id": 0,
+          "md5": "941ADE9EE197F60A2E04FA12B2F29FD7"
+        }
+      ],
+      "basename_only_hits": [],
+      "verdict": "EXTENSIONLESS_LTB_RESOLVED",
+      "verdict_reason": "extensionless PViewModelFileName value resolved to .LTB; single full-path match for 'PLAYERVIEW/PV-M4A1_SILENCER.LTB'",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewSkinFileName",
+      "runtime_path": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_crystal.DTX",
+      "normalisation": {
+        "raw": "ModelTextures\\PlayerView\\PV-RI_m4a1_silencer_crystal.DTX",
+        "literal": "ModelTextures/PlayerView/PV-RI_m4a1_silencer_crystal.DTX",
+        "stripped_virtual_root": true,
+        "after_strip": "PlayerView/PV-RI_m4a1_silencer_crystal.DTX",
+        "upper": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+        "ext": ".dtx"
+      },
+      "exact_path_query": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 327844,
+          "id": 0,
+          "md5": "F89155D2AF2C033BACBB40E39807DA3B"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 327844,
+          "id": 0,
+          "md5": "F89155D2AF2C033BACBB40E39807DA3B"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX' after strip=Models",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "RenderStyleFileName",
+      "runtime_path": "RS\\\\NinjaTranslucent.ltb",
+      "normalisation": {
+        "raw": "RS\\\\NinjaTranslucent.ltb",
+        "literal": "RS/NinjaTranslucent.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/NinjaTranslucent.ltb",
+        "upper": "RS/NINJATRANSLUCENT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/NINJATRANSLUCENT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "CHARACTER/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111,
+          "id": 0,
+          "md5": "A6FB0DE9DAD327990799DD0D89E3B5D9"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/NINJATRANSLUCENT.LTB' after strip=none",
+      "archive_count": 1
+    },
+    {
+      "WeaponName": "Ë®¾§M4A1-A",
+      "field": "PViewRenderStyleFileName",
+      "runtime_path": "RS\\\\PVModelDefault.ltb",
+      "normalisation": {
+        "raw": "RS\\\\PVModelDefault.ltb",
+        "literal": "RS/PVModelDefault.ltb",
+        "stripped_virtual_root": false,
+        "after_strip": "RS/PVModelDefault.ltb",
+        "upper": "RS/PVMODELDEFAULT.LTB",
+        "ext": ".ltb"
+      },
+      "exact_path_query": "RS/PVMODELDEFAULT.LTB",
+      "extensionless_ltb_query": null,
+      "exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "extensionless_ltb_hits": [],
+      "basename_only_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119,
+          "id": 0,
+          "md5": "9B86A40416C4B63A68C6CB829CADFA34"
+        }
+      ],
+      "verdict": "EXACT_PATH_BINDING",
+      "verdict_reason": "single full-path match for 'RS/PVMODELDEFAULT.LTB' after strip=none",
+      "archive_count": 1
+    }
+  ],
+  "generated_at": "2026-08-22T17:13:41.736102+00:00",
+  "script": "scripts\\material_recovery\\n02d_r1_path_aware_rez_binding.py"
+}
