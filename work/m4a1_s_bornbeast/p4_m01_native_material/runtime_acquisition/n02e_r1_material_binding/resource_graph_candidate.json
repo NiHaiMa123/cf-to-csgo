@@ -1,0 +1,3374 @@
+{
+  "status": "MATERIAL_BINDING_PARTIAL",
+  "task": "P4-M01-N02-E-R1",
+  "note": "Resource graph built from N02-D-R1's exact-path LTB/DTX/RS hits plus this round's LTB internal mesh/bone/anim names. Open edges are LTB->DTX/TGA piece binding (Jupiter LTB has no inline piece/material table).  Closed edges are the bf005 consumer pairing of PViewModelFileName + PViewSkinFileName (or ModelFileName + SkinFileName), plus the render-style pair.",
+  "per_weapon": {
+    "M4A1": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "WEAPONS/L-M4A1.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "PLAYERVIEW/PV-M4A1.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "M4A1-B": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "WEAPONS/L-M4A1.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "PLAYERVIEW/PV-M4A1.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "M4A1-A": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER.DTX",
+          "name": "L-M4A1_SILENCER.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER.DTX",
+          "name": "L-M4A1_SILENCER.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER.DTX",
+          "name": "L-M4A1_SILENCER.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER.DTX",
+          "name": "L-M4A1_SILENCER.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "M4A1_SILENCER",
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "WEAPONS/L-M4A1_SILENCER.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "PLAYERVIEW/PV-M4A1.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1_SILENCER.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "M4A1-S": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+          "name": "PV-M4A1-CAMO.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+          "name": "PV-M4A1-CAMO.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+          "name": "PV-M4A1-CAMO.DTX",
+          "size": 524452
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "full_path": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "name": "L-M4A1_SILENCER_CAMO.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+          "name": "PV-M4A1-CAMO.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "M4A1_SILENCER",
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "WEAPONS/L-M4A1_SILENCER_CAMO.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "PLAYERVIEW/PV-M4A1-CAMO.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1_SILENCER.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "M4A1-QQ»áÔ±": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/M4A1_QQ.DTX",
+          "name": "M4A1_QQ.DTX",
+          "size": 41124
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+          "name": "PV-M4A1_QQ.DTX",
+          "size": 164004
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/M4A1_QQ.DTX",
+          "name": "M4A1_QQ.DTX",
+          "size": 41124
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+          "name": "PV-M4A1_QQ.DTX",
+          "size": 164004
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/M4A1_QQ.DTX",
+          "name": "M4A1_QQ.DTX",
+          "size": 41124
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+          "name": "PV-M4A1_QQ.DTX",
+          "size": 164004
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/M4A1_QQ.DTX",
+          "name": "M4A1_QQ.DTX",
+          "size": 41124
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+          "name": "PV-M4A1_QQ.DTX",
+          "size": 164004
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "M4A1_SILENCER",
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "WEAPONS/M4A1_QQ.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "PLAYERVIEW/PV-M4A1_QQ.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1_SILENCER.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "M4A1-Custom": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1-CUSTOM.LTB",
+          "name": "M4A1-CUSTOM.LTB",
+          "size": 29576
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "name": "PV-M4A1-CUSTOM.LTB",
+          "size": 64927
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "name": "PV-M4A1-CUSTOM.LTB",
+          "size": 64927
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1-CUSTOM.LTB",
+          "name": "M4A1-CUSTOM.LTB",
+          "size": 29576
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1-CUSTOM.LTB",
+          "name": "M4A1-CUSTOM.LTB",
+          "size": 29576
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "name": "PV-M4A1-CUSTOM.LTB",
+          "size": 64927
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1-CUSTOM.LTB",
+          "name": "M4A1-CUSTOM.LTB",
+          "size": 29576
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/L-M4A1.DTX",
+          "name": "L-M4A1.DTX",
+          "size": 32932
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "name": "PV-M4A1-CUSTOM.LTB",
+          "size": 64927
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1.DTX",
+          "name": "PV-M4A1.DTX",
+          "size": 524452
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone01",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1-CUSTOM.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1-CUSTOM.LTB",
+          "to": "WEAPONS/L-M4A1.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1-CUSTOM.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "to": "PLAYERVIEW/PV-M4A1.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1-CUSTOM.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1-CUSTOM.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "»Æ½ðM4A1": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+          "name": "QV-RI_M4A1_GOLD.DTX",
+          "size": 82084
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+          "name": "PV-RI_M4A1_GOLD.DTX",
+          "size": 262308
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+          "name": "QV-RI_M4A1_GOLD.DTX",
+          "size": 82084
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+          "name": "PV-RI_M4A1_GOLD.DTX",
+          "size": 262308
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+          "name": "QV-RI_M4A1_GOLD.DTX",
+          "size": 82084
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+          "name": "PV-RI_M4A1_GOLD.DTX",
+          "size": 262308
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1.LTB",
+          "name": "M4A1.LTB",
+          "size": 16558
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+          "name": "QV-RI_M4A1_GOLD.DTX",
+          "size": 82084
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1.LTB",
+          "name": "PV-M4A1.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+          "name": "PV-RI_M4A1_GOLD.DTX",
+          "size": 262308
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "WEAPONS/QV-RI_M4A1_GOLD.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "PLAYERVIEW/PV-RI_M4A1_GOLD.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "ÇàÍ­M4A1-A": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 327844
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "name": "PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "M4A1_SILENCER",
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "WEAPONS/QV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "PLAYERVIEW/PV-RI_M4A1_SILENCER_BRONZE.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1_SILENCER.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "ÒøÉ«M4A1-A": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 327844
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "name": "PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "M4A1_SILENCER",
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "WEAPONS/QV-RI_M4A1_SILENCER_SILVER.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "PLAYERVIEW/PV-RI_M4A1_SILENCER_SILVER.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1_SILENCER.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    },
+    "Ë®¾§M4A1-A": {
+      "exact_path_bindings": [
+        {
+          "field": "ModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": "weapon",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 327844
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "PViewRenderStyleFileName",
+          "ltb_class": "render_style",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "name": "PVMODELDEFAULT.LTB",
+          "size": 119
+        },
+        {
+          "field": "ModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "WEAPONS/M4A1_SILENCER.LTB",
+          "name": "M4A1_SILENCER.LTB",
+          "size": 16926
+        },
+        {
+          "field": "SkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 65700
+        },
+        {
+          "field": "PViewModelFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "name": "PV-M4A1_SILENCER.LTB",
+          "size": 64777
+        },
+        {
+          "field": "PViewSkinFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "name": "PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "size": 327844
+        },
+        {
+          "field": "RenderStyleFileName",
+          "ltb_class": null,
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "name": "NINJATRANSLUCENT.LTB",
+          "size": 111
+        }
+      ],
+      "ltb_internal_mesh_names": [
+        "M4A1_SILENCER",
+        "Fview-hand2",
+        "Fview-arm2",
+        "M4-A1"
+      ],
+      "ltb_internal_anim_names": [
+        "WeaponReload",
+        "WeaponClipOut",
+        "WeaponClipIn",
+        "WeaponFinish"
+      ],
+      "ltb_internal_bone_names": [
+        "Bone09",
+        "FvARM-bone",
+        "FvARM-bone Pelvis",
+        "FvARM-bone Spine",
+        "FvARM-bone Spine1",
+        "FvARM-bone Neck",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L Hand",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger42",
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R Hand",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger42",
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Bone04",
+        "Bone06",
+        "BaseTracker"
+      ],
+      "ltb_inline_material_evidence": [],
+      "open_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "DTX/TGA piece binding (LTB-internal piece index)",
+          "reason": "Jupiter LTB has no LTA piece/material/texture atoms; binding must be reconstructed from external evidence",
+          "grade": "OPEN_UNRESOLVED"
+        }
+      ],
+      "closed_material_edges": [
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "WEAPONS/QV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "edge_kind": "ModelFileName -> SkinFileName (skin)",
+          "evidence": "bf005 weapon record binds ModelFileName and SkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "WEAPONS/M4A1_SILENCER.LTB",
+          "to": "RS/NINJATRANSLUCENT.LTB",
+          "edge_kind": "ModelFileName -> RenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds ModelFileName and RenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "PLAYERVIEW/PV-RI_M4A1_SILENCER_CRYSTAL.DTX",
+          "edge_kind": "PViewModelFileName -> PViewSkinFileName (skin)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewSkinFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "to": "RS/PVMODELDEFAULT.LTB",
+          "edge_kind": "PViewModelFileName -> PViewRenderStyleFileName (render_style)",
+          "evidence": "bf005 weapon record binds PViewModelFileName and PViewRenderStyleFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/NINJATRANSLUCENT.LTB",
+          "to": "WEAPONS/M4A1_SILENCER.LTB",
+          "edge_kind": "RenderStyleFileName -> ModelFileName (model)",
+          "evidence": "bf005 weapon record binds RenderStyleFileName and ModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        },
+        {
+          "from": "RS/PVMODELDEFAULT.LTB",
+          "to": "PLAYERVIEW/PV-M4A1_SILENCER.LTB",
+          "edge_kind": "PViewRenderStyleFileName -> PViewModelFileName (model)",
+          "evidence": "bf005 weapon record binds PViewRenderStyleFileName and PViewModelFileName as a pair; the paired DTX / RS is the canonical 'material' from the runtime's own consumer semantics, but it is not encoded inside the LTB",
+          "grade": "CONSUMER_INFERRED_FROM_BF005"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-08-22T17:53:45.542611+00:00",
+  "script": "scripts\\material_recovery\\n02e_r1_material_binding.py"
+}
