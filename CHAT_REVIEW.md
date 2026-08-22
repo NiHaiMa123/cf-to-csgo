@@ -2,7 +2,7 @@
 
 > 本文件只给 ChatGPT 对话中的 **Chat/Sol** 使用。
 >
-> 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准。Git/GitHub 与本地 `data/` 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
+> 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准；Git/data 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 
 ---
 
@@ -13,259 +13,262 @@
 ```text
 P4 baseline   PASS / FROZEN
 P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-P4-M01-R1     ACTIVE / TARGETED_REWORK_REQUIRED
+P4-M01-R1     ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01
+P4-M01-N01    ACTIVE / ENGINE_BINDING_INVESTIGATION   <- CURRENT REVIEW TARGET
 P5-T01        PASS / USER_REFERENCE_CONFIRMED
 P5-T02        PAUSED_BY_P4_M01
 P5-T03        BLOCKED_BY_T02
 P5-T04        BLOCKED_BY_T03
 ```
 
-当前 Review/执行入口：
+当前 Review 入口：
 
 ```text
 P4_M01_TASK_SPEC.md
-P4_M01_REWORK_R1.md
-P4_M01_R1_CONTINUATION.md   <- current post-8af3 review overlay
+P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md
 CODEX_TASKS.md
 ```
 
----
+R1 history：
 
-## 2. Review principle
-
-P4-M01 最终问题：
-
-> BornBeast 是否已经能仅使用 local CF 资源 + verified semantics，得到可重复、可解释、0 external pixels 的正确原生材质。
-
-Chat/Sol 必须特别拒绝：
-
-- `能排成图 = 格式正确`；
-- byte-count fit 直接升级为 verified；
-- mod-3 phase 自动等同 record boundary；
-- report claim 超过提交代码实际实现；
-- partial corpus negative 写成 entire-local-data negative；
-- filename/basename convention 冒充 structural binding；
-- diagnostic shader preview 冒充 engine semantics。
+```text
+P4_M01_REWORK_R1.md
+P4_M01_R1_CONTINUATION.md
+```
 
 ---
 
-## 3. 历史 R0 / first R1
+## 2. R1 final Review
 
-### R0 exploration
-
-```text
-632ede449578f688cea7e6b5f40cbf03700aaaa5
-```
-
-有价值，但旧 `6/8 PASS / visual gate only` 被 Chat/Sol 否决。
-
-### first R1 correction
+最后一轮：
 
 ```text
-bded9e8a6f7f95997d9717eb8f35beb02619f153
+0dc5793b6e47cb20da9e44aebcec2195194bd6f2
 ```
 
-有效推进：TGA repair 修正、DTX formal route、LTB numeric-field structure、CFG corpus pattern；但 DTX reproducibility、CFG framing、binding stage2、H2 sampling 仍需 targeted rework。
+Chat/Sol 接受 R1 核心 correction：
+
+```text
+DTX formal header/LZMA correction
+DTX whole-file 3-byte periodicity
+DTX committed width scan
+DTX two-varying-channel continuity
+1043/1046 dominant statistic wording
+TGA formal repair
+CFG phase-vs-record-boundary correction
+CFG 164/169/214 complete sample extraction
+H2 pixel-index sampling
+ArmModel material-format positive control
+binding negative-scope correction
+```
+
+仍有 minor consistency：
+
+```text
+CFG phase-origin identity formula
+DTX >3x/stale every wording
+H1 preview path/SHA
+H1 evidence class
+stale BGR24/scalar/full-data comments
+```
+
+这些已转入 N01 Phase 0，不再单独维持 R1 substantive loop。
+
+```text
+P4-M01-R1 = ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01
+```
 
 ---
 
-## 4. 2026-08-22 对 commit 8af3cd0 的 Review
+## 3. N01 Review principle
 
-Local Executor commit：
+N01 的问题不是“还能不能多扫几个文件”，而是：
 
-```text
-8af3cd0b6c2f7ecc12a90b24e5b70c4e2d99dd8f
-```
+> **是否找到足够强的 engine/resource evidence，把 weapon mesh/piece 与实际 local texture family、WeaponShader CFG/material consumer 关联起来。**
 
-总体：**继续有效推进，但 R1 未完成。**
-
-正式分级：
+证据优先级：
 
 ```text
-A provenance              ACCEPT / REUSE
-B inventory               REUSE_WITH_CAUTION
-C DTX                      PARTIAL_ACCEPT / NARROW_TARGETED_REWORK
-D TGA                      ACCEPT / STRUCTURAL
-E material binding         STAGE2_PARTIAL_ACCEPT / OPEN
-F CFG reverse              REWORK / FRAMING_BUG
-G variant differential     ACCEPT / REUSE
-H shader hypotheses        H2_FIX_ACCEPTED / DIAGNOSTIC_ONLY
-I native closure           NOT READY / CONTINUE
-J Source1 integration      DEFERRED
+engine/resource consumer evidence
+> structural binding
+> same-family differential
+> bounded binary hypothesis
+> preview appearance
 ```
 
-详细下一步以 [`P4_M01_R1_CONTINUATION.md`](P4_M01_R1_CONTINUATION.md) 为准。
+拒绝：
 
-### C — DTX
-
-接受：
-
-- formal DTX version `-2/-3/-5` route；
-- not-LZMA detection；
-- whole-file 3-byte periodic census；
-- committed `64..2048 step4` width scan；
-- 1024 作为 smallest strong winner；
-- `1024/no-mip` 已诚实降为 `STRONG_HYPOTHESIS`；
-- BGR wording 已撤销。
-
-仍需纠正：
-
-1. `continuity_all_channels()` 实际 `range(0, rb, 6)` 只采 mod3==0，并非 all-channel；
-2. corpus 报告自身是 `1043/1046 size%2048==164`，不能写 `every non-empty PV DTX`；
-3. 2212-byte tail 和 channel order 可继续 OPEN。
-
-当前 1024 stride 可保留 strong hypothesis，不必重跑 width scan。
-
-### D — TGA
-
-继续 ACCEPT。正式关系：
-
-```text
-footerOffset = TRUEVISION signature - 8
-headerOffset = footerOffset + 26
-```
-
-不重跑，除非新 evidence 冲突。
-
-### E — Stage-2 binding
-
-接受 positive evidence：ArmModel Shader CFG 中真实存在：
-
-```text
-[Textures] named texture refs
-[Techniques]
-[Properties] PieceIndex
-```
-
-这是 CF explicit material format 的 engine-format evidence。
-
-但 weapon LTB numeric field == PieceIndex/texture slot 仍未证明；weapon mesh/slot -> DTX/TGA/CFG texture set 仍 OPEN。
-
-negative scan 只覆盖当前 config-like/dat/lta corpus（报告为 355 files），所以只能写：
-
-```text
-not found in the scanned config-like/dat/lta corpus
-```
-
-不能写 `anywhere in local data`。
-
-### F — CFG
-
-这是当前最重要问题。
-
-可保留 fact：237/237 CFG 的 non-FF bytes 集中在单一 `offset mod 3` phase，另外两 phase 为 FF。
-
-当前 `r1_cfg_reverse.py` 错把 varying phase `h` 当 `head_partial_bytes`：
-
-```python
-body = n - h
-full_triplets = body // 3
-slots = raw[h + k*3]
-```
-
-这并不能证明 record 从 h 开始，并造成 off-by-one sample loss。
-
-BornBeast：
-
-```text
-492 = 164 * 3
-varying positions = 2,5,...,491  -> 164 samples
-```
-
-当前报告却写：
-
-```text
-492 = 2 + 163*3 + 1
-slot_count = 163
-```
-
-因此 offset 491 被漏掉。
-
-Review 要求重新区分：
-
-```text
-phase index != record boundary
-```
-
-至少保留：
-
-```text
-H-CFG-A byte0-origin RGB/BGR triplets; h = varying channel
-H-CFG-B scalar+padding/alignment; record boundary unproven
-H-CFG-C other 3-byte periodic packing
-```
-
-只允许把 corpus mod-3 pattern 写 VERIFIED。`scalar+padding exact framing` 不接受。
-
-### H — shader hypotheses
-
-旧 `step=97` phase-mixing bug 已在 8af3cd0 改为 pixel-index sampling，**FIX ACCEPTED**。
-
-不要下一轮再花时间重修。H2 继续 diagnostic approximation。
-
-需小幅对齐：`cfg_strip()` 仍有旧 `if raw[i] != 0xFF` extraction，应随 CFG 修正统一。
-
-### I — closure
-
-Executor 正确继续推荐：
-
-```text
-CONTINUE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-```
-
-Chat/Sol 同意。
-
-但 closure v2 需修两条：
-
-- `every non-empty PV DTX size%2048==164` -> `1043/1046 dominant pattern`；
-- `CFG 492=2+163*3+1 exact framing` -> record boundary unresolved。
+- basename convention = binding；
+- 文件在相邻目录 = binding；
+- 长度/count fit = semantic proof；
+- `[0,42]` 值域小 = scalar verified；
+- 能画成图 = texture role verified；
+- external texture visual match = native semantics；
+- negative scan 超出实际 scope；
+- 为得到 PASS 无限扩大 blind scan。
 
 ---
 
-## 5. 当前 Review 下一步
+## 4. 已接受 baseline，Review 时不得重复打回
 
-下一次只重点检查：
-
-```text
-1. CFG phase-vs-record-boundary bug/off-by-one 是否真正修掉
-2. DTX continuity 是否真实覆盖两个 varying channels/all pixels
-3. DTX 1043/1046 corpus statistic 是否精确表述
-4. binding negative scope 是否限定实际扫描 corpus
-5. H2 accepted fix 是否未回退
-6. closure 是否与 corrected reports 完全一致
-```
-
-默认不再 Review/要求重跑：A、G、TGA formal repair、DTX formal header/LZMA、DTX width candidate scan、H2 pixel-index fix、ArmModel material-format discovery。
-
----
-
-## 6. External texture policy
-
-历史 external CS1.6 BornBeast texture 只能 `reference_only / differential_control`。
-
-禁止采样/抠图/bake/作为 final texture；final visible pixels 必须来自 local CF 或 verified deterministic semantics。
-
----
-
-## 7. Executor provenance
-
-用户报告当前实际执行组合：
+除非新 counterevidence：
 
 ```text
-Harness: Claude Code
-Model: GLM-5.3-Flash internal beta / multimodal
+DTX no formal LithTech header             VERIFIED_STRUCTURAL
+DTX not LZMA                              VERIFIED_STRUCTURAL
+DTX whole-file 3-byte periodic payload    VERIFIED_STRUCTURAL
+DTX one fixed-FF byte position            VERIFIED_STRUCTURAL
+DTX 1024/no-mips                          STRONG_HYPOTHESIS
+DTX 1043/1046 packing statistic           VERIFIED_CORPUS_STATISTIC
+TGA formal repair                         ACCEPT / STRUCTURAL
+CFG 237/237 single-phase mod-3 fact       VERIFIED_STRUCTURAL
+CFG phase != record boundary              correction accepted
+CFG primary sample extraction             164/169/214 accepted
+H2 phase-mixing fix                       accepted
+ArmModel [Textures]/PieceIndex format     VERIFIED_STRUCTURAL
+weapon LTB short field exists             VERIFIED_STRUCTURAL
 ```
 
-commits `bded9e8`、`8af3cd0` 的 Claude Opus co-author footer 不是可靠 executor provenance。任务继续 agent-agnostic。
+仍 open：
+
+```text
+DTX/TGA channel/binding semantics
+DTX tail semantics
+weapon short-field meaning
+weapon piece/material -> texture set
+WeaponShader CFG record boundary
+WeaponShader CFG consumer/semantic
+native composition
+```
 
 ---
 
-## 8. P4-M01 -> P5 handoff
+## 5. Phase 0 Review
 
-只有 Chat/Sol 明确判定：
+N01 Phase 0 只验：
+
+```text
+CFG phase-origin formula arithmetic
+DTX wording/docstring consistency
+H1 preview path/SHA consistency
+H1 evidence-class consistency
+shader/binding stale comments removed
+reports regenerated without evidence escalation
+```
+
+Phase 0 是 housekeeping，不应该再次消耗一整轮任务。
+
+Executor 按 spec 可在 Phase 0 self-check 通过后直接进入 Phase 1。
+
+---
+
+## 6. Phase 1–4 Review
+
+### Consumer discovery
+
+至少检查：
+
+- candidate 是否来自真实 code/data path；
+- 是否记录 reference direction；
+- 是否有 raw key/offset/field/string；
+- BornBeast/control 是否都检查；
+- negative 是否有 scope；
+- rejected candidate 是否记录原因。
+
+### Positive control + differential
+
+ArmModel `[Textures]/PieceIndex` 只作为 positive control。Review 不允许：
+
+```text
+ArmModel has PieceIndex
+=> weapon short field is PieceIndex
+```
+
+必须有 weapon-side structural/differential bridge。
+
+至少期望 BornBeast/Transformers/Jewelry + 一个简单 control 的：
+
+```text
+mesh count/names
+short field raw offset/value
+geometry relation
+DTX/TGA/CFG paths + SHA/size
+CFG phase/sample count
+resource/config references
+```
+
+### CFG consumer
+
+优先接受 consumer contract 对 H-CFG-A/B/C 的裁决。
+
+若 consumer 未找到：
+
+- hypotheses 保持 open；
+- differential 可提高 evidence，但不能自动变 semantic verified；
+- sample count 与 piece count 等单一相关不足以 closure。
+
+### Channel semantics
+
+必须分开：
+
+```text
+storage order
+map/binding role
+shader composition role
+```
+
+TGA storage-byte facts不能直接替代 shader role；DTX 1024 layout 仍 strong hypothesis，直到有更直接 evidence。
+
+---
+
+## 7. N01 PASS gate
+
+优先 Path A：
+
+```text
+weapon mesh/piece
+-> verified material/binding key
+-> verified local texture set
+-> CFG/material consumer role sufficiently identified
+```
+
+也允许 Path B：多个独立 same-family/control differential evidence 唯一支持上述关系，并明确 reject alternatives。
+
+仅 basename、visual、length fit、单一 correlation 不足以 PASS。
+
+期望 evidence：
+
+```text
+n01/consumer_candidate_matrix.json
+n01/consumer_search_report.md
+n01/weapon_material_differential.json
+n01/cfg_consumer_report.json
+n01/channel_semantics_report.json
+n01/engine_binding_closure.json
+```
+
+N01 PASS 只允许进入 P4-M01 native composition/final material closure；不自动恢复 P5。
+
+---
+
+## 8. P4-M01 final gate
+
+只有最终看到：
+
+- mesh/material binding closure；
+- CFG/render semantics 足够重建；
+- visible color 只来自 local CF / verified semantics；
+- 0 external pixels；
+- clean reproducible output；
+- BornBeast native composition 可稳定辨认；
+- provenance/hash/path 闭合；
+
+才允许：
 
 ```text
 P4-M01 = PASS / NATIVE_MATERIAL_RECOVERED
 ```
 
-才恢复 P5-T02。当前不进入 user final visual gate、不执行 J、不恢复 P5。
+然后恢复 P5-T02。
+
+当前不进入 final user visual gate，不执行 Source1 final integration，不恢复 P5-T02。
