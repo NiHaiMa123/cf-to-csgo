@@ -67,8 +67,8 @@ assets/weapons/            可审计的武器 manifest / mapping
 work/                      受版本控制的运行报告、evidence、派生结果
 data/                      本地 CF 原始/解包数据；永不上传 GitHub
 migi_tools/                MIGI 工具链
- tools/                     第三方工具
- tests/                     冒烟 / 回归测试
+tools/                     第三方工具
+tests/                     冒烟 / 回归测试
 ```
 
 ## 常用入口
