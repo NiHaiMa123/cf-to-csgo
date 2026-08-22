@@ -372,6 +372,112 @@ P4-M01                                = INCOMPLETE
 
 后续应优先从低成本、直接相关的 runtime config 证据开始；只有 config 路线不足时，再升级到 PE / shader / archive consumer tracing。
 
+## 4.9 LithTech / CrossFire reference hierarchy
+
+后续格式研究不再默认从 raw bytes 独立逆向。固定采用以下 reference hierarchy：
+
+```text
+1. public LithTech/Jupiter source
+   -> 标准 engine/file/runtime semantics 的第一参考
+
+2. CF-specific community tools
+   -> CrossFire variant 的 positive control / differential clue
+
+3. this repo CFRezManager
+   -> 本项目资源入口、浏览、提取、快速 decode/preview implementation
+
+4. current local CF runtime evidence
+   -> 对当前 CrossFire 客户端实际行为的最终验真来源
+```
+
+核心原则：
+
+```text
+standard Jupiter behavior
+-> compare existing CF tools / repo implementation
+-> validate against current CF runtime artifacts
+-> reverse only the remaining CF-specific delta
+```
+
+### 4.9.1 已确认的 public reference implementations
+
+长期参考：
+
+```text
+https://github.com/no-lith/Jupiter
+https://github.com/jsj2008/lithtech
+```
+
+已确认公开 Jupiter 源码包含或可追踪：
+
+```text
+LIB-ButeMgr
+LIB-LTAMgr
+LIB-DTXMgr
+LIB-RezMgr
+runtime/model
+runtime/render / render_a / render_b
+clientfx
+controlfilemgr
+```
+
+`jsj2008/lithtech/runtime/model/src/model_load.cpp` 还直接暴露标准 Jupiter LTB 的 piece texture indices、render style、bone/node、animation compression/load contract，因此后续 LTB 研究应先做 Jupiter-vs-CF differential，而不是重复从零猜标准字段。
+
+这些源码是 **REFERENCE_IMPLEMENTATION**，不是当前 CF client behavior 的自动证明；版本差异必须由本机 artifact 验证。
+
+### 4.9.2 已确认的 CF-specific community references
+
+可作为 positive control / differential reference：
+
+```text
+https://github.com/iQuitt/Vortigaunt
+  LTB -> SMD with bones/animations
+  DTX support
+  REZ extraction explicitly tested with CrossFire
+
+https://github.com/bxclip/Tool-Crossfire
+  project declares LTB -> LTA / CFT -> CSV / LTC -> LTA
+```
+
+社区工具结论等级默认：
+
+```text
+EXTERNAL_TOOL_BEHAVIOR / POSITIVE_CONTROL
+```
+
+除非源码可审计并被当前 CF artifact 复现，否则不能直接升级为 runtime fact。尤其只提供 binary/rar 的工具不应作为 production dependency，也不应未经审计执行未知二进制。
+
+### 4.9.3 CFRezManager role freeze
+
+`CFRezManager` 的长期角色冻结为：
+
+```text
+REZ browse / inventory / extract / repack
+format preview
+DTX / image / audio / config / model quick decode
+local deterministic conversion helpers
+reference-adapter implementation
+```
+
+它 **不是** 整个 CF engine semantics 的唯一 authority。
+
+当前 repo 已存在：
+
+```text
+CFRezManager/Decoders/LithTech/LithTechLtcNativeDecoder.cs
+```
+
+该实现已经给出 LTC 的 deterministic native decode path；因此后续 N02-B 不应再把“LTC 是什么压缩/编码格式”作为首要逆向问题，而应先：
+
+```text
+validate existing LTC decoder on current runtime samples
+-> recover decoded LTA/Bute-form content where possible
+-> parse semantics using Jupiter Bute/LTA reference
+-> correlate resource bindings
+```
+
+只有现有 decoder 与真实 runtime sample 不一致时，才进入 LTC format differential reverse。
+
 ---
 
 # 5. P5 — 最终 M4A1-雷神资产识别
@@ -496,12 +602,14 @@ world model / extra polish
 | `STRONG_HYPOTHESIS` | 强线索但仍有替代解释 |
 | `HYPOTHESIS` | 待验证解释 |
 | `TOOL_BEHAVIOR` | 本仓库工具行为，不等于原 CF runtime |
+| `EXTERNAL_TOOL_BEHAVIOR` | 外部工具声明/行为，只作参考或 positive control |
+| `REFERENCE_IMPLEMENTATION` | 公开 engine/reference source 的标准实现，不自动等于当前 CF variant |
 | `SOURCE1_DESIGN_CANDIDATE` | Source 1 实现候选，不等于 CF 原语义 |
 | `NEGATIVE_RESULT_SCOPED` | 仅在声明范围内成立的 negative |
 | `OPEN_UNRESOLVED` | 当前未闭合 |
 | `BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS` | 缺 engine consumer 新输入 |
 
-禁止把 filename convention、视觉相似、单一统计或 hypothesis 直接升级为 verified fact。
+禁止把 filename convention、视觉相似、单一统计、reference implementation、external tool behavior 或 hypothesis 直接升级为当前 CF runtime verified fact。
 
 ---
 
@@ -520,6 +628,15 @@ work/m4a1_s_bornbeast/p4_prototype_01/
 work/m4a1_s_bornbeast/p4_m01_native_material/
 work/m4a1_s_bornbeast/p4_m01_native_material/n01/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/
+```
+
+## External reference implementation / positive control
+
+```text
+https://github.com/no-lith/Jupiter
+https://github.com/jsj2008/lithtech
+https://github.com/iQuitt/Vortigaunt
+https://github.com/bxclip/Tool-Crossfire
 ```
 
 ## P5
