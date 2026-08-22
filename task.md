@@ -9,181 +9,237 @@
 # 1. 当前任务
 
 ```text
-Task ID: P4-M01-N02-A
-Title: Runtime Root Discovery & Candidate Inventory
+Task ID: P4-M01-N02-B
+Title: Runtime Butes LTC/LTA Static Decode & Target Correlation
 State: ACTIVE
-Parent: P4-M01-N02 Runtime Artifact Acquisition
+Parent: P4-M01-N02 Runtime Artifact Acquisition / Static Triage
+Depends on: P4-M01-N02-A ACCEPTED / COMPLETE
 ```
 
-目标：**在本机找到可信的 CrossFire 安装/runtime root，并建立可供下一轮静态分析选择目标的 runtime artifact inventory。**
+目标：**优先分析 N02-A 新发现的 runtime config，而不是立即进入宽泛 EXE/DLL 反编译。判断 `rez/Butes/*.ltc` / `rez/bf000.lta` 的真实格式、可解析语义，以及它们是否能为 BornBeast / WeaponShader / model-material binding 提供直接证据。**
 
-本轮只解决“新输入在哪里、有哪些候选”。
-
-本轮 **不要求** 继续做 strings/xref/反编译/CFG consumer tracing；这些应在 Review 后按 evidence 单独生成下一轮任务。
+本轮只做静态 config triage + target correlation；完成后停止并交回 Review。
 
 ---
 
-# 2. 本轮需要回答
+# 2. 已冻结输入
+
+N02-A 已确认：
+
+```text
+trusted runtime root = D:\Program Files\CF(2)
+73 x rez/Butes/*.ltc
+35 x bf-prefixed .ltc within that set
+rez/bf000.lta = 30,002 bytes
+17 shader-bearing files
+272 DLL
+27 EXE
+476 REZ
+```
+
+N02-A evidence：
+
+```text
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/root_discovery.json
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/artifact_inventory.json
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/acquisition_report.md
+```
+
+N01 已冻结的旧 corpus 结论仍有效；本轮是利用 **新 runtime 输入** 做增量闭合，不重新推翻或重扫 N01。
+
+---
+
+# 3. 本轮必须回答
 
 尽可能回答：
 
-1. 本机是否存在完整或部分 CF client/runtime 安装目录？
-2. 找到了哪些可信 root，依据是什么？
-3. root 内有哪些值得后续静态分析的 EXE/DLL/archive/shader 类 artifact？
-4. 哪些候选最值得下一轮优先分析？
-5. 如果找不到，搜索范围是否足以形成 bounded negative？
+1. `rez/Butes/*.ltc` 是 plaintext、结构化文本、编译配置、编码/混淆数据，还是其他格式？
+2. 这些 `.ltc` 是否共享稳定 header / record / string / key-value / table 结构？
+3. `bf` 前缀文件与非 `bf` `.ltc` 是否存在可重复的结构差异或命名语义？
+4. `rez/bf000.lta` 与 `bf*.ltc` 是同一 config family、索引/容器关系，还是仅文件名相似？
+5. 是否能从这些 runtime config 中恢复：
+   - texture / DTX / TGA / shader / model basename；
+   - WeaponShader / technique / property / piece/material slot 类字段；
+   - 与 N01 已知 BornBeast / Transformers / Jewelry / BlueDiamond 资源 basename 的交集；
+   - 与 LTB post-mesh short ASCII field 可机械比较的 identifier；
+6. 能否形成 **direct config binding evidence**，还是只能形成候选相关性？
+7. 如果 config 路线没有目标证据，是否已经形成足够 bounded negative，让下一轮升级到 PE/FXO consumer tracing？
 
 ---
 
-# 3. 可尝试实现路径
+# 4. 推荐分析顺序
 
-以下是策略池，不是固定顺序。根据本机线索选择信息增益最高的方法即可。
+以下顺序用于控制成本，可在不破坏 scope 的情况下调整。
 
-## 3.1 Root discovery
+## 4.1 Format fingerprint
 
-可尝试：
-
-- repo/config/report 中已有的 source/install path 线索；
-- Windows uninstall registry / App Paths；
-- Desktop / Start Menu `.lnk` target；
-- WeGame / launcher manifest、配置或安装记录；
-- 常见 Tencent / WeGame / CrossFire 目录；
-- 枚举 fixed drives 后做有界目录名搜索；
-- 如果 CF / WeGame **本来已经运行**，只读查询 executable path / loaded module path。
-
-不要为了定位路径而启动游戏或未知程序。
-
-## 3.2 Candidate inventory
-
-对可信 root 优先 inventory：
+先选择小样本：
 
 ```text
-*.exe
-*.dll
-*.rez
-*.pak
-*.pck
-*.bin
-*.fx
-*.fxc
-*.cso
-*.shader
-*.shd
-renderstyle / shader / effect related files or directories
+若干 bf*.ltc
+若干非-bf rez/Butes/*.ltc
+rez/bf000.lta
+必要时 1-2 个其他 .lta 作为 control
 ```
 
-避免重新扫描整套音频、贴图或旧 `data/**` corpus。
-
-每个 artifact 尽量记录：
+记录：
 
 ```text
-root_id
-path_alias / relative path
-size_bytes
+path_alias
+size
 sha256
-extension
-file magic / PE flag / archive flag if easy to obtain
-version / product / description if available
-signer if available
-candidate_role
-why_candidate
+first/last bytes
+magic / header candidate
+ASCII / UTF-8 / UTF-16 readable strings
+byte frequency / repeated stride / obvious padding
+cross-file common prefix/suffix
 ```
 
-本轮允许根据目录、文件类型、版本信息和模块命名做 **候选排序**，但这些只能是 triage，不是 runtime binding proof。
+优先机械证据，不先假定 `.ltc` 是 LithTech text config。
+
+## 4.2 Deterministic decode / parse
+
+如果出现明确结构，再实现可重复 parser/decoder。
+
+允许：
+
+- 基于文件结构、固定 header、长度字段、已知 encoding 的确定性解析；
+- 基于多样本差分验证 field boundary；
+- 抽取 strings / key-value / identifiers；
+- 对已知结构做 round-trip 或 consistency check。
+
+不要为了“解出来”而进行无证据的大范围 XOR/key brute force、随机 curve fitting 或视觉猜测。
+
+## 4.3 Target correlation
+
+只复用现有 N01 / manifest / report 中已经抽取的 basename、identifier、family evidence；**不要重新扫描整个 `data/**`**。
+
+优先比较：
+
+```text
+BornBeast
+Transformers
+Jewelry
+BlueDiamond
+WeaponShader
+known DTX/TGA basenames
+known LTB/model basenames
+LTB post-mesh short ASCII identifiers
+```
+
+所有命中必须保留：
+
+```text
+runtime source path alias
+source SHA256
+offset / record / field context
+matched target / basename
+match type
+confidence / evidence grade
+```
+
+只有结构中明确表达引用/映射关系时，才能升级为 binding evidence；裸字符串共现、文件名相似、目录邻近不能算 binding proof。
 
 ---
 
-# 4. 建议实现
+# 5. 建议实现与输出
 
-如果一次性命令不足以稳定复现，优先新增或完善：
+优先新增：
 
 ```text
-scripts/material_recovery/n02_runtime_artifact_acquire.py
+scripts/material_recovery/n02_butes_config_triage.py
 ```
 
 建议 evidence 目录：
 
 ```text
-work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n02b_butes_config/
 ```
 
-本轮建议输出：
+至少输出：
 
 ```text
-artifact_inventory.json
-acquisition_report.md
+format_inventory.json
+correlation_report.json
+n02b_butes_config_report.md
 ```
 
-可以增加实际有价值的辅助 JSON，但不要为了凑格式生成空报告。
+如实现 parser，可增加：
+
+```text
+parser_validation.json
+```
+
+不要提交 raw CF runtime `.ltc/.lta` 副本；仓库只保存可审计的 metadata、hash、结构描述和必要的小型 derived evidence。
 
 ---
 
-# 5. Completion / Handoff
+# 6. Completion / Handoff
 
-## A. 找到可信 runtime root 和候选
+本轮完成后返回以下之一：
 
-返回：
-
-```text
-RUNTIME_INVENTORY_READY_FOR_REVIEW
-```
-
-至少给出：
+## A. 找到直接 config binding evidence
 
 ```text
-root(s) + discovery evidence
-artifact counts by type
-inventory path
-Top candidate list
-每个 Top candidate 的 path alias + SHA256 + size + why_candidate
-本轮未覆盖的范围
+RUNTIME_CONFIG_BINDING_EVIDENCE_READY
 ```
 
-完成后 **停止**。不要自行继续做 deep strings/xref/decompile。
+必须给出：
 
-领导 Agent Review 后再决定下一轮，例如：
+- source path alias + SHA256；
+- 可重复 parse/decode 方法；
+- field/record/offset 上下文；
+- model/piece/material/texture/shader 之间具体关系；
+- 为什么这比 filename/string coincidence 更强；
+- 尚未闭合的 CFG/render semantics。
+
+## B. 格式已解析，但没有目标 binding
 
 ```text
-N02-B PE / strings static triage
-N02-B archive/shader triage
-N02-B launcher/runtime-root expansion
+RUNTIME_CONFIG_FORMAT_DECODED_NO_TARGET_BINDING
 ```
 
-## B. 没找到可信 runtime root
+必须给出：
 
-只有形成 bounded negative 后才返回：
+- 已解析结构；
+- 覆盖的 `.ltc/.lta` scope；
+- target correlation 的 bounded negative；
+- 下一轮最值得检查的 PE / FXO consumer target。
+
+## C. 格式仍未闭合，但已形成 bounded negative
 
 ```text
-NO_RUNTIME_ROOT_FOUND_LOCALLY
+RUNTIME_CONFIG_FORMAT_UNRESOLVED
 ```
 
-至少说明：
+必须给出：
 
-```text
-检查过哪些 discovery source
-扫描过哪些盘/目录范围
-排除了什么以及为什么
-是否只发现 launcher / updater / unrelated Tencent components
-下一轮最需要用户补充的具体输入
-```
+- 已验证排除的 encoding/structure 假设；
+- 多样本结构统计；
+- 为什么继续在 config 上投入的信息增益已经较低；
+- 下一轮应升级到哪个具体 consumer artifact，而不是泛泛写“反编译 EXE”。
+
+完成后 **STOP**。不要自行继续 N02-C。
 
 ---
 
-# 6. 本轮禁止事项
+# 7. 本轮禁止事项
 
-- 不重复旧 `data/**` 的 basename/config/CFG curve-fitting 搜索；
-- 不执行未知 CF client/runtime binary；
-- 不触发 launcher patch/update；
-- 不做进程注入、anti-cheat bypass、runtime memory dump；
-- 不上传 raw EXE/DLL/REZ/PAK/PCK/shader binary；
-- 不把目录邻近/文件名当 material binding proof；
+- 不执行任何 CF client/runtime binary；
+- 不注入进程、不绕 anti-cheat、不做 memory dump；
+- 不做宽泛 EXE/DLL decompile/xref；
+- 不开始 FXO shader 反编译；
+- 不解包大型 REZ 作为本轮主任务；
+- 不重新扫描整个 `data/**`；
+- 不上传 raw runtime binary/config 副本；
+- 不把 `bf` 文件名、字符串共现或目录邻近当 binding proof；
 - 不自行宣布 `P4-M01 = NATIVE_MATERIAL_RECOVERED`；
 - 不恢复 P5-T02；
 - 不修改 `plan.md`。
 
 ---
 
-# 7. Executor 交回内容
+# 8. Executor 交回内容
 
 完成后只需交回：
 
@@ -191,8 +247,10 @@ NO_RUNTIME_ROOT_FOUND_LOCALLY
 status
 commit SHA
 新增/修改的 scoped files
-inventory/report 路径
-Top candidates 或 bounded negative 摘要
+format/parser 结论
+runtime config target correlation 结论
+direct evidence 或 bounded negative
+建议下一轮唯一最高优先级 consumer target
 需要领导 Review 的关键判断点
 ```
 
