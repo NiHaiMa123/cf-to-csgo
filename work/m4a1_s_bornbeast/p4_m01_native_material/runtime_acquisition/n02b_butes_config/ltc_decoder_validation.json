@@ -1,0 +1,828 @@
+{
+  "status": "CF_LTC_VARIANT_CONFIRMED",
+  "decoder": "CFRezManager/Decoders/LithTech/LithTechLtcNativeDecoder.cs (1:1 Python port, no behaviour change)",
+  "decoder_constants": {
+    "WINDOW_SIZE": 4096,
+    "MIN_MATCH_LEN": 2,
+    "HEADER_BYTES": 4,
+    "MAX_DECODED": 268435456
+  },
+  "decoder_input_requirement": "first 4 bytes == 00 00 00 00",
+  "cluster_stats": {
+    "total": 78,
+    "by_magic_first4": {
+      "5483b2e1": 73,
+      "0d0a5265": 4,
+      "c7004400": 1
+    },
+    "by_status": {
+      "FAILED": 78
+    },
+    "by_failure_mode": {
+      "LtcHeaderInvalid (expected 00 00 00 00)": 78
+    }
+  },
+  "bf_comparison": {
+    "bf000_lta_present": true,
+    "bf000_lta": {
+      "path_alias": "rez/bf000.lta",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\bf000.lta",
+      "size_bytes": 30002,
+      "sha256": "40301fcfc19e81817cd9e63380adffad3ccd4107d4602c27e400f32c5ea41ab7",
+      "magic_first4": "c7004400",
+      "ascii_header": "",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    "bf_ltc_count": 35,
+    "bf_ltc_magic_shared": "5483b2e1",
+    "bf_ltc_size_min": 56,
+    "bf_ltc_size_max": 81283,
+    "magic_differential": true
+  },
+  "verdict": "The C# LithTechLtcNativeDecoder requires first-4 bytes == 00 00 00 00. All 73 rez/Butes/*.ltc share magic 5483b2e1, and the rez/bf000.lta sample uses magic c7004400ffff0000. The 4 rez/Worlds/*.lta have a 100-byte ASCII header + binary body. No sample satisfies the decoder precondition, so the decoder is incompatible with the current CF runtime's Bute/LTA wire format. This is a confirmed LTC variant, not a decoder bug.",
+  "results": [
+    {
+      "path_alias": "rez/Butes/Alaska_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Alaska_DZ.ltc",
+      "size_bytes": 812,
+      "sha256": "f47239f6ed7972966266e0714ea714cbcfb4dc3a073c9bf9af36a03d4c1a8b5f",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Banlieue13_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Banlieue13_DZ.ltc",
+      "size_bytes": 43532,
+      "sha256": "7a0809539ed2026820bd3d561cc1bf2b0be999b0bf4b8ac7700e29ddac21d9e4",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/BlackWidow_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\BlackWidow_DZ.ltc",
+      "size_bytes": 1177,
+      "sha256": "92405b1e607a110891e61f101d957f403ac9f9b095b8994a992f5938bad78c76",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_Banlieue13.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\BoxStartPoint_Banlieue13.ltc",
+      "size_bytes": 554,
+      "sha256": "28f10e8d331765a1522e7b56a8c114ae5cda85061232b9477242b9435d760f7a",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_LostCities.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\BoxStartPoint_LostCities.ltc",
+      "size_bytes": 579,
+      "sha256": "612a131fb63fc2b0ff9351f749c2c497d7bf72da5fa33ae5cf7ef1490699b145",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_NANODUST.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\BoxStartPoint_NANODUST.ltc",
+      "size_bytes": 594,
+      "sha256": "a33cd5bcef9b9c2e0de7bbb535b858827911fff420dba8537bcd9b3f471fc11f",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_NCeyhanNM.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\BoxStartPoint_NCeyhanNM.ltc",
+      "size_bytes": 662,
+      "sha256": "1b8f0a0f8014c3eacbf66729e464fcc5e9c49ed1f7aed36b32b08c0f6fecb9fe",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_NanoRoofGhost.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\BoxStartPoint_NanoRoofGhost.ltc",
+      "size_bytes": 635,
+      "sha256": "5c152c2627e50e31fa5a8c59e2bc34b43576822a1a1dd1394c1b114e4c12e798",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_estate.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\BoxStartPoint_estate.ltc",
+      "size_bytes": 548,
+      "sha256": "746e4ffdbce0676085956715eb749578fc859ba3cb6886dece2ff5eb9dc0cb5e",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_Banlieue13.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_Banlieue13.ltc",
+      "size_bytes": 840,
+      "sha256": "aca980e4daca12517390879634ce52393c7c4dd72dfec87a206a81c1534b89eb",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_BlackWidow.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_BlackWidow.ltc",
+      "size_bytes": 611,
+      "sha256": "838353c20cf60e128a5c2fb9d269f42e5260edcee1d406f5b00ddee60cb12f0b",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_Dust2.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_Dust2.ltc",
+      "size_bytes": 614,
+      "sha256": "d5d1d2fb9a275a7489837a36364104319b8be7edf1f582b04759d86e0ef02a9f",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_LostCities.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_LostCities.ltc",
+      "size_bytes": 718,
+      "sha256": "5479793b7e2d7e43d876f1888471ca195a88cec7e63a6d2e5b5e5f6e6228adb8",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NANODUST.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_NANODUST.ltc",
+      "size_bytes": 613,
+      "sha256": "bb44b5454c32f98b5f6b1d1098cc2da216abab3f86d7a68f235234b7f1a0ec05",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NCeyhan2.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_NCeyhan2.ltc",
+      "size_bytes": 872,
+      "sha256": "54bebd367161f378d7bf95f618d909749de181a891f1e2fb5805d8b3f3fbb101",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NCeyhanNM.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_NCeyhanNM.ltc",
+      "size_bytes": 874,
+      "sha256": "8e9f44d7c92e04255236747b6f8e4b020ca1bcb11a4c4ba8c743442dc3f1cae7",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NanoRoofGhost.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_NanoRoofGhost.ltc",
+      "size_bytes": 907,
+      "sha256": "47b912c97b31bb10db359fb7a6bb9369f7020108f937b9a9778943db2036bbaa",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_estate.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DStartPoint_estate.ltc",
+      "size_bytes": 859,
+      "sha256": "db7183de70e40f7db0c66e12a95f1da5289086399235bf5c8a174e8fa61fd9e4",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/DesertStormTM_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\DesertStormTM_DZ.ltc",
+      "size_bytes": 1311,
+      "sha256": "d0baf5e00be8912bb3240abe520f2767c459e54536baf9bc12f61918a6e57ecd",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Dryworld_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Dryworld_DZ.ltc",
+      "size_bytes": 534,
+      "sha256": "7c5726b26ca4469cd751215d236dc1ba4086b8b1099367499691f1d270321270",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Dust2_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Dust2_DZ.ltc",
+      "size_bytes": 2887,
+      "sha256": "20928a6c253bfe4016134032e984c5c32afa0bb7a1b278800663dad0c64e6ddd",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/EAGLEEYES_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\EAGLEEYES_DZ.ltc",
+      "size_bytes": 2880,
+      "sha256": "3b91d55f486496d6a58e64b14796f8a3ac124a9247bcb168d776bf573deeab76",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Factory_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Factory_DZ.ltc",
+      "size_bytes": 3337,
+      "sha256": "0dbd54af58a88763465c53f86ae30d45bcd5f9af0f7af1c8e4e4f8cfa957f186",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Fortress_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Fortress_DZ.ltc",
+      "size_bytes": 45555,
+      "sha256": "62397e794438403bc23e353bb82b2f8370cc624bb1b8e5b5fca17b80f2f54816",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Kairouan_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Kairouan_DZ.ltc",
+      "size_bytes": 1447,
+      "sha256": "31e3c5233db0c90a337fc9b91d76981890a05a7f582365d54ad88a21feceb519",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Lab_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Lab_DZ.ltc",
+      "size_bytes": 9212,
+      "sha256": "3ad42f809f9ae673b960500739675e4f182e74279e0fc85b72775d3e68c64c62",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/LostCities_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\LostCities_DZ.ltc",
+      "size_bytes": 222372,
+      "sha256": "e64c7b755287cee5d602b9f5b888b6d080caed756fa22ffb5bfffc666c0b2ec3",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/MetroGM_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\MetroGM_DZ.ltc",
+      "size_bytes": 946,
+      "sha256": "d4f131ab4b38f07907a136d3d0f2fa962f851a33a49346c22946066f9146ac5f",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/MexicoDeath_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\MexicoDeath_DZ.ltc",
+      "size_bytes": 16506,
+      "sha256": "fde736f902c8a17f1b2c1299188d1ee2a5be280d396218e04351299801c54f15",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/NANODUST_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\NANODUST_DZ.ltc",
+      "size_bytes": 103412,
+      "sha256": "4b8db999f012810bc80f06d6656a9febfb2ec11a46505e31d31a3e047103a829",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/NCeyhan2_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\NCeyhan2_DZ.ltc",
+      "size_bytes": 7559,
+      "sha256": "b578fd29c5e34ecf038344da269f3f26e6dd592c5a9253fccf28cb6c99c736ee",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/NCeyhanNM_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\NCeyhanNM_DZ.ltc",
+      "size_bytes": 28652,
+      "sha256": "d2ebe0684eb28c5a7b67770edf4731a5febf711407c48507ac57793614da4455",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/NanoRoofGhost_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\NanoRoofGhost_DZ.ltc",
+      "size_bytes": 142951,
+      "sha256": "fd1d21113d1bea8633fe33cbd215b8bbf037e8dad1c71a7d7cc2156bce385059",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/TrainDeath_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\TrainDeath_DZ.ltc",
+      "size_bytes": 1094,
+      "sha256": "69e31b32f417cac85517edb952a43dc9b5b4b0d78b7c2ac3f85ab535085ea120",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Transportship_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Transportship_DZ.ltc",
+      "size_bytes": 3925,
+      "sha256": "2314987d5baadf5460cb3c27bd1e1e262230129c19cd8f39d5844c000dc3b6db",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/Tutorial_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\Tutorial_DZ.ltc",
+      "size_bytes": 363,
+      "sha256": "231e7b72455fc8e648c3c5e03ca0030e2348b38b79ac54edfe42d8e7e7cfa09c",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf001.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf001.ltc",
+      "size_bytes": 1144,
+      "sha256": "0881ea95a8dbd7f363d8b430ab611a9c0819660f362c9048bedec2f913b9db88",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf002.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf002.ltc",
+      "size_bytes": 260,
+      "sha256": "04c82c5b24adca0faba651167bc186f0ece11b9c6cf8a4b4a5802e97249df627",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf003.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf003.ltc",
+      "size_bytes": 219,
+      "sha256": "3853dab8ae2e05035c37f356880adfedd3a1b647bce4314730494722f3e5bf3d",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf004.ltc",
+      "size_bytes": 3517,
+      "sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf005.ltc",
+      "size_bytes": 81283,
+      "sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf006.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf006.ltc",
+      "size_bytes": 1373,
+      "sha256": "9212cb8f3822261d3d6647a05b7d7d24600dbc2ad2537b731c7220d870e364c0",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf007.ltc",
+      "size_bytes": 17970,
+      "sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf008.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf008.ltc",
+      "size_bytes": 1976,
+      "sha256": "68ce190732e28ad54fddcd741ba74054f8238d0cbab1f43ab002a2fa00ae9546",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf009.ltc",
+      "size_bytes": 26432,
+      "sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf010.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf010.ltc",
+      "size_bytes": 45311,
+      "sha256": "69705ce8992d14c5093aedd05545910cd0079e26ded4bde06c980aac2d522a4e",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf011.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf011.ltc",
+      "size_bytes": 51717,
+      "sha256": "4f734e24ff8c57d1fabffe029bdbe7b47b343802dc16513df25a09e936b558b0",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf012.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf012.ltc",
+      "size_bytes": 195,
+      "sha256": "92f1d1f13bc52936a789b0fb8fcd6ccaa8c351af9f519c6defcc2f33ca9215c2",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf013.ltc",
+      "size_bytes": 434,
+      "sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf014.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf014.ltc",
+      "size_bytes": 2368,
+      "sha256": "2963193f697724013cd4a4693ef7aade5fb48f97c993d72a66db9f5e3ea76d5e",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf015.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf015.ltc",
+      "size_bytes": 56,
+      "sha256": "5f4c03f001a36c60c1cbf55321b1c32da26068f2c813581e601c58b9aa5cfbb1",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf016.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf016.ltc",
+      "size_bytes": 1270,
+      "sha256": "391f47da9840c0d7cf3b277c9471d38b23a5937b35e90959830aca7b4c8688d5",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf017.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf017.ltc",
+      "size_bytes": 272,
+      "sha256": "3b20085a4b7a9e2c69fc183b8ee58f5ecf5c5c10c34f7dca6caac9fa459270bd",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf018.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf018.ltc",
+      "size_bytes": 222,
+      "sha256": "03248944f22ac7c7f55224577ff427c60009e2682cfff3663ef1bdae3d1eb333",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf019.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf019.ltc",
+      "size_bytes": 1133,
+      "sha256": "cebd33b303558edac422cc0c857c3361a8298b5cf5d7f5832fa93e03a4ebb378",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf020.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf020.ltc",
+      "size_bytes": 3205,
+      "sha256": "2e0bb75703340a728c9c459790685e9bdaeb5768f6fcd8d7fc915a10ff63a1da",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf021.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf021.ltc",
+      "size_bytes": 25840,
+      "sha256": "addca4bf2988ef5b10615e533d9c433a24ad988ac2f84ba44941cb7e773647d0",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf022.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf022.ltc",
+      "size_bytes": 928,
+      "sha256": "9f6d95fc5bf24eca21cef75e02a2e000a15d6c1316eeced83783956201dae76f",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf023.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf023.ltc",
+      "size_bytes": 1585,
+      "sha256": "b6827ed6852f7e38172b03b326912c341719f102f7b38da2975e42b72b806e52",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf024.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf024.ltc",
+      "size_bytes": 2852,
+      "sha256": "b1957633ae93cb2bffb6d297986c59bfc92f5b69ae287e5fbed747cf6cc26e31",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf025.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf025.ltc",
+      "size_bytes": 2942,
+      "sha256": "97c5c502d8fe4d6db261af63af61c11aa013ccace0eed25281dd6723c68cf583",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf026.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf026.ltc",
+      "size_bytes": 2839,
+      "sha256": "b92b38066baebc6d3c1a1ff64ce8046b0c07023a1b8f5d817379b233b77b3fa4",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf027.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf027.ltc",
+      "size_bytes": 552,
+      "sha256": "80e8f7f52281dd1f5f3c21c29775b5904aa56eea96d475d23275914508402d1d",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf028.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf028.ltc",
+      "size_bytes": 2810,
+      "sha256": "ebf0fc5a38b573cf511dc30ed2e73498d0245a2a6319c3c06fb534e12a7c2762",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf029.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf029.ltc",
+      "size_bytes": 108,
+      "sha256": "6f5d487ca121dae1d047b435e4b6035b75e5b3dfc0dbfee5daf6ecc0a6d84429",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf030.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf030.ltc",
+      "size_bytes": 131,
+      "sha256": "28e39b1b6223aff43081378a94ad1f4db6f43a610e79f5c5febf94ef25335e0d",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf031.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf031.ltc",
+      "size_bytes": 1895,
+      "sha256": "6cd09c5214b20918c64abb5830cbd45db4d3ecbdbc295b85b7cf208a9561a242",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf034.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf034.ltc",
+      "size_bytes": 291,
+      "sha256": "47385b732bb351eb3aefdc43b0231675f666323a022f9d2eab9915d29a0cfb51",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf035.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf035.ltc",
+      "size_bytes": 327,
+      "sha256": "67d845731f2eeff0956b3b7520802592abad67d22f371c8fd81f5726018ff47d",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf036.ltc",
+      "size_bytes": 709,
+      "sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/bf037.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\bf037.ltc",
+      "size_bytes": 315,
+      "sha256": "e613f9193e0da1e7ebb4ef89cdbecf54c431c8b2ebaf748398a6d2cd4764e1e4",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/estate_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\estate_DZ.ltc",
+      "size_bytes": 32409,
+      "sha256": "44bbae3ce7c3e2c04e5428ae8e329e80b905681ab95d343bbbe44ad59df03294",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Butes/leapfrogTM_DZ.ltc",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Butes\\leapfrogTM_DZ.ltc",
+      "size_bytes": 5691,
+      "sha256": "6b65b400f3ce2757cce56fb9afecda23ff25ed7f9d14a20363d2e0a2fb74c054",
+      "magic_first4": "5483b2e1",
+      "ascii_header": "T",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Worlds/AI1_Arcadia01_AIRayPos.lta",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Worlds\\AI1_Arcadia01_AIRayPos.lta",
+      "size_bytes": 236,
+      "sha256": "1643a066384f059ae5b69094784094fcdaf24ed954acc3c856c75e01a7bae56c",
+      "magic_first4": "0d0a5265",
+      "ascii_header": "\r\nRezMgr Version 1 Copyright (C) 1995 MONOLITH INC.           \r\nLithTech Resource File",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Worlds/AI_Arcadia01_20201214.lta",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Worlds\\AI_Arcadia01_20201214.lta",
+      "size_bytes": 236,
+      "sha256": "1643a066384f059ae5b69094784094fcdaf24ed954acc3c856c75e01a7bae56c",
+      "magic_first4": "0d0a5265",
+      "ascii_header": "\r\nRezMgr Version 1 Copyright (C) 1995 MONOLITH INC.           \r\nLithTech Resource File",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Worlds/AI_Arcadia02_20201215.lta",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Worlds\\AI_Arcadia02_20201215.lta",
+      "size_bytes": 236,
+      "sha256": "1643a066384f059ae5b69094784094fcdaf24ed954acc3c856c75e01a7bae56c",
+      "magic_first4": "0d0a5265",
+      "ascii_header": "\r\nRezMgr Version 1 Copyright (C) 1995 MONOLITH INC.           \r\nLithTech Resource File",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/Worlds/AI_Arcadia03_20201215.lta",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\Worlds\\AI_Arcadia03_20201215.lta",
+      "size_bytes": 236,
+      "sha256": "1643a066384f059ae5b69094784094fcdaf24ed954acc3c856c75e01a7bae56c",
+      "magic_first4": "0d0a5265",
+      "ascii_header": "\r\nRezMgr Version 1 Copyright (C) 1995 MONOLITH INC.           \r\nLithTech Resource File",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    },
+    {
+      "path_alias": "rez/bf000.lta",
+      "abs_path": "D:\\Program Files\\CF(2)\\rez\\bf000.lta",
+      "size_bytes": 30002,
+      "sha256": "40301fcfc19e81817cd9e63380adffad3ccd4107d4602c27e400f32c5ea41ab7",
+      "magic_first4": "c7004400",
+      "ascii_header": "",
+      "status": "FAILED",
+      "failure_mode": "LtcHeaderInvalid (expected 00 00 00 00)"
+    }
+  ],
+  "generated_at": "2026-08-22T14:13:31.104065+00:00",
+  "script": "scripts\\material_recovery\\n02_butes_config_triage.py"
+}

@@ -1,0 +1,37 @@
+{
+  "scope_used": {
+    "families": [
+      "BornBeast",
+      "Transformers",
+      "Jewelry",
+      "BlueDiamond"
+    ],
+    "n01_decoded_count": null,
+    "config_index_keys": 18
+  },
+  "samples_decoded": 0,
+  "samples_failed": 78,
+  "binding_evidence": [],
+  "bounded_negative": {
+    "BornBeast": {
+      "binding_evidence_count": 0,
+      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+    },
+    "Transformers": {
+      "binding_evidence_count": 0,
+      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+    },
+    "Jewelry": {
+      "binding_evidence_count": 0,
+      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+    },
+    "BlueDiamond": {
+      "binding_evidence_count": 0,
+      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+    }
+  },
+  "bf000_lta_vs_bf_ltc_relationship": "BF000.LTA and BF*.LTC share filename prefix only. BF000.LTA magic=c7004400ffff0000, BF*.LTC magic=5483b2e1. Without a working decoder for either format, no structural parent/child or shared-key relationship can be proved.",
+  "next_single_highest_value_consumer": "CF_LTC_VARIANT_CONFIRMED: the real Bute/LTC wire format is not the format the C# decoder implements. The single highest-value next consumer is the CF game DLL that loads bute configs at runtime — specifically crossfireBase.dll and server.dll. Targeted strings / xref on these two DLLs is the only way to recover the real LTC header and bitstream. EXE / broad decompile is explicitly out of scope per task.md §6.",
+  "generated_at": "2026-08-22T14:13:31.105047+00:00",
+  "script": "scripts\\material_recovery\\n02_butes_config_triage.py"
+}

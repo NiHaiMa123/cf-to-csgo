@@ -1,0 +1,17 @@
+{
+  "total_decoded": 0,
+  "total_parsed_as_bute": 0,
+  "existing_scope": {
+    "families": [
+      "BornBeast",
+      "Transformers",
+      "Jewelry",
+      "BlueDiamond"
+    ],
+    "n01_decoded_count": null,
+    "config_index_keys": 18
+  },
+  "parsed": [],
+  "generated_at": "2026-08-22T14:13:31.104798+00:00",
+  "script": "scripts\\material_recovery\\n02_butes_config_triage.py"
+}
