@@ -298,14 +298,22 @@ def run_phase2_differential():
         target_differentials[lbl] = res
 
     diff_out = {
-        "schema": "cf2.p4m01.n01.weapon-material-differential.v1",
+        "schema": "cf2.p4m01.n01.weapon-material-differential.v2",
         "task_id": "P4-M01-N01",
         "phase": 2,
         "positive_control": {
             "source": "rf016/Models/PLAYERVIEW/ArmModel/Shader",
             "configs_examined": len(arm_control),
             "samples": {k: v for k, v in list(arm_control.items())[:3]},
-            "architectural_deduction": "CrossFire uses a 5-channel material pipeline: Base/Diffuse DTX + AlphaMap TGA + NormalMap TGA + SpecularMap TGA + EnvCubeMap, indexed per piece.",
+            "architectural_deduction": (
+                "CrossFire ArmModel text shader configs use 5 named texture "
+                "channels (SpecularMap / EnvCubeMap / NormalMap / AlphaMap / "
+                "Diffuse), each with a *Name0 / *MappingEnabled flag, plus a "
+                "[Properties] PieceIndex. This is engine-format positive "
+                "evidence for the existence of a multi-channel shader "
+                "pipeline."
+            ),
+            "evidence_grade": "ENGINE_FORMAT_POSITIVE_CONTROL_VERIFIED (ArmModel text CFG has these sections); NOT a recovered weapon-format binding (weapon uses binary WeaponShader CFG)",
         },
         "weapon_differentials": target_differentials,
         "structural_conclusions": {
@@ -314,14 +322,18 @@ def run_phase2_differential():
                 "Transformers": target_differentials["Transformers"]["ltb"]["slot_id_set"] if target_differentials["Transformers"]["ltb"] else [],
                 "Jewelry": target_differentials["Jewelry"]["ltb"]["slot_id_set"] if target_differentials["Jewelry"]["ltb"] else [],
                 "UltimateGold": target_differentials["UltimateGold"]["ltb"]["slot_id_set"] if target_differentials["UltimateGold"]["ltb"] else [],
-                "conclusion": "All M4A1-S variant models share the same mesh numeric slot ID convention ('0' through '8') corresponding to distinct weapon components (Body, Barrel, Mag, Silencer, etc.)."
+                "conclusion": "All M4A1-S variant models share the same mesh numeric slot ID convention ('0' through '8'). The mapping from digit to weapon component (Body, Barrel, Mag, Silencer, etc.) is HYPOTHESIS only and is not yet established by a CF-engine consumer/reference contract.",
+                "evidence_grade": "STRUCTURALLY_VERIFIED (slot digits exist); HYPOTHESIS (digit -> component name mapping)"
             },
             "cfg_mod3_profile": {
                 "BornBeast": target_differentials["BornBeast"]["weapon_shader_cfg"]["binary_strip_info"] if target_differentials["BornBeast"]["weapon_shader_cfg"] else None,
                 "Transformers": target_differentials["Transformers"]["weapon_shader_cfg"]["binary_strip_info"] if target_differentials["Transformers"]["weapon_shader_cfg"] else None,
                 "Jewelry": target_differentials["Jewelry"]["weapon_shader_cfg"]["binary_strip_info"] if target_differentials["Jewelry"]["weapon_shader_cfg"] else None,
                 "BlueDiamond_Control": target_differentials["BlueDiamond_Control"]["weapon_shader_cfg"]["binary_strip_info"] if target_differentials["BlueDiamond_Control"]["weapon_shader_cfg"] else None,
-                "conclusion": "Every WeaponShader CFG possesses a unique single-phase mod-3 sample profile (BornBeast: 164 samples phase 0; Transformers: 169 samples phase 2; Jewelry: 214 samples phase 1; BlueDiamond: 164 samples phase 0). This confirms skin-specific shader parameterization."
+                "conclusion": "Every WeaponShader CFG matches single-phase mod-3 structure with one phase carrying all non-0xFF bytes (BornBeast: phase 2, 164 samples; Transformers: phase 1, 169 samples; Jewelry: phase 2, 214 samples; BlueDiamond: phase 2, 166 samples). Sample_count and phase vary systematically across skins. Whether the byte sequence encodes LUT values, packed shader constants, or another contract remains OPEN_UNRESOLVED; 'skin-specific shader parameterization' wording is HYPOTHESIS only.",
+                "evidence_grade_structural_form": "STRUCTURALLY_VERIFIED",
+                "evidence_grade_cross_skin_difference": "DIFFERENTIAL_SUPPORTED",
+                "evidence_grade_semantic_interpretation": "OPEN_UNRESOLVED"
             }
         }
     }
@@ -334,25 +346,46 @@ def run_phase2_differential():
 
 
 def run_phase3_cfg_consumer(diffs):
-    """Phase 3: WeaponShader CFG Consumer Analysis."""
-    print("Running Phase 3: CFG Consumer Analysis...")
-    
-    # Check consistency gate
+    """Phase 3: WeaponShader CFG Consumer Analysis (graded).
+
+    Per Chat/Sol 69c03d review:
+      - H-CFG-A (1D LUT) is HYPOTHESIS only; do not claim DIFFERENTIAL_SUPPORTED.
+      - BlueDiamond sample_count is 166 (NOT 164); do not claim it shares a
+        sample_count with BornBeast.
+      - Source1 VMT mapping is SOURCE1_DESIGN_CANDIDATE; do not state
+        "CFG -> Phong exponent / boost / selfillum" as a recovered CF fact.
+    """
+    print("Running Phase 3: CFG Consumer Analysis (graded) ...")
+
     def get_cfg_info(target):
         if diffs[target]["weapon_shader_cfg"]:
             return diffs[target]["weapon_shader_cfg"]["binary_strip_info"]
         return None
-    
+
     cfg_report = {
-        "schema": "cf2.p4m01.n01.cfg-consumer-report.v2",
+        "schema": "cf2.p4m01.n01.cfg-consumer-report.v3",
         "task_id": "P4-M01-N01",
         "phase": 3,
-        "summary": "Evaluation of WeaponShader binary CFG consumer hypotheses against structural and differential evidence.",
+        "summary": (
+            "Hypothesis-graded evaluation of WeaponShader binary CFG "
+            "semantics. Structural facts are kept; all semantic / Source 1 "
+            "mapping claims are explicitly evidence-graded and never "
+            "upgraded to VERIFIED without a real consumer/reference contract."
+        ),
+        "evidence_grade_legend": {
+            "STRUCTURALLY_VERIFIED": "Mechanical structural fact, reproducible by deterministic decode",
+            "OBSERVED": "Direct observation of byte/value/field, not interpreted",
+            "DIFFERENTIAL_SUPPORTED": "Same byte-pattern metric varies systematically across a same-family sample set",
+            "HYPOTHESIS": "Possibly true, but no consumer/contract evidence yet",
+            "SOURCE1_DESIGN_CANDIDATE": "Conversion-design choice for Source 1 mapping; NOT a recovered CF fact",
+            "OPEN_UNRESOLVED": "No evidence yet, deliberately not claimed",
+        },
         "corpus_statistics": {
             "total_files": 237,
             "single_mod3_phase_verified": 237,
             "compliance_rate": "100.0%",
             "non_mod3_counterexamples": 0,
+            "evidence_grade": "STRUCTURALLY_VERIFIED",
         },
         "sample_counts_by_target": {
             "M4A1_S_BornBeast": get_cfg_info("BornBeast"),
@@ -363,99 +396,199 @@ def run_phase3_cfg_consumer(diffs):
         "hypotheses_evaluation": [
             {
                 "hypothesis": "H-CFG-A: 1D Color/Intensity LUT Ramp",
-                "evidence_status": "DIFFERENTIAL_SUPPORTED",
+                "evidence_status": "HYPOTHESIS",
                 "description": "CFG represents a 1D lookup table for dynamic shader color/energy modulation or specular ramp across the weapon surface.",
-                "support": "Sample counts vary smoothly across skins (164, 169, 214), and values show continuous bounded gradients. BlueDiamond shares the 164 sample count with BornBeast.",
+                "support": "Sample counts differ per skin (BornBeast 164 / Transformers 169 / Jewelry 214 / BlueDiamond 166) and the non-FF values stay in a narrow range per file.",
+                "rejection_note": "Cannot be upgraded without a real consumer/reference contract. Earlier DIFFERENTIAL_SUPPORTED claim and the false BornBeast/BlueDiamond 164-equals-164 prose have been removed.",
             },
             {
                 "hypothesis": "H-CFG-B: Packed Parameter / Constant Strip",
-                "evidence_status": "HYPOTHESIS_PLAUSIBLE",
+                "evidence_status": "HYPOTHESIS",
                 "description": "CFG represents packed shader constants or vertex/pixel shader uniforms padded with 0xFF delimiter phases.",
-                "support": "Single active mod-3 phase suggests fixed-stride serialization where 2 bytes out of 3 are reserved/padding.",
+                "support": "Exactly one mod-3 phase carries non-0xFF bytes, suggesting fixed-stride serialization where 2 bytes out of 3 are reserved/padding. No record-boundary or scalar-vs-RGB contract has been verified.",
             },
             {
                 "hypothesis": "H-CFG-C: Text Format (CfgTextDecoder)",
                 "evidence_status": "REJECTED_FOR_WEAPON_SHADER",
                 "description": "WeaponShader CFGs contain INI-like [Sections] and key-value text.",
                 "rejection_reason": "0 of 237 WeaponShader CFGs contain text sections or LZMA headers. All match CfgBinaryStripDecoder.",
-            }
+            },
         ],
-        "conclusion": "WeaponShader CFGs function as binary shader parameter/LUT strips. For CS:GO Source 1 conversion, their visual contribution is mapped to Phong exponent, boost, and self-illumination tint parameters."
+        "consumer_status": {
+            "consumer_identified": False,
+            "evidence_grade": "OPEN_UNRESOLVED",
+            "note": (
+                "The local corpus does not expose a CF runtime/engine "
+                "binary that consumes WeaponShader CFGs. The repo's own "
+                "decoders (CfgTextDecoder / CfgBinaryStripDecoder) only "
+                "describe byte patterns; they do not constitute an "
+                "engine-side consumer."
+            ),
+        },
+        "conclusion": (
+            "Only the structural fact is established. Semantic "
+            "interpretation of CFG remains OPEN_UNRESOLVED. Source 1 "
+            "mapping choices are explicit conversion-design candidates, "
+            "NOT recovered CF facts."
+        ),
     }
+    # ----- regression guard: no false-PASS / overclaim phrases -----
+    text_blob = json.dumps(cfg_report, ensure_ascii=False)
+    forbidden = [
+        "DIFFERENTIAL_SUPPORTED for H-CFG-A",
+        "1D Color/Intensity LUT\", \"evidence_status\": \"DIFFERENTIAL_SUPPORTED",
+        "binary shader parameter/LUT strips",
+        "WeaponShader CFGs function as",
+        "Phong exponent, boost, and self-illumination tint",
+        "BlueDiamond shares the 164 sample count with BornBeast",
+        "BlueDiamond: 164 samples phase 0",
+        "READY_FOR_NATIVE_MATERIAL_COMPOSITION",
+    ]
+    for phrase in forbidden:
+        assert phrase not in text_blob, (
+            f"regression: cfg_consumer_report still contains forbidden phrase {phrase!r}"
+        )
     cfg_path = os.path.join(N01_DIR, "cfg_consumer_report.json")
     with open(cfg_path, "w", encoding="utf-8") as f:
         json.dump(cfg_report, f, indent=2, ensure_ascii=False)
     print(f"  Wrote {cfg_path}")
 
 def run_phase4_channel_semantics():
-    """Phase 4: Channel & Storage Semantics Layering."""
-    print("Running Phase 4: Channel & Storage Semantics...")
+    """Phase 4: Channel & Storage Semantics Layering.
+
+    Per Chat/Sol 69c03d review: this generator was a future regression hazard
+    because it produced overclaim phrasing such as
+    'AlphaMap = transparency + emissive glow mask',
+    'SpecularMap = gloss/roughness map',
+    'WeaponShader CFG = shader parameter & color LUT profile', and
+    'CFG -> phongboost/phongexponent/selfillum'.
+
+    This version is a hypothesis-graded / OPEN_UNRESOLVED generator:
+      - Layer A keeps only mechanical storage facts.
+      - Layer B keeps directory-based role HYPOTHESES, each with
+        an evidence grade; the overclaim phrases are removed.
+      - Layer C explicitly marks Source 1 VMT mapping as
+        SOURCE1_DESIGN_CANDIDATE (NOT recovered CF facts).
+
+    The runner that owns main() currently does NOT auto-invoke this
+    function. It is kept here for completeness and to allow manual
+    regeneration of the graded channel-semantics JSON.
+
+    Regression guard: this function MUST NOT emit
+    `READY_FOR_NATIVE_MATERIAL_COMPOSITION` or any other PASS-equivalent
+    status without explicit direct/accepted Path-B evidence.
+    """
+    print("Running Phase 4: Channel & Storage Semantics (graded) ...")
     semantics_report = {
-        "schema": "cf2.p4m01.n01.channel-semantics.v1",
+        "schema": "cf2.p4m01.n01.channel-semantics.v2",
         "task_id": "P4-M01-N01",
         "phase": 4,
-        "summary": "Strict layered separation between storage byte order, binding roles, and Source 1 shader composition semantics.",
+        "summary": (
+            "Strict layered separation: Layer A = storage byte order "
+            "(mechanical facts only); Layer B = naming/directory "
+            "resource-role HYPOTHESES (each item evidence-graded); "
+            "Layer C = Source 1 conversion-design candidates "
+            "(explicitly NOT recovered CF facts)."
+        ),
         "layer_a_storage_byte_order": {
             "TGA": {
                 "container": "Truevision TGA with bottom footer structure",
                 "footer_offset_formula": "TRUEVISION-XFILE. signature offset - 8",
                 "header_offset_formula": "footer_offset + 26",
                 "raw_pixel_order": "BGRA / BGR (little-endian uncompressed)",
-                "evidence_class": "STRUCTURALLY_VERIFIED",
+                "evidence_grade": "STRUCTURALLY_VERIFIED",
             },
             "DTX": {
                 "container": "LithTech PV DTX (proprietary)",
                 "header": "No standard LithTech -2/-3/-5 header; whole-file 3-byte payload",
-                "stride": "1024 (STRONG_HYPOTHESIS, measured margin ~2.99x)",
+                "stride": "1024",
+                "evidence_grade_stride": "STRONG_HYPOTHESIS",
                 "fixed_byte": "One constant 0xFF byte per 3-byte group",
                 "two_varying_channels": "Continuous 2D spatial correlation across 1024 stride",
+                "evidence_grade_two_channels": "OBSERVED",
                 "dominant_corpus_statistic": "1043 of 1046 (99.71%) files match size % 2048 == 164",
-                "terminal_tail": "2212 bytes (OPEN)",
-                "evidence_class": "STRUCTURALLY_VERIFIED_PAYLOAD",
-            }
+                "evidence_grade_dominant_statistic": "VERIFIED_CORPUS_STATISTIC",
+                "terminal_tail": "2212 bytes",
+                "evidence_grade_terminal_tail": "OPEN_UNRESOLVED",
+                "evidence_grade": "STRUCTURALLY_VERIFIED_PAYLOAD",
+            },
         },
-        "layer_b_map_binding_roles": {
-            "Base_DTX": {
+        "layer_b_map_binding_roles": [
+            {
+                "name": "Base_DTX",
                 "directory": "rf017/ModelTextures/PLAYERVIEW/PV-*.DTX",
-                "role": "Diffuse / Base Color Map",
-                "engine_binding": "Primary surface albedo texture",
+                "role_hypothesis": "Diffuse / Base Color Map (per directory name + file extension)",
+                "evidence_grade": "HYPOTHESIS",
             },
-            "AlphaMap_TGA": {
+            {
+                "name": "AlphaMap_TGA",
                 "directory": "rf017/ModelTextures/AlphaMap/*_Alpha.TGA",
-                "role": "Alpha Transparency & Emissive Glow Mask",
-                "engine_binding": "Controls transparency and localized self-illumination (eyes, energy cores)",
+                "role_hypothesis": "Alpha / transparency channel",
+                "evidence_grade": "HYPOTHESIS",
             },
-            "NormalMap_TGA": {
+            {
+                "name": "NormalMap_TGA",
                 "directory": "rf017/ModelTextures/NormalMap/*_N.TGA",
-                "role": "Tangent Space Normal Map (DirectX format)",
-                "engine_binding": "Provides high-frequency surface geometry and normal perturbation",
+                "role_hypothesis": "Tangent-space normal map",
+                "evidence_grade": "HYPOTHESIS",
             },
-            "SpecularMap_TGA": {
+            {
+                "name": "SpecularMap_TGA",
                 "directory": "rf017/ModelTextures/SpecularMap/*_S.TGA",
-                "role": "Specular Reflection & Glossiness Map",
-                "engine_binding": "Controls specular intensity and roughness",
+                "role_hypothesis": "Specular reflection / gloss channel",
+                "evidence_grade": "HYPOTHESIS",
             },
-            "WeaponShader_CFG": {
+            {
+                "name": "WeaponShader_CFG",
                 "directory": "rf017/ModelTextures/Shader/WeaponShader/*.CFG",
-                "role": "Shader Parameter & Color LUT Profile",
-                "engine_binding": "Supplies per-skin lighting and material modulation parameters",
-            }
+                "role_hypothesis": "Per-skin shader parameter / modulation strip",
+                "evidence_grade": "HYPOTHESIS",
+            },
+        ],
+        "layer_c_source1_conversion_design_candidates": {
+            "_note": (
+                "Source 1 VMT mapping is a conversion-design CHOICE, NOT "
+                "a recovered CF fact."
+            ),
+            "vmt_shader_choice": "VertexLitGeneric",
+            "evidence_grade": "SOURCE1_DESIGN_CANDIDATE",
+            "parameters": [
+                {"vmt_param": "$basetexture", "source_decision": "Local Base DTX",
+                 "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"},
+                {"vmt_param": "$bumpmap", "source_decision": "Local Normal TGA",
+                 "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"},
+                {"vmt_param": "$phong", "source_decision": "Enabled for weapon",
+                 "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"},
+                {"vmt_param": "$phongboost / $phongexponent",
+                 "source_decision": "Driven by chosen CFG byte mapping",
+                 "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"},
+                {"vmt_param": "$phongfresnelranges",
+                 "source_decision": "[.2 .5 1] placeholder",
+                 "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"},
+                {"vmt_param": "$selfillum / $selfillummask",
+                 "source_decision": "Driven by chosen CFG / SpecularMap mapping",
+                 "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"},
+                {"vmt_param": "$envmap",
+                 "source_decision": "env_cubemap (CFG / SpecularMap driven)",
+                 "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"},
+            ],
         },
-        "layer_c_source1_shader_composition": {
-            "vmt_shader": "VertexLitGeneric",
-            "parameters": {
-                "$basetexture": "Derived native Base DTX (RGBA)",
-                "$bumpmap": "Derived NormalMap TGA ($normalmapalphaenvmapmask or independent)",
-                "$phong": "1",
-                "$phongboost": "Derived from CFG / SpecularMap intensity",
-                "$phongexponent": "Derived from SpecularMap / CFG profile",
-                "$phongfresnelranges": "[.2 .5 1]",
-                "$selfillum": "1 (masked by AlphaMap for glowing beast eyes/cores)",
-                "$selfillummask": "Derived AlphaMap TGA",
-                "$envmap": "env_cubemap (masked by SpecularMap)",
-            }
-        }
+        "removed_overclaim_phrasing": [
+            "AlphaMap = transparency + emissive glow mask",
+            "SpecularMap = gloss/roughness map",
+            "NormalMap TGA = DirectX handedness",
+            "WeaponShader CFG = shader parameter & color LUT profile",
+            "CFG -> phongboost/phongexponent/selfillum as recovered CF fact",
+        ],
     }
+    # ----- regression guard: no false-PASS status without Path-B evidence -----
+    text_blob = json.dumps(semantics_report, ensure_ascii=False)
+    assert "READY_FOR_NATIVE_MATERIAL_COMPOSITION" not in text_blob, (
+        "regression: channel_semantics_report emitted READY_FOR_NATIVE_MATERIAL_COMPOSITION"
+    )
+    assert "Path A direct engine closure" not in text_blob, (
+        "regression: channel_semantics_report claimed Path A direct closure"
+    )
     semantics_path = os.path.join(N01_DIR, "channel_semantics_report.json")
     with open(semantics_path, "w", encoding="utf-8") as f:
         json.dump(semantics_report, f, indent=2, ensure_ascii=False)
@@ -463,38 +596,77 @@ def run_phase4_channel_semantics():
 
 
 def run_phase5_engine_binding_closure():
-    """Phase 5: Final Engine Binding Closure."""
-    print("Running Phase 5: Engine Binding Closure...")
+    """Phase 5: Final Engine Binding Closure (graded only).
+
+    Per Chat/Sol 69c03d review: the previous version of this generator
+    emitted `status = READY_FOR_NATIVE_MATERIAL_COMPOSITION` even though
+    Path-B evidence was incomplete. That was a false-PASS future
+    regression hazard.
+
+    This version is locked to OPEN_UNRESOLVED / NEGATIVE_RESULT_SCOPED
+    until direct/accepted Path-B evidence is established. It does NOT
+    flip closure to PASS / READY.
+
+    The runner that owns main() currently does NOT auto-invoke this
+    function. It is kept here for completeness and manual regeneration.
+    """
+    print("Running Phase 5: Engine Binding Closure (graded) ...")
     closure_report = {
-        "schema": "cf2.p4m01.n01.engine-binding-closure.v1",
+        "schema": "cf2.p4m01.n01.engine-binding-closure.v2",
         "task_id": "P4-M01-N01",
         "phase": 5,
-        "closure_path": "Path B — Strong Structural and Differential Closure",
-        "status": "READY_FOR_NATIVE_MATERIAL_COMPOSITION",
+        "closure_path": "Path B - Incomplete",
+        "status": "OPEN_UNRESOLVED",
         "authoritative_evidence": {
             "1_model_mesh_slots": {
                 "status": "STRUCTURALLY_VERIFIED",
-                "evidence": "LTB mesh index buffer is followed by u8-prefixed ASCII slot strings ('0'..'8') verified across BornBeast, Transformers, Jewelry, and UltimateGold.",
+                "evidence": (
+                    "LTB mesh index buffer is followed by u8-prefixed ASCII "
+                    "slot strings ('0'..'8') verified across BornBeast, "
+                    "Transformers, Jewelry, and UltimateGold. However, no "
+                    "open-source C# repo code consumes these IDs to map "
+                    "texture files."
+                ),
             },
             "2_texture_family_mirroring": {
-                "status": "STRUCTURALLY_VERIFIED",
-                "evidence": "CrossFire LithTech runtime resolves the 5-map material family via deterministic directory mirroring (Models/PLAYERVIEW/PV-*.LTB -> ModelTextures/PLAYERVIEW/PV-*.DTX + AlphaMap/ + NormalMap/ + SpecularMap/ + Shader/WeaponShader/).",
+                "status": "OBSERVED / STRUCTURAL_CORRESPONDENCE",
+                "evidence": (
+                    "CrossFire LithTech runtime appears to resolve the "
+                    "5-map material family via deterministic directory "
+                    "mirroring. The C# exporter uses this heuristic to "
+                    "assign the same material to all sub-meshes."
+                ),
             },
             "3_multi_channel_shader_pipeline": {
                 "status": "ENGINE_FORMAT_POSITIVE_CONTROL_VERIFIED",
-                "evidence": "ArmModel text shader configs prove the engine's 5-texture shader architecture (AlphaMap, NormalMap, SpecularMap, EnvCubeMap, Base) indexed by PieceIndex.",
+                "evidence": (
+                    "ArmModel text shader configs prove the engine's "
+                    "5-texture shader architecture indexed by PieceIndex."
+                ),
             },
             "4_weapon_shader_cfg_profile": {
                 "status": "STRUCTURALLY_VERIFIED",
-                "evidence": "All 237 WeaponShader CFGs match single-phase mod-3 binary strips (164 samples for BornBeast, 169 for Transformers, 214 for Jewelry, 164 for BlueDiamond).",
+                "evidence": (
+                    "All 237 WeaponShader CFGs match single-phase mod-3 "
+                    "binary strips. Specific CFG consumers (LUT vs "
+                    "Parameters) remain OPEN_UNRESOLVED."
+                ),
             },
-            "5_zero_external_pixels_provenance": {
-                "status": "GUARANTEED",
-                "evidence": "All inputs for BornBeast native material reconstruction are strictly sourced from local_cf assets in data/rf016 and data/rf017.",
-            }
         },
-        "next_step": "Proceed to P4-M01 native composition / Source 1 VTF/VMT generation without external pixels."
+        "next_step": (
+            "Awaiting Chat/Sol review for N01 Phase 1-3 findings. "
+            "Closure status MUST NOT be flipped to PASS / READY without "
+            "direct/accepted Path-B evidence."
+        ),
     }
+    # ----- regression guard: no false-PASS status -----
+    text_blob = json.dumps(closure_report, ensure_ascii=False)
+    assert "READY_FOR_NATIVE_MATERIAL_COMPOSITION" not in text_blob, (
+        "regression: engine_binding_closure emitted READY_FOR_NATIVE_MATERIAL_COMPOSITION"
+    )
+    assert closure_report["status"] != "READY_FOR_NATIVE_MATERIAL_COMPOSITION", (
+        "regression: engine_binding_closure status flipped to READY_FOR_NATIVE_MATERIAL_COMPOSITION"
+    )
     closure_path = os.path.join(N01_DIR, "engine_binding_closure.json")
     with open(closure_path, "w", encoding="utf-8") as f:
         json.dump(closure_report, f, indent=2, ensure_ascii=False)
@@ -505,6 +677,13 @@ def main():
     print("=== P4-M01-N01 Execution (Phase 2 - 3) ===")
     diffs = run_phase2_differential()
     run_phase3_cfg_consumer(diffs)
+    # Phase 4 / 5 generators are intentionally NOT auto-invoked from main().
+    # They are graded generators (no false-PASS) but should only be triggered
+    # by manual regeneration, never by an automated run.
+    # Regression guard: this runner MUST NOT emit
+    # READY_FOR_NATIVE_MATERIAL_COMPOSITION on its own.
     print("=== Completed N01 Phase 2 & 3. Did not auto-run Phase 4/5 closure. ===")
+    print("    (Phase 4 / Phase 5 generators available as manual functions, both")
+    print("    graded: NO false-PASS, no READY_FOR_NATIVE_MATERIAL_COMPOSITION.)")
 if __name__ == "__main__":
     main()

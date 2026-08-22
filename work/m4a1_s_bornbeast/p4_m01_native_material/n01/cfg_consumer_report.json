@@ -1,13 +1,22 @@
 {
-  "schema": "cf2.p4m01.n01.cfg-consumer-report.v2",
+  "schema": "cf2.p4m01.n01.cfg-consumer-report.v3",
   "task_id": "P4-M01-N01",
   "phase": 3,
-  "summary": "Evaluation of WeaponShader binary CFG consumer hypotheses against structural and differential evidence.",
+  "summary": "Hypothesis-graded evaluation of WeaponShader binary CFG semantics. Structural facts are kept; all semantic / Source 1 mapping claims are explicitly evidence-graded and never upgraded to VERIFIED without a real consumer/reference contract.",
+  "evidence_grade_legend": {
+    "STRUCTURALLY_VERIFIED": "Mechanical structural fact, reproducible by deterministic decode",
+    "OBSERVED": "Direct observation of byte/value/field, not interpreted",
+    "DIFFERENTIAL_SUPPORTED": "Same byte-pattern metric varies systematically across a same-family sample set",
+    "HYPOTHESIS": "Possibly true, but no consumer/contract evidence yet",
+    "SOURCE1_DESIGN_CANDIDATE": "Conversion-design choice for Source 1 mapping; NOT a recovered CF fact",
+    "OPEN_UNRESOLVED": "No evidence yet, deliberately not claimed"
+  },
   "corpus_statistics": {
     "total_files": 237,
     "single_mod3_phase_verified": 237,
     "compliance_rate": "100.0%",
-    "non_mod3_counterexamples": 0
+    "non_mod3_counterexamples": 0,
+    "evidence_grade": "STRUCTURALLY_VERIFIED"
   },
   "sample_counts_by_target": {
     "M4A1_S_BornBeast": {
@@ -130,15 +139,16 @@
   "hypotheses_evaluation": [
     {
       "hypothesis": "H-CFG-A: 1D Color/Intensity LUT Ramp",
-      "evidence_status": "DIFFERENTIAL_SUPPORTED",
+      "evidence_status": "HYPOTHESIS",
       "description": "CFG represents a 1D lookup table for dynamic shader color/energy modulation or specular ramp across the weapon surface.",
-      "support": "Sample counts vary smoothly across skins (164, 169, 214), and values show continuous bounded gradients. BlueDiamond shares the 164 sample count with BornBeast."
+      "support": "Sample counts differ per skin (BornBeast 164 / Transformers 169 / Jewelry 214 / BlueDiamond 166) and the non-FF values stay in a narrow range per file.",
+      "rejection_note": "Cannot be upgraded without a real consumer/reference contract. Earlier DIFFERENTIAL_SUPPORTED claim and the false BornBeast/BlueDiamond 164-equals-164 prose have been removed."
     },
     {
       "hypothesis": "H-CFG-B: Packed Parameter / Constant Strip",
-      "evidence_status": "HYPOTHESIS_PLAUSIBLE",
+      "evidence_status": "HYPOTHESIS",
       "description": "CFG represents packed shader constants or vertex/pixel shader uniforms padded with 0xFF delimiter phases.",
-      "support": "Single active mod-3 phase suggests fixed-stride serialization where 2 bytes out of 3 are reserved/padding."
+      "support": "Exactly one mod-3 phase carries non-0xFF bytes, suggesting fixed-stride serialization where 2 bytes out of 3 are reserved/padding. No record-boundary or scalar-vs-RGB contract has been verified."
     },
     {
       "hypothesis": "H-CFG-C: Text Format (CfgTextDecoder)",
@@ -147,5 +157,10 @@
       "rejection_reason": "0 of 237 WeaponShader CFGs contain text sections or LZMA headers. All match CfgBinaryStripDecoder."
     }
   ],
-  "conclusion": "WeaponShader CFGs function as binary shader parameter/LUT strips. For CS:GO Source 1 conversion, their visual contribution is mapped to Phong exponent, boost, and self-illumination tint parameters."
+  "consumer_status": {
+    "consumer_identified": false,
+    "evidence_grade": "OPEN_UNRESOLVED",
+    "note": "The local corpus does not expose a CF runtime/engine binary that consumes WeaponShader CFGs. The repo's own decoders (CfgTextDecoder / CfgBinaryStripDecoder) only describe byte patterns; they do not constitute an engine-side consumer."
+  },
+  "conclusion": "Only the structural fact is established. Semantic interpretation of CFG remains OPEN_UNRESOLVED. Source 1 mapping choices are explicit conversion-design candidates, NOT recovered CF facts."
 }

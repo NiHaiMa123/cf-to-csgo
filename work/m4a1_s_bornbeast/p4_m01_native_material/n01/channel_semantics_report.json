@@ -1,66 +1,128 @@
 {
-  "schema": "cf2.p4m01.n01.channel-semantics.v1",
+  "schema": "cf2.p4m01.n01.channel-semantics.v2",
   "task_id": "P4-M01-N01",
   "phase": 4,
-  "summary": "Strict layered separation between storage byte order, binding roles, and Source 1 shader composition semantics.",
+  "summary": "Strict layered separation: Layer A = storage byte order (mechanical facts only); Layer B = naming/directory/resource-role HYPOTHESES (each item evidence-graded); Layer C = Source 1 conversion-design candidates (explicitly NOT recovered CF facts).",
+  "evidence_grade_legend": {
+    "STRUCTURALLY_VERIFIED": "Mechanical structural fact, reproducible by deterministic decode of the file",
+    "OBSERVED": "Direct observation of byte/value/field, not interpreted",
+    "DIFFERENTIAL_SUPPORTED": "Same byte-pattern metric varies systematically across a same-family sample set",
+    "STRONG_HYPOTHESIS": "Strong but still unproven working hypothesis",
+    "HYPOTHESIS": "Possibly true, but no consumer/contract evidence yet",
+    "SOURCE1_DESIGN_CANDIDATE": "Conversion-design choice for Source 1 mapping; NOT a recovered CF fact",
+    "OPEN_UNRESOLVED": "No evidence yet, deliberately not claimed",
+    "VERIFIED_CORPUS_STATISTIC": "Empirical statistic over the local corpus (NOT universal)"
+  },
   "layer_a_storage_byte_order": {
     "TGA": {
       "container": "Truevision TGA with bottom footer structure",
       "footer_offset_formula": "TRUEVISION-XFILE. signature offset - 8",
       "header_offset_formula": "footer_offset + 26",
       "raw_pixel_order": "BGRA / BGR (little-endian uncompressed)",
-      "evidence_class": "STRUCTURALLY_VERIFIED"
+      "evidence_grade": "STRUCTURALLY_VERIFIED"
     },
     "DTX": {
       "container": "LithTech PV DTX (proprietary)",
       "header": "No standard LithTech -2/-3/-5 header; whole-file 3-byte payload",
-      "stride": "1024 (STRONG_HYPOTHESIS, measured margin ~2.99x)",
+      "stride": "1024",
+      "evidence_grade_stride": "STRONG_HYPOTHESIS",
       "fixed_byte": "One constant 0xFF byte per 3-byte group",
       "two_varying_channels": "Continuous 2D spatial correlation across 1024 stride",
+      "evidence_grade_two_channels": "OBSERVED",
       "dominant_corpus_statistic": "1043 of 1046 (99.71%) files match size % 2048 == 164",
-      "terminal_tail": "2212 bytes (OPEN)",
-      "evidence_class": "STRUCTURALLY_VERIFIED_PAYLOAD"
+      "evidence_grade_dominant_statistic": "VERIFIED_CORPUS_STATISTIC",
+      "terminal_tail": "2212 bytes",
+      "evidence_grade_terminal_tail": "OPEN_UNRESOLVED",
+      "evidence_grade": "STRUCTURALLY_VERIFIED_PAYLOAD"
     }
   },
-  "layer_b_map_binding_roles": {
-    "Base_DTX": {
+  "layer_b_map_binding_roles": [
+    {
+      "name": "Base_DTX",
       "directory": "rf017/ModelTextures/PLAYERVIEW/PV-*.DTX",
-      "role": "Diffuse / Base Color Map",
-      "engine_binding": "Primary surface albedo texture"
+      "role_hypothesis": "Diffuse / Base Color Map (per directory name + file extension)",
+      "evidence_grade": "HYPOTHESIS",
+      "evidence_note": "Role assigned by directory convention; not yet linked to a CF-engine consumer/reference contract. The repo's exporter applies this file to ALL sub-meshes via filename mirroring (see consumer_binding_investigation.json)."
     },
-    "AlphaMap_TGA": {
+    {
+      "name": "AlphaMap_TGA",
       "directory": "rf017/ModelTextures/AlphaMap/*_Alpha.TGA",
-      "role": "Alpha Transparency & Emissive Glow Mask",
-      "engine_binding": "Controls transparency and localized self-illumination (eyes, energy cores)"
+      "role_hypothesis": "Alpha / transparency channel",
+      "evidence_grade": "HYPOTHESIS",
+      "evidence_note": "Directory name suggests alpha. Whether it ALSO serves as emissive/selfillum mask (the previous overclaim phrasing) is not established by the local corpus. Downgraded from earlier 'transparency + emissive glow mask' overclaim."
     },
-    "NormalMap_TGA": {
+    {
+      "name": "NormalMap_TGA",
       "directory": "rf017/ModelTextures/NormalMap/*_N.TGA",
-      "role": "Tangent Space Normal Map (DirectX format)",
-      "engine_binding": "Provides high-frequency surface geometry and normal perturbation"
+      "role_hypothesis": "Tangent-space normal map",
+      "evidence_grade": "HYPOTHESIS",
+      "evidence_note": "Directory name suggests normal map. Whether DX vs GL handedness is preserved requires Channel order verification (OPEN_UNRESOLVED). Downgraded from earlier 'Tangent Space Normal Map (DirectX format)' overclaim."
     },
-    "SpecularMap_TGA": {
+    {
+      "name": "SpecularMap_TGA",
       "directory": "rf017/ModelTextures/SpecularMap/*_S.TGA",
-      "role": "Specular Reflection & Glossiness Map",
-      "engine_binding": "Controls specular intensity and roughness"
+      "role_hypothesis": "Specular reflection / gloss channel",
+      "evidence_grade": "HYPOTHESIS",
+      "evidence_note": "Directory name suggests specular. Whether it encodes gloss/roughness/intensity is HYPOTHESIS only. Downgraded from earlier 'Specular Reflection & Glossiness Map' overclaim."
     },
-    "WeaponShader_CFG": {
+    {
+      "name": "WeaponShader_CFG",
       "directory": "rf017/ModelTextures/Shader/WeaponShader/*.CFG",
-      "role": "Shader Parameter & Color LUT Profile",
-      "engine_binding": "Supplies per-skin lighting and material modulation parameters"
+      "role_hypothesis": "Per-skin shader parameter / modulation strip",
+      "evidence_grade": "HYPOTHESIS",
+      "evidence_note": "Binary-strip structure is STRUCTURALLY_VERIFIED (single-phase mod-3). Specific consumer or parameter meaning remains OPEN_UNRESOLVED (see cfg_consumer_report.json). Downgraded from earlier 'Shader Parameter & Color LUT Profile' overclaim."
     }
+  ],
+  "layer_c_source1_conversion_design_candidates": {
+    "_note": "These are Source 1 conversion-design CHOICES, not recovered CF facts. They may change without contradicting the recovered CF evidence.",
+    "vmt_shader_choice": "VertexLitGeneric",
+    "evidence_grade": "SOURCE1_DESIGN_CANDIDATE",
+    "parameters": [
+      {
+        "vmt_param": "$basetexture",
+        "source_decision": "Use the local Base DTX as the diffuse map",
+        "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"
+      },
+      {
+        "vmt_param": "$bumpmap",
+        "source_decision": "Use the local Normal TGA",
+        "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"
+      },
+      {
+        "vmt_param": "$phong",
+        "source_decision": "Enable Phong shading for weapon",
+        "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"
+      },
+      {
+        "vmt_param": "$phongboost / $phongexponent",
+        "source_decision": "Driven by a chosen mapping from CFG byte values",
+        "evidence_grade": "SOURCE1_DESIGN_CANDIDATE",
+        "evidence_note": "Per Chat/Sol 69c03d: NOT a recovered CF semantic. Any mapping rule must be re-derived once a CF-engine consumer/reference contract is established."
+      },
+      {
+        "vmt_param": "$phongfresnelranges",
+        "source_decision": "[.2 .5 1] placeholder",
+        "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"
+      },
+      {
+        "vmt_param": "$selfillum / $selfillummask",
+        "source_decision": "Driven by a chosen mapping from CFG / SpecularMap",
+        "evidence_grade": "SOURCE1_DESIGN_CANDIDATE",
+        "evidence_note": "Earlier claim that AlphaMap drives selfillum mask is HYPOTHESIS only. Decision may change."
+      },
+      {
+        "vmt_param": "$envmap",
+        "source_decision": "env_cubemap (driven by SpecularMap / CFG)",
+        "evidence_grade": "SOURCE1_DESIGN_CANDIDATE"
+      }
+    ]
   },
-  "layer_c_source1_shader_composition": {
-    "vmt_shader": "VertexLitGeneric",
-    "parameters": {
-      "$basetexture": "Derived native Base DTX (RGBA)",
-      "$bumpmap": "Derived NormalMap TGA ($normalmapalphaenvmapmask or independent)",
-      "$phong": "1",
-      "$phongboost": "Derived from CFG / SpecularMap intensity",
-      "$phongexponent": "Derived from SpecularMap / CFG profile",
-      "$phongfresnelranges": "[.2 .5 1]",
-      "$selfillum": "1 (masked by AlphaMap for glowing beast eyes/cores)",
-      "$selfillummask": "Derived AlphaMap TGA",
-      "$envmap": "env_cubemap (masked by SpecularMap)"
-    }
-  }
+  "removed_overclaim_phrasing": [
+    "AlphaMap = transparency + emissive glow mask (now HYPOTHESIS only)",
+    "SpecularMap = gloss/roughness map (now HYPOTHESIS only)",
+    "NormalMap TGA = DirectX handedness (now HYPOTHESIS only)",
+    "WeaponShader CFG = shader parameter & color LUT profile (now HYPOTHESIS only)",
+    "CFG -> phongboost/phongexponent/selfillum as recovered CF fact (now SOURCE1_DESIGN_CANDIDATE only)",
+    "BlueDiamond sample_count == BornBeast sample_count == 164 (factually wrong; BlueDiamond is 166)"
+  ]
 }

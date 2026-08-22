@@ -1,5 +1,5 @@
 {
-  "schema": "cf2.p4m01.n01.weapon-material-differential.v1",
+  "schema": "cf2.p4m01.n01.weapon-material-differential.v2",
   "task_id": "P4-M01-N01",
   "phase": 2,
   "positive_control": {
@@ -97,7 +97,8 @@
         }
       }
     },
-    "architectural_deduction": "CrossFire uses a 5-channel material pipeline: Base/Diffuse DTX + AlphaMap TGA + NormalMap TGA + SpecularMap TGA + EnvCubeMap, indexed per piece."
+    "architectural_deduction": "CrossFire ArmModel text shader configs use 5 named texture channels (SpecularMap / EnvCubeMap / NormalMap / AlphaMap / Diffuse), each with a *Name0 / *MappingEnabled flag, plus a [Properties] PieceIndex. This is engine-format positive evidence for the existence of a multi-channel shader pipeline.",
+    "evidence_grade": "ENGINE_FORMAT_POSITIVE_CONTROL_VERIFIED (ArmModel text CFG has these sections); NOT a recovered weapon-format binding (weapon uses binary WeaponShader CFG)"
   },
   "weapon_differentials": {
     "BornBeast": {
@@ -628,7 +629,8 @@
         "0"
       ],
       "UltimateGold": [],
-      "conclusion": "All M4A1-S variant models share the same mesh numeric slot ID convention ('0' through '8') corresponding to distinct weapon components (Body, Barrel, Mag, Silencer, etc.)."
+      "conclusion": "All M4A1-S variant models share the same mesh numeric slot ID convention ('0' through '8'). The mapping from digit to weapon component (Body, Barrel, Mag, Silencer, etc.) is HYPOTHESIS only and is not yet established by a CF-engine consumer/reference contract.",
+      "evidence_grade": "STRUCTURALLY_VERIFIED (slot digits exist); HYPOTHESIS (digit -> component name mapping)"
     },
     "cfg_mod3_profile": {
       "BornBeast": {
@@ -747,7 +749,10 @@
           "0x12"
         ]
       },
-      "conclusion": "Every WeaponShader CFG possesses a unique single-phase mod-3 sample profile (BornBeast: 164 samples phase 0; Transformers: 169 samples phase 2; Jewelry: 214 samples phase 1; BlueDiamond: 164 samples phase 0). This confirms skin-specific shader parameterization."
+      "conclusion": "Every WeaponShader CFG matches single-phase mod-3 structure with one phase carrying all non-0xFF bytes (BornBeast: phase 2, 164 samples; Transformers: phase 1, 169 samples; Jewelry: phase 2, 214 samples; BlueDiamond: phase 2, 166 samples). Sample_count and phase vary systematically across skins. Whether the byte sequence encodes LUT values, packed shader constants, or another contract remains OPEN_UNRESOLVED; 'skin-specific shader parameterization' wording is HYPOTHESIS only.",
+      "evidence_grade_structural_form": "STRUCTURALLY_VERIFIED",
+      "evidence_grade_cross_skin_difference": "DIFFERENTIAL_SUPPORTED",
+      "evidence_grade_semantic_interpretation": "OPEN_UNRESOLVED"
     }
   }
 }

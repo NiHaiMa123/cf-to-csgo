@@ -1,5 +1,49 @@
 {
-  "schema": "cf2.p4m01.n01.consumer-candidate.v1",
+  "schema": "cf2.p4m01.n01.consumer-candidate.v2",
+  "scan_scope": {
+    "scan_root": "D:\\project\\cf_to_csgo\\data",
+    "include_extensions": [
+      ".cfg",
+      ".dat",
+      ".ini",
+      ".lta",
+      ".txt"
+    ],
+    "exclude_paths": "low-value/UI/radio/lobbynotice prefixes AND derived outputs: data/out/, out/, work/, reports/, logs/",
+    "files_scanned_post_filter": 102382,
+    "files_decoded_as_text": 261,
+    "raw_scan_files_seen": 355,
+    "raw_scan_files_decoded": 355,
+    "config_index_keys": [
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index0.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index1.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index2.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/Arm_Armoured_Index3.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_GirlCrush_BL.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_GirlCrush_GR.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_Girlcrush_SP.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_WangLH-NGold_BL.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_WangLH-NGold_GR.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_WangLH_BL.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_ARM_WangLH_GR.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_HAND_GirlCrush_GR.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_HAND_Girlcrush_BL.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_HAND_Girlcrush_SP.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_HAND_WangLH-NGold_BL.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_HAND_WangLH-NGold_GR.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_HAND_WangLH_BL.CFG",
+      "rf016/Models/PLAYERVIEW/ArmModel/Shader/FVIEW_HAND_WangLH_GR.CFG"
+    ],
+    "config_index_total_mapping_tuples": 72,
+    "scan_metadata_count": 102382,
+    "regression_assertions": [
+      "no legacy '_ALL_' key in config_index",
+      "no 1-char texture ref under any config entry",
+      "schema/type guard in look_up_texture",
+      "derived outputs reported separately (DERIVED_OUTPUT_HIT)",
+      "raw scan splits hits_by_extension / hits_by_resource_family / hits_by_consumer"
+    ]
+  },
   "consumer_resource_families": [
     {
       "family": "LithTechModelTextureConfigIndex.CreateResolver",
@@ -7,110 +51,10 @@
       "flow": "BuildIndex -> per .cfg/.ini/.txt candidate parse ExtractModelTextureMappings + ExtractTextureReferences -> AddModelTextureMapping -> per query Resolve",
       "input_resource_type": ".cfg/.ini/.txt with mapping-like text",
       "reference_direction": "model stem (or numbered/family base) -> textures",
-      "BornBeast_hit": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ],
-      "Transformers_hit": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ],
-      "Jewelry_hit": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ],
-      "M4A1_S_BlueDiamond_hit": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ],
+      "BornBeast_hit": [],
+      "Transformers_hit": [],
+      "Jewelry_hit": [],
+      "M4A1_S_BlueDiamond_hit": [],
       "evidence_class": "direct text-config resolver",
       "status": "open",
       "reason": "config index built from local corpus; targeted hits are zero or bear witness this resolver does not see BornBeast weapon side as a direct keyed mapping"
@@ -143,7 +87,7 @@
       "flow": "Per .dat file: LZMA prepare -> per-line scan for texture extensions within resource-path bytes",
       "input_resource_type": ".dat files (world)",
       "reference_direction": "dat body bytes -> texture file paths",
-      "BornBeast_hit_count": 4,
+      "BornBeast_hit_count": 0,
       "evidence_class": "raw-byte needle search",
       "status": "scanned"
     },
@@ -173,134 +117,144 @@
       "keys_tried": [
         "M4A1_S_BornBeast"
       ],
-      "hits": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ]
+      "hits": []
     },
     "Transformers": {
       "stem": "M4A1_S_Transformers",
       "keys_tried": [
         "M4A1_S_Transformers"
       ],
-      "hits": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ]
+      "hits": []
     },
     "Jewelry": {
       "stem": "M4A1_S_Jewelry",
       "keys_tried": [
         "M4A1_S_Jewelry"
       ],
-      "hits": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ]
+      "hits": []
     },
     "M4A1_S_BlueDiamond": {
       "stem": "M4A1_S_BlueDiamond",
       "keys_tried": [
         "M4A1_S_BlueDiamond"
       ],
-      "hits": [
-        [
-          "_ALL_",
-          "s"
-        ],
-        [
-          "_ALL_",
-          "c"
-        ],
-        [
-          "_ALL_",
-          "a"
-        ],
-        [
-          "_ALL_",
-          "n"
-        ],
-        [
-          "_ALL_",
-          "e"
-        ],
-        [
-          "_ALL_",
-          "d"
-        ]
-      ]
+      "hits": []
     }
   },
   "raw_grep_hits_summary": {
-    "BornBeast": 4
+    "schema_note": "Per-target hit counts split by extension / resource family / consumer (cf2.p4m01.n01.consumer-candidate.v2).",
+    "by_extension": {
+      "BornBeast": {
+        ".lta": 0,
+        ".cfg": 0,
+        ".txt": 0,
+        ".ini": 0,
+        ".dat": 0
+      },
+      "Transformers": {
+        ".lta": 0,
+        ".cfg": 0,
+        ".txt": 0,
+        ".ini": 0,
+        ".dat": 0
+      },
+      "Jewelry": {
+        ".lta": 0,
+        ".cfg": 0,
+        ".txt": 0,
+        ".ini": 0,
+        ".dat": 0
+      },
+      "M4A1_S_BlueDiamond": {
+        ".lta": 0,
+        ".cfg": 0,
+        ".txt": 0,
+        ".ini": 0,
+        ".dat": 0
+      }
+    },
+    "by_resource_family": {
+      "BornBeast": {
+        "world_dat": 0,
+        "model_text": 0,
+        "model_binary": 0,
+        "config_text": 0
+      },
+      "Transformers": {
+        "world_dat": 0,
+        "model_text": 0,
+        "model_binary": 0,
+        "config_text": 0
+      },
+      "Jewelry": {
+        "world_dat": 0,
+        "model_text": 0,
+        "model_binary": 0,
+        "config_text": 0
+      },
+      "M4A1_S_BlueDiamond": {
+        "world_dat": 0,
+        "model_text": 0,
+        "model_binary": 0,
+        "config_text": 0
+      }
+    },
+    "by_consumer": {
+      "BornBeast": {
+        "LithTechDatTextureReferenceIndex": 0,
+        "LithTechModelTextureConfigIndex": 0
+      },
+      "Transformers": {
+        "LithTechDatTextureReferenceIndex": 0,
+        "LithTechModelTextureConfigIndex": 0
+      },
+      "Jewelry": {
+        "LithTechDatTextureReferenceIndex": 0,
+        "LithTechModelTextureConfigIndex": 0
+      },
+      "M4A1_S_BlueDiamond": {
+        "LithTechDatTextureReferenceIndex": 0,
+        "LithTechModelTextureConfigIndex": 0
+      }
+    },
+    "DERIVED_OUTPUT_HIT": {
+      "BornBeast": 4,
+      "Transformers": 0,
+      "Jewelry": 0,
+      "M4A1_S_BlueDiamond": 0
+    }
   },
   "raw_grep_examples": {
+    "BornBeast": {
+      ".lta": [],
+      ".cfg": [],
+      ".txt": [],
+      ".ini": [],
+      ".dat": []
+    },
+    "Transformers": {
+      ".lta": [],
+      ".cfg": [],
+      ".txt": [],
+      ".ini": [],
+      ".dat": []
+    },
+    "Jewelry": {
+      ".lta": [],
+      ".cfg": [],
+      ".txt": [],
+      ".ini": [],
+      ".dat": []
+    },
+    "M4A1_S_BlueDiamond": {
+      ".lta": [],
+      ".cfg": [],
+      ".txt": [],
+      ".ini": [],
+      ".dat": []
+    }
+  },
+  "DERIVED_OUTPUT_HIT_examples": {
     "BornBeast": [
       {
         "file": "out/PV-M4A1_S_BornBeast_Classic_BL_mapping_candidates.txt",
@@ -318,6 +272,9 @@
         "file": "out/PV-M4A1_S_BornBeast_Classic_texture_report.txt",
         "snippet": " Source: Models\\PLAYERVIEW\\PV-M4A1_S_BornBeast_Classic.LTB\r Mesh: Fview-hand2\r   Reference: <none>\r   Infe"
       }
-    ]
+    ],
+    "Transformers": [],
+    "Jewelry": [],
+    "M4A1_S_BlueDiamond": []
   }
 }

@@ -1,0 +1,150 @@
+{
+  "schema": "cf2.p4m01.n01.runtime-consumer-search.v1",
+  "task_id": "P4-M01-N01",
+  "phase": "Step B (post-Step A)",
+  "summary": "Static, read-only, bounded search for CrossFire client/runtime artifacts that could consume model/piece, texture family, and WeaponShader CFG references. Result: BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS. The local data/ corpus only contains REZ-extracted static assets (.ltb, .lta, .dtx, .tga, .cfg), FMOD audio banks, and CS:GO voice files. It does NOT contain CF client .exe / .dll / .rez / .pak / engine modules. No execution of unknown client binaries was attempted (only static / read-only inspection).",
+  "evidence_grade_legend": {
+    "STRUCTURALLY_VERIFIED": "Mechanical structural fact, reproducible by deterministic listing",
+    "OBSERVED": "Direct observation of file presence",
+    "OPEN_UNRESOLVED": "No artifact available locally to test the hypothesis"
+  },
+  "scan_scope": {
+    "scan_root": "D:\\project\\cf_to_csgo\\data",
+    "scope_class": "local_corpus_only",
+    "scope_limits": [
+      "Static read-only filesystem enumeration",
+      "No execution of unknown client binaries",
+      "No network access",
+      "data/** remains local-only per AGENTS.md"
+    ],
+    "scan_tools": [
+      "Glob patterns over data/**",
+      "grep over text-decodeable cfg/ini/txt for material keywords",
+      "Bounded needle search (WeaponShader / AlphaMap / NormalMap / SpecularMap / PieceIndex / ModelTextures/Shader / PLAYERVIEW / PV-M4A1_S_BornBeast)"
+    ],
+    "include_globs": [
+      "data/**/*.exe",
+      "data/**/*.dll",
+      "data/**/*.rez",
+      "data/**/*.bin",
+      "data/**/*.pak",
+      "data/**/*.pck",
+      "data/**/*.vpp",
+      "data/**/*.so",
+      "data/**/*.dylib"
+    ],
+    "exclude_paths": [
+      "data/out/** (derived outputs)",
+      "work/**",
+      "reports/**",
+      "logs/**"
+    ]
+  },
+  "runtime_artifact_inventory": {
+    "cf_client_executables": {
+      "files_found": 0,
+      "evidence_grade": "STRUCTURALLY_VERIFIED",
+      "search_paths": ["data/**/*.exe", "data/**/*.dll", "data/**/*.so", "data/**/*.dylib"],
+      "note": "No CrossFire client binary is present in the local data/ corpus."
+    },
+    "cf_engine_modules": {
+      "files_found": 0,
+      "evidence_grade": "STRUCTURALLY_VERIFIED",
+      "search_paths": ["data/**/*.dll", "data/**/*.bin", "data/**/*.so"],
+      "note": "No CrossFire engine module is present."
+    },
+    "cf_rez_archives": {
+      "files_found": 0,
+      "evidence_grade": "STRUCTURALLY_VERIFIED",
+      "search_paths": ["data/**/*.rez"],
+      "note": "No .rez archive is present. The local corpus is the OUTPUT of a previous REZ extraction (rf001..rf049 folders, plus FMOD banks)."
+    },
+    "cf_shader_packages": {
+      "files_found": 0,
+      "evidence_grade": "STRUCTURALLY_VERIFIED",
+      "search_paths": ["data/**/*.fx", "data/**/*.fxh", "data/**/*.shader", "data/**/*.cso"],
+      "note": "No compiled shader packages are present. WeaponShader binary CFGs in rf017 are part of the data layer, not engine code."
+    },
+    "cf_material_resource_tables": {
+      "files_found": 0,
+      "evidence_grade": "STRUCTURALLY_VERIFIED",
+      "search_paths": ["data/**/Butes/**", "data/**/Table/**"],
+      "note": "Only ArmModel .CFG text shader configs are present under rf016/Models/PLAYERVIEW/ArmModel/Shader. No weapon-format material/resource tables were found."
+    },
+    "other_engine_config_bundles": {
+      "files_found": 0,
+      "evidence_grade": "STRUCTURALLY_VERIFIED",
+      "search_paths": ["data/**/*.dat", "data/**/*.lta"],
+      "note": "Only 67 .dat world files exist (CTY/world tables); they contain zero BornBeast/Transformers/Jewelry/BlueDiamond needle hits. No .lta weapon mesh exists (BornBeast weapon is .ltb binary)."
+    }
+  },
+  "bounded_text_needle_search": {
+    "needles": [
+      "WeaponShader",
+      "AlphaMap",
+      "NormalMap",
+      "SpecularMap",
+      "PieceIndex",
+      "ModelTextures/Shader",
+      "PLAYERVIEW",
+      "PV-M4A1_S_BornBeast"
+    ],
+    "encodings_searched": ["ASCII", "UTF-8", "GBK", "Latin-1", "UTF-16LE (heuristic)"],
+    "per_needle_summary": {
+      "WeaponShader": {"hits_in_local_corpus": 0, "scanned_files": 355},
+      "AlphaMap": {"hits_in_local_corpus": 0, "scanned_files": 355},
+      "NormalMap": {"hits_in_local_corpus": 0, "scanned_files": 355},
+      "SpecularMap": {"hits_in_local_corpus": 0, "scanned_files": 355},
+      "PieceIndex": {"hits_in_local_corpus": "only ArmModel Shader/*.CFG (positive control)", "scanned_files": 355},
+      "ModelTextures/Shader": {"hits_in_local_corpus": 0, "scanned_files": 355},
+      "PLAYERVIEW": {"hits_in_local_corpus": "directory path tokens only", "scanned_files": 355},
+      "PV-M4A1_S_BornBeast": {"hits_in_local_corpus": 0, "scanned_files": 355}
+    },
+    "evidence_grade": "OBSERVED"
+  },
+  "static_disassembly_xref": {
+    "attempted": false,
+    "evidence_grade": "OPEN_UNRESOLVED",
+    "reason": "No CF client/runtime binary is available locally to disassemble. A bounded xref/call-chain trace requires the binary itself; fabricating one from repo heuristics would NOT constitute a recovered consumer."
+  },
+  "result": {
+    "handoff_status": "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS",
+    "rationale": (
+      "All consumer-side evidence in the local corpus has been exhausted: "
+      "no CF client executable, no engine module, no .rez archive, no shader "
+      "package, no weapon-format material/resource table. The only structural "
+      "consumer evidence available is from the repo's own decoders "
+      "(LithTechModelTextureConfigIndex, LithTechTextureMappingScanner, "
+      "LithTechDatTextureReferenceIndex, CfgTextDecoder, "
+      "LithTechModelDecoder), none of which is an engine-side consumer. "
+      "Therefore the original CF runtime/resource system that consumes "
+      "post_mesh_short_id, WeaponShader CFG, and the texture family cannot be "
+      "located from the local corpus. Further progress requires either "
+      "extracting and statically analyzing the original CF client, or obtaining "
+      "another documented source for the engine binding contract. Per the "
+      "continuation spec, this status MUST NOT be retroactively downgraded to "
+      "PASS / READY_FOR_NATIVE_MATERIAL_COMPOSITION by the local executor."
+    ),
+    "allowed_next_outcomes": [
+      "BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS (current)",
+      "DIRECT_CONSUMER_CANDIDATE_FOUND (if user supplies CF client / engine module + analysis tooling)",
+      "OPEN_UNRESOLVED / NEGATIVE_RESULT_SCOPED (if new repo-only evidence becomes acceptable)"
+    ]
+  },
+  "previously_kept_evidence": [
+    "LTB post-mesh short field exists structurally (STRUCTURALLY_VERIFIED)",
+    "Repo C# LithTechModelDecoder does not expose/use it as material binding (CODE OBSERVATION)",
+    "Repo LithTechObjExporter falls back to model/source filename/path candidates (TOOL BEHAVIOR)",
+    "Models/... -> ModelTextures/... mirroring is repo/tool behavior (TOOL BEHAVIOR)",
+    "ArmModel [Textures]/PieceIndex format (ENGINE_FORMAT_POSITIVE_CONTROL_VERIFIED, but for ArmModel not weapon)",
+    "237/237 CFG single-phase mod-3 structure (STRUCTURALLY_VERIFIED)",
+    "engine_binding_closure.status = OPEN_UNRESOLVED (ACCEPT)"
+  ],
+  "data_discipline": {
+    "raw_data_uploaded": false,
+    "local_only_input_provenance_recorded": true,
+    "broad_stage_used": false,
+    "destructive_reset_used": false,
+    "AGENTS_md_compliance": true
+  }
+}

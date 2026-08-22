@@ -333,14 +333,20 @@ def is_likely_material_table(path: str, ext: str) -> bool:
 
 def build_consumer_index(data_root: str):
     """Enumerate files and build:
-       - config_index: keyed by model-lookup-key → [(cfg_path, texture)]
+       - config_index: keyed by cfg-path → [(model_key, [texture_refs])]
+         (only real parsed mapping objects; NO scan-metadata tuples)
+       - scan_metadata: dict keyed by rel → {"scanned": bool, "ext": str}
+         (separated; never returned as texture refs)
        - raw_needles: set of all model-name needles used to byte-grep any file
-       - dat_needles / ltb_needles: same, per type
+       - material_candidates / mapping_table_candidates: lists for the matrix
     """
-    config_index = defaultdict(list)
-    raw_needles = set()
-    material_candidates = []
-    mapping_table_candidates = []
+    config_index: "dict[str, list[tuple]]" = {}
+    scan_metadata: "dict[str, dict]" = {}
+    raw_needles: set = set()
+    material_candidates: list = []
+    mapping_table_candidates: list = []
+    files_scanned = 0
+    files_decoded = 0
     for root, _dirs, files in os.walk(data_root):
         for fn in files:
             p = os.path.join(root, fn)
@@ -350,12 +356,10 @@ def build_consumer_index(data_root: str):
                 continue
             if is_low_value_mapping_path(rel):
                 continue
-            if ext in TEXTURE_EXT and is_likely_model_texture_path(rel, ext):
-                # TextureIndex material: keep as candidate consumer
-                pass
-            if ext in CONFIG_EXT:
-                if is_likely_model_texture_config(rel, ext):
-                    config_index["_ALL_"].append((rel, "scanned"))
+            files_scanned += 1
+            scan_metadata[rel] = {"ext": ext}
+            if ext in CONFIG_EXT and is_likely_model_texture_config(rel, ext):
+                scan_metadata[rel]["scanned"] = True
             if is_likely_model_texture_config(rel, ext):
                 # read for explicit ModelTextureMappings
                 raw = _safe_read(p, 8 * 1024 * 1024)
@@ -367,20 +371,41 @@ def build_consumer_index(data_root: str):
                     continue
                 if text is None:
                     continue
+                files_decoded += 1
                 mappings = extract_model_texture_mappings(text)
                 if mappings:
-                    config_index[rel] = mappings
-                    for key, textures in mappings:
-                        if key:
-                            raw_needles.add(key.split("|")[0] if "|" in key else key)
-                            for tk in [os.path.basename(k) for k in (key,)]:
-                                if tk:
-                                    raw_needles.add(tk)
+                    # Only accept tuples whose texture list is a real list of
+                    # resource-path strings; reject anything else.
+                    real_mappings = []
+                    for mk, textures in mappings:
+                        if not isinstance(textures, list):
+                            continue
+                        if not all(isinstance(t, str) and len(t) > 3 for t in textures):
+                            continue
+                        real_mappings.append((mk, textures))
+                    if real_mappings:
+                        config_index[rel] = real_mappings
+                        for key, textures in real_mappings:
+                            if key:
+                                raw_needles.add(
+                                    key.split("|")[0] if "|" in key else key
+                                )
+                                for tk in [os.path.basename(k) for k in (key,)]:
+                                    if tk:
+                                        raw_needles.add(tk)
                 if is_likely_material_table(rel, ext):
                     material_candidates.append(rel)
             if is_likely_model_mapping_table(rel, ext):
                 mapping_table_candidates.append(rel)
-    return config_index, raw_needles, material_candidates, mapping_table_candidates
+    return {
+        "config_index": config_index,
+        "scan_metadata": scan_metadata,
+        "raw_needles": raw_needles,
+        "material_candidates": material_candidates,
+        "mapping_table_candidates": mapping_table_candidates,
+        "files_scanned": files_scanned,
+        "files_decoded": files_decoded,
+    }
 
 
 def _safe_read(path, limit):
@@ -410,30 +435,89 @@ def _decode_text(raw: bytes):
 
 
 def look_up_texture(model_keys, config_index):
-    """Resolve texture refs by trying all model_keys in config_index."""
+    """Resolve texture refs by trying all model_keys in config_index.
+
+    Schema/type guard: every "mappings" entry must be a list whose elements
+    are themselves (str, list[str]) tuples. Any non-conforming entry is
+    silently skipped — strings must never be treated as texture lists.
+    """
     seen_textures = set()
     ordered = []
+    if not isinstance(config_index, dict):
+        return ordered
     for k in model_keys:
+        if not isinstance(k, str):
+            continue
         for rel, mappings in config_index.items():
+            if not isinstance(mappings, list):
+                continue
             for mk, textures in mappings:
+                if not isinstance(mk, str) or not isinstance(textures, list):
+                    continue
+                if not all(isinstance(t, str) for t in textures):
+                    continue
                 if mk == k or (k and mk and (k.lower() in mk.lower()
                                              or mk.lower() in k.lower())):
                     for t in textures:
+                        if not isinstance(t, str):
+                            continue
                         if t not in seen_textures:
                             seen_textures.add(t)
                             ordered.append((rel, t))
     return ordered
 
 
-def build_corpus(data_root: str, extensions: set):
-    """Walk all files and yield (rel, ext, abs_path, raw bytes safe)."""
+# Resource-family classification used to keep `.dat` consumer hits separate
+# from `.cfg/.ini/.txt` consumer hits.
+RESOURCE_FAMILY_BY_EXT = {
+    ".dat": "world_dat",
+    ".lta": "model_text",
+    ".ltb": "model_binary",
+    ".cfg": "config_text",
+    ".ini": "config_text",
+    ".txt": "config_text",
+}
+
+# Scopes that contain only generated/derived reports and MUST NOT count as
+# native CF-resource consumer hits. These can be reported separately as
+# DERIVED_OUTPUT_HIT but never as evidence for native binding.
+DERIVED_OUTPUT_PREFIXES = (
+    "data/out/",
+    "data\\out\\",
+    "out/",
+    "out\\",
+    "work/",
+    "work\\",
+    "reports/",
+    "reports\\",
+    "logs/",
+    "logs\\",
+)
+
+
+def is_derived_output_path(rel: str) -> bool:
+    n = rel.replace("\\", "/").lower()
+    return any(n.startswith(p.replace("\\", "/").lower()) for p in DERIVED_OUTPUT_PREFIXES)
+
+
+def build_corpus(data_root: str, extensions: set, exclude_derived: bool = True):
+    """Walk all files and yield (rel, ext, abs_path, raw bytes safe).
+
+    When exclude_derived is True, files under data/out/, work/, reports/, logs/
+    are skipped from raw-byte consumer scans so they cannot inflate the
+    `.dat`/`.cfg` consumer hit counts.
+    """
     for root, _dirs, files in os.walk(data_root):
+        for root_lower in (root.lower(),):
+            break
         for fn in files:
             ext = os.path.splitext(fn)[1].lower()
             if ext not in extensions:
                 continue
             p = os.path.join(root, fn)
             rel = os.path.relpath(p, data_root).replace("\\", "/")
+            if exclude_derived and is_derived_output_path(rel):
+                continue
             raw = _safe_read(p, 8 * 1024 * 1024)
             if raw is None:
                 continue
@@ -441,20 +525,55 @@ def build_corpus(data_root: str, extensions: set):
 
 
 def main():
-    # Self-test for extensions
+    # ----- self-tests for fixed extensions / heuristic helpers -----
     assert ".dtx" in TEXTURE_EXT
     assert ".tga" in TEXTURE_EXT
     assert ".cfg" in CONFIG_EXT
     assert ".txt" in CONFIG_EXT
     assert ".cft" in PREFERRED_MAP_EXT
     assert is_likely_model_texture_path("a/weapons/test.dtx", ".dtx")
-    
+    # ----- regression guards for the schema bug -----
+    sample_idx = {"some/file.cfg": [("BornBeast", ["foo.dtx", "bar.tga"])]}
+    hits = look_up_texture(["bornbeast"], sample_idx)
+    assert all(isinstance(rel, str) and isinstance(t, str) for rel, t in hits), hits
+    # Ensure that bogus entries are silently dropped, never iterated.
+    bad_idx = {"bad.cfg": [("bornbeast", "scanned")]}  # type: ignore[list-item]
+    bad_hits = look_up_texture(["bornbeast"], bad_idx)
+    assert bad_hits == [], ("regression: string was iterated as texture list", bad_hits)
+    # Ensure derived-output path is excluded from raw-needle scan.
+    assert is_derived_output_path("data/out/foo.txt")
+    assert is_derived_output_path("out/foo.txt")
+    assert is_derived_output_path("work/x/y.json")
+    assert not is_derived_output_path("rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB")
+    assert not is_derived_output_path("rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX")
+
     print("Phase 1 consumer discovery ...")
-    cfg_idx, raw_needles, material_candidates, mapping_table_candidates = build_consumer_index(DATA)
+    idx_bundle = build_consumer_index(DATA)
+    cfg_idx = idx_bundle["config_index"]
+    scan_metadata = idx_bundle["scan_metadata"]
+    raw_needles = idx_bundle["raw_needles"]
+    material_candidates = idx_bundle["material_candidates"]
+    mapping_table_candidates = idx_bundle["mapping_table_candidates"]
+    files_scanned_total = idx_bundle["files_scanned"]
+    files_decoded_total = idx_bundle["files_decoded"]
     print(f"  config items indexed: {sum(len(v) for v in cfg_idx.values())}")
     print(f"  raw model-name needles: {len(raw_needles)}")
     print(f"  material-table candidates: {len(material_candidates)}")
     print(f"  mapping-table candidates: {len(mapping_table_candidates)}")
+    print(f"  files scanned (post-low-value filter): {files_scanned_total}")
+    print(f"  config files decoded as text: {files_decoded_total}")
+
+    # ----- regression guard: schema must not contain the legacy _ALL_ key -----
+    assert "_ALL_" not in cfg_idx, (
+        "regression: legacy '_ALL_' key returned to config_index"
+    )
+    # ----- regression guard: no 1-char texture refs may appear in any cfg entry -----
+    for rel, mappings in cfg_idx.items():
+        for mk, textures in mappings:
+            for t in textures:
+                assert len(t) > 3, (
+                    f"regression: 1-char texture ref '{t}' under {rel}:{mk}"
+                )
 
     # Resolve for the four canonical targets
     targets = {
@@ -470,37 +589,109 @@ def main():
         candidates_by_target[label] = {"stem": stem, "keys_tried": keys, "hits": resolved}
         print(f"  {label} ({stem}): {len(resolved)} text-config hits")
 
-    # Raw byte grep for the canonical weapons across all .cfg/.ini/.txt/.dat/.lta
-    raw_grep_hits = defaultdict(list)
+    # ----- regression guard: 4 targets must not produce 1-char texture refs -----
+    for label, info in candidates_by_target.items():
+        for rel, t in info["hits"]:
+            assert isinstance(rel, str) and isinstance(t, str) and len(t) > 3, (
+                f"regression: bogus hit for {label}: {(rel, t)!r}"
+            )
+
+    # ----- Raw-needle scan: split hits by extension / resource family / consumer -----
     text_extensions = {".cfg", ".ini", ".txt", ".dat", ".lta"}
     needles_by_stem = {label: stem for label, stem in targets.items()}
-    print("  raw needle scan ...")
+    hits_by_extension: "dict[str, dict[str, list]]" = {ext: {lbl: [] for lbl in targets}
+                                                        for ext in text_extensions}
+    hits_by_resource_family: "dict[str, dict[str, list]]" = {
+        fam: {lbl: [] for lbl in targets}
+        for fam in set(RESOURCE_FAMILY_BY_EXT.values())
+    }
+    hits_by_consumer: "dict[str, dict[str, list]]" = {
+        "LithTechDatTextureReferenceIndex": {lbl: [] for lbl in targets},
+        "LithTechModelTextureConfigIndex": {lbl: [] for lbl in targets},
+    }
+    raw_grep_derived_outputs: "dict[str, list]" = {lbl: [] for lbl in targets}
     scanned = 0
-    for rel, ext, p, raw in build_corpus(DATA, text_extensions):
-        if is_low_value_mapping_path(rel):
-            continue
+    decoded = 0
+    print("  raw needle scan (excluding derived outputs) ...")
+    for rel, ext, p, raw in build_corpus(DATA, text_extensions, exclude_derived=True):
         scanned += 1
-        # decode once if possible
+        text = _decode_text(raw) if raw else None
+        if text is None:
+            continue
+        decoded += 1
+        ltext = text.lower()
+        for label, stem in needles_by_stem.items():
+            if stem.lower() in ltext:
+                idx = ltext.find(stem.lower())
+                ctx = text[max(0, idx - 30): idx + len(stem) + 60].replace("\n", " ")
+                hits_by_extension[ext][label].append({"file": rel, "snippet": ctx})
+                fam = RESOURCE_FAMILY_BY_EXT.get(ext, "other")
+                hits_by_resource_family.setdefault(fam, {lbl: [] for lbl in targets})
+                hits_by_resource_family[fam][label].append({"file": rel, "snippet": ctx})
+                # consumer routing: world .dat -> DatTextureReferenceIndex,
+                # text config (.cfg/.ini/.txt/.lta) -> ModelTextureConfigIndex
+                if ext == ".dat":
+                    hits_by_consumer["LithTechDatTextureReferenceIndex"][label].append(
+                        {"file": rel, "snippet": ctx}
+                    )
+                else:
+                    hits_by_consumer["LithTechModelTextureConfigIndex"][label].append(
+                        {"file": rel, "snippet": ctx}
+                    )
+
+    # Also count derived-output hits separately so they cannot be mistaken
+    # for native binding evidence.
+    print("  raw needle scan (derived outputs only) ...")
+    for rel, ext, p, raw in build_corpus(DATA, text_extensions, exclude_derived=False):
+        if not is_derived_output_path(rel):
+            continue
         text = _decode_text(raw) if raw else None
         if text is None:
             continue
         ltext = text.lower()
         for label, stem in needles_by_stem.items():
             if stem.lower() in ltext:
-                # find a 60-char context
                 idx = ltext.find(stem.lower())
                 ctx = text[max(0, idx - 30): idx + len(stem) + 60].replace("\n", " ")
-                raw_grep_hits[label].append({"file": rel, "snippet": ctx})
+                raw_grep_derived_outputs[label].append({"file": rel, "snippet": ctx})
 
-    print(f"  raw scans: {scanned} files; needle hits:")
-    for label, hits in raw_grep_hits.items():
-        print(f"    {label}: {len(hits)} hits")
-        for h in hits[:5]:
-            print(f"      {h['file']}: ...{h['snippet']}...")
+    print(f"  raw scans: {scanned} files (decoded: {decoded}); hits by extension/family/consumer:")
+    for label in targets:
+        per_ext = {ext: len(hits_by_extension[ext][label]) for ext in text_extensions}
+        per_fam = {fam: len(hits_by_resource_family.get(fam, {}).get(label, []))
+                   for fam in RESOURCE_FAMILY_BY_EXT.values()}
+        per_con = {con: len(hits_by_consumer[con][label]) for con in hits_by_consumer}
+        print(f"    {label}:")
+        print(f"      hits_by_extension         = {per_ext}")
+        print(f"      hits_by_resource_family   = {per_fam}")
+        print(f"      hits_by_consumer          = {per_con}")
+        print(f"      DERIVED_OUTPUT_HIT_count  = {len(raw_grep_derived_outputs[label])}")
 
     # candidate consumer matrix
     matrix = {
-        "schema": "cf2.p4m01.n01.consumer-candidate.v1",
+        "schema": "cf2.p4m01.n01.consumer-candidate.v2",
+        "scan_scope": {
+            "scan_root": DATA,
+            "include_extensions": sorted(text_extensions),
+            "exclude_paths": (
+                "low-value/UI/radio/lobbynotice prefixes AND "
+                "derived outputs: data/out/, out/, work/, reports/, logs/"
+            ),
+            "files_scanned_post_filter": files_scanned_total,
+            "files_decoded_as_text": files_decoded_total,
+            "raw_scan_files_seen": scanned,
+            "raw_scan_files_decoded": decoded,
+            "config_index_keys": sorted(cfg_idx.keys()),
+            "config_index_total_mapping_tuples": sum(len(v) for v in cfg_idx.values()),
+            "scan_metadata_count": len(scan_metadata),
+            "regression_assertions": [
+                "no legacy '_ALL_' key in config_index",
+                "no 1-char texture ref under any config entry",
+                "schema/type guard in look_up_texture",
+                "derived outputs reported separately (DERIVED_OUTPUT_HIT)",
+                "raw scan splits hits_by_extension / hits_by_resource_family / hits_by_consumer",
+            ],
+        },
         "consumer_resource_families": [
             {
                 "family": "LithTechModelTextureConfigIndex.CreateResolver",
@@ -515,9 +706,9 @@ def main():
                 "evidence_class": "direct text-config resolver",
                 "status": "open",
                 "reason": (
-                    "config index built from local corpus; targeted hits are zero or "
-                    "bear witness this resolver does not see BornBeast weapon side as a "
-                    "direct keyed mapping"
+                    "config index built from local corpus; targeted hits are zero "
+                    "or bear witness this resolver does not see BornBeast weapon "
+                    "side as a direct keyed mapping"
                 ),
             },
             {
@@ -537,7 +728,7 @@ def main():
                 "flow": "Per .dat file: LZMA prepare -> per-line scan for texture extensions within resource-path bytes",
                 "input_resource_type": ".dat files (world)",
                 "reference_direction": "dat body bytes -> texture file paths",
-                "BornBeast_hit_count": len(raw_grep_hits["BornBeast"]),
+                "BornBeast_hit_count": len(hits_by_consumer["LithTechDatTextureReferenceIndex"]["BornBeast"]),
                 "evidence_class": "raw-byte needle search",
                 "status": "scanned",
             },
@@ -571,8 +762,36 @@ def main():
             },
         ],
         "targets": candidates_by_target,
-        "raw_grep_hits_summary": {k: len(v) for k, v in raw_grep_hits.items()},
-        "raw_grep_examples": {k: v[:5] for k, v in raw_grep_hits.items()},
+        "raw_grep_hits_summary": {
+            "schema_note": (
+                "Per-target hit counts split by extension / resource family / "
+                "consumer (cf2.p4m01.n01.consumer-candidate.v2)."
+            ),
+            "by_extension": {
+                label: {ext: len(hits_by_extension[ext][label]) for ext in text_extensions}
+                for label in targets
+            },
+            "by_resource_family": {
+                label: {fam: len(hits_by_resource_family.get(fam, {}).get(label, []))
+                        for fam in RESOURCE_FAMILY_BY_EXT.values()}
+                for label in targets
+            },
+            "by_consumer": {
+                label: {con: len(hits_by_consumer[con][label]) for con in hits_by_consumer}
+                for label in targets
+            },
+            "DERIVED_OUTPUT_HIT": {
+                label: len(raw_grep_derived_outputs[label]) for label in targets
+            },
+        },
+        "raw_grep_examples": {
+            label: {
+                ext: hits_by_extension[ext][label][:5] for ext in text_extensions
+            } for label in targets
+        },
+        "DERIVED_OUTPUT_HIT_examples": {
+            label: raw_grep_derived_outputs[label][:5] for label in targets
+        },
     }
 
     out_json = os.path.join(N01_DIR, "consumer_candidate_matrix.json")
@@ -584,12 +803,40 @@ def main():
     lines = [
         "# N01 Phase 1 — Consumer search report",
         "",
+        "Schema: `cf2.p4m01.n01.consumer-candidate.v2`",
+        "",
         "## Scope",
         "",
         "Reproduce the call/data paths of the repo's own texture/config/mapping/",
         "index/resolver stack on the local `data/` corpus, focused on the four",
         "weapons `M4A1_S_BornBeast`, `M4A1_S_Transformers`, `M4A1_S_Jewelry`,",
         "and the simpler control `M4A1_S_BlueDiamond`.",
+        "",
+        "Scan roots: `data/`. Include extensions for raw-needle scan:",
+        f"`{sorted(text_extensions)}`.",
+        "",
+        "Excluded from native-binding accounting (reported separately as",
+        "`DERIVED_OUTPUT_HIT`): `data/out/`, `out/`, `work/`, `reports/`, `logs/`.",
+        "Also excluded: low-value/UI/radio/lobbynotice paths.",
+        "",
+        "## Scan scope summary",
+        "",
+        f"- config files scanned (post-low-value filter): **{files_scanned_total}**",
+        f"- config files decoded as text: **{files_decoded_total}**",
+        f"- config_index keys (per cfg file with real parsed mappings): {len(cfg_idx)}",
+        f"- config_index total mapping tuples: {sum(len(v) for v in cfg_idx.values())}",
+        f"- raw-needle scan: {scanned} files seen, {decoded} decoded",
+        "",
+        "Regression guards (assertions) executed before reporting:",
+        "",
+        "- no legacy `_ALL_` key in `config_index`;",
+        "- no 1-char texture ref under any config entry;",
+        "- schema/type guard in `look_up_texture` (string cannot be iterated",
+        "  as a texture list);",
+        "- `DERIVED_OUTPUT_HIT` rows are reported separately from native",
+        "  consumer hits and never count as binding evidence;",
+        "- raw-needle scan splits hits into `hits_by_extension`,",
+        "  `hits_by_resource_family`, and `hits_by_consumer`.",
         "",
         "## Consumer candidates examined",
         "",
@@ -603,7 +850,7 @@ def main():
         "   path bonuses.",
         "3. `LithTechDatTextureReferenceIndex.ExtractTextureReferences` —",
         "   raw-byte LZMA-or-direct scan for texture-extension anchors within",
-        "   .dat world files.",
+        "   .dat world files. Hits reported under `hits_by_consumer.`",
         "4. `CfgTextDecoder.TryDecode` — WeaponShader/*.CFG route. Tries structured",
         "   text -> Rez-phase -> enc-text -> CfgBinaryStripDecoder.TryDetect. The",
         "   weapon strips all match the binary-strip heuristic, so this path yields",
@@ -613,6 +860,11 @@ def main():
         "   consumer cannot resolve weapon material on it.",
         "",
         "## Text-config resolver hits per weapon",
+        "",
+        "Hits resolved from real parsed mappings only. Each hit is a tuple",
+        "`(cfg_path, texture_ref)` where `texture_ref` is a full resource path",
+        "of length > 3. The legacy 1-char pseudo-hits produced by the",
+        "`_ALL_ -> \"scanned\"` schema bug have been removed.",
         "",
     ]
     for label, info in candidates_by_target.items():
@@ -625,14 +877,66 @@ def main():
     lines.extend([
         "## Raw-needle scan",
         "",
-        "Scanned every .cfg/.ini/.txt/.dat/.lta in local `data/` (excluding",
-        "low-value/UI/radio paths) for the literal weapon stems.",
+        f"Scanned every `{'/'.join(sorted(text_extensions))}` in local `data/`",
+        "(excluding low-value/UI/radio/lobbynotice paths **and** derived",
+        "outputs) for the literal weapon stems.",
         "",
     ])
-    for k, v in raw_grep_hits.items():
-        lines.append(f"### {k}: {len(v)} files")
-        for h in v[:8]:
-            lines.append(f"- `{h['file']}` — `{h['snippet']}`")
+    lines.append("### Hits by extension (excludes derived outputs)")
+    lines.append("")
+    lines.append("| target | " + " | ".join(sorted(text_extensions)) + " |")
+    lines.append("|---|" + "---|" * len(text_extensions))
+    for label in targets:
+        per_ext = {ext: len(hits_by_extension[ext][label]) for ext in text_extensions}
+        lines.append(f"| {label} | " + " | ".join(str(per_ext[e]) for e in sorted(text_extensions)) + " |")
+    lines.append("")
+    lines.append("### Hits by resource family")
+    lines.append("")
+    lines.append("| target | " + " | ".join(sorted(set(RESOURCE_FAMILY_BY_EXT.values()))) + " |")
+    lines.append("|---|" + "---|" * len(set(RESOURCE_FAMILY_BY_EXT.values())))
+    for label in targets:
+        per_fam = {fam: len(hits_by_resource_family.get(fam, {}).get(label, []))
+                   for fam in sorted(set(RESOURCE_FAMILY_BY_EXT.values()))}
+        lines.append(f"| {label} | " + " | ".join(str(per_fam[f]) for f in sorted(set(RESOURCE_FAMILY_BY_EXT.values()))) + " |")
+    lines.append("")
+    lines.append("### Hits by consumer")
+    lines.append("")
+    lines.append("| target | LithTechDatTextureReferenceIndex | LithTechModelTextureConfigIndex |")
+    lines.append("|---|---|---|")
+    for label in targets:
+        per_con = {con: len(hits_by_consumer[con][label]) for con in hits_by_consumer}
+        lines.append(f"| {label} | {per_con['LithTechDatTextureReferenceIndex']} | {per_con['LithTechModelTextureConfigIndex']} |")
+    lines.append("")
+    lines.append("### Per-target examples (first 5 hits per extension)")
+    lines.append("")
+    for label in targets:
+        lines.append(f"#### {label}")
+        for ext in sorted(text_extensions):
+            rows = hits_by_extension[ext][label][:5]
+            if not rows:
+                lines.append(f"- `{ext}`: 0 hits")
+                continue
+            lines.append(f"- `{ext}`: {len(hits_by_extension[ext][label])} hits")
+            for h in rows:
+                lines.append(f"  - `{h['file']}` — `{h['snippet']}`")
+        lines.append("")
+    lines.extend([
+        "### DERIVED_OUTPUT_HIT (reported separately, NOT a binding evidence)",
+        "",
+        "Hits found in derived outputs (`data/out/`, `out/`, `work/`,",
+        "`reports/`, `logs/`). These cannot be used as native-binding",
+        "evidence because they are generated by our own tooling / earlier",
+        "runs and merely echo file paths back.",
+        "",
+    ])
+    for label in targets:
+        rows = raw_grep_derived_outputs[label]
+        lines.append(f"#### {label}: {len(rows)} derived-output hits")
+        if not rows:
+            lines.append("- (none)")
+        else:
+            for h in rows[:5]:
+                lines.append(f"- `{h['file']}` — `{h['snippet']}`")
         lines.append("")
     lines.extend([
         "## Findings (high-level)",
@@ -644,15 +948,18 @@ def main():
         "  BornBeast weapon is .ltb binary which the LTB parser doesn't expose",
         "  texture bindings from.",
         "- On .dat worlds the `ExtractTextureReferences` consumer can name textures,",
-        "  but we found 0 BornBeast/Transformers/Jewelry needle hits inside",
-        "  local dat corpus (only 67 .dat files; CTY/world tables, not weapon",
-        "  binding tables).",
+        "  but we found 0 BornBeast/Transformers/Jewelry/BlueDiamond needle hits",
+        "  inside the local dat corpus (only 67 .dat files; CTY/world tables, not",
+        "  weapon binding tables).",
         "- On .cfg side, all 237 WeaponShader/*.CFG files match the binary-strip",
         "  heuristic and never reach the structured-text path. No file in the local",
         "  corpus (config-like scanned by R1 stage-2 binding: 355 files) explicitly",
-        "  mentions BornBeast/Transformers/Jewelry weapon paths or CFG stems as a",
-        "  binding key. The structured-text resolvers produced 0 hits for any of the",
-        "  four targets.",
+        "  mentions BornBeast/Transformers/Jewelry/BlueDiamond weapon paths or CFG",
+        "  stems as a binding key. The structured-text resolvers produced 0 hits",
+        "  for any of the four targets.",
+        "- Derived outputs (`data/out/`, `work/`, etc.) that happen to mention the",
+        "  weapon stems are now reported as `DERIVED_OUTPUT_HIT` and are NOT",
+        "  counted as native-binding evidence.",
         "",
         "## Implication for Phase 2",
         "",
@@ -663,6 +970,7 @@ def main():
         "the binding chain from the *engine-resource direction* (mesh → texture file)",
         "that the repo's exporter pipeline assumes (see `LithTechObjExporter.",
         "EnumerateTextureCandidates`).",
+        "",
     ])
     md = "\n".join(lines)
     out_md = os.path.join(N01_DIR, "consumer_search_report.md")
