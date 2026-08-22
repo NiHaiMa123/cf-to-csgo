@@ -2,7 +2,7 @@
 
 > 本文件给任何用户选择的、具备本地执行能力的 Agent 使用；Task 不绑定具体模型。
 >
-> 项目 authoritative coarse progress/status 以 [`plan.md`](plan.md) 第 1 节为准；当前直接执行细节以 [`P4_M01_N01_CONTINUATION.md`](P4_M01_N01_CONTINUATION.md) 为准；Git/data 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
+> 项目 coarse progress/status 以 [`plan.md`](plan.md) 第 1 节为准；当前直接执行细节以 [`P4_M01_N01_CONTINUATION.md`](P4_M01_N01_CONTINUATION.md) 为准；Git/data 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
 > Planner / Reviewer = **Chat/Sol**；Local Executor = 用户当前选择的本地执行 Agent。
 
@@ -17,7 +17,8 @@ P4 baseline        PASS / FROZEN
 P4-M01             ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
 P4-M01-R1          ACCEPTED / COMPLETE
 P4-M01-N01 Phase 0 ACCEPT / FROZEN
-P4-M01-N01         ACTIVE / N01_TARGETED_REWORK   <- CURRENT
+P4-M01-N01         ACTIVE / MINOR_EVIDENCE_CLEANUP   <- CURRENT
+N01 substantive    BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
 P5-T01             PASS / USER_REFERENCE_CONFIRMED
 P5-T02             PAUSED_BY_P4_M01
 P5-T03/T04         BLOCKED
@@ -38,50 +39,28 @@ P4_M01_N01_CONTINUATION.md                  CURRENT direct execution / Review ov
 最新已 Review 的 Local Executor 提交：
 
 ```text
-69c03d8769db2107cd94cae11accc750716466ae
-P4-M01-N01: Fix scanner bug, lineage, and investigate binding key
+ea11ba143d859193213f24ab92248ff8a576b135
+P4-M01-N01: targeted rework - deterministic cleanup + runtime consumer search
 ```
 
 Chat/Sol verdict：
 
 ```text
-69c03d overall                         REWORK_REQUIRED
-extension normalization                ACCEPT
-Phase2 -> Phase3 CFG lineage            ACCEPT
-repo LTB short-id non-consumption       ACCEPT / CODE OBSERVATION
-repo ObjExporter mirroring              ACCEPT / TOOL_BEHAVIOR
-engine_binding_closure OPEN_UNRESOLVED  ACCEPT
-P4-M01-N01 PASS                         NO
+ea11ba1 technical result                  ACCEPT_WITH_MINOR_EVIDENCE_CLEANUP
+schema / derived-hit / scope cleanup      ACCEPT
+CFG semantic downgrade                    ACCEPT
+channel Layer A/B/C split                 ACCEPT
+false-PASS generator protection           ACCEPT
+runtime consumer search methodology       ACCEPT
+substantive result                        BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+P4-M01-N01 PASS                            NO
 ```
 
-下一次 Review 只看 `69c03d` 之后的新提交。
+下一次 Review 只看 `ea11ba1` 之后的 minor-cleanup 提交。
 
 ---
 
-## 3. 当前 executor benchmark context
-
-用户准备在新的 Claude Code 窗口中切换到 MiniMax 再执行一轮。
-
-```text
-Model: MiniMax
-Exact model id: MUST record from actual harness/runtime; do not guess
-Harness: Claude Code / user-selected local execution environment
-```
-
-该信息只用于 benchmark/provenance，不改变 Task acceptance criteria。
-
-报告若记录 executor：
-
-```text
-executor_model = <actual exact model id shown by harness>
-executor_harness = Claude Code
-```
-
-禁止根据历史 commit footer 推断模型。
-
----
-
-## 4. 每次启动顺序
+## 3. 启动顺序
 
 1. `git status --short --branch`；
 2. 确认当前分支 `master`；
@@ -98,234 +77,229 @@ git pull --rebase origin master
 AGENTS.md
 plan.md 第 1 节
 CODEX_TASKS.md
-P4_TASKS.md
-P4_M01_TASK_SPEC.md
 P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md
 P4_M01_N01_CONTINUATION.md   <- CURRENT direct entry
 ```
 
-5. 不要执行 N01 Phase 0；它已 `ACCEPT / FROZEN`。
+5. **不要重跑 N01 Phase 0 / Phase 1–5。**
 
 ---
 
-## 5. 当前唯一任务：N01 targeted rework
+## 4. 当前唯一任务：三项 Minor Evidence Cleanup
 
-本轮不是重新跑 Phase 1–5，而是：
+### M1 — JSON 合法性
 
-```text
-A. 修 69c03d 仍存在的 deterministic evidence bugs
-B. 清理 CFG/channel semantic overclaim
-C. 消毒 stale false-PASS generator
-D. 若本地存在 CF client/runtime 静态文件，转向真实 runtime consumer 搜索
-```
-
-详细要求全部在 `P4_M01_N01_CONTINUATION.md`。
-
-### A. 必修 deterministic bugs
-
-#### config-index schema bug
-
-不得再出现：
+修：
 
 ```text
-_ALL_ -> s/c/a/n/e/d
+work/m4a1_s_bornbeast/p4_m01_native_material/n01/runtime_consumer_search.json
 ```
 
-原因是 `"scanned"` 被错误当 texture iterable。必须把 scan metadata 与 parsed mappings 分离，并加 regression guard。
-
-#### raw grep / `.dat` scope bug
-
-不得把 `.txt/.cfg/.lta/.dat` 的总 hits 写成 `.dat consumer hits`。
-
-必须分：
+当前 `rationale` 使用 Python 风格：
 
 ```text
-hits_by_extension
-hits_by_resource_family
-hits_by_consumer
+"rationale": (
+  "..."
+  "..."
+)
 ```
 
-`data/out/**`、`work/**`、generated reports 不能作为原始 CF native consumer evidence。
-
-### B. CFG semantic cleanup
-
-保留：
+必须改成合法标准 JSON string，不改变：
 
 ```text
-237/237 single-mod3 form                 STRUCTURALLY_VERIFIED
-per-file phase/count/sample sequence      OBSERVED
-cross-skin measured differences           DIFFERENTIAL_SUPPORTED
+handoff_status = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
 ```
 
-保持假说：
+并用标准 JSON parser 验证至少：
 
 ```text
-CFG = 1D LUT                              HYPOTHESIS
-CFG = packed constants                    HYPOTHESIS
-CFG -> Phong/selfillum mapping            SOURCE1_DESIGN_CANDIDATE
+consumer_candidate_matrix.json
+weapon_material_differential.json
+cfg_consumer_report.json
+channel_semantics_report.json
+engine_binding_closure.json
+runtime_consumer_search.json
 ```
 
-没有真实 consumer/reference contract 不得 semantic upgrade。
+### M2 — scan-count 口径/标签
 
-### C. stale Phase 4/5 generator cleanup
+当前 `n01_phase1_consumer_search.py` 的 `files_scanned` 在 config extension 判定前增加，因此报告中的：
 
-`n01_phase1_to_phase5_runner.py` 不得保留一个可再次生成：
+```text
+config files scanned (post-low-value filter): 102382
+```
+
+标签不准确。
+
+修法二选一：
+
+```text
+A. 保留当前计数，改成 all_non_low_value_files_seen 等准确名称；
+B. 把 config candidate count 与 all files seen 分成两个独立计数。
+```
+
+最终至少明确：
+
+```text
+all files seen scope
+config candidate/decode scope
+raw needle scope = 355 files
+```
+
+每个 count 必须能由代码机械复现。
+
+### M3 — executor provenance
+
+最新用户确认 executor family 为 MiniMax，harness 为 Claude Code；精确 model id 若 runtime 未显示就写 `unspecified`。
+
+禁止从：
+
+```text
+Co-Authored-By: Claude Opus 4.8 (1M context)
+```
+
+推断实际 executor。
+
+报告规则：
+
+```text
+executor_model = <runtime value or unspecified>
+executor_harness = Claude Code (when applicable)
+commit_footer_model_provenance = NON_AUTHORITATIVE
+```
+
+不要改写历史 commit footer。
+
+---
+
+## 5. Minor cleanup 不得破坏的已接受结果
+
+必须保持：
+
+```text
+BornBeast/Transformers/Jewelry/BlueDiamond text-config hits = 0
+.dat consumer hits = 0
+BornBeast derived output hits = 4, DERIVED_OUTPUT_HIT only
+CFG BornBeast = phase 2 / 164
+CFG Transformers = phase 1 / 169
+CFG Jewelry = phase 2 / 214
+CFG BlueDiamond = phase 2 / 166
+CFG semantic consumer = OPEN_UNRESOLVED
+Layer B map roles = HYPOTHESIS
+Source 1 mapping = SOURCE1_DESIGN_CANDIDATE
+engine_binding_closure = OPEN_UNRESOLVED
+```
+
+不得出现：
 
 ```text
 READY_FOR_NATIVE_MATERIAL_COMPOSITION
-```
-
-的旧路径。
-
-必须删除、禁用或重写为当前 hypothesis-graded / OPEN_UNRESOLVED behavior。
-
----
-
-## 6. Substantive next direction：真实 CF runtime consumer
-
-当前 repo 已经证明的是“我们的工具怎么做”，不是“CF 原客户端怎么做”：
-
-```text
-LTB short field exists
-current C# parser does not expose/use it
-current ObjExporter uses source filename/path mirroring
-```
-
-下一步若要继续闭合原生绑定，优先检查本地 corpus 是否存在：
-
-```text
-CF client .exe/.dll/engine modules
-shader packages
-material/resource tables
-other runtime index/config bundles
-```
-
-只做静态、只读、bounded 搜索；不要执行未知客户端二进制。
-
-优先 needles：
-
-```text
-WeaponShader
-AlphaMap
-NormalMap
-SpecularMap
-PieceIndex
-ModelTextures/Shader
-PLAYERVIEW
-PV-M4A1_S_BornBeast
-```
-
-ASCII 与 UTF-16LE 都检查。
-
-若命中 native binary/resource，至少记录：
-
-```text
-relative path
-SHA256
-size
-module/file identity
-needle + encoding
-offset/RVA if derivable
-nearby resource/path strings
-actual xref/call-chain only when tooling truly derives it
-```
-
-若本地根本没有 runtime artifacts，明确：
-
-```text
-BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-```
-
-不得退回用 basename heuristic 冒充 engine consumer。
-
----
-
-## 7. 本轮允许的 handoff result
-
-```text
-DIRECT_CONSUMER_CANDIDATE_FOUND
-OPEN_UNRESOLVED / NEGATIVE_RESULT_SCOPED
-BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
-```
-
-Local Executor 不得自行给：
-
-```text
 P4-M01-N01 PASS
-READY_FOR_NATIVE_MATERIAL_COMPOSITION
 P4-M01 PASS
 P5-T02 resumed
 ```
 
-这些只能由 Chat/Sol Review 在 evidence 满足既有 criteria 后决定。
+---
+
+## 6. 当前 substantive blocker
+
+本地现有 `data/` corpus 已做 bounded 静态搜索，没有发现：
+
+```text
+CF client executable
+engine/runtime DLL/module
+REZ/runtime archive
+compiled shader package
+weapon material/resource table
+```
+
+因此真实 CF consumer 当前无法继续闭合：
+
+```text
+post_mesh_short_id / piece identity
+-> engine material/shader resolver
+-> texture family
+-> WeaponShader CFG semantic consumer
+```
+
+正式状态：
+
+```text
+BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+```
+
+**没有新增 runtime artifact 时，不得再次扫描同一 repo/data corpus 作为新 substantive task。**
 
 ---
 
-## 8. 已接受 baseline — 不要重跑
+## 7. Blocker 解除后才允许的新方向
+
+只有用户后续提供或本地出现新的原始 CF runtime/client artifact 时，才重新开启 consumer reverse。
+
+可接受目标：
 
 ```text
-P4 baseline                              PASS / FROZEN
-R1 correction                            ACCEPTED / COMPLETE
-N01 Phase 0                              ACCEPT / FROZEN
-TGA formal repair                        ACCEPT
-DTX no formal header / not LZMA          VERIFIED_STRUCTURAL
-DTX whole-file 3-byte periodicity        VERIFIED_STRUCTURAL
-DTX 1024 stride                          STRONG_HYPOTHESIS
-DTX 1043/1046 statistic                  VERIFIED_CORPUS_STATISTIC
-CFG 237/237 mod-3 structure              VERIFIED_STRUCTURAL
-ArmModel [Textures]/PieceIndex format    VERIFIED_STRUCTURAL
-69c03d CFG measured-data lineage         ACCEPT
-69c03d repo parser short-id observation  ACCEPT
-69c03d ObjExporter mirroring observation ACCEPT / TOOL_BEHAVIOR
+.exe / .dll / engine module
+runtime/resource bundle
+shader/runtime package
+可靠的 material/piece binding contract 文档
 ```
 
-仍 open：
+只做静态、只读分析，不执行未知 binary，不上传 binary/raw `data/**`。
+
+新分析路线固定为：
 
 ```text
-original CF weapon material consumer
-post_mesh_short_id semantic meaning
-piece/material -> texture-set binding
-WeaponShader CFG semantic consumer
-DTX/TGA native shader roles
-DTX tail semantics
-native composition closure
+strings/resource names
+-> static xref
+-> loader/resolver call chain
+-> piece/material key use
+-> texture family / WeaponShader consumer contract
 ```
+
+不得回退到 basename heuristic 作为 engine proof。
 
 ---
 
-## 9. Git / data discipline
+## 8. Git / data discipline
 
 严格遵守 `AGENTS.md`：
 
-- handoff 只认 `master`；
-- `data/**` 永远 local-only；
-- 禁止 `git add .` / `-A` / `--all`；
-- 不 force-push；
-- 不 destructive reset/clean；
-- 不上传 raw LTB/DTX/TGA/CFG/client binaries；
-- 每个 local-only input 只提交 path/hash/size 等 provenance；
-- negative result 必须带 scan scope/count/excludes；
-- 不删除历史 evidence 来隐藏错误。
+```text
+master only
+never upload data/**
+no git add . / -A / --all
+no force push
+no destructive reset/clean
+no raw LTB/DTX/TGA/CFG/runtime binaries
+```
 
 提交前至少：
 
 ```bash
-git status --short --branch
+git status
 git diff --cached --name-only
 ```
 
-只 stage 本轮明确修改的脚本与 `n01/**` evidence/report。
+只 stage M1–M3 需要的 tracked script/report/evidence。
 
 ---
 
-## 10. Handoff
+## 9. Handoff
 
-本轮完成后 commit + push scoped code/evidence 到 `master`。
+M1–M3 完成后：
+
+```text
+N01 evidence cleanup = COMPLETE
+N01 substantive state = BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+```
+
+commit + push 到 `master` 后停止。
 
 Chat/Sol 下一次 Review：
 
 ```text
-base = 69c03d8769db2107cd94cae11accc750716466ae
+base = ea11ba143d859193213f24ab92248ff8a576b135
 ```
 
-P4-M01 / N01 状态保持 ACTIVE，P5-T02 保持暂停，直到 Chat/Sol 明确升级。
+除非新增 runtime artifact，否则不要创建新的 N01 substantive scan/run。
