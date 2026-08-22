@@ -1,6 +1,6 @@
 # CODEX_TASKS.md — Local Executor 本地执行合同
 
-> 本文件给任何用户选择的、具备本地执行能力的 Agent 使用；不绑定具体模型。
+> 本文件给任何用户选择的、具备本地执行能力的 Agent 使用；Task 不绑定具体模型。
 >
 > 项目唯一 authoritative progress/status 以 [`plan.md`](plan.md) 第 1 节为准；Git/data 安全规则以 [`AGENTS.md`](AGENTS.md) 为准。
 >
@@ -13,28 +13,55 @@
 截至 2026-08-22：
 
 ```text
-P4 baseline   PASS / FROZEN
-P4-M01        ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
-P4-M01-R1     ACCEPTED_WITH_MINOR_CLEANUP / HANDED_OFF_TO_N01
-P4-M01-N01    ACTIVE / ENGINE_BINDING_INVESTIGATION   <- CURRENT
-P5-T01        PASS / USER_REFERENCE_CONFIRMED
-P5-T02        PAUSED_BY_P4_M01
-P5-T03/T04    BLOCKED
+P4 baseline        PASS / FROZEN
+P4-M01             ACTIVE / NATIVE_MATERIAL_RECOVERY_INCOMPLETE
+P4-M01-R1          ACCEPTED / COMPLETE
+P4-M01-N01 Phase 0 ACCEPT / FROZEN
+P4-M01-N01         ACTIVE / PHASE1_CONSUMER_DISCOVERY   <- CURRENT
+P5-T01             PASS / USER_REFERENCE_CONFIRMED
+P5-T02             PAUSED_BY_P4_M01
+P5-T03/T04         BLOCKED
 ```
 
 当前协议：
 
 ```text
 P4_M01_TASK_SPEC.md                         parent contract
-P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md     CURRENT direct execution spec
-P4_M01_R1_CONTINUATION.md                   predecessor/final R1 Review only
+P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md     N01 original technical route
+P4_M01_N01_CONTINUATION.md                  CURRENT direct execution / Review overlay
 ```
 
-R1 不再是当前 substantive task。
+R1 文件仅作历史 evidence，不是当前执行入口。
 
 ---
 
-## 2. 每次启动顺序
+## 2. 当前 executor benchmark context
+
+用户当前准备切换执行模型：
+
+```text
+Model: MiniMax M3
+Harness: unspecified / user-selected
+```
+
+这只是 benchmark/provenance，不改变 Task acceptance criteria。
+
+若报告中记录 executor：
+
+```text
+executor_model = MiniMax M3
+executor_harness = <actual harness if known; otherwise unspecified>
+```
+
+禁止从 commit footer 推断执行模型；不要复制历史错误 footer：
+
+```text
+Co-Authored-By: Claude Opus 4.8 (1M context)
+```
+
+---
+
+## 3. 每次启动顺序
 
 1. `git status --short --branch`；
 2. 确认当前分支 `master`；
@@ -54,9 +81,10 @@ CODEX_TASKS.md
 P4_TASKS.md
 P4_M01_TASK_SPEC.md
 P4_M01_N01_ENGINE_CONSUMER_TASK_SPEC.md
+P4_M01_N01_CONTINUATION.md   <- CURRENT direct entry
 ```
 
-5. 只在需要理解 predecessor evidence 时读取：
+5. 需要 predecessor evidence 时再读：
 
 ```text
 P4_M01_REWORK_R1.md
@@ -65,81 +93,78 @@ scripts/material_recovery/r1_*.py
 work/m4a1_s_bornbeast/p4_m01_native_material/r1/**
 ```
 
-6. 不从 A/B/C/D/F 全量重跑。
+6. **不要执行 N01 Phase 0；它已 Chat/Sol ACCEPT / FROZEN。**
 
 ---
 
-## 3. 当前角色
+## 4. 最新 Review 基线
+
+最新执行提交：
+
+```text
+2344d61a1ba1dc84ddcd5a85eaed5b352f823d19
+```
+
+Chat/Sol Review：
+
+```text
+N01 Phase 0 technical result   ACCEPT / FROZEN
+N01 execution completeness     INCOMPLETE / STOPPED_EARLY
+```
+
+已接受：
+
+```text
+CFG phase-origin span accounting
+DTX measured-margin / 1043-of-1046 wording
+H1 preview path + evidence downgrade
+shader stale BGR24/scalar cleanup
+binding negative-scope cleanup
+```
+
+因此：
+
+```text
+P4-M01-R1 = ACCEPTED / COMPLETE
+```
+
+下一位 Executor 直接从 N01 Phase 1 开始。
+
+---
+
+## 5. 当前角色
 
 Local Executor = **engine material consumer / binding reverse executor + evidence producer**。
 
-负责：
+当前必须：
 
-- 先完成 N01 Phase 0 的 R1 minor consistency cleanup；
-- Phase 0 self-check 通过后，**同一轮直接进入 Phase 1，不等待 Chat/Sol 再切状态**；
-- 沿现有 decoder/index/mapping/resolver 与本地 resource relation 定位真实 consumer；
-- 用 ArmModel material CFG 作为 positive control，不直接套用 weapon；
-- 做 BornBeast / Transformers / Jewelry / 简单 control 的 same-family differential；
-- 寻找 piece/material key → texture set → WeaponShader CFG/resource role 的 evidence；
-- 区分 storage byte order、map binding role、shader composition semantics；
-- 保存 raw offset/value/hash/path、consumer candidate、negative evidence、rejection evidence；
+- 沿 repo 现有 decoder/index/mapping/resolver 找真实 consumer/data path；
+- 用 ArmModel explicit material CFG 作为 positive control，不直接套用 weapon；
+- 做 BornBeast / Transformers / Jewelry / 简单 control same-family differential；
+- 找 piece/material key → texture family → WeaponShader/material resource role；
+- 区分 storage order、binding role、shader composition semantics；
+- 保存 raw key/offset/value/path/hash、candidate/rejection/scoped negative；
 - push scoped code/evidence 到 `master`。
 
 不得：
 
-- 重跑已接受的 TGA formal repair；
+- 重跑 N01 Phase 0；
+- 重跑已接受 TGA formal repair；
 - 重跑 DTX formal header/LZMA/width scan；
 - 再把 CFG mod-3 phase 当 record boundary；
-- 用 basename convention 直接证明 binding；
+- basename convention = binding；
 - 为得到 PASS 无边界扫描整个 `data/**`；
-- 把 external texture 作为 final pixels；
-- 把 diagnostic preview 当 engine semantics；
-- 修改 P4 frozen skeleton/sequence/runtime contract；
+- external texture 进入 final pixels；
+- diagnostic preview = engine semantics；
+- 修改 frozen skeleton/sequence/runtime contract；
 - 自行恢复 P5-T02；
-- 自行把 `plan.md` 改成 P4-M01 PASS。
+- 自行把 `plan.md` 改 P4-M01 PASS。
 
 ---
 
-## 4. N01 Phase 0 — 只做 final consistency cleanup
+## 6. 当前固定执行顺序
 
-必须先修：
-
-```text
-CFG phase-origin identity formula
-DTX >3x / stale every wording
-H1 preview path + SHA consistency
-H1 evidence class downgrade
-shader stale BGR24/scalar-strip comments
-binding stale full-local-data comments
-```
-
-CFG sample count `164/169/214` 已正确，不要退回旧 extraction。
-
-Phase 0 gate：
-
-```text
-formula arithmetic self-consistent
-path exists and SHA matches
-comments == report evidence grade
-no universal/exact-framing stale claim
-open item remains open
-```
-
-然后直接进入 Phase 1。
-
----
-
-## 5. N01 substantive route
-
-固定顺序：
-
-```text
-Phase 1  consumer call/data-path discovery
-Phase 2  ArmModel positive control + weapon-family differential
-Phase 3  WeaponShader CFG consumer identification
-Phase 4  storage/channel/binding semantics
-Phase 5  engine binding closure
-```
+### Phase 1 — consumer call/data-path discovery
 
 优先利用：
 
@@ -154,22 +179,65 @@ CfgTextDecoder.cs
 CfgBinaryStripDecoder.cs
 ```
 
-重点是找到真实调用/数据关系，不是把类名写进报告。
+要求找真实调用/数据关系：
 
-输出优先：
+```text
+producer/index/table
+-> key / model / piece identifier
+-> resolver/lookup
+-> texture/material resource
+-> consumer
+```
+
+输出：
 
 ```text
 work/m4a1_s_bornbeast/p4_m01_native_material/n01/consumer_candidate_matrix.json
 work/m4a1_s_bornbeast/p4_m01_native_material/n01/consumer_search_report.md
-work/m4a1_s_bornbeast/p4_m01_native_material/n01/weapon_material_differential.json
-work/m4a1_s_bornbeast/p4_m01_native_material/n01/cfg_consumer_report.json
-work/m4a1_s_bornbeast/p4_m01_native_material/n01/channel_semantics_report.json
-work/m4a1_s_bornbeast/p4_m01_native_material/n01/engine_binding_closure.json
 ```
+
+### Phase 2 — positive control + weapon differential
+
+至少：
+
+```text
+BornBeast
+Transformers
+Jewelry
++ 1 simple/traditional M4A1-S control if locally available
+```
+
+输出：
+
+```text
+n01/weapon_material_differential.json
+```
+
+**本轮最低 handoff：Phase 1 + Phase 2 必须都完成。不要只生成 candidate list 就停止。**
+
+### Phase 3–5
+
+若 Phase 1/2 已产生 credible consumer candidate，继续：
+
+```text
+Phase 3 WeaponShader CFG consumer
+Phase 4 storage/channel/binding semantics
+Phase 5 engine binding closure
+```
+
+输出：
+
+```text
+n01/cfg_consumer_report.json
+n01/channel_semantics_report.json
+n01/engine_binding_closure.json
+```
+
+若 direct consumer 暂未找到，保存 bounded negative/rejection evidence，完成 Phase 2 后明确 continuation point；不得用 basename/length-fit 强行 closure。
 
 ---
 
-## 6. Evidence policy
+## 7. Evidence policy
 
 优先级：
 
@@ -194,67 +262,66 @@ NEGATIVE_RESULT_SCOPED
 OPEN_UNRESOLVED
 ```
 
-仅 basename、视觉相似、长度 fit、单一相关性不能升级为 binding PASS。
+仅 basename、视觉相似、长度 fit、单一 correlation 不足以 PASS。
 
 ---
 
-## 7. 已接受 baseline，不要重跑
+## 8. 已接受 baseline — 不要重跑
 
 ```text
-A provenance audit
-R1-D formal TGA repair
-DTX formal -2/-3/-5 route
-DTX not-LZMA
-DTX whole-file 3-byte periodicity
-DTX committed width scan
-DTX 1043/1046 dominant statistic
-CFG 237/237 single-phase mod-3 structural fact
-CFG phase-vs-boundary correction
-CFG 164/169/214 complete phase samples
-H2 pixel-index fix
-ArmModel [Textures]/PieceIndex positive control
-355-file config-like negative scope definition
-G variant inventory/differential evidence
+R1 correction                           ACCEPTED / COMPLETE
+N01 Phase 0                             ACCEPT / FROZEN
+TGA formal repair                       ACCEPT / STRUCTURAL
+DTX no formal LithTech header           VERIFIED_STRUCTURAL
+DTX not LZMA                            VERIFIED_STRUCTURAL
+DTX whole-file 3-byte periodicity       VERIFIED_STRUCTURAL
+DTX committed width scan                ACCEPT
+DTX two-varying-offset continuity       ACCEPT
+DTX 1043/1046 dominant statistic        ACCEPT
+DTX 1024/no-mips                        STRONG_HYPOTHESIS
+CFG 237/237 mod-3 structural fact       VERIFIED_STRUCTURAL
+CFG phase-vs-boundary correction        ACCEPT
+CFG 164/169/214 extraction              ACCEPT
+CFG phase-origin formula cleanup        ACCEPT
+H1 path/evidence cleanup                ACCEPT
+H2 pixel-index fix                      ACCEPT / DIAGNOSTIC_ONLY
+ArmModel [Textures]/PieceIndex format   VERIFIED_STRUCTURAL
+355-file config-like negative scope     NEGATIVE_RESULT_SCOPED
 ```
 
 仍 open：
 
 ```text
 weapon material consumer
+weapon short-field meaning
 weapon piece/material -> texture-set binding
 WeaponShader CFG consumer/semantic
-DTX/TGA channel/binding semantics
+DTX/TGA binding/channel semantics
 DTX tail semantics
 native composition closure
 ```
 
 ---
 
-## 8. Git / data
+## 9. Git / data
 
-- Agent handoff 只认 `master`；
+- handoff 只认 `master`；
 - `data/**` 永远 local-only；
 - push 前精确 `git add -- <paths>`；
 - 禁止 `git add .` / `-A` / `--all`；
 - 不 force-push；
 - 不 destructive reset/clean；
-- 不上传原始 LTB/DTX/TGA/CFG；
+- 不上传 raw LTB/DTX/TGA/CFG；
 - 不删除历史 evidence 隐藏错误；
 - 新报告保持 supersedes/provenance 链。
 
 ---
 
-## 9. Handoff
+## 10. Handoff
 
-N01 完成后 Local Executor 只提交：
+N01 完成后 Local Executor 只提交 scoped code/evidence + recommended state；Chat/Sol 决定 N01 是否 PASS。
 
-```text
-corrected Phase-0 evidence
-N01 consumer/binding code + reports
-recommended state
-```
-
-Chat/Sol 决定 N01 是否 PASS，以及是否进入 P4-M01 native composition/final closure。
+N01 PASS 只允许进入 P4-M01 native composition/final closure，不自动恢复 P5。
 
 只有最终：
 
