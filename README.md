@@ -11,7 +11,7 @@
 ```text
 README.md   你正在看的项目入口与工具概览
 AGENTS.md   所有 Agent 必须遵守的 Git / data / evidence 安全规则
-plan.md     唯一权威的项目状态、完整流程、当前 blocker 与后续执行协议
+plan.md     唯一权威的项目状态、完整流程、当前 task / blocker 与后续执行协议
 ```
 
 **人阅读：** `README.md -> plan.md`  
@@ -21,11 +21,11 @@ plan.md     唯一权威的项目状态、完整流程、当前 blocker 与后�
 
 ## 当前进度，一句话说明
 
-**CF 枪模 -> Source 1 编译 -> MIGI 部署这条技术链已经跑通并冻结；现在卡在“如何证明 CF 原游戏真实地把 weapon piece、贴图族和 WeaponShader CFG 绑定/消费起来”。**
+**CF 枪模 -> Source 1 编译 -> MIGI 部署这条技术链已经跑通并冻结；旧静态 corpus 卡在“CF 原游戏如何把 weapon piece、贴图族和 WeaponShader CFG 绑定/消费起来”，但当前不是被动等待，而是执行 `P4-M01-N02` 主动寻找新的 CF runtime/client/shader 输入。**
 
-当前静态资源已经分析到现有证据边界，但仓库/本地已解包 corpus 中没有原 CF client/runtime consumer code。因此当前不是继续换模型重复扫描，而是等待新的 CF runtime/client artifact 或同等级 binding contract，再做静态逆向。
+N02 会从本机 CF 安装环境、注册表/快捷方式、EXE/DLL、原始 runtime/REZ 包、shader/renderstyle 包等多条路线建立 inventory 和静态 triage；找到可信 consumer candidate 后再重新打开 N01 的深层 consumer tracing。不会再让不同模型重复扫描同一批旧 `data/**`。
 
-详细状态、已证明/未证明内容、恢复条件全部见 [`plan.md`](plan.md)。
+详细状态、具体搜索顺序、失败分支、输出和 Gate 全部见 [`plan.md`](plan.md) §6。
 
 ## 主流程
 
@@ -36,6 +36,7 @@ CF 原始资源
   -> CS:GO Source 1 SMD / QC / VMT / VTF
   -> studiomdl / validation / package
   -> MIGI deploy / runtime Gate
+  -> runtime artifact acquisition / static triage
   -> CF 原生材质恢复
   -> 最终雷神资产确认
   -> 发布质量
@@ -47,7 +48,8 @@ CF 原始资源
 ```text
 Source 1 conversion baseline       PASS / FROZEN
 BornBeast native material          INCOMPLETE
-engine-side material consumer      BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+N01 old-corpus consumer search     BLOCKED_BY_MISSING_RUNTIME_ARTIFACTS
+N02 runtime artifact acquisition   ACTIVE
 Leishen candidate flow             PAUSED waiting for material method
 ```
 
@@ -60,7 +62,7 @@ scripts/
   audio_clean/             音频修复、清洗、分类
   cf_ltb/                  LTB 诊断与模型研究辅助
   weapon_port/             CF weapon -> Source 1 构建流水线
-  material_recovery/       BornBeast / N01 原生材质研究脚本
+  material_recovery/       BornBeast / N01/N02 原生材质与 runtime 证据研究脚本
   csgo_pack/               CS:GO / MIGI 打包相关
   gsi/                     游戏状态联动
 assets/weapons/            可审计的武器 manifest / mapping
@@ -91,7 +93,7 @@ dotnet build .\CFRezManager\CFRezManager.csproj --no-restore
 scripts/weapon_port/pipeline.py
 ```
 
-原生材质研究入口：
+原生材质 / runtime evidence 研究入口：
 
 ```text
 scripts/material_recovery/
@@ -102,6 +104,8 @@ scripts/material_recovery/
 ## 数据与证据规则
 
 `data/**` 是本地输入，永远不得上传。提交的 evidence 应使用相对路径、SHA-256、size、run id、git commit 等描述输入身份，而不是提交 CF 原始资产。
+
+CF client EXE/DLL、原始 runtime/archive 和 proprietary shader package 同样不得作为 raw binary 提交；N02 只提交 metadata/hash/string offset/xref/call-chain 等证据。
 
 外部 MOD 贴图、官网图片、网络图片和 AI 生成图片只能作为参考，不能进入最终 CF 原生材质像素。完整安全规则见 [`AGENTS.md`](AGENTS.md)。
 
