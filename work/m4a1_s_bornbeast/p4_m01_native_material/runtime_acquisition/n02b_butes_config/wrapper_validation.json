@@ -1,0 +1,43 @@
+{
+  "wrapper_constants": {
+    "CrossFireLtcMagic": "5483b2e1",
+    "CrossFireLtcXorKey": "5483b2e1103f6e9dccfb2a5988b7e615"
+  },
+  "sample_count": 73,
+  "raw_magic_counts": {
+    "5483b2e1": 73
+  },
+  "unlock_success_count": 73,
+  "unlock_outcome_counts": {
+    "wrapper_unlocked": 73
+  },
+  "unlocked_zero_header_count": 73,
+  "unlocked_header_counts": {
+    "00000000": 73
+  },
+  "raw_to_unlocked_sha_mapping_count": 73,
+  "raw_to_unlocked_sha_mapping_sample": [
+    [
+      "f47239f6ed7972966266e0714ea714cbcfb4dc3a073c9bf9af36a03d4c1a8b5f",
+      "b9e98089243ca1dd14271b06b461e4b43ebcef5c3d2a236f03c62b77ba13e83e"
+    ],
+    [
+      "7a0809539ed2026820bd3d561cc1bf2b0be999b0bf4b8ac7700e29ddac21d9e4",
+      "6b2271cd4aa1da3ea85398be65a089cc2028f787895153113e8b2f2e026970d4"
+    ],
+    [
+      "92405b1e607a110891e61f101d957f403ac9f9b095b8994a992f5938bad78c76",
+      "0ae2c98ecb9cc81cf0316450561edb816bd30f2df1f89e1d55dcef17b1ed2db5"
+    ],
+    [
+      "28f10e8d331765a1522e7b56a8c114ae5cda85061232b9477242b9435d760f7a",
+      "8be813f261e33b97cef8719054e8f68fba97052f6f4dec5a86c25be2c76ee7db"
+    ],
+    [
+      "612a131fb63fc2b0ff9351f749c2c497d7bf72da5fa33ae5cf7ef1490699b145",
+      "f5b34b16bb59b1c6a12b7d798907d3ab93ee41e03ebd89fe75fc97f735d18a75"
+    ]
+  ],
+  "generated_at": "2026-08-22T14:32:37.797707+00:00",
+  "script": "scripts\\material_recovery\\n02_butes_config_triage.py"
+}

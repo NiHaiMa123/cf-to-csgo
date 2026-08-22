@@ -1,6 +1,6 @@
 {
-  "total_decoded": 0,
-  "total_parsed_as_bute": 0,
+  "total_decoded": 73,
+  "total_parsed_as_bute": 73,
   "existing_scope": {
     "families": [
       "BornBeast",
@@ -8,10 +8,1541 @@
       "Jewelry",
       "BlueDiamond"
     ],
-    "n01_decoded_count": null,
     "config_index_keys": 18
   },
-  "parsed": [],
-  "generated_at": "2026-08-22T14:13:31.104798+00:00",
+  "parsed": [
+    {
+      "path_alias": "rez/Butes/Alaska_DZ.ltc",
+      "raw_sha256": "f47239f6ed7972966266e0714ea714cbcfb4dc3a073c9bf9af36a03d4c1a8b5f",
+      "unlocked_sha256": "b9e98089243ca1dd14271b06b461e4b43ebcef5c3d2a236f03c62b77ba13e83e",
+      "decoded_sha256": "866d24cf3e59a107c0b37ae42f1587ccdaea28aa296bba6cc52c62970173923e",
+      "decoded_size": 3133,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-8264.000000 1273.999878 -6742.000000 )\n\t\t(7287.999512 1273.999878 -6742.000000 )\n\t\t(-8264.000000 1273.999878 6840.000488 )\n\t\t(7287.",
+      "record_count": 3,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Banlieue13_DZ.ltc",
+      "raw_sha256": "7a0809539ed2026820bd3d561cc1bf2b0be999b0bf4b8ac7700e29ddac21d9e4",
+      "unlocked_sha256": "6b2271cd4aa1da3ea85398be65a089cc2028f787895153113e8b2f2e026970d4",
+      "decoded_sha256": "4a8e1720825ba936f058136929fa7c1cfd0b81af2a45bba2cd1d9150a5e88944",
+      "decoded_size": 224818,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-12224.000000 -4032.000000 15744.000000 )\n\t\t(-12224.000000 -4032.000000 -13696.000000 )\n\t\t(17280.000000 -4032.000000 15744.000000 )\n",
+      "record_count": 219,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/BlackWidow_DZ.ltc",
+      "raw_sha256": "92405b1e607a110891e61f101d957f403ac9f9b095b8994a992f5938bad78c76",
+      "unlocked_sha256": "0ae2c98ecb9cc81cf0316450561edb816bd30f2df1f89e1d55dcef17b1ed2db5",
+      "decoded_sha256": "9a8d6a3209954dad95bc1ff23c305560187fcc5c166f762b123b9a0c6f189579",
+      "decoded_size": 5198,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(PointList \n\t\t(-11873.278320 1327.725830 -13144.109375 )\n\t\t(10640.000000 1327.725830 -13144.109375 )\n\t\t(-11873.278320 1327.725830 11480.000000 )\n\t\t(10640.000000 1327.7",
+      "record_count": 5,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_Banlieue13.ltc",
+      "raw_sha256": "28f10e8d331765a1522e7b56a8c114ae5cda85061232b9477242b9435d760f7a",
+      "unlocked_sha256": "8be813f261e33b97cef8719054e8f68fba97052f6f4dec5a86c25be2c76ee7db",
+      "decoded_sha256": "26855b5e89dd7d0e8329d94a90dc46c2f3677b31d6fade37fe6b9894924e5b61",
+      "decoded_size": 2486,
+      "printable_ratio": 1.0,
+      "head_sample": "( BoxStartPoint\n\t( Name BoxStartPoint0 )\n\t( Pos 0.000000 192.000000 -3584.000000 )\n\t( Rot 0.000000 2.879791 0.000000 )\n)\n( BoxStartPoint\n\t( Name BoxStartPoint1 )\n\t( Pos 0.000000 192.000000 2816.000000",
+      "record_count": 20,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_LostCities.ltc",
+      "raw_sha256": "612a131fb63fc2b0ff9351f749c2c497d7bf72da5fa33ae5cf7ef1490699b145",
+      "unlocked_sha256": "f5b34b16bb59b1c6a12b7d798907d3ab93ee41e03ebd89fe75fc97f735d18a75",
+      "decoded_sha256": "95263e970590116bf4883414162811c0a38a2f0cd063855295713e5518702bd2",
+      "decoded_size": 2480,
+      "printable_ratio": 1.0,
+      "head_sample": "( BoxStartPoint\n\t( Name BoxStartPoint0 )\n\t( Pos -1909.000000 172.000000 -1669.000000 )\n\t( Rot 0.000000 3.141593 0.000000 )\n)\n( BoxStartPoint\n\t( Name BoxStartPoint01 )\n\t( Pos 1849.000000 172.000000 -35",
+      "record_count": 20,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_NANODUST.ltc",
+      "raw_sha256": "a33cd5bcef9b9c2e0de7bbb535b858827911fff420dba8537bcd9b3f471fc11f",
+      "unlocked_sha256": "5420fd9491f4a97ab3d9966973417b3c327ac6034c10580954c448b8a163a8b1",
+      "decoded_sha256": "44e25754072c9847e131e8c2b523af23562960df88ba69d791523fef1ea6a5d6",
+      "decoded_size": 2489,
+      "printable_ratio": 1.0,
+      "head_sample": "( BoxStartPoint\n\t( Name BoxStartPoint0 )\n\t( Pos 192.000000 192.000000 3520.000000 )\n\t( Rot 0.000000 2.356194 0.000000 )\n)\n( BoxStartPoint\n\t( Name BoxStartPoint1 )\n\t( Pos 1216.000000 -512.000000 6400.0",
+      "record_count": 20,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_NCeyhanNM.ltc",
+      "raw_sha256": "1b8f0a0f8014c3eacbf66729e464fcc5e9c49ed1f7aed36b32b08c0f6fecb9fe",
+      "unlocked_sha256": "d8b7a8ee60bc2322168fb518965e3bd87a6735d75199a7804fee08381272222f",
+      "decoded_sha256": "2627596150e5d66836dc90665f9fc7ea6fb5ac34f0a352240e9917dac0900dfb",
+      "decoded_size": 2477,
+      "printable_ratio": 1.0,
+      "head_sample": "( BoxStartPoint\n\t( Name BoxStartPoint0 )\n\t( Pos -128.000000 832.000000 3584.000000 )\n\t( Rot 0.000000 1.570796 0.000000 )\n)\n( BoxStartPoint\n\t( Name BoxStartPoint1 )\n\t( Pos -8192.000000 384.000000 1600.",
+      "record_count": 20,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_NanoRoofGhost.ltc",
+      "raw_sha256": "5c152c2627e50e31fa5a8c59e2bc34b43576822a1a1dd1394c1b114e4c12e798",
+      "unlocked_sha256": "fd6477154b0a8db058a36110989ca16fd681f6e8fa7e2e7ff59c434d0a3c059f",
+      "decoded_sha256": "174bcf8dc5ffb19ee843d8939683395b17116d2469084fc3df2ba366800a3746",
+      "decoded_size": 2484,
+      "printable_ratio": 1.0,
+      "head_sample": "( BoxStartPoint\n\t( Name BoxStartPoint0 )\n\t( Pos 3072.000000 384.000000 64.000000 )\n\t( Rot 0.000000 2.879791 0.000000 )\n)\n( BoxStartPoint\n\t( Name BoxStartPoint1 )\n\t( Pos 3456.000000 192.000000 3200.000",
+      "record_count": 20,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/BoxStartPoint_estate.ltc",
+      "raw_sha256": "746e4ffdbce0676085956715eb749578fc859ba3cb6886dece2ff5eb9dc0cb5e",
+      "unlocked_sha256": "5166e00fce2b6543beb50351871248eb83865b8e9c5de7b159a2726cb44efc07",
+      "decoded_sha256": "ac372b1181a591184649d09c60bf383ac0e4345bf202396d1702ef738b6d4bdf",
+      "decoded_size": 2478,
+      "printable_ratio": 1.0,
+      "head_sample": "( BoxStartPoint\n\t( Name BoxStartPoint0 )\n\t( Pos 6144.000000 256.000000 8064.000000 )\n\t( Rot 0.000000 2.879791 0.000000 )\n)\n( BoxStartPoint\n\t( Name BoxStartPoint1 )\n\t( Pos -4096.000000 511.000000 8512.",
+      "record_count": 20,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_Banlieue13.ltc",
+      "raw_sha256": "aca980e4daca12517390879634ce52393c7c4dd72dfec87a206a81c1534b89eb",
+      "unlocked_sha256": "423ac5b03230c8617b0dcf4ee5f0f8fca3b330fd98a4c5d29ba858482c3e9dec",
+      "decoded_sha256": "a45c6ba855c5bd29b115de11e8bc6ad922bc51be21621916583c974f2ea55095",
+      "decoded_size": 2189,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos 2518.134277 221.000000 4974.230957 )\n\t( Rot 0.000000 -2.617994 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint3 )\n\t( Pos 4047.158203 1182.000",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_BlackWidow.ltc",
+      "raw_sha256": "838353c20cf60e128a5c2fb9d269f42e5260edcee1d406f5b00ddee60cb12f0b",
+      "unlocked_sha256": "01db120052890c7c82062644783bfc218b90cdbf8bc398901ce1e99918a53968",
+      "decoded_sha256": "0e0d2d5a9258105a87ddcb69c6a6b37d52f366a8e6ee7a16a27aa93dda11503c",
+      "decoded_size": 2191,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name \"DGameStartPoint0\" )\n\t( Pos 3186.000000 420.000000 -2388.00000 )\n\t( Rot 0.000000 -0.523599 0.00000 )\n)\n( DGameStartPoint\n\t( Name \"DGameStartPoint1\" )\n\t( Pos 2471.000000 420.0",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_Dust2.ltc",
+      "raw_sha256": "d5d1d2fb9a275a7489837a36364104319b8be7edf1f582b04759d86e0ef02a9f",
+      "unlocked_sha256": "eeef1fafdd403a553fd75ca7d90f1293ccc858dbaf8b36167d4cd8d89e70909a",
+      "decoded_sha256": "86004a5655f9754c39dedf971b1912177a83f6466c48970ef131c93bd68dec2e",
+      "decoded_size": 2312,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint0 )\n\t( Pos -4590.000000 343.000000 7731.000000 )\n\t( Rot 0.000000 2.356194 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos -7587.000000 707.000",
+      "record_count": 18,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_LostCities.ltc",
+      "raw_sha256": "5479793b7e2d7e43d876f1888471ca195a88cec7e63a6d2e5b5e5f6e6228adb8",
+      "unlocked_sha256": "8f9b46e9baca2d5f78710939de613166b979fb3020f0aa59a43a44c039e5773f",
+      "decoded_sha256": "8db4f4499a0d042e0791b6912d7ae6d13d4333dde30db76fecaa3752bf92355d",
+      "decoded_size": 2178,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint0 )\n\t( Pos 0.000000 204.000000 0.000000 )\n\t( Rot 0.000000 3.141593 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos 3215.000000 204.000000 -465",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NANODUST.ltc",
+      "raw_sha256": "bb44b5454c32f98b5f6b1d1098cc2da216abab3f86d7a68f235234b7f1a0ec05",
+      "unlocked_sha256": "5bdcf18478a4e3d79f4cdea0c8096325ad2f07927bca2b13c2593585e5e0a986",
+      "decoded_sha256": "336ff3e1ab2328d950a3fb1a248a136982feaf815c44f7d9bcfc563b4cf95e17",
+      "decoded_size": 2313,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint0 )\n\t( Pos -4550.000000 354.000000 7707.000000 )\n\t( Rot 0.000000 2.356194 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos -7587.000000 707.000",
+      "record_count": 18,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NCeyhan2.ltc",
+      "raw_sha256": "54bebd367161f378d7bf95f618d909749de181a891f1e2fb5805d8b3f3fbb101",
+      "unlocked_sha256": "f03514d5c76252d23be5c889be5cf6d00be549ca1b8093157e9655cd162e0dd0",
+      "decoded_sha256": "f4f3a4e9b013736cbb57ef6ac98d76aab1a138e41a01b795cc13367b9f6f1d85",
+      "decoded_size": 2173,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint0 )\n\t( Pos -8760.615234 1.000000 4542.959473 )\n\t( Rot 0.000000 1.570796 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos -8729.214844 350.00027",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NCeyhanNM.ltc",
+      "raw_sha256": "8e9f44d7c92e04255236747b6f8e4b020ca1bcb11a4c4ba8c743442dc3f1cae7",
+      "unlocked_sha256": "87e10e6456192b676038582a5b2426db578e0bf59d43586e629315a7c3594b5f",
+      "decoded_sha256": "e9cd9156874aa5f4468dc2be693948b32f14bb9b09aa522654a7724a27db3621",
+      "decoded_size": 2175,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint0 )\n\t( Pos -8606.615234 81.000000 4531.959473 )\n\t( Rot 0.000000 1.570796 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos -8729.214844 430.0002",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_NanoRoofGhost.ltc",
+      "raw_sha256": "47b912c97b31bb10db359fb7a6bb9369f7020108f937b9a9778943db2036bbaa",
+      "unlocked_sha256": "21ec9f073200e33029729925bf3737780af2e45a98b6fae51139287f85913697",
+      "decoded_sha256": "7b8822c026e7554d73d85dab6fb6f3c7522f2f8dced2e84ea2b0ce2cd9880100",
+      "decoded_size": 2192,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos -3052.313721 238.815613 3890.321533 )\n\t( Rot 0.000000 1.570796 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint3 )\n\t( Pos 2175.541016 166.0000",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DStartPoint_estate.ltc",
+      "raw_sha256": "db7183de70e40f7db0c66e12a95f1da5289086399235bf5c8a174e8fa61fd9e4",
+      "unlocked_sha256": "a004e8da21ddcaf319558af4ec8facccfdaed708818f94cb92081f4707f6ac81",
+      "decoded_sha256": "7cbcd1e7b036f161c995a7a658cb22555b4844dd64e64464372e039d783ed6a3",
+      "decoded_size": 2175,
+      "printable_ratio": 1.0,
+      "head_sample": "( DGameStartPoint\n\t( Name DGameStartPoint0 )\n\t( Pos -1828.615234 371.000000 1555.959473 )\n\t( Rot 0.000000 1.570796 0.000000 )\n)\n( DGameStartPoint\n\t( Name DGameStartPoint1 )\n\t( Pos 690.785156 339.00024",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/DesertStormTM_DZ.ltc",
+      "raw_sha256": "d0baf5e00be8912bb3240abe520f2767c459e54536baf9bc12f61918a6e57ecd",
+      "unlocked_sha256": "1a3c085d39199c433a00ea1456596643f44ca8d5b8a9a9a6eecba6b7da79c302",
+      "decoded_sha256": "1f667c590cb0652c3c54c4346e6b6b1deb8e84b26af0862e785ff97fb08adde9",
+      "decoded_size": 6193,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ03 )\n\t(PointList \n\t\t(-4885.857910 0.000000 -2657.000000 )\n\t\t(-3990.000000 0.000000 -2657.000000 )\n\t\t(-4885.857910 0.000000 1238.000000 )\n\t\t(-3990.000000 0.000000 1238.000000",
+      "record_count": 6,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Dryworld_DZ.ltc",
+      "raw_sha256": "7c5726b26ca4469cd751215d236dc1ba4086b8b1099367499691f1d270321270",
+      "unlocked_sha256": "57d8f93c0e5afa0d05841337cf3f996ca8341be4429d9b12528cf6ef153a84da",
+      "decoded_sha256": "1cda5d77ebfbd90d0ae64a9e077d94428cbfa1269b17da8bf5a66e9406538156",
+      "decoded_size": 2057,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ02 )\n\t(PointList \n\t\t(-5250.000000 972.380066 -6090.000000 )\n\t\t(5250.000000 972.380066 -6090.000000 )\n\t\t(-5250.000000 972.380066 5600.000000 )\n\t\t(5250.000000 972.380066 5600.",
+      "record_count": 2,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Dust2_DZ.ltc",
+      "raw_sha256": "20928a6c253bfe4016134032e984c5c32afa0bb7a1b278800663dad0c64e6ddd",
+      "unlocked_sha256": "e3b7bd0b4adfbe097abc04bed4c5a6f88f4f474eff2c068a7013bc4c2c91d8c4",
+      "decoded_sha256": "26964089ef25f59be9ac6c92a54b82d9687ea61d3574ad5642a36bdc46847f76",
+      "decoded_size": 13412,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-10496.000000 -1555.621094 -14272.000000 )\n\t\t(11968.000000 -1555.621094 -14272.000000 )\n\t\t(-10496.000000 -1555.621094 14272.000000 )",
+      "record_count": 13,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/EAGLEEYES_DZ.ltc",
+      "raw_sha256": "3b91d55f486496d6a58e64b14796f8a3ac124a9247bcb168d776bf573deeab76",
+      "unlocked_sha256": "2e35ae5f005386af4f1cc0cfe98a9da34d7925cbe529607764dc0d1e689916de",
+      "decoded_sha256": "42db37dfe1b7fb1788b1c739618aff4eb412b9bdef0898d205a86ba21ffeca69",
+      "decoded_size": 14546,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-10688.000977 -560.000000 -11200.000000 )\n\t\t(8255.999023 -560.000000 -11200.000000 )\n\t\t(-10688.000977 -560.000000 11967.999023 )\n\t\t(",
+      "record_count": 14,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Factory_DZ.ltc",
+      "raw_sha256": "0dbd54af58a88763465c53f86ae30d45bcd5f9af0f7af1c8e4e4f8cfa957f186",
+      "unlocked_sha256": "58e2db7c9f80bbf8300e42f7fc248246e56b266a06bc7ad2022042cf7595f591",
+      "decoded_sha256": "813ec4c959063acb8e7d07ef6453b1f66988d230e835fcd8d14065e06aa77f2d",
+      "decoded_size": 17537,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ16 )\n\t(PointList \n\t\t(2543.440430 1269.387695 3714.115234 )\n\t\t(2918.484375 1269.387695 3714.115234 )\n\t\t(2543.440430 1269.387695 4072.614014 )\n\t\t(2918.484375 1269.387695 4072.",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Fortress_DZ.ltc",
+      "raw_sha256": "62397e794438403bc23e353bb82b2f8370cc624bb1b8e5b5fca17b80f2f54816",
+      "unlocked_sha256": "984afb445b3ceee5a5352f9fd7d548d11c58bb79c4949db7bc778168d123a05d",
+      "decoded_sha256": "f96f979fd8156e47190660c16b7857992ec4e7768bcdea959a3c9906d6787476",
+      "decoded_size": 237543,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ31 )\n\t(PointList \n\t\t(-5110.000000 1320.016113 -6160.000000 )\n\t\t(5110.000000 1320.016113 -6160.000000 )\n\t\t(-5110.000000 1320.016113 6160.000000 )\n\t\t(5110.000000 1320.016113 6",
+      "record_count": 230,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Kairouan_DZ.ltc",
+      "raw_sha256": "31e3c5233db0c90a337fc9b91d76981890a05a7f582365d54ad88a21feceb519",
+      "unlocked_sha256": "cbb18824c0287a0fd899d3df708b3a0205d675d91c433f52b3ec9f36ae15e7ec",
+      "decoded_sha256": "da64d16c92db20aa03e33e3f55d4d3080c2a60e127f167ae1aab192695166169",
+      "decoded_size": 7245,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ07 )\n\t(PointList \n\t\t(-4410.000000 6633.153809 -6510.000000 )\n\t\t(7992.360352 6633.153809 -6510.000000 )\n\t\t(-4410.000000 6633.153320 8893.632813 )\n\t\t(7992.360352 6633.153320 8",
+      "record_count": 7,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Lab_DZ.ltc",
+      "raw_sha256": "3ad42f809f9ae673b960500739675e4f182e74279e0fc85b72775d3e68c64c62",
+      "unlocked_sha256": "42d97df25482e6d993e220c2602649295e697aa4e6a2d51a1251725b0e6dacbf",
+      "decoded_sha256": "6b3ac68684e40f7ee9d34d28199891d53df896f8473f05517e672d8aa339ca25",
+      "decoded_size": 52854,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ02 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-1224.867554 -5.688658 4859.857422 )\n\t\t(-595.058411 -5.688658 4859.857422 )\n\t\t(-1224.867554 -5.688658 5221.099609 )\n\t\t(-595.058411 -",
+      "record_count": 51,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/LostCities_DZ.ltc",
+      "raw_sha256": "e64c7b755287cee5d602b9f5b888b6d080caed756fa22ffb5bfffc666c0b2ec3",
+      "unlocked_sha256": "3b6d482fefa4aa093346d1378f69e694a541f3822ed0cc72f36f76ff355fb54e",
+      "decoded_sha256": "5346a73a9c4c22db775c494471423cbdb2b97f469502584f2a0456da45b3c81a",
+      "decoded_size": 1171645,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-7226.061523 -5006.456055 -12099.103516 )\n\t\t(5482.277832 -5006.456055 -12099.103516 )\n\t\t(-7226.062012 -5006.455566 8654.687500 )\n\t\t(",
+      "record_count": 1141,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/MetroGM_DZ.ltc",
+      "raw_sha256": "d4f131ab4b38f07907a136d3d0f2fa962f851a33a49346c22946066f9146ac5f",
+      "unlocked_sha256": "551495494a7fda0f59ba8c3ae548ca9c9da9a6f9f5cecc74f1b227058b0e13a0",
+      "decoded_sha256": "18248d5a3c9ab84e0a3b19a65faae8d57054c2b3efd850812e0e4b1afe9c3cab",
+      "decoded_size": 4164,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ02 )\n\t(PointList \n\t\t(-1540.000000 980.000000 3080.000000 )\n\t\t(2308.986328 980.000000 3080.000000 )\n\t\t(-1540.000000 980.000000 3640.000000 )\n\t\t(2308.987793 980.000000 3640.00",
+      "record_count": 4,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/MexicoDeath_DZ.ltc",
+      "raw_sha256": "fde736f902c8a17f1b2c1299188d1ee2a5be280d396218e04351299801c54f15",
+      "unlocked_sha256": "82737f266a98aefce7c4bca5609a71b92f50387816cad4f34959bc84c8149408",
+      "decoded_sha256": "8b8c0ff8376c099efa833db5a0dc334276fac9d233e43f4c4ae650745a0c5b08",
+      "decoded_size": 86654,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ21 )\n\t(PointList \n\t\t(-11412.142578 1133.615356 -4667.360352 )\n\t\t(-4045.331543 1133.615356 -4667.360352 )\n\t\t(-11412.142578 1133.615356 6974.807617 )\n\t\t(-4045.331543 1133.6153",
+      "record_count": 84,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/NANODUST_DZ.ltc",
+      "raw_sha256": "4b8db999f012810bc80f06d6656a9febfb2ec11a46505e31d31a3e047103a829",
+      "unlocked_sha256": "7911c740a125a6ae102d6d4b6bd21828a320a44cf9ca6e156d9c8b5a15aeb84b",
+      "decoded_sha256": "a3d32e091497296e4978baf590292a34b190d6cababa204cbb9aaf8dfcb8a7d8",
+      "decoded_size": 519893,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ41 )\n\t(PointList \n\t\t(6108.649902 1150.000000 -2992.704590 )\n\t\t(6108.650391 1150.000000 -3552.704590 )\n\t\t(6668.650879 1150.000000 -2992.703613 )\n\t\t(6668.650391 1150.000000 -3",
+      "record_count": 501,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/NCeyhan2_DZ.ltc",
+      "raw_sha256": "b578fd29c5e34ecf038344da269f3f26e6dd592c5a9253fccf28cb6c99c736ee",
+      "unlocked_sha256": "7f7bad3120b56c06226ccbacae08c8e4e293687b79256b1513cabe82a8eef31a",
+      "decoded_sha256": "59e3432fcf0950dc8366ab82fda7d9cf1db898e04a63793760836c426da3b7ca",
+      "decoded_size": 39247,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-12992.000000 -384.000000 -12352.000000 )\n\t\t(10240.000000 -384.000000 -12352.000000 )\n\t\t(-12992.000000 -384.000000 16608.000000 )\n\t\t",
+      "record_count": 38,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/NCeyhanNM_DZ.ltc",
+      "raw_sha256": "d2ebe0684eb28c5a7b67770edf4731a5febf711407c48507ac57793614da4455",
+      "unlocked_sha256": "ca5dd3c16e178da8bc6d3271400b6e7bd5c9e9a2cb521c1053103be34706be54",
+      "decoded_sha256": "106277b30a9d9b615d07730e2da79af49164aed398998feb195cfcc8799069fa",
+      "decoded_size": 169211,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ02 )\n\t(PointList \n\t\t(-12273.806641 -1378.559570 312.284180 )\n\t\t(-8899.025391 -1378.559570 312.284180 )\n\t\t(-12273.806641 -1378.559570 11000.000000 )\n\t\t(-8899.025391 -1378.559",
+      "record_count": 163,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/NanoRoofGhost_DZ.ltc",
+      "raw_sha256": "fd1d21113d1bea8633fe33cbd215b8bbf037e8dad1c71a7d7cc2156bce385059",
+      "unlocked_sha256": "51510dabacdc800a74518a919138661151c1d4dc178c4eb8b7c08cf46444e86c",
+      "decoded_sha256": "29ff6ccab0e33d80a70228a77f8db4296775b0e8715f871eaf4e935f7e8ad0bf",
+      "decoded_size": 792236,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-9536.000000 -135.011719 -9856.000000 )\n\t\t(9216.000000 -135.011719 -9856.000000 )\n\t\t(-9536.000000 -135.011719 8128.000000 )\n\t\t(9216.",
+      "record_count": 770,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/TrainDeath_DZ.ltc",
+      "raw_sha256": "69e31b32f417cac85517edb952a43dc9b5b4b0d78b7c2ac3f85ab535085ea120",
+      "unlocked_sha256": "33f3f1d92c4fc5446647c854c6059dd76bb1d7ed98457f47394e792ec9536ca3",
+      "decoded_sha256": "9ccaf707195e8242883b8d26d5baf829b15eee647eaa5a42f9d06cfa55c1284b",
+      "decoded_size": 5194,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ02 )\n\t(PointList \n\t\t(-5600.000000 -273.687256 -6389.860840 )\n\t\t(-2872.000000 -273.687256 -6389.860840 )\n\t\t(-5600.000000 -273.687256 6399.555176 )\n\t\t(-2872.000000 -273.687256",
+      "record_count": 5,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Transportship_DZ.ltc",
+      "raw_sha256": "2314987d5baadf5460cb3c27bd1e1e262230129c19cd8f39d5844c000dc3b6db",
+      "unlocked_sha256": "94868e970b64bbbf2b1ea5f4be48ef1c7aa1df92e01c64c1b3af37e60925be78",
+      "decoded_sha256": "020633026abe9f5bc816c0a4a0fa6b3858ab537d52b46d0c91ba18572a34c0a3",
+      "decoded_size": 22480,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-9728.000000 -921.726929 -8456.000000 )\n\t\t(11132.000000 -921.726929 -8456.000000 )\n\t\t(-9728.000000 -921.726929 8820.000000 )\n\t\t(1113",
+      "record_count": 22,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/Tutorial_DZ.ltc",
+      "raw_sha256": "231e7b72455fc8e648c3c5e03ca0030e2348b38b79ac54edfe42d8e7e7cfa09c",
+      "unlocked_sha256": "644f4ab0a1424e1b19f2549ce67924cb5567a7b2c5815e808954b3a8795c8607",
+      "decoded_sha256": "ed3cc9403b471b8934f152e9cf453ee53216ffb0f778f572793cd7f8ab108e50",
+      "decoded_size": 1083,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ01 )\n\t(DamagePerSec -1 )\n\t(PointList \n\t\t(-20288.001953 -447.999634 -21696.000000 )\n\t\t(19200.000000 -447.999634 -21696.000000 )\n\t\t(-20288.001953 -447.999634 20736.001953 )\n\t\t",
+      "record_count": 1,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf001.ltc",
+      "raw_sha256": "0881ea95a8dbd7f363d8b430ab611a9c0819660f362c9048bedec2f913b9db88",
+      "unlocked_sha256": "1bdf6425503b63d401d5240711ab8d25ff6cc1d65f3311d4180f3f0a1ee61561",
+      "decoded_sha256": "16d50783a58db644c4d520af800017284ca164077d2005e93dd9c665ff772022",
+      "decoded_size": 5769,
+      "printable_ratio": 0.9746,
+      "head_sample": "( Armor\r\n\t( ArmorIndex 0 )\r\n\t( ArmorName \"Kevlar\" )\r\n\t( ArmorPoint 100 )\r\n\t( ArmorTarget 2 )\r\n\t( DamageDecreaseFactors \"M4A1\" 0.3 ) // ¾Æ¸Ó Âø¿ë µ¥¹ÌÁö ¿µÇâ »ó¼ö [AD]\r\n\t( DamageDecreaseFactors \"COLT-1",
+      "record_count": 2,
+      "binding_record_count": 2,
+      "binding_sample": [
+        {
+          "head": "Armor",
+          "binding_fields": {
+            "ArmorName": "Kevlar"
+          }
+        },
+        {
+          "head": "Armor",
+          "binding_fields": {
+            "ArmorName": "Helmet"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf002.ltc",
+      "raw_sha256": "04c82c5b24adca0faba651167bc186f0ece11b9c6cf8a4b4a5802e97249df627",
+      "unlocked_sha256": "e337b3ca73a42963076c95bbc4de72763a3af3305b78c470d577c1307ab0e9d4",
+      "decoded_sha256": "8bd9e8f522386db03cc5f14e0c40e9ffbfaf0e89ca8ade08caa4a297bb164d8a",
+      "decoded_size": 718,
+      "printable_ratio": 1.0,
+      "head_sample": "( Debris\r\n\t( DebrisIndex 0 )\r\n\t( DebrisName \"BreakLightDebris\" )\r\n\t( DebrisModelNum 3 )\r\n\t( DebrisModelFileName1 \"Models\\M-motion.ltb\" )\r\n\t( DebrisModelFileName2 \"Models\\M-motion.ltb\" )\r\n\t( DebrisMode",
+      "record_count": 2,
+      "binding_record_count": 2,
+      "binding_sample": [
+        {
+          "head": "Debris",
+          "binding_fields": {
+            "DebrisModelFileName1": "Models\\M-motion.ltb",
+            "DebrisModelFileName3": "Models\\M-motion.ltb",
+            "DebrisSkinFileName": "ModelTextures\\ak47.dtx",
+            "DebrisModelFileName2": "Models\\M-motion.ltb",
+            "DebrisName": "BreakLightDebris"
+          }
+        },
+        {
+          "head": "Debris",
+          "binding_fields": {
+            "DebrisModelFileName1": "Models\\Debris\\DBottle1a.ltc",
+            "DebrisModelFileName3": "Models\\Debris\\DBottle1c.ltc",
+            "DebrisSkinFileName": "ModelTextures\\Debris\\SiBottle1.dtx",
+            "DebrisModelFileName4": "Models\\Debris\\DBottle1d.ltc",
+            "DebrisModelFileName2": "Models\\Debris\\DBottle1b.ltc",
+            "DebrisModelFileName5": "Models\\Debris\\DBottle1e.ltc",
+            "DebrisName": "Bottle"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf003.ltc",
+      "raw_sha256": "3853dab8ae2e05035c37f356880adfedd3a1b647bce4314730494722f3e5bf3d",
+      "unlocked_sha256": "401390a62f0f868b4c85ac52eb59d2088945a339584d56cbe95b715c560261c8",
+      "decoded_sha256": "ea1f094b8e5719e65cf53657563a9c64c604c22ac7627c601b08f3319ba608a9",
+      "decoded_size": 433,
+      "printable_ratio": 1.0,
+      "head_sample": "( Breakable\r\n\t( BreakableName \"BreakLightTest\" )\r\n\t( TargetDebrisName \"BreakLightDebris\" )\r\n\t( ModelFileName \"Models\\M-motion.ltb\" )\r\n\t( MakeDebrisWhenHit 1 )\r\n\t( SkinFileName \"ModelTextures\\ak47.dtx\"",
+      "record_count": 2,
+      "binding_record_count": 2,
+      "binding_sample": [
+        {
+          "head": "Breakable",
+          "binding_fields": {
+            "BreakableName": "BreakLightTest",
+            "ModelFileName": "Models\\M-motion.ltb",
+            "SkinFileName": "ModelTextures\\ak47.dtx"
+          }
+        },
+        {
+          "head": "Breakable",
+          "binding_fields": {
+            "BreakableName": "Bottle",
+            "ModelFileName": "Model\\Breakable\\GenBottle.ltc",
+            "SkinFileName": "ModelTextures\\Breakable\\SiBottle1.dtx"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "printable_ratio": 0.9514,
+      "head_sample": "( Character\r\n\t( CharacterIndex 0 )\r\n\t( CharacterName \"¹éÀÎÅ×·¯±âº»\" )\r\n\t( ModelFileName \"Models\\Character\\M_BL_001.ltb\" )\r\n\t( ChildModelFileName \"Models\\Character\\M-motion.ltb\" )\r\n\t( SkinFileName1 \"Mo",
+      "record_count": 72,
+      "binding_record_count": 72,
+      "binding_sample": [
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "¹éÀÎÅ×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+          }
+        },
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "Áßµ¿Å×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+          }
+        },
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "ÈæÀÎÅ×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+          }
+        },
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "µ¿¾çÀÎÅ×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+          }
+        },
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "¹éÀÎ´ëÅ×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+          }
+        },
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "Áßµ¿´ëÅ×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+          }
+        },
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "ÈæÀÎ´ëÅ×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+          }
+        },
+        {
+          "head": "Character",
+          "binding_fields": {
+            "CharacterName": "µ¿¾çÀÎ´ëÅ×·¯±âº»",
+            "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "printable_ratio": 1.0,
+      "head_sample": "(Weapon\n (GunAttributes\n    (LeftClickAttributes\n      (RepeatFire)\n      (ShrapnelFire)\n    )\n    (RightClickAttributes\n      (NoMode)\n    )\n    (ZoomAttributes\n      (NoZoom)\n    )\n    (ReloadAttrib",
+      "record_count": 185,
+      "binding_record_count": 185,
+      "binding_sample": [
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-xm.dtx",
+            "WeaponName": "XM1014",
+            "ModelFileName": "Models\\weapons\\xm.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-xm",
+            "SkinFileName": "ModelTextures\\weapons\\xm1014.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        },
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-colt.dtx",
+            "WeaponName": "COLT1911",
+            "ModelFileName": "Models\\weapons\\colt.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-colt",
+            "SkinFileName": "ModelTextures\\weapons\\l-colt.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        },
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-mp5.dtx",
+            "WeaponName": "MP5",
+            "ModelFileName": "Models\\weapons\\mp5.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-mp5",
+            "SkinFileName": "ModelTextures\\weapons\\l-mp5.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        },
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-p90.dtx",
+            "WeaponName": "P90",
+            "ModelFileName": "Models\\weapons\\p90.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-p90",
+            "SkinFileName": "ModelTextures\\weapons\\p90.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        },
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-m9.dtx",
+            "WeaponName": "M9",
+            "ModelFileName": "Models\\weapons\\m9.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-m9",
+            "SkinFileName": "ModelTextures\\weapons\\l-m9.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        },
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-knife.dtx",
+            "WeaponName": "KNIFE",
+            "ModelFileName": "Models\\weapons\\KNIFE.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-Knife",
+            "SkinFileName": "ModelTextures\\weapons\\l-knife.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        },
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-hegrenade.dtx",
+            "WeaponName": "GRENADE",
+            "ModelFileName": "Models\\weapons\\HEGRENADE.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-hegrenade",
+            "SkinFileName": "ModelTextures\\weapons\\l-hegrenade.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        },
+        {
+          "head": "Weapon",
+          "binding_fields": {
+            "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-flashbang.DTX",
+            "WeaponName": "FLASHBANG",
+            "ModelFileName": "Models\\weapons\\FLASHBANG.ltb",
+            "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+            "PViewModelFileName": "Models\\PlayerView\\pv-flashbang",
+            "SkinFileName": "ModelTextures\\weapons\\l-flashbang.dtx",
+            "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf006.ltc",
+      "raw_sha256": "9212cb8f3822261d3d6647a05b7d7d24600dbc2ad2537b731c7220d870e364c0",
+      "unlocked_sha256": "443369842b8b952e8191ddef3a55ea650b0ba53a8a29b721370b1f52e63e4a73",
+      "decoded_sha256": "3ce3380de6d1212dcd3de710b74a16f5629c0d4bc2ff9d351ab6d0ed551c915b",
+      "decoded_size": 6719,
+      "printable_ratio": 0.939,
+      "head_sample": "// ÀÌ ¾Æ·¡·Î ¸Ó¸® --;;  ModelNodeType 1 ¸Ó¸®\r\n( ModelNode\r\n\t( ModelNodeName \"M-bone Head\" )\r\n\t( DamageFactor 1.2 ) //½ÅÃ¼ µ¥¹ÌÁö ºñÀ²\r\n\t( Priority 1.0 )\r\n\t( Radius 8.0 )\r\n\t( ObjectColor 1.0 0.0 0.0 1.",
+      "record_count": 30,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "printable_ratio": 0.9277,
+      "head_sample": "( Sound\r\n\t( SoundName \"SniperZoom\" ) // ½º³ªÀÌÆÛ ÁÜ ÇÒ ¶§\r\n\t( FileName \"snd/weapon/others/g_zoom.wav\" )\r\n\t( 3DSound 1 )\r\n\t( InnerRadius 5.0 )\r\n\t( OuterRadius 20.0 )\r\n\t( MyLevelMultiply 1.0 )\r\n\t( Other",
+      "record_count": 500,
+      "binding_record_count": 500,
+      "binding_sample": [
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "SniperZoom",
+            "FileName": "snd/weapon/others/g_zoom.wav"
+          }
+        },
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "KnifeDeploy",
+            "FileName": "snd/weapon/knife/k_out_knife.wav"
+          }
+        },
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "ClipEmptyRifle",
+            "FileName": "snd/weapon/others/g_nobullet_Rifle.wav"
+          }
+        },
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "ClipEmptyPistol",
+            "FileName": "snd/weapon/others/g_nobullet_Pistol.wav"
+          }
+        },
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "ClipEmptyShotGun",
+            "FileName": "snd/weapon/others/g_nobullet_shotgun.wav"
+          }
+        },
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "ClipEmptyMachineGun",
+            "FileName": "snd/weapon/others/g_nobullet_machinegun.wav"
+          }
+        },
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "KnifeWhip",
+            "FileName": "snd/weapon/knife/k_shoot_knife.wav"
+          }
+        },
+        {
+          "head": "Sound",
+          "binding_fields": {
+            "SoundName": "ProjectileHeadshot",
+            "FileName": "snd/gunhit/g_hit_chead.wav"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf008.ltc",
+      "raw_sha256": "68ce190732e28ad54fddcd741ba74054f8238d0cbab1f43ab002a2fa00ae9546",
+      "unlocked_sha256": "f4d97e9e7416f133fbc71d33bd702f1363c8e27ae2840cabcd634ef70e639b76",
+      "decoded_sha256": "d0bf3790d800297c93eab8b5e8fe8b3e0f0d5205724cbe2e678710870d8ef05f",
+      "decoded_size": 11142,
+      "printable_ratio": 1.0,
+      "head_sample": "( Texture\r\n\t( TextureType 0 )\r\n\t( TextureName \"Default\" )\r\n\t( ImpactFXNum 3 )\r\n\t( ImpactFX1 \"dust_c_L\" )\r\n\t( ImpactFX2 \"dust_c_L\" )\r\n\t( ImpactFX3 \"dust_c_H\" )\r\n\t( ScalableImpactFX 1 )\r\n\t( BulletMarkFX",
+      "record_count": 15,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "printable_ratio": 0.9956,
+      "head_sample": "( Map\r\n\t( MapIndex 0 )\r\n\t( MapName \"ºÚÉ«³ÇÕò\" )\r\n\t( MapFileName \"BlackWidow.dat\" )\r\n  ( MapRezFileAndCheckSum \"rez\\rf106.rez\" 0x00000000 )\r\n  ( TexRezFileAndCheckSum \"rez\\rf024.rez\" 0x00000000 )\r\n\t( M",
+      "record_count": 49,
+      "binding_record_count": 49,
+      "binding_sample": [
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingBlackWindow_GR.DTX",
+            "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TM_BL.dtx",
+            "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TM_GR.dtx",
+            "MapFileName": "BlackWidow.dat",
+            "MapRezFileAndCheckSum": "rez\\rf106.rez",
+            "TexRezFileAndCheckSum": "rez\\rf024.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingBlackWindow_BL.DTX",
+            "MapRoomIcon": "UI/MapIcon/RoomMap0.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap0.TGA"
+          }
+        },
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingMexico_GR.DTX",
+            "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/MAXICO/TM_BL.dtx",
+            "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/MAXICO/TM_GR.dtx",
+            "MapFileName": "Mexico.dat",
+            "MapRezFileAndCheckSum": "rez\\rf014.rez",
+            "TexRezFileAndCheckSum": "rez\\rf007.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingMexico_BL.DTX",
+            "MapRoomIcon": "UI/MapIcon/RoomMap1.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap1.TGA"
+          }
+        },
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingItaly_GR.DTX",
+            "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TM_BL.dtx",
+            "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TM_GR.dtx",
+            "MapFileName": "Ceyhan.dat",
+            "MapRezFileAndCheckSum": "rez\\rf001.rez",
+            "TexRezFileAndCheckSum": "rez\\rf012.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingItaly_BL.DTX",
+            "MapRoomIcon": "UI/MapIcon/RoomMap2.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap2.TGA"
+          }
+        },
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingTransport_GR.DTX",
+            "MapFileName": "Transportship.dat",
+            "MapRezFileAndCheckSum": "rez\\rf022.rez",
+            "TexRezFileAndCheckSum": "rez\\rf013.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingTransport_BL.DTX",
+            "MapRoomIcon": "UI/MapIcon/RoomMap3.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap3.TGA"
+          }
+        },
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingMexicanTD_GR.DTX",
+            "MapFileName": "MexicoDeath.dat",
+            "MapRezFileAndCheckSum": "rez\\rf015.rez",
+            "TexRezFileAndCheckSum": "rez\\rf007.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingMexicanTD_BL.DTX",
+            "MapRoomIcon": "UI/MapIcon/RoomMap4.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap4.TGA"
+          }
+        },
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingTrainTD_GR.DTX",
+            "MapFileName": "TrainDeath.dat",
+            "MapRezFileAndCheckSum": "rez\\rf021.rez",
+            "TexRezFileAndCheckSum": "rez\\rf009.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingTrainTD_BL.DTX",
+            "MapRoomIcon": "UI/MapIcon/RoomMap5.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap5.TGA"
+          }
+        },
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingLab_GR.DTX",
+            "MapFileName": "Lab.dat",
+            "MapRezFileAndCheckSum": "rez\\rf006.rez",
+            "TexRezFileAndCheckSum": "rez\\rf011.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingLab_BL.DTX",
+            "MapRoomIcon": "UI/MapIcon/RoomMap6.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap6.TGA"
+          }
+        },
+        {
+          "head": "Map",
+          "binding_fields": {
+            "LoadingTexFileNameGR": "tex/ui/loading/LoadingNuclear_GR.dtx",
+            "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/NUCLEAR/TM_BL.dtx",
+            "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/NUCLEAR/TM_GR.dtx",
+            "MapFileName": "Nuclear.dat",
+            "MapRezFileAndCheckSum": "rez\\rf023.rez",
+            "TexRezFileAndCheckSum": "rez\\rf010.rez",
+            "LoadingTexFileNameBL": "tex/ui/loading/LoadingNuclear_BL.dtx",
+            "MapRoomIcon": "UI/MapIcon/RoomMap7.TGA",
+            "MapLobbyIcon": "UI/MapIcon/LobbyMap7.TGA"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf010.ltc",
+      "raw_sha256": "69705ce8992d14c5093aedd05545910cd0079e26ded4bde06c980aac2d522a4e",
+      "unlocked_sha256": "6296af35ed72a8b1bd5ec22a6523dc9ec899ee17fc0bb2afab1dc39511d3c31b",
+      "decoded_sha256": "7fe57ab92c589173a89d5a45dffdc6acd824dba343d4e1b00ad82427e1b7c99d",
+      "decoded_size": 288306,
+      "printable_ratio": 0.9985,
+      "head_sample": "//map ¸Æ½ÃÄ­\r\n( MapAI\r\n\t( MapIndex 0 )\r\n\t\r\n\t(AIRegion\r\n\t\t( AIRegionIndex 0 )\r\n\t\t( AIGoalIndex  0 )\r\n\t\t( IsBombSite 0 )\r\n\t\t( Pos -1440.000000 -1692.000000 -5304.784180 )\r\n\t\t( Dim 480.000000 100.000000 ",
+      "record_count": 1,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf011.ltc",
+      "raw_sha256": "4f734e24ff8c57d1fabffe029bdbe7b47b343802dc16513df25a09e936b558b0",
+      "unlocked_sha256": "4d4f6e2e0126cecf90163d8ff5104babafa6c61354900cdd4a4747b1e516d000",
+      "decoded_sha256": "31848a5ca1a7748914c89c4e789ce9cd5e38b4c1cc2794d37db72e210c51efca",
+      "decoded_size": 245024,
+      "printable_ratio": 0.9238,
+      "head_sample": "\r\n(Item \r\n\t(ItemIndex 0 )\r\n\t(CashItem 0 )\r\n\t(PeriodCount 1 )\r\n\t(ItemID \"1000000101\" )\r\n\t(Day 0 )\r\n\t(Price 5000 )\r\n\t(ItemCode \"A0001\" )\r\n\t(ItemName \"Ë¹ÎÖÌØ\" )\r\n\t(ItemType 2 )\r\n\t(ItemCategory 3 )\r\n\t(Def",
+      "record_count": 473,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf012.ltc",
+      "raw_sha256": "92f1d1f13bc52936a789b0fb8fcd6ccaa8c351af9f519c6defcc2f33ca9215c2",
+      "unlocked_sha256": "1b5327afb64cbbbf6127c8c91e4795278cf7204580bf059bec04219fc59fd2ea",
+      "decoded_sha256": "96b4c218d90754a39e1672ec670757296e9d089e01959ccf64636c97f6303e14",
+      "decoded_size": 522,
+      "printable_ratio": 0.9655,
+      "head_sample": "( Head\r\n\t( HeadIndex 0 )\r\n\t( HeadName \"¹éÀÎ\" )\r\n\t( HeadTextureTypes 0 1 2 )\r\n\t( HeadTexFileName \"Tex\\head_texture\\M_Face_1\" )\r\n)\r\n( Head\r\n\t( HeadIndex 1 )\r\n\t( HeadName \"Áßµ¿\" )\r\n\t( HeadTextureTypes 3 ",
+      "record_count": 4,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "printable_ratio": 1.0,
+      "head_sample": "( HeadTexture\r\n\t( HeadTextureIndex 0 )\r\n\t( HeadName \"HeadTexture1\" )\r\n\t( SkinFileName \"ModelTextures\\Face\\M_GR_001_Head.dtx\" )\r\n\t( SkinTexFileName \"Tex\\skin_texture\\M_Face_1\" )\r\n)\r\n( HeadTexture\r\n\t( H",
+      "record_count": 12,
+      "binding_record_count": 12,
+      "binding_sample": [
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        },
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        },
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        },
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        },
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        },
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        },
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        },
+        {
+          "head": "HeadTexture",
+          "binding_fields": {
+            "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf014.ltc",
+      "raw_sha256": "2963193f697724013cd4a4693ef7aade5fb48f97c993d72a66db9f5e3ea76d5e",
+      "unlocked_sha256": "2ed03505454a50525bc1356b95b575b50239e126d3a64e388abeeb5d13fa2d5d",
+      "decoded_sha256": "fcd823fb02cd711c19a2a7461dcc773a2400612835c6adf580fae2f852f4eef2",
+      "decoded_size": 12172,
+      "printable_ratio": 0.9688,
+      "head_sample": "( CullWorldInfo\r\n\t( MapIndex 0 )\r\n\t//½ÃÆ¼±¸¼®\r\n\t( ViewBox \r\n\t\t( ViewBoxMin -6500 -2000 -5700)\r\n\t\t( ViewBoxMax -2587 -1272 -3300)\r\n\t\t( CullTargetBox\r\n\t\t\t( CullTargetBoxMin -2000 -10000 -1700 )\r\n\t\t\t( Cu",
+      "record_count": 4,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf015.ltc",
+      "raw_sha256": "5f4c03f001a36c60c1cbf55321b1c32da26068f2c813581e601c58b9aa5cfbb1",
+      "unlocked_sha256": "282aaf76995dd9aceaebb2d39fb898720dd07f379a96112c25241b0bdcd398e7",
+      "decoded_sha256": "bee9aeda082f016de4f611c3bf31ef4ea37610d1765952fe170005305e707602",
+      "decoded_size": 56,
+      "printable_ratio": 1.0,
+      "head_sample": "( Mission\r\n\t( RankType 54 )\r\n\t( Use1 0 )\r\n\t( Use2 0 )\r\n)",
+      "record_count": 1,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf016.ltc",
+      "raw_sha256": "391f47da9840c0d7cf3b277c9471d38b23a5937b35e90959830aca7b4c8688d5",
+      "unlocked_sha256": "65cbbd8da3120a7c7e1a567491200956fda0cfc16c10fcf2d79883f2c90c376e",
+      "decoded_sha256": "ede600fc349df54cacf7c8d1e903ec7ba6a0cf851d9d49a220a8cb6cdc7d4323",
+      "decoded_size": 5771,
+      "printable_ratio": 1.0,
+      "head_sample": "( EPInfoTeamMatch\r\n\t( LevelWin 8 )\r\n\t( RoundWin 3 )\r\n\t( RoundPlay 16 )\r\n\t( RoundAlive 0 )\r\n\t( KillEnemy 2 )\r\n\t( KillEnemyCont2 0 )\r\n\t( KillEnemyCont3 0 )\r\n\t( KillEnemyCont4 0 )\r\n\t( KillEnemyCont5 0 )\r",
+      "record_count": 5,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf017.ltc",
+      "raw_sha256": "3b20085a4b7a9e2c69fc183b8ee58f5ecf5c5c10c34f7dca6caac9fa459270bd",
+      "unlocked_sha256": "b49a2f86a5ed92e84ed4e66aa8fdb9dac8b9d54f03e8336e73c25d66df7baae7",
+      "decoded_sha256": "8cc075f12e902480f81d9344ade64ee090d3bd906c9dc2773061edb1629e022f",
+      "decoded_size": 800,
+      "printable_ratio": 1.0,
+      "head_sample": "( GPInfoTeamMatch\r\n\t( LevelPlay 21 )\r\n\t( LevelWin 0 )\r\n\t( RoundWin 0 )\r\n\t( RoundPlay 0 )\t\r\n\t( KillEnemy 2 )\r\n\t( LevelLose 0 )\r\n\t( RoundLose 0 )\r\n\t( Killed -1 )\r\n)\r\n( GPInfoTeamDeathMatch\r\n\t( LevelWin ",
+      "record_count": 5,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf018.ltc",
+      "raw_sha256": "03248944f22ac7c7f55224577ff427c60009e2682cfff3663ef1bdae3d1eb333",
+      "unlocked_sha256": "de9e0a3e794b2ac6d724e2db506da8271094da84dbccc154e3b2b90bf95fce7b",
+      "decoded_sha256": "7d9488d6bd75ab82d775479b729f14d1e66e106a9e728ab5edafa8cec247fbe4",
+      "decoded_size": 687,
+      "printable_ratio": 0.8661,
+      "head_sample": "( BotNameInfo\r\n\t( BotName \"´ë¸¶¿Õ\" )\r\n)\r\n( BotNameInfo\r\n\t( BotName \"¿¹ºñ±º\" )\r\n)\r\n( BotNameInfo\r\n\t( BotName \"´ÜÅ×\" )\r\n)\r\n( BotNameInfo\r\n\t( BotName \"¾Æ¹«·Î\" )\r\n)\r\n( BotNameInfo\r\n\t( BotName \"´ë°£Áö\" )\r\n",
+      "record_count": 17,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf019.ltc",
+      "raw_sha256": "cebd33b303558edac422cc0c857c3361a8298b5cf5d7f5832fa93e03a4ebb378",
+      "unlocked_sha256": "286ebbc5f4d13931077dc55494ddefd082618b398735cf8c33dc414cf2cc056e",
+      "decoded_sha256": "b9eb8703b77029e7d77d6cd1d06a2aef7664145f8eee06d13a30eb1e985ee7b5",
+      "decoded_size": 2133,
+      "printable_ratio": 0.7403,
+      "head_sample": "( BasicPlayerInfo\r\n\r\n\t( MovementSpeed\t\t4721.746 ) //ÀÌµ¿¼Óµµ<»ó´ë°ª>\r\n\t( MovementWalkRate \t0.5908 ) //°È±âÀÌµ¿¼Óµµ ºñÀ²<ÃÖ´ë 1.0>\r\n\t( MovementDuckWalkRate\t0.38028 )  //¾É¾ÆÀÌµ¿¼Óµµ ºñÀ²<ÃÖ´ë 1.0>\r\n\t( ",
+      "record_count": 1,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf020.ltc",
+      "raw_sha256": "2e0bb75703340a728c9c459790685e9bdaeb5768f6fcd8d7fc915a10ff63a1da",
+      "unlocked_sha256": "23231878c3cb7204bb7c07f676db38eb6b7f5d4bc529a1ff5864c7e730bf91c9",
+      "decoded_sha256": "6c5cd32a6034d6a7de121d5c5b401f7d6be2c1e3c04695a2c2a9c1288665a0bd",
+      "decoded_size": 9179,
+      "printable_ratio": 0.6509,
+      "head_sample": "( TestValues\r\n\t( DistFallDamageStartFrom 6.0 ) // µ¥¹ÌÁö ÀÔ±â ½ÃÀÛÇÏ´Â ¹ÌÅÍ\r\n\t( DamagePerMeter 2.5 ) // 1¹ÌÅÍ´ç µ¥¹ÌÁö\r\n\r\n\t// °¢ ÃÑÀ» º¸Ã÷°¡ »ì È®·ü\r\n\t( PercentageBuyShotgun 10 )\r\n\t( PercentageBuySubM",
+      "record_count": 1,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf021.ltc",
+      "raw_sha256": "addca4bf2988ef5b10615e533d9c433a24ad988ac2f84ba44941cb7e773647d0",
+      "unlocked_sha256": "8c127697766b45a87d7648a86a8b3e576a5418412e714110373c4ec4c9ce242c",
+      "decoded_sha256": "365ad10f1b0ac0534582dabb44998d6416b4209900841942f509a03d07b4b825",
+      "decoded_size": 119738,
+      "printable_ratio": 0.9138,
+      "head_sample": "( Filter\r\n\t( Abuse \"±©Á¦ÕòÑ¹:\" )\r\n\t( Alternation \"???:\" )\r\n)\r\n( Filter\r\n\t( Abuse \"³ÂË®±â:\" )\r\n\t( Alternation \"???:\" )\r\n)\r\n( Filter\r\n\t( Abuse \"êË®±âÂÞ:\" )\r\n\t( Alternation \"???:\" )\r\n)\r\n( Filter\r\n\t( Abu",
+      "record_count": 1973,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf022.ltc",
+      "raw_sha256": "9f6d95fc5bf24eca21cef75e02a2e000a15d6c1316eeced83783956201dae76f",
+      "unlocked_sha256": "91864f6b35a5d0c85bd570fceb34a8674b02060ff5ac52522e4a961e718d9d08",
+      "decoded_sha256": "61042d7c6ae4fa8e909cd77fd1d4c9a4ff85937d4c02fb04315cabf12951d4ee",
+      "decoded_size": 4718,
+      "printable_ratio": 1.0,
+      "head_sample": "( Multiplayer\r\n\t( UserID \"dalton\" )\r\n\t( TeamIndex 0 )\r\n\t( DefaultCharacterType 0 )\r\n\t( CharacterTypeTR 15 )\r\n\t( CharacterTypeCT 2 )\r\n\t( HeadTextureType 0 )\r\n\t( PrimaryWeapon -1 )\r\n\t( SecondaryWeapon 1",
+      "record_count": 16,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf023.ltc",
+      "raw_sha256": "b6827ed6852f7e38172b03b326912c341719f102f7b38da2975e42b72b806e52",
+      "unlocked_sha256": "1a35124ebcf42922afb3416afec509da7b22d0dba10a5ef90889807b6d9946e1",
+      "decoded_sha256": "362b9509016432bbdd5053fafc98d8f054105bef1209f81a733ba977de562d87",
+      "decoded_size": 7417,
+      "printable_ratio": 0.9951,
+      "head_sample": "( CharacterType\r\n\t( RealCharacterType 0 )\r\n\t( ItemName \"\")\r\n\t( ResourceName \"\")\r\n\t( ItemID \"\" )\r\n\t( ItemCode \"\" )\r\n\t( ButeType 0 )\r\n\t( ButePath \"\" )\r\n\t( XLSMsgIndex 0 )\r\n\t( IsWoman 0 )\r\n\t( WearStateDr",
+      "record_count": 7,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf024.ltc",
+      "raw_sha256": "b1957633ae93cb2bffb6d297986c59bfc92f5b69ae287e5fbed747cf6cc26e31",
+      "unlocked_sha256": "27d26376a6e56e4bcad07a3456994e0517ad0920308c8324b9c837faaf7ed560",
+      "decoded_sha256": "a2a14a30b5fca59386244115e4d3a807ab018e26be1d624f6c77adcd9ca54897",
+      "decoded_size": 15521,
+      "printable_ratio": 1.0,
+      "head_sample": "( PublicItem\r\n\t( ItemIndex 0 )\r\n\t( ItemType 1 )\r\n\t( TexItemTargetType 4 )\r\n\t( GRTexFile \"ModelTextures/Character/Public/Face_1.dtx\" )\r\n\t( BLTexFile \"ModelTextures/Character/Public/Face_1.dtx\" )\r\n\t( It",
+      "record_count": 37,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf025.ltc",
+      "raw_sha256": "97c5c502d8fe4d6db261af63af61c11aa013ccace0eed25281dd6723c68cf583",
+      "unlocked_sha256": "e51e7f69daa633e20bb076d3237ff183143a46ea4b593c038af5d4d5cf64596e",
+      "decoded_sha256": "c514fe2056527017f4372cfd45607a617a992baf778e9e8b10c8ba153bac5718",
+      "decoded_size": 17625,
+      "printable_ratio": 1.0,
+      "head_sample": "( Item\r\n\t( ItemIndex 0 )\r\n\t( ItemType 3 )\r\n\t( SocketItemTargetType 1 )\r\n\t( GRSocketItemModelFile \"Models/SocketItem/SWAT/SWAT_RedGoggle_GR.ltb\" )\r\n\t( BLSocketItemModelFile \"Models/SocketItem/SWAT/SWAT",
+      "record_count": 39,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf026.ltc",
+      "raw_sha256": "b92b38066baebc6d3c1a1ff64ce8046b0c07023a1b8f5d817379b233b77b3fa4",
+      "unlocked_sha256": "9e84db409a80088a73c1d2a40a394cc45279d278899b39180fb1d154c76115e9",
+      "decoded_sha256": "d6865b2808d540c7504a1a8fec25b0f112d306765d364cff5c13344d57a4df18",
+      "decoded_size": 17479,
+      "printable_ratio": 1.0,
+      "head_sample": "( Item\r\n\t( ItemIndex 0 )\r\n\t( ItemType 3 )\r\n\t( SocketItemTargetType 1 )\r\n\t( GRSocketItemModelFile \"Models/SocketItem/OMOH/OMOH_RedGoggle_GR.ltb\" )\r\n\t( BLSocketItemModelFile \"Models/SocketItem/OMOH/OMOH",
+      "record_count": 39,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf027.ltc",
+      "raw_sha256": "80e8f7f52281dd1f5f3c21c29775b5904aa56eea96d475d23275914508402d1d",
+      "unlocked_sha256": "a5e4e085cd16ad4ce45633282ee1621273fa6d9fa7a35ded71828aedf12c7c32",
+      "decoded_sha256": "e8c302f53f09f2a6c329cf296aca17c9d14cbdd3b874b4b2de5b1e4b7f09a1a3",
+      "decoded_size": 2313,
+      "printable_ratio": 1.0,
+      "head_sample": "( MatchItemInfo\t\r\n\t( MatchItemName\t   \"MATCHITEM_ADD_RADER\" )\r\n\t( UsedType\t\t\t1 )\t\r\n\t( MaxUsedTime \t\t30000 )\r\n\t( ItemValue         1.0 )\r\n\t( ItemTypeGroup     2 2 2 2 2 2 2 2 2 2 )\r\n\t( ItemTypeGroup2  ",
+      "record_count": 10,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf028.ltc",
+      "raw_sha256": "ebf0fc5a38b573cf511dc30ed2e73498d0245a2a6319c3c06fb534e12a7c2762",
+      "unlocked_sha256": "f1b434316ea1b7750323272bc6c5433d4a8d86302344abc4c4cbccdcefeefb79",
+      "decoded_sha256": "47e05ba7af2284b468d9dad73cdaee7537c2a749b9fc3c5f20fa87404425af25",
+      "decoded_size": 17085,
+      "printable_ratio": 0.9878,
+      "head_sample": "( Item\r\n\t( ItemIndex 0 )\r\n\t( ItemType 3 )\r\n\t( SocketItemTargetType 1 )\r\n\t( GRSocketItemModelFile \"Models/SocketItem/SAS/SAS_Mask_GR.ltb\" )\r\n\t( BLSocketItemModelFile \"Models/SocketItem/SAS/SAS_Mask_BL.",
+      "record_count": 39,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf029.ltc",
+      "raw_sha256": "6f5d487ca121dae1d047b435e4b6035b75e5b3dfc0dbfee5daf6ecc0a6d84429",
+      "unlocked_sha256": "8343a88c0a9476468645ea9a8c2ab6edea3df467f305564d509aa22a330dafc6",
+      "decoded_sha256": "ac66a8dffef70b923eae1fe8849cb45831593aaf5c70eb1b2030e2a5c6c48631",
+      "decoded_size": 155,
+      "printable_ratio": 1.0,
+      "head_sample": "( ClanMark\r\n\t( BackgroundLayerCounts 50 )\r\n\t( OutlineLayerCounts 250 )\r\n\t( SymbolLayerCounts 161 )\r\n\t( EventLayerCounts 0 )\r\n\t( DefaultLayerCounts 1 )\r\n)\r\n",
+      "record_count": 1,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf030.ltc",
+      "raw_sha256": "28e39b1b6223aff43081378a94ad1f4db6f43a610e79f5c5febf94ef25335e0d",
+      "unlocked_sha256": "2dbfd8dea6142900ae8a7f19b59c33455fd2e7dda53bb0b6caa8e48414c9b426",
+      "decoded_sha256": "4ef3d8ca696a7d9638449b74fe7bcb17ca37f7ba4e3b98884ee9239ee5cda1a4",
+      "decoded_size": 194,
+      "printable_ratio": 1.0,
+      "head_sample": "( TPInfo\r\n\t( GameStartTP 800 )\r\n\t( MaxTP 16000 )\r\n\t( MinTP 0 )\r\n\t( WinTP 3250 )\r\n\t( LoseTP 1400 1900 2400 2900 3400 )\r\n\t( C4TP 300 )\r\n\t( C4WinTP 800 )\r\n\t( KillTP 300 )\r\n\t( TeamKillTP 2500 )\r\n)\r\n",
+      "record_count": 1,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf031.ltc",
+      "raw_sha256": "6cd09c5214b20918c64abb5830cbd45db4d3ecbdbc295b85b7cf208a9561a242",
+      "unlocked_sha256": "339bd7fdf2b8e5407a0a5fafcbcf5bceb21d0f45403168623ee710216f26d1fe",
+      "decoded_sha256": "2807debc7b853977aff5974a65f5ae5649a7053d905373bb8d072fb3d90daab8",
+      "decoded_size": 10802,
+      "printable_ratio": 1.0,
+      "head_sample": "( Item\r\n\t( ItemIndex 0 )\r\n\t( ItemType 3 )\r\n\t( SocketItemTargetType 0 )\r\n\t( GRSocketItemModelFile \"Models/SocketItem/Woman/Default_hair_GR.ltb\" )\r\n\t( BLSocketItemModelFile \"Models/SocketItem/Woman/Defa",
+      "record_count": 24,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf034.ltc",
+      "raw_sha256": "47385b732bb351eb3aefdc43b0231675f666323a022f9d2eab9915d29a0cfb51",
+      "unlocked_sha256": "e0d12071df647b4b42ba1839f60e76701917347a69b96baf3acfea14d4ceb022",
+      "decoded_sha256": "41bbe36c40eae254e22f3173e01b0391695beaaacff6cef0d61c906c45e379b2",
+      "decoded_size": 680,
+      "printable_ratio": 1.0,
+      "head_sample": "( Item\r\n\t( ItemIndex 0 )\r\n\t( ItemType 3 )\r\n\t( SocketItemTargetType 0 )\r\n\t( GRSocketItemModelFile \"Models/SocketItem/CNSoldier/China_GR_Helmet.ltb\" )\r\n\t( BLSocketItemModelFile \"Models/SocketItem/CNSold",
+      "record_count": 2,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf035.ltc",
+      "raw_sha256": "67d845731f2eeff0956b3b7520802592abad67d22f371c8fd81f5726018ff47d",
+      "unlocked_sha256": "66725b4f0923627788cbfd07f6aa1844a0fe1888527a7e0c8c95fee55b26a5e1",
+      "decoded_sha256": "2e56e5a5ea37422faccd1902f97dafb6f2a550316f864097e12e3208e2eb96ce",
+      "decoded_size": 767,
+      "printable_ratio": 1.0,
+      "head_sample": "( Item\r\n\t( ItemIndex 0 )\r\n\t( ItemType 3 )\r\n\t( SocketItemTargetType 0 )\r\n\t( GRSocketItemModelFile \"Models/SocketItem/SOV/SOV_GR_hair.ltb\" )\r\n\t( BLSocketItemModelFile \"Models/SocketItem/SOV/SOV_BL_hair.",
+      "record_count": 2,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "raw_sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "unlocked_sha256": "40f80cbe024512091da6529c9ac578c85eb3dfe9e0ee1932c60f14e86b1a683f",
+      "decoded_sha256": "36cefe84c7b9151730fc258b9e3e59937f1fd172f1380b14968a5fc2bfe6fa98",
+      "decoded_size": 2912,
+      "printable_ratio": 1.0,
+      "head_sample": "\r\n// Nano Host\r\n(NanoCharacter \r\n\t(NanoType 1 )\r\n\t(NanoAbility 0 )\r\n\t(NanoSkill 1 )\r\n\t(NanoAddHP 1000 )\r\n\t(NanoDefaultWeaponIndex 120 )\r\n\t(NextLevelNanoType 3 )\r\n\t(ModelFileName \"Models\\Character\\NANO",
+      "record_count": 6,
+      "binding_record_count": 6,
+      "binding_sample": [
+        {
+          "head": "NanoCharacter",
+          "binding_fields": {
+            "ModelFileName": "Models\\Character\\NANOGHOST.LTB",
+            "SkinFileName": "ModelTextures\\Character\\Nano\\NanoGhost_0.dtx"
+          }
+        },
+        {
+          "head": "NanoCharacter",
+          "binding_fields": {
+            "ModelFileName": "Models\\Character\\NANOGHOST.LTB",
+            "SkinFileName": "ModelTextures\\Character\\Nano\\NanoGhost_0.dtx"
+          }
+        },
+        {
+          "head": "NanoCharacter",
+          "binding_fields": {
+            "ModelFileName": "Models\\Character\\NANOGHOST.LTB",
+            "SkinFileName": "ModelTextures\\Character\\Nano\\NanoGhost_1.dtx"
+          }
+        },
+        {
+          "head": "NanoCharacter",
+          "binding_fields": {
+            "ModelFileName": "MODELS\\CHARACTER\\NANOHULK\\NANOHULK.ltb",
+            "SkinFileName": "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK.dtx"
+          }
+        },
+        {
+          "head": "NanoCharacter",
+          "binding_fields": {
+            "ModelFileName": "MODELS\\CHARACTER\\NANOHULK\\NANOHULK_UP.ltb",
+            "SkinFileName": "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK.dtx"
+          }
+        },
+        {
+          "head": "NanoCharacter",
+          "binding_fields": {
+            "ModelFileName": "MODELS\\CHARACTER\\NANOHULK\\NANOHULK_UP.ltb",
+            "SkinFileName": "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK_UP.dtx"
+          }
+        }
+      ]
+    },
+    {
+      "path_alias": "rez/Butes/bf037.ltc",
+      "raw_sha256": "e613f9193e0da1e7ebb4ef89cdbecf54c431c8b2ebaf748398a6d2cd4764e1e4",
+      "unlocked_sha256": "82380a96fdf2cd11dfe601e06a8a00b77e3b44d14746abddde0c338970533e50",
+      "decoded_sha256": "13348663c73736107772316c0984a1cd6d0b6681d733a27b623d48a637fb8fe3",
+      "decoded_size": 836,
+      "printable_ratio": 0.9713,
+      "head_sample": "\r\n// ÅºÃ¢ Ãß°¡\r\n(DistributionBox\r\n\t(BoxType 0 ) //À¯´Ð¼ýÀÚ\r\n\t(BonusType 2 ) //ÅºÃ¢ ?? ??\r\n\t(NumberOfDistribution 23 )\r\n)\r\n\r\n// RPK\r\n(DistributionBox\r\n\t(BoxType 1 )\r\n\t(BonusType 1 ) //¹«±â ??\r\n\t(Number",
+      "record_count": 7,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/estate_DZ.ltc",
+      "raw_sha256": "44bbae3ce7c3e2c04e5428ae8e329e80b905681ab95d343bbbe44ad59df03294",
+      "unlocked_sha256": "65b12d012bd18fac154afbf63cc19caff92e60ec67fa571c611cf27256cd4727",
+      "decoded_sha256": "4e8947e7ecc8efd290caf332598278e7fa04e2a5e9cc1aa7d6348168f3e93942",
+      "decoded_size": 156907,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ02 )\n\t(PointList \n\t\t(-6160.000000 4550.000000 9876.750000 )\n\t\t(8400.000000 4550.000000 9876.750000 )\n\t\t(-6160.000000 4550.000000 12304.500000 )\n\t\t(8400.000000 4550.000000 12",
+      "record_count": 152,
+      "binding_record_count": 0,
+      "binding_sample": []
+    },
+    {
+      "path_alias": "rez/Butes/leapfrogTM_DZ.ltc",
+      "raw_sha256": "6b65b400f3ce2757cce56fb9afecda23ff25ed7f9d14a20363d2e0a2fb74c054",
+      "unlocked_sha256": "2acc64f3aa45bbf4301532f92806961ebf665aabbb544a5fe07e2afc256573c3",
+      "decoded_sha256": "034dfa1976606a3cc11496977e26f5fa8d0aeefbdaeee94a13af3f3fc646c9b8",
+      "decoded_size": 31143,
+      "printable_ratio": 1.0,
+      "head_sample": "\n(DamageZone \n\t(Name RaraDZ30 )\n\t(PointList \n\t\t(1820.000000 1505.000000 5425.000000 )\n\t\t(2730.000000 1505.000000 5425.000000 )\n\t\t(1820.000000 1505.000000 6335.000000 )\n\t\t(2730.000000 1505.000000 6335.",
+      "record_count": 30,
+      "binding_record_count": 0,
+      "binding_sample": []
+    }
+  ],
+  "binding_field_aggregate_count": {
+    "LoadingTexFileNameGR": 41,
+    "FileName": 472,
+    "WeaponName": 101,
+    "DebrisSkinFileName": 2,
+    "MinimapFileNameGR": 19,
+    "DebrisModelFileName4": 1,
+    "PViewRenderStyleFileName": 1,
+    "ArmorName": 2,
+    "DebrisModelFileName5": 1,
+    "MapRezFileAndCheckSum": 32,
+    "DebrisModelFileName2": 2,
+    "LoadingTexFileNameBL": 41,
+    "CharacterName": 72,
+    "TexRezFileAndCheckSum": 16,
+    "PViewModelFileName": 63,
+    "MapRoomIcon": 48,
+    "SoundName": 497,
+    "MapLobbyIcon": 48,
+    "DebrisModelFileName1": 2,
+    "DebrisModelFileName3": 2,
+    "PViewSkinFileName": 83,
+    "MinimapFileNameBL": 19,
+    "ModelFileName": 67,
+    "BreakableName": 2,
+    "MapFileName": 42,
+    "SkinFileName": 89,
+    "RenderStyleFileName": 3,
+    "DebrisName": 2
+  },
+  "binding_field_aggregate_sample": {
+    "LoadingTexFileNameGR": [
+      "tex/ui/loading/LOADINGBANLIEUE13.DTX",
+      "tex/ui/loading/LOADINGDESERTSTORM_GR.DTX",
+      "tex/ui/loading/LOADINGESTATE.DTX",
+      "tex/ui/loading/LOADINGFORTRESSTD_GR.DTX",
+      "tex/ui/loading/LOADINGKAIROUAN_GR.DTX"
+    ],
+    "FileName": [
+      "message/Bomb_Plant_BL_A_1.wav",
+      "message/Bomb_Plant_BL_A_1_C.wav",
+      "message/Bomb_Plant_BL_A_2.wav",
+      "message/Bomb_Plant_BL_A_2_C.wav",
+      "message/Bomb_Plant_BL_B_1.wav"
+    ],
+    "WeaponName": [
+      "AK-47",
+      "AK-47-A",
+      "AK-47-B",
+      "AK-47-S",
+      "AK-74"
+    ],
+    "DebrisSkinFileName": [
+      "ModelTextures\\Debris\\SiBottle1.dtx",
+      "ModelTextures\\ak47.dtx"
+    ],
+    "MinimapFileNameGR": [
+      "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TD_GR.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TM_GR.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TD_GR.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TM_GR.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/CHRISTMAS/TM_GR.dtx"
+    ],
+    "DebrisModelFileName4": [
+      "Models\\Debris\\DBottle1d.ltc"
+    ],
+    "PViewRenderStyleFileName": [
+      "RS\\\\PVModelDefault.ltb"
+    ],
+    "ArmorName": [
+      "Helmet",
+      "Kevlar"
+    ],
+    "DebrisModelFileName5": [
+      "Models\\Debris\\DBottle1e.ltc"
+    ],
+    "MapRezFileAndCheckSum": [
+      "rez\\rf001.rez",
+      "rez\\rf003.rez",
+      "rez\\rf006.rez",
+      "rez\\rf014.rez",
+      "rez\\rf015.rez"
+    ],
+    "DebrisModelFileName2": [
+      "Models\\Debris\\DBottle1b.ltc",
+      "Models\\M-motion.ltb"
+    ],
+    "LoadingTexFileNameBL": [
+      "tex/ui/loading/LOADINGBANLIEUE13.DTX",
+      "tex/ui/loading/LOADINGDESERTSTORM_BL.DTX",
+      "tex/ui/loading/LOADINGESTATE.DTX",
+      "tex/ui/loading/LOADINGFORTRESSTD_BL.DTX",
+      "tex/ui/loading/LOADINGKAIROUAN_BL.DTX"
+    ],
+    "CharacterName": [
+      "µ¿¾çÀÎ´ëÅ×·¯SAS",
+      "µ¿¾çÀÎ´ëÅ×·¯°¡À»½Å»óÇ°",
+      "µ¿¾çÀÎ´ëÅ×·¯±âº»",
+      "µ¿¾çÀÎ´ëÅ×·¯±âº»³²»ö",
+      "µ¿¾çÀÎ´ëÅ×·¯º£½ºÆ®³²»ö"
+    ],
+    "TexRezFileAndCheckSum": [
+      "rez\\rf007.rez",
+      "rez\\rf009.rez",
+      "rez\\rf010.rez",
+      "rez\\rf011.rez",
+      "rez\\rf012.rez"
+    ],
+    "PViewModelFileName": [
+      "MODELS\\PLAYERVIEW\\PV_Nano_knife",
+      "Models\\PlayerView\\PV-AK47_Dagger",
+      "Models\\PlayerView\\PV-HULK",
+      "Models\\PlayerView\\PV-HULK_UP",
+      "Models\\PlayerView\\PV-M4A1-CUSTOM"
+    ],
+    "MapRoomIcon": [
+      "UI/MapIcon/RoomMap0.TGA",
+      "UI/MapIcon/RoomMap1.TGA",
+      "UI/MapIcon/RoomMap11.TGA",
+      "UI/MapIcon/RoomMap12.TGA",
+      "UI/MapIcon/RoomMap13.TGA"
+    ],
+    "SoundName": [
+      "AxeDeploy",
+      "AxeHit",
+      "AxeMetal_1",
+      "AxeMetal_2",
+      "AxeStone_1"
+    ],
+    "MapLobbyIcon": [
+      "UI/MapIcon/LobbyMap0.TGA",
+      "UI/MapIcon/LobbyMap1.TGA",
+      "UI/MapIcon/LobbyMap11.TGA",
+      "UI/MapIcon/LobbyMap12.TGA",
+      "UI/MapIcon/LobbyMap13.TGA"
+    ],
+    "DebrisModelFileName1": [
+      "Models\\Debris\\DBottle1a.ltc",
+      "Models\\M-motion.ltb"
+    ],
+    "DebrisModelFileName3": [
+      "Models\\Debris\\DBottle1c.ltc",
+      "Models\\M-motion.ltb"
+    ],
+    "PViewSkinFileName": [
+      "MODELTEXTURES\\PLAYERVIEW\\PV_NANO_UP_KNIFE.DTX",
+      "MODELTEXTURES\\PLAYERVIEW\\PV_Nano_knife.dtx",
+      "ModelTextures\\PlayerView\\PV-CSMOKEgrenade_Blue.dtx",
+      "ModelTextures\\PlayerView\\PV-CSMOKEgrenade_Red.dtx",
+      "ModelTextures\\PlayerView\\PV-CSMOKEgrenade_YELLOW.dtx"
+    ],
+    "MinimapFileNameBL": [
+      "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TD_BL.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TM_BL.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TD_BL.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TM_BL.dtx",
+      "TEX/UI/LOADING/MINIMAP_LAYER/CHRISTMAS/TM_BL.dtx"
+    ],
+    "ModelFileName": [
+      "MODELS\\CHARACTER\\NANOHULK\\NANOHULK.ltb",
+      "MODELS\\CHARACTER\\NANOHULK\\NANOHULK_UP.ltb",
+      "Model\\Breakable\\GenBottle.ltc",
+      "Models\\Character\\M_BL_001.ltb",
+      "Models\\Character\\M_GR_001.ltb"
+    ],
+    "BreakableName": [
+      "Bottle",
+      "BreakLightTest"
+    ],
+    "MapFileName": [
+      "Banlieue13.dat",
+      "BlackWidow.dat",
+      "CH_Spring.dat",
+      "Ceyhan.dat",
+      "Christmas_TeamDeath"
+    ],
+    "SkinFileName": [
+      "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK.dtx",
+      "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK_UP.dtx",
+      "MODELTEXTURES\\WEAPONS\\QV_NANO_UP_KNIFE.DTX",
+      "MODELTEXTURES\\WEAPONS\\QV_Nano_knife.dtx",
+      "ModelTextures\\Breakable\\SiBottle1.dtx"
+    ],
+    "RenderStyleFileName": [
+      "RS\\\\GoldWeapon.LTB",
+      "RS\\\\NinjaTranslucent.ltb",
+      "RS\\\\PVModelDefault.ltb"
+    ],
+    "DebrisName": [
+      "Bottle",
+      "BreakLightDebris"
+    ]
+  },
+  "family_substring_hits": {},
+  "generated_at": "2026-08-22T14:32:41.063950+00:00",
   "script": "scripts\\material_recovery\\n02_butes_config_triage.py"
 }

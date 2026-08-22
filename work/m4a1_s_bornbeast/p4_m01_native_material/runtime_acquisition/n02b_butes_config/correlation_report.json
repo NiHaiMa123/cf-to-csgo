@@ -6,32 +6,832 @@
       "Jewelry",
       "BlueDiamond"
     ],
-    "n01_decoded_count": null,
     "config_index_keys": 18
   },
-  "samples_decoded": 0,
-  "samples_failed": 78,
-  "binding_evidence": [],
-  "bounded_negative": {
+  "samples_evaluated": 73,
+  "samples_unlocked": 73,
+  "samples_decoded": 73,
+  "binding_evidence_count": 50,
+  "binding_evidence": [
+    {
+      "path_alias": "rez/Butes/bf002.ltc",
+      "raw_sha256": "04c82c5b24adca0faba651167bc186f0ece11b9c6cf8a4b4a5802e97249df627",
+      "unlocked_sha256": "e337b3ca73a42963076c95bbc4de72763a3af3305b78c470d577c1307ab0e9d4",
+      "decoded_sha256": "8bd9e8f522386db03cc5f14e0c40e9ffbfaf0e89ca8ade08caa4a297bb164d8a",
+      "decoded_size": 718,
+      "head": "Debris",
+      "binding_fields": {
+        "DebrisModelFileName1": "Models\\M-motion.ltb",
+        "DebrisModelFileName3": "Models\\M-motion.ltb",
+        "DebrisSkinFileName": "ModelTextures\\ak47.dtx",
+        "DebrisModelFileName2": "Models\\M-motion.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf002.ltc",
+      "raw_sha256": "04c82c5b24adca0faba651167bc186f0ece11b9c6cf8a4b4a5802e97249df627",
+      "unlocked_sha256": "e337b3ca73a42963076c95bbc4de72763a3af3305b78c470d577c1307ab0e9d4",
+      "decoded_sha256": "8bd9e8f522386db03cc5f14e0c40e9ffbfaf0e89ca8ade08caa4a297bb164d8a",
+      "decoded_size": 718,
+      "head": "Debris",
+      "binding_fields": {
+        "DebrisModelFileName1": "Models\\Debris\\DBottle1a.ltc",
+        "DebrisModelFileName3": "Models\\Debris\\DBottle1c.ltc",
+        "DebrisSkinFileName": "ModelTextures\\Debris\\SiBottle1.dtx",
+        "DebrisModelFileName4": "Models\\Debris\\DBottle1d.ltc",
+        "DebrisModelFileName2": "Models\\Debris\\DBottle1b.ltc",
+        "DebrisModelFileName5": "Models\\Debris\\DBottle1e.ltc"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf003.ltc",
+      "raw_sha256": "3853dab8ae2e05035c37f356880adfedd3a1b647bce4314730494722f3e5bf3d",
+      "unlocked_sha256": "401390a62f0f868b4c85ac52eb59d2088945a339584d56cbe95b715c560261c8",
+      "decoded_sha256": "ea1f094b8e5719e65cf53657563a9c64c604c22ac7627c601b08f3319ba608a9",
+      "decoded_size": 433,
+      "head": "Breakable",
+      "binding_fields": {
+        "ModelFileName": "Models\\M-motion.ltb",
+        "SkinFileName": "ModelTextures\\ak47.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf003.ltc",
+      "raw_sha256": "3853dab8ae2e05035c37f356880adfedd3a1b647bce4314730494722f3e5bf3d",
+      "unlocked_sha256": "401390a62f0f868b4c85ac52eb59d2088945a339584d56cbe95b715c560261c8",
+      "decoded_sha256": "ea1f094b8e5719e65cf53657563a9c64c604c22ac7627c601b08f3319ba608a9",
+      "decoded_size": 433,
+      "head": "Breakable",
+      "binding_fields": {
+        "ModelFileName": "Model\\Breakable\\GenBottle.ltc",
+        "SkinFileName": "ModelTextures\\Breakable\\SiBottle1.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_BL_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf004.ltc",
+      "raw_sha256": "7d4a09acbae3d628784686ccd72682c02a7c85cee33840e26d8e919a5e5ee495",
+      "unlocked_sha256": "d3ed2d4576b2acaa004b84c10f6aa326d2ffef3da74baa684d97888df2aae320",
+      "decoded_sha256": "de90ff138baefa28b7417e4fd006e576862a299e4ff5a6065761bcad7a0f14fc",
+      "decoded_size": 24424,
+      "head": "Character",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\M_GR_001.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-xm.dtx",
+        "ModelFileName": "Models\\weapons\\xm.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-xm",
+        "SkinFileName": "ModelTextures\\weapons\\xm1014.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-colt.dtx",
+        "ModelFileName": "Models\\weapons\\colt.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-colt",
+        "SkinFileName": "ModelTextures\\weapons\\l-colt.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-mp5.dtx",
+        "ModelFileName": "Models\\weapons\\mp5.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-mp5",
+        "SkinFileName": "ModelTextures\\weapons\\l-mp5.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-p90.dtx",
+        "ModelFileName": "Models\\weapons\\p90.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-p90",
+        "SkinFileName": "ModelTextures\\weapons\\p90.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-m9.dtx",
+        "ModelFileName": "Models\\weapons\\m9.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-m9",
+        "SkinFileName": "ModelTextures\\weapons\\l-m9.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-knife.dtx",
+        "ModelFileName": "Models\\weapons\\KNIFE.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-Knife",
+        "SkinFileName": "ModelTextures\\weapons\\l-knife.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-hegrenade.dtx",
+        "ModelFileName": "Models\\weapons\\HEGRENADE.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-hegrenade",
+        "SkinFileName": "ModelTextures\\weapons\\l-hegrenade.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf005.ltc",
+      "raw_sha256": "794671e64879c825b27e7e3b859f8a769e509d54d017f200fe06fa11cbfd124e",
+      "unlocked_sha256": "a4d0eb10dd737f706d84236ca768746d06a0664bfc6f14efa7a7e42b8d97ad3d",
+      "decoded_sha256": "52eb402a0dd7d1ff0811f0a01b8a5fc1037b76cd77d8a9b5ac2901976a9be36a",
+      "decoded_size": 332604,
+      "head": "Weapon",
+      "binding_fields": {
+        "PViewSkinFileName": "ModelTextures\\PlayerView\\pv-flashbang.DTX",
+        "ModelFileName": "Models\\weapons\\FLASHBANG.ltb",
+        "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+        "PViewModelFileName": "Models\\PlayerView\\pv-flashbang",
+        "SkinFileName": "ModelTextures\\weapons\\l-flashbang.dtx",
+        "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/weapon/others/g_zoom.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/weapon/knife/k_out_knife.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/weapon/others/g_nobullet_Rifle.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/weapon/others/g_nobullet_Pistol.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/weapon/others/g_nobullet_shotgun.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/weapon/others/g_nobullet_machinegun.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/weapon/knife/k_shoot_knife.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf007.ltc",
+      "raw_sha256": "0969976e223ba954872b7b1ac142064f00bdf01cc86dccd1551550172a6425cd",
+      "unlocked_sha256": "51e550e8192c6e87a90fd5ce691ed642084a78258dc4df6fb37384110b21a280",
+      "decoded_sha256": "6fa2484dd23fadb2549ca40ea5dcf21af5cf04a4b851fbc07134789c22eb0764",
+      "decoded_size": 107791,
+      "head": "Sound",
+      "binding_fields": {
+        "FileName": "snd/gunhit/g_hit_chead.wav"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingBlackWindow_GR.DTX",
+        "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TM_BL.dtx",
+        "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/BLACKWIDOW/TM_GR.dtx",
+        "MapFileName": "BlackWidow.dat",
+        "MapRezFileAndCheckSum": "rez\\rf106.rez",
+        "TexRezFileAndCheckSum": "rez\\rf024.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingBlackWindow_BL.DTX",
+        "MapRoomIcon": "UI/MapIcon/RoomMap0.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap0.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingMexico_GR.DTX",
+        "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/MAXICO/TM_BL.dtx",
+        "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/MAXICO/TM_GR.dtx",
+        "MapFileName": "Mexico.dat",
+        "MapRezFileAndCheckSum": "rez\\rf014.rez",
+        "TexRezFileAndCheckSum": "rez\\rf007.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingMexico_BL.DTX",
+        "MapRoomIcon": "UI/MapIcon/RoomMap1.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap1.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingItaly_GR.DTX",
+        "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TM_BL.dtx",
+        "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/CEYHAN/TM_GR.dtx",
+        "MapFileName": "Ceyhan.dat",
+        "MapRezFileAndCheckSum": "rez\\rf001.rez",
+        "TexRezFileAndCheckSum": "rez\\rf012.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingItaly_BL.DTX",
+        "MapRoomIcon": "UI/MapIcon/RoomMap2.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap2.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingTransport_GR.DTX",
+        "MapFileName": "Transportship.dat",
+        "MapRezFileAndCheckSum": "rez\\rf022.rez",
+        "TexRezFileAndCheckSum": "rez\\rf013.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingTransport_BL.DTX",
+        "MapRoomIcon": "UI/MapIcon/RoomMap3.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap3.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingMexicanTD_GR.DTX",
+        "MapFileName": "MexicoDeath.dat",
+        "MapRezFileAndCheckSum": "rez\\rf015.rez",
+        "TexRezFileAndCheckSum": "rez\\rf007.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingMexicanTD_BL.DTX",
+        "MapRoomIcon": "UI/MapIcon/RoomMap4.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap4.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingTrainTD_GR.DTX",
+        "MapFileName": "TrainDeath.dat",
+        "MapRezFileAndCheckSum": "rez\\rf021.rez",
+        "TexRezFileAndCheckSum": "rez\\rf009.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingTrainTD_BL.DTX",
+        "MapRoomIcon": "UI/MapIcon/RoomMap5.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap5.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingLab_GR.DTX",
+        "MapFileName": "Lab.dat",
+        "MapRezFileAndCheckSum": "rez\\rf006.rez",
+        "TexRezFileAndCheckSum": "rez\\rf011.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingLab_BL.DTX",
+        "MapRoomIcon": "UI/MapIcon/RoomMap6.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap6.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf009.ltc",
+      "raw_sha256": "0bf55b9805ee8fb22c2b6ea176aeb3040cd9d929a00654a392fc5c860a075b8f",
+      "unlocked_sha256": "003f6aa6f1a21f8e271f995472913e67e04469b1193402f5ba29b83c02fcbceb",
+      "decoded_sha256": "bc4bedc7dc0c39c1b068f6c8b6de439316a7907276fa0842262cc362d402c1df",
+      "decoded_size": 81460,
+      "head": "Map",
+      "binding_fields": {
+        "LoadingTexFileNameGR": "tex/ui/loading/LoadingNuclear_GR.dtx",
+        "MinimapFileNameBL": "TEX/UI/LOADING/MINIMAP_LAYER/NUCLEAR/TM_BL.dtx",
+        "MinimapFileNameGR": "TEX/UI/LOADING/MINIMAP_LAYER/NUCLEAR/TM_GR.dtx",
+        "MapFileName": "Nuclear.dat",
+        "MapRezFileAndCheckSum": "rez\\rf023.rez",
+        "TexRezFileAndCheckSum": "rez\\rf010.rez",
+        "LoadingTexFileNameBL": "tex/ui/loading/LoadingNuclear_BL.dtx",
+        "MapRoomIcon": "UI/MapIcon/RoomMap7.TGA",
+        "MapLobbyIcon": "UI/MapIcon/LobbyMap7.TGA"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf013.ltc",
+      "raw_sha256": "b65f8a0cdce111529871d86b5b824546317e390d97d1be6ac2464964174b849c",
+      "unlocked_sha256": "5ae063d37938d4fb9a6faaeb34f77deb606e6e507bb212f1e7bf67642312fcd2",
+      "decoded_sha256": "97c53175bdd87ef56573fd17c5046c515e473db956681faf96f8d806d8fc977b",
+      "decoded_size": 2175,
+      "head": "HeadTexture",
+      "binding_fields": {
+        "SkinFileName": "ModelTextures\\Face\\M_GR_001_Head.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "raw_sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "unlocked_sha256": "40f80cbe024512091da6529c9ac578c85eb3dfe9e0ee1932c60f14e86b1a683f",
+      "decoded_sha256": "36cefe84c7b9151730fc258b9e3e59937f1fd172f1380b14968a5fc2bfe6fa98",
+      "decoded_size": 2912,
+      "head": "NanoCharacter",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\NANOGHOST.LTB",
+        "SkinFileName": "ModelTextures\\Character\\Nano\\NanoGhost_0.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "raw_sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "unlocked_sha256": "40f80cbe024512091da6529c9ac578c85eb3dfe9e0ee1932c60f14e86b1a683f",
+      "decoded_sha256": "36cefe84c7b9151730fc258b9e3e59937f1fd172f1380b14968a5fc2bfe6fa98",
+      "decoded_size": 2912,
+      "head": "NanoCharacter",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\NANOGHOST.LTB",
+        "SkinFileName": "ModelTextures\\Character\\Nano\\NanoGhost_0.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "raw_sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "unlocked_sha256": "40f80cbe024512091da6529c9ac578c85eb3dfe9e0ee1932c60f14e86b1a683f",
+      "decoded_sha256": "36cefe84c7b9151730fc258b9e3e59937f1fd172f1380b14968a5fc2bfe6fa98",
+      "decoded_size": 2912,
+      "head": "NanoCharacter",
+      "binding_fields": {
+        "ModelFileName": "Models\\Character\\NANOGHOST.LTB",
+        "SkinFileName": "ModelTextures\\Character\\Nano\\NanoGhost_1.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "raw_sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "unlocked_sha256": "40f80cbe024512091da6529c9ac578c85eb3dfe9e0ee1932c60f14e86b1a683f",
+      "decoded_sha256": "36cefe84c7b9151730fc258b9e3e59937f1fd172f1380b14968a5fc2bfe6fa98",
+      "decoded_size": 2912,
+      "head": "NanoCharacter",
+      "binding_fields": {
+        "ModelFileName": "MODELS\\CHARACTER\\NANOHULK\\NANOHULK.ltb",
+        "SkinFileName": "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "raw_sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "unlocked_sha256": "40f80cbe024512091da6529c9ac578c85eb3dfe9e0ee1932c60f14e86b1a683f",
+      "decoded_sha256": "36cefe84c7b9151730fc258b9e3e59937f1fd172f1380b14968a5fc2bfe6fa98",
+      "decoded_size": 2912,
+      "head": "NanoCharacter",
+      "binding_fields": {
+        "ModelFileName": "MODELS\\CHARACTER\\NANOHULK\\NANOHULK_UP.ltb",
+        "SkinFileName": "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    },
+    {
+      "path_alias": "rez/Butes/bf036.ltc",
+      "raw_sha256": "ba7e31a605a4f838c98436e5fa69d49368d155a10a61a85353a12e5a78f27817",
+      "unlocked_sha256": "40f80cbe024512091da6529c9ac578c85eb3dfe9e0ee1932c60f14e86b1a683f",
+      "decoded_sha256": "36cefe84c7b9151730fc258b9e3e59937f1fd172f1380b14968a5fc2bfe6fa98",
+      "decoded_size": 2912,
+      "head": "NanoCharacter",
+      "binding_fields": {
+        "ModelFileName": "MODELS\\CHARACTER\\NANOHULK\\NANOHULK_UP.ltb",
+        "SkinFileName": "MODELTEXTURES\\CHARACTER\\NANOHULK\\NANOHULK_UP.dtx"
+      },
+      "evidence_grade": "DIRECT_BINDING_RELATION",
+      "match_type": "structured_field_resource_path"
+    }
+  ],
+  "family_correlation": {
     "BornBeast": {
-      "binding_evidence_count": 0,
-      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+      "hit_count": 0,
+      "sample_paths": []
     },
     "Transformers": {
-      "binding_evidence_count": 0,
-      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+      "hit_count": 0,
+      "sample_paths": []
     },
     "Jewelry": {
-      "binding_evidence_count": 0,
-      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+      "hit_count": 0,
+      "sample_paths": []
     },
     "BlueDiamond": {
-      "binding_evidence_count": 0,
-      "reason": "decoder could not produce Bute-parseable output for any rez/Butes/*.ltc"
+      "hit_count": 0,
+      "sample_paths": []
     }
   },
-  "bf000_lta_vs_bf_ltc_relationship": "BF000.LTA and BF*.LTC share filename prefix only. BF000.LTA magic=c7004400ffff0000, BF*.LTC magic=5483b2e1. Without a working decoder for either format, no structural parent/child or shared-key relationship can be proved.",
-  "next_single_highest_value_consumer": "CF_LTC_VARIANT_CONFIRMED: the real Bute/LTC wire format is not the format the C# decoder implements. The single highest-value next consumer is the CF game DLL that loads bute configs at runtime — specifically crossfireBase.dll and server.dll. Targeted strings / xref on these two DLLs is the only way to recover the real LTC header and bitstream. EXE / broad decompile is explicitly out of scope per task.md §6.",
-  "generated_at": "2026-08-22T14:13:31.105047+00:00",
+  "binding_field_aggregate_count": {
+    "LoadingTexFileNameGR": 41,
+    "FileName": 472,
+    "WeaponName": 101,
+    "DebrisSkinFileName": 2,
+    "MinimapFileNameGR": 19,
+    "DebrisModelFileName4": 1,
+    "PViewRenderStyleFileName": 1,
+    "ArmorName": 2,
+    "DebrisModelFileName5": 1,
+    "MapRezFileAndCheckSum": 32,
+    "DebrisModelFileName2": 2,
+    "LoadingTexFileNameBL": 41,
+    "CharacterName": 72,
+    "TexRezFileAndCheckSum": 16,
+    "PViewModelFileName": 63,
+    "MapRoomIcon": 48,
+    "SoundName": 497,
+    "MapLobbyIcon": 48,
+    "DebrisModelFileName1": 2,
+    "DebrisModelFileName3": 2,
+    "PViewSkinFileName": 83,
+    "MinimapFileNameBL": 19,
+    "ModelFileName": 67,
+    "BreakableName": 2,
+    "MapFileName": 42,
+    "SkinFileName": 89,
+    "RenderStyleFileName": 3,
+    "DebrisName": 2
+  },
+  "bf000_lta_control": {
+    "path_alias": "rez/bf000.lta",
+    "size_bytes": 30002,
+    "sha256": "40301fcfc19e81817cd9e63380adffad3ccd4107d4602c27e400f32c5ea41ab7",
+    "first16_hex": "c7004400ffff00000000000000000000",
+    "note": "NOT decoded (not a .ltc). Held as control for post-decode bf*.ltc vs bf000.lta grammar comparison."
+  },
+  "next_single_highest_value_consumer": "RUNTIME_BUTE_PARSED_NO_TARGET_BINDING: wrapper + native decoder both work end-to-end and bf005.ltc carries the full CF weapon table (101 unique WeaponName, 67 ModelFileName, 89 SkinFileName). However, none of the 73 decoded .ltc mentions any of the four N01 family basenames (BornBeast / Transformers / Jewelry / BlueDiamond) — those basenames live in the CFG-file family phase numbering recorded in plan.md §4.4, not in the runtime Bute text. The single next highest-value consumer is therefore **bf005.ltc's weapon table** itself: cross-check each WeaponName's ModelFileName / SkinFileName path against the BornBeast (M4A1-family) and Transformers (variant) baselines, and confirm those paths exist in the CF runtime REZ. Wide EXE/DLL decompile is out of scope per task.md §6.",
+  "generated_at": "2026-08-22T14:32:41.065448+00:00",
   "script": "scripts\\material_recovery\\n02_butes_config_triage.py"
 }
