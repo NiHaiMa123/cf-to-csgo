@@ -1,114 +1,18 @@
-# AGENTS.md — Agent Git / Sync Policy
+# AGENTS.md — Git 操作规范
 
-This file defines repository-wide rules for all AI agents and automation operating on this project, including Chat/Sol reviewers and planners, user-selected local executor agents, Blender agents, and future agents.
+本文件只规定本仓库的 **Git 同步、提交、分支和本地文件保护规则**。项目规划看 `plan.md`，当前执行任务看 `task.md`，角色分工看 `README.md`。
 
-The keywords **MUST**, **MUST NOT**, **SHOULD**, and **SHOULD NOT** are normative.
+以下规则对所有 Agent / 自动化工具生效。
 
-## 1. Repository state and authority
+## 1. 权威分支
 
-1. GitHub tracked files are the shared synchronization layer between remote reviewers/planners and local executors.
-2. `plan.md` is the authoritative project progress/state document unless the repository explicitly changes that rule.
-3. Chat history, model memory, previous summaries, and an agent's recollection are **not** authoritative project state.
-4. Before planning, reviewing, changing status, or writing a new task, a remote agent MUST read the latest relevant repository files from the current branch/commit.
-5. Before editing an existing tracked file, an agent MUST read the latest version first and keep the change narrowly scoped.
-6. An agent MUST NOT mark a Gate, task, test, or milestone `PASS` only because a previous conversation or report said it passed. PASS requires the evidence required by the repository's current acceptance criteria.
-7. Superseded/failed states MUST NOT be silently revived. If repository evidence conflicts, the newest authoritative state and explicit evidence take precedence.
+- `master` 是 Agent 之间唯一正常交接分支。
+- 正常工作直接同步、提交、推送到 `master`。
+- 不使用 feature/topic branch 或 PR 作为常规 Agent handoff，除非用户明确要求。
+- 非 `master` 上未合入的工作视为尚未交付。
+- 禁止 force push，除非用户明确授权具体操作。
 
-### 1.1 Master-only agent synchronization
-
-This repository is an **agent-to-agent data exchange channel**, not a human feature-branch development workflow. Chat/Sol, user-selected local executor agents, Blender agents, and other automation exchange project state through one shared branch.
-
-1. **`master` is the sole authoritative synchronization branch for all agents.**
-2. All agents MUST read, fetch, pull, commit, push, review, and hand off project state against `master`.
-3. Agents MUST NOT create or use feature branches, topic branches, long-lived work branches, or pull requests as an agent handoff mechanism unless the user explicitly requests a branch/PR workflow.
-4. Work that exists only on a non-`master` branch MUST be treated as **not delivered and not authoritative** for other agents.
-5. An agent MUST NOT instruct another agent to check out a non-`master` branch in order to receive normal project state.
-6. If a platform/tooling constraint forces creation of a temporary branch or pull request, that branch/PR is **transport-only**. The same operation MUST merge the intended scoped change into `master` before handoff whenever the platform permits; agents MUST NOT leave normal project state stranded outside `master`.
-7. After any temporary transport branch is merged, subsequent synchronization MUST return to `master`, normally with:
-
-```bash
-git checkout master
-git fetch origin
-git pull --rebase origin master
-```
-
-8. A user instruction explicitly requesting a different branch/PR workflow overrides this subsection for that specific operation only.
-
-### 1.2 Executor selection is agent-agnostic
-
-1. Current and future task specifications MUST define the local executor by **capability and role**, not by binding the task to Luna or any other named model/agent, unless the user explicitly requests a specific executor for that task.
-2. A user-selected local executor is acceptable when it can access the local repository and required local-only inputs, run the required toolchain/commands, preserve evidence, and synchronize scoped results through `master`.
-3. Switching from one local executor agent to another MUST NOT require changing task acceptance criteria, provenance rules, or authoritative project state.
-4. Historical evidence MAY retain the actual executor name when that name is part of the historical record. Such historical names MUST NOT be interpreted as a requirement for current or future execution.
-
-## 2. `data/` is local-only
-
-1. `data/` and everything below it are local-only project inputs/assets.
-2. `data/**` MUST NEVER be uploaded to GitHub.
-3. Agents MUST NOT use `git add -f` or any other mechanism to bypass `.gitignore` for `data/**`.
-4. Agents MUST NOT delete, overwrite, rename, move, clean, mirror, or recreate `data/` as part of normal Git synchronization.
-5. The absence of `data/` on GitHub MUST NOT be interpreted as permission to delete the local directory.
-6. Remote agents MUST assume they do **not** possess local `data/` unless the user explicitly provides a specific file through another channel.
-7. A remote agent MUST NOT claim to have inspected, executed against, or validated local `data/` merely from repository metadata.
-8. Tests/reports may reference local assets by relative path, hash, size, ID, or other metadata, but MUST NOT embed or commit the raw `data/` asset itself.
-9. If a file under `data/` ever becomes tracked remotely by mistake, local agents MUST stop synchronization and report the condition. They MUST NOT delete the local copy to make the pull succeed.
-
-## 3. Remote Chat/Sol planner and reviewer rules
-
-Remote Chat/Sol agents primarily act as **planner, test designer, static reviewer, and evidence reviewer**.
-
-1. MUST re-read the latest GitHub state before a substantive Plan/Review decision.
-2. MUST distinguish between:
-   - facts visible in tracked repository files;
-   - evidence generated by a local run;
-   - assumptions/inferences;
-   - unavailable local-only facts.
-3. MUST NOT claim local Blender, Crowbar, `studiomdl`, MIGI, game, filesystem, or `data/` execution unless actual execution evidence is available.
-4. When a conclusion requires the local environment, the remote agent SHOULD design an explicit execution/test specification for the local executor instead of inventing a result.
-5. A test specification SHOULD define, when applicable:
-   - purpose/hypothesis;
-   - exact baseline/input identity;
-   - controlled mutation or operation;
-   - commands/actions to execute;
-   - invariants that must be preserved;
-   - expected result;
-   - `PASS` / `FAIL` / `INVALID` criteria;
-   - required evidence and hashes.
-6. The remote reviewer MUST judge the returned evidence against the pre-existing criteria. It MUST NOT weaken or rewrite acceptance criteria merely to convert a failure into a pass.
-7. If evidence is incomplete, the result MUST remain `not_tested`, `blocked`, `invalid`, `rework`, or the repository's equivalent status rather than being inferred as PASS.
-8. Remote GitHub edits MUST be minimal and scoped. Do not perform broad rewrites, formatting churn, or unrelated cleanup while changing a Plan/Review/spec file.
-9. Remote agents MUST NOT request that local executors upload `data/**` just to make remote review easier.
-
-## 4. Local executor role
-
-Any user-selected local executor agent primarily acts as **executor and evidence producer** when a task depends on the user's machine or ignored assets.
-
-1. Follow the provided Plan/Test/Review specification exactly unless it is impossible or unsafe.
-2. MUST NOT silently change the test target, mutation, acceptance criteria, or evidence requirements.
-3. If the requested execution cannot be performed as specified, report `BLOCKED`/`INVALID` with the reason instead of substituting an easier test and calling it PASS.
-4. MUST preserve raw command output, exit code, relevant report files, hashes, and run identity when the specification requires them.
-5. MUST NOT modify production code merely to make a negative test pass unless the task explicitly authorizes a fix.
-6. After execution, commit only the intended tracked code/spec/report/evidence files. Local-only assets remain local.
-7. The executor MAY be replaced mid-project by another capable agent. The replacement executor MUST resume from latest authoritative `master` state and existing evidence instead of restarting completed work without reason.
-
-## 5. Pull / download synchronization policy
-
-The desired synchronization model is:
-
-- GitHub tracked file changed remotely -> update the local tracked file.
-- New tracked file exists remotely -> add it locally.
-- Local ignored `data/**` has no remote counterpart -> preserve it exactly as-is.
-- Same tracked file changed both locally and remotely -> resolve as a Git conflict; do not silently discard either side.
-
-Before pulling remote changes, a local agent MUST:
-
-1. Run `git status --short --branch` (or equivalent) and inspect the worktree.
-2. Identify local modifications to tracked files.
-3. Preserve unfinished local work before synchronization. Do not discard it to obtain a clean pull.
-4. Prefer synchronization on a clean tracked worktree.
-5. Fetch/pull normal Git history; do not use filesystem mirroring as a substitute for Git.
-
-Recommended clean-worktree flow:
+推荐同步：
 
 ```bash
 git status --short --branch
@@ -116,44 +20,74 @@ git fetch origin
 git pull --rebase origin master
 ```
 
-If local and remote changes conflict:
+## 2. 修改前先同步并检查工作区
 
-1. STOP automatic synchronization.
-2. Do not automatically select `ours` or `theirs` for a substantive conflict.
-3. Inspect/report the conflicting files and preserve both sides until the conflict is intentionally resolved.
-4. Never resolve a conflict by deleting `data/` or other local-only inputs.
-
-## 6. Push / upload policy
-
-Before pushing local work, a local agent MUST inspect exactly what will be uploaded.
-
-1. Run `git status` and review the diff.
-2. Stage only explicit intended paths, for example:
+执行 Git 写操作前必须先检查：
 
 ```bash
-git add -- scripts/example.py tests/test_example.py review/run.json
+git status --short --branch
 ```
 
-3. MUST NOT use broad staging commands in the user's working repository:
-   - `git add .`
-   - `git add -A`
-   - `git add --all`
-4. MUST NOT stage `data/**`, even if ignore rules are accidentally changed.
-5. Before commit/push, inspect staged paths with at least:
+如果存在本地 tracked 修改：
+
+- 不得为了 pull 而直接丢弃；
+- 不得自动选择 ours/theirs 覆盖实质冲突；
+- 先保留现有工作，再有意识地同步/解决冲突。
+
+如果 `origin/master` 已前进，先 fetch/rebase 或明确处理冲突，禁止覆盖远端历史。
+
+## 3. `data/**` 永远 local-only
+
+- `data/**` 不得提交或上传 GitHub。
+- 不得使用 `git add -f` 绕过 ignore。
+- 不得因为 Git 同步而删除、覆盖、移动、镜像或重建本地 `data/**`。
+- GitHub 上没有 `data/**` 不代表本地目录应该被删除。
+- 如果发现 `data/**` 被 staged 或 tracked，立即停止提交并报告。
+
+同样，CF 原始客户端/runtime 文件（例如未经授权提交的 `.exe/.dll/.rez/.pak/.pck`）默认不得作为 raw binary 上传；如果某个二进制确实需要纳入版本控制，必须由用户明确授权。
+
+## 4. 精确 staging
+
+只 stage 本次任务明确需要的路径，例如：
+
+```bash
+git add -- scripts/example.py work/example/report.json task.md
+```
+
+禁止：
+
+```bash
+git add .
+git add -A
+git add --all
+```
+
+提交前至少检查：
 
 ```bash
 git diff --cached --name-only
+git diff --cached
 ```
 
-6. Verify that no raw local-only assets, secrets, caches, unintended binaries, or unrelated user files are staged.
-7. Commit messages SHOULD describe the actual scoped change.
-8. MUST NOT force-push (`git push --force` or equivalent) unless the user explicitly authorizes that specific operation.
-9. If `origin/master` advanced after local work began, fetch/rebase or otherwise reconcile deliberately; do not overwrite remote history.
-10. Normal agent work MUST be pushed to `master`; a non-`master` branch is not a completed handoff state under §1.1.
+确认没有：
 
-## 7. Destructive Git/filesystem operations are forbidden by default
+- `data/**`；
+- 原始 CF 客户端/runtime binary；
+- secrets / credentials；
+- cache / 临时文件；
+- 与当前任务无关的用户修改。
 
-Agents MUST NOT run the following against the user's working repository unless the user explicitly authorizes the specific destructive operation and its scope:
+## 5. 提交与 push
+
+- commit message 应准确描述本次 scoped change。
+- 正常 Agent 交接必须 push 到 `master`。
+- push 前再次确认 staged diff。
+- 如果远端已前进，先同步再 push。
+- 不得通过重写历史来“省事”。
+
+## 6. 默认禁止的破坏性操作
+
+未经用户对具体范围明确授权，禁止：
 
 ```bash
 git reset --hard
@@ -164,59 +98,26 @@ git restore .
 git push --force
 ```
 
-Also forbidden by default:
-
-- recursive deletion of the repository or `data/`;
-- `rm -rf data`, PowerShell/Windows equivalents, or scripted recursive deletion of `data/`;
-- `robocopy /MIR`, `rsync --delete`, or other mirror/delete synchronization that could remove local-only files;
-- replacing the whole repository directory merely to synchronize tracked files.
-
-If cleanup is necessary, the agent MUST target explicit known generated paths and MUST protect `data/` and unrelated user files.
-
-## 8. Evidence and provenance for local-only inputs
-
-When a tracked report/result depends on a local-only input, SHOULD record enough provenance to let a remote reviewer verify run consistency without receiving the asset itself. Prefer fields such as:
+也禁止任何可能删除本地输入的镜像/清理操作，例如：
 
 ```text
-input_relative_path
-input_sha256
-input_size
-run_id
-timestamp
-git_commit
-script/tool version
-output/report hashes
+rm -rf data
+robocopy /MIR
+rsync --delete
+整仓替换式同步
 ```
 
-A hash proves input identity/consistency, not semantic correctness. Remote reviewers MUST NOT claim that a hash alone proves the asset's content or quality.
+如果确实需要清理生成物，只允许针对明确已知的 generated path，并保护 `data/**` 和用户无关文件。
 
-## 9. Agent handoff protocol
+## 7. 冲突与停止条件
 
-Preferred project loop:
+出现以下任一情况，停止自动 Git 操作并保留现场：
 
-```text
-Chat/Sol: read latest origin/master -> reason/design Plan or test spec -> commit/push scoped change to master
-    -> User-selected local executor: update master safely -> execute against local environment/data
-    -> Local executor: commit/push scoped code + evidence to master (never data/)
-    -> Chat/Sol: re-read latest origin/master -> review code/evidence -> decide next action
-```
+- `data/**` 被 staged / tracked；
+- pull/rebase 会覆盖未处理的本地 tracked 工作；
+- 发生实质 merge/rebase conflict；
+- 需要 force push 才能继续；
+- 操作可能删除 local-only 输入；
+- 工作区混有无法安全分离的用户修改。
 
-For environment-dependent Review tasks, the separation of responsibility is intentional:
-
-- Sol/reviewer decides **what must be tested and what counts as success**.
-- The local executor performs **the specified operation and captures raw evidence**.
-- Sol/reviewer evaluates **whether the evidence satisfies the unchanged criteria**.
-
-## 10. Stop conditions
-
-An agent MUST stop destructive or automatic Git action and report the situation when any of the following occurs:
-
-- `data/**` appears staged or tracked;
-- a pull would overwrite unresolved local tracked work;
-- a substantive merge/rebase conflict occurs;
-- remote history would require a force push;
-- expected local-only assets are about to be deleted/mirrored;
-- the working tree contains unrelated user changes that the agent cannot safely separate;
-- required evidence is missing but the task asks to mark a Gate PASS.
-
-When stopped, preserve the user's files and repository state. Safety and provenance take precedence over convenience.
+Git 操作的首要原则是：**不丢用户本地数据、不覆盖未交付工作、不把无关文件带入提交。**
