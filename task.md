@@ -7,16 +7,16 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N02-E-R2
-Title: Resolve partial material binding through bounded native resource verification
+Task ID: P4-M01-N03-A
+Title: BornBeast consumer path discovery after runtime payload separation
 State: ACTIVE
 Parent: P4-M01 Native Material Recovery
-Depends on: P4-M01-N02-E-R1
+Depends on: P4-M01-N02-E-R2
 ```
 
-# 2. Current execution status
+# 2. Previous execution status
 
-N02-E-R1 已完成 LTB material binding boundary analysis。
+N02-E-R2 已完成 bounded REZ payload SHA256 verification。
 
 结论：
 
@@ -27,54 +27,62 @@ MATERIAL_BINDING_PARTIAL
 已确认：
 
 ```text
-PV-M4A1.LTB
- -> piece/model structure evidence
- -> material relation boundary
+N02-D-R1 runtime path binding
+ -> bounded payload extraction
+ -> SHA256 identity evidence
 ```
 
-但未确认：
+结果：
 
 ```text
-piece
- -> exact texture resource
- -> native DTX/TGA
+24 unique payloads verified
+0 SHA256 matches BornBeast P4 baseline inventory
 ```
+
+因此冻结当前范围内结论：
+
+```text
+bf005 M4A1 runtime family
+!=
+BornBeast native asset
+```
+
+该结论仅针对当前 bf005 consumer scope，不代表 BornBeast runtime entry 不存在。
 
 # 3. Current goal
 
-本轮目标：补齐 native resource closure。
+本轮目标：寻找 BornBeast native asset 的真实 consumer path。
 
 回答：
 
 ```text
-LTB piece/material candidate
- -> runtime resource payload
- -> SHA verified asset
- -> native material graph
+BornBeast inventory asset
+ -> runtime/config consumer
+ -> REZ/resource path
+ -> payload identity
 ```
 
 # 4. Required Work
 
-优先执行 bounded verification：
+优先执行 bounded reverse lookup：
 
 ```text
-REZ directory evidence
- -> locate matching payload
- -> read bounded bytes
- -> SHA256
- -> compare local CF material assets
+BornBeast native inventory
+ -> reverse filename/hash/path references
+ -> LTC/Bute/config candidates
+ -> runtime resource relation
 ```
 
 输出：
 
 ```text
-work/.../material_binding/
+work/.../bornbeast_consumer/
 ```
 
 至少包含：
 
 ```text
-payload verification report
+consumer candidate report
 resource graph update
 confirmed relations
 remaining ambiguity
@@ -83,26 +91,25 @@ confidence level
 
 # 5. Forbidden
 
-- 不进入 P5 identity confirmation；
 - 不宣布 P4-M01 PASS；
-- 不把 runtime M4A1 binding 等同 BornBeast identity；
-- 不逆 DLL/EXE；
-- 不逆 FXO shader；
+- 不把普通 M4A1 runtime binding 等同 BornBeast identity；
+- 不进入 DLL/EXE/FXO reverse；
 - 不进行无目标全盘扫描；
+- 不使用 filename similarity 作为 proof；
 - 不冻结 CFG shader semantics；
-- 不使用 filename similarity 作为 proof。
+- 不修改历史 accepted evidence。
 
 # 6. Completion State
 
 ```text
-A. NATIVE_RESOURCE_CONFIRMED
-   payload/material relation established
+A. BORNBEAST_CONSUMER_CONFIRMED
+   runtime consumer path established
 
-B. MATERIAL_BINDING_PARTIAL
-   evidence improved but closure incomplete
+B. CANDIDATE_ONLY
+   candidates found but identity not proven
 
 C. REWORK_REQUIRED
-   verification path invalid
+   search boundary invalid
 ```
 
 完成后返回：
