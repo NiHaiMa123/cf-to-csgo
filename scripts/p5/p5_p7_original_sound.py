@@ -58,12 +58,9 @@ FORBIDDEN_NAME_NEEDLES = (
     "TRANSFORMERS_",
 )
 IDENTITY_PREFIX = "M4A1-S-BEAST"
-AIR_NAME = "M4A1SBEASTAIR"
-# Same Beast bank, not a variant skin. Longer charging-handle body under ReloadM4A1-S-Beast.
-BOLT_LAYER = "M4A1_S_Reload_03"
 # Draw sequence is 35 frames @ 30 fps. Bolt motion starts at frame 10.
 DRAW_BOLT_DELAY_S = 10 / 30
-# Weapon_M4A1.Draw is CHAN_STATIC volume 0.3; boost so the bolt is audible.
+# Weapon_M4A1.Draw is CHAN_STATIC volume 0.3; boost so Reload/拉栓 is audible.
 DRAW_VOLUME_COMPENSATE = 3.3
 
 # CS:GO M4A4 (Weapon_M4A1.Single) reads these waves. Pitch 120 is compensated
@@ -76,16 +73,16 @@ WIRE_MAP: list[dict[str, Any]] = [
         "waves": ["sound/weapons/m4a1/m4a1_01.wav", "sound/weapons/m4a1/m4a1_02.wav"],
         "pitch_compensate": 120,
         "grade": "OBSERVED",
-        "note": "Named identity shoot sample. Vanilla soundscript pitch 120 is inverted in the WAV.",
+        "note": "Listen 01. User: 01-06 match filenames; fire was already correct.",
     },
     {
-        "bute_event": "ShootM4A1-S-Beast (air/tail layer)",
-        "stream": "M4A1SBeastAir",
+        "bute_event": "ShootM4A1-S-Beast (distant uses same shoot sample)",
+        "stream": "M4A1-S-Beast_SHOOT_1",
         "csgo_event": "Weapon_M4A4.SingleDistant",
         "waves": ["sound/weapons/m4a1/m4a1_distant_01.wav"],
         "pitch_compensate": 100,
-        "grade": "STRONG_HYPOTHESIS",
-        "note": "Bank-local Beast air/tail, not BornBeastAir. Used only as CS:GO distant layer.",
+        "grade": "OBSERVED",
+        "note": "Listen 07 BeastAir was rejected. Distant reuses listen 01, not 07-13.",
     },
     {
         "bute_event": "ClipOutM4A1-S-Beast",
@@ -94,7 +91,7 @@ WIRE_MAP: list[dict[str, Any]] = [
         "waves": ["sound/weapons/m4a1/m4a1_clipout.wav"],
         "pitch_compensate": 100,
         "grade": "OBSERVED",
-        "note": "Named identity clip-out sample.",
+        "note": "Listen 04. User: 01-06 match filenames.",
     },
     {
         "bute_event": "ClipInM4A1-S-Beast",
@@ -103,12 +100,13 @@ WIRE_MAP: list[dict[str, Any]] = [
         "waves": ["sound/weapons/m4a1/m4a1_clipin.wav"],
         "pitch_compensate": 100,
         "grade": "OBSERVED",
-        "note": "Named identity clip-in sample.",
+        "note": "Listen 05. User: 01-06 match filenames.",
     },
 ]
 
-EXTRACT_ONLY = ("M4A1-S-Beast_knifeAttack", "M4A1-S-Beast_GasEjection")
-BOLT_SOURCES = ("M4A1-S-Beast_Reload", BOLT_LAYER)
+EXTRACT_ONLY = ("M4A1-S-Beast_knifeAttack",)
+RELOAD_CLIP = "M4A1-S-Beast_GasEjection"  # listen 02; user said the old 切枪 clip is 换弹
+BOLT_CLIP = "M4A1-S-Beast_Reload"  # listen 03; filename Reload = 拉栓 body
 
 
 def sha256_file(path: Path) -> str:
@@ -188,8 +186,6 @@ def assert_identity_name(name: str) -> None:
     for needle in FORBIDDEN_NAME_NEEDLES:
         if needle in upper:
             raise RuntimeError(f"refusing non-identity stream {name}")
-    if upper == AIR_NAME or name == BOLT_LAYER:
-        return
     if not upper.startswith(IDENTITY_PREFIX):
         raise RuntimeError(f"stream {name} is not M4A1-S-Beast identity-core")
 
@@ -219,6 +215,36 @@ def pcm_info(path: Path) -> dict[str, Any]:
         "rate": 44100,
         "seconds": round(frames / 44100, 3),
     }
+
+
+def concat_pcm(inputs: list[Path], dest: Path) -> dict[str, Any]:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    ffmpeg = which_ffmpeg()
+    labels = "".join(
+        f"[{index}]aformat=sample_fmts=fltp:sample_rates=44100:channel_layouts=stereo,"
+        f"asetpts=PTS-STARTPTS[s{index}];"
+        for index in range(len(inputs))
+    )
+    joined = "".join(f"[s{index}]" for index in range(len(inputs)))
+    graph = f"{labels}{joined}concat=n={len(inputs)}:v=0:a=1[out]"
+    cmd = [str(ffmpeg), "-y"]
+    for path in inputs:
+        cmd.extend(["-i", str(path)])
+    cmd.extend(
+        [
+            "-filter_complex",
+            graph,
+            "-map",
+            "[out]",
+            "-ar",
+            "44100",
+            "-c:a",
+            "pcm_s16le",
+            str(dest),
+        ]
+    )
+    run_checked(cmd, f"ffmpeg_concat_{dest.stem}")
+    return pcm_info(dest)
 
 
 def mix_pcm(inputs: list[Path], dest: Path) -> dict[str, Any]:
@@ -414,11 +440,11 @@ def write_report(report: dict[str, Any]) -> None:
     lines.extend(
         [
             "",
-            "User 2026-09-13: fire is correct; draw played a truncated reload and missed 拉栓; reload still sounded CS and should be 拉栓.",
+            "User listen: 01-06 match filenames. 07 BeastAir is wrong. 08-13 unknown, unused.",
             "",
-            "拉栓 is `M4A1-S-Beast_Reload` mixed with bank-local `M4A1_S_Reload_03`. It is wired to reload `ClipHit` and to draw via `Weapon_M4A1.Draw` (CHAN_STATIC, delayed to the bolt frames, volume-compensated). `BoltForward` / `BoltBack` are silenced so vanilla CS bolt and `GasEjection` cannot steal CHAN_ITEM or cut the bolt.",
+            "换弹 ending = listen 02 `GasEjection` then listen 03 `Reload` (拉栓), on `ClipHit`. 切枪 = listen 03 on `Draw` (CHAN_STATIC, delayed to bolt frames). ClipOut/ClipIn = 04/05. Fire = 01. Distant reuses 01, not 07.",
             "",
-            "`M4A1-S-Beast_GasEjection` is a hiss, not 拉栓; it is no longer wired. Qingchun / BB / Zeekr / BornBeast unused.",
+            "`BoltForward` / `BoltBack` stay silent so vanilla CS bolt cannot cut CF clips. Qingchun / BB / Zeekr / BornBeast unused.",
             "",
             "Not done: Inspect, CF animation, world model, knife foley, lighting.",
             "",
@@ -453,7 +479,9 @@ def main() -> int:
 
     streams = list_streams(bank)
     by_name = {row["name"]: row for row in streams}
-    wanted = list(dict.fromkeys([row["stream"] for row in WIRE_MAP] + list(EXTRACT_ONLY) + list(BOLT_SOURCES)))
+    wanted = list(dict.fromkeys(
+        [row["stream"] for row in WIRE_MAP] + list(EXTRACT_ONLY) + [RELOAD_CLIP, BOLT_CLIP]
+    ))
     for name in wanted:
         assert_identity_name(name)
         if name not in by_name:
@@ -482,39 +510,42 @@ def main() -> int:
         converted[name] = pcm
         wired_out.append({**item, "pcm": pcm, "deployed": stage_waves(pcm_path, item["waves"])})
 
-    for name in BOLT_SOURCES:
+    for name in (RELOAD_CLIP, BOLT_CLIP):
         src = RAW_DIR / f"{name}.wav"
         pcm_path = PCM_DIR / f"{name}.wav"
         if name not in converted:
             converted[name] = convert_pcm(src, pcm_path, 100, by_name[name]["channels"])
 
-    bolt_pcm = PCM_DIR / "bolt_pull.wav"
-    converted["bolt_pull"] = mix_pcm([PCM_DIR / f"{name}.wav" for name in BOLT_SOURCES], bolt_pcm)
+    reload_pcm = PCM_DIR / "reload_then_bolt.wav"
+    converted["reload_then_bolt"] = concat_pcm(
+        [PCM_DIR / f"{RELOAD_CLIP}.wav", PCM_DIR / f"{BOLT_CLIP}.wav"],
+        reload_pcm,
+    )
     draw_pcm = PCM_DIR / "draw_bolt.wav"
     converted["draw_bolt"] = delay_amplify_pcm(
-        bolt_pcm, draw_pcm, DRAW_BOLT_DELAY_S, DRAW_VOLUME_COMPENSATE
+        PCM_DIR / f"{BOLT_CLIP}.wav", draw_pcm, DRAW_BOLT_DELAY_S, DRAW_VOLUME_COMPENSATE
     )
     silence_path = PCM_DIR / "silence.wav"
     converted["silence"] = silence_pcm(silence_path)
 
     composites = [
         {
-            "bute_event": "ReloadM4A1-S-Beast (拉栓)",
-            "stream": "+".join(BOLT_SOURCES),
+            "bute_event": "换弹 then 拉栓 (listen 02+03)",
+            "stream": f"{RELOAD_CLIP}+{BOLT_CLIP}",
             "csgo_event": "Weapon_M4A1.ClipHit",
             "waves": ["sound/weapons/m4a1/m4a1_cliphit.wav"],
-            "grade": "STRONG_HYPOTHESIS",
-            "note": "Named Beast reload clack mixed with bank-local Reload_03 body. Wired to the last reload event.",
-            "pcm": converted["bolt_pull"],
-            "deployed": stage_waves(bolt_pcm, ["sound/weapons/m4a1/m4a1_cliphit.wav"]),
+            "grade": "OBSERVED",
+            "note": "User: 01-06 match names; old 切枪 clip (02 GasEjection) is 换弹; 03 Reload follows as 拉栓.",
+            "pcm": converted["reload_then_bolt"],
+            "deployed": stage_waves(reload_pcm, ["sound/weapons/m4a1/m4a1_cliphit.wav"]),
         },
         {
-            "bute_event": "ReloadM4A1-S-Beast (拉栓 on draw)",
-            "stream": "+".join(BOLT_SOURCES),
+            "bute_event": "拉栓 on 切枪 (listen 03)",
+            "stream": BOLT_CLIP,
             "csgo_event": "Weapon_M4A1.Draw",
             "waves": ["sound/weapons/m4a1/m4a1_draw.wav"],
-            "grade": "STRONG_HYPOTHESIS",
-            "note": "Same 拉栓 on CHAN_STATIC so BoltForward/BoltBack/idle WeaponMove cannot cut it. Delayed to draw frame 10; wav boosted because Draw volume is 0.3.",
+            "grade": "OBSERVED",
+            "note": "Draw is not 换弹. Listen 03 on CHAN_STATIC so CS bolt events cannot cut it.",
             "pcm": converted["draw_bolt"],
             "deployed": stage_waves(draw_pcm, ["sound/weapons/m4a1/m4a1_draw.wav"]),
         },
@@ -524,17 +555,17 @@ def main() -> int:
             "csgo_event": "Weapon_M4A1.BoltForward",
             "waves": ["sound/weapons/m4a1/m4a1_boltforward.wav"],
             "grade": "SOURCE1_DESIGN_CANDIDATE",
-            "note": "Vanilla CS 拉栓. Same CHAN_ITEM as BoltBack; leaving it would cut or pre-empt CF 拉栓.",
+            "note": "Vanilla CS 拉栓. Same CHAN_ITEM as BoltBack; leaving it would cut CF 拉栓.",
             "pcm": converted["silence"],
             "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_boltforward.wav"]),
         },
         {
-            "bute_event": "silence (kill GasEjection on draw)",
+            "bute_event": "silence (do not play 换弹 on 切枪)",
             "stream": "silence",
             "csgo_event": "Weapon_M4A1.BoltBack",
             "waves": ["sound/weapons/m4a1/m4a1_boltback.wav"],
             "grade": "SOURCE1_DESIGN_CANDIDATE",
-            "note": "Previous map put GasEjection here; user heard 换弹 on 切枪, truncated, no 拉栓.",
+            "note": "02 GasEjection belongs on reload, not draw.",
             "pcm": converted["silence"],
             "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_boltback.wav"]),
         },
@@ -582,9 +613,9 @@ def main() -> int:
         "park_frozen": frozen,
         "deploy": {k: v for k, v in deploy.items() if k != "hashes"} | {"file_count": len(deploy["hashes"])},
         "notes": [
-            "User 2026-09-13: fire OK; draw was truncated reload missing 拉栓; reload sounded CS and should be 拉栓.",
-            "拉栓 = M4A1-S-Beast_Reload + M4A1_S_Reload_03 on ClipHit and Draw. BoltForward/BoltBack silenced.",
-            "GasEjection is a hiss, not 拉栓; no longer wired to draw.",
+            "User listen: 01-06 match filenames; 07 wrong; 08-13 unknown unused.",
+            "Fire=01. ClipOut=04. ClipIn=05. Reload ClipHit=02 then 03. Draw=03. Distant=01 not 07.",
+            "Knife 06 extracted, not wired to M4A4.",
             "Weapon_M4A1.Single pitch 120 is compensated in the close-fire WAV.",
             "Inspect / CF animation / world model are still open.",
             "Not a P4-M01 PASS.",
