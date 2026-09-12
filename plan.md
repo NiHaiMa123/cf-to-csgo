@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
 Current executor task         : NONE
-Last completed task           : P4-M01-N05-E (offline playerviewmesh.fxo enumerate)
-Last accepted evidence commit : 0ff03fa570be9a2328d26c23d17d5a3b76fc7d2d
-State                         : FXO_EFFECT_ENUMERATED / NATIVE_INPUTS_READY_SOURCE1_OPEN
+Last completed task           : P4-M01-N05-F (Source 1 native diagnostic VTF/VMT)
+Last accepted evidence commit : PENDING_N05F
+State                         : SOURCE1_NATIVE_DIAGNOSTIC_PACKAGED / P4-M01_INCOMPLETE
 ```
 
 ## 0.1 已钉死
@@ -35,22 +35,23 @@ State                         : FXO_EFFECT_ENUMERATED / NATIVE_INPUTS_READY_SOUR
 ## 0.2 当前任务
 
 ```text
-Task ID : P4-M01-N05-F
-State   : ACTIVE
-Goal    : 用已验证 CF 像素做独立 Source 1 VMT/VTF 诊断映射（不改 P4 frozen）
-Last    : P4-M01-N05-E
-Result  : FXO_EFFECT_ENUMERATED
+Task ID : NONE
+State   : N05-F delivered
+Goal    : 独立 Source 1 诊断包已生成；不部署、不改 frozen
+Last    : P4-M01-N05-F
+Result  : SOURCE1_NATIVE_DIAGNOSTIC_PACKAGED
 ```
 
 N05-E 已在自建 D3D9 device 上载入当前磁盘 `playerviewmesh.fxo`（111 参数 / 43 technique）。CFG 的 `SpecularPower` / `LightBrightness` / `DiffuseBoost` / `AmbientLightColor` / `EnvCubeMapBrightness` / `ReflectionIndex` / `RefractionIndex` 与 effect 参数同名；`DiffuseMap`/`SpecularMap`/`NormalMap`/`AlphaMap`/`CubeMap` 槽存在。D3DX 默认值与 BornBeast CFG 不同，不能当运行时。`CubeMapTransformY` 无同名参数。live FXO SHA 已与 N04-C 不同。未附加 CF。P4-M01 仍 INCOMPLETE。
 
-N05-F：把 verified PV DTX + Normal/Specular/Alpha TGA + cube 编成独立 Source 1 材质诊断包，`final_cf_material=false`，不覆盖 frozen addon，不部署。
+N05-F 已把 verified PV DTX + Normal/Specular/Alpha TGA + cube 首面编成独立 Source 1 VTF/VMT 诊断包，`final_cf_material=false`，未覆盖 frozen addon，未部署。CFG 标量没有当成 Source 1 phong/envmap 数值。P4-M01 仍 INCOMPLETE。
 
-证据（N05-E）：
+要进游戏看效果需要单独部署一个非 frozen addon，并做用户 Gate；那是产品选择，不是本轮已做的事。
 
-- `CFRezManager/Commands/FxoInspectCommand.cs`
-- `scripts/material_recovery/n05e_fxo_offline_inspect.py`
-- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05e_fxo_offline_inspect/{report.md,semantics.json,fxo_inspect.json}`
+证据：
+
+- N05-E：`work/.../n05e_fxo_offline_inspect/`
+- N05-F：`work/.../n05f_source1_native_map/{report.md,mapping.json,materials/}`
 
 ## 0.3 禁止
 
@@ -61,9 +62,9 @@ N05-F：把 verified PV DTX + Normal/Specular/Alpha TGA + cube 编成独立 Sour
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：①正确字节/codec 已在 9 个指定资源上闭合；N05-C 正式入口已接入。②N05-D 已把 PV LTB UV 对到 verified atlas 并恢复命名 cube；piece→sampler 仍开放。③渲染语义（FXO）是当前 ACTIVE。N04-F 继续暂停。
+**更新判断**：①字节/codec 与正式读取已闭合。②PV LTB UV 已对到 verified atlas，cube 已恢复。③FXO 已离线枚举，CFG 同名参数存在但默认值≠CFG。④独立 Source 1 诊断包已生成且未部署。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。
 
-以下按新证据重排；§0.2 的 N05-E 为 ACTIVE。N05-C/N05-D 已完成。
+N05-C 到 N05-F 已完成。下一步若要进游戏，需单独非 frozen 部署；piece→sampler 运行时选择仍开放。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|

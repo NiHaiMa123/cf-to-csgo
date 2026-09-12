@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/cf_bornbeast_native_diag/diffuse"
+	"$bumpmap" "models/weapons/v_models/cf_bornbeast_native_diag/normal"
+	"$phong" "1"
+	"$phongexponent" "16"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.05 0.5 1]"
+	"$phongalbedotint" "1"
+	"$envmap" "models/weapons/v_models/cf_bornbeast_native_diag/cube_face0"
+	"$normalmapalphaenvmapmask" "1"
+	"$nocull" "0"
+}

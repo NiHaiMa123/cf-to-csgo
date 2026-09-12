@@ -1,0 +1,103 @@
+{
+  "generated_at_utc": "2026-09-12T14:25:38.105564+00:00",
+  "task": "P4-M01-N05-F",
+  "result": "SOURCE1_NATIVE_DIAGNOSTIC_PACKAGED",
+  "p4_m01": "INCOMPLETE",
+  "final_cf_material": false,
+  "deployed": false,
+  "frozen_addon_modified": false,
+  "vmt": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/materials/models/weapons/v_models/cf_bornbeast_native_diag/cf_bornbeast_native_diag.vmt",
+  "vtfs": {
+    "diffuse": {
+      "png": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/_png/diffuse.png",
+      "png_sha256": "e0161a2b2d539c9efaf2f262c30a848c635a31e6830a87fbbb14953eabd6eb85",
+      "vtf": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/materials/models/weapons/v_models/cf_bornbeast_native_diag/diffuse.vtf",
+      "vtf_sha256": "9ef395b18c64a48e23b41bbf690e2cda811d7bd60dc5146623b7de475f0db93d",
+      "format": "dxt1",
+      "png_size": [
+        1024,
+        1024
+      ],
+      "vtf_bytes": 699288
+    },
+    "normal": {
+      "png": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/_png/normal.png",
+      "png_sha256": "572fdad3379c2fada8811d3e88c4c0a0b1e61df317815d37c25170dddc217f51",
+      "vtf": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/materials/models/weapons/v_models/cf_bornbeast_native_diag/normal.vtf",
+      "vtf_sha256": "e325ef5684dbdd73bbf6d7d81087b4f5e3e0d1e660682b2be8e85990a36369bb",
+      "format": "dxt5",
+      "png_size": [
+        1024,
+        1024
+      ],
+      "vtf_bytes": 1398352
+    },
+    "specular": {
+      "png": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/_png/specular.png",
+      "png_sha256": "e7ffd56476c6b5ecf2d1dda345b2bef5debd9c49b0a2d16f82d90fb26a88b25a",
+      "vtf": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/materials/models/weapons/v_models/cf_bornbeast_native_diag/specular.vtf",
+      "vtf_sha256": "d3b2989467a89608b1e45749cb4f6c113b444103a26156a736a067bb4cc6fa3f",
+      "format": "dxt1",
+      "png_size": [
+        1024,
+        1024
+      ],
+      "vtf_bytes": 699288
+    },
+    "alpha": {
+      "png": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/_png/alpha.png",
+      "png_sha256": "dbece48bcf08bbc949cac810b38acecac1d1b35397e00335a383a2970ab15848",
+      "vtf": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/materials/models/weapons/v_models/cf_bornbeast_native_diag/alpha.vtf",
+      "vtf_sha256": "3ab8da06c207b8a4681961c501338277ee667ada7c1c0ea5ec1b66c295d1406b",
+      "format": "dxt1",
+      "png_size": [
+        1024,
+        1024
+      ],
+      "vtf_bytes": 699288
+    },
+    "cube_face0": {
+      "png": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/_png/cube_face0.png",
+      "png_sha256": "a3684197d1fba631f63afa791d1505e6e412fc1c505d3136bf264b8a25fe7118",
+      "vtf": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05f_source1_native_map/materials/models/weapons/v_models/cf_bornbeast_native_diag/cube_face0.vtf",
+      "vtf_sha256": "67420865052458ab1724834bc0bd6382e79107fdfaf186598e1e491e44e5231e",
+      "format": "dxt1",
+      "png_size": [
+        256,
+        256
+      ],
+      "vtf_bytes": 43928
+    }
+  },
+  "cf_cfg_recorded_not_copied": {
+    "Textures": {
+      "SpecularMapName2": "M4A1_S_BornBeast_S.tga",
+      "EnvCubeMapName2": "Black_Shader03.dds",
+      "NormalMapName2": "M4A1_S_BornBeast_N.tga",
+      "AlphaMapName2": "M4A1_S_BornBeast_alpha.tga"
+    },
+    "Techniques": {
+      "DiffuseMappingEnabled": "1",
+      "SpecularMappingEnabled": "1",
+      "EnvCubeMappingEnabled": "1",
+      "NormalMappingEnabled": "1"
+    },
+    "Properties": {
+      "LightBrightness": "0.01",
+      "EnvCubeMapBrightness": "4",
+      "SpecularPower": "1",
+      "DiffuseBoost": "0.1",
+      "AmbientLightColor": "0.01",
+      "RefractionIndex": "0.01",
+      "ReflectionIndex": "0.9",
+      "EnvCubeUsage": "2",
+      "CubeMapTransformY": "-20"
+    }
+  },
+  "notes": [
+    "Source 1 $phongexponent 16 is a diagnostic placeholder, not CFG SpecularPower=1.",
+    "cube_face0 is the first DDS face only, not a full cubemap object.",
+    "Alpha/specular VTFs are stored but not all wired into the VertexLitGeneric contract.",
+    "Do not deploy over p_cf_bornbeast_m4a4_p4_frozen_noop_01."
+  ]
+}
