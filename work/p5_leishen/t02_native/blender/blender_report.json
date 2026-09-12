@@ -1,0 +1,112 @@
+{
+  "schema": "cf2.p5.t02.blender-preview.v1",
+  "task": "P5-T02",
+  "result": "BLENDER_TRANSFORMERS_BASE_SHOWN",
+  "identity_status": "CANDIDATE_ONLY",
+  "final_cf_material": false,
+  "blender": "5.2.1 LTS",
+  "obj": "D:\\project\\cf_to_csgo\\data\\p5_t02_native\\obj\\base.obj",
+  "maps": {
+    "diffuse": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\atlases\\pv_dtx_PV-M4A1_S_TRANSFORMERS_PC_7ca69f66.png",
+    "normal": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\atlases\\normal_M4A1_S_TRANSFORMERS_N.png",
+    "specular": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\atlases\\specular_M4A1_S_TRANSFORMERS_S.png",
+    "alpha": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\atlases\\alpha_M4A1_S_TRANSFORMERS_ALPHA.png"
+  },
+  "blend": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\blender\\p5_t02_transformers_base.blend",
+  "preview": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\blender\\viewport.png",
+  "preview_gun": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\blender\\viewport_gun.png",
+  "viewport_shading": "RENDERED",
+  "exposure": 1.7999999523162842,
+  "mesh_objects": [
+    {
+      "name": "PV-M4A1_S_Transformers_Fview-arm2",
+      "vertices": 190,
+      "polygons": 274,
+      "kind": "hands"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_Fview-hand2",
+      "vertices": 1090,
+      "polygons": 1060,
+      "kind": "hands"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_Body",
+      "vertices": 2572,
+      "polygons": 3262,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_MAG",
+      "vertices": 40,
+      "polygons": 44,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_part01",
+      "vertices": 84,
+      "polygons": 118,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_part02",
+      "vertices": 84,
+      "polygons": 118,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_part03",
+      "vertices": 39,
+      "polygons": 50,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_part04",
+      "vertices": 75,
+      "polygons": 64,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_part05",
+      "vertices": 59,
+      "polygons": 64,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_Reload01",
+      "vertices": 60,
+      "polygons": 74,
+      "kind": "weapon"
+    },
+    {
+      "name": "PV-M4A1_S_Transformers_M4A1_transformers_Reload02",
+      "vertices": 77,
+      "polygons": 122,
+      "kind": "weapon"
+    }
+  ],
+  "bounds": {
+    "min": [
+      -12.043622016906738,
+      -20.111351013183594,
+      -3.6575615406036377
+    ],
+    "max": [
+      15.500511169433594,
+      0.9310296773910522,
+      27.428150177001953
+    ],
+    "center": [
+      1.7284445762634277,
+      -9.590160369873047,
+      11.885293960571289
+    ]
+  },
+  "notes": [
+    "Verified PV-M4A1_S_Transformers LTB OBJ (raw) + verified PV DTX (same bytes as _PC).",
+    "UV from CFRezManager OBJ (vt already 1-decoderV). Extra JSON V-flip is not applied.",
+    "Studio lights and exposure 1.8 are for looking; not CF lighting parity.",
+    "Normal G invert is Blender/DirectX display only.",
+    "Hands hidden. Not deployed."
+  ]
+}
