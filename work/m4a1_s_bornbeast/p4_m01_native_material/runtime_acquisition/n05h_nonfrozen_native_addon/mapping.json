@@ -1,0 +1,60 @@
+{
+  "generated_at_utc": "2026-09-12T14:46:36.020305+00:00",
+  "task": "P4-M01-N05-H",
+  "result": "NONFROZEN_NATIVE_DIAGNOSTIC_DEPLOYED",
+  "p4_m01": "INCOMPLETE",
+  "final_cf_material": false,
+  "frozen_addon_files_modified": false,
+  "addon_name": "p_cf_bornbeast_m4a4_n05h_native_diag",
+  "staging": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05h_nonfrozen_native_addon/addon",
+  "model_hashes": {
+    "v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
+    "v_rif_m4a1.dx80.vtx": "a0fd546b637ba9a0820e8ef2cc5f5a8e0c9493532c9a0148d171e9784f10050f",
+    "v_rif_m4a1.dx90.vtx": "74a726311f79bf029ac5c1db492f4f2408adcfe44fb3840e273722b73850cfee",
+    "v_rif_m4a1.mdl": "3e38d73283ca7162d76822357687cffededf35078cf91fd32400264e84f24111",
+    "v_rif_m4a1.sw.vtx": "bcaea069538db24fc39e2c83dacb84f1ac06c7235030f82144f7774e7ace7c9a",
+    "v_rif_m4a1.vvd": "64245b10798ab1d78998a037a6f3c79b42aa50dbed903c74d80498964c9e1b13"
+  },
+  "vtf_hashes": {
+    "rif_m4a1.vtf": "9ef395b18c64a48e23b41bbf690e2cda811d7bd60dc5146623b7de475f0db93d",
+    "rif_m4a1_normal.vtf": "e325ef5684dbdd73bbf6d7d81087b4f5e3e0d1e660682b2be8e85990a36369bb",
+    "rif_m4a1_specular.vtf": "d3b2989467a89608b1e45749cb4f6c113b444103a26156a736a067bb4cc6fa3f",
+    "rif_m4a1_alpha.vtf": "3ab8da06c207b8a4681961c501338277ee667ada7c1c0ea5ec1b66c295d1406b",
+    "rif_m4a1_cube.vtf": "67420865052458ab1724834bc0bd6382e79107fdfaf186598e1e491e44e5231e"
+  },
+  "vmt_sha256": "0c8772f3f84b32791c22ad64322f69a25869b40f32d17ebefb9bff903ff13705",
+  "staging_hashes": {
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt": "0c8772f3f84b32791c22ad64322f69a25869b40f32d17ebefb9bff903ff13705",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf": "9ef395b18c64a48e23b41bbf690e2cda811d7bd60dc5146623b7de475f0db93d",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_alpha.vtf": "3ab8da06c207b8a4681961c501338277ee667ada7c1c0ea5ec1b66c295d1406b",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_cube.vtf": "67420865052458ab1724834bc0bd6382e79107fdfaf186598e1e491e44e5231e",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_normal.vtf": "e325ef5684dbdd73bbf6d7d81087b4f5e3e0d1e660682b2be8e85990a36369bb",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_specular.vtf": "d3b2989467a89608b1e45749cb4f6c113b444103a26156a736a067bb4cc6fa3f",
+    "models/weapons/v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
+    "models/weapons/v_rif_m4a1.dx80.vtx": "a0fd546b637ba9a0820e8ef2cc5f5a8e0c9493532c9a0148d171e9784f10050f",
+    "models/weapons/v_rif_m4a1.dx90.vtx": "74a726311f79bf029ac5c1db492f4f2408adcfe44fb3840e273722b73850cfee",
+    "models/weapons/v_rif_m4a1.mdl": "3e38d73283ca7162d76822357687cffededf35078cf91fd32400264e84f24111",
+    "models/weapons/v_rif_m4a1.sw.vtx": "bcaea069538db24fc39e2c83dacb84f1ac06c7235030f82144f7774e7ace7c9a",
+    "models/weapons/v_rif_m4a1.vvd": "64245b10798ab1d78998a037a6f3c79b42aa50dbed903c74d80498964c9e1b13"
+  },
+  "park_frozen": {
+    "frozen_src": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_p4_frozen_noop_01",
+    "parked_dst": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\_parked_addons\\p_cf_bornbeast_m4a4_p4_frozen_noop_01",
+    "action": "moved_outside_addons",
+    "frozen_modified": false,
+    "note": "Frozen files were not edited; folder moved out of MIGI addons so N05-H can load."
+  },
+  "deploy": {
+    "target": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_n05h_native_diag",
+    "action": "created",
+    "file_count": 12
+  },
+  "restore_frozen": "move D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\_parked_addons\\p_cf_bornbeast_m4a4_p4_frozen_noop_01 back to D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_p4_frozen_noop_01 and remove D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_n05h_native_diag",
+  "notes": [
+    "P4 mesh bytes are unchanged; only the material files differ from frozen.",
+    "Prototype selfillum was not copied.",
+    "$phongexponent 16 remains a diagnostic placeholder, not CFG SpecularPower.",
+    "cube is first DDS face only.",
+    "Do not treat in-game look as P4-M01 PASS."
+  ]
+}
