@@ -1,0 +1,595 @@
+{
+  "nodes": [
+    {
+      "id": "pv_ltb",
+      "role": "pv_ltb",
+      "path": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "size": 152923,
+      "relation": "user_visual_match",
+      "source": "N05-C verified REZ + USER_VISUAL_MATCH_CONFIRMED",
+      "confidence": "OBSERVED",
+      "archive": "rez2/RF016.REZ",
+      "routing": "main_file",
+      "directory_md5": "7524a50ffd4a381479f647fdf04b6295",
+      "copy_count": 3,
+      "copies": [
+        {
+          "archive": "rez2/RF016.REZ",
+          "full_path": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+          "payload_hint_time": 0,
+          "size": 152923,
+          "bucket": "identity_core"
+        },
+        {
+          "archive": "rez4/RF016.REZ",
+          "full_path": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_PC.LTB",
+          "payload_hint_time": 0,
+          "size": 152923,
+          "bucket": "identity_alias"
+        },
+        {
+          "archive": "rez/RF016.REZ",
+          "full_path": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+          "payload_hint_time": 0,
+          "size": 152923,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core",
+      "expected_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "sha_match": true,
+      "display_fix": "LTB X scale -1 + reverse faces; user \u5bf9\u4e86"
+    },
+    {
+      "id": "pv_dtx",
+      "role": "pv_dtx",
+      "path": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+      "sha256": "7ca69f66d229a942752edd327fde145e45c2c00d65b570f5e5a6b6ac68d52555",
+      "size": 524452,
+      "relation": "user_visual_match + same_stem_or_same_bytes",
+      "source": "N05-C verified REZ + USER_VISUAL_MATCH_CONFIRMED",
+      "confidence": "OBSERVED",
+      "archive": "rez/rf017.rez",
+      "routing": "main_file",
+      "directory_md5": "baa25436eb34a5ac91412e9c099c8604",
+      "copy_count": 2,
+      "copies": [
+        {
+          "archive": "rez3/RF017.REZ",
+          "full_path": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_PC.DTX",
+          "payload_hint_time": 0,
+          "size": 524452,
+          "bucket": "identity_alias"
+        },
+        {
+          "archive": "rez/rf017.rez",
+          "full_path": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+          "payload_hint_time": 8,
+          "size": 524452,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core",
+      "expected_sha256": "7ca69f66d229a942752edd327fde145e45c2c00d65b570f5e5a6b6ac68d52555",
+      "sha_match": true,
+      "same_bytes_as": "PV-M4A1_S_Transformers_PC.DTX"
+    },
+    {
+      "id": "weapon_shader_cfg",
+      "role": "weapon_shader_cfg",
+      "path": "ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG",
+      "sha256": "75c6b29a369c7f0374b5f4910cb890c97d4fb02ad0d262c506fe181369113af3",
+      "size": 506,
+      "relation": "same_stem_filename_not_bute",
+      "source": "N05-C verified REZ CFG; Name2 is config reference, not a Bute field and not FXO technique proof",
+      "confidence": "STRONG_HYPOTHESIS",
+      "archive": "rez/rf017.rez",
+      "routing": "main_file",
+      "directory_md5": "4b38210d9a7aa3a7c7947f49c62ac00c",
+      "copy_count": 2,
+      "copies": [
+        {
+          "archive": "rez3/RF017.REZ",
+          "full_path": "ModelTextures/Shader/WeaponShader/M4A1_S_Transformers_PC.CFG",
+          "payload_hint_time": 0,
+          "size": 506,
+          "bucket": "identity_alias"
+        },
+        {
+          "archive": "rez/rf017.rez",
+          "full_path": "ModelTextures/Shader/WeaponShader/M4A1_S_Transformers.CFG",
+          "payload_hint_time": 9,
+          "size": 506,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core",
+      "cfg": {
+        "Textures": {
+          "SpecularMapName2": "M4A1_S_Transformers_S.tga",
+          "EnvCubeMapName2": "Black_Shader02.dds",
+          "NormalMapName2": "M4A1_S_Transformers_N.tga",
+          "AlphaMapName2": "M4A1_S_Transformers_alpha.tga"
+        },
+        "Techniques": {
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1"
+        },
+        "Properties": {
+          "LightBrightness": "0.1",
+          "EnvCubeMapBrightness": "2.5",
+          "SpecularPower": "1.5",
+          "DiffuseBoost": "0.3",
+          "AmbientLightColor": "0.03",
+          "RefractionIndex": "0.09",
+          "ReflectionIndex": "0.07",
+          "EnvCubeUsage": "2",
+          "CubeMapTransformY": "-220"
+        }
+      }
+    },
+    {
+      "id": "specular",
+      "role": "specular",
+      "path": "ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+      "sha256": "84694eb4f6df52e4781133f6843f545efaa04e2a88760078ae50c4b23b84084e",
+      "size": 3145772,
+      "relation": "cfg_name2",
+      "source": "CFG SpecularMapName2 + verified TGA",
+      "confidence": "STRONG_HYPOTHESIS",
+      "archive": "rez/rf017.rez",
+      "routing": "numbered_part",
+      "directory_md5": "06d52d37dd8a4a4df86ee354a39ea03b",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "full_path": "ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+          "payload_hint_time": 12,
+          "size": 3145772,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "normal",
+      "role": "normal",
+      "path": "ModelTextures/NormalMap/M4A1_S_Transformers_N.TGA",
+      "sha256": "882c4561f55e9d07163e3f7137b7097c209fcfbab50cbe4dc96f67ed42ba7f9d",
+      "size": 3145772,
+      "relation": "cfg_name2",
+      "source": "CFG NormalMapName2 + verified TGA",
+      "confidence": "STRONG_HYPOTHESIS",
+      "archive": "rez/rf017.rez",
+      "routing": "numbered_part",
+      "directory_md5": "a6d0e8645d3e0a5bad006d46dcb54c46",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "full_path": "ModelTextures/NormalMap/M4A1_S_Transformers_N.TGA",
+          "payload_hint_time": 6,
+          "size": 3145772,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "alpha",
+      "role": "alpha",
+      "path": "ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+      "sha256": "9b66c835a190797e722b50cf2cf98d64b17d5cccd141cbd7b092795c7ab9cb7e",
+      "size": 3145772,
+      "relation": "cfg_name2",
+      "source": "CFG AlphaMapName2 + verified TGA",
+      "confidence": "STRONG_HYPOTHESIS",
+      "archive": "rez/rf017.rez",
+      "routing": "numbered_part",
+      "directory_md5": "0fa5919e0910d0489616b57dcb620b77",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "full_path": "ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+          "payload_hint_time": 2,
+          "size": 3145772,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "env_cube",
+      "role": "env_cube",
+      "path": "ModelTextures/EnvCubeMap/Black_Shader02.DDS",
+      "sha256": "c64014afe4b358b857a45aa025b05af81a3e6273ad203426afba0535191e9c8f",
+      "size": 786560,
+      "relation": "cfg_name2_shared",
+      "source": "CFG EnvCubeMapName2 Black_Shader02.dds; shared cube, not unique to \u96f7\u795e",
+      "confidence": "STRONG_HYPOTHESIS",
+      "archive": "rez3/RF017.REZ",
+      "routing": "main_file",
+      "directory_md5": "5f7a4f253db70427a7fb793fa25d2068",
+      "copy_count": 4,
+      "copies": [
+        {
+          "archive": "rez3/RF017.REZ",
+          "full_path": "ModelTextures/EnvCubeMap/Black_Shader02.DDS",
+          "payload_hint_time": 0,
+          "size": 786560,
+          "bucket": "shared_cube"
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "full_path": "ModelTextures/EnvCubeMap/Black_Shader02.DDS",
+          "payload_hint_time": 0,
+          "size": 786560,
+          "bucket": "shared_cube"
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "full_path": "ModelTextures/EnvCubeMap/Black_Shader02.DDS",
+          "payload_hint_time": 0,
+          "size": 786560,
+          "bucket": "shared_cube"
+        },
+        {
+          "archive": "rez/rf017.rez",
+          "full_path": "ModelTextures/EnvCubeMap/Black_Shader02.DDS",
+          "payload_hint_time": 4,
+          "size": 786560,
+          "bucket": "shared_cube"
+        }
+      ],
+      "bucket": "shared_cube"
+    },
+    {
+      "id": "qv_ltb",
+      "role": "qv_ltb",
+      "path": "Models/WEAPONS/QV-M4A1_S_Transformers.LTB",
+      "sha256": "3e8479d64e751c1e0270c716e82f16030f6ceb4aaf187e344a15361f0d5ee0b2",
+      "size": 20186,
+      "relation": "packed_bute_ModelFileName",
+      "source": "Bute ModelFileName QV-M4A1_S_Transformers.ltb",
+      "confidence": "OBSERVED",
+      "archive": "rez2/RF016.REZ",
+      "routing": "main_file",
+      "directory_md5": "ee99b66c96fd4e6c9e5f77f79ee8e311",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez2/RF016.REZ",
+          "full_path": "Models/WEAPONS/QV-M4A1_S_Transformers.LTB",
+          "payload_hint_time": 0,
+          "size": 20186,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "qv_dtx",
+      "role": "qv_dtx",
+      "path": "ModelTextures/WEAPONS/QV-M4A1_S_Transformers.DTX",
+      "sha256": "f883496782dfa41f1118b633ca5809b334114d3d1b1356229ba0bc5960477504",
+      "size": 524452,
+      "relation": "packed_bute_SkinFileName",
+      "source": "Bute SkinFileName QV-M4A1_S_Transformers.dtx",
+      "confidence": "OBSERVED",
+      "archive": "rez2/RF017.REZ",
+      "routing": "main_file",
+      "directory_md5": "264926c44cc4b266bb38567711deffea",
+      "copy_count": 2,
+      "copies": [
+        {
+          "archive": "rez2/RF017.REZ",
+          "full_path": "ModelTextures/WEAPONS/QV-M4A1_S_Transformers.DTX",
+          "payload_hint_time": 0,
+          "size": 524452,
+          "bucket": "identity_core"
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "full_path": "ModelTextures/WEAPONS/QV-M4A1_S_Transformers_PC.DTX",
+          "payload_hint_time": 0,
+          "size": 524452,
+          "bucket": "identity_alias"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "qv_transformers_preview_ltb",
+      "role": "qv_ltb",
+      "path": "Models/WEAPONS/QV-M4A1_S_Transformers_Preview.LTB",
+      "sha256": "2dedbd7f3e7adc2b3482574e2321d9267ecdcbfad4b59afd7e024e64eba55c0c",
+      "size": 102812,
+      "relation": "same_stem_preview_filename_not_bute",
+      "source": "REZ has QV-M4A1_S_Transformers_Preview.LTB; canonical Bute PreViewModelFileName points at IronBeast_PreView instead",
+      "confidence": "HYPOTHESIS",
+      "archive": "rez2/RF016.REZ",
+      "routing": "main_file",
+      "directory_md5": "0a6a279cdfeda8ee9be4463eb0a6499b",
+      "copy_count": 2,
+      "copies": [
+        {
+          "archive": "rez2/RF016.REZ",
+          "full_path": "Models/WEAPONS/QV-M4A1_S_Transformers_Preview.LTB",
+          "payload_hint_time": 0,
+          "size": 102812,
+          "bucket": "related_variant"
+        },
+        {
+          "archive": "rez/RF016.REZ",
+          "full_path": "Models/WEAPONS/QV-M4A1_S_Transformers_Preview.LTB",
+          "payload_hint_time": 0,
+          "size": 102812,
+          "bucket": "related_variant"
+        }
+      ],
+      "bucket": "related_variant"
+    },
+    {
+      "id": "rs_ninjatranslucent",
+      "role": "other_ltb",
+      "path": "RS/NINJATRANSLUCENT.LTB",
+      "sha256": "85a8c47e4cfae2edf92e921f428dbe78adaac87ea295304dfd0860921f98187e",
+      "size": 111,
+      "relation": "packed_bute_RenderStyle",
+      "source": "Shared render style named by canonical Bute; also used by BornBeast",
+      "confidence": "OBSERVED",
+      "archive": "rez/rf002.rez",
+      "routing": "main_file",
+      "directory_md5": "a6fb0de9dad327990799dd0d89e3b5d9",
+      "copy_count": 2,
+      "copies": [
+        {
+          "archive": "rez/RF016.REZ",
+          "full_path": "Models/CHARACTER/NINJATRANSLUCENT.LTB",
+          "payload_hint_time": 0,
+          "size": 111,
+          "bucket": "unrelated"
+        },
+        {
+          "archive": "rez/rf002.rez",
+          "full_path": "RS/NINJATRANSLUCENT.LTB",
+          "payload_hint_time": 0,
+          "size": 111,
+          "bucket": "unrelated"
+        }
+      ],
+      "bucket": "unrelated"
+    },
+    {
+      "id": "rs_pvmodeldefault",
+      "role": "other_ltb",
+      "path": "RS/PVMODELDEFAULT.LTB",
+      "sha256": "7aac491cdd91df513c1b8ed58b0b4fc385039eaf026cc4a18e4a160e91d7f57e",
+      "size": 119,
+      "relation": "packed_bute_RenderStyle",
+      "source": "Shared render style named by canonical Bute; also used by BornBeast",
+      "confidence": "OBSERVED",
+      "archive": "rez/rf002.rez",
+      "routing": "main_file",
+      "directory_md5": "9b86a40416c4b63a68c6cb829cadfa34",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez/rf002.rez",
+          "full_path": "RS/PVMODELDEFAULT.LTB",
+          "payload_hint_time": 0,
+          "size": 119,
+          "bucket": "unrelated"
+        }
+      ],
+      "bucket": "unrelated"
+    },
+    {
+      "id": "ui_0",
+      "role": "ui_icon",
+      "path": "TEX/UI/WEAPONICON/WEAPON_SELECT_FD_M4A1_S_Transformers.DTX",
+      "sha256": "81aeed6e8388d73f63e34064389541ff4f04555c665a9bff920fb22723b6b0ae",
+      "size": 4651,
+      "relation": "ui_name_convention",
+      "source": "UI art; supports the Transformers name, not the first-person atlas",
+      "confidence": "HYPOTHESIS",
+      "archive": "rez4/RF019.REZ",
+      "routing": "main_file",
+      "directory_md5": "933a13335e46f57830440475451856da",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez4/RF019.REZ",
+          "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_FD_M4A1_S_Transformers.DTX",
+          "payload_hint_time": 0,
+          "size": 4651,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "ui_1",
+      "role": "ui_icon",
+      "path": "TEX/UI/WEAPONICON/WEAPON_SELECT_BB_M4A1_S_Transformers.DTX",
+      "sha256": "6e6400395d3ea3cc04592130838c077046bc715e903bd1f7b97703e82ac2b22e",
+      "size": 3870,
+      "relation": "ui_name_convention",
+      "source": "UI art; supports the Transformers name, not the first-person atlas",
+      "confidence": "HYPOTHESIS",
+      "archive": "rez4/RF019.REZ",
+      "routing": "main_file",
+      "directory_md5": "34f5c05a84cc68889bb0be4f0a2fb469",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez4/RF019.REZ",
+          "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_BB_M4A1_S_Transformers.DTX",
+          "payload_hint_time": 0,
+          "size": 3870,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "ui_2",
+      "role": "ui_icon",
+      "path": "TEX/UI/KILLMSG/SHOT_WEAPON_FD_M4A1_S_Transformers.DTX",
+      "sha256": "6d35c8af5e6c7fbaf4ed02d49473b0a32eec2755398ee4f8d18b1ec2a3e3c6c9",
+      "size": 236,
+      "relation": "ui_name_convention",
+      "source": "UI art; supports the Transformers name, not the first-person atlas",
+      "confidence": "HYPOTHESIS",
+      "archive": "rez4/RF019.REZ",
+      "routing": "main_file",
+      "directory_md5": "7388fab23f9dd8a316ad80784ccd34fd",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez4/RF019.REZ",
+          "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_FD_M4A1_S_Transformers.DTX",
+          "payload_hint_time": 0,
+          "size": 236,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "ui_3",
+      "role": "ui_icon",
+      "path": "TEX/UI/KILLMSG/SHOT_WEAPON_BB_M4A1_S_Transformers.DTX",
+      "sha256": "9b676f4750ce7ea3fb6925b07bcaf631120e365d2844611c15c8a9cb50e0c3a6",
+      "size": 204,
+      "relation": "ui_name_convention",
+      "source": "UI art; supports the Transformers name, not the first-person atlas",
+      "confidence": "HYPOTHESIS",
+      "archive": "rez4/RF019.REZ",
+      "routing": "main_file",
+      "directory_md5": "4bc67b69919969ab6d42014e7584450c",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez4/RF019.REZ",
+          "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_BB_M4A1_S_Transformers.DTX",
+          "payload_hint_time": 0,
+          "size": 204,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "ui_4",
+      "role": "ui_icon",
+      "path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_M4A1_S_Transformers.DTX",
+      "sha256": "380439a5d04867870c659e36d510064b86208700882c312951745519e521fb89",
+      "size": 24498,
+      "relation": "ui_name_convention",
+      "source": "UI art; supports the Transformers name, not the first-person atlas",
+      "confidence": "HYPOTHESIS",
+      "archive": "rez/rf019.rez",
+      "routing": "main_file",
+      "directory_md5": "83846872e4772748ddaeb59aa65fc3a0",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez/rf019.rez",
+          "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_M4A1_S_Transformers.DTX",
+          "payload_hint_time": 0,
+          "size": 24498,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    },
+    {
+      "id": "ui_5",
+      "role": "ui_icon",
+      "path": "TEX/UI/KILLMSG/SHOT_WEAPON_M4A1_S_Transformers.DTX",
+      "sha256": "ff988242a1ddd782305e67d96f3789ea21f6a71069d0b33af0dfe214954e57e1",
+      "size": 256,
+      "relation": "ui_name_convention",
+      "source": "UI art; supports the Transformers name, not the first-person atlas",
+      "confidence": "HYPOTHESIS",
+      "archive": "rez/rf019.rez",
+      "routing": "main_file",
+      "directory_md5": "0ad1e9922a4241f7cf640e80294a0708",
+      "copy_count": 1,
+      "copies": [
+        {
+          "archive": "rez/rf019.rez",
+          "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_M4A1_S_Transformers.DTX",
+          "payload_hint_time": 0,
+          "size": 256,
+          "bucket": "identity_core"
+        }
+      ],
+      "bucket": "identity_core"
+    }
+  ],
+  "edges": [
+    {
+      "from": "pv_ltb",
+      "to": "pv_dtx",
+      "relation": "packed_bute_PViewSkinFileName",
+      "confidence": "OBSERVED",
+      "note": "Bute PViewSkinFileName; LTB nNumTextures=0 so skin is not an embedded path"
+    },
+    {
+      "from": "pv_ltb",
+      "to": "weapon_shader_cfg",
+      "relation": "same_stem_filename_not_bute",
+      "confidence": "HYPOTHESIS",
+      "note": ""
+    },
+    {
+      "from": "weapon_shader_cfg",
+      "to": "specular",
+      "relation": "cfg_name2",
+      "confidence": "STRONG_HYPOTHESIS",
+      "note": "M4A1_S_Transformers_S.tga"
+    },
+    {
+      "from": "weapon_shader_cfg",
+      "to": "normal",
+      "relation": "cfg_name2",
+      "confidence": "STRONG_HYPOTHESIS",
+      "note": "M4A1_S_Transformers_N.tga"
+    },
+    {
+      "from": "weapon_shader_cfg",
+      "to": "alpha",
+      "relation": "cfg_name2",
+      "confidence": "STRONG_HYPOTHESIS",
+      "note": "M4A1_S_Transformers_alpha.tga"
+    },
+    {
+      "from": "weapon_shader_cfg",
+      "to": "env_cube",
+      "relation": "cfg_name2",
+      "confidence": "STRONG_HYPOTHESIS",
+      "note": "Black_Shader02.dds"
+    },
+    {
+      "from": "pv_ltb",
+      "to": "qv_ltb",
+      "relation": "packed_bute_ModelFileName",
+      "confidence": "OBSERVED",
+      "note": ""
+    },
+    {
+      "from": "qv_ltb",
+      "to": "qv_dtx",
+      "relation": "packed_bute_SkinFileName",
+      "confidence": "OBSERVED",
+      "note": ""
+    }
+  ]
+}

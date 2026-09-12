@@ -20,8 +20,10 @@
   "display_fix": {
     "issue": "raw LTB import has weapon left/right swapped vs 图鉴",
     "fix": "scale LTB X -1 and flip mesh normals",
-    "blender_preview": "work/p5_leishen/t02_native/blender/viewport_gun_mirrored.png"
+    "blender_preview": "work/p5_leishen/t02_native/blender/viewport_gun_mirrored.png",
+    "user_confirmation": "对了",
+    "confirmed_at": "2026-09-13"
   },
   "not_written": "IDENTITY_CONFIRMED",
-  "next": "P5-T03 resource graph; do not deploy; do not treat this as P4-M01 PASS"
+  "next": "P5-T03 resource graph recorded; P5-T04 identity review; do not deploy; do not treat this as P4-M01 PASS"
 }

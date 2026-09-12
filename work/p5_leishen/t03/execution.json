@@ -1,0 +1,17 @@
+{
+  "schema": "cf2.p5.t03.execution.v1",
+  "task_id": "P5-T03",
+  "started_at": "2026-09-12T17:32:00.446+00:00",
+  "completed_at": "2026-09-12T17:33:01.888+00:00",
+  "result": "RESOURCE_GRAPH_RECORDED",
+  "identity_confirmed": false,
+  "p4_m01": "INCOMPLETE",
+  "next_action": "P5-T04 identity review from this graph; do not deploy",
+  "prohibited": [
+    "IDENTITY_CONFIRMED",
+    "deploy / overwrite N05-J or frozen",
+    "BornBeast as \u96f7\u795e",
+    "filename Transformers as identity",
+    "related_variant as identity-core"
+  ]
+}

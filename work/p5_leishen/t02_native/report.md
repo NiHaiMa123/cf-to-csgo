@@ -63,7 +63,7 @@ User 2026-09-13: `mesh_base_Transformers` looks like it, but too dark to confirm
 
 **USER_VISUAL_MATCH_CONFIRMED** — user: 「是雷神」. Local candidate is base `PV-M4A1_S_Transformers` (DTX same bytes as `_PC`). Not `IDENTITY_CONFIRMED`.
 
-User also: raw import is left/right swapped. Fix: LTB X scale −1 and flip normals. Live Blender already mirrored; preview [`blender/viewport_gun_mirrored.png`](blender/viewport_gun_mirrored.png).
+User also: raw import is left/right swapped. Fix: LTB X scale −1 and flip normals. Live Blender already mirrored; preview [`blender/viewport_gun_mirrored.png`](blender/viewport_gun_mirrored.png). User 2026-09-13: 「对了」.
 
 N05-J diagnostic addon and the parked P4 frozen addon were not touched. P4-M01 remains INCOMPLETE.
 
