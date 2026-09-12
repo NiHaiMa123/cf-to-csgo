@@ -1,0 +1,471 @@
+{
+  "task": "P4-M01-N03-D",
+  "status": "PIECE_TEXTURE_INDEX_STRUCTURAL",
+  "confidence": "HIGH",
+  "reference": "jsj2008/lithtech/runtime/model/src/model_load.cpp ModelPiece::Load + ltb.h LTB_Header + modelallocations.cpp",
+  "pv": {
+    "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "archive": "rez/RF016.REZ",
+    "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+    "size": 166113,
+    "data_offset": 153345752,
+    "raw_magic": "5d000000",
+    "decompressed_size": 725544,
+    "analysis": {
+      "header": {
+        "file_type": 1,
+        "file_type_name": "LTB_D3D_MODEL_FILE",
+        "ltb_header_version": 9,
+        "model_file_version": 25,
+        "allocs": {
+          "nKeyFrames": 320,
+          "nParentAnims": 8,
+          "nNodes": 57,
+          "nPieces": 11,
+          "nChildModels": 1,
+          "nTris": 5342,
+          "nVerts": 3116,
+          "nVertexWeights": 3526,
+          "nLODs": 11,
+          "nSockets": 5,
+          "nWeightSets": 1,
+          "nStrings": 88,
+          "StringLengths": 1339,
+          "VertAnimDataSize": 0,
+          "nAnimData": 510720
+        },
+        "stream_after_allocs": 84,
+        "header_layout": "aligned_20B_fileType@0_uint16_version@2_fileVersion@20"
+      },
+      "pre_piece": {
+        "command_string": "",
+        "vis_radius": 96.0,
+        "num_obb": 0,
+        "nPieces": 11,
+        "first_piece_offset": 98
+      },
+      "jupiter_header_match": true,
+      "best_layout": {
+        "layout": "jupiter_fixed4",
+        "skip_unused": false,
+        "pieces_parsed": 11,
+        "score": 99
+      },
+      "trials": [
+        {
+          "layout": "jupiter_fixed4",
+          "skip_unused": false,
+          "pieces_parsed": 11,
+          "score": 99
+        },
+        {
+          "layout": "counted",
+          "skip_unused": true,
+          "pieces_parsed": 11,
+          "score": 99
+        },
+        {
+          "layout": "counted",
+          "skip_unused": false,
+          "pieces_parsed": 11,
+          "score": 99
+        },
+        {
+          "layout": "jupiter_fixed4",
+          "skip_unused": true,
+          "pieces_parsed": 11,
+          "score": 55
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "name": "Fview-hand2",
+          "offset": 98,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                0,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 55083
+        },
+        {
+          "index": 1,
+          "name": "Fview-arm2",
+          "offset": 55083,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                1,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 64479
+        },
+        {
+          "index": 2,
+          "name": "M4A1S_BornBeast",
+          "offset": 64479,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 183393
+        },
+        {
+          "index": 3,
+          "name": "M4A1S_BornBeast04",
+          "offset": 183393,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 185283
+        },
+        {
+          "index": 4,
+          "name": "M4A1S_BornBeast02",
+          "offset": 185283,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 190371
+        },
+        {
+          "index": 5,
+          "name": "M4A1S_BornBeast03",
+          "offset": 190371,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 196861
+        },
+        {
+          "index": 6,
+          "name": "M4A1S_BornBeast07",
+          "offset": 196861,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 198751
+        },
+        {
+          "index": 7,
+          "name": "M4A1S_BornBeast08",
+          "offset": 198751,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 200641
+        },
+        {
+          "index": 8,
+          "name": "M4A1S_BornBeast05",
+          "offset": 200641,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 202531
+        },
+        {
+          "index": 9,
+          "name": "M4A1S_BornBeast06",
+          "offset": 202531,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 204421
+        },
+        {
+          "index": 10,
+          "name": "M4A1S_BornBeast01",
+          "offset": 204421,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                2,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 206407
+        }
+      ],
+      "status": "PIECE_TEXTURE_INDEX_STRUCTURAL",
+      "confidence": "HIGH",
+      "delta_notes": []
+    }
+  },
+  "qv": {
+    "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+    "archive": "rez2/RF016.REZ",
+    "full_path": "WEAPONS/QV-M4A1_S_BornBeast.LTB",
+    "size": 17271,
+    "data_offset": 322006065,
+    "raw_magic": "5d000000",
+    "decompressed_size": 46830,
+    "analysis": {
+      "header": {
+        "file_type": 1,
+        "file_type_name": "LTB_D3D_MODEL_FILE",
+        "ltb_header_version": 9,
+        "model_file_version": 25,
+        "allocs": {
+          "nKeyFrames": 1,
+          "nParentAnims": 1,
+          "nNodes": 2,
+          "nPieces": 1,
+          "nChildModels": 1,
+          "nTris": 702,
+          "nVerts": 436,
+          "nVertexWeights": 436,
+          "nLODs": 1,
+          "nSockets": 2,
+          "nWeightSets": 0,
+          "nStrings": 5,
+          "StringLengths": 49,
+          "VertAnimDataSize": 0,
+          "nAnimData": 28
+        },
+        "stream_after_allocs": 84,
+        "header_layout": "aligned_20B_fileType@0_uint16_version@2_fileVersion@20"
+      },
+      "pre_piece": {
+        "command_string": "",
+        "vis_radius": 96.0,
+        "num_obb": 0,
+        "nPieces": 1,
+        "first_piece_offset": 98
+      },
+      "jupiter_header_match": true,
+      "best_layout": {
+        "layout": "jupiter_fixed4",
+        "skip_unused": false,
+        "pieces_parsed": 1,
+        "score": 9
+      },
+      "trials": [
+        {
+          "layout": "jupiter_fixed4",
+          "skip_unused": false,
+          "pieces_parsed": 1,
+          "score": 9
+        },
+        {
+          "layout": "counted",
+          "skip_unused": true,
+          "pieces_parsed": 1,
+          "score": 9
+        },
+        {
+          "layout": "counted",
+          "skip_unused": false,
+          "pieces_parsed": 1,
+          "score": 9
+        },
+        {
+          "layout": "jupiter_fixed4",
+          "skip_unused": true,
+          "pieces_parsed": 1,
+          "score": 5
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "name": "QV-M4A1_S_BornBeast",
+          "offset": 98,
+          "nLODs": 1,
+          "lod_dists": [
+            0.0
+          ],
+          "unused_minmax": [],
+          "lods": [
+            {
+              "nNumTextures": 0,
+              "iTextures": [
+                0,
+                1,
+                0,
+                1
+              ],
+              "iRenderStyle": 2,
+              "nRenderPriority": 3,
+              "render_object_type": 0
+            }
+          ],
+          "next_piece_offset": 46485
+        }
+      ],
+      "status": "PIECE_TEXTURE_INDEX_STRUCTURAL",
+      "confidence": "HIGH",
+      "delta_notes": []
+    }
+  },
+  "elapsed_seconds": 0.37,
+  "generated_at": "2026-09-12T06:24:42.536004+00:00",
+  "script": "scripts\\material_recovery\\n03d_ltb_piece_index.py"
+}

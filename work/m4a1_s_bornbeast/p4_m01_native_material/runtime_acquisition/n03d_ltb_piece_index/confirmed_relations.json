@@ -1,0 +1,27 @@
+{
+  "task": "P4-M01-N03-D",
+  "status": "PIECE_TEXTURE_INDEX_STRUCTURAL",
+  "confidence": "HIGH",
+  "relations": [
+    {
+      "relation": "CF PV LTB decompressed body starts with Jupiter D3D LTB_Header fileType=1 version=9",
+      "grade": "STRUCTURALLY_VERIFIED"
+    },
+    {
+      "relation": "alloc.nPieces == stream nPieces",
+      "grade": "STRUCTURALLY_VERIFIED",
+      "nPieces": 11
+    },
+    {
+      "relation": "texture indices are slots, not paths",
+      "grade": "SCOPED_NEGATIVE"
+    }
+  ],
+  "remaining_blockers": [
+    "index -> DTX/TGA path OPEN_UNRESOLVED",
+    "CFG/render semantic closure OPEN_UNRESOLVED",
+    "P4-M01 native material closure INCOMPLETE"
+  ],
+  "generated_at": "2026-09-12T06:24:42.536734+00:00",
+  "script": "scripts\\material_recovery\\n03d_ltb_piece_index.py"
+}
