@@ -456,7 +456,9 @@ internal static class LithTechObjExportCommand
         try
         {
             return Directory.EnumerateFiles(folder)
-                .Where(file => string.Equals(Path.GetExtension(file), ".rez", StringComparison.OrdinalIgnoreCase))
+                .Where(file =>
+                    string.Equals(Path.GetExtension(file), ".rez", StringComparison.OrdinalIgnoreCase) &&
+                    !RezVerifiedPayloadReader.IsNumberedPartFile(file))
                 .ToList();
         }
         catch

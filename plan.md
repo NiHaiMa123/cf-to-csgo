@@ -12,10 +12,10 @@ Date captured                 : 2026-09-12
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
-Current executor task         : NONE
-Last completed task           : P4-M01-N05-C (verified reader integration)
-Last accepted evidence commit : e0b92c21cdbc9f07e45022deeb90543e7630862d
-State                         : WAITING_REVIEW / VERIFIED_READER_INTEGRATED
+Current executor task         : P4-M01-N05-E
+Last completed task           : P4-M01-N05-D (PV LTB/UV diagnostic + named cube)
+Last accepted evidence commit : PENDING_N05D
+State                         : ACTIVE / FXO_OFFLINE_SEMANTICS
 ```
 
 ## 0.1 已钉死
@@ -24,7 +24,8 @@ State                         : WAITING_REVIEW / VERIFIED_READER_INTEGRATED
 - 黑骑士 Bute 只绑 PV LTB + PV DTX + 共用 RS（TEXTURE1）。TGA/CFG 路径在 packed BF005 上是 0。
 - **已恢复 BornBeast PV 原生枪身 atlas**：`rez/rf017_8.rez`，标准 -5 / DXT1 / 1024×1024；目录 MD5 匹配，Python 与现有 CFRezManager 图像 decoder 的 RGBA 像素完全一致。根因是旧工具按主索引文件读取 payload，未路由到编号分包，详见 §4.27。
 - 本轮 9/9 材质目标通过目录 MD5。Normal / Specular / Alpha 是无需修复的标准 TGA；WeaponShader CFG 是含贴图名和参数的明文。此前“无头 DTX / 三字节 CFG / TGA 插入修复”不能代表这些正确资源。
-- 512×512 是历史外部参考的尺寸，不是 UV 必须使用的贴图尺寸；仍需把正确 PV LTB / UV 与新恢复的 atlas 做绑定验证。CS1.6 / ComfyUI 禁止当 P4-M01 final 像素。
+- 512×512 是历史外部参考的尺寸，不是 UV 必须使用的贴图尺寸。N05-D：verified PV LTB 11 piece / 5342 tri，UV 全在 0–1；武器 piece 的 UV 岛落在 verified 1024 PV DTX 的枪身/弹匣/序列号 `M4A1SSQ00083` 区域。手和枪共用这一张 PV atlas。CS1.6 / ComfyUI 禁止当 P4-M01 final 像素。
+- 命名 cube `ModelTextures/EnvCubeMap/Black_Shader03.DDS` 已从 `rez3/RF017.REZ` 等 6 份相同副本恢复（SHA256 `c4954419d59bea55b0f592957eab92fa623583d28158cbf84e95bacd233c4e92`，393344 字节）。首面预览近黑，与名称及 CFG `EnvCubeMapBrightness=4` 相容；不是 runtime 公式证明。
 - `playerviewmesh.fxo` 有 Alpha/Normal/Specular/Emissive **槽名**，没有文件路径。
 - CShell 有 `modeltextures\SpecularMap\%s`（12 LEA，后期 `.dtx` 路线）。黑骑士 Bute 没有 `SpecularMapName`；这与新恢复 CFG 中的 `SpecularMapName2` 是不同来源。
 - `crossfire.exe` 明文岛：`MODELTEXTURES\Shader\WeaponShader\` + `.cfg`，**0 代码引用**。它是 stub，只导入 packed `crossfirebase.dll`（`.tvm0`）。
@@ -34,23 +35,23 @@ State                         : WAITING_REVIEW / VERIFIED_READER_INTEGRATED
 ## 0.2 当前任务
 
 ```text
-Task ID : NONE
-State   : WAITING_REVIEW
-Goal    : N05-C 已完成；等 Review 后再开绑定 / cube / FXO
-Last    : P4-M01-N05-C
-Result  : VERIFIED_READER_INTEGRATED
+Task ID : P4-M01-N05-E
+State   : ACTIVE
+Goal    : 离线解析 playerviewmesh.fxo，关联已恢复 CFG 字段与 effect 参数/technique
+Last    : P4-M01-N05-D
+Result  : MESH_UV_AND_CUBE_RECOVERED_BINDING_OPEN
 ```
 
-N05-C 已把 MD5 验证的编号分包读取接入正式入口。4 条官方路径对 N05-B 的 9 个 logical path 得到同一 SHA256：`extract_all.py`、CFRezManager `--extract-file`、`--read-hash`、N05-A 使用的 `read_payload_bytes(..., entry=)`。PV 为 1024×1024；CFG 有 Textures / Techniques / Properties；TGA 直接解析、无插入头修复。合成分包测试覆盖主文件范围内的错误字节、主文件外的合法分包、缺失/截断/错哈希、双候选、timestamp 单文件、深层路径与同名 basename。目录缓存冷/热一致；改分包后面缩略图 key 变化。未调用 N05-B 辅助脚本充当“正式入口已修好”的证明。P4-M01 仍为 INCOMPLETE。
+N05-D 已用正式入口重读 PV LTB（SHA 与 N03-A 几何一致，主文件路由）、把 11 个 piece 的 UV 叠到 verified 1024 PV DTX，并恢复 `Black_Shader03.DDS`。LTB 仍是 `nNumTextures=0`；Bute 的 `PViewSkinFileName` 仍是 PV DTX 的路径证据。QV 256/1024 副本保留，未贴到 PV 网格。P4-M01 仍为 INCOMPLETE。
 
-证据：
+本轮只做 FXO 离线语义：自建 D3D9 device 载入 `playerviewmesh.fxo`，枚举 parameter/technique/pass，对照 CFG 的 mapping 开关和 Normal/Specular/Alpha/Cube 槽。失败记 HRESULT/缺依赖。不附加 CF 进程，不注入，不把默认值当成黑骑士运行时选择。
 
-- `scripts/material_recovery/rez_verified_payload.py`
-- `scripts/material_recovery/n05c_verified_reader_integration.py`
-- `CFRezManager/Archives/RezVerifiedPayload.cs`
-- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/{report.md,integration.json}`
+证据（N05-D）：
 
-Executor STOP。Review 后再安排正确 PV 几何/UV 与材质绑定、`Black_Shader03.dds` 解析、CFG/FXO 语义和 Source 1 映射。N04-F 进程读取路线继续暂停。
+- `scripts/material_recovery/n05d_binding_uv_cube.py`
+- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05d_binding_uv_cube/{report.md,binding.json,pv_weapon_uv_on_verified_dtx.png}`
+
+N04-F 进程读取路线继续暂停。
 
 ## 0.3 禁止
 
@@ -61,14 +62,14 @@ Executor STOP。Review 后再安排正确 PV 几何/UV 与材质绑定、`Black_
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：①正确字节/codec 已在 9 个指定资源上闭合，根因是分包读取；N05-C 已使正式入口稳定复现。②资源到 mesh/piece/sampler 的绑定、③渲染语义仍待验证。N04-F 只堵住 packed consumer 的进程读取，不能作为离线恢复的前置条件。公开源码提供了格式与解码参照，**本轮分包规则依据本机 9/9 目录 MD5 实证，不是从社区工具名称推断**。
+**更新判断**：①正确字节/codec 已在 9 个指定资源上闭合；N05-C 正式入口已接入。②N05-D 已把 PV LTB UV 对到 verified atlas 并恢复命名 cube；piece→sampler 仍开放。③渲染语义（FXO）是当前 ACTIVE。N04-F 继续暂停。
 
-以下按新证据重排；§0.2 现为 WAITING_REVIEW，N05-C 已完成，后续是规划候选。
+以下按新证据重排；§0.2 的 N05-E 为 ACTIVE。N05-C/N05-D 已完成。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
 | 1 / A：正确来源接入 | N05-C 已完成：正式入口 9/9 SHA256 与 N05-B 一致 | 已交付 `VERIFIED_READER_INTEGRATED`；旧 `data/rf017` 仍弃用 | 不覆盖旧 data，不按主文件范围丢弃合法分包 entry，不用无 MD5 的猜测作为成功 |
-| 2 / C：正确输入的绑定与副本差分 | 原生 PV 已可解；主索引 QV 256 与 rez2 QV 1024 都有效，CFG 有明确贴图名 | 正确读取 PV LTB/RS/Bute，核对 UV/mesh/piece、恢复命名 cube；生成有来源的 native-only 诊断预览 | 归一化 UV 允许不同分辨率，布局与绑定仍须验证；当前加载优先级未知就保留多副本 |
+| 2 / C：正确输入的绑定与副本差分 | N05-D 完成：PV LTB UV 落在 verified 1024 atlas；cube 已恢复 | 已交付 `MESH_UV_AND_CUBE_RECOVERED_BINDING_OPEN`；piece→sampler 仍开放 | 归一化 UV 允许不同分辨率；QV 副本保留，不贴到 PV |
 | 3 / B：FXO 离线语义分析 | CFG 已有 mapping 开关、亮度/反射参数；D3D9 effect API 可枚举并反汇编 | 后续任务：自建 D3D9 device 载入 effect，关联 CFG 字段与 parameter/technique/pass/default、采样通道和公式；先验证已恢复的 Normal/Specular/Alpha/Cube | `Name2` 后缀、默认值、CFG 存在均不等于黑骑士运行时选择；失败记 HRESULT/依赖，不附加 CF |
 | 4 / D：可合法取得的兼容旧版本作参考 | Jupiter / CF 工具可解释标准路径，较早版本或不同地区 variant 可能暴露更少的格式差异 | 只有已获得可信版本与相关资源后，做旧/新 loader 或资源格式差分，提炼规则回验当前本机样本 | 尚无这样的新输入，不承诺能取得；旧版本行为/像素不自动成为当前 CF final，也不采用私服/脱壳工具包补缺口 |
 | 产品备选 / E：可用外观版本 | P4 已具备构建/部署能力，CS1.6 atlas 可作已有视觉演示 | 用户选择此交付目标后单独生成可看版本，`final_cf_material=false` | 不计为 native PASS，不借此跳过 P5 身份 Gate；此次仅规划，不部署 |

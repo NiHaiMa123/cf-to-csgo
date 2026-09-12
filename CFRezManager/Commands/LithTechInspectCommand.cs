@@ -402,6 +402,7 @@ internal static class LithTechInspectCommand
             triangle_count = mesh.TriangleIndices.Count / 3,
             uv_count = mesh.TextureCoordinates?.Count ?? 0,
             has_uv = mesh.HasTextureCoordinates,
+            uv = SummarizeUv(mesh.TextureCoordinates),
             normal_count = mesh.Normals?.Count ?? 0,
             has_normals = mesh.HasNormals,
             normal_length = Summarize(normalLengths),
@@ -415,6 +416,28 @@ internal static class LithTechInspectCommand
                 min = new[] { bounds.Min.X, bounds.Min.Y, bounds.Min.Z },
                 max = new[] { bounds.Max.X, bounds.Max.Y, bounds.Max.Z }
             }
+        };
+    }
+
+    private static object? SummarizeUv(IReadOnlyList<LithTechVector2>? values)
+    {
+        if (values is null || values.Count == 0)
+        {
+            return null;
+        }
+
+        double minU = values.Min(value => value.X);
+        double minV = values.Min(value => value.Y);
+        double maxU = values.Max(value => value.X);
+        double maxV = values.Max(value => value.Y);
+        int outside = values.Count(value =>
+            value.X < -0.001 || value.X > 1.001 || value.Y < -0.001 || value.Y > 1.001);
+        return new
+        {
+            min = new[] { minU, minV },
+            max = new[] { maxU, maxV },
+            outside_unit_square = outside,
+            count = values.Count
         };
     }
 

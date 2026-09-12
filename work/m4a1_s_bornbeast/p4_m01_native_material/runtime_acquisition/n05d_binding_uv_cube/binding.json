@@ -1,0 +1,915 @@
+{
+  "generated_at_utc": "2026-09-12T14:14:22.295346+00:00",
+  "task": "P4-M01-N05-D",
+  "result": "MESH_UV_AND_CUBE_RECOVERED_BINDING_OPEN",
+  "p4_m01": "INCOMPLETE",
+  "index_count": 464,
+  "verified_copies": {
+    "pv_ltb": [
+      {
+        "logical_path": "Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "legacy_time_field": 0,
+        "offset": 219767828,
+        "size": 166113,
+        "directory_md5": "dd6fedda6821f4a24219d24389d7a4ee",
+        "sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+        "routing": "main_file",
+        "id": "pv_ltb",
+        "index": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "copy_count": 3,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+            "routing": "main_file",
+            "size": 166113
+          },
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+            "routing": "main_file",
+            "size": 166113
+          },
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+            "routing": "main_file",
+            "size": 166113
+          }
+        ]
+      }
+    ],
+    "qv_ltb": [
+      {
+        "logical_path": "Models/WEAPONS/QV-M4A1_S_BornBeast.LTB",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "legacy_time_field": 0,
+        "offset": 322006065,
+        "size": 17271,
+        "directory_md5": "aaa409cce5268ebb9af8f319a259ddb2",
+        "sha256": "96e2320009bd125730defca37fabecbd015f73fee6090eb7ae019ade2cc3504c",
+        "routing": "main_file",
+        "id": "qv_ltb",
+        "index": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "copy_count": 2,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+            "routing": "main_file",
+            "size": 17271
+          },
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF016.REZ",
+            "routing": "main_file",
+            "size": 17271
+          }
+        ]
+      },
+      {
+        "logical_path": "Models/WEAPONS/QV-M4A1_S_BornBeast.LTB",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "legacy_time_field": 0,
+        "offset": 248206451,
+        "size": 17269,
+        "directory_md5": "04ba1890560e10756d7bee8bd5dfbea9",
+        "sha256": "2b087cf1ab9df90f74499c856ee5647755775afa759d8edbcb14c0adf0468e18",
+        "routing": "main_file",
+        "id": "qv_ltb",
+        "index": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+            "routing": "main_file",
+            "size": 17269
+          }
+        ]
+      }
+    ],
+    "pv_dtx": [
+      {
+        "logical_path": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+        "legacy_time_field": 8,
+        "offset": 186436476,
+        "size": 524452,
+        "directory_md5": "c242a039731cf13cf9570bc2a56dc77f",
+        "sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+        "routing": "numbered_part",
+        "id": "pv_dtx",
+        "index": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+            "routing": "numbered_part",
+            "size": 524452
+          }
+        ]
+      }
+    ],
+    "qv_dtx": [
+      {
+        "logical_path": "ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+        "legacy_time_field": 0,
+        "offset": 1921820246,
+        "size": 524452,
+        "directory_md5": "7956bf40c5f8a1cde4c4e748edbef45e",
+        "sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+        "routing": "main_file",
+        "id": "qv_dtx",
+        "index": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+            "routing": "main_file",
+            "size": 524452
+          }
+        ]
+      },
+      {
+        "logical_path": "ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+        "legacy_time_field": 13,
+        "offset": 98902480,
+        "size": 32932,
+        "directory_md5": "9ce24f1c0d1478284c1a37c669ff1a31",
+        "sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+        "routing": "numbered_part",
+        "id": "qv_dtx",
+        "index": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+            "routing": "numbered_part",
+            "size": 32932
+          }
+        ]
+      }
+    ],
+    "rs_ninja": [
+      {
+        "logical_path": "RS/NINJATRANSLUCENT.LTB",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+        "legacy_time_field": 0,
+        "offset": 8960,
+        "size": 111,
+        "directory_md5": "a6fb0de9dad327990799dd0d89e3b5d9",
+        "sha256": "85a8c47e4cfae2edf92e921f428dbe78adaac87ea295304dfd0860921f98187e",
+        "routing": "main_file",
+        "id": "rs_ninja",
+        "index": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+            "routing": "main_file",
+            "size": 111
+          }
+        ]
+      }
+    ],
+    "rs_pvdefault": [
+      {
+        "logical_path": "RS/PVMODELDEFAULT.LTB",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+        "legacy_time_field": 0,
+        "offset": 9893,
+        "size": 119,
+        "directory_md5": "9b86a40416c4b63a68c6cb829cadfa34",
+        "sha256": "7aac491cdd91df513c1b8ed58b0b4fc385039eaf026cc4a18e4a160e91d7f57e",
+        "routing": "main_file",
+        "id": "rs_pvdefault",
+        "index": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf002.rez",
+            "routing": "main_file",
+            "size": 119
+          }
+        ]
+      }
+    ]
+  },
+  "pv_dtx": {
+    "sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+    "decode": {
+      "ok": true,
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05d_binding_uv_cube/bornbeast_pv_dtx.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    }
+  },
+  "pv_ltb": {
+    "payload_sha256": "5dbcee45c4565b2026a4e4d2d639a4b7022b4f4fc1c5ef69bc8f49fd5a6c54f7",
+    "lzma": true,
+    "decompressed_bytes": 725544,
+    "mesh_count": 11,
+    "vertex_count": 4926,
+    "triangle_count": 5342,
+    "meshes": [
+      {
+        "name": "Fview-hand2",
+        "kind": "hands",
+        "vertex_count": 1090,
+        "triangle_count": 1060,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.0062060002237558365,
+            0.030285000801086426
+          ],
+          "max": [
+            0.9882810115814209,
+            0.9682360291481018
+          ],
+          "outside_unit_square": 0,
+          "count": 1090
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "Fview-arm2",
+        "kind": "hands",
+        "vertex_count": 190,
+        "triangle_count": 274,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.012914000079035759,
+            0.021904999390244484
+          ],
+          "max": [
+            0.9819380044937134,
+            0.9932379722595215
+          ],
+          "outside_unit_square": 0,
+          "count": 190
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast",
+        "kind": "weapon",
+        "vertex_count": 3074,
+        "triangle_count": 3407,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.0008520000264979899,
+            0.0005549999768845737
+          ],
+          "max": [
+            0.9976680278778076,
+            0.9984949827194214
+          ],
+          "outside_unit_square": 0,
+          "count": 3074
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast04",
+        "kind": "weapon",
+        "vertex_count": 46,
+        "triangle_count": 52,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.10027699917554855,
+            0.3777559995651245
+          ],
+          "max": [
+            0.2567810118198395,
+            0.4637550115585327
+          ],
+          "outside_unit_square": 0,
+          "count": 46
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast02",
+        "kind": "weapon",
+        "vertex_count": 133,
+        "triangle_count": 121,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.6055120229721069,
+            0.5599499940872192
+          ],
+          "max": [
+            0.8857889771461487,
+            0.7710549831390381
+          ],
+          "outside_unit_square": 0,
+          "count": 133
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast03",
+        "kind": "weapon",
+        "vertex_count": 165,
+        "triangle_count": 184,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.3908030092716217,
+            0.20037099719047546
+          ],
+          "max": [
+            0.9007319808006287,
+            0.6981040239334106
+          ],
+          "outside_unit_square": 0,
+          "count": 165
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast07",
+        "kind": "weapon",
+        "vertex_count": 46,
+        "triangle_count": 52,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.18139199912548065,
+            0.37752801179885864
+          ],
+          "max": [
+            0.267753005027771,
+            0.4644159972667694
+          ],
+          "outside_unit_square": 0,
+          "count": 46
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast08",
+        "kind": "weapon",
+        "vertex_count": 46,
+        "triangle_count": 52,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.2089339941740036,
+            0.37784498929977417
+          ],
+          "max": [
+            0.2785309851169586,
+            0.4643990099430084
+          ],
+          "outside_unit_square": 0,
+          "count": 46
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast05",
+        "kind": "weapon",
+        "vertex_count": 46,
+        "triangle_count": 52,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.12800100445747375,
+            0.3774479925632477
+          ],
+          "max": [
+            0.2690039873123169,
+            0.4642319977283478
+          ],
+          "outside_unit_square": 0,
+          "count": 46
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast06",
+        "kind": "weapon",
+        "vertex_count": 46,
+        "triangle_count": 52,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.15448999404907227,
+            0.3778490126132965
+          ],
+          "max": [
+            0.2559889853000641,
+            0.4646250009536743
+          ],
+          "outside_unit_square": 0,
+          "count": 46
+        },
+        "texture_path": null,
+        "material_hints": []
+      },
+      {
+        "name": "M4A1S_BornBeast01",
+        "kind": "weapon",
+        "vertex_count": 44,
+        "triangle_count": 36,
+        "has_uv": true,
+        "uv": {
+          "min": [
+            0.8548640012741089,
+            0.7060940265655518
+          ],
+          "max": [
+            0.9962400197982788,
+            0.9959329962730408
+          ],
+          "outside_unit_square": 0,
+          "count": 44
+        },
+        "texture_path": null,
+        "material_hints": []
+      }
+    ]
+  },
+  "cube": [
+    {
+      "logical_path": "ModelTextures/EnvCubeMap/Black_Shader03.DDS",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "legacy_time_field": 0,
+      "offset": 342708677,
+      "size": 393344,
+      "directory_md5": "0c0e64cdd0f3e38d02c2acfc6690e867",
+      "sha256": "c4954419d59bea55b0f592957eab92fa623583d28158cbf84e95bacd233c4e92",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+          "length": 1931848826,
+          "range_ok": true,
+          "actual_bytes": 393344,
+          "md5": "0c0e64cdd0f3e38d02c2acfc6690e867",
+          "md5_match": true
+        }
+      ],
+      "routing": "main_file",
+      "id": "env_cube",
+      "index": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "name": "BLACK_SHADER03.DDS",
+      "copy_count": 6,
+      "copies": [
+        {
+          "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+          "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+          "routing": "main_file",
+          "size": 393344
+        },
+        {
+          "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+          "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+          "routing": "main_file",
+          "size": 393344
+        },
+        {
+          "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+          "payload_file": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+          "routing": "main_file",
+          "size": 393344
+        },
+        {
+          "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+          "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+          "routing": "main_file",
+          "size": 393344
+        },
+        {
+          "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_4.rez",
+          "routing": "numbered_part",
+          "size": 393344
+        },
+        {
+          "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "routing": "main_file",
+          "size": 393344
+        }
+      ],
+      "decode": {
+        "ok": true,
+        "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05d_binding_uv_cube/Black_Shader03_cube.png",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "container": "DDS",
+        "stdout": "Decoded image: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05d_binding_uv_cube\\Black_Shader03_cube.dds\nOutput: D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05d_binding_uv_cube\\Black_Shader03_cube.png"
+      },
+      "payload_sha256": "c4954419d59bea55b0f592957eab92fa623583d28158cbf84e95bacd233c4e92"
+    }
+  ],
+  "obj_export": {
+    "stdout": "OBJ: D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast.obj\nMTL: D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast.mtl\nTexture folder: D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast_textures\nExport report: D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast_export_report.json\nSummary: D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast_cli_export_result.txt",
+    "obj": "D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast.obj",
+    "groups": [
+      {
+        "name": "PV-M4A1_S_BornBeast",
+        "kind": "weapon",
+        "uv_count": 0,
+        "uv_min": null,
+        "uv_max": null,
+        "triangle_count": 0
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_Fview-hand2",
+        "kind": "hands",
+        "uv_count": 3180,
+        "uv_min": [
+          0.0062060002237558365,
+          0.03176397085189819
+        ],
+        "uv_max": [
+          0.9882810115814209,
+          0.9697149991989136
+        ],
+        "triangle_count": 1060
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_Fview-arm2",
+        "kind": "hands",
+        "uv_count": 822,
+        "uv_min": [
+          0.012914000079035759,
+          0.006762027740478516
+        ],
+        "uv_max": [
+          0.9819380044937134,
+          0.9780950006097555
+        ],
+        "triangle_count": 274
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast",
+        "kind": "weapon",
+        "uv_count": 10221,
+        "uv_min": [
+          0.0008520000264979899,
+          0.0015050172805786133
+        ],
+        "uv_max": [
+          0.9976680278778076,
+          0.9994450000231154
+        ],
+        "triangle_count": 3407
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast04",
+        "kind": "weapon",
+        "uv_count": 156,
+        "uv_min": [
+          0.10027699917554855,
+          0.5362449884414673
+        ],
+        "uv_max": [
+          0.2567810118198395,
+          0.6222440004348755
+        ],
+        "triangle_count": 52
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast02",
+        "kind": "weapon",
+        "uv_count": 363,
+        "uv_min": [
+          0.6055120229721069,
+          0.22894501686096191
+        ],
+        "uv_max": [
+          0.8857889771461487,
+          0.44005000591278076
+        ],
+        "triangle_count": 121
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast03",
+        "kind": "weapon",
+        "uv_count": 552,
+        "uv_min": [
+          0.3908030092716217,
+          0.30189597606658936
+        ],
+        "uv_max": [
+          0.9007319808006287,
+          0.7996290028095245
+        ],
+        "triangle_count": 184
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast07",
+        "kind": "weapon",
+        "uv_count": 156,
+        "uv_min": [
+          0.18139199912548065,
+          0.5355840027332306
+        ],
+        "uv_max": [
+          0.267753005027771,
+          0.6224719882011414
+        ],
+        "triangle_count": 52
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast08",
+        "kind": "weapon",
+        "uv_count": 156,
+        "uv_min": [
+          0.2089339941740036,
+          0.5356009900569916
+        ],
+        "uv_max": [
+          0.2785309851169586,
+          0.6221550107002258
+        ],
+        "triangle_count": 52
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast05",
+        "kind": "weapon",
+        "uv_count": 156,
+        "uv_min": [
+          0.12800100445747375,
+          0.5357680022716522
+        ],
+        "uv_max": [
+          0.2690039873123169,
+          0.6225520074367523
+        ],
+        "triangle_count": 52
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast06",
+        "kind": "weapon",
+        "uv_count": 156,
+        "uv_min": [
+          0.15448999404907227,
+          0.5353749990463257
+        ],
+        "uv_max": [
+          0.2559889853000641,
+          0.6221509873867035
+        ],
+        "triangle_count": 52
+      },
+      {
+        "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast01",
+        "kind": "weapon",
+        "uv_count": 108,
+        "uv_min": [
+          0.8548640012741089,
+          0.0040670037269592285
+        ],
+        "uv_max": [
+          0.9962400197982788,
+          0.29390597343444824
+        ],
+        "triangle_count": 36
+      }
+    ],
+    "note": "OBJ exporter texture guesses are not binding proof; overlay uses Bute PViewSkinFileName verified PV DTX only"
+  },
+  "uv_overlay": {
+    "weapon": {
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05d_binding_uv_cube/pv_weapon_uv_on_verified_dtx.png",
+      "triangles_drawn": 4008,
+      "kinds": [
+        "weapon"
+      ],
+      "atlas_size": [
+        1024,
+        1024
+      ]
+    },
+    "hands": {
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05d_binding_uv_cube/pv_hands_uv_on_verified_dtx.png",
+      "triangles_drawn": 1334,
+      "kinds": [
+        "hands"
+      ],
+      "atlas_size": [
+        1024,
+        1024
+      ]
+    },
+    "all": {
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05d_binding_uv_cube/pv_all_uv_on_verified_dtx.png",
+      "triangles_drawn": 5342,
+      "kinds": [
+        "hands",
+        "other",
+        "weapon"
+      ],
+      "atlas_size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "qv_copies": {
+    "main_index_qv_dtx_copies": [
+      {
+        "logical_path": "ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+        "legacy_time_field": 0,
+        "offset": 1921820246,
+        "size": 524452,
+        "directory_md5": "7956bf40c5f8a1cde4c4e748edbef45e",
+        "sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+        "candidate_checks": [
+          {
+            "path": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+            "length": 1940536776,
+            "range_ok": true,
+            "actual_bytes": 524452,
+            "md5": "7956bf40c5f8a1cde4c4e748edbef45e",
+            "md5_match": true
+          }
+        ],
+        "routing": "main_file",
+        "id": "qv_dtx",
+        "index": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+            "routing": "main_file",
+            "size": 524452
+          }
+        ]
+      },
+      {
+        "logical_path": "ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+        "legacy_time_field": 13,
+        "offset": 98902480,
+        "size": 32932,
+        "directory_md5": "9ce24f1c0d1478284c1a37c669ff1a31",
+        "sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+        "candidate_checks": [
+          {
+            "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+            "length": 196985580,
+            "range_ok": true,
+            "actual_bytes": 32932,
+            "md5": "5699540f96de3661b8f43fe8fe524db2",
+            "md5_match": false
+          },
+          {
+            "path": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+            "length": 125383036,
+            "range_ok": true,
+            "actual_bytes": 32932,
+            "md5": "9ce24f1c0d1478284c1a37c669ff1a31",
+            "md5_match": true
+          }
+        ],
+        "routing": "numbered_part",
+        "id": "qv_dtx",
+        "index": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+            "routing": "numbered_part",
+            "size": 32932
+          }
+        ]
+      }
+    ],
+    "qv_ltb_copies": [
+      {
+        "logical_path": "Models/WEAPONS/QV-M4A1_S_BornBeast.LTB",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "legacy_time_field": 0,
+        "offset": 322006065,
+        "size": 17271,
+        "directory_md5": "aaa409cce5268ebb9af8f319a259ddb2",
+        "sha256": "96e2320009bd125730defca37fabecbd015f73fee6090eb7ae019ade2cc3504c",
+        "candidate_checks": [
+          {
+            "path": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+            "length": 327890371,
+            "range_ok": true,
+            "actual_bytes": 17271,
+            "md5": "aaa409cce5268ebb9af8f319a259ddb2",
+            "md5_match": true
+          }
+        ],
+        "routing": "main_file",
+        "id": "qv_ltb",
+        "index": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+        "copy_count": 2,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+            "routing": "main_file",
+            "size": 17271
+          },
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF016.REZ",
+            "routing": "main_file",
+            "size": 17271
+          }
+        ]
+      },
+      {
+        "logical_path": "Models/WEAPONS/QV-M4A1_S_BornBeast.LTB",
+        "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "legacy_time_field": 0,
+        "offset": 248206451,
+        "size": 17269,
+        "directory_md5": "04ba1890560e10756d7bee8bd5dfbea9",
+        "sha256": "2b087cf1ab9df90f74499c856ee5647755775afa759d8edbcb14c0adf0468e18",
+        "candidate_checks": [
+          {
+            "path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+            "length": 255883357,
+            "range_ok": true,
+            "actual_bytes": 17269,
+            "md5": "04ba1890560e10756d7bee8bd5dfbea9",
+            "md5_match": true
+          }
+        ],
+        "routing": "main_file",
+        "id": "qv_ltb",
+        "index": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "copy_count": 1,
+        "copies": [
+          {
+            "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+            "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+            "routing": "main_file",
+            "size": 17269
+          }
+        ]
+      }
+    ],
+    "kept": true,
+    "wrapped_on_pv": false,
+    "reason": "load order between rez QV 256 and rez2 QV 1024 is unknown; QV must not be UV-wrapped on the PV mesh as native proof"
+  },
+  "binding_evidence": {
+    "bute_pview_skin": "PViewSkinFileName -> PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+    "ltb_nnumtextures": 0,
+    "texture_slots_are_not_paths": true,
+    "filename_similarity_not_used": true,
+    "qv_not_applied_to_pv": true
+  },
+  "limitations": [
+    "LTB nNumTextures=0: piece table does not name DTX/TGA files.",
+    "CFG Name2 fields are file references, not runtime technique proof.",
+    "UV overlay is a native-only diagnostic of layout on the verified PV atlas.",
+    "OBJ exporter guessed textures are not accepted as binding."
+  ]
+}
