@@ -87,7 +87,9 @@ WIRE_MAP: list[dict[str, Any]] = [
 ]
 
 EXTRACT_ONLY = ("M4A1-S-Beast_knifeAttack",)
-# User: 喷气 and 退弹 start together, then 上弹, then 拉栓. CS animation still later.
+# Match CS M4A4 events for now. CF animation still later P7.
+# Reload: Clipout@11 喷气+退弹 together, Clipin@35 上弹, ClipHit@57 拉栓.
+# Draw bolt: BoltBack@17 拉栓.
 CF_RELOAD_GAS = "M4A1-S-Beast_GasEjection"
 CF_RELOAD_CLIPOUT = "M4A1-S-Beast_ClipOut"
 CF_RELOAD_CLIPIN = "M4A1-S-Beast_ClipIn"
@@ -98,7 +100,6 @@ CF_RELOAD_ORDER = (
     "M4A1-S-Beast_Reload",
 )
 BOLT_CLIP = "M4A1-S-Beast_Reload"
-RELOAD_GAP_S = 0.05
 
 
 def sha256_file(path: Path) -> str:
@@ -437,7 +438,7 @@ def write_report(report: dict[str, Any]) -> None:
             "",
             "User listen: 01-06 match filenames. 07 BeastAir is wrong. 08-13 unknown, unused.",
             "",
-            "换弹: 喷气(02) and 退弹(04) start together, then 上弹(05), then 拉栓(03). One clip on the first reload event. Clipin/ClipHit silenced. 切枪 still 拉栓(03). Fire=01. CF animation still later P7.",
+            "Match CS actions: Clipout = 喷气+退弹 together, Clipin = 上弹, ClipHit = 拉栓 (later, not packed into clipout). Draw BoltBack = 拉栓. Fire=01. CF animation still later P7.",
             "",
             "`BoltForward` / `BoltBack` stay silent. Qingchun / BB / Zeekr / BornBeast unused.",
             "",
@@ -511,91 +512,75 @@ def main() -> int:
         if name not in converted:
             converted[name] = convert_pcm(src, pcm_path, 100, by_name[name]["channels"])
 
-    gap_path = PCM_DIR / "_reload_gap.wav"
-    converted["reload_gap"] = silence_pcm(gap_path, RELOAD_GAP_S)
     gas_clip_pcm = PCM_DIR / "gas_and_clipout.wav"
     converted["gas_and_clipout"] = mix_pcm(
         [PCM_DIR / f"{CF_RELOAD_GAS}.wav", PCM_DIR / f"{CF_RELOAD_CLIPOUT}.wav"],
         gas_clip_pcm,
     )
-    reload_pcm = PCM_DIR / "cf_reload_order.wav"
-    converted["cf_reload_order"] = concat_pcm(
-        [
-            gas_clip_pcm,
-            gap_path,
-            PCM_DIR / f"{CF_RELOAD_CLIPIN}.wav",
-            gap_path,
-            PCM_DIR / f"{BOLT_CLIP}.wav",
-        ],
-        reload_pcm,
-    )
-    draw_pcm = PCM_DIR / "draw_bolt.wav"
-    converted["draw_bolt"] = delay_amplify_pcm(
-        PCM_DIR / f"{BOLT_CLIP}.wav", draw_pcm, DRAW_BOLT_DELAY_S, DRAW_VOLUME_COMPENSATE
-    )
     silence_path = PCM_DIR / "silence.wav"
     converted["silence"] = silence_pcm(silence_path)
+    bolt_pcm = PCM_DIR / f"{BOLT_CLIP}.wav"
 
     composites = [
         {
-            "bute_event": "CF reload 喷气+退弹 together, then 上弹, then 拉栓",
-            "stream": f"{CF_RELOAD_GAS}|{CF_RELOAD_CLIPOUT} then {CF_RELOAD_CLIPIN} then {BOLT_CLIP}",
+            "bute_event": "喷气+退弹 together at CS Clipout",
+            "stream": f"{CF_RELOAD_GAS}|{CF_RELOAD_CLIPOUT}",
             "csgo_event": "Weapon_M4A1.Clipout",
             "waves": ["sound/weapons/m4a1/m4a1_clipout.wav"],
             "grade": "OBSERVED",
-            "note": "User: 喷气 and 退弹 start together. 上弹 then 拉栓 follow. CS animation still later.",
-            "pcm": converted["cf_reload_order"],
-            "deployed": stage_waves(reload_pcm, ["sound/weapons/m4a1/m4a1_clipout.wav"]),
+            "note": "User: 退弹的时候一起播放喷气. CS reload frame 11.",
+            "pcm": converted["gas_and_clipout"],
+            "deployed": stage_waves(gas_clip_pcm, ["sound/weapons/m4a1/m4a1_clipout.wav"]),
         },
         {
-            "bute_event": "silence (do not follow CS clipin)",
-            "stream": "silence",
+            "bute_event": "上弹 at CS Clipin",
+            "stream": CF_RELOAD_CLIPIN,
             "csgo_event": "Weapon_M4A1.Clipin",
             "waves": ["sound/weapons/m4a1/m4a1_clipin.wav"],
-            "grade": "SOURCE1_DESIGN_CANDIDATE",
-            "note": "CS clipin would play 上弹 at CS time and break CF order.",
-            "pcm": converted["silence"],
-            "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_clipin.wav"]),
+            "grade": "OBSERVED",
+            "note": "CS reload frame 35.",
+            "pcm": converted[CF_RELOAD_CLIPIN],
+            "deployed": stage_waves(PCM_DIR / f"{CF_RELOAD_CLIPIN}.wav", ["sound/weapons/m4a1/m4a1_clipin.wav"]),
         },
         {
-            "bute_event": "silence (do not follow CS cliphit)",
-            "stream": "silence",
+            "bute_event": "拉栓 at CS ClipHit",
+            "stream": BOLT_CLIP,
             "csgo_event": "Weapon_M4A1.ClipHit",
             "waves": ["sound/weapons/m4a1/m4a1_cliphit.wav"],
-            "grade": "SOURCE1_DESIGN_CANDIDATE",
-            "note": "CS cliphit is mag-slap. CF 拉栓 is already the last part of the concat.",
-            "pcm": converted["silence"],
-            "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_cliphit.wav"]),
+            "grade": "OBSERVED",
+            "note": "User: 拉栓 was too early in the packed clip. CS reload frame 57.",
+            "pcm": converted[BOLT_CLIP],
+            "deployed": stage_waves(bolt_pcm, ["sound/weapons/m4a1/m4a1_cliphit.wav"]),
         },
         {
-            "bute_event": "拉栓 on 切枪 (listen 03)",
-            "stream": BOLT_CLIP,
+            "bute_event": "silence draw rustle",
+            "stream": "silence",
             "csgo_event": "Weapon_M4A1.Draw",
             "waves": ["sound/weapons/m4a1/m4a1_draw.wav"],
-            "grade": "OBSERVED",
-            "note": "Draw is not the reload sequence. Listen 03 on CHAN_STATIC.",
-            "pcm": converted["draw_bolt"],
-            "deployed": stage_waves(draw_pcm, ["sound/weapons/m4a1/m4a1_draw.wav"]),
+            "grade": "SOURCE1_DESIGN_CANDIDATE",
+            "note": "拉栓 waits for CS BoltBack, not the draw raise.",
+            "pcm": converted["silence"],
+            "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_draw.wav"]),
         },
         {
-            "bute_event": "silence (kill vanilla CS bolt)",
+            "bute_event": "silence CS BoltForward",
             "stream": "silence",
             "csgo_event": "Weapon_M4A1.BoltForward",
             "waves": ["sound/weapons/m4a1/m4a1_boltforward.wav"],
             "grade": "SOURCE1_DESIGN_CANDIDATE",
-            "note": "Vanilla CS 拉栓. Same CHAN_ITEM as BoltBack; leaving it would cut CF 拉栓.",
+            "note": "Same CHAN_ITEM as BoltBack; leaving vanilla CS bolt would cut CF 拉栓.",
             "pcm": converted["silence"],
             "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_boltforward.wav"]),
         },
         {
-            "bute_event": "silence (do not play 换弹 on 切枪)",
-            "stream": "silence",
+            "bute_event": "拉栓 at CS BoltBack (切枪)",
+            "stream": BOLT_CLIP,
             "csgo_event": "Weapon_M4A1.BoltBack",
             "waves": ["sound/weapons/m4a1/m4a1_boltback.wav"],
-            "grade": "SOURCE1_DESIGN_CANDIDATE",
-            "note": "GasEjection belongs at the start of reload, not draw.",
-            "pcm": converted["silence"],
-            "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_boltback.wav"]),
+            "grade": "OBSERVED",
+            "note": "User: CS also has a 拉栓 action. Draw frame 17.",
+            "pcm": converted[BOLT_CLIP],
+            "deployed": stage_waves(bolt_pcm, ["sound/weapons/m4a1/m4a1_boltback.wav"]),
         },
     ]
     wired_out.extend(composites)
@@ -642,7 +627,7 @@ def main() -> int:
         "deploy": {k: v for k, v in deploy.items() if k != "hashes"} | {"file_count": len(deploy["hashes"])},
         "notes": [
             "User listen: 01-06 match filenames; 07 wrong; 08-13 unknown unused.",
-            "CF reload: 喷气+退弹 together, then 上弹, then 拉栓. CS clipin/cliphit silenced. Draw=03. Fire=01.",
+            "CS-timed reload: clipout=喷气+退弹, clipin=上弹, cliphit=拉栓. Draw BoltBack=拉栓. Fire=01.",
             "Knife 06 extracted, not wired to M4A4.",
             "Weapon_M4A1.Single pitch 120 is compensated in the close-fire WAV.",
             "Inspect / CF animation / world model are still open.",

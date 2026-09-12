@@ -15,16 +15,16 @@ Wired:
 |---|---|---|---|---|
 | `ShootM4A1-S-Beast` | `M4A1-S-Beast_SHOOT_1` | `Weapon_M4A1.Single` | `m4a1_01.wav`, `m4a1_02.wav` | OBSERVED |
 | `ShootM4A1-S-Beast (distant uses same shoot sample)` | `M4A1-S-Beast_SHOOT_1` | `Weapon_M4A4.SingleDistant` | `m4a1_distant_01.wav` | OBSERVED |
-| `CF reload 喷气+退弹 together, then 上弹, then 拉栓` | `M4A1-S-Beast_GasEjection|M4A1-S-Beast_ClipOut then M4A1-S-Beast_ClipIn then M4A1-S-Beast_Reload` | `Weapon_M4A1.Clipout` | `m4a1_clipout.wav` | OBSERVED |
-| `silence (do not follow CS clipin)` | `silence` | `Weapon_M4A1.Clipin` | `m4a1_clipin.wav` | SOURCE1_DESIGN_CANDIDATE |
-| `silence (do not follow CS cliphit)` | `silence` | `Weapon_M4A1.ClipHit` | `m4a1_cliphit.wav` | SOURCE1_DESIGN_CANDIDATE |
-| `拉栓 on 切枪 (listen 03)` | `M4A1-S-Beast_Reload` | `Weapon_M4A1.Draw` | `m4a1_draw.wav` | OBSERVED |
-| `silence (kill vanilla CS bolt)` | `silence` | `Weapon_M4A1.BoltForward` | `m4a1_boltforward.wav` | SOURCE1_DESIGN_CANDIDATE |
-| `silence (do not play 换弹 on 切枪)` | `silence` | `Weapon_M4A1.BoltBack` | `m4a1_boltback.wav` | SOURCE1_DESIGN_CANDIDATE |
+| `喷气+退弹 together at CS Clipout` | `M4A1-S-Beast_GasEjection|M4A1-S-Beast_ClipOut` | `Weapon_M4A1.Clipout` | `m4a1_clipout.wav` | OBSERVED |
+| `上弹 at CS Clipin` | `M4A1-S-Beast_ClipIn` | `Weapon_M4A1.Clipin` | `m4a1_clipin.wav` | OBSERVED |
+| `拉栓 at CS ClipHit` | `M4A1-S-Beast_Reload` | `Weapon_M4A1.ClipHit` | `m4a1_cliphit.wav` | OBSERVED |
+| `silence draw rustle` | `silence` | `Weapon_M4A1.Draw` | `m4a1_draw.wav` | SOURCE1_DESIGN_CANDIDATE |
+| `silence CS BoltForward` | `silence` | `Weapon_M4A1.BoltForward` | `m4a1_boltforward.wav` | SOURCE1_DESIGN_CANDIDATE |
+| `拉栓 at CS BoltBack (切枪)` | `M4A1-S-Beast_Reload` | `Weapon_M4A1.BoltBack` | `m4a1_boltback.wav` | OBSERVED |
 
 User listen: 01-06 match filenames. 07 BeastAir is wrong. 08-13 unknown, unused.
 
-换弹: 喷气(02) and 退弹(04) start together, then 上弹(05), then 拉栓(03). One clip on the first reload event. Clipin/ClipHit silenced. 切枪 still 拉栓(03). Fire=01. CF animation still later P7.
+Match CS actions: Clipout = 喷气+退弹 together, Clipin = 上弹, ClipHit = 拉栓 (later, not packed into clipout). Draw BoltBack = 拉栓. Fire=01. CF animation still later P7.
 
 `BoltForward` / `BoltBack` stay silent. Qingchun / BB / Zeekr / BornBeast unused.
 

@@ -23,8 +23,8 @@
       "grade": "OBSERVED"
     },
     {
-      "bute_event": "CF reload 喷气+退弹 together, then 上弹, then 拉栓",
-      "stream": "M4A1-S-Beast_GasEjection|M4A1-S-Beast_ClipOut then M4A1-S-Beast_ClipIn then M4A1-S-Beast_Reload",
+      "bute_event": "喷气+退弹 together at CS Clipout",
+      "stream": "M4A1-S-Beast_GasEjection|M4A1-S-Beast_ClipOut",
       "csgo_event": "Weapon_M4A1.Clipout",
       "waves": [
         "sound/weapons/m4a1/m4a1_clipout.wav"
@@ -32,34 +32,34 @@
       "grade": "OBSERVED"
     },
     {
-      "bute_event": "silence (do not follow CS clipin)",
-      "stream": "silence",
+      "bute_event": "上弹 at CS Clipin",
+      "stream": "M4A1-S-Beast_ClipIn",
       "csgo_event": "Weapon_M4A1.Clipin",
       "waves": [
         "sound/weapons/m4a1/m4a1_clipin.wav"
       ],
-      "grade": "SOURCE1_DESIGN_CANDIDATE"
+      "grade": "OBSERVED"
     },
     {
-      "bute_event": "silence (do not follow CS cliphit)",
-      "stream": "silence",
+      "bute_event": "拉栓 at CS ClipHit",
+      "stream": "M4A1-S-Beast_Reload",
       "csgo_event": "Weapon_M4A1.ClipHit",
       "waves": [
         "sound/weapons/m4a1/m4a1_cliphit.wav"
       ],
-      "grade": "SOURCE1_DESIGN_CANDIDATE"
+      "grade": "OBSERVED"
     },
     {
-      "bute_event": "拉栓 on 切枪 (listen 03)",
-      "stream": "M4A1-S-Beast_Reload",
+      "bute_event": "silence draw rustle",
+      "stream": "silence",
       "csgo_event": "Weapon_M4A1.Draw",
       "waves": [
         "sound/weapons/m4a1/m4a1_draw.wav"
       ],
-      "grade": "OBSERVED"
+      "grade": "SOURCE1_DESIGN_CANDIDATE"
     },
     {
-      "bute_event": "silence (kill vanilla CS bolt)",
+      "bute_event": "silence CS BoltForward",
       "stream": "silence",
       "csgo_event": "Weapon_M4A1.BoltForward",
       "waves": [
@@ -68,24 +68,24 @@
       "grade": "SOURCE1_DESIGN_CANDIDATE"
     },
     {
-      "bute_event": "silence (do not play 换弹 on 切枪)",
-      "stream": "silence",
+      "bute_event": "拉栓 at CS BoltBack (切枪)",
+      "stream": "M4A1-S-Beast_Reload",
       "csgo_event": "Weapon_M4A1.BoltBack",
       "waves": [
         "sound/weapons/m4a1/m4a1_boltback.wav"
       ],
-      "grade": "SOURCE1_DESIGN_CANDIDATE"
+      "grade": "OBSERVED"
     }
   ],
   "staging_hashes": {
     "sound/weapons/m4a1/m4a1_01.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
     "sound/weapons/m4a1/m4a1_02.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
-    "sound/weapons/m4a1/m4a1_boltback.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+    "sound/weapons/m4a1/m4a1_boltback.wav": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
     "sound/weapons/m4a1/m4a1_boltforward.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
-    "sound/weapons/m4a1/m4a1_cliphit.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
-    "sound/weapons/m4a1/m4a1_clipin.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
-    "sound/weapons/m4a1/m4a1_clipout.wav": "e3dd5fe51ca43c0d9fc286c0e2d65e225f0fdfaacb2fddd976c75d3a292fe5d8",
+    "sound/weapons/m4a1/m4a1_cliphit.wav": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+    "sound/weapons/m4a1/m4a1_clipin.wav": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
+    "sound/weapons/m4a1/m4a1_clipout.wav": "78fe3d0376c74edb417e635df4fbc28a0dfd013a4fdb9be76482eb57245ac3fe",
     "sound/weapons/m4a1/m4a1_distant_01.wav": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08",
-    "sound/weapons/m4a1/m4a1_draw.wav": "2379520b50211e7ea5ce490667b185fc03ae592f4a3fe22bdda9dc9595755569"
+    "sound/weapons/m4a1/m4a1_draw.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30"
   }
 }
