@@ -7,82 +7,98 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N03-A
-Title: BornBeast consumer path discovery after runtime payload separation
+Task ID: P4-M01-N03-B
+Title: Search REZ-resident table/config payloads for BornBeast consumer
 State: ACTIVE
 Parent: P4-M01 Native Material Recovery
-Depends on: P4-M01-N02-E-R2
+Depends on: P4-M01-N03-A
 ```
 
 # 2. Previous execution status
 
-N02-E-R2 已完成 bounded REZ payload SHA256 verification。
+N03-A 已完成 BornBeast exact-token reverse lookup。
 
 结论：
 
 ```text
-MATERIAL_BINDING_PARTIAL
+CANDIDATE_ONLY
 ```
 
 已确认：
 
 ```text
-N02-D-R1 runtime path binding
- -> bounded payload extraction
- -> SHA256 identity evidence
+6/6 inventory assets
+ -> runtime REZ exact path or basename+size
+ -> SHA256 == P4 inventory
 ```
 
-结果：
+已确认的 scoped negative：
 
 ```text
-24 unique payloads verified
-0 SHA256 matches BornBeast P4 baseline inventory
+loose rez/Butes/*.ltc + N02-A config-role files
+do not name BornBeast inventory assets
 ```
-
-因此冻结当前范围内结论：
-
-```text
-bf005 M4A1 runtime family
-!=
-BornBeast native asset
-```
-
-该结论仅针对当前 bf005 consumer scope，不代表 BornBeast runtime entry 不存在。
 
 # 3. Current goal
 
-本轮目标：寻找 BornBeast native asset 的真实 consumer path。
+本轮目标：在 **REZ 内部** 的 table/config payload 里找 BornBeast consumer。
 
 回答：
 
 ```text
-BornBeast inventory asset
- -> runtime/config consumer
- -> REZ/resource path
- -> payload identity
+BornBeast inventory token
+ -> REZ-resident table/config payload
+ -> record / field context
+ -> consumer relation grade
 ```
 
 # 4. Required Work
 
-优先执行 bounded reverse lookup：
+只读 N02-D-R1 的 path-aware REZ directory index（可重建，不 bulk extract）。
+
+然后 **按扩展名** 选取 payload，对每个 unique `full_path` 做 bounded read + exact-token 搜索。
+
+允许的扩展名：
 
 ```text
-BornBeast native inventory
- -> reverse filename/hash/path references
- -> LTC/Bute/config candidates
- -> runtime resource relation
+.cft
+.lta
+.txt
+.ltc   仅当 full_path 以 BUTES/ 开头
 ```
+
+优先但不是 proof 的目录信号：
+
+```text
+TABLE/ITEM.CFT
+TABLE/MODELBUTE.CFT
+TABLE/WEAPONPOINT.CFT
+TABLE/*.CFT
+```
+
+Token 规则与 N03-A 相同：
+
+```text
+exact basename / stem / REZ logical path / SHA256 / MD5
+bounded by non-identifier characters
+no longer-name prefix match
+```
+
+`.ltc` 若 magic 为 CF wrapper，走已接受的 N02-B-R1 decode；否则 string-scan。
+`.cft` / `.lta` / `.txt` 做 ASCII + UTF-16LE string-scan；若 ITEM.CFT 命中，再报告命中附近的字段/行上下文。
 
 输出：
 
 ```text
-work/.../bornbeast_consumer/
+work/.../n03b_rez_packed_config/
 ```
 
 至少包含：
 
 ```text
-consumer candidate report
+packed config search report
+selected payload inventory
+token hits with context
 resource graph update
 confirmed relations
 remaining ambiguity
@@ -92,7 +108,9 @@ confidence level
 # 5. Forbidden
 
 - 不宣布 P4-M01 PASS；
-- 不把普通 M4A1 runtime binding 等同 BornBeast identity；
+- 不把 WeaponShader `.cfg` 自身存在当成 consumer；
+- 不扫描 `.dat` map blob / `.dtx` / `.bin` / `.ltb`；
+- 不把全部 1747 个 REZ `.ltc` 当作本轮范围（只允许 `BUTES/`）；
 - 不进入 DLL/EXE/FXO reverse；
 - 不进行无目标全盘扫描；
 - 不使用 filename similarity 作为 proof；
@@ -103,13 +121,13 @@ confidence level
 
 ```text
 A. BORNBEAST_CONSUMER_CONFIRMED
-   runtime consumer path established
+   a REZ-resident table/config field binds a BornBeast inventory asset
 
 B. CANDIDATE_ONLY
-   candidates found but identity not proven
+   hits or strong table candidates exist but the bind is not proven
 
 C. REWORK_REQUIRED
-   search boundary invalid
+   selection/decode path invalid
 ```
 
 完成后返回：

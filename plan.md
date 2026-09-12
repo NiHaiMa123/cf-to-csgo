@@ -610,22 +610,126 @@ HYPOTHESIS / NEEDS_FORMAT_OR_CONSUMER_EVIDENCE
 
 不能冻结为“REZ directory MD5 一定计算在某个 pre/post compression representation”之类的 engine fact。
 
+原始 N02-D / N02-E 提交仍不冻结。后续 D-R1 / D-R2 / E-R1 / E-R2 已在 §4.11 接受。
+
+## 4.11 N02-D-R1 / D-R2 / E-R1 / E-R2 freeze
+
+Review 接受：
+
+```text
+f468e96f2d956ee82f69f8372c9c7c36423897ec  P4-M01-N02-D-R1
+e6204b46e841b19386e82f4f103883981ae2ee07  P4-M01-N02-D-R2 review 6/6
+c3e8872369aad29285cbf4ddb4a821a66eb127ba  P4-M01-N02-D-R2 refined checklist ACCEPTED
+dc3ac1b69843141b54b2ae97b868aa4a7a242d01  P4-M01-N02-E-R1
+2e0c750624832e28a5292a488b4bad81b3934c15  P4-M01-N02-E-R2
+```
+
+N02-D-R1 以 archive-relative full logical path 重做 REZ binding，60/60 `(WeaponName, field)` 命中。接受的规则：
+
+```text
+backslash -> slash, uppercase
+strip one leading virtual root in {Models/, ModelTextures/}
+keep RS/ (literal rf002.rez directory)
+extensionless ModelFileName / PViewModelFileName -> only .LTB
+multi-archive hits reported, no load-order authority claimed
+```
+
+因此：
+
+```text
+bf005 M4A1 exact REZ full-path binding    ACCEPTED / COMPLETE
+```
+
+N02-E-R1：8 个 N02-D-R1 LTB 解压后均无 Jupiter LTA `(piece` / `(texture` / `(renderstyle` / `(material` 原子，也无 `.dtx` / `.tga` 内嵌引用。LTB 内 piece→DTX/TGA 不能从该 binary 直接读出。
+
+```text
+LTB-internal piece -> texture/material    OPEN_UNRESOLVED
+MATERIAL_BINDING_PARTIAL                  ACCEPTED as round status
+```
+
+N02-E-R2：24 个 unique `(rez_path, full_path)` payload 全部 bounded SHA256 成功，**0** 个等于 BornBeast P4 inventory。该结论把 N02-C 的 bf005 文本 negative 提升到 byte identity：
+
+```text
+bf005 M4A1 runtime family
+!=
+BornBeast native asset
+SCOPED_NEGATIVE_ACCEPTED
+```
+
+N02-E 原始提交的 basename index / 过宽 extension fallback 仍不得引用。
+
+## 4.12 N03-A freeze
+
+Review 接受提交：
+
+```text
+23e275a4be0eed8fd90132095ed0c283b36a39d9  P4-M01-N03-A
+P4-M01-N03-A = ACCEPTED / CANDIDATE_ONLY
+```
+
+从 BornBeast inventory 做 exact-token 反向查找（basename / stem / logical path / SHA256 / MD5；拒绝更长 ident 前缀）。
+
+Loose config 范围：N02-A config-role ∪ `rez/Butes/` 目录，107 文件，73/73 LTC decode，7337 lisp records：
+
+```text
+DIRECT_CONFIG_FIELD hits     0
+bounded text-token hits      0
+```
+
+因此：
+
+```text
+loose rez/Butes Bute+config layer
+does not name BornBeast inventory assets
+SCOPED_NEGATIVE_ACCEPTED
+```
+
+同一轮在当前客户端 REZ 中用 exact path（CFG 为 basename+size 过滤器）做 bounded payload SHA256，6/6 inventory 角色均命中：
+
+```text
+geometry   PLAYERVIEW/PV-M4A1_S_BornBeast.LTB
+           rez/RF016.REZ, rez2/RF016.REZ, rez4/RF016.REZ
+           SHA256 == inventory                          PAYLOAD_IDENTITY
+base_dtx   PLAYERVIEW/PV-M4A1_S_BornBeast.DTX
+           rez/rf017.rez                                PAYLOAD_IDENTITY
+alpha      AlphaMap/M4A1_S_BornBeast_alpha.TGA
+           rez/rf017.rez                                PAYLOAD_IDENTITY
+normal     NormalMap/M4A1_S_BornBeast_N.TGA
+           rez/rf017.rez                                PAYLOAD_IDENTITY
+specular   SpecularMap/M4A1_S_BornBeast_S.TGA
+           rez/rf017.rez                                PAYLOAD_IDENTITY
+shader_cfg WeaponShader/M4A1_S_BornBeast.CFG
+           rez/rf017.rez                                PAYLOAD_IDENTITY
+```
+
+`shader_cfg` 的 inventory 路径在 strip `ModelTextures/` 后变成 `SHADER/WEAPONSHADER/...`，runtime 实际为 `WeaponShader/...`（无 `Shader/` 前缀）。这是 normalisation miss，不是缺文件。
+
+不能从 N03-A 推出：
+
+```text
+BornBeast has no runtime consumer anywhere
+WeaponShader CFG is the consumer table
+piece -> DTX/TGA binding
+P4-M01 PASS
+```
+
 当前有效 closure 边界：
 
 ```text
-runtime root acquisition            ACCEPTED
-LTC wrapper/native decode           ACCEPTED
-runtime Bute config parse           ACCEPTED
-M4A1 config -> resource path        ACCEPTED
-exact REZ full-path binding         REWORK_REQUIRED
-payload identity based on N02-D     NOT FROZEN
-mesh/piece -> material binding      OPEN_UNRESOLVED
-CFG/render semantic closure         OPEN_UNRESOLVED
-BornBeast native material closure   OPEN_UNRESOLVED
-P4-M01                              INCOMPLETE
+runtime root acquisition                 ACCEPTED
+LTC wrapper/native decode                ACCEPTED
+runtime Bute config parse                ACCEPTED
+M4A1 config -> resource path             ACCEPTED
+bf005 M4A1 exact REZ full-path binding   ACCEPTED
+bf005 M4A1 != BornBeast payload          SCOPED_NEGATIVE_ACCEPTED
+BornBeast runtime REZ payload identity   ACCEPTED
+loose Bute/config BornBeast consumer     SCOPED_NEGATIVE_ACCEPTED
+mesh/piece -> material binding           OPEN_UNRESOLVED
+CFG/render semantic closure              OPEN_UNRESOLVED
+BornBeast consumer path                  OPEN_UNRESOLVED
+BornBeast native material closure        OPEN_UNRESOLVED
+P4-M01                                   INCOMPLETE
 ```
-
-下一轮先修复 exact REZ path binding；在该 Gate 重新通过前，不继续使用 N02-E 作为后续 material/identity inference 的基础。
 
 ---
 
@@ -771,12 +875,13 @@ assets/weapons/m4a1_s_bornbeast/prototype_01_manifest.json
 work/m4a1_s_bornbeast/p4_prototype_01/
 ```
 
-## P4-M01 / N01 / N02
+## P4-M01 / N01 / N02 / N03
 
 ```text
 work/m4a1_s_bornbeast/p4_m01_native_material/
 work/m4a1_s_bornbeast/p4_m01_native_material/n01/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03a_bornbeast_consumer/
 ```
 
 ## External reference implementation / positive control
@@ -813,8 +918,13 @@ ab7e2ef3394991ef0b4468f34cf4d6849b917dc2  P5 legacy pre-scan
 a561924a9c0795932f328de929bee510f6e2719a  N02-A runtime root + artifact inventory
 4d7c8b64d44c7d1848f1abb5182f511e5a91107f  N02-B-R1 wrapper + native LTC decode accepted
 2a4054dba6cc03bedb43201aa89692c6e0a36e88  N02-C M4A1 runtime config binding accepted
-be1b150b0cc4e67e4861779079887f1cf243d9a1  N02-D REVIEW_REWORK_REQUIRED
-2f94db91099814523d9137f2c67f3ebfed7de869  N02-E REVIEW_REWORK_REQUIRED
+be1b150b0cc4e67e4861779079887f1cf243d9a1  N02-D REVIEW_REWORK_REQUIRED (superseded by D-R1)
+2f94db91099814523d9137f2c67f3ebfed7de869  N02-E REVIEW_REWORK_REQUIRED (superseded by E-R2)
+f468e96f2d956ee82f69f8372c9c7c36423897ec  N02-D-R1 path-aware REZ binding accepted
+c3e8872369aad29285cbf4ddb4a821a66eb127ba  N02-D-R2 review accepted
+dc3ac1b69843141b54b2ae97b868aa4a7a242d01  N02-E-R1 LTB piece table absent
+2e0c750624832e28a5292a488b4bad81b3934c15  N02-E-R2 bf005 != BornBeast payload
+23e275a4be0eed8fd90132095ed0c283b36a39d9  N03-A BornBeast REZ payload identity, loose-config miss
 ```
 
 ---
