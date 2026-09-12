@@ -18,6 +18,9 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from PIL import Image
+import numpy as np
+
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 _PROJECT_DIR = os.path.dirname(os.path.dirname(_SCRIPT_DIR))
 sys.path.insert(0, os.path.join(_PROJECT_DIR, "scripts"))
@@ -134,6 +137,23 @@ def main() -> int:
                     "GlobalDiffuseAlpha": 1,
                 },
             },
+            {
+                "name": "maps_on_mesh_studio",
+                "set": {
+                    "SpecularPower": 8,
+                    "LightBrightness": 1,
+                    "DiffuseBoost": 0.45,
+                    "AmbientLightColor": 0.28,
+                    "EnvCubeMapBrightness": 0.05,
+                    "ReflectionIndex": 0,
+                    "RefractionIndex": 0,
+                    "DiffuseMappingFactor": 1,
+                    "NormalMappingFactor": 1,
+                    "SpecularMappingFactor": 1,
+                    "EnvCubeMappingFactor": 0,
+                    "GlobalDiffuseAlpha": 1,
+                },
+            },
         ],
     }
     config_path = OUT / "preview_config.json"
@@ -181,9 +201,9 @@ def main() -> int:
         "",
         f"Technique `{config['technique']}` pass 0. FXO SHA match={report['fxo_sha_match']}. Cube SHA match={report['cube_sha_match']}.",
         "",
-        "Two shots on the same mesh/maps/camera: D3DX compiled defaults vs BornBeast CFG scalars.",
+        "CFG `LightBrightness=0.01` makes `bornbeast_cfg.png` a near-silhouette (gun pixel median ~13). That file is not for identity inspection.",
         "",
-        "CFG shot shows a solid black-knight body with serial and beast-head reds. Defaults look washed. CFG values change the picture; they still must not be copied into Source VMT.",
+        "`maps_on_mesh_studio.png` uses studio lights (not CFG) so the recovered maps can actually be seen. Crop is `maps_on_mesh_studio_crop.png`.",
         "",
     ]
     for shot in shots:
@@ -194,8 +214,38 @@ def main() -> int:
     if error:
         lines += ["", "## Error", "", f"```\n{error}\n```"]
     (OUT / "report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(json.dumps({"result": result, "ok": ok, "out": str(OUT), "error": error}, ensure_ascii=False))
+    inspect = crop_if_readable(OUT / "maps_on_mesh_studio.png", OUT / "maps_on_mesh_studio_crop.png")
+    report["inspect"] = inspect
+    (OUT / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"result": result, "ok": ok, "out": str(OUT), "error": error, "inspect": inspect}, ensure_ascii=False))
     return 0 if ok else 1
+
+
+def crop_if_readable(src: Path, dest: Path) -> dict:
+    if not src.is_file():
+        return {"ok": False, "error": "missing studio shot"}
+    image = np.array(Image.open(src).convert("RGB"))
+    bg = (image[:, :, 0] > 200) & (image[:, :, 1] > 200) & (image[:, :, 2] > 200)
+    fg = ~bg
+    if not fg.any():
+        return {"ok": False, "error": "no foreground"}
+    ys, xs = np.where(fg)
+    pad = 16
+    y0, y1 = max(0, int(ys.min()) - pad), min(image.shape[0], int(ys.max()) + pad + 1)
+    x0, x1 = max(0, int(xs.min()) - pad), min(image.shape[1], int(xs.max()) + pad + 1)
+    crop = image[y0:y1, x0:x1]
+    Image.fromarray(crop).save(dest)
+    lum = crop.astype(np.float32).mean(axis=2)
+    cbg = (crop[:, :, 0] > 200) & (crop[:, :, 1] > 200) & (crop[:, :, 2] > 200)
+    cfg = ~cbg
+    median = float(np.median(lum[cfg])) if cfg.any() else 0.0
+    return {
+        "ok": median >= 40,
+        "png": str(dest),
+        "fg_median_lum": median,
+        "fg_mean_rgb": crop[cfg].mean(axis=0).tolist() if cfg.any() else [],
+        "bbox": [x0, y0, x1, y1],
+    }
 
 
 if __name__ == "__main__":

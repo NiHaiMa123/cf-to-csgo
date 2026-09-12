@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-12T15:48:18.403684+00:00",
+  "generated_at_utc": "2026-09-12T15:53:03.937942+00:00",
   "task": "P4-M01-N05-K",
   "result": "FXO_CFG_PREVIEW_RENDERED",
   "p4_m01": "INCOMPLETE",
@@ -43,6 +43,13 @@
         "pass": 0,
         "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
         "bytes": 237508
+      },
+      {
+        "name": "maps_on_mesh_studio",
+        "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\maps_on_mesh_studio.png",
+        "pass": 0,
+        "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+        "bytes": 161900
       }
     ]
   },
@@ -53,5 +60,21 @@
     "Rest-pose unskinned OBJ; hands omitted.",
     "CFG scalars were applied to this effect, not copied into Source VMT.",
     "Not a P4-M01 PASS."
-  ]
+  ],
+  "inspect": {
+    "ok": true,
+    "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\maps_on_mesh_studio_crop.png",
+    "fg_median_lum": 81.0,
+    "fg_mean_rgb": [
+      84.13372279547269,
+      83.91103550671113,
+      83.59381038714925
+    ],
+    "bbox": [
+      276,
+      135,
+      1280,
+      541
+    ]
+  }
 }

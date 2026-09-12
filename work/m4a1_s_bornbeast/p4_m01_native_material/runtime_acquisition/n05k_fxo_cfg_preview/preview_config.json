@@ -37,6 +37,23 @@
         "EnvCubeMappingFactor": 1,
         "GlobalDiffuseAlpha": 1
       }
+    },
+    {
+      "name": "maps_on_mesh_studio",
+      "set": {
+        "SpecularPower": 8,
+        "LightBrightness": 1,
+        "DiffuseBoost": 0.45,
+        "AmbientLightColor": 0.28,
+        "EnvCubeMapBrightness": 0.05,
+        "ReflectionIndex": 0,
+        "RefractionIndex": 0,
+        "DiffuseMappingFactor": 1,
+        "NormalMappingFactor": 1,
+        "SpecularMappingFactor": 1,
+        "EnvCubeMappingFactor": 0,
+        "GlobalDiffuseAlpha": 1
+      }
     }
   ]
 }

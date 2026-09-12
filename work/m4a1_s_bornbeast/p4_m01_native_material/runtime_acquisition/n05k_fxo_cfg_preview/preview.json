@@ -31,6 +31,13 @@
       "pass": 0,
       "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
       "bytes": 237508
+    },
+    {
+      "name": "maps_on_mesh_studio",
+      "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\maps_on_mesh_studio.png",
+      "pass": 0,
+      "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+      "bytes": 161900
     }
   ]
 }
