@@ -1,0 +1,457 @@
+{
+  "generated_at_utc": "2026-09-12T14:22:23.453111+00:00",
+  "task": "P4-M01-N05-E",
+  "result": "FXO_EFFECT_ENUMERATED",
+  "p4_m01": "INCOMPLETE",
+  "source": "D:\\Program Files\\CF(2)\\rez\\Shader\\playerviewmesh.fxo",
+  "sha256": "d1672ba7e0a0f5b69e6a9520ec4ba0c6d4fb08b435aff1f3a3110af408bfb99c",
+  "n04c_sha256": "d227961370c480baf8a465f127b1ef6c52ff7936d4b31529c50b4e7074ecd1bd",
+  "n04c_sha_match": false,
+  "load_ok": true,
+  "load_error": null,
+  "parameter_count": 111,
+  "technique_count": 43,
+  "parameter_names": [
+    "WorldMatrix",
+    "ViewMatrix",
+    "ProjectionMatrix",
+    "ViewProjectionMatrix",
+    "WorldViewMatrix",
+    "WorldViewProjectionMatrix",
+    "WorldInverseTranspose",
+    "MeshRotationMatrix",
+    "CameraPosition",
+    "LightDirection",
+    "TransformedLitDirection",
+    "Color",
+    "HightLightColor",
+    "ColorLimit",
+    "theAccumTime",
+    "theFrameTime",
+    "GlobalDiffuseAlpha",
+    "IsScanner",
+    "IsGradation",
+    "NormalBoost",
+    "SpecularBacklighting",
+    "BoneTM",
+    "NumVertInfluences",
+    "EnvCubeMapBrightness",
+    "SpecularPower",
+    "LightBrightness",
+    "DiffuseBoost",
+    "AmbientLightColor",
+    "DiffuseMappingFactor",
+    "NormalMappingFactor",
+    "SpecularMappingFactor",
+    "EnvCubeMappingFactor",
+    "HalfLambertPower",
+    "HalfLambertBase",
+    "ReflectionIndex",
+    "RefractionIndex",
+    "TexturePanningVelocityU",
+    "TexturePanningVelocityV",
+    "TextureTileX",
+    "TextureTileY",
+    "InlineAlpha",
+    "ColorRate",
+    "Sprinker",
+    "EffectAlpha",
+    "HightLightPower",
+    "SpecularLength",
+    "SpecularHighlight",
+    "RefractionParam",
+    "RimLightParam",
+    "MapEnableState",
+    "EmissiveMapThreshold",
+    "NoiseMapUVFlowSpeed",
+    "EmissiveMapIntensity",
+    "DiffuseMap",
+    "DiffuseMapSampler",
+    "SpecularMap",
+    "SpecularMapSampler",
+    "CubeMap",
+    "CubeMapSampler",
+    "NormalMap",
+    "NormalMapSampler",
+    "AlphaMap",
+    "AlphaMapSampler",
+    "AlphaMap2",
+    "AlphaMapSampler2",
+    "OverlayMap",
+    "OverlayMapSampler",
+    "OverlayMap2",
+    "OverlayMapSampler2",
+    "MaskMap",
+    "MaskMapSampler",
+    "NoiseMap",
+    "NoiseMapSampler",
+    "gUseMapLight",
+    "gCamPos",
+    "gDefaultAmbient",
+    "gMaterialDiffuse",
+    "gMaterialAmbient",
+    "gMaterialSpecular",
+    "gMaterialSpecularPower",
+    "gMaterialEmissive",
+    "gModulate",
+    "gLightCount",
+    "gLightType",
+    "gLightDiffuse",
+    "gLightSpecular",
+    "gLightAmbient",
+    "gLightPos",
+    "gLightDir",
+    "gRange",
+    "gAttenuation0",
+    "gAttenuation1",
+    "gAttenuation2",
+    "gOverrideColorRatio",
+    "gOverrideColor",
+    "gOverrideAlpha",
+    "gFogMode",
+    "gFogColor",
+    "gFogRange",
+    "gFogDensity",
+    "GhostOverlayBrightness",
+    "PlayerViewMeshVS_RD_3_0",
+    "PlayerViewMeshVS_MP_3_0",
+    "PlayerViewMeshGhostVS_RD_3_0",
+    "PlayerViewMeshGhostVS_MP_3_0",
+    "Kx",
+    "Ky",
+    "gPixeloffset",
+    "PlayerViewMeshTexturePanningVS_RD_3_0",
+    "PlayerViewMeshTexturePanningVS_MP_3_0",
+    "VS_RD_3_0"
+  ],
+  "technique_names": [
+    "tPlayerViewMesh",
+    "tPlayerViewMeshEmsv",
+    "tPlayerViewMeshRefract",
+    "tPlayerViewMeshRefractEmsv",
+    "tPlayerViewMeshAproxSnell",
+    "tPlayerViewMeshAproxSnellEmsv",
+    "tPlayerViewMeshAproxSnellTransformedCube",
+    "tPlayerViewMeshAproxSnellTransformedCubeEmsv",
+    "tPlayerViewMeshAlpha",
+    "tPlayerViewMeshAlphaEmsv",
+    "tPlayerViewMeshAlphaRefract",
+    "tPlayerViewMeshAlphaRefractEmsv",
+    "tPlayerViewMeshAlphaAproxSnell",
+    "tPlayerViewMeshAlphaAproxSnellEmsv",
+    "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+    "tPlayerViewMeshAlphaAproxSnellTransformedCubeEmsv",
+    "tPlayerViewMeshTexturePanning",
+    "tPlayerViewMeshGhostShader",
+    "tPlayerViewMeshGhostShaderWepon",
+    "tPlayerViewMeshGhostShaderWeponEmsv",
+    "tPlayerViewMeshGhostShaderWeponTexturePanning",
+    "tPlayerViewMeshGhostShaderWeponTexturePanningEmsv",
+    "tPlayerViewMeshDollModel",
+    "tRefractionModel",
+    "tRefractionModelEmsv",
+    "tRefractionModelRefract",
+    "tRefractionModelRefractEmsv",
+    "tRefractionModelAproxSnell",
+    "tRefractionModelAproxSnellEmsv",
+    "tRefractionModelAproxSnellTransformedCube",
+    "tRefractionModelAproxSnellTransformedCubeEmsv",
+    "tRefractionModelAlpha",
+    "tRefractionModelAlphaEmsv",
+    "tRefractionModelAlphaRefract",
+    "tRefractionModelAlphaRefractEmsv",
+    "tRefractionModelAlphaAproxSnell",
+    "tRefractionModelAlphaAproxSnellEmsv",
+    "tRefractionModelAlphaAproxSnellTransformedCube",
+    "tRefractionModelAlphaAproxSnellTransformedCubeEmsv",
+    "tRefractionModelGhostShaderWepon",
+    "tRefractionModelGhostShaderWeponEmsv",
+    "tRefractionModelGhostShaderWeponTexturePanning",
+    "tRefractionModelGhostShaderWeponTexturePanningEmsv"
+  ],
+  "cfg_name_overlap": {
+    "Textures.SpecularMapName2": {
+      "cfg_value": "M4A1_S_BornBeast_S.tga",
+      "hints": [
+        "SpecularMap",
+        "SpecularMapSampler"
+      ],
+      "effect_name_hits": [
+        "SpecularMap",
+        "SpecularMapSampler",
+        "SpecularMappingFactor"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Textures.EnvCubeMapName2": {
+      "cfg_value": "Black_Shader03.dds",
+      "hints": [
+        "CubeMap",
+        "EnvCube"
+      ],
+      "effect_name_hits": [
+        "CubeMap",
+        "CubeMapSampler",
+        "EnvCubeMapBrightness",
+        "EnvCubeMappingFactor"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Textures.NormalMapName2": {
+      "cfg_value": "M4A1_S_BornBeast_N.tga",
+      "hints": [
+        "NormalMap",
+        "NormalMapSampler"
+      ],
+      "effect_name_hits": [
+        "NormalMap",
+        "NormalMapSampler",
+        "NormalMappingFactor"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Textures.AlphaMapName2": {
+      "cfg_value": "M4A1_S_BornBeast_alpha.tga",
+      "hints": [
+        "AlphaMap",
+        "AlphaMapSampler"
+      ],
+      "effect_name_hits": [
+        "AlphaMap",
+        "AlphaMap2",
+        "AlphaMapSampler",
+        "AlphaMapSampler2"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Techniques.DiffuseMappingEnabled": {
+      "cfg_value": "1",
+      "hints": [
+        "Diffuse",
+        "MapEnable"
+      ],
+      "effect_name_hits": [
+        "DiffuseBoost",
+        "DiffuseMap",
+        "DiffuseMapSampler",
+        "DiffuseMappingFactor",
+        "GlobalDiffuseAlpha",
+        "MapEnableState",
+        "gLightDiffuse",
+        "gMaterialDiffuse"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Techniques.SpecularMappingEnabled": {
+      "cfg_value": "1",
+      "hints": [
+        "Specular",
+        "MapEnable"
+      ],
+      "effect_name_hits": [
+        "MapEnableState",
+        "SpecularBacklighting",
+        "SpecularHighlight",
+        "SpecularLength",
+        "SpecularMap",
+        "SpecularMapSampler",
+        "SpecularMappingFactor",
+        "SpecularPower",
+        "gLightSpecular",
+        "gMaterialSpecular",
+        "gMaterialSpecularPower"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Techniques.EnvCubeMappingEnabled": {
+      "cfg_value": "1",
+      "hints": [
+        "Cube",
+        "EnvCube",
+        "MapEnable"
+      ],
+      "effect_name_hits": [
+        "CubeMap",
+        "CubeMapSampler",
+        "EnvCubeMapBrightness",
+        "EnvCubeMappingFactor",
+        "MapEnableState",
+        "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+        "tPlayerViewMeshAlphaAproxSnellTransformedCubeEmsv",
+        "tPlayerViewMeshAproxSnellTransformedCube",
+        "tPlayerViewMeshAproxSnellTransformedCubeEmsv",
+        "tRefractionModelAlphaAproxSnellTransformedCube",
+        "tRefractionModelAlphaAproxSnellTransformedCubeEmsv",
+        "tRefractionModelAproxSnellTransformedCube",
+        "tRefractionModelAproxSnellTransformedCubeEmsv"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Techniques.NormalMappingEnabled": {
+      "cfg_value": "1",
+      "hints": [
+        "Normal",
+        "MapEnable"
+      ],
+      "effect_name_hits": [
+        "MapEnableState",
+        "NormalBoost",
+        "NormalMap",
+        "NormalMapSampler",
+        "NormalMappingFactor"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.LightBrightness": {
+      "cfg_value": "0.01",
+      "hints": [
+        "LightBrightness",
+        "Brightness"
+      ],
+      "effect_name_hits": [
+        "EnvCubeMapBrightness",
+        "GhostOverlayBrightness",
+        "LightBrightness"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.EnvCubeMapBrightness": {
+      "cfg_value": "4",
+      "hints": [
+        "EnvCubeMapBrightness",
+        "CubeMap",
+        "Brightness"
+      ],
+      "effect_name_hits": [
+        "CubeMap",
+        "CubeMapSampler",
+        "EnvCubeMapBrightness",
+        "EnvCubeMappingFactor",
+        "GhostOverlayBrightness",
+        "LightBrightness"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.SpecularPower": {
+      "cfg_value": "1",
+      "hints": [
+        "SpecularPower"
+      ],
+      "effect_name_hits": [
+        "SpecularPower",
+        "gMaterialSpecularPower"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.DiffuseBoost": {
+      "cfg_value": "0.1",
+      "hints": [
+        "DiffuseBoost"
+      ],
+      "effect_name_hits": [
+        "DiffuseBoost"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.AmbientLightColor": {
+      "cfg_value": "0.01",
+      "hints": [
+        "Ambient"
+      ],
+      "effect_name_hits": [
+        "AmbientLightColor",
+        "gDefaultAmbient",
+        "gLightAmbient",
+        "gMaterialAmbient"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.RefractionIndex": {
+      "cfg_value": "0.01",
+      "hints": [
+        "Refraction"
+      ],
+      "effect_name_hits": [
+        "RefractionIndex",
+        "RefractionParam",
+        "tRefractionModel",
+        "tRefractionModelAlpha",
+        "tRefractionModelAlphaAproxSnell",
+        "tRefractionModelAlphaAproxSnellEmsv",
+        "tRefractionModelAlphaAproxSnellTransformedCube",
+        "tRefractionModelAlphaAproxSnellTransformedCubeEmsv",
+        "tRefractionModelAlphaEmsv",
+        "tRefractionModelAlphaRefract",
+        "tRefractionModelAlphaRefractEmsv",
+        "tRefractionModelAproxSnell",
+        "tRefractionModelAproxSnellEmsv",
+        "tRefractionModelAproxSnellTransformedCube",
+        "tRefractionModelAproxSnellTransformedCubeEmsv",
+        "tRefractionModelEmsv",
+        "tRefractionModelGhostShaderWepon",
+        "tRefractionModelGhostShaderWeponEmsv",
+        "tRefractionModelGhostShaderWeponTexturePanning",
+        "tRefractionModelGhostShaderWeponTexturePanningEmsv",
+        "tRefractionModelRefract",
+        "tRefractionModelRefractEmsv"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.ReflectionIndex": {
+      "cfg_value": "0.9",
+      "hints": [
+        "Reflection"
+      ],
+      "effect_name_hits": [
+        "ReflectionIndex"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.EnvCubeUsage": {
+      "cfg_value": "2",
+      "hints": [
+        "EnvCubeUsage",
+        "CubeMap"
+      ],
+      "effect_name_hits": [
+        "CubeMap",
+        "CubeMapSampler",
+        "EnvCubeMapBrightness",
+        "EnvCubeMappingFactor"
+      ],
+      "matched": true,
+      "note": "name overlap only; not runtime assignment proof"
+    },
+    "Properties.CubeMapTransformY": {
+      "cfg_value": "-20",
+      "hints": [
+        "CubeMapTransform",
+        "TransformY"
+      ],
+      "effect_name_hits": [],
+      "matched": false,
+      "note": "name overlap only; not runtime assignment proof"
+    }
+  },
+  "limitations": [
+    "D3DX default values are not BornBeast runtime selection.",
+    "Name overlap is not a sampler binding proof.",
+    "This harness does not attach CrossFire or ACE.",
+    "Raw FXO stays in data/n05e_fxo and is not committed."
+  ]
+}

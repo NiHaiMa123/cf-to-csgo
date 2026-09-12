@@ -12,10 +12,10 @@ Date captured                 : 2026-09-12
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
-Current executor task         : P4-M01-N05-E
-Last completed task           : P4-M01-N05-D (PV LTB/UV diagnostic + named cube)
-Last accepted evidence commit : 50c13dec2b7ed8aa9ff94fe82e0306a38b54ac5d
-State                         : ACTIVE / FXO_OFFLINE_SEMANTICS
+Current executor task         : NONE
+Last completed task           : P4-M01-N05-E (offline playerviewmesh.fxo enumerate)
+Last accepted evidence commit : PENDING_N05E
+State                         : FXO_EFFECT_ENUMERATED / NATIVE_INPUTS_READY_SOURCE1_OPEN
 ```
 
 ## 0.1 已钉死
@@ -35,23 +35,22 @@ State                         : ACTIVE / FXO_OFFLINE_SEMANTICS
 ## 0.2 当前任务
 
 ```text
-Task ID : P4-M01-N05-E
+Task ID : P4-M01-N05-F
 State   : ACTIVE
-Goal    : 离线解析 playerviewmesh.fxo，关联已恢复 CFG 字段与 effect 参数/technique
-Last    : P4-M01-N05-D
-Result  : MESH_UV_AND_CUBE_RECOVERED_BINDING_OPEN
+Goal    : 用已验证 CF 像素做独立 Source 1 VMT/VTF 诊断映射（不改 P4 frozen）
+Last    : P4-M01-N05-E
+Result  : FXO_EFFECT_ENUMERATED
 ```
 
-N05-D 已用正式入口重读 PV LTB（SHA 与 N03-A 几何一致，主文件路由）、把 11 个 piece 的 UV 叠到 verified 1024 PV DTX，并恢复 `Black_Shader03.DDS`。LTB 仍是 `nNumTextures=0`；Bute 的 `PViewSkinFileName` 仍是 PV DTX 的路径证据。QV 256/1024 副本保留，未贴到 PV 网格。P4-M01 仍为 INCOMPLETE。
+N05-E 已在自建 D3D9 device 上载入当前磁盘 `playerviewmesh.fxo`（111 参数 / 43 technique）。CFG 的 `SpecularPower` / `LightBrightness` / `DiffuseBoost` / `AmbientLightColor` / `EnvCubeMapBrightness` / `ReflectionIndex` / `RefractionIndex` 与 effect 参数同名；`DiffuseMap`/`SpecularMap`/`NormalMap`/`AlphaMap`/`CubeMap` 槽存在。D3DX 默认值与 BornBeast CFG 不同，不能当运行时。`CubeMapTransformY` 无同名参数。live FXO SHA 已与 N04-C 不同。未附加 CF。P4-M01 仍 INCOMPLETE。
 
-本轮只做 FXO 离线语义：自建 D3D9 device 载入 `playerviewmesh.fxo`，枚举 parameter/technique/pass，对照 CFG 的 mapping 开关和 Normal/Specular/Alpha/Cube 槽。失败记 HRESULT/缺依赖。不附加 CF 进程，不注入，不把默认值当成黑骑士运行时选择。
+N05-F：把 verified PV DTX + Normal/Specular/Alpha TGA + cube 编成独立 Source 1 材质诊断包，`final_cf_material=false`，不覆盖 frozen addon，不部署。
 
-证据（N05-D）：
+证据（N05-E）：
 
-- `scripts/material_recovery/n05d_binding_uv_cube.py`
-- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05d_binding_uv_cube/{report.md,binding.json,pv_weapon_uv_on_verified_dtx.png}`
-
-N04-F 进程读取路线继续暂停。
+- `CFRezManager/Commands/FxoInspectCommand.cs`
+- `scripts/material_recovery/n05e_fxo_offline_inspect.py`
+- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05e_fxo_offline_inspect/{report.md,semantics.json,fxo_inspect.json}`
 
 ## 0.3 禁止
 
