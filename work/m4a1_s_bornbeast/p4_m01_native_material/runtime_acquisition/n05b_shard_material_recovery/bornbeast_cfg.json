@@ -1,0 +1,25 @@
+{
+  "Textures": {
+    "SpecularMapName2": "M4A1_S_BornBeast_S.tga",
+    "EnvCubeMapName2": "Black_Shader03.dds",
+    "NormalMapName2": "M4A1_S_BornBeast_N.tga",
+    "AlphaMapName2": "M4A1_S_BornBeast_alpha.tga"
+  },
+  "Techniques": {
+    "DiffuseMappingEnabled": "1",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1"
+  },
+  "Properties": {
+    "LightBrightness": "0.01",
+    "EnvCubeMapBrightness": "4",
+    "SpecularPower": "1",
+    "DiffuseBoost": "0.1",
+    "AmbientLightColor": "0.01",
+    "RefractionIndex": "0.01",
+    "ReflectionIndex": "0.9",
+    "EnvCubeUsage": "2",
+    "CubeMapTransformY": "-20"
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "generated_at_utc": "2026-09-12T13:19:50.205185+00:00",
+  "reviewed_commit": "32d2ec2e72439be28c471139e6f2e5805ae73729",
+  "result": "PV_DTX_AND_TEXT_CFG_RECOVERED_FROM_NUMBERED_PARTS",
+  "p4_m01": "INCOMPLETE",
+  "samples": [
+    {
+      "logical_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "legacy_time_field": 8,
+      "offset": 186436476,
+      "size": 524452,
+      "directory_md5": "c242a039731cf13cf9570bc2a56dc77f",
+      "sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 524452,
+          "md5": "8c340529fa3e942e8505346c97c4000e",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+          "length": 209382768,
+          "range_ok": true,
+          "actual_bytes": 524452,
+          "md5": "c242a039731cf13cf9570bc2a56dc77f",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "bornbeast_pv_dtx",
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 1024,
+        "height": 1024,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 524288
+      },
+      "structural_gate": {
+        "ok": true,
+        "reason": "dtx_Create gates passed",
+        "m_ResType": 0,
+        "m_Version": -5,
+        "width": 1024,
+        "height": 1024,
+        "n_mipmaps": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "bpp_ident_extra2": 4,
+        "header_bytes": 164,
+        "payload_bytes": 524288,
+        "expected_mip_bytes": 524288,
+        "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+      },
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_pv_dtx.png",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGBA",
+      "repo_decoder": {
+        "ok": true,
+        "returncode": 0,
+        "error": null,
+        "output": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_pv_cfrez.png",
+        "exact_rgba_match": true
+      }
+    },
+    {
+      "logical_path": "PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "legacy_time_field": 8,
+      "offset": 180830688,
+      "size": 524452,
+      "directory_md5": "46732d8b205128b92f85a8f416634ffd",
+      "sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 524452,
+          "md5": "5d3ae8455bfe8060fbc469de18dabffe",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+          "length": 209382768,
+          "range_ok": true,
+          "actual_bytes": 524452,
+          "md5": "46732d8b205128b92f85a8f416634ffd",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "royaldragon_pv_dtx",
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 1024,
+        "height": 1024,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 524288
+      },
+      "structural_gate": {
+        "ok": true,
+        "reason": "dtx_Create gates passed",
+        "m_ResType": 0,
+        "m_Version": -5,
+        "width": 1024,
+        "height": 1024,
+        "n_mipmaps": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "bpp_ident_extra2": 4,
+        "header_bytes": 164,
+        "payload_bytes": 524288,
+        "expected_mip_bytes": 524288,
+        "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+      },
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/royaldragon_pv_dtx.png",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "logical_path": "SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "legacy_time_field": 12,
+      "offset": 176566212,
+      "size": 524452,
+      "directory_md5": "ed35bec77e395810cf9ac807be809441",
+      "sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 524452,
+          "md5": "164bc6f0ce10536c2f2b2fbcc3e3b37e",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+          "length": 208676788,
+          "range_ok": true,
+          "actual_bytes": 524452,
+          "md5": "ed35bec77e395810cf9ac807be809441",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "royaldragon_s_dtx",
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 1024,
+        "height": 1024,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 524288
+      },
+      "structural_gate": {
+        "ok": true,
+        "reason": "dtx_Create gates passed",
+        "m_ResType": 0,
+        "m_Version": -5,
+        "width": 1024,
+        "height": 1024,
+        "n_mipmaps": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "bpp_ident_extra2": 4,
+        "header_bytes": 164,
+        "payload_bytes": 524288,
+        "expected_mip_bytes": 524288,
+        "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+      },
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/royaldragon_s_dtx.png",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "logical_path": "SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "legacy_time_field": 12,
+      "offset": 175254836,
+      "size": 131236,
+      "directory_md5": "f0e77ead4e160f7a64d7a890cb2138e2",
+      "sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 131236,
+          "md5": "f647dcc93c438699daccabe1948ef7a7",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+          "length": 208676788,
+          "range_ok": true,
+          "actual_bytes": 131236,
+          "md5": "f0e77ead4e160f7a64d7a890cb2138e2",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "greenvain_s_dtx",
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 512,
+        "height": 512,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 131072
+      },
+      "structural_gate": {
+        "ok": true,
+        "reason": "dtx_Create gates passed",
+        "m_ResType": 0,
+        "m_Version": -5,
+        "width": 512,
+        "height": 512,
+        "n_mipmaps": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "bpp_ident_extra2": 4,
+        "header_bytes": 164,
+        "payload_bytes": 131072,
+        "expected_mip_bytes": 131072,
+        "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+      },
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/greenvain_s_dtx.png",
+      "image_size": [
+        512,
+        512
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "logical_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "legacy_time_field": 12,
+      "offset": 58622490,
+      "size": 3145772,
+      "directory_md5": "1cff17e21cb046274030df0c5ebe1fae",
+      "sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 3145772,
+          "md5": "be5f854a9be394384be783d94a54e96c",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+          "length": 208676788,
+          "range_ok": true,
+          "actual_bytes": 3145772,
+          "md5": "1cff17e21cb046274030df0c5ebe1fae",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "bornbeast_specular_tga",
+      "container": "TGA",
+      "repair_applied": false,
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_specular_tga.png",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGB"
+    },
+    {
+      "logical_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+      "legacy_time_field": 9,
+      "offset": 129894546,
+      "size": 492,
+      "directory_md5": "5d2ff8110e9ab76ea0fcabb4c63c2c59",
+      "sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 492,
+          "md5": "f179d3739f62e254399fd8fbff05661b",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+          "length": 209427012,
+          "range_ok": true,
+          "actual_bytes": 492,
+          "md5": "5d2ff8110e9ab76ea0fcabb4c63c2c59",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "bornbeast_cfg",
+      "sections": {
+        "Textures": {
+          "SpecularMapName2": "M4A1_S_BornBeast_S.tga",
+          "EnvCubeMapName2": "Black_Shader03.dds",
+          "NormalMapName2": "M4A1_S_BornBeast_N.tga",
+          "AlphaMapName2": "M4A1_S_BornBeast_alpha.tga"
+        },
+        "Techniques": {
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1"
+        },
+        "Properties": {
+          "LightBrightness": "0.01",
+          "EnvCubeMapBrightness": "4",
+          "SpecularPower": "1",
+          "DiffuseBoost": "0.1",
+          "AmbientLightColor": "0.01",
+          "RefractionIndex": "0.01",
+          "ReflectionIndex": "0.9",
+          "EnvCubeUsage": "2",
+          "CubeMapTransformY": "-20"
+        }
+      }
+    },
+    {
+      "logical_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+      "legacy_time_field": 13,
+      "offset": 98902480,
+      "size": 32932,
+      "directory_md5": "9ce24f1c0d1478284c1a37c669ff1a31",
+      "sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 32932,
+          "md5": "5699540f96de3661b8f43fe8fe524db2",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+          "length": 125383036,
+          "range_ok": true,
+          "actual_bytes": 32932,
+          "md5": "9ce24f1c0d1478284c1a37c669ff1a31",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "bornbeast_qv_dtx",
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 256,
+        "height": 256,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 32768
+      },
+      "structural_gate": {
+        "ok": true,
+        "reason": "dtx_Create gates passed",
+        "m_ResType": 0,
+        "m_Version": -5,
+        "width": 256,
+        "height": 256,
+        "n_mipmaps": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "bpp_ident_extra2": 4,
+        "header_bytes": 164,
+        "payload_bytes": 32768,
+        "expected_mip_bytes": 32768,
+        "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+      },
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_qv_dtx.png",
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "logical_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+      "legacy_time_field": 2,
+      "offset": 115944226,
+      "size": 3145772,
+      "directory_md5": "65ce99f875470168ced5c40386f450aa",
+      "sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 3145772,
+          "md5": "be831acca67173e3644d91b2b94064cb",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+          "length": 206689673,
+          "range_ok": true,
+          "actual_bytes": 3145772,
+          "md5": "65ce99f875470168ced5c40386f450aa",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "bornbeast_alpha_tga",
+      "container": "TGA",
+      "repair_applied": false,
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_alpha_tga.png",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGB"
+    },
+    {
+      "logical_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+      "legacy_time_field": 6,
+      "offset": 151442202,
+      "size": 3145772,
+      "directory_md5": "41d5ea2df82acbfa7f4ea6487cad4a81",
+      "sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "length": 196985580,
+          "range_ok": true,
+          "actual_bytes": 3145772,
+          "md5": "9d82476e4ba1e3eab2e883534eca6596",
+          "md5_match": false
+        },
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+          "length": 209376906,
+          "range_ok": true,
+          "actual_bytes": 3145772,
+          "md5": "41d5ea2df82acbfa7f4ea6487cad4a81",
+          "md5_match": true
+        }
+      ],
+      "routing": "numbered_part",
+      "id": "bornbeast_normal_tga",
+      "container": "TGA",
+      "repair_applied": false,
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_normal_tga.png",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGB"
+    }
+  ],
+  "corrected_loose_control_scan": {
+    "status": "NO_CURRENT_CLIENT_CONTROL",
+    "scanned": 3258,
+    "hits": [],
+    "limit": 5
+  },
+  "n05a_qv_preview_comparison": {
+    "same_dimensions": true,
+    "exact_rgba_match": true
+  },
+  "index_file_length": 196985580,
+  "index_entry_count": 4417,
+  "ranges_outside_main_file_only": 155,
+  "warning": "Main-file-only bounds do not establish corruption: numbered-part ranges use the part's length."
+}

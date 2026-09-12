@@ -1049,12 +1049,20 @@ def scan_local_control_dtx(limit: int = 5) -> dict:
         if path.name.lower() in target_names:
             continue
         scanned += 1
-        prefix = path.read_bytes()[:64]
-        hdr = repo_dtx_try_read_header(prefix)
-        if not hdr.get("ok"):
+        # This is only a version probe. The full parser checks that pixel
+        # data follows the 164-byte LT2 header, so a 64-byte slice can never
+        # pass it, even when the file itself is a valid DTX.
+        with path.open("rb") as handle:
+            prefix = handle.read(8)
+        first = i32(prefix, 0)
+        if first not in SUPPORTED_VERSIONS and not (
+            first == LT_RESTYPE_DTX and i32(prefix, 4) in SUPPORTED_VERSIONS
+        ):
             continue
         full = path.read_bytes()
         hdr = repo_dtx_try_read_header(full)
+        if not hdr.get("ok"):
+            continue
         lith = dtx_create_structural(full)
         decoded = decode_repo_pixels(full) if hdr.get("ok") else {"ok": False}
         preview = None
