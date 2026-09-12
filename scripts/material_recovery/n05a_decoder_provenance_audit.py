@@ -763,7 +763,25 @@ def build_input_table() -> list[dict]:
                     }
                 )
                 continue
-            raw = n02er2.read_payload_bytes(index["abs"], entry["data_offset"], entry["size"])
+            try:
+                raw = n02er2.read_payload_bytes(
+                    index["abs"], entry["data_offset"], entry["size"], entry
+                )
+            except (OSError, ValueError) as exc:
+                copies.append(
+                    {
+                        "archive": index["archive"],
+                        "abs": index["abs"],
+                        "hit": True,
+                        "full_path": entry["full_path"],
+                        "data_offset": entry["data_offset"],
+                        "entry_size": entry["size"],
+                        "directory_md5": entry.get("md5"),
+                        "verified_read_error": str(exc),
+                        "md5_semantics": "verified numbered-part resolver required; unauthenticated main-file slice is deprecated",
+                    }
+                )
+                continue
             raw_sha = sha256_bytes(raw)
             raw_md5 = md5_bytes(raw)
             copies.append(
@@ -774,6 +792,7 @@ def build_input_table() -> list[dict]:
                     "full_path": entry["full_path"],
                     "data_offset": entry["data_offset"],
                     "entry_size": entry["size"],
+                    "time": entry.get("time"),
                     "actual_bytes": len(raw),
                     "directory_md5": entry.get("md5"),
                     "computed_md5": raw_md5,
@@ -781,9 +800,10 @@ def build_input_table() -> list[dict]:
                     "raw_sha256": raw_sha,
                     "raw_equals_loose": loose_present and raw_sha == loose_sha,
                     "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec",
+                    "verified_read": True,
                 }
             )
-        hit_shas = sorted({c["raw_sha256"] for c in copies if c.get("hit")})
+        hit_shas = sorted({c["raw_sha256"] for c in copies if c.get("hit") and "raw_sha256" in c})
         rows.append(
             {
                 **sample,
@@ -1423,6 +1443,13 @@ def main() -> int:
                     copy.get("abs") or str(CF / copy["archive"].replace("/", os.sep)),
                     copy["data_offset"],
                     copy["entry_size"],
+                    {
+                        "full_path": copy.get("full_path") or row["logical_path"],
+                        "data_offset": copy["data_offset"],
+                        "size": copy["entry_size"],
+                        "time": copy.get("time", 0),
+                        "md5": copy.get("directory_md5") or "",
+                    },
                 )
                 extra["divergent_copies"].append(
                     {

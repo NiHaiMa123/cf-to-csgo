@@ -7,7 +7,7 @@ namespace CFRezManager;
 
 internal static class RezArchiveDirectoryCache
 {
-    private const int CacheVersion = 1;
+    private const int CacheVersion = 2;
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
         WriteIndented = false
@@ -16,7 +16,7 @@ internal static class RezArchiveDirectoryCache
     private static readonly string CacheDirectory = Path.Combine(
         AppContext.BaseDirectory,
         "RezIndexCache",
-        "v1");
+        "v2");
 
     public static bool TryLoad(string filePath, out RezArchive? archive)
     {

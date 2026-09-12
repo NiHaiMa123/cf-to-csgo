@@ -367,10 +367,11 @@ internal static class LithTechModelTextureLoader
 
         try
         {
-            byte[] data = new byte[file.Size];
-            using FileStream source = File.OpenRead(archive.FilePath);
-            source.Position = file.DataOffset;
-            source.ReadExactly(data);
+            if (!RezVerifiedPayloadReader.TryRead(archive, file, MaxTextureBytes, out byte[]? data) || data is null)
+            {
+                return null;
+            }
+
             return TryDecodeTexture(file.Extension, data);
         }
         catch

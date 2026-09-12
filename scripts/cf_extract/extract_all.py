@@ -1,6 +1,24 @@
-import struct, os, sys
+"""Extract REZ payloads through the MD5-verified main-file / numbered-part resolver.
+
+Numbered-part files (`stem_N.ext` beside `stem.ext`) are payload shards, not
+independent indexes. Logical paths keep their parent directories; duplicate
+paths in one archive are errors. Default output is `data/verified_extract/`
+so historical `data/<basename>/` trees are not overwritten.
+"""
+from __future__ import annotations
+
+import argparse
+import os
+import struct
+import sys
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(
+    0,
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "material_recovery"),
+)
 from _paths import cf_dir, data_dir
+from rez_verified_payload import is_numbered_part_file, read_verified_payload
 
 Keys = bytes([
     0xF0, 0xF0, 0x9D, 0x09, 0x0A, 0x66, 0xAD, 0x6A, 0x85, 0x1D, 0xFD, 0x3F, 0x51, 0x23, 0xE7, 0xF3,
@@ -69,6 +87,10 @@ Keys = bytes([
     0xF9, 0x4D, 0xD0, 0x7F, 0xA7
 ])
 
+HEADER_SIZE = 168
+MAX_DEPTH = 128
+
+
 def decode_buffer(buffer, offset):
     decoded = bytearray(len(buffer))
     for i in range(len(buffer)):
@@ -80,83 +102,199 @@ def decode_buffer(buffer, offset):
         offset += 1
     return decoded
 
-def read_string(f, length):
-    return f.read(length).rstrip(b'\0').decode('ascii', errors='ignore')
 
-def extract_rez(file_path, out_dir):
-    with open(file_path, 'rb') as f:
-        f.seek(127)
-        version, root_pos, root_size, root_time, next_write, time, l_key, l_dir_name, l_rez_name, l_comment = struct.unpack('<IIIIIIIIII', f.read(40))
-        
-        visited = set()
-        
-        def parse_dir(offset, size, current_path):
-            if f.seek(0, 2) <= offset or size <= 0: return
-            f.seek(offset)
-            data = f.read(size)
-            if not data: return
-            decoded = decode_buffer(data, offset)
+def discover_index_archives(root: str) -> list[str]:
+    found = []
+    if not os.path.isdir(root):
+        return found
+    for dirpath, _dirnames, filenames in os.walk(root):
+        for name in filenames:
+            if not name.lower().endswith(".rez"):
+                continue
+            path = os.path.join(dirpath, name)
+            if is_numbered_part_file(path):
+                continue
+            found.append(path)
+    found.sort()
+    return found
+
+
+def archive_output_root(index_path: str, out_root: str, cf_root: str) -> str:
+    index_path = os.path.abspath(index_path)
+    cf_root = os.path.abspath(cf_root)
+    try:
+        relative = os.path.relpath(index_path, cf_root)
+        if relative.startswith(".."):
+            relative = os.path.basename(index_path)
+    except ValueError:
+        relative = os.path.basename(index_path)
+    return os.path.join(out_root, os.path.splitext(relative)[0])
+
+
+def read_index_entries(file_path: str) -> list[dict]:
+    entries: list[dict] = []
+    with open(file_path, "rb") as handle:
+        file_length = handle.seek(0, os.SEEK_END)
+        if file_length < HEADER_SIZE:
+            return entries
+        handle.seek(127)
+        _version, root_pos, root_size = struct.unpack("<III", handle.read(12))
+        visited: set[str] = set()
+
+        def parse_dir(offset: int, size: int, current_path: str, depth: int) -> None:
+            if depth > MAX_DEPTH or size <= 0 or offset < HEADER_SIZE or offset >= file_length:
+                return
+            readable = min(size, file_length - offset)
+            if readable <= 0:
+                return
+            key = f"{offset}:{readable}"
+            if key in visited:
+                return
+            visited.add(key)
+            handle.seek(offset)
+            decoded = decode_buffer(handle.read(readable), offset)
             idx = 0
-            
             while idx + 4 <= len(decoded):
-                if idx + 4 > len(decoded): break
-                typ = struct.unpack_from('<I', decoded, idx)[0]
+                typ = struct.unpack_from("<I", decoded, idx)[0]
                 idx += 4
                 if typ == 0:
-                    if idx + 28 > len(decoded): break
-                    d_off, f_size, t_time, f_id, ext_bytes = struct.unpack_from('<IIII4s', decoded, idx)
+                    if idx + 28 > len(decoded):
+                        break
+                    data_offset, file_size, file_time, file_id, ext_bytes = struct.unpack_from("<IIII4s", decoded, idx)
                     idx += 20
                     idx += 4
-                    if idx + 4 > len(decoded): break
-                    n_len = struct.unpack_from('<I', decoded, idx)[0]
+                    if idx + 4 > len(decoded):
+                        break
+                    name_len = struct.unpack_from("<I", decoded, idx)[0]
                     idx += 4
-                    if idx + n_len + 34 > len(decoded): break
-                    name_bytes = decoded[idx:idx+n_len]
-                    idx += n_len
+                    if name_len < 0 or idx + name_len + 34 > len(decoded):
+                        break
+                    name = decoded[idx:idx + name_len].rstrip(b"\0").decode("ascii", errors="ignore")
+                    idx += name_len
                     idx += 2
-                    md5 = decoded[idx:idx+32]
+                    md5 = decoded[idx:idx + 32].rstrip(b"\0").decode("ascii", errors="ignore")
                     idx += 32
-                    name = name_bytes.rstrip(b'\0').decode('ascii', errors='ignore')
-                    ext = ext_bytes.rstrip(b'\0 ').decode('ascii', errors='ignore')[::-1]
-                    
-                    full_out = os.path.join(out_dir, current_path, f'{name}.{ext}')
-                    os.makedirs(os.path.dirname(full_out), exist_ok=True)
-                    
-                    orig_pos = f.tell()
-                    f.seek(d_off)
-                    file_data = f.read(f_size)
-                    with open(full_out, 'wb') as out_f:
-                        out_f.write(file_data)
-                    f.seek(orig_pos)
-                    
+                    ext = ext_bytes.rstrip(b"\0 ").decode("ascii", errors="ignore")[::-1]
+                    if not name or not ext or file_size < 0:
+                        continue
+                    file_name = f"{name}.{ext}"
+                    full_path = f"{current_path}/{file_name}" if current_path else file_name
+                    entries.append({
+                        "name": file_name,
+                        "full_path": full_path,
+                        "data_offset": data_offset,
+                        "size": file_size,
+                        "time": file_time,
+                        "id": file_id,
+                        "md5": md5,
+                    })
                 elif typ == 1:
-                    if idx + 16 > len(decoded): break
-                    t_off, t_size, t_time, n_len = struct.unpack_from('<IIII', decoded, idx)
+                    if idx + 16 > len(decoded):
+                        break
+                    table_offset, table_size, _table_time, name_len = struct.unpack_from("<IIII", decoded, idx)
                     idx += 16
-                    if idx + n_len + 1 > len(decoded): break
-                    name_bytes = decoded[idx:idx+n_len]
-                    idx += n_len
-                    idx += 1
-                    name = name_bytes.rstrip(b'\0').decode('ascii', errors='ignore')
-                    
-                    if t_off > 0 and t_size > 0:
-                        parse_dir(t_off, t_size, os.path.join(current_path, name))
+                    if name_len < 0 or idx + name_len + 1 > len(decoded):
+                        break
+                    name = decoded[idx:idx + name_len].rstrip(b"\0").decode("ascii", errors="ignore")
+                    idx += name_len + 1
+                    if name and table_offset >= HEADER_SIZE and table_size >= 0 and table_offset + table_size <= file_length:
+                        child_path = f"{current_path}/{name}" if current_path else name
+                        parse_dir(table_offset, table_size, child_path, depth + 1)
                 else:
                     break
 
-        parse_dir(root_pos, root_size, '')
+        parse_dir(root_pos, root_size, "", 0)
+    return entries
 
-if __name__ == '__main__':
-    rez_files = []
-    for root, dirs, files in os.walk(cf_dir()):
-        for name in files:
-            if name.endswith('.rez'):
-                rez_files.append(os.path.join(root, name))
 
-    for rez in rez_files:
-        print(f'Extracting {rez}...')
+def logical_path_key(value: str) -> str:
+    return str(value).replace("\\", "/").upper().strip("/")
+
+
+def logical_path_matches(full_path: str, wanted: str) -> bool:
+    full = logical_path_key(full_path)
+    want = logical_path_key(wanted)
+    return full == want or full.endswith("/" + want)
+
+
+def unique_entries(entries: list[dict], logical_paths: list[str] | None = None) -> list[dict]:
+    grouped: dict[str, list[dict]] = {}
+    for entry in entries:
+        key = logical_path_key(entry["full_path"])
+        grouped.setdefault(key, []).append(entry)
+    for key, group in grouped.items():
+        if len(group) != 1:
+            raise ValueError(f"Duplicate logical path in archive: {key}")
+    if logical_paths is None:
+        return [group[0] for group in grouped.values()]
+
+    selected = []
+    for wanted in logical_paths:
+        matches = [
+            group[0]
+            for key, group in grouped.items()
+            if logical_path_matches(key, wanted)
+        ]
+        if len(matches) != 1:
+            raise ValueError(f"Logical path {wanted!r} matched {len(matches)} entries")
+        selected.append(matches[0])
+    return selected
+
+
+def extract_archive(
+    index_path: str,
+    out_dir: str,
+    logical_paths: list[str] | None = None,
+) -> list[dict]:
+    entries = unique_entries(read_index_entries(index_path), logical_paths)
+    written = []
+    for entry in entries:
+        data, provenance = read_verified_payload(index_path, entry)
+        relative = str(entry["full_path"]).replace("\\", "/").strip("/")
+        if not relative or ".." in relative.split("/"):
+            raise ValueError(f"Refusing unsafe logical path: {entry['full_path']}")
+        destination = os.path.join(out_dir, *relative.split("/"))
+        parent = os.path.dirname(destination)
+        if parent:
+            os.makedirs(parent, exist_ok=True)
+        with open(destination, "wb") as handle:
+            handle.write(data)
+        written.append({
+            "logical_path": entry["full_path"],
+            "destination": destination,
+            "sha256": provenance["sha256"],
+            "payload_file": provenance["payload_file"],
+            "routing": provenance["routing"],
+            "size": provenance["size"],
+        })
+    return written
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Extract REZ files with MD5-verified numbered-part routing")
+    parser.add_argument("--out", default=None, help="Output root (default: data/verified_extract)")
+    parser.add_argument("--index", action="append", default=[], help="Index REZ path; repeatable")
+    parser.add_argument("--logical-path", action="append", default=[], help="Extract only these logical paths")
+    parser.add_argument("--cf-dir", default=None, help="CF install used to discover archives and relative output paths")
+    args = parser.parse_args(argv)
+
+    cf_root = args.cf_dir or cf_dir()
+    out_root = args.out or os.path.join(data_dir(), "verified_extract")
+    indexes = [os.path.abspath(path) for path in args.index] or discover_index_archives(cf_root)
+    logical_paths = args.logical_path or None
+
+    for index_path in indexes:
+        print(f"Extracting {index_path}...")
         try:
-            extract_rez(rez, os.path.join(data_dir(), os.path.basename(rez)[:-4]))
-        except Exception as e:
-            print(f'Failed {rez}: {e}')
-    print('Done!')
+            dest = archive_output_root(index_path, out_root, cf_root)
+            written = extract_archive(index_path, dest, logical_paths)
+            print(f"  wrote {len(written)} file(s) under {dest}")
+        except Exception as exc:
+            print(f"Failed {index_path}: {exc}")
+            return 1
+    print("Done!")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

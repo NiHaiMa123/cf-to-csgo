@@ -1556,11 +1556,9 @@ public sealed class ExplorerItem : INotifyPropertyChanged
             return null;
         }
 
-        byte[] data = new byte[ArchiveFile.Size];
-        using FileStream source = File.OpenRead(Archive.FilePath);
-        source.Position = ArchiveFile.DataOffset;
-        source.ReadExactly(data);
-        return data;
+        return RezVerifiedPayloadReader.TryRead(Archive, ArchiveFile, maxBytes, out byte[]? data)
+            ? data
+            : null;
     }
 
     private byte[]? ReadFilePrefixBytes(int maxBytes)
@@ -1592,12 +1590,14 @@ public sealed class ExplorerItem : INotifyPropertyChanged
             return null;
         }
 
-        int archiveByteCount = checked((int)Math.Min(Math.Min(ArchiveFile.Size, maxBytes), int.MaxValue));
-        byte[] archiveData = new byte[archiveByteCount];
-        using FileStream archiveSource = File.OpenRead(Archive.FilePath);
-        archiveSource.Position = ArchiveFile.DataOffset;
-        archiveSource.ReadExactly(archiveData);
-        return archiveData;
+        if (!RezVerifiedPayloadReader.TryRead(Archive, ArchiveFile, Math.Max(maxBytes, ArchiveFile.Size), out byte[]? archiveData) ||
+            archiveData is null)
+        {
+            return null;
+        }
+
+        int archiveByteCount = checked((int)Math.Min(Math.Min(archiveData.Length, maxBytes), int.MaxValue));
+        return archiveData.AsSpan(0, archiveByteCount).ToArray();
     }
 
     private long? GetFileByteCount()
@@ -1633,9 +1633,13 @@ public sealed class ExplorerItem : INotifyPropertyChanged
             return null;
         }
 
-        using FileStream archiveSource = File.OpenRead(Archive.FilePath);
-        archiveSource.Position = ArchiveFile.DataOffset;
-        return LzmaAloneDecoder.TryDecompressPrefix(archiveSource, ArchiveFile.Size, maxDecodedBytes);
+        if (!RezVerifiedPayloadReader.TryRead(Archive, ArchiveFile, FmodBankDecoder.MaxSourceBytes, out byte[]? archiveData) ||
+            archiveData is null)
+        {
+            return null;
+        }
+
+        return LzmaAloneDecoder.TryDecompressPrefix(new MemoryStream(archiveData, writable: false), archiveData.Length, maxDecodedBytes);
     }
 
     private static ImageSource LoadBitmapImage(byte[] data, bool decodeThumbnail)

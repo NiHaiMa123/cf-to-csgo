@@ -12,10 +12,10 @@ Date captured                 : 2026-09-12
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
-Current executor task         : P4-M01-N05-C
-Last completed task           : P4-M01-N05-B (N05-A Review + numbered-part recovery)
-Last accepted evidence commit : 37d231ddc3ce0409b39ca05aad743f3d91875f52
-State                         : ACTIVE / VERIFIED_PAYLOAD_READER_INTEGRATION
+Current executor task         : NONE
+Last completed task           : P4-M01-N05-C (verified reader integration)
+Last accepted evidence commit : PENDING_THIS_COMMIT
+State                         : WAITING_REVIEW / VERIFIED_READER_INTEGRATED
 ```
 
 ## 0.1 已钉死
@@ -29,42 +29,28 @@ State                         : ACTIVE / VERIFIED_PAYLOAD_READER_INTEGRATION
 - CShell 有 `modeltextures\SpecularMap\%s`（12 LEA，后期 `.dtx` 路线）。黑骑士 Bute 没有 `SpecularMapName`；这与新恢复 CFG 中的 `SpecularMapName2` 是不同来源。
 - `crossfire.exe` 明文岛：`MODELTEXTURES\Shader\WeaponShader\` + `.cfg`，**0 代码引用**。它是 stub，只导入 packed `crossfirebase.dll`（`.tvm0`）。
 - 磁盘 `crossfirebase.dll` 无 WeaponShader 明文。N04-F 当时的 PID 33100 = `x64/crossfire.exe`，`OpenProcess(VM_READ)` = Win32 **5**。这是历史观测，不是当前进程状态；未绕过 ACE。
+- 正式提取/预览入口已接入 MD5 验证的主文件/编号分包 resolver（N05-C）。`extract_all.py`、CFRezManager Extract/Explorer/模型贴图/CFG/sprite/OBJ，以及 N05-A 的 `read_payload_bytes(..., entry=)` 走同一规则。目录缓存 v2、缩略图缓存 v2。无 MD5 不得宣称已验证或猜分包。历史 `data/rf017` 仍是旧主文件提取，不能当 final。
 
 ## 0.2 当前任务
 
 ```text
-Task ID : P4-M01-N05-C
-State   : ACTIVE
-Goal    : 将经过 MD5 验证的 REZ 分包读取接入正式提取/预览路径
-Last    : P4-M01-N05-B
-Result  : PV_DTX_AND_TEXT_CFG_RECOVERED_FROM_NUMBERED_PARTS
+Task ID : NONE
+State   : WAITING_REVIEW
+Goal    : N05-C 已完成；等 Review 后再开绑定 / cube / FXO
+Last    : P4-M01-N05-C
+Result  : VERIFIED_READER_INTEGRATED
 ```
 
-N05-A Review 已完成：接受 `rez2` QV 解码正例，纠正 control scanner 假阴性及错误物理文件来源。补充的 N05-B 已恢复 PV、三张 TGA 与明文 CFG，并冻结于 §4.27。**原 §0.4 将 N05-B 留给 FXO 的候选编号已被本次实际根因修复取代**；FXO 分析后置。
+N05-C 已把 MD5 验证的编号分包读取接入正式入口。4 条官方路径对 N05-B 的 9 个 logical path 得到同一 SHA256：`extract_all.py`、CFRezManager `--extract-file`、`--read-hash`、N05-A 使用的 `read_payload_bytes(..., entry=)`。PV 为 1024×1024；CFG 有 Textures / Techniques / Properties；TGA 直接解析、无插入头修复。合成分包测试覆盖主文件范围内的错误字节、主文件外的合法分包、缺失/截断/错哈希、双候选、timestamp 单文件、深层路径与同名 basename。目录缓存冷/热一致；改分包后面缩略图 key 变化。未调用 N05-B 辅助脚本充当“正式入口已修好”的证明。P4-M01 仍为 INCOMPLETE。
 
-当前可复现入口与证据：
+证据：
 
 - `scripts/material_recovery/rez_verified_payload.py`
-- `scripts/material_recovery/n05b_shard_material_recovery.py`
-- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/{report.md,recovery.json,bornbeast_cfg.json}`
+- `scripts/material_recovery/n05c_verified_reader_integration.py`
+- `CFRezManager/Archives/RezVerifiedPayload.cs`
+- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/{report.md,integration.json}`
 
-**为什么还需要这一轮**：新恢复命令已能取到正确资源，但 CFRezManager 的归档读取与旧批量提取器尚未接入。仅修 DTX decoder 无效；旧入口仍可能导出错误内容、丢弃分包 entry 或复用旧缩略图。禁止用这些旧入口重建 final 输入。
-
-执行范围（只做这一项工程闭环）：
-
-1. 统一主文件/编号分包 payload resolver，以 `rez_verified_payload.py` 为已验证规则参考。目录 `time` 只提供候选编号；对实际候选分别检查边界、长度与 MD5，不能全局把历史 timestamp 当分包号。缺分包、哈希不符或多候选匹配必须明确报错；无有效目录 MD5 的旧格式不得宣称已验证或自动猜分包。
-2. 接入 `CFRezManager/Archives/RezArchiveReader.cs` 的提取和 entry 校验。当前 `TryReadFileEntry` 按主文件长度过滤会丢掉合法分包 entry；目录结构边界与 payload 边界应分别检查。把 Explorer、UI、模型贴图/CFG、sprite、OBJ 等实际读取归档字节的入口汇入同一 resolver，清点现有 `DataOffset` 直接 seek 调用，避免只修 CLI 提取。
-3. 更新目录/缩略图及相关资源缓存的版本与来源标识。主文件和选中的分包来源发生变化时，不得命中旧数据；验证缓存冷启动和热启动一致。
-4. 接入 `scripts/cf_extract/extract_all.py` 与本轮继续使用的材质审计读取入口（包括 N05-A 的 `read_payload_bytes` 调用）。历史报告不重写；仅向新指定 staging 输出。检查完整父路径与重复 logical path，不能用 basename 覆盖同名文件。全库历史脚本不要求逐个重跑，报告须明确仍弃用的入口。
-5. 用 N05-B 的 9 个 logical path 与固定 SHA256 做端到端回归，元数据/诊断图输出到 `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/`。需要保留 raw staging 时只能在 `data/` 下新建明确命名的目录，不覆盖原输入、不提交 raw。此轮不改 P4 frozen build、不部署、不做 shader 调参。
-
-验收与交付：
-
-- 合成分包测试覆盖：主文件范围合法但字节错误、目标超出主文件而在分包内、缺失/截断/错误哈希分包、多候选冲突、普通单文件 timestamp、深层路径及重名。目录与缩略图缓存需验证修改分包后失效。
-- 正式提取/预览入口的 9/9 SHA256 与 N05-B 一致；PV 1024×1024、CFG 三个 section、TGA 直接解析一致。不能只调用 N05-B 辅助脚本作为“正式入口已修好”的证明。
-- 提交代码、测试及 `report.md` / `integration.json`，记录覆盖入口、来源/哈希、缓存验证、命令、未覆盖限制。构建和相关测试通过后，结果记为 `VERIFIED_READER_INTEGRATED`；部分失败则列出具体调用链，P4-M01 保持 INCOMPLETE，交回 Review。
-
-N05-C Review 后再安排正确 PV 几何/UV 与材质绑定、`Black_Shader03.dds` 解析、CFG/FXO 语义和 Source 1 映射。N04-F 进程读取路线继续暂停。
+Executor STOP。Review 后再安排正确 PV 几何/UV 与材质绑定、`Black_Shader03.dds` 解析、CFG/FXO 语义和 Source 1 映射。N04-F 进程读取路线继续暂停。
 
 ## 0.3 禁止
 
@@ -75,13 +61,13 @@ N05-C Review 后再安排正确 PV 几何/UV 与材质绑定、`Black_Shader03.d
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：①正确字节/codec 已在 9 个指定资源上闭合，根因是分包读取；下一步先使正式入口稳定复现。②资源到 mesh/piece/sampler 的绑定、③渲染语义仍待验证。N04-F 只堵住 packed consumer 的进程读取，不能作为离线恢复的前置条件。公开源码提供了格式与解码参照，**本轮分包规则依据本机 9/9 目录 MD5 实证，不是从社区工具名称推断**。
+**更新判断**：①正确字节/codec 已在 9 个指定资源上闭合，根因是分包读取；N05-C 已使正式入口稳定复现。②资源到 mesh/piece/sampler 的绑定、③渲染语义仍待验证。N04-F 只堵住 packed consumer 的进程读取，不能作为离线恢复的前置条件。公开源码提供了格式与解码参照，**本轮分包规则依据本机 9/9 目录 MD5 实证，不是从社区工具名称推断**。
 
-以下按新证据重排；只有 §0.2 的 N05-C 为 ACTIVE，后续是规划候选。
+以下按新证据重排；§0.2 现为 WAITING_REVIEW，N05-C 已完成，后续是规划候选。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
-| 1 / A：正确来源接入 | N05-A Review + N05-B 已恢复 PV 与 CFG；旧正式入口仍读主文件 | N05-C：统一 resolver、分包边界和缓存；正式入口 9/9 SHA256 重现 | 不覆盖旧 data，不按主文件范围丢弃合法分包 entry，不用无 MD5 的猜测作为成功 |
+| 1 / A：正确来源接入 | N05-C 已完成：正式入口 9/9 SHA256 与 N05-B 一致 | 已交付 `VERIFIED_READER_INTEGRATED`；旧 `data/rf017` 仍弃用 | 不覆盖旧 data，不按主文件范围丢弃合法分包 entry，不用无 MD5 的猜测作为成功 |
 | 2 / C：正确输入的绑定与副本差分 | 原生 PV 已可解；主索引 QV 256 与 rez2 QV 1024 都有效，CFG 有明确贴图名 | 正确读取 PV LTB/RS/Bute，核对 UV/mesh/piece、恢复命名 cube；生成有来源的 native-only 诊断预览 | 归一化 UV 允许不同分辨率，布局与绑定仍须验证；当前加载优先级未知就保留多副本 |
 | 3 / B：FXO 离线语义分析 | CFG 已有 mapping 开关、亮度/反射参数；D3D9 effect API 可枚举并反汇编 | 后续任务：自建 D3D9 device 载入 effect，关联 CFG 字段与 parameter/technique/pass/default、采样通道和公式；先验证已恢复的 Normal/Specular/Alpha/Cube | `Name2` 后缀、默认值、CFG 存在均不等于黑骑士运行时选择；失败记 HRESULT/依赖，不附加 CF |
 | 4 / D：可合法取得的兼容旧版本作参考 | Jupiter / CF 工具可解释标准路径，较早版本或不同地区 variant 可能暴露更少的格式差异 | 只有已获得可信版本与相关资源后，做旧/新 loader 或资源格式差分，提炼规则回验当前本机样本 | 尚无这样的新输入，不承诺能取得；旧版本行为/像素不自动成为当前 CF final，也不采用私服/脱壳工具包补缺口 |

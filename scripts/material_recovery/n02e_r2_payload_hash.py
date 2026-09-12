@@ -67,6 +67,7 @@ import sys
 import time
 from collections import defaultdict
 from datetime import datetime, timezone
+from pathlib import Path
 
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 _PROJECT_DIR = os.path.dirname(os.path.dirname(_SCRIPT_DIR))
@@ -93,15 +94,27 @@ os.makedirs(OUT_DIR, exist_ok=True)
 # ---------------------------------------------------------------------------
 # Bounded payload read (the only payload-byte access path)
 # ---------------------------------------------------------------------------
-def read_payload_bytes(rez_path: str, data_offset: int, size: int) -> bytes:
-    """Read bounded bytes from REZ at `data_offset` for `size` bytes.
+def read_payload_bytes(
+    rez_path: str,
+    data_offset: int,
+    size: int,
+    entry: dict | None = None,
+) -> bytes:
+    """Read bounded REZ payload bytes.
 
-    The rest of the REZ is never read into memory; this is the
-    payload-side analogue of `read_rez_index()`'s bounded directory
-    walk.  The returned buffer is owned by the caller; it is bounded
-    to `size` bytes (largest N02-D-R1 hit = 524,452 bytes for
-    PLAYERVIEW/PV-M4A1-CAMO.DTX).
+    When `entry` is supplied, routing uses the MD5-verified main-file /
+    numbered-part resolver. The offset and size arguments must match that
+    directory entry. Without `entry` this remains the historical
+    unauthenticated main-file slice and must not be treated as verified
+    numbered-part recovery.
     """
+    if entry is not None:
+        from rez_verified_payload import read_verified_payload
+
+        if int(entry["data_offset"]) != int(data_offset) or int(entry["size"]) != int(size):
+            raise ValueError("entry range does not match the requested offset/size")
+        data, _provenance = read_verified_payload(Path(rez_path), entry)
+        return data
     with open(rez_path, "rb") as fp:
         fp.seek(data_offset)
         return fp.read(size)

@@ -721,11 +721,7 @@ internal static class LithTechObjExportCommand
             throw new InvalidOperationException($"File is too large for export: {item.Name}");
         }
 
-        byte[] data = new byte[item.ArchiveFile.Size];
-        using FileStream source = File.OpenRead(item.Archive.FilePath);
-        source.Position = item.ArchiveFile.DataOffset;
-        source.ReadExactly(data);
-        return data;
+        return RezVerifiedPayloadReader.ReadBytes(item.Archive, item.ArchiveFile, maxBytes);
     }
 
     private static string SanitizeRelativePath(string relativePath)

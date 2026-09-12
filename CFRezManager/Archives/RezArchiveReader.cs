@@ -123,11 +123,8 @@ public sealed class RezArchiveReader
             Directory.CreateDirectory(destinationDirectory);
         }
 
-        using var source = File.OpenRead(archive.FilePath);
-        using var destination = new FileStream(destinationPath, FileMode.Create, FileAccess.Write, FileShare.None);
-
-        source.Position = file.DataOffset;
-        CopyExactly(source, destination, file.Size);
+        byte[] data = RezVerifiedPayloadReader.ReadBytes(archive, file);
+        File.WriteAllBytes(destinationPath, data);
     }
 
     private static RezHeader ReadHeader(BinaryReader reader)
@@ -195,7 +192,7 @@ public sealed class RezArchiveReader
 
             if (type == 0)
             {
-                if (!TryReadFileEntry(rangeReader, archive, owner, fileLength))
+                if (!TryReadFileEntry(rangeReader, archive, owner))
                 {
                     break;
                 }
@@ -262,8 +259,7 @@ public sealed class RezArchiveReader
     private static bool TryReadFileEntry(
         BinaryReader rangeReader,
         RezArchive archive,
-        RezDirectoryNode owner,
-        long fileLength)
+        RezDirectoryNode owner)
     {
         if (RemainingBytes(rangeReader) < 28)
         {
@@ -291,8 +287,7 @@ public sealed class RezArchiveReader
         if (!IsUsableName(name) ||
             string.IsNullOrWhiteSpace(extension) ||
             fileSize < 0 ||
-            dataOffset < 0 ||
-            dataOffset + (long)fileSize > fileLength)
+            dataOffset < 0)
         {
             return true;
         }
@@ -349,21 +344,4 @@ public sealed class RezArchiveReader
         return string.IsNullOrEmpty(parent) ? name : $"{parent}/{name}";
     }
 
-    private static void CopyExactly(Stream source, Stream destination, int bytesToCopy)
-    {
-        byte[] buffer = new byte[1024 * 128];
-        int remaining = bytesToCopy;
-
-        while (remaining > 0)
-        {
-            int read = source.Read(buffer, 0, Math.Min(buffer.Length, remaining));
-            if (read == 0)
-            {
-                throw new EndOfStreamException("Unexpected end of REZ file while extracting.");
-            }
-
-            destination.Write(buffer, 0, read);
-            remaining -= read;
-        }
-    }
 }

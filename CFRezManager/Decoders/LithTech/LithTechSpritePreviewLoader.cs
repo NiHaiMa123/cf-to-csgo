@@ -306,11 +306,9 @@ internal static class LithTechSpritePreviewLoader
             return null;
         }
 
-        byte[] data = new byte[file.Size];
-        using FileStream source = File.OpenRead(archive.FilePath);
-        source.Position = file.DataOffset;
-        source.ReadExactly(data);
-        return data;
+        return RezVerifiedPayloadReader.TryRead(archive, file, maxBytes, out byte[]? data)
+            ? data
+            : null;
     }
 
     private static byte[]? ReadLocalFileBytes(string filePath, int maxBytes)

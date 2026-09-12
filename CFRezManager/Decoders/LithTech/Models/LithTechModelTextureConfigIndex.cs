@@ -702,11 +702,9 @@ internal static class LithTechModelTextureConfigIndex
                 item.ArchiveFile.Size > 0 &&
                 item.ArchiveFile.Size <= MaxConfigBytes)
             {
-                byte[] data = new byte[item.ArchiveFile.Size];
-                using FileStream source = File.OpenRead(item.Archive.FilePath);
-                source.Position = item.ArchiveFile.DataOffset;
-                source.ReadExactly(data);
-                return data;
+                return RezVerifiedPayloadReader.TryRead(item.Archive, item.ArchiveFile, MaxConfigBytes, out byte[]? data)
+                    ? data
+                    : null;
             }
         }
         catch

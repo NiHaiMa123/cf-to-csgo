@@ -12,7 +12,7 @@ internal sealed record ThumbnailCacheClearResult(string CacheDirectory, int Dele
 
 internal static class ThumbnailDiskCache
 {
-    private const string CacheVersion = "v1";
+    private const string CacheVersion = "v2";
     private const string ImageExtension = ".png";
     private const string MetadataExtension = ".kind";
 
@@ -201,7 +201,7 @@ internal static class ThumbnailDiskCache
         }
     }
 
-    private static bool TryBuildCacheKey(ExplorerItem item, out string? key)
+    internal static bool TryBuildCacheKey(ExplorerItem item, out string? key)
     {
         key = null;
         string extension = item.FileExtension.Trim().ToUpperInvariant();
@@ -243,8 +243,8 @@ internal static class ThumbnailDiskCache
                 return false;
             }
 
-            descriptor = string.Join(
-                "|",
+            var descriptorParts = new List<string>
+            {
                 CacheVersion,
                 "rez",
                 NormalizePath(archiveInfo.FullName),
@@ -256,7 +256,24 @@ internal static class ThumbnailDiskCache
                 item.ArchiveFile.Time.ToString(System.Globalization.CultureInfo.InvariantCulture),
                 item.ArchiveFile.Id.ToString(System.Globalization.CultureInfo.InvariantCulture),
                 item.ArchiveFile.Md5,
-                extension);
+                extension
+            };
+            foreach (string candidate in RezVerifiedPayloadReader.ListCandidatePaths(archiveInfo.FullName, item.ArchiveFile.Time))
+            {
+                var candidateInfo = new FileInfo(candidate);
+                if (!candidateInfo.Exists)
+                {
+                    descriptorParts.Add("missing");
+                    descriptorParts.Add(NormalizePath(candidate));
+                    continue;
+                }
+
+                descriptorParts.Add(NormalizePath(candidateInfo.FullName));
+                descriptorParts.Add(candidateInfo.Length.ToString(System.Globalization.CultureInfo.InvariantCulture));
+                descriptorParts.Add(candidateInfo.LastWriteTimeUtc.Ticks.ToString(System.Globalization.CultureInfo.InvariantCulture));
+            }
+
+            descriptor = string.Join("|", descriptorParts);
         }
         else
         {

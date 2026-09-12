@@ -9,3 +9,4 @@ using System.Windows;
                                                 // app, or any theme specific resource dictionaries)
 )]
 [assembly: System.Runtime.CompilerServices.InternalsVisibleTo("DtxExporter")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("CFRezManager.Tests")]

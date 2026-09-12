@@ -44,6 +44,28 @@ class VerifiedPayloadTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "found 2"):
             read_verified_payload(self.base, self.entry)
 
+    def test_missing_md5_does_not_guess_a_part(self):
+        self.entry["md5"] = "not-an-md5"
+        with self.assertRaisesRegex(ValueError, "complete directory MD5"):
+            read_verified_payload(self.base, self.entry)
+
+    def test_truncated_part_is_not_a_match(self):
+        self.part.write_bytes(b"GO")
+        with self.assertRaisesRegex(ValueError, "found 0"):
+            read_verified_payload(self.base, self.entry)
+
+    def test_missing_part_is_not_a_match(self):
+        self.part.unlink()
+        with self.assertRaisesRegex(ValueError, "found 0"):
+            read_verified_payload(self.base, self.entry)
+
+    def test_numbered_part_file_detection_requires_index_sibling(self):
+        from rez_verified_payload import is_numbered_part_file
+        self.assertTrue(is_numbered_part_file(self.part))
+        lone = Path(self.tmp.name) / "orphan_8.rez"
+        lone.write_bytes(b"x")
+        self.assertFalse(is_numbered_part_file(lone))
+
 
 if __name__ == "__main__":
     unittest.main()

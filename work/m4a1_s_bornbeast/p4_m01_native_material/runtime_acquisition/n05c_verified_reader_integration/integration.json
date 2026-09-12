@@ -1,0 +1,656 @@
+{
+  "generated_at_utc": "2026-09-12T13:57:46.629321+00:00",
+  "task": "P4-M01-N05-C",
+  "result": "VERIFIED_READER_INTEGRATED",
+  "p4_m01": "INCOMPLETE",
+  "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+  "n05b_recovery": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/recovery.json",
+  "staging": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract",
+  "official_entries_exercised": [
+    "scripts/cf_extract/extract_all.py extract_archive",
+    "CFRezManager --extract-file (RezArchiveReader.ExtractFile)",
+    "CFRezManager --read-hash (RezVerifiedPayloadReader.Read)",
+    "n02e_r2_payload_hash.read_payload_bytes(..., entry=entry) used by N05-A"
+  ],
+  "not_used_as_proof": [
+    "scripts/material_recovery/n05b_shard_material_recovery.py"
+  ],
+  "sha256_comparison": [
+    {
+      "id": "bornbeast_pv_dtx",
+      "logical_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "expected_sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "extract_all_sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "cfrez_extract_file_sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "cfrez_read_hash_sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "n02e_verified_sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez"
+    },
+    {
+      "id": "royaldragon_pv_dtx",
+      "logical_path": "PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "expected_sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "extract_all_sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "cfrez_extract_file_sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "cfrez_read_hash_sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "n02e_verified_sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez"
+    },
+    {
+      "id": "royaldragon_s_dtx",
+      "logical_path": "SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "expected_sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "extract_all_sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "cfrez_extract_file_sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "cfrez_read_hash_sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "n02e_verified_sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ"
+    },
+    {
+      "id": "greenvain_s_dtx",
+      "logical_path": "SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "expected_sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "extract_all_sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "cfrez_extract_file_sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "cfrez_read_hash_sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "n02e_verified_sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ"
+    },
+    {
+      "id": "bornbeast_specular_tga",
+      "logical_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "expected_sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "extract_all_sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "cfrez_extract_file_sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "cfrez_read_hash_sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "n02e_verified_sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ"
+    },
+    {
+      "id": "bornbeast_cfg",
+      "logical_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+      "expected_sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "extract_all_sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "cfrez_extract_file_sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "cfrez_read_hash_sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "n02e_verified_sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez"
+    },
+    {
+      "id": "bornbeast_qv_dtx",
+      "logical_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "expected_sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "extract_all_sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "cfrez_extract_file_sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "cfrez_read_hash_sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "n02e_verified_sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ"
+    },
+    {
+      "id": "bornbeast_alpha_tga",
+      "logical_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "expected_sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "extract_all_sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "cfrez_extract_file_sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "cfrez_read_hash_sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "n02e_verified_sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez"
+    },
+    {
+      "id": "bornbeast_normal_tga",
+      "logical_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+      "expected_sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "extract_all_sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "cfrez_extract_file_sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "cfrez_read_hash_sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "n02e_verified_sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "match": true,
+      "routing": "numbered_part",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez"
+    }
+  ],
+  "python_extract": [
+    {
+      "logical_path": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1_S_BornBeast.DTX",
+      "sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "routing": "numbered_part",
+      "size": 524452
+    },
+    {
+      "logical_path": "ModelTextures/PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1_RoyalDragon.DTX",
+      "sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "routing": "numbered_part",
+      "size": 524452
+    },
+    {
+      "logical_path": "ModelTextures/SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX",
+      "sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part",
+      "size": 524452
+    },
+    {
+      "logical_path": "ModelTextures/SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\SpecularMap\\PV-DualDE_GreenVein_S.DTX",
+      "sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part",
+      "size": 131236
+    },
+    {
+      "logical_path": "ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\SpecularMap\\M4A1_S_BornBeast_S.TGA",
+      "sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part",
+      "size": 3145772
+    },
+    {
+      "logical_path": "ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\Shader\\WeaponShader\\M4A1_S_BornBeast.CFG",
+      "sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+      "routing": "numbered_part",
+      "size": 492
+    },
+    {
+      "logical_path": "ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\WEAPONS\\QV-M4A1_S_BornBeast.DTX",
+      "sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+      "routing": "numbered_part",
+      "size": 32932
+    },
+    {
+      "logical_path": "ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\AlphaMap\\M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+      "routing": "numbered_part",
+      "size": 3145772
+    },
+    {
+      "logical_path": "ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\extract_all\\rez\\rf017\\ModelTextures\\NormalMap\\M4A1_S_BornBeast_N.TGA",
+      "sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+      "routing": "numbered_part",
+      "size": 3145772
+    }
+  ],
+  "cfrez_extract_file": [
+    {
+      "logical_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\PLAYERVIEW\\PV-M4A1_S_BornBeast.DTX",
+      "sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "stdout": "Extracted ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\PLAYERVIEW\\PV-M4A1_S_BornBeast.DTX"
+    },
+    {
+      "logical_path": "PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\PLAYERVIEW\\PV-M4A1_RoyalDragon.DTX",
+      "sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "stdout": "Extracted ModelTextures/PLAYERVIEW/PV-M4A1_RoyalDragon.DTX\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\PLAYERVIEW\\PV-M4A1_RoyalDragon.DTX"
+    },
+    {
+      "logical_path": "SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX",
+      "sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "stdout": "Extracted ModelTextures/SpecularMap/PV-M4A1_RoyalDragon_s.DTX\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX"
+    },
+    {
+      "logical_path": "SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\SpecularMap\\PV-DualDE_GreenVein_S.DTX",
+      "sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "stdout": "Extracted ModelTextures/SpecularMap/PV-DualDE_GreenVein_S.DTX\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\SpecularMap\\PV-DualDE_GreenVein_S.DTX"
+    },
+    {
+      "logical_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\SpecularMap\\M4A1_S_BornBeast_S.TGA",
+      "sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "stdout": "Extracted ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\SpecularMap\\M4A1_S_BornBeast_S.TGA"
+    },
+    {
+      "logical_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\WeaponShader\\M4A1_S_BornBeast.CFG",
+      "sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "stdout": "Extracted ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\WeaponShader\\M4A1_S_BornBeast.CFG"
+    },
+    {
+      "logical_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\WEAPONS\\QV-M4A1_S_BornBeast.DTX",
+      "sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "stdout": "Extracted ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\WEAPONS\\QV-M4A1_S_BornBeast.DTX"
+    },
+    {
+      "logical_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\AlphaMap\\M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "stdout": "Extracted ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\AlphaMap\\M4A1_S_BornBeast_alpha.TGA"
+    },
+    {
+      "logical_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+      "destination": "D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\NormalMap\\M4A1_S_BornBeast_N.TGA",
+      "sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "stdout": "Extracted ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA\nOutput: D:\\project\\cf_to_csgo\\data\\n05c_verified_extract\\cfrez_extract_file\\NormalMap\\M4A1_S_BornBeast_N.TGA"
+    }
+  ],
+  "cfrez_read_hash": [
+    {
+      "logical_path": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "routing": "numbered_part",
+      "sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "md5": "c242a039731cf13cf9570bc2a56dc77f",
+      "size": "524452"
+    },
+    {
+      "logical_path": "ModelTextures/PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "routing": "numbered_part",
+      "sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "md5": "46732d8b205128b92f85a8f416634ffd",
+      "size": "524452"
+    },
+    {
+      "logical_path": "ModelTextures/SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part",
+      "sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "md5": "ed35bec77e395810cf9ac807be809441",
+      "size": "524452"
+    },
+    {
+      "logical_path": "ModelTextures/SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part",
+      "sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "md5": "f0e77ead4e160f7a64d7a890cb2138e2",
+      "size": "131236"
+    },
+    {
+      "logical_path": "ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part",
+      "sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "md5": "1cff17e21cb046274030df0c5ebe1fae",
+      "size": "3145772"
+    },
+    {
+      "logical_path": "ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+      "routing": "numbered_part",
+      "sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "md5": "5d2ff8110e9ab76ea0fcabb4c63c2c59",
+      "size": "492"
+    },
+    {
+      "logical_path": "ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+      "routing": "numbered_part",
+      "sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "md5": "9ce24f1c0d1478284c1a37c669ff1a31",
+      "size": "32932"
+    },
+    {
+      "logical_path": "ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+      "routing": "numbered_part",
+      "sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "md5": "65ce99f875470168ced5c40386f450aa",
+      "size": "3145772"
+    },
+    {
+      "logical_path": "ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+      "routing": "numbered_part",
+      "sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "md5": "41d5ea2df82acbfa7f4ea6487cad4a81",
+      "size": "3145772"
+    }
+  ],
+  "n02e_audit_reads": [
+    {
+      "logical_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "n02e_sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "resolver_sha256": "a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "n02e_sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "resolver_sha256": "7fcdd31bf6ecaf5965f4af15e48430d5b682bfddb2d9e90fb9b37c18bd9c7775",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "n02e_sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "resolver_sha256": "56e7c35fbfb45e55feb4b4b69c854626796bc4daccdd2ac4ecf593ddcc8350b6",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "n02e_sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "resolver_sha256": "16264274baaa6db1d3600caa85181c0583008271d2420a66d85a2e27b6e043fe",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "n02e_sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "resolver_sha256": "0f8807caa0aadba6e40a09ff37281b7a8fee04e6920eaacd5407dad8dd3b30b5",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+      "n02e_sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "resolver_sha256": "ceb52671c5c11f85ede7384b1721670450713dce94014ee827819f2cc1d15ad4",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "n02e_sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "resolver_sha256": "b927ce64224220de0ceb00b4c13f46c5874733b1403f792d118db8f928c10460",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "n02e_sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "resolver_sha256": "80b887618b827a36b50ad2dfc2746138c848da2bbb304f1226031443bef3043b",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+      "routing": "numbered_part"
+    },
+    {
+      "logical_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+      "n02e_sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "resolver_sha256": "5f971097856bea6258871f084c16d31449e69e5b461169de309eb81071977167",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+      "routing": "numbered_part"
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "bornbeast_pv_dtx",
+      "logical_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "bytes": 524452,
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 1024,
+        "height": 1024,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 524288
+      },
+      "image_size": [
+        1024,
+        1024
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/bornbeast_pv_dtx.png"
+    },
+    {
+      "id": "royaldragon_pv_dtx",
+      "logical_path": "PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "bytes": 524452,
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 1024,
+        "height": 1024,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 524288
+      },
+      "image_size": [
+        1024,
+        1024
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/royaldragon_pv_dtx.png"
+    },
+    {
+      "id": "royaldragon_s_dtx",
+      "logical_path": "SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "bytes": 524452,
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 1024,
+        "height": 1024,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 524288
+      },
+      "image_size": [
+        1024,
+        1024
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/royaldragon_s_dtx.png"
+    },
+    {
+      "id": "greenvain_s_dtx",
+      "logical_path": "SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "bytes": 131236,
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 512,
+        "height": 512,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 131072
+      },
+      "image_size": [
+        512,
+        512
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/greenvain_s_dtx.png"
+    },
+    {
+      "id": "bornbeast_specular_tga",
+      "logical_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "bytes": 3145772,
+      "container": null,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/bornbeast_specular_tga.png",
+      "repair_applied": false
+    },
+    {
+      "id": "bornbeast_cfg",
+      "logical_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+      "bytes": 492,
+      "sections": {
+        "Textures": {
+          "SpecularMapName2": "M4A1_S_BornBeast_S.tga",
+          "EnvCubeMapName2": "Black_Shader03.dds",
+          "NormalMapName2": "M4A1_S_BornBeast_N.tga",
+          "AlphaMapName2": "M4A1_S_BornBeast_alpha.tga"
+        },
+        "Techniques": {
+          "DiffuseMappingEnabled": "1",
+          "SpecularMappingEnabled": "1",
+          "EnvCubeMappingEnabled": "1",
+          "NormalMappingEnabled": "1"
+        },
+        "Properties": {
+          "LightBrightness": "0.01",
+          "EnvCubeMapBrightness": "4",
+          "SpecularPower": "1",
+          "DiffuseBoost": "0.1",
+          "AmbientLightColor": "0.01",
+          "RefractionIndex": "0.01",
+          "ReflectionIndex": "0.9",
+          "EnvCubeUsage": "2",
+          "CubeMapTransformY": "-20"
+        }
+      },
+      "section_names": [
+        "Textures",
+        "Techniques",
+        "Properties"
+      ]
+    },
+    {
+      "id": "bornbeast_qv_dtx",
+      "logical_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "bytes": 32932,
+      "header": {
+        "ok": true,
+        "reason": "parsed with repo DtxThumbnailDecoder layout",
+        "version": -5,
+        "width": 256,
+        "height": 256,
+        "mipmap_count": 1,
+        "n_sections": 0,
+        "flags": 8,
+        "user_flags": 0,
+        "texture_group": 0,
+        "mipmaps_to_use": 1,
+        "bytes_per_pixel_field": 4,
+        "data_offset": 164,
+        "payload_bytes": 32768
+      },
+      "image_size": [
+        256,
+        256
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/bornbeast_qv_dtx.png"
+    },
+    {
+      "id": "bornbeast_alpha_tga",
+      "logical_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "bytes": 3145772,
+      "container": null,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/bornbeast_alpha_tga.png",
+      "repair_applied": false
+    },
+    {
+      "id": "bornbeast_normal_tga",
+      "logical_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+      "bytes": 3145772,
+      "container": null,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/bornbeast_normal_tga.png",
+      "repair_applied": false
+    }
+  ],
+  "pv_dtx": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "header": {
+      "ok": true,
+      "reason": "parsed with repo DtxThumbnailDecoder layout",
+      "version": -5,
+      "width": 1024,
+      "height": 1024,
+      "mipmap_count": 1,
+      "n_sections": 0,
+      "flags": 8,
+      "user_flags": 0,
+      "texture_group": 0,
+      "mipmaps_to_use": 1,
+      "bytes_per_pixel_field": 4,
+      "data_offset": 164,
+      "payload_bytes": 524288
+    }
+  },
+  "cfg_sections": [
+    "Textures",
+    "Techniques",
+    "Properties"
+  ],
+  "failures": [],
+  "deprecated_entries": [
+    {
+      "entry": "n02e_r2_payload_hash.read_payload_bytes(path, offset, size) without entry",
+      "reason": "Unauthenticated main-file slice; no numbered-part routing; must not claim verified recovery"
+    },
+    {
+      "entry": "scripts/material_recovery/n03a_bornbeast_consumer.py and n03b–n03g payload reads",
+      "reason": "Still call the unauthenticated n02e helper; historical reports were not rewritten"
+    },
+    {
+      "entry": "scripts/material_recovery/n02d_rez_asset_lookup.py",
+      "reason": "Basename-oriented historical index helper; not a payload resolver"
+    },
+    {
+      "entry": "pre-N05-C CFRezManager ArchiveFile.DataOffset seeks",
+      "reason": "Replaced by RezVerifiedPayloadReader; leftover seeks are writer/cache metadata only"
+    },
+    {
+      "entry": "data/rf017 and other historical extract trees",
+      "reason": "Old main-file extracts; this round writes only data/n05c_verified_extract"
+    }
+  ],
+  "cache_verification": "CFRezManager.Tests directory cold/hot plus thumbnail key change after numbered-part mutation",
+  "commands": {
+    "python_tests": "python -B -m unittest discover -s tests -p test_rez_verified_payload.py -v; python -B -m unittest discover -s tests -p test_extract_all_verified.py -v",
+    "csharp_tests": "dotnet test CFRezManager.Tests/CFRezManager.Tests.csproj -c Debug",
+    "this_script": "python scripts/material_recovery/n05c_verified_reader_integration.py"
+  }
+}

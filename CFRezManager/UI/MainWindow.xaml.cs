@@ -1463,9 +1463,8 @@ public partial class MainWindow : Window
             throw new InvalidOperationException(LocalizedText.Format("PreviewFileTooLarge", item.Name));
         }
 
-        FileStream archiveSource = File.OpenRead(item.Archive.FilePath);
-        archiveSource.Position = item.ArchiveFile.DataOffset;
-        return archiveSource;
+        byte[] data = RezVerifiedPayloadReader.ReadBytes(item.Archive, item.ArchiveFile, int.MaxValue);
+        return new MemoryStream(data, writable: false);
     }
 
     private static bool ReadBankAudioSessionTo(BankAudioStreamSession session, int targetDecodedBytes)
@@ -2290,11 +2289,7 @@ public partial class MainWindow : Window
             throw new InvalidOperationException(LocalizedText.Format("PreviewFileTooLarge", item.Name));
         }
 
-        byte[] data = new byte[item.ArchiveFile.Size];
-        using FileStream source = File.OpenRead(item.Archive.FilePath);
-        source.Position = item.ArchiveFile.DataOffset;
-        source.ReadExactly(data);
-        return data;
+        return RezVerifiedPayloadReader.ReadBytes(item.Archive, item.ArchiveFile, maxBytes);
     }
 
     private static byte[] ReadExplorerFilePrefixBytes(ExplorerItem item, int maxBytes)
@@ -2326,12 +2321,12 @@ public partial class MainWindow : Window
             throw new InvalidOperationException(LocalizedText.Format("PreviewFileTooLarge", item.Name));
         }
 
-        int archiveByteCount = checked((int)Math.Min(Math.Min(item.ArchiveFile.Size, maxBytes), int.MaxValue));
-        byte[] archiveData = new byte[archiveByteCount];
-        using FileStream archiveSource = File.OpenRead(item.Archive.FilePath);
-        archiveSource.Position = item.ArchiveFile.DataOffset;
-        archiveSource.ReadExactly(archiveData);
-        return archiveData;
+        byte[] archiveData = RezVerifiedPayloadReader.ReadBytes(
+            item.Archive,
+            item.ArchiveFile,
+            Math.Max(maxBytes, item.ArchiveFile.Size));
+        int archiveByteCount = checked((int)Math.Min(Math.Min(archiveData.Length, maxBytes), int.MaxValue));
+        return archiveData.AsSpan(0, archiveByteCount).ToArray();
     }
 
     private static long GetExplorerFileByteCount(ExplorerItem item)

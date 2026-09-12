@@ -10,23 +10,64 @@ import hashlib
 import re
 from pathlib import Path
 
+NUMBERED_PART_NAME = re.compile(
+    r"^(?P<stem>.+)_(?P<part>[0-9]+)(?P<suffix>\.[^.]+)$",
+    re.IGNORECASE,
+)
+MD5_HEX = re.compile(r"[0-9a-f]{32}")
+
+
+def is_complete_directory_md5(value: object) -> bool:
+    return bool(MD5_HEX.fullmatch(str(value or "").lower()))
+
+
+def is_numbered_part_file(path: Path) -> bool:
+    """True when `stem_N.ext` sits beside an index file `stem.ext`."""
+    path = Path(path)
+    match = NUMBERED_PART_NAME.fullmatch(path.name)
+    if not match or not path.parent.is_dir():
+        return False
+    sibling_name = f"{match['stem']}{match['suffix']}"
+    siblings = [
+        item
+        for item in path.parent.iterdir()
+        if item.is_file() and item.name.casefold() == sibling_name.casefold()
+    ]
+    return len(siblings) == 1
+
+
+def numbered_part_filename(index_path: Path, part: int) -> str:
+    index_path = Path(index_path)
+    return f"{index_path.stem}_{part}{index_path.suffix}"
+
+
+def list_candidate_paths(index_path: Path, part: int) -> list[Path]:
+    index_path = Path(index_path)
+    candidates = [index_path]
+    if part <= 0:
+        return candidates
+    name = numbered_part_filename(index_path, part)
+    siblings = [
+        item
+        for item in index_path.parent.iterdir()
+        if item.is_file() and item.name.casefold() == name.casefold()
+    ]
+    if len(siblings) > 1:
+        raise ValueError("Ambiguous numbered-part filename")
+    candidates.extend(siblings)
+    return candidates
+
 
 def read_verified_payload(index_path: Path, entry: dict, max_bytes: int = 64 * 1024 * 1024):
     index_path = Path(index_path)
     offset, size = int(entry["data_offset"]), int(entry["size"])
     part = int(entry["time"])
     expected = str(entry.get("md5", "")).lower()
-    if not re.fullmatch(r"[0-9a-f]{32}", expected):
+    if not is_complete_directory_md5(expected):
         raise ValueError("A complete directory MD5 is required")
     if offset < 0 or not 0 <= size <= max_bytes:
         raise ValueError("Invalid or oversized payload range")
-    candidates = [index_path]
-    if part > 0:
-        name = f"{index_path.stem}_{part}{index_path.suffix}"
-        siblings = [p for p in index_path.parent.iterdir() if p.name.casefold() == name.casefold() and p.is_file()]
-        if len(siblings) > 1:
-            raise ValueError("Ambiguous numbered-part filename")
-        candidates.extend(siblings)
+    candidates = list_candidate_paths(index_path, part)
     attempts, matches = [], []
     for path in candidates:
         length = path.stat().st_size
