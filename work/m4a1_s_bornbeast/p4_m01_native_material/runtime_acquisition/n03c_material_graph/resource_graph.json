@@ -1,0 +1,85 @@
+{
+  "task": "P4-M01-N03-C",
+  "status": "BUTE_MATERIAL_GRAPH_EXPANDED",
+  "canonical": "M4A1-黑骑士",
+  "edges": [
+    {
+      "from": "Weapon.ModelFileName",
+      "to": "rez/RF016.REZ:WEAPONS/QV-M4A1_S_BornBeast.LTB",
+      "grade": "REZ_EXACT_PATH",
+      "inventory_role": null,
+      "sha256": "2B087CF1AB9DF90F74499C856EE5647755775AFA759D8EDBCB14C0ADF0468E18"
+    },
+    {
+      "from": "Weapon.ModelFileName",
+      "to": "rez2/RF016.REZ:WEAPONS/QV-M4A1_S_BornBeast.LTB",
+      "grade": "REZ_EXACT_PATH",
+      "inventory_role": null,
+      "sha256": "96E2320009BD125730DEFCA37FABECBD015F73FEE6090EB7AE019ADE2CC3504C"
+    },
+    {
+      "from": "Weapon.PreViewModelFileName",
+      "to": "rez2/RF016.REZ:WEAPONS/QV-M4A1_S_BornBeast_preview.LTB",
+      "grade": "REZ_EXACT_PATH",
+      "inventory_role": null,
+      "sha256": "EB52E475B532ED98F8FF8A8A0525054DA7487D62BAA3B845172A6B40EAACD36E"
+    },
+    {
+      "from": "Weapon.SkinFileName",
+      "to": "rez/rf017.rez:WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "grade": "REZ_EXACT_PATH",
+      "inventory_role": null,
+      "sha256": "EA99C7101708B6DC04E3AB97F232F683F8B996A68E2E5B5FC1167C6CD08C0F7A"
+    },
+    {
+      "from": "Weapon.RenderStyleFileName",
+      "to": "rez/rf002.rez:RS/NINJATRANSLUCENT.LTB",
+      "grade": "REZ_EXACT_PATH",
+      "inventory_role": null,
+      "sha256": "85A8C47E4CFAE2EDF92E921F428DBE78ADAAC87EA295304DFD0860921F98187E"
+    },
+    {
+      "from": "Weapon.PViewModelFileName",
+      "to": "rez/RF016.REZ:PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "grade": "PAYLOAD_IDENTITY",
+      "inventory_role": "geometry",
+      "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7"
+    },
+    {
+      "from": "Weapon.PViewModelFileName",
+      "to": "rez2/RF016.REZ:PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "grade": "PAYLOAD_IDENTITY",
+      "inventory_role": "geometry",
+      "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7"
+    },
+    {
+      "from": "Weapon.PViewModelFileName",
+      "to": "rez4/RF016.REZ:PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "grade": "PAYLOAD_IDENTITY",
+      "inventory_role": "geometry",
+      "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7"
+    },
+    {
+      "from": "Weapon.PViewSkinFileName",
+      "to": "rez/rf017.rez:PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "grade": "PAYLOAD_IDENTITY",
+      "inventory_role": "base_dtx",
+      "sha256": "C419A5FB164DB6085878FF2EFE21D318A85186B4E3C1FD6BABA920311F6EA1D9"
+    },
+    {
+      "from": "Weapon.PViewRenderStyleFileName",
+      "to": "rez/rf002.rez:RS/PVMODELDEFAULT.LTB",
+      "grade": "REZ_EXACT_PATH",
+      "inventory_role": null,
+      "sha256": "7AAC491CDD91DF513C1B8ED58B0B4FC385039EAF026CC4A18E4A160E91D7F57E"
+    },
+    {
+      "from": "canonical Weapon raw block",
+      "to": "inventory alpha/normal/specular/shader_cfg",
+      "grade": "SCOPED_NEGATIVE",
+      "note": "no exact file-path token; StandardName alias is not a CFG path"
+    }
+  ],
+  "generated_at": "2026-09-12T06:14:29.761165+00:00",
+  "script": "scripts\\material_recovery\\n03c_material_graph.py"
+}

@@ -1,0 +1,43 @@
+{
+  "rs": [
+    {
+      "ok": true,
+      "archive": "rez/rf002.rez",
+      "full_path": "RS/NINJATRANSLUCENT.LTB",
+      "size": 111,
+      "sha256": "85A8C47E4CFAE2EDF92E921F428DBE78ADAAC87EA295304DFD0860921F98187E",
+      "hex": "5d0000000185020000000000000002bcd65d006fcb951f03941979450dc8ae7127a907cc1bd3685c0a51294f9ecf5850df3a46a27d98fc16c879d67f6d9ed82425f467cd4d09b54f00f7f2e860624dd48bc4881114b3497cd186b19a7bc0adabc2a539528f76f8a7f465d452e50600",
+      "printable": "",
+      "contains_dtx": false,
+      "contains_tga": false,
+      "contains_cfg": false,
+      "contains_ltb": false
+    },
+    {
+      "ok": true,
+      "archive": "rez/rf002.rez",
+      "full_path": "RS/PVMODELDEFAULT.LTB",
+      "size": 119,
+      "sha256": "7AAC491CDD91DF513C1B8ED58B0B4FC385039EAF026CC4A18E4A160E91D7F57E",
+      "hex": "5d00000001850200000000000000029e7cffe879f20e29fbabfeb6ac4abb45dd422df2cb8c5514022cc891ca53cc45ce53bce8eeb864f5fd3bf0810ee661e605fe7a58a832050264b775daff16d9a69e3558d5580b3105cceba18d9ac778e4aaf1a3e3260cd7017372656cd06cbfab8d9425feaec131e0",
+      "printable": "srel",
+      "contains_dtx": false,
+      "contains_tga": false,
+      "contains_cfg": false,
+      "contains_ltb": false
+    }
+  ],
+  "cfg": {
+    "ok": true,
+    "archive": "rez/rf017.rez",
+    "full_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+    "size": 492,
+    "sha256": "78F0BD5024F70624594C6B7EBD470094A3642FCE8CF7DF596407D40DAE0EBC87",
+    "hex": "ffff0fffff0fffff0fffff0fffff0fffff0effff0fffff0fffff0fffff0fffff0effff0effff0effff0effff0fffff0fffff0effff0fffff0fffff10ffff12ffff12ffff12ffff12ffff11ffff12ffff12ffff12ffff12ffff12ffff13ffff13ffff14ffff14ffff14ffff13ffff13ffff13ffff13ffff13ffff13ffff14ffff14ffff14ffff14ffff13ffff14ffff14ffff14ffff14ffff13ffff13ffff13ffff14ffff14ffff14ffff14ffff14ffff14ffff14ffff14ffff13ffff13ffff13ffff13ffff13ffff13ffff12ffff12ffff12ffff12ffff12ffff11ffff11ffff12ffff12ffff11ffff11ffff11ffff11ffff11ffff11ffff11ffff10ffff0fffff0dffff0dffff0cffff0cffff0cffff0effff0effff0fffff0fffff0fffff10ffff10ffff11ffff10ffff10ffff0fffff0fffff0fffff0fffff0fffff0fffff0fffff0fffff0fffff0effff0effff0effff0fffff0fffff0fffff0fffff0fffff0fffff0fffff0effff0fffff13ffff1dffff20ffff21ffff21ffff20ffff16ffff0dffff0affff09ffff08ffff08ffff08ffff08ffff08ffff08ffff08ffff07ffff08ffff08ffff07ffff07ffff08ffff08ffff08ffff08ffff08ffff08ffff07ffff07ffff07ffff07ffff06ffff07ffff07ffff08ffff09ffff0bffff0bffff0dffff0effff0dffff0e",
+    "printable": "",
+    "contains_dtx": false,
+    "contains_tga": false,
+    "contains_cfg": false,
+    "contains_ltb": false
+  }
+}
