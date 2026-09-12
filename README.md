@@ -170,8 +170,9 @@ CF 原始资源
 ```text
 P4 Source 1 / MIGI baseline            = PASS / FROZEN
 P4-M01 native material                 = INCOMPLETE
-native gun-atlas via tested decodes    = SCOPED_NEGATIVE; actual codec OPEN (plan §4.26)
-WeaponShader CFG code consumer         = BLOCKED (.tvm0 + ACE VM_READ denied)
+native PV atlas / TGA / text CFG        = RECOVERED from verified REZ parts (plan §4.27)
+archive reader integration             = OPEN; old main-file-only reads are incorrect
+WeaponShader runtime / Source 1 mapping = OPEN; offline work can continue
 P5 雷神 identity                       = T01 图鉴已确认；等原生材质方法
 ```
 

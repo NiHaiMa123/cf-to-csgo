@@ -12,58 +12,59 @@ Date captured                 : 2026-09-12
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
-Current executor task         : NONE
-Last completed task           : P4-M01-N05-A
-Last executor evidence commit : 32d2ec2e72439be28c471139e6f2e5805ae73729
-State                         : WAITING_REVIEW / DECODE_RECOVERED_BINDING_OPEN
+Current executor task         : P4-M01-N05-C
+Last completed task           : P4-M01-N05-B (N05-A Review + numbered-part recovery)
+Last accepted evidence commit : 37d231ddc3ce0409b39ca05aad743f3d91875f52
+State                         : ACTIVE / VERIFIED_PAYLOAD_READER_INTEGRATION
 ```
 
 ## 0.1 已钉死
 
 - P4 证明 CF LTB 能进 Source 1 / MIGI（M4A4 槽）。Prototype **不是**最终雷神，也 **不是**原生材质。
 - 黑骑士 Bute 只绑 PV LTB + PV DTX + 共用 RS（TEXTURE1）。TGA/CFG 路径在 packed BF005 上是 0。
-- 已尝试的解码没有恢复出原生枪身 atlas。PV DTX 的“能量/标量层”仅是猜测布局后的视觉分类，真实 codec / shader role 未闭合；不能据此认定本机没有 albedo。N03-H 的适用范围见 §4.19、§4.26。
-- 网格 UV 按 512×512 枪件 atlas 排。CS1.6 / ComfyUI 只能当视觉对照，禁止当 P4-M01 final 像素。
+- **已恢复 BornBeast PV 原生枪身 atlas**：`rez/rf017_8.rez`，标准 -5 / DXT1 / 1024×1024；目录 MD5 匹配，Python 与现有 CFRezManager 图像 decoder 的 RGBA 像素完全一致。根因是旧工具按主索引文件读取 payload，未路由到编号分包，详见 §4.27。
+- 本轮 9/9 材质目标通过目录 MD5。Normal / Specular / Alpha 是无需修复的标准 TGA；WeaponShader CFG 是含贴图名和参数的明文。此前“无头 DTX / 三字节 CFG / TGA 插入修复”不能代表这些正确资源。
+- 512×512 是历史外部参考的尺寸，不是 UV 必须使用的贴图尺寸；仍需把正确 PV LTB / UV 与新恢复的 atlas 做绑定验证。CS1.6 / ComfyUI 禁止当 P4-M01 final 像素。
 - `playerviewmesh.fxo` 有 Alpha/Normal/Specular/Emissive **槽名**，没有文件路径。
-- CShell 有 `modeltextures\SpecularMap\%s`（12 LEA，后期 `.dtx` 路线）。黑骑士没有 `SpecularMapName`。
+- CShell 有 `modeltextures\SpecularMap\%s`（12 LEA，后期 `.dtx` 路线）。黑骑士 Bute 没有 `SpecularMapName`；这与新恢复 CFG 中的 `SpecularMapName2` 是不同来源。
 - `crossfire.exe` 明文岛：`MODELTEXTURES\Shader\WeaponShader\` + `.cfg`，**0 代码引用**。它是 stub，只导入 packed `crossfirebase.dll`（`.tvm0`）。
 - 磁盘 `crossfirebase.dll` 无 WeaponShader 明文。N04-F 当时的 PID 33100 = `x64/crossfire.exe`，`OpenProcess(VM_READ)` = Win32 **5**。这是历史观测，不是当前进程状态；未绕过 ACE。
 
 ## 0.2 当前任务
 
 ```text
-Task ID : NONE
-State   : WAITING_REVIEW
-Last    : P4-M01-N05-A
-Result  : DECODE_RECOVERED_BINDING_OPEN
+Task ID : P4-M01-N05-C
+State   : ACTIVE
+Goal    : 将经过 MD5 验证的 REZ 分包读取接入正式提取/预览路径
+Last    : P4-M01-N05-B
+Result  : PV_DTX_AND_TEXT_CFG_RECOVERED_FROM_NUMBERED_PARTS
 ```
 
-Executor 已完成 N05-A，**尚未 Review / 尚未写入 §4 冻结**。没有下一轮执行单。
+N05-A Review 已完成：接受 `rez2` QV 解码正例，纠正 control scanner 假阴性及错误物理文件来源。补充的 N05-B 已恢复 PV、三张 TGA 与明文 CFG，并冻结于 §4.27。**原 §0.4 将 N05-B 留给 FXO 的候选编号已被本次实际根因修复取代**；FXO 分析后置。
 
-N05-A 证据：
+当前可复现入口与证据：
 
-- `scripts/material_recovery/n05a_decoder_provenance_audit.py`
-- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/`
+- `scripts/material_recovery/rez_verified_payload.py`
+- `scripts/material_recovery/n05b_shard_material_recovery.py`
+- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/{report.md,recovery.json,bornbeast_cfg.json}`
 
-要点（待 Review 接受后才能升格冻结）：
+**为什么还需要这一轮**：新恢复命令已能取到正确资源，但 CFRezManager 的归档读取与旧批量提取器尚未接入。仅修 DTX decoder 无效；旧入口仍可能导出错误内容、丢弃分包 entry 或复用旧缩略图。禁止用这些旧入口重建 final 输入。
 
-- 合成 Jupiter DTX（RGBA32 / DXT1 16×16）正例通过；`data/rf017/ModelTextures` 3258 个本机 DTX 无合法头对照 → `NO_CURRENT_CLIENT_CONTROL`。
-- inventory / `rez/` 的 BornBeast PV、QV 以及 RoyalDragon / GreenVein 对照仍不是 -2/-3/-5；LZMA/LTC 前置不满足；RezExtract 4/8 交换不能修好这些副本。
-- **同一 QV logical path 有两份副本**：`rez/rf017.rez` `WEAPONS/QV-M4A1_S_BornBeast.DTX` = 32932 B，SHA `ea99c710…`，等于 loose；`rez2/RF017.REZ` 同路径 = 524452 B，SHA `73a954f8…`，标准 Jupiter DTX version -5，DXT1 1024×1024，header 164 + payload 524288。python 与 CFRezManager 都能解出枪件 atlas。
-- 这是 `SkinFileName` / QV，不是 `PViewSkinFileName` / PV。PV DTX 仍未解。runtime 是否加载 `rez2` 副本未证。未把 QV 图套到 PV mesh。P4-M01 仍为 INCOMPLETE。
+执行范围（只做这一项工程闭环）：
 
-N04-F 进程读取路线继续暂停。不自动开 N05-B。
+1. 统一主文件/编号分包 payload resolver，以 `rez_verified_payload.py` 为已验证规则参考。目录 `time` 只提供候选编号；对实际候选分别检查边界、长度与 MD5，不能全局把历史 timestamp 当分包号。缺分包、哈希不符或多候选匹配必须明确报错；无有效目录 MD5 的旧格式不得宣称已验证或自动猜分包。
+2. 接入 `CFRezManager/Archives/RezArchiveReader.cs` 的提取和 entry 校验。当前 `TryReadFileEntry` 按主文件长度过滤会丢掉合法分包 entry；目录结构边界与 payload 边界应分别检查。把 Explorer、UI、模型贴图/CFG、sprite、OBJ 等实际读取归档字节的入口汇入同一 resolver，清点现有 `DataOffset` 直接 seek 调用，避免只修 CLI 提取。
+3. 更新目录/缩略图及相关资源缓存的版本与来源标识。主文件和选中的分包来源发生变化时，不得命中旧数据；验证缓存冷启动和热启动一致。
+4. 接入 `scripts/cf_extract/extract_all.py` 与本轮继续使用的材质审计读取入口（包括 N05-A 的 `read_payload_bytes` 调用）。历史报告不重写；仅向新指定 staging 输出。检查完整父路径与重复 logical path，不能用 basename 覆盖同名文件。全库历史脚本不要求逐个重跑，报告须明确仍弃用的入口。
+5. 用 N05-B 的 9 个 logical path 与固定 SHA256 做端到端回归，元数据/诊断图输出到 `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05c_verified_reader_integration/`。需要保留 raw staging 时只能在 `data/` 下新建明确命名的目录，不覆盖原输入、不提交 raw。此轮不改 P4 frozen build、不部署、不做 shader 调参。
 
-N05-A 结果表（Review 用）：
+验收与交付：
 
-| 结果 | 验收含义 | Review 后可考虑的下一步 |
-|---|---|---|
-| `DECODE_RECOVERED_BINDING_OPEN` | 有结构验证的 deterministic decode + 原生像素；绑定仍待证 | §0.4 路线 B，结合 FXO 与 Bute 闭合 |
-| `PROVENANCE_OR_VARIANT_MISMATCH` | 找到可复现的副本/提取/格式差异，明确哪一层不一致 | 精确修复输入选择或 adapter，再 Review |
-| `REFERENCE_DECODERS_UNSUPPORTED` | 正例通过，但声明的真实样本/变换未通过 | 转路线 B；需要新副本时再用 C |
-| `CONTROL_OR_TOOLCHAIN_BLOCKED` | 未能建立可信对照或源码工具不可构建 | 记录具体依赖，不能把工具失败算资源不存在 |
+- 合成分包测试覆盖：主文件范围合法但字节错误、目标超出主文件而在分包内、缺失/截断/错误哈希分包、多候选冲突、普通单文件 timestamp、深层路径及重名。目录与缩略图缓存需验证修改分包后失效。
+- 正式提取/预览入口的 9/9 SHA256 与 N05-B 一致；PV 1024×1024、CFG 三个 section、TGA 直接解析一致。不能只调用 N05-B 辅助脚本作为“正式入口已修好”的证明。
+- 提交代码、测试及 `report.md` / `integration.json`，记录覆盖入口、来源/哈希、缓存验证、命令、未覆盖限制。构建和相关测试通过后，结果记为 `VERIFIED_READER_INTEGRATED`；部分失败则列出具体调用链，P4-M01 保持 INCOMPLETE，交回 Review。
 
-本轮已选 `DECODE_RECOVERED_BINDING_OPEN`。P4-M01 仍为 INCOMPLETE。等待 Review。
+N05-C Review 后再安排正确 PV 几何/UV 与材质绑定、`Black_Shader03.dds` 解析、CFG/FXO 语义和 Source 1 映射。N04-F 进程读取路线继续暂停。
 
 ## 0.3 禁止
 
@@ -74,15 +75,15 @@ N05-A 结果表（Review 用）：
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**判断**：现在缺的是三层不同证据：①正确字节/codec，②资源到 mesh/piece/sampler 的绑定，③渲染语义。N04-F 只堵住 packed consumer 的进程读取；N03-H 没有排除所有 CF 解码方式；N04-C 只读了 FXO 名称，没有分析指令。不能把三层问题都压到“先取得内存 dump”上。
+**更新判断**：①正确字节/codec 已在 9 个指定资源上闭合，根因是分包读取；下一步先使正式入口稳定复现。②资源到 mesh/piece/sampler 的绑定、③渲染语义仍待验证。N04-F 只堵住 packed consumer 的进程读取，不能作为离线恢复的前置条件。公开源码提供了格式与解码参照，**本轮分包规则依据本机 9/9 目录 MD5 实证，不是从社区工具名称推断**。
 
-以下为规划候选，不是已验证的当前 CF 行为。N05-A 已执行，§0.2 现为 WAITING_REVIEW。
+以下按新证据重排；只有 §0.2 的 N05-C 为 ACTIVE，后续是规划候选。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
-| 1 / A：decoder 与 provenance 复核 | 标准 decoder 0/16 失败意味着对照未建立；外部源码存在 CF 头字段差异 | N05-A：7 个真实样本 + 标准正例，分离 raw/normalized/decoded；得到合法结构或明确不支持的层级 | 不以“导出成功/颜色像能量”证明语义；无新线索不继续全库排列组合 |
-| 2 / B：FXO 离线语义分析 | `playerviewmesh.fxo` 是 D3D9 effect；微软提供二进制 effect 加载、参数枚举和反汇编接口 | 候选 N05-B：在自建工具的 D3D9 device 中载入本地 effect，先枚举 parameter/technique/pass/default，再提取普通/Alpha/Emissive 路径的采样、通道运算、混色和常量；`playermesh.fxo` 作对照 | 读到代码不等于该 technique 被黑骑士选中；默认值不等于运行值。解析失败记录 HRESULT/依赖，不转为附加 CF |
-| 3 / C：资源副本与版本差分 | 已有 `rez/`、`rez2/` 的 QV LTB 不同，loose Bute 与 packed BF005 也曾不一致 | 仅围绕已绑定的 BornBeast/Transformers logical paths 建副本矩阵，记录版本/哈希/相应 Bute 与 RS；有新合法输入时对比头、binding、shader slot | 当前载入优先级未知就保持候选；不按文件夹名或视觉选择“真副本”，不重复无差别扫描 25 万 entry |
+| 1 / A：正确来源接入 | N05-A Review + N05-B 已恢复 PV 与 CFG；旧正式入口仍读主文件 | N05-C：统一 resolver、分包边界和缓存；正式入口 9/9 SHA256 重现 | 不覆盖旧 data，不按主文件范围丢弃合法分包 entry，不用无 MD5 的猜测作为成功 |
+| 2 / C：正确输入的绑定与副本差分 | 原生 PV 已可解；主索引 QV 256 与 rez2 QV 1024 都有效，CFG 有明确贴图名 | 正确读取 PV LTB/RS/Bute，核对 UV/mesh/piece、恢复命名 cube；生成有来源的 native-only 诊断预览 | 归一化 UV 允许不同分辨率，布局与绑定仍须验证；当前加载优先级未知就保留多副本 |
+| 3 / B：FXO 离线语义分析 | CFG 已有 mapping 开关、亮度/反射参数；D3D9 effect API 可枚举并反汇编 | 后续任务：自建 D3D9 device 载入 effect，关联 CFG 字段与 parameter/technique/pass/default、采样通道和公式；先验证已恢复的 Normal/Specular/Alpha/Cube | `Name2` 后缀、默认值、CFG 存在均不等于黑骑士运行时选择；失败记 HRESULT/依赖，不附加 CF |
 | 4 / D：可合法取得的兼容旧版本作参考 | Jupiter / CF 工具可解释标准路径，较早版本或不同地区 variant 可能暴露更少的格式差异 | 只有已获得可信版本与相关资源后，做旧/新 loader 或资源格式差分，提炼规则回验当前本机样本 | 尚无这样的新输入，不承诺能取得；旧版本行为/像素不自动成为当前 CF final，也不采用私服/脱壳工具包补缺口 |
 | 产品备选 / E：可用外观版本 | P4 已具备构建/部署能力，CS1.6 atlas 可作已有视觉演示 | 用户选择此交付目标后单独生成可看版本，`final_cf_material=false` | 不计为 native PASS，不借此跳过 P5 身份 Gate；此次仅规划，不部署 |
 
@@ -94,12 +95,14 @@ N05-A 结果表（Review 用）：
 
 | 来源 / 固定版本 | 已核实的具体内容 | 对当前任务的限制 |
 |---|---|---|
-| [no-lith/RezExtract `src/rez.cpp`](https://github.com/no-lith/RezExtract/blob/b3f87a9c731c0bbc1900da2fd37e41b9a02e1e63/src/rez.cpp#L338-L369) | `b3f87a9`：DTX 提取选项会交换 offset 4/8 的四字节字段以恢复版本位置 | 只解决某类头换位；本次 PV/QV 头不符合，不能据此宣称已有新 decoder |
+| [no-lith/RezExtract `src/rez.cpp`](https://github.com/no-lith/RezExtract/blob/b3f87a9c731c0bbc1900da2fd37e41b9a02e1e63/src/rez.cpp#L338-L369) | `b3f87a9`：DTX 提取选项会交换 offset 4/8 的四字节字段以恢复版本位置 | 旧错源字节不满足换位前置；N05-B 正确 PV/QV 已是标准头，无需此变换 |
 | [YoungFine0825/LTB2FBX `DtxConverter.cpp`](https://github.com/YoungFine0825/LTB2FBX/blob/06d749d56d6c929ba6c538cc26aa11cc1f7f1566/Source/DtxConverter.cpp)、[底层 `dtxmgr.cpp`](https://github.com/YoungFine0825/LTB2FBX/blob/06d749d56d6c929ba6c538cc26aa11cc1f7f1566/ThirdParty/lithtech/runtime/shared/dtxmgr.cpp) | `06d749d`：尝试 LZMA 后走 LithTech texture loader；`dtx_Create` 检查 resource type/version/mip 范围 | 是可审计参考与工具对照，不能承诺支持 2026 本机 variant；不用其测试资源当 final |
 | [iQuitt/Vortigaunt `DtxConverter.cpp`](https://github.com/iQuitt/Vortigaunt/blob/d739d1f900c261fc1ae67e11b436410084dda1aa/src/core/converters/DtxConverter.cpp)、[底层 `dtxmgr.cpp`](https://github.com/iQuitt/Vortigaunt/blob/d739d1f900c261fc1ae67e11b436410084dda1aa/ThirdParty/lithtech/runtime/shared/dtxmgr.cpp) | `d739d1f`：也使用 LZMA/同源 LithTech loader | 两工具都失败/成功不是两份独立的 CF runtime 证明 |
 | [no-lith/Jupiter](https://github.com/no-lith/Jupiter)、[jsj2008/lithtech](https://github.com/jsj2008/lithtech) | 标准 engine/render/resource contract 的源码参考入口，沿用 §4.9 | 公开仓库不是当前 CF 或官方授权来源证明；具体采用函数时再固定 commit |
 
-推进规则：**A 完成并 Review → 选择 B 或修复明确的输入差异 → 确有新版本证据再 C/D**。像素、绑定、公式分别验收；只有 §3 的全部条件成立才能 native PASS。P5-T02 仍待原生方法，不能用这次规划提前宣告恢复。
+微软 [Texture Coordinates](https://learn.microsoft.com/en-us/windows/win32/direct3d9/texture-coordinates) 说明常规 UV 是归一化坐标；因此 512 与 1024 的尺寸差本身不是 atlas 不兼容的证据。当前 LTB 的具体 UV 布局仍以正确来源的网格验证为准。
+
+推进规则：**N05-C 正式入口接入 → 正确 PV/CFG 的绑定验证 → FXO/Source 1 语义映射**。像素、绑定、公式分别验收；只有 §3 的全部条件成立才能 native PASS。P5-T02 仍待原生方法。
 
 ---
 
@@ -269,6 +272,8 @@ P4-M01-R1 = ACCEPTED / COMPLETE
 
 ## 4.2 DTX
 
+> N05-B 来源纠正（§4.27）：下列统计仅保留为旧提取字节的历史观测。BornBeast PV/QV 等本轮目标此前读错物理分包；正确 PV 为标准 -5 / DXT1 / 1024×1024，不能继续沿用“无头/固定 FF 相位”作为其格式结论。
+
 ```text
 no formal LithTech -2/-3/-5 header     VERIFIED_STRUCTURAL
 not LZMA                               VERIFIED_STRUCTURAL
@@ -283,6 +288,8 @@ RGB/BGR/channel order                  OPEN
 
 ## 4.3 TGA
 
+> N05-B 来源纠正（§4.27）：正确分包中的 BornBeast Alpha/Normal/Specular 均为可直接读取的标准 TGA，不需要下述 repair。历史修复产物不能继续作为这三个逻辑资源的原生像素来源。
+
 Formal inserted repair：
 
 ```text
@@ -293,6 +300,8 @@ headerOffset = footerOffset + 26
 BornBeast Alpha/Normal/Specular repair 已结构验证；文件名不等于 shader role 证明。
 
 ## 4.4 WeaponShader CFG
+
+> N05-B 来源纠正（§4.27）：正确 BornBeast CFG 是 492 字节 ASCII，含 `[Textures]`、`[Techniques]`、`[Properties]`。下列相位统计对应旧错源字节；LUT/packed constants 假设不适用于该已验证 CFG。其他文件尚未逐个回验，不能把整个旧 corpus 直接升级为原生格式证据。
 
 237/237 文件满足：
 
@@ -1106,7 +1115,7 @@ P4-M01                                       INCOMPLETE
 
 ## 4.19 N03-H freeze
 
-> 2026-09-12 Review 收窄：保留下述实验与 scoped negative；撤回将 size-fit 视觉分类视为真实 DTX/shader 语义的表述。审计依据见 §4.26。
+> 2026-09-12 Review：先在 §4.26 收窄语义；随后 §4.27 证明本轮 BornBeast PV/QV 等旧输入读错分包。下述 negative 仅是历史 SHA 输入的结果，不能否定正确资源；已恢复真实 PV atlas，当前状态以 §0 / §4.27 为准。
 
 Review 接受提交：
 
@@ -1249,6 +1258,8 @@ P4-M01-N04-E = ACCEPTED / STATIC_ONLY_NO_PROCESS
 
 ## 4.25 N04-F freeze
 
+> 本节保留当时的进程读取结果；它不再阻断离线原生贴图/CFG 恢复，见 §4.27。
+
 Review 接受提交：
 
 ```text
@@ -1278,6 +1289,8 @@ P4-M01                               INCOMPLETE
 
 ## 4.26 2026-09-12 Planner 证据边界审计
 
+> 这是 N05-A 前的历史审计。下表旧 PV/QV SHA 已在 §4.27 被定位为错误物理文件切片；“未找到恢复算法 / actual codec open”不是最新结论。无需新 codec 即可解码正确分包中的这两个目标。
+
 本节冻结的是代码与证据的适用范围修正，不是新的 decode / native PASS。此次没有重跑 N03-H，也没有更改其历史 report、JSON、预览或本地用户修改。
 
 1. N03-H 的 `official_decode()` 实际调用的是**本仓库** `CFRezManager --decode-image`，不是 CF 官方解码器。0/16 失败只能说明该实现未支持这些输入；所有目标都失败的集合不能充当正确性阳性对照。
@@ -1294,6 +1307,52 @@ P4-M01                               INCOMPLETE
 | BornBeast QV DTX | `ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a` | -15794177 | -61697 | 同上 |
 
 这些是 `OBSERVED / STRUCTURALLY_VERIFIED` 的窄结论；**未找到可以直接恢复当前样本的新算法**。A 的价值是定位实际失败层，B 的价值是打开未做过的 shader 指令分析；都不能保证最终恢复。停用的仍是 N04 进程读取路线，P4-M01 离线研究不再整体 STOP。
+
+---
+
+## 4.27 2026-09-12 N05-A Review / N05-B 分包恢复冻结
+
+```text
+Reviewed N05-A : 32d2ec2e72439be28c471139e6f2e5805ae73729
+Evidence      : 37d231ddc3ce0409b39ca05aad743f3d91875f52
+N05-A review  : ACCEPTED_WITH_CORRECTIONS
+N05-B result  : PV_DTX_AND_TEXT_CFG_RECOVERED_FROM_NUMBERED_PARTS
+P4-M01        : INCOMPLETE
+```
+
+证据与复现入口：
+
+- [N05-B report](work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/report.md)
+- [9 个目标的来源、MD5、SHA256、解码与对照结果](work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/recovery.json)
+- [恢复的 PV 原生像素](work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_pv_dtx.png)、[解析的 CFG](work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/bornbeast_cfg.json)
+- `python -B scripts/material_recovery/n05b_shard_material_recovery.py`（本机 Python 完整路径见 report）
+
+**根因与验证范围**：`rez/rf017.rez` 是目录所在文件；本次 9 个材质 entry 的 legacy `time` 字段分别指向同目录 `rf017_<time>.rez`。相同 offset/size 在对应分包内的字节与目录 MD5 **9/9 精确一致**，主文件切片均不匹配。读取器必须同时验证候选来源和内容，不可只比较错误主文件切片与 loose 副本是否相等。正常单文件 REZ 仍可使用 timestamp；本结论不把所有版本的 `time` 无条件改定义。
+
+| 逻辑资源 | 分包编号 | 已验证结果 |
+|---|---:|---|
+| `PLAYERVIEW/PV-M4A1_S_BornBeast.DTX` | 8 | -5 / DXT1 / 1024×1024 / 1 mip，164 字节 header + 524288 payload |
+| `WEAPONS/QV-M4A1_S_BornBeast.DTX` | 13 | -5 / DXT1 / 256×256；与 rez2 的 QV 1024 是不同有效副本 |
+| RoyalDragon PV / Specular | 8 / 12 | -5 / DXT1 / 1024×1024 |
+| GreenVein Specular | 12 | -5 / DXT1 / 512×512 |
+| BornBeast Alpha / Normal / Specular TGA | 2 / 6 / 12 | 标准 1024×1024 TGA，直接解析，无 inserted repair |
+| BornBeast WeaponShader CFG | 9 | 492 字节 ASCII，三个 INI section |
+
+PV 的完整来源：offset `186436476`、size `524452`、目录 MD5 `C242A039731CF13CF9570BC2A56DC77F`、SHA256 `a30c9a271612dec05cb44f44e6e9412be398350e5fb6ac93966aea4b7f56b4ba`。Python 与现有编译的 CFRezManager 图像 decoder 输出 RGBA **逐像素完全一致**。这证明 decoder 在取得正确字节后可用，不证明 CFRezManager 的归档读取已经修好。PNG 保留原始暗色，不提亮、不混入外部像素。
+
+CFG 明文直接引用 `SpecularMapName2=M4A1_S_BornBeast_S.tga`、`NormalMapName2=M4A1_S_BornBeast_N.tga`、`AlphaMapName2=M4A1_S_BornBeast_alpha.tga`、`EnvCubeMapName2=Black_Shader03.dds`，并给出 mapping 开关及 `LightBrightness=0.01`、`EnvCubeMapBrightness=4`、`DiffuseBoost=0.1` 等参数。文件引用和值属于直接证据；`2` 后缀语义、piece/sampler/technique 选择及实际运行值仍未闭合。命名 cube 尚未在本轮提取。
+
+**N05-A 纠错**：
+
+1. `scan_local_control_dtx()` 把 64 字节前缀传入要求完整 LT2 header/payload 的 parser，已用合法 292 字节合成 DTX 复现假阴性。现改为先用 8 字节筛选版本，再读完整文件验证；新增两项扫描回归测试。
+2. 修复后旧 `data/rf017/ModelTextures` 仍是 0/3258。这只描述旧提取目录，不能推出安装目录内没有合法 DTX；本轮正确分包正例已经反证后者。未覆盖旧 data 来改变测量结果。
+3. N05-A 的 `rez2/RF017.REZ` QV SHA `73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965` 仍是有效正例；其两个已保存预览也精确匹配。未把 QV 套到 PV，也未声称 rez2 有 runtime 加载优先权。
+4. N05-A 的 `dtx_Create=True` 是 Python 移植的结构门槛，不是运行上游 C++ 工具；合成色块不能验证所有 mip / alpha 行为。
+5. 历史 R1/N03/N05-A 的相位、尺寸和 hash 测量保留为原 SHA 的观测。对本轮已证实错源的目标，撤回其作为当前逻辑资源格式/像素语义的依据；不据此无证据地否定或确认其他 BF/RS/LTB 资源。
+
+**工程验证与剩余边界**：7 项回归测试通过；5 项 resolver 测试覆盖主文件范围合法却内容错误、分包范围超出主文件、普通 timestamp、错误 MD5、多候选匹配。主索引 4417 entry 中有 155 个 range 超出主文件长度，**不能因此判为资源损坏**，应按所选分包检查边界。新 helper 只在唯一候选通过 MD5 时返回字节。
+
+当前正式归档提取、Explorer/模型预览及缓存仍待 N05-C 接入；旧工具不得重建 final 输入。正确 PV LTB/UV、命名 cube、CFG 到 shader 的绑定与 Source 1 渲染仍待验证，§3 PASS Gate 未满足。本轮没有修改 P4 frozen build、游戏进程、原始输入或已有用户工作。
 
 ---
 
@@ -1457,6 +1516,8 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04c_playerview
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04d_packed_crossfire_static/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04e_vm_dump/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04f_process_dump/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05b_shard_material_recovery/
 ```
 
 ## External reference implementation / positive control
@@ -1513,6 +1574,8 @@ ee092c317e3cbd42fedd130f864d022b270ab0bd  N04-C playerviewmesh.fxo sampler slots
 d36bde10d3611c862fa49843cb28854fb4b75694  N04-D packed crossfire.exe stub; WeaponShader island only
 be3edd98f236ef3263b3f37af0d4e3809753c0b2  N04-E crossfirebase.dll .tvm0; no CF process
 729c3a3dd8d31ccbc2fc2503c386b6d9a3fdbef0  N04-F OpenProcess VM_READ denied (error 5)
+32d2ec2e72439be28c471139e6f2e5805ae73729  N05-A decoder/provenance audit (review corrections in §4.27)
+37d231ddc3ce0409b39ca05aad743f3d91875f52  N05-B MD5-verified numbered parts recover PV/TGA/text CFG
 ```
 
 ---
