@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
 Current executor task         : NONE
-Last completed task           : P4-M01-N05-F (Source 1 native diagnostic VTF/VMT)
-Last accepted evidence commit : 037dcaf4396f3be1438502f86d67cb4fddf30ea4
-State                         : SOURCE1_NATIVE_DIAGNOSTIC_PACKAGED / P4-M01_INCOMPLETE
+Last completed task           : P4-M01-N05-H (non-frozen native diagnostic addon)
+Last accepted evidence commit : 396f32d74a13d0af118f85d996839be41c5da2a7
+State                         : NONFROZEN_NATIVE_DIAGNOSTIC_DEPLOYED / P4-M01_INCOMPLETE
 ```
 
 ## 0.1 已钉死
@@ -36,22 +36,26 @@ State                         : SOURCE1_NATIVE_DIAGNOSTIC_PACKAGED / P4-M01_INCO
 
 ```text
 Task ID : NONE
-State   : N05-F delivered
-Goal    : 独立 Source 1 诊断包已生成；不部署、不改 frozen
-Last    : P4-M01-N05-F
-Result  : SOURCE1_NATIVE_DIAGNOSTIC_PACKAGED
+State   : N05-H delivered
+Goal    : 独立非 frozen 诊断 addon 已部署；frozen 文件未改，仅移出 addons
+Last    : P4-M01-N05-H
+Result  : NONFROZEN_NATIVE_DIAGNOSTIC_DEPLOYED
 ```
 
 N05-E 已在自建 D3D9 device 上载入当前磁盘 `playerviewmesh.fxo`（111 参数 / 43 technique）。CFG 的 `SpecularPower` / `LightBrightness` / `DiffuseBoost` / `AmbientLightColor` / `EnvCubeMapBrightness` / `ReflectionIndex` / `RefractionIndex` 与 effect 参数同名；`DiffuseMap`/`SpecularMap`/`NormalMap`/`AlphaMap`/`CubeMap` 槽存在。D3DX 默认值与 BornBeast CFG 不同，不能当运行时。`CubeMapTransformY` 无同名参数。live FXO SHA 已与 N04-C 不同。未附加 CF。P4-M01 仍 INCOMPLETE。
 
 N05-F 已把 verified PV DTX + Normal/Specular/Alpha TGA + cube 首面编成独立 Source 1 VTF/VMT 诊断包，`final_cf_material=false`，未覆盖 frozen addon，未部署。CFG 标量没有当成 Source 1 phong/envmap 数值。P4-M01 仍 INCOMPLETE。
 
-要进游戏看效果需要单独部署一个非 frozen addon，并做用户 Gate；那是产品选择，不是本轮已做的事。
+N05-G 已通过 Blender MCP `127.0.0.1:9876` 把 N05-D 的 raw PV LTB OBJ 和 N05-F 的 PNG 贴进当前 Blender（EEVEE Rendered）。枪身 3/4 可见序列号 `M4A1SSQ00083` 与兽头护手。手模 rest-pose 未蒙皮，默认隐藏。这是离线展示，不是 runtime 公式。
+
+N05-H 已把 P4 编译网格（字节不变）和 N05-F VTF 接到 MDL 材质路径 `rif_m4a1`，部署为独立 addon `p_cf_bornbeast_m4a4_n05h_native_diag`。frozen 文件未改，文件夹移到 `migi/csgo/_parked_addons/`。`$phongexponent 16` 仍是占位。进游戏看是用户 Gate，不是 P4-M01 PASS。
 
 证据：
 
 - N05-E：`work/.../n05e_fxo_offline_inspect/`
 - N05-F：`work/.../n05f_source1_native_map/{report.md,mapping.json,materials/}`
+- N05-G：`work/.../n05g_blender_native_preview/{report.md,n05g_viewport_gun.png}`
+- N05-H：`work/.../n05h_nonfrozen_native_addon/{report.md,mapping.json,addon/}`
 
 ## 0.3 禁止
 
@@ -62,9 +66,9 @@ N05-F 已把 verified PV DTX + Normal/Specular/Alpha TGA + cube 首面编成独�
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：①字节/codec 与正式读取已闭合。②PV LTB UV 已对到 verified atlas，cube 已恢复。③FXO 已离线枚举，CFG 同名参数存在但默认值≠CFG。④独立 Source 1 诊断包已生成且未部署。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。
+**更新判断**：①字节/codec 与正式读取已闭合。②PV LTB UV 已对到 verified atlas，cube 已恢复。③FXO 已离线枚举，CFG 同名参数存在但默认值≠CFG。④独立 Source 1 诊断包已生成。⑤N05-G 已在 Blender 里展示 recovered maps。⑥N05-H 已部署独立非 frozen addon，frozen 已移出 addons。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。
 
-N05-C 到 N05-F 已完成。下一步若要进游戏，需单独非 frozen 部署；piece→sampler 运行时选择仍开放。
+N05-C 到 N05-H 已完成。进游戏看 N05-H 是用户 Gate；piece→sampler 运行时选择仍开放。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
