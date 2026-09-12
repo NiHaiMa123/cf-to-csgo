@@ -1,6 +1,6 @@
 {
   "schema": "cf2.p7.original-sound.v1",
-  "generated_at_utc": "2026-09-12T19:06:32.790272+00:00",
+  "generated_at_utc": "2026-09-12T19:09:02.208809+00:00",
   "task": "P7-S01",
   "result": "P7_ORIGINAL_SOUND_DEPLOYED",
   "final_target_identity": true,
@@ -341,13 +341,21 @@
       "rate": 44100,
       "seconds": 0.05
     },
-    "cf_reload_order": {
-      "path": "work/p5_leishen/p7/pcm/cf_reload_order.wav",
-      "sha256": "cc6289e591b1ca67d6c0e96cb770b349ee9c7c29baf45cd78ea879ac4dfca490",
-      "bytes": 330422,
+    "gas_and_clipout": {
+      "path": "work/p5_leishen/p7/pcm/gas_and_clipout.wav",
+      "sha256": "78fe3d0376c74edb417e635df4fbc28a0dfd013a4fdb9be76482eb57245ac3fe",
+      "bytes": 109214,
       "channels": 2,
       "rate": 44100,
-      "seconds": 1.873
+      "seconds": 0.619
+    },
+    "cf_reload_order": {
+      "path": "work/p5_leishen/p7/pcm/cf_reload_order.wav",
+      "sha256": "e3dd5fe51ca43c0d9fc286c0e2d65e225f0fdfaacb2fddd976c75d3a292fe5d8",
+      "bytes": 252926,
+      "channels": 2,
+      "rate": 44100,
+      "seconds": 1.433
     },
     "draw_bolt": {
       "path": "work/p5_leishen/p7/pcm/draw_bolt.wav",
@@ -427,26 +435,26 @@
       ]
     },
     {
-      "bute_event": "CF reload 喷气→退弹→上弹→拉栓",
-      "stream": "M4A1-S-Beast_GasEjection+M4A1-S-Beast_ClipOut+M4A1-S-Beast_ClipIn+M4A1-S-Beast_Reload",
+      "bute_event": "CF reload 喷气+退弹 together, then 上弹, then 拉栓",
+      "stream": "M4A1-S-Beast_GasEjection|M4A1-S-Beast_ClipOut then M4A1-S-Beast_ClipIn then M4A1-S-Beast_Reload",
       "csgo_event": "Weapon_M4A1.Clipout",
       "waves": [
         "sound/weapons/m4a1/m4a1_clipout.wav"
       ],
       "grade": "OBSERVED",
-      "note": "User: CF order, not CS mag timing. Whole sequence starts on first reload event. CS animation still later.",
+      "note": "User: 喷气 and 退弹 start together. 上弹 then 拉栓 follow. CS animation still later.",
       "pcm": {
         "path": "work/p5_leishen/p7/pcm/cf_reload_order.wav",
-        "sha256": "cc6289e591b1ca67d6c0e96cb770b349ee9c7c29baf45cd78ea879ac4dfca490",
-        "bytes": 330422,
+        "sha256": "e3dd5fe51ca43c0d9fc286c0e2d65e225f0fdfaacb2fddd976c75d3a292fe5d8",
+        "bytes": 252926,
         "channels": 2,
         "rate": 44100,
-        "seconds": 1.873
+        "seconds": 1.433
       },
       "deployed": [
         {
           "wave": "sound/weapons/m4a1/m4a1_clipout.wav",
-          "sha256": "cc6289e591b1ca67d6c0e96cb770b349ee9c7c29baf45cd78ea879ac4dfca490"
+          "sha256": "e3dd5fe51ca43c0d9fc286c0e2d65e225f0fdfaacb2fddd976c75d3a292fe5d8"
         }
       ]
     },
@@ -593,7 +601,7 @@
     "sound/weapons/m4a1/m4a1_boltforward.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
     "sound/weapons/m4a1/m4a1_cliphit.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
     "sound/weapons/m4a1/m4a1_clipin.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
-    "sound/weapons/m4a1/m4a1_clipout.wav": "cc6289e591b1ca67d6c0e96cb770b349ee9c7c29baf45cd78ea879ac4dfca490",
+    "sound/weapons/m4a1/m4a1_clipout.wav": "e3dd5fe51ca43c0d9fc286c0e2d65e225f0fdfaacb2fddd976c75d3a292fe5d8",
     "sound/weapons/m4a1/m4a1_distant_01.wav": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08",
     "sound/weapons/m4a1/m4a1_draw.wav": "2379520b50211e7ea5ce490667b185fc03ae592f4a3fe22bdda9dc9595755569"
   },
@@ -612,7 +620,7 @@
   },
   "notes": [
     "User listen: 01-06 match filenames; 07 wrong; 08-13 unknown unused.",
-    "CF reload order 喷气→退弹→上弹→拉栓 on first reload event. CS clipin/cliphit silenced. Draw=03. Fire=01.",
+    "CF reload: 喷气+退弹 together, then 上弹, then 拉栓. CS clipin/cliphit silenced. Draw=03. Fire=01.",
     "Knife 06 extracted, not wired to M4A4.",
     "Weapon_M4A1.Single pitch 120 is compensated in the close-fire WAV.",
     "Inspect / CF animation / world model are still open.",

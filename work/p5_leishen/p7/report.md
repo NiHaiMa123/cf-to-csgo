@@ -15,7 +15,7 @@ Wired:
 |---|---|---|---|---|
 | `ShootM4A1-S-Beast` | `M4A1-S-Beast_SHOOT_1` | `Weapon_M4A1.Single` | `m4a1_01.wav`, `m4a1_02.wav` | OBSERVED |
 | `ShootM4A1-S-Beast (distant uses same shoot sample)` | `M4A1-S-Beast_SHOOT_1` | `Weapon_M4A4.SingleDistant` | `m4a1_distant_01.wav` | OBSERVED |
-| `CF reload 喷气→退弹→上弹→拉栓` | `M4A1-S-Beast_GasEjection+M4A1-S-Beast_ClipOut+M4A1-S-Beast_ClipIn+M4A1-S-Beast_Reload` | `Weapon_M4A1.Clipout` | `m4a1_clipout.wav` | OBSERVED |
+| `CF reload 喷气+退弹 together, then 上弹, then 拉栓` | `M4A1-S-Beast_GasEjection|M4A1-S-Beast_ClipOut then M4A1-S-Beast_ClipIn then M4A1-S-Beast_Reload` | `Weapon_M4A1.Clipout` | `m4a1_clipout.wav` | OBSERVED |
 | `silence (do not follow CS clipin)` | `silence` | `Weapon_M4A1.Clipin` | `m4a1_clipin.wav` | SOURCE1_DESIGN_CANDIDATE |
 | `silence (do not follow CS cliphit)` | `silence` | `Weapon_M4A1.ClipHit` | `m4a1_cliphit.wav` | SOURCE1_DESIGN_CANDIDATE |
 | `拉栓 on 切枪 (listen 03)` | `M4A1-S-Beast_Reload` | `Weapon_M4A1.Draw` | `m4a1_draw.wav` | OBSERVED |
@@ -24,7 +24,7 @@ Wired:
 
 User listen: 01-06 match filenames. 07 BeastAir is wrong. 08-13 unknown, unused.
 
-换弹 is CF order, not CS mag timing: 喷气(02) → 退弹(04) → 上弹(05) → 拉栓(03), played as one clip on the first reload event. Clipin/ClipHit silenced so CS order does not overlap. 切枪 still 拉栓(03). Fire=01. CF reload animation is still later P7.
+换弹: 喷气(02) and 退弹(04) start together, then 上弹(05), then 拉栓(03). One clip on the first reload event. Clipin/ClipHit silenced. 切枪 still 拉栓(03). Fire=01. CF animation still later P7.
 
 `BoltForward` / `BoltBack` stay silent. Qingchun / BB / Zeekr / BornBeast unused.
 

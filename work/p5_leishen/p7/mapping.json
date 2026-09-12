@@ -23,8 +23,8 @@
       "grade": "OBSERVED"
     },
     {
-      "bute_event": "CF reload 喷气→退弹→上弹→拉栓",
-      "stream": "M4A1-S-Beast_GasEjection+M4A1-S-Beast_ClipOut+M4A1-S-Beast_ClipIn+M4A1-S-Beast_Reload",
+      "bute_event": "CF reload 喷气+退弹 together, then 上弹, then 拉栓",
+      "stream": "M4A1-S-Beast_GasEjection|M4A1-S-Beast_ClipOut then M4A1-S-Beast_ClipIn then M4A1-S-Beast_Reload",
       "csgo_event": "Weapon_M4A1.Clipout",
       "waves": [
         "sound/weapons/m4a1/m4a1_clipout.wav"
@@ -84,7 +84,7 @@
     "sound/weapons/m4a1/m4a1_boltforward.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
     "sound/weapons/m4a1/m4a1_cliphit.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
     "sound/weapons/m4a1/m4a1_clipin.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
-    "sound/weapons/m4a1/m4a1_clipout.wav": "cc6289e591b1ca67d6c0e96cb770b349ee9c7c29baf45cd78ea879ac4dfca490",
+    "sound/weapons/m4a1/m4a1_clipout.wav": "e3dd5fe51ca43c0d9fc286c0e2d65e225f0fdfaacb2fddd976c75d3a292fe5d8",
     "sound/weapons/m4a1/m4a1_distant_01.wav": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08",
     "sound/weapons/m4a1/m4a1_draw.wav": "2379520b50211e7ea5ce490667b185fc03ae592f4a3fe22bdda9dc9595755569"
   }

@@ -87,11 +87,14 @@ WIRE_MAP: list[dict[str, Any]] = [
 ]
 
 EXTRACT_ONLY = ("M4A1-S-Beast_knifeAttack",)
-# User: CF reload order is 喷气 → 退弹 → 上弹 → 拉栓. CS animation is still mag-out/in/slap.
+# User: 喷气 and 退弹 start together, then 上弹, then 拉栓. CS animation still later.
+CF_RELOAD_GAS = "M4A1-S-Beast_GasEjection"
+CF_RELOAD_CLIPOUT = "M4A1-S-Beast_ClipOut"
+CF_RELOAD_CLIPIN = "M4A1-S-Beast_ClipIn"
 CF_RELOAD_ORDER = (
-    "M4A1-S-Beast_GasEjection",
-    "M4A1-S-Beast_ClipOut",
-    "M4A1-S-Beast_ClipIn",
+    CF_RELOAD_GAS,
+    CF_RELOAD_CLIPOUT,
+    CF_RELOAD_CLIPIN,
     "M4A1-S-Beast_Reload",
 )
 BOLT_CLIP = "M4A1-S-Beast_Reload"
@@ -241,7 +244,10 @@ def mix_pcm(inputs: list[Path], dest: Path) -> dict[str, Any]:
     ffmpeg = which_ffmpeg()
     labels = "".join(f"[{index}]aformat=sample_fmts=fltp:channel_layouts=stereo[s{index}];" for index in range(len(inputs)))
     joined = "".join(f"[s{index}]" for index in range(len(inputs)))
-    graph = f"{labels}{joined}amix=inputs={len(inputs)}:duration=longest:normalize=1[out]"
+    graph = (
+        f"{labels}{joined}amix=inputs={len(inputs)}:duration=longest:normalize=0,"
+        f"alimiter=limit=0.95[out]"
+    )
     cmd = [str(ffmpeg), "-y"]
     for path in inputs:
         cmd.extend(["-i", str(path)])
@@ -431,7 +437,7 @@ def write_report(report: dict[str, Any]) -> None:
             "",
             "User listen: 01-06 match filenames. 07 BeastAir is wrong. 08-13 unknown, unused.",
             "",
-            "换弹 is CF order, not CS mag timing: 喷气(02) → 退弹(04) → 上弹(05) → 拉栓(03), played as one clip on the first reload event. Clipin/ClipHit silenced so CS order does not overlap. 切枪 still 拉栓(03). Fire=01. CF reload animation is still later P7.",
+            "换弹: 喷气(02) and 退弹(04) start together, then 上弹(05), then 拉栓(03). One clip on the first reload event. Clipin/ClipHit silenced. 切枪 still 拉栓(03). Fire=01. CF animation still later P7.",
             "",
             "`BoltForward` / `BoltBack` stay silent. Qingchun / BB / Zeekr / BornBeast unused.",
             "",
@@ -507,13 +513,22 @@ def main() -> int:
 
     gap_path = PCM_DIR / "_reload_gap.wav"
     converted["reload_gap"] = silence_pcm(gap_path, RELOAD_GAP_S)
-    concat_inputs: list[Path] = []
-    for index, name in enumerate(CF_RELOAD_ORDER):
-        concat_inputs.append(PCM_DIR / f"{name}.wav")
-        if index < len(CF_RELOAD_ORDER) - 1:
-            concat_inputs.append(gap_path)
+    gas_clip_pcm = PCM_DIR / "gas_and_clipout.wav"
+    converted["gas_and_clipout"] = mix_pcm(
+        [PCM_DIR / f"{CF_RELOAD_GAS}.wav", PCM_DIR / f"{CF_RELOAD_CLIPOUT}.wav"],
+        gas_clip_pcm,
+    )
     reload_pcm = PCM_DIR / "cf_reload_order.wav"
-    converted["cf_reload_order"] = concat_pcm(concat_inputs, reload_pcm)
+    converted["cf_reload_order"] = concat_pcm(
+        [
+            gas_clip_pcm,
+            gap_path,
+            PCM_DIR / f"{CF_RELOAD_CLIPIN}.wav",
+            gap_path,
+            PCM_DIR / f"{BOLT_CLIP}.wav",
+        ],
+        reload_pcm,
+    )
     draw_pcm = PCM_DIR / "draw_bolt.wav"
     converted["draw_bolt"] = delay_amplify_pcm(
         PCM_DIR / f"{BOLT_CLIP}.wav", draw_pcm, DRAW_BOLT_DELAY_S, DRAW_VOLUME_COMPENSATE
@@ -523,12 +538,12 @@ def main() -> int:
 
     composites = [
         {
-            "bute_event": "CF reload 喷气→退弹→上弹→拉栓",
-            "stream": "+".join(CF_RELOAD_ORDER),
+            "bute_event": "CF reload 喷气+退弹 together, then 上弹, then 拉栓",
+            "stream": f"{CF_RELOAD_GAS}|{CF_RELOAD_CLIPOUT} then {CF_RELOAD_CLIPIN} then {BOLT_CLIP}",
             "csgo_event": "Weapon_M4A1.Clipout",
             "waves": ["sound/weapons/m4a1/m4a1_clipout.wav"],
             "grade": "OBSERVED",
-            "note": "User: CF order, not CS mag timing. Whole sequence starts on first reload event. CS animation still later.",
+            "note": "User: 喷气 and 退弹 start together. 上弹 then 拉栓 follow. CS animation still later.",
             "pcm": converted["cf_reload_order"],
             "deployed": stage_waves(reload_pcm, ["sound/weapons/m4a1/m4a1_clipout.wav"]),
         },
@@ -627,7 +642,7 @@ def main() -> int:
         "deploy": {k: v for k, v in deploy.items() if k != "hashes"} | {"file_count": len(deploy["hashes"])},
         "notes": [
             "User listen: 01-06 match filenames; 07 wrong; 08-13 unknown unused.",
-            "CF reload order 喷气→退弹→上弹→拉栓 on first reload event. CS clipin/cliphit silenced. Draw=03. Fire=01.",
+            "CF reload: 喷气+退弹 together, then 上弹, then 拉栓. CS clipin/cliphit silenced. Draw=03. Fire=01.",
             "Knife 06 extracted, not wired to M4A4.",
             "Weapon_M4A1.Single pitch 120 is compensated in the close-fire WAV.",
             "Inspect / CF animation / world model are still open.",

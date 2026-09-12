@@ -13,7 +13,7 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P7-S01 CF reload order 喷气→退弹→上弹→拉栓
+Last completed task           : P7-S01 喷气+退弹 together, then 上弹, then 拉栓
 Last accepted evidence commit : 880ca33
 State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / USER_RUNTIME_GATE_OPEN
 ```
@@ -52,7 +52,7 @@ Result  : P7_ORIGINAL_SOUND_DEPLOYED
 
 **P6**：用户 2026-09-13 明确开做。已把确认身份的 base Transformers PV LTB 和 verified DTX/TGA/cube 编进独立 addon `p_cf_leishen_m4a4_p6`，部署到 M4A4 槽。首发把 LTB X 镜像做在 C3 之前，枪在 CF X≈+1.5，绕原点翻转后 Source X 中心到 −5.5，左手对不上；用户截图「错位」。已改为先冻结 C3，再绕 Source X=0 镜像。最终武器包围盒 X 中心 −0.18（P4 BornBeast 为 +0.10）。N05-J 与 frozen 都 parked、未改 frozen 文件。`final_target_identity=true`，`final_cf_material=false`。不是 P4-M01 PASS。证据 [`work/p5_leishen/p6/report.md`](work/p5_leishen/p6/report.md)。
 
-**P7-S01**：用户离线听 01–06 与文件名一致。换弹要 CF 顺序：喷气→退弹→上弹→拉栓，不是跟 CS 退匣/上匣帧对齐。已把 02+04+05+03 拼成一段，从换弹第一个事件开始播，CS 的 clipin/cliphit 静音。切枪仍是 03 拉栓。CF 原动画仍是后续 P7。射击=01。证据 [`work/p5_leishen/p7/report.md`](work/p5_leishen/p7/report.md)。
+**P7-S01**：用户离线听 01–06 与文件名一致。换弹 CF 顺序：喷气和退弹一起开始，然后上弹，然后拉栓。已把 02|04 同时叠上，再接 05、03，从换弹第一个事件开始播。CS clipin/cliphit 静音。切枪仍是 03。CF 原动画仍是后续 P7。射击=01。证据 [`work/p5_leishen/p7/report.md`](work/p5_leishen/p7/report.md)。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -1533,7 +1533,7 @@ event  = ShootM4A1-S-Beast (Bute; FMOD, not REZ WAV)
 slot   = CS:GO M4A4 Weapon_M4A1.Single / clip / distant
 ```
 
-用户离线听 01–06 与文件名一致。换弹 CF 顺序 喷气→退弹→上弹→拉栓（一整段，不跟 CS 动作帧）。切枪=`Reload`。开火=`SHOOT_1`。CF 原动画仍开放。未改 P6 网格、未改 frozen。
+用户离线听 01–06 与文件名一致。换弹：喷气和退弹一起开始，然后上弹、拉栓。切枪=`Reload`。开火=`SHOOT_1`。CF 原动画仍开放。未改 P6 网格、未改 frozen。
 
 证据：
 
