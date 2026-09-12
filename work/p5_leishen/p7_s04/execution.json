@@ -1,0 +1,1429 @@
+{
+  "schema": "cf2.p7.cf-animation-decode.v1",
+  "generated_at_utc": "2026-09-12T20:01:59.711485+00:00",
+  "task": "P7-S04",
+  "result": "P7_CF_ANIM_CLIPS_DECODED",
+  "source": {
+    "path": "D:/project/cf_to_csgo/work/p5_leishen/p6/verified_root/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+    "bytes": 604808,
+    "expected_sha256_compressed": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8"
+  },
+  "header": {
+    "file_type": 1,
+    "ltb_header_version": 9,
+    "model_file_version": 25,
+    "allocs": {
+      "nKeyFrames": 256,
+      "nParentAnims": 8,
+      "nNodes": 57,
+      "nPieces": 11,
+      "nChildModels": 1,
+      "nTris": 5250,
+      "nVerts": 2814,
+      "nVertexWeights": 3224,
+      "nLODs": 11,
+      "nSockets": 6,
+      "nWeightSets": 1,
+      "nStrings": 91,
+      "StringLengths": 1414,
+      "VertAnimDataSize": 0,
+      "nAnimData": 408576
+    }
+  },
+  "skeleton": [
+    {
+      "index": 0,
+      "name": "Scene Root",
+      "parent": -1,
+      "children": [
+        1
+      ]
+    },
+    {
+      "index": 1,
+      "name": "FvARM-bone",
+      "parent": 0,
+      "children": [
+        2,
+        46
+      ]
+    },
+    {
+      "index": 2,
+      "name": "FvARM-bone Pelvis",
+      "parent": 1,
+      "children": [
+        3
+      ]
+    },
+    {
+      "index": 3,
+      "name": "FvARM-bone Spine",
+      "parent": 2,
+      "children": [
+        4
+      ]
+    },
+    {
+      "index": 4,
+      "name": "FvARM-bone Spine1",
+      "parent": 3,
+      "children": [
+        5
+      ]
+    },
+    {
+      "index": 5,
+      "name": "FvARM-bone Neck",
+      "parent": 4,
+      "children": [
+        6,
+        26
+      ]
+    },
+    {
+      "index": 6,
+      "name": "FvARM-bone L Clavicle",
+      "parent": 5,
+      "children": [
+        7
+      ]
+    },
+    {
+      "index": 7,
+      "name": "FvARM-bone L UpperArm",
+      "parent": 6,
+      "children": [
+        8,
+        25
+      ]
+    },
+    {
+      "index": 8,
+      "name": "FvARM-bone L ForeArm",
+      "parent": 7,
+      "children": [
+        9
+      ]
+    },
+    {
+      "index": 9,
+      "name": "FvARM-bone L Hand",
+      "parent": 8,
+      "children": [
+        10,
+        13,
+        16,
+        19,
+        22
+      ]
+    },
+    {
+      "index": 10,
+      "name": "FvARM-bone L Finger0",
+      "parent": 9,
+      "children": [
+        11
+      ]
+    },
+    {
+      "index": 11,
+      "name": "FvARM-bone L Finger01",
+      "parent": 10,
+      "children": [
+        12
+      ]
+    },
+    {
+      "index": 12,
+      "name": "FvARM-bone L Finger02",
+      "parent": 11,
+      "children": []
+    },
+    {
+      "index": 13,
+      "name": "FvARM-bone L Finger1",
+      "parent": 9,
+      "children": [
+        14
+      ]
+    },
+    {
+      "index": 14,
+      "name": "FvARM-bone L Finger11",
+      "parent": 13,
+      "children": [
+        15
+      ]
+    },
+    {
+      "index": 15,
+      "name": "FvARM-bone L Finger12",
+      "parent": 14,
+      "children": []
+    },
+    {
+      "index": 16,
+      "name": "FvARM-bone L Finger2",
+      "parent": 9,
+      "children": [
+        17
+      ]
+    },
+    {
+      "index": 17,
+      "name": "FvARM-bone L Finger21",
+      "parent": 16,
+      "children": [
+        18
+      ]
+    },
+    {
+      "index": 18,
+      "name": "FvARM-bone L Finger22",
+      "parent": 17,
+      "children": []
+    },
+    {
+      "index": 19,
+      "name": "FvARM-bone L Finger3",
+      "parent": 9,
+      "children": [
+        20
+      ]
+    },
+    {
+      "index": 20,
+      "name": "FvARM-bone L Finger31",
+      "parent": 19,
+      "children": [
+        21
+      ]
+    },
+    {
+      "index": 21,
+      "name": "FvARM-bone L Finger32",
+      "parent": 20,
+      "children": []
+    },
+    {
+      "index": 22,
+      "name": "FvARM-bone L Finger4",
+      "parent": 9,
+      "children": [
+        23
+      ]
+    },
+    {
+      "index": 23,
+      "name": "FvARM-bone L Finger41",
+      "parent": 22,
+      "children": [
+        24
+      ]
+    },
+    {
+      "index": 24,
+      "name": "FvARM-bone L Finger42",
+      "parent": 23,
+      "children": []
+    },
+    {
+      "index": 25,
+      "name": "FvARM-bone L ForeTwist",
+      "parent": 7,
+      "children": []
+    },
+    {
+      "index": 26,
+      "name": "FvARM-bone R Clavicle",
+      "parent": 5,
+      "children": [
+        27
+      ]
+    },
+    {
+      "index": 27,
+      "name": "FvARM-bone R UpperArm",
+      "parent": 26,
+      "children": [
+        28,
+        45
+      ]
+    },
+    {
+      "index": 28,
+      "name": "FvARM-bone R ForeArm",
+      "parent": 27,
+      "children": [
+        29
+      ]
+    },
+    {
+      "index": 29,
+      "name": "FvARM-bone R Hand",
+      "parent": 28,
+      "children": [
+        30,
+        33,
+        36,
+        39,
+        42
+      ]
+    },
+    {
+      "index": 30,
+      "name": "FvARM-bone R Finger0",
+      "parent": 29,
+      "children": [
+        31
+      ]
+    },
+    {
+      "index": 31,
+      "name": "FvARM-bone R Finger01",
+      "parent": 30,
+      "children": [
+        32
+      ]
+    },
+    {
+      "index": 32,
+      "name": "FvARM-bone R Finger02",
+      "parent": 31,
+      "children": []
+    },
+    {
+      "index": 33,
+      "name": "FvARM-bone R Finger1",
+      "parent": 29,
+      "children": [
+        34
+      ]
+    },
+    {
+      "index": 34,
+      "name": "FvARM-bone R Finger11",
+      "parent": 33,
+      "children": [
+        35
+      ]
+    },
+    {
+      "index": 35,
+      "name": "FvARM-bone R Finger12",
+      "parent": 34,
+      "children": []
+    },
+    {
+      "index": 36,
+      "name": "FvARM-bone R Finger2",
+      "parent": 29,
+      "children": [
+        37
+      ]
+    },
+    {
+      "index": 37,
+      "name": "FvARM-bone R Finger21",
+      "parent": 36,
+      "children": [
+        38
+      ]
+    },
+    {
+      "index": 38,
+      "name": "FvARM-bone R Finger22",
+      "parent": 37,
+      "children": []
+    },
+    {
+      "index": 39,
+      "name": "FvARM-bone R Finger3",
+      "parent": 29,
+      "children": [
+        40
+      ]
+    },
+    {
+      "index": 40,
+      "name": "FvARM-bone R Finger31",
+      "parent": 39,
+      "children": [
+        41
+      ]
+    },
+    {
+      "index": 41,
+      "name": "FvARM-bone R Finger32",
+      "parent": 40,
+      "children": []
+    },
+    {
+      "index": 42,
+      "name": "FvARM-bone R Finger4",
+      "parent": 29,
+      "children": [
+        43
+      ]
+    },
+    {
+      "index": 43,
+      "name": "FvARM-bone R Finger41",
+      "parent": 42,
+      "children": [
+        44
+      ]
+    },
+    {
+      "index": 44,
+      "name": "FvARM-bone R Finger42",
+      "parent": 43,
+      "children": []
+    },
+    {
+      "index": 45,
+      "name": "FvARM-bone R ForeTwist",
+      "parent": 27,
+      "children": []
+    },
+    {
+      "index": 46,
+      "name": "FvARM-bone Prop1",
+      "parent": 1,
+      "children": [
+        47
+      ]
+    },
+    {
+      "index": 47,
+      "name": "Dummy01",
+      "parent": 46,
+      "children": [
+        48,
+        55,
+        56
+      ]
+    },
+    {
+      "index": 48,
+      "name": "Bone02",
+      "parent": 47,
+      "children": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "index": 49,
+      "name": "Box001",
+      "parent": 48,
+      "children": []
+    },
+    {
+      "index": 50,
+      "name": "Box002",
+      "parent": 48,
+      "children": []
+    },
+    {
+      "index": 51,
+      "name": "Box003",
+      "parent": 48,
+      "children": []
+    },
+    {
+      "index": 52,
+      "name": "Box005",
+      "parent": 48,
+      "children": []
+    },
+    {
+      "index": 53,
+      "name": "Box006",
+      "parent": 48,
+      "children": []
+    },
+    {
+      "index": 54,
+      "name": "Box004",
+      "parent": 48,
+      "children": []
+    },
+    {
+      "index": 55,
+      "name": "Bone04",
+      "parent": 47,
+      "children": []
+    },
+    {
+      "index": 56,
+      "name": "Bone06",
+      "parent": 47,
+      "children": []
+    }
+  ],
+  "after_skeleton": 193016,
+  "weight_sets": [
+    {
+      "name": "BaseTracker",
+      "count": 57,
+      "nonzero": 57
+    }
+  ],
+  "child_models": [
+    "SELF"
+  ],
+  "clips": [
+    {
+      "name": "reload",
+      "dims": [
+        128.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "n_keyframes": 108,
+      "times_ms": [
+        0,
+        15,
+        30,
+        45,
+        60,
+        74,
+        90,
+        105,
+        119,
+        135,
+        149,
+        164,
+        179,
+        194,
+        209,
+        224,
+        239,
+        254,
+        269,
+        284,
+        299,
+        314,
+        329,
+        344,
+        359,
+        374,
+        389,
+        404,
+        419,
+        433,
+        449,
+        463,
+        478,
+        494,
+        508,
+        523,
+        538,
+        553,
+        568,
+        583,
+        598,
+        613,
+        628,
+        643,
+        658,
+        673,
+        688,
+        703,
+        718,
+        733,
+        748,
+        763,
+        778,
+        792,
+        808,
+        822,
+        837,
+        852,
+        867,
+        882,
+        897,
+        912,
+        927,
+        942,
+        957,
+        972,
+        987,
+        1002,
+        1017,
+        1032,
+        1047,
+        1062,
+        1077,
+        1092,
+        1106,
+        1122,
+        1137,
+        1151,
+        1167,
+        1181,
+        1196,
+        1211,
+        1226,
+        1241,
+        1256,
+        1271,
+        1286,
+        1301,
+        1316,
+        1331,
+        1346,
+        1361,
+        1376,
+        1391,
+        1406,
+        1421,
+        1436,
+        1451,
+        1465,
+        1481,
+        1495,
+        1510,
+        1526,
+        1540,
+        1555,
+        1570,
+        1585,
+        1600
+      ],
+      "key_strings": [
+        "smoke",
+        "begin",
+        "Extra01SoundName",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "WeaponClipOut",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "WeaponClipIn",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "WeaponReload",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "end",
+        ""
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "smoke"
+        },
+        {
+          "frame": 1,
+          "time_ms": 15,
+          "label": "begin"
+        },
+        {
+          "frame": 2,
+          "time_ms": 30,
+          "label": "Extra01SoundName"
+        },
+        {
+          "frame": 13,
+          "time_ms": 194,
+          "label": "WeaponClipOut"
+        },
+        {
+          "frame": 48,
+          "time_ms": 718,
+          "label": "WeaponClipIn"
+        },
+        {
+          "frame": 81,
+          "time_ms": 1211,
+          "label": "WeaponReload"
+        },
+        {
+          "frame": 106,
+          "time_ms": 1585,
+          "label": "end"
+        }
+      ],
+      "duration_ms": 1600,
+      "fps": 66.875,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    },
+    {
+      "name": "select",
+      "dims": [
+        128.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "n_keyframes": 31,
+      "times_ms": [
+        0,
+        21,
+        42,
+        64,
+        85,
+        106,
+        128,
+        149,
+        170,
+        192,
+        213,
+        234,
+        256,
+        277,
+        298,
+        320,
+        341,
+        362,
+        384,
+        405,
+        426,
+        448,
+        469,
+        490,
+        512,
+        533,
+        554,
+        576,
+        597,
+        618,
+        640
+      ],
+      "key_strings": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "WeaponReload",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "events": [
+        {
+          "frame": 13,
+          "time_ms": 277,
+          "label": "WeaponReload"
+        }
+      ],
+      "duration_ms": 640,
+      "fps": 46.875,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    },
+    {
+      "name": "idle_0",
+      "dims": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 100,
+      "n_keyframes": 55,
+      "times_ms": [
+        0,
+        200,
+        233,
+        266,
+        300,
+        333,
+        366,
+        400,
+        466,
+        500,
+        566,
+        600,
+        633,
+        666,
+        800,
+        866,
+        966,
+        1000,
+        1033,
+        1066,
+        1100,
+        1200,
+        1366,
+        1466,
+        1500,
+        1533,
+        1566,
+        1600,
+        1633,
+        1666,
+        1800,
+        1833,
+        1866,
+        1900,
+        1933,
+        1966,
+        2033,
+        2066,
+        2100,
+        2133,
+        2166,
+        2400,
+        2433,
+        2466,
+        2566,
+        2600,
+        2666,
+        2700,
+        2766,
+        2800,
+        2833,
+        2900,
+        2933,
+        2966,
+        3000
+      ],
+      "key_strings": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "events": [],
+      "duration_ms": 3000,
+      "fps": 18.0,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    },
+    {
+      "name": "knife-attack",
+      "dims": [
+        128.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "n_keyframes": 19,
+      "times_ms": [
+        0,
+        33,
+        66,
+        100,
+        133,
+        166,
+        200,
+        233,
+        266,
+        300,
+        366,
+        400,
+        433,
+        466,
+        500,
+        533,
+        566,
+        600,
+        666
+      ],
+      "key_strings": [
+        "GunKnifeSound",
+        "end",
+        "",
+        "",
+        "",
+        "GunKnifeAttack",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "GunKnifeSound"
+        },
+        {
+          "frame": 1,
+          "time_ms": 33,
+          "label": "end"
+        },
+        {
+          "frame": 5,
+          "time_ms": 166,
+          "label": "GunKnifeAttack"
+        }
+      ],
+      "duration_ms": 666,
+      "fps": 27.027027027027028,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    },
+    {
+      "name": "postfire",
+      "dims": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "n_keyframes": 13,
+      "times_ms": [
+        0,
+        33,
+        66,
+        100,
+        133,
+        166,
+        200,
+        233,
+        266,
+        300,
+        400,
+        433,
+        500
+      ],
+      "key_strings": [
+        "fire",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "fire"
+        }
+      ],
+      "duration_ms": 500,
+      "fps": 24.0,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    },
+    {
+      "name": "run",
+      "dims": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 100,
+      "n_keyframes": 10,
+      "times_ms": [
+        0,
+        61,
+        101,
+        203,
+        325,
+        427,
+        488,
+        528,
+        610,
+        650
+      ],
+      "key_strings": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "events": [],
+      "duration_ms": 650,
+      "fps": 13.846153846153847,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    },
+    {
+      "name": "fire",
+      "dims": [
+        128.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "n_keyframes": 5,
+      "times_ms": [
+        0,
+        22,
+        45,
+        68,
+        90
+      ],
+      "key_strings": [
+        "fire",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "fire"
+        }
+      ],
+      "duration_ms": 90,
+      "fps": 44.44444444444444,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    },
+    {
+      "name": "prefire",
+      "dims": [
+        128.0,
+        16.0,
+        16.0
+      ],
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "n_keyframes": 15,
+      "times_ms": [
+        0,
+        33,
+        66,
+        100,
+        133,
+        166,
+        200,
+        233,
+        266,
+        300,
+        333,
+        366,
+        400,
+        433,
+        500
+      ],
+      "key_strings": [
+        "fire",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "fire"
+        }
+      ],
+      "duration_ms": 500,
+      "fps": 28.0,
+      "vertex_nodes": 0,
+      "full_nodes": 57
+    }
+  ],
+  "stream_after_anims": 604221,
+  "bytes_remaining": 587,
+  "notes": [
+    "Decoder follows Jupiter Model::Load after Scene Root. Mesh pieces are skipped by seeking to Scene Root.",
+    "Not deployed. CS sequences and P7-S01 sound are unchanged.",
+    "SOUND_RETIME_REQUIRED_ON_CF_ANIM still applies when these clips replace CS actions."
+  ],
+  "smd_preview": {
+    "reload": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/reload.smd",
+      "frames": 108,
+      "mapped": {
+        "v_weapon.Bip01_L_Forearm": "FvARM-bone L ForeArm",
+        "v_weapon.Bip01_L_Hand": "FvARM-bone L Hand",
+        "v_weapon.Bip01_L_Finger0": "FvARM-bone L Finger0",
+        "v_weapon.Bip01_L_Finger01": "FvARM-bone L Finger01",
+        "v_weapon.Bip01_L_Finger02": "FvARM-bone L Finger02",
+        "v_weapon.Bip01_L_Finger1": "FvARM-bone L Finger1",
+        "v_weapon.Bip01_L_Finger11": "FvARM-bone L Finger11",
+        "v_weapon.Bip01_L_Finger12": "FvARM-bone L Finger12",
+        "v_weapon.Bip01_L_Finger2": "FvARM-bone L Finger2",
+        "v_weapon.Bip01_L_Finger21": "FvARM-bone L Finger21",
+        "v_weapon.Bip01_L_Finger22": "FvARM-bone L Finger22",
+        "v_weapon.Bip01_L_Finger3": "FvARM-bone L Finger3",
+        "v_weapon.Bip01_L_Finger31": "FvARM-bone L Finger31",
+        "v_weapon.Bip01_L_Finger32": "FvARM-bone L Finger32",
+        "v_weapon.Bip01_L_Finger4": "FvARM-bone L Finger4",
+        "v_weapon.Bip01_L_Finger41": "FvARM-bone L Finger41",
+        "v_weapon.Bip01_L_Finger42": "FvARM-bone L Finger42",
+        "v_weapon.Bip01_L_ForeTwist": "FvARM-bone L ForeTwist",
+        "v_weapon.Bip01_R_Forearm": "FvARM-bone R ForeArm",
+        "v_weapon.Bip01_R_Hand": "FvARM-bone R Hand",
+        "v_weapon.Bip01_R_Finger0": "FvARM-bone R Finger0",
+        "v_weapon.Bip01_R_Finger01": "FvARM-bone R Finger01",
+        "v_weapon.Bip01_R_Finger02": "FvARM-bone R Finger02",
+        "v_weapon.Bip01_R_Finger1": "FvARM-bone R Finger1",
+        "v_weapon.Bip01_R_Finger11": "FvARM-bone R Finger11",
+        "v_weapon.Bip01_R_Finger12": "FvARM-bone R Finger12",
+        "v_weapon.Bip01_R_Finger2": "FvARM-bone R Finger2",
+        "v_weapon.Bip01_R_Finger21": "FvARM-bone R Finger21",
+        "v_weapon.Bip01_R_Finger22": "FvARM-bone R Finger22",
+        "v_weapon.Bip01_R_Finger3": "FvARM-bone R Finger3",
+        "v_weapon.Bip01_R_Finger31": "FvARM-bone R Finger31",
+        "v_weapon.Bip01_R_Finger32": "FvARM-bone R Finger32",
+        "v_weapon.Bip01_R_Finger4": "FvARM-bone R Finger4",
+        "v_weapon.Bip01_R_Finger41": "FvARM-bone R Finger41",
+        "v_weapon.Bip01_R_Finger42": "FvARM-bone R Finger42",
+        "v_weapon.Bip01_R_ForeTwist": "FvARM-bone R ForeTwist",
+        "v_weapon.M4A1_Parent": "FvARM-bone Prop1",
+        "v_weapon.M4A1_Clip": "Dummy01",
+        "v_weapon.M4A1_Bolt": "Box006"
+      }
+    },
+    "draw": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/draw.smd",
+      "frames": 31,
+      "mapped": {
+        "v_weapon.Bip01_L_Forearm": "FvARM-bone L ForeArm",
+        "v_weapon.Bip01_L_Hand": "FvARM-bone L Hand",
+        "v_weapon.Bip01_L_Finger0": "FvARM-bone L Finger0",
+        "v_weapon.Bip01_L_Finger01": "FvARM-bone L Finger01",
+        "v_weapon.Bip01_L_Finger02": "FvARM-bone L Finger02",
+        "v_weapon.Bip01_L_Finger1": "FvARM-bone L Finger1",
+        "v_weapon.Bip01_L_Finger11": "FvARM-bone L Finger11",
+        "v_weapon.Bip01_L_Finger12": "FvARM-bone L Finger12",
+        "v_weapon.Bip01_L_Finger2": "FvARM-bone L Finger2",
+        "v_weapon.Bip01_L_Finger21": "FvARM-bone L Finger21",
+        "v_weapon.Bip01_L_Finger22": "FvARM-bone L Finger22",
+        "v_weapon.Bip01_L_Finger3": "FvARM-bone L Finger3",
+        "v_weapon.Bip01_L_Finger31": "FvARM-bone L Finger31",
+        "v_weapon.Bip01_L_Finger32": "FvARM-bone L Finger32",
+        "v_weapon.Bip01_L_Finger4": "FvARM-bone L Finger4",
+        "v_weapon.Bip01_L_Finger41": "FvARM-bone L Finger41",
+        "v_weapon.Bip01_L_Finger42": "FvARM-bone L Finger42",
+        "v_weapon.Bip01_L_ForeTwist": "FvARM-bone L ForeTwist",
+        "v_weapon.Bip01_R_Forearm": "FvARM-bone R ForeArm",
+        "v_weapon.Bip01_R_Hand": "FvARM-bone R Hand",
+        "v_weapon.Bip01_R_Finger0": "FvARM-bone R Finger0",
+        "v_weapon.Bip01_R_Finger01": "FvARM-bone R Finger01",
+        "v_weapon.Bip01_R_Finger02": "FvARM-bone R Finger02",
+        "v_weapon.Bip01_R_Finger1": "FvARM-bone R Finger1",
+        "v_weapon.Bip01_R_Finger11": "FvARM-bone R Finger11",
+        "v_weapon.Bip01_R_Finger12": "FvARM-bone R Finger12",
+        "v_weapon.Bip01_R_Finger2": "FvARM-bone R Finger2",
+        "v_weapon.Bip01_R_Finger21": "FvARM-bone R Finger21",
+        "v_weapon.Bip01_R_Finger22": "FvARM-bone R Finger22",
+        "v_weapon.Bip01_R_Finger3": "FvARM-bone R Finger3",
+        "v_weapon.Bip01_R_Finger31": "FvARM-bone R Finger31",
+        "v_weapon.Bip01_R_Finger32": "FvARM-bone R Finger32",
+        "v_weapon.Bip01_R_Finger4": "FvARM-bone R Finger4",
+        "v_weapon.Bip01_R_Finger41": "FvARM-bone R Finger41",
+        "v_weapon.Bip01_R_Finger42": "FvARM-bone R Finger42",
+        "v_weapon.Bip01_R_ForeTwist": "FvARM-bone R ForeTwist",
+        "v_weapon.M4A1_Parent": "FvARM-bone Prop1",
+        "v_weapon.M4A1_Clip": "Dummy01",
+        "v_weapon.M4A1_Bolt": "Box003"
+      }
+    },
+    "idle": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/idle.smd",
+      "frames": 55,
+      "mapped": {
+        "v_weapon.Bip01_L_Forearm": "FvARM-bone L ForeArm",
+        "v_weapon.Bip01_L_Hand": "FvARM-bone L Hand",
+        "v_weapon.Bip01_L_Finger0": "FvARM-bone L Finger0",
+        "v_weapon.Bip01_L_Finger01": "FvARM-bone L Finger01",
+        "v_weapon.Bip01_L_Finger02": "FvARM-bone L Finger02",
+        "v_weapon.Bip01_L_Finger1": "FvARM-bone L Finger1",
+        "v_weapon.Bip01_L_Finger11": "FvARM-bone L Finger11",
+        "v_weapon.Bip01_L_Finger12": "FvARM-bone L Finger12",
+        "v_weapon.Bip01_L_Finger2": "FvARM-bone L Finger2",
+        "v_weapon.Bip01_L_Finger21": "FvARM-bone L Finger21",
+        "v_weapon.Bip01_L_Finger22": "FvARM-bone L Finger22",
+        "v_weapon.Bip01_L_Finger3": "FvARM-bone L Finger3",
+        "v_weapon.Bip01_L_Finger31": "FvARM-bone L Finger31",
+        "v_weapon.Bip01_L_Finger32": "FvARM-bone L Finger32",
+        "v_weapon.Bip01_L_Finger4": "FvARM-bone L Finger4",
+        "v_weapon.Bip01_L_Finger41": "FvARM-bone L Finger41",
+        "v_weapon.Bip01_L_Finger42": "FvARM-bone L Finger42",
+        "v_weapon.Bip01_L_ForeTwist": "FvARM-bone L ForeTwist",
+        "v_weapon.Bip01_R_Forearm": "FvARM-bone R ForeArm",
+        "v_weapon.Bip01_R_Hand": "FvARM-bone R Hand",
+        "v_weapon.Bip01_R_Finger0": "FvARM-bone R Finger0",
+        "v_weapon.Bip01_R_Finger01": "FvARM-bone R Finger01",
+        "v_weapon.Bip01_R_Finger02": "FvARM-bone R Finger02",
+        "v_weapon.Bip01_R_Finger1": "FvARM-bone R Finger1",
+        "v_weapon.Bip01_R_Finger11": "FvARM-bone R Finger11",
+        "v_weapon.Bip01_R_Finger12": "FvARM-bone R Finger12",
+        "v_weapon.Bip01_R_Finger2": "FvARM-bone R Finger2",
+        "v_weapon.Bip01_R_Finger21": "FvARM-bone R Finger21",
+        "v_weapon.Bip01_R_Finger22": "FvARM-bone R Finger22",
+        "v_weapon.Bip01_R_Finger3": "FvARM-bone R Finger3",
+        "v_weapon.Bip01_R_Finger31": "FvARM-bone R Finger31",
+        "v_weapon.Bip01_R_Finger32": "FvARM-bone R Finger32",
+        "v_weapon.Bip01_R_Finger4": "FvARM-bone R Finger4",
+        "v_weapon.Bip01_R_Finger41": "FvARM-bone R Finger41",
+        "v_weapon.Bip01_R_Finger42": "FvARM-bone R Finger42",
+        "v_weapon.Bip01_R_ForeTwist": "FvARM-bone R ForeTwist",
+        "v_weapon.M4A1_Parent": "FvARM-bone Prop1",
+        "v_weapon.M4A1_Clip": "Dummy01",
+        "v_weapon.M4A1_Bolt": "Bone02"
+      }
+    },
+    "shoot1": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/shoot1.smd",
+      "frames": 5,
+      "mapped": {
+        "v_weapon.Bip01_L_Forearm": "FvARM-bone L ForeArm",
+        "v_weapon.Bip01_L_Hand": "FvARM-bone L Hand",
+        "v_weapon.Bip01_L_Finger0": "FvARM-bone L Finger0",
+        "v_weapon.Bip01_L_Finger01": "FvARM-bone L Finger01",
+        "v_weapon.Bip01_L_Finger02": "FvARM-bone L Finger02",
+        "v_weapon.Bip01_L_Finger1": "FvARM-bone L Finger1",
+        "v_weapon.Bip01_L_Finger11": "FvARM-bone L Finger11",
+        "v_weapon.Bip01_L_Finger12": "FvARM-bone L Finger12",
+        "v_weapon.Bip01_L_Finger2": "FvARM-bone L Finger2",
+        "v_weapon.Bip01_L_Finger21": "FvARM-bone L Finger21",
+        "v_weapon.Bip01_L_Finger22": "FvARM-bone L Finger22",
+        "v_weapon.Bip01_L_Finger3": "FvARM-bone L Finger3",
+        "v_weapon.Bip01_L_Finger31": "FvARM-bone L Finger31",
+        "v_weapon.Bip01_L_Finger32": "FvARM-bone L Finger32",
+        "v_weapon.Bip01_L_Finger4": "FvARM-bone L Finger4",
+        "v_weapon.Bip01_L_Finger41": "FvARM-bone L Finger41",
+        "v_weapon.Bip01_L_Finger42": "FvARM-bone L Finger42",
+        "v_weapon.Bip01_L_ForeTwist": "FvARM-bone L ForeTwist",
+        "v_weapon.Bip01_R_Forearm": "FvARM-bone R ForeArm",
+        "v_weapon.Bip01_R_Hand": "FvARM-bone R Hand",
+        "v_weapon.Bip01_R_Finger0": "FvARM-bone R Finger0",
+        "v_weapon.Bip01_R_Finger01": "FvARM-bone R Finger01",
+        "v_weapon.Bip01_R_Finger02": "FvARM-bone R Finger02",
+        "v_weapon.Bip01_R_Finger1": "FvARM-bone R Finger1",
+        "v_weapon.Bip01_R_Finger11": "FvARM-bone R Finger11",
+        "v_weapon.Bip01_R_Finger12": "FvARM-bone R Finger12",
+        "v_weapon.Bip01_R_Finger2": "FvARM-bone R Finger2",
+        "v_weapon.Bip01_R_Finger21": "FvARM-bone R Finger21",
+        "v_weapon.Bip01_R_Finger22": "FvARM-bone R Finger22",
+        "v_weapon.Bip01_R_Finger3": "FvARM-bone R Finger3",
+        "v_weapon.Bip01_R_Finger31": "FvARM-bone R Finger31",
+        "v_weapon.Bip01_R_Finger32": "FvARM-bone R Finger32",
+        "v_weapon.Bip01_R_Finger4": "FvARM-bone R Finger4",
+        "v_weapon.Bip01_R_Finger41": "FvARM-bone R Finger41",
+        "v_weapon.Bip01_R_Finger42": "FvARM-bone R Finger42",
+        "v_weapon.Bip01_R_ForeTwist": "FvARM-bone R ForeTwist",
+        "v_weapon.M4A1_Parent": "FvARM-bone Prop1",
+        "v_weapon.M4A1_Clip": "Box001",
+        "v_weapon.M4A1_Bolt": "Dummy01"
+      }
+    }
+  },
+  "deployed": false
+}

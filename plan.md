@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P7-S03 world / dropped model (QV-M4A1_S_Transformers)
-Last accepted evidence commit : 8b0159b
-State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_DEPLOYED / SOUND_RETIME_REQUIRED_ON_CF_ANIM / INSPECT_CLIPPING_NOTED
+Last completed task           : P7-S04 CF animation clips decoded (not yet on the viewmodel)
+Last accepted evidence commit : ae848d6
+State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_CLIPS_DECODED / SOUND_RETIME_REQUIRED_ON_CF_ANIM / INSPECT_CLIPPING_NOTED
 ```
 
 ## 0.1 已钉死
@@ -36,10 +36,10 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 
 ```text
 Task ID : NONE
-State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_DEPLOYED
-Goal    : 用户看第三人称 / 丢地上的枪；CF 原动画与手部 IK 仍开放
-Last    : P7-S03 world model deployed; P7-S02 inspect accepted with finger clipping noted
-Result  : P7_WORLD_MODEL_DEPLOYED
+State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_CLIPS_DECODED
+Goal    : 把已解码的 CF reload/select/idle/fire 接到第一人称并重对 P7-S01 声音
+Last    : P7-S03 world accepted; P7-S04 decoded 8 PV LTB clips
+Result  : P7_CF_ANIM_CLIPS_DECODED
 ```
 
 **2026-09-13 用户决定（仍有效）**：不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。P6 VMT 沿用 N05-J 公式通道，没有把 CFG 标量抄进 phong。不宣布 P4-M01 PASS。N04-F 仍暂停。
@@ -56,7 +56,9 @@ Result  : P7_WORLD_MODEL_DEPLOYED
 
 **P7-S02**：用户 2026-09-13 「除了小穿模，没问题」。Inspect 已接受（CS lookat，不是 CF 检视）。**标记：F 检视手指小穿模**（`INSPECT_CLIPPING_NOTED`），与 P4 同一类问题，IK / retarget 仍开放。未改 frozen addon、未改 P7-S01 声音。证据 [`work/p5_leishen/p7_s02/report.md`](work/p5_leishen/p7_s02/report.md)。
 
-**P7-S03**：已把 Bute `QV-M4A1_S_Transformers` LTB + QV DTX 编进 M4A4 `w_rif_m4a1` / `w_rif_m4a1_dropped`，加到 live addon `p_cf_leishen_m4a4_p6`。第一人称 `v_rif_m4a1` 哈希未改。QV 是单 piece，官方 mag bodygroup 已 blank。不是 P4-M01 PASS。证据 [`work/p5_leishen/p7_s03/report.md`](work/p5_leishen/p7_s03/report.md)。
+**P7-S03**：用户 2026-09-13 「可以」。World / dropped 已接受。证据 [`work/p5_leishen/p7_s03/report.md`](work/p5_leishen/p7_s03/report.md)。
+
+**P7-S04**：已从 identity-core `PV-M4A1_S_Transformers.LTB` 按 Jupiter `Model::Load` 解出 8 段 parent anim（`nParentAnims=8`，无压缩）。换弹 108 keys / 1600 ms，关键帧字符串：`smoke` → `WeaponClipOut` → `WeaponClipIn` → `WeaponReload`。切枪 `select` 640 ms 含 `WeaponReload`。尚未接到第一人称网格（P6 仍是 CS 骨骼权重）；未改 frozen / 未改 live 动作。证据 [`work/p5_leishen/p7_s04/report.md`](work/p5_leishen/p7_s04/report.md)。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -90,6 +92,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - P7-S01 sound：`work/p5_leishen/p7/{report.md,execution.json,mapping.json,addon/}`
 - P7-S02 inspect：`work/p5_leishen/p7_s02/{report.md,execution.json}`
 - P7-S03 world：`work/p5_leishen/p7_s03/{report.md,execution.json,mapping.json,addon/}`
+- P7-S04 CF anim decode：`work/p5_leishen/p7_s04/{report.md,execution.json}`
 
 ## 0.3 禁止
 
@@ -108,7 +111,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 声音用户已接受（CS 动作时间）。P7-S02 Inspect 用户已接受，F 时手指小穿模记下。P7-S03 world/dropped 已部署，等用户看第三人称或丢枪。CF 原动画仍开放；换 CF 动作后必须重对 P7-S01 声音。
+**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 声音用户已接受（CS 动作时间）。P7-S02 Inspect 用户已接受，F 时手指小穿模记下。P7-S03 world/dropped 用户已接受。P7-S04 已解码 CF 8 段 clip，尚未替换游戏内动作；接到第一人称后必须重对 P7-S01 声音。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
@@ -1524,9 +1527,9 @@ work/p5_leishen/p6/mapping.json
 visible Inspect            <- P7-S02 USER_ACCEPTED (CS lookat); INSPECT_CLIPPING_NOTED
 hand / finger IK           <- open (F 检视小穿模)
 Blender retarget / penetration avoidance
-CF original animation      <- when this lands, retime P7-S01 sound
+CF original animation      <- P7-S04 clips DECODED; not on viewmodel yet; retime P7-S01 when wired
 CF original sound          <- P7-S01 USER_ACCEPTED on CS timing; SOUND_RETIME_REQUIRED_ON_CF_ANIM
-world model / extra polish <- P7-S03 DEPLOYED (QV LTB; user Gate open)
+world model / extra polish <- P7-S03 USER_ACCEPTED
 ```
 
 ## 7.1 P7-S01 CF original sound
@@ -1567,7 +1570,24 @@ slot   = weapons/w_rif_m4a1.mdl + weapons/w_rif_m4a1_dropped.mdl
 addon  = p_cf_leishen_m4a4_p6 (world files added; v_rif hashes unchanged)
 ```
 
-QV 单 piece，官方 mag bodygroup blank。皮肤只用 QV DTX。未改 frozen / P7-S01 声音 / 第一人称网格。
+QV 单 piece，官方 mag bodygroup blank。皮肤只用 QV DTX。未改 frozen / P7-S01 声音 / 第一人称网格。用户 2026-09-13 「可以」。
+
+## 7.4 P7-S04 CF original animation decode
+
+```text
+P7-S04 = P7_CF_ANIM_CLIPS_DECODED
+source = PV-M4A1_S_Transformers.LTB (Jupiter ModelAnim, compression NONE)
+clips  = reload 1600ms / select 640ms / idle_0 3000ms / fire 90ms / prefire / postfire / run / knife-attack
+reload events = smoke@0, WeaponClipOut@194ms, WeaponClipIn@718ms, WeaponReload@1211ms
+viewmodel     = not replaced (P6 still CS skeleton weights)
+```
+
+证据：
+
+```text
+work/p5_leishen/p7_s04/report.md
+work/p5_leishen/p7_s04/execution.json
+```
 
 证据：
 

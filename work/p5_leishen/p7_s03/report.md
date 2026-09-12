@@ -10,5 +10,7 @@ QV is one piece; official mag bodygroups are blank. Skin is QV DTX only (no PV n
 
 P7-S02 inspect remains CS lookat. Finger clipping during F is noted, not fixed. Frozen / P7-S01 sound were not modified.
 
+User 2026-09-13: 「可以」→ `P7_WORLD_MODEL_USER_ACCEPTED`.
+
 Not a P4-M01 PASS. Not CF original animation.
 
