@@ -1,0 +1,266 @@
+{
+  "schema": "cf2.p4m01.n04e-vm-dump.v1",
+  "generated_at_utc": "2026-09-12T08:28:11.269+00:00",
+  "status": "STATIC_ONLY_NO_PROCESS",
+  "static": [
+    {
+      "relative": "x64/crossfirebase.dll",
+      "present": true,
+      "size_bytes": 39815056,
+      "sha256": "4511b5af27fb509a9409668baf7e6619a8fde9ec2b5a0c377fe3a35abefef4f9",
+      "head16_hex": "4d5a90000300000004000000ffff0000",
+      "image_base": 6442450944,
+      "machine": 34404,
+      "sections": [
+        {
+          "name": ".text",
+          "va": 65536,
+          "vsize": 5790664,
+          "raw_size": 5790720,
+          "executable": true,
+          "entropy": 7.7793,
+          "ascii_strings": 1264,
+          "token_hits": 0
+        },
+        {
+          "name": ".rdata",
+          "va": 5898240,
+          "vsize": 1447242,
+          "raw_size": 1447424,
+          "executable": false,
+          "entropy": 5.5522,
+          "ascii_strings": 10493,
+          "token_hits": 0
+        },
+        {
+          "name": ".data",
+          "va": 7405568,
+          "vsize": 408688,
+          "raw_size": 65536,
+          "executable": false,
+          "entropy": 5.3729,
+          "ascii_strings": 258,
+          "token_hits": 0
+        },
+        {
+          "name": ".pdata",
+          "va": 7864320,
+          "vsize": 212004,
+          "raw_size": 212480,
+          "executable": false,
+          "entropy": 6.3954,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".tls",
+          "va": 8126464,
+          "vsize": 94,
+          "raw_size": 512,
+          "executable": false,
+          "entropy": 0.0204,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".gfids",
+          "va": 8192000,
+          "vsize": 4240,
+          "raw_size": 4608,
+          "executable": false,
+          "entropy": 3.7036,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".reloc",
+          "va": 8257536,
+          "vsize": 48744,
+          "raw_size": 49152,
+          "executable": false,
+          "entropy": 5.4434,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".tvm0",
+          "va": 8323072,
+          "vsize": 32047104,
+          "raw_size": 32047104,
+          "executable": true,
+          "entropy": 7.558,
+          "ascii_strings": 1604,
+          "token_hits": 0
+        },
+        {
+          "name": ".\"9t",
+          "va": 40370176,
+          "vsize": 160,
+          "raw_size": 512,
+          "executable": false,
+          "entropy": 0.6875,
+          "ascii_strings": 2,
+          "token_hits": 0
+        },
+        {
+          "name": ".bS>",
+          "va": 40435712,
+          "vsize": 185188,
+          "raw_size": 185344,
+          "executable": false,
+          "entropy": 6.4318,
+          "ascii_strings": 0,
+          "token_hits": 0
+        }
+      ],
+      "token_hits": [],
+      "has_tvm": true,
+      "imports": [
+        "kernel32.dll"
+      ],
+      "entry_rva": 2321728
+    },
+    {
+      "relative": "x64/crossfire_x64base.dll",
+      "present": true,
+      "size_bytes": 35937808,
+      "sha256": "ca80839a2c18617eb89e3a8eb2902ae410dcce396c8bc870bcd7caac0a2178a3",
+      "head16_hex": "4d5a90000300000004000000ffff0000",
+      "image_base": 6442450944,
+      "machine": 34404,
+      "sections": [
+        {
+          "name": ".text",
+          "va": 4096,
+          "vsize": 3351778,
+          "raw_size": 3352064,
+          "executable": true,
+          "entropy": 6.4299,
+          "ascii_strings": 4327,
+          "token_hits": 0
+        },
+        {
+          "name": ".rdata",
+          "va": 3358720,
+          "vsize": 751732,
+          "raw_size": 752128,
+          "executable": false,
+          "entropy": 4.7489,
+          "ascii_strings": 7128,
+          "token_hits": 0
+        },
+        {
+          "name": ".data",
+          "va": 4112384,
+          "vsize": 508196,
+          "raw_size": 163328,
+          "executable": false,
+          "entropy": 4.77,
+          "ascii_strings": 217,
+          "token_hits": 0
+        },
+        {
+          "name": ".pdata",
+          "va": 4624384,
+          "vsize": 127344,
+          "raw_size": 127488,
+          "executable": false,
+          "entropy": 6.329,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".tls",
+          "va": 4755456,
+          "vsize": 93,
+          "raw_size": 512,
+          "executable": false,
+          "entropy": 0.0204,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".gfids",
+          "va": 4759552,
+          "vsize": 2976,
+          "raw_size": 3072,
+          "executable": false,
+          "entropy": 3.9026,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".QMGuid",
+          "va": 4763648,
+          "vsize": 24,
+          "raw_size": 512,
+          "executable": false,
+          "entropy": -0.0,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".rsrc",
+          "va": 4767744,
+          "vsize": 21336,
+          "raw_size": 21504,
+          "executable": false,
+          "entropy": 4.9532,
+          "ascii_strings": 10,
+          "token_hits": 0
+        },
+        {
+          "name": ".tp6d",
+          "va": 4792320,
+          "vsize": 6885376,
+          "raw_size": 6882816,
+          "executable": true,
+          "entropy": 7.9993,
+          "ascii_strings": 3509,
+          "token_hits": 0
+        },
+        {
+          "name": ".idata2",
+          "va": 11677696,
+          "vsize": 102,
+          "raw_size": 512,
+          "executable": false,
+          "entropy": 0.6875,
+          "ascii_strings": 2,
+          "token_hits": 0
+        },
+        {
+          "name": ".reloc",
+          "va": 11681792,
+          "vsize": 29000,
+          "raw_size": 29184,
+          "executable": false,
+          "entropy": 5.4518,
+          "ascii_strings": 0,
+          "token_hits": 0
+        },
+        {
+          "name": ".tvm0",
+          "va": 11714560,
+          "vsize": 24592384,
+          "raw_size": 24592384,
+          "executable": true,
+          "entropy": 6.3522,
+          "ascii_strings": 30893,
+          "token_hits": 0
+        }
+      ],
+      "token_hits": [],
+      "has_tvm": true,
+      "imports": [
+        "kernel32.dll"
+      ],
+      "entry_rva": 1738112
+    }
+  ],
+  "dump": {
+    "status": "PROCESS_NOT_RUNNING",
+    "pids": []
+  },
+  "note": "Dump files must not be git-added. ACE modules were not opened. CF was not launched."
+}

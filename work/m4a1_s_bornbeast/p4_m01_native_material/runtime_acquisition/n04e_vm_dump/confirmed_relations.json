@@ -1,0 +1,31 @@
+{
+  "schema": "cf2.p4m01.n04e-confirmed-relations.v1",
+  "task_id": "P4-M01-N04-E",
+  "status": "STATIC_ONLY_NO_PROCESS",
+  "completion_state": "B",
+  "relations": [
+    {
+      "from": "x64/crossfirebase.dll",
+      "to": ".tvm0 VM image + kernel32-only imports",
+      "grade": "OBSERVED",
+      "token_hits": 0
+    },
+    {
+      "from": "x64/crossfire_x64base.dll",
+      "to": ".tp6d + .tvm0",
+      "grade": "OBSERVED",
+      "token_hits": 0
+    },
+    {
+      "from": "local process list",
+      "to": "crossfire/CShell",
+      "grade": "NEGATIVE_RESULT_SCOPED",
+      "note": "no matching process; CF was not launched"
+    }
+  ],
+  "cannot_conclude": [
+    "P4-M01 PASS",
+    "in-memory WeaponShader/%s.CFG",
+    "Themida VM bytecode semantics"
+  ]
+}
