@@ -7,6 +7,19 @@ Official 图鉴 (T01 user-confirmed): **M4A1-雷神** / item `2010044601` / `C04
 
 Look at [`gate/gate_sheet.png`](gate/gate_sheet.png) first. Do not use the 77-tile `contact_sheet.png`.
 
+## UV wrap (fixed 2026-09-13)
+
+The first gate meshes looked randomly textured. That was **not** a wrong atlas. Historical T02 always sampled decoder UVs with `v → 1-v`. CFRezManager OBJ export already writes `vt (u, 1-decoderV)`, so applying `1-v` again to LithTechModelDecoder JSON puts the mag-well island on the stock.
+
+Decoder V is already image-top-left. After removing the extra flip:
+
+- stock carries the Autobot-like mark
+- magazine is a magazine
+- barrel dragon is a single piece
+- Classic shows L1/L2 blue strips on the carry handle
+
+Before/after: `uv_repair/base_decoder_vflip.png` vs `uv_repair/base_decoder_v_as_is.png`. Orthographic unlit wrap is still darker than 图鉴; that is albedo + no CF lighting, not another UV scramble.
+
 ## What I looked at before asking
 
 | Image | What it actually shows |

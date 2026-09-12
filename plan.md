@@ -44,7 +44,7 @@ Result  : CANDIDATE_ONLY
 
 **2026-09-13 用户决定（仍有效）**：原生贴图已经在 M4A4 槽上，不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。N05-J 诊断 addon 保持现状。不宣布 P4-M01 PASS。N04-F 仍暂停。
 
-**P5-T02（用户「继续往下走」已开）**：用 N05-C 验证 reader 扫 Transformers 家族。973 hits / 793 unique / 77 PV DTX。历史灰模 + `data/rf017` 无头 BGR24 不再当 native 像素。认图材料是 [`work/p5_leishen/t02_native/gate/gate_sheet.png`](work/p5_leishen/t02_native/gate/gate_sheet.png)：官方图鉴、CF 商店图 `M4A1.S.TRANSFORMERS`、base PV DTX（与 `_PC` 同 MD5）、Classic 更亮银蓝 atlas、BornBeast 黑骑士负对照。未写 `USER_VISUAL_MATCH_CONFIRMED`。未部署、未改 N05-J / frozen。
+**P5-T02（用户「继续往下走」已开）**：用 N05-C 验证 reader 扫 Transformers 家族。973 hits / 793 unique / 77 PV DTX。历史灰模 + `data/rf017` 无头 BGR24 不再当 native 像素。首轮枪模预览乱贴：decoder UV 被多做了一次 `v→1-v`（OBJ 导出已经翻过）。去掉后枪托标志/弹匣/龙头对位。认图材料是 [`work/p5_leishen/t02_native/gate/gate_sheet.png`](work/p5_leishen/t02_native/gate/gate_sheet.png)。未写 `USER_VISUAL_MATCH_CONFIRMED`。未部署、未改 N05-J / frozen。
 
 游戏当前加载：`p_cf_bornbeast_m4a4_n05j_formula_diag`。frozen 仍 parked 在 `migi/csgo/_parked_addons/`。
 

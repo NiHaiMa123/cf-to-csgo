@@ -99,7 +99,7 @@ def main() -> int:
             (GATE / "official_C0457.png", "OFFICIAL 图鉴 C0457.png  M4A1-雷神  (user T01 confirmed)"),
             (GATE / "buyweapon_M4A1_S_TRANSFORMERS.png", "CF buy-menu icon  M4A1.S.TRANSFORMERS  (UI, not PV diffuse)"),
             (GATE / "pv_dtx_base_Transformers.png", "Verified PV DTX  base==PC  SHA 7ca69f66  (native albedo)"),
-            (GATE / "mesh_base_Transformers.png", "Base PV LTB SHA a0ccef5d + base DTX  (orthographic UV wrap)"),
+            (GATE / "mesh_base_Transformers.png", "Base PV LTB + DTX, decoder UV as image Y (no extra V flip)"),
             (GATE / "pv_dtx_Classic.png", "Verified PV DTX  Classic  (brighter silver/blue same layout)"),
             (GATE / "mesh_Classic.png", "Classic geometry family + Classic DTX"),
             (GATE / "neg_bornbeast_NOT_leishen.png", "NEG  BornBeast PV DTX  黑骑士  NOT 雷神"),

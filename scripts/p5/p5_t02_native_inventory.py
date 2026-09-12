@@ -435,8 +435,10 @@ def barycentric(
 
 def sample(texture: Image.Image, u: float, v: float) -> tuple[int, int, int]:
     width, height = texture.size
+    # LithTechModelDecoder UVs are already image-top-left (D3D). CFRezManager
+    # OBJ export writes vt as (u, 1-v); do not flip decoder JSON a second time.
     u = max(0.0, min(1.0, float(u)))
-    v = max(0.0, min(1.0, 1.0 - float(v)))
+    v = max(0.0, min(1.0, float(v)))
     x = min(width - 1, int(round(u * (width - 1))))
     y = min(height - 1, int(round(v * (height - 1))))
     pixel = texture.getpixel((x, y))
@@ -524,7 +526,7 @@ def render_textured(document: dict[str, Any], texture: Image.Image, dest: Path, 
         "weapon_mesh_count": len(meshes),
         "triangle_count": len(faces),
         "skipped_meshes_without_uv": skipped_no_uv,
-        "uv_flip": "v -> 1-v",
+        "uv_flip": "decoder_v_as_image_y",
         "projection": "orthographic side; world Z horizontal, world Y vertical",
         "texture_status": "verified_pv_dtx_uv_not_identity",
         "color": stats,
