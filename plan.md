@@ -889,6 +889,59 @@ BornBeast native material closure        OPEN_UNRESOLVED
 P4-M01                                   INCOMPLETE
 ```
 
+该表被 §4.16 更新。
+
+## 4.16 N03-E freeze
+
+Review 接受提交：
+
+```text
+043935f4ac948bcf30d6fa5d68371190569ac298  P4-M01-N03-E
+P4-M01-N03-E = ACCEPTED / RENDERSTYLE_STRUCTURAL
+```
+
+`RS/NINJATRANSLUCENT.LTB` 与 `RS/PVMODELDEFAULT.LTB`（`rez/rf002.rez`）LZMA-alone 解压后是 Jupiter renderstyle：
+
+```text
+LTB_Header fileType = 5 (LTB_D3D_RENDERSTYLE_FILE)
+LTB_Header version  = 3 (RENDERSTYLE_D3D_VERSION, uint16 at offset 2)
+iRenStyleCnt        = 1
+iRenderPasses       = 1
+```
+
+CF delta：byte 1 of the 20-byte aligned header is non-zero（model LTB 该位为 0）。
+
+两文件均为单 pass：
+
+```text
+stage 0 TextureParam = RENDERSTYLE_USE_TEXTURE1
+stage 1..3           = RENDERSTYLE_NOTEXTURE
+BlendMode            = BLEND_MOD_SRCALPHA
+```
+
+解压体内无 `.cfg` / `.fx` / `.tga` / `.dtx` / `WeaponShader` 字符串。`USE_TEXTURE1` 与 Bute 单张 `PViewSkinFileName` DTX 一致；这两条共用 RS **不能** 选择 BornBeast TGA/CFG。
+
+```text
+shared RS samples TEXTURE1 only           STRUCTURALLY_VERIFIED
+RS body names TGA/CFG                     SCOPED_NEGATIVE
+```
+
+当前有效 closure 边界：
+
+```text
+packed BF005 BornBeast consumer          ACCEPTED
+canonical Weapon FileName graph          ACCEPTED
+TGA/CFG as Weapon file-path fields       SCOPED_NEGATIVE_ACCEPTED
+Jupiter LTB piece table on PV model      ACCEPTED
+LTB extra texture filenames              SCOPED_NEGATIVE_ACCEPTED
+shared RS TEXTURE1-only                  ACCEPTED
+RS body TGA/CFG strings                  SCOPED_NEGATIVE_ACCEPTED
+index -> DTX/TGA path                    OPEN_UNRESOLVED
+CFG/render semantic closure              OPEN_UNRESOLVED
+BornBeast native material closure        OPEN_UNRESOLVED
+P4-M01                                   INCOMPLETE
+```
+
 ---
 
 # 5. P5 — 最终 M4A1-雷神资产识别
@@ -1043,6 +1096,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03a_bornbeast_
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03b_rez_packed_config/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03c_material_graph/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03d_ltb_piece_index/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03e_renderstyle_ltb/
 ```
 
 ## External reference implementation / positive control
@@ -1089,6 +1143,7 @@ dc3ac1b69843141b54b2ae97b868aa4a7a242d01  N02-E-R1 LTB piece table absent
 f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 consumer
 0e3c1e9130ea61cc2ed11c788cb33a1c6ba7d782  N03-C canonical 黑骑士 FileName graph
 04e8b425b32a6db24b24acea3f4c129c2f80f38b  N03-D PV LTB Jupiter piece table, nNumTextures=0
+043935f4ac948bcf30d6fa5d68371190569ac298  N03-E shared RS TEXTURE1-only, no TGA/CFG strings
 ```
 
 ---
