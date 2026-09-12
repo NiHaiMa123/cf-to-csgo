@@ -7,76 +7,97 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N03-H
-Title: Decode remaining BornBeast DTX vs later-era SpecularMap DTX controls
+Task ID: P4-M01-N04-A
+Title: Exact-token string scan of authorized engine PEs
 State: ACTIVE
 Parent: P4-M01 Native Material Recovery
-Depends on: P4-M01-N03-G
+Depends on: P4-M01-N03-H
 ```
 
 # 2. Previous execution status
 
-N03-G：`LightCorrectionLegacyShader` 全是整数 `1`，不是 CFG 名。`SpecularMapName` 是后期武器的 `SpecularMap\*.dtx`。黑骑士两条都没有。Bute 字段路线到此关闭。
-
-ComfyUI/CS1.6 只证明网格 UV 需要 512×512 枪件 atlas；本机 PV DTX 解出来是能量层。QV DTX 官方 `--decode-image` 失败，尚未按体积做 DXT 布局。
+N03-H：官方 DTX 头 0/16。524452 族（黑骑士 PV 和战龙对照）都是能量/标量层。QV 32932 size-fit 不是枪 atlas。Bute/DTX 像素路线关闭。用户授权 DLL，限定静态 strings。
 
 # 3. Current goal
 
-回答：本机还有没有一张 **看起来像枪** 的原生 DTX。
+在 7 个真实（非 1 字节 stub）游戏 PE 里找 **明文路径构造串**。
+
+回答：
 
 ```text
-later SpecularMap *.dtx
-  -> CFRezManager official DTX header decode works? pixels look like a real map?
-QV-M4A1_S_BornBeast.DTX (32932 B)
-  -> official fail; size-fit DXT/BGR layouts; gun albedo or energy or garbage?
-*BornBeast*.DTX size classes
-  -> 524452 energy family / 32932 QV family / other 512-class albedo?
+WeaponShader / AlphaMap / NormalMap / SpecularMap
+  -> present as directory token?
+  -> present as sprintf format (WeaponShader\%s.CFG)?
+which PE
+  -> packed vs plaintext
 ```
 
 # 4. Required Work
 
-只读本地 `data/rf017` DTX（加 N03-G 已列出的 `SpecularMapName` 路径）。
+只读本机 `D:\Program Files\CF(2)` 下列文件（N02-A SHA 对账）：
 
-1. 列出全部 `*BornBeast*.DTX` 的 path / size / SHA / 体积族。
-2. 对 N03-G 里 unique `SpecularMapName` 的 `.dtx`（至少 `PV-M4A1_RoyalDragon_s.DTX` 和一张非 M4 对照）跑 CFRezManager `--decode-image`。
-3. 对 `QV-M4A1_S_BornBeast.DTX` 和官方解码失败的 BornBeast DTX：只试 **体积 exact-fit 或 leftover ≤ 200 B** 的 DXT1/DXT5/BGR 布局（含小 header offset），导出 PNG。
-4. 输出预览 + 分类：`gun_atlas` / `scalar_or_energy` / `garbage` / `official_ok` / `undecodable`。分类必须看像素，禁止 filename similarity。
+```text
+x64/CShell_x64.dll
+x64/crossfirebase.dll
+x64/crossfire_x64base.dll
+x64/crossfire.exe
+x64/server_x64.dll
+rez/Object_x64.lto
+rez/Object.lto
+```
+
+ASCII + UTF-16LE，exact token（大小写不敏感子串，禁止 fuzzy/similarity）：
+
+```text
+WeaponShader
+AlphaMap
+NormalMap
+SpecularMap
+LightCorrectionLegacyShader
+PViewSkinFileName
+StandardName
+M4A1_S_BornBeast
+playerviewmesh
+```
+
+命中时记录 file offset / RVA / encoding / 字符串全文 / 前后 32 字节 printable context。单独标记是否含 `%s` / `%S` / `%hs` 或 `WeaponShader\` 路径片段。
 
 输出：
 
 ```text
-work/.../n03h_dtx_container_decode/
+work/.../n04a_pe_string_hits/
 ```
 
-至少包含 size 表、official decode 结果、QV 布局候选、previews、remaining ambiguity。
+至少：PE 身份表（size/SHA/packed heuristic）、命中表、remaining ambiguity。
+
+不把 PE 文件复制进仓库。
 
 # 5. Forbidden
 
 - 不宣布 P4-M01 PASS；
-- 不把 CS1.6 / ComfyUI / 图鉴像素当 native；
-- 不进入 DLL/EXE/FXO reverse；
-- 不扫描全部 CFG；
-- 不进入 P5 identity；
+- 不附加调试器、不注入、不 dump 运行中 CF；
+- 不碰 ACE / 反作弊 DLL；
+- 不跑脱壳器 / 未知 EXE；
+- 不反编译函数体（本轮只要 strings）；
+- 不扫全部 272 DLL；
+- 不进入 FXO；
 - 不修改历史 accepted evidence；
-- 不把「解得出来」当成「第一人称消费合同」。
+- 不 git add 任何 .exe/.dll/.lto/.fxo。
 
 # 6. Completion State
 
 ```text
-A. NATIVE_GUN_ALBEDO_FOUND
-   QV or another BornBeast DTX pixels are a recognizable gun atlas
-   (local_cf only; not CS1.6)
+A. FORMAT_STRING_HIT
+   WeaponShader/%s 或 AlphaMap/%s 一类构造串
 
-B. CONTROL_OK_BORNBEAST_SPECIAL
-   later SpecularMap/control DTX official-decode as real maps;
-   BornBeast QV/PV remain energy/special or non-standard container
+B. TOKEN_HIT_NO_FORMAT
+   有目录名/扩展名 token，没有路径构造格式串
 
-C. SCOPED_NEGATIVE
-   official+size-fit both fail to produce a gun atlas from BornBeast DTX;
-   controls also fail or are absent locally
+C. PACKED_OR_NO_HIT
+   目标高熵或无这些明文
 
 D. REWORK_REQUIRED
-   cannot read local DTX / decoder cannot run
+   读不到 listed x64 PE
 ```
 
 完成后 STOP。

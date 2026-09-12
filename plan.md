@@ -1007,6 +1007,33 @@ BornBeast native material closure            OPEN_UNRESOLVED
 P4-M01                                       INCOMPLETE
 ```
 
+## 4.19 N03-H freeze
+
+Review 接受提交：
+
+```text
+3c29eb58691cc7b0d6fe70297fbb427dbc14d2d6  P4-M01-N03-H
+P4-M01-N03-H = ACCEPTED / SCOPED_NEGATIVE
+```
+
+```text
+official Jupiter DTX header          0/16 weapon DTX
+BornBeast *DTX size classes          524452 / 32932 / empty only
+524452 family pixels                 scalar_or_energy
+  including RoyalDragon SpecularMap
+QV 32932 size-fit                    not a gun atlas
+```
+
+用户已授权后续 PE **静态** strings/xref。不附加调试器，不提交 CF binary。
+
+当前有效 closure 边界：
+
+```text
+native gun-atlas DTX                 SCOPED_NEGATIVE_ACCEPTED
+WeaponShader CFG runtime bind        OPEN_UNRESOLVED (N04 PE)
+P4-M01                               INCOMPLETE
+```
+
 ---
 
 ## P5-T01 — Official reference
@@ -1163,6 +1190,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03e_renderstyl
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03f_shader_alphamap_lookup/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03g_legacy_shader_fields/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04a_pe_string_hits/
 ```
 
 ## External reference implementation / positive control
@@ -1212,6 +1240,7 @@ f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 cons
 043935f4ac948bcf30d6fa5d68371190569ac298  N03-E shared RS TEXTURE1-only, no TGA/CFG strings
 62bcce21aa2f808a230c040c58802a999f645295  N03-F packed BF005 no WeaponShader/AlphaMap paths
 8386de1a852b0b726504ca7ca32b21def741e710  N03-G LightCorrectionLegacyShader is int 1, SCOPED_NEGATIVE
+3c29eb58691cc7b0d6fe70297fbb427dbc14d2d6  N03-H no native gun-atlas DTX; 524452 is energy
 ```
 
 ---

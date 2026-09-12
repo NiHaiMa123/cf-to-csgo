@@ -1,0 +1,685 @@
+{
+  "hits": [
+    {
+      "token": "StandardName",
+      "encoding": "ascii",
+      "file_offset": 83455632,
+      "rva": 83461776,
+      "text": "StandardNameAI",
+      "is_format_like": false,
+      "context": "SpecialShotReadySoundName.......StandardNameAI..RenderStyleFileName.....Render",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "PViewSkinFileName",
+      "encoding": "ascii",
+      "file_offset": 83458448,
+      "rva": 83464592,
+      "text": "PViewSkinFileName",
+      "is_format_like": false,
+      "context": "tionData%d......prefire._L......PViewSkinFileName.......ContinuousShotInterval..S",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "StandardName",
+      "encoding": "ascii",
+      "file_offset": 83461032,
+      "rva": 83467176,
+      "text": "CustomColorStandardName",
+      "is_format_like": false,
+      "context": "me......WallShotDamageRatio.....CustomColorStandardName.PVDecalSkinFileName.....PVDecal",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "StandardName",
+      "encoding": "ascii",
+      "file_offset": 83461312,
+      "rva": 83467456,
+      "text": "StandardName",
+      "is_format_like": false,
+      "context": "kinFileName5....DecalSkinType...StandardName....LeftHandModelFileName...WLef",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "PViewSkinFileName",
+      "encoding": "ascii",
+      "file_offset": 83461440,
+      "rva": 83467584,
+      "text": "PViewSkinFileName2",
+      "is_format_like": false,
+      "context": "WLeftHandChangeModelFileName....PViewSkinFileName2......PViewSkinFileName3......PV",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "PViewSkinFileName",
+      "encoding": "ascii",
+      "file_offset": 83461464,
+      "rva": 83467608,
+      "text": "PViewSkinFileName3",
+      "is_format_like": false,
+      "context": "Name....PViewSkinFileName2......PViewSkinFileName3......PViewSkinFileName4......PV",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "PViewSkinFileName",
+      "encoding": "ascii",
+      "file_offset": 83461488,
+      "rva": 83467632,
+      "text": "PViewSkinFileName4",
+      "is_format_like": false,
+      "context": "e2......PViewSkinFileName3......PViewSkinFileName4......PViewSkinFileName5......PV",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "PViewSkinFileName",
+      "encoding": "ascii",
+      "file_offset": 83461512,
+      "rva": 83467656,
+      "text": "PViewSkinFileName5",
+      "is_format_like": false,
+      "context": "e3......PViewSkinFileName4......PViewSkinFileName5......PViewRenderStyleFileName..",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "PViewSkinFileName",
+      "encoding": "ascii",
+      "file_offset": 83461696,
+      "rva": 83467840,
+      "text": "PViewSkinFileNameAI",
+      "is_format_like": false,
+      "context": "PViewRenderStyleFileName5.......PViewSkinFileNameAI.....PvLegTexture....SpecularMap",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 83461736,
+      "rva": 83467880,
+      "text": "SpecularMapName",
+      "is_format_like": false,
+      "context": "nFileNameAI.....PvLegTexture....SpecularMapName.SpecularMapName2........Specula",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 83461752,
+      "rva": 83467896,
+      "text": "SpecularMapName2",
+      "is_format_like": false,
+      "context": "PvLegTexture....SpecularMapName.SpecularMapName2........SpecularMapName3........",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 83461776,
+      "rva": 83467920,
+      "text": "SpecularMapName3",
+      "is_format_like": false,
+      "context": "MapName.SpecularMapName2........SpecularMapName3........SpecularPower...Reflecti",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "LightCorrectionLegacyShader",
+      "encoding": "ascii",
+      "file_offset": 83461848,
+      "rva": 83467992,
+      "text": "LightCorrectionLegacyShader",
+      "is_format_like": false,
+      "context": "ReflectionName..ReflectionValue.LightCorrectionLegacyShader.....ShotSoundName...ShotSoundSt",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "StandardName",
+      "encoding": "ascii",
+      "file_offset": 83614432,
+      "rva": 83620576,
+      "text": "CommonStandardName",
+      "is_format_like": false,
+      "context": "fectOpt.MarkSpecialEffect.......CommonStandardName......AddAmmo.KnifeAmmoDamage.Zo",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 88887352,
+      "rva": 88893496,
+      "text": "modeltextures\\SpecularMap\\%s",
+      "is_format_like": true,
+      "context": "tures/playerview/..._s.dtx......modeltextures\\SpecularMap\\%s....modeltextures\\playerview\\...",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "M4A1_S_BornBeast",
+      "encoding": "ascii",
+      "file_offset": 88982440,
+      "rva": 88988584,
+      "text": "pv_vvip_m4a1_s_bornbeast2_reload_v3",
+      "is_format_like": false,
+      "context": "tmetal01........hole_stone01....pv_vvip_m4a1_s_bornbeast2_reload_v3.....dust_c_l........%d:%zu..pv_",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "M4A1_S_BornBeast",
+      "encoding": "ascii",
+      "file_offset": 88982504,
+      "rva": 88988648,
+      "text": "pv_vvip_m4a1_s_bornbeast2_reload_v2",
+      "is_format_like": false,
+      "context": "_v3.....dust_c_l........%d:%zu..pv_vvip_m4a1_s_bornbeast2_reload_v2.....dust_c_stone_l..dust_c_ston",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 89737608,
+      "rva": 89743752,
+      "text": "NormalMapSprite",
+      "is_format_like": false,
+      "context": "sY......NumStartupFrames........NormalMapSprite.NumPoliesX......BackfaceCull...",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 90198576,
+      "rva": 90204720,
+      "text": "AlphaMap",
+      "is_format_like": false,
+      "context": "NUIBG_SUPERSOLDIER_TM.dtx.......AlphaMap........h.......................",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "StandardName",
+      "encoding": "ascii",
+      "file_offset": 5820720,
+      "rva": 5826864,
+      "text": "_StandardName",
+      "is_format_like": false,
+      "context": "_Function5......_Category......._StandardName...ESCAPE_DEFAULT..NANO_CHAOSPAR",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "StandardName",
+      "encoding": "ascii",
+      "file_offset": 5852704,
+      "rva": 5858848,
+      "text": "StandardName",
+      "is_format_like": false,
+      "context": "fectName.........s^@......:@....StandardName....AgentID.ITEM_DESC_MSG...BIG_",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "WeaponShader",
+      "encoding": "ascii",
+      "file_offset": 5896672,
+      "rva": 5902816,
+      "text": "MODELTEXTURES\\Shader\\WeaponShader\\",
+      "is_format_like": true,
+      "context": "ixelsToTexels...PostProcess.....MODELTEXTURES\\Shader\\WeaponShader\\......MODELTEXTURES\\Shader\\Chara",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 5897160,
+      "rva": 5903304,
+      "text": "NormalMap",
+      "is_format_like": false,
+      "context": "XTURES\\.Etc.....Recreation Fail.NormalMap.......AlphaMap........EnvCubeMa",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5897176,
+      "rva": 5903320,
+      "text": "AlphaMap",
+      "is_format_like": false,
+      "context": "Recreation Fail.NormalMap.......AlphaMap........EnvCubeMap......Specular",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 5897208,
+      "rva": 5903352,
+      "text": "SpecularMap",
+      "is_format_like": false,
+      "context": "AlphaMap........EnvCubeMap......SpecularMap.....ps\\blurshadow.psh.......tra",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 5899352,
+      "rva": 5905496,
+      "text": "SpecularMappingFactor",
+      "is_format_like": false,
+      "context": "ertBase.EnvCubeMappingFactor....SpecularMappingFactor...WorldViewMatrix.NormalMapping",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 5899392,
+      "rva": 5905536,
+      "text": "NormalMappingFactor",
+      "is_format_like": false,
+      "context": "MappingFactor...WorldViewMatrix.NormalMappingFactor.....theAccumTime....WorldViewPr",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "playerviewmesh",
+      "encoding": "ascii",
+      "file_offset": 5899528,
+      "rva": 5905672,
+      "text": "tPlayerViewMesh",
+      "is_format_like": false,
+      "context": "Time....tRefractionModel........tPlayerViewMesh.TexturePanningVelocityV.Texture",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PlayerViewMesh",
+      "encoding": "ascii",
+      "file_offset": 5899528,
+      "rva": 5905672,
+      "text": "tPlayerViewMesh",
+      "is_format_like": false,
+      "context": "Time....tRefractionModel........tPlayerViewMesh.TexturePanningVelocityV.Texture",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PLAYERVIEWMESH",
+      "encoding": "ascii",
+      "file_offset": 5899528,
+      "rva": 5905672,
+      "text": "tPlayerViewMesh",
+      "is_format_like": false,
+      "context": "Time....tRefractionModel........tPlayerViewMesh.TexturePanningVelocityV.Texture",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "playerviewmesh",
+      "encoding": "ascii",
+      "file_offset": 5899800,
+      "rva": 5905944,
+      "text": "tPlayerViewMeshGhostShader",
+      "is_format_like": false,
+      "context": "Sprinker........HightLightPower.tPlayerViewMeshGhostShader......TextureTileX....AlphaMap2.",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PlayerViewMesh",
+      "encoding": "ascii",
+      "file_offset": 5899800,
+      "rva": 5905944,
+      "text": "tPlayerViewMeshGhostShader",
+      "is_format_like": false,
+      "context": "Sprinker........HightLightPower.tPlayerViewMeshGhostShader......TextureTileX....AlphaMap2.",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PLAYERVIEWMESH",
+      "encoding": "ascii",
+      "file_offset": 5899800,
+      "rva": 5905944,
+      "text": "tPlayerViewMeshGhostShader",
+      "is_format_like": false,
+      "context": "Sprinker........HightLightPower.tPlayerViewMeshGhostShader......TextureTileX....AlphaMap2.",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5899848,
+      "rva": 5905992,
+      "text": "AlphaMap2",
+      "is_format_like": false,
+      "context": "hostShader......TextureTileX....AlphaMap2.......IsGradation.....TextureTi",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "playerviewmesh",
+      "encoding": "ascii",
+      "file_offset": 5899944,
+      "rva": 5906088,
+      "text": "tPlayerViewMeshGhostShaderWepon",
+      "is_format_like": false,
+      "context": "GhostShaderWeponTexturePanning..tPlayerViewMeshGhostShaderWepon.UsePixelShaderIndex.....tPlayer",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PlayerViewMesh",
+      "encoding": "ascii",
+      "file_offset": 5899944,
+      "rva": 5906088,
+      "text": "tPlayerViewMeshGhostShaderWepon",
+      "is_format_like": false,
+      "context": "GhostShaderWeponTexturePanning..tPlayerViewMeshGhostShaderWepon.UsePixelShaderIndex.....tPlayer",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PLAYERVIEWMESH",
+      "encoding": "ascii",
+      "file_offset": 5899944,
+      "rva": 5906088,
+      "text": "tPlayerViewMeshGhostShaderWepon",
+      "is_format_like": false,
+      "context": "GhostShaderWeponTexturePanning..tPlayerViewMeshGhostShaderWepon.UsePixelShaderIndex.....tPlayer",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "playerviewmesh",
+      "encoding": "ascii",
+      "file_offset": 5900000,
+      "rva": 5906144,
+      "text": "tPlayerViewMeshGhostShaderWeponTexturePanning",
+      "is_format_like": false,
+      "context": "erWepon.UsePixelShaderIndex.....tPlayerViewMeshGhostShaderWeponTexturePanning...Fresnel.Prop_UseAlphaMap....M",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PlayerViewMesh",
+      "encoding": "ascii",
+      "file_offset": 5900000,
+      "rva": 5906144,
+      "text": "tPlayerViewMeshGhostShaderWeponTexturePanning",
+      "is_format_like": false,
+      "context": "erWepon.UsePixelShaderIndex.....tPlayerViewMeshGhostShaderWeponTexturePanning...Fresnel.Prop_UseAlphaMap....M",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PLAYERVIEWMESH",
+      "encoding": "ascii",
+      "file_offset": 5900000,
+      "rva": 5906144,
+      "text": "tPlayerViewMeshGhostShaderWeponTexturePanning",
+      "is_format_like": false,
+      "context": "erWepon.UsePixelShaderIndex.....tPlayerViewMeshGhostShaderWeponTexturePanning...Fresnel.Prop_UseAlphaMap....M",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5900056,
+      "rva": 5906200,
+      "text": "Prop_UseAlphaMap",
+      "is_format_like": false,
+      "context": "erWeponTexturePanning...Fresnel.Prop_UseAlphaMap....Main....Pearl...Alpha.......",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "playerviewmesh",
+      "encoding": "ascii",
+      "file_offset": 5900216,
+      "rva": 5906360,
+      "text": "tPlayerViewMeshDollModel",
+      "is_format_like": false,
+      "context": "medCube.TransformedLitDirection.tPlayerViewMeshDollModel........NormalBoost.Color.......",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PlayerViewMesh",
+      "encoding": "ascii",
+      "file_offset": 5900216,
+      "rva": 5906360,
+      "text": "tPlayerViewMeshDollModel",
+      "is_format_like": false,
+      "context": "medCube.TransformedLitDirection.tPlayerViewMeshDollModel........NormalBoost.Color.......",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PLAYERVIEWMESH",
+      "encoding": "ascii",
+      "file_offset": 5900216,
+      "rva": 5906360,
+      "text": "tPlayerViewMeshDollModel",
+      "is_format_like": false,
+      "context": "medCube.TransformedLitDirection.tPlayerViewMeshDollModel........NormalBoost.Color.......",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5900728,
+      "rva": 5906872,
+      "text": "AlphaMapChannel",
+      "is_format_like": false,
+      "context": "medLitDirection.Prop_PearlNp....AlphaMapChannel.ClanMark........Texuture_Mirro_",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 5900800,
+      "rva": 5906944,
+      "text": "NormalMapIntensity",
+      "is_format_like": false,
+      "context": "_Mirro_factor_u.MaskMapChannel..NormalMapIntensity......TotalGameTime...EnvCubeMap",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 5900864,
+      "rva": 5907008,
+      "text": "SpecularMapIntensity",
+      "is_format_like": false,
+      "context": "eTime...EnvCubeMapIntensity.....SpecularMapIntensity....SSS_Wrap........SubSurfaceCo",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 5914176,
+      "rva": 5920320,
+      "text": "NormalMappingEnabled",
+      "is_format_like": false,
+      "context": "LightColorR.....LightColorG.....NormalMappingEnabled....TexturePanningEnabled...Skel",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 5914392,
+      "rva": 5920536,
+      "text": "NormalMapName",
+      "is_format_like": false,
+      "context": "RenderParam.....HightLightR.....NormalMapName...AlphaMapName....OverlayMapNam",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5914408,
+      "rva": 5920552,
+      "text": "AlphaMapName",
+      "is_format_like": false,
+      "context": "HightLightR.....NormalMapName...AlphaMapName....OverlayMapName..OverlayAlpha",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5914440,
+      "rva": 5920584,
+      "text": "OverlayAlphaMapName",
+      "is_format_like": false,
+      "context": "AlphaMapName....OverlayMapName..OverlayAlphaMapName.....CharacterShader.Textures...",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 5914496,
+      "rva": 5920640,
+      "text": "SpecularMapName",
+      "is_format_like": false,
+      "context": "CharacterShader.Textures........SpecularMapName.EnvCubeMapName..Techniques.....",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 5914568,
+      "rva": 5920712,
+      "text": "SpecularMappingEnabled",
+      "is_format_like": false,
+      "context": "es......DiffuseMappingEnabled...SpecularMappingEnabled..EnvCubeMappingEnabled...Diffus",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5915416,
+      "rva": 5921560,
+      "text": "AlphaMapChannelG",
+      "is_format_like": false,
+      "context": "Techniques%d....Properties%d....AlphaMapChannelG........AlphaMapChannelB........",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5915440,
+      "rva": 5921584,
+      "text": "AlphaMapChannelB",
+      "is_format_like": false,
+      "context": "es%d....AlphaMapChannelG........AlphaMapChannelB........MaskMapChannelR.MaskMapC",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "ascii",
+      "file_offset": 5915864,
+      "rva": 5922008,
+      "text": "AlphaMapChannelR",
+      "is_format_like": false,
+      "context": "ScatteringScale.MapChannel......AlphaMapChannelR........ScatteringWrap..Scatteri",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "playerviewmesh",
+      "encoding": "utf16le",
+      "file_offset": 5895408,
+      "rva": 5901552,
+      "text": "rez\\Shader\\PlayerViewMesh.fxo",
+      "is_format_like": false,
+      "context": "argetTexturePixelOffsetY........r.e.z.\\.S.h.a.d.e.r.\\.P.l.a.y.e.r.V.i.e.w.M.e.s.h...f.x.o.......r.e.z.\\.S.h.a.d.e.r.\\.P.l.",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PlayerViewMesh",
+      "encoding": "utf16le",
+      "file_offset": 5895408,
+      "rva": 5901552,
+      "text": "rez\\Shader\\PlayerViewMesh.fxo",
+      "is_format_like": false,
+      "context": "argetTexturePixelOffsetY........r.e.z.\\.S.h.a.d.e.r.\\.P.l.a.y.e.r.V.i.e.w.M.e.s.h...f.x.o.......r.e.z.\\.S.h.a.d.e.r.\\.P.l.",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "PLAYERVIEWMESH",
+      "encoding": "utf16le",
+      "file_offset": 5895408,
+      "rva": 5901552,
+      "text": "rez\\Shader\\PlayerViewMesh.fxo",
+      "is_format_like": false,
+      "context": "argetTexturePixelOffsetY........r.e.z.\\.S.h.a.d.e.r.\\.P.l.a.y.e.r.V.i.e.w.M.e.s.h...f.x.o.......r.e.z.\\.S.h.a.d.e.r.\\.P.l.",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "utf16le",
+      "file_offset": 7104828,
+      "rva": 7582524,
+      "text": "SpecularMap",
+      "is_format_like": false,
+      "context": "...............Py.J.2...(.......S.p.e.c.u.l.a.r.M.a.p..................Py.'.2...).....",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "utf16le",
+      "file_offset": 7107912,
+      "rva": 7585608,
+      "text": "  SpecularMappingEnabled",
+      "is_format_like": false,
+      "context": "...........P....d...#........... . .S.p.e.c.u.l.a.r.M.a.p.p.i.n.g.E.n.a.b.l.e.d................P....v...$...m.s.",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "utf16le",
+      "file_offset": 7108196,
+      "rva": 7585892,
+      "text": "  NormalMappingEnabled",
+      "is_format_like": false,
+      "context": "...........P..x.e...'........... . .N.o.r.m.a.l.M.a.p.p.i.n.g.E.n.a.b.l.e.d................P......n.........",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "utf16le",
+      "file_offset": 7113746,
+      "rva": 7591442,
+      "text": "( 2 ) - AlphaMap.g ",
+      "is_format_like": false,
+      "context": "h.t.L.i.g.h.t. .:. ....... .....(. .2. .). .-. .A.l.p.h.a.M.a.p...g. .i.1................Pt...$...*...",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "AlphaMap",
+      "encoding": "utf16le",
+      "file_offset": 7114314,
+      "rva": 7592010,
+      "text": "( 2 ) - AlphaMap.b",
+      "is_format_like": false,
+      "context": "s.t.C.o.l.o.r. .:. ....... .....(. .2. .). .-. .A.l.p.h.a.M.a.p...b..................P9...$...0.....",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "SpecularMap",
+      "encoding": "utf16le",
+      "file_offset": 7115884,
+      "rva": 7593580,
+      "text": "  SpecularMappingEnabled",
+      "is_format_like": false,
+      "context": "...........P....d..._........... . .S.p.e.c.u.l.a.r.M.a.p.p.i.n.g.E.n.a.b.l.e.d................P\\...............",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "StandardName",
+      "encoding": "utf16le",
+      "file_offset": 7160372,
+      "rva": 7638068,
+      "text": "StandardName",
+      "is_format_like": false,
+      "context": "...............P..J./...........S.t.a.n.d.a.r.d.N.a.m.e................P..x.*...U.......",
+      "relative": "x64/crossfire.exe"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 509128,
+      "rva": 512200,
+      "text": "NormalMapSprite",
+      "is_format_like": false,
+      "context": "RenderEarly.....BackfaceCull....NormalMapSprite.NumPoliesX......NumPoliesY.....",
+      "relative": "rez/Object_x64.lto"
+    },
+    {
+      "token": "NormalMap",
+      "encoding": "ascii",
+      "file_offset": 554572,
+      "rva": 559180,
+      "text": "NormalMapSprite",
+      "is_format_like": false,
+      "context": "nel.RenderEarly.BackfaceCull....NormalMapSprite.NumPoliesX..NumPoliesY..Surface",
+      "relative": "rez/Object.lto"
+    }
+  ],
+  "generated_at_utc": "2026-09-12T07:50:30.681+00:00"
+}

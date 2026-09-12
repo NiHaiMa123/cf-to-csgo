@@ -1,0 +1,680 @@
+{
+  "schema": "cf2.p4m01.n04a-pe-string-hits.v1",
+  "generated_at_utc": "2026-09-12T07:50:30.681+00:00",
+  "cf_root": "D:\\Program Files\\CF(2)",
+  "status": "FORMAT_STRING_HIT",
+  "file_classes": {
+    "format_string_hit": 2,
+    "packed_or_no_hit": 1,
+    "no_hit": 2,
+    "token_hit_no_format": 2
+  },
+  "files": [
+    {
+      "relative": "x64/CShell_x64.dll",
+      "abs_present": true,
+      "size_bytes": 124732544,
+      "sha256": "d0020ee7ef3eecaf21335b733ba89cceb8bc5a731bdb483ac9b1c9fc40ea3a96",
+      "inventory_sha256": "d0020ee7ef3eecaf21335b733ba89cceb8bc5a731bdb483ac9b1c9fc40ea3a96",
+      "sha_matches_inventory": true,
+      "pe": {
+        "mz": true,
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "import_rva": 103279544,
+        "packed_heuristic": false,
+        "packed_reasons": [],
+        "section_count": 8,
+        "sections": [
+          {
+            "name": ".text",
+            "va": 4096,
+            "vsize": 81834744,
+            "raw_ptr": 1024,
+            "raw_size": 81835008,
+            "sample_entropy": 6.0617
+          },
+          {
+            "name": ".rdata",
+            "va": 81842176,
+            "vsize": 21473440,
+            "raw_ptr": 81836032,
+            "raw_size": 21473792,
+            "sample_entropy": 4.2882
+          },
+          {
+            "name": ".data",
+            "va": 103317504,
+            "vsize": 50898904,
+            "raw_ptr": 103309824,
+            "raw_size": 6884352,
+            "sample_entropy": 0.6436
+          },
+          {
+            "name": ".pdata",
+            "va": 154218496,
+            "vsize": 5124504,
+            "raw_ptr": 110194176,
+            "raw_size": 5124608,
+            "sample_entropy": 5.5435
+          },
+          {
+            "name": "_RDATA",
+            "va": 159346688,
+            "vsize": 3808,
+            "raw_ptr": 115318784,
+            "raw_size": 4096,
+            "sample_entropy": 6.772
+          },
+          {
+            "name": ".rsrc",
+            "va": 159350784,
+            "vsize": 1240,
+            "raw_ptr": 115322880,
+            "raw_size": 1536,
+            "sample_entropy": 3.6397
+          },
+          {
+            "name": ".reloc",
+            "va": 159354880,
+            "vsize": 1324024,
+            "raw_ptr": 115324416,
+            "raw_size": 1324032,
+            "sample_entropy": 5.4458
+          },
+          {
+            "name": "hms",
+            "va": 160681984,
+            "vsize": 8073216,
+            "raw_ptr": 116648448,
+            "raw_size": 8073216,
+            "sample_entropy": 7.0068
+          }
+        ]
+      },
+      "hit_counts_ascii": {
+        "StandardName": 4,
+        "PViewSkinFileName": 6,
+        "SpecularMap": 4,
+        "LightCorrectionLegacyShader": 1,
+        "M4A1_S_BornBeast": 2,
+        "NormalMap": 1,
+        "AlphaMap": 1
+      },
+      "hit_counts_utf16le": {},
+      "hit_count": 19,
+      "format_like_count": 1,
+      "class": "format_string_hit"
+    },
+    {
+      "relative": "x64/crossfirebase.dll",
+      "abs_present": true,
+      "size_bytes": 39815056,
+      "sha256": "4511b5af27fb509a9409668baf7e6619a8fde9ec2b5a0c377fe3a35abefef4f9",
+      "inventory_sha256": "4511b5af27fb509a9409668baf7e6619a8fde9ec2b5a0c377fe3a35abefef4f9",
+      "sha_matches_inventory": true,
+      "pe": {
+        "mz": true,
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "import_rva": 40370192,
+        "packed_heuristic": true,
+        "packed_reasons": [
+          "first_section_entropy>=7.2"
+        ],
+        "section_count": 10,
+        "sections": [
+          {
+            "name": ".text",
+            "va": 65536,
+            "vsize": 5790664,
+            "raw_ptr": 1024,
+            "raw_size": 5790720,
+            "sample_entropy": 7.7793
+          },
+          {
+            "name": ".rdata",
+            "va": 5898240,
+            "vsize": 1447242,
+            "raw_ptr": 5791744,
+            "raw_size": 1447424,
+            "sample_entropy": 5.5522
+          },
+          {
+            "name": ".data",
+            "va": 7405568,
+            "vsize": 408688,
+            "raw_ptr": 7239168,
+            "raw_size": 65536,
+            "sample_entropy": 5.3729
+          },
+          {
+            "name": ".pdata",
+            "va": 7864320,
+            "vsize": 212004,
+            "raw_ptr": 7304704,
+            "raw_size": 212480,
+            "sample_entropy": 6.3954
+          },
+          {
+            "name": ".tls",
+            "va": 8126464,
+            "vsize": 94,
+            "raw_ptr": 7517184,
+            "raw_size": 512,
+            "sample_entropy": 0.0204
+          },
+          {
+            "name": ".gfids",
+            "va": 8192000,
+            "vsize": 4240,
+            "raw_ptr": 7517696,
+            "raw_size": 4608,
+            "sample_entropy": 3.7036
+          },
+          {
+            "name": ".reloc",
+            "va": 8257536,
+            "vsize": 48744,
+            "raw_ptr": 7522304,
+            "raw_size": 49152,
+            "sample_entropy": 5.4434
+          },
+          {
+            "name": ".tvm0",
+            "va": 8323072,
+            "vsize": 32047104,
+            "raw_ptr": 7571456,
+            "raw_size": 32047104,
+            "sample_entropy": 7.558
+          },
+          {
+            "name": ".\"9t",
+            "va": 40370176,
+            "vsize": 160,
+            "raw_ptr": 39618560,
+            "raw_size": 512,
+            "sample_entropy": 0.6875
+          },
+          {
+            "name": ".bS>",
+            "va": 40435712,
+            "vsize": 185188,
+            "raw_ptr": 39619072,
+            "raw_size": 185344,
+            "sample_entropy": 6.4318
+          }
+        ]
+      },
+      "hit_counts_ascii": {},
+      "hit_counts_utf16le": {},
+      "hit_count": 0,
+      "format_like_count": 0,
+      "class": "packed_or_no_hit"
+    },
+    {
+      "relative": "x64/crossfire_x64base.dll",
+      "abs_present": true,
+      "size_bytes": 35937808,
+      "sha256": "ca80839a2c18617eb89e3a8eb2902ae410dcce396c8bc870bcd7caac0a2178a3",
+      "inventory_sha256": "ca80839a2c18617eb89e3a8eb2902ae410dcce396c8bc870bcd7caac0a2178a3",
+      "sha_matches_inventory": true,
+      "pe": {
+        "mz": true,
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "import_rva": 11677712,
+        "packed_heuristic": false,
+        "packed_reasons": [],
+        "section_count": 12,
+        "sections": [
+          {
+            "name": ".text",
+            "va": 4096,
+            "vsize": 3351778,
+            "raw_ptr": 1536,
+            "raw_size": 3352064,
+            "sample_entropy": 6.4299
+          },
+          {
+            "name": ".rdata",
+            "va": 3358720,
+            "vsize": 751732,
+            "raw_ptr": 3353600,
+            "raw_size": 752128,
+            "sample_entropy": 4.7489
+          },
+          {
+            "name": ".data",
+            "va": 4112384,
+            "vsize": 508196,
+            "raw_ptr": 4105728,
+            "raw_size": 163328,
+            "sample_entropy": 4.77
+          },
+          {
+            "name": ".pdata",
+            "va": 4624384,
+            "vsize": 127344,
+            "raw_ptr": 4269056,
+            "raw_size": 127488,
+            "sample_entropy": 6.329
+          },
+          {
+            "name": ".tls",
+            "va": 4755456,
+            "vsize": 93,
+            "raw_ptr": 4396544,
+            "raw_size": 512,
+            "sample_entropy": 0.0204
+          },
+          {
+            "name": ".gfids",
+            "va": 4759552,
+            "vsize": 2976,
+            "raw_ptr": 4397056,
+            "raw_size": 3072,
+            "sample_entropy": 3.9026
+          },
+          {
+            "name": ".QMGuid",
+            "va": 4763648,
+            "vsize": 24,
+            "raw_ptr": 4400128,
+            "raw_size": 512,
+            "sample_entropy": -0.0
+          },
+          {
+            "name": ".rsrc",
+            "va": 4767744,
+            "vsize": 21336,
+            "raw_ptr": 4400640,
+            "raw_size": 21504,
+            "sample_entropy": 4.9532
+          },
+          {
+            "name": ".tp6d",
+            "va": 4792320,
+            "vsize": 6885376,
+            "raw_ptr": 4422144,
+            "raw_size": 6882816,
+            "sample_entropy": 7.9993
+          },
+          {
+            "name": ".idata2",
+            "va": 11677696,
+            "vsize": 102,
+            "raw_ptr": 11304960,
+            "raw_size": 512,
+            "sample_entropy": 0.6875
+          },
+          {
+            "name": ".reloc",
+            "va": 11681792,
+            "vsize": 29000,
+            "raw_ptr": 11305472,
+            "raw_size": 29184,
+            "sample_entropy": 5.4518
+          },
+          {
+            "name": ".tvm0",
+            "va": 11714560,
+            "vsize": 24592384,
+            "raw_ptr": 11334656,
+            "raw_size": 24592384,
+            "sample_entropy": 6.3522
+          }
+        ]
+      },
+      "hit_counts_ascii": {},
+      "hit_counts_utf16le": {},
+      "hit_count": 0,
+      "format_like_count": 0,
+      "class": "no_hit"
+    },
+    {
+      "relative": "x64/crossfire.exe",
+      "abs_present": true,
+      "size_bytes": 7794816,
+      "sha256": "9c0816400a6b25f83f3b8c56717001eddf978f15503d9b3f7cdb3ea281df25e7",
+      "inventory_sha256": "9c0816400a6b25f83f3b8c56717001eddf978f15503d9b3f7cdb3ea281df25e7",
+      "sha_matches_inventory": true,
+      "pe": {
+        "mz": true,
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "import_rva": 8127469,
+        "packed_heuristic": true,
+        "packed_reasons": [
+          "first_section_entropy>=7.2"
+        ],
+        "section_count": 8,
+        "sections": [
+          {
+            "name": ".std",
+            "va": 4096,
+            "vsize": 5526264,
+            "raw_ptr": 1024,
+            "raw_size": 5526528,
+            "sample_entropy": 7.9899
+          },
+          {
+            "name": ".std",
+            "va": 5533696,
+            "vsize": 1185990,
+            "raw_ptr": 5527552,
+            "raw_size": 1186304,
+            "sample_entropy": 5.0813
+          },
+          {
+            "name": ".std",
+            "va": 6721536,
+            "vsize": 619208,
+            "raw_ptr": 6713856,
+            "raw_size": 155648,
+            "sample_entropy": 3.2928
+          },
+          {
+            "name": ".std",
+            "va": 7344128,
+            "vsize": 221964,
+            "raw_ptr": 6869504,
+            "raw_size": 222208,
+            "sample_entropy": 6.1285
+          },
+          {
+            "name": ".std",
+            "va": 7569408,
+            "vsize": 475936,
+            "raw_ptr": 7091712,
+            "raw_size": 476160,
+            "sample_entropy": 2.6527
+          },
+          {
+            "name": ".std",
+            "va": 8048640,
+            "vsize": 213830,
+            "raw_ptr": 7567872,
+            "raw_size": 214016,
+            "sample_entropy": 7.9988
+          },
+          {
+            "name": ".std",
+            "va": 8265728,
+            "vsize": 1521,
+            "raw_ptr": 7781888,
+            "raw_size": 1536,
+            "sample_entropy": -0.0
+          },
+          {
+            "name": ".std",
+            "va": 8269824,
+            "vsize": 115,
+            "raw_ptr": 7783424,
+            "raw_size": 512,
+            "sample_entropy": 1.6711
+          }
+        ]
+      },
+      "hit_counts_ascii": {
+        "StandardName": 2,
+        "WeaponShader": 1,
+        "NormalMap": 5,
+        "AlphaMap": 9,
+        "SpecularMap": 5,
+        "playerviewmesh": 5,
+        "PlayerViewMesh": 5,
+        "PLAYERVIEWMESH": 5
+      },
+      "hit_counts_utf16le": {
+        "playerviewmesh": 1,
+        "PlayerViewMesh": 1,
+        "PLAYERVIEWMESH": 1,
+        "SpecularMap": 3,
+        "NormalMap": 1,
+        "AlphaMap": 2,
+        "StandardName": 1
+      },
+      "hit_count": 47,
+      "format_like_count": 1,
+      "class": "format_string_hit"
+    },
+    {
+      "relative": "x64/server_x64.dll",
+      "abs_present": true,
+      "size_bytes": 1710592,
+      "sha256": "bdd13966a9168c216c90c6e818b24d5ee4c17c3370d495246d58c15a8c3f9750",
+      "inventory_sha256": "bdd13966a9168c216c90c6e818b24d5ee4c17c3370d495246d58c15a8c3f9750",
+      "sha_matches_inventory": true,
+      "pe": {
+        "mz": true,
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "import_rva": 1584520,
+        "packed_heuristic": false,
+        "packed_reasons": [],
+        "section_count": 6,
+        "sections": [
+          {
+            "name": ".text",
+            "va": 4096,
+            "vsize": 1210575,
+            "raw_ptr": 1024,
+            "raw_size": 1210880,
+            "sample_entropy": 6.321
+          },
+          {
+            "name": ".rdata",
+            "va": 1216512,
+            "vsize": 376088,
+            "raw_ptr": 1211904,
+            "raw_size": 376320,
+            "sample_entropy": 4.2957
+          },
+          {
+            "name": ".data",
+            "va": 1593344,
+            "vsize": 175408,
+            "raw_ptr": 1588224,
+            "raw_size": 46592,
+            "sample_entropy": 4.1581
+          },
+          {
+            "name": ".pdata",
+            "va": 1769472,
+            "vsize": 57084,
+            "raw_ptr": 1634816,
+            "raw_size": 57344,
+            "sample_entropy": 5.9993
+          },
+          {
+            "name": ".rsrc",
+            "va": 1826816,
+            "vsize": 1392,
+            "raw_ptr": 1692160,
+            "raw_size": 1536,
+            "sample_entropy": 3.7515
+          },
+          {
+            "name": ".reloc",
+            "va": 1830912,
+            "vsize": 16784,
+            "raw_ptr": 1693696,
+            "raw_size": 16896,
+            "sample_entropy": 5.4409
+          }
+        ]
+      },
+      "hit_counts_ascii": {},
+      "hit_counts_utf16le": {},
+      "hit_count": 0,
+      "format_like_count": 0,
+      "class": "no_hit"
+    },
+    {
+      "relative": "rez/Object_x64.lto",
+      "abs_present": true,
+      "size_bytes": 1251328,
+      "sha256": "f4718afbe506c40098967e7467e73dde3b582e05db0058ea8c13a54aa03a795e",
+      "inventory_sha256": "f4718afbe506c40098967e7467e73dde3b582e05db0058ea8c13a54aa03a795e",
+      "sha_matches_inventory": true,
+      "pe": {
+        "mz": true,
+        "machine": "0x8664",
+        "optional_magic": "0x20b",
+        "import_rva": 739452,
+        "packed_heuristic": false,
+        "packed_reasons": [],
+        "section_count": 6,
+        "sections": [
+          {
+            "name": ".text",
+            "va": 4096,
+            "vsize": 458252,
+            "raw_ptr": 1024,
+            "raw_size": 458752,
+            "sample_entropy": 5.8065
+          },
+          {
+            "name": ".rdata",
+            "va": 462848,
+            "vsize": 278798,
+            "raw_ptr": 459776,
+            "raw_size": 279040,
+            "sample_entropy": 4.7703
+          },
+          {
+            "name": ".data",
+            "va": 745472,
+            "vsize": 473420,
+            "raw_ptr": 738816,
+            "raw_size": 461824,
+            "sample_entropy": 1.2204
+          },
+          {
+            "name": ".pdata",
+            "va": 1220608,
+            "vsize": 19548,
+            "raw_ptr": 1200640,
+            "raw_size": 19968,
+            "sample_entropy": 5.3978
+          },
+          {
+            "name": ".rsrc",
+            "va": 1241088,
+            "vsize": 480,
+            "raw_ptr": 1220608,
+            "raw_size": 512,
+            "sample_entropy": 4.7247
+          },
+          {
+            "name": ".reloc",
+            "va": 1245184,
+            "vsize": 30196,
+            "raw_ptr": 1221120,
+            "raw_size": 30208,
+            "sample_entropy": 5.397
+          }
+        ]
+      },
+      "hit_counts_ascii": {
+        "NormalMap": 1
+      },
+      "hit_counts_utf16le": {},
+      "hit_count": 1,
+      "format_like_count": 0,
+      "class": "token_hit_no_format"
+    },
+    {
+      "relative": "rez/Object.lto",
+      "abs_present": true,
+      "size_bytes": 788992,
+      "sha256": "2444217a2fee9c3bdbb25a995f52d8029f861f5b9f92a244cbdc59723d07f8eb",
+      "inventory_sha256": "2444217a2fee9c3bdbb25a995f52d8029f861f5b9f92a244cbdc59723d07f8eb",
+      "sha_matches_inventory": true,
+      "pe": {
+        "mz": true,
+        "machine": "0x14c",
+        "optional_magic": "0x10b",
+        "import_rva": 655944,
+        "packed_heuristic": false,
+        "packed_reasons": [],
+        "section_count": 5,
+        "sections": [
+          {
+            "name": ".text",
+            "va": 4096,
+            "vsize": 526356,
+            "raw_ptr": 1024,
+            "raw_size": 526848,
+            "sample_entropy": 6.2765
+          },
+          {
+            "name": ".rdata",
+            "va": 532480,
+            "vsize": 125662,
+            "raw_ptr": 527872,
+            "raw_size": 125952,
+            "sample_entropy": 5.434
+          },
+          {
+            "name": ".data",
+            "va": 659456,
+            "vsize": 96420,
+            "raw_ptr": 653824,
+            "raw_size": 86016,
+            "sample_entropy": 2.5945
+          },
+          {
+            "name": ".rsrc",
+            "va": 757760,
+            "vsize": 480,
+            "raw_ptr": 739840,
+            "raw_size": 512,
+            "sample_entropy": 4.7247
+          },
+          {
+            "name": ".reloc",
+            "va": 761856,
+            "vsize": 48320,
+            "raw_ptr": 740352,
+            "raw_size": 48640,
+            "sample_entropy": 6.4356
+          }
+        ]
+      },
+      "hit_counts_ascii": {
+        "NormalMap": 1
+      },
+      "hit_counts_utf16le": {},
+      "hit_count": 1,
+      "format_like_count": 0,
+      "class": "token_hit_no_format"
+    }
+  ],
+  "format_like_hits": [
+    {
+      "token": "SpecularMap",
+      "encoding": "ascii",
+      "file_offset": 88887352,
+      "rva": 88893496,
+      "text": "modeltextures\\SpecularMap\\%s",
+      "is_format_like": true,
+      "context": "tures/playerview/..._s.dtx......modeltextures\\SpecularMap\\%s....modeltextures\\playerview\\...",
+      "relative": "x64/CShell_x64.dll"
+    },
+    {
+      "token": "WeaponShader",
+      "encoding": "ascii",
+      "file_offset": 5896672,
+      "rva": 5902816,
+      "text": "MODELTEXTURES\\Shader\\WeaponShader\\",
+      "is_format_like": true,
+      "context": "ixelsToTexels...PostProcess.....MODELTEXTURES\\Shader\\WeaponShader\\......MODELTEXTURES\\Shader\\Chara",
+      "relative": "x64/crossfire.exe"
+    }
+  ],
+  "hit_count": 68,
+  "hits_truncated_per_token": 40,
+  "note": "PE binaries are not copied into the repo. Offsets are local-file only."
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "cf2.p4m01.n04a-confirmed-relations.v1",
+  "task_id": "P4-M01-N04-A",
+  "status": "FORMAT_STRING_HIT",
+  "completion_state": "A",
+  "relations": [
+    {
+      "from": "x64/CShell_x64.dll",
+      "to": "modeltextures\\SpecularMap\\%s",
+      "grade": "OBSERVED",
+      "rva": "0x54C8F38",
+      "note": "sprintf-style path; matches later-era SpecularMapName .dtx layout; BornBeast lacks that Bute field"
+    },
+    {
+      "from": "x64/crossfire.exe",
+      "to": "MODELTEXTURES\\Shader\\WeaponShader\\",
+      "grade": "OBSERVED",
+      "rva": "0x5A12A0",
+      "note": "directory prefix in shader-slot string cluster; no %s.CFG in the same C string"
+    },
+    {
+      "from": "x64/CShell_x64.dll",
+      "to": "Bute keys PViewSkinFileName / SpecularMapName / LightCorrectionLegacyShader / StandardName",
+      "grade": "OBSERVED",
+      "note": "field-name table; consumer of packed BF005 keys, not path construction"
+    }
+  ],
+  "cannot_conclude": [
+    "P4-M01 PASS",
+    "WeaponShader/%s.CFG is proven",
+    "AlphaMap/%s_alpha.TGA is proven",
+    "M4A1_S_BornBeast token is a material bind",
+    "crossfirebase.dll contents (packed .tvm0)"
+  ]
+}
