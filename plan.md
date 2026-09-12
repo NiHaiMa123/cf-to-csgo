@@ -52,7 +52,7 @@ N05-H 已把 P4 编译网格（字节不变）和 N05-F VTF 接到 MDL 材质路
 
 N05-I 已在自建 D3D9 device 上对 `playerviewmesh.fxo` 做 per-pass `ShaderBytecode.Disassemble`（51 个 unique shader）。`D3DXDisassembleEffect` 失败。假设 technique `tPlayerViewMeshAlphaAproxSnellTransformedCube`（`EnvCubeUsage=2` + AlphaMapName2，仍是名字级假设）的共享 PS 实际采样 Diffuse/Normal/Specular/Alpha/Cube。该 PS 中 AlphaMap.r=不透明度、.g=spec 混合、.b=cube 混合；preshader 使用 `SpecularPower * 0.25` 作为 pow 指数。BornBeast Alpha TGA 的 R/G 恒为 255，只有 B 有空间变化。CFG 标量仍不是 Source 1 phong 数。
 
-N05-J 已把诊断 addon 换成 `p_cf_bornbeast_m4a4_n05j_formula_diag`：`$envmapmask` 来自 AlphaMap.b，去掉 N05-H 的 `$normalmapalphaenvmapmask`。N05-H 文件夹已从 addons 删除，frozen 仍 parked。`$phongexponent 16` 仍是占位；cube 仍是首面。进游戏重载 MIGI 看 env 是否变弱，仍不是 PASS。
+N05-J 已把诊断 addon 换成 `p_cf_bornbeast_m4a4_n05j_formula_diag`：`$envmapmask` 来自 AlphaMap.b，去掉 N05-H 的 `$normalmapalphaenvmapmask`。N05-H 文件夹已从 addons 删除，frozen 仍 parked。`$phongexponent 16` 仍是占位；cube 仍是首面。用户观察：反射比 N05-H 弱一点，枪身/图案无损坏；并指出 N05-H 的反射观感也没有问题。这与 `Black_Shader03` 近黑 + Alpha.b 均值约 10.8 相容——错 mask 和公式 mask 在这把枪上都不会出大块铬反射。保留 N05-J 作为公式通道，不把 env 调回 N05-H。仍不是 PASS。
 
 证据：
 
@@ -72,7 +72,7 @@ N05-J 已把诊断 addon 换成 `p_cf_bornbeast_m4a4_n05j_formula_diag`：`$envm
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：①字节/codec 与正式读取已闭合。②PV LTB UV 已对到 verified atlas，cube 已恢复。③FXO 已离线枚举并反汇编；假设 technique 的 PS 给出 AlphaMap RGB 分工与 `SpecularPower*0.25`。④独立 Source 1 诊断包已生成。⑤N05-G 已在 Blender 里展示 recovered maps。⑥N05-H 用户已确认游戏内替换。⑦N05-J 已按 AlphaMap.b 接 `$envmapmask`。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。
+**更新判断**：①字节/codec 与正式读取已闭合。②PV LTB UV 已对到 verified atlas，cube 已恢复。③FXO 已离线枚举并反汇编；假设 technique 的 PS 给出 AlphaMap RGB 分工与 `SpecularPower*0.25`。④独立 Source 1 诊断包已生成。⑤N05-G 已在 Blender 里展示 recovered maps。⑥N05-H 用户已确认游戏内替换。⑦N05-J 用户确认反射略弱、其余正常；N05-H env 观感也无问题，保留公式 mask、不回退。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。
 
 N05-C 到 N05-J 已完成。piece→sampler 运行时选择仍开放。完整 cubemap 仍未封装。CShell 实际 technique 选择仍是名字级假设。
 
