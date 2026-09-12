@@ -59,6 +59,8 @@ Please say which local candidate is M4A1-雷神, or none:
 
 Do not treat BornBeast as 雷神. Filename `Transformers` is not identity by itself.
 
+User 2026-09-13: `mesh_base_Transformers` looks like it, but too dark to confirm. Preview-only exposure is in [`gate/expose/`](gate/expose/) (`gain 3.2x`, native DTX unchanged). Still **CANDIDATE_ONLY**.
+
 N05-J diagnostic addon and the parked P4 frozen addon were not touched. P4-M01 remains INCOMPLETE.
 
 Reproduce:

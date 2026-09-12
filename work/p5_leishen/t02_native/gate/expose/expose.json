@@ -1,0 +1,11 @@
+{
+  "identity_status": "CANDIDATE_ONLY",
+  "native_pixels_changed": false,
+  "purpose": "user could not confirm dark wrap; lift preview only",
+  "gains": [
+    2.2,
+    3.2,
+    "percentile_stretch"
+  ],
+  "sheet": "work/p5_leishen/t02_native/gate/expose/expose_sheet.png"
+}
