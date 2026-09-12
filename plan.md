@@ -12,44 +12,60 @@ Date captured                 : 2026-09-12
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
-Current executor task         : NONE
+Current executor task         : P4-M01-N05-A (offline decoder / provenance audit)
 Last completed task           : P4-M01-N04-F
-Last commit                   : 729c3a3dd8d31ccbc2fc2503c386b6d9a3fdbef0
-State                         : STOP / AWAITING_USER
+Last executor evidence commit : 729c3a3dd8d31ccbc2fc2503c386b6d9a3fdbef0
+State                         : ACTIVE / OFFLINE_RESEARCH_READY
 ```
 
 ## 0.1 已钉死
 
 - P4 证明 CF LTB 能进 Source 1 / MIGI（M4A4 槽）。Prototype **不是**最终雷神，也 **不是**原生材质。
 - 黑骑士 Bute 只绑 PV LTB + PV DTX + 共用 RS（TEXTURE1）。TGA/CFG 路径在 packed BF005 上是 0。
-- 本机 PV DTX（524452）是能量/标量层；战龙等同容器也是。QV 32932 解不出枪 atlas。没有 512×512 原生枪身图。
+- 已尝试的解码没有恢复出原生枪身 atlas。PV DTX 的“能量/标量层”仅是猜测布局后的视觉分类，真实 codec / shader role 未闭合；不能据此认定本机没有 albedo。N03-H 的适用范围见 §4.19、§4.26。
 - 网格 UV 按 512×512 枪件 atlas 排。CS1.6 / ComfyUI 只能当视觉对照，禁止当 P4-M01 final 像素。
 - `playerviewmesh.fxo` 有 Alpha/Normal/Specular/Emissive **槽名**，没有文件路径。
 - CShell 有 `modeltextures\SpecularMap\%s`（12 LEA，后期 `.dtx` 路线）。黑骑士没有 `SpecularMapName`。
 - `crossfire.exe` 明文岛：`MODELTEXTURES\Shader\WeaponShader\` + `.cfg`，**0 代码引用**。它是 stub，只导入 packed `crossfirebase.dll`（`.tvm0`）。
-- 磁盘 `crossfirebase.dll` 无 WeaponShader 明文。运行中 PID 33100 = `x64/crossfire.exe`。`OpenProcess(VM_READ)` = Win32 **5**。未绕过 ACE。
+- 磁盘 `crossfirebase.dll` 无 WeaponShader 明文。N04-F 当时的 PID 33100 = `x64/crossfire.exe`，`OpenProcess(VM_READ)` = Win32 **5**。这是历史观测，不是当前进程状态；未绕过 ACE。
 
 ## 0.2 当前任务
 
 ```text
-Task ID : NONE
-State   : STOP
+Task ID : P4-M01-N05-A
+State   : ACTIVE
+Goal    : 用有依据的离线解码与输入溯源，区分工具不支持、容器未还原、选错资源、真实标量数据
+Scope   : 一轮小样本实验；完成后交回 Review
 ```
 
-N04-F 已完成：`DUMP_ACCESS_DENIED`。没有下一轮 Executor 单，直到用户选定分叉：
+2026-09-12 用户要求重新分析可尝试路径并更新计划。本轮 Planner 已完成联网源码核查与既有证据审计；以下是交给下一轮 Executor 的任务，**尚未执行/验收**。N04-F 的进程读取路线继续暂停，离线研究恢复。
 
-```text
-A. 停在原生 Gate
-   P4-M01 保持 INCOMPLETE；不脱壳、不对抗 ACE
+**输入与边界**：
 
-B. 能看的枪（非原生 PASS）
-   用已 UV 对齐的 CS1.6 atlas 出 VTF/VMT
-   明确 final_cf_material=false
-   禁止官网图鉴/AI 像素当 final
+- 固定 5 个 DTX：BornBeast PV / QV、RoyalDragon PV / SpecularMap、`PV-DualDE_GreenVein_S.DTX`；沿用 N03-H 的 exact path。另取 BornBeast CFG 和已修复过的 Alpha TGA 作跨格式对照，共 7 个真实输入。
+- 复用 N03-A / N03-C / N03-H 的 inventory、exact-path REZ entry 与 SHA。输入来自已有本机资源；所有 raw / normalized binary 保持 local-only。
+- 公开实现按 §0.4 的源码版本固定。审计或编译可读源码，不执行来源不明的工具包；不启动游戏、不附加进程。
 
-C. 用户自己提供无 ACE 的内存映像
-   只扫 WeaponShader/%s.CFG；仍不分析 ACE
-```
+**执行顺序**：
+
+1. 建立输入表：logical path、archive path、entry offset/size、raw SHA256、已有 loose SHA256、目录 MD5 与实算 MD5（分别记录，不预设 MD5 语义）。从已确认的 entry 只读复取，验证 raw/loose 是否一致；保留全部同路径副本，不能默认 `rez/` 比 `rez2/` 权威。N03-A 已有 BornBeast raw/loose 相等证据，优先复用，差异才展开。
+2. 先验证工具：构造两个自有小型标准 DTX（已知 RGBA 和 DXT1 色块），检查参考 decoder 和 repo decoder 的尺寸、通道、alpha、像素输出。再从现有索引最多选 5 个带合法头的本机 DTX，找到一个可复现正例或明确记为 `NO_CURRENT_CLIENT_CONTROL`。合成正例只证明标准格式实现；同源的 LTB2FBX / Vortigaunt 不算两份独立格式证据。
+3. 对 7 个真实输入仅测试有来源的变换：原始读取、已验证 wrapper/LZMA（满足格式条件时）、RezExtract 的 DTX offset 4/8 四字节交换，以及已有 TGA inserted-header repair。每个分支写前置条件、输入输出 SHA、头字段、BPP、尺寸、mip/section 范围、失败原因。**本轮 Planner 已确认 BornBeast PV/QV 的 offset 4 与 8 都不是 -2/-3/-5，单纯交换不能修好这两个样本**；将其作为快速负对照，不重复猜数百种布局。
+4. 对仍不能解的 DTX/CFG，比较三字节相位、size、头尾和跨格式结构；只有新源码/结构证据支持时才增加一个明确的 CF variant 假设。`524452 = 164 + 524288` 同时符合多个图像容量组合，不能用 size-fit 直接定 codec。CFG 的 492 字节/164 个有效值也不能自动定为 LUT 或常量表。
+5. 若恢复出可验证像素，用既有 local CF UV 做诊断预览，记录颜色、alpha 与枪件对应关系。预览可辨认只是中间结果，不能替代实际 binding / shader semantics。若未恢复，则按失败层级报告，停止本轮；不自动继续 N05-B、不升级到 dump。
+
+**交付**：`scripts/material_recovery/n05a_decoder_provenance_audit.py`（或同职责的最小源码工具）和 `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/` 下的 `report.md`、`sample_matrix.json`、`reference_sources.json`。报告必须带复现命令、代码版本、正负对照、失败分支和资源来源；只提交允许的源码、摘要及必要诊断预览，raw CF/第三方样本不入 Git。
+
+**本轮结果只选其一**：
+
+| 结果 | 验收含义 | Review 后可考虑的下一步 |
+|---|---|---|
+| `DECODE_RECOVERED_BINDING_OPEN` | 有结构验证的 deterministic decode + 原生像素；绑定仍待证 | §0.4 路线 B，结合 FXO 与 Bute 闭合 |
+| `PROVENANCE_OR_VARIANT_MISMATCH` | 找到可复现的副本/提取/格式差异，明确哪一层不一致 | 精确修复输入选择或 adapter，再 Review |
+| `REFERENCE_DECODERS_UNSUPPORTED` | 正例通过，但声明的真实样本/变换未通过 | 转路线 B；需要新副本时再用 C |
+| `CONTROL_OR_TOOLCHAIN_BLOCKED` | 未能建立可信对照或源码工具不可构建 | 记录具体依赖，不能把工具失败算资源不存在 |
+
+所有分支均保持 `P4-M01 = INCOMPLETE`，完成后 scoped commit + push `master` 并 STOP，等待 Review。
 
 ## 0.3 禁止
 
@@ -57,6 +73,35 @@ C. 用户自己提供无 ACE 的内存映像
 - 不把 CS1.6 / ComfyUI / 图鉴当 native final
 - 不注入、不补丁、不驱动、不 NtRead 绕过 ACE
 - 不 git add `data/**`、CF `.exe/.dll/.fxo/.dmp`
+
+## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
+
+**判断**：现在缺的是三层不同证据：①正确字节/codec，②资源到 mesh/piece/sampler 的绑定，③渲染语义。N04-F 只堵住 packed consumer 的进程读取；N03-H 没有排除所有 CF 解码方式；N04-C 只读了 FXO 名称，没有分析指令。不能把三层问题都压到“先取得内存 dump”上。
+
+以下为规划候选，不是已验证的当前 CF 行为。当前只激活 §0.2 的 N05-A。
+
+| 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
+|---|---|---|---|
+| 1 / A：decoder 与 provenance 复核 | 标准 decoder 0/16 失败意味着对照未建立；外部源码存在 CF 头字段差异 | N05-A：7 个真实样本 + 标准正例，分离 raw/normalized/decoded；得到合法结构或明确不支持的层级 | 不以“导出成功/颜色像能量”证明语义；无新线索不继续全库排列组合 |
+| 2 / B：FXO 离线语义分析 | `playerviewmesh.fxo` 是 D3D9 effect；微软提供二进制 effect 加载、参数枚举和反汇编接口 | 候选 N05-B：在自建工具的 D3D9 device 中载入本地 effect，先枚举 parameter/technique/pass/default，再提取普通/Alpha/Emissive 路径的采样、通道运算、混色和常量；`playermesh.fxo` 作对照 | 读到代码不等于该 technique 被黑骑士选中；默认值不等于运行值。解析失败记录 HRESULT/依赖，不转为附加 CF |
+| 3 / C：资源副本与版本差分 | 已有 `rez/`、`rez2/` 的 QV LTB 不同，loose Bute 与 packed BF005 也曾不一致 | 仅围绕已绑定的 BornBeast/Transformers logical paths 建副本矩阵，记录版本/哈希/相应 Bute 与 RS；有新合法输入时对比头、binding、shader slot | 当前载入优先级未知就保持候选；不按文件夹名或视觉选择“真副本”，不重复无差别扫描 25 万 entry |
+| 4 / D：可合法取得的兼容旧版本作参考 | Jupiter / CF 工具可解释标准路径，较早版本或不同地区 variant 可能暴露更少的格式差异 | 只有已获得可信版本与相关资源后，做旧/新 loader 或资源格式差分，提炼规则回验当前本机样本 | 尚无这样的新输入，不承诺能取得；旧版本行为/像素不自动成为当前 CF final，也不采用私服/脱壳工具包补缺口 |
+| 产品备选 / E：可用外观版本 | P4 已具备构建/部署能力，CS1.6 atlas 可作已有视觉演示 | 用户选择此交付目标后单独生成可看版本，`final_cf_material=false` | 不计为 native PASS，不借此跳过 P5 身份 Gate；此次仅规划，不部署 |
+
+**B 的具体可行性**：[`D3DXCreateEffect`](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dxcreateeffect) 接受 ASCII 或 binary effect；[`ID3DXBaseEffect`](https://learn.microsoft.com/en-us/windows/win32/direct3d9/id3dxbaseeffect) 可枚举参数、technique/pass 和取值；[`D3DXDisassembleEffect`](https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dxdisassembleeffect) 可反汇编已加载 effect。需要自建 D3D9 device、匹配的 D3DX9 依赖及 effect 成功解析，**不是对 `.fxo` 跑 DXBC 工具，也不是执行 CF 客户端**。先得到明确公式，再决定是否值得做一次只换单个通道/常量的离线验证；不靠调参把外部参考“拟合”成原生。
+
+**没有默认启用的路径**：继续扫同一 packed PE 的 strings/xref、重复 VM_READ、换权限/驱动/注入抓取，都没有本轮新证据支持。RenderDoc 官方[支持表](https://github.com/baldurk/renderdoc/blob/v1.x/README.md#api-support) 明确不支持 D3D9；[apitrace](https://github.com/apitrace/apitrace/blob/master/docs/USAGE.markdown) 支持 D3D9，但 Windows 跟踪需要 wrapper/插入，不能当成无侵入方案。只有未来自有离线 harness 才考虑图形跟踪；不用于本次 ACE 保护进程。用户已有合法 dump 时可保留原 C 分叉，但它不再是所有离线工作的前置条件。
+
+**源码与参考入口（联网核查日期 2026-09-12）**：
+
+| 来源 / 固定版本 | 已核实的具体内容 | 对当前任务的限制 |
+|---|---|---|
+| [no-lith/RezExtract `src/rez.cpp`](https://github.com/no-lith/RezExtract/blob/b3f87a9c731c0bbc1900da2fd37e41b9a02e1e63/src/rez.cpp#L338-L369) | `b3f87a9`：DTX 提取选项会交换 offset 4/8 的四字节字段以恢复版本位置 | 只解决某类头换位；本次 PV/QV 头不符合，不能据此宣称已有新 decoder |
+| [YoungFine0825/LTB2FBX `DtxConverter.cpp`](https://github.com/YoungFine0825/LTB2FBX/blob/06d749d56d6c929ba6c538cc26aa11cc1f7f1566/Source/DtxConverter.cpp)、[底层 `dtxmgr.cpp`](https://github.com/YoungFine0825/LTB2FBX/blob/06d749d56d6c929ba6c538cc26aa11cc1f7f1566/ThirdParty/lithtech/runtime/shared/dtxmgr.cpp) | `06d749d`：尝试 LZMA 后走 LithTech texture loader；`dtx_Create` 检查 resource type/version/mip 范围 | 是可审计参考与工具对照，不能承诺支持 2026 本机 variant；不用其测试资源当 final |
+| [iQuitt/Vortigaunt `DtxConverter.cpp`](https://github.com/iQuitt/Vortigaunt/blob/d739d1f900c261fc1ae67e11b436410084dda1aa/src/core/converters/DtxConverter.cpp)、[底层 `dtxmgr.cpp`](https://github.com/iQuitt/Vortigaunt/blob/d739d1f900c261fc1ae67e11b436410084dda1aa/ThirdParty/lithtech/runtime/shared/dtxmgr.cpp) | `d739d1f`：也使用 LZMA/同源 LithTech loader | 两工具都失败/成功不是两份独立的 CF runtime 证明 |
+| [no-lith/Jupiter](https://github.com/no-lith/Jupiter)、[jsj2008/lithtech](https://github.com/jsj2008/lithtech) | 标准 engine/render/resource contract 的源码参考入口，沿用 §4.9 | 公开仓库不是当前 CF 或官方授权来源证明；具体采用函数时再固定 commit |
+
+推进规则：**A 完成并 Review → 选择 B 或修复明确的输入差异 → 确有新版本证据再 C/D**。像素、绑定、公式分别验收；只有 §3 的全部条件成立才能 native PASS。P5-T02 仍待原生方法，不能用这次规划提前宣告恢复。
 
 ---
 
@@ -1063,6 +1108,8 @@ P4-M01                                       INCOMPLETE
 
 ## 4.19 N03-H freeze
 
+> 2026-09-12 Review 收窄：保留下述实验与 scoped negative；撤回将 size-fit 视觉分类视为真实 DTX/shader 语义的表述。审计依据见 §4.26。
+
 Review 接受提交：
 
 ```text
@@ -1071,10 +1118,10 @@ P4-M01-N03-H = ACCEPTED / SCOPED_NEGATIVE
 ```
 
 ```text
-official Jupiter DTX header          0/16 weapon DTX
+repo standard Jupiter decoder       0/16 weapon DTX
 BornBeast *DTX size classes          524452 / 32932 / empty only
-524452 family pixels                 scalar_or_energy
-  including RoyalDragon SpecularMap
+524452 guessed-layout preview       visually scalar_or_energy
+actual codec / shader role          OPEN_UNRESOLVED
 QV 32932 size-fit                    not a gun atlas
 ```
 
@@ -1083,7 +1130,8 @@ QV 32932 size-fit                    not a gun atlas
 当前有效 closure 边界：
 
 ```text
-native gun-atlas DTX                 SCOPED_NEGATIVE_ACCEPTED
+native gun-atlas via tested decodes  SCOPED_NEGATIVE_ACCEPTED
+native albedo existence / codec      OPEN_UNRESOLVED
 WeaponShader CFG runtime bind        OPEN_UNRESOLVED (N04 PE)
 P4-M01                               INCOMPLETE
 ```
@@ -1220,13 +1268,34 @@ no dump files
 当前有效 closure 边界：
 
 ```text
-native gun-atlas DTX                 SCOPED_NEGATIVE
+native gun-atlas via tested decodes  SCOPED_NEGATIVE (scope clarified in §4.26)
 SpecularMap\%s (later-era .dtx)      STRUCTURALLY_VERIFIED in CShell
 WeaponShader CFG code consumer       BLOCKED (packed .tvm0 + ACE denies VM_READ)
 P4-M01                               INCOMPLETE
 ```
 
 活状态以 **§0** 为准。
+
+---
+
+## 4.26 2026-09-12 Planner 证据边界审计
+
+本节冻结的是代码与证据的适用范围修正，不是新的 decode / native PASS。此次没有重跑 N03-H，也没有更改其历史 report、JSON、预览或本地用户修改。
+
+1. N03-H 的 `official_decode()` 实际调用的是**本仓库** `CFRezManager --decode-image`，不是 CF 官方解码器。0/16 失败只能说明该实现未支持这些输入；所有目标都失败的集合不能充当正确性阳性对照。
+2. `n03h_dtx_container_decode.py` 的 `layout_candidates()` 使用固定尺寸列表，`brute_decode()` 只执行排序后的 `[:limit]`（默认 8）。例如列表未含 `1024×512` / `1024×1024`，没有穷尽同容量的 BC/RGB 组合。`size_family()` 又直接把 524452 命名为 `pv_bgr24_512x256_mip`，这是假设标签，不是解析出的 header。纠正方法是建立格式证据，不是把盲试范围无限扩大。
+3. 原 N03-H 报告末尾本来就限定为“按现有解码”，并明确 QV codec / trailer 语义未闭合。§0 原先写“PV 是能量层、没有 512×512 原生枪身图”超出该证据，现收窄为 **tested decode negative / actual codec open**。R1 测得的字节相位、文件体积、size residue 仍有效，但像素尺寸、mip、能量层/LUT 等解释不能升级。
+4. N03-A 已证明若干 REZ entry raw SHA 与 loose SHA 相等；这排除了这些样本在那次复制中被改变，不能单独证明 entry 就是 runtime 最终使用的资源或已经是可直接解码表示。N03-C 的实际 Bute path binding 仍然有效，必须与 codec / override resolution 分开。
+5. N04-C 报告明确未反编译指令流；它已观测到 D3D9 effect/槽名，但尚未使用 D3DX effect API 分析公式。因此“没有路径字符串”不能关闭离线 shader 语义路线。具体技术可行性来源见 §0.4；是否兼容该 FXO 仍待下一轮实验。
+
+此次只读补充测量（有符号 little-endian int32；PV/QV exact path 见 N03-H）：
+
+| 样本 | SHA256 | offset 4 | offset 8 | 对 RezExtract 换位规则的结论 |
+|---|---|---:|---:|---|
+| BornBeast PV DTX | `c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9` | 460783386 | -14977025 | 两处都不是 -2/-3/-5；单纯互换不能恢复合法 version |
+| BornBeast QV DTX | `ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a` | -15794177 | -61697 | 同上 |
+
+这些是 `OBSERVED / STRUCTURALLY_VERIFIED` 的窄结论；**未找到可以直接恢复当前样本的新算法**。A 的价值是定位实际失败层，B 的价值是打开未做过的 shader 指令分析；都不能保证最终恢复。停用的仍是 N04 进程读取路线，P4-M01 离线研究不再整体 STOP。
 
 ---
 
@@ -1439,7 +1508,7 @@ f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 cons
 043935f4ac948bcf30d6fa5d68371190569ac298  N03-E shared RS TEXTURE1-only, no TGA/CFG strings
 62bcce21aa2f808a230c040c58802a999f645295  N03-F packed BF005 no WeaponShader/AlphaMap paths
 8386de1a852b0b726504ca7ca32b21def741e710  N03-G LightCorrectionLegacyShader is int 1, SCOPED_NEGATIVE
-3c29eb58691cc7b0d6fe70297fbb427dbc14d2d6  N03-H no native gun-atlas DTX; 524452 is energy
+3c29eb58691cc7b0d6fe70297fbb427dbc14d2d6  N03-H tested-decode negative (scope corrected in §4.26)
 d770a0a2c46a3c02f910fb28034635adac95b458  N04-A CShell SpecularMap\%s; WeaponShader dir prefix
 ca8c2209541bb60f7b8cc6b7cfb4cca4715475f2  N04-B CShell LEAs SpecularMap\%s; WeaponShader 0 xref
 ee092c317e3cbd42fedd130f864d022b270ab0bd  N04-C playerviewmesh.fxo sampler slots, no paths
