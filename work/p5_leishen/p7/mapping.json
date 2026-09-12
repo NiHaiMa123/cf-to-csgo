@@ -23,8 +23,8 @@
       "grade": "OBSERVED"
     },
     {
-      "bute_event": "ClipOutM4A1-S-Beast",
-      "stream": "M4A1-S-Beast_ClipOut",
+      "bute_event": "CF reload 喷气→退弹→上弹→拉栓",
+      "stream": "M4A1-S-Beast_GasEjection+M4A1-S-Beast_ClipOut+M4A1-S-Beast_ClipIn+M4A1-S-Beast_Reload",
       "csgo_event": "Weapon_M4A1.Clipout",
       "waves": [
         "sound/weapons/m4a1/m4a1_clipout.wav"
@@ -32,22 +32,22 @@
       "grade": "OBSERVED"
     },
     {
-      "bute_event": "ClipInM4A1-S-Beast",
-      "stream": "M4A1-S-Beast_ClipIn",
+      "bute_event": "silence (do not follow CS clipin)",
+      "stream": "silence",
       "csgo_event": "Weapon_M4A1.Clipin",
       "waves": [
         "sound/weapons/m4a1/m4a1_clipin.wav"
       ],
-      "grade": "OBSERVED"
+      "grade": "SOURCE1_DESIGN_CANDIDATE"
     },
     {
-      "bute_event": "换弹 then 拉栓 (listen 02+03)",
-      "stream": "M4A1-S-Beast_GasEjection+M4A1-S-Beast_Reload",
+      "bute_event": "silence (do not follow CS cliphit)",
+      "stream": "silence",
       "csgo_event": "Weapon_M4A1.ClipHit",
       "waves": [
         "sound/weapons/m4a1/m4a1_cliphit.wav"
       ],
-      "grade": "OBSERVED"
+      "grade": "SOURCE1_DESIGN_CANDIDATE"
     },
     {
       "bute_event": "拉栓 on 切枪 (listen 03)",
@@ -82,9 +82,9 @@
     "sound/weapons/m4a1/m4a1_02.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
     "sound/weapons/m4a1/m4a1_boltback.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
     "sound/weapons/m4a1/m4a1_boltforward.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
-    "sound/weapons/m4a1/m4a1_cliphit.wav": "78cf652a0b43836c6a6fdaa72088ea41363c392b72cfc0ff5738eb9cfceaa7cf",
-    "sound/weapons/m4a1/m4a1_clipin.wav": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
-    "sound/weapons/m4a1/m4a1_clipout.wav": "b7c95fca0ad1d6b798f5c5fa3aed5b1edcfdde1f2ddd0e4609b32d0688201ad6",
+    "sound/weapons/m4a1/m4a1_cliphit.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+    "sound/weapons/m4a1/m4a1_clipin.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+    "sound/weapons/m4a1/m4a1_clipout.wav": "cc6289e591b1ca67d6c0e96cb770b349ee9c7c29baf45cd78ea879ac4dfca490",
     "sound/weapons/m4a1/m4a1_distant_01.wav": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08",
     "sound/weapons/m4a1/m4a1_draw.wav": "2379520b50211e7ea5ce490667b185fc03ae592f4a3fe22bdda9dc9595755569"
   }

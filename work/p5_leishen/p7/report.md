@@ -15,18 +15,18 @@ Wired:
 |---|---|---|---|---|
 | `ShootM4A1-S-Beast` | `M4A1-S-Beast_SHOOT_1` | `Weapon_M4A1.Single` | `m4a1_01.wav`, `m4a1_02.wav` | OBSERVED |
 | `ShootM4A1-S-Beast (distant uses same shoot sample)` | `M4A1-S-Beast_SHOOT_1` | `Weapon_M4A4.SingleDistant` | `m4a1_distant_01.wav` | OBSERVED |
-| `ClipOutM4A1-S-Beast` | `M4A1-S-Beast_ClipOut` | `Weapon_M4A1.Clipout` | `m4a1_clipout.wav` | OBSERVED |
-| `ClipInM4A1-S-Beast` | `M4A1-S-Beast_ClipIn` | `Weapon_M4A1.Clipin` | `m4a1_clipin.wav` | OBSERVED |
-| `换弹 then 拉栓 (listen 02+03)` | `M4A1-S-Beast_GasEjection+M4A1-S-Beast_Reload` | `Weapon_M4A1.ClipHit` | `m4a1_cliphit.wav` | OBSERVED |
+| `CF reload 喷气→退弹→上弹→拉栓` | `M4A1-S-Beast_GasEjection+M4A1-S-Beast_ClipOut+M4A1-S-Beast_ClipIn+M4A1-S-Beast_Reload` | `Weapon_M4A1.Clipout` | `m4a1_clipout.wav` | OBSERVED |
+| `silence (do not follow CS clipin)` | `silence` | `Weapon_M4A1.Clipin` | `m4a1_clipin.wav` | SOURCE1_DESIGN_CANDIDATE |
+| `silence (do not follow CS cliphit)` | `silence` | `Weapon_M4A1.ClipHit` | `m4a1_cliphit.wav` | SOURCE1_DESIGN_CANDIDATE |
 | `拉栓 on 切枪 (listen 03)` | `M4A1-S-Beast_Reload` | `Weapon_M4A1.Draw` | `m4a1_draw.wav` | OBSERVED |
 | `silence (kill vanilla CS bolt)` | `silence` | `Weapon_M4A1.BoltForward` | `m4a1_boltforward.wav` | SOURCE1_DESIGN_CANDIDATE |
 | `silence (do not play 换弹 on 切枪)` | `silence` | `Weapon_M4A1.BoltBack` | `m4a1_boltback.wav` | SOURCE1_DESIGN_CANDIDATE |
 
 User listen: 01-06 match filenames. 07 BeastAir is wrong. 08-13 unknown, unused.
 
-换弹 ending = listen 02 `GasEjection` then listen 03 `Reload` (拉栓), on `ClipHit`. 切枪 = listen 03 on `Draw` (CHAN_STATIC, delayed to bolt frames). ClipOut/ClipIn = 04/05. Fire = 01. Distant reuses 01, not 07.
+换弹 is CF order, not CS mag timing: 喷气(02) → 退弹(04) → 上弹(05) → 拉栓(03), played as one clip on the first reload event. Clipin/ClipHit silenced so CS order does not overlap. 切枪 still 拉栓(03). Fire=01. CF reload animation is still later P7.
 
-`BoltForward` / `BoltBack` stay silent so vanilla CS bolt cannot cut CF clips. Qingchun / BB / Zeekr / BornBeast unused.
+`BoltForward` / `BoltBack` stay silent. Qingchun / BB / Zeekr / BornBeast unused.
 
 Not done: Inspect, CF animation, world model, knife foley, lighting.
 
