@@ -1,0 +1,299 @@
+{
+  "task": "P4-M01-N03-A",
+  "note": "Reverse graph: BornBeast inventory assets looking for a runtime consumer and a REZ payload identity.  bf005 M4A1 family bindings are intentionally not copied here.",
+  "assets": {
+    "geometry": {
+      "inventory_relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "inventory_sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+      "inventory_size_bytes": 166113,
+      "rez_logical_path": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.LTB",
+      "runtime_exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+          "name": "PV-M4A1_S_BornBeast.LTB",
+          "size": 166113,
+          "data_offset": 153345752,
+          "md5": "DD6FEDDA6821F4A24219D24389D7A4EE"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+          "name": "PV-M4A1_S_BornBeast.LTB",
+          "size": 166113,
+          "data_offset": 219767828,
+          "md5": "DD6FEDDA6821F4A24219D24389D7A4EE"
+        },
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+          "name": "PV-M4A1_S_BornBeast.LTB",
+          "size": 166113,
+          "data_offset": 955503639,
+          "md5": "DD6FEDDA6821F4A24219D24389D7A4EE"
+        }
+      ],
+      "payload_sha_matches": [
+        {
+          "query": "EXACT_PATH",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+          "name": "PV-M4A1_S_BornBeast.LTB",
+          "size": 166113,
+          "data_offset": 153345752,
+          "catalog_md5": "DD6FEDDA6821F4A24219D24389D7A4EE",
+          "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+          "md5": "DD6FEDDA6821F4A24219D24389D7A4EE",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 166113
+        },
+        {
+          "query": "EXACT_PATH",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+          "name": "PV-M4A1_S_BornBeast.LTB",
+          "size": 166113,
+          "data_offset": 219767828,
+          "catalog_md5": "DD6FEDDA6821F4A24219D24389D7A4EE",
+          "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+          "md5": "DD6FEDDA6821F4A24219D24389D7A4EE",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 166113
+        },
+        {
+          "query": "EXACT_PATH",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+          "name": "PV-M4A1_S_BornBeast.LTB",
+          "size": 166113,
+          "data_offset": 955503639,
+          "catalog_md5": "DD6FEDDA6821F4A24219D24389D7A4EE",
+          "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+          "md5": "DD6FEDDA6821F4A24219D24389D7A4EE",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 166113
+        }
+      ],
+      "consumer_field_hits": [],
+      "text_token_hits": []
+    },
+    "base_dtx": {
+      "inventory_relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "inventory_sha256": "C419A5FB164DB6085878FF2EFE21D318A85186B4E3C1FD6BABA920311F6EA1D9",
+      "inventory_size_bytes": 524452,
+      "rez_logical_path": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+      "runtime_exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "name": "PV-M4A1_S_BornBeast.DTX",
+          "size": 524452,
+          "data_offset": 186436476,
+          "md5": "C242A039731CF13CF9570BC2A56DC77F"
+        }
+      ],
+      "payload_sha_matches": [
+        {
+          "query": "EXACT_PATH",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "name": "PV-M4A1_S_BornBeast.DTX",
+          "size": 524452,
+          "data_offset": 186436476,
+          "catalog_md5": "C242A039731CF13CF9570BC2A56DC77F",
+          "sha256": "C419A5FB164DB6085878FF2EFE21D318A85186B4E3C1FD6BABA920311F6EA1D9",
+          "md5": "8C340529FA3E942E8505346C97C4000E",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 524452
+        }
+      ],
+      "consumer_field_hits": [],
+      "text_token_hits": []
+    },
+    "alpha": {
+      "inventory_relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "inventory_sha256": "40B2C94361B5DB58EDFFB27B8B8AA457667ECEB9EB27848135CFEE0C17992A37",
+      "inventory_size_bytes": 3145772,
+      "rez_logical_path": "ALPHAMAP/M4A1_S_BORNBEAST_ALPHA.TGA",
+      "runtime_exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+          "name": "M4A1_S_BornBeast_alpha.TGA",
+          "size": 3145772,
+          "data_offset": 115944226,
+          "md5": "65CE99F875470168CED5C40386F450AA"
+        }
+      ],
+      "payload_sha_matches": [
+        {
+          "query": "EXACT_PATH",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+          "name": "M4A1_S_BornBeast_alpha.TGA",
+          "size": 3145772,
+          "data_offset": 115944226,
+          "catalog_md5": "65CE99F875470168CED5C40386F450AA",
+          "sha256": "40B2C94361B5DB58EDFFB27B8B8AA457667ECEB9EB27848135CFEE0C17992A37",
+          "md5": "BE831ACCA67173E3644D91B2B94064CB",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 3145772
+        }
+      ],
+      "consumer_field_hits": [],
+      "text_token_hits": []
+    },
+    "normal": {
+      "inventory_relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "inventory_sha256": "4B9D3EB4C5D71B6BD129F88F108C567251CE260F37DFFF4BAE2C90073974C28E",
+      "inventory_size_bytes": 3145772,
+      "rez_logical_path": "NORMALMAP/M4A1_S_BORNBEAST_N.TGA",
+      "runtime_exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+          "name": "M4A1_S_BornBeast_N.TGA",
+          "size": 3145772,
+          "data_offset": 151442202,
+          "md5": "41D5EA2DF82ACBFA7F4EA6487CAD4A81"
+        }
+      ],
+      "payload_sha_matches": [
+        {
+          "query": "EXACT_PATH",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+          "name": "M4A1_S_BornBeast_N.TGA",
+          "size": 3145772,
+          "data_offset": 151442202,
+          "catalog_md5": "41D5EA2DF82ACBFA7F4EA6487CAD4A81",
+          "sha256": "4B9D3EB4C5D71B6BD129F88F108C567251CE260F37DFFF4BAE2C90073974C28E",
+          "md5": "9D82476E4BA1E3EAB2E883534ECA6596",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 3145772
+        }
+      ],
+      "consumer_field_hits": [],
+      "text_token_hits": []
+    },
+    "specular": {
+      "inventory_relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "inventory_sha256": "C0815FAEC0D553079B38072118AB089F4FE5DF79F7DB8491FD391D029C3894C6",
+      "inventory_size_bytes": 3145772,
+      "rez_logical_path": "SPECULARMAP/M4A1_S_BORNBEAST_S.TGA",
+      "runtime_exact_path_hits": [
+        {
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+          "name": "M4A1_S_BornBeast_S.TGA",
+          "size": 3145772,
+          "data_offset": 58622490,
+          "md5": "1CFF17E21CB046274030DF0C5EBE1FAE"
+        }
+      ],
+      "payload_sha_matches": [
+        {
+          "query": "EXACT_PATH",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+          "name": "M4A1_S_BornBeast_S.TGA",
+          "size": 3145772,
+          "data_offset": 58622490,
+          "catalog_md5": "1CFF17E21CB046274030DF0C5EBE1FAE",
+          "sha256": "C0815FAEC0D553079B38072118AB089F4FE5DF79F7DB8491FD391D029C3894C6",
+          "md5": "BE5F854A9BE394384BE783D94A54E96C",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 3145772
+        }
+      ],
+      "consumer_field_hits": [],
+      "text_token_hits": []
+    },
+    "shader_cfg": {
+      "inventory_relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "inventory_sha256": "78F0BD5024F70624594C6B7EBD470094A3642FCE8CF7DF596407D40DAE0EBC87",
+      "inventory_size_bytes": 492,
+      "rez_logical_path": "SHADER/WEAPONSHADER/M4A1_S_BORNBEAST.CFG",
+      "runtime_exact_path_hits": [],
+      "payload_sha_matches": [
+        {
+          "query": "BASENAME_SIZE_FILTER",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "full_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+          "name": "M4A1_S_BornBeast.CFG",
+          "size": 492,
+          "data_offset": 129894546,
+          "catalog_md5": "5D2FF8110E9AB76EA0FCABB4C63C2C59",
+          "sha256": "78F0BD5024F70624594C6B7EBD470094A3642FCE8CF7DF596407D40DAE0EBC87",
+          "md5": "F179D3739F62E254399FD8FBFF05661B",
+          "sha_match": true,
+          "read_ok": true,
+          "note": "payload SHA256 == inventory SHA256",
+          "actual_bytes_read": 492
+        }
+      ],
+      "consumer_field_hits": [],
+      "text_token_hits": []
+    }
+  },
+  "edges": [
+    {
+      "from": "inventory:geometry",
+      "to": "RF016.REZ:PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "grade": "PAYLOAD_IDENTITY"
+    },
+    {
+      "from": "inventory:geometry",
+      "to": "RF016.REZ:PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "grade": "PAYLOAD_IDENTITY"
+    },
+    {
+      "from": "inventory:geometry",
+      "to": "RF016.REZ:PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "grade": "PAYLOAD_IDENTITY"
+    },
+    {
+      "from": "inventory:base_dtx",
+      "to": "rf017.rez:PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "grade": "PAYLOAD_IDENTITY"
+    },
+    {
+      "from": "inventory:alpha",
+      "to": "rf017.rez:AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "grade": "PAYLOAD_IDENTITY"
+    },
+    {
+      "from": "inventory:normal",
+      "to": "rf017.rez:NormalMap/M4A1_S_BornBeast_N.TGA",
+      "grade": "PAYLOAD_IDENTITY"
+    },
+    {
+      "from": "inventory:specular",
+      "to": "rf017.rez:SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "grade": "PAYLOAD_IDENTITY"
+    },
+    {
+      "from": "inventory:shader_cfg",
+      "to": "OPEN_UNRESOLVED",
+      "grade": "OPEN_UNRESOLVED"
+    }
+  ],
+  "status": "CANDIDATE_ONLY",
+  "confidence": "MEDIUM",
+  "generated_at": "2026-09-12T05:50:52.981351+00:00",
+  "script": "scripts\\material_recovery\\n03a_bornbeast_consumer.py"
+}

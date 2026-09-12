@@ -1,0 +1,101 @@
+{
+  "task": "P4-M01-N03-A",
+  "status": "CANDIDATE_ONLY",
+  "confidence": "MEDIUM",
+  "relations": [
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "geometry",
+      "inventory_relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+      "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "geometry",
+      "inventory_relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "geometry",
+      "inventory_relative_path": "data/rf016/Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+      "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "sha256": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "base_dtx",
+      "inventory_relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "sha256": "C419A5FB164DB6085878FF2EFE21D318A85186B4E3C1FD6BABA920311F6EA1D9",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "alpha",
+      "inventory_relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "full_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "sha256": "40B2C94361B5DB58EDFFB27B8B8AA457667ECEB9EB27848135CFEE0C17992A37",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "normal",
+      "inventory_relative_path": "data/rf017/ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "full_path": "NormalMap/M4A1_S_BornBeast_N.TGA",
+      "sha256": "4B9D3EB4C5D71B6BD129F88F108C567251CE260F37DFFF4BAE2C90073974C28E",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "specular",
+      "inventory_relative_path": "data/rf017/ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "full_path": "SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "sha256": "C0815FAEC0D553079B38072118AB089F4FE5DF79F7DB8491FD391D029C3894C6",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "inventory_sha256 == runtime_rez_payload_sha256",
+      "asset_role": "shader_cfg",
+      "inventory_relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "full_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+      "sha256": "78F0BD5024F70624594C6B7EBD470094A3642FCE8CF7DF596407D40DAE0EBC87",
+      "grade": "PAYLOAD_IDENTITY",
+      "confidence": "HIGH"
+    },
+    {
+      "relation": "bf005 M4A1 runtime family != BornBeast native asset",
+      "grade": "SCOPED_NEGATIVE_ACCEPTED",
+      "confidence": "HIGH",
+      "source": "P4-M01-N02-E-R2 (not re-litigated this round)"
+    }
+  ],
+  "remaining_blockers": [
+    "BornBeast consumer table not in decoded rez/Butes/*.ltc",
+    "LTB piece -> DTX/TGA OPEN_UNRESOLVED",
+    "CFG/render semantic closure OPEN_UNRESOLVED",
+    "P4-M01 native material closure INCOMPLETE"
+  ],
+  "generated_at": "2026-09-12T05:50:52.984359+00:00",
+  "script": "scripts\\material_recovery\\n03a_bornbeast_consumer.py"
+}
