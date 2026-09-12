@@ -791,10 +791,53 @@ loose Bute/config BornBeast consumer     SCOPED_NEGATIVE_ACCEPTED
 packed BF005 BornBeast consumer          ACCEPTED
   WeaponName M4A1-黑骑士
   -> PV LTB + PV DTX (inventory SHA)
-QV / RS payload identity                 NOT YET BOUND
+QV / RS payload identity                 see §4.14
 mesh/piece -> material binding           OPEN_UNRESOLVED
 CFG/render semantic closure              OPEN_UNRESOLVED
-TGA/CFG file-path on Weapon snapshot     NOT PRESENT (full-key dump pending)
+TGA/CFG file-path on Weapon record       see §4.14
+BornBeast native material closure        OPEN_UNRESOLVED
+P4-M01                                   INCOMPLETE
+```
+
+## 4.14 N03-C freeze
+
+Review 接受提交：
+
+```text
+0e3c1e9130ea61cc2ed11c788cb33a1c6ba7d782  P4-M01-N03-C
+P4-M01-N03-C = ACCEPTED / BUTE_MATERIAL_GRAPH_EXPANDED
+```
+
+Canonical packed Weapon 1002（`M4A1-黑骑士` / `StandardName=M4A1_S_BornBeast`）已 dump 105 keys + raw s-expression。7 个 `*FileName` 全部 REZ exact-path bind：
+
+```text
+PViewModelFileName   PLAYERVIEW/PV-M4A1_S_BornBeast.LTB     inventory SHA
+PViewSkinFileName    PLAYERVIEW/PV-M4A1_S_BornBeast.DTX     inventory SHA
+ModelFileName        WEAPONS/QV-M4A1_S_BornBeast.LTB        rez2 copy == local data
+                                                            rez/ copy differs by 2 bytes
+SkinFileName         WEAPONS/QV-M4A1_S_BornBeast.DTX        local data SHA
+PreViewModelFileName WEAPONS/QV-M4A1_S_BornBeast_preview.LTB  bound, no local SHA
+RenderStyleFileName  RS/NINJATRANSLUCENT.LTB (111 B)        bound
+PViewRenderStyleFileName RS/PVMODELDEFAULT.LTB (119 B)      bound
+```
+
+`rez/` vs `rez2/` 的 QV LTB 字节不等；无 load-order authority，不得挑选“官方”副本。
+
+Weapon raw 块内 inventory TGA/CFG exact path：**0**。`StandardName` / `BigIconName` = CFG stem 仅为 alias。RS LTB 与 WeaponShader CFG 无可打印 `.tga/.dtx/.cfg` 路径。
+
+```text
+Bute record binds LTB+DTX+RS only
+TGA/CFG file-path on canonical Weapon     SCOPED_NEGATIVE_ACCEPTED
+```
+
+当前有效 closure 边界：
+
+```text
+packed BF005 BornBeast consumer          ACCEPTED
+canonical Weapon FileName graph          ACCEPTED
+TGA/CFG as Weapon file-path fields       SCOPED_NEGATIVE_ACCEPTED
+mesh/piece -> material binding           OPEN_UNRESOLVED
+CFG/render semantic closure              OPEN_UNRESOLVED
 BornBeast native material closure        OPEN_UNRESOLVED
 P4-M01                                   INCOMPLETE
 ```
@@ -951,6 +994,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/n01/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03a_bornbeast_consumer/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03b_rez_packed_config/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03c_material_graph/
 ```
 
 ## External reference implementation / positive control
@@ -995,6 +1039,7 @@ dc3ac1b69843141b54b2ae97b868aa4a7a242d01  N02-E-R1 LTB piece table absent
 2e0c750624832e28a5292a488b4bad81b3934c15  N02-E-R2 bf005 != BornBeast payload
 23e275a4be0eed8fd90132095ed0c283b36a39d9  N03-A BornBeast REZ payload identity, loose-config miss
 f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 consumer
+0e3c1e9130ea61cc2ed11c788cb33a1c6ba7d782  N03-C canonical 黑骑士 FileName graph
 ```
 
 ---

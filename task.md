@@ -7,106 +7,95 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N03-C
-Title: Expand canonical 黑骑士 Weapon record into a material graph
+Task ID: P4-M01-N03-D
+Title: Jupiter-vs-CF piece/texture-index differential on canonical PV LTB
 State: ACTIVE
 Parent: P4-M01 Native Material Recovery
-Depends on: P4-M01-N03-B
+Depends on: P4-M01-N03-C
 ```
 
 # 2. Previous execution status
 
-N03-B 已确认 packed consumer。
+N03-C 已把 Bute FileName 图扩完。
 
 ```text
-BORNBEAST_CONSUMER_CONFIRMED
+BUTE_MATERIAL_GRAPH_EXPANDED
 ```
 
-Canonical bind：
-
-```text
-rez/RB001.REZ / Butes/BF005.LTC
-  WeaponName    M4A1-黑骑士
-  StandardName  M4A1_S_BornBeast
-  PViewModel    PV-M4A1_S_BornBeast
-  PViewSkin     PV-M4A1_S_BornBeast.dtx
-```
-
-N03-B 快照还有 QV 模型/皮肤和两条 RenderStyle 路径，但未做 payload SHA。
-TGA / CFG 未出现在快照字段里。
+TGA/CFG **不是** Weapon 文件路径字段。下一步是 LTB 内部 piece 槽，而不是再扫 Bute。
 
 # 3. Current goal
 
-把这条 **已确认的 Weapon 记录** 扩成材质图。
+对 **N03-C SHA 已验证** 的
+
+```text
+rez/RF016.REZ / PLAYERVIEW/PV-M4A1_S_BornBeast.LTB
+```
+
+做 Jupiter 标准 LTB piece/texture-index 合同 vs 本机 CF artifact 的差分。
 
 回答：
 
 ```text
-canonical Weapon record (all keys + raw block)
-  -> every file-path field
-  -> REZ exact path + payload identity
-  -> TGA/CFG either direct field, RS/CFG evidence, or scoped negative
+Jupiter ModelPiece::Load contract
+  -> CF decompressed LTB
+  -> per-piece name / nLODs / m_nNumTextures / m_iTextures[4] / m_iRenderStyle
+  -> whether those indices are STRUCTURALLY_VERIFIED on this file
 ```
 
 # 4. Required Work
 
-只针对 packed `Butes/BF005.LTC`（`rez/RB001.REZ`）和该记录引用的资源。
+只读已 bind 的 archive：`rez/RF016.REZ`（canonical PV LTB）。可选差分：`rez2/RF016.REZ` 的 QV LTB（N03-C 与 local data SHA 一致的那份）。不要扫全部 475 REZ。
 
-1. 再 decode 该 packed LTC；抽出 `StandardName=M4A1_S_BornBeast` 且
-   `PViewSkinFileName` 精确指向 `PV-M4A1_S_BornBeast.dtx` 的 Weapon 块。
-   Canonical 显示名是 `M4A1-黑骑士`；同皮肤的其他 WeaponName 另列，不合并成 identity。
-2. 对 canonical 块输出 **raw s-expression** 和 **全部解析字段**，不限于 N03-B 快照。
-3. 在该 raw 块内对 inventory TGA/CFG 做 N03-A 同款 exact-token 搜索。
-4. 对块内每个文件路径字段（含 QV LTB/DTX、两条 RS）做 N02-D-R1 exact path bind，
-   再 bounded SHA256。Inventory 已有 SHA 的做 byte 比较；QV 若 local `data/**` 存在对应文件也可比，但不新扫整个 data。
-5. bounded 读取两条 RS LTB（已知约 111/119 字节）和
-   `WeaponShader/M4A1_S_BornBeast.CFG`，只做 string/hex 观测：
-   是否包含 TGA/DTX/CFG 路径。不冻结 CFG shader semantics。
-
-REZ index 只需要本轮引用到的 archive（至少 `RB001.REZ` / `RF016.REZ` / `rf017.rez` / `rf002.rez`），不要无目标扫全部 475 个。
+1. bounded read + LZMA-alone 解压（与 N02-E-R1 相同）。
+2. 按 jsj2008/lithtech `model_load.cpp` / `ltb.h` / `modelallocations.cpp` 的 **REFERENCE_IMPLEMENTATION** 走：
+   - `LTB_Header`（D3D model file type 1, version 9）
+   - `m_FileVersion`
+   - 15 个 uint32 allocations（含 `m_nPieces`）
+   - command string / visRadius / num_obb / nPieces
+   - 每个 piece：name, nLODs, LOD dists, 然后 per-LOD：`m_nNumTextures`, `m_iTextures[MAX_PIECE_TEXTURES=4]`, `m_iRenderStyle`, `m_nRenderPriority`, `render_object_type`
+3. 若 CF 在 piece-LOD 头之后与 Jupiter 不对齐，记录 **CF delta**（哪个字段、offset、候选 layout），用可评分的少量 layout 尝试；不要从零发明整套格式。
+4. 不得把 `m_iTextures[i]` 升级成 DTX/TGA 路径；没有同文件 name table 就停在 index。
+5. 对比 repo `LithTechModelDecoder` 的 Cote-Duke LTB2X 偏移，只作为 secondary candidate，不是 Jupiter 合同。
 
 输出：
 
 ```text
-work/.../n03c_material_graph/
+work/.../n03d_ltb_piece_index/
 ```
 
 至少包含：
 
 ```text
-canonical weapon dump (raw + all keys)
-material graph report
-path binding + SHA table
-RS/CFG observation
-confirmed relations
-remaining ambiguity
-confidence level
+header/allocation dump
+piece table (name, lods, texture indices, render style)
+Jupiter vs CF delta
+confidence / remaining ambiguity
 ```
 
 # 5. Forbidden
 
 - 不宣布 P4-M01 PASS；
-- 不把 StandardName == CFG stem 当成 shader bind proof；
-- 不把变体 DTX 当成 inventory base_dtx；
-- 不进入 P5 雷神 identity；
-- 不进入 DLL/EXE/FXO reverse；
-- 不扫描 `.dat` / 全量 `.ltc` / 全量 REZ extract；
+- 不把 texture index 当 DTX/TGA 路径 proof；
 - 不使用 filename similarity 作为 proof；
+- 不进入 DLL/EXE/FXO reverse；
+- 不扫描全部 LTB / 全部 REZ；
 - 不冻结 CFG shader semantics；
+- 不进入 P5 雷神 identity；
 - 不修改历史 accepted evidence。
 
 # 6. Completion State
 
 ```text
-A. BUTE_MATERIAL_GRAPH_EXPANDED
-   canonical record fully dumped; every file-path field REZ-bound;
-   TGA/CFG either direct-field or scoped-negative on this record
+A. PIECE_TEXTURE_INDEX_STRUCTURAL
+   Jupiter contract maps onto this CF LTB; per-piece indices recorded
+   (still not path identity)
 
 B. CANDIDATE_ONLY
-   dump/bind incomplete, or only weak RS/CFG string clues
+   header/nPieces/names match but LOD/texture layout is a scored CF delta
 
 C. REWORK_REQUIRED
-   packed BF005 cannot be re-decoded or path bind is invalid
+   cannot re-read or decompress the canonical PV LTB
 ```
 
 完成后返回：
