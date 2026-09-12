@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P7-S01 match CS reload/draw events (喷气 with 退弹; 拉栓 later)
-Last accepted evidence commit : 880ca33
-State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / USER_RUNTIME_GATE_OPEN
+Last completed task           : P7-S02 visible Inspect (official CS lookat on 雷神 mesh)
+Last accepted evidence commit : 52e4cba
+State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_DEPLOYED / SOUND_RETIME_REQUIRED_ON_CF_ANIM
 ```
 
 ## 0.1 已钉死
@@ -36,10 +36,10 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 
 ```text
 Task ID : NONE
-State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED; user runtime Gate open
-Goal    : 用户进游戏听 M4A4 槽上的雷神枪声（模型用户已确认）
-Last    : P7-S01 CF reload order on first reload event; CS anim still later
-Result  : P7_ORIGINAL_SOUND_DEPLOYED
+State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_DEPLOYED
+Goal    : 用户进游戏按 F 看 Inspect；CF 原动画仍开放
+Last    : P7-S02 visible CS inspect; P7-S01 sound accepted with retime-on-CF-anim
+Result  : P7_VISIBLE_INSPECT_DEPLOYED
 ```
 
 **2026-09-13 用户决定（仍有效）**：不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。P6 VMT 沿用 N05-J 公式通道，没有把 CFG 标量抄进 phong。不宣布 P4-M01 PASS。N04-F 仍暂停。
@@ -52,7 +52,9 @@ Result  : P7_ORIGINAL_SOUND_DEPLOYED
 
 **P6**：用户 2026-09-13 明确开做。已把确认身份的 base Transformers PV LTB 和 verified DTX/TGA/cube 编进独立 addon `p_cf_leishen_m4a4_p6`，部署到 M4A4 槽。首发把 LTB X 镜像做在 C3 之前，枪在 CF X≈+1.5，绕原点翻转后 Source X 中心到 −5.5，左手对不上；用户截图「错位」。已改为先冻结 C3，再绕 Source X=0 镜像。最终武器包围盒 X 中心 −0.18（P4 BornBeast 为 +0.10）。N05-J 与 frozen 都 parked、未改 frozen 文件。`final_target_identity=true`，`final_cf_material=false`。不是 P4-M01 PASS。证据 [`work/p5_leishen/p6/report.md`](work/p5_leishen/p6/report.md)。
 
-**P7-S01**：用户要先跟 CS 动作对齐：退弹时一起播喷气；拉栓不要提前，接到 CS 换弹 ClipHit 和切枪 BoltBack。上弹接 Clipin。CF 原动画仍是后续 P7。射击=01。证据 [`work/p5_leishen/p7/report.md`](work/p5_leishen/p7/report.md)。
+**P7-S01**：用户 2026-09-13 「好了」。声音按 CS 动作对齐已接受。**标记：之后替换成 CF 原动作还需要再调声音时间**（`SOUND_RETIME_REQUIRED_ON_CF_ANIM`）。证据 [`work/p5_leishen/p7/report.md`](work/p5_leishen/p7/report.md)。
+
+**P7-S02**：已把 P6 的 Inspect 从 `frozen_noop_safe` 换成官方 CS:GO M4A4 `lookat01`（160 帧）。这是 CS 检视动作，不是 CF 原动画。未改 frozen addon、未改 P7-S01 声音。证据 [`work/p5_leishen/p7_s02/report.md`](work/p5_leishen/p7_s02/report.md)。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -84,6 +86,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - P5-T04 identity：`work/p5_leishen/t04/{report.md,identity_review.json}`
 - P6 replacement：`work/p5_leishen/p6/{report.md,execution.json,mapping.json,addon/}`
 - P7-S01 sound：`work/p5_leishen/p7/{report.md,execution.json,mapping.json,addon/}`
+- P7-S02 inspect：`work/p5_leishen/p7_s02/{report.md,execution.json}`
 
 ## 0.3 禁止
 
@@ -102,7 +105,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 已按用户听音 01–06 接到 M4A4。07–13 不用。Inspect / 原动画仍开放。
+**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 声音用户已接受（CS 动作时间）。P7-S02 已打开 CS Inspect。CF 原动画仍开放；换 CF 动作后必须重对 P7-S01 声音。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
@@ -1515,11 +1518,11 @@ work/p5_leishen/p6/mapping.json
 不阻塞前述 closure：
 
 ```text
-visible Inspect
+visible Inspect            <- P7-S02 DEPLOYED (CS lookat, not CF)
 hand / finger IK
 Blender retarget / penetration avoidance
-CF original animation
-CF original sound          <- P7-S01 DEPLOYED (user listen Gate open)
+CF original animation      <- when this lands, retime P7-S01 sound
+CF original sound          <- P7-S01 USER_ACCEPTED on CS timing; SOUND_RETIME_REQUIRED_ON_CF_ANIM
 world model / extra polish
 ```
 
@@ -1533,7 +1536,24 @@ event  = ShootM4A1-S-Beast (Bute; FMOD, not REZ WAV)
 slot   = CS:GO M4A4 Weapon_M4A1.Single / clip / distant
 ```
 
-用户离线听 01–06 与文件名一致。先跟 CS 动作：Clipout=喷气+退弹，Clipin=上弹，ClipHit/BoltBack=拉栓。CF 原动画仍开放。未改 P6 网格、未改 frozen。
+用户 2026-09-13 「好了」：按 CS 动作对齐的声音已接受。**替换 CF 原动作后必须再调声音时间**（`SOUND_RETIME_REQUIRED_ON_CF_ANIM`）。
+
+## 7.2 P7-S02 visible Inspect
+
+```text
+P7-S02 = P7_VISIBLE_INSPECT_DEPLOYED
+inspect_policy = official_cs_lookat
+cf_original_animation = false
+```
+
+P6 Inspect 从 frozen idle 换成官方 M4A4 lookat01/prepare/loop。不是 CF 检视。声音未改。
+
+证据：
+
+```text
+work/p5_leishen/p7_s02/report.md
+work/p5_leishen/p7_s02/execution.json
+```
 
 证据：
 
@@ -1620,6 +1640,7 @@ work/p5_leishen/t03/
 work/p5_leishen/t04/
 work/p5_leishen/p6/
 work/p5_leishen/p7/
+work/p5_leishen/p7_s02/
 ```
 
 关键历史提交：

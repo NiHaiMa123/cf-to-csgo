@@ -28,6 +28,8 @@ Match CS actions: Clipout = 喷气+退弹 together, Clipin = 上弹, ClipHit = �
 
 `BoltForward` / `BoltBack` stay silent. Qingchun / BB / Zeekr / BornBeast unused.
 
-Not done: Inspect, CF animation, world model, knife foley, lighting.
+User 2026-09-13: 好了. Sound is accepted on **CS action timing**. **When CF original animation replaces CS clips, these sound events must be retimed.** Marker: `SOUND_RETIME_REQUIRED_ON_CF_ANIM`.
+
+Not done: CF animation, world model, knife foley, lighting. Visible Inspect is P7-S02 (CS lookat, not CF anim).
 
 This is not P4-M01 PASS and not release-quality audio mastering.

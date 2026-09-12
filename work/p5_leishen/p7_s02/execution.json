@@ -1,0 +1,41 @@
+{
+  "schema": "cf2.p7.visible-inspect.v1",
+  "generated_at_utc": "2026-09-12T19:24:34.551262+00:00",
+  "task": "P7-S02",
+  "result": "P7_VISIBLE_INSPECT_DEPLOYED",
+  "inspect_policy": "official_cs_lookat",
+  "cf_original_animation": false,
+  "sound_retime_required_when_cf_anim_replaced": true,
+  "addon_name": "p_cf_leishen_m4a4_p6",
+  "frames": {
+    "lookat01": 160,
+    "lookat01_prepare": 50,
+    "lookat01_loop": 43
+  },
+  "mdl_header": {
+    "magic": "IDST",
+    "version": 49,
+    "internal_name": "weapons\\v_rif_m4a1.mdl",
+    "bone_count": 57,
+    "local_animation_count": 9,
+    "local_sequence_count": 9,
+    "size_bytes": 58448,
+    "sha256": "0595dfd2c8daa67c76e4b7b52a356678801e87d74f71cf2a00d608224be244df"
+  },
+  "deployed_models": {
+    "v_rif_m4a1.ani": "6a9f97b5d25f0669174be235a58e8549c13294016caf7668f1ee9a53dcd213ba",
+    "v_rif_m4a1.dx80.vtx": "b88657b12bbb1be0eadfefb8eb42036628dc805b385b086f296415171f6fcda4",
+    "v_rif_m4a1.dx90.vtx": "e96277b5b38ed297f4aecd2d1a6bff895139f9b65ccbbc8665a7fc0936764589",
+    "v_rif_m4a1.mdl": "0595dfd2c8daa67c76e4b7b52a356678801e87d74f71cf2a00d608224be244df",
+    "v_rif_m4a1.sw.vtx": "b060d1b2abf56b83be554e9b3bd6b23a8d8ea7611cd2a14b95c59f2806bceb2e",
+    "v_rif_m4a1.vvd": "b95181dec60e256b38e2edf130694ce4165b5949588e0ad3a9526bf259c86460"
+  },
+  "frozen_untouched": true,
+  "sound_addon_untouched": true,
+  "notes": [
+    "P7-S01 sound is user-accepted on CS action timing.",
+    "Replacing CS clips with CF original animation still requires sound event retiming.",
+    "Inspect motion is official CS:GO M4A4 lookat, not CF inspect.",
+    "Not a P4-M01 PASS."
+  ]
+}
