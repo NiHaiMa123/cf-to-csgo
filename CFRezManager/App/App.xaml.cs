@@ -93,6 +93,14 @@ public partial class App : System.Windows.Application
             return;
         }
 
+        if (FxoPreviewCommand.IsInvocation(e.Args))
+        {
+            ShutdownMode = System.Windows.ShutdownMode.OnExplicitShutdown;
+            int exitCode = FxoPreviewCommand.Run(e.Args);
+            Shutdown(exitCode);
+            return;
+        }
+
         if (PreviewTool.IsPreviewInvocation(e.Args))
         {
             LocalizedText.UseSavedLanguage();

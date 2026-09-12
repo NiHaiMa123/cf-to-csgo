@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-09-12T15:41:00.964907+00:00",
+  "task": "P4-M01-N05-K",
+  "result": "FXO_CFG_PREVIEW_RENDERED",
+  "p4_m01": "INCOMPLETE",
+  "final_cf_material": false,
+  "fxo_sha256": "d1672ba7e0a0f5b69e6a9520ec4ba0c6d4fb08b435aff1f3a3110af408bfb99c",
+  "fxo_sha_match": true,
+  "cube_sha256": "c4954419d59bea55b0f592957eab92fa623583d28158cbf84e95bacd233c4e92",
+  "cube_sha_match": true,
+  "ok": true,
+  "error": null,
+  "preview": {
+    "schema": "cf2.d3d9-fxo-preview.v1",
+    "fxo": "D:\\project\\cf_to_csgo\\data\\n05k_fxo_preview\\playerviewmesh.fxo",
+    "obj": "D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast.obj",
+    "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+    "vertex_count": 3646,
+    "triangle_count": 4008,
+    "center": [
+      1.539307,
+      -5.3554945,
+      4.658393
+    ],
+    "radius": 9.778333,
+    "device_attempts": [
+      {
+        "device_type": "Hardware",
+        "ok": true
+      }
+    ],
+    "shots": [
+      {
+        "name": "d3dx_defaults",
+        "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\d3dx_defaults.png",
+        "pass": 0,
+        "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+        "bytes": 145558
+      },
+      {
+        "name": "bornbeast_cfg",
+        "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\bornbeast_cfg.png",
+        "pass": 0,
+        "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+        "bytes": 237544
+      }
+    ]
+  },
+  "limitations": [
+    "Self-built D3D9 device, not CrossFire runtime.",
+    "Technique is still the EnvCubeUsage=2 name-level hypothesis.",
+    "Camera/light are studio values, not CF's live light list.",
+    "Rest-pose unskinned OBJ; hands omitted.",
+    "CFG scalars were applied to this effect, not copied into Source VMT.",
+    "Not a P4-M01 PASS."
+  ]
+}

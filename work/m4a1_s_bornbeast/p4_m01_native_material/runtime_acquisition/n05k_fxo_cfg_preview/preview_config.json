@@ -1,0 +1,42 @@
+{
+  "fxo": "D:\\project\\cf_to_csgo\\data\\n05k_fxo_preview\\playerviewmesh.fxo",
+  "obj": "D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast.obj",
+  "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+  "pass": 0,
+  "width": 1280,
+  "height": 720,
+  "skip_groups": [
+    "Fview-hand",
+    "Fview-arm"
+  ],
+  "textures": {
+    "DiffuseMap": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\diffuse.png",
+    "NormalMap": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\normal.png",
+    "SpecularMap": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\specular.png",
+    "AlphaMap": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\alpha.png",
+    "CubeMap": "D:\\project\\cf_to_csgo\\data\\n05k_fxo_preview\\Black_Shader03.DDS"
+  },
+  "shots": [
+    {
+      "name": "d3dx_defaults",
+      "set": {}
+    },
+    {
+      "name": "bornbeast_cfg",
+      "set": {
+        "SpecularPower": 1.0,
+        "LightBrightness": 0.01,
+        "DiffuseBoost": 0.1,
+        "AmbientLightColor": 0.01,
+        "EnvCubeMapBrightness": 4.0,
+        "ReflectionIndex": 0.9,
+        "RefractionIndex": 0.01,
+        "DiffuseMappingFactor": 1,
+        "NormalMappingFactor": 1,
+        "SpecularMappingFactor": 1,
+        "EnvCubeMappingFactor": 1,
+        "GlobalDiffuseAlpha": 1
+      }
+    }
+  ]
+}

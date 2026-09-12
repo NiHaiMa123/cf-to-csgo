@@ -1,0 +1,36 @@
+{
+  "schema": "cf2.d3d9-fxo-preview.v1",
+  "fxo": "D:\\project\\cf_to_csgo\\data\\n05k_fxo_preview\\playerviewmesh.fxo",
+  "obj": "D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast.obj",
+  "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+  "vertex_count": 3646,
+  "triangle_count": 4008,
+  "center": [
+    1.539307,
+    -5.3554945,
+    4.658393
+  ],
+  "radius": 9.778333,
+  "device_attempts": [
+    {
+      "device_type": "Hardware",
+      "ok": true
+    }
+  ],
+  "shots": [
+    {
+      "name": "d3dx_defaults",
+      "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\d3dx_defaults.png",
+      "pass": 0,
+      "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+      "bytes": 145558
+    },
+    {
+      "name": "bornbeast_cfg",
+      "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\bornbeast_cfg.png",
+      "pass": 0,
+      "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+      "bytes": 237544
+    }
+  ]
+}
