@@ -1,0 +1,2923 @@
+{
+  "schema": "cf2.p4m01.n05a-decoder-provenance.v1",
+  "task": "P4-M01-N05-A",
+  "generated_at_utc": "2026-09-12T09:17:54.024+00:00",
+  "parent_git_head": "08a4f3cd166b527518bc36521ae28bab13d3603f",
+  "script": "scripts/material_recovery/n05a_decoder_provenance_audit.py",
+  "synthetic": {
+    "ok": true,
+    "cases": {
+      "synthetic_rgba32_16x16": {
+        "path": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/synthetic/synthetic_rgba32_16x16.dtx",
+        "sha256": "b81abaf526578af19f2e177d34b3c6cf301801c33fd8d1bec853127e65558852",
+        "size": 1188,
+        "repo_header": {
+          "ok": true,
+          "reason": "parsed with repo DtxThumbnailDecoder layout",
+          "version": -5,
+          "width": 16,
+          "height": 16,
+          "mipmap_count": 1,
+          "n_sections": 0,
+          "flags": 136,
+          "user_flags": 0,
+          "texture_group": 0,
+          "mipmaps_to_use": 1,
+          "bytes_per_pixel_field": 3,
+          "data_offset": 164,
+          "payload_bytes": 1024
+        },
+        "dtx_create": {
+          "ok": true,
+          "reason": "dtx_Create gates passed",
+          "m_ResType": 0,
+          "m_Version": -5,
+          "width": 16,
+          "height": 16,
+          "n_mipmaps": 1,
+          "n_sections": 0,
+          "flags": 136,
+          "bpp_ident_extra2": 3,
+          "header_bytes": 164,
+          "payload_bytes": 1024,
+          "expected_mip_bytes": 1024,
+          "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+        },
+        "python_decode": {
+          "ok": true,
+          "format": "rgba32_as_bgra",
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/synthetic_rgba32_16x16_python.png",
+          "quadrants": {
+            "ok": true,
+            "points": {
+              "tl": {
+                "x": 4,
+                "y": 4,
+                "got": [
+                  255,
+                  0,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "match": true
+              },
+              "tr": {
+                "x": 12,
+                "y": 4,
+                "got": [
+                  0,
+                  255,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "match": true
+              },
+              "bl": {
+                "x": 4,
+                "y": 12,
+                "got": [
+                  0,
+                  0,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "match": true
+              },
+              "br": {
+                "x": 12,
+                "y": 12,
+                "got": [
+                  255,
+                  255,
+                  255
+                ],
+                "expected": [
+                  255,
+                  255,
+                  255
+                ],
+                "match": true
+              }
+            },
+            "size": [
+              16,
+              16
+            ],
+            "mode": "RGBA",
+            "bands": [
+              "R",
+              "G",
+              "B",
+              "A"
+            ]
+          }
+        },
+        "cfrez_decode": {
+          "ok": true,
+          "returncode": 0,
+          "error": null,
+          "output": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/synthetic_rgba32_16x16_cfrez.png",
+          "cmd": [
+            "CFRezManager/bin/Debug/net8.0-windows7.0/CFRezManager.exe",
+            "--decode-image",
+            "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05a_decoder_audit\\synthetic\\synthetic_rgba32_16x16.dtx",
+            "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05a_decoder_audit\\previews\\synthetic_rgba32_16x16_cfrez.png"
+          ],
+          "quadrants": {
+            "ok": true,
+            "points": {
+              "tl": {
+                "x": 4,
+                "y": 4,
+                "got": [
+                  255,
+                  0,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "match": true
+              },
+              "tr": {
+                "x": 12,
+                "y": 4,
+                "got": [
+                  0,
+                  255,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "match": true
+              },
+              "bl": {
+                "x": 4,
+                "y": 12,
+                "got": [
+                  0,
+                  0,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "match": true
+              },
+              "br": {
+                "x": 12,
+                "y": 12,
+                "got": [
+                  255,
+                  255,
+                  255
+                ],
+                "expected": [
+                  255,
+                  255,
+                  255
+                ],
+                "match": true
+              }
+            },
+            "size": [
+              16,
+              16
+            ],
+            "mode": "RGBA",
+            "bands": [
+              "R",
+              "G",
+              "B",
+              "A"
+            ]
+          }
+        },
+        "ok": true,
+        "note": "synthetic proves standard Jupiter DTX implementation only"
+      },
+      "synthetic_dxt1_16x16": {
+        "path": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/synthetic/synthetic_dxt1_16x16.dtx",
+        "sha256": "69ea72e5044e5f7799954cce8eb4adee27e2b8aff6793c81e5b3a5a5acb38bde",
+        "size": 292,
+        "repo_header": {
+          "ok": true,
+          "reason": "parsed with repo DtxThumbnailDecoder layout",
+          "version": -5,
+          "width": 16,
+          "height": 16,
+          "mipmap_count": 1,
+          "n_sections": 0,
+          "flags": 0,
+          "user_flags": 0,
+          "texture_group": 0,
+          "mipmaps_to_use": 1,
+          "bytes_per_pixel_field": 4,
+          "data_offset": 164,
+          "payload_bytes": 128
+        },
+        "dtx_create": {
+          "ok": true,
+          "reason": "dtx_Create gates passed",
+          "m_ResType": 0,
+          "m_Version": -5,
+          "width": 16,
+          "height": 16,
+          "n_mipmaps": 1,
+          "n_sections": 0,
+          "flags": 0,
+          "bpp_ident_extra2": 4,
+          "header_bytes": 164,
+          "payload_bytes": 128,
+          "expected_mip_bytes": 128,
+          "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+        },
+        "python_decode": {
+          "ok": true,
+          "format": "dxt1",
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/synthetic_dxt1_16x16_python.png",
+          "quadrants": {
+            "ok": true,
+            "points": {
+              "tl": {
+                "x": 4,
+                "y": 4,
+                "got": [
+                  255,
+                  0,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "match": true
+              },
+              "tr": {
+                "x": 12,
+                "y": 4,
+                "got": [
+                  0,
+                  255,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "match": true
+              },
+              "bl": {
+                "x": 4,
+                "y": 12,
+                "got": [
+                  0,
+                  0,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "match": true
+              },
+              "br": {
+                "x": 12,
+                "y": 12,
+                "got": [
+                  255,
+                  255,
+                  255
+                ],
+                "expected": [
+                  255,
+                  255,
+                  255
+                ],
+                "match": true
+              }
+            },
+            "size": [
+              16,
+              16
+            ],
+            "mode": "RGBA",
+            "bands": [
+              "R",
+              "G",
+              "B",
+              "A"
+            ]
+          }
+        },
+        "cfrez_decode": {
+          "ok": true,
+          "returncode": 0,
+          "error": null,
+          "output": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/synthetic_dxt1_16x16_cfrez.png",
+          "cmd": [
+            "CFRezManager/bin/Debug/net8.0-windows7.0/CFRezManager.exe",
+            "--decode-image",
+            "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05a_decoder_audit\\synthetic\\synthetic_dxt1_16x16.dtx",
+            "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05a_decoder_audit\\previews\\synthetic_dxt1_16x16_cfrez.png"
+          ],
+          "quadrants": {
+            "ok": true,
+            "points": {
+              "tl": {
+                "x": 4,
+                "y": 4,
+                "got": [
+                  255,
+                  0,
+                  0
+                ],
+                "expected": [
+                  255,
+                  0,
+                  0
+                ],
+                "match": true
+              },
+              "tr": {
+                "x": 12,
+                "y": 4,
+                "got": [
+                  0,
+                  255,
+                  0
+                ],
+                "expected": [
+                  0,
+                  255,
+                  0
+                ],
+                "match": true
+              },
+              "bl": {
+                "x": 4,
+                "y": 12,
+                "got": [
+                  0,
+                  0,
+                  255
+                ],
+                "expected": [
+                  0,
+                  0,
+                  255
+                ],
+                "match": true
+              },
+              "br": {
+                "x": 12,
+                "y": 12,
+                "got": [
+                  255,
+                  255,
+                  255
+                ],
+                "expected": [
+                  255,
+                  255,
+                  255
+                ],
+                "match": true
+              }
+            },
+            "size": [
+              16,
+              16
+            ],
+            "mode": "RGBA",
+            "bands": [
+              "R",
+              "G",
+              "B",
+              "A"
+            ]
+          }
+        },
+        "ok": true,
+        "note": "synthetic proves standard Jupiter DTX implementation only"
+      }
+    },
+    "cfrez_available": true,
+    "shared_loader_note": "LTB2FBX and Vortigaunt are one dtxmgr.cpp lineage"
+  },
+  "local_controls": {
+    "status": "NO_CURRENT_CLIENT_CONTROL",
+    "scanned": 3258,
+    "hits": [],
+    "limit": 5
+  },
+  "samples": [
+    {
+      "id": "bornbeast_pv_dtx",
+      "kind": "dtx",
+      "role": "PViewSkinFileName",
+      "logical_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "loose_rel": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "n03_reuse": "N03-A/N03-C/N03-H",
+      "loose_present": true,
+      "loose_size": 524452,
+      "loose_sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+      "loose_md5": "8c340529fa3e942e8505346c97c4000e",
+      "prior_sha_records": [
+        {
+          "source": "n03a_confirmed_relations",
+          "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "inventory_relative_path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX"
+        },
+        {
+          "source": "n03c_path_binding",
+          "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+          "archive": "rez/rf017.rez",
+          "field": "PViewSkinFileName"
+        }
+      ],
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "abs": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "hit": true,
+          "full_path": "PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "data_offset": 186436476,
+          "entry_size": 524452,
+          "actual_bytes": 524452,
+          "directory_md5": "C242A039731CF13CF9570BC2A56DC77F",
+          "computed_md5": "8c340529fa3e942e8505346c97c4000e",
+          "directory_md5_matches_computed": false,
+          "raw_sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+          "raw_equals_loose": true,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez2/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 5426,
+          "index_error": null
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6818,
+          "index_error": null
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 8288,
+          "index_error": null
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 7824,
+          "index_error": null
+        },
+        {
+          "archive": "rez6/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6260,
+          "index_error": null
+        }
+      ],
+      "copy_sha_unique_count": 1,
+      "all_hits_equal_loose": true,
+      "header_prefix": [
+        119,
+        26,
+        255,
+        118,
+        26,
+        255,
+        118,
+        27,
+        255,
+        119,
+        27,
+        255,
+        119,
+        27,
+        255,
+        118
+      ],
+      "branches": [
+        {
+          "branch": "raw_read",
+          "precondition": "bytes as stored",
+          "input_sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+          "output_sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=1996429943 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 1996429943,
+            "offset4_int32": 460783386,
+            "offset8_int32": -14977025
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=1996429943 != LT_RESTYPE_DTX(0); m_Version=460783386 != CURRENT_DTX_VERSION(-5); m_nMipmaps=7031 not in 1..15; size 30719x65307 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 1996429943,
+            "m_Version": 460783386,
+            "width": 30719,
+            "height": 65307,
+            "n_mipmaps": 7031,
+            "n_sections": 30463,
+            "flags": 477626139,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 524288,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          },
+          "ltc_wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          },
+          "pixels": {
+            "ok": false,
+            "reason": "header failed"
+          },
+          "ok": false
+        },
+        {
+          "branch": "lzma_alone",
+          "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met; not decompressed",
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          }
+        },
+        {
+          "branch": "crossfire_ltc_wrapper",
+          "precondition": "CrossFire LTC magic 54 83 B2 E1",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met",
+          "wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          }
+        },
+        {
+          "branch": "rezextract_offset4_8_swap",
+          "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+          "input_sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+          "output_sha256": "f2afcbb9fddff93c85ef4cfa2fa03714545e7150f63456170a2ab4a8f5f92183",
+          "swap": {
+            "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+            "offset4_int32": 460783386,
+            "offset8_int32": -14977025,
+            "offset4_int8": 26,
+            "applied": true,
+            "changed": true,
+            "after_offset4_int32": -14977025,
+            "after_offset8_int32": 460783386,
+            "reason": "swapped 4-byte fields at offset 4 and 8"
+          },
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=1996429943 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 1996429943,
+            "offset4_int32": -14977025,
+            "offset8_int32": 460783386
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=1996429943 != LT_RESTYPE_DTX(0); m_Version=-14977025 != CURRENT_DTX_VERSION(-5); m_nMipmaps=7031 not in 1..15; size 65306x7030 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 1996429943,
+            "m_Version": -14977025,
+            "width": 65306,
+            "height": 7030,
+            "n_mipmaps": 7031,
+            "n_sections": 30463,
+            "flags": 477626139,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 524288,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "pixels": {
+            "ok": false
+          },
+          "ok": false,
+          "reason": "after swap, offset4=-14977025 offset8=460783386 still not -2/-3/-5"
+        }
+      ],
+      "capacity_notes": [
+        {
+          "size": 524452,
+          "leftover": 0,
+          "payload": 524452,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 524452,
+          "leftover": 163,
+          "payload": 524289,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 524452,
+          "leftover": 164,
+          "payload": 524288,
+          "example_fits": [
+            "512x256x4 BGRA no mip",
+            "1024x512 RGB16",
+            "DXT1 1024x1024",
+            "DXT5 1024x512",
+            "BGR24 512x256 full mip (geometric series = 524288)"
+          ],
+          "rule": "size-fit is not a codec"
+        }
+      ],
+      "phase_census": {
+        "size": 524452,
+        "size_mod_3": 1,
+        "phases": [
+          {
+            "phase": 0,
+            "unique": 187,
+            "ff_share": 0.022692,
+            "top": [
+              {
+                "value": 115,
+                "count": 31384
+              },
+              {
+                "value": 114,
+                "count": 15359
+              },
+              {
+                "value": 78,
+                "count": 9675
+              },
+              {
+                "value": 113,
+                "count": 7418
+              }
+            ]
+          },
+          {
+            "phase": 1,
+            "unique": 178,
+            "ff_share": 0.0,
+            "top": [
+              {
+                "value": 44,
+                "count": 24094
+              },
+              {
+                "value": 45,
+                "count": 22650
+              },
+              {
+                "value": 43,
+                "count": 10918
+              },
+              {
+                "value": 33,
+                "count": 7119
+              }
+            ]
+          },
+          {
+            "phase": 2,
+            "unique": 1,
+            "ff_share": 1.0,
+            "top": [
+              {
+                "value": 255,
+                "count": 174817
+              }
+            ]
+          }
+        ],
+        "highest_unique_phase": 0,
+        "non_ff_count_guess": 170851
+      },
+      "head_tail": {
+        "head": [
+          119,
+          26,
+          255,
+          118,
+          26,
+          255,
+          118,
+          27,
+          255,
+          119,
+          27,
+          255,
+          119,
+          27,
+          255,
+          118
+        ],
+        "tail": [
+          128,
+          20,
+          255,
+          128,
+          20,
+          255,
+          127,
+          21,
+          255,
+          127,
+          20,
+          255,
+          125,
+          20,
+          255,
+          126
+        ],
+        "offset4_int32": 460783386,
+        "offset8_int32": -14977025,
+        "offset0_int32": 1996429943
+      },
+      "divergent_copies": []
+    },
+    {
+      "id": "bornbeast_qv_dtx",
+      "kind": "dtx",
+      "role": "SkinFileName",
+      "logical_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "loose_rel": "data/rf017/ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "n03_reuse": "N03-C/N03-H",
+      "loose_present": true,
+      "loose_size": 32932,
+      "loose_sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+      "loose_md5": "5699540f96de3661b8f43fe8fe524db2",
+      "prior_sha_records": [
+        {
+          "source": "n03c_path_binding",
+          "sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+          "archive": "rez/rf017.rez",
+          "field": "SkinFileName"
+        }
+      ],
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "abs": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "hit": true,
+          "full_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+          "data_offset": 98902480,
+          "entry_size": 32932,
+          "actual_bytes": 32932,
+          "directory_md5": "9CE24F1C0D1478284C1A37C669FF1A31",
+          "computed_md5": "5699540f96de3661b8f43fe8fe524db2",
+          "directory_md5_matches_computed": false,
+          "raw_sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+          "raw_equals_loose": true,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez2/RF017.REZ",
+          "abs": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+          "hit": true,
+          "full_path": "WEAPONS/QV-M4A1_S_BornBeast.DTX",
+          "data_offset": 1921820246,
+          "entry_size": 524452,
+          "actual_bytes": 524452,
+          "directory_md5": "7956BF40C5F8A1CDE4C4E748EDBEF45E",
+          "computed_md5": "7956bf40c5f8a1cde4c4e748edbef45e",
+          "directory_md5_matches_computed": true,
+          "raw_sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+          "raw_equals_loose": false,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6818,
+          "index_error": null
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 8288,
+          "index_error": null
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 7824,
+          "index_error": null
+        },
+        {
+          "archive": "rez6/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6260,
+          "index_error": null
+        }
+      ],
+      "copy_sha_unique_count": 2,
+      "all_hits_equal_loose": false,
+      "header_prefix": [
+        0,
+        255,
+        255,
+        4,
+        255,
+        255,
+        14,
+        255,
+        255,
+        14,
+        255,
+        255,
+        4,
+        255,
+        255,
+        6
+      ],
+      "branches": [
+        {
+          "branch": "raw_read",
+          "precondition": "bytes as stored",
+          "input_sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+          "output_sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=83885824 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 83885824,
+            "offset4_int32": -15794177,
+            "offset8_int32": -61697
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=83885824 != LT_RESTYPE_DTX(0); m_Version=-15794177 != CURRENT_DTX_VERSION(-5); m_nMipmaps=65284 not in 1..15; size 3839x65535 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 83885824,
+            "m_Version": -15794177,
+            "width": 3839,
+            "height": 65535,
+            "n_mipmaps": 65284,
+            "n_sections": 1791,
+            "flags": -15532033,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 32768,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          },
+          "ltc_wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          },
+          "pixels": {
+            "ok": false,
+            "reason": "header failed"
+          },
+          "ok": false
+        },
+        {
+          "branch": "lzma_alone",
+          "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met; not decompressed",
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          }
+        },
+        {
+          "branch": "crossfire_ltc_wrapper",
+          "precondition": "CrossFire LTC magic 54 83 B2 E1",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met",
+          "wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          }
+        },
+        {
+          "branch": "rezextract_offset4_8_swap",
+          "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+          "input_sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+          "output_sha256": "aede26cf42cee6539b686f8ee5316719bca3d534cd8292526a931729bf739fa4",
+          "swap": {
+            "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+            "offset4_int32": -15794177,
+            "offset8_int32": -61697,
+            "offset4_int8": -1,
+            "applied": true,
+            "changed": true,
+            "after_offset4_int32": -61697,
+            "after_offset8_int32": -15794177,
+            "reason": "swapped 4-byte fields at offset 4 and 8"
+          },
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=83885824 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 83885824,
+            "offset4_int32": -61697,
+            "offset8_int32": -15794177
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=83885824 != LT_RESTYPE_DTX(0); m_Version=-61697 != CURRENT_DTX_VERSION(-5); m_nMipmaps=65284 not in 1..15; size 65535x65294 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 83885824,
+            "m_Version": -61697,
+            "width": 65535,
+            "height": 65294,
+            "n_mipmaps": 65284,
+            "n_sections": 1791,
+            "flags": -15532033,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 32768,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "pixels": {
+            "ok": false
+          },
+          "ok": false,
+          "reason": "after swap, offset4=-61697 offset8=-15794177 still not -2/-3/-5"
+        }
+      ],
+      "capacity_notes": [
+        {
+          "size": 32932,
+          "leftover": 0,
+          "payload": 32932,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 32932,
+          "leftover": 163,
+          "payload": 32769,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 32932,
+          "leftover": 164,
+          "payload": 32768,
+          "example_fits": [
+            "DXT1 256x256",
+            "RGB565 128x128",
+            "8-bit 256x128"
+          ],
+          "rule": "size-fit is not a codec"
+        }
+      ],
+      "phase_census": {
+        "size": 32932,
+        "size_mod_3": 1,
+        "phases": [
+          {
+            "phase": 0,
+            "unique": 105,
+            "ff_share": 0.0,
+            "top": [
+              {
+                "value": 0,
+                "count": 2272
+              },
+              {
+                "value": 12,
+                "count": 1471
+              },
+              {
+                "value": 11,
+                "count": 1366
+              },
+              {
+                "value": 14,
+                "count": 810
+              }
+            ]
+          },
+          {
+            "phase": 1,
+            "unique": 1,
+            "ff_share": 1.0,
+            "top": [
+              {
+                "value": 255,
+                "count": 10977
+              }
+            ]
+          },
+          {
+            "phase": 2,
+            "unique": 1,
+            "ff_share": 1.0,
+            "top": [
+              {
+                "value": 255,
+                "count": 10977
+              }
+            ]
+          }
+        ],
+        "highest_unique_phase": 0,
+        "non_ff_count_guess": 10978
+      },
+      "head_tail": {
+        "head": [
+          0,
+          255,
+          255,
+          4,
+          255,
+          255,
+          14,
+          255,
+          255,
+          14,
+          255,
+          255,
+          4,
+          255,
+          255,
+          6
+        ],
+        "tail": [
+          11,
+          255,
+          255,
+          12,
+          255,
+          255,
+          11,
+          255,
+          255,
+          12,
+          255,
+          255,
+          12,
+          255,
+          255,
+          12
+        ],
+        "offset4_int32": -15794177,
+        "offset8_int32": -61697,
+        "offset0_int32": 83885824
+      },
+      "divergent_copies": [
+        {
+          "archive": "rez2/RF017.REZ",
+          "size": 524452,
+          "sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+          "equals_loose": false,
+          "head_tail": {
+            "head": [
+              0,
+              0,
+              0,
+              0,
+              251,
+              255,
+              255,
+              255,
+              0,
+              4,
+              0,
+              4,
+              1,
+              0,
+              0,
+              0
+            ],
+            "tail": [
+              97,
+              8,
+              98,
+              16,
+              170,
+              170,
+              170,
+              170,
+              97,
+              8,
+              98,
+              16,
+              170,
+              170,
+              170,
+              170
+            ],
+            "offset4_int32": -5,
+            "offset8_int32": 67109888,
+            "offset0_int32": 0
+          },
+          "capacity_notes": [
+            {
+              "size": 524452,
+              "leftover": 0,
+              "payload": 524452,
+              "example_fits": [],
+              "rule": "size-fit is not a codec"
+            },
+            {
+              "size": 524452,
+              "leftover": 163,
+              "payload": 524289,
+              "example_fits": [],
+              "rule": "size-fit is not a codec"
+            },
+            {
+              "size": 524452,
+              "leftover": 164,
+              "payload": 524288,
+              "example_fits": [
+                "512x256x4 BGRA no mip",
+                "1024x512 RGB16",
+                "DXT1 1024x1024",
+                "DXT5 1024x512",
+                "BGR24 512x256 full mip (geometric series = 524288)"
+              ],
+              "rule": "size-fit is not a codec"
+            }
+          ],
+          "phase_census": {
+            "size": 524452,
+            "size_mod_3": 1,
+            "phases": [
+              {
+                "phase": 0,
+                "unique": 256,
+                "ff_share": 0.040963,
+                "top": [
+                  {
+                    "value": 170,
+                    "count": 22380
+                  },
+                  {
+                    "value": 16,
+                    "count": 11919
+                  },
+                  {
+                    "value": 255,
+                    "count": 7161
+                  },
+                  {
+                    "value": 24,
+                    "count": 6180
+                  }
+                ]
+              },
+              {
+                "phase": 1,
+                "unique": 256,
+                "ff_share": 0.040728,
+                "top": [
+                  {
+                    "value": 170,
+                    "count": 22290
+                  },
+                  {
+                    "value": 16,
+                    "count": 11842
+                  },
+                  {
+                    "value": 255,
+                    "count": 7120
+                  },
+                  {
+                    "value": 85,
+                    "count": 6209
+                  }
+                ]
+              },
+              {
+                "phase": 2,
+                "unique": 256,
+                "ff_share": 0.040711,
+                "top": [
+                  {
+                    "value": 170,
+                    "count": 22258
+                  },
+                  {
+                    "value": 16,
+                    "count": 11925
+                  },
+                  {
+                    "value": 255,
+                    "count": 7117
+                  },
+                  {
+                    "value": 85,
+                    "count": 6155
+                  }
+                ]
+              }
+            ],
+            "highest_unique_phase": 0,
+            "non_ff_count_guess": 167657
+          },
+          "branches": [
+            {
+              "branch": "raw_read",
+              "precondition": "bytes as stored",
+              "input_sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+              "output_sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+              "repo_header": {
+                "ok": true,
+                "reason": "parsed with repo DtxThumbnailDecoder layout",
+                "version": -5,
+                "width": 1024,
+                "height": 1024,
+                "mipmap_count": 1,
+                "n_sections": 0,
+                "flags": 8,
+                "user_flags": 0,
+                "texture_group": 0,
+                "mipmaps_to_use": 1,
+                "bytes_per_pixel_field": 4,
+                "data_offset": 164,
+                "payload_bytes": 524288
+              },
+              "dtx_create": {
+                "ok": true,
+                "reason": "dtx_Create gates passed",
+                "m_ResType": 0,
+                "m_Version": -5,
+                "width": 1024,
+                "height": 1024,
+                "n_mipmaps": 1,
+                "n_sections": 0,
+                "flags": 8,
+                "bpp_ident_extra2": 4,
+                "header_bytes": 164,
+                "payload_bytes": 524288,
+                "expected_mip_bytes": 524288,
+                "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+              },
+              "lzma": {
+                "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+                "matches": false,
+                "decoded_bytes": null,
+                "has_known_decoded_bytes": false
+              },
+              "ltc_wrapper": {
+                "precondition": "CrossFire LTC magic 54 83 B2 E1",
+                "matches": false,
+                "unlocked_sha256": null,
+                "unlocked_size": null
+              },
+              "pixels": {
+                "ok": true,
+                "python": {
+                  "ok": true,
+                  "format": "dxt1",
+                  "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/bornbeast_qv_dtx_rez2_RF017_REZ_raw_python.png",
+                  "stats": {
+                    "size": [
+                      1024,
+                      1024
+                    ],
+                    "mean_rgb": [
+                      35.8,
+                      32.4,
+                      36.1
+                    ],
+                    "min_rgb": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max_rgb": [
+                      255,
+                      238,
+                      255
+                    ],
+                    "unique_q5": 2274,
+                    "mode": "RGBA",
+                    "bands": [
+                      "R",
+                      "G",
+                      "B",
+                      "A"
+                    ]
+                  }
+                },
+                "cfrez": {
+                  "ok": true,
+                  "returncode": 0,
+                  "error": null,
+                  "output": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/bornbeast_qv_dtx_rez2_RF017_REZ_raw_cfrez.png",
+                  "cmd": [
+                    "CFRezManager/bin/Debug/net8.0-windows7.0/CFRezManager.exe",
+                    "--decode-image",
+                    "C:\\Users\\Administrator\\AppData\\Local\\Temp\\tmpykohob12\\bornbeast_qv_dtx_rez2_RF017_REZ_raw.dtx",
+                    "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05a_decoder_audit\\previews\\bornbeast_qv_dtx_rez2_RF017_REZ_raw_cfrez.png"
+                  ],
+                  "stats": {
+                    "size": [
+                      1024,
+                      1024
+                    ],
+                    "mean_rgb": [
+                      35.8,
+                      32.4,
+                      36.1
+                    ],
+                    "min_rgb": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max_rgb": [
+                      255,
+                      238,
+                      255
+                    ],
+                    "unique_q5": 2274,
+                    "mode": "RGBA",
+                    "bands": [
+                      "R",
+                      "G",
+                      "B",
+                      "A"
+                    ]
+                  }
+                },
+                "note": "pixel decode is not mesh/sampler binding and not shader semantics"
+              },
+              "ok": true
+            },
+            {
+              "branch": "lzma_alone",
+              "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+              "applied": false,
+              "ok": false,
+              "reason": "precondition not met; not decompressed",
+              "lzma": {
+                "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+                "matches": false,
+                "decoded_bytes": null,
+                "has_known_decoded_bytes": false
+              }
+            },
+            {
+              "branch": "crossfire_ltc_wrapper",
+              "precondition": "CrossFire LTC magic 54 83 B2 E1",
+              "applied": false,
+              "ok": false,
+              "reason": "precondition not met",
+              "wrapper": {
+                "precondition": "CrossFire LTC magic 54 83 B2 E1",
+                "matches": false,
+                "unlocked_sha256": null,
+                "unlocked_size": null
+              }
+            },
+            {
+              "branch": "rezextract_offset4_8_swap",
+              "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+              "input_sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+              "output_sha256": "73a954f8540cd7660c1a6cc1b65dc240c2421c37909e7a8f35d4e6f789b59965",
+              "swap": {
+                "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+                "offset4_int32": -5,
+                "offset8_int32": 67109888,
+                "offset4_int8": -5,
+                "applied": false,
+                "changed": false,
+                "reason": "byte at offset 4 is -5; RezExtract does not swap"
+              },
+              "repo_header": {
+                "ok": true,
+                "reason": "parsed with repo DtxThumbnailDecoder layout",
+                "version": -5,
+                "width": 1024,
+                "height": 1024,
+                "mipmap_count": 1,
+                "n_sections": 0,
+                "flags": 8,
+                "user_flags": 0,
+                "texture_group": 0,
+                "mipmaps_to_use": 1,
+                "bytes_per_pixel_field": 4,
+                "data_offset": 164,
+                "payload_bytes": 524288
+              },
+              "dtx_create": {
+                "ok": true,
+                "reason": "dtx_Create gates passed",
+                "m_ResType": 0,
+                "m_Version": -5,
+                "width": 1024,
+                "height": 1024,
+                "n_mipmaps": 1,
+                "n_sections": 0,
+                "flags": 8,
+                "bpp_ident_extra2": 4,
+                "header_bytes": 164,
+                "payload_bytes": 524288,
+                "expected_mip_bytes": 524288,
+                "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+              },
+              "pixels": {
+                "ok": true,
+                "python": {
+                  "ok": true,
+                  "format": "dxt1",
+                  "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/bornbeast_qv_dtx_rez2_RF017_REZ_raw_python.png",
+                  "stats": {
+                    "size": [
+                      1024,
+                      1024
+                    ],
+                    "mean_rgb": [
+                      35.8,
+                      32.4,
+                      36.1
+                    ],
+                    "min_rgb": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max_rgb": [
+                      255,
+                      238,
+                      255
+                    ],
+                    "unique_q5": 2274,
+                    "mode": "RGBA",
+                    "bands": [
+                      "R",
+                      "G",
+                      "B",
+                      "A"
+                    ]
+                  }
+                },
+                "cfrez": {
+                  "ok": true,
+                  "returncode": 0,
+                  "error": null,
+                  "output": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/bornbeast_qv_dtx_rez2_RF017_REZ_raw_cfrez.png",
+                  "cmd": [
+                    "CFRezManager/bin/Debug/net8.0-windows7.0/CFRezManager.exe",
+                    "--decode-image",
+                    "C:\\Users\\Administrator\\AppData\\Local\\Temp\\tmpykohob12\\bornbeast_qv_dtx_rez2_RF017_REZ_raw.dtx",
+                    "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05a_decoder_audit\\previews\\bornbeast_qv_dtx_rez2_RF017_REZ_raw_cfrez.png"
+                  ],
+                  "stats": {
+                    "size": [
+                      1024,
+                      1024
+                    ],
+                    "mean_rgb": [
+                      35.8,
+                      32.4,
+                      36.1
+                    ],
+                    "min_rgb": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "max_rgb": [
+                      255,
+                      238,
+                      255
+                    ],
+                    "unique_q5": 2274,
+                    "mode": "RGBA",
+                    "bands": [
+                      "R",
+                      "G",
+                      "B",
+                      "A"
+                    ]
+                  }
+                },
+                "note": "pixel decode is not mesh/sampler binding and not shader semantics"
+              },
+              "ok": true,
+              "reason": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royaldragon_pv_dtx",
+      "kind": "dtx",
+      "role": "N03-H control PV",
+      "logical_path": "PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "loose_rel": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "n03_reuse": "N03-H exact path",
+      "loose_present": true,
+      "loose_size": 524452,
+      "loose_sha256": "03e163bc7384a5be2ca461d591e1b976047ef4a67db08b0a63958cfc03ae5cee",
+      "loose_md5": "5d3ae8455bfe8060fbc469de18dabffe",
+      "prior_sha_records": [],
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "abs": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "hit": true,
+          "full_path": "PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+          "data_offset": 180830688,
+          "entry_size": 524452,
+          "actual_bytes": 524452,
+          "directory_md5": "46732D8B205128B92F85A8F416634FFD",
+          "computed_md5": "5d3ae8455bfe8060fbc469de18dabffe",
+          "directory_md5_matches_computed": false,
+          "raw_sha256": "03e163bc7384a5be2ca461d591e1b976047ef4a67db08b0a63958cfc03ae5cee",
+          "raw_equals_loose": true,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez2/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 5426,
+          "index_error": null
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6818,
+          "index_error": null
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 8288,
+          "index_error": null
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 7824,
+          "index_error": null
+        },
+        {
+          "archive": "rez6/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6260,
+          "index_error": null
+        }
+      ],
+      "copy_sha_unique_count": 1,
+      "all_hits_equal_loose": true,
+      "header_prefix": [
+        17,
+        255,
+        255,
+        21,
+        255,
+        255,
+        21,
+        255,
+        255,
+        21,
+        255,
+        255,
+        21,
+        255,
+        255,
+        29
+      ],
+      "branches": [
+        {
+          "branch": "raw_read",
+          "precondition": "bytes as stored",
+          "input_sha256": "03e163bc7384a5be2ca461d591e1b976047ef4a67db08b0a63958cfc03ae5cee",
+          "output_sha256": "03e163bc7384a5be2ca461d591e1b976047ef4a67db08b0a63958cfc03ae5cee",
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=369098513 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 369098513,
+            "offset4_int32": -15335425,
+            "offset8_int32": -59905
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=369098513 != LT_RESTYPE_DTX(0); m_Version=-15335425 != CURRENT_DTX_VERSION(-5); m_nMipmaps=65301 not in 1..15; size 5631x65535 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 369098513,
+            "m_Version": -15335425,
+            "width": 5631,
+            "height": 65535,
+            "n_mipmaps": 65301,
+            "n_sections": 7679,
+            "flags": -15073281,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 524288,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          },
+          "ltc_wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          },
+          "pixels": {
+            "ok": false,
+            "reason": "header failed"
+          },
+          "ok": false
+        },
+        {
+          "branch": "lzma_alone",
+          "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met; not decompressed",
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          }
+        },
+        {
+          "branch": "crossfire_ltc_wrapper",
+          "precondition": "CrossFire LTC magic 54 83 B2 E1",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met",
+          "wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          }
+        },
+        {
+          "branch": "rezextract_offset4_8_swap",
+          "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+          "input_sha256": "03e163bc7384a5be2ca461d591e1b976047ef4a67db08b0a63958cfc03ae5cee",
+          "output_sha256": "114abbeefc79ea35b7810a853db10d782b80fd5452465990387b0ecc54de5c35",
+          "swap": {
+            "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+            "offset4_int32": -15335425,
+            "offset8_int32": -59905,
+            "offset4_int8": -1,
+            "applied": true,
+            "changed": true,
+            "after_offset4_int32": -59905,
+            "after_offset8_int32": -15335425,
+            "reason": "swapped 4-byte fields at offset 4 and 8"
+          },
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=369098513 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 369098513,
+            "offset4_int32": -59905,
+            "offset8_int32": -15335425
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=369098513 != LT_RESTYPE_DTX(0); m_Version=-59905 != CURRENT_DTX_VERSION(-5); m_nMipmaps=65301 not in 1..15; size 65535x65301 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 369098513,
+            "m_Version": -59905,
+            "width": 65535,
+            "height": 65301,
+            "n_mipmaps": 65301,
+            "n_sections": 7679,
+            "flags": -15073281,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 524288,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "pixels": {
+            "ok": false
+          },
+          "ok": false,
+          "reason": "after swap, offset4=-59905 offset8=-15335425 still not -2/-3/-5"
+        }
+      ],
+      "capacity_notes": [
+        {
+          "size": 524452,
+          "leftover": 0,
+          "payload": 524452,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 524452,
+          "leftover": 163,
+          "payload": 524289,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 524452,
+          "leftover": 164,
+          "payload": 524288,
+          "example_fits": [
+            "512x256x4 BGRA no mip",
+            "1024x512 RGB16",
+            "DXT1 1024x1024",
+            "DXT5 1024x512",
+            "BGR24 512x256 full mip (geometric series = 524288)"
+          ],
+          "rule": "size-fit is not a codec"
+        }
+      ],
+      "phase_census": {
+        "size": 524452,
+        "size_mod_3": 1,
+        "phases": [
+          {
+            "phase": 0,
+            "unique": 57,
+            "ff_share": 0.0,
+            "top": [
+              {
+                "value": 2,
+                "count": 79865
+              },
+              {
+                "value": 3,
+                "count": 28662
+              },
+              {
+                "value": 0,
+                "count": 22762
+              },
+              {
+                "value": 4,
+                "count": 11445
+              }
+            ]
+          },
+          {
+            "phase": 1,
+            "unique": 1,
+            "ff_share": 1.0,
+            "top": [
+              {
+                "value": 255,
+                "count": 174817
+              }
+            ]
+          },
+          {
+            "phase": 2,
+            "unique": 1,
+            "ff_share": 1.0,
+            "top": [
+              {
+                "value": 255,
+                "count": 174817
+              }
+            ]
+          }
+        ],
+        "highest_unique_phase": 0,
+        "non_ff_count_guess": 174818
+      },
+      "head_tail": {
+        "head": [
+          17,
+          255,
+          255,
+          21,
+          255,
+          255,
+          21,
+          255,
+          255,
+          21,
+          255,
+          255,
+          21,
+          255,
+          255,
+          29
+        ],
+        "tail": [
+          2,
+          255,
+          255,
+          3,
+          255,
+          255,
+          2,
+          255,
+          255,
+          2,
+          255,
+          255,
+          2,
+          255,
+          255,
+          2
+        ],
+        "offset4_int32": -15335425,
+        "offset8_int32": -59905,
+        "offset0_int32": 369098513
+      },
+      "divergent_copies": []
+    },
+    {
+      "id": "royaldragon_s_dtx",
+      "kind": "dtx",
+      "role": "SpecularMapName later-era control",
+      "logical_path": "SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "loose_rel": "data/rf017/ModelTextures/SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "n03_reuse": "N03-H exact path",
+      "loose_present": true,
+      "loose_size": 524452,
+      "loose_sha256": "0151b3de34ef1a52a373f4939c5cd91144ac4fae6e532b4f48d23a66083d2474",
+      "loose_md5": "164bc6f0ce10536c2f2b2fbcc3e3b37e",
+      "prior_sha_records": [],
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "abs": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "hit": true,
+          "full_path": "SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+          "data_offset": 176566212,
+          "entry_size": 524452,
+          "actual_bytes": 524452,
+          "directory_md5": "ED35BEC77E395810CF9AC807BE809441",
+          "computed_md5": "164bc6f0ce10536c2f2b2fbcc3e3b37e",
+          "directory_md5_matches_computed": false,
+          "raw_sha256": "0151b3de34ef1a52a373f4939c5cd91144ac4fae6e532b4f48d23a66083d2474",
+          "raw_equals_loose": true,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez2/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 5426,
+          "index_error": null
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6818,
+          "index_error": null
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 8288,
+          "index_error": null
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 7824,
+          "index_error": null
+        },
+        {
+          "archive": "rez6/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6260,
+          "index_error": null
+        }
+      ],
+      "copy_sha_unique_count": 1,
+      "all_hits_equal_loose": true,
+      "header_prefix": [
+        255,
+        22,
+        0,
+        255,
+        22,
+        0,
+        255,
+        22,
+        0,
+        255,
+        22,
+        0,
+        255,
+        22,
+        0,
+        255
+      ],
+      "branches": [
+        {
+          "branch": "raw_read",
+          "precondition": "bytes as stored",
+          "input_sha256": "0151b3de34ef1a52a373f4939c5cd91144ac4fae6e532b4f48d23a66083d2474",
+          "output_sha256": "0151b3de34ef1a52a373f4939c5cd91144ac4fae6e532b4f48d23a66083d2474",
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=-16771329 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": -16771329,
+            "offset4_int32": 385810454,
+            "offset8_int32": 1507072
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=-16771329 != LT_RESTYPE_DTX(0); m_Version=385810454 != CURRENT_DTX_VERSION(-5); m_nMipmaps=5887 not in 1..15; size 65280x22 not in dtx_IsTextureSizeValid list; payload 524288 < expected mip bytes 1907143",
+            "m_ResType": -16771329,
+            "m_Version": 385810454,
+            "width": 65280,
+            "height": 22,
+            "n_mipmaps": 5887,
+            "n_sections": 65280,
+            "flags": 385810454,
+            "bpp_ident_extra2": 0,
+            "header_bytes": 164,
+            "payload_bytes": 524288,
+            "expected_mip_bytes": 1907143,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          },
+          "ltc_wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          },
+          "pixels": {
+            "ok": false,
+            "reason": "header failed"
+          },
+          "ok": false
+        },
+        {
+          "branch": "lzma_alone",
+          "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met; not decompressed",
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          }
+        },
+        {
+          "branch": "crossfire_ltc_wrapper",
+          "precondition": "CrossFire LTC magic 54 83 B2 E1",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met",
+          "wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          }
+        },
+        {
+          "branch": "rezextract_offset4_8_swap",
+          "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+          "input_sha256": "0151b3de34ef1a52a373f4939c5cd91144ac4fae6e532b4f48d23a66083d2474",
+          "output_sha256": "edc02ff8b39bc6eb9325a03c518b99b26f50c356d5aed5a356e3c871ba3cfe8e",
+          "swap": {
+            "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+            "offset4_int32": 385810454,
+            "offset8_int32": 1507072,
+            "offset4_int8": 22,
+            "applied": true,
+            "changed": true,
+            "after_offset4_int32": 1507072,
+            "after_offset8_int32": 385810454,
+            "reason": "swapped 4-byte fields at offset 4 and 8"
+          },
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=-16771329 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": -16771329,
+            "offset4_int32": 1507072,
+            "offset8_int32": 385810454
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=-16771329 != LT_RESTYPE_DTX(0); m_Version=1507072 != CURRENT_DTX_VERSION(-5); m_nMipmaps=5887 not in 1..15; size 22x5887 not in dtx_IsTextureSizeValid list",
+            "m_ResType": -16771329,
+            "m_Version": 1507072,
+            "width": 22,
+            "height": 5887,
+            "n_mipmaps": 5887,
+            "n_sections": 65280,
+            "flags": 385810454,
+            "bpp_ident_extra2": 0,
+            "header_bytes": 164,
+            "payload_bytes": 524288,
+            "expected_mip_bytes": 177313,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "pixels": {
+            "ok": false
+          },
+          "ok": false,
+          "reason": "after swap, offset4=1507072 offset8=385810454 still not -2/-3/-5"
+        }
+      ],
+      "capacity_notes": [
+        {
+          "size": 524452,
+          "leftover": 0,
+          "payload": 524452,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 524452,
+          "leftover": 163,
+          "payload": 524289,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 524452,
+          "leftover": 164,
+          "payload": 524288,
+          "example_fits": [
+            "512x256x4 BGRA no mip",
+            "1024x512 RGB16",
+            "DXT1 1024x1024",
+            "DXT5 1024x512",
+            "BGR24 512x256 full mip (geometric series = 524288)"
+          ],
+          "rule": "size-fit is not a codec"
+        }
+      ],
+      "phase_census": {
+        "size": 524452,
+        "size_mod_3": 1,
+        "phases": [
+          {
+            "phase": 0,
+            "unique": 1,
+            "ff_share": 1.0,
+            "top": [
+              {
+                "value": 255,
+                "count": 174818
+              }
+            ]
+          },
+          {
+            "phase": 1,
+            "unique": 132,
+            "ff_share": 0.004267,
+            "top": [
+              {
+                "value": 22,
+                "count": 45193
+              },
+              {
+                "value": 24,
+                "count": 17911
+              },
+              {
+                "value": 26,
+                "count": 11778
+              },
+              {
+                "value": 16,
+                "count": 9352
+              }
+            ]
+          },
+          {
+            "phase": 2,
+            "unique": 255,
+            "ff_share": 0.0,
+            "top": [
+              {
+                "value": 0,
+                "count": 121975
+              },
+              {
+                "value": 254,
+                "count": 7274
+              },
+              {
+                "value": 1,
+                "count": 1411
+              },
+              {
+                "value": 2,
+                "count": 1253
+              }
+            ]
+          }
+        ],
+        "highest_unique_phase": 2,
+        "non_ff_count_guess": 174817
+      },
+      "head_tail": {
+        "head": [
+          255,
+          22,
+          0,
+          255,
+          22,
+          0,
+          255,
+          22,
+          0,
+          255,
+          22,
+          0,
+          255,
+          22,
+          0,
+          255
+        ],
+        "tail": [
+          255,
+          119,
+          0,
+          255,
+          103,
+          0,
+          255,
+          81,
+          0,
+          255,
+          81,
+          0,
+          255,
+          101,
+          0,
+          255
+        ],
+        "offset4_int32": 385810454,
+        "offset8_int32": 1507072,
+        "offset0_int32": -16771329
+      },
+      "divergent_copies": []
+    },
+    {
+      "id": "greenvain_s_dtx",
+      "kind": "dtx",
+      "role": "SpecularMap later-era size-class control",
+      "logical_path": "SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "loose_rel": "data/rf017/ModelTextures/SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "n03_reuse": "N03-H exact path",
+      "loose_present": true,
+      "loose_size": 131236,
+      "loose_sha256": "df719d20d9969a8e0645c5a81f967f3c38616262c64f57592b3d0282111a55bc",
+      "loose_md5": "f647dcc93c438699daccabe1948ef7a7",
+      "prior_sha_records": [],
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "abs": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "hit": true,
+          "full_path": "SpecularMap/PV-DualDE_GreenVein_S.DTX",
+          "data_offset": 175254836,
+          "entry_size": 131236,
+          "actual_bytes": 131236,
+          "directory_md5": "F0E77EAD4E160F7A64D7A890CB2138E2",
+          "computed_md5": "f647dcc93c438699daccabe1948ef7a7",
+          "directory_md5_matches_computed": false,
+          "raw_sha256": "df719d20d9969a8e0645c5a81f967f3c38616262c64f57592b3d0282111a55bc",
+          "raw_equals_loose": true,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez2/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 5426,
+          "index_error": null
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6818,
+          "index_error": null
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 8288,
+          "index_error": null
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 7824,
+          "index_error": null
+        },
+        {
+          "archive": "rez6/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6260,
+          "index_error": null
+        }
+      ],
+      "copy_sha_unique_count": 1,
+      "all_hits_equal_loose": true,
+      "header_prefix": [
+        69,
+        21,
+        255,
+        65,
+        20,
+        255,
+        65,
+        20,
+        255,
+        65,
+        20,
+        255,
+        69,
+        22,
+        255,
+        65
+      ],
+      "branches": [
+        {
+          "branch": "raw_read",
+          "precondition": "bytes as stored",
+          "input_sha256": "df719d20d9969a8e0645c5a81f967f3c38616262c64f57592b3d0282111a55bc",
+          "output_sha256": "df719d20d9969a8e0645c5a81f967f3c38616262c64f57592b3d0282111a55bc",
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=1107236165 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 1107236165,
+            "offset4_int32": 339869460,
+            "offset8_int32": -15449601
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=1107236165 != LT_RESTYPE_DTX(0); m_Version=339869460 != CURRENT_DTX_VERSION(-5); m_nMipmaps=5701 not in 1..15; size 16895x65300 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 1107236165,
+            "m_Version": 339869460,
+            "width": 16895,
+            "height": 65300,
+            "n_mipmaps": 5701,
+            "n_sections": 16895,
+            "flags": 474087192,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 131072,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          },
+          "ltc_wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          },
+          "pixels": {
+            "ok": false,
+            "reason": "header failed"
+          },
+          "ok": false
+        },
+        {
+          "branch": "lzma_alone",
+          "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met; not decompressed",
+          "lzma": {
+            "precondition": "LzmaAloneDecoder first byte 0x5D/0x08 + dict size",
+            "matches": false,
+            "decoded_bytes": null,
+            "has_known_decoded_bytes": false
+          }
+        },
+        {
+          "branch": "crossfire_ltc_wrapper",
+          "precondition": "CrossFire LTC magic 54 83 B2 E1",
+          "applied": false,
+          "ok": false,
+          "reason": "precondition not met",
+          "wrapper": {
+            "precondition": "CrossFire LTC magic 54 83 B2 E1",
+            "matches": false,
+            "unlocked_sha256": null,
+            "unlocked_size": null
+          }
+        },
+        {
+          "branch": "rezextract_offset4_8_swap",
+          "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+          "input_sha256": "df719d20d9969a8e0645c5a81f967f3c38616262c64f57592b3d0282111a55bc",
+          "output_sha256": "fa7032e0be4af479694092af05e8576c230d26860211e7ff987cd1765fdd2488",
+          "swap": {
+            "precondition": "extension DTX and byte at offset 4 is not -2/-3/-5",
+            "offset4_int32": 339869460,
+            "offset8_int32": -15449601,
+            "offset4_int8": 20,
+            "applied": true,
+            "changed": true,
+            "after_offset4_int32": -15449601,
+            "after_offset8_int32": 339869460,
+            "reason": "swapped 4-byte fields at offset 4 and 8"
+          },
+          "repo_header": {
+            "ok": false,
+            "reason": "offset0 int32=1107236165 is not a supported DTX version (-2/-3/-5)",
+            "offset0_int32": 1107236165,
+            "offset4_int32": -15449601,
+            "offset8_int32": 339869460
+          },
+          "dtx_create": {
+            "ok": false,
+            "reason": "m_ResType=1107236165 != LT_RESTYPE_DTX(0); m_Version=-15449601 != CURRENT_DTX_VERSION(-5); m_nMipmaps=5701 not in 1..15; size 65300x5185 not in dtx_IsTextureSizeValid list",
+            "m_ResType": 1107236165,
+            "m_Version": -15449601,
+            "width": 65300,
+            "height": 5185,
+            "n_mipmaps": 5701,
+            "n_sections": 16895,
+            "flags": 474087192,
+            "bpp_ident_extra2": 255,
+            "header_bytes": 164,
+            "payload_bytes": 131072,
+            "expected_mip_bytes": null,
+            "note": "LTB2FBX 06d749d and Vortigaunt d739d1f share this loader; not two format proofs"
+          },
+          "pixels": {
+            "ok": false
+          },
+          "ok": false,
+          "reason": "after swap, offset4=-15449601 offset8=339869460 still not -2/-3/-5"
+        }
+      ],
+      "capacity_notes": [
+        {
+          "size": 131236,
+          "leftover": 0,
+          "payload": 131236,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 131236,
+          "leftover": 163,
+          "payload": 131073,
+          "example_fits": [],
+          "rule": "size-fit is not a codec"
+        },
+        {
+          "size": 131236,
+          "leftover": 164,
+          "payload": 131072,
+          "example_fits": [
+            "DXT1 512x512",
+            "BGRA 256x128",
+            "BGR24 256x170 leftover-ish"
+          ],
+          "rule": "size-fit is not a codec"
+        }
+      ],
+      "phase_census": {
+        "size": 131236,
+        "size_mod_3": 1,
+        "phases": [
+          {
+            "phase": 0,
+            "unique": 160,
+            "ff_share": 0.0,
+            "top": [
+              {
+                "value": 1,
+                "count": 2184
+              },
+              {
+                "value": 42,
+                "count": 945
+              },
+              {
+                "value": 2,
+                "count": 887
+              },
+              {
+                "value": 14,
+                "count": 807
+              }
+            ]
+          },
+          {
+            "phase": 1,
+            "unique": 255,
+            "ff_share": 0.0,
+            "top": [
+              {
+                "value": 0,
+                "count": 19039
+              },
+              {
+                "value": 254,
+                "count": 4173
+              },
+              {
+                "value": 19,
+                "count": 546
+              },
+              {
+                "value": 20,
+                "count": 532
+              }
+            ]
+          },
+          {
+            "phase": 2,
+            "unique": 1,
+            "ff_share": 1.0,
+            "top": [
+              {
+                "value": 255,
+                "count": 43745
+              }
+            ]
+          }
+        ],
+        "highest_unique_phase": 1,
+        "non_ff_count_guess": 43745
+      },
+      "head_tail": {
+        "head": [
+          69,
+          21,
+          255,
+          65,
+          20,
+          255,
+          65,
+          20,
+          255,
+          65,
+          20,
+          255,
+          69,
+          22,
+          255,
+          65
+        ],
+        "tail": [
+          16,
+          0,
+          255,
+          15,
+          0,
+          255,
+          15,
+          0,
+          255,
+          15,
+          0,
+          255,
+          15,
+          0,
+          255,
+          15
+        ],
+        "offset4_int32": 339869460,
+        "offset8_int32": -15449601,
+        "offset0_int32": 1107236165
+      },
+      "divergent_copies": []
+    },
+    {
+      "id": "bornbeast_cfg",
+      "kind": "cfg",
+      "role": "WeaponShader CFG",
+      "logical_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+      "loose_rel": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "n03_reuse": "N03-A",
+      "loose_present": true,
+      "loose_size": 492,
+      "loose_sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+      "loose_md5": "f179d3739f62e254399fd8fbff05661b",
+      "prior_sha_records": [
+        {
+          "source": "n03a_confirmed_relations",
+          "sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "inventory_relative_path": "data/rf017/ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG"
+        }
+      ],
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "abs": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "hit": true,
+          "full_path": "WeaponShader/M4A1_S_BornBeast.CFG",
+          "data_offset": 129894546,
+          "entry_size": 492,
+          "actual_bytes": 492,
+          "directory_md5": "5D2FF8110E9AB76EA0FCABB4C63C2C59",
+          "computed_md5": "f179d3739f62e254399fd8fbff05661b",
+          "directory_md5_matches_computed": false,
+          "raw_sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+          "raw_equals_loose": true,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez2/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 5426,
+          "index_error": null
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6818,
+          "index_error": null
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 8288,
+          "index_error": null
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 7824,
+          "index_error": null
+        },
+        {
+          "archive": "rez6/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6260,
+          "index_error": null
+        }
+      ],
+      "copy_sha_unique_count": 1,
+      "all_hits_equal_loose": true,
+      "header_prefix": [
+        255,
+        255,
+        15,
+        255,
+        255,
+        15,
+        255,
+        255,
+        15,
+        255,
+        255,
+        15,
+        255,
+        255,
+        15,
+        255
+      ],
+      "branches": [
+        {
+          "branch": "raw_read",
+          "precondition": "bytes as stored",
+          "ok": true,
+          "input_sha256": "78f0bd5024f70624594c6b7ebd470094a3642fce8cf7df596407d40dae0ebc87",
+          "size": 492,
+          "phase_census": {
+            "size": 492,
+            "size_mod_3": 0,
+            "phases": [
+              {
+                "phase": 0,
+                "unique": 1,
+                "ff_share": 1.0,
+                "top": [
+                  {
+                    "value": 255,
+                    "count": 164
+                  }
+                ]
+              },
+              {
+                "phase": 1,
+                "unique": 1,
+                "ff_share": 1.0,
+                "top": [
+                  {
+                    "value": 255,
+                    "count": 164
+                  }
+                ]
+              },
+              {
+                "phase": 2,
+                "unique": 19,
+                "ff_share": 0.0,
+                "top": [
+                  {
+                    "value": 15,
+                    "count": 34
+                  },
+                  {
+                    "value": 19,
+                    "count": 19
+                  },
+                  {
+                    "value": 20,
+                    "count": 19
+                  },
+                  {
+                    "value": 18,
+                    "count": 16
+                  }
+                ]
+              }
+            ],
+            "highest_unique_phase": 2,
+            "non_ff_count_guess": 164
+          },
+          "note": "492-byte / 164 non-FF measurement is structure only; not a LUT or constant-table proof"
+        }
+      ],
+      "head_tail": {
+        "head": [
+          255,
+          255,
+          15,
+          255,
+          255,
+          15,
+          255,
+          255,
+          15,
+          255,
+          255,
+          15,
+          255,
+          255,
+          15,
+          255
+        ],
+        "tail": [
+          11,
+          255,
+          255,
+          11,
+          255,
+          255,
+          13,
+          255,
+          255,
+          14,
+          255,
+          255,
+          13,
+          255,
+          255,
+          14
+        ],
+        "offset4_int32": -61441,
+        "offset8_int32": 268435215,
+        "offset0_int32": -15728641
+      }
+    },
+    {
+      "id": "bornbeast_alpha_tga",
+      "kind": "tga",
+      "role": "Alpha TGA (filename != shader role)",
+      "logical_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "loose_rel": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "n03_reuse": "N03-A",
+      "loose_present": true,
+      "loose_size": 3145772,
+      "loose_sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+      "loose_md5": "be831acca67173e3644d91b2b94064cb",
+      "prior_sha_records": [
+        {
+          "source": "n03a_confirmed_relations",
+          "sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+          "rez_path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "inventory_relative_path": "data/rf017/ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA"
+        }
+      ],
+      "copies": [
+        {
+          "archive": "rez/rf017.rez",
+          "abs": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+          "hit": true,
+          "full_path": "AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+          "data_offset": 115944226,
+          "entry_size": 3145772,
+          "actual_bytes": 3145772,
+          "directory_md5": "65CE99F875470168CED5C40386F450AA",
+          "computed_md5": "be831acca67173e3644d91b2b94064cb",
+          "directory_md5_matches_computed": false,
+          "raw_sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+          "raw_equals_loose": true,
+          "md5_semantics": "directory_md5 and computed_md5 recorded separately; mismatch is not interpreted as codec"
+        },
+        {
+          "archive": "rez2/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 5426,
+          "index_error": null
+        },
+        {
+          "archive": "rez3/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6818,
+          "index_error": null
+        },
+        {
+          "archive": "rez4/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 8288,
+          "index_error": null
+        },
+        {
+          "archive": "rez5/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 7824,
+          "index_error": null
+        },
+        {
+          "archive": "rez6/RF017.REZ",
+          "hit": false,
+          "archive_file_count": 6260,
+          "index_error": null
+        }
+      ],
+      "copy_sha_unique_count": 1,
+      "all_hits_equal_loose": true,
+      "header_prefix": [
+        255,
+        0,
+        255,
+        255,
+        0,
+        255,
+        255,
+        0,
+        255,
+        255,
+        0,
+        255,
+        255,
+        0,
+        255,
+        255
+      ],
+      "branches": [
+        {
+          "branch": "raw_read",
+          "precondition": "bytes as stored",
+          "input_sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+          "tga_header": null,
+          "ok": false,
+          "reason": "implausible type fields (cmap=0 type=255)"
+        },
+        {
+          "branch": "inserted_footer_header_repair",
+          "precondition": "TRUEVISION-XFILE inserted footer/header",
+          "ok": true,
+          "reason": null,
+          "input_sha256": "40b2c94361b5db58edffb27b8b8aa457667eceb9eb27848135cfee0c17992a37",
+          "output_sha256": "2ef057090a8bc4c264056668a983ac8d2a73455c2a157f92733132382443707f",
+          "repaired_size": 3145746,
+          "tga_header": {
+            "id_length": 0,
+            "color_map_type": 0,
+            "image_type": 2,
+            "width": 1024,
+            "height": 1024,
+            "pixel_depth": 24,
+            "descriptor": 0
+          },
+          "repair_detail": {
+            "signature_offset": 886830,
+            "footer_offset": 886822,
+            "header_offset": 886848,
+            "image_data_offset": 18,
+            "source_pixel_bytes": 3,
+            "pixel_bytes": 3145728,
+            "repaired_total": 3145746,
+            "available_pixel_bytes": 3145728
+          },
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/previews/bornbeast_alpha_tga_repaired.png",
+          "note": "repair success is TGA container evidence, not DTX albedo and not shader-role proof"
+        }
+      ],
+      "head_tail": {
+        "head": [
+          255,
+          0,
+          255,
+          255,
+          0,
+          255,
+          255,
+          0,
+          255,
+          255,
+          0,
+          255,
+          255,
+          0,
+          255,
+          255
+        ],
+        "tail": [
+          255,
+          255,
+          4,
+          255,
+          255,
+          5,
+          255,
+          255,
+          4,
+          255,
+          255,
+          2,
+          255,
+          255,
+          3,
+          255
+        ],
+        "offset4_int32": 16776960,
+        "offset8_int32": -16711681,
+        "offset0_int32": -65281
+      }
+    }
+  ],
+  "failure_layers": {
+    "provenance": "QV DTX logical path has distinct copies: rez/rf017.rez 32932B sha=ea99c7101708; rez2/RF017.REZ 524452B sha=73a954f8540c",
+    "wrapper": "LZMA/LTC preconditions not met on the five DTX",
+    "header": "Jupiter magic and RezExtract swap failed on the five DTX",
+    "dtx_pixels": "rez2 QV DTX header+payload decoded as Jupiter DXT1 1024x1024; PV and rez/ QV still unsupported",
+    "tga": "inserted-header repair recovered a legal TGA",
+    "cfg": "phase structure recorded; semantics OPEN"
+  },
+  "p4_m01": "INCOMPLETE",
+  "result": "DECODE_RECOVERED_BINDING_OPEN"
+}

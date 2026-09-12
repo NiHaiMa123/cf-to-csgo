@@ -1,0 +1,37 @@
+{
+  "generated_at_utc": "2026-09-12T09:17:54.024+00:00",
+  "sources": [
+    {
+      "name": "no-lith/RezExtract",
+      "commit": "b3f87a9c731c0bbc1900da2fd37e41b9a02e1e63",
+      "path": "src/rez.cpp",
+      "used_for": "DTX extract option swaps 4-byte fields at offset 4 and 8",
+      "limit": "swap only; BornBeast PV/QV int32 at 4 and 8 are not -2/-3/-5"
+    },
+    {
+      "name": "YoungFine0825/LTB2FBX",
+      "commit": "06d749d56d6c929ba6c538cc26aa11cc1f7f1566",
+      "path": "ThirdParty/lithtech/runtime/shared/dtxmgr.cpp",
+      "used_for": "dtx_Create resource type / version / mip range gates",
+      "limit": "not a 2026 CF runtime proof"
+    },
+    {
+      "name": "iQuitt/Vortigaunt",
+      "commit": "d739d1f900c261fc1ae67e11b436410084dda1aa",
+      "path": "ThirdParty/lithtech/runtime/shared/dtxmgr.cpp",
+      "used_for": "same lithtech loader as LTB2FBX",
+      "limit": "not an independent second format"
+    },
+    {
+      "name": "this repo CFRezManager DtxThumbnailDecoder",
+      "path": "CFRezManager/Decoders/Images/DtxThumbnailDecoder.cs",
+      "used_for": "repo decoder + --decode-image",
+      "limit": "standard Jupiter magic only; 0/N on the seven CF samples is tool-unsupported, not official CF proof"
+    },
+    {
+      "name": "this repo TgaThumbnailDecoder repair",
+      "path": "scripts/material_recovery/r1_tga_repair.py",
+      "used_for": "inserted TRUEVISION footer/header repair"
+    }
+  ]
+}

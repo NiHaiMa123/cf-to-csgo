@@ -12,10 +12,10 @@ Date captured                 : 2026-09-12
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
-Current executor task         : P4-M01-N05-A (offline decoder / provenance audit)
-Last completed task           : P4-M01-N04-F
-Last executor evidence commit : 729c3a3dd8d31ccbc2fc2503c386b6d9a3fdbef0
-State                         : ACTIVE / OFFLINE_RESEARCH_READY
+Current executor task         : NONE
+Last completed task           : P4-M01-N05-A
+Last executor evidence commit : pending this push
+State                         : WAITING_REVIEW / DECODE_RECOVERED_BINDING_OPEN
 ```
 
 ## 0.1 已钉死
@@ -32,31 +32,29 @@ State                         : ACTIVE / OFFLINE_RESEARCH_READY
 ## 0.2 当前任务
 
 ```text
-Task ID : P4-M01-N05-A
-State   : ACTIVE
-Goal    : 用有依据的离线解码与输入溯源，区分工具不支持、容器未还原、选错资源、真实标量数据
-Scope   : 一轮小样本实验；完成后交回 Review
+Task ID : NONE
+State   : WAITING_REVIEW
+Last    : P4-M01-N05-A
+Result  : DECODE_RECOVERED_BINDING_OPEN
 ```
 
-2026-09-12 用户要求重新分析可尝试路径并更新计划。本轮 Planner 已完成联网源码核查与既有证据审计；以下是交给下一轮 Executor 的任务，**尚未执行/验收**。N04-F 的进程读取路线继续暂停，离线研究恢复。
+Executor 已完成 N05-A，**尚未 Review / 尚未写入 §4 冻结**。没有下一轮执行单。
 
-**输入与边界**：
+N05-A 证据：
 
-- 固定 5 个 DTX：BornBeast PV / QV、RoyalDragon PV / SpecularMap、`PV-DualDE_GreenVein_S.DTX`；沿用 N03-H 的 exact path。另取 BornBeast CFG 和已修复过的 Alpha TGA 作跨格式对照，共 7 个真实输入。
-- 复用 N03-A / N03-C / N03-H 的 inventory、exact-path REZ entry 与 SHA。输入来自已有本机资源；所有 raw / normalized binary 保持 local-only。
-- 公开实现按 §0.4 的源码版本固定。审计或编译可读源码，不执行来源不明的工具包；不启动游戏、不附加进程。
+- `scripts/material_recovery/n05a_decoder_provenance_audit.py`
+- `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/`
 
-**执行顺序**：
+要点（待 Review 接受后才能升格冻结）：
 
-1. 建立输入表：logical path、archive path、entry offset/size、raw SHA256、已有 loose SHA256、目录 MD5 与实算 MD5（分别记录，不预设 MD5 语义）。从已确认的 entry 只读复取，验证 raw/loose 是否一致；保留全部同路径副本，不能默认 `rez/` 比 `rez2/` 权威。N03-A 已有 BornBeast raw/loose 相等证据，优先复用，差异才展开。
-2. 先验证工具：构造两个自有小型标准 DTX（已知 RGBA 和 DXT1 色块），检查参考 decoder 和 repo decoder 的尺寸、通道、alpha、像素输出。再从现有索引最多选 5 个带合法头的本机 DTX，找到一个可复现正例或明确记为 `NO_CURRENT_CLIENT_CONTROL`。合成正例只证明标准格式实现；同源的 LTB2FBX / Vortigaunt 不算两份独立格式证据。
-3. 对 7 个真实输入仅测试有来源的变换：原始读取、已验证 wrapper/LZMA（满足格式条件时）、RezExtract 的 DTX offset 4/8 四字节交换，以及已有 TGA inserted-header repair。每个分支写前置条件、输入输出 SHA、头字段、BPP、尺寸、mip/section 范围、失败原因。**本轮 Planner 已确认 BornBeast PV/QV 的 offset 4 与 8 都不是 -2/-3/-5，单纯交换不能修好这两个样本**；将其作为快速负对照，不重复猜数百种布局。
-4. 对仍不能解的 DTX/CFG，比较三字节相位、size、头尾和跨格式结构；只有新源码/结构证据支持时才增加一个明确的 CF variant 假设。`524452 = 164 + 524288` 同时符合多个图像容量组合，不能用 size-fit 直接定 codec。CFG 的 492 字节/164 个有效值也不能自动定为 LUT 或常量表。
-5. 若恢复出可验证像素，用既有 local CF UV 做诊断预览，记录颜色、alpha 与枪件对应关系。预览可辨认只是中间结果，不能替代实际 binding / shader semantics。若未恢复，则按失败层级报告，停止本轮；不自动继续 N05-B、不升级到 dump。
+- 合成 Jupiter DTX（RGBA32 / DXT1 16×16）正例通过；`data/rf017/ModelTextures` 3258 个本机 DTX 无合法头对照 → `NO_CURRENT_CLIENT_CONTROL`。
+- inventory / `rez/` 的 BornBeast PV、QV 以及 RoyalDragon / GreenVein 对照仍不是 -2/-3/-5；LZMA/LTC 前置不满足；RezExtract 4/8 交换不能修好这些副本。
+- **同一 QV logical path 有两份副本**：`rez/rf017.rez` `WEAPONS/QV-M4A1_S_BornBeast.DTX` = 32932 B，SHA `ea99c710…`，等于 loose；`rez2/RF017.REZ` 同路径 = 524452 B，SHA `73a954f8…`，标准 Jupiter DTX version -5，DXT1 1024×1024，header 164 + payload 524288。python 与 CFRezManager 都能解出枪件 atlas。
+- 这是 `SkinFileName` / QV，不是 `PViewSkinFileName` / PV。PV DTX 仍未解。runtime 是否加载 `rez2` 副本未证。未把 QV 图套到 PV mesh。P4-M01 仍为 INCOMPLETE。
 
-**交付**：`scripts/material_recovery/n05a_decoder_provenance_audit.py`（或同职责的最小源码工具）和 `work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n05a_decoder_audit/` 下的 `report.md`、`sample_matrix.json`、`reference_sources.json`。报告必须带复现命令、代码版本、正负对照、失败分支和资源来源；只提交允许的源码、摘要及必要诊断预览，raw CF/第三方样本不入 Git。
+N04-F 进程读取路线继续暂停。不自动开 N05-B。
 
-**本轮结果只选其一**：
+N05-A 结果表（Review 用）：
 
 | 结果 | 验收含义 | Review 后可考虑的下一步 |
 |---|---|---|
@@ -65,7 +63,7 @@ Scope   : 一轮小样本实验；完成后交回 Review
 | `REFERENCE_DECODERS_UNSUPPORTED` | 正例通过，但声明的真实样本/变换未通过 | 转路线 B；需要新副本时再用 C |
 | `CONTROL_OR_TOOLCHAIN_BLOCKED` | 未能建立可信对照或源码工具不可构建 | 记录具体依赖，不能把工具失败算资源不存在 |
 
-所有分支均保持 `P4-M01 = INCOMPLETE`，完成后 scoped commit + push `master` 并 STOP，等待 Review。
+本轮已选 `DECODE_RECOVERED_BINDING_OPEN`。P4-M01 仍为 INCOMPLETE。等待 Review。
 
 ## 0.3 禁止
 
@@ -78,7 +76,7 @@ Scope   : 一轮小样本实验；完成后交回 Review
 
 **判断**：现在缺的是三层不同证据：①正确字节/codec，②资源到 mesh/piece/sampler 的绑定，③渲染语义。N04-F 只堵住 packed consumer 的进程读取；N03-H 没有排除所有 CF 解码方式；N04-C 只读了 FXO 名称，没有分析指令。不能把三层问题都压到“先取得内存 dump”上。
 
-以下为规划候选，不是已验证的当前 CF 行为。当前只激活 §0.2 的 N05-A。
+以下为规划候选，不是已验证的当前 CF 行为。N05-A 已执行，§0.2 现为 WAITING_REVIEW。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
