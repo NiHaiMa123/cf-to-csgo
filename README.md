@@ -8,16 +8,16 @@
 
 # 1. 先看这 4 个 Markdown
 
-根目录只保留 4 个职责明确的 Markdown：
+根目录 Markdown：
 
 ```text
 README.md  项目介绍 + 文档职责 + 领导 Agent / 执行 Agent 协作方式
 AGENTS.md  只规定 Git 操作与本地文件保护
-plan.md    静态长期蓝图：完整 pipeline、Gate、已冻结事实、关键技术结论
-task.md    动态当前任务：一轮可独立 Review 的小执行单元
+plan.md    蓝图 + 冻结事实 + Gate + §0 当前状态/当前任务
+task.md    短指针，指向 plan.md §0（已与 plan 合并）
 ```
 
-不要把长期计划、当前任务、Git 规则和逐轮 Review 混在同一个文件里。
+当前进度和下一轮任务只维护在 `plan.md` §0，不要再写一份平行的执行单。
 
 ---
 
@@ -28,11 +28,11 @@ task.md    动态当前任务：一轮可独立 Review 的小执行单元
 关键原则：
 
 ```text
-plan.md = 已确认的长期地图和冻结事实
-task.md = 只给 Executor 当前这一小轮要完成的事情
+plan.md §0 = 当前状态 + 当前一轮任务（或 NONE / STOP）
+plan.md 其余 = 已确认的长期地图和冻结事实
 ```
 
-`task.md` 不应该覆盖一个大阶段的所有可能工作。一个 task 应尽量是：
+`plan.md` §0.2 的 ACTIVE 任务不应该覆盖一个大阶段的所有可能工作。一个 task 应尽量是：
 
 ```text
 范围明确
@@ -41,7 +41,7 @@ task.md = 只给 Executor 当前这一小轮要完成的事情
 -> 完成后值得领导 Agent 单独 Review
 ```
 
-Executor 完成一轮 `task.md` 后必须停止并交回 Review，不自行连续执行后续阶段。
+Executor 完成 `plan.md` §0.2 的一轮任务后必须停止并交回 Review，不自行连续执行后续阶段。
 
 ---
 
@@ -53,14 +53,12 @@ Executor 完成一轮 `task.md` 后必须停止并交回 Review，不自行连�
 
 ```text
 1. 读取 README.md
-2. 读取 plan.md
-3. 读取当前 task.md
-4. 读取最新 executor commit / code / evidence
-5. Review 本轮结果
-6. 判断哪些结果可以正式冻结
-7. 如有新的长期已确认事实，更新 plan.md
-8. 根据 Review 结果重写下一轮 task.md
-9. push master
+2. 读取 plan.md（先 §0，再冻结节）
+3. 读取最新 executor commit / code / evidence
+4. Review 本轮结果
+5. 判断哪些结果可以正式冻结进 plan.md
+6. 更新 plan.md §0（状态 + 下一轮 ACTIVE 任务或 NONE）
+7. push master
 ```
 
 `plan.md` 只写已经接受的长期信息，例如：
@@ -74,7 +72,7 @@ Gate / acceptance criteria
 长期 blocker / dependency
 ```
 
-不要把尚未 Review 的 executor 猜测、临时路线或下一轮操作写进 `plan.md`。
+尚未 Review 的猜测不要写进冻结节。下一轮操作只写在 `plan.md` §0.2。
 
 ---
 
@@ -87,16 +85,17 @@ Gate / acceptance criteria
 ```text
 README.md
 -> AGENTS.md
--> plan.md
--> task.md
+-> plan.md §0
+-> plan.md 其余（背景）
 ```
 
 执行 Agent：
 
 ```text
 理解 plan 的长期背景
--> 只执行当前 task.md
--> 在 task 给出的范围内自主选择实现路线
+-> 只执行 plan.md §0.2 的 ACTIVE 任务
+-> §0.2 为 NONE 则 STOP
+-> 在任务范围内自主选择实现路线
 -> 产出代码 / report / evidence
 -> 精确 commit + push master
 -> 返回 commit SHA 和结果摘要
@@ -120,16 +119,16 @@ Executor 不负责：
 
 ```text
 领导 Agent
-  read plan + task + latest evidence
+  read plan.md §0 + latest evidence
   -> Review
-  -> freeze accepted facts into plan.md when needed
-  -> write ONE next review-sized task.md
+  -> freeze accepted facts into plan.md
+  -> write ONE next review-sized task into plan.md §0.2 (or NONE)
   -> push master
 
 执行 Agent
   pull master
-  -> read README + AGENTS + plan + task
-  -> execute ONE task
+  -> read README + AGENTS + plan.md §0
+  -> execute ONE ACTIVE task
   -> commit code/evidence
   -> push master
   -> STOP
@@ -137,7 +136,7 @@ Executor 不负责：
 领导 Agent
   re-read latest master
   -> Review
-  -> update plan/task
+  -> update plan.md §0
 ```
 
 因此即使更换 Planner 或 Executor，也不依赖聊天记忆；最新 `master` 足以恢复上下文。
@@ -160,27 +159,21 @@ CF 原始资源
 -> Inspect / IK / CF original animation/sound enhancements
 ```
 
-详细 pipeline、已完成 Gate、冻结 commit、N01/DTX/TGA/CFG 关键结论见 [`plan.md`](plan.md)。
-
-当前执行内容只看 [`task.md`](task.md)。
+详细 pipeline、已完成 Gate、冻结 commit、以及 **当前状态/当前任务** 见 [`plan.md`](plan.md) **§0**。
 
 ---
 
 # 7. 当前长期技术状态
 
-```text
-CF weapon -> Source 1 -> MIGI baseline = PASS / FROZEN
-BornBeast runtime REZ payload identity = ACCEPTED
-BornBeast consumer path                = ACCEPTED (packed BF005, M4A1-黑骑士)
-Bute FileName graph (PV/QV/RS)         = ACCEPTED
-TGA/CFG on Weapon record               = SCOPED_NEGATIVE
-LTB piece extra texture filenames      = SCOPED_NEGATIVE (nNumTextures=0)
-shared RS                              = TEXTURE1-only, no TGA/CFG strings
-BornBeast native material closure      = INCOMPLETE
-P5 final Leishen flow                  = waiting for native material method
-```
+活状态只维护在 [`plan.md`](plan.md) **§0**。这里只留不会每周改的冻结摘要：
 
-README 不复制动态 task 状态，避免入口文档频繁过期。
+```text
+P4 Source 1 / MIGI baseline            = PASS / FROZEN
+P4-M01 native material                 = INCOMPLETE
+native gun-atlas DTX                   = SCOPED_NEGATIVE
+WeaponShader CFG code consumer         = BLOCKED (.tvm0 + ACE VM_READ denied)
+P5 雷神 identity                       = T01 图鉴已确认；等原生材质方法
+```
 
 ---
 
@@ -220,8 +213,7 @@ TASK_SPEC_REWORK_3.md
 正确归属：
 
 ```text
-长期事实 / pipeline / Gate / frozen conclusion -> plan.md
-当前一轮执行任务                           -> task.md
+长期事实 / pipeline / Gate / 当前状态与任务 -> plan.md
 Git 操作                                    -> AGENTS.md
 入口与角色说明                              -> README.md
 运行细节 / evidence                         -> work/**

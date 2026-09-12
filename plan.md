@@ -1,8 +1,62 @@
-# CF 武器 -> CS:GO Legacy Source 1 — 静态项目蓝图
+# CF 武器 -> CS:GO Legacy Source 1 — 蓝图与当前任务
 
-> 本文件定义长期稳定的 **pipeline、阶段关系、Gate、已冻结事实和关键技术结论**。  
-> 它不是当前任务单，不应因为每一轮执行而频繁改写。  
-> 当前下一步永远看 [`task.md`](task.md)。Git 操作规则看 [`AGENTS.md`](AGENTS.md)。
+> 本文件同时是 **长期 pipeline / Gate / 冻结事实** 和 **当前状态与当前任务**。  
+> 原独立 `task.md` 已并入 **§0**。Git 规则看 [`AGENTS.md`](AGENTS.md)，角色看 [`README.md`](README.md)。
+
+---
+
+# 0. 现在的情况
+
+```text
+Date captured                 : 2026-09-12
+P4 Source 1 / MIGI baseline   : PASS / FROZEN
+P4-M01 native material        : INCOMPLETE
+P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
+Current executor task         : NONE
+Last completed task           : P4-M01-N04-F
+Last commit                   : 729c3a3dd8d31ccbc2fc2503c386b6d9a3fdbef0
+State                         : STOP / AWAITING_USER
+```
+
+## 0.1 已钉死
+
+- P4 证明 CF LTB 能进 Source 1 / MIGI（M4A4 槽）。Prototype **不是**最终雷神，也 **不是**原生材质。
+- 黑骑士 Bute 只绑 PV LTB + PV DTX + 共用 RS（TEXTURE1）。TGA/CFG 路径在 packed BF005 上是 0。
+- 本机 PV DTX（524452）是能量/标量层；战龙等同容器也是。QV 32932 解不出枪 atlas。没有 512×512 原生枪身图。
+- 网格 UV 按 512×512 枪件 atlas 排。CS1.6 / ComfyUI 只能当视觉对照，禁止当 P4-M01 final 像素。
+- `playerviewmesh.fxo` 有 Alpha/Normal/Specular/Emissive **槽名**，没有文件路径。
+- CShell 有 `modeltextures\SpecularMap\%s`（12 LEA，后期 `.dtx` 路线）。黑骑士没有 `SpecularMapName`。
+- `crossfire.exe` 明文岛：`MODELTEXTURES\Shader\WeaponShader\` + `.cfg`，**0 代码引用**。它是 stub，只导入 packed `crossfirebase.dll`（`.tvm0`）。
+- 磁盘 `crossfirebase.dll` 无 WeaponShader 明文。运行中 PID 33100 = `x64/crossfire.exe`。`OpenProcess(VM_READ)` = Win32 **5**。未绕过 ACE。
+
+## 0.2 当前任务
+
+```text
+Task ID : NONE
+State   : STOP
+```
+
+N04-F 已完成：`DUMP_ACCESS_DENIED`。没有下一轮 Executor 单，直到用户选定分叉：
+
+```text
+A. 停在原生 Gate
+   P4-M01 保持 INCOMPLETE；不脱壳、不对抗 ACE
+
+B. 能看的枪（非原生 PASS）
+   用已 UV 对齐的 CS1.6 atlas 出 VTF/VMT
+   明确 final_cf_material=false
+   禁止官网图鉴/AI 像素当 final
+
+C. 用户自己提供无 ACE 的内存映像
+   只扫 WeaponShader/%s.CFG；仍不分析 ACE
+```
+
+## 0.3 禁止
+
+- 不宣布 P4-M01 PASS
+- 不把 CS1.6 / ComfyUI / 图鉴当 native final
+- 不注入、不补丁、不驱动、不 NtRead 绕过 ACE
+- 不 git add `data/**`、CF `.exe/.dll/.fxo/.dmp`
 
 ---
 
@@ -1147,6 +1201,33 @@ P4-M01-N04-E = ACCEPTED / STATIC_ONLY_NO_PROCESS
 
 磁盘 `crossfirebase.dll` / `crossfire_x64base.dll` 为 `.tvm0`，0 WeaponShader token。当时无进程。
 
+## 4.25 N04-F freeze
+
+Review 接受提交：
+
+```text
+729c3a3dd8d31ccbc2fc2503c386b6d9a3fdbef0  P4-M01-N04-F
+P4-M01-N04-F = ACCEPTED / DUMP_ACCESS_DENIED
+```
+
+```text
+PID 33100 = D:\Program Files\CF(2)\x64\crossfire.exe
+PROCESS_QUERY_LIMITED_INFORMATION  ok
+PROCESS_VM_READ / SNAPMODULE       last_error 5
+no dump files
+```
+
+当前有效 closure 边界：
+
+```text
+native gun-atlas DTX                 SCOPED_NEGATIVE
+SpecularMap\%s (later-era .dtx)      STRUCTURALLY_VERIFIED in CShell
+WeaponShader CFG code consumer       BLOCKED (packed .tvm0 + ACE denies VM_READ)
+P4-M01                               INCOMPLETE
+```
+
+活状态以 **§0** 为准。
+
 ---
 
 ## P5-T01 — Official reference
@@ -1364,6 +1445,7 @@ ca8c2209541bb60f7b8cc6b7cfb4cca4715475f2  N04-B CShell LEAs SpecularMap\%s; Weap
 ee092c317e3cbd42fedd130f864d022b270ab0bd  N04-C playerviewmesh.fxo sampler slots, no paths
 d36bde10d3611c862fa49843cb28854fb4b75694  N04-D packed crossfire.exe stub; WeaponShader island only
 be3edd98f236ef3263b3f37af0d4e3809753c0b2  N04-E crossfirebase.dll .tvm0; no CF process
+729c3a3dd8d31ccbc2fc2503c386b6d9a3fdbef0  N04-F OpenProcess VM_READ denied (error 5)
 ```
 
 ---
@@ -1373,8 +1455,8 @@ be3edd98f236ef3263b3f37af0d4e3809753c0b2  N04-E crossfirebase.dll .tvm0; no CF p
 ```text
 README.md  项目介绍、角色分工、阅读入口
 AGENTS.md  只规定 Git 操作
-plan.md    本文件：长期 pipeline + 冻结事实 + Gate
-task.md    当前动态任务 + 可尝试实现路径 + 验收要求
+plan.md    本文件：§0 当前状态/当前任务 + 长期 pipeline + 冻结事实 + Gate
+task.md    短指针，指向 plan.md §0（不再单独维护执行单）
 ```
 
-领导/规划 Agent 在每轮 Review 后主要更新 `task.md`；只有 pipeline、Gate 或冻结事实发生长期变化时才更新 `plan.md`。
+领导/规划 Agent 每轮 Review 后更新 `plan.md` §0（当前状态与下一任务）。冻结事实写入对应 §4.x。Executor 只执行 §0.2 里的 ACTIVE 任务；§0.2 为 NONE 时 STOP。
