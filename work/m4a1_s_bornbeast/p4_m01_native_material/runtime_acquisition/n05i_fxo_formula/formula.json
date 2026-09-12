@@ -1,0 +1,435 @@
+{
+  "generated_at_utc": "2026-09-12T15:14:45.570853+00:00",
+  "task": "P4-M01-N05-I",
+  "result": "FXO_FORMULA_EXTRACTED",
+  "p4_m01": "INCOMPLETE",
+  "final_cf_material": false,
+  "n05h_user_gate": "IN_GAME_REPLACEMENT_CONFIRMED",
+  "source": "D:\\Program Files\\CF(2)\\rez\\Shader\\playerviewmesh.fxo",
+  "sha256": "d1672ba7e0a0f5b69e6a9520ec4ba0c6d4fb08b435aff1f3a3110af408bfb99c",
+  "n05e_sha256": "d1672ba7e0a0f5b69e6a9520ec4ba0c6d4fb08b435aff1f3a3110af408bfb99c",
+  "n05e_sha_match": true,
+  "ok": true,
+  "error": null,
+  "effect_disassembly": {
+    "ok": false,
+    "error": "0x8A809040",
+    "hresult": null
+  },
+  "unique_shader_count": 51,
+  "technique_count": 43,
+  "analysis": {
+    "cfg": {
+      "Textures": {
+        "SpecularMapName2": "M4A1_S_BornBeast_S.tga",
+        "EnvCubeMapName2": "Black_Shader03.dds",
+        "NormalMapName2": "M4A1_S_BornBeast_N.tga",
+        "AlphaMapName2": "M4A1_S_BornBeast_alpha.tga"
+      },
+      "Techniques": {
+        "DiffuseMappingEnabled": "1",
+        "SpecularMappingEnabled": "1",
+        "EnvCubeMappingEnabled": "1",
+        "NormalMappingEnabled": "1"
+      },
+      "Properties": {
+        "LightBrightness": "0.01",
+        "EnvCubeMapBrightness": "4",
+        "SpecularPower": "1",
+        "DiffuseBoost": "0.1",
+        "AmbientLightColor": "0.01",
+        "RefractionIndex": "0.01",
+        "ReflectionIndex": "0.9",
+        "EnvCubeUsage": "2",
+        "CubeMapTransformY": "-20"
+      }
+    },
+    "technique_hypothesis": {
+      "EnvCubeUsage": "2",
+      "AlphaMapName2_present": true,
+      "CubeMapTransformY": "-20",
+      "selected_technique_hypothesis": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+      "ps": "unique/126ad72626dc1d7f_ps.asm",
+      "reason": "Name-level only: EnvCubeUsage=2 matches AproxSnell+TransformedCube techniques; AlphaMapName2 present selects the Alpha variant. Not a CShell/runtime assignment proof.",
+      "grade": "HYPOTHESIS"
+    },
+    "observed_ps_formula": {
+      "shader": "unique/126ad72626dc1d7f_ps.asm",
+      "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+      "grade": "OBSERVED_ON_COMPILED_SHADER",
+      "samplers": {
+        "s0": "DiffuseMapSampler",
+        "s1": "SpecularMapSampler",
+        "s2": "CubeMapSampler",
+        "s3": "NormalMapSampler",
+        "s4": "AlphaMapSampler",
+        "s5": "MaskMapSampler"
+      },
+      "normal": "N = nrm(TBN * (2*NormalMap.xy-1) * NormalMappingFactor + vertexN)",
+      "half_lambert": "light = (abs(N·L * 0.5 + HalfLambertBase) ^ HalfLambertPower) * LightBrightness",
+      "diffuse": "diffuse_lit = DiffuseMap.rgb * DiffuseMappingFactor * (light + DiffuseBoost) + AmbientLightColor",
+      "specular_power": "preshader output exponent = SpecularPower * 0.25; PS pow uses that c3.x",
+      "specular": "spec = SpecularMap.rgb * pow(abs(spec_term), SpecularPower*0.25) * SpecularMappingFactor",
+      "cube_dir": "cubeDir = ReflectionIndex * reflect(TransformedLitDirection, N) + refract_term(RefractionIndex)",
+      "cube": "cube = texCUBE(CubeMap, cubeDir) * EnvCubeMapBrightness * EnvCubeMappingFactor",
+      "alpha_channels": {
+        "AlphaMap.r": "opacity * GlobalDiffuseAlpha -> oC0.w",
+        "AlphaMap.g": "multiplies spec before add",
+        "AlphaMap.b": "multiplies cube before add"
+      },
+      "compose": "out.rgb = diffuse_lit + spec * AlphaMap.g + cube * AlphaMap.b  (skipped if light rgb sum is 0)",
+      "not_source1": [
+        "SpecularPower*0.25 is not $phongexponent",
+        "Half-lambert is not VertexLitGeneric Lambert/phong",
+        "Snell/refract cube dir is not Source 1 $envmap"
+      ],
+      "ky_note": "Ky 3x3 is used by tPlayerViewMeshTexturePanning vertex shaders, not by this hypothesized technique.",
+      "cubemap_transform_y": "No shader uniform named CubeMapTransformY. TransformedCube PS uses TransformedLitDirection for the cube ray; CPU-side fill of that vector remains OPEN."
+    },
+    "candidate_techniques": [
+      {
+        "name": "tPlayerViewMesh",
+        "kind": {
+          "alpha": false,
+          "emsv": false,
+          "refract": false,
+          "aprox_snell": false,
+          "transformed_cube": false,
+          "ghost": false,
+          "panning": false,
+          "doll": false,
+          "candidate_for_bornbeast_cfg": true
+        },
+        "pass_count": 3,
+        "cfg_named_union": [
+          "AmbientLightColor",
+          "CubeMapSampler",
+          "DiffuseBoost",
+          "DiffuseMapSampler",
+          "DiffuseMappingFactor",
+          "EnvCubeMapBrightness",
+          "EnvCubeMappingFactor",
+          "LightBrightness",
+          "MapEnableState",
+          "NormalMapSampler",
+          "NormalMappingFactor",
+          "SpecularMapSampler",
+          "SpecularMappingFactor",
+          "SpecularPower"
+        ],
+        "passes": [
+          {
+            "name": "P0",
+            "vs": "unique/875b2bcb2d9b407b_vs.asm",
+            "ps": "unique/c656cfed81d124c5_ps.asm",
+            "vs_sha256": "875b2bcb2d9b407bfb8002f8d9a8f0126d19ede2812ebd7ca79aebf354a49d39",
+            "ps_sha256": "c656cfed81d124c584260e41c6fa657bf128feaeb2421a146591adae879f72b2"
+          },
+          {
+            "name": "P1",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/c656cfed81d124c5_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "c656cfed81d124c584260e41c6fa657bf128feaeb2421a146591adae879f72b2"
+          },
+          {
+            "name": "P2",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/c656cfed81d124c5_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "c656cfed81d124c584260e41c6fa657bf128feaeb2421a146591adae879f72b2"
+          }
+        ]
+      },
+      {
+        "name": "tPlayerViewMeshAproxSnell",
+        "kind": {
+          "alpha": false,
+          "emsv": false,
+          "refract": false,
+          "aprox_snell": true,
+          "transformed_cube": false,
+          "ghost": false,
+          "panning": false,
+          "doll": false,
+          "candidate_for_bornbeast_cfg": true
+        },
+        "pass_count": 3,
+        "cfg_named_union": [
+          "AmbientLightColor",
+          "CubeMapSampler",
+          "DiffuseBoost",
+          "DiffuseMapSampler",
+          "DiffuseMappingFactor",
+          "EnvCubeMapBrightness",
+          "EnvCubeMappingFactor",
+          "LightBrightness",
+          "MapEnableState",
+          "NormalMapSampler",
+          "NormalMappingFactor",
+          "ReflectionIndex",
+          "RefractionIndex",
+          "SpecularMapSampler",
+          "SpecularMappingFactor",
+          "SpecularPower"
+        ],
+        "passes": [
+          {
+            "name": "P0",
+            "vs": "unique/875b2bcb2d9b407b_vs.asm",
+            "ps": "unique/b54f90bb162fc91f_ps.asm",
+            "vs_sha256": "875b2bcb2d9b407bfb8002f8d9a8f0126d19ede2812ebd7ca79aebf354a49d39",
+            "ps_sha256": "b54f90bb162fc91f6a5a4b8899f25ccc71cba3fc4136b5c57c4c695b350b8d89"
+          },
+          {
+            "name": "P1",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/b54f90bb162fc91f_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "b54f90bb162fc91f6a5a4b8899f25ccc71cba3fc4136b5c57c4c695b350b8d89"
+          },
+          {
+            "name": "P2",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/b54f90bb162fc91f_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "b54f90bb162fc91f6a5a4b8899f25ccc71cba3fc4136b5c57c4c695b350b8d89"
+          }
+        ]
+      },
+      {
+        "name": "tPlayerViewMeshAproxSnellTransformedCube",
+        "kind": {
+          "alpha": false,
+          "emsv": false,
+          "refract": false,
+          "aprox_snell": true,
+          "transformed_cube": true,
+          "ghost": false,
+          "panning": false,
+          "doll": false,
+          "candidate_for_bornbeast_cfg": true
+        },
+        "pass_count": 3,
+        "cfg_named_union": [
+          "AmbientLightColor",
+          "CubeMapSampler",
+          "DiffuseBoost",
+          "DiffuseMapSampler",
+          "DiffuseMappingFactor",
+          "EnvCubeMapBrightness",
+          "EnvCubeMappingFactor",
+          "LightBrightness",
+          "MapEnableState",
+          "NormalMapSampler",
+          "NormalMappingFactor",
+          "ReflectionIndex",
+          "RefractionIndex",
+          "SpecularMapSampler",
+          "SpecularMappingFactor",
+          "SpecularPower"
+        ],
+        "passes": [
+          {
+            "name": "P0",
+            "vs": "unique/875b2bcb2d9b407b_vs.asm",
+            "ps": "unique/4651d228b07fcc98_ps.asm",
+            "vs_sha256": "875b2bcb2d9b407bfb8002f8d9a8f0126d19ede2812ebd7ca79aebf354a49d39",
+            "ps_sha256": "4651d228b07fcc982e9372bd6617ad1b62b402f2ce8f9350aa562c395ef11463"
+          },
+          {
+            "name": "P1",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/4651d228b07fcc98_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "4651d228b07fcc982e9372bd6617ad1b62b402f2ce8f9350aa562c395ef11463"
+          },
+          {
+            "name": "P2",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/4651d228b07fcc98_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "4651d228b07fcc982e9372bd6617ad1b62b402f2ce8f9350aa562c395ef11463"
+          }
+        ]
+      },
+      {
+        "name": "tPlayerViewMeshAlpha",
+        "kind": {
+          "alpha": true,
+          "emsv": false,
+          "refract": false,
+          "aprox_snell": false,
+          "transformed_cube": false,
+          "ghost": false,
+          "panning": false,
+          "doll": false,
+          "candidate_for_bornbeast_cfg": true
+        },
+        "pass_count": 3,
+        "cfg_named_union": [
+          "AlphaMapSampler",
+          "AmbientLightColor",
+          "CubeMapSampler",
+          "DiffuseBoost",
+          "DiffuseMapSampler",
+          "DiffuseMappingFactor",
+          "EnvCubeMapBrightness",
+          "EnvCubeMappingFactor",
+          "LightBrightness",
+          "MapEnableState",
+          "NormalMapSampler",
+          "NormalMappingFactor",
+          "SpecularMapSampler",
+          "SpecularMappingFactor",
+          "SpecularPower"
+        ],
+        "passes": [
+          {
+            "name": "P0",
+            "vs": "unique/875b2bcb2d9b407b_vs.asm",
+            "ps": "unique/5a5b52f339ac03a0_ps.asm",
+            "vs_sha256": "875b2bcb2d9b407bfb8002f8d9a8f0126d19ede2812ebd7ca79aebf354a49d39",
+            "ps_sha256": "5a5b52f339ac03a0b25309fe7728ab2963e9ed4356e0cef799c0a9d167196d45"
+          },
+          {
+            "name": "P1",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/5a5b52f339ac03a0_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "5a5b52f339ac03a0b25309fe7728ab2963e9ed4356e0cef799c0a9d167196d45"
+          },
+          {
+            "name": "P2",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/5a5b52f339ac03a0_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "5a5b52f339ac03a0b25309fe7728ab2963e9ed4356e0cef799c0a9d167196d45"
+          }
+        ]
+      },
+      {
+        "name": "tPlayerViewMeshAlphaAproxSnell",
+        "kind": {
+          "alpha": true,
+          "emsv": false,
+          "refract": false,
+          "aprox_snell": true,
+          "transformed_cube": false,
+          "ghost": false,
+          "panning": false,
+          "doll": false,
+          "candidate_for_bornbeast_cfg": true
+        },
+        "pass_count": 3,
+        "cfg_named_union": [
+          "AlphaMapSampler",
+          "AmbientLightColor",
+          "CubeMapSampler",
+          "DiffuseBoost",
+          "DiffuseMapSampler",
+          "DiffuseMappingFactor",
+          "EnvCubeMapBrightness",
+          "EnvCubeMappingFactor",
+          "LightBrightness",
+          "MapEnableState",
+          "NormalMapSampler",
+          "NormalMappingFactor",
+          "ReflectionIndex",
+          "RefractionIndex",
+          "SpecularMapSampler",
+          "SpecularMappingFactor",
+          "SpecularPower"
+        ],
+        "passes": [
+          {
+            "name": "P0",
+            "vs": "unique/875b2bcb2d9b407b_vs.asm",
+            "ps": "unique/1a2fb0f9a0fde0bc_ps.asm",
+            "vs_sha256": "875b2bcb2d9b407bfb8002f8d9a8f0126d19ede2812ebd7ca79aebf354a49d39",
+            "ps_sha256": "1a2fb0f9a0fde0bc335af538be2f5af6720f0114875cb5831b74dc897954603c"
+          },
+          {
+            "name": "P1",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/946fe8a9001b5cda_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "946fe8a9001b5cdaeaee1b3839fbeec4c4ccd1f6df0299385aaea516b076f5e8"
+          },
+          {
+            "name": "P2",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/946fe8a9001b5cda_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "946fe8a9001b5cdaeaee1b3839fbeec4c4ccd1f6df0299385aaea516b076f5e8"
+          }
+        ]
+      },
+      {
+        "name": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+        "kind": {
+          "alpha": true,
+          "emsv": false,
+          "refract": false,
+          "aprox_snell": true,
+          "transformed_cube": true,
+          "ghost": false,
+          "panning": false,
+          "doll": false,
+          "candidate_for_bornbeast_cfg": true
+        },
+        "pass_count": 3,
+        "cfg_named_union": [
+          "AlphaMapSampler",
+          "AmbientLightColor",
+          "CubeMapSampler",
+          "DiffuseBoost",
+          "DiffuseMapSampler",
+          "DiffuseMappingFactor",
+          "EnvCubeMapBrightness",
+          "EnvCubeMappingFactor",
+          "LightBrightness",
+          "MapEnableState",
+          "NormalMapSampler",
+          "NormalMappingFactor",
+          "ReflectionIndex",
+          "RefractionIndex",
+          "SpecularMapSampler",
+          "SpecularMappingFactor",
+          "SpecularPower"
+        ],
+        "passes": [
+          {
+            "name": "P0",
+            "vs": "unique/875b2bcb2d9b407b_vs.asm",
+            "ps": "unique/126ad72626dc1d7f_ps.asm",
+            "vs_sha256": "875b2bcb2d9b407bfb8002f8d9a8f0126d19ede2812ebd7ca79aebf354a49d39",
+            "ps_sha256": "126ad72626dc1d7f313894f7bc97602819e9bedb38b02aca75910a442fd464b3"
+          },
+          {
+            "name": "P1",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/126ad72626dc1d7f_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "126ad72626dc1d7f313894f7bc97602819e9bedb38b02aca75910a442fd464b3"
+          },
+          {
+            "name": "P2",
+            "vs": "unique/a589b5645953775a_vs.asm",
+            "ps": "unique/126ad72626dc1d7f_ps.asm",
+            "vs_sha256": "a589b5645953775a82792ca01f4028d3f5c7c649be4b47ba263b624b20d6b5b6",
+            "ps_sha256": "126ad72626dc1d7f313894f7bc97602819e9bedb38b02aca75910a442fd464b3"
+          }
+        ]
+      }
+    ],
+    "unique_shader_count": 51
+  },
+  "limitations": [
+    "D3DX disassembly is the compiled shader, not the original HLSL.",
+    "Technique selection from EnvCubeUsage=2 is a name-level hypothesis.",
+    "CFG scalars are still not Source 1 phong/envmap numbers.",
+    "This harness does not attach CrossFire or ACE.",
+    "Raw FXO stays in data/n05i_fxo and is not committed."
+  ]
+}

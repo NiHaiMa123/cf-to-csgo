@@ -85,6 +85,14 @@ public partial class App : System.Windows.Application
             return;
         }
 
+        if (FxoDisassembleCommand.IsInvocation(e.Args))
+        {
+            ShutdownMode = System.Windows.ShutdownMode.OnExplicitShutdown;
+            int exitCode = FxoDisassembleCommand.Run(e.Args);
+            Shutdown(exitCode);
+            return;
+        }
+
         if (PreviewTool.IsPreviewInvocation(e.Args))
         {
             LocalizedText.UseSavedLanguage();
