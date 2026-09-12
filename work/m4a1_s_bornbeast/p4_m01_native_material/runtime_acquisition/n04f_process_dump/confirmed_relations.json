@@ -1,0 +1,18 @@
+{
+  "schema": "cf2.p4m01.n04f-process-dump.v1",
+  "task_id": "P4-M01-N04-F",
+  "status": "DUMP_ACCESS_DENIED",
+  "completion_state": "C",
+  "process": {
+    "pid": 33100,
+    "image": "D:\\Program Files\\CF(2)\\x64\\crossfire.exe",
+    "openprocess_vm_read": {"ok": false, "last_error": 5},
+    "openprocess_query_limited": {"ok": true}
+  },
+  "dumped_modules": [],
+  "cannot_conclude": [
+    "P4-M01 PASS",
+    "in-memory WeaponShader/%s.CFG",
+    "ACE internals"
+  ]
+}

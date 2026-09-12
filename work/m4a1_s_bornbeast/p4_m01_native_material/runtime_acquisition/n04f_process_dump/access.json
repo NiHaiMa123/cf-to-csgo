@@ -1,0 +1,12 @@
+{
+  "pid": 33100,
+  "image": "D:\\Program Files\\CF(2)\\x64\\crossfire.exe",
+  "is_admin": false,
+  "openprocess": [
+    {"mask": "PROCESS_VM_READ", "ok": false, "last_error": 5},
+    {"mask": "PROCESS_QUERY_INFORMATION", "ok": false, "last_error": 5},
+    {"mask": "PROCESS_QUERY_LIMITED_INFORMATION", "ok": true, "last_error": 0},
+    {"mask": "TH32CS_SNAPMODULE", "ok": false, "last_error": 5}
+  ],
+  "dumped": []
+}

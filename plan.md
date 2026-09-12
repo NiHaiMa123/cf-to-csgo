@@ -1136,6 +1136,17 @@ WeaponShader CFG code consumer       OPEN (N04-E)
 P4-M01                               INCOMPLETE
 ```
 
+## 4.24 N04-E freeze
+
+Review 接受提交：
+
+```text
+be3edd98f236ef3263b3f37af0d4e3809753c0b2  P4-M01-N04-E
+P4-M01-N04-E = ACCEPTED / STATIC_ONLY_NO_PROCESS
+```
+
+磁盘 `crossfirebase.dll` / `crossfire_x64base.dll` 为 `.tvm0`，0 WeaponShader token。当时无进程。
+
 ---
 
 ## P5-T01 — Official reference
@@ -1297,6 +1308,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04b_pe_xref/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04c_playerviewmesh_fxo/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04d_packed_crossfire_static/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04e_vm_dump/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04f_process_dump/
 ```
 
 ## External reference implementation / positive control
@@ -1351,6 +1363,7 @@ d770a0a2c46a3c02f910fb28034635adac95b458  N04-A CShell SpecularMap\%s; WeaponSha
 ca8c2209541bb60f7b8cc6b7cfb4cca4715475f2  N04-B CShell LEAs SpecularMap\%s; WeaponShader 0 xref
 ee092c317e3cbd42fedd130f864d022b270ab0bd  N04-C playerviewmesh.fxo sampler slots, no paths
 d36bde10d3611c862fa49843cb28854fb4b75694  N04-D packed crossfire.exe stub; WeaponShader island only
+be3edd98f236ef3263b3f37af0d4e3809753c0b2  N04-E crossfirebase.dll .tvm0; no CF process
 ```
 
 ---
