@@ -7,80 +7,72 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N04-B
-Title: Bounded RIP-relative xref of N04-A format/prefix strings
+Task ID: P4-M01-N04-C
+Title: Read-only metadata/strings from playerviewmesh.fxo
 State: ACTIVE
 Parent: P4-M01 Native Material Recovery
-Depends on: P4-M01-N04-A
+Depends on: P4-M01-N04-B
 ```
 
 # 2. Previous execution status
 
-N04-A = FORMAT_STRING_HIT：
-
-```text
-CShell_x64.dll   modeltextures\SpecularMap\%s          RVA 0x54C8F38
-crossfire.exe    MODELTEXTURES\Shader\WeaponShader\    RVA 0x5A12A0
-```
-
-CShell 另有 Bute 字段名表。没有 `WeaponShader\%s.CFG`。未 xref。
+N04-B = XREF_FOUND_UNRELATED：CShell 对 `SpecularMap\%s` 有 12 条 LEA，旁边是 `playerview\`，不是 Bute 字段名。`WeaponShader\` 前缀在 packed `crossfire.exe` 里 **0 xref**。不脱壳。
 
 # 3. Current goal
 
-这两句明文有没有 **代码引用**，引用点附近是不是 Bute 皮肤加载。
+只读第一人称 mesh shader 的 **常量/采样器名**，看它有没有 CFG/TGA/WeaponShader 路径。
 
 回答：
 
 ```text
-SpecularMap\%s
-  -> LEA/RIP xref count, nearby strings
-WeaponShader\ prefix
-  -> LEA/RIP xref count, nearby strings
-near StandardName / PViewSkinFileName / SpecularMapName ?
+playerviewmesh.fxo
+  -> DXBC? LZMA? printable sampler/cbuffer names?
+  -> WeaponShader / AlphaMap / SpecularMap / .CFG / .TGA tokens?
 ```
 
 # 4. Required Work
 
-只读这两个本地 PE（SHA 必须对上 N04-A）：
+只读本机：
 
 ```text
-x64/CShell_x64.dll
-x64/crossfire.exe
+D:\Program Files\CF(2)\rez\Shader\playerviewmesh.fxo
 ```
 
-只对 N04-A 已记录的两个 RVA 做：
+对照（可选，同一目录，帮助区分通用 vs 武器专用）：
 
-1. x64 RIP-relative LEA（及 `mov reg,[rip+rel]` 指针表）xref；
-2. 每个 xref 点 ±0x100 内其它 RIP-relative 字符串；
-3. 目标串在 .rdata 的 ±512 字节 C-string 簇（帮助看是路径表还是 shader slot 表）。
+```text
+rez/Shader/playermesh.fxo
+```
 
-对照公开 Jupiter：记下「有/无 WeaponShader 路径构造」，不要大段贴源码。
+允许：LZMA-alone 外壳剥开、ASCII/UTF-16 字符串、DXBC magic、token 命中表。
 
-输出：`work/.../n04b_pe_xref/`
+禁止：还原完整 HLSL、写 PoC/exploit、反编译指令流进仓库、提交 .fxo。
+
+输出：`work/.../n04c_playerviewmesh_fxo/`
 
 # 5. Forbidden
 
 - 不宣布 P4-M01 PASS；
-- 不附加调试器 / 不注入 / 不 dump 运行中 CF；
-- 不碰 ACE；不脱壳 `crossfirebase.dll`；
-- 不把整文件反编译进 Git；不提交 PE；
-- 不扩大到 272 DLL 或 FXO；
-- 不把 `M4A1_S_BornBeast` 粒子名当材质绑定。
+- 不脱壳 `crossfire.exe` / `crossfirebase.dll`；
+- 不附加调试器；
+- 不碰 ACE；
+- 不扫全部 14 个 FXO（最多 playerviewmesh + playermesh 对照）；
+- 不 git add .fxo/.exe/.dll。
 
 # 6. Completion State
 
 ```text
-A. XREF_NEAR_BUTE_KEYS
-   xref 点附近出现 StandardName / PViewSkinFileName / SpecularMapName
+A. FXO_NAMES_WEAPONSHADER
+   常量/采样器名含 WeaponShader 或 AlphaMap/CFG/TGA 路径
 
-B. XREF_FOUND_UNRELATED
-   有代码 xref，但不靠近这些 Bute key
+B. FXO_NAMES_GENERIC
+   有 tPlayerViewMesh / 贴图槽名，但没有 CFG/TGA 路径
 
-C. NO_XREF
-   明文在，但没有 RIP-relative 代码引用
+C. FXO_NO_USEFUL_STRINGS
+   解不开或没有相关明文
 
 D. REWORK_REQUIRED
-   读不到 PE 或 SHA 对不上
+   读不到 listed fxo
 ```
 
 完成后 STOP。

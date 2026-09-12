@@ -1061,6 +1061,32 @@ code xref / consumer function        OPEN (N04-B)
 P4-M01                               INCOMPLETE
 ```
 
+## 4.21 N04-B freeze
+
+Review 接受提交：
+
+```text
+ca8c2209541bb60f7b8cc6b7cfb4cca4715475f2  P4-M01-N04-B
+P4-M01-N04-B = ACCEPTED / XREF_FOUND_UNRELATED
+```
+
+```text
+CShell_x64.dll  modeltextures\SpecularMap\%s   12 LEA
+                nearby: modeltextures\playerview\
+                not near Bute field names
+crossfire.exe   WeaponShader\ prefix           0 RIP xref (packed .std)
+```
+
+这是后期 SpecularMap `.dtx` 拼接，不是黑骑士 TGA/CFG。
+
+当前有效 closure 边界：
+
+```text
+SpecularMap\%s code xref             STRUCTURALLY_VERIFIED (later-era .dtx)
+WeaponShader CFG code consumer       OPEN (packed exe, 0 xref)
+P4-M01                               INCOMPLETE
+```
+
 ---
 
 ## P5-T01 — Official reference
@@ -1219,6 +1245,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03g_legacy_sha
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04a_pe_string_hits/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04b_pe_xref/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04c_playerviewmesh_fxo/
 ```
 
 ## External reference implementation / positive control
@@ -1270,6 +1297,7 @@ f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 cons
 8386de1a852b0b726504ca7ca32b21def741e710  N03-G LightCorrectionLegacyShader is int 1, SCOPED_NEGATIVE
 3c29eb58691cc7b0d6fe70297fbb427dbc14d2d6  N03-H no native gun-atlas DTX; 524452 is energy
 d770a0a2c46a3c02f910fb28034635adac95b458  N04-A CShell SpecularMap\%s; WeaponShader dir prefix
+ca8c2209541bb60f7b8cc6b7cfb4cca4715475f2  N04-B CShell LEAs SpecularMap\%s; WeaponShader 0 xref
 ```
 
 ---

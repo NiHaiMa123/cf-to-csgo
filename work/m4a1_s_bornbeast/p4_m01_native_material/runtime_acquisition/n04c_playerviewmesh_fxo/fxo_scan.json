@@ -1,0 +1,4429 @@
+{
+  "schema": "cf2.p4m01.n04c-playerviewmesh-fxo.v1",
+  "generated_at_utc": "2026-09-12T08:08:46.222+00:00",
+  "status": "FXO_NAMES_GENERIC",
+  "files": [
+    {
+      "relative": "rez/Shader/playerviewmesh.fxo",
+      "present": true,
+      "size_bytes": 1193704,
+      "sha256": "d227961370c480baf8a465f127b1ef6c52ff7936d4b31529c50b4e7074ecd1bd",
+      "inventory_sha256": "d227961370c480baf8a465f127b1ef6c52ff7936d4b31529c50b4e7074ecd1bd",
+      "sha_matches_inventory": true,
+      "head16_hex": "0109fffe2c5500000000000003000000",
+      "unwrap": "raw",
+      "unwrapped_size": 1193704,
+      "unwrapped_head16_hex": "0109fffe2c5500000000000003000000",
+      "dxbc": {
+        "magic": "\u0001\tÿþ",
+        "is_dxbc": false
+      },
+      "ascii_string_count": 7868,
+      "utf16_string_count": 0,
+      "token_hits": [
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMap",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMap",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "AlphaMap",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMap2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshTexturePanningVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshTexturePanningVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMesh",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshRefract",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshRefractEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAproxSnell",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAproxSnellEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAproxSnellTransformedCube",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAproxSnellTransformedCubeEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlpha",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlphaEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlphaRefract",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlphaRefractEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlphaAproxSnell",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlphaAproxSnellEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshAlphaAproxSnellTransformedCubeEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshTexturePanning",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshGhostShader",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshGhostShaderWepon",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshGhostShaderWeponEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshGhostShaderWeponTexturePanning",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshGhostShaderWeponTexturePanningEmsv",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "tPlayerViewMeshDollModel",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh",
+            "tPlayerViewMesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshGhostVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshTexturePanningVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshTexturePanningVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_MP_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "PlayerViewMeshVS_RD_3_0",
+          "tokens": [
+            "PlayerViewMesh",
+            "playerviewmesh"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMap2",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMap",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMap",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMap",
+          "tokens": [
+            "SpecularMap"
+          ]
+        }
+      ],
+      "interesting_strings": [
+        "ViewMatrix",
+        "ViewProjectionMatrix",
+        "WorldViewMatrix",
+        "WorldViewProjectionMatrix",
+        "MeshRotationMatrix",
+        "GlobalDiffuseAlpha",
+        "NormalBoost",
+        "SpecularBacklighting",
+        "EnvCubeMapBrightness",
+        "SpecularPower",
+        "DiffuseBoost",
+        "DiffuseMappingFactor",
+        "NormalMappingFactor",
+        "SpecularMappingFactor",
+        "EnvCubeMappingFactor",
+        "TexturePanningVelocityU",
+        "TexturePanningVelocityV",
+        "TextureTileX",
+        "TextureTileY",
+        "InlineAlpha",
+        "EffectAlpha",
+        "SpecularLength",
+        "SpecularHighlight",
+        "MapEnableState",
+        "EmissiveMapThreshold",
+        "NoiseMapUVFlowSpeed",
+        "EmissiveMapIntensity",
+        "DiffuseMap",
+        "DiffuseMapSampler",
+        "SpecularMap",
+        "SpecularMapSampler",
+        "CubeMap",
+        "CubeMapSampler",
+        "NormalMap",
+        "NormalMapSampler",
+        "AlphaMap",
+        "AlphaMapSampler",
+        "AlphaMap2",
+        "AlphaMapSampler2",
+        "OverlayMap",
+        "OverlayMapSampler",
+        "OverlayMap2",
+        "OverlayMapSampler2",
+        "MaskMap",
+        "MaskMapSampler",
+        "NoiseMap",
+        "NoiseMapSampler",
+        "gUseMapLight",
+        "gMaterialDiffuse",
+        "gMaterialSpecular",
+        "gMaterialSpecularPower",
+        "gMaterialEmissive",
+        "gLightDiffuse",
+        "gLightSpecular",
+        "gOverrideAlpha",
+        "PlayerViewMeshVS_RD_3_0",
+        "PlayerViewMeshVS_MP_3_0",
+        "PlayerViewMeshGhostVS_RD_3_0",
+        "PlayerViewMeshGhostVS_MP_3_0",
+        "PlayerViewMeshTexturePanningVS_RD_3_0",
+        "PlayerViewMeshTexturePanningVS_MP_3_0",
+        "tPlayerViewMesh",
+        "tPlayerViewMeshEmsv",
+        "tPlayerViewMeshRefract",
+        "tPlayerViewMeshRefractEmsv",
+        "tPlayerViewMeshAproxSnell",
+        "tPlayerViewMeshAproxSnellEmsv",
+        "tPlayerViewMeshAproxSnellTransformedCube",
+        "tPlayerViewMeshAproxSnellTransformedCubeEmsv",
+        "tPlayerViewMeshAlpha",
+        "tPlayerViewMeshAlphaEmsv",
+        "tPlayerViewMeshAlphaRefract",
+        "tPlayerViewMeshAlphaRefractEmsv",
+        "tPlayerViewMeshAlphaAproxSnell",
+        "tPlayerViewMeshAlphaAproxSnellEmsv",
+        "tPlayerViewMeshAlphaAproxSnellTransformedCube",
+        "tPlayerViewMeshAlphaAproxSnellTransformedCubeEmsv",
+        "tPlayerViewMeshTexturePanning",
+        "tPlayerViewMeshGhostShader",
+        "tPlayerViewMeshGhostShaderWepon"
+      ],
+      "path_like": []
+    },
+    {
+      "relative": "rez/Shader/playermesh.fxo",
+      "present": true,
+      "size_bytes": 118048,
+      "sha256": "a5eb55e876a779ba45c70024fb994e247281273027bb3bfddfd6d8e15f93136f",
+      "inventory_sha256": "a5eb55e876a779ba45c70024fb994e247281273027bb3bfddfd6d8e15f93136f",
+      "sha_matches_inventory": true,
+      "head16_hex": "0109fffe443600000000000003000000",
+      "unwrap": "raw",
+      "unwrapped_size": 118048,
+      "unwrapped_head16_hex": "0109fffe443600000000000003000000",
+      "dxbc": {
+        "magic": "\u0001\tÿþ",
+        "is_dxbc": false
+      },
+      "ascii_string_count": 720,
+      "utf16_string_count": 0,
+      "token_hits": [
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMap",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "NormalMap",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "AlphaMap",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "AlphaMapSampler",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMapSampler",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "NormalMappingFactor",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMapSampler",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "SpecularMappingFactor",
+          "tokens": [
+            "SpecularMap"
+          ]
+        },
+        {
+          "text": "AlphaMap",
+          "tokens": [
+            "AlphaMap"
+          ]
+        },
+        {
+          "text": "NormalMap",
+          "tokens": [
+            "NormalMap"
+          ]
+        },
+        {
+          "text": "SpecularMap",
+          "tokens": [
+            "SpecularMap"
+          ]
+        }
+      ],
+      "interesting_strings": [
+        "ViewMatrix",
+        "ViewProjectionMatrix",
+        "WorldViewProjectionMatrix",
+        "DiffuseMappingFactor",
+        "DiffuseBoost",
+        "SpecularMappingFactor",
+        "SpecularPower",
+        "NormalMappingFactor",
+        "EnvCubeMappingFactor",
+        "EnvCubeMapBrightness",
+        "InlineAlpha",
+        "OutlineAlpha",
+        "EffectAlpha",
+        "ObjectAlpha",
+        "UseLuminanceAlpha",
+        "DiffuseMap",
+        "DiffuseMapSampler",
+        "OverlayMap",
+        "OverlayMapSampler",
+        "OverlayMap2",
+        "OverlayMapSampler2",
+        "SpecularMap",
+        "SpecularMapSampler",
+        "NormalMap",
+        "NormalMapSampler",
+        "CubeMap",
+        "EnvCubeMapSampler",
+        "AlphaMap",
+        "AlphaMapSampler",
+        "gUseMapLight",
+        "gMaterialDiffuse",
+        "gMaterialSpecular",
+        "gMaterialSpecularPower",
+        "gMaterialEmissive",
+        "gLightDiffuse",
+        "gLightSpecular",
+        "gOverrideAlpha",
+        "tRenderTargetTexture",
+        "RenderTargetTextureSampler",
+        "tBackUpRenderTargetTexture0",
+        "BackUpRenderTargetTextureSampler0",
+        "tBackUpRenderTargetTexture1",
+        "BackUpRenderTargetTextureSampler1",
+        "gRenderTargetTexturePixelOffsetX",
+        "gRenderTargetTexturePixelOffsetY",
+        "gRenderTargetHPAlphaValue",
+        "gRenderTargetOverrideColorAlpha",
+        "tPlayerMesh",
+        "tPlayerMeshChar",
+        "tPlayerMeshOverlay",
+        "tPlayerMeshOverlayBasicCharacter",
+        "tPlayerMeshPenetrationCharacter",
+        "tPlayerMeshCharDiffuseOverlay",
+        "tPlayerMeshGhost",
+        "tPlayerMeshAICityBoss",
+        "tPlayerMeshUseOutLineBaseShader",
+        "Microsoft (R) HLSL Shader Compiler 9.29.952.3111"
+      ],
+      "path_like": []
+    }
+  ],
+  "note": "FXO binaries are not copied into the repo. Bytecode is not decompiled."
+}

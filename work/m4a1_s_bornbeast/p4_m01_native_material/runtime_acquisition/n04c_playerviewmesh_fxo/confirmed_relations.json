@@ -1,0 +1,32 @@
+{
+  "schema": "cf2.p4m01.n04c-confirmed-relations.v1",
+  "task_id": "P4-M01-N04-C",
+  "status": "FXO_NAMES_GENERIC",
+  "completion_state": "B",
+  "relations": [
+    {
+      "from": "rez/Shader/playerviewmesh.fxo",
+      "to": "AlphaMapSampler / NormalMapSampler / SpecularMapSampler / DiffuseMapSampler",
+      "grade": "OBSERVED",
+      "note": "D3D9 compiled effect slot names; no file paths"
+    },
+    {
+      "from": "rez/Shader/playerviewmesh.fxo",
+      "to": "tPlayerViewMeshEmsv / EmissiveMapIntensity",
+      "grade": "OBSERVED",
+      "note": "emissive techniques exist; does not prove PV DTX is bound as emissive"
+    },
+    {
+      "from": "rez/Shader/playerviewmesh.fxo",
+      "to": "WeaponShader/*.CFG or AlphaMap/*.TGA path",
+      "grade": "NEGATIVE_RESULT_SCOPED",
+      "note": "path_like empty; no WeaponShader token"
+    }
+  ],
+  "cannot_conclude": [
+    "P4-M01 PASS",
+    "FXO loads WeaponShader CFG",
+    "BornBeast TGA is bound to AlphaMapSampler",
+    "PV DTX is the Emsv map"
+  ]
+}
