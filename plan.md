@@ -942,9 +942,40 @@ BornBeast native material closure        OPEN_UNRESOLVED
 P4-M01                                   INCOMPLETE
 ```
 
----
+该表被 §4.17 更新。
 
-# 5. P5 — 最终 M4A1-雷神资产识别
+## 4.17 N03-F freeze
+
+Review 接受提交：
+
+```text
+62bcce21aa2f808a230c040c58802a999f645295  P4-M01-N03-F
+P4-M01-N03-F = ACCEPTED / CANDIDATE_ONLY
+```
+
+packed `Butes/BF005.LTC` 全部 8205 条记录：
+
+```text
+exact WeaponShader/M4A1_S_BornBeast.CFG     0
+exact Alpha/Normal/Specular TGA paths       0
+path segment WeaponShader/ or AlphaMap/     0
+path segment SpecularMap/                   32 (other weapons only)
+```
+
+后期武器有 `SpecularMapName` → `ModelTextures\SpecularMap\*.dtx`（DTX，不是 TGA）。黑骑士没有该字段，也没有 `AlphaMapName` / `WeaponShader*`。四份 inventory 文件仍在 `rf017.rez`（存在 ≠ consumer）。
+
+公开社区没有把 2013 年 WeaponShader CFG + Alpha/Normal TGA 的 **runtime 路径消费** 做成可审计 closure。已有成功仅限于：REZ/LTB/DTX 提取、OBJ/SMD 移植、CLIENTFX 特效、以及 Bute `SpecularMapName` 双贴图时代。
+
+当前有效 closure 边界：
+
+```text
+packed BF005 exact TGA/CFG paths             SCOPED_NEGATIVE_ACCEPTED
+SpecularMapName on later weapons (.dtx)      OBSERVED (not 黑骑士)
+WeaponShader CFG runtime bind                OPEN_UNRESOLVED
+P4-M01                                       INCOMPLETE
+```
+
+---
 
 ## P5-T01 — Official reference
 
@@ -1097,6 +1128,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03b_rez_packed
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03c_material_graph/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03d_ltb_piece_index/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03e_renderstyle_ltb/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03f_shader_alphamap_lookup/
 ```
 
 ## External reference implementation / positive control
@@ -1144,6 +1176,7 @@ f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 cons
 0e3c1e9130ea61cc2ed11c788cb33a1c6ba7d782  N03-C canonical 黑骑士 FileName graph
 04e8b425b32a6db24b24acea3f4c129c2f80f38b  N03-D PV LTB Jupiter piece table, nNumTextures=0
 043935f4ac948bcf30d6fa5d68371190569ac298  N03-E shared RS TEXTURE1-only, no TGA/CFG strings
+62bcce21aa2f808a230c040c58802a999f645295  N03-F packed BF005 no WeaponShader/AlphaMap paths
 ```
 
 ---
