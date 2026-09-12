@@ -1,0 +1,48 @@
+{
+  "schema": "cf2.p4m01.n03h-confirmed-relations.v1",
+  "task_id": "P4-M01-N03-H",
+  "status": "SCOPED_NEGATIVE",
+  "completion_state": "C",
+  "relations": [
+    {
+      "from": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "to": "headerless_bgr24_512x256_mip",
+      "grade": "STRUCTURALLY_VERIFIED",
+      "pixel_class": "scalar_or_energy",
+      "note": "same container as later-era 524452 weapon DTX"
+    },
+    {
+      "from": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "to": "headerless_bgr24_512x256_mip",
+      "grade": "STRUCTURALLY_VERIFIED",
+      "pixel_class": "scalar_or_energy",
+      "note": "positive control: later dual-texture albedo DTX is also energy, not gun atlas"
+    },
+    {
+      "from": "data/rf017/ModelTextures/SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "to": "headerless_bgr24_512x256_mip",
+      "grade": "STRUCTURALLY_VERIFIED",
+      "pixel_class": "scalar_or_energy",
+      "note": "N03-G SpecularMapName target; official DTX header fails"
+    },
+    {
+      "from": "data/rf017/ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "to": "gun_atlas",
+      "grade": "NEGATIVE_RESULT_SCOPED",
+      "pixel_class": "undecodable_as_gun_atlas",
+      "note": "official fail; DXT1/DXT5/RGB565 size-fit is checkerboard; BGR24 not exact"
+    },
+    {
+      "from": "CFRezManager DtxThumbnailDecoder",
+      "to": "current client weapon DTX",
+      "grade": "NEGATIVE_RESULT_SCOPED",
+      "note": "0/16 official --decode-image successes, including SpecularMapName files"
+    }
+  ],
+  "cannot_conclude": [
+    "P4-M01 PASS",
+    "QV codec identity",
+    "first-person does not consume PV DTX",
+    "CS1.6 atlas is local_cf"
+  ]
+}

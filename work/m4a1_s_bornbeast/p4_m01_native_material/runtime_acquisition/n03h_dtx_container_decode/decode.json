@@ -1,0 +1,1369 @@
+{
+  "schema": "cf2.p4m01.n03h-dtx-container.v1",
+  "generated_at_utc": "2026-09-12T07:34:47.045+00:00",
+  "bornbeast_count": 22,
+  "families": {
+    "pv_bgr24_512x256_mip": 8,
+    "empty": 4,
+    "qv_dxt1_256x256_plus_164": 10
+  },
+  "official": [
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 32932,
+      "family": "qv_dxt1_256x256_plus_164",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\WEAPONS\\QV-M4A1_S_BornBeast.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1_S_BornBeast.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-Barret M99_RoyalDragon_S.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "size_bytes": 131236,
+      "family": "dxt1_512x512_plus_164",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-DualDE_GreenVein_S.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-FN F2000_GreenSkull_s.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-FN F2000_GreenSkull_s.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-MG3_PerfectSilever_s.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-MG3_PerfectSilever_s.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-Mauser_RoyalDragon_S.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-Mauser_RoyalDragon_S.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-RI_M14EBR_s.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-RI_M4A1-S_Bandage_s.DTX",
+      "size_bytes": 174244,
+      "family": "other_174244",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-RI_M4A1-S_Bandage_s.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-RI_M4A1-S_s.DTX",
+      "size_bytes": 696484,
+      "family": "other_696484",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-RI_M4A1-S_s.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-krissSuperV_Silver_S.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-krissSuperV_Silver_S.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-kukri_RoyalDragon_S.DTX",
+      "size_bytes": 131236,
+      "family": "dxt1_512x512_plus_164",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-kukri_RoyalDragon_S.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-RI_M14EBR_Scope01_s.DTX",
+      "size_bytes": 32932,
+      "family": "qv_dxt1_256x256_plus_164",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\SpecularMap\\PV-RI_M14EBR_Scope01_s.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1_RoyalDragon.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1-RoyalDragon_silencer.DTX",
+      "size_bytes": 32932,
+      "family": "qv_dxt1_256x256_plus_164",
+      "official": {
+        "ok": false,
+        "returncode": 1,
+        "error": "Unsupported or malformed DTX image: D:\\project\\cf_to_csgo\\data\\rf017\\ModelTextures\\PLAYERVIEW\\PV-M4A1-RoyalDragon_silencer.DTX",
+        "output": null
+      },
+      "stats": null,
+      "pixel_class_heuristic": "undecodable"
+    }
+  ],
+  "brute": [
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 32932,
+      "family": "qv_dxt1_256x256_plus_164",
+      "candidates": [
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 256,
+          "h": 256,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt1_256x256_off164.png",
+          "stats": {
+            "size": [
+              256,
+              256
+            ],
+            "mean_rgb": [
+              131.3,
+              154.6,
+              145.9
+            ],
+            "mean_sat": 113.0,
+            "unique_q5": 486
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 128,
+          "h": 256,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt5_128x256_off164.png",
+          "stats": {
+            "size": [
+              128,
+              256
+            ],
+            "mean_rgb": [
+              131.5,
+              155.0,
+              145.7
+            ],
+            "mean_sat": 112.7,
+            "unique_q5": 377
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 256,
+          "h": 128,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt5_256x128_off164.png",
+          "stats": {
+            "size": [
+              256,
+              128
+            ],
+            "mean_rgb": [
+              131.5,
+              155.0,
+              145.7
+            ],
+            "mean_sat": 112.7,
+            "unique_q5": 377
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 512,
+          "h": 64,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt5_512x64_off164.png",
+          "stats": {
+            "size": [
+              512,
+              64
+            ],
+            "mean_rgb": [
+              131.5,
+              155.0,
+              145.7
+            ],
+            "mean_sat": 112.7,
+            "unique_q5": 377
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 64,
+          "h": 512,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt5_64x512_off164.png",
+          "stats": {
+            "size": [
+              64,
+              512
+            ],
+            "mean_rgb": [
+              131.5,
+              155.0,
+              145.7
+            ],
+            "mean_sat": 112.7,
+            "unique_q5": 377
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 256,
+          "h": 256,
+          "offset": 163,
+          "payload": 32768,
+          "leftover": 1,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt1_256x256_off163.png",
+          "stats": {
+            "size": [
+              256,
+              256
+            ],
+            "mean_rgb": [
+              131.5,
+              154.7,
+              146.0
+            ],
+            "mean_sat": 112.9,
+            "unique_q5": 482
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 128,
+          "h": 256,
+          "offset": 163,
+          "payload": 32768,
+          "leftover": 1,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt5_128x256_off163.png",
+          "stats": {
+            "size": [
+              128,
+              256
+            ],
+            "mean_rgb": [
+              131.6,
+              154.7,
+              146.2
+            ],
+            "mean_sat": 112.9,
+            "unique_q5": 360
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 256,
+          "h": 128,
+          "offset": 163,
+          "payload": 32768,
+          "leftover": 1,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/QV-M4A1_S_BornBeast_dxt5_256x128_off163.png",
+          "stats": {
+            "size": [
+              256,
+              128
+            ],
+            "mean_rgb": [
+              131.6,
+              154.7,
+              146.2
+            ],
+            "mean_sat": 112.9,
+            "unique_q5": 360
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1-RoyalDragon_silencer.DTX",
+      "size_bytes": 32932,
+      "family": "qv_dxt1_256x256_plus_164",
+      "candidates": [
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 256,
+          "h": 256,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt1_256x256_off164.png",
+          "stats": {
+            "size": [
+              256,
+              256
+            ],
+            "mean_rgb": [
+              143.5,
+              164.3,
+              159.3
+            ],
+            "mean_sat": 91.8,
+            "unique_q5": 1149
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 128,
+          "h": 256,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt5_128x256_off164.png",
+          "stats": {
+            "size": [
+              128,
+              256
+            ],
+            "mean_rgb": [
+              143.3,
+              163.7,
+              159.1
+            ],
+            "mean_sat": 91.5,
+            "unique_q5": 863
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 256,
+          "h": 128,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt5_256x128_off164.png",
+          "stats": {
+            "size": [
+              256,
+              128
+            ],
+            "mean_rgb": [
+              143.3,
+              163.7,
+              159.1
+            ],
+            "mean_sat": 91.5,
+            "unique_q5": 863
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 512,
+          "h": 64,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt5_512x64_off164.png",
+          "stats": {
+            "size": [
+              512,
+              64
+            ],
+            "mean_rgb": [
+              143.3,
+              163.7,
+              159.1
+            ],
+            "mean_sat": 91.5,
+            "unique_q5": 863
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 64,
+          "h": 512,
+          "offset": 164,
+          "payload": 32768,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt5_64x512_off164.png",
+          "stats": {
+            "size": [
+              64,
+              512
+            ],
+            "mean_rgb": [
+              143.3,
+              163.7,
+              159.1
+            ],
+            "mean_sat": 91.5,
+            "unique_q5": 863
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 256,
+          "h": 256,
+          "offset": 163,
+          "payload": 32768,
+          "leftover": 1,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt1_256x256_off163.png",
+          "stats": {
+            "size": [
+              256,
+              256
+            ],
+            "mean_rgb": [
+              143.5,
+              164.9,
+              160.0
+            ],
+            "mean_sat": 91.7,
+            "unique_q5": 1153
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 128,
+          "h": 256,
+          "offset": 163,
+          "payload": 32768,
+          "leftover": 1,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt5_128x256_off163.png",
+          "stats": {
+            "size": [
+              128,
+              256
+            ],
+            "mean_rgb": [
+              144.0,
+              165.1,
+              160.9
+            ],
+            "mean_sat": 90.7,
+            "unique_q5": 853
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 256,
+          "h": 128,
+          "offset": 163,
+          "payload": 32768,
+          "leftover": 1,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1-RoyalDragon_silencer_dxt5_256x128_off163.png",
+          "stats": {
+            "size": [
+              256,
+              128
+            ],
+            "mean_rgb": [
+              144.0,
+              165.1,
+              160.9
+            ],
+            "mean_sat": 90.7,
+            "unique_q5": 853
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-DualDE_GreenVein_S.DTX",
+      "size_bytes": 131236,
+      "family": "dxt1_512x512_plus_164",
+      "candidates": [
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 128,
+          "h": 256,
+          "offset": 163,
+          "payload": 131073,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_bgr24_mip_128x256_off163.png",
+          "stats": {
+            "size": [
+              128,
+              256
+            ],
+            "mean_rgb": [
+              32.9,
+              255.0,
+              64.0
+            ],
+            "mean_sat": 235.5,
+            "unique_q5": 475
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 128,
+          "offset": 163,
+          "payload": 131073,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_bgr24_mip_256x128_off163.png",
+          "stats": {
+            "size": [
+              256,
+              128
+            ],
+            "mean_rgb": [
+              32.9,
+              255.0,
+              64.0
+            ],
+            "mean_sat": 235.5,
+            "unique_q5": 475
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 512,
+          "h": 512,
+          "offset": 164,
+          "payload": 131072,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_dxt1_512x512_off164.png",
+          "stats": {
+            "size": [
+              512,
+              512
+            ],
+            "mean_rgb": [
+              92.5,
+              111.6,
+              115.5
+            ],
+            "mean_sat": 142.6,
+            "unique_q5": 10596
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 1024,
+          "h": 256,
+          "offset": 164,
+          "payload": 131072,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_dxt1_1024x256_off164.png",
+          "stats": {
+            "size": [
+              1024,
+              256
+            ],
+            "mean_rgb": [
+              92.5,
+              111.6,
+              115.5
+            ],
+            "mean_sat": 142.6,
+            "unique_q5": 10596
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 256,
+          "h": 1024,
+          "offset": 164,
+          "payload": 131072,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_dxt1_256x1024_off164.png",
+          "stats": {
+            "size": [
+              256,
+              1024
+            ],
+            "mean_rgb": [
+              92.5,
+              111.6,
+              115.5
+            ],
+            "mean_sat": 142.6,
+            "unique_q5": 10596
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 512,
+          "h": 256,
+          "offset": 164,
+          "payload": 131072,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_dxt5_512x256_off164.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              93.1,
+              113.0,
+              116.3
+            ],
+            "mean_sat": 142.3,
+            "unique_q5": 6918
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt5",
+          "w": 256,
+          "h": 512,
+          "offset": 164,
+          "payload": 131072,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_dxt5_256x512_off164.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              93.1,
+              113.0,
+              116.3
+            ],
+            "mean_sat": 142.3,
+            "unique_q5": 6918
+          }
+        },
+        {
+          "ok": true,
+          "kind": "dxt1",
+          "w": 512,
+          "h": 512,
+          "offset": 163,
+          "payload": 131072,
+          "leftover": 1,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-DualDE_GreenVein_S_dxt1_512x512_off163.png",
+          "stats": {
+            "size": [
+              512,
+              512
+            ],
+            "mean_rgb": [
+              92.1,
+              111.5,
+              115.2
+            ],
+            "mean_sat": 141.6,
+            "unique_q5": 10567
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_RoyalDragon.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "candidates": [
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 163,
+          "payload": 524289,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_512x256_off163.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              5.3,
+              255.0,
+              255.0
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 163,
+          "payload": 524289,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_256x512_off163.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              5.3,
+              255.0,
+              255.0
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 160,
+          "payload": 524289,
+          "leftover": 3,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_512x256_off160.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              5.3,
+              255.0,
+              255.0
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 160,
+          "payload": 524289,
+          "leftover": 3,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_256x512_off160.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              5.3,
+              255.0,
+              255.0
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 36,
+          "payload": 524289,
+          "leftover": 127,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_512x256_off36.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              255.0,
+              255.0,
+              5.3
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 36,
+          "payload": 524289,
+          "leftover": 127,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_256x512_off36.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              255.0,
+              255.0,
+              5.3
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 32,
+          "payload": 524289,
+          "leftover": 131,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_512x256_off32.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              255.0,
+              5.3,
+              255.0
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 32,
+          "payload": 524289,
+          "leftover": 131,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_bgr24_mip_256x512_off32.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              255.0,
+              5.3,
+              255.0
+            ],
+            "mean_sat": 249.7,
+            "unique_q5": 11
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/rf017/ModelTextures/SpecularMap/PV-M4A1_RoyalDragon_s.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "candidates": [
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 163,
+          "payload": 524289,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_512x256_off163.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              255.0,
+              23.2,
+              38.8
+            ],
+            "mean_sat": 243.3,
+            "unique_q5": 696
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 163,
+          "payload": 524289,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_256x512_off163.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              255.0,
+              23.2,
+              38.8
+            ],
+            "mean_sat": 243.3,
+            "unique_q5": 696
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 160,
+          "payload": 524289,
+          "leftover": 3,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_512x256_off160.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              255.0,
+              23.2,
+              38.8
+            ],
+            "mean_sat": 243.3,
+            "unique_q5": 696
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 160,
+          "payload": 524289,
+          "leftover": 3,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_256x512_off160.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              255.0,
+              23.2,
+              38.8
+            ],
+            "mean_sat": 243.3,
+            "unique_q5": 696
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 36,
+          "payload": 524289,
+          "leftover": 127,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_512x256_off36.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              23.2,
+              38.8,
+              255.0
+            ],
+            "mean_sat": 243.3,
+            "unique_q5": 696
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 36,
+          "payload": 524289,
+          "leftover": 127,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_256x512_off36.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              23.2,
+              38.8,
+              255.0
+            ],
+            "mean_sat": 243.3,
+            "unique_q5": 696
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 32,
+          "payload": 524289,
+          "leftover": 131,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_512x256_off32.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              38.8,
+              255.0,
+              23.2
+            ],
+            "mean_sat": 243.8,
+            "unique_q5": 663
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 32,
+          "payload": 524289,
+          "leftover": 131,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_RoyalDragon_s_bgr24_mip_256x512_off32.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              38.8,
+              255.0,
+              23.2
+            ],
+            "mean_sat": 243.8,
+            "unique_q5": 663
+          }
+        }
+      ]
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 524452,
+      "family": "pv_bgr24_512x256_mip",
+      "candidates": [
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 163,
+          "payload": 524289,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_512x256_off163.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              133.8,
+              255.0,
+              41.6
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 238
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 163,
+          "payload": 524289,
+          "leftover": 0,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_256x512_off163.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              133.8,
+              255.0,
+              41.6
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 238
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 160,
+          "payload": 524289,
+          "leftover": 3,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_512x256_off160.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              133.8,
+              255.0,
+              41.6
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 238
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 160,
+          "payload": 524289,
+          "leftover": 3,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_256x512_off160.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              133.8,
+              255.0,
+              41.6
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 238
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 36,
+          "payload": 524289,
+          "leftover": 127,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_512x256_off36.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              255.0,
+              41.6,
+              133.8
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 271
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 36,
+          "payload": 524289,
+          "leftover": 127,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_256x512_off36.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              255.0,
+              41.6,
+              133.8
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 271
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 512,
+          "h": 256,
+          "offset": 32,
+          "payload": 524289,
+          "leftover": 131,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_512x256_off32.png",
+          "stats": {
+            "size": [
+              512,
+              256
+            ],
+            "mean_rgb": [
+              41.6,
+              133.8,
+              255.0
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 271
+          }
+        },
+        {
+          "ok": true,
+          "kind": "bgr24_mip",
+          "w": 256,
+          "h": 512,
+          "offset": 32,
+          "payload": 524289,
+          "leftover": 131,
+          "preview": "work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/previews/PV-M4A1_S_BornBeast_bgr24_mip_256x512_off32.png",
+          "stats": {
+            "size": [
+              256,
+              512
+            ],
+            "mean_rgb": [
+              41.6,
+              133.8,
+              255.0
+            ],
+            "mean_sat": 213.4,
+            "unique_q5": 271
+          }
+        }
+      ]
+    }
+  ],
+  "note": "pixel_class_heuristic is not visual confirmation; report.md classifies after viewing previews"
+}

@@ -1,0 +1,185 @@
+{
+  "bornbeast": [
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-AK47_Knife_BornBeast.DTX",
+      "name": "PV-AK47_Knife_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "ce9d3e4717f9793c9f5001a9fba558601299a8cd5504b262ca61cce9e35c43b7",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-AK47_Knife_BornBeast_02.DTX",
+      "name": "PV-AK47_Knife_BornBeast_02.DTX",
+      "size_bytes": 524452,
+      "sha256": "59871c188d318b3f9173ba78f789d346329f3be0a7a669bd3a76c706cd092c79",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-DesertEagle_BornBeast.DTX",
+      "name": "PV-DesertEagle_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "262d83189ad6ee75d9c9a9b2cddb0270a780c804a96c3811ebc97273b9b6410e",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-DesertEagle_BornBeast_NobleGold.DTX",
+      "name": "PV-DesertEagle_BornBeast_NobleGold.DTX",
+      "size_bytes": 524452,
+      "sha256": "879a9e97679020817bf9d1cbd1c54570fee0ea8182a3fa5a6b7140aaae61e162",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-Knife_BornBeast.DTX",
+      "name": "PV-Knife_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "45d700046a99e8662ec3a9fb28524de8b5f870ebac2e172d0a6e3cd3446a8e4d",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-Knife_BornBeast_NobleGold.DTX",
+      "name": "PV-Knife_BornBeast_NobleGold.DTX",
+      "size_bytes": 524452,
+      "sha256": "4a6b1edf932c202db590d19eadd6321d5f6c7af0f4968705e52785c880a8ebb2",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "name": "PV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "c419a5fb164db6085878ff2efe21d318a85186b4e3c1fd6baba920311f6ea1d9",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M82A1_BornBeast_NobleGold.DTX",
+      "name": "PV-M82A1_BornBeast_NobleGold.DTX",
+      "size_bytes": 0,
+      "sha256": null,
+      "family": "empty",
+      "empty": true
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M82A1_BornBeast_NobleGold01.DTX",
+      "name": "PV-M82A1_BornBeast_NobleGold01.DTX",
+      "size_bytes": 0,
+      "sha256": null,
+      "family": "empty",
+      "empty": true
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M82A1_S_BornBeast.DTX",
+      "name": "PV-M82A1_S_BornBeast.DTX",
+      "size_bytes": 0,
+      "sha256": null,
+      "family": "empty",
+      "empty": true
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-M82A1_S_BornBeast01.DTX",
+      "name": "PV-M82A1_S_BornBeast01.DTX",
+      "size_bytes": 0,
+      "sha256": null,
+      "family": "empty",
+      "empty": true
+    },
+    {
+      "path": "data/rf017/ModelTextures/PLAYERVIEW/PV-Shovel_BornBeast.DTX",
+      "name": "PV-Shovel_BornBeast.DTX",
+      "size_bytes": 524452,
+      "sha256": "baa4b9d3390ed8af4ea5314ec03142360d00f7eaca87acbf802641848fa1a97f",
+      "family": "pv_bgr24_512x256_mip",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-AK47_Knife_BornBeast.DTX",
+      "name": "QV-AK47_Knife_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "d2aca04131abda01a6737f450c85100d92c3caa6752c4370b9f43eb8dbcce2c0",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-AK47_Knife_BornBeast_DrumMag.DTX",
+      "name": "QV-AK47_Knife_BornBeast_DrumMag.DTX",
+      "size_bytes": 32932,
+      "sha256": "c768e2548ce40b6554cf8130c37e98fd211d2004570736a63f9b162484753a5c",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-DesertEagle_BornBeast.DTX",
+      "name": "QV-DesertEagle_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "8e686e22d482c12c3ca13c9d94079a82deee27ed272a01924b1ef32c92f98669",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-DesertEagle_BornBeast_NobleGold.DTX",
+      "name": "QV-DesertEagle_BornBeast_NobleGold.DTX",
+      "size_bytes": 32932,
+      "sha256": "2068d1c5b49ae4ff1a83b61d62dd90220848716dfd7bec30b56ebc1d39161447",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-Knife_BornBeast.DTX",
+      "name": "QV-Knife_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "63a8c316131f140f0be3f1ccb5971c01854d6120a7cfd6d876c58ddf06d9abb7",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-Knife_BornBeast_NobleGold.DTX",
+      "name": "QV-Knife_BornBeast_NobleGold.DTX",
+      "size_bytes": 32932,
+      "sha256": "77bfb5dff65a85bbfbb97ffc123d25de66c90f8a362f4f260e83fd0b59df6778",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-M4A1_S_BornBeast.DTX",
+      "name": "QV-M4A1_S_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "ea99c7101708b6dc04e3ab97f232f683f8b996a68e2e5b5fc1167c6cd08c0f7a",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-M82A1_BornBeast_NobleGold.DTX",
+      "name": "QV-M82A1_BornBeast_NobleGold.DTX",
+      "size_bytes": 32932,
+      "sha256": "88ed217a3bef91767d974ab719992bc7bb10ee5df039c2fd73e084b2fdfd563b",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-M82A1_S_BornBeast.DTX",
+      "name": "QV-M82A1_S_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "3a149236827c7e1cc0edbc9a667ea265cc067bb2f40a193a6db82b292b4573dd",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    },
+    {
+      "path": "data/rf017/ModelTextures/WEAPONS/QV-Shovel_BornBeast.DTX",
+      "name": "QV-Shovel_BornBeast.DTX",
+      "size_bytes": 32932,
+      "sha256": "065b918e088f268acbf4bc1cac376d11ad2f5b7f78718149e2c05f21c50b43b4",
+      "family": "qv_dxt1_256x256_plus_164",
+      "empty": false
+    }
+  ],
+  "families": {
+    "pv_bgr24_512x256_mip": 8,
+    "empty": 4,
+    "qv_dxt1_256x256_plus_164": 10
+  }
+}

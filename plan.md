@@ -975,6 +975,38 @@ WeaponShader CFG runtime bind                OPEN_UNRESOLVED
 P4-M01                                       INCOMPLETE
 ```
 
+## 4.18 N03-G freeze
+
+Review 接受提交：
+
+```text
+8386de1a852b0b726504ca7ca32b21def741e710  P4-M01-N03-G
+P4-M01-N03-G = ACCEPTED / SCOPED_NEGATIVE
+```
+
+packed BF005 含 `LightCorrectionLegacyShader` / `SpecularMapName*` / `SpecularPower` 的记录 49 条：
+
+```text
+LightCorrectionLegacyShader values     18, all integer `1`
+exact WeaponShader/*.CFG stem match    0
+SpecularMapName                        SpecularMap\*.dtx only (later weapons)
+M4A1-黑骑士 / M4A1_S_BornBeast         不在 dump 中（字段缺失）
+```
+
+`LightCorrectionLegacyShader` 是数值 flag，不是 CFG 名或路径。缺字段不是 StandardName 约定的证明。
+
+当前有效 closure 边界：
+
+```text
+packed BF005 exact TGA/CFG paths             SCOPED_NEGATIVE_ACCEPTED
+LightCorrectionLegacyShader                  SCOPED_NEGATIVE_ACCEPTED (int 1)
+SpecularMapName on later weapons (.dtx)      OBSERVED (not 黑骑士)
+WeaponShader CFG runtime bind                OPEN_UNRESOLVED
+QV/PV DTX pixel role                         see N03-H
+BornBeast native material closure            OPEN_UNRESOLVED
+P4-M01                                       INCOMPLETE
+```
+
 ---
 
 ## P5-T01 — Official reference
@@ -1129,6 +1161,8 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03c_material_g
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03d_ltb_piece_index/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03e_renderstyle_ltb/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03f_shader_alphamap_lookup/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03g_legacy_shader_fields/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/
 ```
 
 ## External reference implementation / positive control
@@ -1177,6 +1211,7 @@ f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 cons
 04e8b425b32a6db24b24acea3f4c129c2f80f38b  N03-D PV LTB Jupiter piece table, nNumTextures=0
 043935f4ac948bcf30d6fa5d68371190569ac298  N03-E shared RS TEXTURE1-only, no TGA/CFG strings
 62bcce21aa2f808a230c040c58802a999f645295  N03-F packed BF005 no WeaponShader/AlphaMap paths
+8386de1a852b0b726504ca7ca32b21def741e710  N03-G LightCorrectionLegacyShader is int 1, SCOPED_NEGATIVE
 ```
 
 ---
