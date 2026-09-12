@@ -1034,6 +1034,33 @@ WeaponShader CFG runtime bind        OPEN_UNRESOLVED (N04 PE)
 P4-M01                               INCOMPLETE
 ```
 
+## 4.20 N04-A freeze
+
+Review 接受提交：
+
+```text
+d770a0a2c46a3c02f910fb28034635adac95b458  P4-M01-N04-A
+P4-M01-N04-A = ACCEPTED / FORMAT_STRING_HIT
+```
+
+```text
+CShell_x64.dll   modeltextures\SpecularMap\%s
+crossfire.exe    MODELTEXTURES\Shader\WeaponShader\
+CShell Bute keys PViewSkinFileName / SpecularMapName / LightCorrectionLegacyShader
+WeaponShader\%s.CFG                  NOT found
+M4A1_S_BornBeast token               CLIENTFX particle, not material bind
+crossfirebase.dll                    packed .tvm0, 0 token
+```
+
+当前有效 closure 边界：
+
+```text
+SpecularMap path sprintf             OBSERVED in CShell
+WeaponShader directory prefix        OBSERVED in crossfire.exe
+code xref / consumer function        OPEN (N04-B)
+P4-M01                               INCOMPLETE
+```
+
 ---
 
 ## P5-T01 — Official reference
@@ -1191,6 +1218,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03f_shader_alp
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03g_legacy_shader_fields/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_container_decode/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04a_pe_string_hits/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04b_pe_xref/
 ```
 
 ## External reference implementation / positive control
@@ -1241,6 +1269,7 @@ f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 cons
 62bcce21aa2f808a230c040c58802a999f645295  N03-F packed BF005 no WeaponShader/AlphaMap paths
 8386de1a852b0b726504ca7ca32b21def741e710  N03-G LightCorrectionLegacyShader is int 1, SCOPED_NEGATIVE
 3c29eb58691cc7b0d6fe70297fbb427dbc14d2d6  N03-H no native gun-atlas DTX; 524452 is energy
+d770a0a2c46a3c02f910fb28034635adac95b458  N04-A CShell SpecularMap\%s; WeaponShader dir prefix
 ```
 
 ---

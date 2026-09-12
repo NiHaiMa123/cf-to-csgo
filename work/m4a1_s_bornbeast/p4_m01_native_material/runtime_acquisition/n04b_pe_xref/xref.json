@@ -1,0 +1,507 @@
+{
+  "schema": "cf2.p4m01.n04b-pe-xref.v1",
+  "generated_at_utc": "2026-09-12T08:03:40.611+00:00",
+  "status": "XREF_FOUND_UNRELATED",
+  "jupiter_note": "public Jupiter model/renderstyle load binds LTB/texture indices and TEXTURE1; it does not name WeaponShader/*.CFG or AlphaMap/*.TGA paths. CF delta is these path strings in CShell/crossfire.exe.",
+  "n04a_status": "FORMAT_STRING_HIT",
+  "results": [
+    {
+      "label": "specularmap_sprintf",
+      "relative": "x64/CShell_x64.dll",
+      "expected_text": "modeltextures\\SpecularMap\\%s",
+      "actual_text": "modeltextures\\SpecularMap\\%s",
+      "text_matches": true,
+      "string_rva": 88893496,
+      "n04a_rva": 88903480,
+      "rdata_cluster": [
+        "RS\\BattleRoyalWeaponRenderStyle.ltb",
+        "modeltextures/playerview/",
+        "_s.dtx",
+        "modeltextures\\SpecularMap\\%s",
+        "modeltextures\\playerview\\",
+        "_Woman_BL.ltb",
+        "GHOST2_Wepon",
+        "RS\\BattleRoyalRenderStyle.ltb",
+        "_Woman_GR.ltb",
+        "clanmark",
+        "56800",
+        "snd/weapon/Weapon_Skill/MarkingAlarm.wav",
+        "TEX/UI/RADAR/Anchor.dtx",
+        "TEX/UI/RADAR/Anchor_strange.dtx",
+        "TEX/UI/RADAR/Anchor_green.dtx",
+        "TEX/UI/RADAR/Anchor_ping.dtx",
+        "MarkingAlarm",
+        "TEX/UI/RADAR/UserNum_TAB"
+      ],
+      "rdata_cluster_bute_keys": [],
+      "cluster_string_xrefs": [
+        {
+          "text": "RS\\BattleRoyalWeaponRenderStyle.ltb",
+          "rva": 88893416,
+          "rip_xref_count": 1
+        },
+        {
+          "text": "modeltextures/playerview/",
+          "rva": 88893456,
+          "rip_xref_count": 8
+        },
+        {
+          "text": "_s.dtx",
+          "rva": 88893484,
+          "rip_xref_count": 20
+        },
+        {
+          "text": "modeltextures\\SpecularMap\\%s",
+          "rva": 88893496,
+          "rip_xref_count": 12
+        },
+        {
+          "text": "modeltextures\\playerview\\",
+          "rva": 88893528,
+          "rip_xref_count": 12
+        },
+        {
+          "text": "_Woman_BL.ltb",
+          "rva": 88893560,
+          "rip_xref_count": 2
+        },
+        {
+          "text": "GHOST2_Wepon",
+          "rva": 88893576,
+          "rip_xref_count": 2
+        },
+        {
+          "text": "RS\\BattleRoyalRenderStyle.ltb",
+          "rva": 88893592,
+          "rip_xref_count": 4
+        },
+        {
+          "text": "_Woman_GR.ltb",
+          "rva": 88893624,
+          "rip_xref_count": 2
+        },
+        {
+          "text": "clanmark",
+          "rva": 88893640,
+          "rip_xref_count": 2
+        },
+        {
+          "text": "56800",
+          "rva": 88893792,
+          "rip_xref_count": 1
+        },
+        {
+          "text": "snd/weapon/Weapon_Skill/MarkingAlarm.wav",
+          "rva": 88893800,
+          "rip_xref_count": 1
+        },
+        {
+          "text": "TEX/UI/RADAR/Anchor.dtx",
+          "rva": 88893848,
+          "rip_xref_count": 1
+        },
+        {
+          "text": "TEX/UI/RADAR/Anchor_strange.dtx",
+          "rva": 88893872,
+          "rip_xref_count": 1
+        },
+        {
+          "text": "TEX/UI/RADAR/Anchor_green.dtx",
+          "rva": 88893904,
+          "rip_xref_count": 1
+        },
+        {
+          "text": "TEX/UI/RADAR/Anchor_ping.dtx",
+          "rva": 88893936,
+          "rip_xref_count": 1
+        },
+        {
+          "text": "MarkingAlarm",
+          "rva": 88893968,
+          "rip_xref_count": 1
+        }
+      ],
+      "rip_xrefs": [
+        {
+          "kind": "lea",
+          "file_offset": 54553513,
+          "rva": 54556585,
+          "hex": "4c8d0588f00b02",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 54554185,
+          "rva": 54557257,
+          "hex": "4c8d05e8ed0b02",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 54554855,
+          "rva": 54557927,
+          "hex": "4c8d054aeb0b02",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 54574948,
+          "rva": 54578020,
+          "hex": "4c8d05cd9c0b02",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 54575604,
+          "rva": 54578676,
+          "hex": "4c8d053d9a0b02",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 54576265,
+          "rva": 54579337,
+          "hex": "4c8d05a8970b02",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 58087791,
+          "rva": 58090863,
+          "hex": "4c8d05c202d601",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 58088495,
+          "rva": 58091567,
+          "hex": "4c8d050200d601",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 58089199,
+          "rva": 58092271,
+          "hex": "4c8d0542fdd501",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 58895684,
+          "rva": 58898756,
+          "hex": "4c8d05edaec901",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 58896340,
+          "rva": 58899412,
+          "hex": "4c8d055dacc901",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        },
+        {
+          "kind": "lea",
+          "file_offset": 58896996,
+          "rva": 58900068,
+          "hex": "4c8d05cda9c901",
+          "instr_len": 7,
+          "nearby_strings": [
+            {
+              "rva": 88893528,
+              "text": "modeltextures\\playerview\\"
+            },
+            {
+              "rva": 88893496,
+              "text": "modeltextures\\SpecularMap\\%s"
+            }
+          ],
+          "nearby_bute_keys": []
+        }
+      ],
+      "rip_xref_count": 12,
+      "absolute_va_ptrs": [],
+      "rva32_immediate_count": 0,
+      "code_nearby_bute_keys": [],
+      "sha256": "d0020ee7ef3eecaf21335b733ba89cceb8bc5a731bdb483ac9b1c9fc40ea3a96",
+      "image_base": 6442450944,
+      "section_count": 8,
+      "lea_index_targets": 670609
+    },
+    {
+      "label": "weaponshader_dir",
+      "relative": "x64/crossfire.exe",
+      "expected_text": "MODELTEXTURES\\Shader\\WeaponShader\\\\",
+      "actual_text": "MODELTEXTURES\\Shader\\WeaponShader\\",
+      "text_matches": true,
+      "string_rva": 5902816,
+      "n04a_rva": 5903008,
+      "rdata_cluster": [
+        "cess\\Texture\\LUT\\",
+        "ScreenRange",
+        "InvViewProjectionMatrix",
+        "ViewProjectionMatrix",
+        "g_txSceneColor",
+        "g_txSceneDepth",
+        "g_txTranslucentDepth",
+        "Material\\PostProcess\\Texture\\random.png",
+        "Material\\PostProcess\\Texture\\RefractionEffectDefault.png",
+        "Emissive",
+        "Refraction",
+        "ColorGrading",
+        "Nangpa_La",
+        "Wave_OneWay",
+        "CollideParticles 0",
+        "CollideParticles 1",
+        "IgnoreModelLOD 0",
+        "ConvertPixelsToTexels",
+        "PostProcess",
+        "MODELTEXTURES\\Shader\\WeaponShader\\",
+        "MODELTEXTURES\\Shader\\CharacterShader\\",
+        ".cfg",
+        "temp",
+        "_Indoor",
+        "NoiseMap",
+        "OverlayMap",
+        "\\MODELTEXTURES\\",
+        "Recreation Fail",
+        "NormalMap",
+        "AlphaMap"
+      ],
+      "rdata_cluster_bute_keys": [],
+      "cluster_string_xrefs": [
+        {
+          "text": "cess\\Texture\\LUT\\",
+          "rva": 5902304,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "ScreenRange",
+          "rva": 5902328,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "InvViewProjectionMatrix",
+          "rva": 5902344,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "ViewProjectionMatrix",
+          "rva": 5902347,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "g_txSceneColor",
+          "rva": 5902392,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "g_txSceneDepth",
+          "rva": 5902408,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "g_txTranslucentDepth",
+          "rva": 5902424,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "Material\\PostProcess\\Texture\\random.png",
+          "rva": 5902448,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "Material\\PostProcess\\Texture\\RefractionEffectDefault.png",
+          "rva": 5902488,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "Emissive",
+          "rva": 5902552,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "Refraction",
+          "rva": 5902568,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "ColorGrading",
+          "rva": 5902584,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "Nangpa_La",
+          "rva": 5902672,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "Wave_OneWay",
+          "rva": 5902688,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "CollideParticles 0",
+          "rva": 5902704,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "CollideParticles 1",
+          "rva": 5902728,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "IgnoreModelLOD 0",
+          "rva": 5902752,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "ConvertPixelsToTexels",
+          "rva": 5902776,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "PostProcess",
+          "rva": 5902800,
+          "rip_xref_count": 0
+        },
+        {
+          "text": "MODELTEXTURES\\Shader\\WeaponShader\\",
+          "rva": 5902816,
+          "rip_xref_count": 0
+        }
+      ],
+      "rip_xrefs": [],
+      "rip_xref_count": 0,
+      "absolute_va_ptrs": [],
+      "rva32_immediate_count": 0,
+      "code_nearby_bute_keys": [],
+      "sha256": "9c0816400a6b25f83f3b8c56717001eddf978f15503d9b3f7cdb3ea281df25e7",
+      "image_base": 5368709120,
+      "section_count": 8,
+      "lea_index_targets": 1466
+    }
+  ],
+  "errors": [],
+  "note": "No PE copied into the repo. No disassembly database committed."
+}

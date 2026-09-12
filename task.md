@@ -7,97 +7,80 @@
 # 1. Current Task
 
 ```text
-Task ID: P4-M01-N04-A
-Title: Exact-token string scan of authorized engine PEs
+Task ID: P4-M01-N04-B
+Title: Bounded RIP-relative xref of N04-A format/prefix strings
 State: ACTIVE
 Parent: P4-M01 Native Material Recovery
-Depends on: P4-M01-N03-H
+Depends on: P4-M01-N04-A
 ```
 
 # 2. Previous execution status
 
-N03-H：官方 DTX 头 0/16。524452 族（黑骑士 PV 和战龙对照）都是能量/标量层。QV 32932 size-fit 不是枪 atlas。Bute/DTX 像素路线关闭。用户授权 DLL，限定静态 strings。
+N04-A = FORMAT_STRING_HIT：
+
+```text
+CShell_x64.dll   modeltextures\SpecularMap\%s          RVA 0x54C8F38
+crossfire.exe    MODELTEXTURES\Shader\WeaponShader\    RVA 0x5A12A0
+```
+
+CShell 另有 Bute 字段名表。没有 `WeaponShader\%s.CFG`。未 xref。
 
 # 3. Current goal
 
-在 7 个真实（非 1 字节 stub）游戏 PE 里找 **明文路径构造串**。
+这两句明文有没有 **代码引用**，引用点附近是不是 Bute 皮肤加载。
 
 回答：
 
 ```text
-WeaponShader / AlphaMap / NormalMap / SpecularMap
-  -> present as directory token?
-  -> present as sprintf format (WeaponShader\%s.CFG)?
-which PE
-  -> packed vs plaintext
+SpecularMap\%s
+  -> LEA/RIP xref count, nearby strings
+WeaponShader\ prefix
+  -> LEA/RIP xref count, nearby strings
+near StandardName / PViewSkinFileName / SpecularMapName ?
 ```
 
 # 4. Required Work
 
-只读本机 `D:\Program Files\CF(2)` 下列文件（N02-A SHA 对账）：
+只读这两个本地 PE（SHA 必须对上 N04-A）：
 
 ```text
 x64/CShell_x64.dll
-x64/crossfirebase.dll
-x64/crossfire_x64base.dll
 x64/crossfire.exe
-x64/server_x64.dll
-rez/Object_x64.lto
-rez/Object.lto
 ```
 
-ASCII + UTF-16LE，exact token（大小写不敏感子串，禁止 fuzzy/similarity）：
+只对 N04-A 已记录的两个 RVA 做：
 
-```text
-WeaponShader
-AlphaMap
-NormalMap
-SpecularMap
-LightCorrectionLegacyShader
-PViewSkinFileName
-StandardName
-M4A1_S_BornBeast
-playerviewmesh
-```
+1. x64 RIP-relative LEA（及 `mov reg,[rip+rel]` 指针表）xref；
+2. 每个 xref 点 ±0x100 内其它 RIP-relative 字符串；
+3. 目标串在 .rdata 的 ±512 字节 C-string 簇（帮助看是路径表还是 shader slot 表）。
 
-命中时记录 file offset / RVA / encoding / 字符串全文 / 前后 32 字节 printable context。单独标记是否含 `%s` / `%S` / `%hs` 或 `WeaponShader\` 路径片段。
+对照公开 Jupiter：记下「有/无 WeaponShader 路径构造」，不要大段贴源码。
 
-输出：
-
-```text
-work/.../n04a_pe_string_hits/
-```
-
-至少：PE 身份表（size/SHA/packed heuristic）、命中表、remaining ambiguity。
-
-不把 PE 文件复制进仓库。
+输出：`work/.../n04b_pe_xref/`
 
 # 5. Forbidden
 
 - 不宣布 P4-M01 PASS；
-- 不附加调试器、不注入、不 dump 运行中 CF；
-- 不碰 ACE / 反作弊 DLL；
-- 不跑脱壳器 / 未知 EXE；
-- 不反编译函数体（本轮只要 strings）；
-- 不扫全部 272 DLL；
-- 不进入 FXO；
-- 不修改历史 accepted evidence；
-- 不 git add 任何 .exe/.dll/.lto/.fxo。
+- 不附加调试器 / 不注入 / 不 dump 运行中 CF；
+- 不碰 ACE；不脱壳 `crossfirebase.dll`；
+- 不把整文件反编译进 Git；不提交 PE；
+- 不扩大到 272 DLL 或 FXO；
+- 不把 `M4A1_S_BornBeast` 粒子名当材质绑定。
 
 # 6. Completion State
 
 ```text
-A. FORMAT_STRING_HIT
-   WeaponShader/%s 或 AlphaMap/%s 一类构造串
+A. XREF_NEAR_BUTE_KEYS
+   xref 点附近出现 StandardName / PViewSkinFileName / SpecularMapName
 
-B. TOKEN_HIT_NO_FORMAT
-   有目录名/扩展名 token，没有路径构造格式串
+B. XREF_FOUND_UNRELATED
+   有代码 xref，但不靠近这些 Bute key
 
-C. PACKED_OR_NO_HIT
-   目标高熵或无这些明文
+C. NO_XREF
+   明文在，但没有 RIP-relative 代码引用
 
 D. REWORK_REQUIRED
-   读不到 listed x64 PE
+   读不到 PE 或 SHA 对不上
 ```
 
 完成后 STOP。

@@ -1,0 +1,35 @@
+{
+  "schema": "cf2.p4m01.n04b-confirmed-relations.v1",
+  "task_id": "P4-M01-N04-B",
+  "status": "XREF_FOUND_UNRELATED",
+  "completion_state": "B",
+  "relations": [
+    {
+      "from": "x64/CShell_x64.dll lea x12",
+      "to": "modeltextures\\SpecularMap\\%s",
+      "grade": "STRUCTURALLY_VERIFIED",
+      "nearby": ["modeltextures\\playerview\\"],
+      "note": "later-era SpecularMap .dtx path builder; not Bute field-name table; BornBeast lacks SpecularMapName"
+    },
+    {
+      "from": "x64/CShell_x64.dll rdata cluster",
+      "to": "_s.dtx + modeltextures/playerview/",
+      "grade": "OBSERVED",
+      "note": "same island as SpecularMap sprintf; 20 and 8 RIP xrefs respectively"
+    },
+    {
+      "from": "x64/crossfire.exe",
+      "to": "MODELTEXTURES\\Shader\\WeaponShader\\",
+      "grade": "OBSERVED",
+      "xref": 0,
+      "note": "plaintext island in packed .std image; no RIP-relative consumer in this pass"
+    }
+  ],
+  "jupiter_delta": "public Jupiter does not construct WeaponShader/AlphaMap paths; CF CShell does construct SpecularMap\\%s",
+  "cannot_conclude": [
+    "P4-M01 PASS",
+    "WeaponShader/%s.CFG code consumer",
+    "BornBeast AlphaMap/NormalMap/Specular TGA loader",
+    "xref sits on StandardName / PViewSkinFileName"
+  ]
+}
