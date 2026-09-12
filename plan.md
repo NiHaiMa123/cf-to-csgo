@@ -13,7 +13,7 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P6 identity replacement deploy
+Last completed task           : P6 hold-align fix (C3 then Source X mirror)
 Last accepted evidence commit : efabf5c
 State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / USER_RUNTIME_GATE_OPEN
 ```
@@ -50,7 +50,7 @@ Result  : P6_IDENTITY_REPLACEMENT_DEPLOYED
 
 **P5-T04**：`IDENTITY_CONFIRMED`。依据 T01 图鉴 + T02 用户认图 + T03 Bute 路径/SHA。证据 [`work/p5_leishen/t04/identity_review.json`](work/p5_leishen/t04/identity_review.json)。
 
-**P6**：用户 2026-09-13 明确开做。已把确认身份的 base Transformers PV LTB（LTB X scale −1 + 翻面，再套冻结 C3）和 verified DTX/TGA/cube 编进独立 addon `p_cf_leishen_m4a4_p6`，部署到 M4A4 槽。N05-J 诊断文件夹移到 `_parked_addons/`，frozen 仍 parked、未改文件。`final_target_identity=true`，`final_cf_material=false`。不是 P4-M01 PASS，也还不是 release-quality runtime 验收。证据 [`work/p5_leishen/p6/report.md`](work/p5_leishen/p6/report.md)。
+**P6**：用户 2026-09-13 明确开做。已把确认身份的 base Transformers PV LTB 和 verified DTX/TGA/cube 编进独立 addon `p_cf_leishen_m4a4_p6`，部署到 M4A4 槽。首发把 LTB X 镜像做在 C3 之前，枪在 CF X≈+1.5，绕原点翻转后 Source X 中心到 −5.5，左手对不上；用户截图「错位」。已改为先冻结 C3，再绕 Source X=0 镜像。最终武器包围盒 X 中心 −0.18（P4 BornBeast 为 +0.10）。N05-J 与 frozen 都 parked、未改 frozen 文件。`final_target_identity=true`，`final_cf_material=false`。不是 P4-M01 PASS。证据 [`work/p5_leishen/p6/report.md`](work/p5_leishen/p6/report.md)。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -1481,8 +1481,8 @@ runtime slot          = M4A4 / weapons/v_rif_m4a1.mdl
 
 ```text
 verified Transformers PV LTB/DTX/TGA/cube
--> LTB X scale −1 + reverse faces
 -> frozen C3 M4A4 matrix
+-> Source X mirror through 0 + reverse faces
 -> SMD / QC / studiomdl
 -> N05-J formula VMT (AlphaMap.b = $envmapmask)
 -> package

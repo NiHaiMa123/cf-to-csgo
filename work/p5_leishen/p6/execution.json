@@ -1,6 +1,6 @@
 {
   "schema": "cf2.p6.identity-replacement.v1",
-  "generated_at_utc": "2026-09-12T17:48:11.779329+00:00",
+  "generated_at_utc": "2026-09-12T18:01:19.720453+00:00",
   "task": "P6",
   "result": "P6_IDENTITY_REPLACEMENT_DEPLOYED",
   "identity_confirmed": true,
@@ -187,17 +187,63 @@
     "bytes": 981755
   },
   "mirror": {
-    "axis": "LTB X",
-    "operation": "scale.x=-1 plus reverse faces, then frozen C3 matrix",
-    "user_confirmation": "对了",
+    "axis": "Source X after C3",
+    "operation": "frozen C3 first, then x=-x plus reverse faces; keeps M4A4 hold",
+    "user_confirmation": "对了 (Blender L/R); in-game origin-mirror was 错位",
     "raw_obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_raw.obj",
-    "mirrored_obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_x_mirror.obj",
+    "c3_only_obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_c3_only.obj",
     "aligned_obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_c3_aligned.obj",
-    "aligned_sha256": "36c1c5d184a095cb7cc87506c487b66403428516df0e51f039575cdacfbf0419"
+    "aligned_sha256": "ee6e37e6bb4510150a46c81f47d4ec77deb8d0e27c8520aadce5f7373086b2ef",
+    "hold_bounds_c3_only": {
+      "min": [
+        -1.13749101,
+        -41.428274391,
+        4.586306428
+      ],
+      "max": [
+        1.499738682,
+        -5.770611466,
+        15.699964974
+      ],
+      "size": [
+        2.637229692,
+        35.657662925000004,
+        11.113658546
+      ],
+      "center": [
+        0.18112383600000004,
+        -23.5994429285,
+        10.143135701
+      ],
+      "vertex_count": 3090
+    },
+    "hold_bounds_final": {
+      "min": [
+        -1.499738682,
+        -41.428274391,
+        4.586306428
+      ],
+      "max": [
+        1.13749101,
+        -5.770611466,
+        15.699964974
+      ],
+      "size": [
+        2.637229692,
+        35.657662925000004,
+        11.113658546
+      ],
+      "center": [
+        -0.18112383600000004,
+        -23.5994429285,
+        10.143135701
+      ],
+      "vertex_count": 3090
+    }
   },
   "smd": {
     "smd": "work/p5_leishen/p6/source1/cf_leishen_m4a4.smd",
-    "sha256": "7956cd0b0b88a1f92a84130ba527a14578327393125cfe6f9d38ce5acff7d925",
+    "sha256": "77d36c94b9f0dedd57f34c9970203133579287aa58b0874f26380e9494bf8498",
     "triangles": 3916,
     "groups": [
       {
@@ -277,7 +323,7 @@
   "compile": {
     "mdl": "work/p5_leishen/p6/isolated_game/csgo/models/weapons/v_rif_m4a1.mdl",
     "exit_code": 0,
-    "sha256": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a"
+    "sha256": "fad31adcb015918ecf98d65fa470a500d231c12ca1fd8e668524eeecafc2f3ae"
   },
   "mdl_header": {
     "magic": "IDST",
@@ -287,15 +333,15 @@
     "local_animation_count": 9,
     "local_sequence_count": 9,
     "size_bytes": 43076,
-    "sha256": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a"
+    "sha256": "fad31adcb015918ecf98d65fa470a500d231c12ca1fd8e668524eeecafc2f3ae"
   },
   "compiled_models": {
     "v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
-    "v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
-    "v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
-    "v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
-    "v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
-    "v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+    "v_rif_m4a1.dx80.vtx": "ce8d70d34c2103806ae224295da98550036bb21999b81a0f37c3a66cc2583d7d",
+    "v_rif_m4a1.dx90.vtx": "932427c69d0c1af23014366300826ac24057e91590c0c9c7071b78c6744dcd17",
+    "v_rif_m4a1.mdl": "fad31adcb015918ecf98d65fa470a500d231c12ca1fd8e668524eeecafc2f3ae",
+    "v_rif_m4a1.sw.vtx": "19f3878573f8d872868327e1f7130a83adc908760f6db03a647f77a4af8556fe",
+    "v_rif_m4a1.vvd": "1ae47c16435314f561ded366d3a78c5df5cad1d88daafc72a853fdec79fb17e8"
   },
   "alpha_channel_stats": {
     "R": {
@@ -373,18 +419,17 @@
     "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_envmask.vtf": "b4417214c233421fe862bf753a8992fe3fd3c376633317f83cc287b77160f32b",
     "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_normal.vtf": "a1aaa66a53a9d1d7530303169214c6854176b91ed2e2d54001955985eddf659d",
     "models/weapons/v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
-    "models/weapons/v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
-    "models/weapons/v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
-    "models/weapons/v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
-    "models/weapons/v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
-    "models/weapons/v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+    "models/weapons/v_rif_m4a1.dx80.vtx": "ce8d70d34c2103806ae224295da98550036bb21999b81a0f37c3a66cc2583d7d",
+    "models/weapons/v_rif_m4a1.dx90.vtx": "932427c69d0c1af23014366300826ac24057e91590c0c9c7071b78c6744dcd17",
+    "models/weapons/v_rif_m4a1.mdl": "fad31adcb015918ecf98d65fa470a500d231c12ca1fd8e668524eeecafc2f3ae",
+    "models/weapons/v_rif_m4a1.sw.vtx": "19f3878573f8d872868327e1f7130a83adc908760f6db03a647f77a4af8556fe",
+    "models/weapons/v_rif_m4a1.vvd": "1ae47c16435314f561ded366d3a78c5df5cad1d88daafc72a853fdec79fb17e8"
   },
   "previous_diagnostic": {
     "src": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_n05j_formula_diag",
     "parked_dst": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\_parked_addons\\p_cf_bornbeast_m4a4_n05j_formula_diag",
-    "action": "moved_outside_addons",
-    "frozen_modified": false,
-    "note": "N05-J diagnostic folder moved out of MIGI addons so P6 can load. Files were not edited."
+    "action": "already_parked",
+    "frozen_modified": false
   },
   "park_frozen": {
     "frozen_in_addons": false,
@@ -424,7 +469,7 @@
   },
   "notes": [
     "Identity is base PV-M4A1_S_Transformers / M4A1-雷神. BornBeast is not this weapon.",
-    "LTB X mirror is the user-confirmed left/right fix; C3 is the frozen P4 M4A4 alignment.",
+    "C3 first, then Source X mirror through 0. Origin-mirror before C3 caused the in-game hand/gun 错位.",
     "VMT follows N05-J: AlphaMap.b as $envmapmask. $phongexponent 16 is still a placeholder.",
     "Cube is first DDS face only. CFG scalars were not copied as Source phong/envmap numbers.",
     "Inspect stays frozen_noop_safe; visible Inspect is P7.",

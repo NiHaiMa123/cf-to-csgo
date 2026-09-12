@@ -371,6 +371,52 @@ def mirror_x_obj(lines: list[str]) -> list[str]:
     return out
 
 
+def weapon_bounds(path: Path) -> dict[str, Any]:
+    verts: list[tuple[float, float, float]] = []
+    group = ""
+    used: set[int] = set()
+    positions: list[tuple[float, float, float]] = []
+    for raw in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        parts = raw.split()
+        if not parts:
+            continue
+        if parts[0] == "v":
+            verts.append((float(parts[1]), float(parts[2]), float(parts[3])))
+        elif parts[0] == "g":
+            group = parts[1] if len(parts) > 1 else ""
+        elif parts[0] == "f" and classify_group(group) is not None:
+            for token in parts[1:]:
+                used.add(int(token.split("/")[0]) - 1)
+    for index in sorted(used):
+        positions.append(verts[index])
+    if not positions:
+        raise RuntimeError(f"no weapon vertices in {path}")
+    mins = [min(point[axis] for point in positions) for axis in range(3)]
+    maxs = [max(point[axis] for point in positions) for axis in range(3)]
+    return {
+        "min": mins,
+        "max": maxs,
+        "size": [maxs[axis] - mins[axis] for axis in range(3)],
+        "center": [(mins[axis] + maxs[axis]) / 2.0 for axis in range(3)],
+        "vertex_count": len(positions),
+    }
+
+
+def assert_hold_bounds(bounds: dict[str, Any]) -> None:
+    # P4 BornBeast C3 weapon sits at Source X center ~0.10, size ~2.67 x 33.1 x 10.5.
+    # Official M4A4 SMD is ~3.06 x 35.3 x 11.3 around X=-0.08.
+    center_x = bounds["center"][0]
+    size = bounds["size"]
+    if abs(center_x) > 1.5:
+        raise RuntimeError(f"weapon Source X center {center_x:.3f} is off the M4A4 hold (need |x|<1.5)")
+    if not 2.0 <= size[0] <= 4.5:
+        raise RuntimeError(f"weapon Source X size {size[0]:.3f} is not viewmodel-thin")
+    if not 30.0 <= size[1] <= 40.0:
+        raise RuntimeError(f"weapon Source Y size {size[1]:.3f} is not a rifle length")
+    if not 8.0 <= size[2] <= 14.0:
+        raise RuntimeError(f"weapon Source Z size {size[2]:.3f} is not viewmodel height")
+
+
 def parse_weapon_obj(path: Path) -> tuple[
     list[tuple[float, float, float]],
     list[tuple[float, float]],
@@ -606,14 +652,21 @@ def main() -> int:
     raw_obj = MESH_DIR / "PV-M4A1_S_Transformers_raw.obj"
     export_info = export_obj(ltb_rel.replace("\\", "/"), raw_obj)
     raw_lines = raw_obj.read_text(encoding="utf-8", errors="replace").splitlines()
-    mirrored_lines = mirror_x_obj(raw_lines)
-    mirrored_obj = MESH_DIR / "PV-M4A1_S_Transformers_x_mirror.obj"
-    mirrored_obj.write_text("\n".join(mirrored_lines) + "\n", encoding="utf-8")
     matrix = c3["matrix_cf_to_source"]
     rotation = normalize_rotation(matrix, c3["uniform_scale"])
-    aligned_lines = transform_lines(mirrored_lines, matrix, rotation)
+    # C3 first so the gun sits on the frozen M4A4 hold. Mirroring CF X through
+    # the LTB origin first moved the weapon (CF X ~ +1.5) to the other side of
+    # the hands (Source X center ~ -5.5). After C3, Source X is already the
+    # viewmodel left/right axis and is ~0-centered, so x=-x keeps the hold.
+    c3_lines = transform_lines(raw_lines, matrix, rotation)
+    c3_obj = MESH_DIR / "PV-M4A1_S_Transformers_c3_only.obj"
+    c3_obj.write_text("\n".join(c3_lines) + "\n", encoding="utf-8")
+    aligned_lines = mirror_x_obj(c3_lines)
     aligned_obj = MESH_DIR / "PV-M4A1_S_Transformers_c3_aligned.obj"
     aligned_obj.write_text("\n".join(aligned_lines) + "\n", encoding="utf-8")
+    hold_before = weapon_bounds(c3_obj)
+    hold_after = weapon_bounds(aligned_obj)
+    assert_hold_bounds(hold_after)
 
     shutil.copytree(REF_DIR / "decompiled", SOURCE1, dirs_exist_ok=True)
     shutil.copy2(GAME / "csgo" / "gameinfo.txt", ISOLATED / "gameinfo.txt")
@@ -703,13 +756,15 @@ def main() -> int:
         "scan": scan_meta,
         "export": export_info,
         "mirror": {
-            "axis": "LTB X",
-            "operation": "scale.x=-1 plus reverse faces, then frozen C3 matrix",
-            "user_confirmation": "对了",
+            "axis": "Source X after C3",
+            "operation": "frozen C3 first, then x=-x plus reverse faces; keeps M4A4 hold",
+            "user_confirmation": "对了 (Blender L/R); in-game origin-mirror was 错位",
             "raw_obj": rel(raw_obj),
-            "mirrored_obj": rel(mirrored_obj),
+            "c3_only_obj": rel(c3_obj),
             "aligned_obj": rel(aligned_obj),
             "aligned_sha256": sha256_file(aligned_obj),
+            "hold_bounds_c3_only": hold_before,
+            "hold_bounds_final": hold_after,
         },
         "smd": smd_info,
         "compile": compile_info,
@@ -729,7 +784,7 @@ def main() -> int:
         ),
         "notes": [
             "Identity is base PV-M4A1_S_Transformers / M4A1-雷神. BornBeast is not this weapon.",
-            "LTB X mirror is the user-confirmed left/right fix; C3 is the frozen P4 M4A4 alignment.",
+            "C3 first, then Source X mirror through 0. Origin-mirror before C3 caused the in-game hand/gun 错位.",
             "VMT follows N05-J: AlphaMap.b as $envmapmask. $phongexponent 16 is still a placeholder.",
             "Cube is first DDS face only. CFG scalars were not copied as Source phong/envmap numbers.",
             "Inspect stays frozen_noop_safe; visible Inspect is P7.",
@@ -760,7 +815,7 @@ def main() -> int:
                 "",
                 "Local identity is base `PV-M4A1_S_Transformers` (user 是雷神 + Bute WeaponName M4A1-雷神). Mesh is compiled from the verified PV LTB, not the P4 BornBeast prototype mesh.",
                 "",
-                "Left/right: LTB X scale −1 + reverse faces, then the frozen C3 M4A4 matrix. User already confirmed the Blender preview 「对了」.",
+                "Left/right: frozen C3 first, then Source X mirror through 0. Mirroring CF X through the LTB origin first shifted the gun off the M4A4 hands (user 错位).",
                 "",
                 "Materials reuse the N05-J formula: AlphaMap.b → `$envmapmask`. `$phongexponent 16` is still a placeholder. Cube is face0 only. CFG scalars were not copied.",
                 "",

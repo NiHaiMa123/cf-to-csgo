@@ -3,7 +3,7 @@
   "result": "P6_IDENTITY_REPLACEMENT_DEPLOYED",
   "smd": {
     "smd": "work/p5_leishen/p6/source1/cf_leishen_m4a4.smd",
-    "sha256": "7956cd0b0b88a1f92a84130ba527a14578327393125cfe6f9d38ce5acff7d925",
+    "sha256": "77d36c94b9f0dedd57f34c9970203133579287aa58b0874f26380e9494bf8498",
     "triangles": 3916,
     "groups": [
       {
@@ -100,11 +100,11 @@
   },
   "compiled_models": {
     "v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
-    "v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
-    "v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
-    "v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
-    "v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
-    "v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+    "v_rif_m4a1.dx80.vtx": "ce8d70d34c2103806ae224295da98550036bb21999b81a0f37c3a66cc2583d7d",
+    "v_rif_m4a1.dx90.vtx": "932427c69d0c1af23014366300826ac24057e91590c0c9c7071b78c6744dcd17",
+    "v_rif_m4a1.mdl": "fad31adcb015918ecf98d65fa470a500d231c12ca1fd8e668524eeecafc2f3ae",
+    "v_rif_m4a1.sw.vtx": "19f3878573f8d872868327e1f7130a83adc908760f6db03a647f77a4af8556fe",
+    "v_rif_m4a1.vvd": "1ae47c16435314f561ded366d3a78c5df5cad1d88daafc72a853fdec79fb17e8"
   },
   "vmt_sha256": "7e75d7c74d4bd424144a1948b40fae8866bf3f5c168384097b159e296df89489",
   "staging_hashes": {
@@ -114,10 +114,10 @@
     "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_envmask.vtf": "b4417214c233421fe862bf753a8992fe3fd3c376633317f83cc287b77160f32b",
     "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_normal.vtf": "a1aaa66a53a9d1d7530303169214c6854176b91ed2e2d54001955985eddf659d",
     "models/weapons/v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
-    "models/weapons/v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
-    "models/weapons/v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
-    "models/weapons/v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
-    "models/weapons/v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
-    "models/weapons/v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+    "models/weapons/v_rif_m4a1.dx80.vtx": "ce8d70d34c2103806ae224295da98550036bb21999b81a0f37c3a66cc2583d7d",
+    "models/weapons/v_rif_m4a1.dx90.vtx": "932427c69d0c1af23014366300826ac24057e91590c0c9c7071b78c6744dcd17",
+    "models/weapons/v_rif_m4a1.mdl": "fad31adcb015918ecf98d65fa470a500d231c12ca1fd8e668524eeecafc2f3ae",
+    "models/weapons/v_rif_m4a1.sw.vtx": "19f3878573f8d872868327e1f7130a83adc908760f6db03a647f77a4af8556fe",
+    "models/weapons/v_rif_m4a1.vvd": "1ae47c16435314f561ded366d3a78c5df5cad1d88daafc72a853fdec79fb17e8"
   }
 }
