@@ -1,0 +1,73 @@
+CF Rez Manager OBJ texture report
+
+Sources: 1
+Meshes: 11
+Texture references: 11
+Missing textures: 11
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: Fview-hand2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: Fview-arm2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_Body
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_MAG
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_part05
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_Reload02
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_part02
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_part04
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_part01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_part03
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_Transformers.LTB
+Mesh: M4A1_transformers_Reload01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_Transformers, ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers, PV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+

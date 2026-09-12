@@ -10,12 +10,12 @@
 ```text
 Date captured                 : 2026-09-13
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
-P4-M01 native material        : INCOMPLETE (pixels on M4A4; lighting deferred)
+P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P5-T04 identity review
-Last accepted evidence commit : f9de490
-State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_NOT_STARTED
+Last completed task           : P6 identity replacement deploy
+Last accepted evidence commit : efabf5c
+State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / USER_RUNTIME_GATE_OPEN
 ```
 
 ## 0.1 已钉死
@@ -36,21 +36,23 @@ State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M
 
 ```text
 Task ID : NONE
-State   : P5-T04 IDENTITY_CONFIRMED; P6 not started
-Goal    : 雷神身份已钉死为 base Transformers；不要部署
-Last    : P5-T04 IDENTITY_CONFIRMED
-Result  : IDENTITY_CONFIRMED
+State   : P6_IDENTITY_REPLACEMENT_DEPLOYED; user runtime Gate open
+Goal    : 用户进游戏确认 M4A4 槽上的雷神
+Last    : P6 identity replacement deployed
+Result  : P6_IDENTITY_REPLACEMENT_DEPLOYED
 ```
 
-**2026-09-13 用户决定（仍有效）**：原生贴图已经在 M4A4 槽上，不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。N05-J 诊断 addon 保持现状。不宣布 P4-M01 PASS。N04-F 仍暂停。
+**2026-09-13 用户决定（仍有效）**：不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。P6 VMT 沿用 N05-J 公式通道，没有把 CFG 标量抄进 phong。不宣布 P4-M01 PASS。N04-F 仍暂停。
 
 **P5-T02**：用户 2026-09-13 在 Blender 中确认 base `PV-M4A1_S_Transformers`（DTX 与 `_PC` 同字节）是 **M4A1-雷神**。`USER_VISUAL_MATCH_CONFIRMED`。不是 `IDENTITY_CONFIRMED`，不是 P6。同时指出 raw LTB 导入左右反了；已在 Blender 对 LTB X 做 scale −1 并翻法线。用户确认「对了」。证据 [`work/p5_leishen/t02_native/visual_match.json`](work/p5_leishen/t02_native/visual_match.json)。未部署、未改 N05-J / frozen。
 
 **P5-T03**：已用 N05-C 验证 reader 建立 identity-core 资源图。packed Bute `rez/Butes/BF005.LTC` 的 canonical Weapon 记录 WeaponName=`M4A1-雷神` / StandardName=`M4A1_S_Transformers`，`PViewModelFileName` / `PViewSkinFileName` / `ModelFileName` / `SkinFileName` 与用户认图的 PV LTB+DTX 及 QV LTB+DTX 一致。CFG Name2 TGA/cube 仍是 config 引用。Identity-core 无独立 REZ WAV；Bute 枪声事件名是 `ShootM4A1-S-Beast`。证据 [`work/p5_leishen/t03/report.md`](work/p5_leishen/t03/report.md)。
 
-**P5-T04**：`IDENTITY_CONFIRMED`。依据 T01 图鉴 + T02 用户认图 + T03 Bute 路径/SHA。不是 P6，不是 P4-M01 PASS。证据 [`work/p5_leishen/t04/identity_review.json`](work/p5_leishen/t04/identity_review.json)。未部署、未改 N05-J / frozen。
+**P5-T04**：`IDENTITY_CONFIRMED`。依据 T01 图鉴 + T02 用户认图 + T03 Bute 路径/SHA。证据 [`work/p5_leishen/t04/identity_review.json`](work/p5_leishen/t04/identity_review.json)。
 
-游戏当前加载：`p_cf_bornbeast_m4a4_n05j_formula_diag`。frozen 仍 parked 在 `migi/csgo/_parked_addons/`。
+**P6**：用户 2026-09-13 明确开做。已把确认身份的 base Transformers PV LTB（LTB X scale −1 + 翻面，再套冻结 C3）和 verified DTX/TGA/cube 编进独立 addon `p_cf_leishen_m4a4_p6`，部署到 M4A4 槽。N05-J 诊断文件夹移到 `_parked_addons/`，frozen 仍 parked、未改文件。`final_target_identity=true`，`final_cf_material=false`。不是 P4-M01 PASS，也还不是 release-quality runtime 验收。证据 [`work/p5_leishen/p6/report.md`](work/p5_leishen/p6/report.md)。
+
+游戏当前加载：`p_cf_leishen_m4a4_p6`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
 N05-E 已在自建 D3D9 device 上载入当前磁盘 `playerviewmesh.fxo`（111 参数 / 43 technique）。CFG 的 `SpecularPower` / `LightBrightness` / `DiffuseBoost` / `AmbientLightColor` / `EnvCubeMapBrightness` / `ReflectionIndex` / `RefractionIndex` 与 effect 参数同名；`DiffuseMap`/`SpecularMap`/`NormalMap`/`AlphaMap`/`CubeMap` 槽存在。D3DX 默认值与 BornBeast CFG 不同，不能当运行时。`CubeMapTransformY` 无同名参数。live FXO SHA 已与 N04-C 不同。未附加 CF。P4-M01 仍 INCOMPLETE。
 
@@ -78,6 +80,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - P5-T02 native：`work/p5_leishen/t02_native/{report.md,gate/gate_sheet.png,execution.json}`
 - P5-T03 graph：`work/p5_leishen/t03/{report.md,resource_graph.json,bute_canonical.json}`
 - P5-T04 identity：`work/p5_leishen/t04/{report.md,identity_review.json}`
+- P6 replacement：`work/p5_leishen/p6/{report.md,execution.json,mapping.json,addon/}`
 
 ## 0.3 禁止
 
@@ -87,12 +90,14 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - 不 git add `data/**`、CF `.exe/.dll/.fxo/.dmp`
 - 未经用户再开任务，不再拟合 CF 打光或改诊断 VMT 质感
 - 不把 M4A1-黑骑士 / BornBeast 写成雷神；不把 filename `Transformers` 当 identity
-- 不把 `USER_VISUAL_MATCH_CONFIRMED` 单独写成 P6；P6 需单独开任务
+- 不把 `USER_VISUAL_MATCH_CONFIRMED` 单独写成 P6；P6 需用户单独开任务（本轮已开）
 - 不在用户认图前写 `USER_VISUAL_MATCH_CONFIRMED` / `IDENTITY_CONFIRMED`
+- 不把 P6 部署写成 P4-M01 PASS 或 lighting match
+- 不覆盖 parked frozen addon 文件
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：原生像素已在 M4A4。用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5-T02 用户已确认 base Transformers = 雷神；P5-T03 资源图已记录，含 packed Bute `PViewSkinFileName`。
+**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 已部署雷神 identity replacement，等待用户游戏内 Gate。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
@@ -117,7 +122,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 
 微软 [Texture Coordinates](https://learn.microsoft.com/en-us/windows/win32/direct3d9/texture-coordinates) 说明常规 UV 是归一化坐标；因此 512 与 1024 的尺寸差本身不是 atlas 不兼容的证据。当前 LTB 的具体 UV 布局仍以正确来源的网格验证为准。
 
-推进规则：**N05-C 正式入口接入 → 正确 PV/CFG 的绑定验证 → FXO/Source 1 语义映射**。像素、绑定、公式分别验收；只有 §3 的全部条件成立才能 native PASS。P5 身份已是 `IDENTITY_CONFIRMED`；P6 未开。P4-M01 仍 INCOMPLETE。
+推进规则：**N05-C 正式入口接入 → 正确 PV/CFG 的绑定验证 → FXO/Source 1 语义映射**。像素、绑定、公式分别验收；只有 §3 的全部条件成立才能 native PASS。P5 身份已是 `IDENTITY_CONFIRMED`。P6 已部署 identity replacement，不是 native PASS。P4-M01 仍 INCOMPLETE。
 
 ---
 
@@ -1451,7 +1456,7 @@ work/p5_leishen/t03/bute_canonical.json
 P5-T04 = IDENTITY_CONFIRMED
 ```
 
-本地身份 = base `PV-M4A1_S_Transformers`。只有 `IDENTITY_CONFIRMED` 才进入 P6；P6 **未开**，未部署。
+本地身份 = base `PV-M4A1_S_Transformers`。只有 `IDENTITY_CONFIRMED` 才进入 P6。P6 已由用户 2026-09-13 开做并部署。
 
 证据：
 
@@ -1464,15 +1469,38 @@ work/p5_leishen/t04/report.md
 
 # 6. P6 — Final replacement / release
 
-在最终 identity 和 native material closure 都成立后：
+```text
+P6 = P6_IDENTITY_REPLACEMENT_DEPLOYED
+final_target_identity = true
+final_cf_material     = false
+addon                 = p_cf_leishen_m4a4_p6
+runtime slot          = M4A4 / weapons/v_rif_m4a1.mdl
+```
+
+用户 2026-09-13 在 `IDENTITY_CONFIRMED` 之后明确开 P6。已完成：
 
 ```text
-final assets
--> clean build
--> validation
+verified Transformers PV LTB/DTX/TGA/cube
+-> LTB X scale −1 + reverse faces
+-> frozen C3 M4A4 matrix
+-> SMD / QC / studiomdl
+-> N05-J formula VMT (AlphaMap.b = $envmapmask)
 -> package
--> deploy
--> release-quality runtime verification
+-> deploy (N05-J parked; frozen parked, unmodified)
+```
+
+还不是：
+
+- P4-M01 PASS / lighting match
+- release-quality runtime verification（需要用户进游戏看）
+- P7 Inspect / 原动画 / 原声音
+
+证据：
+
+```text
+work/p5_leishen/p6/report.md
+work/p5_leishen/p6/execution.json
+work/p5_leishen/p6/mapping.json
 ```
 
 ---
@@ -1563,6 +1591,9 @@ work/p5_leishen/t01_reference/
 work/p5_leishen/t01/
 work/p5_leishen/t02/
 work/p5_leishen/t02_native/
+work/p5_leishen/t03/
+work/p5_leishen/t04/
+work/p5_leishen/p6/
 ```
 
 关键历史提交：

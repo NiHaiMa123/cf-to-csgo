@@ -1,0 +1,19 @@
+CF Rez Manager command-line OBJ export
+
+Source root: D:\project\cf_to_csgo\work\p5_leishen\p6\verified_root
+Model query: Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB
+Raw transform: True
+OBJ: D:\project\cf_to_csgo\work\p5_leishen\p6\mesh\PV-M4A1_S_Transformers_raw.obj
+MTL: D:\project\cf_to_csgo\work\p5_leishen\p6\mesh\PV-M4A1_S_Transformers_raw.mtl
+Texture folder: D:\project\cf_to_csgo\work\p5_leishen\p6\mesh\PV-M4A1_S_Transformers_raw_textures
+Texture report: D:\project\cf_to_csgo\work\p5_leishen\p6\mesh\PV-M4A1_S_Transformers_raw_texture_report.txt
+Mapping report: D:\project\cf_to_csgo\work\p5_leishen\p6\mesh\PV-M4A1_S_Transformers_raw_mapping_candidates.txt
+Export report: D:\project\cf_to_csgo\work\p5_leishen\p6\mesh\PV-M4A1_S_Transformers_raw_export_report.json
+
+Sources: 1
+Meshes: 11
+Vertices: 4370
+Triangles: 5250
+Textures exported: 0
+Missing textures: 11
+Skipped matched files: 0

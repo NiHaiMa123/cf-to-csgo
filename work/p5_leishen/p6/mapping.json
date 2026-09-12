@@ -1,0 +1,123 @@
+{
+  "addon_name": "p_cf_leishen_m4a4_p6",
+  "result": "P6_IDENTITY_REPLACEMENT_DEPLOYED",
+  "smd": {
+    "smd": "work/p5_leishen/p6/source1/cf_leishen_m4a4.smd",
+    "sha256": "7956cd0b0b88a1f92a84130ba527a14578327393125cfe6f9d38ce5acff7d925",
+    "triangles": 3916,
+    "groups": [
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_Body",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 3262
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_MAG",
+        "kind": "clip",
+        "bone_index": 4,
+        "bone": "v_weapon.M4A1_Clip",
+        "triangles": 44
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_Reload01",
+        "kind": "bolt",
+        "bone_index": 29,
+        "bone": "v_weapon.M4A1_Bolt",
+        "triangles": 74
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_Reload02",
+        "kind": "bolt",
+        "bone_index": 29,
+        "bone": "v_weapon.M4A1_Bolt",
+        "triangles": 122
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part01",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 118
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part02",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 118
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part03",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 50
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part04",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 64
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part05",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 64
+      }
+    ],
+    "skipped_arm_groups": [
+      "PV-M4A1_S_Transformers_Fview-hand2",
+      "PV-M4A1_S_Transformers_Fview-arm2"
+    ],
+    "kinds": [
+      "bolt",
+      "clip",
+      "parent"
+    ]
+  },
+  "vtfs": {
+    "diffuse": {
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "vtf_sha256": "b5bc39719cf06814503d05b43ef185b9f7a452329e7d307594acda6d536b096d"
+    },
+    "normal": {
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1_normal.vtf",
+      "vtf_sha256": "a1aaa66a53a9d1d7530303169214c6854176b91ed2e2d54001955985eddf659d"
+    },
+    "cube": {
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1_cube.vtf",
+      "vtf_sha256": "41a897ce7ce4516e95bede3130bf663ca5478af7f3f80921289a2cd79c687a19"
+    },
+    "envmask": {
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1_envmask.vtf",
+      "vtf_sha256": "b4417214c233421fe862bf753a8992fe3fd3c376633317f83cc287b77160f32b"
+    }
+  },
+  "compiled_models": {
+    "v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
+    "v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
+    "v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
+    "v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
+    "v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
+    "v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+  },
+  "vmt_sha256": "7e75d7c74d4bd424144a1948b40fae8866bf3f5c168384097b159e296df89489",
+  "staging_hashes": {
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt": "7e75d7c74d4bd424144a1948b40fae8866bf3f5c168384097b159e296df89489",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf": "b5bc39719cf06814503d05b43ef185b9f7a452329e7d307594acda6d536b096d",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_cube.vtf": "41a897ce7ce4516e95bede3130bf663ca5478af7f3f80921289a2cd79c687a19",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_envmask.vtf": "b4417214c233421fe862bf753a8992fe3fd3c376633317f83cc287b77160f32b",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_normal.vtf": "a1aaa66a53a9d1d7530303169214c6854176b91ed2e2d54001955985eddf659d",
+    "models/weapons/v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
+    "models/weapons/v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
+    "models/weapons/v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
+    "models/weapons/v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
+    "models/weapons/v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
+    "models/weapons/v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+  }
+}

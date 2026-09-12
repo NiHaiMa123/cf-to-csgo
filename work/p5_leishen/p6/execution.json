@@ -1,0 +1,433 @@
+{
+  "schema": "cf2.p6.identity-replacement.v1",
+  "generated_at_utc": "2026-09-12T17:48:11.779329+00:00",
+  "task": "P6",
+  "result": "P6_IDENTITY_REPLACEMENT_DEPLOYED",
+  "identity_confirmed": true,
+  "final_target_identity": true,
+  "final_cf_material": false,
+  "p4_m01": "INCOMPLETE",
+  "official": {
+    "name": "M4A1-雷神",
+    "itemid": 2010044601,
+    "image": "https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png",
+    "sha256": "ffa14d6a8a633a4e4a95af3d0564d8b5448a447513c2fe88a4e5c866e8bdc2b8"
+  },
+  "local": {
+    "standard_name": "M4A1_S_Transformers",
+    "pv_ltb": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+    "pv_ltb_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+    "pv_dtx": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+    "pv_dtx_sha256": "7ca69f66d229a942752edd327fde145e45c2c00d65b570f5e5a6b6ac68d52555",
+    "same_bytes_alias": "PV-M4A1_S_Transformers_PC.DTX / M4A1_S_Transformers_PC.CFG"
+  },
+  "addon_name": "p_cf_leishen_m4a4_p6",
+  "inspect_policy": {
+    "mode": "frozen_noop_safe",
+    "frame_count": 1,
+    "bone_count": 57,
+    "generated": [
+      {
+        "source": "idle.smd",
+        "output": "lookat01_frozen.smd",
+        "frame_count": 1,
+        "bone_count": 57
+      },
+      {
+        "source": "idle.smd",
+        "output": "lookat01_prepare_frozen.smd",
+        "frame_count": 1,
+        "bone_count": 57
+      },
+      {
+        "source": "idle.smd",
+        "output": "lookat01_loop_frozen.smd",
+        "frame_count": 1,
+        "bone_count": 57
+      }
+    ],
+    "visible_motion_expected": false,
+    "p4_gate": "runtime safety/state return only; visual retarget is deferred to P7",
+    "replaced_sequences": [
+      "lookat01",
+      "lookat01_prepare",
+      "lookat01_loop"
+    ],
+    "removed_events": true
+  },
+  "recovered": {
+    "pv_ltb": {
+      "full_path": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "size": 152923,
+      "routing": "main_file",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "directory_md5": "7524a50ffd4a381479f647fdf04b6295"
+    },
+    "pv_dtx": {
+      "full_path": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+      "sha256": "7ca69f66d229a942752edd327fde145e45c2c00d65b570f5e5a6b6ac68d52555",
+      "size": 524452,
+      "routing": "numbered_part",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "directory_md5": "baa25436eb34a5ac91412e9c099c8604"
+    },
+    "specular": {
+      "full_path": "ModelTextures/SpecularMap/M4A1_S_Transformers_S.TGA",
+      "sha256": "84694eb4f6df52e4781133f6843f545efaa04e2a88760078ae50c4b23b84084e",
+      "size": 3145772,
+      "routing": "numbered_part",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_12.REZ",
+      "directory_md5": "06d52d37dd8a4a4df86ee354a39ea03b"
+    },
+    "normal": {
+      "full_path": "ModelTextures/NormalMap/M4A1_S_Transformers_N.TGA",
+      "sha256": "882c4561f55e9d07163e3f7137b7097c209fcfbab50cbe4dc96f67ed42ba7f9d",
+      "size": 3145772,
+      "routing": "numbered_part",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+      "directory_md5": "a6d0e8645d3e0a5bad006d46dcb54c46"
+    },
+    "alpha": {
+      "full_path": "ModelTextures/AlphaMap/M4A1_S_Transformers_Alpha.TGA",
+      "sha256": "9b66c835a190797e722b50cf2cf98d64b17d5cccd141cbd7b092795c7ab9cb7e",
+      "size": 3145772,
+      "routing": "numbered_part",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+      "directory_md5": "0fa5919e0910d0489616b57dcb620b77"
+    },
+    "cube": {
+      "full_path": "ModelTextures/EnvCubeMap/Black_Shader02.DDS",
+      "sha256": "c64014afe4b358b857a45aa025b05af81a3e6273ad203426afba0535191e9c8f",
+      "size": 786560,
+      "routing": "numbered_part",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_4.rez",
+      "directory_md5": "5f7a4f253db70427a7fb793fa25d2068"
+    }
+  },
+  "decoded": {
+    "pv_ltb": {
+      "ok": true,
+      "path": "work/p5_leishen/p6/verified_root/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+      "bytes": 604808,
+      "lzma": true,
+      "sha256_raw": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "sha256_body": "511dec8d2401a1886ddecd14b4f18e17ac0afbefd943f6dc11a3fd2f82ef6b49"
+    },
+    "pv_dtx": {
+      "ok": true,
+      "path": "work/p5_leishen/p6/_png/diffuse.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "format": "dxt1",
+      "png_sha256": "91e0a4b2096c5d8d639dae1b7bf49fe5625fab2c86eed9069079f2846c288083"
+    },
+    "normal": {
+      "ok": true,
+      "path": "work/p5_leishen/p6/_png/normal_src.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "png_sha256": "5612af7cbfb022632de9813197afa8b6467207b7fe1745f47b0252fe52c4223a"
+    },
+    "specular": {
+      "ok": true,
+      "path": "work/p5_leishen/p6/_png/specular_src.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "png_sha256": "44be09441d3fffd539d32ad650c52a4130bfea57944ec56ad5c81a2a029ade28"
+    },
+    "alpha": {
+      "ok": true,
+      "path": "work/p5_leishen/p6/_png/alpha_src.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "png_sha256": "325a05288ce0ad486300b92f524841f00bb37484910674e73c5ed3380f9aee5d"
+    },
+    "cube": {
+      "ok": true,
+      "path": "work/p5_leishen/p6/_png/cube_face0.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "png_sha256": "07415a62a6ea0e759f5bff514553731751065f96b5773d99badc6ace78488ef7",
+      "stdout": "Decoded image: D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\_png\\cube_face0.dds\nOutput: D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\_png\\cube_face0.png"
+    }
+  },
+  "scan": {
+    "scanned": [
+      "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+      "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ"
+    ]
+  },
+  "export": {
+    "obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_raw.obj",
+    "sha256": "c7967571fc810ae276e79f8543c2cb7ba690253ddab2ff553c6ff83582a3f441",
+    "bytes": 981755
+  },
+  "mirror": {
+    "axis": "LTB X",
+    "operation": "scale.x=-1 plus reverse faces, then frozen C3 matrix",
+    "user_confirmation": "对了",
+    "raw_obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_raw.obj",
+    "mirrored_obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_x_mirror.obj",
+    "aligned_obj": "work/p5_leishen/p6/mesh/PV-M4A1_S_Transformers_c3_aligned.obj",
+    "aligned_sha256": "36c1c5d184a095cb7cc87506c487b66403428516df0e51f039575cdacfbf0419"
+  },
+  "smd": {
+    "smd": "work/p5_leishen/p6/source1/cf_leishen_m4a4.smd",
+    "sha256": "7956cd0b0b88a1f92a84130ba527a14578327393125cfe6f9d38ce5acff7d925",
+    "triangles": 3916,
+    "groups": [
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_Body",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 3262
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_MAG",
+        "kind": "clip",
+        "bone_index": 4,
+        "bone": "v_weapon.M4A1_Clip",
+        "triangles": 44
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_Reload01",
+        "kind": "bolt",
+        "bone_index": 29,
+        "bone": "v_weapon.M4A1_Bolt",
+        "triangles": 74
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_Reload02",
+        "kind": "bolt",
+        "bone_index": 29,
+        "bone": "v_weapon.M4A1_Bolt",
+        "triangles": 122
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part01",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 118
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part02",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 118
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part03",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 50
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part04",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 64
+      },
+      {
+        "group": "PV-M4A1_S_Transformers_M4A1_transformers_part05",
+        "kind": "parent",
+        "bone_index": 3,
+        "bone": "v_weapon.M4A1_Parent",
+        "triangles": 64
+      }
+    ],
+    "skipped_arm_groups": [
+      "PV-M4A1_S_Transformers_Fview-hand2",
+      "PV-M4A1_S_Transformers_Fview-arm2"
+    ],
+    "kinds": [
+      "bolt",
+      "clip",
+      "parent"
+    ]
+  },
+  "compile": {
+    "mdl": "work/p5_leishen/p6/isolated_game/csgo/models/weapons/v_rif_m4a1.mdl",
+    "exit_code": 0,
+    "sha256": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a"
+  },
+  "mdl_header": {
+    "magic": "IDST",
+    "version": 49,
+    "internal_name": "weapons\\v_rif_m4a1.mdl",
+    "bone_count": 57,
+    "local_animation_count": 9,
+    "local_sequence_count": 9,
+    "size_bytes": 43076,
+    "sha256": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a"
+  },
+  "compiled_models": {
+    "v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
+    "v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
+    "v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
+    "v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
+    "v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
+    "v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+  },
+  "alpha_channel_stats": {
+    "R": {
+      "min": 255,
+      "max": 255,
+      "mean": 255.0
+    },
+    "G": {
+      "min": 255,
+      "max": 255,
+      "mean": 255.0
+    },
+    "B": {
+      "min": 0,
+      "max": 129,
+      "mean": 31.39024066925049
+    }
+  },
+  "vtfs": {
+    "diffuse": {
+      "png": "work/p5_leishen/p6/_png/diffuse_rgb.png",
+      "png_sha256": "7ad063da66ad26723f4bc52e5060acd8311f1ee631552ef79d508c556481a41f",
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf",
+      "vtf_sha256": "b5bc39719cf06814503d05b43ef185b9f7a452329e7d307594acda6d536b096d",
+      "format": "dxt1",
+      "png_size": [
+        1024,
+        1024
+      ],
+      "vtf_bytes": 699288
+    },
+    "normal": {
+      "png": "work/p5_leishen/p6/_png/normal_rgb.png",
+      "png_sha256": "5612af7cbfb022632de9813197afa8b6467207b7fe1745f47b0252fe52c4223a",
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1_normal.vtf",
+      "vtf_sha256": "a1aaa66a53a9d1d7530303169214c6854176b91ed2e2d54001955985eddf659d",
+      "format": "dxt5",
+      "png_size": [
+        1024,
+        1024
+      ],
+      "vtf_bytes": 1398352
+    },
+    "cube": {
+      "png": "work/p5_leishen/p6/_png/cube_rgb.png",
+      "png_sha256": "1bd02a9a5a599c34d5773439e9a4d03073fe38c8bdb049b44a854aa8fbe549bb",
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1_cube.vtf",
+      "vtf_sha256": "41a897ce7ce4516e95bede3130bf663ca5478af7f3f80921289a2cd79c687a19",
+      "format": "dxt1",
+      "png_size": [
+        256,
+        256
+      ],
+      "vtf_bytes": 43928
+    },
+    "envmask": {
+      "png": "work/p5_leishen/p6/_png/envmask_from_alpha_b.png",
+      "png_sha256": "a3ca1dcc5ec2e19b8f34c0a738c972cd896e7ee1f0c0fcdad4e3e37f15e4dbaf",
+      "vtf": "work/p5_leishen/p6/addon/materials/models/weapons/v_models/rif_m4a1/rif_m4a1_envmask.vtf",
+      "vtf_sha256": "b4417214c233421fe862bf753a8992fe3fd3c376633317f83cc287b77160f32b",
+      "format": "dxt1",
+      "png_size": [
+        1024,
+        1024
+      ],
+      "vtf_bytes": 699288
+    }
+  },
+  "vmt_sha256": "7e75d7c74d4bd424144a1948b40fae8866bf3f5c168384097b159e296df89489",
+  "staging": "work/p5_leishen/p6/addon",
+  "staging_hashes": {
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt": "7e75d7c74d4bd424144a1948b40fae8866bf3f5c168384097b159e296df89489",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vtf": "b5bc39719cf06814503d05b43ef185b9f7a452329e7d307594acda6d536b096d",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_cube.vtf": "41a897ce7ce4516e95bede3130bf663ca5478af7f3f80921289a2cd79c687a19",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_envmask.vtf": "b4417214c233421fe862bf753a8992fe3fd3c376633317f83cc287b77160f32b",
+    "materials/models/weapons/v_models/rif_m4a1/rif_m4a1_normal.vtf": "a1aaa66a53a9d1d7530303169214c6854176b91ed2e2d54001955985eddf659d",
+    "models/weapons/v_rif_m4a1.ani": "468bcad13c2a8ae26a26429a500c223ca9c438ae4b699e23c5c0989ef96c5ccc",
+    "models/weapons/v_rif_m4a1.dx80.vtx": "86ae94e3d22d512db6fcd5ce6bd3f3e22c040ba8f7f56d77d43271567e5adc4d",
+    "models/weapons/v_rif_m4a1.dx90.vtx": "3ecbf608ebed120c84f16179a1c604237b68638a9c012871db6f7d7f7f567857",
+    "models/weapons/v_rif_m4a1.mdl": "e25eede313528b393f81b730b597b18fc3de56a100ffca0e16f0ce0975352c4a",
+    "models/weapons/v_rif_m4a1.sw.vtx": "12fa5922dfbfb98fa8568233289f76df27a5f1b52dd14707d043489851a687dd",
+    "models/weapons/v_rif_m4a1.vvd": "4fd09ef4e2c6b5d0f6329b2c274dd2d6606470b4d09b2a51932f2f8ed4913fb9"
+  },
+  "previous_diagnostic": {
+    "src": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_bornbeast_m4a4_n05j_formula_diag",
+    "parked_dst": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\_parked_addons\\p_cf_bornbeast_m4a4_n05j_formula_diag",
+    "action": "moved_outside_addons",
+    "frozen_modified": false,
+    "note": "N05-J diagnostic folder moved out of MIGI addons so P6 can load. Files were not edited."
+  },
+  "park_frozen": {
+    "frozen_in_addons": false,
+    "frozen_parked": true,
+    "frozen_modified": false,
+    "parked_dst": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\_parked_addons\\p_cf_bornbeast_m4a4_p4_frozen_noop_01"
+  },
+  "deploy": {
+    "target": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_leishen_m4a4_p6",
+    "action": "created",
+    "file_count": 11
+  },
+  "cfg_recorded_not_copied": {
+    "Textures": {
+      "SpecularMapName2": "M4A1_S_Transformers_S.tga",
+      "EnvCubeMapName2": "Black_Shader02.dds",
+      "NormalMapName2": "M4A1_S_Transformers_N.tga",
+      "AlphaMapName2": "M4A1_S_Transformers_alpha.tga"
+    },
+    "Techniques": {
+      "DiffuseMappingEnabled": "1",
+      "SpecularMappingEnabled": "1",
+      "EnvCubeMappingEnabled": "1",
+      "NormalMappingEnabled": "1"
+    },
+    "Properties": {
+      "LightBrightness": "0.1",
+      "EnvCubeMapBrightness": "2.5",
+      "SpecularPower": "1.5",
+      "DiffuseBoost": "0.3",
+      "AmbientLightColor": "0.03",
+      "RefractionIndex": "0.09",
+      "ReflectionIndex": "0.07",
+      "EnvCubeUsage": "2",
+      "CubeMapTransformY": "-220"
+    }
+  },
+  "notes": [
+    "Identity is base PV-M4A1_S_Transformers / M4A1-雷神. BornBeast is not this weapon.",
+    "LTB X mirror is the user-confirmed left/right fix; C3 is the frozen P4 M4A4 alignment.",
+    "VMT follows N05-J: AlphaMap.b as $envmapmask. $phongexponent 16 is still a placeholder.",
+    "Cube is first DDS face only. CFG scalars were not copied as Source phong/envmap numbers.",
+    "Inspect stays frozen_noop_safe; visible Inspect is P7.",
+    "Not a P4-M01 PASS. Lighting/feel remain deferred."
+  ]
+}
