@@ -1087,6 +1087,32 @@ WeaponShader CFG code consumer       OPEN (packed exe, 0 xref)
 P4-M01                               INCOMPLETE
 ```
 
+## 4.22 N04-C freeze
+
+Review 接受提交：
+
+```text
+ee092c317e3cbd42fedd130f864d022b270ab0bd  P4-M01-N04-C
+P4-M01-N04-C = ACCEPTED / FXO_NAMES_GENERIC
+```
+
+```text
+playerviewmesh.fxo   D3D9 effect, not DXBC
+samplers             Diffuse/Specular/Normal/Alpha/Overlay/Mask/Noise
+techniques           tPlayerViewMesh / tPlayerViewMeshEmsv
+WeaponShader/CFG/TGA paths           none
+```
+
+用户已授权 packed `crossfire.exe` **额外静态**（不脱壳、不附加进程）。
+
+当前有效 closure 边界：
+
+```text
+FXO sampler slots                    OBSERVED
+WeaponShader CFG code consumer       OPEN (N04-D packed exe static)
+P4-M01                               INCOMPLETE
+```
+
 ---
 
 ## P5-T01 — Official reference
@@ -1246,6 +1272,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03h_dtx_contai
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04a_pe_string_hits/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04b_pe_xref/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04c_playerviewmesh_fxo/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n04d_packed_crossfire_static/
 ```
 
 ## External reference implementation / positive control
@@ -1298,6 +1325,7 @@ f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 cons
 3c29eb58691cc7b0d6fe70297fbb427dbc14d2d6  N03-H no native gun-atlas DTX; 524452 is energy
 d770a0a2c46a3c02f910fb28034635adac95b458  N04-A CShell SpecularMap\%s; WeaponShader dir prefix
 ca8c2209541bb60f7b8cc6b7cfb4cca4715475f2  N04-B CShell LEAs SpecularMap\%s; WeaponShader 0 xref
+ee092c317e3cbd42fedd130f864d022b270ab0bd  N04-C playerviewmesh.fxo sampler slots, no paths
 ```
 
 ---

@@ -1,0 +1,1424 @@
+{
+  "schema": "cf2.p4m01.n04d-packed-crossfire-static.v1",
+  "generated_at_utc": "2026-09-12T08:13:46.157+00:00",
+  "status": "PACKED_OPAQUE",
+  "file": "x64/crossfire.exe",
+  "sha256": "9c0816400a6b25f83f3b8c56717001eddf978f15503d9b3f7cdb3ea281df25e7",
+  "size_bytes": 7794816,
+  "entry_rva": 8127547,
+  "image_base": 5368709120,
+  "imports": [
+    "crossfireBase.dll"
+  ],
+  "overlay_bytes": 10880,
+  "sections": [
+    {
+      "index": 0,
+      "name": ".std",
+      "va": 4096,
+      "vsize": 5526264,
+      "raw_ptr": 1024,
+      "raw_size": 5526528,
+      "executable": true,
+      "entropy": 7.9899
+    },
+    {
+      "index": 1,
+      "name": ".std",
+      "va": 5533696,
+      "vsize": 1185990,
+      "raw_ptr": 5527552,
+      "raw_size": 1186304,
+      "executable": false,
+      "entropy": 5.0813
+    },
+    {
+      "index": 2,
+      "name": ".std",
+      "va": 6721536,
+      "vsize": 619208,
+      "raw_ptr": 6713856,
+      "raw_size": 155648,
+      "executable": false,
+      "entropy": 3.2928
+    },
+    {
+      "index": 3,
+      "name": ".std",
+      "va": 7344128,
+      "vsize": 221964,
+      "raw_ptr": 6869504,
+      "raw_size": 222208,
+      "executable": false,
+      "entropy": 6.1285
+    },
+    {
+      "index": 4,
+      "name": ".std",
+      "va": 7569408,
+      "vsize": 475936,
+      "raw_ptr": 7091712,
+      "raw_size": 476160,
+      "executable": false,
+      "entropy": 2.6527
+    },
+    {
+      "index": 5,
+      "name": ".std",
+      "va": 8048640,
+      "vsize": 213830,
+      "raw_ptr": 7567872,
+      "raw_size": 214016,
+      "executable": true,
+      "entropy": 7.9988
+    },
+    {
+      "index": 6,
+      "name": ".std",
+      "va": 8265728,
+      "vsize": 1521,
+      "raw_ptr": 7781888,
+      "raw_size": 1536,
+      "executable": false,
+      "entropy": -0.0
+    },
+    {
+      "index": 7,
+      "name": ".std",
+      "va": 8269824,
+      "vsize": 115,
+      "raw_ptr": 7783424,
+      "raw_size": 512,
+      "executable": false,
+      "entropy": 1.6711
+    }
+  ],
+  "weaponshader": {
+    "file_offset": 5896672,
+    "rva": 5902816,
+    "text": "MODELTEXTURES\\Shader\\WeaponShader\\",
+    "lea_xrefs": 0,
+    "ptr64_count": 0,
+    "ptr32_count": 0,
+    "island_1024": [
+      "DiffuseScene",
+      "NormalScene",
+      "EmissiveScene",
+      "ScreenSize",
+      "OriginalScene",
+      "EffectScene",
+      "OriginalSceneDepth",
+      "TranslucentSceneDepth",
+      "DownSizingFilter",
+      "PixelKernelFilter",
+      "BlurScene",
+      "LUTSrc",
+      "BlendFactor",
+      "LUTDest",
+      "Material",
+      "g_txSrcColor",
+      "Material\\PostProcess\\Texture\\LUT\\",
+      "ScreenRange",
+      "InvViewProjectionMatrix",
+      "ViewProjectionMatrix",
+      "g_txSceneColor",
+      "g_txSceneDepth",
+      "g_txTranslucentDepth",
+      "Material\\PostProcess\\Texture\\random.png",
+      "Material\\PostProcess\\Texture\\RefractionEffectDefault.png",
+      "Emissive",
+      "Refraction",
+      "ColorGrading",
+      "Nangpa_La",
+      "Wave_OneWay",
+      "CollideParticles 0",
+      "CollideParticles 1",
+      "IgnoreModelLOD 0",
+      "ConvertPixelsToTexels",
+      "PostProcess",
+      "MODELTEXTURES\\Shader\\WeaponShader\\",
+      "MODELTEXTURES\\Shader\\CharacterShader\\",
+      ".cfg",
+      "temp",
+      "_Indoor"
+    ]
+  },
+  "filtered_low_entropy_strings": [
+    {
+      "file_offset": 5645808,
+      "text": "CleanupDirectoryFiles(%s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5645872,
+      "text": "CleanupDirectoryFiles - FindFirstFileW Failed: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5645952,
+      "text": "DeleteFile Success: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5645976,
+      "text": "DeleteFile Failed: %s (Error: %d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646072,
+      "text": "[CrashCallback] CustomLog Created: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646192,
+      "text": "GetFileVersionString - Success (version:%s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646264,
+      "text": "  crashType: %d (%s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646288,
+      "text": "  environment: %s (%d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646312,
+      "text": "[CustomLog] isCustomLogCreate: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646352,
+      "text": "[CustomLog] Created: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646384,
+      "text": "OnCrashExtraMessageNotify - isErrorReport=%s, resultLog.size()=%u, Elapsed Time: %.2f ms",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646680,
+      "text": "ReportError Throttled - name=%s, elapsed=%ums (interval=%ums)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646744,
+      "text": "ReportError - name=%s, message=%s, isSync=%s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646840,
+      "text": "CheckEnvironment - m_environment=%s (%d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646888,
+      "text": "CrashSight SDK Init - m_environment=%s (%d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5646992,
+      "text": "IsSDKTest : %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5647008,
+      "text": "CrashSight SDK Init - IsSDKTest : %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5647120,
+      "text": "SetVehEnable : %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5647144,
+      "text": "SetExtraHandler : %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5647448,
+      "text": "CrashSight SDK Init - %s : %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5647480,
+      "text": "CreateWorkspaceDirectory - %s Creation Failed (Error: %lu)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5648944,
+      "text": "%s [%s:%d]",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5655392,
+      "text": "CLTClient::SetSpriteEffectShaderID",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5656008,
+      "text": "CLTClient::SetObjectForceShaderRender",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5656272,
+      "text": "Pre-FreeInGameTexture (MB) : AvailPhys %llu, TotalPhys %llu, AvailPageFile %llu, TotalPageFile %llu, CommitTotal %llu, CommitLimit %llu, WorkingSet %llu, PrivateUsage %llu, LimitSize %llu",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5656480,
+      "text": "FreeInGameTexture()",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5656512,
+      "text": "Post-FreeInGameTexture (MB) : AvailPhys %llu, TotalPhys %llu, AvailPageFile %llu, TotalPageFile %llu, CommitTotal %llu, CommitLimit %llu, WorkingSet %llu, PrivateUsage %llu, FreeSize %llu",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657096,
+      "text": "CLTClient::SetParticleSystemEffectShaderID",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657144,
+      "text": "CLTClient::SetVolumeEffectEffectShaderID",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657216,
+      "text": "CLTClient::SetPolyGridTexture",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657272,
+      "text": "CLTClient::GetPolyGridTextureInfo",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657312,
+      "text": "GetPolyGridTextureInfo",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657336,
+      "text": "CLTClient::SetPolyGridTextureInfo",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657392,
+      "text": "CLTClient::SetPolygridEffectShaderID",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657432,
+      "text": "CLTClient::GetPolyTextureFlags",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657648,
+      "text": "model-rez: client preload cached modelfile(%s) not found",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5657712,
+      "text": "model-rez: client preload cached model file(%s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5660440,
+      "text": "version %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5660832,
+      "text": "Missing sound file %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5660888,
+      "text": "Unfreed string: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661144,
+      "text": "autoexec.cfg",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661288,
+      "text": "model-rez: client CacheModelFile %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661328,
+      "text": "model-rez: client CacheModelFile could not load %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661384,
+      "text": "model-rez: client CacheModelFile %s already loaded.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661552,
+      "text": "model-rez: client Only CacheModelDBFile %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661600,
+      "text": "model-rez: client Only CacheModelDBFile could not load %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661664,
+      "text": "model-rez: client Only CacheModelDBFile %s already loaded.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661728,
+      "text": "model-rez: client UncacheModelFile fileID :%d %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661784,
+      "text": "model-rez: client loadmodel [%d] %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5661832,
+      "text": "model-rez: client loadmodel failed [%d] %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662000,
+      "text": "Error %d loading model %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662032,
+      "text": "Child model trees invalid in model %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662096,
+      "text": "Missing one or more child models in model %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662144,
+      "text": "(%s) (%s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662160,
+      "text": "Error opening file %s for writing to generate texture log",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662224,
+      "text": "Texture name, Loaded, Memory Used (k), Width, Height, Mip Maps",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662288,
+      "text": "User Texture",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662312,
+      "text": "%s, %s, %d, %d, %d, %d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5662584,
+      "text": "%s_USN_%lld%s.log",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5663080,
+      "text": "textures\\default_texture.dtx",
+      "has_format": false,
+      "has_path": true
+    },
+    {
+      "file_offset": 5663112,
+      "text": "Unable to find world texture %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5663296,
+      "text": "SetWorldModelOriginalBSPPolyTexturePointers failed",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5665456,
+      "text": "gMaterialSpecular",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5665528,
+      "text": "gMaterialSpecularPower",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5665632,
+      "text": "gLightSpecular",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666016,
+      "text": "[AdvShader] Name : %s, C : %d, I : %d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666056,
+      "text": "[AdvShader] Xform Array Range Error !",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666096,
+      "text": "[AdvShader] %s. (Name : %s, Mesh Type : %d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666168,
+      "text": "RS\\SHADEREFFECT_SKINNING.LTB",
+      "has_format": false,
+      "has_path": true
+    },
+    {
+      "file_offset": 5666256,
+      "text": "Failed to set texture (%s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666288,
+      "text": "texture%d",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666336,
+      "text": "DiffuseTexture",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666472,
+      "text": "material\\PostProcess\\Texture\\disolve_noise.png",
+      "has_format": false,
+      "has_path": true
+    },
+    {
+      "file_offset": 5666536,
+      "text": "material\\PostProcess\\Texture\\color_ramp_2.png",
+      "has_format": false,
+      "has_path": true
+    },
+    {
+      "file_offset": 5666648,
+      "text": "material\\PostProcess\\Texture\\Led3.png",
+      "has_format": false,
+      "has_path": true
+    },
+    {
+      "file_offset": 5667392,
+      "text": "Unable to find server file: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5667480,
+      "text": "FileID = %u, FileName = %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5668336,
+      "text": "CommonLT::GetPolyTextureFlags",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672128,
+      "text": "world %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672152,
+      "text": "Error enabling device: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672184,
+      "text": "Error disabling device: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672216,
+      "text": "World file '%s' not found",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672272,
+      "text": "renderDLL %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672312,
+      "text": "Error binding device: %s, trigger: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672352,
+      "text": "Error finding device: %s, trigger: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672464,
+      "text": "Usage: LogTextureInfo <filename.csv>",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672832,
+      "text": "Error: \"%s\" is not a valid ShowTicks section",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5672992,
+      "text": "Successfully read %d commands from %s.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5673032,
+      "text": "Error opening file %s.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5673056,
+      "text": "Successfully wrote %d commands to %s.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5673128,
+      "text": "Successfully executed %s.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5673160,
+      "text": "Error executing %s.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5673328,
+      "text": "%s: %d.%d, %s: %d, %s: %d/%d/%d, %s, %s: %s, %s: %s",
+      "has_format": true,
+      "has_path": true
+    },
+    {
+      "file_offset": 5673888,
+      "text": "RebindTextures",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5673904,
+      "text": "LogTextureInfo",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674072,
+      "text": "ProcessError - theError & ERROR_DISCONNECT , Errorstring = %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674136,
+      "text": "ProcessError - theError & ERROR_SHUTDOWN , Errorstring = %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674512,
+      "text": "%s\\Report\\SGErrMsg[%d-%d-%d-%d-%d-%d].TXT",
+      "has_format": true,
+      "has_path": true
+    },
+    {
+      "file_offset": 5674624,
+      "text": "%s\\Report",
+      "has_format": true,
+      "has_path": true
+    },
+    {
+      "file_offset": 5674640,
+      "text": "Physical Memory : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674675,
+      "text": " : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674747,
+      "text": "  : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674760,
+      "text": "DirectX Version : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674784,
+      "text": "Graphic Chip Type : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674826,
+      "text": " : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674850,
+      "text": "  : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674864,
+      "text": "Graphic Driver Ver : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674896,
+      "text": "Graphic Driver Date: %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674952,
+      "text": "Graphic Driver Name: %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5674984,
+      "text": "Sound Card Name   : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5675016,
+      "text": "Sound Card Driver Version: %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5675063,
+      "text": " : %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5675072,
+      "text": "Monitor DisplayMode: %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5675104,
+      "text": "Sound Card Driver Date: %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5675168,
+      "text": "%s %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5675248,
+      "text": "[%s]=%s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5675912,
+      "text": "%d. %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5679088,
+      "text": "CLTTextureString",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5679112,
+      "text": "ILTTextureString.Default",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5679232,
+      "text": "%d : %f : %s : Type #%d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5679344,
+      "text": "Loading sprite: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5679536,
+      "text": "model-rez: client ModelExtraInit could not load  %s (%d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5679640,
+      "text": "ModelTextures/PlayerView/",
+      "has_format": false,
+      "has_path": true
+    },
+    {
+      "file_offset": 5679744,
+      "text": "ModelTextures/WEAPONS/",
+      "has_format": false,
+      "has_path": true
+    },
+    {
+      "file_offset": 5680432,
+      "text": "model-rez: client server->unloadcachedmodel %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5680728,
+      "text": "model-rez: client-change-child-model(add) %s -> %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5681440,
+      "text": "CreateGlyphTexture:  Failed to allocate pixeldata.",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5681496,
+      "text": "CreateGlyphTexture:  Couldn't create texture.",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5691728,
+      "text": "Error!! fp is nullptr filename=%s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5691768,
+      "text": "%s%d\\%s",
+      "has_format": true,
+      "has_path": true
+    },
+    {
+      "file_offset": 5691784,
+      "text": "stream %p open rez %s size = %u",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5691816,
+      "text": "stream %p open file %s size = %u",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5694912,
+      "text": "CNETMGR___Removing : %d, Driver=%s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5694960,
+      "text": "CNetMgr::DisconnectNotify : %d, Driver=%s, Overlapping Disconnect!!! ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5695336,
+      "text": "(%d) %s%s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5697824,
+      "text": "[UDPConn ReSendCount] GameSerial:%s RoundType:%d m_vm_type:%d ConnObj:%p FrameCode:%d m_ReSendCount:%d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5698048,
+      "text": "UDP: Received heartbeat %d %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5698472,
+      "text": "UDP: Received guaranteed packet (%d/%d) %d sub %s %s",
+      "has_format": true,
+      "has_path": true
+    },
+    {
+      "file_offset": 5698912,
+      "text": "CUDPConn::WriteGuaranteed PintTime Update - PingTime=%u, Driver=%s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5698984,
+      "text": "UDP: Sending heartbeat %d %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5699016,
+      "text": "UDP: Sent Guaranteed %d %d sub %s %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5699200,
+      "text": "CUDPConn::ReSendFrame PintTime Update - PingTime=%u, Driver=%s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5699400,
+      "text": "socket() returned SOCKET_ERROR.  Last error: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5699664,
+      "text": "bind() returned %d.  Last error: %s / PortNumber %d",
+      "has_format": true,
+      "has_path": true
+    },
+    {
+      "file_offset": 5699824,
+      "text": "socket() returned SOCKET_ERROR.  Last error: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5699872,
+      "text": "bind() returned %d.  Last error: %s.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5699992,
+      "text": "UDP: Status: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5700008,
+      "text": "UDP: Description: %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5701408,
+      "text": "UDP: ---- %d device%s ----",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5701832,
+      "text": "UDP Socket error %s!  Shutting down listen thread..",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5702248,
+      "text": "CUDPDriver::Thread_Listen(), Driver=%s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5702360,
+      "text": "-UDPDriver(%d)- %s : %d   (Call : %d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5707264,
+      "text": "LithTech build %s initialized in %.2f seconds.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5707352,
+      "text": "display.cfg",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5707688,
+      "text": "Error opening the command file %s for reading",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5709744,
+      "text": "-dir map3-rf009.rez -dir map4-rf010.rez -dir map5-rf011.rez -dir map6-rf012.rez -dir map7-rf013.rez -dir models-rf016.rez -dir modeltextures-rf017.rez ",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5712632,
+      "text": "Could not create texture renderer object!",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5713008,
+      "text": "Texture is a format we can't handle!",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5713072,
+      "text": "Could not create texture",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5713104,
+      "text": "Could not get level description of texture",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5713176,
+      "text": "CTextureRenderer::SetMediaType",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5713280,
+      "text": "CTextureRenderer::DoRenderSample",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5713320,
+      "text": "Unknown texture format!",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715112,
+      "text": "- Device %s (unable to create)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715160,
+      "text": "-    Object %s (type: %s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715192,
+      "text": "- Device %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715232,
+      "text": "Cleared bindings for %s (on %s)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715264,
+      "text": "Bound %s (on %s) to action %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715296,
+      "text": "rel Trigger %s set console var %s to %22.12f",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715344,
+      "text": "abs Trigger %s set console var %s to %22.12f",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715392,
+      "text": "Input buffer overflow on %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715424,
+      "text": "%s (%s) generated %d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715512,
+      "text": "scale \"%s\" \"%s\" %f",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715536,
+      "text": "Device = %s  Control = %s Type = %i",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715576,
+      "text": "%f %f \"*%s\" ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715592,
+      "text": "rangescale \"%s\" \"%s\" %f %f %f %f",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715632,
+      "text": "rangebind \"%s\" \"%s\" ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715656,
+      "text": "%f %f \"%s\" ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715672,
+      "text": "AddAction %s %d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715696,
+      "text": "enabledevice \"%s\"",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715720,
+      "text": "Device = %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5715904,
+      "text": "Error creating %dx%d rendertarget texture: CLTRenderMgr::SnapshotCurrentFrame()",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5716304,
+      "text": "CLTRenderMgr::AddEffectShader",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5716416,
+      "text": "Failed to get the current RenderTexture surface: SaveCurrentFrameToPrevious()",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5716496,
+      "text": "Error creating %dx%d rendertarget texture: SaveCurrentFrameToPrevious()",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5716816,
+      "text": "Failed to get the current RenderTexture surface: CLTRenderMgr::SnapshotCurrentFrame()",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5717328,
+      "text": "r_LoadSystemTexture",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5717864,
+      "text": "CardDesc %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5718464,
+      "text": "[trk_ScanToKeyFrame] Integer divide-by-zero(endTime=0)! model=%s, anim=%s, animIndex=%u",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5719784,
+      "text": "advanced_shader",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5719800,
+      "text": "Shader",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5719888,
+      "text": "Node trees differ at node %s.",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5719968,
+      "text": "model-rez: model release [%d] %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5720040,
+      "text": "model-rez: unfreed model [%d] %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5720080,
+      "text": "model-rez: server uncache %s ref(%d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5720120,
+      "text": "model-rez: client uncachemodel [%d] %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5720160,
+      "text": "model-rez: client uncacheLobbymodel [%d] %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5720328,
+      "text": "Error: animation name duped in model db %s ",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5720504,
+      "text": "Error loading model %s: model pieces exceeds %d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5721352,
+      "text": "texture0",
+      "has_format": false,
+      "has_path": false
+    }
+  ],
+  "format_like_filtered": [
+    {
+      "file_offset": 5662160,
+      "text": "Error opening file %s for writing to generate texture log",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5663112,
+      "text": "Unable to find world texture %s",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666016,
+      "text": "[AdvShader] Name : %s, C : %d, I : %d",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666096,
+      "text": "[AdvShader] %s. (Name : %s, Mesh Type : %d)",
+      "has_format": true,
+      "has_path": false
+    },
+    {
+      "file_offset": 5666256,
+      "text": "Failed to set texture (%s)",
+      "has_format": true,
+      "has_path": false
+    }
+  ],
+  "cfg_strings": [
+    {
+      "file_offset": 5661144,
+      "text": "autoexec.cfg",
+      "has_format": false,
+      "has_path": false
+    },
+    {
+      "file_offset": 5707352,
+      "text": "display.cfg",
+      "has_format": false,
+      "has_path": false
+    }
+  ],
+  "weaponshader_strings": [],
+  "xor_hits": [
+    {
+      "xor_key": 11,
+      "needle": ".cfg",
+      "file_offset": 867625,
+      "context_xored": ".._.....f...HU...cfg2....2.G.;,.X..&"
+    },
+    {
+      "xor_key": 73,
+      "needle": ".cfg",
+      "file_offset": 5159812,
+      "context_xored": "./.M.Y....6X...&.cfgZ5w....u\"{..a..."
+    }
+  ],
+  "xor_hit_count": 2,
+  "lea_interesting_strings": [
+    {
+      "rva": 5713500,
+      "text": "lay.cfg",
+      "xref_count": 1
+    },
+    {
+      "rva": 5726055,
+      "text": "de %s.",
+      "xref_count": 1
+    }
+  ],
+  "lea_index_targets": 1466,
+  "note": "No unpacker executed. PE not copied into the repo."
+}

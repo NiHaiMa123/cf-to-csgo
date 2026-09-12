@@ -1,0 +1,27 @@
+{
+  "schema": "cf2.p4m01.n04d-confirmed-relations.v1",
+  "task_id": "P4-M01-N04-D",
+  "status": "STRING_ISLAND_ONLY",
+  "completion_state": "B",
+  "relations": [
+    {
+      "from": "x64/crossfire.exe",
+      "to": "MODELTEXTURES\\Shader\\WeaponShader\\ + .cfg (adjacent C strings)",
+      "grade": "OBSERVED",
+      "xref": 0,
+      "note": "path fragments in plaintext island; no RIP-relative or VA pointer"
+    },
+    {
+      "from": "x64/crossfire.exe",
+      "to": "crossfireBase.dll",
+      "grade": "OBSERVED",
+      "note": "sole import; packed exe is a stub into .tvm0 VM image"
+    }
+  ],
+  "cannot_conclude": [
+    "P4-M01 PASS",
+    "WeaponShader/%s.CFG sprintf exists in this image",
+    "code consumer of WeaponShader CFG",
+    "crossfirebase.dll internals (not unpacked this round)"
+  ]
+}
