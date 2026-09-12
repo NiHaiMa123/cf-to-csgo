@@ -14,7 +14,7 @@ P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
 Current executor task         : NONE
 Last completed task           : P4-M01-N05-F (Source 1 native diagnostic VTF/VMT)
-Last accepted evidence commit : PENDING_N05F
+Last accepted evidence commit : 037dcaf4396f3be1438502f86d67cb4fddf30ea4
 State                         : SOURCE1_NATIVE_DIAGNOSTIC_PACKAGED / P4-M01_INCOMPLETE
 ```
 
