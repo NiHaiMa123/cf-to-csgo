@@ -1,0 +1,22 @@
+{
+  "task": "P4-M01-N03-E",
+  "status": "RENDERSTYLE_STRUCTURAL",
+  "confidence": "HIGH",
+  "relations": [
+    {
+      "relation": "both RS LTBs LZMA-decompress to LTB_D3D_RENDERSTYLE_FILE type 5 version 3",
+      "grade": "STRUCTURALLY_VERIFIED"
+    },
+    {
+      "relation": "no .cfg/.fx/.tga/.dtx strings in decompressed RS bodies",
+      "grade": "SCOPED_NEGATIVE"
+    }
+  ],
+  "remaining_blockers": [
+    "TextureParam slot -> DTX/TGA path OPEN_UNRESOLVED",
+    "CFG/render semantic closure OPEN_UNRESOLVED",
+    "P4-M01 native material closure INCOMPLETE"
+  ],
+  "generated_at": "2026-09-12T06:32:17.250362+00:00",
+  "script": "scripts\\material_recovery\\n03e_renderstyle_ltb.py"
+}

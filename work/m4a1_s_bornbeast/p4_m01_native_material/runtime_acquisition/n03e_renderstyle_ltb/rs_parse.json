@@ -1,0 +1,329 @@
+{
+  "task": "P4-M01-N03-E",
+  "status": "RENDERSTYLE_STRUCTURAL",
+  "confidence": "HIGH",
+  "reference": "jsj2008/lithtech CD3DRenderStyle::Load_LTBData",
+  "files": [
+    {
+      "archive": "rez/rf002.rez",
+      "full_path": "RS/NINJATRANSLUCENT.LTB",
+      "compressed_size": 111,
+      "data_offset": 8960,
+      "sha256": "85A8C47E4CFAE2EDF92E921F428DBE78ADAAC87EA295304DFD0860921F98187E",
+      "raw_magic": "5d000000",
+      "decompressed_size": 645,
+      "analysis": {
+        "header": {
+          "file_type": 5,
+          "file_type_ok": true,
+          "version_at_offset2": 3,
+          "version_ok": true,
+          "byte1": 243,
+          "header_layout": "aligned_20B_fileType@0_uint16_version@2 (byte1 is CF reserved/pad)",
+          "iTotalSize": 605,
+          "iRenStyleCnt": 1,
+          "iSize": 605,
+          "body_offset": 32,
+          "sanity_cnt": true,
+          "sanity_size": true
+        },
+        "lighting": {
+          "offset": 32,
+          "size": 68,
+          "material": {
+            "Ambient": {
+              "r": 0.3921569883823395,
+              "g": 0.3921569883823395,
+              "b": 0.3921569883823395,
+              "a": 1.0
+            },
+            "Diffuse": {
+              "r": 0.3921569883823395,
+              "g": 0.3921569883823395,
+              "b": 0.3921569883823395,
+              "a": 1.0
+            },
+            "Emissive": {
+              "r": 0.11764699965715408,
+              "g": 0.11764699965715408,
+              "b": 0.11764699965715408,
+              "a": 1.0
+            },
+            "Specular": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "SpecularPower": 0.0
+          }
+        },
+        "iRenderPasses": 1,
+        "best": {
+          "packed": false,
+          "score": 7,
+          "leftover": 8,
+          "passes": [
+            {
+              "index": 0,
+              "stages": [
+                {
+                  "TextureParam": 1,
+                  "TextureParamName": "RENDERSTYLE_USE_TEXTURE1",
+                  "ColorOp": 4,
+                  "ColorArg1": 2,
+                  "ColorArg2": 1,
+                  "AlphaOp": 2,
+                  "UVSource": 0,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 1,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                },
+                {
+                  "TextureParam": 0,
+                  "TextureParamName": "RENDERSTYLE_NOTEXTURE",
+                  "ColorOp": 0,
+                  "ColorArg1": 2,
+                  "ColorArg2": 0,
+                  "AlphaOp": 0,
+                  "UVSource": 1,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 2,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                },
+                {
+                  "TextureParam": 0,
+                  "TextureParamName": "RENDERSTYLE_NOTEXTURE",
+                  "ColorOp": 0,
+                  "ColorArg1": 2,
+                  "ColorArg2": 0,
+                  "AlphaOp": 0,
+                  "UVSource": 2,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 2,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                },
+                {
+                  "TextureParam": 0,
+                  "TextureParamName": "RENDERSTYLE_NOTEXTURE",
+                  "ColorOp": 0,
+                  "ColorArg1": 2,
+                  "ColorArg2": 0,
+                  "AlphaOp": 0,
+                  "UVSource": 3,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 2,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                }
+              ],
+              "tail": {
+                "BlendMode": 3,
+                "BlendModeName": "BLEND_MOD_SRCALPHA",
+                "ZBufferMode": 0,
+                "CullMode": 1,
+                "TextureFactor": "0x80808080",
+                "AlphaRef": 250,
+                "DynamicLight": true,
+                "ZBufferTestMode": 2,
+                "AlphaTestMode": 0,
+                "FillMode": 1,
+                "bUseBumpEnvMap": false,
+                "BumpEnvMapStage": 1,
+                "fBumpEnvMap_Scale": 1.0,
+                "fBumpEnvMap_Offset": 0.0
+              },
+              "shader": {
+                "iHasRSD3DRP": 0
+              }
+            }
+          ]
+        },
+        "trials": [
+          {
+            "packed": false,
+            "score": 7,
+            "leftover": 8,
+            "npasses": 1
+          }
+        ],
+        "string_hits": [],
+        "status": "RENDERSTYLE_STRUCTURAL",
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "archive": "rez/rf002.rez",
+      "full_path": "RS/PVMODELDEFAULT.LTB",
+      "compressed_size": 119,
+      "data_offset": 9893,
+      "sha256": "7AAC491CDD91DF513C1B8ED58B0B4FC385039EAF026CC4A18E4A160E91D7F57E",
+      "raw_magic": "5d000000",
+      "decompressed_size": 645,
+      "analysis": {
+        "header": {
+          "file_type": 5,
+          "file_type_ok": true,
+          "version_at_offset2": 3,
+          "version_ok": true,
+          "byte1": 118,
+          "header_layout": "aligned_20B_fileType@0_uint16_version@2 (byte1 is CF reserved/pad)",
+          "iTotalSize": 605,
+          "iRenStyleCnt": 1,
+          "iSize": 605,
+          "body_offset": 32,
+          "sanity_cnt": true,
+          "sanity_size": true
+        },
+        "lighting": {
+          "offset": 32,
+          "size": 68,
+          "material": {
+            "Ambient": {
+              "r": 0.274509996175766,
+              "g": 0.274509996175766,
+              "b": 0.274509996175766,
+              "a": 1.0
+            },
+            "Diffuse": {
+              "r": 0.6274510025978088,
+              "g": 0.6274510025978088,
+              "b": 0.6274510025978088,
+              "a": 1.0
+            },
+            "Emissive": {
+              "r": 0.01960800029337406,
+              "g": 0.01960800029337406,
+              "b": 0.01960800029337406,
+              "a": 1.0
+            },
+            "Specular": {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            },
+            "SpecularPower": 255.0
+          }
+        },
+        "iRenderPasses": 1,
+        "best": {
+          "packed": false,
+          "score": 7,
+          "leftover": 8,
+          "passes": [
+            {
+              "index": 0,
+              "stages": [
+                {
+                  "TextureParam": 1,
+                  "TextureParamName": "RENDERSTYLE_USE_TEXTURE1",
+                  "ColorOp": 4,
+                  "ColorArg1": 2,
+                  "ColorArg2": 1,
+                  "AlphaOp": 2,
+                  "UVSource": 0,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 1,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                },
+                {
+                  "TextureParam": 0,
+                  "TextureParamName": "RENDERSTYLE_NOTEXTURE",
+                  "ColorOp": 0,
+                  "ColorArg1": 2,
+                  "ColorArg2": 0,
+                  "AlphaOp": 0,
+                  "UVSource": 1,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 2,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                },
+                {
+                  "TextureParam": 0,
+                  "TextureParamName": "RENDERSTYLE_NOTEXTURE",
+                  "ColorOp": 0,
+                  "ColorArg1": 2,
+                  "ColorArg2": 0,
+                  "AlphaOp": 0,
+                  "UVSource": 2,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 2,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                },
+                {
+                  "TextureParam": 0,
+                  "TextureParamName": "RENDERSTYLE_NOTEXTURE",
+                  "ColorOp": 0,
+                  "ColorArg1": 2,
+                  "ColorArg2": 0,
+                  "AlphaOp": 0,
+                  "UVSource": 3,
+                  "UAddress": 0,
+                  "VAddress": 0,
+                  "TexFilter": 2,
+                  "UVTransform_Enable": false,
+                  "ProjectTexCoord": false,
+                  "TexCoordCount": 2
+                }
+              ],
+              "tail": {
+                "BlendMode": 3,
+                "BlendModeName": "BLEND_MOD_SRCALPHA",
+                "ZBufferMode": 0,
+                "CullMode": 1,
+                "TextureFactor": "0x80808080",
+                "AlphaRef": 250,
+                "DynamicLight": true,
+                "ZBufferTestMode": 2,
+                "AlphaTestMode": 0,
+                "FillMode": 1,
+                "bUseBumpEnvMap": false,
+                "BumpEnvMapStage": 1,
+                "fBumpEnvMap_Scale": 1.0,
+                "fBumpEnvMap_Offset": 0.0
+              },
+              "shader": {
+                "iHasRSD3DRP": 0
+              }
+            }
+          ]
+        },
+        "trials": [
+          {
+            "packed": false,
+            "score": 7,
+            "leftover": 8,
+            "npasses": 1
+          }
+        ],
+        "string_hits": [],
+        "status": "RENDERSTYLE_STRUCTURAL",
+        "confidence": "HIGH"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.0,
+  "generated_at": "2026-09-12T06:32:17.249876+00:00",
+  "script": "scripts\\material_recovery\\n03e_renderstyle_ltb.py"
+}
