@@ -23,14 +23,14 @@
       "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\d3dx_defaults.png",
       "pass": 0,
       "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
-      "bytes": 145558
+      "bytes": 148034
     },
     {
       "name": "bornbeast_cfg",
       "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\bornbeast_cfg.png",
       "pass": 0,
       "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
-      "bytes": 237544
+      "bytes": 237508
     }
   ]
 }

@@ -201,7 +201,7 @@ internal static class FxoPreviewCommand
                     ApplyScalars(effect, values);
                 }
 
-                device.Clear(ClearFlags.Target | ClearFlags.ZBuffer, new RawColorBGRA(48, 48, 48, 255), 1f, 0);
+                device.Clear(ClearFlags.Target | ClearFlags.ZBuffer, new RawColorBGRA(232, 232, 232, 255), 1f, 0);
                 device.BeginScene();
                 effect.Technique = technique;
                 int passes = effect.Begin();

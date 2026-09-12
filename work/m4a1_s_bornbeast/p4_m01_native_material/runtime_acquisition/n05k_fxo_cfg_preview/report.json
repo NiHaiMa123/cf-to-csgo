@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-12T15:41:00.964907+00:00",
+  "generated_at_utc": "2026-09-12T15:48:18.403684+00:00",
   "task": "P4-M01-N05-K",
   "result": "FXO_CFG_PREVIEW_RENDERED",
   "p4_m01": "INCOMPLETE",
@@ -35,14 +35,14 @@
         "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\d3dx_defaults.png",
         "pass": 0,
         "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
-        "bytes": 145558
+        "bytes": 148034
       },
       {
         "name": "bornbeast_cfg",
         "png": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05k_fxo_cfg_preview\\bornbeast_cfg.png",
         "pass": 0,
         "technique": "tPlayerViewMeshAlphaAproxSnellTransformedCube",
-        "bytes": 237544
+        "bytes": 237508
       }
     ]
   },
