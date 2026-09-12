@@ -59,6 +59,12 @@ FORBIDDEN_NAME_NEEDLES = (
 )
 IDENTITY_PREFIX = "M4A1-S-BEAST"
 AIR_NAME = "M4A1SBEASTAIR"
+# Same Beast bank, not a variant skin. Longer charging-handle body under ReloadM4A1-S-Beast.
+BOLT_LAYER = "M4A1_S_Reload_03"
+# Draw sequence is 35 frames @ 30 fps. Bolt motion starts at frame 10.
+DRAW_BOLT_DELAY_S = 10 / 30
+# Weapon_M4A1.Draw is CHAN_STATIC volume 0.3; boost so the bolt is audible.
+DRAW_VOLUME_COMPENSATE = 3.3
 
 # CS:GO M4A4 (Weapon_M4A1.Single) reads these waves. Pitch 120 is compensated
 # in the close-fire WAV so playback matches the CF sample pitch.
@@ -99,27 +105,10 @@ WIRE_MAP: list[dict[str, Any]] = [
         "grade": "OBSERVED",
         "note": "Named identity clip-in sample.",
     },
-    {
-        "bute_event": "ReloadM4A1-S-Beast",
-        "stream": "M4A1-S-Beast_Reload",
-        "csgo_event": "Weapon_M4A1.ClipHit",
-        "waves": ["sound/weapons/m4a1/m4a1_cliphit.wav"],
-        "pitch_compensate": 100,
-        "grade": "STRONG_HYPOTHESIS",
-        "note": "CF has a Reload event; CS:GO reload is clipout+clipin+cliphit. Wired to ClipHit.",
-    },
-    {
-        "bute_event": "Extra01M4A1-S-IronBeast / GasEjection",
-        "stream": "M4A1-S-Beast_GasEjection",
-        "csgo_event": "Weapon_M4A1.BoltBack",
-        "waves": ["sound/weapons/m4a1/m4a1_boltback.wav"],
-        "pitch_compensate": 100,
-        "grade": "HYPOTHESIS",
-        "note": "Named Beast gas-ejection sample. CS:GO draw also fires BoltForward; that wave is left vanilla.",
-    },
 ]
 
-EXTRACT_ONLY = ("M4A1-S-Beast_knifeAttack",)
+EXTRACT_ONLY = ("M4A1-S-Beast_knifeAttack", "M4A1-S-Beast_GasEjection")
+BOLT_SOURCES = ("M4A1-S-Beast_Reload", BOLT_LAYER)
 
 
 def sha256_file(path: Path) -> str:
@@ -199,7 +188,7 @@ def assert_identity_name(name: str) -> None:
     for needle in FORBIDDEN_NAME_NEEDLES:
         if needle in upper:
             raise RuntimeError(f"refusing non-identity stream {name}")
-    if upper == AIR_NAME:
+    if upper == AIR_NAME or name == BOLT_LAYER:
         return
     if not upper.startswith(IDENTITY_PREFIX):
         raise RuntimeError(f"stream {name} is not M4A1-S-Beast identity-core")
@@ -214,6 +203,108 @@ def extract_stream(bank: Path, subsong: int, dest: Path) -> dict[str, Any]:
     if not dest.is_file() or dest.stat().st_size < 44:
         raise RuntimeError(f"vgmstream produced no WAV for subsong {subsong}")
     return {"path": rel(dest), "sha256": sha256_file(dest), "bytes": dest.stat().st_size}
+
+
+def pcm_info(path: Path) -> dict[str, Any]:
+    with wave.open(str(path), "rb") as handle:
+        if handle.getnchannels() not in (1, 2) or handle.getsampwidth() != 2 or handle.getframerate() != 44100:
+            raise RuntimeError(f"PCM check failed for {path.name}")
+        frames = handle.getnframes()
+        channels = handle.getnchannels()
+    return {
+        "path": rel(path),
+        "sha256": sha256_file(path),
+        "bytes": path.stat().st_size,
+        "channels": channels,
+        "rate": 44100,
+        "seconds": round(frames / 44100, 3),
+    }
+
+
+def mix_pcm(inputs: list[Path], dest: Path) -> dict[str, Any]:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    ffmpeg = which_ffmpeg()
+    labels = "".join(f"[{index}]aformat=sample_fmts=fltp:channel_layouts=stereo[s{index}];" for index in range(len(inputs)))
+    joined = "".join(f"[s{index}]" for index in range(len(inputs)))
+    graph = f"{labels}{joined}amix=inputs={len(inputs)}:duration=longest:normalize=1[out]"
+    cmd = [str(ffmpeg), "-y"]
+    for path in inputs:
+        cmd.extend(["-i", str(path)])
+    cmd.extend(
+        [
+            "-filter_complex",
+            graph,
+            "-map",
+            "[out]",
+            "-ar",
+            "44100",
+            "-c:a",
+            "pcm_s16le",
+            str(dest),
+        ]
+    )
+    run_checked(cmd, f"ffmpeg_mix_{dest.stem}")
+    return pcm_info(dest)
+
+
+def delay_amplify_pcm(src: Path, dest: Path, delay_s: float, amplify: float) -> dict[str, Any]:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    ffmpeg = which_ffmpeg()
+    delay_ms = int(round(delay_s * 1000))
+    filters = [f"adelay={delay_ms}|{delay_ms}"]
+    if amplify != 1.0:
+        filters.append(f"volume={amplify}")
+        filters.append("alimiter=limit=0.95")
+    run_checked(
+        [
+            str(ffmpeg),
+            "-y",
+            "-i",
+            str(src),
+            "-af",
+            ",".join(filters),
+            "-ar",
+            "44100",
+            "-c:a",
+            "pcm_s16le",
+            str(dest),
+        ],
+        f"ffmpeg_delay_{dest.stem}",
+    )
+    info = pcm_info(dest)
+    info["delay_s"] = delay_s
+    info["amplify"] = amplify
+    return info
+
+
+def silence_pcm(dest: Path, seconds: float = 0.05) -> dict[str, Any]:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    ffmpeg = which_ffmpeg()
+    run_checked(
+        [
+            str(ffmpeg),
+            "-y",
+            "-f",
+            "lavfi",
+            "-i",
+            f"anullsrc=r=44100:cl=mono:d={seconds}",
+            "-c:a",
+            "pcm_s16le",
+            str(dest),
+        ],
+        f"ffmpeg_silence_{dest.stem}",
+    )
+    return pcm_info(dest)
+
+
+def stage_waves(src: Path, waves: list[str]) -> list[dict[str, str]]:
+    rows = []
+    for relative in waves:
+        dest = STAGING / relative
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dest)
+        rows.append({"wave": relative.replace("\\", "/"), "sha256": sha256_file(dest)})
+    return rows
 
 
 def convert_pcm(src: Path, dest: Path, pitch: int, channels: int) -> dict[str, Any]:
@@ -323,11 +414,13 @@ def write_report(report: dict[str, Any]) -> None:
     lines.extend(
         [
             "",
-            "Close fire is the named `M4A1-S-Beast_SHOOT_1` sample only. FMOD may layer extra voices in CF; that graph was not reconstructed. `M4A1SBeastAir` is the distant layer only.",
+            "User 2026-09-13: fire is correct; draw played a truncated reload and missed 拉栓; reload still sounded CS and should be 拉栓.",
             "",
-            "Vanilla `Weapon_M4A1.Single` has pitch 120. The close-fire WAV is pitch-compensated so in-game playback matches the CF sample.",
+            "拉栓 is `M4A1-S-Beast_Reload` mixed with bank-local `M4A1_S_Reload_03`. It is wired to reload `ClipHit` and to draw via `Weapon_M4A1.Draw` (CHAN_STATIC, delayed to the bolt frames, volume-compensated). `BoltForward` / `BoltBack` are silenced so vanilla CS bolt and `GasEjection` cannot steal CHAN_ITEM or cut the bolt.",
             "",
-            "Not done: Inspect, CF animation, world model, knife foley, lighting. Reload uses CS:GO clipout/clipin/cliphit timing, not the CF reload clip as a single one-shot.",
+            "`M4A1-S-Beast_GasEjection` is a hiss, not 拉栓; it is no longer wired. Qingchun / BB / Zeekr / BornBeast unused.",
+            "",
+            "Not done: Inspect, CF animation, world model, knife foley, lighting.",
             "",
             "This is not P4-M01 PASS and not release-quality audio mastering.",
             "",
@@ -360,7 +453,7 @@ def main() -> int:
 
     streams = list_streams(bank)
     by_name = {row["name"]: row for row in streams}
-    wanted = [row["stream"] for row in WIRE_MAP] + list(EXTRACT_ONLY)
+    wanted = list(dict.fromkeys([row["stream"] for row in WIRE_MAP] + list(EXTRACT_ONLY) + list(BOLT_SOURCES)))
     for name in wanted:
         assert_identity_name(name)
         if name not in by_name:
@@ -387,13 +480,66 @@ def main() -> int:
         pcm_path = PCM_DIR / f"{name}.wav"
         pcm = convert_pcm(src, pcm_path, item["pitch_compensate"], by_name[name]["channels"])
         converted[name] = pcm
-        wave_hashes = []
-        for relative in item["waves"]:
-            dest = STAGING / relative
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(pcm_path, dest)
-            wave_hashes.append({"wave": relative.replace("\\", "/"), "sha256": sha256_file(dest)})
-        wired_out.append({**item, "pcm": pcm, "deployed": wave_hashes})
+        wired_out.append({**item, "pcm": pcm, "deployed": stage_waves(pcm_path, item["waves"])})
+
+    for name in BOLT_SOURCES:
+        src = RAW_DIR / f"{name}.wav"
+        pcm_path = PCM_DIR / f"{name}.wav"
+        if name not in converted:
+            converted[name] = convert_pcm(src, pcm_path, 100, by_name[name]["channels"])
+
+    bolt_pcm = PCM_DIR / "bolt_pull.wav"
+    converted["bolt_pull"] = mix_pcm([PCM_DIR / f"{name}.wav" for name in BOLT_SOURCES], bolt_pcm)
+    draw_pcm = PCM_DIR / "draw_bolt.wav"
+    converted["draw_bolt"] = delay_amplify_pcm(
+        bolt_pcm, draw_pcm, DRAW_BOLT_DELAY_S, DRAW_VOLUME_COMPENSATE
+    )
+    silence_path = PCM_DIR / "silence.wav"
+    converted["silence"] = silence_pcm(silence_path)
+
+    composites = [
+        {
+            "bute_event": "ReloadM4A1-S-Beast (拉栓)",
+            "stream": "+".join(BOLT_SOURCES),
+            "csgo_event": "Weapon_M4A1.ClipHit",
+            "waves": ["sound/weapons/m4a1/m4a1_cliphit.wav"],
+            "grade": "STRONG_HYPOTHESIS",
+            "note": "Named Beast reload clack mixed with bank-local Reload_03 body. Wired to the last reload event.",
+            "pcm": converted["bolt_pull"],
+            "deployed": stage_waves(bolt_pcm, ["sound/weapons/m4a1/m4a1_cliphit.wav"]),
+        },
+        {
+            "bute_event": "ReloadM4A1-S-Beast (拉栓 on draw)",
+            "stream": "+".join(BOLT_SOURCES),
+            "csgo_event": "Weapon_M4A1.Draw",
+            "waves": ["sound/weapons/m4a1/m4a1_draw.wav"],
+            "grade": "STRONG_HYPOTHESIS",
+            "note": "Same 拉栓 on CHAN_STATIC so BoltForward/BoltBack/idle WeaponMove cannot cut it. Delayed to draw frame 10; wav boosted because Draw volume is 0.3.",
+            "pcm": converted["draw_bolt"],
+            "deployed": stage_waves(draw_pcm, ["sound/weapons/m4a1/m4a1_draw.wav"]),
+        },
+        {
+            "bute_event": "silence (kill vanilla CS bolt)",
+            "stream": "silence",
+            "csgo_event": "Weapon_M4A1.BoltForward",
+            "waves": ["sound/weapons/m4a1/m4a1_boltforward.wav"],
+            "grade": "SOURCE1_DESIGN_CANDIDATE",
+            "note": "Vanilla CS 拉栓. Same CHAN_ITEM as BoltBack; leaving it would cut or pre-empt CF 拉栓.",
+            "pcm": converted["silence"],
+            "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_boltforward.wav"]),
+        },
+        {
+            "bute_event": "silence (kill GasEjection on draw)",
+            "stream": "silence",
+            "csgo_event": "Weapon_M4A1.BoltBack",
+            "waves": ["sound/weapons/m4a1/m4a1_boltback.wav"],
+            "grade": "SOURCE1_DESIGN_CANDIDATE",
+            "note": "Previous map put GasEjection here; user heard 换弹 on 切枪, truncated, no 拉栓.",
+            "pcm": converted["silence"],
+            "deployed": stage_waves(silence_path, ["sound/weapons/m4a1/m4a1_boltback.wav"]),
+        },
+    ]
+    wired_out.extend(composites)
 
     staging_hashes = tree_hashes(STAGING)
     if not staging_hashes:
@@ -436,8 +582,9 @@ def main() -> int:
         "park_frozen": frozen,
         "deploy": {k: v for k, v in deploy.items() if k != "hashes"} | {"file_count": len(deploy["hashes"])},
         "notes": [
-            "P6 did not package sound/; vanilla M4A4 fire remained.",
-            "Close fire is M4A1-S-Beast_SHOOT_1 only. FMOD event graph was not reconstructed.",
+            "User 2026-09-13: fire OK; draw was truncated reload missing 拉栓; reload sounded CS and should be 拉栓.",
+            "拉栓 = M4A1-S-Beast_Reload + M4A1_S_Reload_03 on ClipHit and Draw. BoltForward/BoltBack silenced.",
+            "GasEjection is a hiss, not 拉栓; no longer wired to draw.",
             "Weapon_M4A1.Single pitch 120 is compensated in the close-fire WAV.",
             "Inspect / CF animation / world model are still open.",
             "Not a P4-M01 PASS.",

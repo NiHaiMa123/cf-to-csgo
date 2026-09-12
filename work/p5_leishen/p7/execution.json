@@ -1,6 +1,6 @@
 {
   "schema": "cf2.p7.original-sound.v1",
-  "generated_at_utc": "2026-09-12T18:17:44.675304+00:00",
+  "generated_at_utc": "2026-09-12T18:35:36.895986+00:00",
   "task": "P7-S01",
   "result": "P7_ORIGINAL_SOUND_DEPLOYED",
   "final_target_identity": true,
@@ -256,19 +256,19 @@
         "bytes": 26668
       }
     },
-    "M4A1-S-Beast_Reload": {
-      "index": 17,
-      "subsong": 17,
-      "name": "M4A1-S-Beast_Reload",
-      "samples": 20992,
+    "M4A1-S-Beast_knifeAttack": {
+      "index": 7,
+      "subsong": 7,
+      "name": "M4A1-S-Beast_knifeAttack",
+      "samples": 34304,
       "rate": 48000,
       "channels": 1,
-      "seconds": 0.437,
+      "seconds": 0.715,
       "encoding": "FMOD FADPCM 4-bit ADPCM",
       "extract": {
-        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_Reload.wav",
-        "sha256": "092226a90512cee4410d2a61cd78e01e266cb885307bd0e63a5fdff1fec51682",
-        "bytes": 42028
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_knifeAttack.wav",
+        "sha256": "20791d962b2e1e98637bb4b5d06300e6cc60413db985fa7c9d7362db0368d779",
+        "bytes": 68652
       }
     },
     "M4A1-S-Beast_GasEjection": {
@@ -286,19 +286,34 @@
         "bytes": 59436
       }
     },
-    "M4A1-S-Beast_knifeAttack": {
-      "index": 7,
-      "subsong": 7,
-      "name": "M4A1-S-Beast_knifeAttack",
-      "samples": 34304,
+    "M4A1-S-Beast_Reload": {
+      "index": 17,
+      "subsong": 17,
+      "name": "M4A1-S-Beast_Reload",
+      "samples": 20992,
       "rate": 48000,
       "channels": 1,
-      "seconds": 0.715,
+      "seconds": 0.437,
       "encoding": "FMOD FADPCM 4-bit ADPCM",
       "extract": {
-        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_knifeAttack.wav",
-        "sha256": "20791d962b2e1e98637bb4b5d06300e6cc60413db985fa7c9d7362db0368d779",
-        "bytes": 68652
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_Reload.wav",
+        "sha256": "092226a90512cee4410d2a61cd78e01e266cb885307bd0e63a5fdff1fec51682",
+        "bytes": 42028
+      }
+    },
+    "M4A1_S_Reload_03": {
+      "index": 6,
+      "subsong": 6,
+      "name": "M4A1_S_Reload_03",
+      "samples": 55808,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 1.163,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1_S_Reload_03.wav",
+        "sha256": "9ca0848808b39723dba795ca403dd01202fcd84f8d7f6947099eb2a13bf8fd8a",
+        "bytes": 223276
       }
     }
   },
@@ -348,14 +363,40 @@
       "seconds": 0.437,
       "pitch_compensate": 100
     },
-    "M4A1-S-Beast_GasEjection": {
-      "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_GasEjection.wav",
-      "sha256": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0",
-      "bytes": 54646,
+    "M4A1_S_Reload_03": {
+      "path": "work/p5_leishen/p7/pcm/M4A1_S_Reload_03.wav",
+      "sha256": "62b869347af7ada318c936c224e9cf84f5fd1e48c561f6a7c4abbe3e8fa8fe6f",
+      "bytes": 205170,
+      "channels": 2,
+      "rate": 44100,
+      "seconds": 1.163,
+      "pitch_compensate": 100
+    },
+    "bolt_pull": {
+      "path": "work/p5_leishen/p7/pcm/bolt_pull.wav",
+      "sha256": "5b70bb87a18a87ad6487234963494438fdfbc2798ea27809512746b6872b0101",
+      "bytes": 205170,
+      "channels": 2,
+      "rate": 44100,
+      "seconds": 1.163
+    },
+    "draw_bolt": {
+      "path": "work/p5_leishen/p7/pcm/draw_bolt.wav",
+      "sha256": "1164ec9d937cfd26fb1d519fc0108ca883600744d156cc59f908cd1e9b51478b",
+      "bytes": 263910,
+      "channels": 2,
+      "rate": 44100,
+      "seconds": 1.496,
+      "delay_s": 0.3333333333333333,
+      "amplify": 3.3
+    },
+    "silence": {
+      "path": "work/p5_leishen/p7/pcm/silence.wav",
+      "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+      "bytes": 4488,
       "channels": 1,
       "rate": 44100,
-      "seconds": 0.619,
-      "pitch_compensate": 100
+      "seconds": 0.05
     }
   },
   "wired": [
@@ -469,54 +510,100 @@
       ]
     },
     {
-      "bute_event": "ReloadM4A1-S-Beast",
-      "stream": "M4A1-S-Beast_Reload",
+      "bute_event": "ReloadM4A1-S-Beast (拉栓)",
+      "stream": "M4A1-S-Beast_Reload+M4A1_S_Reload_03",
       "csgo_event": "Weapon_M4A1.ClipHit",
       "waves": [
         "sound/weapons/m4a1/m4a1_cliphit.wav"
       ],
-      "pitch_compensate": 100,
       "grade": "STRONG_HYPOTHESIS",
-      "note": "CF has a Reload event; CS:GO reload is clipout+clipin+cliphit. Wired to ClipHit.",
+      "note": "Named Beast reload clack mixed with bank-local Reload_03 body. Wired to the last reload event.",
       "pcm": {
-        "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_Reload.wav",
-        "sha256": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
-        "bytes": 38652,
-        "channels": 1,
+        "path": "work/p5_leishen/p7/pcm/bolt_pull.wav",
+        "sha256": "5b70bb87a18a87ad6487234963494438fdfbc2798ea27809512746b6872b0101",
+        "bytes": 205170,
+        "channels": 2,
         "rate": 44100,
-        "seconds": 0.437,
-        "pitch_compensate": 100
+        "seconds": 1.163
       },
       "deployed": [
         {
           "wave": "sound/weapons/m4a1/m4a1_cliphit.wav",
-          "sha256": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e"
+          "sha256": "5b70bb87a18a87ad6487234963494438fdfbc2798ea27809512746b6872b0101"
         }
       ]
     },
     {
-      "bute_event": "Extra01M4A1-S-IronBeast / GasEjection",
-      "stream": "M4A1-S-Beast_GasEjection",
+      "bute_event": "ReloadM4A1-S-Beast (拉栓 on draw)",
+      "stream": "M4A1-S-Beast_Reload+M4A1_S_Reload_03",
+      "csgo_event": "Weapon_M4A1.Draw",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_draw.wav"
+      ],
+      "grade": "STRONG_HYPOTHESIS",
+      "note": "Same 拉栓 on CHAN_STATIC so BoltForward/BoltBack/idle WeaponMove cannot cut it. Delayed to draw frame 10; wav boosted because Draw volume is 0.3.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/draw_bolt.wav",
+        "sha256": "1164ec9d937cfd26fb1d519fc0108ca883600744d156cc59f908cd1e9b51478b",
+        "bytes": 263910,
+        "channels": 2,
+        "rate": 44100,
+        "seconds": 1.496,
+        "delay_s": 0.3333333333333333,
+        "amplify": 3.3
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_draw.wav",
+          "sha256": "1164ec9d937cfd26fb1d519fc0108ca883600744d156cc59f908cd1e9b51478b"
+        }
+      ]
+    },
+    {
+      "bute_event": "silence (kill vanilla CS bolt)",
+      "stream": "silence",
+      "csgo_event": "Weapon_M4A1.BoltForward",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_boltforward.wav"
+      ],
+      "grade": "SOURCE1_DESIGN_CANDIDATE",
+      "note": "Vanilla CS 拉栓. Same CHAN_ITEM as BoltBack; leaving it would cut or pre-empt CF 拉栓.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/silence.wav",
+        "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+        "bytes": 4488,
+        "channels": 1,
+        "rate": 44100,
+        "seconds": 0.05
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_boltforward.wav",
+          "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30"
+        }
+      ]
+    },
+    {
+      "bute_event": "silence (kill GasEjection on draw)",
+      "stream": "silence",
       "csgo_event": "Weapon_M4A1.BoltBack",
       "waves": [
         "sound/weapons/m4a1/m4a1_boltback.wav"
       ],
-      "pitch_compensate": 100,
-      "grade": "HYPOTHESIS",
-      "note": "Named Beast gas-ejection sample. CS:GO draw also fires BoltForward; that wave is left vanilla.",
+      "grade": "SOURCE1_DESIGN_CANDIDATE",
+      "note": "Previous map put GasEjection here; user heard 换弹 on 切枪, truncated, no 拉栓.",
       "pcm": {
-        "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_GasEjection.wav",
-        "sha256": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0",
-        "bytes": 54646,
+        "path": "work/p5_leishen/p7/pcm/silence.wav",
+        "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+        "bytes": 4488,
         "channels": 1,
         "rate": 44100,
-        "seconds": 0.619,
-        "pitch_compensate": 100
+        "seconds": 0.05
       },
       "deployed": [
         {
           "wave": "sound/weapons/m4a1/m4a1_boltback.wav",
-          "sha256": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0"
+          "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30"
         }
       ]
     }
@@ -537,11 +624,13 @@
   "staging_hashes": {
     "sound/weapons/m4a1/m4a1_01.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
     "sound/weapons/m4a1/m4a1_02.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
-    "sound/weapons/m4a1/m4a1_boltback.wav": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0",
-    "sound/weapons/m4a1/m4a1_cliphit.wav": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+    "sound/weapons/m4a1/m4a1_boltback.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+    "sound/weapons/m4a1/m4a1_boltforward.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+    "sound/weapons/m4a1/m4a1_cliphit.wav": "5b70bb87a18a87ad6487234963494438fdfbc2798ea27809512746b6872b0101",
     "sound/weapons/m4a1/m4a1_clipin.wav": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
     "sound/weapons/m4a1/m4a1_clipout.wav": "b7c95fca0ad1d6b798f5c5fa3aed5b1edcfdde1f2ddd0e4609b32d0688201ad6",
-    "sound/weapons/m4a1/m4a1_distant_01.wav": "29f0999e06bbd15e2252455cc01181b8addc74ad6a0075ffcea42c82640c55a0"
+    "sound/weapons/m4a1/m4a1_distant_01.wav": "29f0999e06bbd15e2252455cc01181b8addc74ad6a0075ffcea42c82640c55a0",
+    "sound/weapons/m4a1/m4a1_draw.wav": "1164ec9d937cfd26fb1d519fc0108ca883600744d156cc59f908cd1e9b51478b"
   },
   "park_frozen": {
     "frozen_in_addons": false,
@@ -554,11 +643,12 @@
     "action": "created",
     "p6_untouched": true,
     "frozen_untouched": true,
-    "file_count": 7
+    "file_count": 9
   },
   "notes": [
-    "P6 did not package sound/; vanilla M4A4 fire remained.",
-    "Close fire is M4A1-S-Beast_SHOOT_1 only. FMOD event graph was not reconstructed.",
+    "User 2026-09-13: fire OK; draw was truncated reload missing 拉栓; reload sounded CS and should be 拉栓.",
+    "拉栓 = M4A1-S-Beast_Reload + M4A1_S_Reload_03 on ClipHit and Draw. BoltForward/BoltBack silenced.",
+    "GasEjection is a hiss, not 拉栓; no longer wired to draw.",
     "Weapon_M4A1.Single pitch 120 is compensated in the close-fire WAV.",
     "Inspect / CF animation / world model are still open.",
     "Not a P4-M01 PASS."

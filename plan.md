@@ -13,7 +13,7 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P7-S01 CF original sound (ShootM4A1-S-Beast)
+Last completed task           : P7-S01 sound remap (拉栓 on draw/reload; fire kept)
 Last accepted evidence commit : 880ca33
 State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / USER_RUNTIME_GATE_OPEN
 ```
@@ -38,7 +38,7 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 Task ID : NONE
 State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED; user runtime Gate open
 Goal    : 用户进游戏听 M4A4 槽上的雷神枪声（模型用户已确认）
-Last    : P7-S01 CF original sound deployed
+Last    : P7-S01 拉栓 remap after user listen Gate
 Result  : P7_ORIGINAL_SOUND_DEPLOYED
 ```
 
@@ -52,7 +52,7 @@ Result  : P7_ORIGINAL_SOUND_DEPLOYED
 
 **P6**：用户 2026-09-13 明确开做。已把确认身份的 base Transformers PV LTB 和 verified DTX/TGA/cube 编进独立 addon `p_cf_leishen_m4a4_p6`，部署到 M4A4 槽。首发把 LTB X 镜像做在 C3 之前，枪在 CF X≈+1.5，绕原点翻转后 Source X 中心到 −5.5，左手对不上；用户截图「错位」。已改为先冻结 C3，再绕 Source X=0 镜像。最终武器包围盒 X 中心 −0.18（P4 BornBeast 为 +0.10）。N05-J 与 frozen 都 parked、未改 frozen 文件。`final_target_identity=true`，`final_cf_material=false`。不是 P4-M01 PASS。证据 [`work/p5_leishen/p6/report.md`](work/p5_leishen/p6/report.md)。
 
-**P7-S01**：用户 2026-09-13 确认 P6 模型没问题，但声音仍是原版 M4A4，并要求按 plan 继续。已从 `rez/FMODStudio/Weapons/M4A1IronBeast.bank` 抽出 identity-core FSB 流 `M4A1-S-Beast_*`（Bute `ShotSoundName=ShootM4A1-S-Beast`），接到 CS:GO `Weapon_M4A1.Single` / clip / distant。独立 addon `p_cf_leishen_m4a4_p7_sound`。未用 Qingchun / BB / Zeekr / BornBeast。未重建 FMOD 多层事件图。P6 网格 addon 未改。不是完整 P7（Inspect / 原动画 / world model 仍开放）。证据 [`work/p5_leishen/p7/report.md`](work/p5_leishen/p7/report.md)。
+**P7-S01**：用户 2026-09-13 确认 P6 模型没问题，但声音仍是原版 M4A4，并要求按 plan 继续。已从 `rez/FMODStudio/Weapons/M4A1IronBeast.bank` 抽出 identity-core FSB 流接到 M4A4。首发把 `GasEjection` 接到 `BoltBack`：用户听音后说射击对、切枪是截断的换弹且没有拉栓、换弹仍像 CS。已改：`M4A1-S-Beast_Reload` + bank 内 `M4A1_S_Reload_03` 作为拉栓，接到 `ClipHit` 和 `Draw`（CHAN_STATIC，延迟到切枪拉机匣帧）；`BoltForward`/`BoltBack` 静音，不再播 CS 拉栓或喷气。射击 WAV 未改。未用 Qingchun / BB / Zeekr / BornBeast。P6 网格未改。不是完整 P7。证据 [`work/p5_leishen/p7/report.md`](work/p5_leishen/p7/report.md)。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -1533,7 +1533,7 @@ event  = ShootM4A1-S-Beast (Bute; FMOD, not REZ WAV)
 slot   = CS:GO M4A4 Weapon_M4A1.Single / clip / distant
 ```
 
-用户 2026-09-13 确认 P6 模型后指出声音仍是原版。已抽出 `M4A1-S-Beast_*` FSB 流并覆盖 `sound/weapons/m4a1/m4a1_01.wav` 等。未用 related-variant WAV。未改 P6 网格、未改 frozen。不是 FMOD 事件图的完整还原。
+用户 2026-09-13 确认 P6 模型后指出声音仍是原版；听音 Gate：射击对，切枪是截断换弹且缺拉栓，换弹像 CS。已把拉栓接到 `ClipHit`/`Draw`，静音 `BoltForward`/`BoltBack`。未用 related-variant WAV。未改 P6 网格、未改 frozen。不是 FMOD 事件图的完整还原。
 
 证据：
 
