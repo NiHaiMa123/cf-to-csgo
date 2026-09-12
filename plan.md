@@ -713,6 +713,70 @@ piece -> DTX/TGA binding
 P4-M01 PASS
 ```
 
+当前有效 closure 边界见 §4.13 更新后的表。N03-A 的 loose-config negative 仍然成立。
+
+## 4.13 N03-B freeze
+
+Review 接受提交：
+
+```text
+f839bdb2f572ad5269a263a62ed2b3e5f87cd947  P4-M01-N03-B
+P4-M01-N03-B = ACCEPTED / BORNBEAST_CONSUMER_CONFIRMED
+```
+
+REZ-resident 扩展名选择：`.cft` `.lta` `.txt` + `BUTES/*.ltc`，1559 unique payloads。
+
+```text
+TABLE/*.CFT exact BornBeast tokens     0   SCOPED_NEGATIVE
+.lta / .txt                            0   SCOPED_NEGATIVE
+packed Butes/BF005.LTC hits            1 file
+```
+
+Consumer 不在 loose `rez/Butes/bf005.ltc`，而在：
+
+```text
+rez/RB001.REZ
+  -> Butes/BF005.LTC
+  size 5,892,359
+  decode 8205 lisp records
+```
+
+该 packed payload 与 loose `rez/Butes/bf005.ltc`（N02-C / N03-A 用的那份）**不是同一文件**。
+
+Canonical Weapon 记录：
+
+```text
+WeaponName     M4A1-黑骑士
+StandardName   M4A1_S_BornBeast
+PViewModelFileName  Models\PlayerView\PV-M4A1_S_BornBeast
+PViewSkinFileName   ModelTextures\PlayerView\PV-M4A1_S_BornBeast.dtx
+```
+
+`PViewModelFileName` / `PViewSkinFileName` 精确对应 N03-A 已 SHA 验证的 inventory geometry + base_dtx。
+
+同一 packed 表里还有一批变体，共用 `PV-M4A1_S_BornBeast` LTB，但 DTX 不同（NobleGold / BeijingOpera / PCCafe 等）。变体 DTX **不是** P4 inventory `base_dtx`。
+
+N03-B 快照字段还包括：
+
+```text
+ModelFileName  Models\Weapons\QV-M4A1_S_BornBeast.ltb
+SkinFileName   ModelTextures\Weapons\QV-M4A1_S_BornBeast.dtx
+RenderStyleFileName        RS\NinjaTranslucent.ltb
+PViewRenderStyleFileName   RS\PVModelDefault.ltb
+BigIconName                M4A1_S_BornBeast
+```
+
+QV / RS 路径在 N03-B **未**做 payload SHA。Alpha / Normal / Specular TGA 与 WeaponShader CFG **没有**出现在已快照的文件路径字段里；`StandardName`/`BigIconName` 等于 CFG stem 只是 alias，不是 CFG 路径绑定。
+
+不能从 N03-B 推出：
+
+```text
+P4-M01 PASS
+TGA/CFG engine consumption contract
+piece -> DTX/TGA
+M4A1-黑骑士 == P5 雷神
+```
+
 当前有效 closure 边界：
 
 ```text
@@ -721,12 +785,16 @@ LTC wrapper/native decode                ACCEPTED
 runtime Bute config parse                ACCEPTED
 M4A1 config -> resource path             ACCEPTED
 bf005 M4A1 exact REZ full-path binding   ACCEPTED
-bf005 M4A1 != BornBeast payload          SCOPED_NEGATIVE_ACCEPTED
+loose bf005 M4A1 != BornBeast payload    SCOPED_NEGATIVE_ACCEPTED
 BornBeast runtime REZ payload identity   ACCEPTED
 loose Bute/config BornBeast consumer     SCOPED_NEGATIVE_ACCEPTED
+packed BF005 BornBeast consumer          ACCEPTED
+  WeaponName M4A1-黑骑士
+  -> PV LTB + PV DTX (inventory SHA)
+QV / RS payload identity                 NOT YET BOUND
 mesh/piece -> material binding           OPEN_UNRESOLVED
 CFG/render semantic closure              OPEN_UNRESOLVED
-BornBeast consumer path                  OPEN_UNRESOLVED
+TGA/CFG file-path on Weapon snapshot     NOT PRESENT (full-key dump pending)
 BornBeast native material closure        OPEN_UNRESOLVED
 P4-M01                                   INCOMPLETE
 ```
@@ -882,6 +950,7 @@ work/m4a1_s_bornbeast/p4_m01_native_material/
 work/m4a1_s_bornbeast/p4_m01_native_material/n01/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/
 work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03a_bornbeast_consumer/
+work/m4a1_s_bornbeast/p4_m01_native_material/runtime_acquisition/n03b_rez_packed_config/
 ```
 
 ## External reference implementation / positive control
@@ -925,6 +994,7 @@ c3e8872369aad29285cbf4ddb4a821a66eb127ba  N02-D-R2 review accepted
 dc3ac1b69843141b54b2ae97b868aa4a7a242d01  N02-E-R1 LTB piece table absent
 2e0c750624832e28a5292a488b4bad81b3934c15  N02-E-R2 bf005 != BornBeast payload
 23e275a4be0eed8fd90132095ed0c283b36a39d9  N03-A BornBeast REZ payload identity, loose-config miss
+f839bdb2f572ad5269a263a62ed2b3e5f87cd947  N03-B packed BF005 M4A1-黑骑士 consumer
 ```
 
 ---

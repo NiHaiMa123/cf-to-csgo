@@ -171,7 +171,7 @@ CF 原始资源
 ```text
 CF weapon -> Source 1 -> MIGI baseline = PASS / FROZEN
 BornBeast runtime REZ payload identity = ACCEPTED
-BornBeast consumer path                = OPEN (not in loose Bute)
+BornBeast consumer path                = ACCEPTED (packed BF005, M4A1-黑骑士)
 BornBeast native material closure      = INCOMPLETE
 P5 final Leishen flow                  = waiting for native material method
 ```
