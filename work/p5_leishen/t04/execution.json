@@ -1,0 +1,15 @@
+{
+  "schema": "cf2.p5.t04.execution.v1",
+  "task_id": "P5-T04",
+  "result": "IDENTITY_CONFIRMED",
+  "identity_confirmed": true,
+  "p4_m01": "INCOMPLETE",
+  "p6": "not_started",
+  "next_action": "P6 only when explicitly opened; do not deploy; do not overwrite N05-J or frozen",
+  "prohibited": [
+    "P4-M01 PASS",
+    "deploy / overwrite N05-J or frozen",
+    "BornBeast as 雷神",
+    "related_variant as identity-core"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "cf2.p5.t04.identity-review.v1",
+  "task_id": "P5-T04",
+  "result": "IDENTITY_CONFIRMED",
+  "identity_confirmed": true,
+  "official": {
+    "name": "M4A1-雷神",
+    "itemid": 2010044601,
+    "image": "https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png",
+    "sha256": "ffa14d6a8a633a4e4a95af3d0564d8b5448a447513c2fe88a4e5c866e8bdc2b8"
+  },
+  "local": {
+    "standard_name": "M4A1_S_Transformers",
+    "pv_ltb": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+    "pv_ltb_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+    "pv_dtx": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+    "pv_dtx_sha256": "7ca69f66d229a942752edd327fde145e45c2c00d65b570f5e5a6b6ac68d52555",
+    "same_bytes_alias": "PV-M4A1_S_Transformers_PC.DTX / M4A1_S_Transformers_PC.CFG"
+  },
+  "gates": {
+    "P5-T01_official_reference": "PASS",
+    "P5-T02_user_visual_match": "USER_VISUAL_MATCH_CONFIRMED",
+    "P5-T02_lr_mirror": "user 对了",
+    "P5-T03_bute_weapon": "OBSERVED rez/Butes/BF005.LTC record 856 WeaponName M4A1-雷神"
+  },
+  "not_this": [
+    "M4A1-黑骑士 / BornBeast",
+    "related_variant Classic/DS/FD/BB/event skins",
+    "P6 deploy",
+    "P4-M01 PASS"
+  ],
+  "open_non_identity": [
+    "CFG Name2 TGA/cube are config references, not Bute fields",
+    "Bute ShotSoundName is event ShootM4A1-S-Beast; no identity-core REZ WAV",
+    "Bute PreViewModelFileName is QV-M4A1_S_IronBeast_PreView.ltb",
+    "Bute BigIconName is M4A1-S-Iron Beast (English UI string)",
+    "LTB animation clip names not fully decoded",
+    "Source 1 import must apply LTB X scale -1",
+    "P4-M01 native material still INCOMPLETE; lighting deferred"
+  ],
+  "p6": "not started; do not deploy over N05-J or frozen"
+}
