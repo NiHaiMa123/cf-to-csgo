@@ -174,6 +174,7 @@ BornBeast runtime REZ payload identity = ACCEPTED
 BornBeast consumer path                = ACCEPTED (packed BF005, M4A1-黑骑士)
 Bute FileName graph (PV/QV/RS)         = ACCEPTED
 TGA/CFG on Weapon record               = SCOPED_NEGATIVE
+LTB piece extra texture filenames      = SCOPED_NEGATIVE (nNumTextures=0)
 BornBeast native material closure      = INCOMPLETE
 P5 final Leishen flow                  = waiting for native material method
 ```
