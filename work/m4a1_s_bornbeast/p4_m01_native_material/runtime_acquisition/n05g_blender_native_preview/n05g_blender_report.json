@@ -1,0 +1,102 @@
+{
+  "schema": "cf2.p4-m01.n05g-blender-native-preview.v1",
+  "task": "P4-M01-N05-G",
+  "result": "BLENDER_NATIVE_PREVIEW_SHOWN",
+  "p4_m01": "INCOMPLETE",
+  "final_cf_material": false,
+  "blender": "5.2.1 LTS",
+  "obj": "D:\\project\\cf_to_csgo\\data\\n05d_binding\\obj_export\\PV-M4A1_S_BornBeast.obj",
+  "maps": {
+    "diffuse": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\diffuse.png",
+    "normal": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\normal.png",
+    "specular": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\specular.png",
+    "alpha": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05f_source1_native_map\\_png\\alpha.png"
+  },
+  "blend": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05g_blender_native_preview\\n05g_bornbeast_native_preview.blend",
+  "preview": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05g_blender_native_preview\\n05g_viewport.png",
+  "mesh_objects": [
+    {
+      "name": "PV-M4A1_S_BornBeast_Fview-arm2",
+      "vertices": 190,
+      "polygons": 274
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_Fview-hand2",
+      "vertices": 1090,
+      "polygons": 1060
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast",
+      "vertices": 3074,
+      "polygons": 3407
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast01",
+      "vertices": 44,
+      "polygons": 36
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast02",
+      "vertices": 133,
+      "polygons": 121
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast03",
+      "vertices": 165,
+      "polygons": 184
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast04",
+      "vertices": 46,
+      "polygons": 52
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast05",
+      "vertices": 46,
+      "polygons": 52
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast06",
+      "vertices": 46,
+      "polygons": 52
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast07",
+      "vertices": 46,
+      "polygons": 52
+    },
+    {
+      "name": "PV-M4A1_S_BornBeast_M4A1S_BornBeast08",
+      "vertices": 46,
+      "polygons": 52
+    }
+  ],
+  "bounds": {
+    "min": [
+      -14.260482788085938,
+      -8.345874786376953,
+      -4.619534015655518
+    ],
+    "max": [
+      14.260482788085938,
+      22.56444549560547,
+      13.936319351196289
+    ],
+    "center": [
+      0.0,
+      7.109285354614258,
+      4.658392906188965
+    ]
+  },
+  "notes": [
+    "Uses N05-D verified PV LTB OBJ (raw transform) and N05-F verified PNG maps.",
+    "DirectX green-channel invert on normal is a Blender display convention, not a CF runtime proof.",
+    "Specular plugged into Specular IOR Level and inverted Roughness is a diagnostic look, not CFG->Source formula.",
+    "Hands and weapon share the verified 1024 PV atlas.",
+    "Not deployed, frozen addon untouched."
+  ],
+  "viewport_shading": "RENDERED",
+  "preview_gun": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\p4_m01_native_material\\runtime_acquisition\\n05g_blender_native_preview\\n05g_viewport_gun.png",
+  "orientation": "inspect_3q_from_raw_rest_pose",
+  "exposure": 1.350000023841858
+}
