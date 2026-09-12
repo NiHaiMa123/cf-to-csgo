@@ -14,7 +14,7 @@ P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
 Current executor task         : NONE
 Last completed task           : P4-M01-N05-E (offline playerviewmesh.fxo enumerate)
-Last accepted evidence commit : PENDING_N05E
+Last accepted evidence commit : 0ff03fa570be9a2328d26c23d17d5a3b76fc7d2d
 State                         : FXO_EFFECT_ENUMERATED / NATIVE_INPUTS_READY_SOURCE1_OPEN
 ```
 
