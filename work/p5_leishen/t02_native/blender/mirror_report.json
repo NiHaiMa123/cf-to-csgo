@@ -1,0 +1,11 @@
+{
+  "identity_status": "USER_VISUAL_MATCH_CONFIRMED",
+  "candidate": "PV-M4A1_S_Transformers",
+  "mirror": "root.scale.x = -1 (LTB X / weapon left-right), mesh normals flipped",
+  "preview": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\t02_native\\blender\\viewport_gun_mirrored.png",
+  "root_scale": [
+    -1.0,
+    1.0,
+    1.0
+  ]
+}

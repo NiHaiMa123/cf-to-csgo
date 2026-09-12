@@ -12,6 +12,7 @@ import json
 import os
 from math import radians
 
+import bmesh
 import bpy
 from mathutils import Vector
 
@@ -229,7 +230,16 @@ for obj in imported:
     obj.matrix_parent_inverse = root.matrix_world.inverted()
     obj.matrix_world = matrix
 root.rotation_euler = (radians(90), 0.0, radians(-20))
+# LTB X is weapon left/right. User 2026-09-13: raw import is mirrored vs 图鉴.
+root.scale.x = -1.0
 bpy.context.view_layer.update()
+for obj in imported:
+    bm = bmesh.new()
+    bm.from_mesh(obj.data)
+    bmesh.ops.reverse_faces(bm, faces=bm.faces)
+    bm.to_mesh(obj.data)
+    bm.free()
+    obj.data.update()
 
 cam_data = bpy.data.cameras.new("P5T02_Camera")
 cam_data.lens = 50
@@ -338,6 +348,7 @@ report = {
         "Studio lights and exposure 1.8 are for looking; not CF lighting parity.",
         "Normal G invert is Blender/DirectX display only.",
         "Hands hidden. Not deployed.",
+        "User confirmed this is M4A1-雷神 (USER_VISUAL_MATCH_CONFIRMED). LTB X scale -1 + flipped normals to unswap left/right.",
     ],
 }
 with open(REPORT_PATH, "w", encoding="utf-8") as stream:

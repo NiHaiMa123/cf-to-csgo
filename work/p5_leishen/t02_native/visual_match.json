@@ -1,0 +1,27 @@
+{
+  "schema": "cf2.p5.t02.visual-match.v1",
+  "task_id": "P5-T02",
+  "status": "USER_VISUAL_MATCH_CONFIRMED",
+  "identity_confirmed": false,
+  "official": {
+    "name": "M4A1-雷神",
+    "itemid": 2010044601,
+    "image": "https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png"
+  },
+  "local_candidate": {
+    "pv_ltb": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+    "pv_ltb_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+    "pv_dtx": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers.DTX",
+    "pv_dtx_sha256": "7ca69f66d229a942752edd327fde145e45c2c00d65b570f5e5a6b6ac68d52555",
+    "note": "Same directory MD5 as PV-M4A1_S_Transformers_PC.DTX"
+  },
+  "user_confirmation": "是雷神",
+  "confirmed_at": "2026-09-13",
+  "display_fix": {
+    "issue": "raw LTB import has weapon left/right swapped vs 图鉴",
+    "fix": "scale LTB X -1 and flip mesh normals",
+    "blender_preview": "work/p5_leishen/t02_native/blender/viewport_gun_mirrored.png"
+  },
+  "not_written": "IDENTITY_CONFIRMED",
+  "next": "P5-T03 resource graph; do not deploy; do not treat this as P4-M01 PASS"
+}

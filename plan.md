@@ -11,11 +11,11 @@
 Date captured                 : 2026-09-13
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (pixels on M4A4; lighting deferred)
-P5 雷神 identity              : T01 图鉴已确认；T02 等用户认图
-Current executor task         : P5-T02 USER_LOCAL_CANDIDATE_GATE
-Last completed task           : P5-T02 native Transformers inventory
-Last accepted evidence commit : 10d54926a5ebc3452196f50eca1b6c6644ff5911
-State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_T02_AWAITING_USER
+P5 雷神 identity              : T02 USER_VISUAL_MATCH_CONFIRMED (base Transformers)
+Current executor task         : NONE
+Last completed task           : P5-T02 visual match + LTB X mirror
+Last accepted evidence commit : e78fadd
+State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_T02_VISUAL_MATCH
 ```
 
 ## 0.1 已钉死
@@ -35,16 +35,16 @@ State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M
 ## 0.2 当前任务
 
 ```text
-Task ID : P5-T02
-State   : AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
-Goal    : 用户对照官方 C0457.png 与 verified Transformers 像素，指出本地候选
-Last    : P5-T02 native inventory + gate sheet
-Result  : CANDIDATE_ONLY
+Task ID : NONE
+State   : P5-T02 visual match recorded; T03 not opened this turn
+Goal    : 用户已确认 base Transformers = 雷神；Blender 已做 LTB X 镜像
+Last    : P5-T02 USER_VISUAL_MATCH_CONFIRMED
+Result  : USER_VISUAL_MATCH_CONFIRMED
 ```
 
 **2026-09-13 用户决定（仍有效）**：原生贴图已经在 M4A4 槽上，不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。N05-J 诊断 addon 保持现状。不宣布 P4-M01 PASS。N04-F 仍暂停。
 
-**P5-T02（用户「继续往下走」已开）**：用 N05-C 验证 reader 扫 Transformers 家族。973 hits / 793 unique / 77 PV DTX。历史灰模 + `data/rf017` 无头 BGR24 不再当 native 像素。首轮枪模预览乱贴：decoder UV 被多做了一次 `v→1-v`（OBJ 导出已经翻过）。去掉后枪托标志/弹匣/龙头对位。认图材料是 [`work/p5_leishen/t02_native/gate/gate_sheet.png`](work/p5_leishen/t02_native/gate/gate_sheet.png)。未写 `USER_VISUAL_MATCH_CONFIRMED`。未部署、未改 N05-J / frozen。
+**P5-T02**：用户 2026-09-13 在 Blender 中确认 base `PV-M4A1_S_Transformers`（DTX 与 `_PC` 同字节）是 **M4A1-雷神**。`USER_VISUAL_MATCH_CONFIRMED`。不是 `IDENTITY_CONFIRMED`，不是 P6。同时指出 raw LTB 导入左右反了；已在 Blender 对 LTB X 做 scale −1 并翻法线。证据 [`work/p5_leishen/t02_native/visual_match.json`](work/p5_leishen/t02_native/visual_match.json)。未部署、未改 N05-J / frozen。
 
 游戏当前加载：`p_cf_bornbeast_m4a4_n05j_formula_diag`。frozen 仍 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -81,6 +81,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - 不 git add `data/**`、CF `.exe/.dll/.fxo/.dmp`
 - 未经用户再开任务，不再拟合 CF 打光或改诊断 VMT 质感
 - 不把 M4A1-黑骑士 / BornBeast 写成雷神；不把 filename `Transformers` 当 identity
+- 不把 `USER_VISUAL_MATCH_CONFIRMED` 写成 `IDENTITY_CONFIRMED` 或 P6
 - 不在用户认图前写 `USER_VISUAL_MATCH_CONFIRMED` / `IDENTITY_CONFIRMED`
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
@@ -1407,8 +1408,9 @@ validated material method          DONE (N05-C)
 -> DTX/TGA/CFG revalidation        DONE (MD5-verified; base==PC)
 -> material binding                CFG Name2 + same-stem only; no Bute
 -> native finalist render          DONE gate/gate_sheet.png
--> USER LOCAL-CANDIDATE GATE       WAITING
--> USER_VISUAL_MATCH_CONFIRMED     not written
+-> USER LOCAL-CANDIDATE GATE       DONE (Blender)
+-> USER_VISUAL_MATCH_CONFIRMED     base PV-M4A1_S_Transformers
+-> LTB X mirror                    applied in Blender preview
 ```
 
 `USER_VISUAL_MATCH_CONFIRMED` 仍不等于最终 `IDENTITY_CONFIRMED`。

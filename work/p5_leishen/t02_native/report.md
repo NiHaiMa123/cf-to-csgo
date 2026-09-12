@@ -59,7 +59,11 @@ Please say which local candidate is M4A1-雷神, or none:
 
 Do not treat BornBeast as 雷神. Filename `Transformers` is not identity by itself.
 
-User 2026-09-13: `mesh_base_Transformers` looks like it, but too dark to confirm. Preview-only exposure is in [`gate/expose/`](gate/expose/) (`gain 3.2x`, native DTX unchanged). Live Blender MCP 9876 now shows the same base LTB+DTX in EEVEE (`work/p5_leishen/t02_native/blender/`). Hands hidden. Still **CANDIDATE_ONLY**.
+User 2026-09-13: `mesh_base_Transformers` looks like it, but too dark to confirm. Preview-only exposure is in [`gate/expose/`](gate/expose/) (`gain 3.2x`, native DTX unchanged). Live Blender MCP 9876 now shows the same base LTB+DTX in EEVEE (`work/p5_leishen/t02_native/blender/`). Hands hidden.
+
+**USER_VISUAL_MATCH_CONFIRMED** — user: 「是雷神」. Local candidate is base `PV-M4A1_S_Transformers` (DTX same bytes as `_PC`). Not `IDENTITY_CONFIRMED`.
+
+User also: raw import is left/right swapped. Fix: LTB X scale −1 and flip normals. Live Blender already mirrored; preview [`blender/viewport_gun_mirrored.png`](blender/viewport_gun_mirrored.png).
 
 N05-J diagnostic addon and the parked P4 frozen addon were not touched. P4-M01 remains INCOMPLETE.
 
