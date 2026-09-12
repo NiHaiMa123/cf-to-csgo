@@ -14,7 +14,7 @@ P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
 Current executor task         : P4-M01-N05-E
 Last completed task           : P4-M01-N05-D (PV LTB/UV diagnostic + named cube)
-Last accepted evidence commit : PENDING_N05D
+Last accepted evidence commit : 50c13dec2b7ed8aa9ff94fe82e0306a38b54ac5d
 State                         : ACTIVE / FXO_OFFLINE_SEMANTICS
 ```
 
