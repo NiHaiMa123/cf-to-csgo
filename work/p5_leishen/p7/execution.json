@@ -1,0 +1,566 @@
+{
+  "schema": "cf2.p7.original-sound.v1",
+  "generated_at_utc": "2026-09-12T18:17:44.675304+00:00",
+  "task": "P7-S01",
+  "result": "P7_ORIGINAL_SOUND_DEPLOYED",
+  "final_target_identity": true,
+  "final_cf_material": false,
+  "p4_m01": "INCOMPLETE",
+  "addon_name": "p_cf_leishen_m4a4_p7_sound",
+  "p6_addon": "p_cf_leishen_m4a4_p6",
+  "bute_events": {
+    "ShotSoundName": "ShootM4A1-S-Beast",
+    "MagazineClipOutSoundName": "ClipOutM4A1-S-Beast",
+    "MagazineClipInSoundName": "ClipInM4A1-S-Beast",
+    "ReloadSoundName": "ReloadM4A1-S-Beast",
+    "KnifeAttackSoundName": "KnifeAttackM4A1-S-Beast",
+    "Extra01SoundName": "Extra01M4A1-S-IronBeast"
+  },
+  "bank": {
+    "rel_cf": "rez/FMODStudio/Weapons/M4A1IronBeast.bank",
+    "path": "D:\\Program Files\\CF(2)\\rez\\FMODStudio\\Weapons\\M4A1IronBeast.bank",
+    "sha256": "5bd92625c7fecc282dc4f58c3d136c7eda09c12552e797b862bc9b203d8e0a1f",
+    "size": 932320,
+    "stream_count": 17
+  },
+  "streams": [
+    {
+      "index": 1,
+      "subsong": 1,
+      "name": "M4A1-S-Beast_ClipOut",
+      "samples": 18688,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.389,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 2,
+      "subsong": 2,
+      "name": "M4A1SBeastAir",
+      "samples": 104192,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 2.171,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 3,
+      "subsong": 3,
+      "name": "M4A1_S_ClipOut",
+      "samples": 28160,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 0.587,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 4,
+      "subsong": 4,
+      "name": "M4A1SBornBeast_Shoot_01",
+      "samples": 41984,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 0.875,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 5,
+      "subsong": 5,
+      "name": "C8BR_Tail",
+      "samples": 187904,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 3.915,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 6,
+      "subsong": 6,
+      "name": "M4A1_S_Reload_03",
+      "samples": 55808,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 1.163,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 7,
+      "subsong": 7,
+      "name": "M4A1-S-Beast_knifeAttack",
+      "samples": 34304,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.715,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 8,
+      "subsong": 8,
+      "name": "M4A1-S-Beast_SHOOT_1",
+      "samples": 11520,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.24,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 9,
+      "subsong": 9,
+      "name": "M4A1_S_Shoot_03",
+      "samples": 24576,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 0.512,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 10,
+      "subsong": 10,
+      "name": "M4A1_S_ClipIn_01",
+      "samples": 48896,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 1.019,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 11,
+      "subsong": 11,
+      "name": "M4A1-S-Beast_ClipIn",
+      "samples": 13312,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.277,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 12,
+      "subsong": 12,
+      "name": "M4A1-S-Beast_GasEjection",
+      "samples": 29696,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.619,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 13,
+      "subsong": 13,
+      "name": "M4A1SBornBeastAir",
+      "samples": 94464,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 1.968,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 14,
+      "subsong": 14,
+      "name": "M4A1_S_Swish_02",
+      "samples": 49152,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 1.024,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 15,
+      "subsong": 15,
+      "name": "M4A1_S_Shoot_02",
+      "samples": 57088,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 1.189,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 16,
+      "subsong": 16,
+      "name": "Barret_Steam",
+      "samples": 54272,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 1.131,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    },
+    {
+      "index": 17,
+      "subsong": 17,
+      "name": "M4A1-S-Beast_Reload",
+      "samples": 20992,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.437,
+      "encoding": "FMOD FADPCM 4-bit ADPCM"
+    }
+  ],
+  "extracted": {
+    "M4A1-S-Beast_SHOOT_1": {
+      "index": 8,
+      "subsong": 8,
+      "name": "M4A1-S-Beast_SHOOT_1",
+      "samples": 11520,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.24,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_SHOOT_1.wav",
+        "sha256": "3c6c830667c108c7495ea89ac03c88d4345b0eec950f5b7123410403ff263c88",
+        "bytes": 23084
+      }
+    },
+    "M4A1SBeastAir": {
+      "index": 2,
+      "subsong": 2,
+      "name": "M4A1SBeastAir",
+      "samples": 104192,
+      "rate": 48000,
+      "channels": 2,
+      "seconds": 2.171,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1SBeastAir.wav",
+        "sha256": "419c3429f36d55806872a826994128d1819f0715bd97d6bb67d68e2768af263b",
+        "bytes": 416812
+      }
+    },
+    "M4A1-S-Beast_ClipOut": {
+      "index": 1,
+      "subsong": 1,
+      "name": "M4A1-S-Beast_ClipOut",
+      "samples": 18688,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.389,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_ClipOut.wav",
+        "sha256": "36d5614ac686ee66e34128403f89587439ca01b562c09b7c6dde0eac327c3b2c",
+        "bytes": 37420
+      }
+    },
+    "M4A1-S-Beast_ClipIn": {
+      "index": 11,
+      "subsong": 11,
+      "name": "M4A1-S-Beast_ClipIn",
+      "samples": 13312,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.277,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_ClipIn.wav",
+        "sha256": "fb212bc4160c63c471ef1ca5a0e05fb34ae6b3afdf247a69476ac63d4b473fdf",
+        "bytes": 26668
+      }
+    },
+    "M4A1-S-Beast_Reload": {
+      "index": 17,
+      "subsong": 17,
+      "name": "M4A1-S-Beast_Reload",
+      "samples": 20992,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.437,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_Reload.wav",
+        "sha256": "092226a90512cee4410d2a61cd78e01e266cb885307bd0e63a5fdff1fec51682",
+        "bytes": 42028
+      }
+    },
+    "M4A1-S-Beast_GasEjection": {
+      "index": 12,
+      "subsong": 12,
+      "name": "M4A1-S-Beast_GasEjection",
+      "samples": 29696,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.619,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_GasEjection.wav",
+        "sha256": "90bc4ac53b3e6b5b2bfffc942dc58aae8f4e96a9f72e0c5dafd7047a5cddbbfc",
+        "bytes": 59436
+      }
+    },
+    "M4A1-S-Beast_knifeAttack": {
+      "index": 7,
+      "subsong": 7,
+      "name": "M4A1-S-Beast_knifeAttack",
+      "samples": 34304,
+      "rate": 48000,
+      "channels": 1,
+      "seconds": 0.715,
+      "encoding": "FMOD FADPCM 4-bit ADPCM",
+      "extract": {
+        "path": "work/p5_leishen/p7/fmod_raw/M4A1-S-Beast_knifeAttack.wav",
+        "sha256": "20791d962b2e1e98637bb4b5d06300e6cc60413db985fa7c9d7362db0368d779",
+        "bytes": 68652
+      }
+    }
+  },
+  "converted": {
+    "M4A1-S-Beast_SHOOT_1": {
+      "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_SHOOT_1.wav",
+      "sha256": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+      "bytes": 25480,
+      "channels": 1,
+      "rate": 44100,
+      "seconds": 0.288,
+      "pitch_compensate": 120
+    },
+    "M4A1SBeastAir": {
+      "path": "work/p5_leishen/p7/pcm/M4A1SBeastAir.wav",
+      "sha256": "29f0999e06bbd15e2252455cc01181b8addc74ad6a0075ffcea42c82640c55a0",
+      "bytes": 382986,
+      "channels": 2,
+      "rate": 44100,
+      "seconds": 2.171,
+      "pitch_compensate": 100
+    },
+    "M4A1-S-Beast_ClipOut": {
+      "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_ClipOut.wav",
+      "sha256": "b7c95fca0ad1d6b798f5c5fa3aed5b1edcfdde1f2ddd0e4609b32d0688201ad6",
+      "bytes": 34416,
+      "channels": 1,
+      "rate": 44100,
+      "seconds": 0.389,
+      "pitch_compensate": 100
+    },
+    "M4A1-S-Beast_ClipIn": {
+      "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_ClipIn.wav",
+      "sha256": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
+      "bytes": 24540,
+      "channels": 1,
+      "rate": 44100,
+      "seconds": 0.277,
+      "pitch_compensate": 100
+    },
+    "M4A1-S-Beast_Reload": {
+      "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_Reload.wav",
+      "sha256": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+      "bytes": 38652,
+      "channels": 1,
+      "rate": 44100,
+      "seconds": 0.437,
+      "pitch_compensate": 100
+    },
+    "M4A1-S-Beast_GasEjection": {
+      "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_GasEjection.wav",
+      "sha256": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0",
+      "bytes": 54646,
+      "channels": 1,
+      "rate": 44100,
+      "seconds": 0.619,
+      "pitch_compensate": 100
+    }
+  },
+  "wired": [
+    {
+      "bute_event": "ShootM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_SHOOT_1",
+      "csgo_event": "Weapon_M4A1.Single",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_01.wav",
+        "sound/weapons/m4a1/m4a1_02.wav"
+      ],
+      "pitch_compensate": 120,
+      "grade": "OBSERVED",
+      "note": "Named identity shoot sample. Vanilla soundscript pitch 120 is inverted in the WAV.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_SHOOT_1.wav",
+        "sha256": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+        "bytes": 25480,
+        "channels": 1,
+        "rate": 44100,
+        "seconds": 0.288,
+        "pitch_compensate": 120
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_01.wav",
+          "sha256": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485"
+        },
+        {
+          "wave": "sound/weapons/m4a1/m4a1_02.wav",
+          "sha256": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485"
+        }
+      ]
+    },
+    {
+      "bute_event": "ShootM4A1-S-Beast (air/tail layer)",
+      "stream": "M4A1SBeastAir",
+      "csgo_event": "Weapon_M4A4.SingleDistant",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_distant_01.wav"
+      ],
+      "pitch_compensate": 100,
+      "grade": "STRONG_HYPOTHESIS",
+      "note": "Bank-local Beast air/tail, not BornBeastAir. Used only as CS:GO distant layer.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/M4A1SBeastAir.wav",
+        "sha256": "29f0999e06bbd15e2252455cc01181b8addc74ad6a0075ffcea42c82640c55a0",
+        "bytes": 382986,
+        "channels": 2,
+        "rate": 44100,
+        "seconds": 2.171,
+        "pitch_compensate": 100
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_distant_01.wav",
+          "sha256": "29f0999e06bbd15e2252455cc01181b8addc74ad6a0075ffcea42c82640c55a0"
+        }
+      ]
+    },
+    {
+      "bute_event": "ClipOutM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_ClipOut",
+      "csgo_event": "Weapon_M4A1.Clipout",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_clipout.wav"
+      ],
+      "pitch_compensate": 100,
+      "grade": "OBSERVED",
+      "note": "Named identity clip-out sample.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_ClipOut.wav",
+        "sha256": "b7c95fca0ad1d6b798f5c5fa3aed5b1edcfdde1f2ddd0e4609b32d0688201ad6",
+        "bytes": 34416,
+        "channels": 1,
+        "rate": 44100,
+        "seconds": 0.389,
+        "pitch_compensate": 100
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_clipout.wav",
+          "sha256": "b7c95fca0ad1d6b798f5c5fa3aed5b1edcfdde1f2ddd0e4609b32d0688201ad6"
+        }
+      ]
+    },
+    {
+      "bute_event": "ClipInM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_ClipIn",
+      "csgo_event": "Weapon_M4A1.Clipin",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_clipin.wav"
+      ],
+      "pitch_compensate": 100,
+      "grade": "OBSERVED",
+      "note": "Named identity clip-in sample.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_ClipIn.wav",
+        "sha256": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
+        "bytes": 24540,
+        "channels": 1,
+        "rate": 44100,
+        "seconds": 0.277,
+        "pitch_compensate": 100
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_clipin.wav",
+          "sha256": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4"
+        }
+      ]
+    },
+    {
+      "bute_event": "ReloadM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_Reload",
+      "csgo_event": "Weapon_M4A1.ClipHit",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_cliphit.wav"
+      ],
+      "pitch_compensate": 100,
+      "grade": "STRONG_HYPOTHESIS",
+      "note": "CF has a Reload event; CS:GO reload is clipout+clipin+cliphit. Wired to ClipHit.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_Reload.wav",
+        "sha256": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+        "bytes": 38652,
+        "channels": 1,
+        "rate": 44100,
+        "seconds": 0.437,
+        "pitch_compensate": 100
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_cliphit.wav",
+          "sha256": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e"
+        }
+      ]
+    },
+    {
+      "bute_event": "Extra01M4A1-S-IronBeast / GasEjection",
+      "stream": "M4A1-S-Beast_GasEjection",
+      "csgo_event": "Weapon_M4A1.BoltBack",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_boltback.wav"
+      ],
+      "pitch_compensate": 100,
+      "grade": "HYPOTHESIS",
+      "note": "Named Beast gas-ejection sample. CS:GO draw also fires BoltForward; that wave is left vanilla.",
+      "pcm": {
+        "path": "work/p5_leishen/p7/pcm/M4A1-S-Beast_GasEjection.wav",
+        "sha256": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0",
+        "bytes": 54646,
+        "channels": 1,
+        "rate": 44100,
+        "seconds": 0.619,
+        "pitch_compensate": 100
+      },
+      "deployed": [
+        {
+          "wave": "sound/weapons/m4a1/m4a1_boltback.wav",
+          "sha256": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0"
+        }
+      ]
+    }
+  ],
+  "refused": {
+    "needles": [
+      "BORNBEEST",
+      "BORNBEAST",
+      "QINGCHUN",
+      "ZEEKR",
+      "BB_M4A1",
+      "BBM4A1",
+      "TRANSFORMERS_"
+    ],
+    "note": "Qingchun/BB/Zeekr REZ WAVs and BornBeast FSB streams are not identity-core."
+  },
+  "staging": "work/p5_leishen/p7/addon",
+  "staging_hashes": {
+    "sound/weapons/m4a1/m4a1_01.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+    "sound/weapons/m4a1/m4a1_02.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+    "sound/weapons/m4a1/m4a1_boltback.wav": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0",
+    "sound/weapons/m4a1/m4a1_cliphit.wav": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+    "sound/weapons/m4a1/m4a1_clipin.wav": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
+    "sound/weapons/m4a1/m4a1_clipout.wav": "b7c95fca0ad1d6b798f5c5fa3aed5b1edcfdde1f2ddd0e4609b32d0688201ad6",
+    "sound/weapons/m4a1/m4a1_distant_01.wav": "29f0999e06bbd15e2252455cc01181b8addc74ad6a0075ffcea42c82640c55a0"
+  },
+  "park_frozen": {
+    "frozen_in_addons": false,
+    "frozen_parked": true,
+    "p6_live": true,
+    "p6_has_sound": false
+  },
+  "deploy": {
+    "target": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_leishen_m4a4_p7_sound",
+    "action": "created",
+    "p6_untouched": true,
+    "frozen_untouched": true,
+    "file_count": 7
+  },
+  "notes": [
+    "P6 did not package sound/; vanilla M4A4 fire remained.",
+    "Close fire is M4A1-S-Beast_SHOOT_1 only. FMOD event graph was not reconstructed.",
+    "Weapon_M4A1.Single pitch 120 is compensated in the close-fire WAV.",
+    "Inspect / CF animation / world model are still open.",
+    "Not a P4-M01 PASS."
+  ]
+}

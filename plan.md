@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P6 hold-align fix (C3 then Source X mirror)
-Last accepted evidence commit : efabf5c
-State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / USER_RUNTIME_GATE_OPEN
+Last completed task           : P7-S01 CF original sound (ShootM4A1-S-Beast)
+Last accepted evidence commit : 880ca33
+State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / USER_RUNTIME_GATE_OPEN
 ```
 
 ## 0.1 已钉死
@@ -36,10 +36,10 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 
 ```text
 Task ID : NONE
-State   : P6_IDENTITY_REPLACEMENT_DEPLOYED; user runtime Gate open
-Goal    : 用户进游戏确认 M4A4 槽上的雷神
-Last    : P6 identity replacement deployed
-Result  : P6_IDENTITY_REPLACEMENT_DEPLOYED
+State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED; user runtime Gate open
+Goal    : 用户进游戏听 M4A4 槽上的雷神枪声（模型用户已确认）
+Last    : P7-S01 CF original sound deployed
+Result  : P7_ORIGINAL_SOUND_DEPLOYED
 ```
 
 **2026-09-13 用户决定（仍有效）**：不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。P6 VMT 沿用 N05-J 公式通道，没有把 CFG 标量抄进 phong。不宣布 P4-M01 PASS。N04-F 仍暂停。
@@ -52,7 +52,9 @@ Result  : P6_IDENTITY_REPLACEMENT_DEPLOYED
 
 **P6**：用户 2026-09-13 明确开做。已把确认身份的 base Transformers PV LTB 和 verified DTX/TGA/cube 编进独立 addon `p_cf_leishen_m4a4_p6`，部署到 M4A4 槽。首发把 LTB X 镜像做在 C3 之前，枪在 CF X≈+1.5，绕原点翻转后 Source X 中心到 −5.5，左手对不上；用户截图「错位」。已改为先冻结 C3，再绕 Source X=0 镜像。最终武器包围盒 X 中心 −0.18（P4 BornBeast 为 +0.10）。N05-J 与 frozen 都 parked、未改 frozen 文件。`final_target_identity=true`，`final_cf_material=false`。不是 P4-M01 PASS。证据 [`work/p5_leishen/p6/report.md`](work/p5_leishen/p6/report.md)。
 
-游戏当前加载：`p_cf_leishen_m4a4_p6`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
+**P7-S01**：用户 2026-09-13 确认 P6 模型没问题，但声音仍是原版 M4A4，并要求按 plan 继续。已从 `rez/FMODStudio/Weapons/M4A1IronBeast.bank` 抽出 identity-core FSB 流 `M4A1-S-Beast_*`（Bute `ShotSoundName=ShootM4A1-S-Beast`），接到 CS:GO `Weapon_M4A1.Single` / clip / distant。独立 addon `p_cf_leishen_m4a4_p7_sound`。未用 Qingchun / BB / Zeekr / BornBeast。未重建 FMOD 多层事件图。P6 网格 addon 未改。不是完整 P7（Inspect / 原动画 / world model 仍开放）。证据 [`work/p5_leishen/p7/report.md`](work/p5_leishen/p7/report.md)。
+
+游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
 N05-E 已在自建 D3D9 device 上载入当前磁盘 `playerviewmesh.fxo`（111 参数 / 43 technique）。CFG 的 `SpecularPower` / `LightBrightness` / `DiffuseBoost` / `AmbientLightColor` / `EnvCubeMapBrightness` / `ReflectionIndex` / `RefractionIndex` 与 effect 参数同名；`DiffuseMap`/`SpecularMap`/`NormalMap`/`AlphaMap`/`CubeMap` 槽存在。D3DX 默认值与 BornBeast CFG 不同，不能当运行时。`CubeMapTransformY` 无同名参数。live FXO SHA 已与 N04-C 不同。未附加 CF。P4-M01 仍 INCOMPLETE。
 
@@ -81,6 +83,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - P5-T03 graph：`work/p5_leishen/t03/{report.md,resource_graph.json,bute_canonical.json}`
 - P5-T04 identity：`work/p5_leishen/t04/{report.md,identity_review.json}`
 - P6 replacement：`work/p5_leishen/p6/{report.md,execution.json,mapping.json,addon/}`
+- P7-S01 sound：`work/p5_leishen/p7/{report.md,execution.json,mapping.json,addon/}`
 
 ## 0.3 禁止
 
@@ -94,10 +97,12 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - 不在用户认图前写 `USER_VISUAL_MATCH_CONFIRMED` / `IDENTITY_CONFIRMED`
 - 不把 P6 部署写成 P4-M01 PASS 或 lighting match
 - 不覆盖 parked frozen addon 文件
+- 不把 Qingchun / BB / Zeekr / BornBeast WAV 当雷神原声
+- 不把未重建的 FMOD 多层事件图写成完整 CF 枪声还原
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 已部署雷神 identity replacement，等待用户游戏内 Gate。
+**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 已把 `ShootM4A1-S-Beast` 接到 M4A4 开火事件，等待用户听音 Gate。Inspect / 原动画仍开放。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
@@ -1492,8 +1497,8 @@ verified Transformers PV LTB/DTX/TGA/cube
 还不是：
 
 - P4-M01 PASS / lighting match
-- release-quality runtime verification（需要用户进游戏看）
-- P7 Inspect / 原动画 / 原声音
+- release-quality runtime verification（模型用户已看过；枪声等待听音 Gate）
+- P7 Inspect / 原动画 / world model（P7-S01 原声已部署，不是完整 P7）
 
 证据：
 
@@ -1514,8 +1519,28 @@ visible Inspect
 hand / finger IK
 Blender retarget / penetration avoidance
 CF original animation
-CF original sound
+CF original sound          <- P7-S01 DEPLOYED (user listen Gate open)
 world model / extra polish
+```
+
+## 7.1 P7-S01 CF original sound
+
+```text
+P7-S01 = P7_ORIGINAL_SOUND_DEPLOYED
+addon  = p_cf_leishen_m4a4_p7_sound
+source = rez/FMODStudio/Weapons/M4A1IronBeast.bank
+event  = ShootM4A1-S-Beast (Bute; FMOD, not REZ WAV)
+slot   = CS:GO M4A4 Weapon_M4A1.Single / clip / distant
+```
+
+用户 2026-09-13 确认 P6 模型后指出声音仍是原版。已抽出 `M4A1-S-Beast_*` FSB 流并覆盖 `sound/weapons/m4a1/m4a1_01.wav` 等。未用 related-variant WAV。未改 P6 网格、未改 frozen。不是 FMOD 事件图的完整还原。
+
+证据：
+
+```text
+work/p5_leishen/p7/report.md
+work/p5_leishen/p7/execution.json
+work/p5_leishen/p7/mapping.json
 ```
 
 ---
@@ -1594,6 +1619,7 @@ work/p5_leishen/t02_native/
 work/p5_leishen/t03/
 work/p5_leishen/t04/
 work/p5_leishen/p6/
+work/p5_leishen/p7/
 ```
 
 关键历史提交：

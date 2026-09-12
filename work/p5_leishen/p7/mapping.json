@@ -1,0 +1,71 @@
+{
+  "addon_name": "p_cf_leishen_m4a4_p7_sound",
+  "result": "P7_ORIGINAL_SOUND_DEPLOYED",
+  "bank_sha256": "5bd92625c7fecc282dc4f58c3d136c7eda09c12552e797b862bc9b203d8e0a1f",
+  "wired": [
+    {
+      "bute_event": "ShootM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_SHOOT_1",
+      "csgo_event": "Weapon_M4A1.Single",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_01.wav",
+        "sound/weapons/m4a1/m4a1_02.wav"
+      ],
+      "grade": "OBSERVED"
+    },
+    {
+      "bute_event": "ShootM4A1-S-Beast (air/tail layer)",
+      "stream": "M4A1SBeastAir",
+      "csgo_event": "Weapon_M4A4.SingleDistant",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_distant_01.wav"
+      ],
+      "grade": "STRONG_HYPOTHESIS"
+    },
+    {
+      "bute_event": "ClipOutM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_ClipOut",
+      "csgo_event": "Weapon_M4A1.Clipout",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_clipout.wav"
+      ],
+      "grade": "OBSERVED"
+    },
+    {
+      "bute_event": "ClipInM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_ClipIn",
+      "csgo_event": "Weapon_M4A1.Clipin",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_clipin.wav"
+      ],
+      "grade": "OBSERVED"
+    },
+    {
+      "bute_event": "ReloadM4A1-S-Beast",
+      "stream": "M4A1-S-Beast_Reload",
+      "csgo_event": "Weapon_M4A1.ClipHit",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_cliphit.wav"
+      ],
+      "grade": "STRONG_HYPOTHESIS"
+    },
+    {
+      "bute_event": "Extra01M4A1-S-IronBeast / GasEjection",
+      "stream": "M4A1-S-Beast_GasEjection",
+      "csgo_event": "Weapon_M4A1.BoltBack",
+      "waves": [
+        "sound/weapons/m4a1/m4a1_boltback.wav"
+      ],
+      "grade": "HYPOTHESIS"
+    }
+  ],
+  "staging_hashes": {
+    "sound/weapons/m4a1/m4a1_01.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+    "sound/weapons/m4a1/m4a1_02.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+    "sound/weapons/m4a1/m4a1_boltback.wav": "75a3e348f9a007ac3a851f3a86bbf4d0873bbead5b255d2deb24ead9175d35e0",
+    "sound/weapons/m4a1/m4a1_cliphit.wav": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+    "sound/weapons/m4a1/m4a1_clipin.wav": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
+    "sound/weapons/m4a1/m4a1_clipout.wav": "b7c95fca0ad1d6b798f5c5fa3aed5b1edcfdde1f2ddd0e4609b32d0688201ad6",
+    "sound/weapons/m4a1/m4a1_distant_01.wav": "29f0999e06bbd15e2252455cc01181b8addc74ad6a0075ffcea42c82640c55a0"
+  }
+}
