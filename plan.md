@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE
 P5 雷神 identity              : T01 图鉴已确认；T02 等原生材质方法
 Current executor task         : NONE
-Last completed task           : P4-M01-N05-J (formula-backed AlphaMap.b envmask)
-Last accepted evidence commit : 4046f869e6c657eb2cbcc08157a1371323e4a19e
-State                         : FORMULA_CHANNEL_DIAGNOSTIC_DEPLOYED / P4-M01_INCOMPLETE
+Last completed task           : P4-M01-N05-K (offline FXO CFG preview)
+Last accepted evidence commit : 0b1af2a033a1b6f7170ea3c9ec19cd5e1def5aae
+State                         : FXO_CFG_PREVIEW_RENDERED / P4-M01_INCOMPLETE
 ```
 
 ## 0.1 已钉死
@@ -36,10 +36,10 @@ State                         : FORMULA_CHANNEL_DIAGNOSTIC_DEPLOYED / P4-M01_INC
 
 ```text
 Task ID : NONE
-State   : N05-J delivered
-Goal    : FXO 公式已离线抽出；诊断 addon 按 AlphaMap.b 接 $envmapmask
-Last    : P4-M01-N05-J
-Result  : FORMULA_CHANNEL_DIAGNOSTIC_DEPLOYED
+State   : N05-K delivered
+Goal    : 自建 D3D9 已用 BornBeast CFG 渲染假设 technique
+Last    : P4-M01-N05-K
+Result  : FXO_CFG_PREVIEW_RENDERED
 ```
 
 N05-E 已在自建 D3D9 device 上载入当前磁盘 `playerviewmesh.fxo`（111 参数 / 43 technique）。CFG 的 `SpecularPower` / `LightBrightness` / `DiffuseBoost` / `AmbientLightColor` / `EnvCubeMapBrightness` / `ReflectionIndex` / `RefractionIndex` 与 effect 参数同名；`DiffuseMap`/`SpecularMap`/`NormalMap`/`AlphaMap`/`CubeMap` 槽存在。D3DX 默认值与 BornBeast CFG 不同，不能当运行时。`CubeMapTransformY` 无同名参数。live FXO SHA 已与 N04-C 不同。未附加 CF。P4-M01 仍 INCOMPLETE。
@@ -52,7 +52,9 @@ N05-H 已把 P4 编译网格（字节不变）和 N05-F VTF 接到 MDL 材质路
 
 N05-I 已在自建 D3D9 device 上对 `playerviewmesh.fxo` 做 per-pass `ShaderBytecode.Disassemble`（51 个 unique shader）。`D3DXDisassembleEffect` 失败。假设 technique `tPlayerViewMeshAlphaAproxSnellTransformedCube`（`EnvCubeUsage=2` + AlphaMapName2，仍是名字级假设）的共享 PS 实际采样 Diffuse/Normal/Specular/Alpha/Cube。该 PS 中 AlphaMap.r=不透明度、.g=spec 混合、.b=cube 混合；preshader 使用 `SpecularPower * 0.25` 作为 pow 指数。BornBeast Alpha TGA 的 R/G 恒为 255，只有 B 有空间变化。CFG 标量仍不是 Source 1 phong 数。
 
-N05-J 已把诊断 addon 换成 `p_cf_bornbeast_m4a4_n05j_formula_diag`：`$envmapmask` 来自 AlphaMap.b，去掉 N05-H 的 `$normalmapalphaenvmapmask`。N05-H 文件夹已从 addons 删除，frozen 仍 parked。`$phongexponent 16` 仍是占位；cube 仍是首面。用户观察：反射比 N05-H 弱一点，枪身/图案无损坏；并指出 N05-H 的反射观感也没有问题。这与 `Black_Shader03` 近黑 + Alpha.b 均值约 10.8 相容——错 mask 和公式 mask 在这把枪上都不会出大块铬反射。保留 N05-J 作为公式通道，不把 env 调回 N05-H。仍不是 PASS。
+N05-J 已把诊断 addon 换成 `p_cf_bornbeast_m4a4_n05j_formula_diag`：`$envmapmask` 来自 AlphaMap.b，去掉 N05-H 的 `$normalmapalphaenvmapmask`。N05-H 文件夹已从 addons 删除，frozen 仍 parked。用户观察：反射比 N05-H 弱一点，其余正常；N05-H env 观感也无问题。保留公式 mask，不回退。
+
+N05-K 已在自建 Hardware D3D9 上渲染假设 technique `tPlayerViewMeshAlphaAproxSnellTransformedCube` pass 0：verified PV 武器 OBJ + recovered maps + 验证 SHA 的 cube。同一相机下 D3DX 默认值和 BornBeast CFG 标量是两张不同的图；CFG 那张是实心黑骑士，序列号和兽头红可见。相机/灯是 studio，不是 CF 灯光列表。未附加 CF，未部署，未抄 CFG 进 VMT。仍不是 PASS。
 
 证据：
 
@@ -62,6 +64,7 @@ N05-J 已把诊断 addon 换成 `p_cf_bornbeast_m4a4_n05j_formula_diag`：`$envm
 - N05-H：`work/.../n05h_nonfrozen_native_addon/{report.md,mapping.json,addon/}`
 - N05-I：`work/.../n05i_fxo_formula/{report.md,formula.json,asm/unique/}`
 - N05-J：`work/.../n05j_formula_channel_addon/{report.md,mapping.json,addon/}`
+- N05-K：`work/.../n05k_fxo_cfg_preview/{report.md,bornbeast_cfg.png,d3dx_defaults.png}`
 
 ## 0.3 禁止
 
@@ -72,15 +75,15 @@ N05-J 已把诊断 addon 换成 `p_cf_bornbeast_m4a4_n05j_formula_diag`：`$envm
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：①字节/codec 与正式读取已闭合。②PV LTB UV 已对到 verified atlas，cube 已恢复。③FXO 已离线枚举并反汇编；假设 technique 的 PS 给出 AlphaMap RGB 分工与 `SpecularPower*0.25`。④独立 Source 1 诊断包已生成。⑤N05-G 已在 Blender 里展示 recovered maps。⑥N05-H 用户已确认游戏内替换。⑦N05-J 用户确认反射略弱、其余正常；N05-H env 观感也无问题，保留公式 mask、不回退。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。
+**更新判断**：①字节/codec 与正式读取已闭合。②PV LTB UV 已对到 verified atlas，cube 已恢复。③FXO 已离线枚举、反汇编，并用 CFG 标量在自建 D3D9 上渲染出与默认值不同的图。④独立 Source 1 诊断包已生成。⑤N05-G Blender 展示。⑥N05-H 游戏替换确认。⑦N05-J envmask 略弱、其余正常。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。
 
-N05-C 到 N05-J 已完成。piece→sampler 运行时选择仍开放。完整 cubemap 仍未封装。CShell 实际 technique 选择仍是名字级假设。
+N05-C 到 N05-K 已完成。piece→sampler 运行时选择仍开放。CShell 实际 technique 选择仍是名字级假设。Source 1 没有与半 Lambert + spec 贴图相乘 + Snell cube 对等的 VertexLitGeneric 槽。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
 | 1 / A：正确来源接入 | N05-C 已完成：正式入口 9/9 SHA256 与 N05-B 一致 | 已交付 `VERIFIED_READER_INTEGRATED`；旧 `data/rf017` 仍弃用 | 不覆盖旧 data，不按主文件范围丢弃合法分包 entry，不用无 MD5 的猜测作为成功 |
 | 2 / C：正确输入的绑定与副本差分 | N05-D 完成：PV LTB UV 落在 verified 1024 atlas；cube 已恢复 | 已交付 `MESH_UV_AND_CUBE_RECOVERED_BINDING_OPEN`；piece→sampler 仍开放 | 归一化 UV 允许不同分辨率；QV 副本保留，不贴到 PV |
-| 3 / B：FXO 离线语义分析 | N05-I 完成 per-pass 反汇编；假设 PS 已给出 Alpha RGB 分工与 SpecularPower*0.25 | 已交付 `FXO_FORMULA_EXTRACTED`；N05-J 已把 AlphaMap.b 接到 `$envmapmask`。CShell technique 选择与 Source phong 数值仍开放 | `Name2` 后缀、默认值、CFG 存在均不等于黑骑士运行时选择；不得把 SpecularPower*0.25 抄成 `$phongexponent`；失败记 HRESULT/依赖，不附加 CF |
+| 3 / B：FXO 离线语义分析 | N05-I 反汇编 + N05-K 自建 D3D9 用 CFG 渲染假设 technique，默认值与 CFG 两张图不同 | 已交付 `FXO_FORMULA_EXTRACTED` 与 `FXO_CFG_PREVIEW_RENDERED`。CShell technique 选择与 Source 对等 shading 仍开放 | 不得把 CFG 标量抄成 `$phongexponent`；studio 灯不是 CF 灯光列表；失败记 HRESULT/依赖，不附加 CF |
 | 4 / D：可合法取得的兼容旧版本作参考 | Jupiter / CF 工具可解释标准路径，较早版本或不同地区 variant 可能暴露更少的格式差异 | 只有已获得可信版本与相关资源后，做旧/新 loader 或资源格式差分，提炼规则回验当前本机样本 | 尚无这样的新输入，不承诺能取得；旧版本行为/像素不自动成为当前 CF final，也不采用私服/脱壳工具包补缺口 |
 | 产品备选 / E：可用外观版本 | P4 已具备构建/部署能力，CS1.6 atlas 可作已有视觉演示 | 用户选择此交付目标后单独生成可看版本，`final_cf_material=false` | 不计为 native PASS，不借此跳过 P5 身份 Gate；此次仅规划，不部署 |
 
