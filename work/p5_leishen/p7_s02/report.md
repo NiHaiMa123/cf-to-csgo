@@ -7,4 +7,6 @@ lookat01 frames `160`, prepare `50`, loop `43`.
 
 This is CS inspect, not CF original animation. User 2026-09-13: P7-S01 sound is accepted on CS actions; **when CF animation replaces these clips, sound timing must be adjusted again**.
 
-Not a P4-M01 PASS. World model / CF anim / IK still open.
+User 2026-09-13: 「除了小穿模，没问题」→ `P7_VISIBLE_INSPECT_USER_ACCEPTED` with `INSPECT_CLIPPING_NOTED` (F-inspect finger clip, same class as P4). IK / retarget still open.
+
+Not a P4-M01 PASS. World model is P7-S03. CF anim / IK still open.

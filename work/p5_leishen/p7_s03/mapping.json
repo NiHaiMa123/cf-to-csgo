@@ -1,0 +1,107 @@
+{
+  "addon_name": "p_cf_leishen_m4a4_p6",
+  "result": "P7_WORLD_MODEL_DEPLOYED",
+  "triangles": {
+    "QV-M4A1_S_Transformers_QV-M4A1_S_Transformers": 1180
+  },
+  "align": {
+    "mirror_x": true,
+    "axis_permutation": [
+      0,
+      1,
+      2
+    ],
+    "uniform_scale": 0.4053416129522667,
+    "translation": [
+      16.0802552657809,
+      1.12232233255794,
+      0.27235007115987164
+    ],
+    "raw_aabb": {
+      "min": [
+        -15.030496597290039,
+        -5.978952884674072,
+        -18.970422744750977
+      ],
+      "max": [
+        72.11233520507812,
+        0.09134700149297714,
+        8.6004638671875
+      ],
+      "size": [
+        87.14283180236816,
+        6.070299886167049,
+        27.570886611938477
+      ],
+      "center": [
+        28.540919303894043,
+        -2.9438029415905476,
+        -5.184979438781738
+      ],
+      "count": 1472
+    },
+    "aligned_aabb": {
+      "min": [
+        -13.149874999999998,
+        -1.3011960734814565,
+        -3.2137758249035993
+      ],
+      "max": [
+        22.172741000000002,
+        1.1593490734814564,
+        7.961851824903599
+      ],
+      "size": [
+        35.322616,
+        2.4605451469629127,
+        11.175627649807199
+      ],
+      "center": [
+        4.511433000000002,
+        -0.07092350000000003,
+        2.3740379999999996
+      ],
+      "count": 1472
+    },
+    "target_aabb": {
+      "min": [
+        -13.149875,
+        -1.570276,
+        -2.812874
+      ],
+      "max": [
+        22.172741,
+        1.428429,
+        7.56095
+      ],
+      "size": [
+        35.322616,
+        2.998705,
+        10.373823999999999
+      ],
+      "center": [
+        4.511432999999999,
+        -0.07092350000000003,
+        2.374038
+      ],
+      "count": 5772
+    }
+  },
+  "compiled_models": {
+    "w_rif_m4a1.dx80.vtx": "b85414dc5fc9198b423c333209440b38dfebb214c836fccc4452bd530565e4e3",
+    "w_rif_m4a1.dx90.vtx": "04b315bfc584713837d1ff71d4a302ec94efabcef28deda9ce04e9f8ac9de69e",
+    "w_rif_m4a1.mdl": "bd5e9e83a17d9c38c67937853255a187b4b13cdfcc038465678000e53448089b",
+    "w_rif_m4a1.sw.vtx": "c0d723156270a2e1ecaabc19f4dd9b668ceb200d51eda36cff398ccb04599cb4",
+    "w_rif_m4a1.vvd": "d71214fd7d2eba6cac5fa4de7f45a802526cf06b82d99263f71dfc246c509b04",
+    "w_rif_m4a1_dropped.dx80.vtx": "221a10fd8104e5457967526b4d17356af3426e8145fece28aecd80c628087104",
+    "w_rif_m4a1_dropped.dx90.vtx": "00e4c3dc0173c907d89073524ed892d631e5b8011b99686ba22c53bd1d7f434b",
+    "w_rif_m4a1_dropped.mdl": "4f707592cf65a9a87769e02ae01f2f52656bcfa589bc749a737208b88bc9cd98",
+    "w_rif_m4a1_dropped.phy": "2696e50df9fc3e4fae5ff5fe1fcba9185bdc77458b1e276ea87bd6c2043f4072",
+    "w_rif_m4a1_dropped.sw.vtx": "71ba9c5204f5b5fa5b2b5fb55cf8dc342f9b7846062fb4b9573637adae8c43e2",
+    "w_rif_m4a1_dropped.vvd": "01a53cfc3bafec7ad171f6d516b1ed5448ec8884e2f657d206b60962162038d3"
+  },
+  "vtf": {
+    "vtf": "work/p5_leishen/p7_s03/addon/materials/models/weapons/w_models/w_rif_m4a1/rif_m4a1.vtf",
+    "vtf_sha256": "d2809cbf459a74519ee3b63069977dd4cae1b6b98791072c10674816ed0461cd"
+  }
+}

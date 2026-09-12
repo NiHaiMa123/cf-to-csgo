@@ -1,0 +1,71 @@
+{
+  "Schema": "cf2.lithtech.obj-export.v2",
+  "GeneratedAtUtc": "2026-09-12T19:40:46.8166862+00:00",
+  "ObjPath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s03\\mesh\\QV-M4A1_S_Transformers_raw.obj",
+  "MtlPath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s03\\mesh\\QV-M4A1_S_Transformers_raw.mtl",
+  "TextureDirectory": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s03\\mesh\\QV-M4A1_S_Transformers_raw_textures",
+  "TransformMode": "raw",
+  "Transform": {
+    "CenterX": 0,
+    "CenterY": 0,
+    "CenterZ": 0,
+    "Scale": 1,
+    "InversePosition": "raw_x = (export_x / scale) \u002B center_x; raw_y = (export_y / scale) \u002B center_y; raw_z = (export_z / scale) \u002B center_z",
+    "InverseUv": "export_v = 1 - raw_v; raw_v = 1 - export_v"
+  },
+  "Sources": [
+    {
+      "Name": "QV-M4A1_S_Transformers",
+      "ResourcePath": "Models\\WEAPONS\\QV-M4A1_S_Transformers.LTB",
+      "SourceByteCount": 54827,
+      "DecodedByteCount": 54827,
+      "MeshCount": 1,
+      "VertexCount": 1472,
+      "TriangleCount": 1180
+    }
+  ],
+  "Meshes": [
+    {
+      "SourcePath": "Models\\WEAPONS\\QV-M4A1_S_Transformers.LTB",
+      "MeshName": "QV-M4A1_S_Transformers",
+      "GroupName": "QV-M4A1_S_Transformers_QV-M4A1_S_Transformers",
+      "MaterialName": "QV-M4A1_S_Transformers",
+      "VertexCount": 1472,
+      "TriangleCount": 1180,
+      "UvCount": 1472,
+      "NormalCount": 1472,
+      "BoneWeightCount": 0,
+      "BoneIndexCount": 0,
+      "RawBounds": {
+        "Min": [
+          -72.11233520507812,
+          -5.978952884674072,
+          -18.970422744750977
+        ],
+        "Max": [
+          15.030496597290039,
+          0.09134700149297714,
+          8.6004638671875
+        ]
+      },
+      "RawVertexChecksum": "71b6944e44b9c8f5884773499085418834b94a17e3b363804e7f2e5d491a4741",
+      "RawUvChecksum": "06b5bfbbc4c31d9a8c1596be96fd5abefc5db4781771bbb6a9458f65dae2ca00",
+      "MaxPositionRoundTripError": 0,
+      "MaxUvRoundTripError": 0
+    }
+  ],
+  "Materials": [
+    "QV-M4A1_S_Transformers"
+  ],
+  "TextureReferenceCount": 1,
+  "Totals": {
+    "VertexCount": 1472,
+    "TriangleCount": 1180,
+    "UvCount": 1472,
+    "NormalCount": 1472,
+    "BoneWeightCount": 0,
+    "BoneIndexCount": 0,
+    "MeshCount": 1,
+    "MaterialCount": 1
+  }
+}

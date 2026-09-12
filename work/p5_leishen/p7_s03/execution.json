@@ -1,0 +1,321 @@
+{
+  "schema": "cf2.p7.world-model.v1",
+  "generated_at_utc": "2026-09-12T19:40:47.645486+00:00",
+  "task": "P7-S03",
+  "result": "P7_WORLD_MODEL_DEPLOYED",
+  "identity_confirmed": true,
+  "final_target_identity": true,
+  "final_cf_material": false,
+  "p4_m01": "INCOMPLETE",
+  "addon_name": "p_cf_leishen_m4a4_p6",
+  "source": {
+    "qv_ltb": "Models/WEAPONS/QV-M4A1_S_Transformers.LTB",
+    "qv_ltb_sha256": "3e8479d64e751c1e0270c716e82f16030f6ceb4aaf187e344a15361f0d5ee0b2",
+    "qv_dtx_sha256": "f883496782dfa41f1118b633ca5809b334114d3d1b1356229ba0bc5960477504",
+    "bute": "ModelFileName / SkinFileName"
+  },
+  "official": {
+    "files": [
+      {
+        "path": "models/weapons/w_rif_m4a1.mdl",
+        "bytes": 189856,
+        "sha256": "cc904b4f339b72b316a169988ff2ebefc2820af39789494429b9f4c075d6b95e"
+      },
+      {
+        "path": "models/weapons/w_rif_m4a1.vvd",
+        "bytes": 183744,
+        "sha256": "c6baea33cf9f196361fefad22065da0fdce34a3496e85a4cb8c6afc9c51fa2ac"
+      },
+      {
+        "path": "models/weapons/w_rif_m4a1.dx90.vtx",
+        "bytes": 38124,
+        "sha256": "e9e99aabc4d93b7ced77dea7abfc6eb0d98a552ba3c78548ae601171dd4abe1f"
+      },
+      {
+        "path": "models/weapons/w_rif_m4a1.ani",
+        "bytes": 97084,
+        "sha256": "f1a06f18927c6c06818626ce142cb33dccef01a350d4753e3261a86d7922452a"
+      },
+      {
+        "path": "models/weapons/w_rif_m4a1_dropped.mdl",
+        "bytes": 6988,
+        "sha256": "78f90b1a4f41ef1af27f4dfaade5780ce6d3049c06ff3cb60ced07d10518a82c"
+      },
+      {
+        "path": "models/weapons/w_rif_m4a1_dropped.vvd",
+        "bytes": 208832,
+        "sha256": "11ae8ec9b4d33c8f8f082ae38b13af21202c093870bbad8e8e595bdd22095249"
+      },
+      {
+        "path": "models/weapons/w_rif_m4a1_dropped.dx90.vtx",
+        "bytes": 43945,
+        "sha256": "7f8fa461b586ad3ec436ba851de59a5ed746eec057163b5a4a460cf22799921c"
+      },
+      {
+        "path": "models/weapons/w_rif_m4a1_dropped.phy",
+        "bytes": 1836,
+        "sha256": "8a0b82df38551cfc26a0fe30dc54867999a8690c58b894708d9e941e2036612d"
+      }
+    ]
+  },
+  "recovered": {
+    "qv_ltb": {
+      "full_path": "Models/WEAPONS/QV-M4A1_S_Transformers.LTB",
+      "sha256": "3e8479d64e751c1e0270c716e82f16030f6ceb4aaf187e344a15361f0d5ee0b2",
+      "size": 20186,
+      "routing": "main_file",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "directory_md5": "ee99b66c96fd4e6c9e5f77f79ee8e311"
+    },
+    "qv_dtx": {
+      "full_path": "ModelTextures/WEAPONS/QV-M4A1_S_Transformers.DTX",
+      "sha256": "f883496782dfa41f1118b633ca5809b334114d3d1b1356229ba0bc5960477504",
+      "size": 524452,
+      "routing": "main_file",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+      "directory_md5": "264926c44cc4b266bb38567711deffea"
+    }
+  },
+  "decoded": {
+    "qv_ltb": {
+      "ok": true,
+      "path": "work/p5_leishen/p7_s03/verified_root/Models/WEAPONS/QV-M4A1_S_Transformers.LTB",
+      "bytes": 54827,
+      "lzma": true,
+      "sha256_raw": "3e8479d64e751c1e0270c716e82f16030f6ceb4aaf187e344a15361f0d5ee0b2",
+      "sha256_body": "416d747b2d19bad27f601db943f9c264154bc14547fb675ee248f5c6a743f591"
+    },
+    "qv_dtx": {
+      "ok": true,
+      "path": "work/p5_leishen/p7_s03/_png/qv_diffuse.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "format": "dxt1",
+      "png_sha256": "cc12d8ab242bd77ecc5c2cc688de25cdfb73f747670a5e589ba9d5cde3698cf8"
+    }
+  },
+  "scan": {
+    "scanned": [
+      "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+      "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+      "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ"
+    ]
+  },
+  "export": {
+    "obj": "work/p5_leishen/p7_s03/mesh/QV-M4A1_S_Transformers_raw.obj",
+    "sha256": "0e05cf93f1807c095a73564c69a033a6fa6084cd33c6949b5cc1c7089836dfbe",
+    "bytes": 294178
+  },
+  "inspect_mesh_count": null,
+  "triangles": {
+    "QV-M4A1_S_Transformers_QV-M4A1_S_Transformers": 1180
+  },
+  "align": {
+    "mirror_x": true,
+    "axis_permutation": [
+      0,
+      1,
+      2
+    ],
+    "uniform_scale": 0.4053416129522667,
+    "translation": [
+      16.0802552657809,
+      1.12232233255794,
+      0.27235007115987164
+    ],
+    "raw_aabb": {
+      "min": [
+        -15.030496597290039,
+        -5.978952884674072,
+        -18.970422744750977
+      ],
+      "max": [
+        72.11233520507812,
+        0.09134700149297714,
+        8.6004638671875
+      ],
+      "size": [
+        87.14283180236816,
+        6.070299886167049,
+        27.570886611938477
+      ],
+      "center": [
+        28.540919303894043,
+        -2.9438029415905476,
+        -5.184979438781738
+      ],
+      "count": 1472
+    },
+    "aligned_aabb": {
+      "min": [
+        -13.149874999999998,
+        -1.3011960734814565,
+        -3.2137758249035993
+      ],
+      "max": [
+        22.172741000000002,
+        1.1593490734814564,
+        7.961851824903599
+      ],
+      "size": [
+        35.322616,
+        2.4605451469629127,
+        11.175627649807199
+      ],
+      "center": [
+        4.511433000000002,
+        -0.07092350000000003,
+        2.3740379999999996
+      ],
+      "count": 1472
+    },
+    "target_aabb": {
+      "min": [
+        -13.149875,
+        -1.570276,
+        -2.812874
+      ],
+      "max": [
+        22.172741,
+        1.428429,
+        7.56095
+      ],
+      "size": [
+        35.322616,
+        2.998705,
+        10.373823999999999
+      ],
+      "center": [
+        4.511432999999999,
+        -0.07092350000000003,
+        2.374038
+      ],
+      "count": 5772
+    }
+  },
+  "dropped_to_held": {
+    "rms_first_triangle": 1.5168655920725216e-06,
+    "rms_sample": 7.977044060739403e-05,
+    "held_bone": 60,
+    "dropped_bone": 0
+  },
+  "smd": {
+    "dropped": {
+      "smd": "work/p5_leishen/p7_s03/source1/dropped/w_rif_m4a1.smd",
+      "sha256": "df34ffba3e2f1b3617b3fdda075fea692b334e242e8ecfa86e4e2e760b50041d",
+      "triangles": 1180,
+      "bone": 0
+    },
+    "held": {
+      "smd": "work/p5_leishen/p7_s03/source1/held/w_rif_m4a1.smd",
+      "sha256": "fe73e9f11c5573bf94d9cbe1090e6761bbef261d238b1ff09e769f05fe382c0f",
+      "triangles": 1180,
+      "bone": 60
+    }
+  },
+  "compile": {
+    "dropped": {
+      "mdl": "work/p5_leishen/p7_s03/isolated_game/csgo/models/weapons/w_rif_m4a1_dropped.mdl",
+      "exit_code": 0,
+      "sha256": "4f707592cf65a9a87769e02ae01f2f52656bcfa589bc749a737208b88bc9cd98"
+    },
+    "held": {
+      "mdl": "work/p5_leishen/p7_s03/isolated_game/csgo/models/weapons/w_rif_m4a1.mdl",
+      "exit_code": 0,
+      "sha256": "bd5e9e83a17d9c38c67937853255a187b4b13cdfcc038465678000e53448089b"
+    }
+  },
+  "mdl_header": {
+    "dropped": {
+      "magic": "IDST",
+      "version": 49,
+      "internal_name": "weapons\\w_rif_m4a1_dropped.mdl",
+      "bone_count": 10,
+      "local_animation_count": 1,
+      "local_sequence_count": 1,
+      "size_bytes": 6940,
+      "sha256": "4f707592cf65a9a87769e02ae01f2f52656bcfa589bc749a737208b88bc9cd98"
+    },
+    "held": {
+      "magic": "IDST",
+      "version": 49,
+      "internal_name": "weapons\\w_rif_m4a1.mdl",
+      "bone_count": 94,
+      "local_animation_count": 7,
+      "local_sequence_count": 6,
+      "size_bytes": 192548,
+      "sha256": "bd5e9e83a17d9c38c67937853255a187b4b13cdfcc038465678000e53448089b"
+    }
+  },
+  "compiled_models": {
+    "w_rif_m4a1.dx80.vtx": "b85414dc5fc9198b423c333209440b38dfebb214c836fccc4452bd530565e4e3",
+    "w_rif_m4a1.dx90.vtx": "04b315bfc584713837d1ff71d4a302ec94efabcef28deda9ce04e9f8ac9de69e",
+    "w_rif_m4a1.mdl": "bd5e9e83a17d9c38c67937853255a187b4b13cdfcc038465678000e53448089b",
+    "w_rif_m4a1.sw.vtx": "c0d723156270a2e1ecaabc19f4dd9b668ceb200d51eda36cff398ccb04599cb4",
+    "w_rif_m4a1.vvd": "d71214fd7d2eba6cac5fa4de7f45a802526cf06b82d99263f71dfc246c509b04",
+    "w_rif_m4a1_dropped.dx80.vtx": "221a10fd8104e5457967526b4d17356af3426e8145fece28aecd80c628087104",
+    "w_rif_m4a1_dropped.dx90.vtx": "00e4c3dc0173c907d89073524ed892d631e5b8011b99686ba22c53bd1d7f434b",
+    "w_rif_m4a1_dropped.mdl": "4f707592cf65a9a87769e02ae01f2f52656bcfa589bc749a737208b88bc9cd98",
+    "w_rif_m4a1_dropped.phy": "2696e50df9fc3e4fae5ff5fe1fcba9185bdc77458b1e276ea87bd6c2043f4072",
+    "w_rif_m4a1_dropped.sw.vtx": "71ba9c5204f5b5fa5b2b5fb55cf8dc342f9b7846062fb4b9573637adae8c43e2",
+    "w_rif_m4a1_dropped.vvd": "01a53cfc3bafec7ad171f6d516b1ed5448ec8884e2f657d206b60962162038d3"
+  },
+  "vtf": {
+    "png": "work/p5_leishen/p7_s03/_png/qv_diffuse_rgb.png",
+    "png_sha256": "b77bdac289ea3af5c885f3785083aebd4a8604caa71da5f1a1f492dc227f1227",
+    "vtf": "work/p5_leishen/p7_s03/addon/materials/models/weapons/w_models/w_rif_m4a1/rif_m4a1.vtf",
+    "vtf_sha256": "d2809cbf459a74519ee3b63069977dd4cae1b6b98791072c10674816ed0461cd",
+    "format": "dxt1",
+    "vtf_bytes": 699288
+  },
+  "vmt_sha256": "8c518b339ae5042a22a44c51f2c581c192bea71387cef3be68eb4e0618aa18d7",
+  "staging_hashes": {
+    "materials/models/weapons/w_models/w_rif_m4a1/rif_m4a1.vmt": "8c518b339ae5042a22a44c51f2c581c192bea71387cef3be68eb4e0618aa18d7",
+    "materials/models/weapons/w_models/w_rif_m4a1/rif_m4a1.vtf": "d2809cbf459a74519ee3b63069977dd4cae1b6b98791072c10674816ed0461cd",
+    "models/weapons/w_rif_m4a1.dx80.vtx": "b85414dc5fc9198b423c333209440b38dfebb214c836fccc4452bd530565e4e3",
+    "models/weapons/w_rif_m4a1.dx90.vtx": "04b315bfc584713837d1ff71d4a302ec94efabcef28deda9ce04e9f8ac9de69e",
+    "models/weapons/w_rif_m4a1.mdl": "bd5e9e83a17d9c38c67937853255a187b4b13cdfcc038465678000e53448089b",
+    "models/weapons/w_rif_m4a1.sw.vtx": "c0d723156270a2e1ecaabc19f4dd9b668ceb200d51eda36cff398ccb04599cb4",
+    "models/weapons/w_rif_m4a1.vvd": "d71214fd7d2eba6cac5fa4de7f45a802526cf06b82d99263f71dfc246c509b04",
+    "models/weapons/w_rif_m4a1_dropped.dx80.vtx": "221a10fd8104e5457967526b4d17356af3426e8145fece28aecd80c628087104",
+    "models/weapons/w_rif_m4a1_dropped.dx90.vtx": "00e4c3dc0173c907d89073524ed892d631e5b8011b99686ba22c53bd1d7f434b",
+    "models/weapons/w_rif_m4a1_dropped.mdl": "4f707592cf65a9a87769e02ae01f2f52656bcfa589bc749a737208b88bc9cd98",
+    "models/weapons/w_rif_m4a1_dropped.phy": "2696e50df9fc3e4fae5ff5fe1fcba9185bdc77458b1e276ea87bd6c2043f4072",
+    "models/weapons/w_rif_m4a1_dropped.sw.vtx": "71ba9c5204f5b5fa5b2b5fb55cf8dc342f9b7846062fb4b9573637adae8c43e2",
+    "models/weapons/w_rif_m4a1_dropped.vvd": "01a53cfc3bafec7ad171f6d516b1ed5448ec8884e2f657d206b60962162038d3"
+  },
+  "park_frozen": {
+    "frozen_in_addons": false,
+    "frozen_parked": true,
+    "frozen_modified": false,
+    "parked_dst": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\_parked_addons\\p_cf_bornbeast_m4a4_p4_frozen_noop_01"
+  },
+  "deploy": {
+    "target": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_leishen_m4a4_p6",
+    "action": "added_world_files",
+    "viewmodel_unchanged": true
+  },
+  "viewmodel_hashes_before": {
+    "v_rif_m4a1.ani": "6a9f97b5d25f0669174be235a58e8549c13294016caf7668f1ee9a53dcd213ba",
+    "v_rif_m4a1.dx80.vtx": "b88657b12bbb1be0eadfefb8eb42036628dc805b385b086f296415171f6fcda4",
+    "v_rif_m4a1.dx90.vtx": "e96277b5b38ed297f4aecd2d1a6bff895139f9b65ccbbc8665a7fc0936764589",
+    "v_rif_m4a1.mdl": "0595dfd2c8daa67c76e4b7b52a356678801e87d74f71cf2a00d608224be244df",
+    "v_rif_m4a1.sw.vtx": "b060d1b2abf56b83be554e9b3bd6b23a8d8ea7611cd2a14b95c59f2806bceb2e",
+    "v_rif_m4a1.vvd": "b95181dec60e256b38e2edf130694ce4165b5949588e0ad3a9526bf259c86460"
+  },
+  "notes": [
+    "World/dropped mesh is Bute QV-M4A1_S_Transformers, not PV and not BornBeast.",
+    "QV is one piece; official mag bodygroups were blanked.",
+    "Viewmodel v_rif_m4a1 files were not rewritten.",
+    "P7-S01 sound was not rewritten.",
+    "Frozen addon was not modified.",
+    "Not a P4-M01 PASS. Lighting deferred. CF original animation still open."
+  ]
+}

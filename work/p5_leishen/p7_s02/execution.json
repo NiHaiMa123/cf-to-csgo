@@ -2,7 +2,9 @@
   "schema": "cf2.p7.visible-inspect.v1",
   "generated_at_utc": "2026-09-12T19:24:34.551262+00:00",
   "task": "P7-S02",
-  "result": "P7_VISIBLE_INSPECT_DEPLOYED",
+  "result": "P7_VISIBLE_INSPECT_USER_ACCEPTED",
+  "user_accepted": true,
+  "inspect_clipping_noted": true,
   "inspect_policy": "official_cs_lookat",
   "cf_original_animation": false,
   "sound_retime_required_when_cf_anim_replaced": true,
@@ -36,6 +38,7 @@
     "P7-S01 sound is user-accepted on CS action timing.",
     "Replacing CS clips with CF original animation still requires sound event retiming.",
     "Inspect motion is official CS:GO M4A4 lookat, not CF inspect.",
+    "User 2026-09-13 accepted except small F-inspect finger clipping (INSPECT_CLIPPING_NOTED).",
     "Not a P4-M01 PASS."
   ]
 }

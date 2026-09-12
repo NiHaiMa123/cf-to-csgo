@@ -1,0 +1,13 @@
+CF Rez Manager OBJ texture report
+
+Sources: 1
+Meshes: 1
+Texture references: 1
+Missing textures: 1
+
+Source: Models\WEAPONS\QV-M4A1_S_Transformers.LTB
+Mesh: QV-M4A1_S_Transformers
+  Reference: <none>
+  Inferred candidates: Models/WEAPONS/QV-M4A1_S_Transformers, ModelTextures/WEAPONS/QV-M4A1_S_Transformers, QV-M4A1_S_Transformers, M4A1_S_Transformers
+  Exported: <missing>
+

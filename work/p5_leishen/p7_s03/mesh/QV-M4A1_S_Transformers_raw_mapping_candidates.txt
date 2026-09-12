@@ -1,0 +1,58 @@
+CF Rez Manager texture mapping candidate report
+
+Sources: 1
+Meshes: 1
+Decoded texture references: 0
+Indexed textures: 0
+Global mapping table candidates: 0
+Mapping file hits: 0
+Raw exact model reference hits: 0
+
+Source Resources
+- Models\WEAPONS\QV-M4A1_S_Transformers.LTB
+
+Most Likely Mapping Files
+- <none>
+
+Model Search Terms
+- QV-M4A1_S_Transformers
+- transformers
+- WEAPONS
+- Models
+- m4a1
+
+Direct Texture References
+- <none found in decoded model meshes>
+
+Material Hints From Model
+- <none>
+
+Texture Name Guesses
+- <none>
+
+Sibling Directory Texture Candidates
+- <none>
+
+Likely Global Mapping Tables
+- <none>
+
+Likely Shader Or Material Configs
+- <none>
+
+Raw Exact Model Reference Hits
+- <none>
+
+Companion Mapping Files Near Source
+- <none>
+
+Mapping Candidate Files
+- <none>
+
+How to read this report:
+- If direct texture references are empty, the model format parser did not find texture paths inside the model.
+- Likely global mapping tables are ranked by files that mention both model-like resources and texture-like resources.
+- Shader/material configs may only mention texture resources; these are separated from full model-to-texture tables.
+- Raw exact model reference hits search file bytes for exact model terms before text decoding; these are strong mapping-table suspects.
+- Companion files are small config/table-like files near the selected model path and may hold local material bindings.
+- If mapping candidate files mention both model terms and texture terms, those files are likely the external binding tables.
+- If texture guesses look correct but no mapping file hits appear, the binding may be packed in an unsupported binary table.
