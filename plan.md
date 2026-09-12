@@ -11,11 +11,11 @@
 Date captured                 : 2026-09-13
 P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (pixels on M4A4; lighting deferred)
-P5 雷神 identity              : T01 图鉴已确认；T02 等用户下一步
-Current executor task         : NONE
-Last completed task           : P4-M01-N05-K (offline FXO CFG preview)
+P5 雷神 identity              : T01 图鉴已确认；T02 等用户认图
+Current executor task         : P5-T02 USER_LOCAL_CANDIDATE_GATE
+Last completed task           : P5-T02 native Transformers inventory
 Last accepted evidence commit : 10d54926a5ebc3452196f50eca1b6c6644ff5911
-State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M01_INCOMPLETE
+State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_T02_AWAITING_USER
 ```
 
 ## 0.1 已钉死
@@ -35,14 +35,16 @@ State                         : NATIVE_PIXELS_ON_SLOT / LIGHTING_DEFERRED / P4-M
 ## 0.2 当前任务
 
 ```text
-Task ID : NONE
-State   : lighting/feel deferred by user 2026-09-13
-Goal    : 不再拟合 CF 打光或调 Source phong；质感以后单独做
-Last    : P4-M01-N05-K
-Result  : LIGHTING_PARITY_DEFERRED
+Task ID : P5-T02
+State   : AWAITING_USER_LOCAL_CANDIDATE_CONFIRMATION
+Goal    : 用户对照官方 C0457.png 与 verified Transformers 像素，指出本地候选
+Last    : P5-T02 native inventory + gate sheet
+Result  : CANDIDATE_ONLY
 ```
 
-**2026-09-13 用户决定**：原生贴图已经在 M4A4 槽上，不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、N05-K 认图、继续灌 FXO 公式进游戏。N05-J 诊断 addon 保持现状。不宣布 P4-M01 PASS。N04-F 仍暂停。
+**2026-09-13 用户决定（仍有效）**：原生贴图已经在 M4A4 槽上，不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。N05-J 诊断 addon 保持现状。不宣布 P4-M01 PASS。N04-F 仍暂停。
+
+**P5-T02（用户「继续往下走」已开）**：用 N05-C 验证 reader 扫 Transformers 家族。973 hits / 793 unique / 77 PV DTX。历史灰模 + `data/rf017` 无头 BGR24 不再当 native 像素。认图材料是 [`work/p5_leishen/t02_native/gate/gate_sheet.png`](work/p5_leishen/t02_native/gate/gate_sheet.png)：官方图鉴、CF 商店图 `M4A1.S.TRANSFORMERS`、base PV DTX（与 `_PC` 同 MD5）、Classic 更亮银蓝 atlas、BornBeast 黑骑士负对照。未写 `USER_VISUAL_MATCH_CONFIRMED`。未部署、未改 N05-J / frozen。
 
 游戏当前加载：`p_cf_bornbeast_m4a4_n05j_formula_diag`。frozen 仍 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -69,6 +71,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - N05-I：`work/.../n05i_fxo_formula/{report.md,formula.json,asm/unique/}`
 - N05-J：`work/.../n05j_formula_channel_addon/{report.md,mapping.json,addon/}`
 - N05-K：`work/.../n05k_fxo_cfg_preview/{report.md,bornbeast_cfg.png,d3dx_defaults.png}`
+- P5-T02 native：`work/p5_leishen/t02_native/{report.md,gate/gate_sheet.png,execution.json}`
 
 ## 0.3 禁止
 
@@ -77,10 +80,12 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - 不注入、不补丁、不驱动、不 NtRead 绕过 ACE
 - 不 git add `data/**`、CF `.exe/.dll/.fxo/.dmp`
 - 未经用户再开任务，不再拟合 CF 打光或改诊断 VMT 质感
+- 不把 M4A1-黑骑士 / BornBeast 写成雷神；不把 filename `Transformers` 当 identity
+- 不在用户认图前写 `USER_VISUAL_MATCH_CONFIRMED` / `IDENTITY_CONFIRMED`
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：原生像素已在 M4A4。用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5-T02 不再被「等原生材质方法」挡住，但须用户明确开做。
+**更新判断**：原生像素已在 M4A4。用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5-T02 已用 verified reader 做出 Transformers 原生认图表，现等用户对照 C0457.png。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
@@ -105,7 +110,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 
 微软 [Texture Coordinates](https://learn.microsoft.com/en-us/windows/win32/direct3d9/texture-coordinates) 说明常规 UV 是归一化坐标；因此 512 与 1024 的尺寸差本身不是 atlas 不兼容的证据。当前 LTB 的具体 UV 布局仍以正确来源的网格验证为准。
 
-推进规则：**N05-C 正式入口接入 → 正确 PV/CFG 的绑定验证 → FXO/Source 1 语义映射**。像素、绑定、公式分别验收；只有 §3 的全部条件成立才能 native PASS。P5-T02 仍待原生方法。
+推进规则：**N05-C 正式入口接入 → 正确 PV/CFG 的绑定验证 → FXO/Source 1 语义映射**。像素、绑定、公式分别验收；只有 §3 的全部条件成立才能 native PASS。P5-T02 原生像素已出，身份仍等用户认图。
 
 ---
 
@@ -1394,18 +1399,16 @@ canonical inspected     441
 
 ## P5-T02
 
-依赖 P4-M01 native material method。
-
-恢复后 pipeline：
+依赖 P4-M01 native material method。用户 2026-09-13 已开做。
 
 ```text
-validated material method
--> Transformers family inventory
--> Transformers-specific DTX/TGA/CFG revalidation
--> material binding
--> native finalist render
--> USER LOCAL-CANDIDATE GATE
--> USER_VISUAL_MATCH_CONFIRMED
+validated material method          DONE (N05-C)
+-> Transformers family inventory   DONE (973 hits / 77 PV DTX)
+-> DTX/TGA/CFG revalidation        DONE (MD5-verified; base==PC)
+-> material binding                CFG Name2 + same-stem only; no Bute
+-> native finalist render          DONE gate/gate_sheet.png
+-> USER LOCAL-CANDIDATE GATE       WAITING
+-> USER_VISUAL_MATCH_CONFIRMED     not written
 ```
 
 `USER_VISUAL_MATCH_CONFIRMED` 仍不等于最终 `IDENTITY_CONFIRMED`。
@@ -1538,6 +1541,7 @@ https://github.com/bxclip/Tool-Crossfire
 work/p5_leishen/t01_reference/
 work/p5_leishen/t01/
 work/p5_leishen/t02/
+work/p5_leishen/t02_native/
 ```
 
 关键历史提交：

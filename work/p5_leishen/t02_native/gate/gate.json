@@ -1,0 +1,61 @@
+{
+  "base_mesh": {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_base.png",
+    "weapon_mesh_count": 9,
+    "triangle_count": 3916,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 217.08,
+      "mean_rgb": [
+        216.74,
+        217.17,
+        217.21
+      ],
+      "fraction_lum_lt_16": 0.1252,
+      "fraction_blueish": 0.0059,
+      "fraction_reddish": 0.0,
+      "silhouette_risk": false
+    }
+  },
+  "classic_mesh": {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_CLASSIC.png",
+    "weapon_mesh_count": 9,
+    "triangle_count": 3916,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 227.13,
+      "mean_rgb": [
+        226.98,
+        227.16,
+        227.29
+      ],
+      "fraction_lum_lt_16": 0.0186,
+      "fraction_blueish": 0.0056,
+      "fraction_reddish": 0.0,
+      "silhouette_risk": false
+    }
+  },
+  "gate_sheet": "work/p5_leishen/t02_native/gate/gate_sheet.png",
+  "identity_status": "CANDIDATE_ONLY",
+  "note": "Base PV DTX MD5 matches Transformers_PC; rf017 numbered-part and rez3 main-file are the same bytes. Classic LTB SHA matches TLand cluster 620778d7. UI icons are not PV diffuse."
+}

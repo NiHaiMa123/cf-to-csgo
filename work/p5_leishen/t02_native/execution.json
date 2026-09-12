@@ -1,0 +1,67 @@
+{
+  "schema": "cf2.p5.t02.native-inventory.v1",
+  "task_id": "P5-T02",
+  "started_at": "2026-09-12T16:21:45.634+00:00",
+  "completed_at": "2026-09-12T16:23:23.935+00:00",
+  "result": "NATIVE_TRANSFORMERS_INVENTORY_READY_FOR_USER_GATE",
+  "identity_status": "CANDIDATE_ONLY",
+  "p4_m01": "INCOMPLETE",
+  "official_reference": {
+    "itemid": 2010044601,
+    "name": "M4A1-雷神",
+    "image": "https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png",
+    "local": {
+      "url": "https://mcdn.gtimg.com/bbcdn/cf/serial/C0457.png",
+      "path": "work/p5_leishen/t02_native/official_C0457.png",
+      "sha256": "ffa14d6a8a633a4e4a95af3d0564d8b5448a447513c2fe88a4e5c866e8bdc2b8",
+      "bytes": 125896,
+      "content_type": "image/png",
+      "size": [
+        675,
+        300
+      ],
+      "color": {
+        "pixel_count": 65536,
+        "sampled": true,
+        "size": [
+          675,
+          300
+        ],
+        "median_luminance": 0.0,
+        "mean_luminance": 15.49,
+        "mean_rgb": [
+          14.62,
+          15.69,
+          15.98
+        ],
+        "fraction_lum_lt_16": 0.8326,
+        "fraction_blueish": 0.0101,
+        "fraction_reddish": 0.0014,
+        "silhouette_risk": true
+      }
+    }
+  },
+  "index_count": 464,
+  "hit_count": 973,
+  "index_errors": [],
+  "recover_failures": [],
+  "mesh_errors": [
+    {
+      "stem": "PV-M4A1_S_TRANSFORMERS_JJXT",
+      "reason": "Unhandled exception. System.ArgumentException: .NET number values such as positive and negative infinity cannot be written as valid JSON. To make it work when using 'JsonSerializer', consider specifying 'JsonNumberHandling.AllowNamedFloatingPointLiterals' (see https://docs.microsoft.com/dotnet/api/system.text.json.serialization.jsonnumberhandling).\n   at System.Text.Json.ThrowHelper.ThrowArgumentException_ValueNotSupported()\n   at System.Text.Json.Utf8JsonWriter.WriteNumberValue(Double value)\n  "
+    }
+  ],
+  "contact_sheet": {
+    "path": "work/p5_leishen/t02_native/contact_sheet.png",
+    "atlas_count": 77,
+    "mesh_count": 11
+  },
+  "next_action": "user compares verified PV DTX / mesh wraps to C0457.png; do not write IDENTITY_CONFIRMED",
+  "prohibited": [
+    "IDENTITY_CONFIRMED",
+    "USER_VISUAL_MATCH_CONFIRMED without explicit user choice",
+    "BornBeast as 雷神",
+    "filename Transformers as identity",
+    "deploy / overwrite frozen or N05-J addon"
+  ]
+}

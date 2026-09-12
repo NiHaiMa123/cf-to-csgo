@@ -1,0 +1,25 @@
+{
+  "Textures": {
+    "SpecularMapName2": "M4A1_S_Transformers_S.tga",
+    "EnvCubeMapName2": "Black_Shader02.dds",
+    "NormalMapName2": "M4A1_S_Transformers_N.tga",
+    "AlphaMapName2": "M4A1_S_Transformers_alpha.tga"
+  },
+  "Techniques": {
+    "DiffuseMappingEnabled": "1",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1"
+  },
+  "Properties": {
+    "LightBrightness": "0.1",
+    "EnvCubeMapBrightness": "2.5",
+    "SpecularPower": "1.5",
+    "DiffuseBoost": "0.3",
+    "AmbientLightColor": "0.03",
+    "RefractionIndex": "0.09",
+    "ReflectionIndex": "0.07",
+    "EnvCubeUsage": "2",
+    "CubeMapTransformY": "-220"
+  }
+}

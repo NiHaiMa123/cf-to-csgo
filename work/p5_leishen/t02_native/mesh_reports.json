@@ -1,0 +1,387 @@
+[
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-BB_M4A1_S_TRANSFORMERS.png",
+    "weapon_mesh_count": 5,
+    "triangle_count": 8261,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 245.71,
+      "mean_rgb": [
+        245.94,
+        245.6,
+        246.14
+      ],
+      "fraction_lum_lt_16": 0.0047,
+      "fraction_blueish": 0.0201,
+      "fraction_reddish": 0.0146,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-BB_M4A1_S_Transformers.LTB",
+    "ltb_sha256": "545b60b2dd2ceb4e7a42e04c4a8611b1cb6a5699b4dac13b497b2f58ff3e51d4",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-BB_M4A1_S_Transformers.DTX",
+    "dtx_sha256": "d0341f384c149ef8f73650612ba1c0e8e75231a603200e3f77269b6a3e4d959d",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-FD_M4A1_S_TRANSFORMERS.png",
+    "weapon_mesh_count": 3,
+    "triangle_count": 6884,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 232.22,
+      "mean_rgb": [
+        230.74,
+        232.64,
+        232.38
+      ],
+      "fraction_lum_lt_16": 0.0005,
+      "fraction_blueish": 0.0118,
+      "fraction_reddish": 0.0097,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-FD_M4A1_S_Transformers.LTB",
+    "ltb_sha256": "d5ea60e636d3df9582f8f6dc3d53c90cc4c0c1d030b058744e3e116e0ef8bdfc",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-FD_M4A1_S_Transformers.DTX",
+    "dtx_sha256": "287f245a35a73db52c1e498317b6702bd8e131f8d740528d89a0a3897a1b981c",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-FD_M4A1_S_TRANSFORMERS_PR.png",
+    "weapon_mesh_count": 3,
+    "triangle_count": 6884,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 230.27,
+      "mean_rgb": [
+        231.08,
+        229.87,
+        231.89
+      ],
+      "fraction_lum_lt_16": 0.0009,
+      "fraction_blueish": 0.0482,
+      "fraction_reddish": 0.0243,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-FD_M4A1_S_Transformers_PR.LTB",
+    "ltb_sha256": "b28610c2c519ebec237ba67e2f491b8360ff88decc734b82f7e860366a19e314",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-FD_M4A1_S_Transformers_PR.DTX",
+    "dtx_sha256": "dd0160bc70294f2829aa38606656cb23a6e9e782a5cf0f7ee387aefe4143f406",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-KAR98K_SATELLITE_NG_THUNDER.png",
+    "weapon_mesh_count": 11,
+    "triangle_count": 16103,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 235.64,
+      "mean_rgb": [
+        236.0,
+        235.77,
+        233.31
+      ],
+      "fraction_lum_lt_16": 0.0079,
+      "fraction_blueish": 0.0048,
+      "fraction_reddish": 0.0509,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-Kar98k_Satellite_NG_Thunder.LTB",
+    "ltb_sha256": "3ce49e52a9a781d8167417e11e55f3ff0f833acdd8b2e20f2a0b100ee6c71eb0",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-Kar98k_Satellite_NG_Thunder.DTX",
+    "dtx_sha256": "a7627202ab21f3ae25d0bf8f7cf596d2e96dbd5d02d402510a7d3320b1d9d3b5",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_DIHU.png",
+    "weapon_mesh_count": 9,
+    "triangle_count": 3916,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 218.42,
+      "mean_rgb": [
+        220.34,
+        218.04,
+        216.56
+      ],
+      "fraction_lum_lt_16": 0.1009,
+      "fraction_blueish": 0.0008,
+      "fraction_reddish": 0.0525,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_Dihu.LTB",
+    "ltb_sha256": "d74e95121fe4573dadde6726a194e7f9ed0c4f82a7d6a2a0626b2195d7077881",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_Dihu.DTX",
+    "dtx_sha256": "01c586ffc25255d54d3623228ff3f06e50d8306b1c4d9885f831915eff388c87",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_DS.png",
+    "weapon_mesh_count": 9,
+    "triangle_count": 3916,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 222.81,
+      "mean_rgb": [
+        227.55,
+        221.54,
+        221.42
+      ],
+      "fraction_lum_lt_16": 0.0139,
+      "fraction_blueish": 0.0003,
+      "fraction_reddish": 0.0894,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_DS.LTB",
+    "ltb_sha256": "da8d686852542832b311ebba7757477e8479647cd91f65bd089837996eba38e9",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_DS.DTX",
+    "dtx_sha256": "c5231d2ec7151e238ad657a63237c015979c920f8a79f7a7bf09791c6ea6fa51",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_JAVELIN.png",
+    "weapon_mesh_count": 9,
+    "triangle_count": 3916,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 224.54,
+      "mean_rgb": [
+        224.59,
+        224.51,
+        224.61
+      ],
+      "fraction_lum_lt_16": 0.0435,
+      "fraction_blueish": 0.004,
+      "fraction_reddish": 0.0098,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_Javelin.LTB",
+    "ltb_sha256": "a723acd1bde40b5cec9830466f963ec5b91d9d6535245b4381f1ec442e7f29db",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_Javelin.DTX",
+    "dtx_sha256": "cd6bb6f511dd2ab31ffafd3bfce325f9faf95e85c1a948d6c74da0e69eeb3c5c",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_LIMPID.png",
+    "weapon_mesh_count": 12,
+    "triangle_count": 5923,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 251.28,
+      "mean_rgb": [
+        251.23,
+        251.29,
+        251.34
+      ],
+      "fraction_lum_lt_16": 0.0028,
+      "fraction_blueish": 0.001,
+      "fraction_reddish": 0.0,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_Limpid.LTB",
+    "ltb_sha256": "8b22173b5deb5918c9c88b865fd0f0cd80cbae7d56254cfabedce723e9900788",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_Limpid.DTX",
+    "dtx_sha256": "20987b0fe712f84651c5780160f49af4a2a68fb4b0c48591ff268e43bc3c1e6f",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_LIMPID.png",
+    "weapon_mesh_count": 12,
+    "triangle_count": 5923,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 251.28,
+      "mean_rgb": [
+        251.23,
+        251.29,
+        251.34
+      ],
+      "fraction_lum_lt_16": 0.0028,
+      "fraction_blueish": 0.001,
+      "fraction_reddish": 0.0,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_Limpid.LTB",
+    "ltb_sha256": "195cbee83e117a4a1f2f76af2c553326c4c7abdf7f6a6940c0a6a6e8e362952f",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_Limpid.DTX",
+    "dtx_sha256": "20987b0fe712f84651c5780160f49af4a2a68fb4b0c48591ff268e43bc3c1e6f",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_LIUBEI.png",
+    "weapon_mesh_count": 9,
+    "triangle_count": 3916,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 218.78,
+      "mean_rgb": [
+        222.15,
+        217.95,
+        217.1
+      ],
+      "fraction_lum_lt_16": 0.0853,
+      "fraction_blueish": 0.0006,
+      "fraction_reddish": 0.0898,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_Liubei.LTB",
+    "ltb_sha256": "fb00b88b3aef2c2f7182f12e96e2912c7f927271ae23b3bcf5365914dc5ff5a6",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_Liubei.DTX",
+    "dtx_sha256": "6eab9068a0dda3cdfaf57b765a2eee258d83e29f38116c9040a69d394900531b",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  },
+  {
+    "preview": "work/p5_leishen/t02_native/mesh/PV-M4A1_S_TRANSFORMERS_MVP19.png",
+    "weapon_mesh_count": 9,
+    "triangle_count": 3916,
+    "skipped_meshes_without_uv": 0,
+    "uv_flip": "v -> 1-v",
+    "projection": "orthographic side; world Z horizontal, world Y vertical",
+    "texture_status": "verified_pv_dtx_uv_not_identity",
+    "color": {
+      "pixel_count": 65536,
+      "sampled": true,
+      "size": [
+        768,
+        384
+      ],
+      "median_luminance": 255.0,
+      "mean_luminance": 220.61,
+      "mean_rgb": [
+        223.31,
+        219.81,
+        220.67
+      ],
+      "fraction_lum_lt_16": 0.0598,
+      "fraction_blueish": 0.0015,
+      "fraction_reddish": 0.052,
+      "silhouette_risk": false
+    },
+    "ltb_logical": "Models/PLAYERVIEW/PV-M4A1_S_Transformers_MVP19.LTB",
+    "ltb_sha256": "b5b590708450a6b8e59420ff2229630c0d178853aa5657597ab575536081070d",
+    "dtx_logical": "ModelTextures/PLAYERVIEW/PV-M4A1_S_Transformers_MVP19.DTX",
+    "dtx_sha256": "273245c90fd399f7e1df3383856f32031f4d5dab5e3b3a18a08c605a97d025f9",
+    "mapping": "exact_stem",
+    "mapping_grade": "same_stem_filename_not_bute",
+    "identity_status": "CANDIDATE_ONLY"
+  }
+]
