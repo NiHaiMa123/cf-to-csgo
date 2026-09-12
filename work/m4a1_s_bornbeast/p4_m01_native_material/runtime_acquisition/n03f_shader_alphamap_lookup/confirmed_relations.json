@@ -1,0 +1,54 @@
+{
+  "task": "P4-M01-N03-F",
+  "status": "CANDIDATE_ONLY",
+  "confidence": "MEDIUM",
+  "relations": [
+    {
+      "relation": "packed BF005 exact TGA/CFG path hits",
+      "count": 0,
+      "grade": "SCOPED_NEGATIVE"
+    },
+    {
+      "relation": "packed BF005 WeaponShader/AlphaMap path-segment hits",
+      "count": 32,
+      "grade": "OBSERVED"
+    },
+    {
+      "relation": "FileName-key union equals canonical 黑骑士 FileName keys",
+      "canonical": [
+        "ModelFileName",
+        "PViewModelFileName",
+        "PViewRenderStyleFileName",
+        "PViewSkinFileName",
+        "PreViewModelFileName",
+        "RenderStyleFileName",
+        "SkinFileName"
+      ],
+      "extra": [
+        "ChangeModelFileName",
+        "ChangeSkinFileName",
+        "CrossHairFileName",
+        "LeftHandChangeModelFileName",
+        "LeftHandModelFileName",
+        "MotionFileName",
+        "MountedStandModelFileName",
+        "ProjectileModelFileName",
+        "ProjectileSkinFileName",
+        "ThrowModelFileName",
+        "ThrowSkinFileName",
+        "WChangeModelFileName",
+        "WLeftHandChangeModelFileName",
+        "WLeftHandModelFileName",
+        "WModelFileName"
+      ],
+      "grade": "DIFFERENTIAL_SUPPORTED"
+    }
+  ],
+  "remaining_blockers": [
+    "TGA/CFG Bute consumer OPEN_UNRESOLVED",
+    "CFG/render semantic closure OPEN_UNRESOLVED",
+    "P4-M01 native material closure INCOMPLETE"
+  ],
+  "generated_at": "2026-09-12T06:40:43.927412+00:00",
+  "script": "scripts\\material_recovery\\n03f_shader_alphamap_lookup.py"
+}

@@ -1,0 +1,389 @@
+{
+  "task": "P4-M01-N03-F",
+  "status": "CANDIDATE_ONLY",
+  "confidence": "MEDIUM",
+  "packed_source": {
+    "archive": "rez/RB001.REZ",
+    "full_path": "Butes/BF005.LTC",
+    "size": 5892359,
+    "record_count": 8205,
+    "canonical_weapon_records": 1
+  },
+  "heads": {
+    "Weapon": 8205
+  },
+  "filename_key_counts": {
+    "ModelFileName": 6067,
+    "SkinFileName": 6041,
+    "RenderStyleFileName": 6057,
+    "PViewModelFileName": 6052,
+    "PViewSkinFileName": 5955,
+    "PViewRenderStyleFileName": 6097,
+    "WModelFileName": 1781,
+    "PreViewModelFileName": 1110,
+    "LeftHandModelFileName": 529,
+    "WLeftHandModelFileName": 250,
+    "ProjectileModelFileName": 146,
+    "ProjectileSkinFileName": 141,
+    "MotionFileName": 1,
+    "ChangeModelFileName": 127,
+    "WChangeModelFileName": 100,
+    "LeftHandChangeModelFileName": 38,
+    "WLeftHandChangeModelFileName": 22,
+    "ChangeSkinFileName": 33,
+    "ThrowModelFileName": 48,
+    "ThrowSkinFileName": 48,
+    "CrossHairFileName": 56,
+    "MountedStandModelFileName": 6
+  },
+  "canonical_filename_keys": [
+    "ModelFileName",
+    "PViewModelFileName",
+    "PViewRenderStyleFileName",
+    "PViewSkinFileName",
+    "PreViewModelFileName",
+    "RenderStyleFileName",
+    "SkinFileName"
+  ],
+  "filename_keys_not_on_canonical": [
+    "ChangeModelFileName",
+    "ChangeSkinFileName",
+    "CrossHairFileName",
+    "LeftHandChangeModelFileName",
+    "LeftHandModelFileName",
+    "MotionFileName",
+    "MountedStandModelFileName",
+    "ProjectileModelFileName",
+    "ProjectileSkinFileName",
+    "ThrowModelFileName",
+    "ThrowSkinFileName",
+    "WChangeModelFileName",
+    "WLeftHandChangeModelFileName",
+    "WLeftHandModelFileName",
+    "WModelFileName"
+  ],
+  "material_key_counts": {
+    "SpecularMapName": 29,
+    "SpecularPower": 46,
+    "SpecularMapName2": 2,
+    "LightCorrectionLegacyShader": 18,
+    "SpecularMapName3": 1
+  },
+  "canonical_material_keys": [],
+  "material_keys_not_on_canonical": [
+    "LightCorrectionLegacyShader",
+    "SpecularMapName",
+    "SpecularMapName2",
+    "SpecularMapName3",
+    "SpecularPower"
+  ],
+  "exact_hits": [],
+  "directory_prefix_hits": [
+    {
+      "record_index": 469,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR",
+      "canonical": false
+    },
+    {
+      "record_index": 542,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M4A1-隐袭",
+      "canonical": false
+    },
+    {
+      "record_index": 542,
+      "head": "Weapon",
+      "field": "SpecularMapName2",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_Bandage_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M4A1-隐袭",
+      "canonical": false
+    },
+    {
+      "record_index": 545,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-krissSuperV_Silver_S.DTX",
+      "prefix": "SpecularMap",
+      "identity_gbk": "MK5-S",
+      "canonical": false
+    },
+    {
+      "record_index": 560,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M4A1-隐袭",
+      "canonical": false
+    },
+    {
+      "record_index": 560,
+      "head": "Weapon",
+      "field": "SpecularMapName2",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_Bandage_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M4A1-隐袭",
+      "canonical": false
+    },
+    {
+      "record_index": 579,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR-圣诞",
+      "canonical": false
+    },
+    {
+      "record_index": 585,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M4A1-战龙",
+      "canonical": false
+    },
+    {
+      "record_index": 586,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "Barrett-战龙",
+      "canonical": false
+    },
+    {
+      "record_index": 587,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-kukri_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "尼泊尔军刀-战龙",
+      "canonical": false
+    },
+    {
+      "record_index": 588,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-MG3_PerfectSilever_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "MG3-银色杀手",
+      "canonical": false
+    },
+    {
+      "record_index": 589,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-DualDE_GreenVein_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "双枪沙鹰-幽灵",
+      "canonical": false
+    },
+    {
+      "record_index": 591,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-FN F2000_GreenSkull_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "FN F2000-绿魔",
+      "canonical": false
+    },
+    {
+      "record_index": 592,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Mauser_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "毛瑟手枪-战龙",
+      "canonical": false
+    },
+    {
+      "record_index": 598,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M4A1-战龙",
+      "canonical": false
+    },
+    {
+      "record_index": 599,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "Barrett-战龙",
+      "canonical": false
+    },
+    {
+      "record_index": 600,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Mauser_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "毛瑟手枪-战龙",
+      "canonical": false
+    },
+    {
+      "record_index": 612,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\DSR-2_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "DSR-1 老兵",
+      "canonical": false
+    },
+    {
+      "record_index": 612,
+      "head": "Weapon",
+      "field": "SpecularMapName3",
+      "value": "ModelTextures\\SpecularMap\\DSR-1_Scope_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "DSR-1 老兵",
+      "canonical": false
+    },
+    {
+      "record_index": 735,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR-雪夜奇缘",
+      "canonical": false
+    },
+    {
+      "record_index": 740,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR-圣诞",
+      "canonical": false
+    },
+    {
+      "record_index": 883,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR-迷彩",
+      "canonical": false
+    },
+    {
+      "record_index": 1036,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR-蓝海",
+      "canonical": false
+    },
+    {
+      "record_index": 1172,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR-天羽",
+      "canonical": false
+    },
+    {
+      "record_index": 1216,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "M14EBR-天羽",
+      "canonical": false
+    },
+    {
+      "record_index": 3594,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-MG3_PerfectSilever_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "MG3-银色杀手",
+      "canonical": false
+    },
+    {
+      "record_index": 4497,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "强化M82A1",
+      "canonical": false
+    },
+    {
+      "record_index": 5811,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "强化M82A1",
+      "canonical": false
+    },
+    {
+      "record_index": 6552,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "强化M82A1",
+      "canonical": false
+    },
+    {
+      "record_index": 6580,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-MG3_PerfectSilever_s.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "MG3-银色杀手",
+      "canonical": false
+    },
+    {
+      "record_index": 6582,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-DualDE_GreenVein_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "双枪沙鹰-幽灵",
+      "canonical": false
+    },
+    {
+      "record_index": 7587,
+      "head": "Weapon",
+      "field": "SpecularMapName",
+      "value": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+      "prefix": "SpecularMap",
+      "identity_gbk": "强化M82A1",
+      "canonical": false
+    }
+  ],
+  "directory_prefix_hit_count": 32,
+  "rez_confirm": {
+    "WEAPONSHADER/M4A1_S_BORNBEAST.CFG": {
+      "exact": "WeaponShader/M4A1_S_BornBeast.CFG"
+    },
+    "ALPHAMAP/M4A1_S_BORNBEAST_ALPHA.TGA": {
+      "exact": "AlphaMap/M4A1_S_BornBeast_alpha.TGA"
+    },
+    "NORMALMAP/M4A1_S_BORNBEAST_N.TGA": {
+      "exact": "NormalMap/M4A1_S_BornBeast_N.TGA"
+    },
+    "SPECULARMAP/M4A1_S_BORNBEAST_S.TGA": {
+      "exact": "SpecularMap/M4A1_S_BornBeast_S.TGA"
+    }
+  },
+  "elapsed_seconds": 11.89,
+  "generated_at": "2026-09-12T06:40:43.926463+00:00",
+  "script": "scripts\\material_recovery\\n03f_shader_alphamap_lookup.py"
+}
