@@ -1,0 +1,992 @@
+{
+  "task": "P4-M01-N03-B",
+  "status": "BORNBEAST_CONSUMER_CONFIRMED",
+  "confidence": "HIGH",
+  "note": "Packed-config reverse graph. Loose Bute miss from N03-A is not re-opened. WeaponShader CFG is not treated as consumer.",
+  "edges": [
+    {
+      "from": "Butes/BF005.LTC:StandardName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:BigIconName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:StandardName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:StandardName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:StandardName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:BigIconName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:StandardName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewModelFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:geometry",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:PViewSkinFileName",
+      "to": "inventory:base_dtx",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx"
+    },
+    {
+      "from": "Butes/BF005.LTC:BigIconName",
+      "to": "inventory:shader_cfg",
+      "grade": "DIRECT_CONFIG_FIELD",
+      "value": "M4A1_S_BornBeast"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:geometry",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast.DTX",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast.DTX",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast.DTX",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast.DTX",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast.DTX",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast.DTX",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:base_dtx",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "PV-M4A1_S_BornBeast",
+      "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "ponName \"M4A1-ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "me \"M4A1-S-Beast_Snow\" )  (BigIconName \"M4A1_S_BornBeast\" )  (BulletPosOffset 20.00 -10.00 15.00"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "aponName \"Ô´¡¤ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "aponName \"Ô´¡¤ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "aponName \"Ô´¡¤ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "AK47IronBeastCharging\" )  (BigIconName \"M4A1_S_BornBeast\" )  (BulletPosOffset 20.0 -10.0 15.0 ) "
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+    },
+    {
+      "from": "Butes/BF005.LTC",
+      "to": "inventory:shader_cfg",
+      "grade": "PACKED_TEXT_TOKEN",
+      "token": "M4A1_S_BornBeast",
+      "context": "me \"M4A1-S-Beast_Snow\" )  (BigIconName \"M4A1_S_BornBeast\" )  (BulletPosOffset 20.00 -10.00 15.00"
+    }
+  ],
+  "generated_at": "2026-09-12T06:03:55.052827+00:00",
+  "script": "scripts\\material_recovery\\n03b_rez_packed_config.py"
+}

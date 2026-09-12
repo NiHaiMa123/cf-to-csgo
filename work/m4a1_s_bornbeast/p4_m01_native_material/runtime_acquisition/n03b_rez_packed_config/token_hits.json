@@ -1,0 +1,2093 @@
+{
+  "task": "P4-M01-N03-B",
+  "status": "BORNBEAST_CONSUMER_CONFIRMED",
+  "confidence": "HIGH",
+  "classification": {
+    "status": "BORNBEAST_CONSUMER_CONFIRMED",
+    "confidence": "HIGH",
+    "selected": 1559,
+    "skipped": 4,
+    "read_ok": 1555,
+    "consumer_field_hits": 82,
+    "text_path_hits": 70,
+    "hash_text_hits": 0,
+    "cft_text_hits": 0,
+    "ltc_decode_fail_non_wrapper": 0,
+    "files_with_any_hit": 1
+  },
+  "tokens": [
+    {
+      "kind": "basename",
+      "value": "PV-M4A1_S_BornBeast.LTB",
+      "asset_role": "geometry"
+    },
+    {
+      "kind": "stem",
+      "value": "PV-M4A1_S_BornBeast",
+      "asset_role": "geometry"
+    },
+    {
+      "kind": "rez_path",
+      "value": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.LTB",
+      "asset_role": "geometry"
+    },
+    {
+      "kind": "source_path",
+      "value": "Models/PLAYERVIEW/PV-M4A1_S_BornBeast.LTB",
+      "asset_role": "geometry"
+    },
+    {
+      "kind": "sha256",
+      "value": "5DBCEE45C4565B2026A4E4D2D639A4B7022B4F4FC1C5EF69BC8F49FD5A6C54F7",
+      "asset_role": "geometry"
+    },
+    {
+      "kind": "md5",
+      "value": "DD6FEDDA6821F4A24219D24389D7A4EE",
+      "asset_role": "geometry"
+    },
+    {
+      "kind": "basename",
+      "value": "PV-M4A1_S_BornBeast.DTX",
+      "asset_role": "base_dtx"
+    },
+    {
+      "kind": "stem",
+      "value": "PV-M4A1_S_BornBeast",
+      "asset_role": "base_dtx"
+    },
+    {
+      "kind": "rez_path",
+      "value": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+      "asset_role": "base_dtx"
+    },
+    {
+      "kind": "source_path",
+      "value": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+      "asset_role": "base_dtx"
+    },
+    {
+      "kind": "sha256",
+      "value": "C419A5FB164DB6085878FF2EFE21D318A85186B4E3C1FD6BABA920311F6EA1D9",
+      "asset_role": "base_dtx"
+    },
+    {
+      "kind": "md5",
+      "value": "8C340529FA3E942E8505346C97C4000E",
+      "asset_role": "base_dtx"
+    },
+    {
+      "kind": "basename",
+      "value": "M4A1_S_BornBeast_alpha.TGA",
+      "asset_role": "alpha"
+    },
+    {
+      "kind": "stem",
+      "value": "M4A1_S_BornBeast_alpha",
+      "asset_role": "alpha"
+    },
+    {
+      "kind": "rez_path",
+      "value": "ALPHAMAP/M4A1_S_BORNBEAST_ALPHA.TGA",
+      "asset_role": "alpha"
+    },
+    {
+      "kind": "source_path",
+      "value": "ModelTextures/AlphaMap/M4A1_S_BornBeast_alpha.TGA",
+      "asset_role": "alpha"
+    },
+    {
+      "kind": "sha256",
+      "value": "40B2C94361B5DB58EDFFB27B8B8AA457667ECEB9EB27848135CFEE0C17992A37",
+      "asset_role": "alpha"
+    },
+    {
+      "kind": "md5",
+      "value": "BE831ACCA67173E3644D91B2B94064CB",
+      "asset_role": "alpha"
+    },
+    {
+      "kind": "basename",
+      "value": "M4A1_S_BornBeast_N.TGA",
+      "asset_role": "normal"
+    },
+    {
+      "kind": "stem",
+      "value": "M4A1_S_BornBeast_N",
+      "asset_role": "normal"
+    },
+    {
+      "kind": "rez_path",
+      "value": "NORMALMAP/M4A1_S_BORNBEAST_N.TGA",
+      "asset_role": "normal"
+    },
+    {
+      "kind": "source_path",
+      "value": "ModelTextures/NormalMap/M4A1_S_BornBeast_N.TGA",
+      "asset_role": "normal"
+    },
+    {
+      "kind": "sha256",
+      "value": "4B9D3EB4C5D71B6BD129F88F108C567251CE260F37DFFF4BAE2C90073974C28E",
+      "asset_role": "normal"
+    },
+    {
+      "kind": "md5",
+      "value": "9D82476E4BA1E3EAB2E883534ECA6596",
+      "asset_role": "normal"
+    },
+    {
+      "kind": "basename",
+      "value": "M4A1_S_BornBeast_S.TGA",
+      "asset_role": "specular"
+    },
+    {
+      "kind": "stem",
+      "value": "M4A1_S_BornBeast_S",
+      "asset_role": "specular"
+    },
+    {
+      "kind": "rez_path",
+      "value": "SPECULARMAP/M4A1_S_BORNBEAST_S.TGA",
+      "asset_role": "specular"
+    },
+    {
+      "kind": "source_path",
+      "value": "ModelTextures/SpecularMap/M4A1_S_BornBeast_S.TGA",
+      "asset_role": "specular"
+    },
+    {
+      "kind": "sha256",
+      "value": "C0815FAEC0D553079B38072118AB089F4FE5DF79F7DB8491FD391D029C3894C6",
+      "asset_role": "specular"
+    },
+    {
+      "kind": "md5",
+      "value": "BE5F854A9BE394384BE783D94A54E96C",
+      "asset_role": "specular"
+    },
+    {
+      "kind": "basename",
+      "value": "M4A1_S_BornBeast.CFG",
+      "asset_role": "shader_cfg"
+    },
+    {
+      "kind": "stem",
+      "value": "M4A1_S_BornBeast",
+      "asset_role": "shader_cfg"
+    },
+    {
+      "kind": "rez_path",
+      "value": "SHADER/WEAPONSHADER/M4A1_S_BORNBEAST.CFG",
+      "asset_role": "shader_cfg"
+    },
+    {
+      "kind": "source_path",
+      "value": "ModelTextures/Shader/WeaponShader/M4A1_S_BornBeast.CFG",
+      "asset_role": "shader_cfg"
+    },
+    {
+      "kind": "sha256",
+      "value": "78F0BD5024F70624594C6B7EBD470094A3642FCE8CF7DF596407D40DAE0EBC87",
+      "asset_role": "shader_cfg"
+    },
+    {
+      "kind": "md5",
+      "value": "F179D3739F62E254399FD8FBFF05661B",
+      "asset_role": "shader_cfg"
+    }
+  ],
+  "hit_files": [
+    {
+      "full_path": "Butes/BF005.LTC",
+      "ext": ".ltc",
+      "rez_path": "D:\\Program Files\\CF(2)\\rez\\RB001.REZ",
+      "size": 5892359,
+      "field_hits": [
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "StandardName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "rez_path",
+          "token": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "source_path",
+          "token": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "field": "BigIconName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "M4A1-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-黑骑士"
+        },
+        {
+          "record_index": 2154,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "ÍõÕßÖ®ÊÆ",
+          "identity_name_gbk": "王者之势"
+        },
+        {
+          "record_index": 2154,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "ÍõÕßÖ®ÊÆ",
+          "identity_name_gbk": "王者之势"
+        },
+        {
+          "record_index": 2155,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "ÍõÕßÖ®ÊÆ",
+          "identity_name_gbk": "王者之势"
+        },
+        {
+          "record_index": 2155,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "ÍõÕßÖ®ÊÆ",
+          "identity_name_gbk": "王者之势"
+        },
+        {
+          "record_index": 2599,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "ÍõÕßÖ®ÊÆ",
+          "identity_name_gbk": "王者之势"
+        },
+        {
+          "record_index": 2599,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "ÍõÕßÖ®ÊÆ",
+          "identity_name_gbk": "王者之势"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "StandardName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "rez_path",
+          "token": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "source_path",
+          "token": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "StandardName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "rez_path",
+          "token": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "source_path",
+          "token": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 3536,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ÏÉ½ç-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-仙界-黑骑士"
+        },
+        {
+          "record_index": 3536,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ÏÉ½ç-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-仙界-黑骑士"
+        },
+        {
+          "record_index": 3537,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ÏÉ½ç-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-仙界-黑骑士"
+        },
+        {
+          "record_index": 3537,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ÏÉ½ç-ºÚÆïÊ¿",
+          "identity_name_gbk": "M4A1-仙界-黑骑士"
+        },
+        {
+          "record_index": 3555,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "ºÚÆïÊ¿-Íø°É×¨Êô",
+          "identity_name_gbk": "黑骑士-网吧专属"
+        },
+        {
+          "record_index": 3555,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "ºÚÆïÊ¿-Íø°É×¨Êô",
+          "identity_name_gbk": "黑骑士-网吧专属"
+        },
+        {
+          "record_index": 3581,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "ºÚÆïÊ¿-Íø°É×¨Êô",
+          "identity_name_gbk": "黑骑士-网吧专属"
+        },
+        {
+          "record_index": 3581,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "ºÚÆïÊ¿-Íø°É×¨Êô",
+          "identity_name_gbk": "黑骑士-网吧专属"
+        },
+        {
+          "record_index": 4004,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "ºÚÆïÊ¿-Ãþ½ðÐ£Î¾",
+          "identity_name_gbk": "黑骑士-摸金校尉"
+        },
+        {
+          "record_index": 4004,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "ºÚÆïÊ¿-Ãþ½ðÐ£Î¾",
+          "identity_name_gbk": "黑骑士-摸金校尉"
+        },
+        {
+          "record_index": 4005,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "ºÚÆïÊ¿-Ãþ½ðÐ£Î¾",
+          "identity_name_gbk": "黑骑士-摸金校尉"
+        },
+        {
+          "record_index": 4005,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "ºÚÆïÊ¿-Ãþ½ðÐ£Î¾",
+          "identity_name_gbk": "黑骑士-摸金校尉"
+        },
+        {
+          "record_index": 4256,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Óù¡¤ºÚÆïÊ¿¡¤ÄÄß¸ÄÖº£",
+          "identity_name_gbk": "御·黑骑士·哪吒闹海"
+        },
+        {
+          "record_index": 4256,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Óù¡¤ºÚÆïÊ¿¡¤ÄÄß¸ÄÖº£",
+          "identity_name_gbk": "御·黑骑士·哪吒闹海"
+        },
+        {
+          "record_index": 4257,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Óù¡¤ºÚÆïÊ¿¡¤ÄÄß¸ÄÖº£",
+          "identity_name_gbk": "御·黑骑士·哪吒闹海"
+        },
+        {
+          "record_index": 4257,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Óù¡¤ºÚÆïÊ¿¡¤ÄÄß¸ÄÖº£",
+          "identity_name_gbk": "御·黑骑士·哪吒闹海"
+        },
+        {
+          "record_index": 4424,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ºÚÆïÊ¿-Íø°ÉÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-网吧特权"
+        },
+        {
+          "record_index": 4424,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿-Íø°ÉÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-网吧特权"
+        },
+        {
+          "record_index": 4425,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ºÚÆïÊ¿-Íø°ÉÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-网吧特权"
+        },
+        {
+          "record_index": 4425,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿-Íø°ÉÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-网吧特权"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "StandardName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "rez_path",
+          "token": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "source_path",
+          "token": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "Ô´¡¤ºÚÆïÊ¿",
+          "identity_name_gbk": "源·黑骑士"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "rez_path",
+          "token": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "source_path",
+          "token": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "field": "BigIconName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "²½Ç¹6",
+          "identity_name_gbk": "步枪6"
+        },
+        {
+          "record_index": 4864,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "²½Ç¹Max",
+          "identity_name_gbk": "步枪Max"
+        },
+        {
+          "record_index": 4864,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "²½Ç¹Max",
+          "identity_name_gbk": "步枪Max"
+        },
+        {
+          "record_index": 5049,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "»ê¡¤ºÚÆïÊ¿-ÏÖ´ú½ðÊô",
+          "identity_name_gbk": "魂·黑骑士-现代金属"
+        },
+        {
+          "record_index": 5049,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "»ê¡¤ºÚÆïÊ¿-ÏÖ´ú½ðÊô",
+          "identity_name_gbk": "魂·黑骑士-现代金属"
+        },
+        {
+          "record_index": 5365,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "»ê¡¤ºÚÆïÊ¿-»ÃÄÜÅó¿Ë",
+          "identity_name_gbk": "魂·黑骑士-幻能朋克"
+        },
+        {
+          "record_index": 5365,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "»ê¡¤ºÚÆïÊ¿-»ÃÄÜÅó¿Ë",
+          "identity_name_gbk": "魂·黑骑士-幻能朋克"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "StandardName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "PViewModelFileName",
+          "value": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "rez_path",
+          "token": "PLAYERVIEW/PV-M4A1_S_BORNBEAST.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "PViewSkinFileName",
+          "value": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "token_kind": "source_path",
+          "token": "ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "field": "BigIconName",
+          "value": "M4A1_S_BornBeast",
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "identity_name": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "identity_name_gbk": "M4A1-黑骑士-高校特权"
+        }
+      ],
+      "text_hits": [
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 2191050,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 2191119,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 4787378,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 4791753,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 5959988,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 7664289,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 7664358,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 7668803,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 7668872,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 8110538,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 8114835,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 8157088,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 8233500,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 9346177,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 9350414,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 9991635,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 9995909,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 10355034,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 10359536,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 10896112,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 10896181,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 11671141,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 11671210,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 11682886,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 12228641,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 13173338,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 18907861,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "geometry",
+          "offset": 18907930,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "offset": 2191119,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+        },
+        {
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "offset": 7664358,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+        },
+        {
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "offset": 7668872,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+        },
+        {
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "offset": 10896181,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+        },
+        {
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "offset": 11671210,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+        },
+        {
+          "token_kind": "basename",
+          "token": "PV-M4A1_S_BornBeast.DTX",
+          "asset_role": "base_dtx",
+          "offset": 18907930,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\PVMo"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 2191050,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 2191119,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 4787378,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 4791753,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 5959988,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 7664289,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 7664358,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 7668803,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 7668872,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 8110538,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 8114835,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 8157088,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 8233500,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 9346177,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 9350414,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 9991635,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 9995909,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 10355034,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 10359536,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 10896112,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 10896181,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 11671141,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 11671210,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 11682886,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 12228641,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 13173338,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 18907861,
+          "context": " (PViewModelFileName \"Models\\PlayerView\\PV-M4A1_S_BornBeast\" )  (PViewSkinFileName \"ModelTextures\\P"
+        },
+        {
+          "token_kind": "stem",
+          "token": "PV-M4A1_S_BornBeast",
+          "asset_role": "base_dtx",
+          "offset": 18907930,
+          "context": "wSkinFileName \"ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx\" )  (PViewRenderStyleFileName \"RS\\\\"
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 2190741,
+          "context": "ponName \"M4A1-ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 2191904,
+          "context": "me \"M4A1-S-Beast_Snow\" )  (BigIconName \"M4A1_S_BornBeast\" )  (BulletPosOffset 20.00 -10.00 15.00"
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 7663980,
+          "context": "aponName \"Ô´¡¤ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 7668494,
+          "context": "aponName \"Ô´¡¤ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 10895803,
+          "context": "aponName \"Ô´¡¤ºÚÆïÊ¿\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 11671799,
+          "context": "AK47IronBeastCharging\" )  (BigIconName \"M4A1_S_BornBeast\" )  (BulletPosOffset 20.0 -10.0 15.0 ) "
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 18907552,
+          "context": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨\" )  (StandardName \"M4A1_S_BornBeast\" )  (ModelFileName \"Models\\Weapons\\QV-M"
+        },
+        {
+          "token_kind": "stem",
+          "token": "M4A1_S_BornBeast",
+          "asset_role": "shader_cfg",
+          "offset": 18908715,
+          "context": "me \"M4A1-S-Beast_Snow\" )  (BigIconName \"M4A1_S_BornBeast\" )  (BulletPosOffset 20.00 -10.00 15.00"
+        }
+      ],
+      "weapon_snapshots": [
+        {
+          "record_index": 1002,
+          "head": "Weapon",
+          "WeaponName": "M4A1-ºÚÆïÊ¿",
+          "WeaponName_gbk": "M4A1-黑骑士",
+          "StandardName": "M4A1_S_BornBeast",
+          "StandardName_gbk": "M4A1_S_BornBeast",
+          "BigIconName": "M4A1_S_BornBeast",
+          "BigIconName_gbk": "M4A1_S_BornBeast",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 2154,
+          "head": "Weapon",
+          "WeaponName": "ÍõÕßÖ®ÊÆ",
+          "WeaponName_gbk": "王者之势",
+          "StandardName": "M4A1_BornBeast_NobleGold",
+          "StandardName_gbk": "M4A1_BornBeast_NobleGold",
+          "BigIconName": "M4A1_BornBeast_NobleGold",
+          "BigIconName_gbk": "M4A1_BornBeast_NobleGold",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 2155,
+          "head": "Weapon",
+          "WeaponName": "ÍõÕßÖ®ÊÆ",
+          "WeaponName_gbk": "王者之势",
+          "StandardName": "M4A1_BornBeast_NobleGold",
+          "StandardName_gbk": "M4A1_BornBeast_NobleGold",
+          "BigIconName": "M4A1_BornBeast_NobleGold",
+          "BigIconName_gbk": "M4A1_BornBeast_NobleGold",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 2599,
+          "head": "Weapon",
+          "WeaponName": "ÍõÕßÖ®ÊÆ",
+          "WeaponName_gbk": "王者之势",
+          "StandardName": "M4A1_BornBeast_NobleGold",
+          "StandardName_gbk": "M4A1_BornBeast_NobleGold",
+          "BigIconName": "M4A1_BornBeast_NGB",
+          "BigIconName_gbk": "M4A1_BornBeast_NGB",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 3369,
+          "head": "Weapon",
+          "WeaponName": "Ô´¡¤ºÚÆïÊ¿",
+          "WeaponName_gbk": "源·黑骑士",
+          "StandardName": "M4A1_S_BornBeast",
+          "StandardName_gbk": "M4A1_S_BornBeast",
+          "BigIconName": "M4A1_S_BornBeast_NoMark",
+          "BigIconName_gbk": "M4A1_S_BornBeast_NoMark",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 3370,
+          "head": "Weapon",
+          "WeaponName": "Ô´¡¤ºÚÆïÊ¿",
+          "WeaponName_gbk": "源·黑骑士",
+          "StandardName": "M4A1_S_BornBeast",
+          "StandardName_gbk": "M4A1_S_BornBeast",
+          "BigIconName": "M4A1_S_BornBeast_NoMark",
+          "BigIconName_gbk": "M4A1_S_BornBeast_NoMark",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 3536,
+          "head": "Weapon",
+          "WeaponName": "M4A1-ÏÉ½ç-ºÚÆïÊ¿",
+          "WeaponName_gbk": "M4A1-仙界-黑骑士",
+          "StandardName": "M4A1_S_BornBeast_BeijingOpera",
+          "StandardName_gbk": "M4A1_S_BornBeast_BeijingOpera",
+          "BigIconName": "M4A1_S_BornBeast_BeijingOpera",
+          "BigIconName_gbk": "M4A1_S_BornBeast_BeijingOpera",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 3537,
+          "head": "Weapon",
+          "WeaponName": "M4A1-ÏÉ½ç-ºÚÆïÊ¿",
+          "WeaponName_gbk": "M4A1-仙界-黑骑士",
+          "StandardName": "M4A1_S_BornBeast_BeijingOpera",
+          "StandardName_gbk": "M4A1_S_BornBeast_BeijingOpera",
+          "BigIconName": "M4A1_S_BornBeast_BeijingOpera",
+          "BigIconName_gbk": "M4A1_S_BornBeast_BeijingOpera",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_BeijingOpera.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 3555,
+          "head": "Weapon",
+          "WeaponName": "ºÚÆïÊ¿-Íø°É×¨Êô",
+          "WeaponName_gbk": "黑骑士-网吧专属",
+          "StandardName": "M4A1_S_BornBeast_Prime_PCCafe",
+          "StandardName_gbk": "M4A1_S_BornBeast_Prime_PCCafe",
+          "BigIconName": "M4A1_S_BornBeast_Prime_PCCafe",
+          "BigIconName_gbk": "M4A1_S_BornBeast_Prime_PCCafe",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 3581,
+          "head": "Weapon",
+          "WeaponName": "ºÚÆïÊ¿-Íø°É×¨Êô",
+          "WeaponName_gbk": "黑骑士-网吧专属",
+          "StandardName": "M4A1_S_BornBeast_Prime_PCCafe",
+          "StandardName_gbk": "M4A1_S_BornBeast_Prime_PCCafe",
+          "BigIconName": "M4A1_S_BornBeast_Prime_PCCafe",
+          "BigIconName_gbk": "M4A1_S_BornBeast_Prime_PCCafe",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Prime_PCCafe.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4004,
+          "head": "Weapon",
+          "WeaponName": "ºÚÆïÊ¿-Ãþ½ðÐ£Î¾",
+          "WeaponName_gbk": "黑骑士-摸金校尉",
+          "StandardName": "M4A1_S_BornBeast_LongLingMiKu",
+          "StandardName_gbk": "M4A1_S_BornBeast_LongLingMiKu",
+          "BigIconName": "M4A1_S_BornBeast_LongLingMiKu",
+          "BigIconName_gbk": "M4A1_S_BornBeast_LongLingMiKu",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4005,
+          "head": "Weapon",
+          "WeaponName": "ºÚÆïÊ¿-Ãþ½ðÐ£Î¾",
+          "WeaponName_gbk": "黑骑士-摸金校尉",
+          "StandardName": "M4A1_S_BornBeast_LongLingMiKu",
+          "StandardName_gbk": "M4A1_S_BornBeast_LongLingMiKu",
+          "BigIconName": "M4A1_S_BornBeast_LongLingMiKu",
+          "BigIconName_gbk": "M4A1_S_BornBeast_LongLingMiKu",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_LongLingMiKu.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4256,
+          "head": "Weapon",
+          "WeaponName": "Óù¡¤ºÚÆïÊ¿¡¤ÄÄß¸ÄÖº£",
+          "WeaponName_gbk": "御·黑骑士·哪吒闹海",
+          "StandardName": "M4A1_S_BornBeast_Nezha",
+          "StandardName_gbk": "M4A1_S_BornBeast_Nezha",
+          "BigIconName": "M4A1_S_BornBeast_Nezha",
+          "BigIconName_gbk": "M4A1_S_BornBeast_Nezha",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Nezha.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Nezha.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Nezha.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Nezha.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4257,
+          "head": "Weapon",
+          "WeaponName": "Óù¡¤ºÚÆïÊ¿¡¤ÄÄß¸ÄÖº£",
+          "WeaponName_gbk": "御·黑骑士·哪吒闹海",
+          "StandardName": "M4A1_S_BornBeast_Nezha",
+          "StandardName_gbk": "M4A1_S_BornBeast_Nezha",
+          "BigIconName": "M4A1_S_BornBeast_Nezha",
+          "BigIconName_gbk": "M4A1_S_BornBeast_Nezha",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Nezha.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Nezha.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Nezha.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Nezha.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4424,
+          "head": "Weapon",
+          "WeaponName": "M4A1-ºÚÆïÊ¿-Íø°ÉÌØÈ¨",
+          "WeaponName_gbk": "M4A1-黑骑士-网吧特权",
+          "StandardName": "M4A1_S_BornBeast_PC",
+          "StandardName_gbk": "M4A1_S_BornBeast_PC",
+          "BigIconName": "M4A1_S_BornBeast_PC",
+          "BigIconName_gbk": "M4A1_S_BornBeast_PC",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_PC.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_PC.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_PC.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_PC.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4425,
+          "head": "Weapon",
+          "WeaponName": "M4A1-ºÚÆïÊ¿-Íø°ÉÌØÈ¨",
+          "WeaponName_gbk": "M4A1-黑骑士-网吧特权",
+          "StandardName": "M4A1_S_BornBeast_PC",
+          "StandardName_gbk": "M4A1_S_BornBeast_PC",
+          "BigIconName": "M4A1_S_BornBeast_PC",
+          "BigIconName_gbk": "M4A1_S_BornBeast_PC",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_PC.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_PC.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_PC.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_PC.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4619,
+          "head": "Weapon",
+          "WeaponName": "Ô´¡¤ºÚÆïÊ¿",
+          "WeaponName_gbk": "源·黑骑士",
+          "StandardName": "M4A1_S_BornBeast",
+          "StandardName_gbk": "M4A1_S_BornBeast",
+          "BigIconName": "M4A1_S_BornBeast_NoMark",
+          "BigIconName_gbk": "M4A1_S_BornBeast_NoMark",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4860,
+          "head": "Weapon",
+          "WeaponName": "²½Ç¹6",
+          "WeaponName_gbk": "步枪6",
+          "StandardName": "²½Ç¹6",
+          "StandardName_gbk": "步枪6",
+          "BigIconName": "M4A1_S_BornBeast",
+          "BigIconName_gbk": "M4A1_S_BornBeast",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 4864,
+          "head": "Weapon",
+          "WeaponName": "²½Ç¹Max",
+          "WeaponName_gbk": "步枪Max",
+          "StandardName": "²½Ç¹Max",
+          "StandardName_gbk": "步枪Max",
+          "BigIconName": "M4A1_BornBeast_NobleGold",
+          "BigIconName_gbk": "M4A1_BornBeast_NobleGold",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_BornBeast_NobleGold.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 5049,
+          "head": "Weapon",
+          "WeaponName": "»ê¡¤ºÚÆïÊ¿-ÏÖ´ú½ðÊô",
+          "WeaponName_gbk": "魂·黑骑士-现代金属",
+          "StandardName": "M4A1_S_BornBeast_Modern",
+          "StandardName_gbk": "M4A1_S_BornBeast_Modern",
+          "BigIconName": "M4A1_S_BornBeast_Modern",
+          "BigIconName_gbk": "M4A1_S_BornBeast_Modern",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Modern.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_Modern.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Modern.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_Modern.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 5365,
+          "head": "Weapon",
+          "WeaponName": "»ê¡¤ºÚÆïÊ¿-»ÃÄÜÅó¿Ë",
+          "WeaponName_gbk": "魂·黑骑士-幻能朋克",
+          "StandardName": "M4A1_S_BornBeast_PurplePunk",
+          "StandardName_gbk": "M4A1_S_BornBeast_PurplePunk",
+          "BigIconName": "M4A1_S_BornBeast_PurplePunk",
+          "BigIconName_gbk": "M4A1_S_BornBeast_PurplePunk",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_PurplePunk.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast_PurplePunk.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_PurplePunk.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast_PurplePunk.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        },
+        {
+          "record_index": 7416,
+          "head": "Weapon",
+          "WeaponName": "M4A1-ºÚÆïÊ¿-¸ßÐ£ÌØÈ¨",
+          "WeaponName_gbk": "M4A1-黑骑士-高校特权",
+          "StandardName": "M4A1_S_BornBeast",
+          "StandardName_gbk": "M4A1_S_BornBeast",
+          "BigIconName": "M4A1_S_BornBeast",
+          "BigIconName_gbk": "M4A1_S_BornBeast",
+          "ModelFileName": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "ModelFileName_gbk": "Models\\Weapons\\QV-M4A1_S_BornBeast.ltb",
+          "SkinFileName": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "SkinFileName_gbk": "ModelTextures\\Weapons\\QV-M4A1_S_BornBeast.dtx",
+          "PViewModelFileName": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewModelFileName_gbk": "Models\\PlayerView\\PV-M4A1_S_BornBeast",
+          "PViewSkinFileName": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "PViewSkinFileName_gbk": "ModelTextures\\PlayerView\\PV-M4A1_S_BornBeast.dtx",
+          "RenderStyleFileName": "RS\\\\NinjaTranslucent.ltb",
+          "RenderStyleFileName_gbk": "RS\\\\NinjaTranslucent.ltb",
+          "PViewRenderStyleFileName": "RS\\\\PVModelDefault.ltb",
+          "PViewRenderStyleFileName_gbk": "RS\\\\PVModelDefault.ltb"
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 113.42,
+  "generated_at": "2026-09-12T06:03:55.051024+00:00",
+  "script": "scripts\\material_recovery\\n03b_rez_packed_config.py"
+}
