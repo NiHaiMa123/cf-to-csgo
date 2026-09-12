@@ -1,0 +1,552 @@
+{
+  "task": "P4-M01-N03-G",
+  "status": "SCOPED_NEGATIVE",
+  "confidence": "HIGH",
+  "rows": [
+    {
+      "record_index": 469,
+      "head": "Weapon",
+      "WeaponName": "M14EBR",
+      "WeaponName_gbk": "M14EBR",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 542,
+      "head": "Weapon",
+      "WeaponName": "M4A1-ÒþÏ®",
+      "WeaponName_gbk": "M4A1-隐袭",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_s.dtx",
+        "SpecularMapName2": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_Bandage_s.dtx",
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 545,
+      "head": "Weapon",
+      "WeaponName": "MK5-S",
+      "WeaponName_gbk": "MK5-S",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-krissSuperV_Silver_S.DTX",
+        "SpecularPower": "-0.100000"
+      }
+    },
+    {
+      "record_index": 560,
+      "head": "Weapon",
+      "WeaponName": "M4A1-ÒþÏ®",
+      "WeaponName_gbk": "M4A1-隐袭",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_s.dtx",
+        "SpecularMapName2": "ModelTextures\\SpecularMap\\PV-RI_M4A1-S_Bandage_s.dtx",
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 579,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-Ê¥µ®",
+      "WeaponName_gbk": "M14EBR-圣诞",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 585,
+      "head": "Weapon",
+      "WeaponName": "M4A1-Õ½Áú",
+      "WeaponName_gbk": "M4A1-战龙",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 586,
+      "head": "Weapon",
+      "WeaponName": "Barrett-Õ½Áú",
+      "WeaponName_gbk": "Barrett-战龙",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 587,
+      "head": "Weapon",
+      "WeaponName": "Äá²´¶û¾üµ¶-Õ½Áú",
+      "WeaponName_gbk": "尼泊尔军刀-战龙",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-kukri_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 588,
+      "head": "Weapon",
+      "WeaponName": "MG3-ÒøÉ«É±ÊÖ",
+      "WeaponName_gbk": "MG3-银色杀手",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-MG3_PerfectSilever_s.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 589,
+      "head": "Weapon",
+      "WeaponName": "Ë«Ç¹É³Ó¥-ÓÄÁé",
+      "WeaponName_gbk": "双枪沙鹰-幽灵",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-DualDE_GreenVein_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 591,
+      "head": "Weapon",
+      "WeaponName": "FN F2000-ÂÌÄ§",
+      "WeaponName_gbk": "FN F2000-绿魔",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-FN F2000_GreenSkull_s.dtx",
+        "SpecularPower": "0.700003"
+      }
+    },
+    {
+      "record_index": 592,
+      "head": "Weapon",
+      "WeaponName": "Ã«ÉªÊÖÇ¹-Õ½Áú",
+      "WeaponName_gbk": "毛瑟手枪-战龙",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Mauser_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 598,
+      "head": "Weapon",
+      "WeaponName": "M4A1-Õ½Áú",
+      "WeaponName_gbk": "M4A1-战龙",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-M4A1_RoyalDragon_s.DTX",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 599,
+      "head": "Weapon",
+      "WeaponName": "Barrett-Õ½Áú",
+      "WeaponName_gbk": "Barrett-战龙",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 600,
+      "head": "Weapon",
+      "WeaponName": "Ã«ÉªÊÖÇ¹-Õ½Áú",
+      "WeaponName_gbk": "毛瑟手枪-战龙",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Mauser_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 612,
+      "head": "Weapon",
+      "WeaponName": "DSR-1 ÀÏ±ø",
+      "WeaponName_gbk": "DSR-1 老兵",
+      "StandardName": "DSR-1 Rusty",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\DSR-2_S.dtx",
+        "SpecularMapName3": "ModelTextures\\SpecularMap\\DSR-1_Scope_S.dtx"
+      }
+    },
+    {
+      "record_index": 664,
+      "head": "Weapon",
+      "WeaponName": "»Æ½ð M14EBR",
+      "WeaponName_gbk": "黄金 M14EBR",
+      "StandardName": "M14EBR-Ultimate Gold",
+      "fields": {
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 665,
+      "head": "Weapon",
+      "WeaponName": "»Æ½ð M14EBR",
+      "WeaponName_gbk": "黄金 M14EBR",
+      "StandardName": "M14EBR-Ultimate Gold",
+      "fields": {
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 683,
+      "head": "Weapon",
+      "WeaponName": "FN F2000-ºìÄ§",
+      "WeaponName_gbk": "FN F2000-红魔",
+      "StandardName": "FN_F2000_Red",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularPower": "0.700003"
+      }
+    },
+    {
+      "record_index": 684,
+      "head": "Weapon",
+      "WeaponName": "Ë«Ç¹É³Ó¥-ÊÈÑª",
+      "WeaponName_gbk": "双枪沙鹰-嗜血",
+      "StandardName": "Dual D.E-Red Vein",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 686,
+      "head": "Weapon",
+      "WeaponName": "Ë÷µÀ",
+      "WeaponName_gbk": "索道",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 735,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-Ñ©Ò¹ÆæÔµ",
+      "WeaponName_gbk": "M14EBR-雪夜奇缘",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 740,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-Ê¥µ®",
+      "WeaponName_gbk": "M14EBR-圣诞",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 747,
+      "head": "Weapon",
+      "WeaponName": "JUMPING BOARD",
+      "WeaponName_gbk": "JUMPING BOARD",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 748,
+      "head": "Weapon",
+      "WeaponName": "DIVING BOARD",
+      "WeaponName_gbk": "DIVING BOARD",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 795,
+      "head": "Weapon",
+      "WeaponName": "C4Õ¨µ¯",
+      "WeaponName_gbk": "C4炸弹",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 796,
+      "head": "Weapon",
+      "WeaponName": "Claymore",
+      "WeaponName_gbk": "Claymore",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 797,
+      "head": "Weapon",
+      "WeaponName": "»ð¼ýÅÚRPG-7",
+      "WeaponName_gbk": "火箭炮RPG-7",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 798,
+      "head": "Weapon",
+      "WeaponName": "Ò½ÁÆÆ¿",
+      "WeaponName_gbk": "医疗瓶",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 800,
+      "head": "Weapon",
+      "WeaponName": "EngineerTechcard",
+      "WeaponName_gbk": "EngineerTechcard",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 808,
+      "head": "Weapon",
+      "WeaponName": "ÖØ¼×±ø",
+      "WeaponName_gbk": "重甲兵",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 809,
+      "head": "Weapon",
+      "WeaponName": "Í»»÷±ø",
+      "WeaponName_gbk": "突击兵",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 877,
+      "head": "Weapon",
+      "WeaponName": "»Æ½ð»ð¼ý±ø",
+      "WeaponName_gbk": "黄金火箭兵",
+      "StandardName": "AI_WAVE-Gold-Blaster",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 883,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-ÃÔ²Ê",
+      "WeaponName_gbk": "M14EBR-迷彩",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 1036,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-À¶º£",
+      "WeaponName_gbk": "M14EBR-蓝海",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 1051,
+      "head": "Weapon",
+      "WeaponName": "Ë«Ç¹É³Ó¥-½ðÄ§",
+      "WeaponName_gbk": "双枪沙鹰-金魔",
+      "StandardName": "Dual D.E_GoldDesertSkull",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 1172,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-ÌìÓð",
+      "WeaponName_gbk": "M14EBR-天羽",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 1216,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-ÌìÓð",
+      "WeaponName_gbk": "M14EBR-天羽",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-RI_M14EBR_s.dtx",
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 1956,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-ºÏ½ð",
+      "WeaponName_gbk": "M14EBR-合金",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 3594,
+      "head": "Weapon",
+      "WeaponName": "MG3-ÒøÉ«É±ÊÖ",
+      "WeaponName_gbk": "MG3-银色杀手",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-MG3_PerfectSilever_s.dtx"
+      }
+    },
+    {
+      "record_index": 4497,
+      "head": "Weapon",
+      "WeaponName": "Ç¿»¯M82A1",
+      "WeaponName_gbk": "强化M82A1",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 5811,
+      "head": "Weapon",
+      "WeaponName": "Ç¿»¯M82A1",
+      "WeaponName_gbk": "强化M82A1",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 6552,
+      "head": "Weapon",
+      "WeaponName": "Ç¿»¯M82A1",
+      "WeaponName_gbk": "强化M82A1",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 6571,
+      "head": "Weapon",
+      "WeaponName": "ÖØ¼×±ø",
+      "WeaponName_gbk": "重甲兵",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.000000"
+      }
+    },
+    {
+      "record_index": 6580,
+      "head": "Weapon",
+      "WeaponName": "MG3-ÒøÉ«É±ÊÖ",
+      "WeaponName_gbk": "MG3-银色杀手",
+      "StandardName": "",
+      "fields": {
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-MG3_PerfectSilever_s.dtx"
+      }
+    },
+    {
+      "record_index": 6582,
+      "head": "Weapon",
+      "WeaponName": "Ë«Ç¹É³Ó¥-ÓÄÁé",
+      "WeaponName_gbk": "双枪沙鹰-幽灵",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-DualDE_GreenVein_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    },
+    {
+      "record_index": 6872,
+      "head": "Weapon",
+      "WeaponName": "M14EBR-CFS2025",
+      "WeaponName_gbk": "M14EBR-CFS2025",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 6914,
+      "head": "Weapon",
+      "WeaponName": "M14EBR_CFSÈüÊÂ",
+      "WeaponName_gbk": "M14EBR_CFS赛事",
+      "StandardName": "",
+      "fields": {
+        "SpecularPower": "0.100003"
+      }
+    },
+    {
+      "record_index": 7587,
+      "head": "Weapon",
+      "WeaponName": "Ç¿»¯M82A1",
+      "WeaponName_gbk": "强化M82A1",
+      "StandardName": "",
+      "fields": {
+        "LightCorrectionLegacyShader": "1",
+        "SpecularMapName": "ModelTextures\\SpecularMap\\PV-Barret M99_RoyalDragon_S.dtx",
+        "SpecularPower": "1.000003"
+      }
+    }
+  ],
+  "light_correction_value_counts": {
+    "1": 18
+  },
+  "cfg_basename_exact_hits": [],
+  "weaponshader_cfg_stem_count": 237,
+  "elapsed_seconds": 9.48,
+  "generated_at": "2026-09-12T06:47:40.094886+00:00",
+  "script": "scripts\\material_recovery\\n03g_legacy_shader_fields.py"
+}
