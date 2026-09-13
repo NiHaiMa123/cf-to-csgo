@@ -14,10 +14,10 @@
 README.md  项目介绍 + 文档职责 + 领导 Agent / 执行 Agent 协作方式
 AGENTS.md  只规定 Git 操作与本地文件保护
 plan.md    蓝图 + 冻结事实 + Gate + §0 当前状态/当前任务
-task.md    短指针，指向 plan.md §0（已与 plan 合并）
+task.md    用户指定的详细修复操作手册（阶段开关仍看plan §0）
 ```
 
-当前进度和下一轮任务只维护在 `plan.md` §0，不要再写一份平行的执行单。
+当前进度和阶段开关只维护在 `plan.md` §0。用户2026-09-13要求把给Grok的详细修复步骤写在 `task.md`；它展开当前任务与后续路径，不自行开启后续阶段。
 
 ---
 
@@ -72,7 +72,7 @@ Gate / acceptance criteria
 长期 blocker / dependency
 ```
 
-尚未 Review 的猜测不要写进冻结节。下一轮操作只写在 `plan.md` §0.2。
+尚未 Review 的猜测不要写进冻结节。下一轮范围与开关写在 `plan.md` §0.2，详细操作由 `task.md` 展开。
 
 ---
 
@@ -216,6 +216,7 @@ TASK_SPEC_REWORK_3.md
 ```text
 长期事实 / pipeline / Gate / 当前状态与任务 -> plan.md
 Git 操作                                    -> AGENTS.md
+用户指定的详细修复操作手册                  -> task.md（服从plan阶段开关）
 入口与角色说明                              -> README.md
 运行细节 / evidence                         -> work/**
 历史逐轮过程                                -> Git history

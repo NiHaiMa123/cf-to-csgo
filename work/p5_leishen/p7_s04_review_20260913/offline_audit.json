@@ -1,0 +1,451 @@
+{
+  "source": {
+    "packed": {
+      "logical_path": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+      "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "payload_file": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+      "legacy_time_field": 0,
+      "offset": 234866852,
+      "size": 152923,
+      "directory_md5": "7524a50ffd4a381479f647fdf04b6295",
+      "sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+      "candidate_checks": [
+        {
+          "path": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+          "length": 327890371,
+          "range_ok": true,
+          "actual_bytes": 152923,
+          "md5": "7524a50ffd4a381479f647fdf04b6295",
+          "md5_match": true
+        }
+      ],
+      "routing": "main_file"
+    },
+    "body_path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\verified_root\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+    "body_sha256": "511dec8d2401a1886ddecd14b4f18e17ac0afbefd943f6dc11a3fd2f82ef6b49",
+    "packed_lzma_equals_body": true
+  },
+  "nodes": 57,
+  "clips": [
+    {
+      "name": "reload",
+      "times_ms": [
+        0,
+        15,
+        30,
+        45,
+        60,
+        74,
+        90,
+        105,
+        119,
+        135,
+        149,
+        164,
+        179,
+        194,
+        209,
+        224,
+        239,
+        254,
+        269,
+        284,
+        299,
+        314,
+        329,
+        344,
+        359,
+        374,
+        389,
+        404,
+        419,
+        433,
+        449,
+        463,
+        478,
+        494,
+        508,
+        523,
+        538,
+        553,
+        568,
+        583,
+        598,
+        613,
+        628,
+        643,
+        658,
+        673,
+        688,
+        703,
+        718,
+        733,
+        748,
+        763,
+        778,
+        792,
+        808,
+        822,
+        837,
+        852,
+        867,
+        882,
+        897,
+        912,
+        927,
+        942,
+        957,
+        972,
+        987,
+        1002,
+        1017,
+        1032,
+        1047,
+        1062,
+        1077,
+        1092,
+        1106,
+        1122,
+        1137,
+        1151,
+        1167,
+        1181,
+        1196,
+        1211,
+        1226,
+        1241,
+        1256,
+        1271,
+        1286,
+        1301,
+        1316,
+        1331,
+        1346,
+        1361,
+        1376,
+        1391,
+        1406,
+        1421,
+        1436,
+        1451,
+        1465,
+        1481,
+        1495,
+        1510,
+        1526,
+        1540,
+        1555,
+        1570,
+        1585,
+        1600
+      ],
+      "interval_counts": {
+        "15": 84,
+        "14": 14,
+        "16": 9
+      },
+      "duration_ms": 1600,
+      "uniform_index_max_time_error_ms": 0.7663551401869881,
+      "blender_at_30fps_duration_s": 3.566666666666667,
+      "true_duration_s": 1.6,
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "smoke"
+        },
+        {
+          "frame": 1,
+          "time_ms": 15,
+          "label": "begin"
+        },
+        {
+          "frame": 2,
+          "time_ms": 30,
+          "label": "Extra01SoundName"
+        },
+        {
+          "frame": 13,
+          "time_ms": 194,
+          "label": "WeaponClipOut"
+        },
+        {
+          "frame": 48,
+          "time_ms": 718,
+          "label": "WeaponClipIn"
+        },
+        {
+          "frame": 81,
+          "time_ms": 1211,
+          "label": "WeaponReload"
+        },
+        {
+          "frame": 106,
+          "time_ms": 1585,
+          "label": "end"
+        }
+      ],
+      "quat_norm_minmax": [
+        0.9907410651756581,
+        1.0001088294449583
+      ],
+      "arm_lengths": {
+        "L": {
+          "upper_to_fore": [
+            8.412522901150561,
+            18.38904638771235
+          ],
+          "clav_to_upper": [
+            5.773743000000332,
+            5.773743000000357
+          ]
+        },
+        "R": {
+          "upper_to_fore": [
+            14.75546450999616,
+            22.24956766028156
+          ],
+          "clav_to_upper": [
+            5.773742000000166,
+            5.773742000000178
+          ]
+        }
+      },
+      "cf_gun_first_last_distance": 0.26402858568985144,
+      "source_first_vs_idle_distances": {
+        "FvARM-bone Prop1": 0.26401054411067787,
+        "FvARM-bone R Hand": 2.0053583384948083e-05,
+        "FvARM-bone L Hand": 1.9125893275391743e-05
+      },
+      "source_last_vs_idle_distances": {
+        "FvARM-bone Prop1": 2.0062608172923963e-05,
+        "FvARM-bone R Hand": 2.0053583384948083e-05,
+        "FvARM-bone L Hand": 1.9125893275391743e-05
+      },
+      "smallest_quaternion": [
+        0.9907410651756581,
+        "FvARM-bone L Hand",
+        96
+      ]
+    },
+    {
+      "name": "select",
+      "times_ms": [
+        0,
+        21,
+        42,
+        64,
+        85,
+        106,
+        128,
+        149,
+        170,
+        192,
+        213,
+        234,
+        256,
+        277,
+        298,
+        320,
+        341,
+        362,
+        384,
+        405,
+        426,
+        448,
+        469,
+        490,
+        512,
+        533,
+        554,
+        576,
+        597,
+        618,
+        640
+      ],
+      "interval_counts": {
+        "21": 20,
+        "22": 10
+      },
+      "duration_ms": 640,
+      "uniform_index_max_time_error_ms": 0.6666666666666856,
+      "blender_at_30fps_duration_s": 1.0,
+      "true_duration_s": 0.64,
+      "events": [
+        {
+          "frame": 13,
+          "time_ms": 277,
+          "label": "WeaponReload"
+        }
+      ],
+      "quat_norm_minmax": [
+        0.9999968013582565,
+        1.0000027170980912
+      ],
+      "arm_lengths": {
+        "L": {
+          "upper_to_fore": [
+            10.221348190799945,
+            14.528592923117886
+          ],
+          "clav_to_upper": [
+            5.7737430000003425,
+            5.773743000000345
+          ]
+        },
+        "R": {
+          "upper_to_fore": [
+            14.661473741566757,
+            21.198996581591715
+          ],
+          "clav_to_upper": [
+            5.773742000000167,
+            5.773742000000174
+          ]
+        }
+      },
+      "cf_gun_first_last_distance": 4.981902248637411,
+      "source_first_vs_idle_distances": {
+        "FvARM-bone Prop1": 4.981884111515886,
+        "FvARM-bone R Hand": 0.3862136801787857,
+        "FvARM-bone L Hand": 4.981868404278269
+      },
+      "source_last_vs_idle_distances": {
+        "FvARM-bone Prop1": 1.850779348054354e-05,
+        "FvARM-bone R Hand": 2.8369831374330713e-05,
+        "FvARM-bone L Hand": 3.5244240753295246e-05
+      },
+      "smallest_quaternion": [
+        0.9999968013582565,
+        "FvARM-bone L Hand",
+        15
+      ]
+    },
+    {
+      "name": "idle_0",
+      "times_ms": [
+        0,
+        200,
+        233,
+        266,
+        300,
+        333,
+        366,
+        400,
+        466,
+        500,
+        566,
+        600,
+        633,
+        666,
+        800,
+        866,
+        966,
+        1000,
+        1033,
+        1066,
+        1100,
+        1200,
+        1366,
+        1466,
+        1500,
+        1533,
+        1566,
+        1600,
+        1633,
+        1666,
+        1800,
+        1833,
+        1866,
+        1900,
+        1933,
+        1966,
+        2033,
+        2066,
+        2100,
+        2133,
+        2166,
+        2400,
+        2433,
+        2466,
+        2566,
+        2600,
+        2666,
+        2700,
+        2766,
+        2800,
+        2833,
+        2900,
+        2933,
+        2966,
+        3000
+      ],
+      "interval_counts": {
+        "200": 1,
+        "33": 24,
+        "34": 14,
+        "66": 5,
+        "134": 2,
+        "100": 4,
+        "166": 1,
+        "67": 2,
+        "234": 1
+      },
+      "duration_ms": 3000,
+      "uniform_index_max_time_error_ms": 188.22222222222217,
+      "blender_at_30fps_duration_s": 1.8,
+      "true_duration_s": 3.0,
+      "events": [],
+      "quat_norm_minmax": [
+        0.9999978049354461,
+        1.0000017707272943
+      ],
+      "arm_lengths": {
+        "L": {
+          "upper_to_fore": [
+            10.221312629520646,
+            10.221467721259298
+          ],
+          "clav_to_upper": [
+            5.773743000000342,
+            5.773743000000345
+          ]
+        },
+        "R": {
+          "upper_to_fore": [
+            21.19897626005637,
+            21.199066253996143
+          ],
+          "clav_to_upper": [
+            5.773742000000167,
+            5.773742000000173
+          ]
+        }
+      },
+      "cf_gun_first_last_distance": 0.0,
+      "source_first_vs_idle_distances": {
+        "FvARM-bone Prop1": 0.0,
+        "FvARM-bone R Hand": 0.0,
+        "FvARM-bone L Hand": 0.0
+      },
+      "source_last_vs_idle_distances": {
+        "FvARM-bone Prop1": 0.0,
+        "FvARM-bone R Hand": 0.0,
+        "FvARM-bone L Hand": 0.0
+      },
+      "smallest_quaternion": [
+        0.9999978049354461,
+        "FvARM-bone L Hand",
+        38
+      ]
+    }
+  ],
+  "rest_parser": {
+    "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s02\\source1\\v_rif_m4a1_anims\\idle.smd",
+    "first_frame": 0,
+    "last_frame": 1,
+    "returns_last_frame": true,
+    "returns_first_frame": true,
+    "first_last_max_component_delta": 0.0
+  }
+}
