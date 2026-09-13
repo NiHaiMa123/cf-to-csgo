@@ -178,23 +178,50 @@ cf_gun.name = "CF_GUN_P6"
 cf_gun.data.name = "CF_GUN_P6"
 move_to(cf_gun, col_gun)
 
-# 2) In-game hands are bonemerge glove + sleeve, not in the weapon MDL
+# 2) In-game hands are bonemerge. Keep glove/sleeve on their own bind
+# armature and copy-transform onto the weapon bones. VALIDATE-skinning
+# them onto the weapon rest made frame 0 look like a T-pose.
 arm_meshes = {}
+gray = bpy.data.materials.new("CS_ARMS_GRAY")
+gray.use_nodes = True
+gnt = gray.node_tree
+gnt.nodes.clear()
+gout = gnt.nodes.new("ShaderNodeOutputMaterial")
+gbsdf = gnt.nodes.new("ShaderNodeBsdfPrincipled")
+gbsdf.inputs["Base Color"].default_value = (0.45, 0.42, 0.38, 1.0)
+gbsdf.inputs["Roughness"].default_value = 0.65
+gnt.links.new(gbsdf.outputs["BSDF"], gout.inputs["Surface"])
 for label, path in (("CS_GLOVE", MESH_GLOVE), ("CS_SLEEVE", MESH_SLEEVE)):
     bpy.ops.object.select_all(action="DESELECT")
     armature.select_set(True)
     bpy.context.view_layer.objects.active = armature
-    imported, _ = import_smd(path, "VALIDATE", False)
+    imported, _ = import_smd(path, "NEW_ARMATURE", False)
+    arm_objs = [obj for obj in imported if obj.type == "ARMATURE"]
     meshes = [
         obj for obj in imported
         if obj.type == "MESH" and obj.name != "smd_bone_vis" and not obj.name.startswith("smd_bone")
     ]
-    if not meshes:
-        raise RuntimeError(f"{label} mesh missing from {path}")
+    if len(arm_objs) != 1 or not meshes:
+        raise RuntimeError(f"{label} import failed: { [o.name for o in imported] }")
+    arm_obj = arm_objs[0]
+    arm_obj.name = f"{label}_Armature"
+    arm_obj.hide_viewport = True
+    arm_obj.hide_render = True
+    move_to(arm_obj, col_arms)
     mesh_obj = meshes[0]
     mesh_obj.name = label
     mesh_obj.data.name = label
+    mesh_obj.data.materials.clear()
+    mesh_obj.data.materials.append(gray)
     move_to(mesh_obj, col_arms)
+    for pose_bone in arm_obj.pose.bones:
+        if pose_bone.name not in armature.pose.bones:
+            continue
+        con = pose_bone.constraints.new("COPY_TRANSFORMS")
+        con.target = armature
+        con.subtarget = pose_bone.name
+        con.target_space = "WORLD"
+        con.owner_space = "WORLD"
     arm_meshes[label] = mesh_obj
 
 # 3) P6 texture
@@ -268,9 +295,12 @@ if armature.animation_data is None or armature.animation_data.action is None:
 act = armature.animation_data.action
 act.name = "P7S04_CURRENT"
 slots = {slot.name_display: slot for slot in act.slots}
-if "reload" not in slots:
-    raise RuntimeError(f"reload slot missing: {list(slots)}")
-armature.animation_data.action_slot = slots["reload"]
+if "idle" not in slots:
+    raise RuntimeError(f"idle slot missing: {list(slots)}")
+armature.data.pose_position = "POSE"
+armature.animation_data.action_slot = slots["idle"]
+scene.frame_start = 0
+scene.frame_end = 54
 scene.frame_current = 0
 scene.frame_set(0)
 

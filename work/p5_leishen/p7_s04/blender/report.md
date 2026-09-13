@@ -7,7 +7,7 @@ The live Blender scene is `work/p5_leishen/p7_s04/blender/p7_s04_current.blend`.
 - `CF_GUN_P6`: P6 雷神 gun on the CS M4A4 57-bone armature
 - `CS_GLOVE` / `CS_SLEEVE`: CS:GO bonemerge arms (same path as in-game hands)
 - Action `P7S04_CURRENT` slots: `idle` `shoot1` `draw` `reload` `lookat01`
-- Active slot: `reload` (the broken CF retarget)
+- **Frame 0 / slot `idle` = CS hold.** Glove/sleeve use their own bind armature and Copy Transforms onto the weapon bones (game bonemerge). Do not use Armature Rest Position; that is `$definebone`, not the hold.
 
 Switch clip: Action Editor → action `P7S04_CURRENT` → Slot.
 
