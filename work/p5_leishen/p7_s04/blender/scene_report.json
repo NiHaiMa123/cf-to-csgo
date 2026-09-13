@@ -32,6 +32,6 @@
       "faces": 8442
     }
   },
-  "how_to_switch": "Action Editor: Action P7S04_CURRENT, Slot idle/shoot1/draw/reload/lookat01",
+  "how_to_switch": "3D View N-panel tab P7; sets Action + Slot. Action Editor dropdown alone does not play layered clips.",
   "note": "Current broken P7-S04 retarget + CS bonemerge arms. Do not deploy until Blender verify."
 }
