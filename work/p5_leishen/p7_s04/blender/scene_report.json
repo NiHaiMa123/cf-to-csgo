@@ -5,13 +5,13 @@
   "preview_reload_f81": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/viewport_reload_f81.png",
   "armature": "CS_M4A4_Armature",
   "bones": 57,
-  "action": "P7S04_CURRENT",
-  "slots": [
-    "idle",
-    "shoot1",
-    "draw",
-    "reload",
-    "lookat01"
+  "action": "1_idle_hold",
+  "actions": [
+    "1_idle_hold",
+    "2_shoot",
+    "3_draw",
+    "4_reload",
+    "5_lookat"
   ],
   "active_slot": "idle",
   "base_pose": "CS idle hold at frame 0; Pose Position not Rest Position",

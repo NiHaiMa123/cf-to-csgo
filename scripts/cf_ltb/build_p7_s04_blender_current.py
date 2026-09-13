@@ -304,6 +304,42 @@ scene.frame_end = 54
 scene.frame_current = 0
 scene.frame_set(0)
 
+# Named Actions for the Action Editor dropdown (Blender 5 slots are easy to miss).
+bake_ranges = {
+    "idle": (0, 54, "1_idle_hold"),
+    "shoot1": (0, 4, "2_shoot"),
+    "draw": (0, 30, "3_draw"),
+    "reload": (0, 107, "4_reload"),
+    "lookat01": (0, 159, "5_lookat"),
+}
+bpy.ops.object.select_all(action="DESELECT")
+armature.select_set(True)
+bpy.context.view_layer.objects.active = armature
+bpy.ops.object.mode_set(mode="POSE")
+bpy.ops.pose.select_all(action="SELECT")
+for slot_name, (start, end, action_name) in bake_ranges.items():
+    armature.animation_data.action = act
+    armature.animation_data.action_slot = slots[slot_name]
+    bpy.ops.nla.bake(
+        frame_start=start,
+        frame_end=end,
+        step=1,
+        only_selected=True,
+        visual_keying=False,
+        clear_constraints=False,
+        clear_parents=False,
+        use_current_action=False,
+        clean_curves=False,
+        bake_types={"POSE"},
+    )
+    baked = armature.animation_data.action
+    baked.name = action_name
+    baked.use_fake_user = True
+armature.animation_data.action = bpy.data.actions["1_idle_hold"]
+bpy.ops.object.mode_set(mode="OBJECT")
+scene.frame_end = 54
+scene.frame_set(0)
+
 # Camera on the CF gun
 coords = [cf_gun.matrix_world @ Vector(v.co) for v in cf_gun.data.vertices]
 center = sum(coords, Vector((0, 0, 0))) / max(len(coords), 1)
