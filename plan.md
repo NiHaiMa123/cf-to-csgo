@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P7-S04 gun-driven CF retarget verified in Blender, not deployed
+Last completed task           : P7-S04 user rejected Blender gun-driven retarget; freeze, no further anim edits
 Last accepted evidence commit : ae848d6
-State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_REJECTED_IN_GAME / P7_CF_ANIM_RETARGET_FIXED_IN_BLENDER / SOUND_RETIME_REQUIRED_ON_CF_ANIM / INSPECT_CLIPPING_NOTED
+State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_REJECTED_IN_GAME / P7_CF_ANIM_REJECTED_IN_BLENDER / P7_CF_ANIM_FROZEN_NO_EDIT / SOUND_RETIME_REQUIRED_ON_CF_ANIM / INSPECT_CLIPPING_NOTED
 ```
 
 ## 0.1 已钉死
@@ -36,10 +36,10 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 
 ```text
 Task ID : NONE
-State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_RETARGET_FIXED_IN_BLENDER
-Goal    : 用户在 Blender 里验收 gun-driven CF 动作；通过前不编译进游戏
-Last    : Independent world retarget rejected (hands deform). Gun-driven relative retarget is in the Blender scene.
-Result  : P7_CF_ANIM_RETARGET_FIXED_IN_BLENDER
+State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_REJECTED_IN_BLENDER / P7_CF_ANIM_FROZEN_NO_EDIT
+Goal    : STOP。P7-S04 两版转法都已被用户否定。未再开任务前不改动作、不编译
+Last    : User 2026-09-13 「当前状态仍然不行，但不要改动先」
+Result  : P7_CF_ANIM_REJECTED_IN_BLENDER
 ```
 
 **2026-09-13 用户决定（仍有效）**：不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。P6 VMT 沿用 N05-J 公式通道，没有把 CFG 标量抄进 phong。不宣布 P4-M01 PASS。N04-F 仍暂停。
@@ -58,7 +58,20 @@ Result  : P7_CF_ANIM_RETARGET_FIXED_IN_BLENDER
 
 **P7-S03**：用户 2026-09-13 「可以」。World / dropped 已接受。证据 [`work/p5_leishen/p7_s03/report.md`](work/p5_leishen/p7_s03/report.md)。
 
-**P7-S04**：用户 2026-09-13 进游戏：**完全不行，全部动作手都会变形**。独立 world-space retarget 作废。已在 Blender 改成 gun-driven 相对转法：CF `Prop1` 带动枪，手保留 CS 持枪握持 + CF 手–枪相对变化；弹匣/拉栓仍跟枪。Blender 实测 reload 手–枪从旧的 3.8→32.5 收到 4.2→12.1，腕长/指长不再被拉长，换弹弹匣会出匣并在结束帧回到持枪。**通过前不编译进游戏**。场景 [`work/p5_leishen/p7_s04/blender/p7_s04_current.blend`](work/p5_leishen/p7_s04/blender/p7_s04_current.blend)，截图 [`work/p5_leishen/p7_s04/blender/shots/`](work/p5_leishen/p7_s04/blender/shots/)。
+**P7-S04**：用户 2026-09-13 **两版都否定**。冻结，未再开任务前不改动作、不编译进游戏。
+
+1. **进游戏（独立 world-space retarget）**：完全不行，全部动作手都会变形。CF 枪根 `Prop1` 是 `FvARM-bone` 的孩子（和手臂兄弟）；CS `M4A1_Parent` 是 `R_Hand` 的孩子。给枪和手各灌一份世界位移后，换弹手–枪从 rest 4.69 炸到 ~32。作废。
+2. **Blender（gun-driven 相对转法）**：用户 「当前状态仍然不行，但不要改动先」。这一版让 CF `Prop1` 带动枪，手留 CS 持枪握持再叠 CF 手–枪相对变化；弹匣/拉栓仍相对枪。离线数字：reload 手–枪 4.2→12.1（不再 32），腕长/指长不再被拉长，弹匣会出匣，结束帧回到持枪。用户看过当前 Blender 场景后仍判不行。**不要把离线数字写成已修好。**
+
+冻结现场（不要动，除非用户再开任务）：
+
+- Blender 场景 [`work/p5_leishen/p7_s04/blender/p7_s04_current.blend`](work/p5_leishen/p7_s04/blender/p7_s04_current.blend)
+- 截图 [`work/p5_leishen/p7_s04/blender/shots/`](work/p5_leishen/p7_s04/blender/shots/)
+- 第二版 SMD [`work/p5_leishen/p7_s04/smd/`](work/p5_leishen/p7_s04/smd/)
+- 转法脚本 [`scripts/p5/p5_p7_s04_fix_retarget.py`](scripts/p5/p5_p7_s04_fix_retarget.py)
+- 第一版（已进过游戏、已否定）仍在 live `p_cf_leishen_m4a4_p6` 的 `v_rif_m4a1.*` 上，直到有接受的替换
+
+当时记下、但不是本轮要修的：大动作右侧袖子灰影（CS 脊椎 rest）；左手和弹匣不是每帧抓死；切枪镜头近。Inspect 仍是官方 CS lookat。`SOUND_RETIME_REQUIRED_ON_CF_ANIM` 仍有效。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -108,10 +121,12 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 - 不覆盖 parked frozen addon 文件
 - 不把 Qingchun / BB / Zeekr / BornBeast WAV 当雷神原声
 - 不把未重建的 FMOD 多层事件图写成完整 CF 枪声还原
+- 不把 P7-S04 离线数字 / gun-driven 转法写成已修好；用户 2026-09-13 已否定当前 Blender 状态
+- 未经用户再开任务，不改 P7-S04 Blender 场景、SMD、转法脚本，不把 CF 动作再编译进游戏
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 声音用户已接受（当时按 CS 动作时间）。P7-S02 Inspect 用户已接受，F 时手指小穿模记下。P7-S03 world/dropped 用户已接受。P7-S04 自动接到第一人称被用户否定（手变形）；现已进 Blender 改，通过前不回游戏。
+**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 声音用户已接受（当时按 CS 动作时间）。P7-S02 Inspect 用户已接受，F 时手指小穿模记下。P7-S03 world/dropped 用户已接受。P7-S04：进游戏独立 world-space retarget 被否定（手变形）；Blender gun-driven 相对转法同样被否定（「仍然不行」）。现场冻结，未再开任务前不改动作、不回游戏。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|
