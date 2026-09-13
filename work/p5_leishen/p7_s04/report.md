@@ -1,8 +1,8 @@
-# P7-S04 — CF original animation decode
+# P7-S04 — CF original animation on the viewmodel
 
-Result: **P7_CF_ANIM_CLIPS_DECODED**.
+Result: **P7_CF_ANIM_VIEWMODEL_DEPLOYED**.
 
-Nodes `57`, clips `8`, weight sets `1`.
+Reload / 切枪 / idle / fire use CF PV LTB clips retargeted in world space onto the P6 CS M4A4 skeleton. Sound QC events follow CF labels (`WeaponClipOut` / `ClipIn` / `WeaponReload`). P7-S01 WAV files are unchanged.
 
 - `reload`: 108 keys, 1600 ms, NONE, ~66.9 fps. smoke@0ms/f0, begin@15ms/f1, Extra01SoundName@30ms/f2, WeaponClipOut@194ms/f13, WeaponClipIn@718ms/f48, WeaponReload@1211ms/f81, end@1585ms/f106
 - `select`: 31 keys, 640 ms, NONE, ~46.9 fps. WeaponReload@277ms/f13
@@ -13,6 +13,9 @@ Nodes `57`, clips `8`, weight sets `1`.
 - `fire`: 5 keys, 90 ms, NONE, ~44.4 fps. fire@0ms/f0
 - `prefire`: 15 keys, 500 ms, NONE, ~28.0 fps. fire@0ms/f0
 
-Not deployed onto the live first-person model yet (P6 mesh is still weighted to the CS M4A4 skeleton). Next: retarget these clips onto that skeleton and retime P7-S01 sound to the reload/select labels above.
+- reload Clipout@f13 Clipin@f48 ClipHit@f81 fps `66.875`
+- draw BoltBack@f13 fps `46.875`
+- mag bone `Bone06`, bolt bone `Bone04`, gun root `FvARM-bone Prop1`
+- inspect stays official CS lookat; world/dropped untouched; frozen untouched
 
-Not a P4-M01 PASS. Frozen addon untouched.
+Not a P4-M01 PASS.
