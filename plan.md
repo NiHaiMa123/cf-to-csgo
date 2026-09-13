@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P7-S04 CF animation wired onto the viewmodel (awaiting in-game check)
+Last completed task           : P7-S04 broken CF anim loaded in Blender for fix/verify
 Last accepted evidence commit : ae848d6
-State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_VIEWMODEL_DEPLOYED / SOUND_RETIMED_TO_CF_ANIM / INSPECT_CLIPPING_NOTED
+State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_REJECTED_IN_GAME / P7_CF_ANIM_IN_BLENDER / SOUND_RETIMED_TO_CF_ANIM / INSPECT_CLIPPING_NOTED
 ```
 
 ## 0.1 已钉死
@@ -36,10 +36,10 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 
 ```text
 Task ID : NONE
-State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_VIEWMODEL_DEPLOYED
-Goal    : 用户进游戏看 CF 换弹/切枪/idle/射击；未接受前不改 frozen / world / inspect
-Last    : P7-S04 wired CF clips onto the P6 viewmodel and retimed P7-S01 events
-Result  : P7_CF_ANIM_VIEWMODEL_DEPLOYED
+State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_IN_BLENDER
+Goal    : 在 Blender 里改/验证 CF 动作，通过前不再进游戏编译
+Last    : User rejected in-game CF anim (hands deform). Current viewmodel is in Blender.
+Result  : P7_CF_ANIM_IN_BLENDER
 ```
 
 **2026-09-13 用户决定（仍有效）**：不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。P6 VMT 沿用 N05-J 公式通道，没有把 CFG 标量抄进 phong。不宣布 P4-M01 PASS。N04-F 仍暂停。
@@ -58,7 +58,7 @@ Result  : P7_CF_ANIM_VIEWMODEL_DEPLOYED
 
 **P7-S03**：用户 2026-09-13 「可以」。World / dropped 已接受。证据 [`work/p5_leishen/p7_s03/report.md`](work/p5_leishen/p7_s03/report.md)。
 
-**P7-S04**：已从 identity-core `PV-M4A1_S_Transformers.LTB` 解出 8 段 parent anim，并把 `reload` / `select` / `idle_0` / `fire` 用 clip 相对世界空间接到 P6 CS M4A4 骨架（弹匣 `Bone06`、拉栓 `Bone04`、枪根 `Prop1`）。QC 事件已按 CF 标签重对：换弹 Clipout@f13 Clipin@f48 ClipHit@f81 fps 66.875；切枪 BoltBack@f13 fps 46.875。P7-S01 WAV 未改。Inspect 仍是 CS lookat。World/dropped 与 frozen 未改。尚未用户认动作。证据 [`work/p5_leishen/p7_s04/report.md`](work/p5_leishen/p7_s04/report.md)。
+**P7-S04**：用户 2026-09-13 进游戏：**完全不行，全部动作手都会变形**。自动 world-space retarget 作废。已把当前第一人称（P6 枪 + CS bonemerge 手 + 失败的 CF clip）载入 Blender，**通过前不再编译进游戏**。场景 [`work/p5_leishen/p7_s04/blender/p7_s04_current.blend`](work/p5_leishen/p7_s04/blender/p7_s04_current.blend)。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 
@@ -111,7 +111,7 @@ N05-K 已在自建 Hardware D3D9 上渲染假设 technique。`bornbeast_cfg.png`
 
 ## 0.4 2026-09-12 联网复盘：可尝试路径与顺序
 
-**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 声音用户已接受（当时按 CS 动作时间）。P7-S02 Inspect 用户已接受，F 时手指小穿模记下。P7-S03 world/dropped 用户已接受。P7-S04 已把 CF reload/select/idle/fire 接到第一人称，并把声音事件改到 CF 标签时间；等用户进游戏看动作。
+**更新判断**：用户 2026-09-13 推迟 CF 打光对等与贴图质感。路线 B 的游戏内 shading 不再是当前任务。P4-M01 仍 INCOMPLETE。N04-F 继续暂停。P5 身份已是 `IDENTITY_CONFIRMED`。P6 雷神 identity replacement 已部署，用户确认模型没问题。P7-S01 声音用户已接受（当时按 CS 动作时间）。P7-S02 Inspect 用户已接受，F 时手指小穿模记下。P7-S03 world/dropped 用户已接受。P7-S04 自动接到第一人称被用户否定（手变形）；现已进 Blender 改，通过前不回游戏。
 
 | 优先级 / 路线 | 新依据与要回答的问题 | 最小实验 / 成功标准 | 边界与停止条件 |
 |---|---|---|---|

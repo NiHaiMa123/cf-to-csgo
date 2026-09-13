@@ -1,0 +1,36 @@
+{
+  "schema": "cf2.p7.blender-current.v1",
+  "blend": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/p7_s04_current.blend",
+  "preview": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/viewport.png",
+  "preview_reload_f81": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/viewport_reload_f81.png",
+  "armature": "CS_M4A4_Armature",
+  "bones": 57,
+  "action": "P7S04_CURRENT",
+  "slots": [
+    "idle",
+    "shoot1",
+    "draw",
+    "reload",
+    "lookat01"
+  ],
+  "active_slot": "reload",
+  "meshes": {
+    "cf_gun": {
+      "name": "CF_GUN_P6",
+      "verts": 2134,
+      "faces": 3916
+    },
+    "glove": {
+      "name": "CS_GLOVE",
+      "verts": 4700,
+      "faces": 9136
+    },
+    "sleeve": {
+      "name": "CS_SLEEVE",
+      "verts": 4286,
+      "faces": 8442
+    }
+  },
+  "how_to_switch": "Action Editor: Action P7S04_CURRENT, Slot idle/shoot1/draw/reload/lookat01",
+  "note": "Current broken P7-S04 retarget + CS bonemerge arms. Do not deploy until Blender verify."
+}

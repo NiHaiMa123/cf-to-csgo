@@ -1,6 +1,8 @@
 # P7-S04 — CF original animation on the viewmodel
 
-Result: **P7_CF_ANIM_VIEWMODEL_DEPLOYED**.
+Result: **P7_CF_ANIM_REJECTED_IN_GAME** then **P7_CF_ANIM_IN_BLENDER**.
+
+User 2026-09-13: in-game 完全不行，全部动作手都会变形. Automatic world-space retarget is rejected. Current viewmodel is in Blender (`work/p5_leishen/p7_s04/blender/p7_s04_current.blend`). Do not compile again until that scene is fixed and verified.
 
 Reload / 切枪 / idle / fire use CF PV LTB clips retargeted in world space onto the P6 CS M4A4 skeleton. Sound QC events follow CF labels (`WeaponClipOut` / `ClipIn` / `WeaponReload`). P7-S01 WAV files are unchanged.
 
