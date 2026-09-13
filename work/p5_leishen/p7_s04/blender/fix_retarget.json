@@ -1,0 +1,235 @@
+{
+  "schema": "cf2.p7.fix-retarget.v1",
+  "generated_at_utc": "2026-09-13T02:38:53.374283+00:00",
+  "result": "P7_CF_ANIM_RETARGET_FIXED_OFFLINE",
+  "method": "gun_driven_relative_preserving",
+  "deployed": false,
+  "compiled": false,
+  "source_ltb": "D:/project/cf_to_csgo/work/p5_leishen/p6/verified_root/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+  "expected_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+  "rest": "D:/project/cf_to_csgo/work/p5_leishen/p7_s02/source1/v_rif_m4a1_anims/idle.smd",
+  "smd_dir": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd",
+  "gates": {
+    "frame0_stays_on_p6_hold": true,
+    "gun_hand_relative_stable": true,
+    "reload_mag_moves": true,
+    "wrist_length_stable": true,
+    "finger_length_stable": true
+  },
+  "clips": {
+    "reload": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/reload.smd",
+      "frames": 108,
+      "clip_travel": 9.417751473531,
+      "parent_travel": 11.562247715889734,
+      "cf_clip": "reload",
+      "fps": 66.875,
+      "new": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 4.237722322357772,
+        "gun_hand_max": 12.102324744490481,
+        "gun_hand_f0": 4.692944769998679,
+        "wrist_rest": 10.295582,
+        "wrist_min": 10.295578824901687,
+        "wrist_max": 10.295584093941864,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 1.4334569913408588,
+        "finger_max": 1.4334598009363138,
+        "mag_local_travel": 9.417751473531,
+        "bolt_local_travel": 4.339884794144711,
+        "lhand_clip_min": 4.587781760827919,
+        "lhand_clip_f0": 4.587781760827919,
+        "frame0_hold_error": {
+          "gun": 6.4047456679787536e-15,
+          "r_hand": 9.729507111180988e-15,
+          "l_hand": 7.549516567451064e-15,
+          "r_fore": 5.043883840194739e-15
+        }
+      },
+      "old_independent_world": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 3.7622890387614625,
+        "gun_hand_max": 32.481165579393,
+        "gun_hand_f0": 4.692944769998684,
+        "wrist_rest": 10.295582,
+        "wrist_min": 10.258319651654364,
+        "wrist_max": 40.47654024379914,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 0.41393106783843714,
+        "finger_max": 3.9182883212457997,
+        "mag_local_travel": 9.417763340051435,
+        "bolt_local_travel": 4.679086305748325,
+        "lhand_clip_min": 4.587671098684397,
+        "lhand_clip_f0": 4.587781760827938,
+        "frame0_hold_error": {
+          "gun": 2.5121479338940403e-15,
+          "r_hand": 7.32410687763558e-15,
+          "l_hand": 9.565974336450906e-15,
+          "r_fore": 4.070144838902081e-15
+        }
+      }
+    },
+    "draw": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/draw.smd",
+      "frames": 31,
+      "clip_travel": 1.734833278972519,
+      "parent_travel": 8.886131177298855,
+      "cf_clip": "select",
+      "fps": 46.875,
+      "new": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 2.810696493132524,
+        "gun_hand_max": 5.680440707897195,
+        "gun_hand_f0": 4.692944769998687,
+        "wrist_rest": 10.295582,
+        "wrist_min": 10.295581332771846,
+        "wrist_max": 10.295585723695973,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 1.4334585641980186,
+        "finger_max": 1.433459288053125,
+        "mag_local_travel": 1.734833278972519,
+        "bolt_local_travel": 4.56623786070931,
+        "lhand_clip_min": 2.9559752454201216,
+        "lhand_clip_f0": 4.587781760827921,
+        "frame0_hold_error": {
+          "gun": 9.272854936269104e-15,
+          "r_hand": 6.646518689688359e-15,
+          "l_hand": 7.944109290391274e-15,
+          "r_fore": 2.8435583831733384e-15
+        }
+      },
+      "old_independent_world": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 4.692944769998682,
+        "gun_hand_max": 24.170538332073782,
+        "gun_hand_f0": 4.692944769998682,
+        "wrist_rest": 10.295582,
+        "wrist_min": 9.562799908752533,
+        "wrist_max": 34.3060426748337,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 0.4006212221411202,
+        "finger_max": 3.348203809488033,
+        "mag_local_travel": 2.6981261899681623,
+        "bolt_local_travel": 3.296074315743999,
+        "lhand_clip_min": 4.587781760827933,
+        "lhand_clip_f0": 4.587781760827933,
+        "frame0_hold_error": {
+          "gun": 5.9580819677934555e-15,
+          "r_hand": 2.6645352591003757e-15,
+          "l_hand": 9.930136612989092e-15,
+          "r_fore": 4.189529226675416e-15
+        }
+      }
+    },
+    "idle": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/idle.smd",
+      "frames": 55,
+      "clip_travel": 1.1759714770778891e-05,
+      "parent_travel": 4.036156520152707e-05,
+      "cf_clip": "idle_0",
+      "fps": 18.0,
+      "new": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 4.6929344374892565,
+        "gun_hand_max": 4.6929636061184,
+        "gun_hand_f0": 4.692944769998681,
+        "wrist_rest": 10.295582,
+        "wrist_min": 10.295580412450825,
+        "wrist_max": 10.295583984436524,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 1.4334585377214053,
+        "finger_max": 1.4334594622813652,
+        "mag_local_travel": 1.1759714770778891e-05,
+        "bolt_local_travel": 2.027984124173261e-05,
+        "lhand_clip_min": 4.587737811029444,
+        "lhand_clip_f0": 4.587781760827925,
+        "frame0_hold_error": {
+          "gun": 7.32410687763558e-15,
+          "r_hand": 7.742959950613002e-15,
+          "l_hand": 1.1269720748118957e-14,
+          "r_fore": 5.043883840194739e-15
+        }
+      },
+      "old_independent_world": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 4.692863922073976,
+        "gun_hand_max": 4.692948182109612,
+        "gun_hand_f0": 4.692944769998685,
+        "wrist_rest": 10.295582,
+        "wrist_min": 10.295576671878308,
+        "wrist_max": 10.295583792032046,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 1.4334585042316612,
+        "finger_max": 1.4334594957710878,
+        "mag_local_travel": 4.72135629437732e-05,
+        "bolt_local_travel": 4.2521226101443464e-05,
+        "lhand_clip_min": 4.58777626188161,
+        "lhand_clip_f0": 4.587781760827932,
+        "frame0_hold_error": {
+          "gun": 7.32410687763558e-15,
+          "r_hand": 7.105427357601002e-15,
+          "l_hand": 5.329070518200751e-15,
+          "r_fore": 1.9860273225978185e-15
+        }
+      }
+    },
+    "shoot1": {
+      "smd": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/smd/shoot1.smd",
+      "frames": 5,
+      "clip_travel": 1.5852772719360757,
+      "parent_travel": 1.6271206808914046e-05,
+      "cf_clip": "fire",
+      "fps": 44.44444444444444,
+      "new": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 4.69293782020126,
+        "gun_hand_max": 4.692944769998686,
+        "gun_hand_f0": 4.692944769998685,
+        "wrist_rest": 10.295582,
+        "wrist_min": 10.29557963648184,
+        "wrist_max": 10.295582000000007,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 1.433459000000345,
+        "finger_max": 1.4334590000003482,
+        "mag_local_travel": 1.5852772719360757,
+        "bolt_local_travel": 1.933409576858978,
+        "lhand_clip_min": 4.587781760827931,
+        "lhand_clip_f0": 4.587781760827933,
+        "frame0_hold_error": {
+          "gun": 6.217248937900877e-15,
+          "r_hand": 3.972054645195637e-15,
+          "l_hand": 1.1374233532693354e-14,
+          "r_fore": 2.8435583831733384e-15
+        }
+      },
+      "old_independent_world": {
+        "rest_gun_hand": 4.692944769998684,
+        "gun_hand_min": 4.692944769998679,
+        "gun_hand_max": 4.692954780769412,
+        "gun_hand_f0": 4.692944769998681,
+        "wrist_rest": 10.295582,
+        "wrist_min": 10.295580680560912,
+        "wrist_max": 10.295615647596183,
+        "finger_rest": 1.433459000000348,
+        "finger_min": 1.4334590000003442,
+        "finger_max": 1.4334590000003484,
+        "mag_local_travel": 1.0659056180963218,
+        "bolt_local_travel": 1.189994555355159,
+        "lhand_clip_min": 4.587723278404045,
+        "lhand_clip_f0": 4.587781760827933,
+        "frame0_hold_error": {
+          "gun": 4.070144838902081e-15,
+          "r_hand": 6.4047456679787536e-15,
+          "l_hand": 8.79251776862914e-15,
+          "r_fore": 7.32410687763558e-15
+        }
+      }
+    }
+  },
+  "notes": [
+    "CS M4A1_Parent is a child of R_Hand; CF Prop1 is a sibling of the arms.",
+    "Independent world-space retarget of both gun and hands is the rejected method.",
+    "This pass drives the gun from CF Prop1 and places hands from CF hand-vs-gun relative change on top of the CS hold grip.",
+    "Not compiled. Not deployed. Blender verify next."
+  ]
+}

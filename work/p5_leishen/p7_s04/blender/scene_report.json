@@ -3,7 +3,218 @@
   "blend": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/p7_s04_current.blend",
   "preview": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/viewport.png",
   "preview_reload_f81": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/viewport_reload_f81.png",
-  "armature": "CS_M4A4_Armature",
+  "shots": {
+    "idle_f0": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_idle_f0.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_idle_f0.png"
+    },
+    "shoot_f2": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_shoot_f2.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_shoot_f2.png"
+    },
+    "draw_f0": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_draw_f0.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_draw_f0.png"
+    },
+    "draw_f13": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_draw_f13.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_draw_f13.png"
+    },
+    "reload_f0": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_reload_f0.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_reload_f0.png"
+    },
+    "reload_f13_clipout": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_reload_f13_clipout.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_reload_f13_clipout.png"
+    },
+    "reload_f48_clipin": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_reload_f48_clipin.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_reload_f48_clipin.png"
+    },
+    "reload_f81_bolt": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_reload_f81_bolt.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_reload_f81_bolt.png"
+    },
+    "reload_f106": {
+      "eye": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/eye_reload_f106.png",
+      "side": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04/blender/shots/side_reload_f106.png"
+    }
+  },
+  "blender_metrics": [
+    {
+      "label": "idle_f0",
+      "action": "1_idle_hold",
+      "frame": 0,
+      "gun_hand": 4.692941901077935,
+      "lhand_clip": 4.587786222254919,
+      "wrist": 10.29558012118493,
+      "finger": 1.4334573576902918,
+      "r_hand": [
+        -5.857447624206543,
+        -10.545653343200684,
+        -8.411175727844238
+      ],
+      "gun": [
+        -4.909339904785156,
+        -15.13895320892334,
+        -8.573630332946777
+      ]
+    },
+    {
+      "label": "shoot_f2",
+      "action": "2_shoot",
+      "frame": 2,
+      "gun_hand": 4.6929448083953025,
+      "lhand_clip": 5.085851431263381,
+      "wrist": 10.295579125417884,
+      "finger": 1.4334621213100356,
+      "r_hand": [
+        -5.8494791984558105,
+        -9.414651870727539,
+        -8.453433990478516
+      ],
+      "gun": [
+        -4.901371002197266,
+        -14.007954597473145,
+        -8.615887641906738
+      ]
+    },
+    {
+      "label": "draw_f0",
+      "action": "3_draw",
+      "frame": 0,
+      "gun_hand": 4.692944874281245,
+      "lhand_clip": 4.587775932557598,
+      "wrist": 10.295581719043476,
+      "finger": 1.4334589364694565,
+      "r_hand": [
+        -5.857447147369385,
+        -10.545654296875,
+        -8.411175727844238
+      ],
+      "gun": [
+        -4.90933895111084,
+        -15.138957023620605,
+        -8.573631286621094
+      ]
+    },
+    {
+      "label": "draw_f13",
+      "action": "3_draw",
+      "frame": 13,
+      "gun_hand": 3.745761224111333,
+      "lhand_clip": 3.0707874270509836,
+      "wrist": 10.295586697876484,
+      "finger": 1.4334583588833711,
+      "r_hand": [
+        -6.581772804260254,
+        -17.83778953552246,
+        -1.6262493133544922
+      ],
+      "gun": [
+        -5.029094696044922,
+        -15.427780151367188,
+        0.7845125198364258
+      ]
+    },
+    {
+      "label": "reload_f0",
+      "action": "4_reload",
+      "frame": 0,
+      "gun_hand": 4.692944841338274,
+      "lhand_clip": 4.587778141206695,
+      "wrist": 10.295581719043476,
+      "finger": 1.4334600552575898,
+      "r_hand": [
+        -5.857447147369385,
+        -10.545654296875,
+        -8.411175727844238
+      ],
+      "gun": [
+        -4.90933895111084,
+        -15.138957023620605,
+        -8.573630332946777
+      ]
+    },
+    {
+      "label": "reload_f13_clipout",
+      "action": "4_reload",
+      "frame": 13,
+      "gun_hand": 4.69294051112161,
+      "lhand_clip": 7.819592586615593,
+      "wrist": 10.295580607939195,
+      "finger": 1.433458775343103,
+      "r_hand": [
+        2.2722551822662354,
+        -13.184061050415039,
+        -7.179895401000977
+      ],
+      "gun": [
+        3.5312132835388184,
+        -17.59752082824707,
+        -6.200055122375488
+      ]
+    },
+    {
+      "label": "reload_f48_clipin",
+      "action": "4_reload",
+      "frame": 48,
+      "gun_hand": 5.012260062879688,
+      "lhand_clip": 7.883437435304234,
+      "wrist": 10.29558219955886,
+      "finger": 1.4334590651106454,
+      "r_hand": [
+        0.8513165712356567,
+        -15.159027099609375,
+        -7.688387870788574
+      ],
+      "gun": [
+        1.6597940921783447,
+        -19.898332595825195,
+        -6.271313667297363
+      ]
+    },
+    {
+      "label": "reload_f81_bolt",
+      "action": "4_reload",
+      "frame": 81,
+      "gun_hand": 12.102323394900115,
+      "lhand_clip": 5.979021491526814,
+      "wrist": 10.29557789047846,
+      "finger": 1.4334594814077461,
+      "r_hand": [
+        -5.247373104095459,
+        -4.341667175292969,
+        -13.609750747680664
+      ],
+      "gun": [
+        -5.431182861328125,
+        -15.780628204345703,
+        -9.662267684936523
+      ]
+    },
+    {
+      "label": "reload_f106",
+      "action": "4_reload",
+      "frame": 106,
+      "gun_hand": 4.44170741325238,
+      "lhand_clip": 4.824798771511346,
+      "wrist": 10.295581302210834,
+      "finger": 1.4334594055549474,
+      "r_hand": [
+        -6.193994998931885,
+        -10.843193054199219,
+        -8.084683418273926
+      ],
+      "gun": [
+        -5.117922782897949,
+        -15.151695251464844,
+        -8.172106742858887
+      ]
+    }
+  ],
+  "armature": "CS_M4A4_Armature.001",
   "bones": 57,
   "action": "1_idle_hold",
   "actions": [
@@ -21,17 +232,17 @@
       "verts": 2134,
       "faces": 3916
     },
-    "glove": {
+    "CS_GLOVE": {
       "name": "CS_GLOVE",
       "verts": 4700,
       "faces": 9136
     },
-    "sleeve": {
+    "CS_SLEEVE": {
       "name": "CS_SLEEVE",
       "verts": 4286,
       "faces": 8442
     }
   },
   "how_to_switch": "3D View N-panel tab P7; sets Action + Slot. Action Editor dropdown alone does not play layered clips.",
-  "note": "Current broken P7-S04 retarget + CS bonemerge arms. Do not deploy until Blender verify."
+  "note": "Gun-driven relative retarget. Not deployed. Verify here before any in-game compile."
 }

@@ -13,9 +13,9 @@ P4 Source 1 / MIGI baseline   : PASS / FROZEN
 P4-M01 native material        : INCOMPLETE (lighting deferred)
 P5 雷神 identity              : IDENTITY_CONFIRMED (base Transformers)
 Current executor task         : NONE
-Last completed task           : P7-S04 broken CF anim loaded in Blender for fix/verify
+Last completed task           : P7-S04 gun-driven CF retarget verified in Blender, not deployed
 Last accepted evidence commit : ae848d6
-State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_REJECTED_IN_GAME / P7_CF_ANIM_IN_BLENDER / SOUND_RETIMED_TO_CF_ANIM / INSPECT_CLIPPING_NOTED
+State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENTITY_CONFIRMED / P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_REJECTED_IN_GAME / P7_CF_ANIM_RETARGET_FIXED_IN_BLENDER / SOUND_RETIME_REQUIRED_ON_CF_ANIM / INSPECT_CLIPPING_NOTED
 ```
 
 ## 0.1 已钉死
@@ -36,10 +36,10 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 
 ```text
 Task ID : NONE
-State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_IN_BLENDER
-Goal    : 在 Blender 里改/验证 CF 动作，通过前不再进游戏编译
-Last    : User rejected in-game CF anim (hands deform). Current viewmodel is in Blender.
-Result  : P7_CF_ANIM_IN_BLENDER
+State   : P6_IDENTITY_REPLACEMENT_DEPLOYED / P7_ORIGINAL_SOUND_DEPLOYED / P7_VISIBLE_INSPECT_USER_ACCEPTED / P7_WORLD_MODEL_USER_ACCEPTED / P7_CF_ANIM_RETARGET_FIXED_IN_BLENDER
+Goal    : 用户在 Blender 里验收 gun-driven CF 动作；通过前不编译进游戏
+Last    : Independent world retarget rejected (hands deform). Gun-driven relative retarget is in the Blender scene.
+Result  : P7_CF_ANIM_RETARGET_FIXED_IN_BLENDER
 ```
 
 **2026-09-13 用户决定（仍有效）**：不必再做 CF 打光对等。CF 打光本身一般，贴图质感以后专门调。因此停止：CFG→Source `$phong`/`$envmap` 拟合、继续灌 FXO 公式进游戏。P6 VMT 沿用 N05-J 公式通道，没有把 CFG 标量抄进 phong。不宣布 P4-M01 PASS。N04-F 仍暂停。
@@ -58,7 +58,7 @@ Result  : P7_CF_ANIM_IN_BLENDER
 
 **P7-S03**：用户 2026-09-13 「可以」。World / dropped 已接受。证据 [`work/p5_leishen/p7_s03/report.md`](work/p5_leishen/p7_s03/report.md)。
 
-**P7-S04**：用户 2026-09-13 进游戏：**完全不行，全部动作手都会变形**。自动 world-space retarget 作废。已把当前第一人称（P6 枪 + CS bonemerge 手 + 失败的 CF clip）载入 Blender，**通过前不再编译进游戏**。场景 [`work/p5_leishen/p7_s04/blender/p7_s04_current.blend`](work/p5_leishen/p7_s04/blender/p7_s04_current.blend)。
+**P7-S04**：用户 2026-09-13 进游戏：**完全不行，全部动作手都会变形**。独立 world-space retarget 作废。已在 Blender 改成 gun-driven 相对转法：CF `Prop1` 带动枪，手保留 CS 持枪握持 + CF 手–枪相对变化；弹匣/拉栓仍跟枪。Blender 实测 reload 手–枪从旧的 3.8→32.5 收到 4.2→12.1，腕长/指长不再被拉长，换弹弹匣会出匣并在结束帧回到持枪。**通过前不编译进游戏**。场景 [`work/p5_leishen/p7_s04/blender/p7_s04_current.blend`](work/p5_leishen/p7_s04/blender/p7_s04_current.blend)，截图 [`work/p5_leishen/p7_s04/blender/shots/`](work/p5_leishen/p7_s04/blender/shots/)。
 
 游戏当前加载：`p_cf_leishen_m4a4_p6` + `p_cf_leishen_m4a4_p7_sound`。N05-J 与 frozen 都 parked 在 `migi/csgo/_parked_addons/`。
 

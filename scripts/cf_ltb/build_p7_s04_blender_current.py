@@ -1,7 +1,7 @@
-"""Blender scene of the current P7-S04 viewmodel (broken CF retarget).
+"""Blender scene of the P7-S04 viewmodel after gun-driven retarget fix.
 
 Live Blender MCP. Does not compile or deploy. In-game stays parked until
-this scene is used to fix/verify.
+the user accepts this scene.
 
 Repro:
   python scripts/cf_ltb/blender_mcp_exec.py execute_code --code-file scripts/cf_ltb/build_p7_s04_blender_current.py --timeout 300
@@ -35,7 +35,9 @@ OUT_DIR = os.path.join(PROJECT, "work", "p5_leishen", "p7_s04", "blender")
 BLEND_PATH = os.path.join(OUT_DIR, "p7_s04_current.blend")
 PREVIEW_PATH = os.path.join(OUT_DIR, "viewport.png")
 PREVIEW_FRAME_PATH = os.path.join(OUT_DIR, "viewport_reload_f81.png")
+SHOT_DIR = os.path.join(OUT_DIR, "shots")
 REPORT_PATH = os.path.join(OUT_DIR, "scene_report.json")
+SWITCHER_PATH = os.path.join(OUT_DIR, "p7_clip_switcher.py")
 
 ANIMS = [
     ("cf_idle", os.path.join(ANIM_DIR, "idle.smd")),
@@ -76,8 +78,8 @@ scene = bpy.context.scene
 scene.unit_settings.system = "NONE"
 scene.unit_settings.scale_length = 1.0
 scene.render.engine = "BLENDER_EEVEE"
-scene.render.resolution_x = 1920
-scene.render.resolution_y = 1080
+scene.render.resolution_x = 1280
+scene.render.resolution_y = 720
 scene.render.resolution_percentage = 100
 scene.render.image_settings.file_format = "PNG"
 scene.render.filepath = PREVIEW_PATH
@@ -87,7 +89,7 @@ scene.frame_start = 0
 scene.frame_end = 160
 scene.frame_current = 0
 if hasattr(scene, "eevee") and hasattr(scene.eevee, "taa_render_samples"):
-    scene.eevee.taa_render_samples = 16
+    scene.eevee.taa_render_samples = 8
 scene.view_settings.view_transform = "Standard"
 scene.view_settings.look = "None"
 scene.view_settings.exposure = 1.6
@@ -132,10 +134,11 @@ def add_light(name, energy, loc, rot_deg, size=8.0):
     return obj
 
 
-add_light("Key", 900, (18, -22, 14), (60, 0, 40), 8)
-add_light("Fill", 350, (-16, -18, 8), (70, 0, -35), 10)
-add_light("Rim", 500, (2, 18, 12), (50, 0, 180), 6)
-add_light("Front", 280, (0, -8, 6), (80, 0, 0), 12)
+add_light("Key", 1600, (10, -16, 12), (55, 0, 30), 6)
+add_light("Fill", 700, (-12, -14, 8), (70, 0, -30), 8)
+add_light("Rim", 900, (4, 14, 10), (50, 0, 180), 5)
+add_light("Front", 800, (0, -6, 4), (80, 0, 0), 8)
+add_light("Eye", 500, (0, 2, 3), (90, 0, 0), 4)
 
 
 def import_smd(path, append, do_anim):
@@ -290,6 +293,29 @@ for name, path in ANIMS:
         "fcurves": n_fcurves,
     }
 
+# BST VALIDATE can spawn a second armature and reparent the gun onto it.
+deform = None
+for mod in cf_gun.modifiers:
+    if mod.type == "ARMATURE" and mod.object:
+        deform = mod.object
+        break
+if deform is None:
+    raise RuntimeError("CF gun has no armature modifier target")
+for obj in list(bpy.data.objects):
+    if obj.type == "ARMATURE" and obj.name.startswith("CS_M4A4_Armature") and obj != deform:
+        bpy.data.objects.remove(obj, do_unlink=True)
+deform.name = "CS_M4A4_Armature"
+deform.data.name = "CS_M4A4_Armature"
+armature = deform
+for label in ("CS_GLOVE_Armature", "CS_SLEEVE_Armature"):
+    arm_obj = bpy.data.objects.get(label)
+    if arm_obj is None:
+        continue
+    for pose_bone in arm_obj.pose.bones:
+        for con in pose_bone.constraints:
+            if con.type == "COPY_TRANSFORMS":
+                con.target = armature
+
 if armature.animation_data is None or armature.animation_data.action is None:
     raise RuntimeError("armature has no action after clip import")
 act = armature.animation_data.action
@@ -336,45 +362,223 @@ for slot_name, (start, end, action_name) in bake_ranges.items():
     baked.name = action_name
     baked.use_fake_user = True
 armature.animation_data.action = bpy.data.actions["1_idle_hold"]
+if getattr(bpy.data.actions["1_idle_hold"], "slots", None) and bpy.data.actions["1_idle_hold"].slots:
+    armature.animation_data.action_slot = bpy.data.actions["1_idle_hold"].slots[0]
 bpy.ops.object.mode_set(mode="OBJECT")
 scene.frame_end = 54
 scene.frame_set(0)
+armature.data.pose_position = "POSE"
+armature.hide_render = True
 
-# Camera on the CF gun
+SWITCHER = r'''import bpy
+
+CLIPS = [
+    ("1_idle_hold", "1 持枪 idle", 54),
+    ("2_shoot", "2 射击", 4),
+    ("3_draw", "3 切枪 draw", 30),
+    ("4_reload", "4 换弹 reload", 107),
+    ("5_lookat", "5 检视 lookat", 159),
+]
+
+
+def _items(self, context):
+    return [(name, label, "", i) for i, (name, label, _end) in enumerate(CLIPS)]
+
+
+def apply_clip(self, context):
+    obj = bpy.data.objects.get("CS_M4A4_Armature")
+    if obj is None:
+        return
+    if obj.animation_data is None:
+        obj.animation_data_create()
+    act = bpy.data.actions.get(self.p7_clip)
+    if act is None:
+        return
+    obj.data.pose_position = "POSE"
+    obj.animation_data.action = act
+    if getattr(act, "slots", None) and len(act.slots):
+        obj.animation_data.action_slot = act.slots[0]
+    end = 54
+    for name, _label, clip_end in CLIPS:
+        if name == self.p7_clip:
+            end = clip_end
+            break
+    context.scene.frame_start = 0
+    context.scene.frame_end = end
+    context.scene.frame_current = 0
+    context.scene.frame_set(0)
+
+
+class P7_PT_clips(bpy.types.Panel):
+    bl_label = "P7 clips"
+    bl_idname = "P7_PT_clips"
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
+    bl_category = "P7"
+
+    def draw(self, context):
+        self.layout.prop(context.scene, "p7_clip")
+
+
+def register():
+    if not hasattr(bpy.types.Scene, "p7_clip"):
+        bpy.types.Scene.p7_clip = bpy.props.EnumProperty(name="clip", items=_items, update=apply_clip)
+    try:
+        bpy.utils.register_class(P7_PT_clips)
+    except ValueError:
+        pass
+
+
+def unregister():
+    if hasattr(bpy.types.Scene, "p7_clip"):
+        del bpy.types.Scene.p7_clip
+    try:
+        bpy.utils.unregister_class(P7_PT_clips)
+    except Exception:
+        pass
+
+
+register()
+'''
+with open(SWITCHER_PATH, "w", encoding="utf-8") as handle:
+    handle.write(SWITCHER)
+text = bpy.data.texts.get("p7_clip_switcher.py") or bpy.data.texts.new("p7_clip_switcher.py")
+text.clear()
+text.write(SWITCHER)
+text.use_module = True
+exec(SWITCHER, {"bpy": bpy})
+scene.p7_clip = "1_idle_hold"
+
 coords = [cf_gun.matrix_world @ Vector(v.co) for v in cf_gun.data.vertices]
 center = sum(coords, Vector((0, 0, 0))) / max(len(coords), 1)
+min_c = Vector((min(v.x for v in coords), min(v.y for v in coords), min(v.z for v in coords)))
+max_c = Vector((max(v.x for v in coords), max(v.y for v in coords), max(v.z for v in coords)))
+size = (max_c - min_c).length
+
 cam_data = bpy.data.cameras.new("P7S04_Cam")
-cam_data.lens = 35
+cam_data.lens = 50
+cam_data.clip_start = 0.05
+cam_data.clip_end = 200.0
 cam = bpy.data.objects.new("P7S04_Cam", cam_data)
-cam.location = center + Vector((12.0, -28.0, 10.0))
+# Viewmodel-style: sit at the eye and look at the gun.
+cam.location = Vector((0.0, 0.0, 1.2))
 direction = center - cam.location
+if direction.length < 1e-6:
+    direction = Vector((0.0, -1.0, 0.0))
 cam.rotation_euler = direction.to_track_quat("-Z", "Y").to_euler()
 col_lights.objects.link(cam)
 scene.camera = cam
+
+review_data = bpy.data.cameras.new("P7S04_Review")
+review_data.lens = 45
+review_data.clip_start = 0.05
+review_data.clip_end = 200.0
+review = bpy.data.objects.new("P7S04_Review", review_data)
+review.location = center + Vector((size * 0.55, -size * 1.15, size * 0.35))
+review.rotation_euler = (center - review.location).to_track_quat("-Z", "Y").to_euler()
+col_lights.objects.link(review)
 
 for area in bpy.context.screen.areas:
     if area.type == "VIEW_3D":
         space = area.spaces.active
         space.shading.type = "MATERIAL"
-        space.overlay.show_bones = True
+        space.overlay.show_bones = False
+        space.region_3d.view_perspective = "CAMERA"
         break
 
-bpy.ops.wm.save_as_mainfile(filepath=BLEND_PATH)
+os.makedirs(SHOT_DIR, exist_ok=True)
+
+
+def set_clip(action_name, frame):
+    act = bpy.data.actions[action_name]
+    armature.animation_data.action = act
+    if getattr(act, "slots", None) and act.slots:
+        armature.animation_data.action_slot = act.slots[0]
+    armature.data.pose_position = "POSE"
+    scene.frame_set(int(frame))
+    bpy.context.view_layer.update()
+
+
+def bone_world(name):
+    pb = armature.pose.bones[name]
+    return (armature.matrix_world @ pb.matrix).to_translation()
+
+
+def bone_dist(a, b):
+    return (bone_world(a) - bone_world(b)).length
+
+
+def render_shot(camera_obj, path):
+    scene.camera = camera_obj
+    scene.render.filepath = path
+    bpy.ops.render.render(write_still=True)
+
+
+SHOTS = [
+    ("1_idle_hold", 0, "idle_f0"),
+    ("2_shoot", 2, "shoot_f2"),
+    ("3_draw", 0, "draw_f0"),
+    ("3_draw", 13, "draw_f13"),
+    ("4_reload", 0, "reload_f0"),
+    ("4_reload", 13, "reload_f13_clipout"),
+    ("4_reload", 48, "reload_f48_clipin"),
+    ("4_reload", 81, "reload_f81_bolt"),
+    ("4_reload", 106, "reload_f106"),
+]
+
+blender_metrics = []
+shot_paths = {}
+for action_name, frame, label in SHOTS:
+    set_clip(action_name, frame)
+    metrics = {
+        "label": label,
+        "action": action_name,
+        "frame": frame,
+        "gun_hand": bone_dist("v_weapon.M4A1_Parent", "v_weapon.Bip01_R_Hand"),
+        "lhand_clip": bone_dist("v_weapon.Bip01_L_Hand", "v_weapon.M4A1_Clip"),
+        "wrist": bone_dist("v_weapon.Bip01_R_Forearm", "v_weapon.Bip01_R_Hand"),
+        "finger": bone_dist("v_weapon.Bip01_R_Finger1", "v_weapon.Bip01_R_Finger11"),
+        "r_hand": list(bone_world("v_weapon.Bip01_R_Hand")),
+        "gun": list(bone_world("v_weapon.M4A1_Parent")),
+    }
+    blender_metrics.append(metrics)
+    eye_path = os.path.join(SHOT_DIR, f"eye_{label}.png")
+    side_path = os.path.join(SHOT_DIR, f"side_{label}.png")
+    render_shot(cam, eye_path)
+    render_shot(review, side_path)
+    shot_paths[label] = {"eye": eye_path.replace("\\", "/"), "side": side_path.replace("\\", "/")}
+
+set_clip("1_idle_hold", 0)
+scene.p7_clip = "1_idle_hold"
+scene.camera = review
 scene.render.filepath = PREVIEW_PATH
 bpy.ops.render.render(write_still=True)
-scene.frame_set(81)
+set_clip("4_reload", 81)
 scene.render.filepath = PREVIEW_FRAME_PATH
 bpy.ops.render.render(write_still=True)
-scene.frame_set(0)
-bpy.ops.wm.save_mainfile()
+set_clip("1_idle_hold", 0)
+scene.camera = review
+bpy.ops.wm.save_as_mainfile(filepath=BLEND_PATH)
 
 report = {
     "schema": "cf2.p7.blender-current.v1",
     "blend": BLEND_PATH.replace("\\", "/"),
     "preview": PREVIEW_PATH.replace("\\", "/"),
     "preview_reload_f81": PREVIEW_FRAME_PATH.replace("\\", "/"),
+    "shots": shot_paths,
+    "blender_metrics": blender_metrics,
     "armature": armature.name,
     "bones": len(armature.data.bones),
+    "action": "1_idle_hold",
+    "actions": [
+        "1_idle_hold",
+        "2_shoot",
+        "3_draw",
+        "4_reload",
+        "5_lookat",
+    ],
+    "active_slot": "idle",
+    "base_pose": "CS idle hold at frame 0; Pose Position not Rest Position",
     "meshes": {
         "cf_gun": {"name": cf_gun.name, "verts": len(cf_gun.data.vertices), "faces": len(cf_gun.data.polygons)},
         **{
@@ -382,10 +586,16 @@ report = {
             for key, mesh in arm_meshes.items()
         },
     },
-    "actions": action_map,
-    "note": "Current broken P7-S04 retarget. Not deployed. Fix/verify here before any in-game compile.",
+    "how_to_switch": "3D View N-panel tab P7; sets Action + Slot. Action Editor dropdown alone does not play layered clips.",
+    "note": "Gun-driven relative retarget. Not deployed. Verify here before any in-game compile.",
 }
 with open(REPORT_PATH, "w", encoding="utf-8") as handle:
     json.dump(report, handle, ensure_ascii=False, indent=2)
     handle.write("\n")
-print(json.dumps(report, ensure_ascii=False))
+print(json.dumps({
+    "blend": report["blend"],
+    "shots": report["shots"],
+    "blender_metrics": report["blender_metrics"],
+    "actions": action_map,
+}, ensure_ascii=False))
+
