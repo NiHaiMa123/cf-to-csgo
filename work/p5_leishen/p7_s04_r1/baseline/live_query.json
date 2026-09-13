@@ -1,0 +1,3307 @@
+{
+  "captured_utc": "2026-09-13T03:26:42.329228+00:00",
+  "blender_version": "5.2.1 LTS",
+  "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04\\blender\\p7_s04_current.blend",
+  "is_dirty": true,
+  "scene": "Scene",
+  "scenes": [
+    "Scene"
+  ],
+  "frame": 25,
+  "frame_float": 25.0,
+  "frame_range": [
+    0,
+    30
+  ],
+  "fps": 30,
+  "fps_base": 1.0,
+  "scene_clip": null,
+  "mode": "OBJECT",
+  "selected": [
+    "CS_M4A4_Armature"
+  ],
+  "active": "CS_M4A4_Armature",
+  "is_animation_playing": false,
+  "objects": [
+    {
+      "name": "CF_GUN_P6",
+      "type": "MESH",
+      "parent": "CS_M4A4_Armature",
+      "collection": [
+        "CF_GUN"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "\u9aa8\u67b6",
+          "type": "ARMATURE",
+          "show_viewport": true,
+          "object": "CS_M4A4_Armature"
+        }
+      ],
+      "deform_rigs": [
+        "CS_M4A4_Armature"
+      ],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "CS_GLOVE",
+      "type": "MESH",
+      "parent": "CS_GLOVE_Armature",
+      "collection": [
+        "CS_ARMS_BONEMERGE"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "\u9aa8\u67b6",
+          "type": "ARMATURE",
+          "show_viewport": true,
+          "object": "CS_GLOVE_Armature"
+        }
+      ],
+      "deform_rigs": [
+        "CS_GLOVE_Armature"
+      ],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "CS_GLOVE_Armature",
+      "type": "ARMATURE",
+      "parent": null,
+      "collection": [
+        "CS_ARMS_BONEMERGE"
+      ],
+      "hidden": false,
+      "hide_viewport": true,
+      "hide_render": true,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": [],
+      "pose_position": "POSE",
+      "bones": [
+        {
+          "name": "v_weapon",
+          "parent": null,
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon"
+            }
+          ],
+          "head": [
+            -1.9990229606628418,
+            -6.5,
+            -2.0
+          ],
+          "tail": [
+            -1.9990346431732178,
+            -6.499976634979248,
+            -1.864000678062439
+          ],
+          "length": 0.13599932193756104
+        },
+        {
+          "name": "v_weapon.Bip01",
+          "parent": "v_weapon",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01"
+            }
+          ],
+          "head": [
+            5.104027271270752,
+            -3.706409454345703,
+            -19.91822624206543
+          ],
+          "tail": [
+            5.013853073120117,
+            -3.80820894241333,
+            -19.91709327697754
+          ],
+          "length": 0.13599927723407745
+        },
+        {
+          "name": "v_weapon.Bip01_Pelvis",
+          "parent": "v_weapon.Bip01",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Pelvis"
+            }
+          ],
+          "head": [
+            5.104028701782227,
+            -3.7064104080200195,
+            -19.91822624206543
+          ],
+          "tail": [
+            5.0023088455200195,
+            -3.6163809299468994,
+            -19.924823760986328
+          ],
+          "length": 0.13599912822246552
+        },
+        {
+          "name": "v_weapon.Bip01_Spine",
+          "parent": "v_weapon.Bip01_Pelvis",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine"
+            }
+          ],
+          "head": [
+            5.605134010314941,
+            -4.110185623168945,
+            -16.320430755615234
+          ],
+          "tail": [
+            5.502647876739502,
+            -4.021291255950928,
+            -16.329927444458008
+          ],
+          "length": 0.13599927723407745
+        },
+        {
+          "name": "v_weapon.Bip01_Spine1",
+          "parent": "v_weapon.Bip01_Spine",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine1"
+            }
+          ],
+          "head": [
+            5.409542083740234,
+            -3.9138081073760986,
+            -12.326007843017578
+          ],
+          "tail": [
+            5.3060688972473145,
+            -3.8280909061431885,
+            -12.347024917602539
+          ],
+          "length": 0.13599947094917297
+        },
+        {
+          "name": "v_weapon.Bip01_Spine2",
+          "parent": "v_weapon.Bip01_Spine1",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine2"
+            }
+          ],
+          "head": [
+            4.9692535400390625,
+            -3.480362892150879,
+            -8.369933128356934
+          ],
+          "tail": [
+            4.865542888641357,
+            -3.398550271987915,
+            -8.402284622192383
+          ],
+          "length": 0.13599935173988342
+        },
+        {
+          "name": "v_weapon.Bip01_Spine3",
+          "parent": "v_weapon.Bip01_Spine2",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine3"
+            }
+          ],
+          "head": [
+            4.282491683959961,
+            -2.8185999393463135,
+            -4.481429100036621
+          ],
+          "tail": [
+            4.178781032562256,
+            -2.7367870807647705,
+            -4.51378059387207
+          ],
+          "length": 0.13599948585033417
+        },
+        {
+          "name": "v_weapon.Bip01_Neck",
+          "parent": "v_weapon.Bip01_Spine3",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Neck"
+            }
+          ],
+          "head": [
+            3.998896360397339,
+            -2.4433748722076416,
+            0.5843027830123901
+          ],
+          "tail": [
+            3.919264078140259,
+            -2.411531925201416,
+            0.4787541925907135
+          ],
+          "length": 0.1359991878271103
+        },
+        {
+          "name": "v_weapon.Bip01_L_Clavicle",
+          "parent": "v_weapon.Bip01_Neck",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Clavicle"
+            }
+          ],
+          "head": [
+            0.6680006980895996,
+            1.7778306007385254,
+            6.725912094116211
+          ],
+          "tail": [
+            0.8013373613357544,
+            1.7572133541107178,
+            6.708821773529053
+          ],
+          "length": 0.13599932193756104
+        },
+        {
+          "name": "v_weapon.Bip01_L_UpperArm",
+          "parent": "v_weapon.Bip01_L_Clavicle",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_UpperArm"
+            }
+          ],
+          "head": [
+            -0.07427502423524857,
+            -3.858515977859497,
+            7.734236717224121
+          ],
+          "tail": [
+            -0.066690593957901,
+            -3.9258158206939697,
+            7.616300106048584
+          ],
+          "length": 0.135999396443367
+        },
+        {
+          "name": "v_weapon.Bip01_L_Forearm",
+          "parent": "v_weapon.Bip01_L_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Forearm"
+            }
+          ],
+          "head": [
+            -3.831411838531494,
+            -13.938070297241211,
+            -1.5654950141906738
+          ],
+          "tail": [
+            -3.9498772621154785,
+            -13.96694278717041,
+            -1.6257292032241821
+          ],
+          "length": 0.135999396443367
+        },
+        {
+          "name": "v_weapon.Bip01_L_Hand",
+          "parent": "v_weapon.Bip01_L_Forearm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Hand"
+            }
+          ],
+          "head": [
+            -3.632915735244751,
+            -23.367191314697266,
+            2.5638256072998047
+          ],
+          "tail": [
+            -3.5744404792785645,
+            -23.371667861938477,
+            2.6865296363830566
+          ],
+          "length": 0.13599880039691925
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger0",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger0"
+            }
+          ],
+          "head": [
+            -2.4076900482177734,
+            -24.768386840820312,
+            2.3904309272766113
+          ],
+          "tail": [
+            -2.538285732269287,
+            -24.804279327392578,
+            2.4027719497680664
+          ],
+          "length": 0.13599927723407745
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger01",
+          "parent": "v_weapon.Bip01_L_Finger0",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger01"
+            }
+          ],
+          "head": [
+            -2.0631210803985596,
+            -25.977432250976562,
+            2.5203137397766113
+          ],
+          "tail": [
+            -2.15090274810791,
+            -25.983198165893555,
+            2.6240293979644775
+          ],
+          "length": 0.13599929213523865
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger02",
+          "parent": "v_weapon.Bip01_L_Finger01",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger02"
+            }
+          ],
+          "head": [
+            -2.005659580230713,
+            -27.16485595703125,
+            2.5029377937316895
+          ],
+          "tail": [
+            -2.0883026123046875,
+            -27.132070541381836,
+            2.605851173400879
+          ],
+          "length": 0.13599969446659088
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger1",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger1"
+            }
+          ],
+          "head": [
+            -3.390796422958374,
+            -27.2569637298584,
+            2.454162120819092
+          ],
+          "tail": [
+            -3.344899892807007,
+            -27.26437759399414,
+            2.5819687843322754
+          ],
+          "length": 0.13599999248981476
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger11",
+          "parent": "v_weapon.Bip01_L_Finger1",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger11"
+            }
+          ],
+          "head": [
+            -3.983194589614868,
+            -28.555030822753906,
+            2.591606378555298
+          ],
+          "tail": [
+            -3.9269156455993652,
+            -28.537479400634766,
+            2.7141647338867188
+          ],
+          "length": 0.13599970936775208
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger12",
+          "parent": "v_weapon.Bip01_L_Finger11",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger12"
+            }
+          ],
+          "head": [
+            -4.326449871063232,
+            -29.47020149230957,
+            2.88028621673584
+          ],
+          "tail": [
+            -4.253934383392334,
+            -29.376541137695312,
+            2.9471077919006348
+          ],
+          "length": 0.13599956035614014
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger2",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger2"
+            }
+          ],
+          "head": [
+            -4.269837379455566,
+            -27.10867691040039,
+            2.7474074363708496
+          ],
+          "tail": [
+            -4.201647758483887,
+            -27.0745906829834,
+            2.8600308895111084
+          ],
+          "length": 0.13599903881549835
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger21",
+          "parent": "v_weapon.Bip01_L_Finger2",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger21"
+            }
+          ],
+          "head": [
+            -4.673523902893066,
+            -28.6799373626709,
+            3.467388868331909
+          ],
+          "tail": [
+            -4.59804630279541,
+            -28.58415985107422,
+            3.527599573135376
+          ],
+          "length": 0.13599827885627747
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger22",
+          "parent": "v_weapon.Bip01_L_Finger21",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger22"
+            }
+          ],
+          "head": [
+            -4.56541633605957,
+            -29.27344512939453,
+            4.275982856750488
+          ],
+          "tail": [
+            -4.507644176483154,
+            -29.150617599487305,
+            4.267529010772705
+          ],
+          "length": 0.13599886000156403
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger3",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger3"
+            }
+          ],
+          "head": [
+            -4.9268317222595215,
+            -26.800851821899414,
+            3.1206092834472656
+          ],
+          "tail": [
+            -4.83705472946167,
+            -26.759029388427734,
+            3.2138123512268066
+          ],
+          "length": 0.135999396443367
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger31",
+          "parent": "v_weapon.Bip01_L_Finger3",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger31"
+            }
+          ],
+          "head": [
+            -5.054562091827393,
+            -28.114734649658203,
+            3.8332204818725586
+          ],
+          "tail": [
+            -4.973113059997559,
+            -28.007936477661133,
+            3.854569435119629
+          ],
+          "length": 0.1359984278678894
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger32",
+          "parent": "v_weapon.Bip01_L_Finger31",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger32"
+            }
+          ],
+          "head": [
+            -4.693225860595703,
+            -28.53365135192871,
+            4.550278186798096
+          ],
+          "tail": [
+            -4.660360336303711,
+            -28.415790557861328,
+            4.490910530090332
+          ],
+          "length": 0.13599936664104462
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger4",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger4"
+            }
+          ],
+          "head": [
+            -5.435039520263672,
+            -26.37094497680664,
+            3.572110176086426
+          ],
+          "tail": [
+            -5.346390247344971,
+            -26.293787002563477,
+            3.640547275543213
+          ],
+          "length": 0.13599883019924164
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger41",
+          "parent": "v_weapon.Bip01_L_Finger4",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger41"
+            }
+          ],
+          "head": [
+            -5.192823886871338,
+            -27.129606246948242,
+            4.11370325088501
+          ],
+          "tail": [
+            -5.125434875488281,
+            -27.011953353881836,
+            4.124293804168701
+          ],
+          "length": 0.1359986811876297
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger42",
+          "parent": "v_weapon.Bip01_L_Finger41",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Finger42"
+            }
+          ],
+          "head": [
+            -4.812157154083252,
+            -27.39284324645996,
+            4.615845680236816
+          ],
+          "tail": [
+            -4.78489351272583,
+            -27.269771575927734,
+            4.564800262451172
+          ],
+          "length": 0.1359984427690506
+        },
+        {
+          "name": "v_weapon.Bip01_L_ForeTwist",
+          "parent": "v_weapon.Bip01_L_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_ForeTwist"
+            }
+          ],
+          "head": [
+            -3.831411361694336,
+            -13.938072204589844,
+            -1.5654950141906738
+          ],
+          "tail": [
+            -3.9550487995147705,
+            -13.917551040649414,
+            -1.5126891136169434
+          ],
+          "length": 0.13599926233291626
+        },
+        {
+          "name": "v_weapon.Bip01_R_Clavicle",
+          "parent": "v_weapon.Bip01_Neck",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Clavicle"
+            }
+          ],
+          "head": [
+            -0.9438061714172363,
+            -10.125268936157227,
+            6.739130973815918
+          ],
+          "tail": [
+            -0.870980978012085,
+            -10.209060668945312,
+            6.817688465118408
+          ],
+          "length": 0.1359994262456894
+        },
+        {
+          "name": "v_weapon.Bip01_R_UpperArm",
+          "parent": "v_weapon.Bip01_R_Clavicle",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_UpperArm"
+            }
+          ],
+          "head": [
+            3.4064767360687256,
+            -6.329110145568848,
+            6.755369186401367
+          ],
+          "tail": [
+            3.5402441024780273,
+            -6.311333656311035,
+            6.772282600402832
+          ],
+          "length": 0.1359991729259491
+        },
+        {
+          "name": "v_weapon.Bip01_R_Forearm",
+          "parent": "v_weapon.Bip01_R_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Forearm"
+            }
+          ],
+          "head": [
+            -8.68145751953125,
+            -10.447149276733398,
+            -8.15578556060791
+          ],
+          "tail": [
+            -8.70563793182373,
+            -10.53594970703125,
+            -8.255913734436035
+          ],
+          "length": 0.13599948585033417
+        },
+        {
+          "name": "v_weapon.Bip01_R_Hand",
+          "parent": "v_weapon.Bip01_R_Forearm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Hand"
+            }
+          ],
+          "head": [
+            -8.249378204345703,
+            -18.194665908813477,
+            -1.3890794515609741
+          ],
+          "tail": [
+            -8.12017822265625,
+            -18.235912322998047,
+            -1.3789974451065063
+          ],
+          "length": 0.13599833846092224
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger0",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger0"
+            }
+          ],
+          "head": [
+            -8.308938980102539,
+            -19.40697479248047,
+            0.03266675025224686
+          ],
+          "tail": [
+            -8.302942276000977,
+            -19.457727432250977,
+            -0.09336475282907486
+          ],
+          "length": 0.13599900901317596
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger01",
+          "parent": "v_weapon.Bip01_R_Finger0",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger01"
+            }
+          ],
+          "head": [
+            -7.811462879180908,
+            -20.476327896118164,
+            0.48696455359458923
+          ],
+          "tail": [
+            -7.835563659667969,
+            -20.47414207458496,
+            0.3531355857849121
+          ],
+          "length": 0.13599932193756104
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger02",
+          "parent": "v_weapon.Bip01_R_Finger01",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger02"
+            }
+          ],
+          "head": [
+            -7.637619972229004,
+            -21.65140724182129,
+            0.4364583492279053
+          ],
+          "tail": [
+            -7.66148042678833,
+            -21.617111206054688,
+            0.30703532695770264
+          ],
+          "length": 0.13599947094917297
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger1",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger1"
+            }
+          ],
+          "head": [
+            -9.339367866516113,
+            -21.824562072753906,
+            -0.4743313789367676
+          ],
+          "tail": [
+            -9.215218544006348,
+            -21.87917709350586,
+            -0.4643261730670929
+          ],
+          "length": 0.13599984347820282
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger11",
+          "parent": "v_weapon.Bip01_R_Finger1",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger11"
+            }
+          ],
+          "head": [
+            -9.916869163513184,
+            -23.136537551879883,
+            -0.4700453281402588
+          ],
+          "tail": [
+            -9.790566444396973,
+            -23.086528778076172,
+            -0.4635295271873474
+          ],
+          "length": 0.13599893450737
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger12",
+          "parent": "v_weapon.Bip01_R_Finger11",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger12"
+            }
+          ],
+          "head": [
+            -9.545036315917969,
+            -24.083518981933594,
+            -0.409579336643219
+          ],
+          "tail": [
+            -9.470057487487793,
+            -23.970077514648438,
+            -0.4118797183036804
+          ],
+          "length": 0.13600030541419983
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger2",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger2"
+            }
+          ],
+          "head": [
+            -9.389079093933105,
+            -21.819400787353516,
+            -1.4114563465118408
+          ],
+          "tail": [
+            -9.28918170928955,
+            -21.742965698242188,
+            -1.3597452640533447
+          ],
+          "length": 0.13599944114685059
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger21",
+          "parent": "v_weapon.Bip01_R_Finger2",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger21"
+            }
+          ],
+          "head": [
+            -8.233824729919434,
+            -23.13629722595215,
+            -1.6967213153839111
+          ],
+          "tail": [
+            -8.288976669311523,
+            -23.01701545715332,
+            -1.6617072820663452
+          ],
+          "length": 0.13599947094917297
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger22",
+          "parent": "v_weapon.Bip01_R_Finger21",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger22"
+            }
+          ],
+          "head": [
+            -7.344417095184326,
+            -22.832744598388672,
+            -1.3298704624176025
+          ],
+          "tail": [
+            -7.452597141265869,
+            -22.75032615661621,
+            -1.329609751701355
+          ],
+          "length": 0.13599921762943268
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger3",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger3"
+            }
+          ],
+          "head": [
+            -9.236311912536621,
+            -21.679166793823242,
+            -2.200556755065918
+          ],
+          "tail": [
+            -9.177400588989258,
+            -21.56858253479004,
+            -2.147675037384033
+          ],
+          "length": 0.1359996348619461
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger31",
+          "parent": "v_weapon.Bip01_R_Finger3",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger31"
+            }
+          ],
+          "head": [
+            -7.913628101348877,
+            -22.386892318725586,
+            -2.1940767765045166
+          ],
+          "tail": [
+            -7.998197078704834,
+            -22.284608840942383,
+            -2.1643762588500977
+          ],
+          "length": 0.13599978387355804
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger32",
+          "parent": "v_weapon.Bip01_R_Finger31",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger32"
+            }
+          ],
+          "head": [
+            -7.225978851318359,
+            -21.924427032470703,
+            -1.8287113904953003
+          ],
+          "tail": [
+            -7.358129501342773,
+            -21.892330169677734,
+            -1.8300704956054688
+          ],
+          "length": 0.13599945604801178
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger4",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger4"
+            }
+          ],
+          "head": [
+            -8.922001838684082,
+            -21.442073822021484,
+            -2.901942014694214
+          ],
+          "tail": [
+            -8.873497009277344,
+            -21.3315372467041,
+            -2.839294910430908
+          ],
+          "length": 0.1359989494085312
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger41",
+          "parent": "v_weapon.Bip01_R_Finger4",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger41"
+            }
+          ],
+          "head": [
+            -8.062393188476562,
+            -21.86785125732422,
+            -2.8162500858306885
+          ],
+          "tail": [
+            -8.100136756896973,
+            -21.7466983795166,
+            -2.7673308849334717
+          ],
+          "length": 0.13599884510040283
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger42",
+          "parent": "v_weapon.Bip01_R_Finger41",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Finger42"
+            }
+          ],
+          "head": [
+            -7.432069301605225,
+            -21.76993179321289,
+            -2.5724289417266846
+          ],
+          "tail": [
+            -7.5585832595825195,
+            -21.72041893005371,
+            -2.578627347946167
+          ],
+          "length": 0.13599899411201477
+        },
+        {
+          "name": "v_weapon.Bip01_R_ForeTwist",
+          "parent": "v_weapon.Bip01_R_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_ForeTwist"
+            }
+          ],
+          "head": [
+            -8.681458473205566,
+            -10.447151184082031,
+            -8.155786514282227
+          ],
+          "tail": [
+            -8.653227806091309,
+            -10.533768653869629,
+            -8.256763458251953
+          ],
+          "length": 0.1359996348619461
+        }
+      ],
+      "bone_count": 48,
+      "root_bones": [
+        "v_weapon"
+      ]
+    },
+    {
+      "name": "CS_M4A4_Armature",
+      "type": "ARMATURE",
+      "parent": null,
+      "collection": [
+        "ARMATURE"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": true,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": "3_draw",
+      "action_slot": "OBdraw",
+      "nla_tracks": [],
+      "pose_position": "POSE",
+      "bones": [
+        {
+          "name": "v_weapon",
+          "parent": null,
+          "constraints": [],
+          "head": [
+            -1.9990229606628418,
+            -6.5,
+            -2.0
+          ],
+          "tail": [
+            -1.9990363121032715,
+            -6.499973297119141,
+            -1.8444364070892334
+          ],
+          "length": 0.1555635929107666
+        },
+        {
+          "name": "v_weapon.Bip01_R_Forearm",
+          "parent": null,
+          "constraints": [],
+          "head": [
+            -8.68145751953125,
+            -10.447149276733398,
+            -8.15578556060791
+          ],
+          "tail": [
+            -8.709115982055664,
+            -10.548724174499512,
+            -8.270318031311035
+          ],
+          "length": 0.15556393563747406
+        },
+        {
+          "name": "v_weapon.Bip01_R_Hand",
+          "parent": "v_weapon.Bip01_R_Forearm",
+          "constraints": [],
+          "head": [
+            -8.249378204345703,
+            -18.194665908813477,
+            -1.3890794515609741
+          ],
+          "tail": [
+            -8.101591110229492,
+            -18.241846084594727,
+            -1.377547025680542
+          ],
+          "length": 0.15556345880031586
+        },
+        {
+          "name": "v_weapon.M4A1_Parent",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [],
+          "head": [
+            -5.093023777008057,
+            -15.105125427246094,
+            -0.5023574829101562
+          ],
+          "tail": [
+            -5.09829568862915,
+            -15.105599403381348,
+            -0.3468843102455139
+          ],
+          "length": 0.15556325018405914
+        },
+        {
+          "name": "v_weapon.M4A1_Clip",
+          "parent": "v_weapon.M4A1_Parent",
+          "constraints": [],
+          "head": [
+            -5.153655052185059,
+            -18.833114624023438,
+            2.067772626876831
+          ],
+          "tail": [
+            -5.15367317199707,
+            -18.679279327392578,
+            2.0446484088897705
+          ],
+          "length": 0.1555635780096054
+        },
+        {
+          "name": "v_weapon.M4A1_Bullets",
+          "parent": "v_weapon.M4A1_Clip",
+          "constraints": [],
+          "head": [
+            -5.283668041229248,
+            -18.42167854309082,
+            4.804970741271973
+          ],
+          "tail": [
+            -5.28368616104126,
+            -18.26784324645996,
+            4.781846523284912
+          ],
+          "length": 0.1555635780096054
+        },
+        {
+          "name": "v_weapon.flash",
+          "parent": "v_weapon.M4A1_Parent",
+          "constraints": [],
+          "head": [
+            -5.150193691253662,
+            -35.6710319519043,
+            4.534106254577637
+          ],
+          "tail": [
+            -4.994721412658691,
+            -35.670291900634766,
+            4.5393805503845215
+          ],
+          "length": 0.15556347370147705
+        },
+        {
+          "name": "v_weapon.shelleject",
+          "parent": "v_weapon.M4A1_Parent",
+          "constraints": [],
+          "head": [
+            -5.9727020263671875,
+            -18.960914611816406,
+            4.760132312774658
+          ],
+          "tail": [
+            -6.020922660827637,
+            -18.960721969604492,
+            4.612231254577637
+          ],
+          "length": 0.15556345880031586
+        },
+        {
+          "name": "v_weapon.stattrack",
+          "parent": "v_weapon.M4A1_Parent",
+          "constraints": [],
+          "head": [
+            -4.636428356170654,
+            -19.902305603027344,
+            4.046298027038574
+          ],
+          "tail": [
+            -4.637183666229248,
+            -19.74674415588379,
+            4.046746730804443
+          ],
+          "length": 0.15556393563747406
+        },
+        {
+          "name": "v_weapon.uid",
+          "parent": "v_weapon.M4A1_Parent",
+          "constraints": [],
+          "head": [
+            -4.534268379211426,
+            -15.03693962097168,
+            4.5773468017578125
+          ],
+          "tail": [
+            -4.5350236892700195,
+            -14.881379127502441,
+            4.577795505523682
+          ],
+          "length": 0.15556296706199646
+        },
+        {
+          "name": "v_weapon.M4A1_Trigger",
+          "parent": "v_weapon.M4A1_Parent",
+          "constraints": [],
+          "head": [
+            -5.17728328704834,
+            -16.101551055908203,
+            2.1212499141693115
+          ],
+          "tail": [
+            -5.178038597106934,
+            -15.945990562438965,
+            2.1216983795166016
+          ],
+          "length": 0.15556296706199646
+        },
+        {
+          "name": "v_weapon.M4A1_Bolt",
+          "parent": "v_weapon.M4A1_Parent",
+          "constraints": [],
+          "head": [
+            -5.3769755363464355,
+            -13.241710662841797,
+            4.104662895202637
+          ],
+          "tail": [
+            -5.3795294761657715,
+            -13.087897300720215,
+            4.081535816192627
+          ],
+          "length": 0.15556329488754272
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger0",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [],
+          "head": [
+            -8.308938980102539,
+            -19.40697479248047,
+            0.03266675025224686
+          ],
+          "tail": [
+            -8.302080154418945,
+            -19.465028762817383,
+            -0.1114950105547905
+          ],
+          "length": 0.15556323528289795
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger01",
+          "parent": "v_weapon.Bip01_R_Finger0",
+          "constraints": [],
+          "head": [
+            -7.811462879180908,
+            -20.476327896118164,
+            0.48696455359458923
+          ],
+          "tail": [
+            -7.839030742645264,
+            -20.473827362060547,
+            0.333883672952652
+          ],
+          "length": 0.15556347370147705
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger02",
+          "parent": "v_weapon.Bip01_R_Finger01",
+          "constraints": [],
+          "head": [
+            -7.637619972229004,
+            -21.65140724182129,
+            0.4364583492279053
+          ],
+          "tail": [
+            -7.664913177490234,
+            -21.612178802490234,
+            0.28841739892959595
+          ],
+          "length": 0.15556320548057556
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger1",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [],
+          "head": [
+            -9.339367866516113,
+            -21.824562072753906,
+            -0.4743313789367676
+          ],
+          "tail": [
+            -9.197359085083008,
+            -21.887033462524414,
+            -0.46288689970970154
+          ],
+          "length": 0.15556395053863525
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger11",
+          "parent": "v_weapon.Bip01_R_Finger1",
+          "constraints": [],
+          "head": [
+            -9.916869163513184,
+            -23.136537551879883,
+            -0.4700453281402588
+          ],
+          "tail": [
+            -9.7723970413208,
+            -23.079334259033203,
+            -0.4625921845436096
+          ],
+          "length": 0.1555633693933487
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger12",
+          "parent": "v_weapon.Bip01_R_Finger11",
+          "constraints": [],
+          "head": [
+            -9.545036315917969,
+            -24.083518981933594,
+            -0.409579336643219
+          ],
+          "tail": [
+            -9.459272384643555,
+            -23.953760147094727,
+            -0.412210613489151
+          ],
+          "length": 0.155562624335289
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger2",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [],
+          "head": [
+            -9.389079093933105,
+            -21.819400787353516,
+            -1.4114563465118408
+          ],
+          "tail": [
+            -9.274810791015625,
+            -21.731971740722656,
+            -1.3523062467575073
+          ],
+          "length": 0.15556290745735168
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger21",
+          "parent": "v_weapon.Bip01_R_Finger2",
+          "constraints": [],
+          "head": [
+            -8.233824729919434,
+            -23.13629722595215,
+            -1.6967213153839111
+          ],
+          "tail": [
+            -8.296911239624023,
+            -22.99985694885254,
+            -1.6566702127456665
+          ],
+          "length": 0.1555633246898651
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger22",
+          "parent": "v_weapon.Bip01_R_Finger21",
+          "constraints": [],
+          "head": [
+            -7.344417095184326,
+            -22.832744598388672,
+            -1.3298704624176025
+          ],
+          "tail": [
+            -7.4681596755981445,
+            -22.73847007751465,
+            -1.3295722007751465
+          ],
+          "length": 0.15556348860263824
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger3",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [],
+          "head": [
+            -9.236311912536621,
+            -21.679166793823242,
+            -2.200556755065918
+          ],
+          "tail": [
+            -9.168926239013672,
+            -21.552675247192383,
+            -2.1400678157806396
+          ],
+          "length": 0.15556301176548004
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger31",
+          "parent": "v_weapon.Bip01_R_Finger3",
+          "constraints": [],
+          "head": [
+            -7.913628101348877,
+            -22.386892318725586,
+            -2.1940767765045166
+          ],
+          "tail": [
+            -8.01036262512207,
+            -22.269895553588867,
+            -2.1601037979125977
+          ],
+          "length": 0.15556341409683228
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger32",
+          "parent": "v_weapon.Bip01_R_Finger31",
+          "constraints": [],
+          "head": [
+            -7.225978851318359,
+            -21.924427032470703,
+            -1.8287113904953003
+          ],
+          "tail": [
+            -7.377140045166016,
+            -21.887714385986328,
+            -1.830265998840332
+          ],
+          "length": 0.15556330978870392
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger4",
+          "parent": "v_weapon.Bip01_R_Hand",
+          "constraints": [],
+          "head": [
+            -8.922001838684082,
+            -21.442073822021484,
+            -2.901942014694214
+          ],
+          "tail": [
+            -8.8665189743042,
+            -21.315635681152344,
+            -2.830282688140869
+          ],
+          "length": 0.15556353330612183
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger41",
+          "parent": "v_weapon.Bip01_R_Finger4",
+          "constraints": [],
+          "head": [
+            -8.062393188476562,
+            -21.86785125732422,
+            -2.8162500858306885
+          ],
+          "tail": [
+            -8.105566024780273,
+            -21.72926902770996,
+            -2.760293483734131
+          ],
+          "length": 0.15556371212005615
+        },
+        {
+          "name": "v_weapon.Bip01_R_Finger42",
+          "parent": "v_weapon.Bip01_R_Finger41",
+          "constraints": [],
+          "head": [
+            -7.432069301605225,
+            -21.76993179321289,
+            -2.5724289417266846
+          ],
+          "tail": [
+            -7.576783657073975,
+            -21.71329689025879,
+            -2.579519033432007
+          ],
+          "length": 0.1555635780096054
+        },
+        {
+          "name": "v_weapon.Bip01_L_Forearm",
+          "parent": null,
+          "constraints": [],
+          "head": [
+            -3.831411838531494,
+            -13.938070297241211,
+            -1.5654950141906738
+          ],
+          "tail": [
+            -3.9669189453125,
+            -13.97109603881836,
+            -1.6343941688537598
+          ],
+          "length": 0.15556339919567108
+        },
+        {
+          "name": "v_weapon.Bip01_L_Hand",
+          "parent": "v_weapon.Bip01_L_Forearm",
+          "constraints": [],
+          "head": [
+            -3.632915735244751,
+            -23.367191314697266,
+            2.5638256072998047
+          ],
+          "tail": [
+            -3.566028118133545,
+            -23.372312545776367,
+            2.704181671142578
+          ],
+          "length": 0.15556350350379944
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger0",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [],
+          "head": [
+            -2.4076900482177734,
+            -24.768386840820312,
+            2.3904309272766113
+          ],
+          "tail": [
+            -2.5570719242095947,
+            -24.8094425201416,
+            2.4045472145080566
+          ],
+          "length": 0.15556280314922333
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger01",
+          "parent": "v_weapon.Bip01_L_Finger0",
+          "constraints": [],
+          "head": [
+            -2.0631210803985596,
+            -25.977432250976562,
+            2.5203137397766113
+          ],
+          "tail": [
+            -2.1635305881500244,
+            -25.984027862548828,
+            2.638949394226074
+          ],
+          "length": 0.15556345880031586
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger02",
+          "parent": "v_weapon.Bip01_L_Finger01",
+          "constraints": [],
+          "head": [
+            -2.005659580230713,
+            -27.16485595703125,
+            2.5029377937316895
+          ],
+          "tail": [
+            -2.100191116333008,
+            -27.127355575561523,
+            2.6206555366516113
+          ],
+          "length": 0.1555633544921875
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger1",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [],
+          "head": [
+            -3.390796422958374,
+            -27.2569637298584,
+            2.454162120819092
+          ],
+          "tail": [
+            -3.3382976055145264,
+            -27.265443801879883,
+            2.600353717803955
+          ],
+          "length": 0.1555635631084442
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger11",
+          "parent": "v_weapon.Bip01_L_Finger1",
+          "constraints": [],
+          "head": [
+            -3.983194589614868,
+            -28.555030822753906,
+            2.591606378555298
+          ],
+          "tail": [
+            -3.9188196659088135,
+            -28.534955978393555,
+            2.731795310974121
+          ],
+          "length": 0.15556371212005615
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger12",
+          "parent": "v_weapon.Bip01_L_Finger11",
+          "constraints": [],
+          "head": [
+            -4.326449871063232,
+            -29.47020149230957,
+            2.88028621673584
+          ],
+          "tail": [
+            -4.243502616882324,
+            -29.363067626953125,
+            2.9567203521728516
+          ],
+          "length": 0.15556377172470093
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger2",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [],
+          "head": [
+            -4.269837379455566,
+            -27.10867691040039,
+            2.7474074363708496
+          ],
+          "tail": [
+            -4.191837787628174,
+            -27.069686889648438,
+            2.876232862472534
+          ],
+          "length": 0.15556396543979645
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger21",
+          "parent": "v_weapon.Bip01_L_Finger2",
+          "constraints": [],
+          "head": [
+            -4.673523902893066,
+            -28.6799373626709,
+            3.467388868331909
+          ],
+          "tail": [
+            -4.587188243865967,
+            -28.57038116455078,
+            3.5362613201141357
+          ],
+          "length": 0.15556290745735168
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger22",
+          "parent": "v_weapon.Bip01_L_Finger21",
+          "constraints": [],
+          "head": [
+            -4.56541633605957,
+            -29.27344512939453,
+            4.275982856750488
+          ],
+          "tail": [
+            -4.499333381652832,
+            -29.13294792175293,
+            4.266312599182129
+          ],
+          "length": 0.15556329488754272
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger3",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [],
+          "head": [
+            -4.9268317222595215,
+            -26.800851821899414,
+            3.1206092834472656
+          ],
+          "tail": [
+            -4.8241400718688965,
+            -26.75301170349121,
+            3.227219820022583
+          ],
+          "length": 0.15556368231773376
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger31",
+          "parent": "v_weapon.Bip01_L_Finger3",
+          "constraints": [],
+          "head": [
+            -5.054562091827393,
+            -28.114734649658203,
+            3.8332204818725586
+          ],
+          "tail": [
+            -4.961395740509033,
+            -27.992570877075195,
+            3.8576407432556152
+          ],
+          "length": 0.15556447207927704
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger32",
+          "parent": "v_weapon.Bip01_L_Finger31",
+          "constraints": [],
+          "head": [
+            -4.693225860595703,
+            -28.53365135192871,
+            4.550278186798096
+          ],
+          "tail": [
+            -4.655632019042969,
+            -28.398836135864258,
+            4.482369899749756
+          ],
+          "length": 0.15556341409683228
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger4",
+          "parent": "v_weapon.Bip01_L_Hand",
+          "constraints": [],
+          "head": [
+            -5.435039520263672,
+            -26.37094497680664,
+            3.572110176086426
+          ],
+          "tail": [
+            -5.3336381912231445,
+            -26.282686233520508,
+            3.6503922939300537
+          ],
+          "length": 0.15556325018405914
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger41",
+          "parent": "v_weapon.Bip01_L_Finger4",
+          "constraints": [],
+          "head": [
+            -5.192823886871338,
+            -27.129606246948242,
+            4.11370325088501
+          ],
+          "tail": [
+            -5.1157402992248535,
+            -26.995027542114258,
+            4.12581729888916
+          ],
+          "length": 0.15556368231773376
+        },
+        {
+          "name": "v_weapon.Bip01_L_Finger42",
+          "parent": "v_weapon.Bip01_L_Finger41",
+          "constraints": [],
+          "head": [
+            -4.812157154083252,
+            -27.39284324645996,
+            4.615845680236816
+          ],
+          "tail": [
+            -4.780971050262451,
+            -27.252065658569336,
+            4.5574564933776855
+          ],
+          "length": 0.15556412935256958
+        },
+        {
+          "name": "v_weapon.Bip01_L_ForeTwist",
+          "parent": null,
+          "constraints": [],
+          "head": [
+            -3.831411361694336,
+            -13.938072204589844,
+            -1.5654950141906738
+          ],
+          "tail": [
+            -3.972834825515747,
+            -13.914599418640137,
+            -1.505092740058899
+          ],
+          "length": 0.15556350350379944
+        },
+        {
+          "name": "v_weapon.Bip01_R_ForeTwist",
+          "parent": null,
+          "constraints": [],
+          "head": [
+            -8.681458473205566,
+            -10.447151184082031,
+            -8.155786514282227
+          ],
+          "tail": [
+            -8.64916706085205,
+            -10.546229362487793,
+            -8.271289825439453
+          ],
+          "length": 0.15556424856185913
+        },
+        {
+          "name": "v_weapon.Bip01",
+          "parent": null,
+          "constraints": [],
+          "head": [
+            5.104027271270752,
+            -3.706409454345703,
+            -19.91822624206543
+          ],
+          "tail": [
+            5.000881195068359,
+            -3.8228535652160645,
+            -19.916929244995117
+          ],
+          "length": 0.1555635780096054
+        },
+        {
+          "name": "v_weapon.Bip01_Pelvis",
+          "parent": "v_weapon.Bip01",
+          "constraints": [],
+          "head": [
+            5.104028701782227,
+            -3.7064104080200195,
+            -19.91822624206543
+          ],
+          "tail": [
+            4.987675666809082,
+            -3.6034295558929443,
+            -19.92577362060547
+          ],
+          "length": 0.15556365251541138
+        },
+        {
+          "name": "v_weapon.Bip01_Spine",
+          "parent": "v_weapon.Bip01_Pelvis",
+          "constraints": [],
+          "head": [
+            5.605134010314941,
+            -4.110185623168945,
+            -16.320430755615234
+          ],
+          "tail": [
+            5.4879045486450195,
+            -4.008503437042236,
+            -16.3312931060791
+          ],
+          "length": 0.15556350350379944
+        },
+        {
+          "name": "v_weapon.Bip01_Spine1",
+          "parent": "v_weapon.Bip01_Spine",
+          "constraints": [],
+          "head": [
+            5.409542083740234,
+            -3.9138081073760986,
+            -12.326007843017578
+          ],
+          "tail": [
+            5.2911834716796875,
+            -3.8157598972320557,
+            -12.350048065185547
+          ],
+          "length": 0.15556396543979645
+        },
+        {
+          "name": "v_weapon.Bip01_Spine2",
+          "parent": "v_weapon.Bip01_Spine1",
+          "constraints": [],
+          "head": [
+            4.9692535400390625,
+            -3.480362892150879,
+            -8.369933128356934
+          ],
+          "tail": [
+            4.850623607635498,
+            -3.3867809772491455,
+            -8.406938552856445
+          ],
+          "length": 0.1555636078119278
+        },
+        {
+          "name": "v_weapon.Bip01_Spine3",
+          "parent": "v_weapon.Bip01_Spine2",
+          "constraints": [],
+          "head": [
+            4.282491683959961,
+            -2.8185999393463135,
+            -4.481429100036621
+          ],
+          "tail": [
+            4.1638617515563965,
+            -2.725017786026001,
+            -4.518434524536133
+          ],
+          "length": 0.15556375682353973
+        },
+        {
+          "name": "v_weapon.Bip01_Neck",
+          "parent": "v_weapon.Bip01_Spine3",
+          "constraints": [],
+          "head": [
+            3.998896360397339,
+            -2.4433748722076416,
+            0.5843027830123901
+          ],
+          "tail": [
+            3.907808542251587,
+            -2.4069511890411377,
+            0.46357062458992004
+          ],
+          "length": 0.15556326508522034
+        },
+        {
+          "name": "v_weapon.Bip01_L_Clavicle",
+          "parent": "v_weapon.Bip01_Neck",
+          "constraints": [],
+          "head": [
+            0.6680006980895996,
+            1.7778306007385254,
+            6.725912094116211
+          ],
+          "tail": [
+            0.8205186128616333,
+            1.7542474269866943,
+            6.706363201141357
+          ],
+          "length": 0.155563622713089
+        },
+        {
+          "name": "v_weapon.Bip01_L_UpperArm",
+          "parent": "v_weapon.Bip01_L_Clavicle",
+          "constraints": [],
+          "head": [
+            -0.07427502423524857,
+            -3.858515977859497,
+            7.734236717224121
+          ],
+          "tail": [
+            -0.06559952348470688,
+            -3.935497283935547,
+            7.599334239959717
+          ],
+          "length": 0.15556369721889496
+        },
+        {
+          "name": "v_weapon.Bip01_R_Clavicle",
+          "parent": "v_weapon.Bip01_Neck",
+          "constraints": [],
+          "head": [
+            -0.9438061714172363,
+            -10.125268936157227,
+            6.739130973815918
+          ],
+          "tail": [
+            -0.860504686832428,
+            -10.221114158630371,
+            6.828989505767822
+          ],
+          "length": 0.15556348860263824
+        },
+        {
+          "name": "v_weapon.Bip01_R_UpperArm",
+          "parent": "v_weapon.Bip01_R_Clavicle",
+          "constraints": [],
+          "head": [
+            3.4064767360687256,
+            -6.329110145568848,
+            6.755369186401367
+          ],
+          "tail": [
+            3.5594871044158936,
+            -6.308776378631592,
+            6.774715900421143
+          ],
+          "length": 0.15556326508522034
+        }
+      ],
+      "bone_count": 57,
+      "root_bones": [
+        "v_weapon",
+        "v_weapon.Bip01_R_Forearm",
+        "v_weapon.Bip01_L_Forearm",
+        "v_weapon.Bip01_L_ForeTwist",
+        "v_weapon.Bip01_R_ForeTwist",
+        "v_weapon.Bip01"
+      ]
+    },
+    {
+      "name": "CS_SLEEVE",
+      "type": "MESH",
+      "parent": "CS_SLEEVE_Armature",
+      "collection": [
+        "CS_ARMS_BONEMERGE"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "\u9aa8\u67b6",
+          "type": "ARMATURE",
+          "show_viewport": true,
+          "object": "CS_SLEEVE_Armature"
+        }
+      ],
+      "deform_rigs": [
+        "CS_SLEEVE_Armature"
+      ],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "CS_SLEEVE_Armature",
+      "type": "ARMATURE",
+      "parent": null,
+      "collection": [
+        "CS_ARMS_BONEMERGE"
+      ],
+      "hidden": false,
+      "hide_viewport": true,
+      "hide_render": true,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": [],
+      "pose_position": "POSE",
+      "bones": [
+        {
+          "name": "v_weapon",
+          "parent": null,
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon"
+            }
+          ],
+          "head": [
+            -1.9990229606628418,
+            -6.5,
+            -2.0
+          ],
+          "tail": [
+            -1.9990326166152954,
+            -6.499980449676514,
+            -1.887316346168518
+          ],
+          "length": 0.11268365383148193
+        },
+        {
+          "name": "v_weapon.Bip01",
+          "parent": "v_weapon",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01"
+            }
+          ],
+          "head": [
+            5.104027271270752,
+            -3.706409454345703,
+            -19.91822624206543
+          ],
+          "tail": [
+            5.029312610626221,
+            -3.7907564640045166,
+            -19.917287826538086
+          ],
+          "length": 0.11268353462219238
+        },
+        {
+          "name": "v_weapon.Bip01_Pelvis",
+          "parent": "v_weapon.Bip01",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Pelvis"
+            }
+          ],
+          "head": [
+            5.104028701782227,
+            -3.7064104080200195,
+            -19.91822624206543
+          ],
+          "tail": [
+            5.019747734069824,
+            -3.6318154335021973,
+            -19.92369270324707
+          ],
+          "length": 0.11268351227045059
+        },
+        {
+          "name": "v_weapon.Bip01_Spine",
+          "parent": "v_weapon.Bip01_Pelvis",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine"
+            }
+          ],
+          "head": [
+            5.605134010314941,
+            -4.110185623168945,
+            -16.320430755615234
+          ],
+          "tail": [
+            5.5202178955078125,
+            -4.036531448364258,
+            -16.328298568725586
+          ],
+          "length": 0.11268356442451477
+        },
+        {
+          "name": "v_weapon.Bip01_Spine1",
+          "parent": "v_weapon.Bip01_Spine",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine1"
+            }
+          ],
+          "head": [
+            5.409542083740234,
+            -3.9138081073760986,
+            -12.326007843017578
+          ],
+          "tail": [
+            5.323808193206787,
+            -3.8427863121032715,
+            -12.343421936035156
+          ],
+          "length": 0.11268383264541626
+        },
+        {
+          "name": "v_weapon.Bip01_Spine2",
+          "parent": "v_weapon.Bip01_Spine1",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine2"
+            }
+          ],
+          "head": [
+            4.9692535400390625,
+            -3.480362892150879,
+            -8.369933128356934
+          ],
+          "tail": [
+            4.8833231925964355,
+            -3.412576198577881,
+            -8.396738052368164
+          ],
+          "length": 0.11268346756696701
+        },
+        {
+          "name": "v_weapon.Bip01_Spine3",
+          "parent": "v_weapon.Bip01_Spine2",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Spine3"
+            }
+          ],
+          "head": [
+            4.282491683959961,
+            -2.8185999393463135,
+            -4.481429100036621
+          ],
+          "tail": [
+            4.196561336517334,
+            -2.7508130073547363,
+            -4.508234024047852
+          ],
+          "length": 0.11268361657857895
+        },
+        {
+          "name": "v_weapon.Bip01_Neck",
+          "parent": "v_weapon.Bip01_Spine3",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_Neck"
+            }
+          ],
+          "head": [
+            3.998896360397339,
+            -2.4433748722076416,
+            0.5843027830123901
+          ],
+          "tail": [
+            3.9329161643981934,
+            -2.4169912338256836,
+            0.4968494474887848
+          ],
+          "length": 0.1126834899187088
+        },
+        {
+          "name": "v_weapon.Bip01_L_Clavicle",
+          "parent": "v_weapon.Bip01_Neck",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Clavicle"
+            }
+          ],
+          "head": [
+            0.6680006980895996,
+            1.7778306007385254,
+            6.725912094116211
+          ],
+          "tail": [
+            0.77847820520401,
+            1.760748028755188,
+            6.711751937866211
+          ],
+          "length": 0.11268364638090134
+        },
+        {
+          "name": "v_weapon.Bip01_L_UpperArm",
+          "parent": "v_weapon.Bip01_L_Clavicle",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_UpperArm"
+            }
+          ],
+          "head": [
+            -0.07427502423524857,
+            -3.858515977859497,
+            7.734236717224121
+          ],
+          "tail": [
+            -0.06799086183309555,
+            -3.914278030395508,
+            7.636518955230713
+          ],
+          "length": 0.11268388479948044
+        },
+        {
+          "name": "v_weapon.Bip01_L_Forearm",
+          "parent": "v_weapon.Bip01_L_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Forearm"
+            }
+          ],
+          "head": [
+            -3.831411838531494,
+            -13.938070297241211,
+            -1.5654950141906738
+          ],
+          "tail": [
+            -3.929567575454712,
+            -13.961993217468262,
+            -1.6154026985168457
+          ],
+          "length": 0.11268376559019089
+        },
+        {
+          "name": "v_weapon.Bip01_L_Hand",
+          "parent": "v_weapon.Bip01_L_Forearm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_Hand"
+            }
+          ],
+          "head": [
+            -3.632915735244751,
+            -23.367191314697266,
+            2.5638256072998047
+          ],
+          "tail": [
+            -3.5844650268554688,
+            -23.370901107788086,
+            2.665494203567505
+          ],
+          "length": 0.11268424242734909
+        },
+        {
+          "name": "v_weapon.Bip01_L_ForeTwist",
+          "parent": "v_weapon.Bip01_L_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_L_ForeTwist"
+            }
+          ],
+          "head": [
+            -3.831411361694336,
+            -13.938072204589844,
+            -1.5654950141906738
+          ],
+          "tail": [
+            -3.9338526725769043,
+            -13.921069145202637,
+            -1.5217422246932983
+          ],
+          "length": 0.11268377304077148
+        },
+        {
+          "name": "v_weapon.Bip01_R_Clavicle",
+          "parent": "v_weapon.Bip01_Neck",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Clavicle"
+            }
+          ],
+          "head": [
+            -0.9438061714172363,
+            -10.125268936157227,
+            6.739130973815918
+          ],
+          "tail": [
+            -0.8834661245346069,
+            -10.194695472717285,
+            6.804220676422119
+          ],
+          "length": 0.11268378049135208
+        },
+        {
+          "name": "v_weapon.Bip01_R_UpperArm",
+          "parent": "v_weapon.Bip01_R_Clavicle",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_UpperArm"
+            }
+          ],
+          "head": [
+            3.4064767360687256,
+            -6.329110145568848,
+            6.755369186401367
+          ],
+          "tail": [
+            3.5173113346099854,
+            -6.314381122589111,
+            6.769382953643799
+          ],
+          "length": 0.11268380284309387
+        },
+        {
+          "name": "v_weapon.Bip01_R_Forearm",
+          "parent": "v_weapon.Bip01_R_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Forearm"
+            }
+          ],
+          "head": [
+            -8.68145751953125,
+            -10.447149276733398,
+            -8.15578556060791
+          ],
+          "tail": [
+            -8.701492309570312,
+            -10.520726203918457,
+            -8.238747596740723
+          ],
+          "length": 0.11268387734889984
+        },
+        {
+          "name": "v_weapon.Bip01_R_Hand",
+          "parent": "v_weapon.Bip01_R_Forearm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_Hand"
+            }
+          ],
+          "head": [
+            -8.249378204345703,
+            -18.194665908813477,
+            -1.3890794515609741
+          ],
+          "tail": [
+            -8.142327308654785,
+            -18.22884178161621,
+            -1.3807258605957031
+          ],
+          "length": 0.11268392205238342
+        },
+        {
+          "name": "v_weapon.Bip01_R_ForeTwist",
+          "parent": "v_weapon.Bip01_R_UpperArm",
+          "constraints": [
+            {
+              "name": "\u590d\u5236\u53d8\u6362",
+              "type": "COPY_TRANSFORMS",
+              "mute": false,
+              "influence": 1.0,
+              "target": "CS_M4A4_Armature",
+              "subtarget": "v_weapon.Bip01_R_ForeTwist"
+            }
+          ],
+          "head": [
+            -8.681458473205566,
+            -10.447151184082031,
+            -8.155786514282227
+          ],
+          "tail": [
+            -8.65806770324707,
+            -10.518918991088867,
+            -8.23945140838623
+          ],
+          "length": 0.11268345266580582
+        }
+      ],
+      "bone_count": 18,
+      "root_bones": [
+        "v_weapon"
+      ]
+    },
+    {
+      "name": "Eye",
+      "type": "LIGHT",
+      "parent": null,
+      "collection": [
+        "LIGHTS"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          2.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "Fill",
+      "type": "LIGHT",
+      "parent": null,
+      "collection": [
+        "LIGHTS"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          0.8660253882408142,
+          0.1710100769996643,
+          -0.46984630823135376,
+          -12.0
+        ],
+        [
+          -0.5,
+          0.29619812965393066,
+          -0.813797652721405,
+          -14.0
+        ],
+        [
+          0.0,
+          0.9396926164627075,
+          0.3420201539993286,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "Front",
+      "type": "LIGHT",
+      "parent": null,
+      "collection": [
+        "LIGHTS"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.17364822328090668,
+          -0.9848077297210693,
+          -6.0
+        ],
+        [
+          0.0,
+          0.9848077297210693,
+          0.17364822328090668,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "Key",
+      "type": "LIGHT",
+      "parent": null,
+      "collection": [
+        "LIGHTS"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          0.8660253882408142,
+          -0.2867882251739502,
+          0.40957602858543396,
+          10.0
+        ],
+        [
+          0.5,
+          0.4967317581176758,
+          -0.7094064950942993,
+          -16.0
+        ],
+        [
+          0.0,
+          0.8191520571708679,
+          0.5735764503479004,
+          12.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "P7S04_Cam",
+      "type": "CAMERA",
+      "parent": null,
+      "collection": [
+        "LIGHTS"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          -0.9762401580810547,
+          -0.10479488968849182,
+          0.18966592848300934,
+          0.0
+        ],
+        [
+          0.21669133007526398,
+          -0.4721229672431946,
+          0.8544850945472717,
+          0.0
+        ],
+        [
+          -3.27491349594311e-08,
+          0.8752816319465637,
+          0.4836135506629944,
+          0.6000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "P7S04_Review",
+      "type": "CAMERA",
+      "parent": null,
+      "collection": [
+        "LIGHTS"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          0.9647638201713562,
+          -0.05419702082872391,
+          0.2574751079082489,
+          4.585210800170898
+        ],
+        [
+          0.26311737298965454,
+          0.19872231781482697,
+          -0.9440755844116211,
+          -47.980491638183594
+        ],
+        [
+          3.2063283583738666e-08,
+          0.9785561561584473,
+          0.20598028600215912,
+          -2.4057493209838867
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "Rim",
+      "type": "LIGHT",
+      "parent": null,
+      "collection": [
+        "LIGHTS"
+      ],
+      "hidden": false,
+      "hide_viewport": false,
+      "hide_render": false,
+      "matrix_world": [
+        [
+          -1.0,
+          5.61942812282723e-08,
+          -6.69697328703478e-08,
+          4.0
+        ],
+        [
+          -8.742277657347586e-08,
+          -0.6427876353263855,
+          0.7660444378852844,
+          14.0
+        ],
+        [
+          0.0,
+          0.7660444378852844,
+          0.6427876353263855,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    },
+    {
+      "name": "smd_bone_vis",
+      "type": "MESH",
+      "parent": null,
+      "collection": [],
+      "hidden": false,
+      "hide_viewport": true,
+      "hide_render": true,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "deform_rigs": [],
+      "action": null,
+      "action_slot": null,
+      "nla_tracks": []
+    }
+  ],
+  "actions": [
+    {
+      "name": "1_idle_hold",
+      "slots": [
+        "OBidle"
+      ],
+      "fcurves": 513,
+      "frame_range": [
+        0.0,
+        54.0
+      ]
+    },
+    {
+      "name": "2_shoot",
+      "slots": [
+        "OBshoot1"
+      ],
+      "fcurves": 513,
+      "frame_range": [
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "name": "3_draw",
+      "slots": [
+        "OBdraw"
+      ],
+      "fcurves": 513,
+      "frame_range": [
+        0.0,
+        30.0
+      ]
+    },
+    {
+      "name": "4_reload",
+      "slots": [
+        "OBreload"
+      ],
+      "fcurves": 513,
+      "frame_range": [
+        0.0,
+        107.0
+      ]
+    },
+    {
+      "name": "5_lookat",
+      "slots": [
+        "OBlookat01"
+      ],
+      "fcurves": 513,
+      "frame_range": [
+        0.0,
+        159.0
+      ]
+    },
+    {
+      "name": "P7S04_CURRENT",
+      "slots": [
+        "OBidle",
+        "OBshoot1",
+        "OBdraw",
+        "OBreload",
+        "OBlookat01"
+      ],
+      "fcurves": 342,
+      "frame_range": [
+        0.0,
+        159.0
+      ]
+    }
+  ],
+  "collections": [
+    "ARMATURE",
+    "CF_GUN",
+    "CS_ARMS_BONEMERGE",
+    "LIGHTS",
+    "P7S04_CURRENT"
+  ]
+}

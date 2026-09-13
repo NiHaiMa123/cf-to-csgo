@@ -1,0 +1,90 @@
+{
+  "review_status": "GROK_G1_V1_REJECTED_METHOD",
+  "flags_zero_count": 57,
+  "bind_affine_bottom_row_max_error": 0.0,
+  "convention": "xyzw / column translation / parent @ local; SDK-source-supported, not inferred from bind=clip",
+  "clips": {
+    "reload": {
+      "duration_ms": 1600,
+      "raw_normalized_max_world_position_delta": {
+        "distance": 0.048451956732605696,
+        "key": 96,
+        "bone": "FvARM-bone L Finger12"
+      },
+      "normalized_endpoints": {
+        "FvARM-bone Prop1": {
+          "first_vs_idle_pos": 0.2640105835581485,
+          "last_vs_idle_pos": 2.0062608229075912e-05,
+          "last_vs_idle_angle_deg": 0.0
+        },
+        "FvARM-bone R Hand": {
+          "first_vs_idle_pos": 2.0053583425129554e-05,
+          "last_vs_idle_pos": 2.0053583425129554e-05,
+          "last_vs_idle_angle_deg": 0.0
+        },
+        "FvARM-bone L Hand": {
+          "first_vs_idle_pos": 1.9125893748804315e-05,
+          "last_vs_idle_pos": 1.9125893748804315e-05,
+          "last_vs_idle_angle_deg": 3.4952621358355786e-05
+        }
+      }
+    },
+    "select": {
+      "duration_ms": 640,
+      "raw_normalized_max_world_position_delta": {
+        "distance": 3.5901666205131555e-05,
+        "key": 15,
+        "bone": "FvARM-bone L Finger12"
+      },
+      "normalized_endpoints": {
+        "FvARM-bone Prop1": {
+          "first_vs_idle_pos": 4.981884111601881,
+          "last_vs_idle_pos": 1.8507794089424293e-05,
+          "last_vs_idle_angle_deg": 0.0001143801799779225
+        },
+        "FvARM-bone R Hand": {
+          "first_vs_idle_pos": 0.3862171771855781,
+          "last_vs_idle_pos": 2.8369812225338537e-05,
+          "last_vs_idle_angle_deg": 0.00011457756847220167
+        },
+        "FvARM-bone L Hand": {
+          "first_vs_idle_pos": 4.9818686904746246,
+          "last_vs_idle_pos": 3.524421409553583e-05,
+          "last_vs_idle_angle_deg": 0.00011455848122407987
+        }
+      }
+    },
+    "idle_0": {
+      "duration_ms": 3000,
+      "raw_normalized_max_world_position_delta": {
+        "distance": 3.350985981888164e-05,
+        "key": 38,
+        "bone": "FvARM-bone L Finger12"
+      },
+      "normalized_endpoints": {
+        "FvARM-bone Prop1": {
+          "first_vs_idle_pos": 0.0,
+          "last_vs_idle_pos": 0.0,
+          "last_vs_idle_angle_deg": 0.0
+        },
+        "FvARM-bone R Hand": {
+          "first_vs_idle_pos": 0.0,
+          "last_vs_idle_pos": 0.0,
+          "last_vs_idle_angle_deg": 0.0
+        },
+        "FvARM-bone L Hand": {
+          "first_vs_idle_pos": 0.0,
+          "last_vs_idle_pos": 0.0,
+          "last_vs_idle_angle_deg": 0.0
+        }
+      }
+    }
+  },
+  "issues": [
+    "Ranking hypotheses by bind error over all clips is invalid: bind and clip poses need not coincide.",
+    "Winner row_major/row3 compares track translations against the homogeneous zero row and mixes conventions.",
+    "acos(trace(A.T @ B)) requires proper rotations; raw nonorthogonal matrices yield spurious angles.",
+    "max_world_travel is distance from first key, not the required raw-versus-normalized difference.",
+    "No first-key match does not prove parser failure; do not require a nonexistent pose as a gate."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "stage": "G0",
+  "reviewer_status": "G0_VERIFIED",
+  "checks": {
+    "work/p5_leishen/p7_s04/blender/p7_s04_current.blend": true,
+    "work/p5_leishen/p7_s04/smd/draw.smd": true,
+    "work/p5_leishen/p7_s04/smd/idle.smd": true,
+    "work/p5_leishen/p7_s04/smd/reload.smd": true,
+    "work/p5_leishen/p7_s04/smd/shoot1.smd": true,
+    "scripts/p5/p5_p7_s04_cf_animation.py": true,
+    "scripts/p5/p5_p7_s04_fix_retarget.py": true,
+    "work/p5_leishen/p7_s04/source1/cf_leishen_m4a4.smd": true,
+    "work/p5_leishen/p6/verified_root/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB": true,
+    "live_unsaved": true,
+    "working": true,
+    "live_working": true,
+    "scene_unchanged": true
+  },
+  "live": {
+    "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+    "dirty": false,
+    "frame": 25,
+    "action": "3_draw",
+    "slot": "OBdraw",
+    "objects": 14,
+    "actions": 6
+  },
+  "limitations": [
+    "Backup contents not opened in a separate Blender process; save FINISHED, hashes and live metadata verified.",
+    "Do not rerun original g0_save_live_copy.py: its pre-save failure checks are reported after mutations rather than enforced. Future steps must assert preconditions before writing."
+  ]
+}

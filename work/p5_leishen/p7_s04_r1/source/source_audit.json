@@ -1,0 +1,2731 @@
+{
+  "task_id": "P7-S04-R1-A",
+  "stage": "G1_NUMERIC_AUDIT",
+  "status": "G1_CONVENTION_OPEN",
+  "reference_kind": "SKELETON_ONLY_REFERENCE",
+  "has_weights_in_geometry_json": false,
+  "skinned_mesh_claimed": false,
+  "compiled": false,
+  "deployed": false,
+  "user_accepted": false,
+  "provenance": {
+    "body_path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\verified_root\\Models\\PLAYERVIEW\\PV-M4A1_S_Transformers.LTB",
+    "body_bytes": 604808,
+    "body_sha256": "511dec8d2401a1886ddecd14b4f18e17ac0afbefd943f6dc11a3fd2f82ef6b49",
+    "assert_bytes": 604808,
+    "assert_sha256": "511dec8d2401a1886ddecd14b4f18e17ac0afbefd943f6dc11a3fd2f82ef6b49",
+    "compressed_layer_from": "D:/project/cf_to_csgo/work/p5_leishen/p7_s04_review_20260913/offline_audit.json",
+    "packed_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+    "packed_size": 152923,
+    "directory_md5": "7524a50ffd4a381479f647fdf04b6295",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+    "logical_path": "Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB",
+    "packed_lzma_equals_body": true,
+    "note": "Compressed payload SHA and decompressed body SHA are different layers; both already verified in offline_audit.json."
+  },
+  "parse_order": [
+    "parse_header",
+    "parse_skeleton",
+    "parse_weight_sets",
+    "parse_child_models",
+    "parse_anims"
+  ],
+  "header": {
+    "file_type": 1,
+    "ltb_header_version": 9,
+    "model_file_version": 25,
+    "allocs": {
+      "nKeyFrames": 256,
+      "nParentAnims": 8,
+      "nNodes": 57,
+      "nPieces": 11,
+      "nChildModels": 1,
+      "nTris": 5250,
+      "nVerts": 2814,
+      "nVertexWeights": 3224,
+      "nLODs": 11,
+      "nSockets": 6,
+      "nWeightSets": 1,
+      "nStrings": 91,
+      "StringLengths": 1414,
+      "VertAnimDataSize": 0,
+      "nAnimData": 408576
+    }
+  },
+  "n_nodes": 57,
+  "n_clips": 8,
+  "n_weight_sets": 1,
+  "weight_sets": [
+    {
+      "name": "BaseTracker",
+      "count": 57,
+      "nonzero": 57
+    }
+  ],
+  "child_models": [
+    "SELF"
+  ],
+  "node_flags": {
+    "unique": [
+      0
+    ],
+    "nonzero": [],
+    "note": "m_Flags parsed as the byte after uint16 index; all zero, so MNODE_ROTATIONONLY is not set."
+  },
+  "parent_chain": [
+    {
+      "index": 0,
+      "name": "Scene Root",
+      "parent": -1,
+      "parent_name": null,
+      "children": [
+        1
+      ],
+      "chain_rootward": [
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "FvARM-bone",
+      "parent": 0,
+      "parent_name": "Scene Root",
+      "children": [
+        2,
+        46
+      ],
+      "chain_rootward": [
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "FvARM-bone Pelvis",
+      "parent": 1,
+      "parent_name": "FvARM-bone",
+      "children": [
+        3
+      ],
+      "chain_rootward": [
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "FvARM-bone Spine",
+      "parent": 2,
+      "parent_name": "FvARM-bone Pelvis",
+      "children": [
+        4
+      ],
+      "chain_rootward": [
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "FvARM-bone Spine1",
+      "parent": 3,
+      "parent_name": "FvARM-bone Spine",
+      "children": [
+        5
+      ],
+      "chain_rootward": [
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 5,
+      "name": "FvARM-bone Neck",
+      "parent": 4,
+      "parent_name": "FvARM-bone Spine1",
+      "children": [
+        6,
+        26
+      ],
+      "chain_rootward": [
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 6,
+      "name": "FvARM-bone L Clavicle",
+      "parent": 5,
+      "parent_name": "FvARM-bone Neck",
+      "children": [
+        7
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 7,
+      "name": "FvARM-bone L UpperArm",
+      "parent": 6,
+      "parent_name": "FvARM-bone L Clavicle",
+      "children": [
+        8,
+        25
+      ],
+      "chain_rootward": [
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 8,
+      "name": "FvARM-bone L ForeArm",
+      "parent": 7,
+      "parent_name": "FvARM-bone L UpperArm",
+      "children": [
+        9
+      ],
+      "chain_rootward": [
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 9,
+      "name": "FvARM-bone L Hand",
+      "parent": 8,
+      "parent_name": "FvARM-bone L ForeArm",
+      "children": [
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 10,
+      "name": "FvARM-bone L Finger0",
+      "parent": 9,
+      "parent_name": "FvARM-bone L Hand",
+      "children": [
+        11
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 11,
+      "name": "FvARM-bone L Finger01",
+      "parent": 10,
+      "parent_name": "FvARM-bone L Finger0",
+      "children": [
+        12
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 12,
+      "name": "FvARM-bone L Finger02",
+      "parent": 11,
+      "parent_name": "FvARM-bone L Finger01",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone L Finger02",
+        "FvARM-bone L Finger01",
+        "FvARM-bone L Finger0",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 13,
+      "name": "FvARM-bone L Finger1",
+      "parent": 9,
+      "parent_name": "FvARM-bone L Hand",
+      "children": [
+        14
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 14,
+      "name": "FvARM-bone L Finger11",
+      "parent": 13,
+      "parent_name": "FvARM-bone L Finger1",
+      "children": [
+        15
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 15,
+      "name": "FvARM-bone L Finger12",
+      "parent": 14,
+      "parent_name": "FvARM-bone L Finger11",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone L Finger12",
+        "FvARM-bone L Finger11",
+        "FvARM-bone L Finger1",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 16,
+      "name": "FvARM-bone L Finger2",
+      "parent": 9,
+      "parent_name": "FvARM-bone L Hand",
+      "children": [
+        17
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 17,
+      "name": "FvARM-bone L Finger21",
+      "parent": 16,
+      "parent_name": "FvARM-bone L Finger2",
+      "children": [
+        18
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 18,
+      "name": "FvARM-bone L Finger22",
+      "parent": 17,
+      "parent_name": "FvARM-bone L Finger21",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone L Finger22",
+        "FvARM-bone L Finger21",
+        "FvARM-bone L Finger2",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 19,
+      "name": "FvARM-bone L Finger3",
+      "parent": 9,
+      "parent_name": "FvARM-bone L Hand",
+      "children": [
+        20
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 20,
+      "name": "FvARM-bone L Finger31",
+      "parent": 19,
+      "parent_name": "FvARM-bone L Finger3",
+      "children": [
+        21
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 21,
+      "name": "FvARM-bone L Finger32",
+      "parent": 20,
+      "parent_name": "FvARM-bone L Finger31",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone L Finger32",
+        "FvARM-bone L Finger31",
+        "FvARM-bone L Finger3",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 22,
+      "name": "FvARM-bone L Finger4",
+      "parent": 9,
+      "parent_name": "FvARM-bone L Hand",
+      "children": [
+        23
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 23,
+      "name": "FvARM-bone L Finger41",
+      "parent": 22,
+      "parent_name": "FvARM-bone L Finger4",
+      "children": [
+        24
+      ],
+      "chain_rootward": [
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 24,
+      "name": "FvARM-bone L Finger42",
+      "parent": 23,
+      "parent_name": "FvARM-bone L Finger41",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone L Finger42",
+        "FvARM-bone L Finger41",
+        "FvARM-bone L Finger4",
+        "FvARM-bone L Hand",
+        "FvARM-bone L ForeArm",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 25,
+      "name": "FvARM-bone L ForeTwist",
+      "parent": 7,
+      "parent_name": "FvARM-bone L UpperArm",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone L ForeTwist",
+        "FvARM-bone L UpperArm",
+        "FvARM-bone L Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 26,
+      "name": "FvARM-bone R Clavicle",
+      "parent": 5,
+      "parent_name": "FvARM-bone Neck",
+      "children": [
+        27
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 27,
+      "name": "FvARM-bone R UpperArm",
+      "parent": 26,
+      "parent_name": "FvARM-bone R Clavicle",
+      "children": [
+        28,
+        45
+      ],
+      "chain_rootward": [
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 28,
+      "name": "FvARM-bone R ForeArm",
+      "parent": 27,
+      "parent_name": "FvARM-bone R UpperArm",
+      "children": [
+        29
+      ],
+      "chain_rootward": [
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 29,
+      "name": "FvARM-bone R Hand",
+      "parent": 28,
+      "parent_name": "FvARM-bone R ForeArm",
+      "children": [
+        30,
+        33,
+        36,
+        39,
+        42
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 30,
+      "name": "FvARM-bone R Finger0",
+      "parent": 29,
+      "parent_name": "FvARM-bone R Hand",
+      "children": [
+        31
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 31,
+      "name": "FvARM-bone R Finger01",
+      "parent": 30,
+      "parent_name": "FvARM-bone R Finger0",
+      "children": [
+        32
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 32,
+      "name": "FvARM-bone R Finger02",
+      "parent": 31,
+      "parent_name": "FvARM-bone R Finger01",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone R Finger02",
+        "FvARM-bone R Finger01",
+        "FvARM-bone R Finger0",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 33,
+      "name": "FvARM-bone R Finger1",
+      "parent": 29,
+      "parent_name": "FvARM-bone R Hand",
+      "children": [
+        34
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 34,
+      "name": "FvARM-bone R Finger11",
+      "parent": 33,
+      "parent_name": "FvARM-bone R Finger1",
+      "children": [
+        35
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 35,
+      "name": "FvARM-bone R Finger12",
+      "parent": 34,
+      "parent_name": "FvARM-bone R Finger11",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone R Finger12",
+        "FvARM-bone R Finger11",
+        "FvARM-bone R Finger1",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 36,
+      "name": "FvARM-bone R Finger2",
+      "parent": 29,
+      "parent_name": "FvARM-bone R Hand",
+      "children": [
+        37
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 37,
+      "name": "FvARM-bone R Finger21",
+      "parent": 36,
+      "parent_name": "FvARM-bone R Finger2",
+      "children": [
+        38
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 38,
+      "name": "FvARM-bone R Finger22",
+      "parent": 37,
+      "parent_name": "FvARM-bone R Finger21",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone R Finger22",
+        "FvARM-bone R Finger21",
+        "FvARM-bone R Finger2",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 39,
+      "name": "FvARM-bone R Finger3",
+      "parent": 29,
+      "parent_name": "FvARM-bone R Hand",
+      "children": [
+        40
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 40,
+      "name": "FvARM-bone R Finger31",
+      "parent": 39,
+      "parent_name": "FvARM-bone R Finger3",
+      "children": [
+        41
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 41,
+      "name": "FvARM-bone R Finger32",
+      "parent": 40,
+      "parent_name": "FvARM-bone R Finger31",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone R Finger32",
+        "FvARM-bone R Finger31",
+        "FvARM-bone R Finger3",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 42,
+      "name": "FvARM-bone R Finger4",
+      "parent": 29,
+      "parent_name": "FvARM-bone R Hand",
+      "children": [
+        43
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 43,
+      "name": "FvARM-bone R Finger41",
+      "parent": 42,
+      "parent_name": "FvARM-bone R Finger4",
+      "children": [
+        44
+      ],
+      "chain_rootward": [
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 44,
+      "name": "FvARM-bone R Finger42",
+      "parent": 43,
+      "parent_name": "FvARM-bone R Finger41",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone R Finger42",
+        "FvARM-bone R Finger41",
+        "FvARM-bone R Finger4",
+        "FvARM-bone R Hand",
+        "FvARM-bone R ForeArm",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 45,
+      "name": "FvARM-bone R ForeTwist",
+      "parent": 27,
+      "parent_name": "FvARM-bone R UpperArm",
+      "children": [],
+      "chain_rootward": [
+        "FvARM-bone R ForeTwist",
+        "FvARM-bone R UpperArm",
+        "FvARM-bone R Clavicle",
+        "FvARM-bone Neck",
+        "FvARM-bone Spine1",
+        "FvARM-bone Spine",
+        "FvARM-bone Pelvis",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 46,
+      "name": "FvARM-bone Prop1",
+      "parent": 1,
+      "parent_name": "FvARM-bone",
+      "children": [
+        47
+      ],
+      "chain_rootward": [
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 47,
+      "name": "Dummy01",
+      "parent": 46,
+      "parent_name": "FvARM-bone Prop1",
+      "children": [
+        48,
+        55,
+        56
+      ],
+      "chain_rootward": [
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 48,
+      "name": "Bone02",
+      "parent": 47,
+      "parent_name": "Dummy01",
+      "children": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "chain_rootward": [
+        "Bone02",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 49,
+      "name": "Box001",
+      "parent": 48,
+      "parent_name": "Bone02",
+      "children": [],
+      "chain_rootward": [
+        "Box001",
+        "Bone02",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 50,
+      "name": "Box002",
+      "parent": 48,
+      "parent_name": "Bone02",
+      "children": [],
+      "chain_rootward": [
+        "Box002",
+        "Bone02",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 51,
+      "name": "Box003",
+      "parent": 48,
+      "parent_name": "Bone02",
+      "children": [],
+      "chain_rootward": [
+        "Box003",
+        "Bone02",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 52,
+      "name": "Box005",
+      "parent": 48,
+      "parent_name": "Bone02",
+      "children": [],
+      "chain_rootward": [
+        "Box005",
+        "Bone02",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 53,
+      "name": "Box006",
+      "parent": 48,
+      "parent_name": "Bone02",
+      "children": [],
+      "chain_rootward": [
+        "Box006",
+        "Bone02",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 54,
+      "name": "Box004",
+      "parent": 48,
+      "parent_name": "Bone02",
+      "children": [],
+      "chain_rootward": [
+        "Box004",
+        "Bone02",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 55,
+      "name": "Bone04",
+      "parent": 47,
+      "parent_name": "Dummy01",
+      "children": [],
+      "chain_rootward": [
+        "Bone04",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    },
+    {
+      "index": 56,
+      "name": "Bone06",
+      "parent": 47,
+      "parent_name": "Dummy01",
+      "children": [],
+      "chain_rootward": [
+        "Bone06",
+        "Dummy01",
+        "FvARM-bone Prop1",
+        "FvARM-bone",
+        "Scene Root"
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "name": "reload",
+      "n_keyframes": 108,
+      "duration_ms": 1600,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "times_ms": [
+        0,
+        15,
+        30,
+        45,
+        60,
+        74,
+        90,
+        105,
+        119,
+        135,
+        149,
+        164,
+        179,
+        194,
+        209,
+        224,
+        239,
+        254,
+        269,
+        284,
+        299,
+        314,
+        329,
+        344,
+        359,
+        374,
+        389,
+        404,
+        419,
+        433,
+        449,
+        463,
+        478,
+        494,
+        508,
+        523,
+        538,
+        553,
+        568,
+        583,
+        598,
+        613,
+        628,
+        643,
+        658,
+        673,
+        688,
+        703,
+        718,
+        733,
+        748,
+        763,
+        778,
+        792,
+        808,
+        822,
+        837,
+        852,
+        867,
+        882,
+        897,
+        912,
+        927,
+        942,
+        957,
+        972,
+        987,
+        1002,
+        1017,
+        1032,
+        1047,
+        1062,
+        1077,
+        1092,
+        1106,
+        1122,
+        1137,
+        1151,
+        1167,
+        1181,
+        1196,
+        1211,
+        1226,
+        1241,
+        1256,
+        1271,
+        1286,
+        1301,
+        1316,
+        1331,
+        1346,
+        1361,
+        1376,
+        1391,
+        1406,
+        1421,
+        1436,
+        1451,
+        1465,
+        1481,
+        1495,
+        1510,
+        1526,
+        1540,
+        1555,
+        1570,
+        1585,
+        1600
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "smoke"
+        },
+        {
+          "frame": 1,
+          "time_ms": 15,
+          "label": "begin"
+        },
+        {
+          "frame": 2,
+          "time_ms": 30,
+          "label": "Extra01SoundName"
+        },
+        {
+          "frame": 13,
+          "time_ms": 194,
+          "label": "WeaponClipOut"
+        },
+        {
+          "frame": 48,
+          "time_ms": 718,
+          "label": "WeaponClipIn"
+        },
+        {
+          "frame": 81,
+          "time_ms": 1211,
+          "label": "WeaponReload"
+        },
+        {
+          "frame": 106,
+          "time_ms": 1585,
+          "label": "end"
+        }
+      ],
+      "interval_counts": {
+        "15": 84,
+        "14": 14,
+        "16": 9
+      },
+      "true_duration_s": 1.6,
+      "blender_30fps_index_duration_s": 3.566666666666667,
+      "diagnostic_100fps_frames": [
+        0.0,
+        1.5,
+        3.0,
+        4.5,
+        6.0,
+        7.4,
+        9.0,
+        10.5,
+        11.9,
+        13.5,
+        14.9,
+        16.4,
+        17.9,
+        19.4,
+        20.9,
+        22.4,
+        23.9,
+        25.4,
+        26.9,
+        28.4,
+        29.9,
+        31.4,
+        32.9,
+        34.4,
+        35.9,
+        37.4,
+        38.9,
+        40.4,
+        41.9,
+        43.3,
+        44.9,
+        46.3,
+        47.8,
+        49.4,
+        50.8,
+        52.3,
+        53.8,
+        55.3,
+        56.8,
+        58.3,
+        59.8,
+        61.3,
+        62.8,
+        64.3,
+        65.8,
+        67.3,
+        68.8,
+        70.3,
+        71.8,
+        73.3,
+        74.8,
+        76.3,
+        77.8,
+        79.2,
+        80.8,
+        82.2,
+        83.7,
+        85.2,
+        86.7,
+        88.2,
+        89.7,
+        91.2,
+        92.7,
+        94.2,
+        95.7,
+        97.2,
+        98.7,
+        100.2,
+        101.7,
+        103.2,
+        104.7,
+        106.2,
+        107.7,
+        109.2,
+        110.6,
+        112.2,
+        113.7,
+        115.1,
+        116.7,
+        118.1,
+        119.6,
+        121.1,
+        122.6,
+        124.1,
+        125.6,
+        127.1,
+        128.6,
+        130.1,
+        131.6,
+        133.1,
+        134.6,
+        136.1,
+        137.6,
+        139.1,
+        140.6,
+        142.1,
+        143.6,
+        145.1,
+        146.5,
+        148.1,
+        149.5,
+        151.0,
+        152.6,
+        154.0,
+        155.5,
+        157.0,
+        158.5,
+        160.0
+      ]
+    },
+    {
+      "name": "select",
+      "n_keyframes": 31,
+      "duration_ms": 640,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "times_ms": [
+        0,
+        21,
+        42,
+        64,
+        85,
+        106,
+        128,
+        149,
+        170,
+        192,
+        213,
+        234,
+        256,
+        277,
+        298,
+        320,
+        341,
+        362,
+        384,
+        405,
+        426,
+        448,
+        469,
+        490,
+        512,
+        533,
+        554,
+        576,
+        597,
+        618,
+        640
+      ],
+      "events": [
+        {
+          "frame": 13,
+          "time_ms": 277,
+          "label": "WeaponReload"
+        }
+      ],
+      "interval_counts": {
+        "21": 20,
+        "22": 10
+      },
+      "true_duration_s": 0.64,
+      "blender_30fps_index_duration_s": 1.0,
+      "diagnostic_100fps_frames": [
+        0.0,
+        2.1,
+        4.2,
+        6.4,
+        8.5,
+        10.6,
+        12.8,
+        14.9,
+        17.0,
+        19.2,
+        21.3,
+        23.4,
+        25.6,
+        27.7,
+        29.8,
+        32.0,
+        34.1,
+        36.2,
+        38.4,
+        40.5,
+        42.6,
+        44.8,
+        46.9,
+        49.0,
+        51.2,
+        53.3,
+        55.4,
+        57.6,
+        59.7,
+        61.8,
+        64.0
+      ]
+    },
+    {
+      "name": "idle_0",
+      "n_keyframes": 55,
+      "duration_ms": 3000,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 100,
+      "times_ms": [
+        0,
+        200,
+        233,
+        266,
+        300,
+        333,
+        366,
+        400,
+        466,
+        500,
+        566,
+        600,
+        633,
+        666,
+        800,
+        866,
+        966,
+        1000,
+        1033,
+        1066,
+        1100,
+        1200,
+        1366,
+        1466,
+        1500,
+        1533,
+        1566,
+        1600,
+        1633,
+        1666,
+        1800,
+        1833,
+        1866,
+        1900,
+        1933,
+        1966,
+        2033,
+        2066,
+        2100,
+        2133,
+        2166,
+        2400,
+        2433,
+        2466,
+        2566,
+        2600,
+        2666,
+        2700,
+        2766,
+        2800,
+        2833,
+        2900,
+        2933,
+        2966,
+        3000
+      ],
+      "events": [],
+      "interval_counts": {
+        "200": 1,
+        "33": 24,
+        "34": 14,
+        "66": 5,
+        "134": 2,
+        "100": 4,
+        "166": 1,
+        "67": 2,
+        "234": 1
+      },
+      "true_duration_s": 3.0,
+      "blender_30fps_index_duration_s": 1.8,
+      "diagnostic_100fps_frames": [
+        0.0,
+        20.0,
+        23.3,
+        26.6,
+        30.0,
+        33.3,
+        36.6,
+        40.0,
+        46.6,
+        50.0,
+        56.6,
+        60.0,
+        63.3,
+        66.6,
+        80.0,
+        86.6,
+        96.6,
+        100.0,
+        103.3,
+        106.6,
+        110.0,
+        120.0,
+        136.6,
+        146.6,
+        150.0,
+        153.3,
+        156.6,
+        160.0,
+        163.3,
+        166.6,
+        180.0,
+        183.3,
+        186.6,
+        190.0,
+        193.3,
+        196.6,
+        203.3,
+        206.6,
+        210.0,
+        213.3,
+        216.6,
+        240.0,
+        243.3,
+        246.6,
+        256.6,
+        260.0,
+        266.6,
+        270.0,
+        276.6,
+        280.0,
+        283.3,
+        290.0,
+        293.3,
+        296.6,
+        300.0
+      ]
+    },
+    {
+      "name": "knife-attack",
+      "n_keyframes": 19,
+      "duration_ms": 666,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "times_ms": [
+        0,
+        33,
+        66,
+        100,
+        133,
+        166,
+        200,
+        233,
+        266,
+        300,
+        366,
+        400,
+        433,
+        466,
+        500,
+        533,
+        566,
+        600,
+        666
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "GunKnifeSound"
+        },
+        {
+          "frame": 1,
+          "time_ms": 33,
+          "label": "end"
+        },
+        {
+          "frame": 5,
+          "time_ms": 166,
+          "label": "GunKnifeAttack"
+        }
+      ],
+      "interval_counts": {
+        "33": 10,
+        "34": 6,
+        "66": 2
+      },
+      "true_duration_s": 0.666,
+      "blender_30fps_index_duration_s": 0.6,
+      "diagnostic_100fps_frames": [
+        0.0,
+        3.3,
+        6.6,
+        10.0,
+        13.3,
+        16.6,
+        20.0,
+        23.3,
+        26.6,
+        30.0,
+        36.6,
+        40.0,
+        43.3,
+        46.6,
+        50.0,
+        53.3,
+        56.6,
+        60.0,
+        66.6
+      ]
+    },
+    {
+      "name": "postfire",
+      "n_keyframes": 13,
+      "duration_ms": 500,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "times_ms": [
+        0,
+        33,
+        66,
+        100,
+        133,
+        166,
+        200,
+        233,
+        266,
+        300,
+        400,
+        433,
+        500
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "fire"
+        }
+      ],
+      "interval_counts": {
+        "33": 7,
+        "34": 3,
+        "100": 1,
+        "67": 1
+      },
+      "true_duration_s": 0.5,
+      "blender_30fps_index_duration_s": 0.4,
+      "diagnostic_100fps_frames": [
+        0.0,
+        3.3,
+        6.6,
+        10.0,
+        13.3,
+        16.6,
+        20.0,
+        23.3,
+        26.6,
+        30.0,
+        40.0,
+        43.3,
+        50.0
+      ]
+    },
+    {
+      "name": "run",
+      "n_keyframes": 10,
+      "duration_ms": 650,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 100,
+      "times_ms": [
+        0,
+        61,
+        101,
+        203,
+        325,
+        427,
+        488,
+        528,
+        610,
+        650
+      ],
+      "events": [],
+      "interval_counts": {
+        "61": 2,
+        "40": 3,
+        "102": 2,
+        "122": 1,
+        "82": 1
+      },
+      "true_duration_s": 0.65,
+      "blender_30fps_index_duration_s": 0.3,
+      "diagnostic_100fps_frames": [
+        0.0,
+        6.1,
+        10.1,
+        20.3,
+        32.5,
+        42.7,
+        48.8,
+        52.8,
+        61.0,
+        65.0
+      ]
+    },
+    {
+      "name": "fire",
+      "n_keyframes": 5,
+      "duration_ms": 90,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "times_ms": [
+        0,
+        22,
+        45,
+        68,
+        90
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "fire"
+        }
+      ],
+      "interval_counts": {
+        "22": 2,
+        "23": 2
+      },
+      "true_duration_s": 0.09,
+      "blender_30fps_index_duration_s": 0.13333333333333333,
+      "diagnostic_100fps_frames": [
+        0.0,
+        2.2,
+        4.5,
+        6.8,
+        9.0
+      ]
+    },
+    {
+      "name": "prefire",
+      "n_keyframes": 15,
+      "duration_ms": 500,
+      "compression": 0,
+      "compression_name": "NONE",
+      "interpolation_ms": 0,
+      "times_ms": [
+        0,
+        33,
+        66,
+        100,
+        133,
+        166,
+        200,
+        233,
+        266,
+        300,
+        333,
+        366,
+        400,
+        433,
+        500
+      ],
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "fire"
+        }
+      ],
+      "interval_counts": {
+        "33": 9,
+        "34": 4,
+        "67": 1
+      },
+      "true_duration_s": 0.5,
+      "blender_30fps_index_duration_s": 0.4666666666666667,
+      "diagnostic_100fps_frames": [
+        0.0,
+        3.3,
+        6.6,
+        10.0,
+        13.3,
+        16.6,
+        20.0,
+        23.3,
+        26.6,
+        30.0,
+        33.3,
+        36.6,
+        40.0,
+        43.3,
+        50.0
+      ]
+    }
+  ],
+  "first_exported_clip_in_file": "reload",
+  "jupiter_comment": "ModelNode global transform is documented as the first frame of the first exported animation; treated as a testable hypothesis. Empirically true for the 11-bone gun subtree plus FvARM-bone position at reload frame0, false for Pelvis/arm chain and Scene Root rotation.",
+  "bind_matrix_layout": {
+    "n": 57,
+    "last_row_is_0001_for_all": true,
+    "translation_in_col3_not_row3": true,
+    "det3_minmax": [
+      0.9999988839756494,
+      1.0000010820366674
+    ],
+    "scene_root_row_major": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.0,
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scene_root_is_180Y_diag": [
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "sample_last_col_FvARM": [
+      -0.37770000100135803,
+      -11.600680351257324,
+      -3.2935500144958496,
+      1.0
+    ],
+    "sample_last_row_FvARM": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "animation_track_convention_used_for_endpoints": {
+    "layout": "row_major_m_ij",
+    "quat": "xyzw",
+    "translation": "col3",
+    "multiply": "parent_at_local"
+  },
+  "matrix_quat_search": {
+    "ranked_on": "reload (first file clip) frame0, all 57 bones",
+    "n_hypotheses": 64,
+    "any_all_57_match": false,
+    "animation_world_vs_bind": {
+      "n_bones": 57,
+      "n_pos_lt_1e4": 13,
+      "n_ang_lt_0p1deg": 9,
+      "n_both": 7,
+      "max_pos_err": 31.95376328041617,
+      "max_ang_deg": 180.0,
+      "all_57_match": false
+    },
+    "ranked_head": [
+      {
+        "layout": "row_major_m_ij",
+        "quat": "xyzw",
+        "translation": "col3",
+        "multiply": "parent_at_local",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 25,
+        "n_pos_lt_1e4": 53,
+        "n_ang_lt_0p1deg": 27,
+        "max_pos_err": 25.328880071599723,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "xyzw",
+        "translation": "col3",
+        "multiply": "local_at_parent",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 25,
+        "n_pos_lt_1e4": 53,
+        "n_ang_lt_0p1deg": 27,
+        "max_pos_err": 25.328880071599723,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "xyzw",
+        "translation": "row3",
+        "multiply": "parent_at_local",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 1,
+        "n_pos_lt_1e4": 2,
+        "n_ang_lt_0p1deg": 27,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "xyzw",
+        "translation": "row3",
+        "multiply": "local_at_parent",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 1,
+        "n_pos_lt_1e4": 2,
+        "n_ang_lt_0p1deg": 27,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "wxyz",
+        "translation": "row3",
+        "multiply": "parent_at_local",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 1,
+        "n_pos_lt_1e4": 2,
+        "n_ang_lt_0p1deg": 1,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "wxyz",
+        "translation": "row3",
+        "multiply": "local_at_parent",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 1,
+        "n_pos_lt_1e4": 2,
+        "n_ang_lt_0p1deg": 1,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "xyzw_conj",
+        "translation": "row3",
+        "multiply": "parent_at_local",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 0,
+        "n_pos_lt_1e4": 2,
+        "n_ang_lt_0p1deg": 2,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "xyzw_conj",
+        "translation": "row3",
+        "multiply": "local_at_parent",
+        "compare_bind_to": "world",
+        "n_both": 0,
+        "n_pos_lt_1e4": 1,
+        "n_ang_lt_0p1deg": 1,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "xyzw_conj",
+        "translation": "row3",
+        "multiply": "local_at_parent",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 0,
+        "n_pos_lt_1e4": 2,
+        "n_ang_lt_0p1deg": 2,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      },
+      {
+        "layout": "row_major_m_ij",
+        "quat": "wxyz_conj",
+        "translation": "row3",
+        "multiply": "parent_at_local",
+        "compare_bind_to": "fromparent_local",
+        "n_both": 0,
+        "n_pos_lt_1e4": 2,
+        "n_ang_lt_0p1deg": 0,
+        "max_pos_err": 12.065069979108692,
+        "max_ang_deg": 180.0,
+        "all_57_match": false
+      }
+    ],
+    "partition_reload0": {
+      "world_vs_bind_pos_match": [
+        "Scene Root",
+        "FvARM-bone",
+        "FvARM-bone Prop1",
+        "Dummy01",
+        "Bone02",
+        "Box001",
+        "Box002",
+        "Box003",
+        "Box005",
+        "Box006",
+        "Box004",
+        "Bone04",
+        "Bone06"
+      ],
+      "fromparent_pos_match_count": 53,
+      "fromparent_rot_match_count": 27,
+      "gun_subtree_all_world_match": true,
+      "gun_subtree_count": 11,
+      "scene_root": {
+        "index": 0,
+        "name": "Scene Root",
+        "parent": -1,
+        "anim_local_pos": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "world_vs_bind_pos": 0.0,
+        "world_vs_bind_ang_deg": 180.0,
+        "local_vs_fromparent_pos": 0.0,
+        "local_vs_fromparent_ang_deg": 180.0,
+        "anim_pos_is_zero": true
+      },
+      "FvARM-bone": {
+        "index": 1,
+        "name": "FvARM-bone",
+        "parent": 0,
+        "anim_local_pos": [
+          -0.37770000100135803,
+          -11.600680351257324,
+          -3.2935500144958496
+        ],
+        "world_vs_bind_pos": 0.0,
+        "world_vs_bind_ang_deg": 0.07215045449212906,
+        "local_vs_fromparent_pos": 6.630272690845238,
+        "local_vs_fromparent_ang_deg": 179.92784954550788,
+        "anim_pos_is_zero": false
+      },
+      "pelvis": {
+        "index": 2,
+        "name": "FvARM-bone Pelvis",
+        "parent": 1,
+        "anim_local_pos": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "world_vs_bind_pos": 25.32888007159994,
+        "world_vs_bind_ang_deg": 0.07215013315822125,
+        "local_vs_fromparent_pos": 25.328880071599723,
+        "local_vs_fromparent_ang_deg": 0.0,
+        "anim_pos_is_zero": true
+      }
+    },
+    "module_cf_worlds_crosscheck": {
+      "compared": true,
+      "select_f0_gun_module_pos": [
+        2.039560485068201,
+        -10.722329378128052,
+        -0.8220974752690742
+      ],
+      "select_f0_gun_numpy_pos": [
+        2.039560485068201,
+        -10.722329378128052,
+        -0.8220974752690742
+      ],
+      "pos_delta": 0.0
+    }
+  },
+  "quaternion_findings": {
+    "per_clip": [
+      {
+        "name": "reload",
+        "n_quats": 6156,
+        "norm_min": 0.9907410651756582,
+        "norm_max": 1.0001088294449583
+      },
+      {
+        "name": "select",
+        "n_quats": 1767,
+        "norm_min": 0.9999968013582565,
+        "norm_max": 1.0000027170980912
+      },
+      {
+        "name": "idle_0",
+        "n_quats": 3135,
+        "norm_min": 0.9999978049354461,
+        "norm_max": 1.0000017707272943
+      },
+      {
+        "name": "knife-attack",
+        "n_quats": 1083,
+        "norm_min": 0.9993052487043169,
+        "norm_max": 1.0000747889071013
+      },
+      {
+        "name": "postfire",
+        "n_quats": 741,
+        "norm_min": 0.9999977872356518,
+        "norm_max": 1.0000007475218933
+      },
+      {
+        "name": "run",
+        "n_quats": 570,
+        "norm_min": 0.9999994580633734,
+        "norm_max": 1.0000006379619766
+      },
+      {
+        "name": "fire",
+        "n_quats": 285,
+        "norm_min": 0.9999977541737471,
+        "norm_max": 1.0000012743585114
+      },
+      {
+        "name": "prefire",
+        "n_quats": 855,
+        "norm_min": 0.9999977872356518,
+        "norm_max": 1.0000011055458675
+      }
+    ],
+    "all_norm_min": 0.9907410651756582,
+    "all_norm_max": 1.0001088294449583,
+    "xyzw_raw_RTR_max_abs": 0.0723688076126181,
+    "xyzw_raw_det_minmax": [
+      0.9276306730643128,
+      1.0008706527273714
+    ],
+    "xyzw_unit_RTR_max_abs": 1.3322676295501878e-15,
+    "xyzw_unit_det_minmax": [
+      0.9999999999999989,
+      1.0000000000000013
+    ],
+    "reload_L_Hand_key96": {
+      "clip": "reload",
+      "bone": "FvARM-bone L Hand",
+      "key": 96,
+      "time_ms": 1436,
+      "frame_100fps": 143.6,
+      "raw_xyzw": [
+        0.975350022315979,
+        -0.0026539999525994062,
+        0.17392399907112122,
+        0.0018949999939650297
+      ],
+      "norm": 0.9907410651756582,
+      "normalized_xyzw": [
+        0.9844651207054284,
+        -0.002678802813254594,
+        0.1755493995197267,
+        0.0019127096479331323
+      ],
+      "R_raw_RTR_err": 0.0723688076126181,
+      "R_raw_det": 0.9276306730643128,
+      "R_unit_RTR_err": 7.771561172376096e-16,
+      "R_unit_det": 0.9999999999999993
+    },
+    "synthetic": {
+      "identity_xyzw_R_vs_I_maxabs": 0.0,
+      "plus90Z_xyzw_R_vs_expected_maxabs": 2.220446049250313e-16,
+      "plus90Z_maps_X_to": [
+        -2.220446049250313e-16,
+        1.0000000000000002,
+        0.0
+      ],
+      "q_and_negq_same_R_maxabs": 0.0,
+      "note": "Right-hand column-vector +90deg Z sends X to Y. Matches existing quat_xyzw_matrix."
+    },
+    "interpolation_open": [
+      "Engine key interpolation (lerp vs slerp/squad, shortest-arc, q/-q continuity) is not in this file; interpolation_ms is stored but unread as a runtime rule.",
+      "100 FPS fractional frames are diagnostic (frame=ms/10), not CF native sampling.",
+      "Normalized quats are diagnostic only; raw values are retained."
+    ]
+  },
+  "source_end_vs_idle": {
+    "convention": {
+      "layout": "row_major_m_ij",
+      "quat": "xyzw",
+      "translation": "col3",
+      "multiply": "parent_at_local"
+    },
+    "raw_unnormalized": {
+      "select": {
+        "FvARM-bone Prop1": {
+          "first_vs_idle_pos": 4.981884111515886,
+          "last_vs_idle_pos": 1.8507793480543543e-05,
+          "first_vs_idle_ang_deg": 0.12270599682850909,
+          "last_vs_idle_ang_deg": 0.12270599682850909,
+          "first_pos": [
+            2.039560485068201,
+            -10.722329378128052,
+            -0.8220974752690742
+          ],
+          "last_pos": [
+            2.019246530217249,
+            -5.740481376647949,
+            -0.8334044804213661
+          ],
+          "idle_pos": [
+            2.0192496296549463,
+            -5.740499496459961,
+            -0.8334023346538717
+          ]
+        },
+        "FvARM-bone R Hand": {
+          "first_vs_idle_pos": 0.3862136801787848,
+          "last_vs_idle_pos": 2.8369831374286233e-05,
+          "first_vs_idle_ang_deg": 3.367892999228492,
+          "last_vs_idle_ang_deg": 0.2015035057997959,
+          "first_pos": [
+            1.9046381475658656,
+            -5.978337595124533,
+            -0.44724752782815624
+          ],
+          "last_pos": [
+            1.9046390406036546,
+            -5.978337981314157,
+            -0.8334554135546637
+          ],
+          "idle_pos": [
+            1.9046360886940588,
+            -5.97836559597893,
+            -0.8334612069864091
+          ]
+        },
+        "FvARM-bone L Hand": {
+          "first_vs_idle_pos": 4.981868404278269,
+          "last_vs_idle_pos": 3.524424075417841e-05,
+          "first_vs_idle_ang_deg": 63.203298677830006,
+          "last_vs_idle_ang_deg": 0.28340737461114934,
+          "first_pos": [
+            0.7136639283200701,
+            -9.396452823659,
+            4.224641505858688
+          ],
+          "last_pos": [
+            0.69334222170842,
+            -4.414603515087414,
+            4.213330274450714
+          ],
+          "idle_pos": [
+            0.6933407564653704,
+            -4.414638716233251,
+            4.213329331635311
+          ]
+        }
+      },
+      "reload": {
+        "FvARM-bone Prop1": {
+          "first_vs_idle_pos": 0.2640105441106777,
+          "last_vs_idle_pos": 2.0062608172923963e-05,
+          "first_vs_idle_ang_deg": 0.12531985784533725,
+          "last_vs_idle_ang_deg": 0.12156282922046352,
+          "first_pos": [
+            1.9046407174946944,
+            -5.978336334228516,
+            -0.8334593900127429
+          ],
+          "last_pos": [
+            2.019249629655709,
+            -5.740479469299316,
+            -0.8334035267458222
+          ],
+          "idle_pos": [
+            2.0192496296549463,
+            -5.740499496459961,
+            -0.8334023346538717
+          ]
+        },
+        "FvARM-bone R Hand": {
+          "first_vs_idle_pos": 2.005358338583513e-05,
+          "last_vs_idle_pos": 2.005358338583513e-05,
+          "first_vs_idle_ang_deg": 0.2015034731377438,
+          "last_vs_idle_ang_deg": 0.2015034731377438,
+          "first_pos": [
+            1.9046356286748574,
+            -5.978345568011619,
+            -0.8334621098232304
+          ],
+          "last_pos": [
+            1.9046356286748574,
+            -5.978345568011619,
+            -0.8334621098232304
+          ],
+          "idle_pos": [
+            1.9046360886940588,
+            -5.97836559597893,
+            -0.8334612069864091
+          ]
+        },
+        "FvARM-bone L Hand": {
+          "first_vs_idle_pos": 1.912589327629324e-05,
+          "last_vs_idle_pos": 1.912589327629324e-05,
+          "first_vs_idle_ang_deg": 0.23852458379080596,
+          "last_vs_idle_ang_deg": 0.23852458379080596,
+          "first_pos": [
+            0.6933396967832945,
+            -4.414619833374519,
+            4.213326483036779
+          ],
+          "last_pos": [
+            0.6933396967832945,
+            -4.414619833374519,
+            4.213326483036779
+          ],
+          "idle_pos": [
+            0.6933407564653704,
+            -4.414638716233251,
+            4.213329331635311
+          ]
+        }
+      }
+    },
+    "normalized_diagnostic": {
+      "select": {
+        "FvARM-bone Prop1": {
+          "first_vs_idle_pos": 4.981884111601881,
+          "last_vs_idle_pos": 1.8507794089424293e-05,
+          "first_vs_idle_ang_deg": 0.0001143801799779225,
+          "last_vs_idle_ang_deg": 0.0001143801799779225,
+          "first_pos": [
+            2.039560442100525,
+            -10.722329378128052,
+            -0.8220935991437339
+          ],
+          "last_pos": [
+            2.0192464801082135,
+            -5.740481376647949,
+            -0.8334006293674112
+          ],
+          "idle_pos": [
+            2.019249579546667,
+            -5.740499496459961,
+            -0.8333984835957575
+          ]
+        },
+        "FvARM-bone R Hand": {
+          "first_vs_idle_pos": 0.3862171771855781,
+          "last_vs_idle_pos": 2.8369812225338537e-05,
+          "first_vs_idle_ang_deg": 3.3609665271136264,
+          "last_vs_idle_ang_deg": 0.00011457756847220167,
+          "first_pos": [
+            1.9046326560537694,
+            -5.978334609166737,
+            -0.44723979865126084
+          ],
+          "last_pos": [
+            1.9046397385912863,
+            -5.978333920342598,
+            -0.8334511814593477
+          ],
+          "idle_pos": [
+            1.90463678669534,
+            -5.978361534992291,
+            -0.8334569748761589
+          ]
+        },
+        "FvARM-bone L Hand": {
+          "first_vs_idle_pos": 4.9818686904746246,
+          "last_vs_idle_pos": 3.524421409553583e-05,
+          "first_vs_idle_ang_deg": 63.20290524041968,
+          "last_vs_idle_ang_deg": 0.00011455848122407987,
+          "first_pos": [
+            0.7136549530543137,
+            -9.39645362674654,
+            4.2246513728077915
+          ],
+          "last_pos": [
+            0.6933378932290086,
+            -4.414604011899707,
+            4.213340646908868
+          ],
+          "idle_pos": [
+            0.6933364279896785,
+            -4.414639213019188,
+            4.2133397041002105
+          ]
+        }
+      },
+      "reload": {
+        "FvARM-bone Prop1": {
+          "first_vs_idle_pos": 0.2640105835581485,
+          "last_vs_idle_pos": 2.0062608229075912e-05,
+          "first_vs_idle_ang_deg": 0.0005865580292266884,
+          "last_vs_idle_ang_deg": 0.0,
+          "first_pos": [
+            1.9046405765614232,
+            -5.978336334228516,
+            -0.8334556298701097
+          ],
+          "last_pos": [
+            2.0192495795483754,
+            -5.740479469299316,
+            -0.833399675688653
+          ],
+          "idle_pos": [
+            2.019249579546667,
+            -5.740499496459961,
+            -0.8333984835957575
+          ]
+        },
+        "FvARM-bone R Hand": {
+          "first_vs_idle_pos": 2.0053583425129554e-05,
+          "last_vs_idle_pos": 2.0053583425129554e-05,
+          "first_vs_idle_ang_deg": 0.0,
+          "last_vs_idle_ang_deg": 0.0,
+          "first_pos": [
+            1.904636326676524,
+            -5.978341507024981,
+            -0.8334578777140691
+          ],
+          "last_pos": [
+            1.904636326676524,
+            -5.978341507024981,
+            -0.8334578777140691
+          ],
+          "idle_pos": [
+            1.90463678669534,
+            -5.978361534992291,
+            -0.8334569748761589
+          ]
+        },
+        "FvARM-bone L Hand": {
+          "first_vs_idle_pos": 1.9125893748804315e-05,
+          "last_vs_idle_pos": 1.9125893748804315e-05,
+          "first_vs_idle_ang_deg": 3.4952621358355786e-05,
+          "last_vs_idle_ang_deg": 3.4952621358355786e-05,
+          "first_pos": [
+            0.6933353683086065,
+            -4.414620330160543,
+            4.213336855497555
+          ],
+          "last_pos": [
+            0.6933353683086065,
+            -4.414620330160543,
+            4.213336855497555
+          ],
+          "idle_pos": [
+            0.6933364279896785,
+            -4.414639213019188,
+            4.2133397041002105
+          ]
+        }
+      }
+    }
+  },
+  "max_world_travel": {
+    "raw_unnormalized": {
+      "select": {
+        "FvARM-bone Prop1": {
+          "max_from_first": 5.372654958282965,
+          "max_adjacent": 1.01822534662667
+        },
+        "FvARM-bone R Hand": {
+          "max_from_first": 3.6345688623301764,
+          "max_adjacent": 0.9035040081207878
+        },
+        "FvARM-bone L Hand": {
+          "max_from_first": 5.372640852152209,
+          "max_adjacent": 1.018216136587792
+        },
+        "_all_bones_max_from_first": 7.605590742231402
+      },
+      "reload": {
+        "FvARM-bone Prop1": {
+          "max_from_first": 1.5804102966977547,
+          "max_adjacent": 0.45282487323436243
+        },
+        "FvARM-bone R Hand": {
+          "max_from_first": 4.316944330563466,
+          "max_adjacent": 0.9360506556566885
+        },
+        "FvARM-bone L Hand": {
+          "max_from_first": 5.742840887937479,
+          "max_adjacent": 1.7673389395486987
+        },
+        "_all_bones_max_from_first": 5.774086935703811
+      }
+    },
+    "normalized_diagnostic": {
+      "select": {
+        "FvARM-bone Prop1": {
+          "max_from_first": 5.372655001230128,
+          "max_adjacent": 1.0182254008438247
+        },
+        "FvARM-bone R Hand": {
+          "max_from_first": 3.6345702136174296,
+          "max_adjacent": 0.903493779182197
+        },
+        "FvARM-bone L Hand": {
+          "max_from_first": 5.372640819000215,
+          "max_adjacent": 1.0182176551742583
+        },
+        "_all_bones_max_from_first": 7.605596893220651
+      },
+      "reload": {
+        "FvARM-bone Prop1": {
+          "max_from_first": 1.5804110998065515,
+          "max_adjacent": 0.45282501804930464
+        },
+        "FvARM-bone R Hand": {
+          "max_from_first": 4.316938594080394,
+          "max_adjacent": 0.9360511629689979
+        },
+        "FvARM-bone L Hand": {
+          "max_from_first": 5.742844181889207,
+          "max_adjacent": 1.7673451670477565
+        },
+        "_all_bones_max_from_first": 5.774089493841552
+      }
+    },
+    "idle_0_raw": {
+      "FvARM-bone Prop1": {
+        "max_from_first": 0.052169884712174784,
+        "max_adjacent": 0.012062679187666753
+      },
+      "FvARM-bone R Hand": {
+        "max_from_first": 0.0501419413587258,
+        "max_adjacent": 0.011597916372917256
+      },
+      "FvARM-bone L Hand": {
+        "max_from_first": 0.08309766713776884,
+        "max_adjacent": 0.01918845319928219
+      },
+      "_all_bones_max_from_first": 0.10146758825138466
+    }
+  },
+  "enough_for_skeleton_visible_reference": false,
+  "enough_for_animation_track_overlay_with_open_bind": true,
+  "next_verification_step": "Do not mix bind translation into animation locals yet. Next single check: compose idle_0 and select frame0 with bind-relative locals local(t)=FromParent(bind) @ inv(local_reload0) @ local(t) and compare all 57 worlds to bind. If arms still miss, bind is a modelling rest not equal to clip0; G1 visible overlay must draw two prefixed skeletons (R1A_CF_ANIM_* from tracks, R1A_CF_BIND_* from node.matrix) at reload frame0.",
+  "open_items": [
+    "Engine key interpolation (lerp vs slerp/squad, shortest-arc, q/-q continuity) is not in this file; interpolation_ms is stored but unread as a runtime rule.",
+    "100 FPS fractional frames are diagnostic (frame=ms/10), not CF native sampling.",
+    "Normalized quats are diagnostic only; raw values are retained.",
+    "No hypothesis matched all 57 bones of bind vs first-exported-frame.",
+    "Pelvis reload[0] local translation is zero while bind FromParent translation is not; arm world therefore diverges from bind.",
+    "Scene Root bind is 180deg about Y; animation quat is identity."
+  ]
+}

@@ -60,6 +60,22 @@
 
 ## 4. 分阶段操作
 
+```mermaid
+flowchart TD
+  A[CF源骨架与真实毫秒时间轴] --> B[统一idle参考和坐标校准]
+  B --> C[独立枪 / 弹匣 / 拉栓控制目标]
+  A --> D[双手自由运动轨迹]
+  C --> E[分阶段抓握与交接目标]
+  D --> E
+  E --> F[连续肩肘腕控制链 / 两骨IK / 固定骨长]
+  F --> G[保留各自bind的手套和袖子]
+  G --> H[完整播放和网格验收]
+  H --> I[烘焙回原57骨层级]
+  I --> J[SMD独立重导入与姿态对比]
+```
+
+枪轨迹先独立正确，再让双手按接触阶段跟随；原57骨层级只承担最终兼容输出。当前只执行最上游的源对照。
+
 ### G0 — 保存现场并建立新副本（R1-A当前允许）
 
 1. 再查Git status、plan阶段、`bpy.data.filepath/is_dirty`、action/slot、frame/FPS、对象矩阵、NLA、constraints和modifiers。Reviewer看到的是Blender5.2.1 LTS、draw frame25、30 FPS、is_dirty=true；执行时可能已变化，不要硬编码这些状态。
@@ -72,8 +88,12 @@
 
 1. 重跑Reviewer `audit_inputs.py`；只读通过校验的body，记录压缩/解压双SHA、57节点/8clips、select/reload的times_ms/事件。只导入旧模块函数，不调用main。
 2. 在新副本建 `CF_SOURCE_REFERENCE`：先用CF原始层级画骨骼/关节点、枪根/弹匣/拉栓坐标轴，按CF local→world累乘得到姿态。旧retarget SMD不能充当原始CF对照。检查轴向、左右手、quat分量顺序、local/global/bind矩阵含义。
+   - **bind不要求等于当前文件任一clip首帧**。旧源码“第一导出帧”注释不能证明资源后续未重排/换动作，也不能据此拟合坐标。先用SDK约定、齐次矩阵合法性、层级和合成旋转验证；再把bind与各clip的差异作为结果记录。禁止按“所有clip首帧离bind最近”自动挑选行列/旋转约定。
+   - 旋转角公式只用于单位正交旋转。raw非单位quat矩阵应报告正交误差/行列式；如经polar decomposition比较朝向，明确标为提取后的旋转。归一化影响必须是同一clip/帧/骨的raw与unit之差，不能拿各自动作总行程替代。
 3. `data/p5_t02_native/geom/...geometry.json` 只有mesh/vertices/triangles/UV/normals，**没有权重和inverse bind**。可展示静态形状；不能按最近骨随便绑定后宣称原生CF蒙皮成功。本轮允许明确的 `SKELETON_ONLY_REFERENCE`；完整原生手模对照需另解析LTB权重/bind并验证。
 4. 建一套真实时间轴，例如诊断scene用 **100 FPS**，`frame=time_ms*100/1000`，源key允许小数帧。位置按源时间插值；旋转约定核实后，用单位quaternion最短弧slerp，做q/-q连续化。100 FPS是本任务诊断选择，不是CF原始采样率。整帧SMD导出留到G5。
+   - 显式源采样器负责SLERP；不能把四个分量设LINEAR便声称等价。测Blender中间帧与采样器位置/角度误差，必要时加密烘焙并报告误差。
+   - 新解析保留节点flags。Planner实测本输入57个flags均0，未启用rotation-only；不要追它作本次根因。引擎代码线索和版本边界见[补充核查](work/p5_leishen/p7_s04_review_20260913/source_convention_research.md)。
 5. 核查原始select末帧、reload末帧与idle0枪/左右手几乎同位（实测位置误差<0.0001 CF单位），补测旋转闭合误差。保留select首帧枪距idle4.98188的进入运动；此轮不要修改旧目标动作来满足它。
 6. 用固定检查相机显示完整动作，另设固定侧/顶视角。不可每帧追着枪重取景。标明source/target、毫秒、原始key index。场景包含参考骨架轴线，必须可见且可播放。
 7. 输出 `source/source_audit.json`、`source/source_reference.blend`、`source/timeline.json`、完整可见的检查图/短视频。若只能骨架对照必须注明；quat或解码约定无法验证则具体标OPEN，不能继续用IK掩盖。
@@ -155,6 +175,12 @@
 一次只改一个可说明的因素，记录 `hypothesis → change → expected → measured`，保留before/after和失败结果。不连续叠偏移直到某镜头看着好。禁止 `--always-approve`、`bypassPermissions`、`--restore-code`、Git reset/clean 或擅改系统权限。
 
 ## 6. Grok入口和交付格式
+
+**当前执行记录**：session `01a098c9-1818-74f1-b82a-b3e9976e433b`，G0已由Grok完成且Planner独立复核通过（[检查结果](work/p5_leishen/p7_s04_r1/review/planner_g0_review.json)）。当前工作文件是 `work/p5_leishen/p7_s04_r1/baseline/working_20260913_113051.blend`，未保存现场备份是同目录 `live_unsaved_20260913_113051.blend`。**不重跑G0**。G0脚本把失败条件放在事后报告；本次保存实测成功，但不可复用这种控制流。后续写入前必须assert正确工作路径、冻结hash及新目标不存在，保存成功并验证后才可继续。
+
+首轮16轮大任务耗在阅读，仅完成查询；收窄到G0后完成备份。因此后续采用“单个小脚本→执行→输出证据→Planner复核”，G1先查矩阵/quaternion/时间约定，再建可见源对照。当前动画仍REJECTED。
+
+**最新：G1离线审计已经由Grok执行，达到8轮上限停止，复核为CHANGES_REQUIRED。** 没有source_reference.blend。当前 `source_audit.json` 的bind-relative next_verification_step已被Planner否决，不得直接照做；下一小检查点的7条明确操作见[执行复核与续作单](work/p5_leishen/p7_s04_review_20260913/grok_execution_review.md)。不得只读旧JSON的next步骤，跳过此纠正。
 
 本机Python：`C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe`。用项目TCP bridge操作Blender，不用鼠标猜Pose/Action状态。
 

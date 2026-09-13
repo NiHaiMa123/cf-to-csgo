@@ -1,0 +1,69 @@
+{
+  "task_id": "P7-S04-R1-A",
+  "model": "grok-4.6",
+  "stage": "G0",
+  "status": "G0_BACKUP_READY_FOR_REVIEW",
+  "g1": "pending",
+  "compiled": false,
+  "deployed": false,
+  "user_accepted": false,
+  "original_scene_sha_unchanged": true,
+  "unsaved_backup_path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\live_unsaved_20260913_113051.blend",
+  "unsaved_backup_sha256": "3f2da3f5f3fd6fe0e06aee0123e9ce4902dd4985c42fd8e2e02daf419919597c",
+  "working_path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+  "working_sha256": "3982f71ec64e6d54b577a58250f4b4a974fb92253545b7b326d25ebe977b6ed1",
+  "frozen_original_path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04\\blender\\p7_s04_current.blend",
+  "frozen_original_sha256": "64692eb850e101bcdc378525ac6dfb41f3b013f3a4cd664203139aacb61a700c",
+  "copy_ops": {
+    "result": ["FINISHED"],
+    "filepath_after_still_original": true,
+    "exists": true,
+    "size": 17471964
+  },
+  "working_ops": {
+    "result": ["FINISHED"],
+    "session_filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+    "exists": true,
+    "size": 17471964
+  },
+  "live": {
+    "before": {
+      "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04\\blender\\p7_s04_current.blend",
+      "is_dirty": true,
+      "frame": 25,
+      "fps": 30,
+      "action": "3_draw",
+      "slot": "OBdraw"
+    },
+    "after_copy": {
+      "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04\\blender\\p7_s04_current.blend",
+      "is_dirty": true,
+      "frame": 25,
+      "action": "3_draw",
+      "slot": "OBdraw"
+    },
+    "after_working": {
+      "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+      "is_dirty": true,
+      "frame": 25,
+      "action": "3_draw",
+      "slot": "OBdraw"
+    }
+  },
+  "objects_actions_preserved": true,
+  "frozen_sha_unchanged": true,
+  "failed_checks": [],
+  "artifacts": [
+    "work/p5_leishen/p7_s04_r1/scripts/g0_query_live.py",
+    "work/p5_leishen/p7_s04_r1/scripts/g0_save_live_copy.py",
+    "work/p5_leishen/p7_s04_r1/baseline/live_query.json",
+    "work/p5_leishen/p7_s04_r1/baseline/pre_hashes.json",
+    "work/p5_leishen/p7_s04_r1/baseline/g0_save_result.json",
+    "work/p5_leishen/p7_s04_r1/baseline/live_unsaved_20260913_113051.blend",
+    "work/p5_leishen/p7_s04_r1/baseline/working_20260913_113051.blend",
+    "work/p5_leishen/p7_s04_r1/baseline/preflight.json",
+    "work/p5_leishen/p7_s04_r1/review/g0_checkpoint.json",
+    "work/p5_leishen/p7_s04_r1/review/g0_report.md"
+  ],
+  "next_review_question": "Confirm G0 backup/working copies are acceptable, then authorize G1 source-reference on working_20260913_113051.blend only."
+}

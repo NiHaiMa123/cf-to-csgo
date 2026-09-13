@@ -36,14 +36,18 @@ State                         : LIGHTING_DEFERRED / P4-M01_INCOMPLETE / P5_IDENT
 
 ```text
 Task ID : P7-S04-R1-A
-State   : ACTIVE / GROK_SOURCE_REFERENCE_PREFLIGHT
+State   : G0_VERIFIED / G1_REVIEW_CHANGES_REQUIRED / EXECUTOR_STOPPED
 Executor: local Grok Build / grok-4.6
 Goal    : 按 task.md G0-G1 保存未保存现场，在新副本建立源动作与真实时间轴对照
-Last    : 用户要求详细修复路径写入 task，再交本机 Grok 4.6 操作
+Last    : Grok已执行G1离线审计；Planner否决bind首帧拟合，下一小步修正审计后建可见源对照
 Result  : 旧 P7-S04 仍 REJECTED；新动画尚未修复/接受
 ```
 
 **本轮执行单**：详见 [`task.md`](task.md)。只开放 **G0–G1**；完成即交回 Review，不自行进入 G2 的控制 rig / G3 接触修复，更不编译/部署。允许新 `work/p5_leishen/p7_s04_r1/` 副本，保护当前未保存内容和旧磁盘文件。用户此前冻结的旧 scene/SMD/脚本继续冻结；本次“先讲清再让 Grok 操作”授权本轮副本操作。
+
+**执行检查点（2026-09-13）**：本机 `grok-4.6` session `01a098c9-1818-74f1-b82a-b3e9976e433b` 首轮到16轮上限，只完成查询；随后收窄到G0并完成。内存备份为 `p7_s04_r1/baseline/live_unsaved_20260913_113051.blend`，当前工作副本为 `baseline/working_20260913_113051.blend`（同一R1目录）。Planner独立复核9个冻结文件与2个新副本SHA，及live filepath/14对象/6Actions/draw25/OBdraw，均通过，见 [`planner_g0_review.json`](work/p5_leishen/p7_s04_r1/review/planner_g0_review.json)。保存调用内dirty仍true，后续只读查询为false，按时点记录。G1尚未通过；分小检查点推进，不能重跑G0或把备份当动画修复。
+
+**G1执行后复核**：Grok产出source_audit/timeline/parsed_tracks后达到8轮上限停止，没有source_reference.blend。首版错误行列排名已被其二次执行纠正；仍否决把动画首帧强行映射到bind作为解码验证。详细方法错误、独立复算与下一份小操作单见 [`grok_execution_review.md`](work/p5_leishen/p7_s04_review_20260913/grok_execution_review.md)。当前只允许继续G1修正，不开G2。四元数单位化对reload关节点世界位置的最大影响约0.04845 CF单位；它不是已证实的主要拉伸根因。源码补查flags=0共57个，rotation-only方向排除。本轮方案/诊断已保存在本机，公开仓库push被自动审批拒绝，未绕过。
 
 Reviewer 只读复核（2026-09-13，基于 `bbc0a73`）：当前 Blender5.2.1，draw frame25、30FPS、dirty=true、slot已正确绑定。CF payload经目录MD5/LZMA校验与P6输入相同。真正缺口包括：每clip首帧重置hold破坏draw末帧连接；第二版上臂→前臂关节点距离仍大幅变化；57骨导出rig前臂为根，不能直接当普通IK链；30FPS播放使draw/reload时长错误；接触阶段与蒙皮验收缺失。数值和边界见 [`offline_audit.json`](work/p5_leishen/p7_s04_review_20260913/offline_audit.json)。
 

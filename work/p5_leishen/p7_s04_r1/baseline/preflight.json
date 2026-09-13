@@ -1,0 +1,158 @@
+{
+  "task_id": "P7-S04-R1-A",
+  "gate": "G0",
+  "status": "G0_BACKUP_READY_FOR_REVIEW",
+  "g1": "pending",
+  "captured_utc": "2026-09-13T03:30:51.994061+00:00",
+  "blender_version": "5.2.1 LTS",
+  "live_query_ref": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\live_query.json",
+  "save_result_ref": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\g0_save_result.json",
+  "pre_hashes_ref": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\pre_hashes.json",
+  "rejected_baseline": {
+    "label": "REJECTED_BASELINE",
+    "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04\\blender\\p7_s04_current.blend",
+    "sha256": "64692eb850e101bcdc378525ac6dfb41f3b013f3a4cd664203139aacb61a700c",
+    "size": 17471836,
+    "overwritten": false
+  },
+  "backup": {
+    "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\live_unsaved_20260913_113051.blend",
+    "sha256": "3f2da3f5f3fd6fe0e06aee0123e9ce4902dd4985c42fd8e2e02daf419919597c",
+    "size": 17471964,
+    "ops_result": ["FINISHED"],
+    "finished": true,
+    "exists": true,
+    "nonempty": true,
+    "method": "bpy.ops.wm.save_as_mainfile(filepath=..., copy=True)",
+    "note": "Saved in-memory dirty scene; not a disk-file copy of the frozen blend."
+  },
+  "working": {
+    "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+    "sha256": "3982f71ec64e6d54b577a58250f4b4a974fb92253545b7b326d25ebe977b6ed1",
+    "size": 17471964,
+    "ops_result": ["FINISHED"],
+    "finished": true,
+    "exists": true,
+    "nonempty": true,
+    "method": "bpy.ops.wm.save_as_mainfile(filepath=..., copy=False)",
+    "session_switched": true
+  },
+  "live_before": {
+    "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04\\blender\\p7_s04_current.blend",
+    "is_dirty": true,
+    "frame": 25,
+    "fps": 30,
+    "fps_base": 1.0,
+    "frame_range": [0, 30],
+    "scene": "Scene",
+    "mode": "OBJECT",
+    "selected": ["CS_M4A4_Armature"],
+    "active": "CS_M4A4_Armature",
+    "cs_m4a4_action": "3_draw",
+    "cs_m4a4_slot": "OBdraw",
+    "object_count": 14,
+    "action_count": 6,
+    "object_names": [
+      "CF_GUN_P6",
+      "CS_GLOVE",
+      "CS_GLOVE_Armature",
+      "CS_M4A4_Armature",
+      "CS_SLEEVE",
+      "CS_SLEEVE_Armature",
+      "Eye",
+      "Fill",
+      "Front",
+      "Key",
+      "P7S04_Cam",
+      "P7S04_Review",
+      "Rim",
+      "smd_bone_vis"
+    ],
+    "action_names": [
+      "1_idle_hold",
+      "2_shoot",
+      "3_draw",
+      "4_reload",
+      "5_lookat",
+      "P7S04_CURRENT"
+    ]
+  },
+  "live_after_copy": {
+    "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04\\blender\\p7_s04_current.blend",
+    "filepath_still_original": true,
+    "is_dirty": true,
+    "frame": 25,
+    "cs_m4a4_action": "3_draw",
+    "cs_m4a4_slot": "OBdraw",
+    "selected": ["CS_M4A4_Armature"],
+    "active": "CS_M4A4_Armature"
+  },
+  "live_after_working": {
+    "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+    "filepath_is_working": true,
+    "is_dirty": true,
+    "frame": 25,
+    "fps": 30,
+    "cs_m4a4_action": "3_draw",
+    "cs_m4a4_slot": "OBdraw",
+    "selected": ["CS_M4A4_Armature"],
+    "active": "CS_M4A4_Armature",
+    "objects_actions_preserved": true
+  },
+  "dirty_observed": {
+    "before": true,
+    "after_copy": true,
+    "after_working": true,
+    "assumption": "none; recorded as returned by bpy.data.is_dirty"
+  },
+  "topology_constraints_actions": {
+    "source": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\live_query.json",
+    "note": "Full armature topology, pose constraints, NLA, modifiers, and unique deform-rig lists were dumped read-only before save. G0 did not mutate them."
+  },
+  "frozen_file_compare": {
+    "all_match_pre_hashes": true,
+    "unchanged_after_save": true,
+    "files": {
+      "work/p5_leishen/p7_s04/blender/p7_s04_current.blend": {
+        "sha256": "64692eb850e101bcdc378525ac6dfb41f3b013f3a4cd664203139aacb61a700c",
+        "size": 17471836,
+        "matches_pre_hashes": true
+      },
+      "work/p5_leishen/p7_s04/smd/draw.smd": {
+        "sha256": "5f8f90c53cfe4a790a6bac4eb5ea039a4b4e6aeaad07c12c04e57814278362ff",
+        "matches_pre_hashes": true
+      },
+      "work/p5_leishen/p7_s04/smd/idle.smd": {
+        "sha256": "38184548e7630b611ae6c98299ebb9959832363f735b5a35eb647b1a0dc14759",
+        "matches_pre_hashes": true
+      },
+      "work/p5_leishen/p7_s04/smd/reload.smd": {
+        "sha256": "0242d0bf6d05dc4eb7e717757233323a2c5ccaada0722b6f391b61a6af81e7f0",
+        "matches_pre_hashes": true
+      },
+      "work/p5_leishen/p7_s04/smd/shoot1.smd": {
+        "sha256": "5447db8d7ac92105188b3921e5f0497904a04406babde3291a33885d0da0806e",
+        "matches_pre_hashes": true
+      },
+      "scripts/p5/p5_p7_s04_cf_animation.py": {
+        "sha256": "d91d18503b16591ba2a5ba248c05e59fa36f581e6e2483176577c0e93d99994f",
+        "matches_pre_hashes": true
+      },
+      "scripts/p5/p5_p7_s04_fix_retarget.py": {
+        "sha256": "f9321edeaf418b9a6e2ee6f115fd177656338c3370086a600c7dd4ee779aa58f",
+        "matches_pre_hashes": true
+      },
+      "work/p5_leishen/p7_s04/source1/cf_leishen_m4a4.smd": {
+        "sha256": "77d36c94b9f0dedd57f34c9970203133579287aa58b0874f26380e9494bf8498",
+        "matches_pre_hashes": true
+      },
+      "work/p5_leishen/p6/verified_root/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB": {
+        "sha256": "511dec8d2401a1886ddecd14b4f18e17ac0afbefd943f6dc11a3fd2f82ef6b49",
+        "matches_pre_hashes": true
+      }
+    }
+  },
+  "compiled": false,
+  "deployed": false,
+  "user_accepted": false
+}

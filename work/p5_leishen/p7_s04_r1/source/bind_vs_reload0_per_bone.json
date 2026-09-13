@@ -1,0 +1,857 @@
+[
+  {
+    "index": 0,
+    "name": "Scene Root",
+    "parent": -1,
+    "anim_local_pos": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 0.0,
+    "world_vs_bind_ang_deg": 180.0,
+    "local_vs_fromparent_pos": 0.0,
+    "local_vs_fromparent_ang_deg": 180.0,
+    "anim_pos_is_zero": true
+  },
+  {
+    "index": 1,
+    "name": "FvARM-bone",
+    "parent": 0,
+    "anim_local_pos": [
+      -0.37770000100135803,
+      -11.600680351257324,
+      -3.2935500144958496
+    ],
+    "world_vs_bind_pos": 0.0,
+    "world_vs_bind_ang_deg": 0.07215045449212906,
+    "local_vs_fromparent_pos": 6.630272690845238,
+    "local_vs_fromparent_ang_deg": 179.92784954550788,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 2,
+    "name": "FvARM-bone Pelvis",
+    "parent": 1,
+    "anim_local_pos": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 25.32888007159994,
+    "world_vs_bind_ang_deg": 0.07215013315822125,
+    "local_vs_fromparent_pos": 25.328880071599723,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": true
+  },
+  {
+    "index": 3,
+    "name": "FvARM-bone Spine",
+    "parent": 2,
+    "anim_local_pos": [
+      2.316786050796509,
+      3.999999989900971e-06,
+      -0.06751400232315063
+    ],
+    "world_vs_bind_pos": 25.328880630865015,
+    "world_vs_bind_ang_deg": 0.055907329729391046,
+    "local_vs_fromparent_pos": 1.923722611407204e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 4,
+    "name": "FvARM-bone Spine1",
+    "parent": 3,
+    "anim_local_pos": [
+      2.1940689086914062,
+      0.0017430000007152557,
+      -0.0034199999645352364
+    ],
+    "world_vs_bind_pos": 25.328850259372572,
+    "world_vs_bind_ang_deg": 27.000036686476783,
+    "local_vs_fromparent_pos": 0.0017925376535319253,
+    "local_vs_fromparent_ang_deg": 26.99996628043202,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 5,
+    "name": "FvARM-bone Neck",
+    "parent": 4,
+    "anim_local_pos": [
+      4.868750095367432,
+      -9.999999974752427e-07,
+      -0.5066329836845398
+    ],
+    "world_vs_bind_pos": 25.326233084907958,
+    "world_vs_bind_ang_deg": 27.000055123825014,
+    "local_vs_fromparent_pos": 2.8198537096828902e-06,
+    "local_vs_fromparent_ang_deg": 0.03185054326953384,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 6,
+    "name": "FvARM-bone L Clavicle",
+    "parent": 5,
+    "anim_local_pos": [
+      -3.278981924057007,
+      0.9927909970283508,
+      0.7883960008621216
+    ],
+    "world_vs_bind_pos": 27.623181001612284,
+    "world_vs_bind_ang_deg": 27.000146955346263,
+    "local_vs_fromparent_pos": 2.533604143078547,
+    "local_vs_fromparent_ang_deg": 0.06938694210307873,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 7,
+    "name": "FvARM-bone L UpperArm",
+    "parent": 6,
+    "anim_local_pos": [
+      2.300654888153076,
+      -0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 27.56230234746774,
+    "world_vs_bind_ang_deg": 118.45610049392694,
+    "local_vs_fromparent_pos": 8.435637129199533e-07,
+    "local_vs_fromparent_ang_deg": 96.84919870968939,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 8,
+    "name": "FvARM-bone L ForeArm",
+    "parent": 7,
+    "anim_local_pos": [
+      4.175734996795654,
+      -0.0,
+      9.999999974752427e-07
+    ],
+    "world_vs_bind_pos": 28.69515985219244,
+    "world_vs_bind_ang_deg": 158.34472586701958,
+    "local_vs_fromparent_pos": 4.211108898933351e-06,
+    "local_vs_fromparent_ang_deg": 46.708924458438005,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 9,
+    "name": "FvARM-bone L Hand",
+    "parent": 8,
+    "anim_local_pos": [
+      3.640626907348633,
+      0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 28.92449932613318,
+    "world_vs_bind_ang_deg": 171.45156655620855,
+    "local_vs_fromparent_pos": 2.552872731952194e-06,
+    "local_vs_fromparent_ang_deg": 107.64751812187079,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 10,
+    "name": "FvARM-bone L Finger0",
+    "parent": 9,
+    "anim_local_pos": [
+      0.15253999829292297,
+      -0.7136359810829163,
+      0.2664259970188141
+    ],
+    "world_vs_bind_pos": 28.078712797109755,
+    "world_vs_bind_ang_deg": 138.8853420989831,
+    "local_vs_fromparent_pos": 1.0007022494922337e-06,
+    "local_vs_fromparent_ang_deg": 32.83002290500776,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 11,
+    "name": "FvARM-bone L Finger01",
+    "parent": 10,
+    "anim_local_pos": [
+      0.715254008769989,
+      -0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 28.3484994338164,
+    "world_vs_bind_ang_deg": 138.59931088550388,
+    "local_vs_fromparent_pos": 2.687256084156881e-07,
+    "local_vs_fromparent_ang_deg": 1.0015968214533038,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 12,
+    "name": "FvARM-bone L Finger02",
+    "parent": 11,
+    "anim_local_pos": [
+      0.46162500977516174,
+      -9.999999974752427e-07,
+      0.0
+    ],
+    "world_vs_bind_pos": 28.569139957633254,
+    "world_vs_bind_ang_deg": 144.73873231614334,
+    "local_vs_fromparent_pos": 1.1214238273414274e-06,
+    "local_vs_fromparent_ang_deg": 19.65024901388733,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 13,
+    "name": "FvARM-bone L Finger1",
+    "parent": 9,
+    "anim_local_pos": [
+      1.465775966644287,
+      -0.5437110066413879,
+      -0.36297300457954407
+    ],
+    "world_vs_bind_pos": 30.26127269086187,
+    "world_vs_bind_ang_deg": 153.14185566457985,
+    "local_vs_fromparent_pos": 1.5072432825639518e-06,
+    "local_vs_fromparent_ang_deg": 21.999871570826596,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 14,
+    "name": "FvARM-bone L Finger11",
+    "parent": 13,
+    "anim_local_pos": [
+      0.5261520147323608,
+      0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 30.822798558111728,
+    "world_vs_bind_ang_deg": 153.14180062626747,
+    "local_vs_fromparent_pos": 9.362287692926475e-07,
+    "local_vs_fromparent_ang_deg": 0.06067312929251967,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 15,
+    "name": "FvARM-bone L Finger12",
+    "parent": 14,
+    "anim_local_pos": [
+      0.5381519794464111,
+      -0.0,
+      9.999999974752427e-07
+    ],
+    "world_vs_bind_pos": 31.37075089465372,
+    "world_vs_bind_ang_deg": 153.14179880265968,
+    "local_vs_fromparent_pos": 1.691324632995889e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 16,
+    "name": "FvARM-bone L Finger2",
+    "parent": 9,
+    "anim_local_pos": [
+      1.5198090076446533,
+      -0.10548599809408188,
+      -0.43740999698638916
+    ],
+    "world_vs_bind_pos": 30.760861838949445,
+    "world_vs_bind_ang_deg": 171.45164382006803,
+    "local_vs_fromparent_pos": 1.0534245865812007e-06,
+    "local_vs_fromparent_ang_deg": 0.0436525035348569,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 17,
+    "name": "FvARM-bone L Finger21",
+    "parent": 16,
+    "anim_local_pos": [
+      0.596671998500824,
+      -0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 31.260076376434867,
+    "world_vs_bind_ang_deg": 171.4515965892235,
+    "local_vs_fromparent_pos": 6.234432922004797e-07,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 18,
+    "name": "FvARM-bone L Finger22",
+    "parent": 17,
+    "anim_local_pos": [
+      0.5579439997673035,
+      0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 31.72477691175403,
+    "world_vs_bind_ang_deg": 171.45163276032042,
+    "local_vs_fromparent_pos": 1.4416222884939655e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 19,
+    "name": "FvARM-bone L Finger3",
+    "parent": 9,
+    "anim_local_pos": [
+      1.4993489980697632,
+      0.2789340019226074,
+      -0.39152199029922485
+    ],
+    "world_vs_bind_pos": 30.967300481307635,
+    "world_vs_bind_ang_deg": 171.45162173784178,
+    "local_vs_fromparent_pos": 5.039044302264713e-07,
+    "local_vs_fromparent_ang_deg": 0.04039423058789615,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 20,
+    "name": "FvARM-bone L Finger31",
+    "parent": 19,
+    "anim_local_pos": [
+      0.5278689861297607,
+      0.0,
+      9.999999974752427e-07
+    ],
+    "world_vs_bind_pos": 31.453111169843666,
+    "world_vs_bind_ang_deg": 171.45162255732706,
+    "local_vs_fromparent_pos": 1.448129965290103e-06,
+    "local_vs_fromparent_ang_deg": 0.013080062845737008,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 21,
+    "name": "FvARM-bone L Finger32",
+    "parent": 20,
+    "anim_local_pos": [
+      0.5448160171508789,
+      -0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 31.91258432587925,
+    "world_vs_bind_ang_deg": 171.45181120689847,
+    "local_vs_fromparent_pos": 2.2083789253240917e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 22,
+    "name": "FvARM-bone L Finger4",
+    "parent": 9,
+    "anim_local_pos": [
+      1.4199589490890503,
+      0.6413429975509644,
+      -0.3541969954967499
+    ],
+    "world_vs_bind_pos": 31.121389021231007,
+    "world_vs_bind_ang_deg": 171.45152552643884,
+    "local_vs_fromparent_pos": 9.401606746997026e-07,
+    "local_vs_fromparent_ang_deg": 0.01994374744220663,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 23,
+    "name": "FvARM-bone L Finger41",
+    "parent": 22,
+    "anim_local_pos": [
+      0.40764299035072327,
+      -0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 31.53818226713467,
+    "world_vs_bind_ang_deg": 171.4515277040072,
+    "local_vs_fromparent_pos": 2.0292729709252003e-06,
+    "local_vs_fromparent_ang_deg": 0.014510873364829984,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 24,
+    "name": "FvARM-bone L Finger42",
+    "parent": 23,
+    "anim_local_pos": [
+      0.47255998849868774,
+      0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 31.95376328041617,
+    "world_vs_bind_ang_deg": 171.45149616875722,
+    "local_vs_fromparent_pos": 1.6847787546182108e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 25,
+    "name": "FvARM-bone L ForeTwist",
+    "parent": 7,
+    "anim_local_pos": [
+      4.175734996795654,
+      -0.0,
+      9.999999974752427e-07
+    ],
+    "world_vs_bind_pos": 28.69515985219244,
+    "world_vs_bind_ang_deg": 172.3716013498513,
+    "local_vs_fromparent_pos": 4.211108898933351e-06,
+    "local_vs_fromparent_ang_deg": 57.380350902886185,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 26,
+    "name": "FvARM-bone R Clavicle",
+    "parent": 5,
+    "anim_local_pos": [
+      -0.852724015712738,
+      -0.9927909970283508,
+      0.05872799828648567
+    ],
+    "world_vs_bind_pos": 25.390805723643542,
+    "world_vs_bind_ang_deg": 27.000113324839276,
+    "local_vs_fromparent_pos": 1.1086309382159363e-06,
+    "local_vs_fromparent_ang_deg": 0.06950160766071238,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 27,
+    "name": "FvARM-bone R UpperArm",
+    "parent": 26,
+    "anim_local_pos": [
+      2.3006560802459717,
+      -0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 25.56738210573592,
+    "world_vs_bind_ang_deg": 61.74879558576344,
+    "local_vs_fromparent_pos": 7.523139445547826e-07,
+    "local_vs_fromparent_ang_deg": 80.50309818352562,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 28,
+    "name": "FvARM-bone R ForeArm",
+    "parent": 27,
+    "anim_local_pos": [
+      4.175734996795654,
+      -0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 28.546682538377762,
+    "world_vs_bind_ang_deg": 142.76062827104388,
+    "local_vs_fromparent_pos": 3.7543937113222712e-06,
+    "local_vs_fromparent_ang_deg": 99.73524906852904,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 29,
+    "name": "FvARM-bone R Hand",
+    "parent": 28,
+    "anim_local_pos": [
+      3.640626907348633,
+      0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 29.04531167566955,
+    "world_vs_bind_ang_deg": 131.59260495314453,
+    "local_vs_fromparent_pos": 1.644282162700789e-06,
+    "local_vs_fromparent_ang_deg": 55.298076505282616,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 30,
+    "name": "FvARM-bone R Finger0",
+    "parent": 29,
+    "anim_local_pos": [
+      0.15253999829292297,
+      0.7136369943618774,
+      0.2664259970188141
+    ],
+    "world_vs_bind_pos": 28.234580343688787,
+    "world_vs_bind_ang_deg": 135.6350940966807,
+    "local_vs_fromparent_pos": 1.504912694596856e-06,
+    "local_vs_fromparent_ang_deg": 20.783125683802083,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 31,
+    "name": "FvARM-bone R Finger01",
+    "parent": 30,
+    "anim_local_pos": [
+      0.715254008769989,
+      -0.0,
+      9.999999974752427e-07
+    ],
+    "world_vs_bind_pos": 28.388269118241638,
+    "world_vs_bind_ang_deg": 117.9160846318071,
+    "local_vs_fromparent_pos": 2.1194068887751753e-06,
+    "local_vs_fromparent_ang_deg": 28.999967146896577,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 32,
+    "name": "FvARM-bone R Finger02",
+    "parent": 31,
+    "anim_local_pos": [
+      0.46162500977516174,
+      -0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 28.73525898741139,
+    "world_vs_bind_ang_deg": 94.57238912755139,
+    "local_vs_fromparent_pos": 1.327121139740283e-06,
+    "local_vs_fromparent_ang_deg": 53.00002944130235,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 33,
+    "name": "FvARM-bone R Finger1",
+    "parent": 29,
+    "anim_local_pos": [
+      1.465775966644287,
+      0.5437110066413879,
+      -0.3629719913005829
+    ],
+    "world_vs_bind_pos": 29.447325618297175,
+    "world_vs_bind_ang_deg": 126.67152180168677,
+    "local_vs_fromparent_pos": 1.4308111289399335e-06,
+    "local_vs_fromparent_ang_deg": 9.000027657837618,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 34,
+    "name": "FvARM-bone R Finger11",
+    "parent": 33,
+    "anim_local_pos": [
+      0.5261520147323608,
+      -0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 29.774913194023892,
+    "world_vs_bind_ang_deg": 157.67878163293506,
+    "local_vs_fromparent_pos": 1.0804198409363054e-06,
+    "local_vs_fromparent_ang_deg": 42.99997411837661,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 35,
+    "name": "FvARM-bone R Finger12",
+    "parent": 34,
+    "anim_local_pos": [
+      0.5381529927253723,
+      0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 30.161947955689886,
+    "world_vs_bind_ang_deg": 175.1339702555404,
+    "local_vs_fromparent_pos": 5.31148475776363e-07,
+    "local_vs_fromparent_ang_deg": 36.000073002915,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 36,
+    "name": "FvARM-bone R Finger2",
+    "parent": 29,
+    "anim_local_pos": [
+      1.5198090076446533,
+      0.10548599809408188,
+      -0.43740999698638916
+    ],
+    "world_vs_bind_pos": 29.96235280284109,
+    "world_vs_bind_ang_deg": 132.63541426221346,
+    "local_vs_fromparent_pos": 1.038751871305361e-06,
+    "local_vs_fromparent_ang_deg": 41.45769135043655,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 37,
+    "name": "FvARM-bone R Finger21",
+    "parent": 36,
+    "anim_local_pos": [
+      0.596671998500824,
+      0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 30.563805659681066,
+    "world_vs_bind_ang_deg": 179.17198879809374,
+    "local_vs_fromparent_pos": 5.790162753741285e-07,
+    "local_vs_fromparent_ang_deg": 59.99999582409111,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 38,
+    "name": "FvARM-bone R Finger22",
+    "parent": 37,
+    "anim_local_pos": [
+      0.5579439997673035,
+      0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 31.07593637688226,
+    "world_vs_bind_ang_deg": 135.68656398457364,
+    "local_vs_fromparent_pos": 1.4396053518513088e-06,
+    "local_vs_fromparent_ang_deg": 57.9999918232042,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 39,
+    "name": "FvARM-bone R Finger3",
+    "parent": 29,
+    "anim_local_pos": [
+      1.4993489980697632,
+      -0.2789340019226074,
+      -0.39152100682258606
+    ],
+    "world_vs_bind_pos": 30.306353319897894,
+    "world_vs_bind_ang_deg": 157.29146805841958,
+    "local_vs_fromparent_pos": 1.4971278904809766e-06,
+    "local_vs_fromparent_ang_deg": 60.36234984542849,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 40,
+    "name": "FvARM-bone R Finger31",
+    "parent": 39,
+    "anim_local_pos": [
+      0.5278689861297607,
+      -0.0,
+      -0.0
+    ],
+    "world_vs_bind_pos": 30.85735745867206,
+    "world_vs_bind_ang_deg": 154.93374045646263,
+    "local_vs_fromparent_pos": 1.6264617121550966e-06,
+    "local_vs_fromparent_ang_deg": 57.00000087585309,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 41,
+    "name": "FvARM-bone R Finger32",
+    "parent": 40,
+    "anim_local_pos": [
+      0.5448160171508789,
+      -0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 31.11401725404615,
+    "world_vs_bind_ang_deg": 110.84140318101254,
+    "local_vs_fromparent_pos": 2.1314876290865475e-06,
+    "local_vs_fromparent_ang_deg": 54.999938348560704,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 42,
+    "name": "FvARM-bone R Finger4",
+    "parent": 29,
+    "anim_local_pos": [
+      1.4199589490890503,
+      -0.6413429975509644,
+      -0.3541960120201111
+    ],
+    "world_vs_bind_pos": 30.60663421760728,
+    "world_vs_bind_ang_deg": 171.11465172358527,
+    "local_vs_fromparent_pos": 1.5416627617772028e-06,
+    "local_vs_fromparent_ang_deg": 89.10481936750229,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 43,
+    "name": "FvARM-bone R Finger41",
+    "parent": 42,
+    "anim_local_pos": [
+      0.40764299035072327,
+      0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 30.946660085015743,
+    "world_vs_bind_ang_deg": 147.31885776398238,
+    "local_vs_fromparent_pos": 2.049353080820612e-06,
+    "local_vs_fromparent_ang_deg": 29.999917684915257,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 44,
+    "name": "FvARM-bone R Finger42",
+    "parent": 43,
+    "anim_local_pos": [
+      0.47255998849868774,
+      -9.999999974752427e-07,
+      -0.0
+    ],
+    "world_vs_bind_pos": 31.120970643458865,
+    "world_vs_bind_ang_deg": 124.44233882514523,
+    "local_vs_fromparent_pos": 2.300792917688483e-06,
+    "local_vs_fromparent_ang_deg": 29.99997441417174,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 45,
+    "name": "FvARM-bone R ForeTwist",
+    "parent": 27,
+    "anim_local_pos": [
+      4.175734996795654,
+      -0.0,
+      0.0
+    ],
+    "world_vs_bind_pos": 28.546682538377762,
+    "world_vs_bind_ang_deg": 147.17519398032115,
+    "local_vs_fromparent_pos": 3.7543937113222712e-06,
+    "local_vs_fromparent_ang_deg": 100.69955163029945,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 46,
+    "name": "FvARM-bone Prop1",
+    "parent": 1,
+    "anim_local_pos": [
+      2.4600911140441895,
+      5.622344017028809,
+      -2.282344102859497
+    ],
+    "world_vs_bind_pos": 4.4011050027387316e-06,
+    "world_vs_bind_ang_deg": 0.1042590057683415,
+    "local_vs_fromparent_pos": 1.770099499825486e-06,
+    "local_vs_fromparent_ang_deg": 0.07526122570202774,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 47,
+    "name": "Dummy01",
+    "parent": 46,
+    "anim_local_pos": [
+      4.904900074005127,
+      -0.23360000550746918,
+      1.1803369522094727
+    ],
+    "world_vs_bind_pos": 1.0609587594245563e-05,
+    "world_vs_bind_ang_deg": 0.09117571135834206,
+    "local_vs_fromparent_pos": 1.7577575859438e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 48,
+    "name": "Bone02",
+    "parent": 47,
+    "anim_local_pos": [
+      -8.61113452911377,
+      0.010486000217497349,
+      0.4979029893875122
+    ],
+    "world_vs_bind_pos": 6.760159947348184e-06,
+    "world_vs_bind_ang_deg": 0.1024996738952835,
+    "local_vs_fromparent_pos": 6.4426441521359674e-06,
+    "local_vs_fromparent_ang_deg": 0.046831344312911874,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 49,
+    "name": "Box001",
+    "parent": 48,
+    "anim_local_pos": [
+      5.629188060760498,
+      0.005967999808490276,
+      0.09948199987411499
+    ],
+    "world_vs_bind_pos": 6.095033922668426e-06,
+    "world_vs_bind_ang_deg": 0.023741562413196957,
+    "local_vs_fromparent_pos": 2.7014205410212037e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 50,
+    "name": "Box002",
+    "parent": 48,
+    "anim_local_pos": [
+      4.898944854736328,
+      -0.4360400140285492,
+      -0.03992300108075142
+    ],
+    "world_vs_bind_pos": 5.285233424787244e-06,
+    "world_vs_bind_ang_deg": 0.11984789900800909,
+    "local_vs_fromparent_pos": 2.1021842637914512e-06,
+    "local_vs_fromparent_ang_deg": 0.062107508469087296,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 51,
+    "name": "Box003",
+    "parent": 48,
+    "anim_local_pos": [
+      10.95120906829834,
+      0.4652180075645447,
+      0.3529309928417206
+    ],
+    "world_vs_bind_pos": 1.4408857752509633e-05,
+    "world_vs_bind_ang_deg": 0.047466183358065794,
+    "local_vs_fromparent_pos": 6.92968435665331e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 52,
+    "name": "Box005",
+    "parent": 48,
+    "anim_local_pos": [
+      9.85000991821289,
+      0.3207330107688904,
+      0.5443699955940247
+    ],
+    "world_vs_bind_pos": 1.2574441570407438e-05,
+    "world_vs_bind_ang_deg": 0.09517464156878348,
+    "local_vs_fromparent_pos": 5.369568705522465e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 53,
+    "name": "Box006",
+    "parent": 48,
+    "anim_local_pos": [
+      9.850006103515625,
+      -0.30355000495910645,
+      0.5443649888038635
+    ],
+    "world_vs_bind_pos": 1.1162791575242644e-05,
+    "world_vs_bind_ang_deg": 0.14181577589802624,
+    "local_vs_fromparent_pos": 4.993887569040594e-06,
+    "local_vs_fromparent_ang_deg": 0.09800783794825997,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 54,
+    "name": "Box004",
+    "parent": 48,
+    "anim_local_pos": [
+      10.951204299926758,
+      -0.44804298877716064,
+      0.3529239892959595
+    ],
+    "world_vs_bind_pos": 1.3469088678880156e-05,
+    "world_vs_bind_ang_deg": 0.05451296248210282,
+    "local_vs_fromparent_pos": 5.121853790851653e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 55,
+    "name": "Bone04",
+    "parent": 47,
+    "anim_local_pos": [
+      -4.80938196182251,
+      0.03577300161123276,
+      1.3280589580535889
+    ],
+    "world_vs_bind_pos": 5.31048911783097e-06,
+    "world_vs_bind_ang_deg": 0.1014720134442148,
+    "local_vs_fromparent_pos": 3.747052604518603e-06,
+    "local_vs_fromparent_ang_deg": 0.04453719152125402,
+    "anim_pos_is_zero": false
+  },
+  {
+    "index": 56,
+    "name": "Bone06",
+    "parent": 47,
+    "anim_local_pos": [
+      -1.3084110021591187,
+      -0.01565299928188324,
+      -3.215725898742676
+    ],
+    "world_vs_bind_pos": 1.0374932563648453e-05,
+    "world_vs_bind_ang_deg": 0.06411099019753401,
+    "local_vs_fromparent_pos": 2.232135769354514e-06,
+    "local_vs_fromparent_ang_deg": 0.0,
+    "anim_pos_is_zero": false
+  }
+]
