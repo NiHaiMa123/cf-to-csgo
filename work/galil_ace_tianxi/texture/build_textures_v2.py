@@ -42,8 +42,9 @@ OUT = WORK / "texture"
 UP = OUT / "up"
 SRC = OUT / "src"
 ADDON = WORK / "addon" / "materials" / "models" / "weapons" / "v_models" / "cf_tianxi"
-# Loose-file override into migi/csgo does NOT take effect (user-confirmed);
-# packaging path is always addon dir + user-run MIGI UPDATE.
+MIGI_ADDON = GAME / "migi" / "csgo" / "addons" / "p_cf_tianxi_galilar_p1" / "materials" / "models" / "weapons" / "v_models" / "cf_tianxi"
+# Loose files under migi/csgo do NOT override pak. Build into the tracked
+# staging addon, copy to the real MIGI addon, then the user runs REBUILD.
 
 MAT = "models/weapons/v_models/cf_tianxi"
 COMFY = "http://127.0.0.1:8188"
@@ -289,12 +290,15 @@ def main():
     for name in ("cf_foxhand_bl", "cf_foxarm_bl"):
         (ADDON / f"{name}.vmt").write_text(ARM_VMT.format(MAT, name), encoding="utf-8")
 
+    MIGI_ADDON.mkdir(parents=True, exist_ok=True)
     for f in sorted(ADDON.iterdir()):
+        shutil.copy2(f, MIGI_ADDON / f.name)
         report["files"].append(f.name)
+    report["migi_addon_dir"] = str(MIGI_ADDON)
     (OUT / "report_v2.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(report, indent=2, ensure_ascii=False))
-    print("\n[texture v3] DONE — in-game: sv_cheats 1; mat_reloadallmaterials")
+    print("\n[texture v5] DONE — MIGI addon staged; user must click REBUILD")
 
 
 if __name__ == "__main__":
