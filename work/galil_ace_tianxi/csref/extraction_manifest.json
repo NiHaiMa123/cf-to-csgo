@@ -1,0 +1,93 @@
+{
+ "generated_at_utc": "2026-09-14T13:43:12.387574+00:00",
+ "target": {
+  "weapon": "Galil AR",
+  "modelname": "weapons/v_rif_galilar.mdl"
+ },
+ "files": [
+  {
+   "vpk_path": "models/weapons/v_rif_galilar.mdl",
+   "size": 35628,
+   "sha256": "b6b9c3bf72b4b002c0e1b49fb22a410bd92fb18a6f6db1466ed31ffa4a4b349c"
+  },
+  {
+   "vpk_path": "models/weapons/v_rif_galilar.vvd",
+   "size": 537088,
+   "sha256": "99a9c736fb93552685c95398f0cc020a4f120e9de80e7b7a5d1c2d8d662ef6d1"
+  },
+  {
+   "vpk_path": "models/weapons/v_rif_galilar.dx90.vtx",
+   "size": 116510,
+   "sha256": "511386b0c3415b5d801b7bfb34dfb6b4807122d7d62138aa62321cca7d57f448"
+  },
+  {
+   "vpk_path": "models/weapons/v_rif_galilar.ani",
+   "size": 90948,
+   "sha256": "d1c580f0443fa175dd3c6915e9429cc49476e3d9bafd9cdacdd1d936e5ed98e3"
+  },
+  {
+   "vpk_path": "scripts/game_sounds_weapons.txt",
+   "size": 219339,
+   "sha256": "24833a684bcc0908fe775db74b1dbda4815e6c7ed1a78a59237eab6d1cb34b4d"
+  },
+  {
+   "vpk_path": "scripts/game_sounds.txt",
+   "size": 42369,
+   "sha256": "58c205c20dcd16e3b33cc711b6b097037a05929ec2c295f0dcd157364bde7872"
+  }
+ ],
+ "missing": [
+  "models/weapons/v_rif_galilar.phy",
+  "models/weapons/v_rif_galilar.sw.vtx",
+  "models/weapons/v_rif_galilar.dx80.vtx"
+ ],
+ "galil_sounds": {
+  "Weapon_GalilAR.Single": {
+   "waves": [
+    "`)weapons/galilar/galil_01.wav",
+    "`)weapons/galilar/galil_02.wav",
+    "`)weapons/galilar/galil_03.wav",
+    "`)weapons/galilar/galil_04.wav"
+   ]
+  },
+  "Weapon_GalilAR.SingleDistant": {
+   "waves": [
+    "~weapons/galilar/galil_distant.wav"
+   ]
+  },
+  "Weapon_GalilAR.Clipout": {
+   "waves": [
+    "~weapons/galilar/galil_clipout.wav"
+   ]
+  },
+  "Weapon_GalilAR.Clipin": {
+   "waves": [
+    "~weapons/galilar/galil_clipin.wav"
+   ]
+  },
+  "Weapon_GalilAR.Draw": {
+   "waves": [
+    "~weapons/galilar/galil_draw.wav"
+   ]
+  },
+  "Weapon_GalilAR.BoltBack": {
+   "waves": [
+    "~weapons/galilar/galil_boltback.wav"
+   ]
+  },
+  "Weapon_GalilAR.BoltForward": {
+   "waves": [
+    "~weapons/galilar/galil_boltforward.wav"
+   ]
+  },
+  "Weapon_GalilAR.WeaponMove1": {
+   "waves": []
+  },
+  "Weapon_GalilAR.WeaponMove2": {
+   "waves": []
+  },
+  "Weapon_GalilAR.WeaponMove3": {
+   "waves": []
+  }
+ }
+}

@@ -1,0 +1,268 @@
+{
+  "header": {
+    "file_type": 1,
+    "ltb_header_version": 9,
+    "model_file_version": 25,
+    "allocs": {
+      "nKeyFrames": 561,
+      "nParentAnims": 10,
+      "nNodes": 56,
+      "nPieces": 12,
+      "nChildModels": 1,
+      "nTris": 16474,
+      "nVerts": 9488,
+      "nVertexWeights": 9898,
+      "nLODs": 12,
+      "nSockets": 0,
+      "nWeightSets": 1,
+      "nStrings": 93,
+      "StringLengths": 1303,
+      "VertAnimDataSize": 0,
+      "nAnimData": 879648
+    }
+  },
+  "n_nodes": 56,
+  "n_clips": 10,
+  "clip_summary": [
+    {
+      "name": "idle_0",
+      "n_keyframes": 91,
+      "duration_ms": 3000,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "observe",
+      "n_keyframes": 212,
+      "duration_ms": 7033,
+      "fps": 30.001421868334994,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 1,
+          "time_ms": 33,
+          "label": "Extra02SoundName"
+        },
+        {
+          "frame": 2,
+          "time_ms": 66,
+          "label": "observe"
+        },
+        {
+          "frame": 13,
+          "time_ms": 433,
+          "label": "observe1"
+        },
+        {
+          "frame": 30,
+          "time_ms": 1000,
+          "label": "observe2"
+        },
+        {
+          "frame": 61,
+          "time_ms": 2033,
+          "label": "observe3"
+        },
+        {
+          "frame": 113,
+          "time_ms": 3766,
+          "label": "observe4"
+        },
+        {
+          "frame": 142,
+          "time_ms": 4733,
+          "label": "observe5"
+        }
+      ]
+    },
+    {
+      "name": "reload",
+      "n_keyframes": 58,
+      "duration_ms": 1900,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 10,
+          "time_ms": 333,
+          "label": "WeaponClipOut"
+        },
+        {
+          "frame": 12,
+          "time_ms": 400,
+          "label": "reload"
+        },
+        {
+          "frame": 35,
+          "time_ms": 1166,
+          "label": "WeaponClipIn"
+        }
+      ]
+    },
+    {
+      "name": "knife-attack",
+      "n_keyframes": 21,
+      "duration_ms": 666,
+      "fps": 30.03003003003003,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 1,
+          "time_ms": 33,
+          "label": "GunKnifeSound"
+        },
+        {
+          "frame": 2,
+          "time_ms": 66,
+          "label": "combo"
+        },
+        {
+          "frame": 5,
+          "time_ms": 166,
+          "label": "GunKnifeAttack"
+        }
+      ]
+    },
+    {
+      "name": "run",
+      "n_keyframes": 91,
+      "duration_ms": 3000,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "select",
+      "n_keyframes": 22,
+      "duration_ms": 650,
+      "fps": 32.30769230769231,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 1,
+          "time_ms": 31,
+          "label": "WeaponReload"
+        },
+        {
+          "frame": 3,
+          "time_ms": 93,
+          "label": "select"
+        }
+      ]
+    },
+    {
+      "name": "prefire",
+      "n_keyframes": 16,
+      "duration_ms": 500,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "postfire",
+      "n_keyframes": 16,
+      "duration_ms": 500,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "ChangeMode",
+      "n_keyframes": 30,
+      "duration_ms": 966,
+      "fps": 30.020703933747413,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 1,
+          "time_ms": 33,
+          "label": "Extra01SoundName"
+        },
+        {
+          "frame": 11,
+          "time_ms": 366,
+          "label": "chg_short"
+        }
+      ]
+    },
+    {
+      "name": "fire",
+      "n_keyframes": 4,
+      "duration_ms": 90,
+      "fps": 33.333333333333336,
+      "compression": "NONE",
+      "events": []
+    }
+  ],
+  "node_names": [
+    "Scene Root",
+    "FvARM-bone",
+    "FvARM-bone Pelvis",
+    "FvARM-bone Spine",
+    "FvARM-bone Spine1",
+    "FvARM-bone Neck",
+    "FvARM-bone L Clavicle",
+    "FvARM-bone L UpperArm",
+    "FvARM-bone L ForeArm",
+    "FvARM-bone L Hand",
+    "FvARM-bone L Finger0",
+    "FvARM-bone L Finger01",
+    "FvARM-bone L Finger02",
+    "FvARM-bone L Finger1",
+    "FvARM-bone L Finger11",
+    "FvARM-bone L Finger12",
+    "FvARM-bone L Finger2",
+    "FvARM-bone L Finger21",
+    "FvARM-bone L Finger22",
+    "FvARM-bone L Finger3",
+    "FvARM-bone L Finger31",
+    "FvARM-bone L Finger32",
+    "FvARM-bone L Finger4",
+    "FvARM-bone L Finger41",
+    "FvARM-bone L Finger42",
+    "FvARM-bone L ForeTwist",
+    "FvARM-bone R Clavicle",
+    "FvARM-bone R UpperArm",
+    "FvARM-bone R ForeArm",
+    "FvARM-bone R Hand",
+    "FvARM-bone R Finger0",
+    "FvARM-bone R Finger01",
+    "FvARM-bone R Finger02",
+    "FvARM-bone R Finger1",
+    "FvARM-bone R Finger11",
+    "FvARM-bone R Finger12",
+    "FvARM-bone R Finger2",
+    "FvARM-bone R Finger21",
+    "FvARM-bone R Finger22",
+    "FvARM-bone R Finger3",
+    "FvARM-bone R Finger31",
+    "FvARM-bone R Finger32",
+    "FvARM-bone R Finger4",
+    "FvARM-bone R Finger41",
+    "FvARM-bone R Finger42",
+    "FvARM-bone R ForeTwist",
+    "Box001",
+    "Dummy004",
+    "Dummy005",
+    "Mag_Dummy",
+    "Dummy001",
+    "Dummy002",
+    "Dummy003",
+    "Dummy006",
+    "Dummy007",
+    "Dummy008"
+  ],
+  "weight_sets": [
+    {
+      "name": "BaseTracker",
+      "count": 56,
+      "nonzero": 56
+    }
+  ],
+  "child_models": [
+    "SELF"
+  ],
+  "stream_end_offset": 1581194,
+  "body_bytes": 1581531
+}

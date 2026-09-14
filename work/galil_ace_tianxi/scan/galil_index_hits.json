@@ -1,0 +1,2079 @@
+{
+ "cf_dir": "D:\\Program Files\\CF(2)",
+ "index_archives": 464,
+ "total_entries": 255257,
+ "hit_count": 230,
+ "errors": [],
+ "hits": [
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_BODY_01.LTB",
+   "size": 169729,
+   "time": 0,
+   "md5": "09D6869A4437F6A2C3138E66F637C28F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_BODY_01_SPEED.LTB",
+   "size": 129982,
+   "time": 0,
+   "md5": "00AE831495D9139C2845B7130802179C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_GLITCH.LTB",
+   "size": 528,
+   "time": 0,
+   "md5": "BF9A6EFFAF3B73752143213634D6E014",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_BLUE.LTB",
+   "size": 1127,
+   "time": 0,
+   "md5": "4EBB83389795E819E5A4BB4428A8983A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_CORE.LTB",
+   "size": 1537,
+   "time": 0,
+   "md5": "94F448B3EB56FFFDAA14EDD50600CE0A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_RED.LTB",
+   "size": 337,
+   "time": 0,
+   "md5": "3006D53A3374E4ABB19CEBB998B0D3E7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_L.LTB",
+   "size": 223,
+   "time": 0,
+   "md5": "EE9362AA5E2829792566B98DA7872034",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_R.LTB",
+   "size": 223,
+   "time": 0,
+   "md5": "18BC7FA9BBBA513303374FC250A1852C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIDE_ELEC.LTB",
+   "size": 474,
+   "time": 0,
+   "md5": "43722794D55EDDDA048C455DEC1A539D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_B.DTX",
+   "size": 1387,
+   "time": 0,
+   "md5": "9751EF5C41C7E57750BA1022465458BE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/sgfx_bd_gun_galilace_phantombeast_simbol_g.DTX",
+   "size": 1377,
+   "time": 0,
+   "md5": "378608FD53DE40BAD241C5F6FE9AC2D6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_Y.DTX",
+   "size": 1394,
+   "time": 0,
+   "md5": "F8E8668034DC294D5DCE29E3854B9CEA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GALIL.LTB",
+   "size": 83835,
+   "time": 0,
+   "md5": "67ED1C7F55C217CCE942ED3D62F6F654",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE.LTB",
+   "size": 119933,
+   "time": 0,
+   "md5": "D77FD3134112573045202FF4252ABE9B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_BL.LTB",
+   "size": 56559,
+   "time": 0,
+   "md5": "CE8AA33D06CBFE4A532F0A7B8FE37C1E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_GR.LTB",
+   "size": 60390,
+   "time": 0,
+   "md5": "EBD34879B26E66D426B07B7BAA738DE5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast.LTB",
+   "size": 518960,
+   "time": 0,
+   "md5": "1809C043B7BA99C9966C30DD06CF8838",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_BL.LTB",
+   "size": 283042,
+   "time": 0,
+   "md5": "1E13BC85C1F1E0F79038B7860E8DD7F5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_Chg.LTB",
+   "size": 517220,
+   "time": 0,
+   "md5": "70480BE0A93449D6B2178EACC50E866C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_Chg_BL.LTB",
+   "size": 282665,
+   "time": 0,
+   "md5": "91EC9F7BB81DDC915D7B216BC10EC9C4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_Chg_GR.LTB",
+   "size": 282665,
+   "time": 0,
+   "md5": "91EC9F7BB81DDC915D7B216BC10EC9C4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_Chg_WOMAN_BL.LTB",
+   "size": 282665,
+   "time": 0,
+   "md5": "91EC9F7BB81DDC915D7B216BC10EC9C4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_Chg_WOMAN_GR.LTB",
+   "size": 282665,
+   "time": 0,
+   "md5": "91EC9F7BB81DDC915D7B216BC10EC9C4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_GR.LTB",
+   "size": 283042,
+   "time": 0,
+   "md5": "1E13BC85C1F1E0F79038B7860E8DD7F5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_WOMAN_BL.LTB",
+   "size": 283042,
+   "time": 0,
+   "md5": "1E13BC85C1F1E0F79038B7860E8DD7F5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_WOMAN_GR.LTB",
+   "size": 283042,
+   "time": 0,
+   "md5": "1E13BC85C1F1E0F79038B7860E8DD7F5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_Prototype.LTB",
+   "size": 120037,
+   "time": 0,
+   "md5": "332B4E6A82BFEFB4A5AF249A7C2D8815",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_Prototype_BL.LTB",
+   "size": 56483,
+   "time": 0,
+   "md5": "D2C773A9A9245C381D04C9D36F1BF94C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_Prototype_GR.LTB",
+   "size": 56483,
+   "time": 0,
+   "md5": "D2C773A9A9245C381D04C9D36F1BF94C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_Prototype_WOMAN_BL.LTB",
+   "size": 56483,
+   "time": 0,
+   "md5": "D2C773A9A9245C381D04C9D36F1BF94C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_Prototype_WOMAN_GR.LTB",
+   "size": 56483,
+   "time": 0,
+   "md5": "D2C773A9A9245C381D04C9D36F1BF94C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_WOMAN_BL.LTB",
+   "size": 56774,
+   "time": 0,
+   "md5": "399D6AB24C89EA763C47AE160BB1580B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GalilACE_WOMAN_GR.LTB",
+   "size": 56025,
+   "time": 0,
+   "md5": "3A0504163B56469C28A3B544F179816B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GALIL_BL.LTB",
+   "size": 58039,
+   "time": 0,
+   "md5": "12E52CEC3E4C1B26E1F742C28FBC1484",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Galil_Camo.LTB",
+   "size": 144331,
+   "time": 0,
+   "md5": "FE801559E44FDAF85A541CBF96768107",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Galil_Camo_BL.LTB",
+   "size": 69442,
+   "time": 0,
+   "md5": "625D662A84D38A7E48622841C4F2D6F2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Galil_Camo_GR.LTB",
+   "size": 74054,
+   "time": 0,
+   "md5": "A8A6C4DBE373A8A2BE881B6727D1CEC1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Galil_Camo_WOMAN_BL.LTB",
+   "size": 69685,
+   "time": 0,
+   "md5": "6AC6AABF7412E29D5A8C8939BE1E708E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Galil_Camo_WOMAN_GR.LTB",
+   "size": 68887,
+   "time": 0,
+   "md5": "363B0385146E9DBDA80A6E1589E3EBF2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GALIL_GR.LTB",
+   "size": 61213,
+   "time": 0,
+   "md5": "1B4ECBA10BA3D15D1163919E5315C94F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GALIL_WOMAN_BL.LTB",
+   "size": 57648,
+   "time": 0,
+   "md5": "09F4980836394CDDF9C27409DD0527DE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-GALIL_WOMAN_GR.LTB",
+   "size": 56518,
+   "time": 0,
+   "md5": "E9C98567C432E786545CBC26B57FE24F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI-Galil.LTB",
+   "size": 126066,
+   "time": 0,
+   "md5": "08490D061E56776267BF30028C74288D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI-Galil_BL.LTB",
+   "size": 73724,
+   "time": 0,
+   "md5": "5B2C56ACFCCD8E67B7FBC470D1479378",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI-Galil_GR.LTB",
+   "size": 76723,
+   "time": 0,
+   "md5": "5EC0C596320DCFD757B86E5D3329D424",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI-Galil_WOMAN_BL.LTB",
+   "size": 73237,
+   "time": 0,
+   "md5": "BDF4C115FBCA522D137DFB9495BD13DF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI-Galil_WOMAN_GR.LTB",
+   "size": 72356,
+   "time": 0,
+   "md5": "FBE4BF8E79E2701ED8F6A69BA37531CA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Parts.LTB",
+   "size": 104345,
+   "time": 0,
+   "md5": "EF34FE98FF90738A59AC3EECF84C72F0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Parts_BL.LTB",
+   "size": 81596,
+   "time": 0,
+   "md5": "C674679E263D27CB3C566A3B6A3B6BC6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Parts_GR.LTB",
+   "size": 85305,
+   "time": 0,
+   "md5": "ADA4F5CF83DB676EFD89F781F181FA96",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Parts_WOMAN_BL.LTB",
+   "size": 81730,
+   "time": 0,
+   "md5": "2457103B05D975D5AB99605A9DFA8994",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Parts_WOMAN_GR.LTB",
+   "size": 81208,
+   "time": 0,
+   "md5": "CEA592D74DD1AD8CE75929FDC86AA14D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Silencer.LTB",
+   "size": 91411,
+   "time": 0,
+   "md5": "153E451A380A9943D73798248D0E7205",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Silencer_BL.LTB",
+   "size": 64953,
+   "time": 0,
+   "md5": "4A647240C599CD3374455798D510D75B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Silencer_GR.LTB",
+   "size": 68777,
+   "time": 0,
+   "md5": "F2CF18AD3E116106F30B4705AAAC0B4A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Silencer_WOMAN_BL.LTB",
+   "size": 65117,
+   "time": 0,
+   "md5": "654CCD690D7AAA0F02BCBD2D8CAD4CBB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-RI_GALIL-Silencer_WOMAN_GR.LTB",
+   "size": 64428,
+   "time": 0,
+   "md5": "64ECB552D6F3501A56D9260D9DF78D8E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/WEAPONS/GALIL.LTB",
+   "size": 15164,
+   "time": 0,
+   "md5": "9684B2ECE5E7B656B68AD3DD5F2BDF9A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-GalilACE.LTB",
+   "size": 18848,
+   "time": 0,
+   "md5": "E907724DBEA120B5670265011329EFA0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-GalilACE_PhantomBeast.LTB",
+   "size": 55867,
+   "time": 0,
+   "md5": "A1DB9EE934C06C762523F73666E32C76",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-GalilACE_PhantomBeast_Chg.LTB",
+   "size": 56013,
+   "time": 0,
+   "md5": "1F3839C9D3E69F77EDEDFCB7FA65EBE6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-GalilACE_PhantomBeast_preview.LTB",
+   "size": 47075,
+   "time": 0,
+   "md5": "DAC103E9B2EE421B59E489FEF24D0FAB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Galil_Camo_F.LTB",
+   "size": 22664,
+   "time": 0,
+   "md5": "75CB6A3E901920DCDE9696F2DD0FCC75",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Galil_Camo_M.LTB",
+   "size": 20896,
+   "time": 0,
+   "md5": "DADBE96A1C9C836C232E999765E25DF7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-RI-Galil.LTB",
+   "size": 18341,
+   "time": 0,
+   "md5": "DC0700A1FC3CC2D757E52D15162C6964",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-RI_GALIL-Parts.LTB",
+   "size": 26523,
+   "time": 0,
+   "md5": "F22950EA1EB1BC6ABEA39218ADEE34EE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-RI_GALIL-Silencer.LTB",
+   "size": 16177,
+   "time": 0,
+   "md5": "2FC342C6B031B41335C3B8A38C0BD581",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/GalilACE_PhantomBeast_A.PNG",
+   "size": 477813,
+   "time": 0,
+   "md5": "D863B3F0D82EF0F45A70F88A93CAB71F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/GalilACE_PhantomBeast_GJZX_A.PNG",
+   "size": 380394,
+   "time": 0,
+   "md5": "719550AAC8F5585704FA9009B98A0889",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/GalilACE_PhantomBeast_GJZX_ba.PNG",
+   "size": 39666,
+   "time": 0,
+   "md5": "BBD389A1290B13D114F361023109A11B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/GalilACE_PhantomBeast_M.PNG",
+   "size": 39666,
+   "time": 0,
+   "md5": "BBD389A1290B13D114F361023109A11B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/GalilACE_PhantomBeast_WC25_A.PNG",
+   "size": 363461,
+   "time": 0,
+   "md5": "59722675EA815FCD9FC2B78E8A66B6CE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/GalilACE_PhantomBeast_WC25_M.PNG",
+   "size": 41659,
+   "time": 0,
+   "md5": "4B9D857B2FCAF1F55F0537743C65D349",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/GalilACE_Prototype_A.PNG",
+   "size": 93315,
+   "time": 0,
+   "md5": "3FF86A66F7F5AC8C4A58C891A9B78453",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/GalilACE_PhantomBeast_GJZX_N.PNG",
+   "size": 1277278,
+   "time": 0,
+   "md5": "EECDBB77F9F21E8D1D2513C555AAD40C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/GalilACE_PhantomBeast_N.PNG",
+   "size": 1337566,
+   "time": 0,
+   "md5": "16FFA93CFFEE7B35AA8AEDC8223DB052",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/GalilACE_PhantomBeast_WC25_N.PNG",
+   "size": 1623239,
+   "time": 0,
+   "md5": "4DE1EE53003377341984FC343B6E4700",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/GalilACE_Prototype_N.PNG",
+   "size": 381851,
+   "time": 0,
+   "md5": "AC11D0945236FBA2EF9AAA6649856F1C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-GALIL.DTX",
+   "size": 524452,
+   "time": 8,
+   "md5": "BC3345826CF139C4556AB9EE99FBC77F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-GalilACE.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "99040C0767F6E49CA1365C66627BD200",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-GalilACE_PhantomBeast.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "2743D29420C90E9D5EB3D27240EA1BC4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-GalilACE_PhantomBeast_GJZX.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "152A99D2F68F0C7692838E1D2343AC1D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-GalilACE_PhantomBeast_WC25.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "002CB6585365828C3B7E3ECE605BCD8D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-GalilACE_Prototype.DTX",
+   "size": 131236,
+   "time": 0,
+   "md5": "07C01E33FCD28D01B37CD363AC82BB7F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Galil_camo.DTX",
+   "size": 524452,
+   "time": 8,
+   "md5": "3C45B965F7F897FFCB207C4176A4650A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-RI-Galil.DTX",
+   "size": 524452,
+   "time": 9,
+   "md5": "AF64F955ACC650C02C04713A2C27A609",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-RI_GALIL-Parts.DTX",
+   "size": 131236,
+   "time": 9,
+   "md5": "D741BE1E64FDA734D1CCF56970E25D9F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/PLAYERVIEW/PV_IMI_Micro_Galil_camo.DTX",
+   "size": 131236,
+   "time": 9,
+   "md5": "CD5ADD5D0BEC5E41759D4E113FA16021",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/GalilACE_PhantomBeast.CFG",
+   "size": 4084,
+   "time": 0,
+   "md5": "3D46BF30AB81E9B7E304D0F58F5B11D4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/GalilACE_PhantomBeast_GJZX.CFG",
+   "size": 4107,
+   "time": 0,
+   "md5": "CB53716AEF8C2D2B61F5B752D4A2D621",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/GalilACE_PhantomBeast_WC25.CFG",
+   "size": 4098,
+   "time": 0,
+   "md5": "0C29300CACD32A29C03FB88E7B76519F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/GalilACE_Prototype.CFG",
+   "size": 4554,
+   "time": 0,
+   "md5": "C25FDE52B9D4EE767CA904C6EE0DD21D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/GalilACE_PhantomBeast_GJZX_s.PNG",
+   "size": 1019450,
+   "time": 0,
+   "md5": "3CCE243A66CAD0D29D4AC3B34D190CDA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/GalilACE_PhantomBeast_S.PNG",
+   "size": 1559072,
+   "time": 0,
+   "md5": "CC9943E3A64A35F4A682CB42AF0F2207",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/GalilACE_PhantomBeast_WC25_S.PNG",
+   "size": 4797671,
+   "time": 0,
+   "md5": "BE0F8B12A6C1F0600B4AAA3F32316557",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/GalilACE_Prototype_S.PNG",
+   "size": 316853,
+   "time": 0,
+   "md5": "E73DD24B4ED0608E45BE191CFB557453",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/WEAPONS/GALIL.DTX",
+   "size": 32932,
+   "time": 13,
+   "md5": "29702EF79573D606D9875237FAD7E477",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/WEAPONS/QV-Galil.DTX",
+   "size": 32932,
+   "time": 13,
+   "md5": "29702EF79573D606D9875237FAD7E477",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-GalilACE.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "61F9E3E7DC722E35F552FBCECBB3D927",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-GalilACE_PhantomBeast.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "20C8650AB4053944E4BEDE197EF19BFE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-GalilACE_PhantomBeast_GJZX.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "19BC1B4B223952872D1CADA3ED9758D4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-GalilACE_PhantomBeast_WC25.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "3ACEDCA78B422346DCF1E46EC4C495AC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-GalilACE_Prototype.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "56567C986429F2B43B969875748614B9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/WEAPONS/QV-RI-Galil.DTX",
+   "size": 32932,
+   "time": 13,
+   "md5": "23D3DAFCB21DF38AF11BDED09E0BED8B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/WEAPONS/QV-RI-Galil_Camo.DTX",
+   "size": 32932,
+   "time": 13,
+   "md5": "A5182F2EF6C201071D7464EFD9690D35",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/WEAPONS/QV-RI_GALIL-Parts.DTX",
+   "size": 32932,
+   "time": 13,
+   "md5": "3213C3511F8A4AE50FA9024CBCBD8F66",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+   "full_path": "ModelTextures/WEAPONS/QV_IMI_Micro_Galil_camo.DTX",
+   "size": 32932,
+   "time": 13,
+   "md5": "4508B2AFBC0F19C50736EA114DEF5DEB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/GALIL/G_MZC_GALIL_CLIPIN.WAV",
+   "size": 36427,
+   "time": 0,
+   "md5": "3D5F5C36C75EF29D2CB2515EA40B54B3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/GALIL/G_MZC_GALIL_CLIPOUT.WAV",
+   "size": 8040,
+   "time": 0,
+   "md5": "70085DEEC5829D309F2EF834873BD37F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/GALIL/G_RELOAD_GALIL.WAV",
+   "size": 33179,
+   "time": 0,
+   "md5": "3530EB516D25AF05FF8EFF5FDE3AD41D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/GALIL/G_SHOOT_GALIL_1.WAV",
+   "size": 45285,
+   "time": 0,
+   "md5": "409042ECCF9DF8BD0BE05C1C5C703B3E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/GALIL/G_SHOOT_GALIL_2.WAV",
+   "size": 45285,
+   "time": 0,
+   "md5": "409042ECCF9DF8BD0BE05C1C5C703B3E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE/GalilACE_ClipIn.WAV",
+   "size": 37135,
+   "time": 0,
+   "md5": "09ED225FB661F00C9B528557E05ABDE4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE/GalilACE_ClipOut.WAV",
+   "size": 17664,
+   "time": 0,
+   "md5": "714EB4EDFEE5017DFE5191C35FCC9620",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE/GalilACE_Reload.WAV",
+   "size": 30294,
+   "time": 0,
+   "md5": "5553190AF15AA65A376369DA7F3058A8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE/GalilACE_Select.WAV",
+   "size": 37825,
+   "time": 0,
+   "md5": "9EBD3A8CC8DE9282B7BE36BAB6986228",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE/GalilACE_Shoot_1.WAV",
+   "size": 59513,
+   "time": 0,
+   "md5": "48CAF072F664B85C551835F4352CA6E1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomBChg_ATT.WAV",
+   "size": 24907,
+   "time": 0,
+   "md5": "86027FB4CDC96A7D966A9B071EA0172B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomBChg_Chg.WAV",
+   "size": 79762,
+   "time": 0,
+   "md5": "8E8C6C36D979FE4C4C2B7E68B23A6726",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomBChg_ClipIn.WAV",
+   "size": 40978,
+   "time": 0,
+   "md5": "F7B0F1CE16052EE0A8B8BA227FC96FF2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomBChg_ClipOut.WAV",
+   "size": 76473,
+   "time": 0,
+   "md5": "1523CB439958763BC4D12AB56D110598",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomBChg_Obv.WAV",
+   "size": 438964,
+   "time": 0,
+   "md5": "3ACB0E265C8D75AEF9495F1156A2073C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomBChg_Select.WAV",
+   "size": 62353,
+   "time": 0,
+   "md5": "B0CA189439619008F4EA8F77930F2835",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ATT.WAV",
+   "size": 24987,
+   "time": 0,
+   "md5": "692399230B5568441F46717DE8EB90CB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Chg.WAV",
+   "size": 80113,
+   "time": 0,
+   "md5": "DF368138EF8D99CE751C8A1EDBB8284C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ClipIn.WAV",
+   "size": 40987,
+   "time": 0,
+   "md5": "5AF12312DD015915606CECCF351CC6E1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ClipOut.WAV",
+   "size": 76473,
+   "time": 0,
+   "md5": "F5FD83FBED5480B7F6F845FD1F4D846B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Obv.WAV",
+   "size": 436596,
+   "time": 0,
+   "md5": "1082414C09FA5F5727F5A57F6DFB0F08",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Select.WAV",
+   "size": 62353,
+   "time": 0,
+   "md5": "B0CA189439619008F4EA8F77930F2835",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Shoot_1.WAV",
+   "size": 36937,
+   "time": 0,
+   "md5": "8DE5FE6E9F9FC1A8300C2A91D71E08DE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/Galil_AR/Galil_ClipIn.WAV",
+   "size": 45656,
+   "time": 0,
+   "md5": "B37D6952662708CDC643D86DDF6AA78A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/Galil_AR/Galil_ClipOut.WAV",
+   "size": 34151,
+   "time": 0,
+   "md5": "46C81CC83F0969155BD64A85D3FE38A0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/Galil_AR/Galil_Reload.WAV",
+   "size": 28151,
+   "time": 0,
+   "md5": "802627717D32C68AC09BBA7CC465BB6A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/Galil_AR/Galil_Select.WAV",
+   "size": 29567,
+   "time": 0,
+   "md5": "158486FDEF9119B0526F9E9FF9C58A67",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/Galil_AR/Galil_Shoot_1.WAV",
+   "size": 98368,
+   "time": 0,
+   "md5": "FDA1DE84AB8ECA7957A29386A4911B4E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/Galil_AR/Galil_Shoot_2.WAV",
+   "size": 80396,
+   "time": 0,
+   "md5": "FD08CD9145BE397B7C6C480AEA0F8CB6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf018.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf018.rez",
+   "full_path": "SND/WEAPON/GALIL_S/GALIL-Silencer_Shoot_1.WAV",
+   "size": 24657,
+   "time": 0,
+   "md5": "6A1D679F1B3B5C05BA45A18612F264FE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Galil-Scope_BG.DTX",
+   "size": 1482,
+   "time": 0,
+   "md5": "0A46C95BE52EFE521F28CC28CDA141E1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Galil-Scope_EFFECT.DTX",
+   "size": 1186,
+   "time": 0,
+   "md5": "7B8D86D4D271E5F6C527F9F908FD4ACE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Galil-Scope_LINE.DTX",
+   "size": 3449,
+   "time": 0,
+   "md5": "6083C08A8E52D823B4A81F7CC590832F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_BG.DTX",
+   "size": 1830,
+   "time": 0,
+   "md5": "705AC2A30465976EE264EC86F30524D7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_EFFECT.DTX",
+   "size": 1362,
+   "time": 0,
+   "md5": "BD1D0BDDB17FCD1AD0ED8CC1CD2B52D8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_LINE.DTX",
+   "size": 2637,
+   "time": 0,
+   "md5": "8276C691E3301744549A35C3CC7D4438",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_BG.DTX",
+   "size": 2174,
+   "time": 0,
+   "md5": "99ADF55B7B4AE5D5DFFB440AD9199D88",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_EFFECT.DTX",
+   "size": 1610,
+   "time": 0,
+   "md5": "A11856C4FD6A5D424C55BA4836B93AB0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_GJZX_BG.DTX",
+   "size": 2174,
+   "time": 0,
+   "md5": "99ADF55B7B4AE5D5DFFB440AD9199D88",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_GJZX_EFFECT.DTX",
+   "size": 1610,
+   "time": 0,
+   "md5": "A11856C4FD6A5D424C55BA4836B93AB0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_GJZX_LINE.DTX",
+   "size": 9475,
+   "time": 0,
+   "md5": "BF480208B6D5712F54FA71C29E31DF0E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_LINE.DTX",
+   "size": 9980,
+   "time": 0,
+   "md5": "9CCDA5A847D6AD6CD9BD545EE786811F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_WC25_BG.DTX",
+   "size": 2001,
+   "time": 0,
+   "md5": "2FE6EF5A9DC5DE4DB6D30644BEE7A026",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_WC25_EFFECT.DTX",
+   "size": 1436,
+   "time": 0,
+   "md5": "00359F12375B2B6142F744D50810707D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_PhantomBeast_WC25_LINE.DTX",
+   "size": 8083,
+   "time": 0,
+   "md5": "213565E7A81B7B5EE68D92D5D225BEDD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_Prototype_BG.DTX",
+   "size": 1723,
+   "time": 0,
+   "md5": "4386541E796DB9E7B8D0A0D0363A5BB3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_Prototype_EFFECT.DTX",
+   "size": 1257,
+   "time": 0,
+   "md5": "4BBA945A89F7FEE859252E57C0C5B575",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/GalilACE_Prototype_LINE.DTX",
+   "size": 5456,
+   "time": 0,
+   "md5": "371998FD522D07F47D8529F4FEEE93D6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_AR_BG.DTX",
+   "size": 2267,
+   "time": 0,
+   "md5": "E7FAB628DB7BB547416ED21B420E390E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_AR_EFFECT.DTX",
+   "size": 1417,
+   "time": 0,
+   "md5": "31C34B7FC612787BB48F6561C71446F0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_AR_LINE.DTX",
+   "size": 2343,
+   "time": 0,
+   "md5": "84E545B8EE66947305EC0546278DD1EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_BG.DTX",
+   "size": 1197,
+   "time": 0,
+   "md5": "292072CCDECC64167F124B9B55139C4B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_Camo_BG.DTX",
+   "size": 2267,
+   "time": 0,
+   "md5": "E7FAB628DB7BB547416ED21B420E390E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_Camo_EFFECT.DTX",
+   "size": 1417,
+   "time": 0,
+   "md5": "31C34B7FC612787BB48F6561C71446F0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_Camo_LINE.DTX",
+   "size": 3925,
+   "time": 0,
+   "md5": "A2925EBCD7CCE1015D578258F27D9A19",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_EFFECT.DTX",
+   "size": 1163,
+   "time": 0,
+   "md5": "9B863C0D11198F8AEF2817ABD04E6F69",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/GALIL_LINE.DTX",
+   "size": 1861,
+   "time": 0,
+   "md5": "6687FB42E71600EC702D6496EAD0FD7F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Micro Galil-Adv_BG.DTX",
+   "size": 1198,
+   "time": 0,
+   "md5": "CF3B6C87B0537FDD35A4EF82A543EB0D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Micro Galil-Adv_EFFECT.DTX",
+   "size": 1165,
+   "time": 0,
+   "md5": "D0B53EEC76AC741E0012E03262DA39E6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Micro Galil-Adv_LINE.DTX",
+   "size": 4029,
+   "time": 0,
+   "md5": "0CCDAE06E1677B9CB103392C43D5E00F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Galil-Scope.DTX",
+   "size": 387,
+   "time": 0,
+   "md5": "BB5538270ACD83FBE904C198802D8EE9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GALIL.DTX",
+   "size": 376,
+   "time": 0,
+   "md5": "908AFFE563906A01A0B4F09B089939BA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE.DTX",
+   "size": 213,
+   "time": 0,
+   "md5": "D72265BCA0AEA53E925070A8FC6102C1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE_PhantomBeast.DTX",
+   "size": 185,
+   "time": 0,
+   "md5": "2B17482C40617A2F0E7830C6A45B37C5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE_PhantomBeast_GJZX.DTX",
+   "size": 1068,
+   "time": 0,
+   "md5": "6EB00D9DB6E088F55A46188B32915DEE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE_PhantomBeast_GJZX_KNIFE.DTX",
+   "size": 1921,
+   "time": 0,
+   "md5": "A673BE1A64D644A28C926335705B45FE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE_PhantomBeast_KNIFE.DTX",
+   "size": 1069,
+   "time": 0,
+   "md5": "747D7B915B21FFF16B7875CA08A08758",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE_PhantomBeast_WC25.DTX",
+   "size": 628,
+   "time": 0,
+   "md5": "DBF3BDFBA36611B76FC3C7C567AFD6EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE_PhantomBeast_WC25_KNIFE.DTX",
+   "size": 1518,
+   "time": 0,
+   "md5": "87E14EA2482B2ADF4BD94451B049A226",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GalilACE_Prototype.DTX",
+   "size": 245,
+   "time": 0,
+   "md5": "4FC2538ACF4E4B641148F3D4E0025897",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GALIL_AR.DTX",
+   "size": 221,
+   "time": 0,
+   "md5": "FD08FF00DE7EB51951FA71281ABF2D14",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_GALIL_Camo.DTX",
+   "size": 223,
+   "time": 0,
+   "md5": "6BEEFBD052483C14EF3CA96869B9639A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Micro Galil-Adv.DTX",
+   "size": 419,
+   "time": 0,
+   "md5": "33F9B8BC3F3CA77FE4F1956B5900CD99",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Galil-Scope.DTX",
+   "size": 17692,
+   "time": 0,
+   "md5": "F82B15BF71DF65E8EE899B9BBB84B6A9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_GALIL.DTX",
+   "size": 16125,
+   "time": 0,
+   "md5": "7B43E6039FC047F6B93D7F2A062D0FFA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/buyweapon_info_galilace.DTX",
+   "size": 16404,
+   "time": 0,
+   "md5": "5EF8BF555D2307644C2E53B5AA6A2ECA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_GalilACE_PhantomBeast_GJZX.DTX",
+   "size": 22041,
+   "time": 0,
+   "md5": "483CFAFE74E0020F347A474EC39BE492",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_GALIL_AR.DTX",
+   "size": 11630,
+   "time": 0,
+   "md5": "B658BA1F1253B21B67A3C2244CC6F819",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_GALIL_Camo.DTX",
+   "size": 14591,
+   "time": 0,
+   "md5": "5734E737A0D71FDA721D0BE6BD75C5B8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Micro Galil-Adv.DTX",
+   "size": 18687,
+   "time": 0,
+   "md5": "D6E863756A3B8F5C48D6EF3C3C9734C1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Galil-Scope.DTX",
+   "size": 5602,
+   "time": 0,
+   "md5": "C67CC62803726845FD6F0568CB2A4C48",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GALIL.DTX",
+   "size": 2104,
+   "time": 0,
+   "md5": "911B103B30C38A261AF7C49C0EFD6EBD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE.DTX",
+   "size": 4596,
+   "time": 0,
+   "md5": "965C1BCF67E7468A22D889AD809A3F8C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE_PhantomBeast.DTX",
+   "size": 11298,
+   "time": 0,
+   "md5": "A1E96E794DDED68592C1A823E5132F9C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE_PhantomBeast_GJZX.DTX",
+   "size": 9945,
+   "time": 0,
+   "md5": "CD24C8060E55F9D537E796CB7D6529F5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE_PhantomBeast_GJZX_KNIFE.DTX",
+   "size": 11391,
+   "time": 0,
+   "md5": "F8B17C0081572A1C081AFB2680725329",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE_PhantomBeast_KNIFE.DTX",
+   "size": 13258,
+   "time": 0,
+   "md5": "6FFA92B1BC76F736D85E33B64E06E62A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE_PhantomBeast_WC25.DTX",
+   "size": 8390,
+   "time": 0,
+   "md5": "1EACA5C1E978A436E91F7C2189F7947E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE_PhantomBeast_WC25_KNIFE.DTX",
+   "size": 9726,
+   "time": 0,
+   "md5": "2B3EA9EB58A1DB16CB9D0D0DA058E69B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GalilACE_Prototype.DTX",
+   "size": 6456,
+   "time": 0,
+   "md5": "20B3D1BA14D2DB97D83574557065B45D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_GALIL_AR.DTX",
+   "size": 3739,
+   "time": 0,
+   "md5": "B654587C6249A1D5A18A530C1263E888",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Micro Galil-Adv.DTX",
+   "size": 6720,
+   "time": 0,
+   "md5": "6499E2B71EA13B158E9F1C3817E141BA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_GALIL-Camo.BIN",
+   "size": 17647,
+   "time": 0,
+   "md5": "3FC7BB6572A27064359F4E69AEA087D1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Galil-Scope.BIN",
+   "size": 20592,
+   "time": 0,
+   "md5": "A10AE93DD37FCBAAFAB31CB924C4B538",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_GalilACE_PhantomBeast.BIN",
+   "size": 21376,
+   "time": 0,
+   "md5": "FFED7986290AF0E9C9420C325EBB07D3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_GalilACE_PhantomBeast_GJZX.BIN",
+   "size": 21992,
+   "time": 0,
+   "md5": "AD5143508E0AC248BE739B356AB66EC4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_GalilACE_PhantomBeast_WC25.BIN",
+   "size": 17841,
+   "time": 0,
+   "md5": "4FB460986D8801B38F810D212DCF1214",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_GalilACE_Prototype.BIN",
+   "size": 20330,
+   "time": 0,
+   "md5": "B5737A262BA9F5C55218E7CFAC2D9EFF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_GALIL_Camo.BIN",
+   "size": 17647,
+   "time": 0,
+   "md5": "3FC7BB6572A27064359F4E69AEA087D1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/Galil-Camo.BIN",
+   "size": 3657,
+   "time": 0,
+   "md5": "6DAD730927CC2B3D4544DEDECD19BD21",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/GalilACE_PhantomBeast.BIN",
+   "size": 6031,
+   "time": 0,
+   "md5": "196FDF8ADA753F7F2F12E25E1F8254F3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/ItemIcon/GalilACE_PhantomBeast_GJZX.BIN",
+   "size": 5957,
+   "time": 0,
+   "md5": "AA5C4F95C47D52A3FCE529308AA6830B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/ItemIcon/GalilACE_PhantomBeast_WC25.BIN",
+   "size": 4924,
+   "time": 0,
+   "md5": "009BC92D64A73FCB5DAD7F214EE39DDC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/GalilACE_Prototype.BIN",
+   "size": 5422,
+   "time": 0,
+   "md5": "D00D800C461D80C2357DDADAE459D622",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/GalilACE_PhantomBeast.BIN",
+   "size": 10133,
+   "time": 0,
+   "md5": "D4CA229AD65CA47CF37549DB33D21F13",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/GalilACE_PhantomBeast_GJZX.BIN",
+   "size": 10189,
+   "time": 0,
+   "md5": "9367121F41B6FF1E240012EE6C3ACF52",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_01.BIN",
+   "size": 27501,
+   "time": 0,
+   "md5": "EFC5F4653D3C34572A81D1C3E6FD58EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_02.BIN",
+   "size": 82996,
+   "time": 0,
+   "md5": "8C580C83060D218169E4BDB70E292CF4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_03.BIN",
+   "size": 109063,
+   "time": 0,
+   "md5": "4D4CF63907456FAB1A094C88C276FA33",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_04.BIN",
+   "size": 131858,
+   "time": 0,
+   "md5": "ABFDCA1761502AE383DD4604C59EE65E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_05.BIN",
+   "size": 148374,
+   "time": 0,
+   "md5": "EE3785B13C5E41804A1F1C16CD7C4AAC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_06.BIN",
+   "size": 165298,
+   "time": 0,
+   "md5": "4FCE5E20C2D896D3164F8EE48178FA25",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_07.BIN",
+   "size": 157805,
+   "time": 0,
+   "md5": "DBB4B848B2FE09CF3B7959FEF2257B43",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_08.BIN",
+   "size": 153568,
+   "time": 0,
+   "md5": "81A963384E106A45692F4DAA9DB9ADB3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_09.BIN",
+   "size": 151755,
+   "time": 0,
+   "md5": "29E741D995E8B0E465EBE6F994CEEEAD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_10.BIN",
+   "size": 147755,
+   "time": 0,
+   "md5": "A677DE81EFC8C178187E60599BC4FE08",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_11.BIN",
+   "size": 141714,
+   "time": 0,
+   "md5": "350AE3C4219CFACF022C2E99D7666EA9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_12.BIN",
+   "size": 130220,
+   "time": 0,
+   "md5": "A2FAE29D3027267BA8607BE43552E524",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_13.BIN",
+   "size": 116220,
+   "time": 0,
+   "md5": "EF1465E9E0809EE8EC0E5D9E77076AFB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_14.BIN",
+   "size": 97548,
+   "time": 0,
+   "md5": "34DA33C130C9213BCDCB62ECB852798E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_bd_vvip_galilace_phantombeast/sgfx_bd_vvip_galilace_phantombeast_15.BIN",
+   "size": 66344,
+   "time": 0,
+   "md5": "6C25408957E558A5D496F1EEC8863FFB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/GalilACE_PhantomBeast_GJZX.BIN",
+   "size": 83046,
+   "time": 0,
+   "md5": "36B87DEBDDE0B6BDD6E7C3B9D5DEE7C2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/GalilACE_PhantomBeast_WC25.BIN",
+   "size": 82056,
+   "time": 0,
+   "md5": "6FD1D89B40225EB42F97CD7185FC9901",
+   "md5_complete": true
+  }
+ ]
+}

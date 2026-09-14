@@ -1,0 +1,77 @@
+{
+  "bank": "D:\\Program Files\\CF(2)\\rez\\FMODStudio\\Weapon\\Weapon.bank",
+  "wired": [
+    {
+      "wave": "sound/weapons/galilar/galil_01.wav",
+      "from": "GalilACEPhantomB_Shoot_1",
+      "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "wave": "sound/weapons/galilar/galil_02.wav",
+      "from": "GalilACEPhantomB_Shoot_1",
+      "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "wave": "sound/weapons/galilar/galil_03.wav",
+      "from": "GalilACEPhantomB_Shoot_1",
+      "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "wave": "sound/weapons/galilar/galil_04.wav",
+      "from": "GalilACEPhantomB_Shoot_1",
+      "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "wave": "sound/weapons/galilar/galil_distant.wav",
+      "from": "GalilACEPhantomB_Shoot_1_R",
+      "sha256": "743ffa426bc1019c1f13d4efb375142f6f501b411253ececd14083c94116aa12"
+    },
+    {
+      "wave": "sound/weapons/galilar/galil_clipout.wav",
+      "from": "GalilACEPhantomB_ClipOut",
+      "sha256": "bec0d71774d7c3b8226f33648a21a72b4831259e657ab3623f59c17d21c20e6a"
+    },
+    {
+      "wave": "sound/weapons/galilar/galil_clipin.wav",
+      "from": "GalilACEPhantomB_ClipIn",
+      "sha256": "5b07733bad054e1db72a2249ee20a506b0f5e9484a2d3f6a6fccb2b1009eb4d0"
+    },
+    {
+      "wave": "sound/weapons/galilar/galil_draw.wav",
+      "from": "GalilACEPhantomB_Select",
+      "sha256": "6c1d4dfedfef24dbb5b13d56d7bd0836633fddb3601a136cc77391308aa6b149"
+    }
+  ],
+  "GalilACEPhantomB_Shoot_1": {
+    "seconds": 0.958,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+  },
+  "GalilACEPhantomB_Shoot_1_R": {
+    "seconds": 1.958,
+    "sha256": "743ffa426bc1019c1f13d4efb375142f6f501b411253ececd14083c94116aa12"
+  },
+  "GalilACEPhantomB_ClipOut": {
+    "seconds": 1.128,
+    "sha256": "bec0d71774d7c3b8226f33648a21a72b4831259e657ab3623f59c17d21c20e6a"
+  },
+  "GalilACEPhantomB_ClipIn": {
+    "seconds": 0.66,
+    "sha256": "5b07733bad054e1db72a2249ee20a506b0f5e9484a2d3f6a6fccb2b1009eb4d0"
+  },
+  "GalilACEPhantomB_Select": {
+    "seconds": 0.962,
+    "sha256": "6c1d4dfedfef24dbb5b13d56d7bd0836633fddb3601a136cc77391308aa6b149"
+  },
+  "GalilACEPhantomB_Chg": {
+    "seconds": 1.633,
+    "sha256": "94b4f0002b02a1357314e803e005e3a1aeab4544725eb709635f8596d8004905"
+  },
+  "GalilACEPhantomB_Obv": {
+    "seconds": 6.557,
+    "sha256": "66d8c2a4aedb50d73dc6706de81788b30cf9207d5b19c08bc16dc7358ca6187f"
+  },
+  "GalilACEPhantomB_ATT": {
+    "seconds": 0.603,
+    "sha256": "85aae529dd91576f9f45c847dba3bfb3236b755515a7b703e0d8e881bcbc77c1"
+  }
+}

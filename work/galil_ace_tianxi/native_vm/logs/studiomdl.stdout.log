@@ -1,0 +1,196 @@
+WARNING: AppFramework : Unable to load module p4lib.dll!
+qdir:    "d:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\source1\"
+gamedir: "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\"
+g_path:  "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\source1\v_rif_galilar.qc"
+Building binary model files...
+Working on "v_rif_galilar.qc"
+SMD MODEL cf_native_vm.smd
+SMD MODEL v_rif_galilar_anims\idle.smd
+SMD MODEL v_rif_galilar_anims\fire1.smd
+SMD MODEL v_rif_galilar_anims\fire2.smd
+SMD MODEL v_rif_galilar_anims\fire3.smd
+SMD MODEL v_rif_galilar_anims\reload.smd
+SMD MODEL v_rif_galilar_anims\draw.smd
+SMD MODEL v_rif_galilar_anims\lookat01.smd
+SMD MODEL v_rif_galilar_anims\lookat01_prepare.smd
+SMD MODEL v_rif_galilar_anims\lookat01_loop.smd
+Processing LOD for material: cf_galilace_pb
+Processing LOD for material: cf_foxhand_bl
+Processing LOD for material: cf_foxarm_bl
+---------------------
+writing D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.mdl:
+bones        27812 bytes (108)
+   animation       x       y       ips    angle
+$BoneSaveFrame "v_weapon" position rotation
+$BoneSaveFrame "v_weapon.Bip01" rotation
+$BoneSaveFrame "v_weapon.Bip01_Pelvis" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine1" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine2" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine3" rotation
+$BoneSaveFrame "v_weapon.Bip01_Neck" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Clavicle" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_UpperArm" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Forearm" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Hand" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_ForeTwist" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Clavicle" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_UpperArm" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Forearm" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Hand" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_ForeTwist" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger0" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger01" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger02" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger1" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger11" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger12" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger2" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger21" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger22" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger3" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger31" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger32" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger4" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger41" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger42" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger0" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger01" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger02" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger1" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger11" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger12" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger2" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger21" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger22" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger3" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger31" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger32" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger4" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger41" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger42" rotation
+$BoneSaveFrame "FvARM-bone" position rotation
+$BoneSaveFrame "FvARM-bone Pelvis" position rotation
+$BoneSaveFrame "FvARM-bone Spine" rotation
+$BoneSaveFrame "FvARM-bone Spine1" position rotation
+$BoneSaveFrame "FvARM-bone Neck" rotation
+$BoneSaveFrame "FvARM-bone L Clavicle" position rotation
+$BoneSaveFrame "FvARM-bone L UpperArm" position rotation
+$BoneSaveFrame "FvARM-bone L ForeArm" position rotation
+$BoneSaveFrame "FvARM-bone L Hand" position rotation
+$BoneSaveFrame "FvARM-bone L Finger0" position rotation
+$BoneSaveFrame "FvARM-bone L Finger01" position rotation
+$BoneSaveFrame "FvARM-bone L Finger02" position rotation
+$BoneSaveFrame "FvARM-bone L Finger1" position rotation
+$BoneSaveFrame "FvARM-bone L Finger11" position rotation
+$BoneSaveFrame "FvARM-bone L Finger12" position rotation
+$BoneSaveFrame "FvARM-bone L Finger2" position rotation
+$BoneSaveFrame "FvARM-bone L Finger21" position rotation
+$BoneSaveFrame "FvARM-bone L Finger22" position rotation
+$BoneSaveFrame "FvARM-bone L Finger3" position rotation
+$BoneSaveFrame "FvARM-bone L Finger31" position rotation
+$BoneSaveFrame "FvARM-bone L Finger32" position rotation
+$BoneSaveFrame "FvARM-bone L Finger4" position rotation
+$BoneSaveFrame "FvARM-bone L Finger41" position rotation
+$BoneSaveFrame "FvARM-bone L Finger42" position rotation
+$BoneSaveFrame "FvARM-bone L ForeTwist" position rotation
+$BoneSaveFrame "FvARM-bone R Clavicle" position rotation
+$BoneSaveFrame "FvARM-bone R UpperArm" position rotation
+$BoneSaveFrame "FvARM-bone R ForeArm" position rotation
+$BoneSaveFrame "FvARM-bone R Hand" position rotation
+$BoneSaveFrame "FvARM-bone R Finger0" position rotation
+$BoneSaveFrame "FvARM-bone R Finger01" position rotation
+$BoneSaveFrame "FvARM-bone R Finger02" position rotation
+$BoneSaveFrame "FvARM-bone R Finger1" position rotation
+$BoneSaveFrame "FvARM-bone R Finger11" position rotation
+$BoneSaveFrame "FvARM-bone R Finger12" position rotation
+$BoneSaveFrame "FvARM-bone R Finger2" position rotation
+$BoneSaveFrame "FvARM-bone R Finger21" position rotation
+$BoneSaveFrame "FvARM-bone R Finger22" position rotation
+$BoneSaveFrame "FvARM-bone R Finger3" position rotation
+$BoneSaveFrame "FvARM-bone R Finger31" position rotation
+$BoneSaveFrame "FvARM-bone R Finger32" position rotation
+$BoneSaveFrame "FvARM-bone R Finger4" position rotation
+$BoneSaveFrame "FvARM-bone R Finger41" position rotation
+$BoneSaveFrame "FvARM-bone R Finger42" position rotation
+$BoneSaveFrame "FvARM-bone R ForeTwist" position rotation
+$BoneSaveFrame "Box001" position rotation
+$BoneSaveFrame "Dummy004" position rotation
+$BoneSaveFrame "Dummy005" rotation // (0.33)
+$BoneSaveFrame "Mag_Dummy" position rotation
+$BoneSaveFrame "Dummy001" position rotation
+$BoneSaveFrame "Dummy002" position rotation
+$BoneSaveFrame "Dummy003" position rotation
+$BoneSaveFrame "Dummy006" position rotation
+$BoneSaveFrame "Dummy007" position rotation
+$BoneSaveFrame "Dummy008" position rotation
+$BoneSaveFrame "v_weapon.flash" rotation
+$BoneSaveFrame "v_weapon.shelleject" rotation
+$BoneSaveFrame "v_weapon.stattrack" rotation
+$BoneSaveFrame "v_weapon.uid" rotation
+$BoneSaveFrame "v_weapon.galilar_parent" rotation
+animations  202192 bytes (9 anims) (1294 frames) [0:12]
+sequences     3976 bytes (9 seq) 
+hdr@0057EFB4=73710200
+ik/pose        164 bytes
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+hdr@0057EFB4=73710200
+textures       208 bytes
+keyvalues      120 bytes
+hdr@0057EFAC=73710398
+hdr@0057EFB4=73710200
+bone transforms    14752 bytes
+bone flex driver       0 bytes
+bodygroup presets       0 bytes
+collision        0 bytes
+total       252460
+---------------------
+writing models/weapons\v_rif_galilar.ani:
+blocks	        15
+total       352592
+---------------------
+writing D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.vvd:
+vertices    846240 bytes (17630 vertices)
+tangents    282080 bytes (17630 vertices)
+total      1128384 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.sw.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           105 bytes
+verts:         158670 bytes
+indices:        98832 bytes
+bone changes:       8 bytes
+everything:    257805 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.dx80.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           175 bytes
+verts:         158697 bytes
+indices:        98832 bytes
+bone changes:     488 bytes
+everything:    258382 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.dx90.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           105 bytes
+verts:         158670 bytes
+indices:        98832 bytes
+bone changes:     424 bytes
+everything:    258221 bytes
+WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
+WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
+
+Completed "v_rif_galilar.qc"

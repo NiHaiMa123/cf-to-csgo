@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/cf_tianxi/cf_galilace_pb"
+	"$bumpmap" "models/weapons/v_models/cf_tianxi/cf_galilace_pb_n"
+	"$phong" "1"
+	"$phongexponent" "24"
+	"$phongboost" "0.8"
+	"$phongfresnelranges" "[0.15 0.5 1]"
+	"$nocull" "0"
+}

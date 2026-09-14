@@ -1,0 +1,49 @@
+{
+ "Weapon_GalilAR.Single": {
+  "waves": [
+   "`)weapons/galilar/galil_01.wav",
+   "`)weapons/galilar/galil_02.wav",
+   "`)weapons/galilar/galil_03.wav",
+   "`)weapons/galilar/galil_04.wav"
+  ]
+ },
+ "Weapon_GalilAR.SingleDistant": {
+  "waves": [
+   "~weapons/galilar/galil_distant.wav"
+  ]
+ },
+ "Weapon_GalilAR.Clipout": {
+  "waves": [
+   "~weapons/galilar/galil_clipout.wav"
+  ]
+ },
+ "Weapon_GalilAR.Clipin": {
+  "waves": [
+   "~weapons/galilar/galil_clipin.wav"
+  ]
+ },
+ "Weapon_GalilAR.Draw": {
+  "waves": [
+   "~weapons/galilar/galil_draw.wav"
+  ]
+ },
+ "Weapon_GalilAR.BoltBack": {
+  "waves": [
+   "~weapons/galilar/galil_boltback.wav"
+  ]
+ },
+ "Weapon_GalilAR.BoltForward": {
+  "waves": [
+   "~weapons/galilar/galil_boltforward.wav"
+  ]
+ },
+ "Weapon_GalilAR.WeaponMove1": {
+  "waves": []
+ },
+ "Weapon_GalilAR.WeaponMove2": {
+  "waves": []
+ },
+ "Weapon_GalilAR.WeaponMove3": {
+  "waves": []
+ }
+}

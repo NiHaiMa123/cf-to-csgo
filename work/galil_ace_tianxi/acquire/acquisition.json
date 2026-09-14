@@ -1,0 +1,123 @@
+{
+ "generated_at_utc": "2026-09-14T13:31:54.334779+00:00",
+ "files": [
+  {
+   "rez_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast.LTB",
+   "archive": "rez4/RF016.REZ",
+   "size": 518960,
+   "sha256": "af214a40c324051840b85b985e5bb6d3271676d0eaa2b57fe766da42e3439df7",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "local_path": "verified_root/Models/PLAYERVIEW/PV-GalilACE_PhantomBeast.LTB"
+  },
+  {
+   "rez_path": "ModelTextures/PLAYERVIEW/PV-GalilACE_PhantomBeast.DTX",
+   "archive": "rez6/RF017.REZ",
+   "size": 524452,
+   "sha256": "724eb24b0ce74130cf5caabe7de4ca7dd718fd2d4059627cf97b1abd455c143a",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "local_path": "verified_root/ModelTextures/PLAYERVIEW/PV-GalilACE_PhantomBeast.DTX"
+  },
+  {
+   "rez_path": "ModelTextures/Shader/WeaponShader/GalilACE_PhantomBeast.CFG",
+   "archive": "rez6/RF017.REZ",
+   "size": 4084,
+   "sha256": "227c389e29ac2b7e5ff18b0f8f611b22ae3f1e1bdab7b98a12119789115fe9db",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "local_path": "verified_root/ModelTextures/Shader/WeaponShader/GalilACE_PhantomBeast.CFG"
+  },
+  {
+   "rez_path": "ModelTextures/SpecularMap/GalilACE_PhantomBeast_S.PNG",
+   "archive": "rez6/RF017.REZ",
+   "size": 1559072,
+   "sha256": "7cb8b7d570a954ca8a6f281d76955edf4401933cee6d6ecd3a140ee8eea29a02",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "local_path": "verified_root/ModelTextures/SpecularMap/GalilACE_PhantomBeast_S.PNG"
+  },
+  {
+   "rez_path": "ModelTextures/NormalMap/GalilACE_PhantomBeast_N.PNG",
+   "archive": "rez6/RF017.REZ",
+   "size": 1337566,
+   "sha256": "e07e9e524d57c59c0b173e07960bd5d7008cf34a02a180636ae16b19b3f4c5cb",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "local_path": "verified_root/ModelTextures/NormalMap/GalilACE_PhantomBeast_N.PNG"
+  },
+  {
+   "rez_path": "ModelTextures/AlphaMap/GalilACE_PhantomBeast_A.PNG",
+   "archive": "rez6/RF017.REZ",
+   "size": 477813,
+   "sha256": "443d42b9dd3be8d2bd2dfbbabde19460a777eaec3a86672d81aefd628acf3e98",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "local_path": "verified_root/ModelTextures/AlphaMap/GalilACE_PhantomBeast_A.PNG"
+  },
+  {
+   "rez_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Shoot_1.WAV",
+   "archive": "rez4/RF018.REZ",
+   "size": 36937,
+   "sha256": "5d4f35030238e699973798e5a99304bde70c8fe1b1197f9936161ef3bb5ab8c3",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "local_path": "verified_root/SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Shoot_1.WAV"
+  },
+  {
+   "rez_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ClipOut.WAV",
+   "archive": "rez4/RF018.REZ",
+   "size": 76473,
+   "sha256": "c69dea3a150028d9b9b85d1d17fc7c6057c6d7155c77282040d471b62613e14c",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "local_path": "verified_root/SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ClipOut.WAV"
+  },
+  {
+   "rez_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ClipIn.WAV",
+   "archive": "rez4/RF018.REZ",
+   "size": 40987,
+   "sha256": "0c4b65760087fba2462676f6f45cce623b72f5b06a7864a04b276aa0ae225d2d",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "local_path": "verified_root/SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ClipIn.WAV"
+  },
+  {
+   "rez_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Select.WAV",
+   "archive": "rez4/RF018.REZ",
+   "size": 62353,
+   "sha256": "6794d8e2e10370bd95bb8d4ae4830aa894ce7436d18dcc9cb75feeb76446ea67",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "local_path": "verified_root/SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Select.WAV"
+  },
+  {
+   "rez_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Chg.WAV",
+   "archive": "rez4/RF018.REZ",
+   "size": 80113,
+   "sha256": "e3d643e344c71c61216140b004e58691343ab207157264ff4edf435cc1e28c86",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "local_path": "verified_root/SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Chg.WAV"
+  },
+  {
+   "rez_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Obv.WAV",
+   "archive": "rez4/RF018.REZ",
+   "size": 436596,
+   "sha256": "09fb2e1f1ff5f518e4240ed0fd46139ad0b13dd4a8cfbf78800321be552841c1",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "local_path": "verified_root/SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_Obv.WAV"
+  },
+  {
+   "rez_path": "SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ATT.WAV",
+   "archive": "rez4/RF018.REZ",
+   "size": 24987,
+   "sha256": "ca89259356ed1044c5d6137376e88474e078b102f3163bc26efca6bcea553ac3",
+   "routing": "main_file",
+   "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "local_path": "verified_root/SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB_ATT.WAV"
+  }
+ ],
+ "missing": []
+}
