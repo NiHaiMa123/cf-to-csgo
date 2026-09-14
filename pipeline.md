@@ -72,7 +72,7 @@ P8 验收      用户游戏内确认第一人称/声音/动作                [G
 - **事件时序**：按 CF clip `times_ms` 投到 100fps 帧号；同 channel 后续事件会截断前音（BoltBack/BoltForward 坑）。
 - **部署后必须 MIGI UPDATE**；以 pak 内 hash == addon hash 为验证，不看磁盘文件。
 
-## 4. 当前状态（2026-09-14 晚）
+## 4. 当前状态（2026-09-14 晚，用户已验收）
 
 ```text
 P0: PASS   13/13 资产 MD5 分片校验恢复 -> acquire/verified_root/ (acquisition.json)
@@ -91,8 +91,35 @@ P6: PASS   Weapon.bank FSB 流 -> 44.1k PCM16 -> 8 个 galilar wave 路径
            boltback/boltforward 保留 stock；WeaponMove*=stock 共享 foley 不动
 P7: PASS   pak01_dir.vpk 重建（vpk.exe -M），addons.json 加入 p_cf_tianxi_galilar_p1，
            23 文件全部入 pak 并复核；旧 pak 备份在 deploy/pak01_backup/
-P8: PENDING 用户 runtime 验收（idle/draw/fire/reload/inspect/枪口/抛壳/声音/手膜）
+           注：MIGI GUI 仍会提示 UPDATE（它不读 pak 差异）——由用户手动点 UPDATE，
+           结果与 headless 重建等价（同一批 addon 文件重打 pak）。
+P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-14）
 ```
+
+## 5. 复现索引（照此可重走全流程）
+
+前置依赖（`scripts/_paths.py` 提供）：CF 客户端目录、CS:GO 目录、
+`vgmstream-cli`、`ffmpeg`、Crowbar（stock 反编译）、Source SDK `studiomdl.exe`、`vpk.exe`。
+
+| 阶段 | 脚本 | 输入 → 输出 |
+|---|---|---|
+| 身份扫描 | `scan/scan_galil_index.py` `scan/find_bute_records.py` `scan/scan_fview_index.py` | REZ 索引 + Bute → `scan/*.json` |
+| P0 | `acquire/acquire_assets.py` | REZ 条目 → `acquire/verified_root/` + `acquisition.json` |
+| P1 | `decode/decode_assets.py` | verified_root LTB/DTX → `decode/`（payload/skin/audit/PNG） |
+| P2 | `preview/bpy_build_preview.py`（可选） | decode → Blender 预览（重负载，建议轻量模式） |
+| P3 | `csref/extract_galilar_ref.py` `csref/fit_transform.py` | pak01 stock mdl → `csref/decompiled_stock/` + `viewmodel_transform.json` |
+| P4 | （未执行）ComfyUI 127.0.0.1:8188 超分 diffuse | 可选增强，默认用原生 1024 |
+| P5 | `native_vm/build_galilace_vm.py` | decode+csref+armtex → `native_vm/source1/` → studiomdl → `addon/` |
+| P6 | `sound/build_sound_overlay.py` | `Weapon.bank` FSB（vgmstream+ffmpeg）→ `addon/sound/weapons/galilar/` |
+| P7 | `deploy/rebuild_pak.py` `deploy/fix_addons_json.py` | addon/ + pak01_dir.vpk → 重建 pak（等价于 MIGI UPDATE） |
+| P8 | 用户游戏内验收 | — |
+
+## 6. 已知回退 / 后续增强位
+
+- `BoltBack/BoltForward` 帧 140/160 是按副件运动估的（CF 无 bolt label）——换弹尾段机械声不对位就调 `build_galilace_vm.py` 这两个帧号。
+- `PV-GalilACE_PhantomBeast_Chg` 变换形态、QV 第三人称、`pv_galilace_phantombeast_idle` 粒子特效首轮未做。
+- diffuse 是原生 1024；想要 4K 走 P4 ComfyUI 后重跑 P5 材质段。
+- observe 的 6 个音效 cue 暂用 stock `WeaponMove*` 通用衣物音。
 
 ### 执行中发现的差异（已处理）
 
