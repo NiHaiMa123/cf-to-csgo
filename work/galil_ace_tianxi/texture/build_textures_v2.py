@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Galil ACE-天袭 texture pass v6 — smooth metal mask + sparse selfillum.
+"""Galil ACE-天袭 texture pass v7 — albedo-colored metal + sparse selfillum.
 
-v5 proved the deployment chain but produced yellow/green noise: the _M RGB
-background was solid red (making the whole gun self-illuminated), the detailed
-_S map drove two shader inputs, and the custom gold cubemap had only one mip.
-v6 extracts glow only from _M G/B, low-pass filters _S into a dedicated env
-mask, uses scalar phong exponent, and returns to the map's mipmapped cubemap.
+v6 removed noise but map cubemap reflection stayed visible in shadow and washed
+the weapon white. v7 disables envmap/rimlight completely: metallic response is
+albedo-tinted Phong, so gold/blue highlights inherit the weapon's own diffuse
+color and remain coupled to viewmodel lighting. Glow still uses sparse _M G/B.
 
 Iteration loop: rebuild into staging + real MIGI addon -> verify hashes -> user
 runs MIGI REBUILD -> verify packed hashes -> in-game check.
@@ -213,29 +212,19 @@ def build_selfillum_mask(src: Path, dst: Path) -> Path:
     return dst
 
 
-def gun_vmt(envmap: str) -> str:
+def gun_vmt() -> str:
     return f'''"VertexLitGeneric"
 {{
 	"$basetexture" "{MAT}/cf_galilace_pb"
 	"$bumpmap" "{MAT}/cf_galilace_pb_n"
 	"$phong" "1"
 	"$phongexponent" "48"
-	"$phongboost" "1.5"
-	"$phongfresnelranges" "[0.1 0.5 1]"
+	"$phongboost" "2"
+	"$phongfresnelranges" "[0.05 0.45 1]"
 	"$phongalbedotint" "1"
-	"$envmap" "{envmap}"
-	"$envmapmask" "{MAT}/cf_galilace_pb_env"
-	"$envmapcontrast" "0.2"
-	"$envmapsaturation" "0.8"
-	"$envmaptint" "[0.45 0.4 0.28]"
-	"$envmapfresnel" "1"
-	"$envmapFresnelMinMaxExp" "[0.05 0.8 4]"
 	"$selfillum" "1"
 	"$selfillummask" "{MAT}/cf_galilace_pb_m"
-	"$selfillumtint" "[0.12 0.3 0.7]"
-	"$rimlight" "1"
-	"$rimlightexponent" "16"
-	"$rimlightboost" "0.15"
+	"$selfillumtint" "[0.1 0.25 0.65]"
 	"$nocull" "0"
 }}
 '''
@@ -262,13 +251,11 @@ def main():
     diffuse = comfy_upscale(GUN_DIFFUSE, "galilace_diffuse") or GUN_DIFFUSE
     report["diffuse_src"] = str(diffuse)
 
-    env_mask = build_env_mask(GUN_S, OUT / "galilace_pb_env.png")
     m_mask = None
     if GUN_M.is_file():
         m_mask = build_selfillum_mask(GUN_M, OUT / "galilace_pb_m.png")
 
-    envmap = "env_cubemap"
-    report["envmap"] = envmap
+    report["envmap"] = "disabled; albedo-tinted phong only"
 
     # Diffuse: uncompressed BGRA8888 at 2048 — kills DXT block jaggies
     # (DXT1/5 share the same color blocks; resolution still 2x native 1024).
@@ -283,11 +270,10 @@ def main():
     vtfcmd(diffuse, ADDON / "cf_galilace_pb.vtf", "bgra8888")
     vtfcmd(GUN_N, ADDON / "cf_galilace_pb_n.vtf", "dxt5",
            flags=("TRILINEAR", "ANISOTROPIC", "NORMAL"))
-    vtfcmd(env_mask, ADDON / "cf_galilace_pb_env.vtf", "bgra8888")
     if m_mask:
         vtfcmd(m_mask, ADDON / "cf_galilace_pb_m.vtf", "bgra8888")
 
-    vmt = gun_vmt(envmap)
+    vmt = gun_vmt()
     if not m_mask:  # no glow mask -> drop selfillum block
         vmt = "\n".join(l for l in vmt.splitlines() if "selfillum" not in l) + "\n"
     (ADDON / "cf_galilace_pb.vmt").write_text(vmt, encoding="utf-8")
@@ -302,7 +288,7 @@ def main():
     (OUT / "report_v2.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(report, indent=2, ensure_ascii=False))
-    print("\n[texture v6] DONE — MIGI addon staged; user must click REBUILD")
+    print("\n[texture v7] DONE — MIGI addon staged; user must click REBUILD")
 
 
 if __name__ == "__main__":

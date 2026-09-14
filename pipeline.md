@@ -115,11 +115,11 @@ P1: PASS   LTB 56 节点 / 12 mesh / 10 clip 解出 -> decode/ (reference_payloa
 P2: SKIP   Blender 预览脚本写好但渲染负载大导致 MCP 阻塞；用户已关 Blender。身份已由 Bute+资源路径+贴图确认。
 P3: PASS   stock v_rif_galilar 反编译；H 变换 ICP 拟合 s=2.0025 det=+1 sym_trimmed_mean=0.353
            (csref/viewmodel_transform.json；锚点初始化改 PCA 主轴——3 点共线锚点会坍缩)
-P4: PASS   v6：ComfyUI 4x 后降采样到 2048 -> BGRA8888 无损 diffuse；
-           _S 低通平滑生成独立 BGRA8888 env mask；_M 只取稀疏 G/B 发光信息；
-           phong 改回标量 exponent=48；使用地图自带有 mip 的 env_cubemap，避免单 mip
-           Gold_map01 产生黄绿反射噪点；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL) flag
-           (texture/build_textures_v2.py；参数映射自 CFG EnvCubeMapBrightness=3 等)
+P4: PASS   v7：ComfyUI 4x 后降采样到 2048 -> BGRA8888 无损 diffuse；
+           _M 只取稀疏 G/B 发光信息；禁用 envmap/rimlight（反射在阴影下仍叠加而泛白）；
+           金属表现只用 albedo-tinted Phong（exponent=48/boost=2），高光继承枪身
+           diffuse 本色并随 viewmodel 光照变化；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL)
+           (texture/build_textures_v2.py；v6 已确认 A/B/C hash 一致后才得出此材质结论)
 P5: PASS   work/galil_ace_tianxi/native_vm/build_galilace_vm.py
            108 骨（1 root + 47 CS 塌陷 + 55 CF + 4 attach + galilar_parent）
            8 序列：idle/fire1-3/reload/draw/lookat01(=observe 704f)/prepare/loop
@@ -147,7 +147,7 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 | P1 | `decode/decode_assets.py` | verified_root LTB/DTX → `decode/`（payload/skin/audit/PNG） |
 | P2 | 默认跳过；存疑时 `preview/bpy_build_preview.py` | decode → Blender 预览（只建 mesh+单帧姿态，不烘焙不渲染） |
 | P3 | `csref/extract_galilar_ref.py` `csref/fit_transform.py` | pak01 stock mdl → `csref/decompiled_stock/` + `viewmodel_transform.json` |
-| P4 | `texture/build_textures_v2.py` | ComfyUI 超分 diffuse + _S/_M mask + VMT → 仓库 staging addon，并同步至实际 MIGI addon |
+| P4 | `texture/build_textures_v2.py` | ComfyUI 超分 diffuse + 稀疏 `_M` 发光 mask + albedo-tinted Phong VMT → staging，并同步实际 MIGI addon |
 | P5 | `native_vm/build_galilace_vm.py` | decode+csref+armtex → `native_vm/source1/` → studiomdl → `addon/` |
 | P6 | `sound/build_sound_overlay.py` | `Weapon.bank` FSB（vgmstream+ffmpeg）→ `addon/sound/weapons/galilar/` |
 | P7 | agent: A→B 同步并校验；**用户: MIGI REBUILD**；agent: B→C 校验 | staging addon → `migi/csgo/addons/` → 用户 REBUILD → pak hash 复核；详见 §3.1 |
@@ -158,7 +158,8 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 - `BoltBack/BoltForward` 帧 140/160 是按副件运动估的（CF 无 bolt label）——换弹尾段机械声不对位就调 `build_galilace_vm.py` 这两个帧号。
 - `PV-GalilACE_PhantomBeast_Chg` 变换形态、QV 第三人称、`pv_galilace_phantombeast_idle` 粒子特效首轮未做。
 - diffuse 经 4x 超分后以 2048 BGRA8888 无损 VTF 输出；免重启路线弃用（`mat_reloadallmaterials` 闪退 + 用户实测松散文件不覆盖 pak）。迭代 = 改 `build_textures_v2.py` 参数重跑落 staging 并同步实际 addon → A/B hash Gate → 用户 MIGI REBUILD → B/C hash Gate → 上游戏验收。
-- **v5 黄绿噪点根因**：`GalilACE_PhantomBeast_M.PNG` 没有 alpha，R 通道全 255；直接作为 `$selfillummask` 等于整枪自发光。彩色高频 `_S` 同时驱动 phong exponent 与 envmap mask，再叠加只有一个 mip 的 Gold_map01 cubemap，进一步放大反射斑点。v6 只取 `_M` 的 `max(G,B)` 作为稀疏发光遮罩；`_S` 先 GaussianBlur 再独立生成 env mask；phong 使用标量 exponent；envmap 回退到地图 mipmapped `env_cubemap`。
+- **v5 黄绿噪点根因**：`GalilACE_PhantomBeast_M.PNG` 没有 alpha，R 通道全 255；直接作为 `$selfillummask` 等于整枪自发光。彩色高频 `_S` 同时驱动 phong exponent 与 envmap mask，再叠加只有一个 mip 的 Gold_map01 cubemap，进一步放大反射斑点。v6 只取 `_M` 的 `max(G,B)` 作为稀疏发光遮罩并移除高频驱动，噪点消失。
+- **v6 阴影下仍泛白根因**：`$envmap` 是环境反射加色，不等于枪身本色金属，暗处仍会叠加 cubemap；rimlight 也会继续抬亮边缘。用户要求的是贴图本色的金属高光，因此 v7 完全移除 envmap/rimlight，仅保留 `$phongalbedotint 1` 的 Phong，高光颜色继承 diffuse。
 - observe 的 6 个音效 cue 暂用 stock `WeaponMove*` 通用衣物音。
 
 ### 执行中发现的差异（已处理）
