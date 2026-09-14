@@ -52,7 +52,7 @@ Bute 声音名映射（记录 #6941）：Shoot=`GalilACEPhantomB_Shoot`，ClipOu
 ```text
 P0 资产恢复  verified_root 镜像 + SHA/provenance 记录      -> acquire/
 P1 解码      skin dump(顶点/UV/权重) + 动画 payload(100fps) + DTX->PNG -> decode/
-P2 身份      Blender cf_native_preview 渲染 -> 用户认图     -> preview/   [GATE: USER_VISUAL_MATCH]
+P2 身份      [默认 SKIP] Bute+资源路径+贴图证据确认；Blender 预览仅拟合存疑时跑轻量模式
 P3 CS 参考   stock galilar 反编译 -> H = sR+t ICP 拟合      -> csref/
 P4 贴图      diffuse 4x 超分(ComfyUI 127.0.0.1:8188) -> VTF/VMT -> materials/
 P5 模型      改编 s05 脚本 -> SMD/QC -> studiomdl           -> source1/
@@ -106,7 +106,7 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 | 身份扫描 | `scan/scan_galil_index.py` `scan/find_bute_records.py` `scan/scan_fview_index.py` | REZ 索引 + Bute → `scan/*.json` |
 | P0 | `acquire/acquire_assets.py` | REZ 条目 → `acquire/verified_root/` + `acquisition.json` |
 | P1 | `decode/decode_assets.py` | verified_root LTB/DTX → `decode/`（payload/skin/audit/PNG） |
-| P2 | `preview/bpy_build_preview.py`（可选） | decode → Blender 预览（重负载，建议轻量模式） |
+| P2 | 默认跳过；存疑时 `preview/bpy_build_preview.py` | decode → Blender 预览（只建 mesh+单帧姿态，不烘焙不渲染） |
 | P3 | `csref/extract_galilar_ref.py` `csref/fit_transform.py` | pak01 stock mdl → `csref/decompiled_stock/` + `viewmodel_transform.json` |
 | P4 | （未执行）ComfyUI 127.0.0.1:8188 超分 diffuse | 可选增强，默认用原生 1024 |
 | P5 | `native_vm/build_galilace_vm.py` | decode+csref+armtex → `native_vm/source1/` → studiomdl → `addon/` |
