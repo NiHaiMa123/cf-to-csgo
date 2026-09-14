@@ -16,3 +16,10 @@ Desktop.ini
 __pycache__/
 *.pyc
 *.pyo
+
+# texture intermediates + raw CF payloads (regenerable)
+work/galil_ace_tianxi/texture/src/
+work/galil_ace_tianxi/texture/up/
+work/galil_ace_tianxi/texture/Gold_map01.vtf
+work/galil_ace_tianxi/texture/*_rgba.png
+work/galil_ace_tianxi/texture/*_mask.png
