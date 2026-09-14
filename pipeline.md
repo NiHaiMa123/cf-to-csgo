@@ -57,7 +57,7 @@ P3 CS 参考   stock galilar 反编译 -> H = sR+t ICP 拟合      -> csref/
 P4 贴图      diffuse 4x 超分(ComfyUI 127.0.0.1:8188) -> VTF/VMT -> materials/
 P5 模型      改编 s05 脚本 -> SMD/QC -> studiomdl           -> source1/
 P6 声音      CF WAV -> 44.1k PCM16 -> galilar 文件名 overlay -> sound/
-P7 部署      addon staging -> migi addons -> UPDATE pak -> hash 复核 -> deploy/
+P7 部署      agent: addon 落盘到 migi addons -> 用户: MIGI UPDATE -> agent: pak hash 复核 -> deploy/
 P8 验收      用户游戏内确认第一人称/声音/动作                [GATE: USER_RUNTIME_ACCEPTED]
 ```
 
@@ -70,7 +70,7 @@ P8 验收      用户游戏内确认第一人称/声音/动作                [G
 - **H 变换**：ICP 拟合 `CF idle-posed 枪顶点 → stock galilar idle-posed 顶点`，`v'=Hv`、`R'=H·B·H⁻¹`、`W'=H·W·H⁻¹`。
 - **超分**：只超 diffuse；normal/spec 不超。
 - **事件时序**：按 CF clip `times_ms` 投到 100fps 帧号；同 channel 后续事件会截断前音（BoltBack/BoltForward 坑）。
-- **部署后必须 MIGI UPDATE**；以 pak 内 hash == addon hash 为验证，不看磁盘文件。
+- **MIGI UPDATE 由用户手动执行**：agent 只负责把 addon 落盘到 `migi/csgo/addons/` 并提醒用户点 UPDATE，不替用户操作 MIGI；以 pak 内 hash == addon hash 为验证，不看磁盘文件。
 
 ## 4. 当前状态（2026-09-14 晚，用户已验收）
 
@@ -91,8 +91,8 @@ P6: PASS   Weapon.bank FSB 流 -> 44.1k PCM16 -> 8 个 galilar wave 路径
            boltback/boltforward 保留 stock；WeaponMove*=stock 共享 foley 不动
 P7: PASS   pak01_dir.vpk 重建（vpk.exe -M），addons.json 加入 p_cf_tianxi_galilar_p1，
            23 文件全部入 pak 并复核；旧 pak 备份在 deploy/pak01_backup/
-           注：MIGI GUI 仍会提示 UPDATE（它不读 pak 差异）——由用户手动点 UPDATE，
-           结果与 headless 重建等价（同一批 addon 文件重打 pak）。
+           注：本轮 pak 由 agent headless 重建（vpk -M）完成，仅作一次性验证；
+           正式流程定为用户手动 MIGI UPDATE，agent 不做此步。
 P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-14）
 ```
 
@@ -111,7 +111,7 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 | P4 | （未执行）ComfyUI 127.0.0.1:8188 超分 diffuse | 可选增强，默认用原生 1024 |
 | P5 | `native_vm/build_galilace_vm.py` | decode+csref+armtex → `native_vm/source1/` → studiomdl → `addon/` |
 | P6 | `sound/build_sound_overlay.py` | `Weapon.bank` FSB（vgmstream+ffmpeg）→ `addon/sound/weapons/galilar/` |
-| P7 | `deploy/rebuild_pak.py` `deploy/fix_addons_json.py` | addon/ + pak01_dir.vpk → 重建 pak（等价于 MIGI UPDATE） |
+| P7 | agent: addon 落盘 + `deploy/fix_addons_json.py`；**用户: MIGI UPDATE** | addon/ → `migi/csgo/addons/` → 用户 UPDATE → pak hash 复核；`deploy/rebuild_pak.py` 仅 MIGI 不可用时备用 |
 | P8 | 用户游戏内验收 | — |
 
 ## 6. 已知回退 / 后续增强位
