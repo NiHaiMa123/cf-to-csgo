@@ -130,7 +130,8 @@ def dds_cubemap_to_vtf(dds: Path, vtf: Path) -> bool:
     face_bytes = (w // 4) * (h // 4) * blk
     if len(d) < 128 + 6 * face_bytes:
         return False
-    body = d[128:128 + 6 * face_bytes]  # faces already +X -X +Y -Y +Z -Z
+    # VTF ENVMAP cubemaps carry a 7th spheremap slice — pad with face0.
+    body = d[128:128 + 6 * face_bytes] + d[128:128 + face_bytes]
 
     # 16x16 DXT1 thumbnail, solid gold block (rgb565 ~ #c8a850)
     def rgb565(r, g, b):
@@ -217,11 +218,11 @@ def gun_vmt(envmap: str) -> str:
 	"$phongalbedotint" "1"
 	"$envmap" "{envmap}"
 	"$envmapmask" "{MAT}/cf_galilace_pb_s"
-	"$envmapcontrast" "0.7"
+	"$envmapcontrast" "0.5"
 	"$envmapsaturation" "1"
-	"$envmaptint" "[0.75 0.7 0.55]"
+	"$envmaptint" "[0.85 0.8 0.6]"
 	"$envmapfresnel" "1"
-	"$envmapFresnelMinMaxExp" "[0 1 3]"
+	"$envmapFresnelMinMaxExp" "[0.05 1 2.5]"
 	"$selfillum" "1"
 	"$selfillummask" "{MAT}/cf_galilace_pb_m"
 	"$selfillumtint" "[0.35 0.6 1.0]"
@@ -264,7 +265,17 @@ def main():
         envmap = f"{MAT}/cf_gold_cube"
     report["envmap"] = envmap
 
-    vtfcmd(diffuse, ADDON / "cf_galilace_pb.vtf", "dxt1")
+    # Diffuse: uncompressed BGRA8888 at 2048 — kills DXT block jaggies
+    # (DXT1/5 share the same color blocks; resolution still 2x native 1024).
+    dif_small = OUT / "galilace_pb_2048.png"
+    if diffuse.is_file():
+        from PIL import Image
+        im = Image.open(diffuse)
+        if im.width != 2048:
+            im = im.resize((2048, 2048), Image.LANCZOS)
+        im.save(dif_small)
+        diffuse = dif_small
+    vtfcmd(diffuse, ADDON / "cf_galilace_pb.vtf", "bgra8888")
     vtfcmd(GUN_N, ADDON / "cf_galilace_pb_n.vtf", "dxt5",
            flags=("TRILINEAR", "ANISOTROPIC", "NORMAL"))
     vtfcmd(s_mask, ADDON / "cf_galilace_pb_s.vtf", "dxt5")
