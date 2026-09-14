@@ -115,10 +115,10 @@ P1: PASS   LTB 56 节点 / 12 mesh / 10 clip 解出 -> decode/ (reference_payloa
 P2: SKIP   Blender 预览脚本写好但渲染负载大导致 MCP 阻塞；用户已关 Blender。身份已由 Bute+资源路径+贴图确认。
 P3: PASS   stock v_rif_galilar 反编译；H 变换 ICP 拟合 s=2.0025 det=+1 sym_trimmed_mean=0.353
            (csref/viewmodel_transform.json；锚点初始化改 PCA 主轴——3 点共线锚点会坍缩)
-P4: PASS   ComfyUI RealESRGAN 4x 后降采样到 2048 -> BGRA8888 无损 diffuse VTF；
-           _S -> DXT5(RGB+alpha=亮度) 同时做 phongexponenttexture + envmapmask；
-           _M 做 selfillum 能量纹发光；Gold_map01.DDS 六面 + legacy spheremap
-           重排成 VTF7.2 七切片 cubemap；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL) flag
+P4: PASS   v6：ComfyUI 4x 后降采样到 2048 -> BGRA8888 无损 diffuse；
+           _S 低通平滑生成独立 BGRA8888 env mask；_M 只取稀疏 G/B 发光信息；
+           phong 改回标量 exponent=48；使用地图自带有 mip 的 env_cubemap，避免单 mip
+           Gold_map01 产生黄绿反射噪点；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL) flag
            (texture/build_textures_v2.py；参数映射自 CFG EnvCubeMapBrightness=3 等)
 P5: PASS   work/galil_ace_tianxi/native_vm/build_galilace_vm.py
            108 骨（1 root + 47 CS 塌陷 + 55 CF + 4 attach + galilar_parent）
@@ -157,7 +157,8 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 
 - `BoltBack/BoltForward` 帧 140/160 是按副件运动估的（CF 无 bolt label）——换弹尾段机械声不对位就调 `build_galilace_vm.py` 这两个帧号。
 - `PV-GalilACE_PhantomBeast_Chg` 变换形态、QV 第三人称、`pv_galilace_phantombeast_idle` 粒子特效首轮未做。
-- diffuse 已 4x 超分到 4096（P4 v3）；免重启路线弃用（`mat_reloadallmaterials` 闪退 + 用户实测松散文件不覆盖 pak）。迭代 = 改 `build_textures_v2.py` 参数重跑落 addon → 用户 MIGI UPDATE → 上游戏验收。
+- diffuse 经 4x 超分后以 2048 BGRA8888 无损 VTF 输出；免重启路线弃用（`mat_reloadallmaterials` 闪退 + 用户实测松散文件不覆盖 pak）。迭代 = 改 `build_textures_v2.py` 参数重跑落 staging 并同步实际 addon → A/B hash Gate → 用户 MIGI REBUILD → B/C hash Gate → 上游戏验收。
+- **v5 黄绿噪点根因**：`GalilACE_PhantomBeast_M.PNG` 没有 alpha，R 通道全 255；直接作为 `$selfillummask` 等于整枪自发光。彩色高频 `_S` 同时驱动 phong exponent 与 envmap mask，再叠加只有一个 mip 的 Gold_map01 cubemap，进一步放大反射斑点。v6 只取 `_M` 的 `max(G,B)` 作为稀疏发光遮罩；`_S` 先 GaussianBlur 再独立生成 env mask；phong 使用标量 exponent；envmap 回退到地图 mipmapped `env_cubemap`。
 - observe 的 6 个音效 cue 暂用 stock `WeaponMove*` 通用衣物音。
 
 ### 执行中发现的差异（已处理）

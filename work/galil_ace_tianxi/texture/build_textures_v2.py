@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Galil ACE-天袭 texture pass v3 — 4x diffuse + CF gold envcube + selfillum.
+"""Galil ACE-天袭 texture pass v6 — smooth metal mask + sparse selfillum.
 
-v2 problem: uniform envmap (mask = _S luminance, mostly bright) + halflambert
-produced a grey film with no metal. v3:
-  - _S with $envmapcontrast 1 -> only genuinely bright regions reflect
-  - CF Gold_map01.DDS cubemap as $envmap (authentic VVIP gold reflection;
-    falls back to env_cubemap if DDS->VTF fails)
-  - _M overlay-alpha mask -> $selfillummask (blue energy lines glow)
-  - halflambert removed (contrast back)
+v5 proved the deployment chain but produced yellow/green noise: the _M RGB
+background was solid red (making the whole gun self-illuminated), the detailed
+_S map drove two shader inputs, and the custom gold cubemap had only one mip.
+v6 extracts glow only from _M G/B, low-pass filters _S into a dedicated env
+mask, uses scalar phong exponent, and returns to the map's mipmapped cubemap.
 
-Iteration loop: rebuild into addon/ -> user runs MIGI UPDATE -> in-game check.
-(mat_reloadallmaterials crashes on this machine; loose files under migi/csgo
-do NOT override pak per user testing — loose drop removed.)
+Iteration loop: rebuild into staging + real MIGI addon -> verify hashes -> user
+runs MIGI REBUILD -> verify packed hashes -> in-game check.
 """
 from __future__ import annotations
 
@@ -195,15 +192,24 @@ def comfy_upscale(img: Path, prefix: str, timeout=300) -> Path | None:
     return None
 
 
-def rgba_luminance_alpha(src: Path, dst: Path) -> Path:
-    """RGB kept, alpha = luminance (or native alpha preserved if present)."""
-    from PIL import Image
-    im = Image.open(src)
-    if "A" not in im.getbands():
-        im = im.convert("RGB")
-        im.putalpha(im.convert("L"))
+def build_env_mask(src: Path, dst: Path) -> Path:
+    from PIL import Image, ImageFilter, ImageOps
+    mask = ImageOps.grayscale(Image.open(src).convert("RGB"))
+    mask = mask.filter(ImageFilter.GaussianBlur(4))
+    mask = mask.point(lambda x: max(0, min(255, (x - 12) * 2)))
     dst.parent.mkdir(parents=True, exist_ok=True)
-    im.save(dst)
+    mask.convert("RGB").save(dst)
+    return dst
+
+
+def build_selfillum_mask(src: Path, dst: Path) -> Path:
+    from PIL import Image, ImageChops, ImageFilter
+    im = Image.open(src).convert("RGB")
+    mask = ImageChops.lighter(im.getchannel("G"), im.getchannel("B"))
+    mask = mask.point(lambda x: max(0, min(255, (x - 8) * 3)))
+    mask = mask.filter(ImageFilter.GaussianBlur(1))
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    mask.convert("RGB").save(dst)
     return dst
 
 
@@ -213,23 +219,23 @@ def gun_vmt(envmap: str) -> str:
 	"$basetexture" "{MAT}/cf_galilace_pb"
 	"$bumpmap" "{MAT}/cf_galilace_pb_n"
 	"$phong" "1"
-	"$phongexponenttexture" "{MAT}/cf_galilace_pb_s"
-	"$phongboost" "2"
-	"$phongfresnelranges" "[0.1 0.45 1]"
+	"$phongexponent" "48"
+	"$phongboost" "1.5"
+	"$phongfresnelranges" "[0.1 0.5 1]"
 	"$phongalbedotint" "1"
 	"$envmap" "{envmap}"
-	"$envmapmask" "{MAT}/cf_galilace_pb_s"
-	"$envmapcontrast" "0.5"
-	"$envmapsaturation" "1"
-	"$envmaptint" "[0.85 0.8 0.6]"
+	"$envmapmask" "{MAT}/cf_galilace_pb_env"
+	"$envmapcontrast" "0.2"
+	"$envmapsaturation" "0.8"
+	"$envmaptint" "[0.45 0.4 0.28]"
 	"$envmapfresnel" "1"
-	"$envmapFresnelMinMaxExp" "[0.05 1 2.5]"
+	"$envmapFresnelMinMaxExp" "[0.05 0.8 4]"
 	"$selfillum" "1"
 	"$selfillummask" "{MAT}/cf_galilace_pb_m"
-	"$selfillumtint" "[0.35 0.6 1.0]"
+	"$selfillumtint" "[0.12 0.3 0.7]"
 	"$rimlight" "1"
-	"$rimlightexponent" "12"
-	"$rimlightboost" "0.35"
+	"$rimlightexponent" "16"
+	"$rimlightboost" "0.15"
 	"$nocull" "0"
 }}
 '''
@@ -256,14 +262,12 @@ def main():
     diffuse = comfy_upscale(GUN_DIFFUSE, "galilace_diffuse") or GUN_DIFFUSE
     report["diffuse_src"] = str(diffuse)
 
-    s_mask = rgba_luminance_alpha(GUN_S, OUT / "galilace_pb_s_rgba.png")
+    env_mask = build_env_mask(GUN_S, OUT / "galilace_pb_env.png")
     m_mask = None
     if GUN_M.is_file():
-        m_mask = rgba_luminance_alpha(GUN_M, OUT / "galilace_pb_m_rgba.png")
+        m_mask = build_selfillum_mask(GUN_M, OUT / "galilace_pb_m.png")
 
     envmap = "env_cubemap"
-    if GOLD_DDS.is_file() and dds_cubemap_to_vtf(GOLD_DDS, ADDON / "cf_gold_cube.vtf"):
-        envmap = f"{MAT}/cf_gold_cube"
     report["envmap"] = envmap
 
     # Diffuse: uncompressed BGRA8888 at 2048 — kills DXT block jaggies
@@ -279,9 +283,9 @@ def main():
     vtfcmd(diffuse, ADDON / "cf_galilace_pb.vtf", "bgra8888")
     vtfcmd(GUN_N, ADDON / "cf_galilace_pb_n.vtf", "dxt5",
            flags=("TRILINEAR", "ANISOTROPIC", "NORMAL"))
-    vtfcmd(s_mask, ADDON / "cf_galilace_pb_s.vtf", "dxt5")
+    vtfcmd(env_mask, ADDON / "cf_galilace_pb_env.vtf", "bgra8888")
     if m_mask:
-        vtfcmd(m_mask, ADDON / "cf_galilace_pb_m.vtf", "dxt5")
+        vtfcmd(m_mask, ADDON / "cf_galilace_pb_m.vtf", "bgra8888")
 
     vmt = gun_vmt(envmap)
     if not m_mask:  # no glow mask -> drop selfillum block
@@ -298,7 +302,7 @@ def main():
     (OUT / "report_v2.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(report, indent=2, ensure_ascii=False))
-    print("\n[texture v5] DONE — MIGI addon staged; user must click REBUILD")
+    print("\n[texture v6] DONE — MIGI addon staged; user must click REBUILD")
 
 
 if __name__ == "__main__":
