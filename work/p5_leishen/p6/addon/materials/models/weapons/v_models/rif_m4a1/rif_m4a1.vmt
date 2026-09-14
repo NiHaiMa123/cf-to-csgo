@@ -1,13 +1,11 @@
-"VertexLitGeneric"
-{
-	"$basetexture" "models/weapons/v_models/rif_m4a1/rif_m4a1"
-	"$bumpmap" "models/weapons/v_models/rif_m4a1/rif_m4a1_normal"
-	"$phong" "1"
-	"$phongexponent" "16"
-	"$phongboost" "1"
-	"$phongfresnelranges" "[0.05 0.5 1]"
-	"$phongalbedotint" "1"
-	"$envmap" "models/weapons/v_models/rif_m4a1/rif_m4a1_cube"
-	"$envmapmask" "models/weapons/v_models/rif_m4a1/rif_m4a1_envmask"
-	"$nocull" "0"
-}
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/rif_m4a1/rif_m4a1"
+	"$bumpmap" "models/weapons/v_models/rif_m4a1/rif_m4a1_normal"
+	"$phong" "1"
+	"$phongexponent" "48"
+	"$phongboost" "2"
+	"$phongfresnelranges" "[0.05 0.45 1]"
+	"$phongalbedotint" "1"
+	"$nocull" "0"
+}

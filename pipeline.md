@@ -135,6 +135,21 @@ P7: PASS   pak01_dir.vpk 重建（vpk.exe -M），addons.json 加入 p_cf_tianxi
 P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-14）
 ```
 
+### 4.1 M4A1-雷神同步整改（2026-09-15）
+
+```text
+材质: STAGED  第一人称 rif_m4a1.vmt 改为附录 A.8.1 本色 Phong 参数；
+                 删除 envmap/envmapmask，避免阴影下泛白，A/B hash PASS。
+合并: STAGED  p_cf_leishen_m4a4_p7_sound 的 9 个 WAV 已并入
+                 p_cf_leishen_m4a4_p6（现共 39 文件，无路径冲突，9/9 hash PASS）。
+退役: PASS    活动 addons 中已移除 p_cf_leishen_m4a4_p7_sound；同内容 parked 备份保留。
+脚本: PASS    scripts/p5/p5_p7_original_sound.py 后续直接 merge 到 P6，不再创建第二 addon；
+                 scripts/p5/merge_leishen_addons.py 负责旧双-addon 的一次性安全合并。
+打包: PACK_VERIFY_PENDING  等用户 MIGI REBUILD；agent 不执行。
+```
+
+合并证据：`work/p5_leishen/unified_addon.json`。canonical addon 固定为 `p_cf_leishen_m4a4_p6`。
+
 ## 5. 复现索引（照此可重走全流程）
 
 前置依赖（`scripts/_paths.py` 提供）：CF 客户端目录、CS:GO 目录、
@@ -243,7 +258,33 @@ CFG 里直接写着全部贴图名 + 光照参数（SpecularPower、EnvCubeUsage
 ## A.8 CF 材质的坑：specular map ≠ 高光图
 
 - `*_S` 打开常是**亮银色完整枪图** —— 它是**环境反射色图**（`EnvCubeUsage=2`，envcube 采样后乘它）。
-- alpha 图一般是全不透明遮罩；发光条要真还原得走 emission。
+- alpha/mask 文件必须逐通道检查，不能按文件名假设 alpha 存在：天袭 `_M` 实际是 RGB，R=255 整面背景，发光信息在稀疏 G/B；直接用作 `$selfillummask` 会让整枪发光。
+- 同一张高频 `_S` 不要同时驱动 `$phongexponenttexture` 和 `$envmapmask`，否则细节会被重复放大成反射噪点。
+
+### A.8.1 默认第一人称金属参数（用户验收：天袭 v7）
+
+目标是“金属高光呈现枪身本色，并随 viewmodel 光照明暗变化”，默认使用 **albedo-tinted Phong**，不使用加色 envmap/rimlight：
+
+```vmt
+"VertexLitGeneric"
+{
+    "$basetexture" "<weapon_diffuse>"
+    "$bumpmap" "<weapon_normal>"
+    "$phong" "1"
+    "$phongexponent" "48"
+    "$phongboost" "2"
+    "$phongfresnelranges" "[0.05 0.45 1]"
+    "$phongalbedotint" "1"
+    "$nocull" "0"
+}
+```
+
+若武器有经过逐通道验证的稀疏能量遮罩，可额外加入 `$selfillum`，但不得把整面常量通道当 mask。`$envmap`/`$rimlight` 不是默认项：它们会在阴影中继续加亮并改变枪身本色；只有用户明确要求镜面/镀铬环境反射，且专用低频 mask 与完整 mip cubemap 都已验证时才启用。
+
+此参数已同步用于：
+
+- 天袭 `materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vmt`（另加稀疏蓝色 selfillum）。
+- 雷神 `materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt`（纯本色 Phong）。
 
 ## A.9 手膜/角色系统
 

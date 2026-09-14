@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-09-14T17:36:31.010951+00:00",
+  "canonical_addon": "p_cf_leishen_m4a4_p6",
+  "retired_addon": "p_cf_leishen_m4a4_p7_sound",
+  "canonical_file_count": 39,
+  "merged_sound_file_count": 9,
+  "material": "materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt",
+  "material_sha256": "b84f1afb1dc08e2030867f1b8190c87d3d6f18cdc9dd669197a31f27eb633b28",
+  "sound_sha256": {
+    "sound/weapons/m4a1/m4a1_01.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+    "sound/weapons/m4a1/m4a1_02.wav": "8b29b6a30e5c21e926d7d26f89672d53bcdee512a2e132324f9e3181e6d6a485",
+    "sound/weapons/m4a1/m4a1_boltback.wav": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+    "sound/weapons/m4a1/m4a1_boltforward.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+    "sound/weapons/m4a1/m4a1_cliphit.wav": "60567fda5d6a04034a2ed6536806f50eaea6255fafd730ad770b4c1a5ba5f39e",
+    "sound/weapons/m4a1/m4a1_clipin.wav": "bd47829c8e291fed078065321c4f5ea2d8a2ecdf7a41cb64f31c4db7d8b95ac4",
+    "sound/weapons/m4a1/m4a1_clipout.wav": "78fe3d0376c74edb417e635df4fbc28a0dfd013a4fdb9be76482eb57245ac3fe",
+    "sound/weapons/m4a1/m4a1_distant_01.wav": "f45dc8aced9c68d19ab844072110fcaeb55e5415b79c6d1db550378785764b08",
+    "sound/weapons/m4a1/m4a1_draw.wav": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30"
+  },
+  "active_sound_removed": true,
+  "parked_backup_verified": true,
+  "migi_rebuild": "USER_REQUIRED"
+}

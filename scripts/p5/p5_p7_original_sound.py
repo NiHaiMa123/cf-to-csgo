@@ -7,7 +7,8 @@ streams are refused.
 
 Wires those samples onto vanilla M4A4 soundscript wave paths
 (Weapon_M4A1.Single uses weapons/m4a1/m4a1_01.wav + m4a1_02.wav).
-Does not overwrite P6 mesh/materials or the parked frozen addon.
+Merges sound files into the P6 model/material addon without changing existing
+model/material paths; the parked frozen addon remains untouched.
 
 Repro:
   python scripts/p5/p5_p7_original_sound.py
@@ -41,8 +42,8 @@ PCM_DIR = OUT / "pcm"
 LOG_DIR = OUT / "logs"
 BUTE = REPO / "work" / "p5_leishen" / "t03" / "bute_canonical.json"
 
-ADDON_NAME = "p_cf_leishen_m4a4_p7_sound"
-P6_ADDON = "p_cf_leishen_m4a4_p6"
+ADDON_NAME = "p_cf_leishen_m4a4_p6"
+P6_ADDON = ADDON_NAME
 FROZEN_NAME = "p_cf_bornbeast_m4a4_p4_frozen_noop_01"
 MIGI_ADDONS = GAME / "migi" / "csgo" / "addons"
 PARK = GAME / "migi" / "csgo" / "_parked_addons"
@@ -381,30 +382,30 @@ def frozen_status() -> dict[str, Any]:
 
 
 def deploy_addon(staging_hashes: dict[str, str]) -> dict[str, Any]:
-    if ADDON_NAME in {P6_ADDON, FROZEN_NAME}:
-        raise RuntimeError("refusing to deploy over P6 or frozen")
     target = MIGI_ADDONS / ADDON_NAME
-    if target.exists():
-        existing = tree_hashes(target)
-        if existing == staging_hashes:
-            return {"target": str(target), "action": "verified_existing", "hashes": existing}
-        shutil.rmtree(target)
-    target.mkdir(parents=True, exist_ok=True)
+    if not target.is_dir():
+        raise RuntimeError("P6 model/material addon is missing")
+    before = tree_hashes(target)
     for relative in staging_hashes:
         src = STAGING / relative
         dst = target / relative
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
     deployed = tree_hashes(target)
-    if deployed != staging_hashes:
-        raise RuntimeError("post-deploy hash mismatch")
-    p6 = MIGI_ADDONS / P6_ADDON
+    if any(deployed.get(relative) != digest for relative, digest in staging_hashes.items()):
+        raise RuntimeError("post-deploy sound hash mismatch")
+    preserved = {
+        relative: digest for relative, digest in before.items()
+        if relative not in staging_hashes
+    }
+    if any(deployed.get(relative) != digest for relative, digest in preserved.items()):
+        raise RuntimeError("model/material files changed during sound merge")
     frozen = PARK / FROZEN_NAME
     return {
         "target": str(target),
-        "action": "created",
+        "action": "merged_into_existing",
         "hashes": deployed,
-        "p6_untouched": p6.exists(),
+        "preserved_file_count": len(preserved),
         "frozen_untouched": frozen.exists(),
     }
 
@@ -414,7 +415,7 @@ def write_report(report: dict[str, Any]) -> None:
     lines = [
         "# P7-S01 — CF original sound (M4A1-雷神)",
         "",
-        f"Result: **{report['result']}**. P6 mesh addon `{P6_ADDON}` is unchanged. Frozen addon not modified. P4-M01 remains **INCOMPLETE**.",
+        f"Result: **{report['result']}**. Sound is merged into the existing model/material addon `{P6_ADDON}`. Frozen addon not modified. P4-M01 remains **INCOMPLETE**.",
         "",
         f"Addon: `{ADDON_NAME}`",
         f"Deploy: `{report['deploy']['target']}` ({report['deploy']['action']})",
