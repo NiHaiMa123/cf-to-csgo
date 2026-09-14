@@ -83,7 +83,9 @@ P3: PASS   stock v_rif_galilar 反编译；H 变换 ICP 拟合 s=2.0025 det=+1 s
 P4: PASS   ComfyUI RealESRGAN 4x diffuse(1024->4096) -> DXT1 VTF；
            _S -> DXT5(RGB+alpha=亮度) 同时做 phongexponenttexture + envmapmask；
            VMT v2: env_cubemap+envmapfresnel+phongalbedotint+halflambert+rimlight
-           (texture/build_textures_v2.py；参数映射自 CFG EnvCubeMapBrightness=3 等)
+           (texture/build_textures_v2.py；参数映射自 CFG EnvCubeMapBrightness=3 等；
+           v4 起用 Gold_map01.DDS 手工重排成 VTF7.2 六面 cubemap 做 $envmap，
+           _M 做 selfillum 能量纹发光；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL) flag)
 P5: PASS   work/galil_ace_tianxi/native_vm/build_galilace_vm.py
            108 骨（1 root + 47 CS 塌陷 + 55 CF + 4 attach + galilar_parent）
            8 序列：idle/fire1-3/reload/draw/lookat01(=observe 704f)/prepare/loop

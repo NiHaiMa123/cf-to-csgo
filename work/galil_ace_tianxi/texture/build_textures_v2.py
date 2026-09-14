@@ -89,12 +89,14 @@ def extract_extra() -> dict:
     return out
 
 
-def vtfcmd(src: Path, dest: Path, fmt: str):
+def vtfcmd(src: Path, dest: Path, fmt: str, flags: tuple[str, ...] = ("TRILINEAR", "ANISOTROPIC")):
     dest.parent.mkdir(parents=True, exist_ok=True)
-    proc = subprocess.run(
-        [str(VTFCMD), "-file", str(src), "-output", str(dest.parent),
-         "-format", fmt, "-version", "7.4"],
-        capture_output=True, text=True, encoding="utf-8", errors="replace")
+    cmd = [str(VTFCMD), "-file", str(src), "-output", str(dest.parent),
+           "-format", fmt, "-version", "7.4"]
+    for fl in flags:
+        cmd += ["-flag", fl]
+    proc = subprocess.run(cmd, capture_output=True, text=True,
+                          encoding="utf-8", errors="replace")
     produced = dest.parent / (src.stem + ".vtf")
     if not produced.is_file():
         raise RuntimeError(f"VTFCmd failed for {src.name}: {proc.stderr or proc.stdout}")
@@ -105,6 +107,55 @@ def vtfcmd(src: Path, dest: Path, fmt: str):
 def vtf_framecount(path: Path) -> int:
     data = path.read_bytes()
     return int.from_bytes(data[16:18], "little") if len(data) > 20 else 0
+
+
+def dds_cubemap_to_vtf(dds: Path, vtf: Path) -> bool:
+    """Repack a no-mip cubemap DDS (DXT1/DXT3/DXT5, 6 faces) into a VTF 7.2
+    cubemap. DDS stores face-major blocks; VTF stores mip-major/face-minor —
+    with 1 mip level the byte order is identical, so this is a pure repack."""
+    import struct
+    d = dds.read_bytes()
+    if d[:4] != b"DDS ":
+        return False
+    h, w = struct.unpack("<II", d[12:20])
+    mips = struct.unpack("<I", d[28:32])[0] or 1
+    fourcc = d[84:88]
+    caps2 = struct.unpack("<I", d[112:116])[0]
+    if not (caps2 & 0x200):  # DDSCAPS2_CUBEMAP
+        return False
+    fmt_map = {b"DXT1": 13, b"DXT3": 14, b"DXT5": 15}
+    if fourcc not in fmt_map or mips != 1:
+        return False
+    blk = 8 if fourcc == b"DXT1" else 16
+    face_bytes = (w // 4) * (h // 4) * blk
+    if len(d) < 128 + 6 * face_bytes:
+        return False
+    body = d[128:128 + 6 * face_bytes]  # faces already +X -X +Y -Y +Z -Z
+
+    # 16x16 DXT1 thumbnail, solid gold block (rgb565 ~ #c8a850)
+    def rgb565(r, g, b):
+        return ((r >> 3) << 11) | ((g >> 2) << 5) | (b >> 3)
+    c = rgb565(200, 168, 80)
+    thumb = struct.pack("<HHI", c, c, 0) * 16
+
+    hdr = bytearray(80)
+    hdr[0:4] = b"VTF\x00"
+    struct.pack_into("<II", hdr, 4, 7, 2)          # version 7.2
+    struct.pack_into("<I", hdr, 12, 80)            # header size
+    struct.pack_into("<HH", hdr, 16, w, h)
+    struct.pack_into("<I", hdr, 20, 0x4000)        # TEXTUREFLAGS_ENVMAP
+    struct.pack_into("<HH", hdr, 24, 1, 0)         # frames=1, firstFrame=0
+    struct.pack_into("<fff", hdr, 32, 0.5, 0.5, 0.5)
+    struct.pack_into("<f", hdr, 48, 1.0)           # bumpmap scale
+    struct.pack_into("<I", hdr, 52, fmt_map[fourcc])
+    hdr[56] = 1                                    # mip count
+    struct.pack_into("<I", hdr, 57, 13)            # lowres = DXT1
+    hdr[61] = 16
+    hdr[62] = 16
+    struct.pack_into("<H", hdr, 63, 1)             # depth
+    vtf.parent.mkdir(parents=True, exist_ok=True)
+    vtf.write_bytes(bytes(hdr) + thumb + body)
+    return True
 
 
 def comfy_upscale(img: Path, prefix: str, timeout=300) -> Path | None:
@@ -166,11 +217,11 @@ def gun_vmt(envmap: str) -> str:
 	"$phongalbedotint" "1"
 	"$envmap" "{envmap}"
 	"$envmapmask" "{MAT}/cf_galilace_pb_s"
-	"$envmapcontrast" "1"
+	"$envmapcontrast" "0.7"
 	"$envmapsaturation" "1"
-	"$envmaptint" "[0.6 0.55 0.5]"
+	"$envmaptint" "[0.75 0.7 0.55]"
 	"$envmapfresnel" "1"
-	"$envmapFresnelMinMaxExp" "[0 0.7 3]"
+	"$envmapFresnelMinMaxExp" "[0 1 3]"
 	"$selfillum" "1"
 	"$selfillummask" "{MAT}/cf_galilace_pb_m"
 	"$selfillumtint" "[0.35 0.6 1.0]"
@@ -208,13 +259,14 @@ def main():
     if GUN_M.is_file():
         m_mask = rgba_luminance_alpha(GUN_M, OUT / "galilace_pb_m_rgba.png")
 
-    # Gold_map01.DDS -> VTFCmd only converts face0 (frames=1, not a cubemap);
-    # proper repack is a TODO. For now use map env_cubemap (stock convention).
     envmap = "env_cubemap"
+    if GOLD_DDS.is_file() and dds_cubemap_to_vtf(GOLD_DDS, ADDON / "cf_gold_cube.vtf"):
+        envmap = f"{MAT}/cf_gold_cube"
     report["envmap"] = envmap
 
     vtfcmd(diffuse, ADDON / "cf_galilace_pb.vtf", "dxt1")
-    vtfcmd(GUN_N, ADDON / "cf_galilace_pb_n.vtf", "dxt5")
+    vtfcmd(GUN_N, ADDON / "cf_galilace_pb_n.vtf", "dxt5",
+           flags=("TRILINEAR", "ANISOTROPIC", "NORMAL"))
     vtfcmd(s_mask, ADDON / "cf_galilace_pb_s.vtf", "dxt5")
     if m_mask:
         vtfcmd(m_mask, ADDON / "cf_galilace_pb_m.vtf", "dxt5")

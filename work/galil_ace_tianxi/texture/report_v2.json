@@ -15,9 +15,9 @@
     "cf_galilace_pb.vtf",
     "cf_galilace_pb_m.vtf",
     "cf_galilace_pb_n.vtf",
-    "cf_galilace_pb_s.vtf"
+    "cf_galilace_pb_s.vtf",
+    "cf_gold_cube.vtf"
   ],
   "diffuse_src": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\texture\\up\\4x_PV-GalilACE_PhantomBeast.png",
-  "envmap": "env_cubemap",
-  "loose_dir": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\materials\\models\\weapons\\v_models\\cf_tianxi"
+  "envmap": "models/weapons/v_models/cf_tianxi/cf_gold_cube"
 }
