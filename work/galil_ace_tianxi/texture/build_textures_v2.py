@@ -9,10 +9,9 @@ produced a grey film with no metal. v3:
   - _M overlay-alpha mask -> $selfillummask (blue energy lines glow)
   - halflambert removed (contrast back)
 
-Iteration without restart: files are staged to addon/ AND dropped loose into
-migi/csgo/materials/... (gameinfo mounts the dir -> loose beats pak).
-In-game: `sv_cheats 1; mat_reloadallmaterials`.
-Final packaging still = addon dir + user-run MIGI UPDATE.
+Iteration loop: rebuild into addon/ -> user runs MIGI UPDATE -> in-game check.
+(mat_reloadallmaterials crashes on this machine; loose files under migi/csgo
+do NOT override pak per user testing — loose drop removed.)
 """
 from __future__ import annotations
 
@@ -43,7 +42,8 @@ OUT = WORK / "texture"
 UP = OUT / "up"
 SRC = OUT / "src"
 ADDON = WORK / "addon" / "materials" / "models" / "weapons" / "v_models" / "cf_tianxi"
-LOOSE = GAME / "migi" / "csgo" / "materials" / "models" / "weapons" / "v_models" / "cf_tianxi"
+# Loose-file override into migi/csgo does NOT take effect (user-confirmed);
+# packaging path is always addon dir + user-run MIGI UPDATE.
 
 MAT = "models/weapons/v_models/cf_tianxi"
 COMFY = "http://127.0.0.1:8188"
@@ -226,12 +226,8 @@ def main():
     for name in ("cf_foxhand_bl", "cf_foxarm_bl"):
         (ADDON / f"{name}.vmt").write_text(ARM_VMT.format(MAT, name), encoding="utf-8")
 
-    LOOSE.mkdir(parents=True, exist_ok=True)
     for f in sorted(ADDON.iterdir()):
-        shutil.copy(f, LOOSE / f.name)
         report["files"].append(f.name)
-
-    report["loose_dir"] = str(LOOSE)
     (OUT / "report_v2.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(report, indent=2, ensure_ascii=False))

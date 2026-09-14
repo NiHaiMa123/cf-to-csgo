@@ -121,7 +121,7 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 
 - `BoltBack/BoltForward` 帧 140/160 是按副件运动估的（CF 无 bolt label）——换弹尾段机械声不对位就调 `build_galilace_vm.py` 这两个帧号。
 - `PV-GalilACE_PhantomBeast_Chg` 变换形态、QV 第三人称、`pv_galilace_phantombeast_idle` 粒子特效首轮未做。
-- diffuse 已 4x 超分到 4096（P4 v3）；**`mat_reloadallmaterials` 在本机会闪退，免重启路线弃用**。迭代 = 改 `build_textures_v2.py` 参数重跑（落 addon + `migi/csgo/materials/` 松散双份）→ 用户 MIGI UPDATE → 上游戏验收。
+- diffuse 已 4x 超分到 4096（P4 v3）；免重启路线弃用（`mat_reloadallmaterials` 闪退 + 用户实测松散文件不覆盖 pak）。迭代 = 改 `build_textures_v2.py` 参数重跑落 addon → 用户 MIGI UPDATE → 上游戏验收。
 - observe 的 6 个音效 cue 暂用 stock `WeaponMove*` 通用衣物音。
 
 ### 执行中发现的差异（已处理）
