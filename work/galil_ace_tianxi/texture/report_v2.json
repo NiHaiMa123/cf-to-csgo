@@ -1,0 +1,19 @@
+{
+  "comfy": true,
+  "files": [
+    "cf_foxarm_bl.vmt",
+    "cf_foxarm_bl.vtf",
+    "cf_foxarm_bl_n.vtf",
+    "cf_foxhand_bl.vmt",
+    "cf_foxhand_bl.vtf",
+    "cf_foxhand_bl_n.vtf",
+    "cf_galilace_pb.vmt",
+    "cf_galilace_pb.vtf",
+    "cf_galilace_pb_n.vtf",
+    "cf_galilace_pb_s.vtf"
+  ],
+  "upscaled": "4x_PV-GalilACE_PhantomBeast.png",
+  "diffuse_src": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\texture\\up\\4x_PV-GalilACE_PhantomBeast.png",
+  "mask_alpha": true,
+  "loose_dir": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\materials\\models\\weapons\\v_models\\cf_tianxi"
+}

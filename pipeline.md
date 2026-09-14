@@ -80,7 +80,10 @@ P1: PASS   LTB 56 节点 / 12 mesh / 10 clip 解出 -> decode/ (reference_payloa
 P2: SKIP   Blender 预览脚本写好但渲染负载大导致 MCP 阻塞；用户已关 Blender。身份已由 Bute+资源路径+贴图确认。
 P3: PASS   stock v_rif_galilar 反编译；H 变换 ICP 拟合 s=2.0025 det=+1 sym_trimmed_mean=0.353
            (csref/viewmodel_transform.json；锚点初始化改 PCA 主轴——3 点共线锚点会坍缩)
-P4: PARTIAL 未走 ComfyUI 超分；直接用 1024 原生 diffuse+normal -> VTF（如需 4K 再补）
+P4: PASS   ComfyUI RealESRGAN 4x diffuse(1024->4096) -> DXT1 VTF；
+           _S -> DXT5(RGB+alpha=亮度) 同时做 phongexponenttexture + envmapmask；
+           VMT v2: env_cubemap+envmapfresnel+phongalbedotint+halflambert+rimlight
+           (texture/build_textures_v2.py；参数映射自 CFG EnvCubeMapBrightness=3 等)
 P5: PASS   work/galil_ace_tianxi/native_vm/build_galilace_vm.py
            108 骨（1 root + 47 CS 塌陷 + 55 CF + 4 attach + galilar_parent）
            8 序列：idle/fire1-3/reload/draw/lookat01(=observe 704f)/prepare/loop
@@ -108,7 +111,7 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 | P1 | `decode/decode_assets.py` | verified_root LTB/DTX → `decode/`（payload/skin/audit/PNG） |
 | P2 | 默认跳过；存疑时 `preview/bpy_build_preview.py` | decode → Blender 预览（只建 mesh+单帧姿态，不烘焙不渲染） |
 | P3 | `csref/extract_galilar_ref.py` `csref/fit_transform.py` | pak01 stock mdl → `csref/decompiled_stock/` + `viewmodel_transform.json` |
-| P4 | （未执行）ComfyUI 127.0.0.1:8188 超分 diffuse | 可选增强，默认用原生 1024 |
+| P4 | `texture/build_textures_v2.py` | ComfyUI 超分 diffuse + _S mask + VMT v2 → addon + migi/csgo 松散文件 |
 | P5 | `native_vm/build_galilace_vm.py` | decode+csref+armtex → `native_vm/source1/` → studiomdl → `addon/` |
 | P6 | `sound/build_sound_overlay.py` | `Weapon.bank` FSB（vgmstream+ffmpeg）→ `addon/sound/weapons/galilar/` |
 | P7 | agent: addon 落盘 + `deploy/fix_addons_json.py`；**用户: MIGI UPDATE** | addon/ → `migi/csgo/addons/` → 用户 UPDATE → pak hash 复核；`deploy/rebuild_pak.py` 仅 MIGI 不可用时备用 |
@@ -118,7 +121,7 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 
 - `BoltBack/BoltForward` 帧 140/160 是按副件运动估的（CF 无 bolt label）——换弹尾段机械声不对位就调 `build_galilace_vm.py` 这两个帧号。
 - `PV-GalilACE_PhantomBeast_Chg` 变换形态、QV 第三人称、`pv_galilace_phantombeast_idle` 粒子特效首轮未做。
-- diffuse 是原生 1024；想要 4K 走 P4 ComfyUI 后重跑 P5 材质段。
+- diffuse 已 4x 超分到 4096（P4 v2）；观感迭代走 **松散文件热重载**：改 `addon/materials` → 跑 `build_textures_v2.py`（或手动拷到 `migi/csgo/materials/...`）→ 游戏控制台 `sv_cheats 1; mat_reloadallmaterials`，免重启。定稿后再走 addon + MIGI UPDATE 入 pak。若松散文件不生效（MIGI 只挂 pak 不挂目录），退化为 `map <当前图>` 重载或 UPDATE。
 - observe 的 6 个音效 cue 暂用 stock `WeaponMove*` 通用衣物音。
 
 ### 执行中发现的差异（已处理）
