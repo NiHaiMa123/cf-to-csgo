@@ -2,183 +2,68 @@
 
 将 **CrossFire（穿越火线）资源**提取、分析并转换为 **CS:GO Legacy Source 1 / MIGI** 可用 Mod 的工具与研究仓库。
 
-仓库包含 REZ/音频处理、LTB 模型分析、Source 1 构建、MIGI 部署、原生材质逆向和最终武器资产定位工作。
+仓库包含 REZ/音频处理、LTB 模型分析、Source 1 构建、MIGI 部署、原生材质逆向和武器资产移植工作。
 
 ---
 
-# 1. 先看这 4 个 Markdown
+# 1. 文档结构
 
-根目录 Markdown：
+根目录只保留两份 Markdown：
 
 ```text
-README.md  项目介绍 + 文档职责 + 领导 Agent / 执行 Agent 协作方式
-AGENTS.md  只规定 Git 操作与本地文件保护
-plan.md    蓝图 + 冻结事实 + Gate + §0 当前状态/当前任务
-task.md    用户指定的详细修复操作手册（阶段开关仍看plan §0）
+README.md     项目介绍 + 协作方式 + Git 规则（本文件）
+pipeline.md   武器移植 pipeline：通用方法（附录 A）+ 资产图 + 阶段开关 + 当前执行状态
 ```
 
-当前进度和阶段开关只维护在 `plan.md` §0。用户2026-09-13要求把给Grok的详细修复步骤写在 `task.md`；它展开当前任务与后续路径，不自行开启后续阶段。
+2026-09-14 文档清理：`AGENTS.md`（Git 规则并入本文件 §5）、`plan.md`/`task.md`（M4A1 修复期规划，旧状态见 git history）、`CF_NATIVE_PIPELINE.md`（通用方法并入 `pipeline.md` 附录 A）已删除。
+
+归属约定：
+
+```text
+入口 / 协作 / Git 规则       -> README.md
+移植方法 + 当前武器状态       -> pipeline.md（§4 活状态，§5 复现索引，附录 A 通用方法）
+运行细节 / evidence / 报告   -> work/<weapon>/
+历史逐轮过程                  -> Git history
+```
+
+不要再新增 `P4_TASKS.md` / `REVIEW_FINAL_2.md` 这类一次性文档。
 
 ---
 
-# 2. 核心协作原则
+# 2. 当前状态
 
-这个仓库按 **Planner/Reviewer -> Executor -> Planner/Reviewer** 循环推进。
-
-关键原则：
+活状态只维护在 `pipeline.md` §4。冻结摘要：
 
 ```text
-plan.md §0 = 当前状态 + 当前一轮任务（或 NONE / STOP）
-plan.md 其余 = 已确认的长期地图和冻结事实
-```
-
-`plan.md` §0.2 的 ACTIVE 任务不应该覆盖一个大阶段的所有可能工作。一个 task 应尽量是：
-
-```text
-范围明确
--> 本地 Agent 可以一次完成
--> 能产出可审计 evidence
--> 完成后值得领导 Agent 单独 Review
-```
-
-Executor 完成 `plan.md` §0.2 的一轮任务后必须停止并交回 Review，不自行连续执行后续阶段。
-
----
-
-# 3. 领导 / Planning / Review Agent
-
-适合 Chat/Sol 或其他负责全局规划和 Review 的 Agent。
-
-每一轮：
-
-```text
-1. 读取 README.md
-2. 读取 plan.md（先 §0，再冻结节）
-3. 读取最新 executor commit / code / evidence
-4. Review 本轮结果
-5. 判断哪些结果可以正式冻结进 plan.md
-6. 更新 plan.md §0（状态 + 下一轮 ACTIVE 任务或 NONE）
-7. push master
-```
-
-`plan.md` 只写已经接受的长期信息，例如：
-
-```text
-pipeline / 阶段关系
-Gate / acceptance criteria
-正式 PASS / FROZEN checkpoint
-经过 Review 接受的结构事实
-经过 Review 接受的 scoped negative
-长期 blocker / dependency
-```
-
-尚未 Review 的猜测不要写进冻结节。下一轮范围与开关写在 `plan.md` §0.2，详细操作由 `task.md` 展开。
-
----
-
-# 4. 执行 / Local Executor Agent
-
-适合 Claude Code、Codex、MiniMax、Gemini、Luna 或其他能访问本地 repo / data / toolchain 的 Agent。
-
-启动顺序：
-
-```text
-README.md
--> AGENTS.md
--> plan.md §0
--> plan.md 其余（背景）
-```
-
-执行 Agent：
-
-```text
-理解 plan 的长期背景
--> 只执行 plan.md §0.2 的 ACTIVE 任务
--> §0.2 为 NONE 则 STOP
--> 在任务范围内自主选择实现路线
--> 产出代码 / report / evidence
--> 精确 commit + push master
--> 返回 commit SHA 和结果摘要
--> STOP
-```
-
-Executor 不负责：
-
-```text
-自行修改长期 pipeline
-自行宣布高层 Gate PASS
-自行恢复被暂停的后续阶段
-一轮 task 完成后继续猜下一阶段要做什么
-```
-
-这些由领导 Agent Review 后决定。
-
----
-
-# 5. 标准交接循环
-
-```text
-领导 Agent
-  read plan.md §0 + latest evidence
-  -> Review
-  -> freeze accepted facts into plan.md
-  -> write ONE next review-sized task into plan.md §0.2 (or NONE)
-  -> push master
-
-执行 Agent
-  pull master
-  -> read README + AGENTS + plan.md §0
-  -> execute ONE ACTIVE task
-  -> commit code/evidence
-  -> push master
-  -> STOP
-
-领导 Agent
-  re-read latest master
-  -> Review
-  -> update plan.md §0
-```
-
-因此即使更换 Planner 或 Executor，也不依赖聊天记忆；最新 `master` 足以恢复上下文。
-
----
-
-# 6. 项目长期 Pipeline
-
-简化主链：
-
-```text
-CF 原始资源
--> REZ / LTB / DTX / TGA / CFG / audio
--> model / UV / skeleton / animation evidence
--> Source 1 SMD / QC / VMT / VTF
--> compile / validate / package / MIGI
--> native CF material recovery
--> final M4A1-雷神 identity
--> release quality
--> Inspect / IK / CF original animation/sound enhancements
-```
-
-详细 pipeline、已完成 Gate、冻结 commit、以及 **当前状态/当前任务** 见 [`plan.md`](plan.md) **§0**。
-
----
-
-# 7. 当前长期技术状态
-
-活状态只维护在 [`plan.md`](plan.md) **§0**。这里只留不会每周改的冻结摘要：
-
-```text
-P4 Source 1 / MIGI baseline            = PASS / FROZEN
-P4-M01 native material                 = INCOMPLETE
-native PV atlas / TGA / text CFG        = RECOVERED from verified REZ parts (plan §4.27)
-archive reader integration             = OPEN; old main-file-only reads are incorrect
-WeaponShader runtime / Source 1 mapping = OPEN; offline work can continue
-P5 雷神 identity                       = T01 图鉴已确认；等原生材质方法
+P4 Source 1 / MIGI baseline            PASS / FROZEN
+M4A1-雷神（v_rif_m4a1）                 模型+声音已部署并被用户验收；CF 动画改造 REJECTED，旧动画冻结
+Galil ACE-天袭（v_rif_galilar）         P0–P8 全部 PASS，2026-09-14 用户游戏内验收
 ```
 
 ---
 
-# 8. 主要目录
+# 3. 协作流程
+
+```text
+用户指定武器替换任务
+-> agent 在 pipeline.md 写/更新该武器的资产图与阶段开关
+-> 按 pipeline.md §5 逐阶段执行，每阶段产 evidence 到 work/<weapon>/
+-> addon 落盘到 migi/csgo/addons/ 后，提醒用户手动执行 MIGI UPDATE
+-> 用户游戏内验收（P8 Gate）
+-> agent 精确 commit + push master
+```
+
+关键约束：
+
+- 每阶段必须产出可审计 evidence（json/report/log），不以口头结论代替。
+- Blender 预览默认跳过（仅拟合质量存疑时跑轻量模式）。
+- MIGI UPDATE 由用户手动执行，agent 不代操作。
+- 一把武器一个 `work/<name>/` 目录，状态写进 `pipeline.md`。
+- 未经验证的猜测不写进 pipeline 冻结结论。
+
+---
+
+# 4. 主要目录
 
 ```text
 CFRezManager/              C# CF resource manager / decoder / inspection
@@ -200,26 +85,111 @@ tests/                     smoke / regression tests
 
 ---
 
-# 9. 文档维护原则
+# 5. Git 规则（原 AGENTS.md，2026-09-14 并入）
 
-不要再新增类似：
+以下规则对所有 Agent / 自动化工具生效。
 
-```text
-P4_TASKS.md
-P4_M01_CONTINUATION.md
-REVIEW_FINAL_2.md
-TASK_SPEC_REWORK_3.md
+## 5.1 权威分支
+
+- `master` 是 Agent 之间唯一正常交接分支。
+- 正常工作直接同步、提交、推送到 `master`。
+- 不使用 feature/topic branch 或 PR 作为常规 Agent handoff，除非用户明确要求。
+- 非 `master` 上未合入的工作视为尚未交付。
+- 禁止 force push，除非用户明确授权具体操作。
+
+推荐同步：
+
+```bash
+git status --short --branch
+git fetch origin
+git pull --rebase origin master
 ```
 
-正确归属：
+## 5.2 修改前先同步并检查工作区
 
-```text
-长期事实 / pipeline / Gate / 当前状态与任务 -> plan.md
-Git 操作                                    -> AGENTS.md
-用户指定的详细修复操作手册                  -> task.md（服从plan阶段开关）
-入口与角色说明                              -> README.md
-运行细节 / evidence                         -> work/**
-历史逐轮过程                                -> Git history
+执行 Git 写操作前必须先检查：
+
+```bash
+git status --short --branch
 ```
 
-这套结构用于支持长期的跨 Planner / Executor Agent 协作。
+如果存在本地 tracked 修改：
+
+- 不得为了 pull 而直接丢弃；
+- 不得自动选择 ours/theirs 覆盖实质冲突；
+- 先保留现有工作，再有意识地同步/解决冲突。
+
+如果 `origin/master` 已前进，先 fetch/rebase 或明确处理冲突，禁止覆盖远端历史。
+
+## 5.3 `data/**` 永远 local-only
+
+- `data/**` 不得提交或上传 GitHub。
+- 不得使用 `git add -f` 绕过 ignore。
+- 不得因为 Git 同步而删除、覆盖、移动、镜像或重建本地 `data/**`。
+- GitHub 上没有 `data/**` 不代表本地目录应该被删除。
+- 如果发现 `data/**` 被 staged 或 tracked，立即停止提交并报告。
+
+同样，CF 原始客户端/runtime 文件（例如未经授权提交的 `.exe/.dll/.rez/.pak/.pck`）默认不得作为 raw binary 上传；如果某个二进制确实需要纳入版本控制，必须由用户明确授权。
+
+## 5.4 精确 staging
+
+只 stage 本次任务明确需要的路径，例如：
+
+```bash
+git add -- scripts/example.py work/example/report.json
+```
+
+禁止：
+
+```bash
+git add .
+git add -A
+git add --all
+```
+
+提交前至少检查：
+
+```bash
+git diff --cached --name-only
+git diff --cached
+```
+
+确认没有：`data/**`；原始 CF 客户端/runtime binary；secrets / credentials；cache / 临时文件；与当前任务无关的用户修改。
+
+## 5.5 提交与 push
+
+- commit message 应准确描述本次 scoped change。
+- 正常 Agent 交接必须 push 到 `master`。
+- push 前再次确认 staged diff。
+- 如果远端已前进，先同步再 push。
+- 不得通过重写历史来"省事"。
+
+## 5.6 默认禁止的破坏性操作
+
+未经用户对具体范围明确授权，禁止：
+
+```bash
+git reset --hard
+git clean -fd
+git clean -fdx
+git checkout -- .
+git restore .
+git push --force
+```
+
+也禁止任何可能删除本地输入的镜像/清理操作，例如：`rm -rf data`、`robocopy /MIR`、`rsync --delete`、整仓替换式同步。
+
+如果确实需要清理生成物，只允许针对明确已知的 generated path，并保护 `data/**` 和用户无关文件。
+
+## 5.7 冲突与停止条件
+
+出现以下任一情况，停止自动 Git 操作并保留现场：
+
+- `data/**` 被 staged / tracked；
+- pull/rebase 会覆盖未处理的本地 tracked 工作；
+- 发生实质 merge/rebase conflict；
+- 需要 force push 才能继续；
+- 操作可能删除 local-only 输入；
+- 工作区混有无法安全分离的用户修改。
+
+Git 操作的首要原则是：**不丢用户本地数据、不覆盖未交付工作、不把无关文件带入提交。**
