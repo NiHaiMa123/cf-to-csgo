@@ -45,7 +45,7 @@ Bute 声音名映射（记录 #6941）：Shoot=`GalilACEPhantomB_Shoot`，ClipOu
 | 模型 | `models/weapons/v_rif_galilar.{mdl,vvd,vtx,ani}` |
 | 参考 | 从 `csgo/pak01_dir.vpk` 抽 stock v_rif_galilar + QC/序列名/挂点 + `game_sounds_weapons` 的 `Weapon_GalilAR.*` 文件名 |
 | 声音路径 | `sound/weapons/galilar/*.wav`（以 stock manifest 为准） |
-| 部署 | 新 addon `p_cf_galilace_tianxi`，只放第一人称资产；`w_rif_galilar*` 不动 |
+| 部署 | 新 addon `p_cf_tianxi_galilar_p1`，只放第一人称资产；`w_rif_galilar*` 不动 |
 
 ## 3. 阶段流程（每步产 evidence，进 `work/galil_ace_tianxi/`）
 
@@ -70,7 +70,42 @@ P8 验收      用户游戏内确认第一人称/声音/动作                [G
 - **H 变换**：ICP 拟合 `CF idle-posed 枪顶点 → stock galilar idle-posed 顶点`，`v'=Hv`、`R'=H·B·H⁻¹`、`W'=H·W·H⁻¹`。
 - **超分**：只超 diffuse；normal/spec 不超。
 - **事件时序**：按 CF clip `times_ms` 投到 100fps 帧号；同 channel 后续事件会截断前音（BoltBack/BoltForward 坑）。
-- **MIGI UPDATE 由用户手动执行**：agent 只负责把 addon 落盘到 `migi/csgo/addons/` 并提醒用户点 UPDATE，不替用户操作 MIGI；以 pak 内 hash == addon hash 为验证，不看磁盘文件。
+- **MIGI UPDATE/REBUILD 由用户手动执行**：agent 只负责把 addon 落盘到 `migi/csgo/addons/` 并提醒用户点 REBUILD，不替用户操作 MIGI；以 pak 内 hash == MIGI addon hash 为最终验证，不看 UI 日期或仓库 staging 文件。
+
+## 3.1 MIGI 三层产物链（强制检查，避免“REBUILD 后没变化”）
+
+MIGI 部署存在三个彼此独立的层级：
+
+```text
+A. 仓库 staging
+   work/<weapon>/addon/**
+          ↓ agent 必须显式复制，并先做 hash 对比
+B. 实际 MIGI addon
+   <game>/migi/csgo/addons/<addon>/**
+          ↓ 用户手动点击 MIGI REBUILD
+C. 游戏实际读取的 pak
+   <game>/migi/csgo/pak01_dir.vpk + pak01_*.vpk
+```
+
+**重复出现“调了多版但游戏完全没变化”的根因**：材质脚本只更新了 A，未同步到 B。用户点击 REBUILD 时，MIGI 正确地从 B 重新打包，但 B 仍是旧版，所以 C 也仍是旧版。仓库产物变新、提交变更、甚至 REBUILD 成功，都不能证明游戏读取到了新文件。
+
+强制执行顺序：
+
+1. 构建脚本先输出 A。
+2. agent 将本轮全部变更文件显式复制到 B；不能写 `migi/csgo/materials/` 松散目录代替 B（用户已验证松散文件不覆盖 pak）。
+3. **在要求用户 REBUILD 之前**，agent 必须比较 A 与 B 的关键文件 SHA-256；文件清单、大小和 hash 全部一致才可通知用户。新增文件（如 `_S.vtf`、`_M.vtf`、cubemap）也必须在 B 存在。
+4. agent 停止，通知用户打开 MIGI 点击 **REBUILD**；不得替用户执行。
+5. 用户完成 REBUILD 后，agent 再比较 C 内条目与 B 的 SHA-256；一致才可进入游戏视觉验收。若不能立即读取 C，状态保持 `PACK_VERIFY_PENDING`，不得声称新版本已生效。
+6. 若游戏画面“完全没变化”，**先查 A/B/C 哈希，不要继续调 shader 参数**。只有三层一致后仍无变化，才排查 VMT 参数、材质搜索路径或模型 material name。
+
+检查时不要依赖 MIGI 列表里的日期、addon 显示名或 REBUILD 成功提示；这些都不等价于文件内容一致。贴图脚本必须同时定义仓库 staging 路径和实际 MIGI addon 路径，例如本轮：
+
+```text
+A = work/galil_ace_tianxi/addon/materials/.../cf_tianxi/
+B = <game>/migi/csgo/addons/p_cf_tianxi_galilar_p1/materials/.../cf_tianxi/
+```
+
+本轮事故证据：实际 B 一直保留 v1（VMT 276B、diffuse 1.3MB DXT1），而 A 已是 v5（VMT 833B、diffuse 22MB BGRA8888，并新增 `_S`/`_M`/`cf_gold_cube.vtf`）。修复后 A/B 三个关键文件 SHA-256 已一致；修复提交 `b884090`。
 
 ## 4. 当前状态（2026-09-14 晚，用户已验收）
 
@@ -80,12 +115,11 @@ P1: PASS   LTB 56 节点 / 12 mesh / 10 clip 解出 -> decode/ (reference_payloa
 P2: SKIP   Blender 预览脚本写好但渲染负载大导致 MCP 阻塞；用户已关 Blender。身份已由 Bute+资源路径+贴图确认。
 P3: PASS   stock v_rif_galilar 反编译；H 变换 ICP 拟合 s=2.0025 det=+1 sym_trimmed_mean=0.353
            (csref/viewmodel_transform.json；锚点初始化改 PCA 主轴——3 点共线锚点会坍缩)
-P4: PASS   ComfyUI RealESRGAN 4x diffuse(1024->4096) -> DXT1 VTF；
+P4: PASS   ComfyUI RealESRGAN 4x 后降采样到 2048 -> BGRA8888 无损 diffuse VTF；
            _S -> DXT5(RGB+alpha=亮度) 同时做 phongexponenttexture + envmapmask；
-           VMT v2: env_cubemap+envmapfresnel+phongalbedotint+halflambert+rimlight
-           (texture/build_textures_v2.py；参数映射自 CFG EnvCubeMapBrightness=3 等；
-           v4 起用 Gold_map01.DDS 手工重排成 VTF7.2 六面 cubemap 做 $envmap，
-           _M 做 selfillum 能量纹发光；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL) flag)
+           _M 做 selfillum 能量纹发光；Gold_map01.DDS 六面 + legacy spheremap
+           重排成 VTF7.2 七切片 cubemap；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL) flag
+           (texture/build_textures_v2.py；参数映射自 CFG EnvCubeMapBrightness=3 等)
 P5: PASS   work/galil_ace_tianxi/native_vm/build_galilace_vm.py
            108 骨（1 root + 47 CS 塌陷 + 55 CF + 4 attach + galilar_parent）
            8 序列：idle/fire1-3/reload/draw/lookat01(=observe 704f)/prepare/loop
@@ -113,10 +147,10 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 | P1 | `decode/decode_assets.py` | verified_root LTB/DTX → `decode/`（payload/skin/audit/PNG） |
 | P2 | 默认跳过；存疑时 `preview/bpy_build_preview.py` | decode → Blender 预览（只建 mesh+单帧姿态，不烘焙不渲染） |
 | P3 | `csref/extract_galilar_ref.py` `csref/fit_transform.py` | pak01 stock mdl → `csref/decompiled_stock/` + `viewmodel_transform.json` |
-| P4 | `texture/build_textures_v2.py` | ComfyUI 超分 diffuse + _S mask + VMT v2 → addon + migi/csgo 松散文件 |
+| P4 | `texture/build_textures_v2.py` | ComfyUI 超分 diffuse + _S/_M mask + VMT → 仓库 staging addon，并同步至实际 MIGI addon |
 | P5 | `native_vm/build_galilace_vm.py` | decode+csref+armtex → `native_vm/source1/` → studiomdl → `addon/` |
 | P6 | `sound/build_sound_overlay.py` | `Weapon.bank` FSB（vgmstream+ffmpeg）→ `addon/sound/weapons/galilar/` |
-| P7 | agent: addon 落盘 + `deploy/fix_addons_json.py`；**用户: MIGI UPDATE** | addon/ → `migi/csgo/addons/` → 用户 UPDATE → pak hash 复核；`deploy/rebuild_pak.py` 仅 MIGI 不可用时备用 |
+| P7 | agent: A→B 同步并校验；**用户: MIGI REBUILD**；agent: B→C 校验 | staging addon → `migi/csgo/addons/` → 用户 REBUILD → pak hash 复核；详见 §3.1 |
 | P8 | 用户游戏内验收 | — |
 
 ## 6. 已知回退 / 后续增强位
@@ -249,8 +283,10 @@ posed = W_weapon_bone @ inv(B_arm_bind) @ v_arm
 
 ## A.14 MIGI 更新与声音验证
 
-- 改 `migi/csgo/addons/<addon>/` 后游戏不会自动读 addon 目录；必须 **MIGI UPDATE**（由用户执行）把变更写进 `pak01_dir.vpk`。
-- 更新前比较 addon 文件与 pak 内条目 hash；不同即 `UPDATE_REQUIRED`。不以"磁盘文件已改"代替 pak 验证。
+- 必须遵守 §3.1 的 **staging A → MIGI addon B → pak C** 三层校验；只更新仓库 staging 不会被 MIGI REBUILD 读取。
+- 改 `migi/csgo/addons/<addon>/` 后游戏不会自动读 addon 目录；必须由用户执行 **MIGI REBUILD** 写进 `pak01_dir.vpk`。
+- REBUILD 前验证 A hash == B hash；REBUILD 后验证 B hash == C hash。任一不一致都不得进入视觉调参。
+- `migi/csgo/materials/` 松散文件在本环境不覆盖 pak，不能作为迭代部署路线。
 - 控制台 `play weapons/<dir>/<file>.wav` 可验证运行时解析到的实际 WAV。
 - `snd_show 1` 在这套 Legacy/MIGI 环境无有用输出；`soundcache/*.cache` 不要未证明就删。
 
