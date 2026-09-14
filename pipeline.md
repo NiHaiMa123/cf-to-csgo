@@ -138,8 +138,11 @@ P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-1
 ### 4.1 M4A1-雷神同步整改（2026-09-15）
 
 ```text
-材质: STAGED  第一人称 rif_m4a1.vmt 改为附录 A.8.1 本色 Phong 参数；
-                 删除 envmap/envmapmask，避免阴影下泛白，A/B hash PASS。
+材质: STAGED  原 diffuse=1024 DXT1/699KB（未超分，RGB mean=12.9/16.4/16.6）；
+                 `scripts/p5/build_leishen_texture_v2.py` 已执行 ComfyUI RealESRGAN 4x，
+                 降采样到 2048，gamma=0.72/brightness=1.08/color=1.08/contrast=1.03，
+                 输出 2048 BGRA8888/22MB + TRILINEAR/ANISOTROPIC，A/B hash PASS；
+                 VMT 使用附录 A.8.1 本色 Phong，删除 envmap/envmapmask。
 合并: STAGED  p_cf_leishen_m4a4_p7_sound 的 9 个 WAV 已并入
                  p_cf_leishen_m4a4_p6（现共 39 文件，无路径冲突，9/9 hash PASS）。
 退役: PASS    活动 addons 中已移除 p_cf_leishen_m4a4_p7_sound；同内容 parked 备份保留。
@@ -295,8 +298,10 @@ CFG 里直接写着全部贴图名 + 光照参数（SpecularPower、EnvCubeUsage
 ## A.10 超分（ComfyUI）
 
 - 本地 ComfyUI `127.0.0.1:8188`，模型 `RealESRGAN_x4plus.pth`，输入 `D:\Comfy-Desktop\ComfyUI-Shared\input`。
-- `work/p5_leishen/p7_s04_r1/scripts/comfy_upscale.py` —— 四节点 POST `/prompt`。
-- **只超 diffuse**；normal/spec 超分会引入伪细节。
+- 标准链：原生 1024 diffuse → RealESRGAN 4x 得 4096 → Lanczos 降到 2048 → 颜色校正 → `BGRA8888` 无损 VTF，并启用 `TRILINEAR`/`ANISOTROPIC`。4096 只作超分中间件；最终 2048 可减少显存和 VPK 体积，同时明显优于 1024 DXT1。
+- 暗色金属 atlas 可使用雷神验收前参数作为起点：gamma `0.72`、brightness `1.08`、color `1.08`、contrast `1.03`；黑色 UV gutter 在 gamma 曲线下仍保持 0，不做固定灰度抬底。
+- 雷神实现：`scripts/p5/build_leishen_texture_v2.py`；天袭实现：`work/galil_ace_tianxi/texture/build_textures_v2.py`。
+- **只超 diffuse**；normal/spec 超分会引入伪细节。normal 保留原生分辨率并正确标记 `NORMAL`。
 
 ## A.11 Source 1 第一人称架构（P7-S05 / 本轮 Galil 同构）
 

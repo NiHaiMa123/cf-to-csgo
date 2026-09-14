@@ -1,0 +1,99 @@
+{
+  "generated_at_utc": "2026-09-14T17:42:14.872939+00:00",
+  "result": "LEISHEN_TEXTURE_V2_STAGED",
+  "source": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mean_rgb": [
+      12.905,
+      16.423,
+      16.58
+    ],
+    "extrema": [
+      [
+        0,
+        238
+      ],
+      [
+        0,
+        242
+      ],
+      [
+        0,
+        255
+      ]
+    ]
+  },
+  "upscaled": {
+    "size": [
+      4096,
+      4096
+    ],
+    "mean_rgb": [
+      11.715,
+      14.965,
+      15.708
+    ],
+    "extrema": [
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ]
+    ]
+  },
+  "corrected": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mean_rgb": [
+      18.847,
+      23.548,
+      23.785
+    ],
+    "extrema": [
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ]
+    ]
+  },
+  "tone": {
+    "gamma": 0.72,
+    "brightness": 1.08,
+    "color": 1.08,
+    "contrast": 1.03
+  },
+  "vtf": {
+    "format": "BGRA8888",
+    "size": [
+      2048,
+      2048
+    ],
+    "sha256": "6491bfdda68ea9b0b40021b6041e241867dcb5514df054fabde46e7d1e5b0819",
+    "bytes": 22369844
+  },
+  "vmt_sha256": "b84f1afb1dc08e2030867f1b8190c87d3d6f18cdc9dd669197a31f27eb633b28",
+  "staging_addon": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\addon\\materials\\models\\weapons\\v_models\\rif_m4a1",
+  "migi_addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_leishen_m4a4_p6\\materials\\models\\weapons\\v_models\\rif_m4a1",
+  "ab_hash_verified": true,
+  "migi_rebuild": "USER_REQUIRED"
+}
