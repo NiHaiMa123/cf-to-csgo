@@ -35,6 +35,8 @@ VTFCMD = _REPO / "tools" / "VTFEdit" / "VTFCmd.exe"
 MATERIAL_ROOT = "models/weapons/v_models/cf_mauser"
 BASE_NAME = "cf_mauser_libra"
 NORMAL_NAME = "cf_mauser_libra_n"
+ENV_CUBE_NAME = "cf_env_cube"
+CUBE_DDS = WORK / "decode" / "maps" / "LobbyCube.DDS"
 SIZE = (2048, 2048)
 
 
@@ -80,8 +82,10 @@ def main() -> int:
         "specular": UP / "specular_2048.png",
         "alpha": UP / "alpha_2048.png",
     }
+    transform_y = float(ir["cfg"]["flat"].get("CubeMapTransformY", 0.0) or 0.0)
+    s1t.bake_env_cube(CUBE_DDS, transform_y, OUT / f"{ENV_CUBE_NAME}.vtf")
     res = s1t.translate(ir, regions, maps, MATERIAL_ROOT, BASE_NAME,
-                        NORMAL_NAME, OUT, SIZE)
+                        NORMAL_NAME, OUT, SIZE, envmap_texture=ENV_CUBE_NAME)
 
     # composite PNGs -> VTFs
     base = Image.open(UP / "diffuse_2048.png").convert("RGB")
@@ -111,7 +115,8 @@ def main() -> int:
         s1t.vertexlit_vmt(MATERIAL_ROOT, BASE_NAME, NORMAL_NAME, BASE_NAME,
                           "controlled_phong", ir["cfg"]["flat"],
                           res["report"]["phong_tint"], None,
-                          lightwarp_name=f"{BASE_NAME}_lightwarp"),
+                          lightwarp_name=f"{BASE_NAME}_lightwarp",
+                          envmap_texture=ENV_CUBE_NAME),
         encoding="utf-8")
 
     # Phase G assignment table: piece -> local tri -> slot material
@@ -125,7 +130,8 @@ def main() -> int:
     res["report"]["vtf"] = {
         "base": vtf_header(OUT / f"{BASE_NAME}.vtf"),
         "normal": vtf_header(OUT / f"{NORMAL_NAME}.vtf"),
-        "lightwarp": vtf_header(OUT / f"{BASE_NAME}_lightwarp.vtf")}
+        "lightwarp": vtf_header(OUT / f"{BASE_NAME}_lightwarp.vtf"),
+        "env_cube": vtf_header(OUT / f"{ENV_CUBE_NAME}.vtf")}
     (OUT / "translation_report.json").write_text(
         json.dumps(res["report"], indent=1, ensure_ascii=False), encoding="utf-8")
 
@@ -137,10 +143,11 @@ def main() -> int:
     for slot, vmt in res["vmts"].items():
         if f'"$basetexture" "{MATERIAL_ROOT}/{BASE_NAME}"' not in vmt:
             problems.append(f"{slot}: basetexture missing")
-        if '"$envmap"' in vmt and 'env_cubemap' not in vmt:
-            problems.append(f"{slot}: non-engine envmap bound")
-        if "LobbyCube" in vmt or "lobby" in vmt.lower():
-            problems.append(f"{slot}: CF cubemap bound at runtime")
+        if '"$envmap"' in vmt and 'env_cubemap' not in vmt \
+                and ENV_CUBE_NAME not in vmt:
+            problems.append(f"{slot}: unexpected envmap bound")
+        if "LobbyCube" in vmt:
+            problems.append(f"{slot}: raw CF cubemap bound at runtime")
     env_slots = [s for s in res["slots"] if s["strategy"] == "envmap_metal"]
     if not env_slots:
         problems.append("no envmap_metal slot despite env_reflective regions")

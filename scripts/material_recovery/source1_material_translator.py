@@ -130,6 +130,80 @@ def _fmt_vec(v: list[float]) -> str:
     return "[" + " ".join(f"{x:g}" for x in v) + "]"
 
 
+# ------------------------------------------------------------------ cube bake
+
+# DX face -> direction basis (inverse of cf_reference_renderer.cube_sample)
+_FACE_DIRS = {
+    "+X": (1.0, ("z", -1), ("y", -1)),
+    "-X": (-1.0, ("z", 1), ("y", -1)),
+    "+Y": (1.0, ("x", 1), ("z", 1)),
+    "-Y": (-1.0, ("x", 1), ("z", -1)),
+    "+Z": (1.0, ("x", 1), ("y", -1)),
+    "-Z": (-1.0, ("x", -1), ("y", -1)),
+}
+_FACE_ORDER = ["+X", "-X", "+Y", "-Y", "+Z", "-Z"]
+
+
+def _face_dirs(face: str, n: int) -> np.ndarray:
+    """Per-pixel unit directions for a DX cubemap face of size n."""
+    t = (np.arange(n, dtype=np.float32) + 0.5) / n * 2.0 - 1.0
+    u, v = np.meshgrid(t, t)
+    dirs = np.zeros((n, n, 3), dtype=np.float32)
+    axis = {"+X": 0, "-X": 0, "+Y": 1, "-Y": 1, "+Z": 2, "-Z": 2}[face]
+    sign, (u_axis, u_s), (v_axis, v_s) = _FACE_DIRS[face]
+    dirs[:, :, axis] = sign
+    dirs[:, :, "xyz".index(u_axis)] = u * u_s
+    dirs[:, :, "xyz".index(v_axis)] = v * v_s
+    return dirs / np.linalg.norm(dirs, axis=2, keepdims=True)
+
+
+def bake_env_cube(dds_path, transform_y_deg: float,
+                  out_vtf, face_size: int = 256) -> Path:
+    """CF cubemap DDS -> Source envmap VTF, CubeMapTransformY baked in.
+
+    Source samples its cubemap with reflect(dir); we want that lookup to
+    return cf_cube(rotY(dir)), so each Source face pixel samples the CF
+    cube through the rotated direction. Output is an uncompressed
+    BGRA8888 ENVMAP VTF (6 faces, 1 mip) - fixed reflection everywhere,
+    independent of map env_cubemap entities.
+    """
+    import struct
+    import cf_reference_renderer as cfrr
+
+    cf_faces = cfrr.dds_faces(dds_path)
+    faces_bgra = []
+    for name in _FACE_ORDER:
+        dirs = _face_dirs(name, face_size).reshape(-1, 3)
+        dirs = cfrr.rot_y(dirs, transform_y_deg)
+        rgb = cfrr.cube_sample(cf_faces, dirs).reshape(face_size, face_size, 3)
+        px = np.uint8(np.round(np.clip(rgb, 0, 1) * 255.0))
+        bgra = np.concatenate([px[:, :, ::-1],
+                               np.full((*px.shape[:2], 1), 255, np.uint8)], 2)
+        faces_bgra.append(bgra.tobytes())
+
+    out_vtf = Path(out_vtf)
+    out_vtf.parent.mkdir(parents=True, exist_ok=True)
+    header = bytearray(80)
+    header[0:4] = b"VTF\x00"
+    struct.pack_into("<II", header, 4, 7, 2)
+    struct.pack_into("<I", header, 12, 80)
+    struct.pack_into("<HH", header, 16, face_size, face_size)
+    struct.pack_into("<I", header, 20, 0x4000)          # ENVMAP
+    struct.pack_into("<HH", header, 24, 1, 0)
+    struct.pack_into("<fff", header, 32, 0.5, 0.5, 0.5)
+    struct.pack_into("<f", header, 48, 1.0)
+    struct.pack_into("<I", header, 52, 12)             # BGRA8888
+    header[56] = 1                                     # 1 mip
+    struct.pack_into("<I", header, 57, 13)             # lowres fmt DXT1
+    header[61] = 16
+    header[62] = 16
+    struct.pack_into("<H", header, 63, 1)
+    color = ((128 >> 3) << 11) | ((128 >> 2) << 5) | (128 >> 3)
+    thumb = struct.pack("<HHI", color, color, 0) * 16
+    out_vtf.write_bytes(bytes(header) + thumb + b"".join(faces_bgra))
+    return out_vtf
+
+
 def lightwarp_terms(cfg_flat: dict) -> tuple[Image.Image, float]:
     """Shared 256x16 lightwarp ramp; dark floor = 1 - CFG lit fraction."""
     lit = float(cfg_flat.get("LightBrightness", 0.5) or 0.5)
@@ -147,7 +221,8 @@ def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
                   tint: list[float], env_tint: list[float] | None,
                   exponent: int | None = None,
                   boost: float | None = None,
-                  lightwarp_name: str | None = None) -> str:
+                  lightwarp_name: str | None = None,
+                  envmap_texture: str | None = None) -> str:
     if exponent is None or boost is None:
         exponent, boost = phong_terms(cfg_flat, tint, strategy)
     lines = [
@@ -170,8 +245,10 @@ def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
             f'\t"$phongtint" "{_fmt_vec(tint)}"',
         ]
     if env_tint is not None:
+        envmap_ref = (f"{material_root}/{envmap_texture}"
+                      if envmap_texture else "env_cubemap")
         lines += [
-            '\t"$envmap" "env_cubemap"',
+            f'\t"$envmap" "{envmap_ref}"',
             '\t"$normalmapalphaenvmapmask" "1"',
             f'\t"$envmaptint" "{_fmt_vec(env_tint)}"',
         ]
@@ -195,7 +272,8 @@ def env_tint_for_region(region: dict, cfg_flat: dict,
 
 def translate(ir: dict, regions_result: dict, maps: dict,
               material_root: str, base_name: str, normal_name: str,
-              out_dir: Path | str, size: tuple[int, int]) -> dict:
+              out_dir: Path | str, size: tuple[int, int],
+              envmap_texture: str | None = None) -> dict:
     """Produce VMT set + slot names + translation report."""
     cfg_flat = ir["cfg"]["flat"]
     out_dir = Path(out_dir)
@@ -219,7 +297,8 @@ def translate(ir: dict, regions_result: dict, maps: dict,
             exponent = min(exponent, DARK_REGION_EXP_CAP)
         vmt = vertexlit_vmt(material_root, base_name, normal_name, slot,
                             s["strategy"], cfg_flat, tint, env_t,
-                            exponent, boost, lightwarp_name)
+                            exponent, boost, lightwarp_name,
+                            envmap_texture)
         vmts[slot] = vmt
         slots.append({
             "region_id": region["region_id"],
@@ -242,15 +321,18 @@ def translate(ir: dict, regions_result: dict, maps: dict,
         "lightwarp": {"texture": lightwarp_name,
                       "lit_fraction": lit_fraction,
                       "dark_floor": round(1.0 - lit_fraction, 4)},
+        "envmap_texture": envmap_texture,
         "tags": {
             "preserved": ["diffuse base texture", "normal map", "specular->phong mask (low-pass)",
                           "alpha.B->envmap mask (low-pass)", "specular chroma->$phongtint",
                           "SpecularPower*0.25->exponent scale"],
-            "approximated": ["CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
+            "approximated": ["CF lobby cubemap->static envmap VTF (transform baked, content preserved)"
+                             if envmap_texture else
+                             "CF lobby cubemap->engine env_cubemap (content differs)",
                              "CF transformed/refract ray->Source reflect ray (approximated)",
                              "per-region envmaptint from alpha.B energy (approximated)",
                              "envmap enabled on all non-matte slots; per-pixel alpha.B mask bounds coverage"],
-            "lost": ["Snell refraction contribution", "CubeMapTransformY orientation",
+            "lost": ["Snell refraction contribution",
                      "exact CF diffuse-lit scale (ambient/boost terms)"],
             "unsupported_by_source1": [],
         },

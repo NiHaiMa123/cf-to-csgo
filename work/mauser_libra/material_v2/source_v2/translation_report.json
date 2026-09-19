@@ -137,6 +137,7 @@
   "lit_fraction": 0.05,
   "dark_floor": 0.95
  },
+ "envmap_texture": "cf_env_cube",
  "tags": {
   "preserved": [
    "diffuse base texture",
@@ -147,14 +148,13 @@
    "SpecularPower*0.25->exponent scale"
   ],
   "approximated": [
-   "CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
+   "CF lobby cubemap->static envmap VTF (transform baked, content preserved)",
    "CF transformed/refract ray->Source reflect ray (approximated)",
    "per-region envmaptint from alpha.B energy (approximated)",
    "envmap enabled on all non-matte slots; per-pixel alpha.B mask bounds coverage"
   ],
   "lost": [
    "Snell refraction contribution",
-   "CubeMapTransformY orientation",
    "exact CF diffuse-lit scale (ambient/boost terms)"
   ],
   "unsupported_by_source1": []
@@ -181,6 +181,14 @@
    "h": 16,
    "fmt": 3,
    "flags": "0x30d",
+   "frames": 1,
+   "mips": 1
+  },
+  "env_cube": {
+   "w": 256,
+   "h": 256,
+   "fmt": 12,
+   "flags": "0x4000",
    "frames": 1,
    "mips": 1
   }
