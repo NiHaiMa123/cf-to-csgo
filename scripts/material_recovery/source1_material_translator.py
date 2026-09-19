@@ -34,8 +34,8 @@ ENVMAP_TINT_MAX = 1.0
 ENV_STRENGTH_GAIN = 1.4
 # shared lightwarp: compress diffuse lit/unlit gap to the CFG-derived
 # lit fraction (CF viewmodel lighting is weakly directional)
-LIGHT_INFLUENCE_SCALE = 2.0
-MIN_LIT_FRACTION = 0.2
+LIGHT_INFLUENCE_SCALE = 0.25
+MIN_LIT_FRACTION = 0.05
 MAX_LIT_FRACTION = 0.8
 STRATEGY_BOOST_MUL = {"warm_phong": 1.0, "colored_phong": 0.8,
                       "envmap_metal": 0.8, "controlled_phong": 0.5,

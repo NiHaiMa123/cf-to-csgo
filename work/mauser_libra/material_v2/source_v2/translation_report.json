@@ -134,8 +134,8 @@
  },
  "lightwarp": {
   "texture": "cf_mauser_libra_lightwarp",
-  "lit_fraction": 0.4,
-  "dark_floor": 0.6
+  "lit_fraction": 0.05,
+  "dark_floor": 0.95
  },
  "tags": {
   "preserved": [
