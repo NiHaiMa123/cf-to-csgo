@@ -32,7 +32,11 @@ PHONG_BOOST_FLOOR = 0.5
 ENVMAP_TINT_MAX = 1.0
 STRATEGY_BOOST_MUL = {"warm_phong": 1.0, "colored_phong": 0.8,
                       "envmap_metal": 0.8, "controlled_phong": 0.5,
-                      "matte_dark": 0.0}
+                      "dim_phong": 0.25, "matte_dark": 0.0}
+# tight highlights on dark/rough regions resolve normal-map bumps as
+# per-dot speckle (fish-scale); regions this dark get a broad sheen cap
+DARK_REGION_EXP_CAP = 2
+DARK_REGION_LUM = 0.08
 
 
 def phong_terms(cfg_flat: dict, tint: list[float],
@@ -59,7 +63,7 @@ def build_masks(maps: dict, cfg_flat: dict,
     env mask:   low-pass of alpha.B (env-reflective coverage)
     """
     w, h = size
-    radius = max(1.0, w / 512.0)
+    radius = max(2.0, w / 256.0)
     spec = np.asarray(Image.open(maps["specular"]).convert("RGB"),
                       dtype=np.float32) / 255.0 if maps.get("specular") else None
     alpha = np.asarray(Image.open(maps["alpha"]).convert("RGB"),
@@ -97,8 +101,10 @@ def choose_strategy(region: dict, cfg_flat: dict) -> dict:
         strategy = "warm_phong"
     elif f.get("specular_lum", 0) > 0.3:
         strategy = "colored_phong"
+    elif f.get("specular_lum", 0) < 0.03:
+        strategy = "matte_dark"          # only truly non-reflective surfaces
     elif f.get("diffuse_lum", 0) < 0.05:
-        strategy = "matte_dark"
+        strategy = "dim_phong"           # dark but CF spec still applies
     else:
         strategy = "controlled_phong"
     return {
@@ -139,24 +145,27 @@ def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
             '\t"$phongfresnelranges" "[1 1 1]"',
             f'\t"$phongtint" "{_fmt_vec(tint)}"',
         ]
-    if strategy == "envmap_metal":
+    if env_tint is not None:
         lines += [
             '\t"$envmap" "env_cubemap"',
             '\t"$normalmapalphaenvmapmask" "1"',
-            f'\t"$envmaptint" "{_fmt_vec(env_tint or [0.5, 0.5, 0.5])}"',
+            f'\t"$envmaptint" "{_fmt_vec(env_tint)}"',
         ]
     lines += ['\t"$nocull" "0"', "}", ""]
     return "\n".join(lines)
 
 
-def env_tint_for_region(region: dict, cfg_flat: dict) -> list[float]:
-    """envmaptint from region env response (attenuation, not fake color)."""
+def env_tint_for_region(region: dict, cfg_flat: dict,
+                        tint: list[float]) -> list[float]:
+    """envmaptint: region env-response strength x specular chroma.
+
+    CF env cube is neutral gray; the gold comes from _S chroma, so the
+    envmap tint inherits the specular hue (approximated, tagged).
+    """
     f = region["feature_means"]
     env_b = float(cfg_flat.get("EnvCubeMapBrightness", 1.0) or 1.0)
     strength = min(ENVMAP_TINT_MAX, f.get("alpha_b", 0.1) * env_b)
-    spec_warm = f.get("specular_r_minus_lum", 0.0)
-    r = min(ENVMAP_TINT_MAX, strength * (1.0 + max(0.0, spec_warm) * 2.0))
-    return [round(r, 3), round(strength, 3), round(strength * 0.9, 3)]
+    return [round(min(ENVMAP_TINT_MAX, strength * c), 3) for c in tint]
 
 
 def translate(ir: dict, regions_result: dict, maps: dict,
@@ -175,9 +184,11 @@ def translate(ir: dict, regions_result: dict, maps: dict,
     for region in regions_result["regions"]:
         s = choose_strategy(region, cfg_flat)
         slot = f"{base_name}_r{region['region_id']}"
-        env_t = (env_tint_for_region(region, cfg_flat)
-                 if s["strategy"] == "envmap_metal" else None)
+        env_t = (env_tint_for_region(region, cfg_flat, tint)
+                 if s["strategy"] != "matte_dark" else None)
         exponent, boost = phong_terms(cfg_flat, tint, s["strategy"])
+        if region["feature_means"].get("diffuse_lum", 1.0) < DARK_REGION_LUM:
+            exponent = min(exponent, DARK_REGION_EXP_CAP)
         vmt = vertexlit_vmt(material_root, base_name, normal_name, slot,
                             s["strategy"], cfg_flat, tint, env_t,
                             exponent, boost)
@@ -206,7 +217,8 @@ def translate(ir: dict, regions_result: dict, maps: dict,
                           "SpecularPower*0.25->exponent scale"],
             "approximated": ["CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
                              "CF transformed/refract ray->Source reflect ray (approximated)",
-                             "per-region envmaptint from alpha.B energy (approximated)"],
+                             "per-region envmaptint from alpha.B energy (approximated)",
+                             "envmap enabled on all non-matte slots; per-pixel alpha.B mask bounds coverage"],
             "lost": ["Snell refraction contribution", "CubeMapTransformY orientation",
                      "exact CF diffuse-lit scale (ambient/boost terms)"],
             "unsupported_by_source1": [],

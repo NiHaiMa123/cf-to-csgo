@@ -53,7 +53,12 @@ def e1_diffuse() -> dict:
 def e2_normal() -> dict:
     src = MAPS / "M1896_Libra_N.TGA"
     out = UP / "normal_2048.png"
-    meta = texture_upscale.resize_normal(src, out, SIZE)
+    # low-pass justified by render evidence: unblurred normal bumps
+    # resolve as per-dot specular speckle (fish-scale) in preview;
+    # blurring vectors pre-renormalize keeps engraving relief
+    meta = texture_upscale.resize_normal(src, out, SIZE, blur=3.5)
+    meta["blur_reason"] = ("high-frequency bumps produced speckle "
+                           "(blender_nonormal_*.png evidence)")
     meta["coverage"] = texture_upscale.coverage_report(src, out)
     return meta
 

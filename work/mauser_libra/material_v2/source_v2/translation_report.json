@@ -13,7 +13,11 @@
     "diffuse_lum": 0.1052,
     "specular_r_minus_lum": 0.059
    },
-   "envmap_tint": null,
+   "envmap_tint": [
+    0.471,
+    0.36,
+    0.249
+   ],
    "phong_exponent": 4,
    "phong_boost": 1.5666,
    "triangles": 432
@@ -30,9 +34,9 @@
     "specular_r_minus_lum": 0.09
    },
    "envmap_tint": [
-    0.865,
     0.733,
-    0.66
+    0.561,
+    0.388
    ],
    "phong_exponent": 4,
    "phong_boost": 2.5065,
@@ -49,8 +53,12 @@
     "diffuse_lum": 0.0,
     "specular_r_minus_lum": 0.0502
    },
-   "envmap_tint": null,
-   "phong_exponent": 4,
+   "envmap_tint": [
+    0.488,
+    0.373,
+    0.258
+   ],
+   "phong_exponent": 2,
    "phong_boost": 3.1331,
    "triangles": 98
   },
@@ -65,8 +73,12 @@
     "diffuse_lum": 0.0724,
     "specular_r_minus_lum": 0.0295
    },
-   "envmap_tint": null,
-   "phong_exponent": 4,
+   "envmap_tint": [
+    0.327,
+    0.25,
+    0.173
+   ],
+   "phong_exponent": 2,
    "phong_boost": 1.5666,
    "triangles": 155
   },
@@ -83,8 +95,8 @@
    },
    "envmap_tint": [
     1.0,
-    1.0,
-    0.9
+    0.765,
+    0.529
    ],
    "phong_exponent": 4,
    "phong_boost": 2.5065,
@@ -94,16 +106,20 @@
    "region_id": 5,
    "region_label": "dark",
    "material": "cf_mauser_libra_r5",
-   "strategy": "matte_dark",
+   "strategy": "dim_phong",
    "evidence": {
     "alpha_b": 0.0567,
     "specular_lum": 0.078,
     "diffuse_lum": 0.0359,
     "specular_r_minus_lum": 0.011
    },
-   "envmap_tint": null,
-   "phong_exponent": 4,
-   "phong_boost": 0.0,
+   "envmap_tint": [
+    0.17,
+    0.13,
+    0.09
+   ],
+   "phong_exponent": 2,
+   "phong_boost": 0.7833,
    "triangles": 1516
   }
  ],
@@ -113,8 +129,8 @@
   0.529
  ],
  "masks": {
-  "phong_mean": 0.1374,
-  "env_mean": 0.107
+  "phong_mean": 0.1373,
+  "env_mean": 0.1069
  },
  "tags": {
   "preserved": [
@@ -128,7 +144,8 @@
   "approximated": [
    "CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
    "CF transformed/refract ray->Source reflect ray (approximated)",
-   "per-region envmaptint from alpha.B energy (approximated)"
+   "per-region envmaptint from alpha.B energy (approximated)",
+   "envmap enabled on all non-matte slots; per-pixel alpha.B mask bounds coverage"
   ],
   "lost": [
    "Snell refraction contribution",

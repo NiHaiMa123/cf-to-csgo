@@ -5,9 +5,12 @@
 	"$halflambert" "1"
 	"$phong" "1"
 	"$basemapalphaphongmask" "1"
-	"$phongexponent" "4"
+	"$phongexponent" "2"
 	"$phongboost" "3.13"
 	"$phongfresnelranges" "[1 1 1]"
 	"$phongtint" "[1 0.765 0.529]"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[0.488 0.373 0.258]"
 	"$nocull" "0"
 }

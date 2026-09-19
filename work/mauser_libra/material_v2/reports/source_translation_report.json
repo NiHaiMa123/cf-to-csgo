@@ -65,48 +65,48 @@
  },
  "metrics": {
   "neutral": {
-   "mean_abs_delta": 0.1709,
+   "mean_abs_delta": 0.16279,
    "cf_lum_mean": 0.23175,
-   "sl_lum_mean": 0.06334,
-   "dark_retention": 0.1806,
-   "phong_hit_mean": 0.00473,
-   "env_hit_mean": 0.0084
+   "sl_lum_mean": 0.07226,
+   "dark_retention": 0.2489,
+   "phong_hit_mean": 0.00732,
+   "env_hit_mean": 0.01403
   },
   "front_lit": {
-   "mean_abs_delta": 0.16642,
+   "mean_abs_delta": 0.15753,
    "cf_lum_mean": 0.22943,
-   "sl_lum_mean": 0.06625,
-   "dark_retention": 0.2055,
-   "phong_hit_mean": 0.00781,
-   "env_hit_mean": 0.0084
+   "sl_lum_mean": 0.07613,
+   "dark_retention": 0.3094,
+   "phong_hit_mean": 0.01133,
+   "env_hit_mean": 0.01403
   },
   "side_lit": {
-   "mean_abs_delta": 0.14605,
+   "mean_abs_delta": 0.13714,
    "cf_lum_mean": 0.18643,
-   "sl_lum_mean": 0.04252,
-   "dark_retention": 0.1593,
-   "phong_hit_mean": 0.00648,
-   "env_hit_mean": 0.0084
+   "sl_lum_mean": 0.05291,
+   "dark_retention": 0.2566,
+   "phong_hit_mean": 0.01049,
+   "env_hit_mean": 0.01403
   },
   "back_dark": {
-   "mean_abs_delta": 0.15002,
+   "mean_abs_delta": 0.1381,
    "cf_lum_mean": 0.20086,
-   "sl_lum_mean": 0.05294,
-   "dark_retention": 0.1783,
-   "phong_hit_mean": 0.01467,
-   "env_hit_mean": 0.0084
+   "sl_lum_mean": 0.06659,
+   "dark_retention": 0.2939,
+   "phong_hit_mean": 0.02186,
+   "env_hit_mean": 0.01403
   },
   "rotated_view": {
-   "mean_abs_delta": 0.18263,
+   "mean_abs_delta": 0.17258,
    "cf_lum_mean": 0.23225,
-   "sl_lum_mean": 0.05134,
-   "dark_retention": 0.1563,
-   "phong_hit_mean": 0.00657,
-   "env_hit_mean": 0.00579
+   "sl_lum_mean": 0.06197,
+   "dark_retention": 0.2255,
+   "phong_hit_mean": 0.00832,
+   "env_hit_mean": 0.01401
   },
   "view_dependence_neutral_vs_rotated": {
    "cf": 0.01586,
-   "source": 0.00392
+   "source": 0.00449
   }
  },
  "tags": {
@@ -121,7 +121,8 @@
   "approximated": [
    "CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
    "CF transformed/refract ray->Source reflect ray (approximated)",
-   "per-region envmaptint from alpha.B energy (approximated)"
+   "per-region envmaptint from alpha.B energy (approximated)",
+   "envmap enabled on all non-matte slots; per-pixel alpha.B mask bounds coverage"
   ],
   "lost": [
    "Snell refraction contribution",
@@ -140,7 +141,11 @@
     0.765,
     0.529
    ],
-   "env_tint": null
+   "env_tint": [
+    0.471,
+    0.36,
+    0.249
+   ]
   },
   "cf_mauser_libra_r1": {
    "strategy": "envmap_metal",
@@ -152,32 +157,40 @@
     0.529
    ],
    "env_tint": [
-    0.865,
     0.733,
-    0.66
+    0.561,
+    0.388
    ]
   },
   "cf_mauser_libra_r2": {
    "strategy": "warm_phong",
-   "exponent": 4,
+   "exponent": 2,
    "boost": 3.1331,
    "tint": [
     1.0,
     0.765,
     0.529
    ],
-   "env_tint": null
+   "env_tint": [
+    0.488,
+    0.373,
+    0.258
+   ]
   },
   "cf_mauser_libra_r3": {
    "strategy": "controlled_phong",
-   "exponent": 4,
+   "exponent": 2,
    "boost": 1.5666,
    "tint": [
     1.0,
     0.765,
     0.529
    ],
-   "env_tint": null
+   "env_tint": [
+    0.327,
+    0.25,
+    0.173
+   ]
   },
   "cf_mauser_libra_r4": {
    "strategy": "envmap_metal",
@@ -190,20 +203,24 @@
    ],
    "env_tint": [
     1.0,
-    1.0,
-    0.9
+    0.765,
+    0.529
    ]
   },
   "cf_mauser_libra_r5": {
-   "strategy": "matte_dark",
-   "exponent": 4,
-   "boost": 0.0,
+   "strategy": "dim_phong",
+   "exponent": 2,
+   "boost": 0.7833,
    "tint": [
     1.0,
     0.765,
     0.529
    ],
-   "env_tint": null
+   "env_tint": [
+    0.17,
+    0.13,
+    0.09
+   ]
   }
  }
 }

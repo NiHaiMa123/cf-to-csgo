@@ -11,6 +11,6 @@
 	"$phongtint" "[1 0.765 0.529]"
 	"$envmap" "env_cubemap"
 	"$normalmapalphaenvmapmask" "1"
-	"$envmaptint" "[1 1 0.9]"
+	"$envmaptint" "[1 0.765 0.529]"
 	"$nocull" "0"
 }

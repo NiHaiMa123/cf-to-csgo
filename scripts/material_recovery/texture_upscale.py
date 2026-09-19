@@ -29,23 +29,34 @@ def resize_rgb(src: Path | str, dst: Path | str, size: tuple[int, int],
 
 
 def resize_normal(src: Path | str, dst: Path | str, size: tuple[int, int],
-                  resample=Image.Resampling.BICUBIC) -> dict:
-    """Resize a tangent-space normal map as vectors, then renormalize."""
+                  resample=Image.Resampling.BICUBIC,
+                  blur: float = 0.0) -> dict:
+    """Resize a tangent-space normal map as vectors, then renormalize.
+
+    blur: optional Gaussian radius on the decoded VECTORS before
+    renormalize — non-generative low-pass. Justified when high-frequency
+    bumps resolve as per-dot specular speckle in the target renderer.
+    """
+    from scipy.ndimage import gaussian_filter
     arr = np.asarray(Image.open(src).convert("RGB"), dtype=np.float32) / 255.0
     vec = arr * 2.0 - 1.0
     h, w = size[1], size[0]
     out = np.zeros((h, w, 3), dtype=np.float32)
     for c in range(3):
-        out[:, :, c] = np.asarray(
+        ch = np.asarray(
             Image.fromarray(vec[:, :, c]).resize(size, resample),
             dtype=np.float32)
+        if blur > 0:
+            ch = gaussian_filter(ch, blur)
+        out[:, :, c] = ch
     n = np.linalg.norm(out, axis=2, keepdims=True)
     out = out / np.maximum(n, 1e-6)
     enc = np.uint8(np.round((out * 0.5 + 0.5) * 255.0))
     Path(dst).parent.mkdir(parents=True, exist_ok=True)
     Image.fromarray(enc, "RGB").save(dst)
     return {"dst": str(dst), "size": list(size),
-            "process": "decode->resize->renormalize->encode"}
+            "process": "decode->resize->renormalize->encode",
+            "blur": blur}
 
 
 def resize_mask(src: Path | str, dst: Path | str, size: tuple[int, int],
