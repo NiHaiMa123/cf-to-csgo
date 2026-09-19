@@ -1,0 +1,175 @@
+{
+ "renderer": "software numpy rasterizer (cf_reference_renderer.py)",
+ "reason_not_blender": "transformed/refract cubemap ray cannot be expressed in Blender shader nodes; software renderer keeps one auditable code path for sphere/plane/mesh",
+ "size": 512,
+ "fov_deg": 45.0,
+ "params": {
+  "specular_enabled": true,
+  "envcube_enabled": true,
+  "normal_enabled": true,
+  "diffuse_enabled": true,
+  "light_brightness": 0.2,
+  "envcube_brightness": 3.0,
+  "specular_power": 1.0,
+  "diffuse_boost": 0.01,
+  "ambient_light_color": 0.01,
+  "refraction_index": 0.8,
+  "reflection_index": 0.5,
+  "env_cube_usage": 2,
+  "cubemap_transform_y": 220.0
+ },
+ "shader_family": "unclassified",
+ "formula_status": {
+  "diffuse_lit": "INFERRED: albedo*(ambient+LightBrightness*lambert+DiffuseBoost)",
+  "spec_term": "INFERRED: Blinn pow(N.H, SpecularPower*0.25)",
+  "cube_ray": "INFERRED: mix(reflect,refract,ReflectionIndex)->rotY(CubeMapTransformY)",
+  "channel_semantics": "INFERRED: alpha.g=spec mask, alpha.b=cube mask"
+ },
+ "scenes": {
+  "neutral": {
+   "eye": [
+    -4.903073310852051,
+    -15.719515800476074,
+    8.934764862060547
+   ],
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light_dir": [
+    -0.3,
+    -0.5,
+    0.8
+   ],
+   "hit_fraction": 0.04292,
+   "components": {
+    "diffuse_lit": {
+     "mean": 0.00028,
+     "hit_mean": 0.00655,
+     "max": 0.15
+    },
+    "specular": {
+     "mean": 0.00442,
+     "hit_mean": 0.10307,
+     "max": 0.9496
+    },
+    "cubemap": {
+     "mean": 0.00524,
+     "hit_mean": 0.12196,
+     "max": 2.3685
+    }
+   }
+  },
+  "front_lit": {
+   "eye": [
+    -4.903073310852051,
+    -15.719515800476074,
+    8.934764862060547
+   ],
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light_dir": [
+    -0.2,
+    -0.9,
+    0.4
+   ]
+  },
+  "side_lit": {
+   "eye": [
+    -4.903073310852051,
+    -15.719515800476074,
+    8.934764862060547
+   ],
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light_dir": [
+    0.95,
+    -0.2,
+    0.25
+   ]
+  },
+  "back_dark": {
+   "eye": [
+    -4.903073310852051,
+    -15.719515800476074,
+    8.934764862060547
+   ],
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light_dir": [
+    0.2,
+    0.9,
+    0.4
+   ]
+  },
+  "rotated_view": {
+   "eye": [
+    10.944681167602539,
+    -12.549964904785156,
+    9.463024139404297
+   ],
+   "eye_off": [
+    0.9,
+    -0.7,
+    0.5
+   ],
+   "light_dir": [
+    -0.3,
+    -0.5,
+    0.8
+   ]
+  }
+ },
+ "gun_center": [
+  1.4360289573669434,
+  -5.154345512390137,
+  4.18043851852417
+ ],
+ "gate_a": {
+  "passed": true,
+  "checks": {
+   "cubemap_varies_with_normal": {
+    "metric": 0.14712,
+    "pass": true
+   },
+   "cubemap_view_dependent": {
+    "metric": -0.0303,
+    "pass": true
+   },
+   "diffuse_base_present": {
+    "metric": 0.00655,
+    "pass": true
+   },
+   "specular_bounded": {
+    "metric": {
+     "hit_mean": 0.10307,
+     "max": 0.9496
+    },
+    "pass": true
+   },
+   "cubemap_term_on_weapon": {
+    "metric": {
+     "hit_mean": 0.12196,
+     "max": 2.3685
+    },
+    "pass": true
+   },
+   "unknowns_declared": {
+    "metric": 3,
+    "pass": true
+   }
+  },
+  "note": "behavioral validation only; not a pixel-match to CF runtime"
+ },
+ "limitation": "Blender/software preview is diagnostic only; not CS:GO runtime ground truth"
+}

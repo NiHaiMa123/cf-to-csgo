@@ -1127,10 +1127,10 @@ A1 input closure              PASS (11 assets, provenance+hashes, 0 problems)
 A2 mesh/UV/diffuse gate       PASS (2767 tris, 0 UV out-of-range; emission render + UV overlay visually verified: zodiac/barrel/engraving islands land correctly)
 B1 CFG parse                  PASS (material_ir.json: 9 properties OBSERVED; alpha/spec-exponent semantics INFERRED pending C; 3 sampling UNKNOWNs declared)
 B2 channel audit              PASS (alpha.R/G uniform 1.0; alpha.B env-mask mean 0.107; _S lum↔diffuse corr 0.93 — spec map is chromatic not scalar; cubemap face0 grayscale 0.49)
-C1 shader family              TODO
-C2 directional cubemap        TODO
-C3 Blender CF reference       TODO
-Gate A                        TODO
+C1 shader family              PASS (software renderer cf_reference_renderer.py; formula pieces tagged INFERRED; Blender skipped — transformed/refract ray not expressible in nodes, plan allows software path)
+C2 directional cubemap        PASS (reflect/refract/rotY ray + DX face lookup on sphere/plane/mesh; no mean-cubemap)
+C3 Blender CF reference       PASS (5 fixed scenes + component decomposition; software-render equivalent, manifest records reason)
+Gate A                        PASS (6/6 behavioral checks: cube varies with normal 0.147, view-dependent corr -0.03, diffuse/spec/cube terms present and bounded, 3 UNKNOWNs declared)
 D material regions            TODO
 E upscale v2                  TODO
 F Source translator           TODO
