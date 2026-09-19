@@ -1,0 +1,209 @@
+{
+ "limitation": "Blender preview is diagnostic only. It is not Source 1 / CS:GO runtime ground truth.",
+ "renderer": "software Source-like approximation (source_like_preview.py), same frame/camera/lights as CF reference",
+ "scenes": {
+  "neutral": {
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light": [
+    -0.3,
+    -0.5,
+    0.8
+   ]
+  },
+  "front_lit": {
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light": [
+    -0.2,
+    -0.9,
+    0.4
+   ]
+  },
+  "side_lit": {
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light": [
+    0.95,
+    -0.2,
+    0.25
+   ]
+  },
+  "back_dark": {
+   "eye_off": [
+    -0.6,
+    -1.0,
+    0.45
+   ],
+   "light": [
+    0.2,
+    0.9,
+    0.4
+   ]
+  },
+  "rotated_view": {
+   "eye_off": [
+    0.9,
+    -0.7,
+    0.5
+   ],
+   "light": [
+    -0.3,
+    -0.5,
+    0.8
+   ]
+  }
+ },
+ "metrics": {
+  "neutral": {
+   "mean_abs_delta": 0.17126,
+   "cf_lum_mean": 0.23175,
+   "sl_lum_mean": 0.06223,
+   "dark_retention": 0.1769,
+   "phong_hit_mean": 0.00435,
+   "env_hit_mean": 0.00748
+  },
+  "front_lit": {
+   "mean_abs_delta": 0.16844,
+   "cf_lum_mean": 0.22943,
+   "sl_lum_mean": 0.06293,
+   "dark_retention": 0.1956,
+   "phong_hit_mean": 0.00529,
+   "env_hit_mean": 0.00748
+  },
+  "side_lit": {
+   "mean_abs_delta": 0.14669,
+   "cf_lum_mean": 0.18643,
+   "sl_lum_mean": 0.04138,
+   "dark_retention": 0.154,
+   "phong_hit_mean": 0.00619,
+   "env_hit_mean": 0.00748
+  },
+  "back_dark": {
+   "mean_abs_delta": 0.1518,
+   "cf_lum_mean": 0.20086,
+   "sl_lum_mean": 0.05044,
+   "dark_retention": 0.1714,
+   "phong_hit_mean": 0.01313,
+   "env_hit_mean": 0.00748
+  },
+  "rotated_view": {
+   "mean_abs_delta": 0.18454,
+   "cf_lum_mean": 0.23225,
+   "sl_lum_mean": 0.04921,
+   "dark_retention": 0.1545,
+   "phong_hit_mean": 0.00492,
+   "env_hit_mean": 0.00535
+  },
+  "view_dependence_neutral_vs_rotated": {
+   "cf": 0.01586,
+   "source": 0.00376
+  }
+ },
+ "tags": {
+  "preserved": [
+   "diffuse base texture",
+   "normal map",
+   "specular->phong mask (low-pass)",
+   "alpha.B->envmap mask (low-pass)",
+   "specular chroma->$phongtint",
+   "SpecularPower*0.25->exponent scale"
+  ],
+  "approximated": [
+   "CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
+   "CF transformed/refract ray->Source reflect ray (approximated)",
+   "per-region envmaptint from alpha.B energy (approximated)"
+  ],
+  "lost": [
+   "Snell refraction contribution",
+   "CubeMapTransformY orientation",
+   "exact CF diffuse-lit scale (ambient/boost terms)"
+  ],
+  "unsupported_by_source1": []
+ },
+ "slot_params": {
+  "cf_mauser_libra_r0": {
+   "strategy": "controlled_phong",
+   "exponent": 2,
+   "boost": 0.6266278238163459,
+   "tint": [
+    1.0,
+    0.765,
+    0.529
+   ],
+   "env_tint": null
+  },
+  "cf_mauser_libra_r1": {
+   "strategy": "envmap_metal",
+   "exponent": 2,
+   "boost": 1.0026045181061534,
+   "tint": [
+    1.0,
+    0.765,
+    0.529
+   ],
+   "env_tint": [
+    0.8,
+    0.733,
+    0.66
+   ]
+  },
+  "cf_mauser_libra_r2": {
+   "strategy": "warm_phong",
+   "exponent": 2,
+   "boost": 1.2532556476326917,
+   "tint": [
+    1.0,
+    0.765,
+    0.529
+   ],
+   "env_tint": null
+  },
+  "cf_mauser_libra_r3": {
+   "strategy": "controlled_phong",
+   "exponent": 2,
+   "boost": 0.6266278238163459,
+   "tint": [
+    1.0,
+    0.765,
+    0.529
+   ],
+   "env_tint": null
+  },
+  "cf_mauser_libra_r4": {
+   "strategy": "envmap_metal",
+   "exponent": 2,
+   "boost": 1.0026045181061534,
+   "tint": [
+    1.0,
+    0.765,
+    0.529
+   ],
+   "env_tint": [
+    0.8,
+    0.8,
+    0.72
+   ]
+  },
+  "cf_mauser_libra_r5": {
+   "strategy": "matte_dark",
+   "exponent": 2,
+   "boost": 0.0,
+   "tint": [
+    1.0,
+    0.765,
+    0.529
+   ],
+   "env_tint": null
+  }
+ }
+}

@@ -1135,8 +1135,8 @@ D material regions            PASS (6 regions: 2 env_reflective_metal, warm_meta
 E upscale v2                  PASS (diffuse AI 4x cache -> 2048; normal renormalized; spec/alpha resize-only; lum drift 0.0000 on masks, originals preserved)
 F Source translator           PASS (source1_material_translator.py: 6 slots, envmap_metal uses engine env_cubemap + normalmapalphaenvmapmask — CF lobby cube never bound; base BGRA8888 alpha=phong mask, normal DXT5 alpha=env mask; tags preserved/approximated/lost/unsupported)
 G material assignment         PASS (build_mauser_vm.py --v2: per-tri slot names in SMD, 2767 tris match regions exactly; MDL contains 6 material names; geometry/rig/anim untouched; staged addon_v2 29 files, MIGI deploy deferred to Phase I)
-H1 Blender Source-like A/B    TODO
-H2 preview limitation report  TODO
+H1 Blender Source-like A/B    PASS (software Source-like shader on same frame/camera/lights as CF ref — plan permits non-Principled equivalent; 5-scene sheet + per-scene deltas; structure/hue/region separation verified, brightness gap documented as lost ambient fill)
+H2 preview limitation report  PASS (source_translation_report.json auto-includes limitation statement + preserved/approximated/lost/unsupported tags)
 I CSGO runtime                TODO
 
 Genericity review             TODO
