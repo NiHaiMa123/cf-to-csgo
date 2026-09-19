@@ -1137,7 +1137,7 @@ F Source translator           PASS (source1_material_translator.py: 6 slots, env
 G material assignment         PASS (build_mauser_vm.py --v2: per-tri slot names in SMD, 2767 tris match regions exactly; MDL contains 6 material names; geometry/rig/anim untouched; staged addon_v2 29 files, MIGI deploy deferred to Phase I)
 H1 Blender Source-like A/B    PASS (software Source-like shader on same frame/camera/lights as CF ref — plan permits non-Principled equivalent; 5-scene sheet + per-scene deltas; structure/hue/region separation verified, brightness gap documented as lost ambient fill)
 H2 preview limitation report  PASS (source_translation_report.json auto-includes limitation statement + preserved/approximated/lost/unsupported tags)
-I CSGO runtime                TODO
+I CSGO runtime                ACTIVE (addon_v2 deployed: A/B 29/29 SHA-256 equal, 5 stale v7 files removed; awaiting user MIGI REBUILD -> B/C pak verify -> in-game acceptance)
 
 Genericity review             TODO
 Second-weapon smoke test      TODO
