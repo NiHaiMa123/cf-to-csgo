@@ -12,6 +12,6 @@
 	"$phongtint" "[1 0.765 0.529]"
 	"$envmap" "models/weapons/v_models/cf_mauser/cf_env_cube"
 	"$normalmapalphaenvmapmask" "1"
-	"$envmaptint" "[0.659 0.504 0.349]"
+	"$envmaptint" "[0.165 0.126 0.087]"
 	"$nocull" "0"
 }

@@ -31,7 +31,7 @@ PHONG_GAIN = 2.5
 PHONG_MASK_GAIN = 4.0
 PHONG_BOOST_FLOOR = 0.5
 ENVMAP_TINT_MAX = 1.0
-ENV_STRENGTH_GAIN = 1.4
+ENV_STRENGTH_GAIN = 0.35
 # shared lightwarp: compress diffuse lit/unlit gap to the CFG-derived
 # lit fraction (CF viewmodel lighting is weakly directional)
 LIGHT_INFLUENCE_SCALE = 0.25

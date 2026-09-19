@@ -14,9 +14,9 @@
     "specular_r_minus_lum": 0.059
    },
    "envmap_tint": [
-    0.659,
-    0.504,
-    0.349
+    0.165,
+    0.126,
+    0.087
    ],
    "phong_exponent": 4,
    "phong_boost": 1.5666,
@@ -34,9 +34,9 @@
     "specular_r_minus_lum": 0.09
    },
    "envmap_tint": [
-    1.0,
-    0.765,
-    0.529
+    0.257,
+    0.196,
+    0.136
    ],
    "phong_exponent": 4,
    "phong_boost": 2.5065,
@@ -54,9 +54,9 @@
     "specular_r_minus_lum": 0.0502
    },
    "envmap_tint": [
-    0.683,
-    0.523,
-    0.361
+    0.171,
+    0.131,
+    0.09
    ],
    "phong_exponent": 2,
    "phong_boost": 3.1331,
@@ -74,9 +74,9 @@
     "specular_r_minus_lum": 0.0295
    },
    "envmap_tint": [
-    0.458,
-    0.351,
-    0.242
+    0.115,
+    0.088,
+    0.061
    ],
    "phong_exponent": 2,
    "phong_boost": 1.5666,
@@ -94,9 +94,9 @@
     "specular_r_minus_lum": 0.1638
    },
    "envmap_tint": [
-    1.0,
-    0.765,
-    0.529
+    0.387,
+    0.296,
+    0.205
    ],
    "phong_exponent": 4,
    "phong_boost": 2.5065,
@@ -114,9 +114,9 @@
     "specular_r_minus_lum": 0.011
    },
    "envmap_tint": [
-    0.238,
-    0.182,
-    0.126
+    0.06,
+    0.046,
+    0.031
    ],
    "phong_exponent": 2,
    "phong_boost": 0.7833,
