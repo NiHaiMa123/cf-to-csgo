@@ -1,54 +1,54 @@
 {
- "generated_at_utc": "2026-09-19T15:42:05.962152+00:00",
+ "generated_at_utc": "2026-09-19T16:22:23.414880+00:00",
  "weapon": "COP357-雪域霜狐",
- "standard_name": "Cop357_IronBeast2_Winter",
+ "standard_name": "Cop357_Dominator_Classic",
  "files": [
   {
-   "path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB",
-   "size": 162815,
-   "sha256": "782b462940e129c705e058d0d9326e202d07c3d3bb477c3c4a88d165ab131632",
+   "path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic.LTB",
+   "size": 164405,
+   "sha256": "68d5ac02733088cc87722dbf096ba402159cbae922dee0f9a168d2793d7414c8",
    "rez_archive": "rez4/RF016.REZ",
-   "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB",
+   "rez_path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic.LTB",
    "payload_sha256": null
   },
   {
-   "path": "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX",
+   "path": "ModelTextures/PLAYERVIEW/PV-Cop357_Dominator_Classic.DTX",
    "size": 524452,
-   "sha256": "50517656933211ed043a6710873672a1e31b8f7e446ccc5e11045d8f336e8ba1",
-   "rez_archive": "rez6/RF017.REZ",
-   "rez_path": "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX",
+   "sha256": "a75337374fd9c2e8f959701563218595038b39423ba54af89652073a28999f0e",
+   "rez_archive": "rez5/RF017.REZ",
+   "rez_path": "ModelTextures/PLAYERVIEW/PV-Cop357_Dominator_Classic.DTX",
    "payload_sha256": null
   },
   {
-   "path": "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG",
-   "size": 4591,
-   "sha256": "2d65a4c9ab3bd8bb6806598775d91183a383b39377e47ac40e5d1aad0492117c",
-   "rez_archive": "rez6/RF017.REZ",
-   "rez_path": "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG",
+   "path": "ModelTextures/Shader/WeaponShader/Cop357_Dominator_Classic.CFG",
+   "size": 4557,
+   "sha256": "4ed7191df178d0675bc72b390db7f558028b2db89f31a93264938aa2ba928246",
+   "rez_archive": "rez5/RF017.REZ",
+   "rez_path": "ModelTextures/Shader/WeaponShader/Cop357_Dominator_Classic.CFG",
    "payload_sha256": null
   },
   {
-   "path": "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG",
-   "size": 1233676,
-   "sha256": "10ca9137ee998205eab0bd29f1704aaf2880b15281898383a9b348516423c4ea",
-   "rez_archive": "rez6/RF017.REZ",
-   "rez_path": "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG",
+   "path": "ModelTextures/SpecularMap/Cop357_Dominator_Classic_S.PNG",
+   "size": 801171,
+   "sha256": "7bf6e1d0b990c19ab8bdd6c7c31b3bf94998bfb4118bac1759552fe5c635d724",
+   "rez_archive": "rez5/RF017.REZ",
+   "rez_path": "ModelTextures/SpecularMap/Cop357_Dominator_Classic_S.PNG",
    "payload_sha256": null
   },
   {
-   "path": "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG",
-   "size": 1340478,
-   "sha256": "72f367f54070d97b596fec38bab72830f939e5535035d06204434ff089c67732",
-   "rez_archive": "rez6/RF017.REZ",
-   "rez_path": "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG",
+   "path": "ModelTextures/NormalMap/Cop357_Dominator_Classic_N.PNG",
+   "size": 977001,
+   "sha256": "fc4dc4b9cfaa1733dc5b12097f4befc9c851dd157cfda0b159d42debcdc69423",
+   "rez_archive": "rez5/RF017.REZ",
+   "rez_path": "ModelTextures/NormalMap/Cop357_Dominator_Classic_N.PNG",
    "payload_sha256": null
   },
   {
-   "path": "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG",
-   "size": 474590,
-   "sha256": "f31bf45d0cd236c1426c71e02627bfa7d3f5fbfabb4785de6025e6f246bc6893",
-   "rez_archive": "rez6/RF017.REZ",
-   "rez_path": "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG",
+   "path": "ModelTextures/AlphaMap/Cop357_Dominator_Classic_A.PNG",
+   "size": 306020,
+   "sha256": "28b12f8feba7fc914f2adc16c29c77bffed7ad8bc8ac1cd5cfdcd638255985f6",
+   "rez_archive": "rez5/RF017.REZ",
+   "rez_path": "ModelTextures/AlphaMap/Cop357_Dominator_Classic_A.PNG",
    "payload_sha256": null
   },
   {
@@ -60,31 +60,31 @@
    "payload_sha256": null
   },
   {
-   "path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB",
-   "size": 104165,
-   "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+   "path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_BL.LTB",
+   "size": 172925,
+   "sha256": "610271d60f9df05b2d5a06fee4f38ef11dcf36f96bb09f212428092112fcc213",
    "rez_archive": "rez4/RF016.REZ",
-   "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB",
+   "rez_path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_BL.LTB",
    "payload_sha256": null
   },
   {
-   "path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB",
-   "size": 104165,
-   "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+   "path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_GR.LTB",
+   "size": 172925,
+   "sha256": "610271d60f9df05b2d5a06fee4f38ef11dcf36f96bb09f212428092112fcc213",
    "rez_archive": "rez4/RF016.REZ",
-   "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB",
+   "rez_path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_GR.LTB",
    "payload_sha256": null
   },
   {
-   "path": "ModelTextures/WEAPONS/QV-Cop357_IronBeast2_Winter.DTX",
+   "path": "ModelTextures/WEAPONS/QV-Cop357_Dominator_Classic.DTX",
    "size": 32932,
-   "sha256": "10ef6329c2ad1301c283f71f9ab330b0039a7ea08e4d9a0a54e786452f166052",
-   "rez_archive": "rez6/RF017.REZ",
-   "rez_path": "ModelTextures/WEAPONS/QV-Cop357_IronBeast2_Winter.DTX",
+   "sha256": "7c1618e78428f92d5581d0380b3953c5363c8f0d2ffeea1ec59a8e8031b59d01",
+   "rez_archive": "rez5/RF017.REZ",
+   "rez_path": "ModelTextures/WEAPONS/QV-Cop357_Dominator_Classic.DTX",
    "payload_sha256": null
   }
  ],
  "missing": [
-  "Models/WEAPONS/QV-Cop357_IronBeast2_Winter.ltb"
+  "Models/WEAPONS/QV-Cop357_Dominator_Classic.ltb"
  ]
 }

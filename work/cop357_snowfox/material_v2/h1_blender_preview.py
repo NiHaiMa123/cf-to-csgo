@@ -36,7 +36,7 @@ STRATEGY = {s["material"]: {
                 "rough": ROUGH_BY_STRATEGY[s["strategy"]],
                 "metal_scale": SLOT_ENV[s["material"]]}
             for s in REPORT["slots"]}
-STRATEGY["cf_cop357_winter"] = {"coat": 0.30, "rough": 0.45,
+STRATEGY["cf_cop357_snowfox"] = {"coat": 0.30, "rough": 0.45,
                                "metal_scale": 0.3}
 PHONG_TINT = tuple(REPORT["phong_tint"]) + (1.0,)
 
@@ -64,7 +64,7 @@ phong_img = img("mask_phong", os.path.join(SV2, "mask_phong.png"), True)
 env_img = img("mask_env", os.path.join(SV2, "mask_env.png"), True)
 
 def build_mat(slot):
-    p = STRATEGY.get(slot, STRATEGY["cf_cop357_winter"])
+    p = STRATEGY.get(slot, STRATEGY["cf_cop357_snowfox"])
     m = bpy.data.materials.new(slot)
     m.use_nodes = True
     nt = m.node_tree
@@ -97,11 +97,11 @@ def build_mat(slot):
 mats = {s: build_mat(s) for s in STRATEGY}
 for o in gun:
     for i, sl in enumerate(o.material_slots):
-        name = sl.material.name if sl.material else "cf_cop357_winter"
+        name = sl.material.name if sl.material else "cf_cop357_snowfox"
         if name in mats:
             sl.material = mats[name]
         else:
-            sl.material = mats["cf_cop357_winter"]
+            sl.material = mats["cf_cop357_snowfox"]
 
 # ---- world: soft studio env (Source ambient+envmap proxy)
 world = bpy.data.worlds.new("preview_world")

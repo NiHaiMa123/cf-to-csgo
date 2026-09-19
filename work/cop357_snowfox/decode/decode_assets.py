@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""P1 — decode 毛瑟-天秤座 (Cop357_IronBeast2_Winter) verified assets."""
+"""P1 — decode 毛瑟-天秤座 (Cop357_Dominator_Classic) verified assets."""
 from __future__ import annotations
 
 import hashlib
@@ -26,15 +26,15 @@ ACQ = _REPO / "work" / "cop357_snowfox" / "acquire" / "verified_root"
 OUT = _REPO / "work" / "cop357_snowfox" / "decode"
 CFREZ = _REPO / "CFRezManager" / "bin" / "Debug" / "net8.0-windows7.0" / "CFRezManager.exe"
 
-PV_LTB = ACQ / "Models" / "PLAYERVIEW" / "PV-Cop357_IronBeast2_Winter.LTB"
-PV_DTX = ACQ / "ModelTextures" / "PLAYERVIEW" / "PV-Cop357_IronBeast2_Winter.DTX"
+PV_LTB = ACQ / "Models" / "PLAYERVIEW" / "PV-Cop357_Dominator_Classic.LTB"
+PV_DTX = ACQ / "ModelTextures" / "PLAYERVIEW" / "PV-Cop357_Dominator_Classic.DTX"
 MAPS = [
-    ACQ / "ModelTextures" / "SpecularMap" / "Cop357_IronBeast2_Winter_S.PNG",
-    ACQ / "ModelTextures" / "NormalMap" / "Cop357_IronBeast2_Winter_N.PNG",
-    ACQ / "ModelTextures" / "AlphaMap" / "Cop357_IronBeast2_Winter_A.PNG",
+    ACQ / "ModelTextures" / "SpecularMap" / "Cop357_Dominator_Classic_S.PNG",
+    ACQ / "ModelTextures" / "NormalMap" / "Cop357_Dominator_Classic_N.PNG",
+    ACQ / "ModelTextures" / "AlphaMap" / "Cop357_Dominator_Classic_A.PNG",
     ACQ / "ModelTextures" / "EnvCubeMap" / "LobbyCube.DDS",
 ]
-CFG = ACQ / "ModelTextures" / "Shader" / "WeaponShader" / "Cop357_IronBeast2_Winter.CFG"
+CFG = ACQ / "ModelTextures" / "Shader" / "WeaponShader" / "Cop357_Dominator_Classic.CFG"
 
 
 def main() -> int:
@@ -46,7 +46,7 @@ def main() -> int:
     if raw[:1] == b"\x5d":
         body = lzma.decompress(raw, format=lzma.FORMAT_ALONE)
     print(f"[p1] ltb packed={len(raw)} body={len(body)} sha256={hashlib.sha256(body).hexdigest()[:16]}")
-    (OUT / "PV-Cop357_IronBeast2_Winter.body.bin").write_bytes(body)
+    (OUT / "PV-Cop357_Dominator_Classic.body.bin").write_bytes(body)
 
     header = a.parse_header(body)
     alloc = header["allocs"]
@@ -126,7 +126,7 @@ def main() -> int:
     for n in nodes:
         print(f"      {n['index']:02d} p={n['parent']:3d} {n['name']}")
 
-    skin_out = OUT / "cf_skin_cop357_winter.json"
+    skin_out = OUT / "cf_skin_cop357_dominator.json"
     proc = subprocess.run(
         [str(CFREZ), "--dump-ltb-skin", "--input", str(PV_LTB), "--output", str(skin_out)],
         capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300)
@@ -142,7 +142,7 @@ def main() -> int:
     res = n05a.decode_repo_pixels(dtx)
     if not res.get("ok"):
         raise RuntimeError(f"DTX decode failed: {res.get('reason')} {res.get('header')}")
-    png = OUT / "PV-Cop357_IronBeast2_Winter.png"
+    png = OUT / "PV-Cop357_Dominator_Classic.png"
     res["image"].save(png)
     print(f"[p1] dtx -> {png.name} {res['image'].size} fmt={res.get('format')}")
 

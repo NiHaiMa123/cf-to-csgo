@@ -38,7 +38,7 @@ V2_ASSIGN = WORK / "material_v2" / "g_material_assignments.json"
 STAGING_V2 = WORK / "addon_v2"
 
 PAYLOAD = WORK / "decode" / "reference_payload.json"
-SKIN = WORK / "decode" / "cf_skin_cop357_winter.json"
+SKIN = WORK / "decode" / "cf_skin_cop357_dominator.json"
 ARMDUMP = REPO / "work" / "galil_ace_tianxi" / "decode" / "nini_gr" / "cf_skin_nini_gr.json"
 ARMTEX = REPO / "work" / "galil_ace_tianxi" / "decode" / "nini_gr"
 VM_TRANSFORM = WORK / "csref" / "viewmodel_transform.json"
@@ -48,19 +48,21 @@ STUDIOMDL = GAME / "bin" / "studiomdl.exe"
 VTFCMD = REPO / "tools" / "VTFEdit" / "VTFCmd.exe"
 MAT_DIR_VMT = "models/weapons/v_models/cf_cop357"
 
-GUN_MAT = "cf_cop357_winter"
+GUN_MAT = "cf_cop357_snowfox"
 # mesh -> CF node index (bind-local Hungarian assignment, see csref/fit_transform.py)
 PIECE_NODE = {
-    "Cop357Derringer_RoyalDragon": 46,  # Box001 gun root
-    "RoyalDragon6-reload": 47,          # Box003 cylinder
-    "bullet003": 48,                    # Box007
-    "bullet004": 49,                    # Box006
-    "bullet002": 50,                    # Box005
-    "bullet01": 51,                     # Box004
+    "Plane032": 46,      # Box001 gun root (main body 4204v)
+    "Plane029": 47,      # Box003 reload/cylinder assembly
+    "Cylinder024": 48,   # Box007 barrel
+    "Object806": 49,     # Box006 barrel
+    "Object805": 50,     # Box005 barrel
+    "Object804": 51,     # Box004 barrel
+    "Object451": 52,     # Box008
+    "Object455": 53,     # Box009
 }
 GUN_ROOT = 46  # Box001 — attachments/extra bones parent here
 # pieces near the gun used for $illumposition (bullets excluded: too small)
-ILLUM_PIECES = {"Cop357Derringer_RoyalDragon", "RoyalDragon6-reload"}
+ILLUM_PIECES = {"Plane032", "Plane029", "Object451", "Object455"}
 
 CS_BONES = (
     ["v_weapon.Bip01", "v_weapon.Bip01_Pelvis", "v_weapon.Bip01_Spine",

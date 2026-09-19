@@ -23,8 +23,8 @@ MV2 = WORK / "material_v2"
 AUDIT = MV2 / "audit"
 VERIFIED = WORK / "acquire" / "verified_root"
 DECODE = WORK / "decode"
-SKIN = DECODE / "cf_skin_cop357_winter.json"
-DIFFUSE = DECODE / "PV-Cop357_IronBeast2_Winter.png"
+SKIN = DECODE / "cf_skin_cop357_dominator.json"
+DIFFUSE = DECODE / "PV-Cop357_Dominator_Classic.png"
 
 # Pieces bound to the weapon atlas. Hand/arm meshes use a different material.
 WEAPON_MESH_PREFIXES = ("Fview", "FVIEW")
@@ -33,31 +33,31 @@ WEAPON_MESH_PREFIXES = ("Fview", "FVIEW")
 def a1() -> dict:
     acquisition = input_manifest.load_acquisition(WORK / "acquire" / "acquisition.json")
     assets = [
-        {"role": "mesh_ltb", "path": VERIFIED / "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB",
-         "logical_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB"},
-        {"role": "diffuse_dtx", "path": VERIFIED / "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX",
-         "logical_path": "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX"},
-        {"role": "cfg", "path": VERIFIED / "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG",
-         "logical_path": "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG"},
-        {"role": "specular", "path": VERIFIED / "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG",
-         "logical_path": "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG"},
-        {"role": "normal", "path": VERIFIED / "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG",
-         "logical_path": "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG"},
-        {"role": "alpha", "path": VERIFIED / "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG",
-         "logical_path": "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG"},
+        {"role": "mesh_ltb", "path": VERIFIED / "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic.LTB",
+         "logical_path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic.LTB"},
+        {"role": "diffuse_dtx", "path": VERIFIED / "ModelTextures/PLAYERVIEW/PV-Cop357_Dominator_Classic.DTX",
+         "logical_path": "ModelTextures/PLAYERVIEW/PV-Cop357_Dominator_Classic.DTX"},
+        {"role": "cfg", "path": VERIFIED / "ModelTextures/Shader/WeaponShader/Cop357_Dominator_Classic.CFG",
+         "logical_path": "ModelTextures/Shader/WeaponShader/Cop357_Dominator_Classic.CFG"},
+        {"role": "specular", "path": VERIFIED / "ModelTextures/SpecularMap/Cop357_Dominator_Classic_S.PNG",
+         "logical_path": "ModelTextures/SpecularMap/Cop357_Dominator_Classic_S.PNG"},
+        {"role": "normal", "path": VERIFIED / "ModelTextures/NormalMap/Cop357_Dominator_Classic_N.PNG",
+         "logical_path": "ModelTextures/NormalMap/Cop357_Dominator_Classic_N.PNG"},
+        {"role": "alpha", "path": VERIFIED / "ModelTextures/AlphaMap/Cop357_Dominator_Classic_A.PNG",
+         "logical_path": "ModelTextures/AlphaMap/Cop357_Dominator_Classic_A.PNG"},
         {"role": "cubemap", "path": VERIFIED / "ModelTextures/EnvCubeMap/LobbyCube.DDS",
          "logical_path": "ModelTextures/EnvCubeMap/LobbyCube.DDS"},
         {"role": "diffuse_decoded", "path": DIFFUSE, "required": True,
          "derived": True, "derived_from": "diffuse_dtx"},
         {"role": "mesh_skin", "path": SKIN, "required": True,
          "derived": True, "derived_from": "mesh_ltb"},
-        {"role": "mesh_ltb_bl", "path": VERIFIED / "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB",
-         "logical_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB", "required": False},
-        {"role": "mesh_ltb_gr", "path": VERIFIED / "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB",
-         "logical_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB", "required": False},
+        {"role": "mesh_ltb_bl", "path": VERIFIED / "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_BL.LTB",
+         "logical_path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_BL.LTB", "required": False},
+        {"role": "mesh_ltb_gr", "path": VERIFIED / "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_GR.LTB",
+         "logical_path": "Models/PLAYERVIEW/PV-Cop357_Dominator_Classic_GR.LTB", "required": False},
     ]
     manifest = input_manifest.build_input_manifest(
-        weapon="Cop357_IronBeast2_Winter", material_id="cf_cop357_winter",
+        weapon="Cop357_Dominator_Classic", material_id="cf_cop357_snowfox",
         assets=assets, out_path=AUDIT / "input_manifest.json",
         acquisition=acquisition)
     print("A1 gate:", "PASS" if manifest["a1_gate"]["passed"] else "FAIL",

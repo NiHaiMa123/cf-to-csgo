@@ -7,7 +7,7 @@ $bodygroup "studio"
 
 $surfaceprop "default"
 $contents "solid"
-$illumposition 2.223 -11.416 23.102
+$illumposition 2.356 -11.284 23.192
 $cdmaterials "models/weapons/v_models/cf_cop357\"
 
 $attachment "1" "v_weapon.flash" 0 0 0 rotate 0 0 0

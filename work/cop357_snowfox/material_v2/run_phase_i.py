@@ -22,7 +22,7 @@ WORK = _REPO / "work" / "cop357_snowfox"
 MV2 = WORK / "material_v2"
 STAGING = WORK / "addon_v2"
 GAME = Path(_paths.game_dir())
-ADDON = GAME / "migi" / "csgo" / "addons" / "p_cf_cop357_winter_p1"
+ADDON = GAME / "migi" / "csgo" / "addons" / "p_cf_cop357_snowfox_p1"
 PAK = GAME / "migi" / "csgo" / "pak01_dir.vpk"
 
 

@@ -17,18 +17,18 @@ MV2 = WORK / "material_v2"
 VERIFIED = WORK / "acquire" / "verified_root"
 DECODE = WORK / "decode"
 MAPS = DECODE / "maps"
-SKIN = DECODE / "cf_skin_cop357_winter.json"
+SKIN = DECODE / "cf_skin_cop357_dominator.json"
 
-CFG = VERIFIED / "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG"
-DIFFUSE = DECODE / "PV-Cop357_IronBeast2_Winter.png"
-SPECULAR = MAPS / "Cop357_IronBeast2_Winter_S.PNG"
-NORMAL = MAPS / "Cop357_IronBeast2_Winter_N.PNG"
-ALPHA = MAPS / "Cop357_IronBeast2_Winter_A.PNG"
+CFG = VERIFIED / "ModelTextures/Shader/WeaponShader/Cop357_Dominator_Classic.CFG"
+DIFFUSE = DECODE / "PV-Cop357_Dominator_Classic.png"
+SPECULAR = MAPS / "Cop357_Dominator_Classic_S.PNG"
+NORMAL = MAPS / "Cop357_Dominator_Classic_N.PNG"
+ALPHA = MAPS / "Cop357_Dominator_Classic_A.PNG"
 CUBEMAP = MAPS / "LobbyCube.DDS"
 
 
 def b1() -> dict:
-    ir = material_ir.new_ir("cf_cop357_winter", shader_family="unclassified")
+    ir = material_ir.new_ir("cf_cop357_snowfox", shader_family="unclassified")
     sha = hashlib.sha256(CFG.read_bytes()).hexdigest()
     material_ir.attach_cfg(ir, CFG, sha256=sha)
     flat = ir["cfg"]["flat"]
@@ -66,7 +66,7 @@ def b1() -> dict:
         ir, "sampling_semantics.reflection_refraction_mix",
         "ReflectionIndex=0.5 vs RefractionIndex=0.8 blend formula unproven")
 
-    out = MV2 / "ir" / "cf_cop357_winter.material_ir.json"
+    out = MV2 / "ir" / "cf_cop357_snowfox.material_ir.json"
     material_ir.save_ir(ir, out)
     print("B1:", out)
     return ir

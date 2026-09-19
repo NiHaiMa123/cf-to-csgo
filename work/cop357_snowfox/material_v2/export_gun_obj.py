@@ -12,7 +12,7 @@ import cf_reference_renderer as cfrr  # noqa: E402
 
 WORK = _REPO / "work" / "cop357_snowfox"
 MV2 = WORK / "material_v2"
-SKIN = WORK / "decode" / "cf_skin_cop357_winter.json"
+SKIN = WORK / "decode" / "cf_skin_cop357_dominator.json"
 OUT = MV2 / "preview_source" / "gun_slots.obj"
 
 
@@ -34,7 +34,7 @@ def main() -> int:
                 f.write(f"vt {uv[0]:.6f} {1.0 - uv[1]:.6f}\n")
             names = assigns.get(mesh["name"], {})
             for t in range(len(mesh["tris"])):
-                slot = names.get(str(t), "cf_cop357_winter")
+                slot = names.get(str(t), "cf_cop357_snowfox")
                 f.write(f"usemtl {slot}\n")
                 a, b, c = mesh["tris"][t]
                 f.write(f"f {a + v_off + 1}/{a + t_off + 1} "

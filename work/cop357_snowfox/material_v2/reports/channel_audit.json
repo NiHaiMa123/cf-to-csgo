@@ -1,41 +1,41 @@
 {
  "maps": {
   "diffuse": {
-   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\PV-Cop357_IronBeast2_Winter.png",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\PV-Cop357_Dominator_Classic.png",
    "width": 1024,
    "height": 1024,
    "channels": {
     "R": {
      "min": 0.0,
-     "max": 0.7412,
-     "mean": 0.1198,
-     "std": 0.0827,
+     "max": 1.0,
+     "mean": 0.2356,
+     "std": 0.2133,
      "percentiles": {
-      "5": 0.0314,
-      "25": 0.0627,
-      "50": 0.0941,
-      "75": 0.1373,
-      "95": 0.298
+      "5": 0.0157,
+      "25": 0.0706,
+      "50": 0.149,
+      "75": 0.3725,
+      "95": 0.6824
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       112845,
-       626180,
-       123803,
-       83424,
-       56146,
-       29806,
-       8951,
-       4439,
-       1755,
-       657,
-       311,
-       259,
-       0,
-       0,
-       0,
-       0
+       210336,
+       196307,
+       195212,
+       81456,
+       50570,
+       53149,
+       49843,
+       50628,
+       25137,
+       28595,
+       60014,
+       45289,
+       1211,
+       540,
+       123,
+       166
       ],
       "edges": [
        0.0,
@@ -57,43 +57,43 @@
        1.0
       ]
      },
-     "unique_values": 97,
+     "unique_values": 154,
      "modal_value": 0.0941,
-     "modal_fraction": 0.3323,
-     "zero_fraction": 0.0055,
+     "modal_fraction": 0.0461,
+     "zero_fraction": 0.025,
      "saturated_fraction": 0.0
     },
     "G": {
-     "min": 0.0627,
-     "max": 0.8235,
-     "mean": 0.2582,
-     "std": 0.1477,
+     "min": 0.0,
+     "max": 1.0,
+     "mean": 0.2405,
+     "std": 0.2166,
      "percentiles": {
-      "5": 0.0941,
-      "25": 0.1098,
-      "50": 0.251,
-      "75": 0.3765,
-      "95": 0.5059
+      "5": 0.0157,
+      "25": 0.0706,
+      "50": 0.1569,
+      "75": 0.3804,
+      "95": 0.6941
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       0,
-       356845,
-       81495,
-       81028,
-       109752,
-       157307,
-       149786,
-       56719,
-       27212,
-       13720,
-       8578,
-       3251,
-       2881,
-       2,
-       0,
-       0
+       213470,
+       189770,
+       192635,
+       81317,
+       52020,
+       51482,
+       53868,
+       50635,
+       25031,
+       27210,
+       55098,
+       51549,
+       976,
+       1374,
+       1174,
+       967
       ],
       "edges": [
        0.0,
@@ -115,43 +115,43 @@
        1.0
       ]
      },
-     "unique_values": 172,
-     "modal_value": 0.1098,
-     "modal_fraction": 0.2052,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.0
+     "unique_values": 241,
+     "modal_value": 0.149,
+     "modal_fraction": 0.0411,
+     "zero_fraction": 0.0066,
+     "saturated_fraction": 0.0002
     },
     "B": {
-     "min": 0.0627,
-     "max": 0.8353,
-     "mean": 0.3176,
-     "std": 0.2004,
+     "min": 0.0,
+     "max": 1.0,
+     "mean": 0.2425,
+     "std": 0.2194,
      "percentiles": {
-      "5": 0.0941,
-      "25": 0.0941,
-      "50": 0.3216,
-      "75": 0.451,
-      "95": 0.6863
+      "5": 0.0157,
+      "25": 0.0706,
+      "50": 0.1608,
+      "75": 0.3843,
+      "95": 0.6941
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       0,
-       309902,
-       67319,
-       69991,
-       69069,
-       100608,
-       141305,
-       86898,
-       61848,
-       52472,
-       37171,
-       25882,
-       25976,
-       135,
-       0,
-       0
+       201033,
+       197932,
+       193927,
+       81694,
+       50262,
+       52178,
+       50845,
+       50998,
+       26447,
+       28815,
+       58486,
+       49098,
+       1754,
+       1065,
+       685,
+       3357
       ],
       "edges": [
        0.0,
@@ -173,43 +173,43 @@
        1.0
       ]
      },
-     "unique_values": 106,
-     "modal_value": 0.0941,
-     "modal_fraction": 0.2839,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.0
+     "unique_values": 169,
+     "modal_value": 0.1608,
+     "modal_fraction": 0.0495,
+     "zero_fraction": 0.0231,
+     "saturated_fraction": 0.0022
     },
     "lum": {
-     "min": 0.0673,
-     "max": 0.7279,
-     "mean": 0.2331,
-     "std": 0.132,
+     "min": 0.0,
+     "max": 1.0,
+     "mean": 0.2396,
+     "std": 0.2159,
      "percentiles": {
-      "5": 0.0941,
-      "25": 0.1053,
-      "50": 0.2145,
-      "75": 0.3297,
-      "95": 0.4697
+      "5": 0.0157,
+      "25": 0.0706,
+      "50": 0.1569,
+      "75": 0.3815,
+      "95": 0.6891
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       0,
-       375159,
-       102858,
-       114590,
-       144745,
-       159906,
-       76615,
-       37618,
-       18949,
-       10497,
-       5254,
-       2385,
-       0,
-       0,
-       0,
-       0
+       214197,
+       191531,
+       192268,
+       80963,
+       51475,
+       50862,
+       53693,
+       50531,
+       25173,
+       26669,
+       56181,
+       50712,
+       1138,
+       1429,
+       1096,
+       658
       ],
       "edges": [
        0.0,
@@ -231,10 +231,10 @@
        1.0
       ]
      },
-     "unique_values": 30643,
-     "modal_value": 0.1053,
-     "modal_fraction": 0.1936,
-     "zero_fraction": 0.0,
+     "unique_values": 4984,
+     "modal_value": 0.0196,
+     "modal_fraction": 0.0353,
+     "zero_fraction": 0.0066,
      "saturated_fraction": 0.0
     },
     "A": {
@@ -297,54 +297,54 @@
     }
    },
    "channel_correlation": {
-    "RxG": 0.6608,
-    "RxB": 0.6252,
-    "Rxlum": 0.7306,
+    "RxG": 0.9957,
+    "RxB": 0.9828,
+    "Rxlum": 0.9969,
     "RxA": null,
-    "GxB": 0.9725,
-    "Gxlum": 0.9949,
+    "GxB": 0.9947,
+    "Gxlum": 0.9999,
     "GxA": null,
-    "Bxlum": 0.9712,
+    "Bxlum": 0.9938,
     "BxA": null,
     "lumxA": null
    }
   },
   "normal": {
-   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\maps\\Cop357_IronBeast2_Winter_N.PNG",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\maps\\Cop357_Dominator_Classic_N.PNG",
    "width": 1024,
    "height": 1024,
    "channels": {
     "R": {
      "min": 0.0,
      "max": 1.0,
-     "mean": 0.5076,
-     "std": 0.1119,
+     "mean": 0.5014,
+     "std": 0.0997,
      "percentiles": {
-      "5": 0.3137,
-      "25": 0.4706,
-      "50": 0.5137,
-      "75": 0.5412,
-      "95": 0.6902
+      "5": 0.3608,
+      "25": 0.498,
+      "50": 0.502,
+      "75": 0.5059,
+      "95": 0.651
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       3046,
-       5369,
-       7678,
-       11369,
-       23364,
-       41744,
-       79341,
-       261249,
-       444559,
-       78245,
-       38692,
-       23088,
-       13688,
-       8431,
-       5649,
-       3064
+       4502,
+       6735,
+       6931,
+       9546,
+       11225,
+       19322,
+       38920,
+       396303,
+       444779,
+       47336,
+       22388,
+       12807,
+       10958,
+       7171,
+       5044,
+       4609
       ],
       "edges": [
        0.0,
@@ -367,42 +367,42 @@
       ]
      },
      "unique_values": 256,
-     "modal_value": 0.5412,
-     "modal_fraction": 0.1526,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.0002
+     "modal_value": 0.502,
+     "modal_fraction": 0.2698,
+     "zero_fraction": 0.0013,
+     "saturated_fraction": 0.001
     },
     "G": {
      "min": 0.0,
      "max": 1.0,
-     "mean": 0.5136,
-     "std": 0.1312,
+     "mean": 0.5023,
+     "std": 0.1156,
      "percentiles": {
-      "5": 0.2824,
-      "25": 0.4627,
-      "50": 0.5216,
-      "75": 0.5529,
-      "95": 0.7451
+      "5": 0.3098,
+      "25": 0.4863,
+      "50": 0.498,
+      "75": 0.5176,
+      "95": 0.702
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       3920,
-       6185,
-       10623,
-       18471,
-       28296,
-       47923,
-       89520,
-       210076,
-       398776,
-       97004,
-       53529,
-       34062,
-       22391,
-       13941,
-       8783,
-       5076
+       4994,
+       5215,
+       10207,
+       13192,
+       19174,
+       28880,
+       57753,
+       385014,
+       380316,
+       59422,
+       26134,
+       18103,
+       14415,
+       10491,
+       7325,
+       7941
       ],
       "edges": [
        0.0,
@@ -425,42 +425,42 @@
       ]
      },
      "unique_values": 256,
-     "modal_value": 0.5412,
-     "modal_fraction": 0.1522,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.0001
+     "modal_value": 0.498,
+     "modal_fraction": 0.1664,
+     "zero_fraction": 0.002,
+     "saturated_fraction": 0.0021
     },
     "B": {
-     "min": 0.0157,
+     "min": 0.0,
      "max": 1.0,
-     "mean": 0.9428,
-     "std": 0.103,
+     "mean": 0.9584,
+     "std": 0.0963,
      "percentiles": {
-      "5": 0.7176,
-      "25": 0.9412,
-      "50": 0.9843,
-      "75": 0.9961,
+      "5": 0.7608,
+      "25": 0.9725,
+      "50": 0.9961,
+      "75": 1.0,
       "95": 1.0
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       86,
-       230,
-       431,
-       626,
-       1001,
-       1266,
-       1588,
-       4670,
-       10414,
-       10804,
-       14530,
-       16727,
-       25632,
-       49172,
-       120172,
-       791227
+       373,
+       827,
+       365,
+       541,
+       344,
+       420,
+       931,
+       4199,
+       7088,
+       8008,
+       11081,
+       15428,
+       21383,
+       38393,
+       70616,
+       868579
       ],
       "edges": [
        0.0,
@@ -482,42 +482,42 @@
        1.0
       ]
      },
-     "unique_values": 252,
-     "modal_value": 0.9961,
-     "modal_fraction": 0.2592,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.3347
+     "unique_values": 256,
+     "modal_value": 1.0,
+     "modal_fraction": 0.4158,
+     "zero_fraction": 0.0001,
+     "saturated_fraction": 0.5291
     },
     "lum": {
-     "min": 0.1159,
-     "max": 0.8803,
-     "mean": 0.5433,
-     "std": 0.099,
+     "min": 0.0869,
+     "max": 0.9161,
+     "mean": 0.5351,
+     "std": 0.0859,
      "percentiles": {
-      "5": 0.3698,
-      "25": 0.5025,
-      "50": 0.5524,
-      "75": 0.5768,
-      "95": 0.713
+      "5": 0.3898,
+      "25": 0.5211,
+      "50": 0.5359,
+      "75": 0.5507,
+      "95": 0.6784
      },
      "histogram": {
       "bins": 16,
       "counts": [
        0,
-       95,
-       4658,
-       8647,
-       14546,
-       27881,
-       64346,
-       133762,
-       316882,
-       339525,
-       67708,
-       39455,
-       20824,
-       10206,
-       41,
+       358,
+       4835,
+       5921,
+       14225,
+       21231,
+       36353,
+       93548,
+       669364,
+       118347,
+       35752,
+       21720,
+       13978,
+       12114,
+       830,
        0
       ],
       "edges": [
@@ -540,58 +540,58 @@
        1.0
       ]
      },
-     "unique_values": 266804,
-     "modal_value": 0.574,
-     "modal_fraction": 0.1302,
+     "unique_values": 159201,
+     "modal_value": 0.5379,
+     "modal_fraction": 0.0799,
      "zero_fraction": 0.0,
      "saturated_fraction": 0.0
     }
    },
    "channel_correlation": {
-    "RxG": 0.0794,
-    "RxB": 0.0478,
-    "Rxlum": 0.3191,
-    "GxB": 0.0086,
-    "Gxlum": 0.9671,
-    "Bxlum": 0.0948
+    "RxG": 0.0396,
+    "RxB": -0.047,
+    "Rxlum": 0.281,
+    "GxB": -0.0679,
+    "Gxlum": 0.9667,
+    "Bxlum": 0.004
    }
   },
   "specular": {
-   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\maps\\Cop357_IronBeast2_Winter_S.PNG",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\maps\\Cop357_Dominator_Classic_S.PNG",
    "width": 1024,
    "height": 1024,
    "channels": {
     "R": {
      "min": 0.0,
-     "max": 0.5333,
-     "mean": 0.0849,
-     "std": 0.0719,
+     "max": 1.0,
+     "mean": 0.1793,
+     "std": 0.163,
      "percentiles": {
-      "5": 0.0235,
-      "25": 0.0275,
-      "50": 0.0588,
-      "75": 0.1216,
-      "95": 0.2353
+      "5": 0.0118,
+      "25": 0.0549,
+      "50": 0.1137,
+      "75": 0.2863,
+      "95": 0.5176
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       540671,
-       254658,
-       134645,
-       78344,
-       31212,
-       6948,
-       1721,
-       266,
-       111,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0
+       285105,
+       285686,
+       113447,
+       60444,
+       80027,
+       61682,
+       31834,
+       62402,
+       63159,
+       1181,
+       739,
+       889,
+       1025,
+       637,
+       123,
+       196
       ],
       "edges": [
        0.0,
@@ -613,43 +613,43 @@
        1.0
       ]
      },
-     "unique_values": 137,
-     "modal_value": 0.0235,
-     "modal_fraction": 0.1755,
-     "zero_fraction": 0.0077,
+     "unique_values": 256,
+     "modal_value": 0.0157,
+     "modal_fraction": 0.0454,
+     "zero_fraction": 0.0051,
      "saturated_fraction": 0.0
     },
     "G": {
-     "min": 0.0196,
-     "max": 0.6392,
-     "mean": 0.2089,
-     "std": 0.1313,
+     "min": 0.0,
+     "max": 1.0,
+     "mean": 0.1829,
+     "std": 0.1667,
      "percentiles": {
-      "5": 0.0235,
-      "25": 0.0863,
-      "50": 0.2196,
-      "75": 0.3137,
-      "95": 0.4118
+      "5": 0.0118,
+      "25": 0.0549,
+      "50": 0.1137,
+      "75": 0.2902,
+      "95": 0.5216
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       204745,
-       141289,
-       120237,
-       119023,
-       191726,
-       173891,
-       63038,
-       24055,
-       9270,
-       1287,
-       15,
-       0,
-       0,
-       0,
-       0,
-       0
+       278414,
+       285298,
+       114172,
+       61145,
+       81717,
+       61974,
+       31722,
+       59621,
+       68166,
+       1582,
+       482,
+       438,
+       683,
+       855,
+       1248,
+       1059
       ],
       "edges": [
        0.0,
@@ -671,43 +671,43 @@
        1.0
       ]
      },
-     "unique_values": 159,
-     "modal_value": 0.0235,
-     "modal_fraction": 0.1239,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.0
+     "unique_values": 256,
+     "modal_value": 0.0157,
+     "modal_fraction": 0.0444,
+     "zero_fraction": 0.0045,
+     "saturated_fraction": 0.0003
     },
     "B": {
-     "min": 0.0235,
-     "max": 0.6588,
-     "mean": 0.2473,
-     "std": 0.161,
+     "min": 0.0,
+     "max": 1.0,
+     "mean": 0.1858,
+     "std": 0.1708,
      "percentiles": {
-      "5": 0.0235,
-      "25": 0.1059,
-      "50": 0.2549,
-      "75": 0.3569,
-      "95": 0.5294
+      "5": 0.0118,
+      "25": 0.0549,
+      "50": 0.1176,
+      "75": 0.2902,
+      "95": 0.5255
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       188096,
-       107349,
-       117660,
-       103597,
-       147271,
-       158276,
-       87063,
-       66288,
-       39233,
-       22712,
-       11031,
-       0,
-       0,
-       0,
-       0,
-       0
+       275578,
+       284343,
+       115512,
+       59766,
+       80198,
+       61506,
+       32814,
+       61057,
+       68552,
+       2501,
+       754,
+       679,
+       829,
+       523,
+       522,
+       3442
       ],
       "edges": [
        0.0,
@@ -729,101 +729,43 @@
        1.0
       ]
      },
-     "unique_values": 163,
-     "modal_value": 0.0235,
-     "modal_fraction": 0.1217,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.0
+     "unique_values": 256,
+     "modal_value": 0.0157,
+     "modal_fraction": 0.0445,
+     "zero_fraction": 0.0044,
+     "saturated_fraction": 0.0021
     },
     "lum": {
-     "min": 0.0205,
-     "max": 0.5833,
-     "mean": 0.1853,
-     "std": 0.1183,
-     "percentiles": {
-      "5": 0.0235,
-      "25": 0.0757,
-      "50": 0.1876,
-      "75": 0.2787,
-      "95": 0.377
-     },
-     "histogram": {
-      "bins": 16,
-      "counts": [
-       220857,
-       162451,
-       140762,
-       169131,
-       203762,
-       97380,
-       36086,
-       14862,
-       3107,
-       178,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0
-      ],
-      "edges": [
-       0.0,
-       0.0625,
-       0.125,
-       0.1875,
-       0.25,
-       0.3125,
-       0.375,
-       0.4375,
-       0.5,
-       0.5625,
-       0.625,
-       0.6875,
-       0.75,
-       0.8125,
-       0.875,
-       0.9375,
-       1.0
-      ]
-     },
-     "unique_values": 67094,
-     "modal_value": 0.0235,
-     "modal_fraction": 0.1217,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 0.0
-    },
-    "A": {
-     "min": 1.0,
+     "min": 0.0,
      "max": 1.0,
-     "mean": 1.0,
-     "std": 0.0,
+     "mean": 0.1823,
+     "std": 0.166,
      "percentiles": {
-      "5": 1.0,
-      "25": 1.0,
-      "50": 1.0,
-      "75": 1.0,
-      "95": 1.0
+      "5": 0.0118,
+      "25": 0.0549,
+      "50": 0.114,
+      "75": 0.2863,
+      "95": 0.5207
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       1048576
+       282525,
+       284254,
+       112556,
+       60525,
+       81331,
+       61844,
+       31557,
+       59857,
+       67962,
+       1544,
+       439,
+       528,
+       763,
+       974,
+       1296,
+       621
       ],
       "edges": [
        0.0,
@@ -845,28 +787,24 @@
        1.0
       ]
      },
-     "unique_values": 1,
-     "modal_value": 1.0,
-     "modal_fraction": 1.0,
-     "zero_fraction": 0.0,
-     "saturated_fraction": 1.0
+     "unique_values": 14468,
+     "modal_value": 0.0157,
+     "modal_fraction": 0.0352,
+     "zero_fraction": 0.0043,
+     "saturated_fraction": 0.0001
     }
    },
    "channel_correlation": {
-    "RxG": 0.82,
-    "RxB": 0.8291,
-    "Rxlum": 0.8617,
-    "RxA": null,
-    "GxB": 0.9874,
-    "Gxlum": 0.9969,
-    "GxA": null,
-    "Bxlum": 0.9893,
-    "BxA": null,
-    "lumxA": null
+    "RxG": 0.9946,
+    "RxB": 0.9775,
+    "Rxlum": 0.9959,
+    "GxB": 0.9938,
+    "Gxlum": 0.9999,
+    "Bxlum": 0.9923
    }
   },
   "alpha": {
-   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\maps\\Cop357_IronBeast2_Winter_A.PNG",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\maps\\Cop357_Dominator_Classic_A.PNG",
    "width": 1024,
    "height": 1024,
    "channels": {
@@ -987,25 +925,25 @@
      "saturated_fraction": 1.0
     },
     "B": {
-     "min": 0.0549,
-     "max": 0.298,
-     "mean": 0.152,
-     "std": 0.0444,
+     "min": 0.0,
+     "max": 0.0745,
+     "mean": 0.0347,
+     "std": 0.013,
      "percentiles": {
-      "5": 0.0824,
-      "25": 0.1333,
-      "50": 0.1451,
-      "75": 0.1804,
-      "95": 0.2314
+      "5": 0.0118,
+      "25": 0.0275,
+      "50": 0.0353,
+      "75": 0.0431,
+      "95": 0.0549
      },
      "histogram": {
       "bins": 16,
       "counts": [
-       840,
-       213108,
-       619637,
-       199512,
-       15479,
+       1027815,
+       20761,
+       0,
+       0,
+       0,
        0,
        0,
        0,
@@ -1038,23 +976,23 @@
        1.0
       ]
      },
-     "unique_values": 63,
-     "modal_value": 0.1451,
-     "modal_fraction": 0.1597,
-     "zero_fraction": 0.0,
+     "unique_values": 20,
+     "modal_value": 0.0353,
+     "modal_fraction": 0.2084,
+     "zero_fraction": 0.0002,
      "saturated_fraction": 0.0
     },
     "lum": {
-     "min": 0.9318,
-     "max": 0.9493,
-     "mean": 0.9388,
-     "std": 0.0032,
+     "min": 0.9278,
+     "max": 0.9332,
+     "mean": 0.9303,
+     "std": 0.0009,
      "percentiles": {
-      "5": 0.9337,
-      "25": 0.9374,
-      "50": 0.9383,
-      "75": 0.9408,
-      "95": 0.9445
+      "5": 0.9286,
+      "25": 0.9298,
+      "50": 0.9303,
+      "75": 0.9309,
+      "95": 0.9318
      },
      "histogram": {
       "bins": 16,
@@ -1073,8 +1011,8 @@
        0,
        0,
        0,
-       281779,
-       766797
+       1048576,
+       0
       ],
       "edges": [
        0.0,
@@ -1096,9 +1034,9 @@
        1.0
       ]
      },
-     "unique_values": 63,
-     "modal_value": 0.9383,
-     "modal_fraction": 0.1597,
+     "unique_values": 20,
+     "modal_value": 0.9303,
+     "modal_fraction": 0.2084,
      "zero_fraction": 0.0,
      "saturated_fraction": 0.0
     }
@@ -1424,321 +1362,408 @@
  },
  "diffuse_luminance_correlation": {
   "normal": {
-   "R": -0.1531,
-   "G": -0.0933,
-   "B": -0.0103,
-   "lum": -0.126
+   "R": -0.0166,
+   "G": -0.1123,
+   "B": 0.0645,
+   "lum": -0.107
   },
   "specular": {
-   "R": 0.8774,
-   "G": 0.9406,
-   "B": 0.9331,
-   "lum": 0.9518,
-   "A": null
+   "R": 0.9965,
+   "G": 0.9945,
+   "B": 0.9819,
+   "lum": 0.9954
   },
   "alpha": {
    "R": null,
    "G": null,
-   "B": 0.7663,
-   "lum": 0.7663
+   "B": 0.5798,
+   "lum": 0.5798
   },
   "cubemap_face0": {}
  },
  "piece_sampled_means": {
   "diffuse": {
-   "bullet003": {
-    "triangles_sampled": 60,
+   "Plane029": {
+    "triangles_sampled": 1624,
     "channel_means": {
-     "R": 0.0922,
-     "G": 0.2194,
-     "B": 0.2737,
-     "lum": 0.1963,
+     "R": 0.146,
+     "G": 0.1489,
+     "B": 0.1496,
+     "lum": 0.1483,
      "A": 1.0
     }
    },
-   "bullet01": {
-    "triangles_sampled": 60,
+   "Plane032": {
+    "triangles_sampled": 4088,
     "channel_means": {
-     "R": 0.0922,
-     "G": 0.2194,
-     "B": 0.2737,
-     "lum": 0.1963,
+     "R": 0.3163,
+     "G": 0.3212,
+     "B": 0.3221,
+     "lum": 0.3202,
      "A": 1.0
     }
    },
-   "bullet002": {
-    "triangles_sampled": 60,
+   "Object451": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.0922,
-     "G": 0.2194,
-     "B": 0.2737,
-     "lum": 0.1963,
+     "R": 0.1292,
+     "G": 0.1306,
+     "B": 0.1306,
+     "lum": 0.1303,
      "A": 1.0
     }
    },
-   "bullet004": {
-    "triangles_sampled": 60,
+   "Object455": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.0922,
-     "G": 0.2194,
-     "B": 0.2737,
-     "lum": 0.1963,
+     "R": 0.1215,
+     "G": 0.1241,
+     "B": 0.1229,
+     "lum": 0.1234,
      "A": 1.0
     }
    },
-   "Cop357Derringer_RoyalDragon": {
-    "triangles_sampled": 3708,
+   "Cylinder024": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.1248,
-     "G": 0.2614,
-     "B": 0.3212,
-     "lum": 0.2366,
+     "R": 0.4099,
+     "G": 0.4143,
+     "B": 0.4148,
+     "lum": 0.4134,
      "A": 1.0
     }
    },
-   "RoyalDragon6-reload": {
-    "triangles_sampled": 704,
+   "Object804": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.1175,
-     "G": 0.2559,
-     "B": 0.3122,
-     "lum": 0.2306,
+     "R": 0.4099,
+     "G": 0.4143,
+     "B": 0.4148,
+     "lum": 0.4134,
+     "A": 1.0
+    }
+   },
+   "Object805": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.4099,
+     "G": 0.4143,
+     "B": 0.4148,
+     "lum": 0.4134,
+     "A": 1.0
+    }
+   },
+   "Object806": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.4099,
+     "G": 0.4143,
+     "B": 0.4148,
+     "lum": 0.4134,
      "A": 1.0
     }
    }
   },
   "normal": {
-   "bullet003": {
-    "triangles_sampled": 60,
+   "Plane029": {
+    "triangles_sampled": 1624,
     "channel_means": {
-     "R": 0.5373,
-     "G": 0.5075,
-     "B": 0.9356,
-     "lum": 0.5447
+     "R": 0.5031,
+     "G": 0.4985,
+     "B": 0.9568,
+     "lum": 0.5326
     }
    },
-   "bullet01": {
-    "triangles_sampled": 60,
+   "Plane032": {
+    "triangles_sampled": 4088,
     "channel_means": {
-     "R": 0.5373,
-     "G": 0.5075,
-     "B": 0.9356,
-     "lum": 0.5447
+     "R": 0.4948,
+     "G": 0.4965,
+     "B": 0.9487,
+     "lum": 0.5288
     }
    },
-   "bullet002": {
-    "triangles_sampled": 60,
+   "Object451": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.5373,
-     "G": 0.5075,
-     "B": 0.9356,
-     "lum": 0.5447
+     "R": 0.4877,
+     "G": 0.5148,
+     "B": 0.9757,
+     "lum": 0.5423
     }
    },
-   "bullet004": {
-    "triangles_sampled": 60,
+   "Object455": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.5373,
-     "G": 0.5075,
-     "B": 0.9356,
-     "lum": 0.5447
+     "R": 0.5285,
+     "G": 0.5032,
+     "B": 0.9689,
+     "lum": 0.5422
     }
    },
-   "Cop357Derringer_RoyalDragon": {
-    "triangles_sampled": 3708,
+   "Cylinder024": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.5056,
-     "G": 0.5108,
-     "B": 0.9509,
-     "lum": 0.5415
+     "R": 0.535,
+     "G": 0.4883,
+     "B": 0.967,
+     "lum": 0.5328
     }
    },
-   "RoyalDragon6-reload": {
-    "triangles_sampled": 704,
+   "Object804": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.5008,
-     "G": 0.5033,
-     "B": 0.9461,
-     "lum": 0.5348
+     "R": 0.535,
+     "G": 0.4883,
+     "B": 0.967,
+     "lum": 0.5328
+    }
+   },
+   "Object805": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.535,
+     "G": 0.4883,
+     "B": 0.967,
+     "lum": 0.5328
+    }
+   },
+   "Object806": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.535,
+     "G": 0.4883,
+     "B": 0.967,
+     "lum": 0.5328
     }
    }
   },
   "specular": {
-   "bullet003": {
-    "triangles_sampled": 60,
+   "Plane029": {
+    "triangles_sampled": 1624,
     "channel_means": {
-     "R": 0.0587,
-     "G": 0.1884,
-     "B": 0.2259,
-     "lum": 0.1635,
-     "A": 1.0
+     "R": 0.1109,
+     "G": 0.1127,
+     "B": 0.1143,
+     "lum": 0.1124
     }
    },
-   "bullet01": {
-    "triangles_sampled": 60,
+   "Plane032": {
+    "triangles_sampled": 4088,
     "channel_means": {
-     "R": 0.0587,
-     "G": 0.1884,
-     "B": 0.2259,
-     "lum": 0.1635,
-     "A": 1.0
+     "R": 0.24,
+     "G": 0.2433,
+     "B": 0.2456,
+     "lum": 0.2427
     }
    },
-   "bullet002": {
-    "triangles_sampled": 60,
+   "Object451": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.0587,
-     "G": 0.1884,
-     "B": 0.2259,
-     "lum": 0.1635,
-     "A": 1.0
+     "R": 0.0976,
+     "G": 0.0988,
+     "B": 0.0994,
+     "lum": 0.0986
     }
    },
-   "bullet004": {
-    "triangles_sampled": 60,
+   "Object455": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.0587,
-     "G": 0.1884,
-     "B": 0.2259,
-     "lum": 0.1635,
-     "A": 1.0
+     "R": 0.0928,
+     "G": 0.0939,
+     "B": 0.0946,
+     "lum": 0.0937
     }
    },
-   "Cop357Derringer_RoyalDragon": {
-    "triangles_sampled": 3708,
+   "Cylinder024": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.0908,
-     "G": 0.2135,
-     "B": 0.2527,
-     "lum": 0.1902,
-     "A": 1.0
+     "R": 0.3108,
+     "G": 0.3139,
+     "B": 0.316,
+     "lum": 0.3134
     }
    },
-   "RoyalDragon6-reload": {
-    "triangles_sampled": 704,
+   "Object804": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.0864,
-     "G": 0.2106,
-     "B": 0.2468,
-     "lum": 0.1868,
-     "A": 1.0
+     "R": 0.3108,
+     "G": 0.3139,
+     "B": 0.316,
+     "lum": 0.3134
+    }
+   },
+   "Object805": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.3108,
+     "G": 0.3139,
+     "B": 0.316,
+     "lum": 0.3134
+    }
+   },
+   "Object806": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.3108,
+     "G": 0.3139,
+     "B": 0.316,
+     "lum": 0.3134
     }
    }
   },
   "alpha": {
-   "bullet003": {
-    "triangles_sampled": 60,
+   "Plane029": {
+    "triangles_sampled": 1624,
     "channel_means": {
      "R": 1.0,
      "G": 1.0,
-     "B": 0.1537,
-     "lum": 0.9389
+     "B": 0.0332,
+     "lum": 0.9302
     }
    },
-   "bullet01": {
-    "triangles_sampled": 60,
+   "Plane032": {
+    "triangles_sampled": 4088,
     "channel_means": {
      "R": 1.0,
      "G": 1.0,
-     "B": 0.1537,
-     "lum": 0.9389
+     "B": 0.0371,
+     "lum": 0.9305
     }
    },
-   "bullet002": {
-    "triangles_sampled": 60,
+   "Object451": {
+    "triangles_sampled": 336,
     "channel_means": {
      "R": 1.0,
      "G": 1.0,
-     "B": 0.1537,
-     "lum": 0.9389
+     "B": 0.0286,
+     "lum": 0.9299
     }
    },
-   "bullet004": {
-    "triangles_sampled": 60,
+   "Object455": {
+    "triangles_sampled": 336,
     "channel_means": {
      "R": 1.0,
      "G": 1.0,
-     "B": 0.1537,
-     "lum": 0.9389
+     "B": 0.0318,
+     "lum": 0.9301
     }
    },
-   "Cop357Derringer_RoyalDragon": {
-    "triangles_sampled": 3708,
+   "Cylinder024": {
+    "triangles_sampled": 94,
     "channel_means": {
      "R": 1.0,
      "G": 1.0,
-     "B": 0.153,
-     "lum": 0.9388
+     "B": 0.0366,
+     "lum": 0.9304
     }
    },
-   "RoyalDragon6-reload": {
-    "triangles_sampled": 704,
+   "Object804": {
+    "triangles_sampled": 94,
     "channel_means": {
      "R": 1.0,
      "G": 1.0,
-     "B": 0.1568,
-     "lum": 0.9391
+     "B": 0.0366,
+     "lum": 0.9304
+    }
+   },
+   "Object805": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 1.0,
+     "G": 1.0,
+     "B": 0.0366,
+     "lum": 0.9304
+    }
+   },
+   "Object806": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 1.0,
+     "G": 1.0,
+     "B": 0.0366,
+     "lum": 0.9304
     }
    }
   },
   "cubemap_face0": {
-   "bullet003": {
-    "triangles_sampled": 60,
+   "Plane029": {
+    "triangles_sampled": 1624,
     "channel_means": {
-     "R": 0.3799,
-     "G": 0.4121,
-     "B": 0.4451,
-     "lum": 0.4076,
+     "R": 0.5122,
+     "G": 0.5196,
+     "B": 0.5199,
+     "lum": 0.5181,
      "A": 1.0
     }
    },
-   "bullet01": {
-    "triangles_sampled": 60,
+   "Plane032": {
+    "triangles_sampled": 4088,
     "channel_means": {
-     "R": 0.3799,
-     "G": 0.4121,
-     "B": 0.4451,
-     "lum": 0.4076,
+     "R": 0.5116,
+     "G": 0.5216,
+     "B": 0.5208,
+     "lum": 0.5194,
      "A": 1.0
     }
    },
-   "bullet002": {
-    "triangles_sampled": 60,
+   "Object451": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.3799,
-     "G": 0.4121,
-     "B": 0.4451,
-     "lum": 0.4076,
+     "R": 0.3648,
+     "G": 0.3795,
+     "B": 0.3941,
+     "lum": 0.3774,
      "A": 1.0
     }
    },
-   "bullet004": {
-    "triangles_sampled": 60,
+   "Object455": {
+    "triangles_sampled": 336,
     "channel_means": {
-     "R": 0.3799,
-     "G": 0.4121,
-     "B": 0.4451,
-     "lum": 0.4076,
+     "R": 0.3369,
+     "G": 0.362,
+     "B": 0.3962,
+     "lum": 0.3591,
      "A": 1.0
     }
    },
-   "Cop357Derringer_RoyalDragon": {
-    "triangles_sampled": 3708,
+   "Cylinder024": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.3842,
-     "G": 0.3945,
-     "B": 0.4013,
-     "lum": 0.3928,
+     "R": 0.3686,
+     "G": 0.3943,
+     "B": 0.4164,
+     "lum": 0.3905,
      "A": 1.0
     }
    },
-   "RoyalDragon6-reload": {
-    "triangles_sampled": 704,
+   "Object804": {
+    "triangles_sampled": 94,
     "channel_means": {
-     "R": 0.5493,
-     "G": 0.5597,
-     "B": 0.561,
-     "lum": 0.5576,
+     "R": 0.3686,
+     "G": 0.3943,
+     "B": 0.4164,
+     "lum": 0.3905,
+     "A": 1.0
+    }
+   },
+   "Object805": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.3686,
+     "G": 0.3943,
+     "B": 0.4164,
+     "lum": 0.3905,
+     "A": 1.0
+    }
+   },
+   "Object806": {
+    "triangles_sampled": 94,
+    "channel_means": {
+     "R": 0.3686,
+     "G": 0.3943,
+     "B": 0.4164,
+     "lum": 0.3905,
      "A": 1.0
     }
    }

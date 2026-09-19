@@ -26,13 +26,13 @@ MAX_SLOTS = 8
 
 def main() -> int:
     SEG.mkdir(parents=True, exist_ok=True)
-    meshes = cfrr.load_skin_meshes(DECODE / "cf_skin_cop357_winter.json",
+    meshes = cfrr.load_skin_meshes(DECODE / "cf_skin_cop357_dominator.json",
                                    skip_prefixes=("fview",))
     maps = {
-        "diffuse": cfrr.load_rgb(DECODE / "PV-Cop357_IronBeast2_Winter.png"),
-        "normal": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_N.PNG"),
-        "specular": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_S.PNG"),
-        "alpha": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_A.PNG"),
+        "diffuse": cfrr.load_rgb(DECODE / "PV-Cop357_Dominator_Classic.png"),
+        "normal": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_N.PNG"),
+        "specular": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_S.PNG"),
+        "alpha": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_A.PNG"),
     }
     result = material_regions.analyze(meshes, maps, k=K, min_island=MIN_ISLAND)
     names = [r["label"] for r in result["regions"]]

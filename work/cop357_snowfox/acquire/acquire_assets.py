@@ -22,7 +22,7 @@ OUT = Path(__file__).resolve().parent
 ROOT = OUT / "verified_root"
 MANIFEST = OUT / "acquisition.json"
 
-NAME = "Cop357_IronBeast2_Winter"
+NAME = "Cop357_Dominator_Classic"
 WANTED = [
     f"Models/PLAYERVIEW/PV-{NAME}.LTB",
     f"ModelTextures/PLAYERVIEW/PV-{NAME}.DTX",

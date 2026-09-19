@@ -1,12 +1,20 @@
 {
  "staging": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\addon_v2",
- "addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_cop357_winter_p1",
- "files": 20,
+ "addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_cop357_snowfox_p1",
+ "files": 28,
  "removed_stale": [],
  "missing": [],
  "mismatch": [],
  "ab_equal": true,
  "hashes": {
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox.vmt": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox.vtf": "393ab590cc02eb1259edadcb4badb77e5ba0c4a6cd5371e3779cafa99361f751",
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r0.vmt": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r1.vmt": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r2.vmt": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r3.vmt": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r4.vmt": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r5.vmt": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
   "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter.vmt": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
   "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter.vtf": "7bd8d684ed1a2c8b081390917c96b86c2223eb7e0febdd613f96353f9193e81a",
   "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter_r0.vmt": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
@@ -21,12 +29,12 @@
   "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr.vmt": "cd27c71b756bdeaeaf3ae8088fc997bff79f97eddd20984d6fb1e66a52e81148",
   "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr.vtf": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
   "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr_n.vtf": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
-  "models/weapons/v_pist_glock18.ani": "23d1fb6ec28abf2db577e7a0ef74941a7b5262f3ea845130703c3e9d19cc4275",
-  "models/weapons/v_pist_glock18.dx80.vtx": "3f7e1b91e312418c867a5908c16906e634e12aa246839471ee85d3f3b22bd616",
-  "models/weapons/v_pist_glock18.dx90.vtx": "fb2ba94cc8a64bd37c94c7abe19eb258ae27b46d2e230fa1a1a15a1fa963e2a2",
-  "models/weapons/v_pist_glock18.mdl": "0168be2dda5f5907a5065e6f9b2cb8f215caab0ebf8de290721ac82ca10b0532",
-  "models/weapons/v_pist_glock18.sw.vtx": "d2a216a0bacf897b65f61160f021070ba2a7e78cc35b57ff4f875c44054a6eb2",
-  "models/weapons/v_pist_glock18.vvd": "b5f2aba6917c2ce254337cdb772e6436319c042e880eaeb5f5d1c782fa7b23a5"
+  "models/weapons/v_pist_glock18.ani": "ced16f00de753e7e50a8fb11f707425d5ac978851a5cf6170738d60f73053b8d",
+  "models/weapons/v_pist_glock18.dx80.vtx": "0d94048a00fe920fb76ec3597ca07ac08aca84ca5653d78e33ecf7fe9c5158d4",
+  "models/weapons/v_pist_glock18.dx90.vtx": "a7dd5f8f16ddb2a37274f3b39f2b56aa369c4ec31fd3cb524e52aa5249b41099",
+  "models/weapons/v_pist_glock18.mdl": "038ab40c925ec318d6ebb806a387f8e13fdf993295ad0bf13424df9721776e7e",
+  "models/weapons/v_pist_glock18.sw.vtx": "fb71ee802a0a64e167f2d9fce7565c87a4fd8ddc0455349dbda6aaa50c6783ff",
+  "models/weapons/v_pist_glock18.vvd": "49be746cd04729c8ed82ea076dfbf40a9a3660028e1664850a30a5b664c2dbc7"
  },
  "next": "user runs MIGI REBUILD, then --verify-pak"
 }

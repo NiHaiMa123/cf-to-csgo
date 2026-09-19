@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/cf_cop357/cf_cop357_snowfox"
+	"$nocull" "1"
+}

@@ -19,18 +19,20 @@ _REPO = Path(__file__).resolve().parents[3]
 WORK = _REPO / "work" / "cop357_snowfox"
 CSREF = _REPO / "work" / "mauser_libra" / "csref" / "decompiled_stock" / "v_pist_glock18"
 PAYLOAD = WORK / "decode" / "reference_payload.json"
-SKIN = WORK / "decode" / "cf_skin_cop357_winter.json"
+SKIN = WORK / "decode" / "cf_skin_cop357_dominator.json"
 OUT = WORK / "csref" / "viewmodel_transform.json"
 
 # mesh -> LTB node index (Hungarian assignment on bind-local mean radius;
 # see work/mauser_libra/scan notes / pipeline M.3)
 PIECE_NODE = {
-    "Cop357Derringer_RoyalDragon": 46,  # Box001 gun root
-    "RoyalDragon6-reload": 47,          # Box003 cylinder/mag
-    "bullet003": 48,                    # Box007
-    "bullet004": 49,                    # Box006
-    "bullet002": 50,                    # Box005
-    "bullet01": 51,                     # Box004
+    "Plane032": 46,      # Box001 gun root (main body 4204v)
+    "Plane029": 47,      # Box003 reload/cylinder assembly
+    "Cylinder024": 48,   # Box007 barrel
+    "Object806": 49,     # Box006 barrel
+    "Object805": 50,     # Box005 barrel
+    "Object804": 51,     # Box004 barrel
+    "Object451": 52,     # Box008
+    "Object455": 53,     # Box009
 }
 
 ATTACH = ("v_weapon.flash", "v_weapon.shelleject", "v_weapon.stattrack", "v_weapon.uid")
@@ -143,7 +145,7 @@ def main() -> int:
     transformed = s * (source @ R.T) + t
     # mirror centre from the *gun body only* (PV-Mauser_Libra) so remote
     # bull/coin pieces don't skew the axis
-    body = s * (by_piece["Cop357Derringer_RoyalDragon"] @ R.T) + t
+    body = s * (by_piece["Plane032"] @ R.T) + t
     gun_xc = float((body[:, 0].min() + body[:, 0].max()) / 2)
     print(f"cf gun verts={len(source)}")
     print("cf idle bbox", source.min(0).round(3).tolist(), source.max(0).round(3).tolist())

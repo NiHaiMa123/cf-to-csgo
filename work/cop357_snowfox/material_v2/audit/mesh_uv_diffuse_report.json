@@ -1,70 +1,88 @@
 {
- "diffuse": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\PV-Cop357_IronBeast2_Winter.png",
+ "diffuse": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\PV-Cop357_Dominator_Classic.png",
  "diffuse_size": [
   1024,
   1024
  ],
  "meshes": [
   {
-   "name": "bullet003",
-   "triangles": 60,
+   "name": "Plane029",
+   "triangles": 1624,
    "uv_out_of_range": 0,
-   "centroid_on_near_black": 0,
-   "sampled_lum_mean": 50.05,
-   "sampled_lum_min": 20.02,
-   "sampled_lum_max": 127.76
+   "centroid_on_near_black": 254,
+   "sampled_lum_mean": 37.83,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 202.89
   },
   {
-   "name": "bullet01",
-   "triangles": 60,
+   "name": "Plane032",
+   "triangles": 4088,
    "uv_out_of_range": 0,
-   "centroid_on_near_black": 0,
-   "sampled_lum_mean": 50.05,
-   "sampled_lum_min": 20.02,
-   "sampled_lum_max": 127.76
+   "centroid_on_near_black": 334,
+   "sampled_lum_mean": 81.65,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 253.09
   },
   {
-   "name": "bullet002",
-   "triangles": 60,
+   "name": "Object451",
+   "triangles": 336,
    "uv_out_of_range": 0,
-   "centroid_on_near_black": 0,
-   "sampled_lum_mean": 50.05,
-   "sampled_lum_min": 20.02,
-   "sampled_lum_max": 127.76
+   "centroid_on_near_black": 120,
+   "sampled_lum_mean": 33.23,
+   "sampled_lum_min": 1.43,
+   "sampled_lum_max": 153.85
   },
   {
-   "name": "bullet004",
-   "triangles": 60,
+   "name": "Object455",
+   "triangles": 336,
    "uv_out_of_range": 0,
-   "centroid_on_near_black": 0,
-   "sampled_lum_mean": 50.05,
-   "sampled_lum_min": 20.02,
-   "sampled_lum_max": 127.76
+   "centroid_on_near_black": 120,
+   "sampled_lum_mean": 31.48,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 153.85
   },
   {
-   "name": "Cop357Derringer_RoyalDragon",
-   "triangles": 3708,
+   "name": "Cylinder024",
+   "triangles": 94,
    "uv_out_of_range": 0,
    "centroid_on_near_black": 0,
-   "sampled_lum_mean": 60.34,
-   "sampled_lum_min": 17.16,
-   "sampled_lum_max": 181.0
+   "sampled_lum_mean": 105.42,
+   "sampled_lum_min": 12.15,
+   "sampled_lum_max": 190.57
   },
   {
-   "name": "RoyalDragon6-reload",
-   "triangles": 704,
+   "name": "Object804",
+   "triangles": 94,
    "uv_out_of_range": 0,
    "centroid_on_near_black": 0,
-   "sampled_lum_mean": 58.79,
-   "sampled_lum_min": 20.02,
-   "sampled_lum_max": 174.52
+   "sampled_lum_mean": 105.42,
+   "sampled_lum_min": 12.15,
+   "sampled_lum_max": 190.57
+  },
+  {
+   "name": "Object805",
+   "triangles": 94,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 105.42,
+   "sampled_lum_min": 12.15,
+   "sampled_lum_max": 190.57
+  },
+  {
+   "name": "Object806",
+   "triangles": 94,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 105.42,
+   "sampled_lum_min": 12.15,
+   "sampled_lum_max": 190.57
   }
  ],
  "total": {
-  "triangles": 4652,
+  "triangles": 6760,
   "uv_out_of_range": 0,
-  "centroid_on_near_black": 0,
-  "near_black_fraction": 0.0
+  "centroid_on_near_black": 828,
+  "near_black_fraction": 0.1225
  },
  "a2_gate": {
   "passed": true,

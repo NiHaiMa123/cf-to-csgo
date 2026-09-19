@@ -6,22 +6,22 @@
     "allocs": {
       "nKeyFrames": 244,
       "nParentAnims": 6,
-      "nNodes": 52,
-      "nPieces": 8,
+      "nNodes": 54,
+      "nPieces": 10,
       "nChildModels": 1,
-      "nTris": 5986,
-      "nVerts": 3454,
-      "nVertexWeights": 3864,
-      "nLODs": 8,
+      "nTris": 8094,
+      "nVerts": 4538,
+      "nVertexWeights": 4948,
+      "nLODs": 10,
       "nSockets": 1,
       "nWeightSets": 1,
-      "nStrings": 74,
-      "StringLengths": 1156,
+      "nStrings": 79,
+      "StringLengths": 1179,
       "VertAnimDataSize": 0,
-      "nAnimData": 355264
+      "nAnimData": 368928
     }
   },
-  "n_nodes": 52,
+  "n_nodes": 54,
   "n_clips": 6,
   "clip_summary": [
     {
@@ -30,18 +30,7 @@
       "duration_ms": 2000,
       "fps": 45.0,
       "compression": "NONE",
-      "events": [
-        {
-          "frame": 0,
-          "time_ms": 0,
-          "label": "end"
-        },
-        {
-          "frame": 90,
-          "time_ms": 2000,
-          "label": "end"
-        }
-      ]
+      "events": []
     },
     {
       "name": "prefire",
@@ -49,18 +38,7 @@
       "duration_ms": 120,
       "fps": 125.0,
       "compression": "NONE",
-      "events": [
-        {
-          "frame": 0,
-          "time_ms": 0,
-          "label": "end"
-        },
-        {
-          "frame": 15,
-          "time_ms": 120,
-          "label": "end"
-        }
-      ]
+      "events": []
     },
     {
       "name": "fire",
@@ -68,18 +46,7 @@
       "duration_ms": 120,
       "fps": 125.0,
       "compression": "NONE",
-      "events": [
-        {
-          "frame": 0,
-          "time_ms": 0,
-          "label": "end"
-        },
-        {
-          "frame": 15,
-          "time_ms": 120,
-          "label": "end"
-        }
-      ]
+      "events": []
     },
     {
       "name": "reload",
@@ -89,9 +56,9 @@
       "compression": "NONE",
       "events": [
         {
-          "frame": 1,
-          "time_ms": 24,
-          "label": "begin"
+          "frame": 6,
+          "time_ms": 148,
+          "label": "Extra01SoundName"
         },
         {
           "frame": 7,
@@ -104,19 +71,9 @@
           "label": "reload"
         },
         {
-          "frame": 44,
-          "time_ms": 1084,
+          "frame": 40,
+          "time_ms": 985,
           "label": "WeaponClipIn"
-        },
-        {
-          "frame": 52,
-          "time_ms": 1281,
-          "label": "WeaponReload"
-        },
-        {
-          "frame": 58,
-          "time_ms": 1429,
-          "label": "end"
         }
       ]
     },
@@ -126,18 +83,7 @@
       "duration_ms": 585,
       "fps": 51.282051282051285,
       "compression": "NONE",
-      "events": [
-        {
-          "frame": 0,
-          "time_ms": 0,
-          "label": "end"
-        },
-        {
-          "frame": 30,
-          "time_ms": 585,
-          "label": "end"
-        }
-      ]
+      "events": []
     },
     {
       "name": "select",
@@ -149,12 +95,17 @@
         {
           "frame": 0,
           "time_ms": 0,
-          "label": "Extra01SoundName"
+          "label": "begin"
         },
         {
           "frame": 1,
           "time_ms": 21,
-          "label": "end"
+          "label": "select Extra02SoundName"
+        },
+        {
+          "frame": 18,
+          "time_ms": 379,
+          "label": "selectend"
         },
         {
           "frame": 19,
@@ -216,18 +167,20 @@
     "Box007",
     "Box006",
     "Box005",
-    "Box004"
+    "Box004",
+    "Box008",
+    "Box009"
   ],
   "weight_sets": [
     {
       "name": "BaseTracker",
-      "count": 52,
-      "nonzero": 52
+      "count": 54,
+      "nonzero": 54
     }
   ],
   "child_models": [
     "SELF"
   ],
-  "stream_end_offset": 600683,
-  "body_bytes": 600932
+  "stream_end_offset": 708260,
+  "body_bytes": 708509
 }

@@ -24,7 +24,7 @@
       4.859885673522589
     ]
   },
-  "gun_center_x": -5.099515298201126,
+  "gun_center_x": -5.032982532560423,
   "apply_mirror": true,
   "view_push_x": 2.0,
   "view_push_y": -5.0,
@@ -144,12 +144,14 @@
     ]
   },
   "piece_node": {
-    "Cop357Derringer_RoyalDragon": 46,
-    "RoyalDragon6-reload": 47,
-    "bullet003": 48,
-    "bullet004": 49,
-    "bullet002": 50,
-    "bullet01": 51
+    "Plane032": 46,
+    "Plane029": 47,
+    "Cylinder024": 48,
+    "Object806": 49,
+    "Object805": 50,
+    "Object804": 51,
+    "Object451": 52,
+    "Object455": 53
   },
   "note": "proper rotation only (det+1); mirror applied separately about gun body centre; no view correction yet"
 }

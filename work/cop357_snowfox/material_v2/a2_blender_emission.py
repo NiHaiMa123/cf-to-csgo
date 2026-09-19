@@ -19,8 +19,8 @@ from mathutils import Vector
 
 PROJECT = r"D:\project\cf_to_csgo"
 WORK = os.path.join(PROJECT, "work", "cop357_snowfox")
-SKIN = os.path.join(WORK, "decode", "cf_skin_cop357_winter.json")
-DIFFUSE = os.path.join(WORK, "decode", "PV-Cop357_IronBeast2_Winter.png")
+SKIN = os.path.join(WORK, "decode", "cf_skin_cop357_dominator.json")
+DIFFUSE = os.path.join(WORK, "decode", "PV-Cop357_Dominator_Classic.png")
 OUT_DIR = os.path.join(WORK, "material_v2", "audit")
 BLEND_PATH = os.path.join(OUT_DIR, "a2_emission_scene.blend")
 REPORT_PATH = os.path.join(OUT_DIR, "a2_blender_report.json")

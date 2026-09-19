@@ -1,139 +1,139 @@
 {
  "material_root": "models/weapons/v_models/cf_cop357",
- "base_name": "cf_cop357_winter",
+ "base_name": "cf_cop357_snowfox",
  "slots": [
   {
    "region_id": 0,
-   "region_label": "light_surface",
-   "material": "cf_cop357_winter_r0",
-   "strategy": "controlled_phong",
+   "region_label": "bright_metal_light_surface",
+   "material": "cf_cop357_snowfox_r0",
+   "strategy": "colored_phong",
    "evidence": {
-    "alpha_b": 0.1487,
-    "specular_lum": 0.1836,
-    "diffuse_lum": 0.2284,
-    "specular_r_minus_lum": -0.1033
+    "alpha_b": 0.0434,
+    "specular_lum": 0.3963,
+    "diffuse_lum": 0.5238,
+    "specular_r_minus_lum": -0.0033
    },
    "envmap_tint": [
-    0.078,
-    0.188,
-    0.223
+    0.063,
+    0.064,
+    0.065
    ],
    "phong_exponent": 4,
-   "phong_boost": 1.6655,
-   "triangles": 198
+   "phong_boost": 2.0381,
+   "triangles": 1716
   },
   {
    "region_id": 1,
-   "region_label": "light_surface",
-   "material": "cf_cop357_winter_r1",
+   "region_label": "mid_surface",
+   "material": "cf_cop357_snowfox_r1",
    "strategy": "controlled_phong",
    "evidence": {
-    "alpha_b": 0.1554,
-    "specular_lum": 0.2102,
-    "diffuse_lum": 0.2522,
-    "specular_r_minus_lum": -0.1192
+    "alpha_b": 0.0345,
+    "specular_lum": 0.1224,
+    "diffuse_lum": 0.1608,
+    "specular_r_minus_lum": -0.002
    },
    "envmap_tint": [
-    0.081,
-    0.197,
-    0.233
+    0.05,
+    0.051,
+    0.052
    ],
    "phong_exponent": 4,
-   "phong_boost": 1.6655,
-   "triangles": 1720
+   "phong_boost": 1.2738,
+   "triangles": 2126
   },
   {
    "region_id": 2,
-   "region_label": "mid_surface",
-   "material": "cf_cop357_winter_r2",
+   "region_label": "light_surface",
+   "material": "cf_cop357_snowfox_r2",
    "strategy": "controlled_phong",
    "evidence": {
-    "alpha_b": 0.1455,
-    "specular_lum": 0.1488,
-    "diffuse_lum": 0.1778,
-    "specular_r_minus_lum": -0.0952
+    "alpha_b": 0.0449,
+    "specular_lum": 0.2273,
+    "diffuse_lum": 0.3007,
+    "specular_r_minus_lum": -0.0018
    },
    "envmap_tint": [
-    0.076,
-    0.184,
-    0.218
+    0.065,
+    0.066,
+    0.067
    ],
    "phong_exponent": 4,
-   "phong_boost": 1.6655,
-   "triangles": 168
+   "phong_boost": 1.2738,
+   "triangles": 1097
   },
   {
    "region_id": 3,
-   "region_label": "mid_surface",
-   "material": "cf_cop357_winter_r3",
+   "region_label": "dark",
+   "material": "cf_cop357_snowfox_r3",
    "strategy": "controlled_phong",
    "evidence": {
-    "alpha_b": 0.1491,
-    "specular_lum": 0.1453,
-    "diffuse_lum": 0.1799,
-    "specular_r_minus_lum": -0.0784
+    "alpha_b": 0.0218,
+    "specular_lum": 0.0739,
+    "diffuse_lum": 0.0967,
+    "specular_r_minus_lum": -0.0009
    },
    "envmap_tint": [
-    0.078,
-    0.189,
-    0.224
+    0.032,
+    0.032,
+    0.033
    ],
    "phong_exponent": 4,
-   "phong_boost": 1.6655,
-   "triangles": 1101
+   "phong_boost": 1.2738,
+   "triangles": 1497
   },
   {
    "region_id": 4,
    "region_label": "mid_surface",
-   "material": "cf_cop357_winter_r4",
+   "material": "cf_cop357_snowfox_r4",
    "strategy": "controlled_phong",
    "evidence": {
-    "alpha_b": 0.1194,
-    "specular_lum": 0.1,
-    "diffuse_lum": 0.1554,
-    "specular_r_minus_lum": -0.051
+    "alpha_b": 0.0307,
+    "specular_lum": 0.1684,
+    "diffuse_lum": 0.2226,
+    "specular_r_minus_lum": -0.0015
    },
    "envmap_tint": [
-    0.062,
-    0.151,
-    0.179
+    0.044,
+    0.045,
+    0.046
    ],
    "phong_exponent": 4,
-   "phong_boost": 1.6655,
-   "triangles": 728
+   "phong_boost": 1.2738,
+   "triangles": 277
   },
   {
    "region_id": 5,
    "region_label": "bright_metal_light_surface",
-   "material": "cf_cop357_winter_r5",
+   "material": "cf_cop357_snowfox_r5",
    "strategy": "controlled_phong",
    "evidence": {
-    "alpha_b": 0.193,
-    "specular_lum": 0.2991,
-    "diffuse_lum": 0.3621,
-    "specular_r_minus_lum": -0.135
+    "alpha_b": 0.0333,
+    "specular_lum": 0.2236,
+    "diffuse_lum": 0.2875,
+    "specular_r_minus_lum": -0.0399
    },
    "envmap_tint": [
-    0.101,
-    0.245,
-    0.289
+    0.048,
+    0.049,
+    0.05
    ],
    "phong_exponent": 4,
-   "phong_boost": 1.6655,
-   "triangles": 737
+   "phong_boost": 1.2738,
+   "triangles": 47
   }
  ],
  "phong_tint": [
-  0.348,
-  0.845,
+  0.966,
+  0.984,
   1.0
  ],
  "masks": {
-  "phong_mean": 0.6481,
-  "env_mean": 0.152
+  "phong_mean": 0.542,
+  "env_mean": 0.0348
  },
  "lightwarp": {
-  "texture": "cf_cop357_winter_lightwarp",
+  "texture": "cf_cop357_snowfox_lightwarp",
   "lit_fraction": 0.125,
   "dark_floor": 0.875
  },
@@ -160,10 +160,10 @@
   "unsupported_by_source1": []
  },
  "unlit_bake": {
-  "baked_lum_mean": 0.4361,
-  "baked_lum_p90": 0.7519,
-  "env_term_mean": 0.0907,
-  "spec_term_mean": 0.0451,
+  "baked_lum_mean": 0.3721,
+  "baked_lum_p90": 0.9662,
+  "env_term_mean": 0.0208,
+  "spec_term_mean": 0.048,
   "gains": {
    "env": 0.5,
    "spec": 0.4,

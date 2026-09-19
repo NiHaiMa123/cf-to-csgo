@@ -33,8 +33,8 @@ GAME = Path("D:/steam/steamapps/common/csgo legacy")
 VTFCMD = _REPO / "tools" / "VTFEdit" / "VTFCmd.exe"
 
 MATERIAL_ROOT = "models/weapons/v_models/cf_cop357"
-BASE_NAME = "cf_cop357_winter"
-NORMAL_NAME = "cf_cop357_winter_n"
+BASE_NAME = "cf_cop357_snowfox"
+NORMAL_NAME = "cf_cop357_snowfox_n"
 ENV_CUBE_NAME = "cf_env_cube"
 CUBE_DDS = WORK / "decode" / "maps" / "LobbyCube.DDS"
 SIZE = (2048, 2048)
@@ -72,7 +72,7 @@ def vtf_header(path: Path) -> dict:
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
-    ir = json.loads((MV2 / "ir" / "cf_cop357_winter.material_ir.json")
+    ir = json.loads((MV2 / "ir" / "cf_cop357_snowfox.material_ir.json")
                     .read_text(encoding="utf-8"))
     regions = json.loads((SEG / "triangle_materials.json")
                          .read_text(encoding="utf-8"))

@@ -24,8 +24,8 @@ WORK = _REPO / "work" / "cop357_snowfox"
 MV2 = WORK / "material_v2"
 DECODE = WORK / "decode"
 MAPS = DECODE / "maps"
-SKIN = DECODE / "cf_skin_cop357_winter.json"
-IR_PATH = MV2 / "ir" / "cf_cop357_winter.material_ir.json"
+SKIN = DECODE / "cf_skin_cop357_dominator.json"
+IR_PATH = MV2 / "ir" / "cf_cop357_snowfox.material_ir.json"
 SV2 = MV2 / "source_v2"
 PREV = MV2 / "preview_source"
 
@@ -39,10 +39,10 @@ def load_inputs():
     params = cfrr.params_from_cfg_flat(ir["cfg"]["flat"])
     meshes = cfrr.load_skin_meshes(SKIN, skip_prefixes=("fview",))
     maps = {
-        "diffuse": cfrr.load_rgb(DECODE / "PV-Cop357_IronBeast2_Winter.png"),
-        "normal": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_N.PNG"),
-        "specular": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_S.PNG"),
-        "alpha": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_A.PNG"),
+        "diffuse": cfrr.load_rgb(DECODE / "PV-Cop357_Dominator_Classic.png"),
+        "normal": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_N.PNG"),
+        "specular": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_S.PNG"),
+        "alpha": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_A.PNG"),
         "cubemap": cfrr.dds_faces(MAPS / "LobbyCube.DDS"),
     }
     return ir, params, meshes, maps
@@ -65,7 +65,7 @@ def main() -> int:
     report = json.loads((SV2 / "translation_report.json").read_text("utf-8"))
     assigns = json.loads((MV2 / "g_material_assignments.json")
                          .read_text("utf-8"))
-    tri_slot = slp.build_tri_slot(meshes, assigns, "cf_cop357_winter")
+    tri_slot = slp.build_tri_slot(meshes, assigns, "cf_cop357_snowfox")
     slot_params = slp.slot_params_from_report(report, ir["cfg"]["flat"])
     masks = {
         "phong": np.stack([np.asarray(Image.open(SV2 / "mask_phong.png"),

@@ -19,7 +19,7 @@ MV2 = WORK / "material_v2"
 DECODE = WORK / "decode"
 MAPS = DECODE / "maps"
 UP = MV2 / "upscale"
-UP4 = WORK / "texture" / "up" / "4x_PV-Cop357_IronBeast2_Winter.png"  # existing AI 4x cache
+UP4 = WORK / "texture" / "up" / "4x_PV-Cop357_Dominator_Classic.png"  # existing AI 4x cache
 
 SIZE = (2048, 2048)
 COMFY = "http://127.0.0.1:8188"
@@ -30,7 +30,7 @@ def e1_diffuse() -> dict:
     ComfyUI output over-amplified the low-contrast engraved pattern into
     a loud scale-like texture (local-contrast drift vs original). Use
     non-generative LANCZOS instead — semantics must be preserved."""
-    original = DECODE / "PV-Cop357_IronBeast2_Winter.png"
+    original = DECODE / "PV-Cop357_Dominator_Classic.png"
     keep = UP / "diffuse_original.png"
     keep.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy(original, keep)
@@ -51,7 +51,7 @@ def e1_diffuse() -> dict:
 
 
 def e2_normal() -> dict:
-    src = MAPS / "Cop357_IronBeast2_Winter_N.PNG"
+    src = MAPS / "Cop357_Dominator_Classic_N.PNG"
     out = UP / "normal_2048.png"
     # low-pass justified by render evidence: unblurred normal bumps
     # resolve as per-dot specular speckle (fish-scale) in preview;
@@ -65,8 +65,8 @@ def e2_normal() -> dict:
 
 def e3_maps() -> dict:
     res = {}
-    for name, src in (("specular", MAPS / "Cop357_IronBeast2_Winter_S.PNG"),
-                      ("alpha", MAPS / "Cop357_IronBeast2_Winter_A.PNG")):
+    for name, src in (("specular", MAPS / "Cop357_Dominator_Classic_S.PNG"),
+                      ("alpha", MAPS / "Cop357_Dominator_Classic_A.PNG")):
         out = UP / f"{name}_2048.png"
         meta = texture_upscale.resize_mask(src, out, SIZE)
         meta["coverage"] = texture_upscale.coverage_report(src, out)

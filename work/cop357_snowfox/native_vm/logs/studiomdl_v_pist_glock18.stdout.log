@@ -13,19 +13,17 @@ SMD MODEL v_pist_glock18_anims\shoot_empty.smd
 SMD MODEL v_pist_glock18_anims\reload.smd
 SMD MODEL v_pist_glock18_anims\draw.smd
 SMD MODEL v_pist_glock18_anims\lookat01.smd
-Processing LOD for material: cf_cop357_winter_r3
-Processing LOD for material: cf_cop357_winter_r4
-Processing LOD for material: cf_cop357_winter_r0
-Processing LOD for material: cf_cop357_winter_r5
-Processing LOD for material: cf_cop357_winter_r1
-Processing LOD for material: cf_cop357_winter_r2
+Processing LOD for material: cf_cop357_snowfox_r1
+Processing LOD for material: cf_cop357_snowfox_r2
+Processing LOD for material: cf_cop357_snowfox_r3
+Processing LOD for material: cf_cop357_snowfox_r0
+Processing LOD for material: cf_cop357_snowfox_r5
+Processing LOD for material: cf_cop357_snowfox_r4
 Processing LOD for material: cf_nini_hand_gr
 Processing LOD for material: cf_nini_arm_gr
 ---------------------
 writing D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.mdl:
-Loading preexisting model: D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.mdl
-   Found 8 preexisting sequences.
-bones        27004 bytes (107)
+bones        27576 bytes (109)
    animation       x       y       ips    angle
 $BoneSaveFrame "v_weapon" position rotation
 $BoneSaveFrame "v_weapon.Bip01" rotation
@@ -126,6 +124,8 @@ $BoneSaveFrame "Box007" position rotation
 $BoneSaveFrame "Box006" position rotation
 $BoneSaveFrame "Box005" position rotation
 $BoneSaveFrame "Box004" position rotation
+$BoneSaveFrame "Box008" position rotation
+$BoneSaveFrame "Box009" position rotation
 $BoneSaveFrame "v_weapon.flash" rotation
 $BoneSaveFrame "v_weapon.shelleject" rotation
 $BoneSaveFrame "v_weapon.stattrack" rotation
@@ -134,33 +134,31 @@ $BoneSaveFrame "v_weapon.glock_Parent" rotation
 $BoneSaveFrame "v_weapon.glock_Slide" rotation
 $BoneSaveFrame "v_weapon.glock_Trigger" rotation
 $BoneSaveFrame "v_weapon.glock_Clip" rotation
-animations  131388 bytes (8 anims) (666 frames) [0:06]
-Building sequence index remapping table...
-No re-ordering required.
-sequences     3196 bytes (8 seq) 
-hdr@057BF624=789C0200
+animations  139368 bytes (8 anims) (666 frames) [0:06]
+sequences     3204 bytes (8 seq) 
+hdr@057BF13C=78EE0200
 ik/pose        164 bytes
 eyeballs         0 bytes (0 eyeballs)
 flexes           0 bytes (0 flexes)
-hdr@057BF624=789C0200
+hdr@057BF13C=78EE0200
 textures       532 bytes
 keyvalues      120 bytes
-hdr@057BF61C=789C0398
-hdr@057BF624=789C0200
-bone transforms    14616 bytes
+hdr@057BF134=78EE0398
+hdr@057BF13C=78EE0200
+bone transforms    14888 bytes
 bone flex driver       0 bytes
 bodygroup presets       0 bytes
 collision        0 bytes
-total       180796
+total       189648
 ---------------------
 writing models/weapons\v_pist_glock18.ani:
 blocks	         3
-total        48572
+total        53108
 ---------------------
 writing D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.vvd:
-vertices    590976 bytes (12312 vertices)
-tangents    196992 bytes (12312 vertices)
-total       788032 bytes
+vertices    706896 bytes (14727 vertices)
+tangents    235632 bytes (14727 vertices)
+total       942592 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.sw.vtx":
 body parts:         8 bytes
@@ -169,10 +167,10 @@ model LODs:        12 bytes
 meshes:            72 bytes
 strip groups:     264 bytes
 strips:           280 bytes
-verts:         110808 bytes
-indices:        80448 bytes
+verts:         132543 bytes
+indices:        93060 bytes
 bone changes:       8 bytes
-everything:    191944 bytes
+everything:    226291 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.dx80.vtx":
 body parts:         8 bytes
@@ -181,10 +179,10 @@ model LODs:        12 bytes
 meshes:            72 bytes
 strip groups:     264 bytes
 strips:           350 bytes
-verts:         110862 bytes
-indices:        80448 bytes
-bone changes:     696 bytes
-everything:    192756 bytes
+verts:         132597 bytes
+indices:        93060 bytes
+bone changes:     728 bytes
+everything:    227135 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.dx90.vtx":
 body parts:         8 bytes
@@ -193,11 +191,11 @@ model LODs:        12 bytes
 meshes:            72 bytes
 strip groups:     264 bytes
 strips:           280 bytes
-verts:         110808 bytes
-indices:        80448 bytes
-bone changes:     648 bytes
-everything:    192584 bytes
-WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
-WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
+verts:         132543 bytes
+indices:        93060 bytes
+bone changes:     680 bytes
+everything:    226963 bytes
+Error opening D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.vvd! (Check for write enable)
 
-Completed "v_pist_glock18.qc"
+ERROR: 'EXCEPTION_ACCESS_VIOLATION' (assert: 1)
+ERROR: Aborted Processing on 'weapons\v_pist_glock18.mdl'

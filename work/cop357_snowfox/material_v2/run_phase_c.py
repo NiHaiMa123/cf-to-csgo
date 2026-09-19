@@ -26,8 +26,8 @@ DECODE = WORK / "decode"
 MAPS = DECODE / "maps"
 REF = MV2 / "reference_cf"
 
-SKIN = DECODE / "cf_skin_cop357_winter.json"
-IR_PATH = MV2 / "ir" / "cf_cop357_winter.material_ir.json"
+SKIN = DECODE / "cf_skin_cop357_dominator.json"
+IR_PATH = MV2 / "ir" / "cf_cop357_snowfox.material_ir.json"
 
 SIZE = 512
 FOV = 45.0
@@ -38,10 +38,10 @@ def load_inputs():
     params = cfrr.params_from_cfg_flat(ir["cfg"]["flat"])
     meshes = cfrr.load_skin_meshes(SKIN, skip_prefixes=("fview",))
     maps = {
-        "diffuse": cfrr.load_rgb(DECODE / "PV-Cop357_IronBeast2_Winter.png"),
-        "normal": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_N.PNG"),
-        "specular": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_S.PNG"),
-        "alpha": cfrr.load_rgb(MAPS / "Cop357_IronBeast2_Winter_A.PNG"),
+        "diffuse": cfrr.load_rgb(DECODE / "PV-Cop357_Dominator_Classic.png"),
+        "normal": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_N.PNG"),
+        "specular": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_S.PNG"),
+        "alpha": cfrr.load_rgb(MAPS / "Cop357_Dominator_Classic_A.PNG"),
         "cubemap": cfrr.dds_faces(MAPS / "LobbyCube.DDS"),
     }
     return ir, params, meshes, maps
