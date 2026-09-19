@@ -1131,10 +1131,10 @@ C1 shader family              PASS (software renderer cf_reference_renderer.py; 
 C2 directional cubemap        PASS (reflect/refract/rotY ray + DX face lookup on sphere/plane/mesh; no mean-cubemap)
 C3 Blender CF reference       PASS (5 fixed scenes + component decomposition; software-render equivalent, manifest records reason)
 Gate A                        PASS (6/6 behavioral checks: cube varies with normal 0.147, view-dependent corr -0.03, diffuse/spec/cube terms present and bounded, 3 UNKNOWNs declared)
-D material regions            TODO
-E upscale v2                  TODO
-F Source translator           TODO
-G material assignment         TODO
+D material regions            PASS (6 regions: 2 env_reflective_metal, warm_metal_dark, 2 dark, mid_surface; island merge coherent; preview saved)
+E upscale v2                  PASS (diffuse AI 4x cache -> 2048; normal renormalized; spec/alpha resize-only; lum drift 0.0000 on masks, originals preserved)
+F Source translator           PASS (source1_material_translator.py: 6 slots, envmap_metal uses engine env_cubemap + normalmapalphaenvmapmask — CF lobby cube never bound; base BGRA8888 alpha=phong mask, normal DXT5 alpha=env mask; tags preserved/approximated/lost/unsupported)
+G material assignment         PASS (build_mauser_vm.py --v2: per-tri slot names in SMD, 2767 tris match regions exactly; MDL contains 6 material names; geometry/rig/anim untouched; staged addon_v2 29 files, MIGI deploy deferred to Phase I)
 H1 Blender Source-like A/B    TODO
 H2 preview limitation report  TODO
 I CSGO runtime                TODO

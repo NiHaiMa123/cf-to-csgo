@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import os
 import shutil
 import subprocess
 import sys
@@ -28,6 +29,13 @@ ANIMS = SOURCE1 / "v_pist_glock18_anims"
 ISOLATED = OUT / "isolated_game" / "csgo"
 STAGING = WORK / "addon"
 LOG_DIR = OUT / "logs"
+
+# material v2 mode: --v2 / MAUSER_V2=1 uses material_v2 slots + per-tri
+# assignment; staging goes to addon_v2 and MIGI deploy is deferred to Phase I.
+V2 = "--v2" in sys.argv or os.environ.get("MAUSER_V2") == "1"
+V2_DIR = WORK / "material_v2" / "source_v2"
+V2_ASSIGN = WORK / "material_v2" / "g_material_assignments.json"
+STAGING_V2 = WORK / "addon_v2"
 
 PAYLOAD = WORK / "decode" / "reference_payload.json"
 SKIN = WORK / "decode" / "cf_skin_m1896_libra.json"
@@ -272,9 +280,15 @@ $animblocksize 32 nostall
 def build_materials():
     mat_dir = ISOLATED / "materials" / MAT_DIR_VMT
     mat_dir.mkdir(parents=True, exist_ok=True)
-    v7_dir = STAGING / "materials" / MAT_DIR_VMT
-    for source in v7_dir.glob(GUN_MAT + "*"):
-        shutil.copy2(source, mat_dir / source.name)
+    if V2:
+        for source in V2_DIR.glob("*.vmt"):
+            shutil.copy2(source, mat_dir / source.name)
+        for source in V2_DIR.glob("*.vtf"):
+            shutil.copy2(source, mat_dir / source.name)
+    else:
+        v7_dir = STAGING / "materials" / MAT_DIR_VMT
+        for source in v7_dir.glob(GUN_MAT + "*"):
+            shutil.copy2(source, mat_dir / source.name)
 
     def arm_diffuse(stem: str) -> Path:
         hd = ARMTEX / "up" / f"4x_{stem}.png"
@@ -311,16 +325,37 @@ def compile_models():
 
 
 def stage_and_deploy():
+    staging = STAGING_V2 if V2 else STAGING
     models_rel = Path("models/weapons")
     mats_rel = Path("materials") / MAT_DIR_VMT
-    stage_models = STAGING / models_rel
+    stage_models = staging / models_rel
     stage_models.mkdir(parents=True, exist_ok=True)
     for f in (ISOLATED / models_rel).glob("v_pist_glock18.*"):
         shutil.copy2(f, stage_models / f.name)
-    stage_mats = STAGING / mats_rel
+    stage_mats = staging / mats_rel
     stage_mats.mkdir(parents=True, exist_ok=True)
     for f in (ISOLATED / mats_rel).glob("*"):
         shutil.copy2(f, stage_mats / f.name)
+    if V2:
+        if (STAGING / "sound").is_dir():
+            for f in (STAGING / "sound").rglob("*.wav"):
+                rel = f.relative_to(STAGING)
+                dst = staging / rel
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, dst)
+        staged = {p.relative_to(staging).as_posix(): p
+                  for p in staging.rglob("*") if p.is_file()}
+        isolated = {p.relative_to(ISOLATED).as_posix(): p
+                    for p in ISOLATED.rglob("*") if p.is_file()
+                    and p.suffix in (".mdl", ".vvd", ".vtx", ".vtf", ".vmt",
+                                     ".phy", ".ani")}
+        mismatch = sorted(rel for rel in isolated.keys() & staged.keys()
+                          if sha256(staged[rel]) != sha256(isolated[rel]))
+        if mismatch:
+            raise RuntimeError(f"v2 staging mismatch: {mismatch}")
+        print(f"[mauser] v2 staged {len(staged)} files -> {staging}")
+        print("[mauser] v2 MIGI deploy deferred to Phase I")
+        return
     target = DEPLOY_ADDON
     for f in stage_models.glob("*"):
         dst = target / models_rel / f.name
@@ -354,6 +389,8 @@ def main() -> int:
 
     payload = json.loads(PAYLOAD.read_text(encoding="utf-8"))
     skin = json.loads(SKIN.read_text(encoding="utf-8"))
+    v2_assign = (json.loads(V2_ASSIGN.read_text(encoding="utf-8"))
+                 if V2 else {})
     armdump = json.loads(ARMDUMP.read_text(encoding="utf-8"))
     vt = json.loads(VM_TRANSFORM.read_text(encoding="utf-8"))
 
@@ -539,7 +576,10 @@ def main() -> int:
         for t in range(0, len(m["triangles"]), 3):
             a, b, c = m["triangles"][t:t + 3]
             order = [ids[a], ids[c], ids[b]] if APPLY_MIRROR else [ids[a], ids[b], ids[c]]
-            tris.append((GUN_MAT, order))
+            matname = GUN_MAT
+            if V2:
+                matname = v2_assign.get(m["name"], {}).get(str(t // 3), GUN_MAT)
+            tris.append((matname, order))
         print(f"[mauser] piece {m['name']}: {m['vertex_count']}v -> node {ni} "
               f"({nodes[ni]['name']})")
 

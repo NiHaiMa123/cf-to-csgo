@@ -1,0 +1,285 @@
+{
+ "size": [
+  2048,
+  2048
+ ],
+ "e1_diffuse": {
+  "original_preserved": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\diffuse_original.png",
+  "final": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\diffuse_2048.png",
+  "ai_upscale_used": true,
+  "source": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\texture\\up\\4x_PV-M1896_Libra.png",
+  "coverage": {
+   "before": {
+    "size": [
+     1024,
+     1024
+    ],
+    "lum_mean": 0.0712,
+    "histogram": [
+     701975,
+     156261,
+     64630,
+     58456,
+     36300,
+     18636,
+     6490,
+     2694,
+     1428,
+     886,
+     574,
+     179,
+     67,
+     0,
+     0,
+     0
+    ],
+    "coverage": {
+     "0.05": 0.3746,
+     "0.5": 0.003
+    }
+   },
+   "after": {
+    "size": [
+     2048,
+     2048
+    ],
+    "lum_mean": 0.0674,
+    "histogram": [
+     2806822,
+     678773,
+     241125,
+     225574,
+     142874,
+     55159,
+     20556,
+     9863,
+     5893,
+     3898,
+     2118,
+     844,
+     665,
+     131,
+     9,
+     0
+    ],
+    "coverage": {
+     "0.05": 0.3751,
+     "0.5": 0.0032
+    }
+   }
+  }
+ },
+ "e2_normal": {
+  "dst": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\normal_2048.png",
+  "size": [
+   2048,
+   2048
+  ],
+  "process": "decode->resize->renormalize->encode",
+  "coverage": {
+   "before": {
+    "size": [
+     1024,
+     1024
+    ],
+    "lum_mean": 0.5512,
+    "histogram": [
+     0,
+     253,
+     7304,
+     8221,
+     9796,
+     50315,
+     62895,
+     67534,
+     512122,
+     110367,
+     87504,
+     61724,
+     55077,
+     13437,
+     2024,
+     3
+    ],
+    "coverage": {
+     "0.05": 1.0,
+     "0.5": 0.8032
+    }
+   },
+   "after": {
+    "size": [
+     2048,
+     2048
+    ],
+    "lum_mean": 0.5479,
+    "histogram": [
+     0,
+     4,
+     24682,
+     34975,
+     40811,
+     121108,
+     317165,
+     291685,
+     2030268,
+     469985,
+     446967,
+     315298,
+     53729,
+     47613,
+     14,
+     0
+    ],
+    "coverage": {
+     "0.05": 1.0,
+     "0.5": 0.802
+    }
+   }
+  }
+ },
+ "e3": {
+  "specular": {
+   "dst": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\specular_2048.png",
+   "size": [
+    2048,
+    2048
+   ],
+   "resample": "1",
+   "blur": 0.0,
+   "coverage": {
+    "before": {
+     "size": [
+      1024,
+      1024
+     ],
+     "lum_mean": 0.1374,
+     "histogram": [
+      515120,
+      155791,
+      111411,
+      94740,
+      39513,
+      36689,
+      37702,
+      28838,
+      15329,
+      6617,
+      3272,
+      1839,
+      866,
+      465,
+      198,
+      186
+     ],
+     "coverage": {
+      "0.05": 0.5849,
+      "0.5": 0.0274
+     }
+    },
+    "after": {
+     "size": [
+      2048,
+      2048
+     ],
+     "lum_mean": 0.1374,
+     "histogram": [
+      2057681,
+      621888,
+      450428,
+      375407,
+      162035,
+      144523,
+      150979,
+      116966,
+      61007,
+      26216,
+      12963,
+      7246,
+      3619,
+      1824,
+      932,
+      590
+     ],
+     "coverage": {
+      "0.05": 0.589,
+      "0.5": 0.0273
+     }
+    }
+   }
+  },
+  "alpha": {
+   "dst": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\alpha_2048.png",
+   "size": [
+    2048,
+    2048
+   ],
+   "resample": "1",
+   "blur": 0.0,
+   "coverage": {
+    "before": {
+     "size": [
+      1024,
+      1024
+     ],
+     "lum_mean": 0.9355,
+     "histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      792507,
+      256069
+     ],
+     "coverage": {
+      "0.05": 1.0,
+      "0.5": 1.0
+     }
+    },
+    "after": {
+     "size": [
+      2048,
+      2048
+     ],
+     "lum_mean": 0.9355,
+     "histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3170414,
+      1023890
+     ],
+     "coverage": {
+      "0.05": 1.0,
+      "0.5": 1.0
+     }
+    }
+   }
+  }
+ },
+ "rules": {
+  "diffuse": "AI upscale ok; original preserved; atlas/UV unchanged",
+  "normal": "decode->resize->renormalize->encode; no generative AI",
+  "spec/alpha/masks": "resize only; histogram+coverage compared"
+ }
+}

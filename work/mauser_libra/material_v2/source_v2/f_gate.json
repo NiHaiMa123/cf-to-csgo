@@ -1,0 +1,12 @@
+{
+ "passed": true,
+ "problems": [],
+ "slots": {
+  "cf_mauser_libra_r0": "controlled_phong",
+  "cf_mauser_libra_r1": "envmap_metal",
+  "cf_mauser_libra_r2": "warm_phong",
+  "cf_mauser_libra_r3": "controlled_phong",
+  "cf_mauser_libra_r4": "envmap_metal",
+  "cf_mauser_libra_r5": "matte_dark"
+ }
+}

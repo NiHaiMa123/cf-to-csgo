@@ -11,7 +11,12 @@ SMD MODEL v_pist_glock18_anims\glock_firelast.smd
 SMD MODEL v_pist_glock18_anims\glock_draw.smd
 SMD MODEL v_pist_glock18_anims\glock_reload.smd
 SMD MODEL v_pist_glock18_anims\lookat01.smd
-Processing LOD for material: cf_mauser_libra
+Processing LOD for material: cf_mauser_libra_r5
+Processing LOD for material: cf_mauser_libra_r3
+Processing LOD for material: cf_mauser_libra_r0
+Processing LOD for material: cf_mauser_libra_r1
+Processing LOD for material: cf_mauser_libra_r2
+Processing LOD for material: cf_mauser_libra_r4
 Processing LOD for material: cf_nini_hand_gr
 Processing LOD for material: cf_nini_arm_gr
 ---------------------
@@ -138,65 +143,65 @@ animations  183572 bytes (6 anims) (1091 frames) [0:10]
 Building sequence index remapping table...
 No re-ordering required.
 sequences     2632 bytes (6 seq) 
-hdr@0517F6C4=72E00200
+hdr@0577F14C=79740200
 ik/pose        164 bytes
 eyeballs         0 bytes (0 eyeballs)
 flexes           0 bytes (0 flexes)
-hdr@0517F6C4=72E00200
-textures       204 bytes
+hdr@0577F14C=79740200
+textures       532 bytes
 keyvalues      116 bytes
-hdr@0517F6BC=72E00398
-hdr@0517F6C4=72E00200
+hdr@0577F144=79740398
+hdr@0577F14C=79740200
 bone transforms    15568 bytes
 bone flex driver       0 bytes
 bodygroup presets       0 bytes
 collision        0 bytes
-total       234544
+total       235552
 ---------------------
 writing models/weapons\v_pist_glock18.ani:
 blocks	         8
 total       184360
 ---------------------
 writing D:\project\cf_to_csgo\work\mauser_libra\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.vvd:
-vertices    450240 bytes (9380 vertices)
-tangents    150080 bytes (9380 vertices)
-total       600384 bytes
+vertices    471696 bytes (9827 vertices)
+tangents    157232 bytes (9827 vertices)
+total       628992 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\mauser_libra\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.sw.vtx":
 body parts:         8 bytes
 models:            20 bytes
 model LODs:        12 bytes
-meshes:            27 bytes
-strip groups:      99 bytes
-strips:           105 bytes
-verts:          84420 bytes
+meshes:            72 bytes
+strip groups:     264 bytes
+strips:           280 bytes
+verts:          88443 bytes
 indices:        69138 bytes
 bone changes:       8 bytes
-everything:    153861 bytes
+everything:    158269 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\mauser_libra\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.dx80.vtx":
 body parts:         8 bytes
 models:            20 bytes
 model LODs:        12 bytes
-meshes:            27 bytes
-strip groups:      99 bytes
-strips:           175 bytes
-verts:          84474 bytes
+meshes:            72 bytes
+strip groups:     264 bytes
+strips:           350 bytes
+verts:          88497 bytes
 indices:        69138 bytes
-bone changes:     488 bytes
-everything:    154465 bytes
+bone changes:     696 bytes
+everything:    159081 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\mauser_libra\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.dx90.vtx":
 body parts:         8 bytes
 models:            20 bytes
 model LODs:        12 bytes
-meshes:            27 bytes
-strip groups:      99 bytes
-strips:           105 bytes
-verts:          84420 bytes
+meshes:            72 bytes
+strip groups:     264 bytes
+strips:           280 bytes
+verts:          88443 bytes
 indices:        69138 bytes
-bone changes:     440 bytes
-everything:    154293 bytes
+bone changes:     648 bytes
+everything:    158909 bytes
 WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
 WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
 
