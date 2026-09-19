@@ -36,6 +36,14 @@ ENV_STRENGTH_GAIN = 0.5
 # (phong off; diffuse is ~unlit via lightwarp floor, gold sheen comes
 # from the static baked env cube only)
 PHONG_ENABLED = False
+# UnlitGeneric output (tulong-class): everything baked into the base
+# texture at build time - diffuse shading + env reflection + spec sheen
+UNLIT_BAKE = True
+BAKE_LIGHT_DIR = np.array((0.4, 0.6, 0.7), dtype=np.float32)
+BAKE_AMBIENT = 0.85          # flat diffuse multiplier floor
+BAKE_SHADE = 0.3             # extra N.L shading range on top of ambient
+ENV_BAKE_GAIN = 0.5          # env reflection energy folded into base
+SPEC_BAKE_GAIN = 0.4         # specular sheen energy folded into base
 # shared lightwarp: compress diffuse lit/unlit gap to the CFG-derived
 # lit fraction (CF viewmodel lighting is weakly directional)
 LIGHT_INFLUENCE_SCALE = 0.25
@@ -208,6 +216,82 @@ def bake_env_cube(dds_path, transform_y_deg: float,
     return out_vtf
 
 
+# ------------------------------------------------------------- unlit bake
+
+def bake_unlit_base(maps: dict, cfg_flat: dict, dds_path,
+                    transform_y_deg: float, size: tuple[int, int],
+                    out_png) -> dict:
+    """Fold the CF shading terms into a single unlit base texture.
+
+    Per texel (canonical straight-on view, V=+Z tangent):
+      base   = diffuse * (BAKE_AMBIENT + BAKE_SHADE * N.L)
+      + env  = cube(reflect) * alpha.B * EnvCubeMapBrightness * gain
+      + sheen= _S * alpha.G * (N.H)^spec_exp * gain
+    The result is a bright "pre-shaded" diffuse, same class of texture
+    the kukri mod shows 1:1 through UnlitGeneric.
+    """
+    import cf_reference_renderer as cfrr
+
+    w, h = size
+    dif = np.asarray(Image.open(maps["diffuse"]).convert("RGB")
+                     .resize((w, h)), dtype=np.float32) / 255.0
+    n = (np.asarray(Image.open(maps["normal"]).convert("RGB")
+                    .resize((w, h)), dtype=np.float32) / 255.0
+         if maps.get("normal") else np.full((h, w, 3), 0.5, np.float32))
+    spec = (np.asarray(Image.open(maps["specular"]).convert("RGB")
+                       .resize((w, h)), dtype=np.float32) / 255.0
+            if maps.get("specular") else np.zeros((h, w, 3), np.float32))
+    alpha = (np.asarray(Image.open(maps["alpha"]).convert("RGB")
+                        .resize((w, h)), dtype=np.float32) / 255.0
+             if maps.get("alpha") else np.zeros((h, w, 3), np.float32))
+
+    nrm = n * 2.0 - 1.0
+    nrm /= np.maximum(np.linalg.norm(nrm, axis=2, keepdims=True), 1e-6)
+    a_g = alpha[:, :, 1:2]
+    a_b = alpha[:, :, 2:3]
+    L = BAKE_LIGHT_DIR / np.linalg.norm(BAKE_LIGHT_DIR)
+    env_b = float(cfg_flat.get("EnvCubeMapBrightness", 1.0) or 1.0)
+    spec_power = float(cfg_flat.get("SpecularPower", 1.0) or 1.0)
+    spec_exp = max(2.0, spec_power * 4.0)
+
+    base = dif * (BAKE_AMBIENT + BAKE_SHADE
+                  * np.clip(nrm @ L, 0.0, 1.0))[:, :, None]
+
+    # env: reflect the canonical view off the tangent normal, sample the
+    # CF cube with the transform applied (same rule as bake_env_cube)
+    cf_faces = cfrr.dds_faces(dds_path)
+    view = np.array((0.0, 0.0, 1.0), dtype=np.float32)
+    ray = 2.0 * nrm[:, :, 2:3] * nrm - view          # reflect(-V, N)
+    ray /= np.maximum(np.linalg.norm(ray, axis=2, keepdims=True), 1e-6)
+    ray = cfrr.rot_y(ray.reshape(-1, 3), transform_y_deg)
+    env_rgb = cfrr.cube_sample(cf_faces, ray).reshape(h, w, 3)
+    env_term = env_rgb * a_b * env_b * ENV_BAKE_GAIN
+
+    # sheen: Blinn (N.H)^exp against the shared bake light
+    hv = L + view
+    hv /= np.linalg.norm(hv)
+    sheen = np.clip(nrm @ hv, 0.0, 1.0)[:, :, None] ** spec_exp
+    spec_term = spec * a_g * sheen * SPEC_BAKE_GAIN
+
+    out = np.clip(base + env_term + spec_term, 0.0, 1.0)
+    Image.fromarray(np.uint8(np.round(out * 255.0))).save(out_png)
+    lum = out @ LUM_WEIGHTS
+    return {"baked_lum_mean": round(float(lum.mean()), 4),
+            "baked_lum_p90": round(float(np.percentile(lum, 90)), 4),
+            "env_term_mean": round(float(env_term.mean()), 4),
+            "spec_term_mean": round(float(spec_term.mean()), 4),
+            "gains": {"env": ENV_BAKE_GAIN, "spec": SPEC_BAKE_GAIN,
+                      "ambient": BAKE_AMBIENT, "shade": BAKE_SHADE}}
+
+
+def unlit_vmt(material_root: str, texture_name: str) -> str:
+    """Tulong-class material: texture shown 1:1, zero lighting math."""
+    return "\n".join([
+        '"UnlitGeneric"', "{",
+        f'\t"$basetexture" "{material_root}/{texture_name}"',
+        '\t"$nocull" "1"', "}", ""])
+
+
 def lightwarp_terms(cfg_flat: dict) -> tuple[Image.Image, float]:
     """Shared 256x16 lightwarp ramp; dark floor = 1 - CFG lit fraction."""
     lit = float(cfg_flat.get("LightBrightness", 0.5) or 0.5)
@@ -299,10 +383,13 @@ def translate(ir: dict, regions_result: dict, maps: dict,
         exponent, boost = phong_terms(cfg_flat, tint, s["strategy"])
         if region["feature_means"].get("diffuse_lum", 1.0) < DARK_REGION_LUM:
             exponent = min(exponent, DARK_REGION_EXP_CAP)
-        vmt = vertexlit_vmt(material_root, base_name, normal_name, slot,
-                            s["strategy"], cfg_flat, tint, env_t,
-                            exponent, boost, lightwarp_name,
-                            envmap_texture)
+        if UNLIT_BAKE:
+            vmt = unlit_vmt(material_root, base_name)
+        else:
+            vmt = vertexlit_vmt(material_root, base_name, normal_name, slot,
+                                s["strategy"], cfg_flat, tint, env_t,
+                                exponent, boost, lightwarp_name,
+                                envmap_texture)
         vmts[slot] = vmt
         slots.append({
             "region_id": region["region_id"],

@@ -1,12 +1,5 @@
-"VertexLitGeneric"
+"UnlitGeneric"
 {
 	"$basetexture" "models/weapons/v_models/cf_mauser/cf_mauser_libra"
-	"$bumpmap" "models/weapons/v_models/cf_mauser/cf_mauser_libra_n"
-	"$halflambert" "1"
-	"$lightwarptexture" "models/weapons/v_models/cf_mauser/cf_mauser_libra_lightwarp"
-	"$phong" "0"
-	"$envmap" "models/weapons/v_models/cf_mauser/cf_env_cube"
-	"$normalmapalphaenvmapmask" "1"
-	"$envmaptint" "[0.085 0.065 0.045]"
-	"$nocull" "0"
+	"$nocull" "1"
 }

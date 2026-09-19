@@ -159,6 +159,18 @@
   ],
   "unsupported_by_source1": []
  },
+ "unlit_bake": {
+  "baked_lum_mean": 0.1926,
+  "baked_lum_p90": 0.5351,
+  "env_term_mean": 0.0804,
+  "spec_term_mean": 0.0366,
+  "gains": {
+   "env": 0.5,
+   "spec": 0.4,
+   "ambient": 0.85,
+   "shade": 0.3
+  }
+ },
  "vtf": {
   "base": {
    "w": 2048,
@@ -167,30 +179,6 @@
    "flags": "0x2012",
    "frames": 1,
    "mips": 12
-  },
-  "normal": {
-   "w": 2048,
-   "h": 2048,
-   "fmt": 15,
-   "flags": "0x2092",
-   "frames": 1,
-   "mips": 12
-  },
-  "lightwarp": {
-   "w": 256,
-   "h": 16,
-   "fmt": 3,
-   "flags": "0x30d",
-   "frames": 1,
-   "mips": 1
-  },
-  "env_cube": {
-   "w": 256,
-   "h": 256,
-   "fmt": 12,
-   "flags": "0x4000",
-   "frames": 1,
-   "mips": 1
   }
  }
 }

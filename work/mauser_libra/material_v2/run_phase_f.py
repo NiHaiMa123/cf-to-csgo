@@ -83,41 +83,50 @@ def main() -> int:
         "alpha": UP / "alpha_2048.png",
     }
     transform_y = float(ir["cfg"]["flat"].get("CubeMapTransformY", 0.0) or 0.0)
-    s1t.bake_env_cube(CUBE_DDS, transform_y, OUT / f"{ENV_CUBE_NAME}.vtf")
     res = s1t.translate(ir, regions, maps, MATERIAL_ROOT, BASE_NAME,
                         NORMAL_NAME, OUT, SIZE, envmap_texture=ENV_CUBE_NAME)
 
-    # composite PNGs -> VTFs
-    base = Image.open(UP / "diffuse_2048.png").convert("RGB")
-    phong = Image.open(OUT / "mask_phong.png").convert("L")
-    base_rgba = base.copy()
-    base_rgba.putalpha(phong)
-    base_png = OUT / f"{BASE_NAME}.png"
-    base_rgba.save(base_png)
-    nrm = Image.open(UP / "normal_2048.png").convert("RGB")
-    env = Image.open(OUT / "mask_env.png").convert("L")
-    nrm_rgba = nrm.copy()
-    nrm_rgba.putalpha(env)
-    nrm_png = OUT / f"{NORMAL_NAME}.png"
-    nrm_rgba.save(nrm_png)
-    vtfcmd(base_png, OUT / f"{BASE_NAME}.vtf", "bgra8888",
+    if s1t.UNLIT_BAKE:
+        # everything folded into one bright base texture (tulong class)
+        bake_stats = s1t.bake_unlit_base(
+            maps, ir["cfg"]["flat"], CUBE_DDS, transform_y, SIZE,
+            OUT / f"{BASE_NAME}.png")
+        res["report"]["unlit_bake"] = bake_stats
+        for stale in (NORMAL_NAME, f"{BASE_NAME}_lightwarp", ENV_CUBE_NAME):
+            (OUT / f"{stale}.vtf").unlink(missing_ok=True)
+    else:
+        s1t.bake_env_cube(CUBE_DDS, transform_y, OUT / f"{ENV_CUBE_NAME}.vtf")
+        base = Image.open(UP / "diffuse_2048.png").convert("RGB")
+        phong = Image.open(OUT / "mask_phong.png").convert("L")
+        base_rgba = base.copy()
+        base_rgba.putalpha(phong)
+        base_rgba.save(OUT / f"{BASE_NAME}.png")
+        nrm = Image.open(UP / "normal_2048.png").convert("RGB")
+        env = Image.open(OUT / "mask_env.png").convert("L")
+        nrm_rgba = nrm.copy()
+        nrm_rgba.putalpha(env)
+        nrm_rgba.save(OUT / f"{NORMAL_NAME}.png")
+        vtfcmd(OUT / f"{NORMAL_NAME}.png", OUT / f"{NORMAL_NAME}.vtf", "dxt5",
+               ("TRILINEAR", "ANISOTROPIC", "NORMAL"))
+        vtfcmd(OUT / f"{BASE_NAME}_lightwarp.png",
+               OUT / f"{BASE_NAME}_lightwarp.vtf", "bgr888",
+               ("POINTSAMPLE", "CLAMPS", "CLAMPT", "NOMIP", "NOLOD"),
+               nomip=True)
+    vtfcmd(OUT / f"{BASE_NAME}.png", OUT / f"{BASE_NAME}.vtf", "bgra8888",
            ("TRILINEAR", "ANISOTROPIC"))
-    vtfcmd(nrm_png, OUT / f"{NORMAL_NAME}.vtf", "dxt5",
-           ("TRILINEAR", "ANISOTROPIC", "NORMAL"))
-    lw_png = OUT / f"{BASE_NAME}_lightwarp.png"
-    vtfcmd(lw_png, OUT / f"{BASE_NAME}_lightwarp.vtf", "bgr888",
-           ("POINTSAMPLE", "CLAMPS", "CLAMPT", "NOMIP", "NOLOD"),
-           nomip=True)
     for slot, vmt in res["vmts"].items():
         (OUT / f"{slot}.vmt").write_text(vmt, encoding="utf-8")
     # fallback material for any triangle outside the region table
-    (OUT / f"{BASE_NAME}.vmt").write_text(
-        s1t.vertexlit_vmt(MATERIAL_ROOT, BASE_NAME, NORMAL_NAME, BASE_NAME,
-                          "controlled_phong", ir["cfg"]["flat"],
-                          res["report"]["phong_tint"], None,
-                          lightwarp_name=f"{BASE_NAME}_lightwarp",
-                          envmap_texture=ENV_CUBE_NAME),
-        encoding="utf-8")
+    if s1t.UNLIT_BAKE:
+        fallback_vmt = s1t.unlit_vmt(MATERIAL_ROOT, BASE_NAME)
+    else:
+        fallback_vmt = s1t.vertexlit_vmt(
+            MATERIAL_ROOT, BASE_NAME, NORMAL_NAME, BASE_NAME,
+            "controlled_phong", ir["cfg"]["flat"],
+            res["report"]["phong_tint"], None,
+            lightwarp_name=f"{BASE_NAME}_lightwarp",
+            envmap_texture=ENV_CUBE_NAME)
+    (OUT / f"{BASE_NAME}.vmt").write_text(fallback_vmt, encoding="utf-8")
 
     # Phase G assignment table: piece -> local tri -> slot material
     region_to_slot = {s["region_id"]: s["material"] for s in res["slots"]}
@@ -127,11 +136,12 @@ def main() -> int:
     (MV2 / "g_material_assignments.json").write_text(
         json.dumps(assignments, indent=1), encoding="utf-8")
 
-    res["report"]["vtf"] = {
-        "base": vtf_header(OUT / f"{BASE_NAME}.vtf"),
-        "normal": vtf_header(OUT / f"{NORMAL_NAME}.vtf"),
-        "lightwarp": vtf_header(OUT / f"{BASE_NAME}_lightwarp.vtf"),
-        "env_cube": vtf_header(OUT / f"{ENV_CUBE_NAME}.vtf")}
+    res["report"]["vtf"] = {"base": vtf_header(OUT / f"{BASE_NAME}.vtf")}
+    if not s1t.UNLIT_BAKE:
+        res["report"]["vtf"].update({
+            "normal": vtf_header(OUT / f"{NORMAL_NAME}.vtf"),
+            "lightwarp": vtf_header(OUT / f"{BASE_NAME}_lightwarp.vtf"),
+            "env_cube": vtf_header(OUT / f"{ENV_CUBE_NAME}.vtf")})
     (OUT / "translation_report.json").write_text(
         json.dumps(res["report"], indent=1, ensure_ascii=False), encoding="utf-8")
 

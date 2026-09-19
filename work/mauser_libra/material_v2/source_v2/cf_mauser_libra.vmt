@@ -1,9 +1,5 @@
-"VertexLitGeneric"
+"UnlitGeneric"
 {
 	"$basetexture" "models/weapons/v_models/cf_mauser/cf_mauser_libra"
-	"$bumpmap" "models/weapons/v_models/cf_mauser/cf_mauser_libra_n"
-	"$halflambert" "1"
-	"$lightwarptexture" "models/weapons/v_models/cf_mauser/cf_mauser_libra_lightwarp"
-	"$phong" "0"
-	"$nocull" "0"
+	"$nocull" "1"
 }
