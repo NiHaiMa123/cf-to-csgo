@@ -1,0 +1,294 @@
+{
+ "size": [
+  2048,
+  2048
+ ],
+ "e1_diffuse": {
+  "original_preserved": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\material_v2\\upscale\\diffuse_original.png",
+  "final": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\material_v2\\upscale\\diffuse_2048.png",
+  "ai_upscale_used": false,
+  "ai_rejected_reason": "cached AI 4x over-enhanced engraved pattern contrast (fish-scale artifact); non-generative resize preserves semantics",
+  "ai_cache_checked": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\texture\\up\\4x_PV-Cop357_IronBeast2_Winter.png",
+  "coverage": {
+   "before": {
+    "size": [
+     1024,
+     1024
+    ],
+    "lum_mean": 0.2331,
+    "histogram": [
+     0,
+     375159,
+     102858,
+     114590,
+     144745,
+     159906,
+     76615,
+     37618,
+     18949,
+     10497,
+     5254,
+     2385,
+     0,
+     0,
+     0,
+     0
+    ],
+    "coverage": {
+     "0.05": 1.0,
+     "0.5": 0.0354
+    }
+   },
+   "after": {
+    "size": [
+     2048,
+     2048
+    ],
+    "lum_mean": 0.2331,
+    "histogram": [
+     3361,
+     1484616,
+     429606,
+     456843,
+     576046,
+     633975,
+     311017,
+     149949,
+     77192,
+     42799,
+     21614,
+     7081,
+     204,
+     1,
+     0,
+     0
+    ],
+    "coverage": {
+     "0.05": 0.9998,
+     "0.5": 0.0355
+    }
+   }
+  },
+  "dst": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\material_v2\\upscale\\diffuse_2048.png",
+  "size": [
+   2048,
+   2048
+  ],
+  "resample": "1"
+ },
+ "e2_normal": {
+  "dst": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\material_v2\\upscale\\normal_2048.png",
+  "size": [
+   2048,
+   2048
+  ],
+  "process": "decode->resize->renormalize->encode",
+  "blur": 3.5,
+  "blur_reason": "high-frequency bumps produced speckle (blender_nonormal_*.png evidence)",
+  "coverage": {
+   "before": {
+    "size": [
+     1024,
+     1024
+    ],
+    "lum_mean": 0.5433,
+    "histogram": [
+     0,
+     95,
+     4658,
+     8647,
+     14546,
+     27881,
+     64346,
+     133762,
+     316882,
+     339525,
+     67708,
+     39455,
+     20824,
+     10206,
+     41,
+     0
+    ],
+    "coverage": {
+     "0.05": 1.0,
+     "0.5": 0.7578
+    }
+   },
+   "after": {
+    "size": [
+     2048,
+     2048
+    ],
+    "lum_mean": 0.5452,
+    "histogram": [
+     0,
+     6,
+     17693,
+     27497,
+     43422,
+     92463,
+     239484,
+     529463,
+     1369821,
+     1339893,
+     285820,
+     147482,
+     68380,
+     32819,
+     61,
+     0
+    ],
+    "coverage": {
+     "0.05": 1.0,
+     "0.5": 0.7735
+    }
+   }
+  }
+ },
+ "e3": {
+  "specular": {
+   "dst": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\material_v2\\upscale\\specular_2048.png",
+   "size": [
+    2048,
+    2048
+   ],
+   "resample": "1",
+   "blur": 0.0,
+   "coverage": {
+    "before": {
+     "size": [
+      1024,
+      1024
+     ],
+     "lum_mean": 0.1853,
+     "histogram": [
+      220857,
+      162451,
+      140762,
+      169131,
+      203762,
+      97380,
+      36086,
+      14862,
+      3107,
+      178,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "coverage": {
+      "0.05": 0.8164,
+      "0.5": 0.0031
+     }
+    },
+    "after": {
+     "size": [
+      2048,
+      2048
+     ],
+     "lum_mean": 0.1853,
+     "histogram": [
+      889536,
+      654253,
+      550349,
+      680777,
+      817331,
+      383325,
+      145606,
+      60243,
+      12175,
+      709,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "coverage": {
+      "0.05": 0.8171,
+      "0.5": 0.0031
+     }
+    }
+   }
+  },
+  "alpha": {
+   "dst": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\material_v2\\upscale\\alpha_2048.png",
+   "size": [
+    2048,
+    2048
+   ],
+   "resample": "1",
+   "blur": 0.0,
+   "coverage": {
+    "before": {
+     "size": [
+      1024,
+      1024
+     ],
+     "lum_mean": 0.9388,
+     "histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      281779,
+      766797
+     ],
+     "coverage": {
+      "0.05": 1.0,
+      "0.5": 1.0
+     }
+    },
+    "after": {
+     "size": [
+      2048,
+      2048
+     ],
+     "lum_mean": 0.9388,
+     "histogram": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1126980,
+      3067324
+     ],
+     "coverage": {
+      "0.05": 1.0,
+      "0.5": 1.0
+     }
+    }
+   }
+  }
+ },
+ "rules": {
+  "diffuse": "AI upscale ok; original preserved; atlas/UV unchanged",
+  "normal": "decode->resize->renormalize->encode; no generative AI",
+  "spec/alpha/masks": "resize only; histogram+coverage compared"
+ }
+}

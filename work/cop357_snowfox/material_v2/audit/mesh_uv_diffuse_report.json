@@ -1,0 +1,81 @@
+{
+ "diffuse": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\PV-Cop357_IronBeast2_Winter.png",
+ "diffuse_size": [
+  1024,
+  1024
+ ],
+ "meshes": [
+  {
+   "name": "bullet003",
+   "triangles": 60,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 50.05,
+   "sampled_lum_min": 20.02,
+   "sampled_lum_max": 127.76
+  },
+  {
+   "name": "bullet01",
+   "triangles": 60,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 50.05,
+   "sampled_lum_min": 20.02,
+   "sampled_lum_max": 127.76
+  },
+  {
+   "name": "bullet002",
+   "triangles": 60,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 50.05,
+   "sampled_lum_min": 20.02,
+   "sampled_lum_max": 127.76
+  },
+  {
+   "name": "bullet004",
+   "triangles": 60,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 50.05,
+   "sampled_lum_min": 20.02,
+   "sampled_lum_max": 127.76
+  },
+  {
+   "name": "Cop357Derringer_RoyalDragon",
+   "triangles": 3708,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 60.34,
+   "sampled_lum_min": 17.16,
+   "sampled_lum_max": 181.0
+  },
+  {
+   "name": "RoyalDragon6-reload",
+   "triangles": 704,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 0,
+   "sampled_lum_mean": 58.79,
+   "sampled_lum_min": 20.02,
+   "sampled_lum_max": 174.52
+  }
+ ],
+ "total": {
+  "triangles": 4652,
+  "uv_out_of_range": 0,
+  "centroid_on_near_black": 0,
+  "near_black_fraction": 0.0
+ },
+ "a2_gate": {
+  "passed": true,
+  "problems": [],
+  "requires_visual_review": true,
+  "visual_evidence": [
+   "emission_reference.png",
+   "uv_overlay.png"
+  ]
+ },
+ "artifacts": {
+  "uv_overlay": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\material_v2\\audit\\uv_overlay.png"
+ }
+}

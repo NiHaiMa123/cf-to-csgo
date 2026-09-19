@@ -1,0 +1,12 @@
+{
+ "passed": true,
+ "problems": [],
+ "slots": {
+  "cf_cop357_winter_r0": "controlled_phong",
+  "cf_cop357_winter_r1": "controlled_phong",
+  "cf_cop357_winter_r2": "controlled_phong",
+  "cf_cop357_winter_r3": "controlled_phong",
+  "cf_cop357_winter_r4": "controlled_phong",
+  "cf_cop357_winter_r5": "controlled_phong"
+ }
+}

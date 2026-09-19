@@ -1,0 +1,90 @@
+{
+ "generated_at_utc": "2026-09-19T15:42:05.962152+00:00",
+ "weapon": "COP357-雪域霜狐",
+ "standard_name": "Cop357_IronBeast2_Winter",
+ "files": [
+  {
+   "path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB",
+   "size": 162815,
+   "sha256": "782b462940e129c705e058d0d9326e202d07c3d3bb477c3c4a88d165ab131632",
+   "rez_archive": "rez4/RF016.REZ",
+   "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB",
+   "payload_sha256": null
+  },
+  {
+   "path": "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX",
+   "size": 524452,
+   "sha256": "50517656933211ed043a6710873672a1e31b8f7e446ccc5e11045d8f336e8ba1",
+   "rez_archive": "rez6/RF017.REZ",
+   "rez_path": "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX",
+   "payload_sha256": null
+  },
+  {
+   "path": "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG",
+   "size": 4591,
+   "sha256": "2d65a4c9ab3bd8bb6806598775d91183a383b39377e47ac40e5d1aad0492117c",
+   "rez_archive": "rez6/RF017.REZ",
+   "rez_path": "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG",
+   "payload_sha256": null
+  },
+  {
+   "path": "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG",
+   "size": 1233676,
+   "sha256": "10ca9137ee998205eab0bd29f1704aaf2880b15281898383a9b348516423c4ea",
+   "rez_archive": "rez6/RF017.REZ",
+   "rez_path": "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG",
+   "payload_sha256": null
+  },
+  {
+   "path": "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG",
+   "size": 1340478,
+   "sha256": "72f367f54070d97b596fec38bab72830f939e5535035d06204434ff089c67732",
+   "rez_archive": "rez6/RF017.REZ",
+   "rez_path": "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG",
+   "payload_sha256": null
+  },
+  {
+   "path": "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG",
+   "size": 474590,
+   "sha256": "f31bf45d0cd236c1426c71e02627bfa7d3f5fbfabb4785de6025e6f246bc6893",
+   "rez_archive": "rez6/RF017.REZ",
+   "rez_path": "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG",
+   "payload_sha256": null
+  },
+  {
+   "path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+   "size": 196736,
+   "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+   "rez_archive": "rez/rf017.rez",
+   "rez_path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+   "payload_sha256": null
+  },
+  {
+   "path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB",
+   "size": 104165,
+   "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+   "rez_archive": "rez4/RF016.REZ",
+   "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB",
+   "payload_sha256": null
+  },
+  {
+   "path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB",
+   "size": 104165,
+   "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+   "rez_archive": "rez4/RF016.REZ",
+   "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB",
+   "payload_sha256": null
+  },
+  {
+   "path": "ModelTextures/WEAPONS/QV-Cop357_IronBeast2_Winter.DTX",
+   "size": 32932,
+   "sha256": "10ef6329c2ad1301c283f71f9ab330b0039a7ea08e4d9a0a54e786452f166052",
+   "rez_archive": "rez6/RF017.REZ",
+   "rez_path": "ModelTextures/WEAPONS/QV-Cop357_IronBeast2_Winter.DTX",
+   "payload_sha256": null
+  }
+ ],
+ "missing": [
+  "Models/WEAPONS/QV-Cop357_IronBeast2_Winter.ltb"
+ ]
+}

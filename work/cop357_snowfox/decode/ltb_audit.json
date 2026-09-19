@@ -1,0 +1,233 @@
+{
+  "header": {
+    "file_type": 1,
+    "ltb_header_version": 9,
+    "model_file_version": 25,
+    "allocs": {
+      "nKeyFrames": 244,
+      "nParentAnims": 6,
+      "nNodes": 52,
+      "nPieces": 8,
+      "nChildModels": 1,
+      "nTris": 5986,
+      "nVerts": 3454,
+      "nVertexWeights": 3864,
+      "nLODs": 8,
+      "nSockets": 1,
+      "nWeightSets": 1,
+      "nStrings": 74,
+      "StringLengths": 1156,
+      "VertAnimDataSize": 0,
+      "nAnimData": 355264
+    }
+  },
+  "n_nodes": 52,
+  "n_clips": 6,
+  "clip_summary": [
+    {
+      "name": "idle_0",
+      "n_keyframes": 91,
+      "duration_ms": 2000,
+      "fps": 45.0,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "end"
+        },
+        {
+          "frame": 90,
+          "time_ms": 2000,
+          "label": "end"
+        }
+      ]
+    },
+    {
+      "name": "prefire",
+      "n_keyframes": 16,
+      "duration_ms": 120,
+      "fps": 125.0,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "end"
+        },
+        {
+          "frame": 15,
+          "time_ms": 120,
+          "label": "end"
+        }
+      ]
+    },
+    {
+      "name": "fire",
+      "n_keyframes": 16,
+      "duration_ms": 120,
+      "fps": 125.0,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "end"
+        },
+        {
+          "frame": 15,
+          "time_ms": 120,
+          "label": "end"
+        }
+      ]
+    },
+    {
+      "name": "reload",
+      "n_keyframes": 70,
+      "duration_ms": 1700,
+      "fps": 40.588235294117645,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 1,
+          "time_ms": 24,
+          "label": "begin"
+        },
+        {
+          "frame": 7,
+          "time_ms": 172,
+          "label": "WeaponClipOut"
+        },
+        {
+          "frame": 11,
+          "time_ms": 271,
+          "label": "reload"
+        },
+        {
+          "frame": 44,
+          "time_ms": 1084,
+          "label": "WeaponClipIn"
+        },
+        {
+          "frame": 52,
+          "time_ms": 1281,
+          "label": "WeaponReload"
+        },
+        {
+          "frame": 58,
+          "time_ms": 1429,
+          "label": "end"
+        }
+      ]
+    },
+    {
+      "name": "run",
+      "n_keyframes": 31,
+      "duration_ms": 585,
+      "fps": 51.282051282051285,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "end"
+        },
+        {
+          "frame": 30,
+          "time_ms": 585,
+          "label": "end"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "n_keyframes": 20,
+      "duration_ms": 400,
+      "fps": 47.5,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "Extra01SoundName"
+        },
+        {
+          "frame": 1,
+          "time_ms": 21,
+          "label": "end"
+        },
+        {
+          "frame": 19,
+          "time_ms": 400,
+          "label": "end"
+        }
+      ]
+    }
+  ],
+  "node_names": [
+    "Scene Root",
+    "FvARM-bone",
+    "FvARM-bone Pelvis",
+    "FvARM-bone Spine",
+    "FvARM-bone Spine1",
+    "FvARM-bone Neck",
+    "FvARM-bone L Clavicle",
+    "FvARM-bone L UpperArm",
+    "FvARM-bone L ForeArm",
+    "FvARM-bone L Hand",
+    "FvARM-bone L Finger0",
+    "FvARM-bone L Finger01",
+    "FvARM-bone L Finger02",
+    "FvARM-bone L Finger1",
+    "FvARM-bone L Finger11",
+    "FvARM-bone L Finger12",
+    "FvARM-bone L Finger2",
+    "FvARM-bone L Finger21",
+    "FvARM-bone L Finger22",
+    "FvARM-bone L Finger3",
+    "FvARM-bone L Finger31",
+    "FvARM-bone L Finger32",
+    "FvARM-bone L Finger4",
+    "FvARM-bone L Finger41",
+    "FvARM-bone L Finger42",
+    "FvARM-bone L ForeTwist",
+    "FvARM-bone R Clavicle",
+    "FvARM-bone R UpperArm",
+    "FvARM-bone R ForeArm",
+    "FvARM-bone R Hand",
+    "FvARM-bone R Finger0",
+    "FvARM-bone R Finger01",
+    "FvARM-bone R Finger02",
+    "FvARM-bone R Finger1",
+    "FvARM-bone R Finger11",
+    "FvARM-bone R Finger12",
+    "FvARM-bone R Finger2",
+    "FvARM-bone R Finger21",
+    "FvARM-bone R Finger22",
+    "FvARM-bone R Finger3",
+    "FvARM-bone R Finger31",
+    "FvARM-bone R Finger32",
+    "FvARM-bone R Finger4",
+    "FvARM-bone R Finger41",
+    "FvARM-bone R Finger42",
+    "FvARM-bone R ForeTwist",
+    "Box001",
+    "Box003",
+    "Box007",
+    "Box006",
+    "Box005",
+    "Box004"
+  ],
+  "weight_sets": [
+    {
+      "name": "BaseTracker",
+      "count": 52,
+      "nonzero": 52
+    }
+  ],
+  "child_models": [
+    "SELF"
+  ],
+  "stream_end_offset": 600683,
+  "body_bytes": 600932
+}

@@ -158,9 +158,10 @@ def main() -> int:
             problems.append(f"{slot}: unexpected envmap bound")
         if "LobbyCube" in vmt:
             problems.append(f"{slot}: raw CF cubemap bound at runtime")
-    env_slots = [s for s in res["slots"] if s["strategy"] == "envmap_metal"]
-    if not env_slots:
-        problems.append("no envmap_metal slot despite env_reflective regions")
+    if not s1t.UNLIT_BAKE:
+        env_slots = [s for s in res["slots"] if s["strategy"] == "envmap_metal"]
+        if not env_slots:
+            problems.append("no envmap_metal slot despite env_reflective regions")
     for key in ("preserved", "approximated", "lost", "unsupported_by_source1"):
         if key not in res["report"]["tags"]:
             problems.append(f"tags missing {key}")

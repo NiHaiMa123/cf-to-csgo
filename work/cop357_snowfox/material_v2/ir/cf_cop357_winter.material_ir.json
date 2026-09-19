@@ -1,0 +1,1393 @@
+{
+ "schema": "cf-material-ir.v1",
+ "material_id": "cf_cop357_winter",
+ "shader_family": "unclassified",
+ "source_assets": {},
+ "cfg": {
+  "textures": {
+   "Textures": {
+    "SpecularMapName2": {
+     "raw": "Cop357_IronBeast2_Winter_S.png",
+     "value": "Cop357_IronBeast2_Winter_S.png"
+    },
+    "EnvCubeMapName2": {
+     "raw": "Lobbycube.dds",
+     "value": "Lobbycube.dds"
+    },
+    "NormalMapName2": {
+     "raw": "Cop357_IronBeast2_Winter_N.png",
+     "value": "Cop357_IronBeast2_Winter_N.png"
+    },
+    "AlphaMapName2": {
+     "raw": "Cop357_IronBeast2_Winter_A.png",
+     "value": "Cop357_IronBeast2_Winter_A.png"
+    }
+   }
+  },
+  "techniques": {
+   "Techniques": {
+    "DiffuseMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "SpecularMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "EnvCubeMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "NormalMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "TexturePanningEnabled": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "SkelMeshEnabled": {
+     "raw": "0",
+     "value": 0.0
+    }
+   }
+  },
+  "properties": {
+   "Properties": {
+    "ForceNoAlpha": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "IsTranslucent": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "HightLightPower": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "LightBrightness": {
+     "raw": "0.67",
+     "value": 0.67
+    },
+    "EnvCubeMapBrightness": {
+     "raw": "1.9",
+     "value": 1.9
+    },
+    "SpecularPower": {
+     "raw": "10.6",
+     "value": 10.6
+    },
+    "SpecularLength": {
+     "raw": "0.41",
+     "value": 0.41
+    },
+    "SpecularHighlight": {
+     "raw": "0.54",
+     "value": 0.54
+    },
+    "SpecularBacklighting": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "DiffuseBoost": {
+     "raw": "0.25",
+     "value": 0.25
+    },
+    "AmbientLightColor": {
+     "raw": "0.05",
+     "value": 0.05
+    },
+    "ReflectionIndex": {
+     "raw": "0.16",
+     "value": 0.16
+    },
+    "RefractionIndex": {
+     "raw": "1.25",
+     "value": 1.25
+    },
+    "CubeMapTransformY": {
+     "raw": "240",
+     "value": 240.0
+    },
+    "RenderParam": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EnvCubeUsage": {
+     "raw": "2",
+     "value": 2.0
+    },
+    "NormalBoost": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "HightLightR": {
+     "raw": "0.98",
+     "value": 0.98
+    },
+    "HightLightG": {
+     "raw": "0.494",
+     "value": 0.494
+    },
+    "HightLightB": {
+     "raw": "0.494",
+     "value": 0.494
+    },
+    "OutLineColorR": {
+     "raw": "0.431373",
+     "value": 0.431373
+    },
+    "OutLineColorG": {
+     "raw": "0.0509804",
+     "value": 0.0509804
+    },
+    "OutLineColorB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "OutLineColorLimitR": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "OutLineColorLimitG": {
+     "raw": "0.05",
+     "value": 0.05
+    },
+    "OutLineColorLimitB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "IsCustomColor": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "PearlRange": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "PearlNp": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "FresnelRange": {
+     "raw": "10",
+     "value": 10.0
+    },
+    "FresnelPower": {
+     "raw": "3",
+     "value": 3.0
+    }
+   }
+  },
+  "extra_sections": {
+   "TexturePanning": {
+    "TexturePanningVelocityU": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "TexturePanningVelocityV": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "TextureTile": {
+    "TextureTileX": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "TextureTileY": {
+     "raw": "1",
+     "value": 1.0
+    }
+   },
+   "HalfLambert": {
+    "Power": {
+     "raw": "0.63",
+     "value": 0.63
+    },
+    "Base": {
+     "raw": "0.6",
+     "value": 0.6
+    }
+   },
+   "Refraction": {
+    "RefractionEnable": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionVisibility": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionIntensity": {
+     "raw": "5",
+     "value": 5.0
+    },
+    "RefractionRimLightColorR": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightColorG": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightColorB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightWidth": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState0": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState1": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState2": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState3": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState4": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState5": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState6": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState7": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState8": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState9": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "Techniques2": {
+    "DiffuseMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "SpecularMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "EnvCubeMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "NormalMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "TexturePanningEnabled": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "SkelMeshEnabled": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "Properties2": {
+    "ForceNoAlpha": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "IsTranslucent": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "HightLightPower": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "LightBrightness": {
+     "raw": "0.5",
+     "value": 0.5
+    },
+    "EnvCubeMapBrightness": {
+     "raw": "3",
+     "value": 3.0
+    },
+    "SpecularPower": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "SpecularLength": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "SpecularHighlight": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "SpecularBacklighting": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "DiffuseBoost": {
+     "raw": "0.1",
+     "value": 0.1
+    },
+    "AmbientLightColor": {
+     "raw": "0.01",
+     "value": 0.01
+    },
+    "ReflectionIndex": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "RefractionIndex": {
+     "raw": "0.9",
+     "value": 0.9
+    },
+    "CubeMapTransformY": {
+     "raw": "240",
+     "value": 240.0
+    },
+    "RenderParam": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EnvCubeUsage": {
+     "raw": "2",
+     "value": 2.0
+    },
+    "NormalBoost": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "HightLightR": {
+     "raw": "0.98",
+     "value": 0.98
+    },
+    "HightLightG": {
+     "raw": "0.494",
+     "value": 0.494
+    },
+    "HightLightB": {
+     "raw": "0.494",
+     "value": 0.494
+    },
+    "OutLineColorR": {
+     "raw": "0.431373",
+     "value": 0.431373
+    },
+    "OutLineColorG": {
+     "raw": "0.0509804",
+     "value": 0.0509804
+    },
+    "OutLineColorB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "OutLineColorLimitR": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "OutLineColorLimitG": {
+     "raw": "0.05",
+     "value": 0.05
+    },
+    "OutLineColorLimitB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "IsCustomColor": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "PearlRange": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "PearlNp": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "FresnelRange": {
+     "raw": "10",
+     "value": 10.0
+    },
+    "FresnelPower": {
+     "raw": "3",
+     "value": 3.0
+    }
+   },
+   "TexturePanning2": {
+    "TexturePanningVelocityU": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "TexturePanningVelocityV": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "TextureTile2": {
+    "TextureTileX": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "TextureTileY": {
+     "raw": "1",
+     "value": 1.0
+    }
+   },
+   "HalfLambert2": {
+    "Power": {
+     "raw": "2",
+     "value": 2.0
+    },
+    "Base": {
+     "raw": "0.7",
+     "value": 0.7
+    }
+   },
+   "Refraction2": {
+    "RefractionEnable": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionVisibility": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionIntensity": {
+     "raw": "5",
+     "value": 5.0
+    },
+    "RefractionRimLightColorR": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightColorG": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightColorB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightWidth": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState0": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState1": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState2": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState3": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState4": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState5": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState6": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState7": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState8": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionPieceState9": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "DynamicLight": {
+    "UseDynamicLight": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "UseMaskMapAsExceptionArea": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "Emissive": {
+    "EmissiveMapIntensity": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EmissiveMapTimer": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EmissiveMapThreshold": {
+     "raw": "0.5",
+     "value": 0.5
+    },
+    "NoiseMapFlowSpeedU": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "NoiseMapFlowSpeedV": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EnabledOnAnimationKey": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "Emissive2": {
+    "EmissiveMapIntensity": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EmissiveMapTimer": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EmissiveMapThreshold": {
+     "raw": "0.5",
+     "value": 0.5
+    },
+    "NoiseMapFlowSpeedU": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "NoiseMapFlowSpeedV": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EnabledOnAnimationKey": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "Techniques3": {
+    "DiffuseMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "SpecularMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "EnvCubeMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "NormalMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "TexturePanningEnabled": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "SkelMeshEnabled": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "Properties3": {
+    "ForceNoAlpha": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "IsTranslucent": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "HightLightPower": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "LightBrightness": {
+     "raw": "0.5",
+     "value": 0.5
+    },
+    "EnvCubeMapBrightness": {
+     "raw": "3",
+     "value": 3.0
+    },
+    "SpecularPower": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "SpecularLength": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "SpecularHighlight": {
+     "raw": "0.51",
+     "value": 0.51
+    },
+    "SpecularBacklighting": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "DiffuseBoost": {
+     "raw": "0.27",
+     "value": 0.27
+    },
+    "AmbientLightColor": {
+     "raw": "0.01",
+     "value": 0.01
+    },
+    "ReflectionIndex": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "RefractionIndex": {
+     "raw": "0.9",
+     "value": 0.9
+    },
+    "CubeMapTransformY": {
+     "raw": "240",
+     "value": 240.0
+    },
+    "RenderParam": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EnvCubeUsage": {
+     "raw": "2",
+     "value": 2.0
+    },
+    "NormalBoost": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "HightLightR": {
+     "raw": "0.98",
+     "value": 0.98
+    },
+    "HightLightG": {
+     "raw": "0.494",
+     "value": 0.494
+    },
+    "HightLightB": {
+     "raw": "0.494",
+     "value": 0.494
+    },
+    "OutLineColorR": {
+     "raw": "0.431373",
+     "value": 0.431373
+    },
+    "OutLineColorG": {
+     "raw": "0.0509804",
+     "value": 0.0509804
+    },
+    "OutLineColorB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "OutLineColorLimitR": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "OutLineColorLimitG": {
+     "raw": "0.05",
+     "value": 0.05
+    },
+    "OutLineColorLimitB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "IsCustomColor": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "PearlRange": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "PearlNp": {
+     "raw": "0.7",
+     "value": 0.7
+    },
+    "FresnelRange": {
+     "raw": "10",
+     "value": 10.0
+    },
+    "FresnelPower": {
+     "raw": "3",
+     "value": 3.0
+    }
+   },
+   "TexturePanning3": {
+    "TexturePanningVelocityU": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "TexturePanningVelocityV": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "TextureTile3": {
+    "TextureTileX": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "TextureTileY": {
+     "raw": "1",
+     "value": 1.0
+    }
+   },
+   "HalfLambert3": {
+    "Power": {
+     "raw": "2",
+     "value": 2.0
+    },
+    "Base": {
+     "raw": "0.7",
+     "value": 0.7
+    }
+   },
+   "Refraction3": {
+    "RefractionEnable": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionVisibility": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionIntensity": {
+     "raw": "5",
+     "value": 5.0
+    },
+    "RefractionRimLightColorR": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightColorG": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightColorB": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "RefractionRimLightWidth": {
+     "raw": "0",
+     "value": 0.0
+    }
+   },
+   "Emissive3": {
+    "EmissiveMapIntensity": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EmissiveMapTimer": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EmissiveMapThreshold": {
+     "raw": "0.5",
+     "value": 0.5
+    },
+    "NoiseMapFlowSpeedU": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "NoiseMapFlowSpeedV": {
+     "raw": "0",
+     "value": 0.0
+    },
+    "EnabledOnAnimationKey": {
+     "raw": "0",
+     "value": 0.0
+    }
+   }
+  },
+  "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\ModelTextures\\Shader\\WeaponShader\\Cop357_IronBeast2_Winter.CFG",
+  "sha256": "2d65a4c9ab3bd8bb6806598775d91183a383b39377e47ac40e5d1aad0492117c",
+  "flat": {
+   "SpecularMapName2": "Cop357_IronBeast2_Winter_S.png",
+   "EnvCubeMapName2": "Lobbycube.dds",
+   "NormalMapName2": "Cop357_IronBeast2_Winter_N.png",
+   "AlphaMapName2": "Cop357_IronBeast2_Winter_A.png",
+   "DiffuseMappingEnabled": 1.0,
+   "SpecularMappingEnabled": 1.0,
+   "EnvCubeMappingEnabled": 1.0,
+   "NormalMappingEnabled": 1.0,
+   "TexturePanningEnabled": 0.0,
+   "SkelMeshEnabled": 0.0,
+   "ForceNoAlpha": 0.0,
+   "IsTranslucent": 0.0,
+   "HightLightPower": 1.0,
+   "LightBrightness": 0.5,
+   "EnvCubeMapBrightness": 3.0,
+   "SpecularPower": 1.0,
+   "SpecularLength": 0.0,
+   "SpecularHighlight": 0.51,
+   "SpecularBacklighting": 1.0,
+   "DiffuseBoost": 0.27,
+   "AmbientLightColor": 0.01,
+   "ReflectionIndex": 0.7,
+   "RefractionIndex": 0.9,
+   "CubeMapTransformY": 240.0,
+   "RenderParam": 0.0,
+   "EnvCubeUsage": 2.0,
+   "NormalBoost": 1.0,
+   "HightLightR": 0.98,
+   "HightLightG": 0.494,
+   "HightLightB": 0.494,
+   "OutLineColorR": 0.431373,
+   "OutLineColorG": 0.0509804,
+   "OutLineColorB": 0.0,
+   "OutLineColorLimitR": 0.7,
+   "OutLineColorLimitG": 0.05,
+   "OutLineColorLimitB": 0.0,
+   "IsCustomColor": 0.0,
+   "PearlRange": 1.0,
+   "PearlNp": 0.7,
+   "FresnelRange": 10.0,
+   "FresnelPower": 3.0,
+   "TexturePanningVelocityU": 0.0,
+   "TexturePanningVelocityV": 0.0,
+   "TextureTileX": 1.0,
+   "TextureTileY": 1.0,
+   "Power": 2.0,
+   "Base": 0.7,
+   "RefractionEnable": 0.0,
+   "RefractionVisibility": 0.0,
+   "RefractionIntensity": 5.0,
+   "RefractionRimLightColorR": 0.0,
+   "RefractionRimLightColorG": 0.0,
+   "RefractionRimLightColorB": 0.0,
+   "RefractionRimLightWidth": 0.0,
+   "RefractionPieceState0": 0.0,
+   "RefractionPieceState1": 0.0,
+   "RefractionPieceState2": 0.0,
+   "RefractionPieceState3": 0.0,
+   "RefractionPieceState4": 0.0,
+   "RefractionPieceState5": 0.0,
+   "RefractionPieceState6": 0.0,
+   "RefractionPieceState7": 0.0,
+   "RefractionPieceState8": 0.0,
+   "RefractionPieceState9": 0.0,
+   "UseDynamicLight": 0.0,
+   "UseMaskMapAsExceptionArea": 0.0,
+   "EmissiveMapIntensity": 0.0,
+   "EmissiveMapTimer": 0.0,
+   "EmissiveMapThreshold": 0.5,
+   "NoiseMapFlowSpeedU": 0.0,
+   "NoiseMapFlowSpeedV": 0.0,
+   "EnabledOnAnimationKey": 0.0
+  }
+ },
+ "channel_semantics": {},
+ "sampling_semantics": {},
+ "observations": {
+  "cfg.SpecularMapName2": {
+   "status": "OBSERVED",
+   "value": "Cop357_IronBeast2_Winter_S.png",
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeMapName2": {
+   "status": "OBSERVED",
+   "value": "Lobbycube.dds",
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.NormalMapName2": {
+   "status": "OBSERVED",
+   "value": "Cop357_IronBeast2_Winter_N.png",
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.AlphaMapName2": {
+   "status": "OBSERVED",
+   "value": "Cop357_IronBeast2_Winter_A.png",
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.DiffuseMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.SpecularMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.NormalMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.TexturePanningEnabled": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.SkelMeshEnabled": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.ForceNoAlpha": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.IsTranslucent": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.HightLightPower": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.LightBrightness": {
+   "status": "OBSERVED",
+   "value": 0.5,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeMapBrightness": {
+   "status": "OBSERVED",
+   "value": 3.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.SpecularPower": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.SpecularLength": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.SpecularHighlight": {
+   "status": "OBSERVED",
+   "value": 0.51,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.SpecularBacklighting": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.DiffuseBoost": {
+   "status": "OBSERVED",
+   "value": 0.27,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.AmbientLightColor": {
+   "status": "OBSERVED",
+   "value": 0.01,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.ReflectionIndex": {
+   "status": "OBSERVED",
+   "value": 0.7,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionIndex": {
+   "status": "OBSERVED",
+   "value": 0.9,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.CubeMapTransformY": {
+   "status": "OBSERVED",
+   "value": 240.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RenderParam": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeUsage": {
+   "status": "OBSERVED",
+   "value": 2.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.NormalBoost": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.HightLightR": {
+   "status": "OBSERVED",
+   "value": 0.98,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.HightLightG": {
+   "status": "OBSERVED",
+   "value": 0.494,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.HightLightB": {
+   "status": "OBSERVED",
+   "value": 0.494,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.OutLineColorR": {
+   "status": "OBSERVED",
+   "value": 0.431373,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.OutLineColorG": {
+   "status": "OBSERVED",
+   "value": 0.0509804,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.OutLineColorB": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.OutLineColorLimitR": {
+   "status": "OBSERVED",
+   "value": 0.7,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.OutLineColorLimitG": {
+   "status": "OBSERVED",
+   "value": 0.05,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.OutLineColorLimitB": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.IsCustomColor": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.PearlRange": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.PearlNp": {
+   "status": "OBSERVED",
+   "value": 0.7,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.FresnelRange": {
+   "status": "OBSERVED",
+   "value": 10.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.FresnelPower": {
+   "status": "OBSERVED",
+   "value": 3.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.TexturePanningVelocityU": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.TexturePanningVelocityV": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.TextureTileX": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.TextureTileY": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.Power": {
+   "status": "OBSERVED",
+   "value": 2.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.Base": {
+   "status": "OBSERVED",
+   "value": 0.7,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionEnable": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionVisibility": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionIntensity": {
+   "status": "OBSERVED",
+   "value": 5.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionRimLightColorR": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionRimLightColorG": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionRimLightColorB": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionRimLightWidth": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState0": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState1": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState2": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState3": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState4": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState5": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState6": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState7": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState8": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.RefractionPieceState9": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.UseDynamicLight": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.UseMaskMapAsExceptionArea": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EmissiveMapIntensity": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EmissiveMapTimer": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EmissiveMapThreshold": {
+   "status": "OBSERVED",
+   "value": 0.5,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.NoiseMapFlowSpeedU": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.NoiseMapFlowSpeedV": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  },
+  "cfg.EnabledOnAnimationKey": {
+   "status": "OBSERVED",
+   "value": 0.0,
+   "evidence": "CFG raw value, sha256=2d65a4c9ab3bd8bb",
+   "confidence": "high"
+  }
+ },
+ "inferences": {
+  "channel_semantics.alphamap.r": {
+   "status": "INFERRED",
+   "value": "opacity",
+   "basis": "prior shader-family research; needs Phase C re-verification",
+   "confidence": "medium"
+  },
+  "channel_semantics.alphamap.g": {
+   "status": "INFERRED",
+   "value": "specular intensity mask",
+   "basis": "prior shader-family research; needs Phase C re-verification",
+   "confidence": "medium"
+  },
+  "channel_semantics.alphamap.b": {
+   "status": "INFERRED",
+   "value": "env cubemap intensity mask",
+   "basis": "prior shader-family research; needs Phase C re-verification",
+   "confidence": "medium"
+  },
+  "sampling_semantics.spec_exponent": {
+   "status": "INFERRED",
+   "value": "SpecularPower * 0.25",
+   "basis": "prior compiled-shader formula; needs Phase C re-verification",
+   "confidence": "medium"
+  }
+ },
+ "approximations": {},
+ "unknowns": {
+  "sampling_semantics.cubemap_ray": {
+   "status": "UNKNOWN",
+   "reason": "exact reflect/refract ray construction and CubeMapTransformY=220 rotation semantics unproven"
+  },
+  "sampling_semantics.env_cube_usage_2": {
+   "status": "UNKNOWN",
+   "reason": "EnvCubeUsage=2 selects a shader variant; exact branch unproven"
+  },
+  "sampling_semantics.reflection_refraction_mix": {
+   "status": "UNKNOWN",
+   "reason": "ReflectionIndex=0.5 vs RefractionIndex=0.8 blend formula unproven"
+  }
+ },
+ "evidence": {},
+ "confidence": {}
+}

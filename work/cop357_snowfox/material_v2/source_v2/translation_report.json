@@ -1,0 +1,184 @@
+{
+ "material_root": "models/weapons/v_models/cf_cop357",
+ "base_name": "cf_cop357_winter",
+ "slots": [
+  {
+   "region_id": 0,
+   "region_label": "light_surface",
+   "material": "cf_cop357_winter_r0",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.1487,
+    "specular_lum": 0.1836,
+    "diffuse_lum": 0.2284,
+    "specular_r_minus_lum": -0.1033
+   },
+   "envmap_tint": [
+    0.078,
+    0.188,
+    0.223
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 1.6655,
+   "triangles": 198
+  },
+  {
+   "region_id": 1,
+   "region_label": "light_surface",
+   "material": "cf_cop357_winter_r1",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.1554,
+    "specular_lum": 0.2102,
+    "diffuse_lum": 0.2522,
+    "specular_r_minus_lum": -0.1192
+   },
+   "envmap_tint": [
+    0.081,
+    0.197,
+    0.233
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 1.6655,
+   "triangles": 1720
+  },
+  {
+   "region_id": 2,
+   "region_label": "mid_surface",
+   "material": "cf_cop357_winter_r2",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.1455,
+    "specular_lum": 0.1488,
+    "diffuse_lum": 0.1778,
+    "specular_r_minus_lum": -0.0952
+   },
+   "envmap_tint": [
+    0.076,
+    0.184,
+    0.218
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 1.6655,
+   "triangles": 168
+  },
+  {
+   "region_id": 3,
+   "region_label": "mid_surface",
+   "material": "cf_cop357_winter_r3",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.1491,
+    "specular_lum": 0.1453,
+    "diffuse_lum": 0.1799,
+    "specular_r_minus_lum": -0.0784
+   },
+   "envmap_tint": [
+    0.078,
+    0.189,
+    0.224
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 1.6655,
+   "triangles": 1101
+  },
+  {
+   "region_id": 4,
+   "region_label": "mid_surface",
+   "material": "cf_cop357_winter_r4",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.1194,
+    "specular_lum": 0.1,
+    "diffuse_lum": 0.1554,
+    "specular_r_minus_lum": -0.051
+   },
+   "envmap_tint": [
+    0.062,
+    0.151,
+    0.179
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 1.6655,
+   "triangles": 728
+  },
+  {
+   "region_id": 5,
+   "region_label": "bright_metal_light_surface",
+   "material": "cf_cop357_winter_r5",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.193,
+    "specular_lum": 0.2991,
+    "diffuse_lum": 0.3621,
+    "specular_r_minus_lum": -0.135
+   },
+   "envmap_tint": [
+    0.101,
+    0.245,
+    0.289
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 1.6655,
+   "triangles": 737
+  }
+ ],
+ "phong_tint": [
+  0.348,
+  0.845,
+  1.0
+ ],
+ "masks": {
+  "phong_mean": 0.6481,
+  "env_mean": 0.152
+ },
+ "lightwarp": {
+  "texture": "cf_cop357_winter_lightwarp",
+  "lit_fraction": 0.125,
+  "dark_floor": 0.875
+ },
+ "envmap_texture": "cf_env_cube",
+ "tags": {
+  "preserved": [
+   "diffuse base texture",
+   "normal map",
+   "specular->phong mask (low-pass)",
+   "alpha.B->envmap mask (low-pass)",
+   "specular chroma->$phongtint",
+   "SpecularPower*0.25->exponent scale"
+  ],
+  "approximated": [
+   "CF lobby cubemap->static envmap VTF (transform baked, content preserved)",
+   "CF transformed/refract ray->Source reflect ray (approximated)",
+   "per-region envmaptint from alpha.B energy (approximated)",
+   "envmap enabled on all non-matte slots; per-pixel alpha.B mask bounds coverage"
+  ],
+  "lost": [
+   "Snell refraction contribution",
+   "exact CF diffuse-lit scale (ambient/boost terms)"
+  ],
+  "unsupported_by_source1": []
+ },
+ "unlit_bake": {
+  "baked_lum_mean": 0.4361,
+  "baked_lum_p90": 0.7519,
+  "env_term_mean": 0.0907,
+  "spec_term_mean": 0.0451,
+  "gains": {
+   "env": 0.5,
+   "spec": 0.4,
+   "ambient": 1.1,
+   "shade": 0.3
+  }
+ },
+ "vtf": {
+  "base": {
+   "w": 2048,
+   "h": 2048,
+   "fmt": 12,
+   "flags": "0x2012",
+   "frames": 1,
+   "mips": 12
+  }
+ }
+}

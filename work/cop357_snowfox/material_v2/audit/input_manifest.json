@@ -1,0 +1,457 @@
+{
+ "schema": "cf-material-input-manifest.v1",
+ "weapon": "Cop357_IronBeast2_Winter",
+ "material_id": "cf_cop357_winter",
+ "assets": [
+  {
+   "role": "mesh_ltb",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-Cop357_IronBeast2_Winter.LTB",
+   "logical_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB",
+   "required": true,
+   "exists": true,
+   "bytes": 162815,
+   "sha256": "782b462940e129c705e058d0d9326e202d07c3d3bb477c3c4a88d165ab131632",
+   "md5": "f50acb780eff20c5d722008e0391feab",
+   "provenance": {
+    "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.LTB",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "782b462940e129c705e058d0d9326e202d07c3d3bb477c3c4a88d165ab131632",
+    "md5": null
+   },
+   "meta": {
+    "kind": "ltb"
+   }
+  },
+  {
+   "role": "diffuse_dtx",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\ModelTextures\\PLAYERVIEW\\PV-Cop357_IronBeast2_Winter.DTX",
+   "logical_path": "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX",
+   "required": true,
+   "exists": true,
+   "bytes": 524452,
+   "sha256": "50517656933211ed043a6710873672a1e31b8f7e446ccc5e11045d8f336e8ba1",
+   "md5": "ce60f107a0e4b7ebf07c2d1106a4cf4a",
+   "provenance": {
+    "rez_path": "ModelTextures/PLAYERVIEW/PV-Cop357_IronBeast2_Winter.DTX",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "50517656933211ed043a6710873672a1e31b8f7e446ccc5e11045d8f336e8ba1",
+    "md5": null
+   },
+   "meta": null
+  },
+  {
+   "role": "cfg",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\ModelTextures\\Shader\\WeaponShader\\Cop357_IronBeast2_Winter.CFG",
+   "logical_path": "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG",
+   "required": true,
+   "exists": true,
+   "bytes": 4591,
+   "sha256": "2d65a4c9ab3bd8bb6806598775d91183a383b39377e47ac40e5d1aad0492117c",
+   "md5": "62c456a51baf23beb09bed0a4eb632d4",
+   "provenance": {
+    "rez_path": "ModelTextures/Shader/WeaponShader/Cop357_IronBeast2_Winter.CFG",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "2d65a4c9ab3bd8bb6806598775d91183a383b39377e47ac40e5d1aad0492117c",
+    "md5": null
+   },
+   "meta": {
+    "kind": "cfg",
+    "sections": {
+     "Textures": 4,
+     "Techniques": 6,
+     "Properties": 31,
+     "TexturePanning": 2,
+     "TextureTile": 2,
+     "HalfLambert": 2,
+     "Refraction": 17,
+     "Techniques2": 6,
+     "Properties2": 31,
+     "TexturePanning2": 2,
+     "TextureTile2": 2,
+     "HalfLambert2": 2,
+     "Refraction2": 17,
+     "DynamicLight": 2,
+     "Emissive": 6,
+     "Emissive2": 6,
+     "Techniques3": 6,
+     "Properties3": 31,
+     "TexturePanning3": 2,
+     "TextureTile3": 2,
+     "HalfLambert3": 2,
+     "Refraction3": 7,
+     "Emissive3": 6
+    },
+    "keys": 194
+   }
+  },
+  {
+   "role": "specular",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\ModelTextures\\SpecularMap\\Cop357_IronBeast2_Winter_S.PNG",
+   "logical_path": "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG",
+   "required": true,
+   "exists": true,
+   "bytes": 1233676,
+   "sha256": "10ca9137ee998205eab0bd29f1704aaf2880b15281898383a9b348516423c4ea",
+   "md5": "52fa010425f708298cbf453ba150840e",
+   "provenance": {
+    "rez_path": "ModelTextures/SpecularMap/Cop357_IronBeast2_Winter_S.PNG",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "10ca9137ee998205eab0bd29f1704aaf2880b15281898383a9b348516423c4ea",
+    "md5": null
+   },
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA",
+    "format": "PNG",
+    "channels": 4,
+    "band_names": [
+     "R",
+     "G",
+     "B",
+     "A"
+    ],
+    "extrema": {
+     "R": [
+      0,
+      136
+     ],
+     "G": [
+      5,
+      163
+     ],
+     "B": [
+      6,
+      168
+     ],
+     "A": [
+      255,
+      255
+     ]
+    }
+   }
+  },
+  {
+   "role": "normal",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\ModelTextures\\NormalMap\\Cop357_IronBeast2_Winter_N.PNG",
+   "logical_path": "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG",
+   "required": true,
+   "exists": true,
+   "bytes": 1340478,
+   "sha256": "72f367f54070d97b596fec38bab72830f939e5535035d06204434ff089c67732",
+   "md5": "1b290a06d3a6ada325d35a4dca328d77",
+   "provenance": {
+    "rez_path": "ModelTextures/NormalMap/Cop357_IronBeast2_Winter_N.PNG",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "72f367f54070d97b596fec38bab72830f939e5535035d06204434ff089c67732",
+    "md5": null
+   },
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGB",
+    "format": "PNG",
+    "channels": 3,
+    "band_names": [
+     "R",
+     "G",
+     "B"
+    ],
+    "extrema": {
+     "R": [
+      0,
+      255
+     ],
+     "G": [
+      0,
+      255
+     ],
+     "B": [
+      4,
+      255
+     ]
+    }
+   }
+  },
+  {
+   "role": "alpha",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\ModelTextures\\AlphaMap\\Cop357_IronBeast2_Winter_A.PNG",
+   "logical_path": "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG",
+   "required": true,
+   "exists": true,
+   "bytes": 474590,
+   "sha256": "f31bf45d0cd236c1426c71e02627bfa7d3f5fbfabb4785de6025e6f246bc6893",
+   "md5": "cb4b8f8d14cc8deb40819f862d2fc20c",
+   "provenance": {
+    "rez_path": "ModelTextures/AlphaMap/Cop357_IronBeast2_Winter_A.PNG",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "f31bf45d0cd236c1426c71e02627bfa7d3f5fbfabb4785de6025e6f246bc6893",
+    "md5": null
+   },
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGB",
+    "format": "PNG",
+    "channels": 3,
+    "band_names": [
+     "R",
+     "G",
+     "B"
+    ],
+    "extrema": {
+     "R": [
+      255,
+      255
+     ],
+     "G": [
+      255,
+      255
+     ],
+     "B": [
+      14,
+      76
+     ]
+    }
+   }
+  },
+  {
+   "role": "cubemap",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\ModelTextures\\EnvCubeMap\\LobbyCube.DDS",
+   "logical_path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+   "required": true,
+   "exists": true,
+   "bytes": 196736,
+   "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+   "md5": "66b621e7818996f08a03c922e5e35681",
+   "provenance": {
+    "rez_path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+    "md5": null
+   },
+   "meta": {
+    "kind": "dds",
+    "valid": true,
+    "width": 256,
+    "height": 256,
+    "mipmaps": 0,
+    "pixel_format_flags": 4,
+    "fourcc": "DXT1",
+    "is_cubemap": true,
+    "cubemap_faces": [
+     "+X",
+     "-X",
+     "+Y",
+     "-Y",
+     "+Z",
+     "-Z"
+    ],
+    "caps": 4104,
+    "caps2": 65024
+   }
+  },
+  {
+   "role": "diffuse_decoded",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\PV-Cop357_IronBeast2_Winter.png",
+   "logical_path": null,
+   "required": true,
+   "exists": true,
+   "bytes": 1179025,
+   "sha256": "e80fa0896e7b4985bc7689b5d138bd2fd76e0077cf30d028812557d881456bf1",
+   "md5": "22d51780723e2ab2379f81935531bfb0",
+   "derived_from": "diffuse_dtx",
+   "provenance_kind": "decoded_output",
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA",
+    "format": "PNG",
+    "channels": 4,
+    "band_names": [
+     "R",
+     "G",
+     "B",
+     "A"
+    ],
+    "extrema": {
+     "R": [
+      0,
+      189
+     ],
+     "G": [
+      16,
+      210
+     ],
+     "B": [
+      16,
+      213
+     ],
+     "A": [
+      255,
+      255
+     ]
+    }
+   }
+  },
+  {
+   "role": "mesh_skin",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\decode\\cf_skin_cop357_winter.json",
+   "logical_path": null,
+   "required": true,
+   "exists": true,
+   "bytes": 690253,
+   "sha256": "da22e3261def8063658a081eea6bbce9af41016b466bb7473244d7893eb91157",
+   "md5": "a4ebaa97aefcb6d8c85ce2a0aff21e6c",
+   "derived_from": "mesh_ltb",
+   "provenance_kind": "decoded_output",
+   "meta": {
+    "kind": "skin_dump",
+    "schema": "cf2.lithtech.skin-dump.v1",
+    "source": "PV-Cop357_IronBeast2_Winter.LTB",
+    "skeleton_nodes": 52,
+    "mesh_count": 8,
+    "meshes": [
+     {
+      "name": "Fview-hand2",
+      "vertex_count": 1090,
+      "triangle_count": 1060,
+      "has_uvs": true,
+      "has_weights": true
+     },
+     {
+      "name": "Fview-arm2",
+      "vertex_count": 190,
+      "triangle_count": 274,
+      "has_uvs": true,
+      "has_weights": true
+     },
+     {
+      "name": "bullet003",
+      "vertex_count": 56,
+      "triangle_count": 60,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "bullet01",
+      "vertex_count": 56,
+      "triangle_count": 60,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "bullet002",
+      "vertex_count": 56,
+      "triangle_count": 60,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "bullet004",
+      "vertex_count": 56,
+      "triangle_count": 60,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "Cop357Derringer_RoyalDragon",
+      "vertex_count": 3529,
+      "triangle_count": 3708,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "RoyalDragon6-reload",
+      "vertex_count": 790,
+      "triangle_count": 704,
+      "has_uvs": true,
+      "has_weights": false
+     }
+    ]
+   }
+  },
+  {
+   "role": "mesh_ltb_bl",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-Cop357_IronBeast2_Winter_BL.LTB",
+   "logical_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB",
+   "required": false,
+   "exists": true,
+   "bytes": 104165,
+   "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+   "md5": "5d709ccdd70676a55596dfcf83539944",
+   "provenance": {
+    "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_BL.LTB",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+    "md5": null
+   },
+   "meta": {
+    "kind": "ltb"
+   }
+  },
+  {
+   "role": "mesh_ltb_gr",
+   "path": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-Cop357_IronBeast2_Winter_GR.LTB",
+   "logical_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB",
+   "required": false,
+   "exists": true,
+   "bytes": 104165,
+   "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+   "md5": "5d709ccdd70676a55596dfcf83539944",
+   "provenance": {
+    "rez_path": "Models/PLAYERVIEW/PV-Cop357_IronBeast2_Winter_GR.LTB",
+    "index_archive": null,
+    "payload_file": null,
+    "routing": null,
+    "offset": null,
+    "directory_md5": null,
+    "sha256": "387aa0f6626086026a2c23a9a9c40d6aa691e836bb6992ffd3bc4dc916035171",
+    "md5": null
+   },
+   "meta": {
+    "kind": "ltb"
+   }
+  }
+ ],
+ "a1_gate": {
+  "passed": true,
+  "problems": []
+ }
+}

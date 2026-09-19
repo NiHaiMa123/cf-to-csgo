@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/cf_cop357/cf_nini_hand_gr"
+	"$bumpmap" "models/weapons/v_models/cf_cop357/cf_nini_hand_gr_n"
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "1.2"
+	"$phongfresnelranges" "[0.15 0.55 1]"
+	"$phongalbedotint" "1"
+	"$nocull" "0"
+}
