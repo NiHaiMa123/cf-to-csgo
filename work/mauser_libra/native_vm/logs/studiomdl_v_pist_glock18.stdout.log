@@ -143,15 +143,15 @@ animations  183572 bytes (6 anims) (1091 frames) [0:10]
 Building sequence index remapping table...
 No re-ordering required.
 sequences     2632 bytes (6 seq) 
-hdr@051BF27C=794B0200
+hdr@051EF624=79690200
 ik/pose        164 bytes
 eyeballs         0 bytes (0 eyeballs)
 flexes           0 bytes (0 flexes)
-hdr@051BF27C=794B0200
+hdr@051EF624=79690200
 textures       532 bytes
 keyvalues      116 bytes
-hdr@051BF274=794B0398
-hdr@051BF27C=794B0200
+hdr@051EF61C=79690398
+hdr@051EF624=79690200
 bone transforms    15568 bytes
 bone flex driver       0 bytes
 bodygroup presets       0 bytes

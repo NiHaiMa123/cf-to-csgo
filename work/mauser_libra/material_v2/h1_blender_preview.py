@@ -56,7 +56,9 @@ def img(name, path, noncolor=False):
         i.colorspace_settings.name = "Non-Color"
     return i
 
-base_img = img("diffuse_2048", os.path.join(UP, "diffuse_2048.png"))
+DIFFUSE = os.environ.get("MV2_DIFFUSE", "diffuse_2048.png")
+TAG = os.environ.get("MV2_TAG", "")
+base_img = img("diffuse_" + TAG or "diffuse_x", os.path.join(UP, DIFFUSE))
 nrm_img = img("normal_2048", os.path.join(UP, "normal_2048.png"), True)
 phong_img = img("mask_phong", os.path.join(SV2, "mask_phong.png"), True)
 env_img = img("mask_env", os.path.join(SV2, "mask_env.png"), True)
@@ -183,7 +185,7 @@ sc.view_settings.look = "AgX - Medium High Contrast"
 for name, off in views.items():
     cam.location = center + off * ext * 1.1
     track(cam, center)
-    sc.render.filepath = os.path.join(PREV, f"blender_{name}.png")
+    sc.render.filepath = os.path.join(PREV, f"blender{TAG}_{name}.png")
     bpy.ops.render.render(write_still=True)
 
 print("rendered", list(views))

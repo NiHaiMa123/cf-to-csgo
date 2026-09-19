@@ -28,6 +28,7 @@ LUM_WEIGHTS = np.array((0.2126, 0.7152, 0.0722), dtype=np.float32)
 # uniform cross-engine calibration (not weapon-specific)
 SOURCE_EXPONENT_SCALE = 16.0
 PHONG_GAIN = 2.5
+PHONG_MASK_GAIN = 2.5
 PHONG_BOOST_FLOOR = 0.5
 ENVMAP_TINT_MAX = 1.0
 STRATEGY_BOOST_MUL = {"warm_phong": 1.0, "colored_phong": 0.8,
@@ -71,7 +72,9 @@ def build_masks(maps: dict, cfg_flat: dict,
     spec_lum = (spec @ LUM_WEIGHTS) if spec is not None else np.zeros((h, w), np.float32)
     a_g = alpha[:, :, 1] if alpha is not None else np.zeros((h, w), np.float32)
     a_b = alpha[:, :, 2] if alpha is not None else np.zeros((h, w), np.float32)
-    phong = _lowpass(spec_lum * a_g, radius)
+    # CF spec is additive over the whole weapon (alpha.G=1.0); scale the
+    # low-pass mask so Source phong gets comparable coverage
+    phong = _lowpass(np.clip(spec_lum * a_g * PHONG_MASK_GAIN, 0, 1), radius)
     env = _lowpass(a_b, radius)
     return {
         "phong_mask": Image.fromarray(np.uint8(np.round(phong * 255.0)), "L"),
