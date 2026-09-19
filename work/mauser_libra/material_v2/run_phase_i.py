@@ -117,7 +117,7 @@ def verify_pak() -> int:
             missing.append(rel)
             continue
         aidx, aoff, alen, preload, _ = tree[key]
-        blob = PAK.parent / f"pak01_{aidx:02d}.vpk" if aidx != 0x7fff else PAK
+        blob = PAK.parent / f"pak01_{aidx:03d}.vpk" if aidx != 0x7fff else PAK
         raw = blob.read_bytes()[aoff:aoff + alen]
         h = hashlib.sha256(raw).hexdigest()
         ok = h == sha256(src)

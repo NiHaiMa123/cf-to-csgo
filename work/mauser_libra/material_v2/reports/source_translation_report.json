@@ -65,48 +65,48 @@
  },
  "metrics": {
   "neutral": {
-   "mean_abs_delta": 0.17126,
+   "mean_abs_delta": 0.1709,
    "cf_lum_mean": 0.23175,
-   "sl_lum_mean": 0.06223,
-   "dark_retention": 0.1769,
-   "phong_hit_mean": 0.00435,
-   "env_hit_mean": 0.00748
+   "sl_lum_mean": 0.06334,
+   "dark_retention": 0.1806,
+   "phong_hit_mean": 0.00473,
+   "env_hit_mean": 0.0084
   },
   "front_lit": {
-   "mean_abs_delta": 0.16844,
+   "mean_abs_delta": 0.16642,
    "cf_lum_mean": 0.22943,
-   "sl_lum_mean": 0.06293,
-   "dark_retention": 0.1956,
-   "phong_hit_mean": 0.00529,
-   "env_hit_mean": 0.00748
+   "sl_lum_mean": 0.06625,
+   "dark_retention": 0.2055,
+   "phong_hit_mean": 0.00781,
+   "env_hit_mean": 0.0084
   },
   "side_lit": {
-   "mean_abs_delta": 0.14669,
+   "mean_abs_delta": 0.14605,
    "cf_lum_mean": 0.18643,
-   "sl_lum_mean": 0.04138,
-   "dark_retention": 0.154,
-   "phong_hit_mean": 0.00619,
-   "env_hit_mean": 0.00748
+   "sl_lum_mean": 0.04252,
+   "dark_retention": 0.1593,
+   "phong_hit_mean": 0.00648,
+   "env_hit_mean": 0.0084
   },
   "back_dark": {
-   "mean_abs_delta": 0.1518,
+   "mean_abs_delta": 0.15002,
    "cf_lum_mean": 0.20086,
-   "sl_lum_mean": 0.05044,
-   "dark_retention": 0.1714,
-   "phong_hit_mean": 0.01313,
-   "env_hit_mean": 0.00748
+   "sl_lum_mean": 0.05294,
+   "dark_retention": 0.1783,
+   "phong_hit_mean": 0.01467,
+   "env_hit_mean": 0.0084
   },
   "rotated_view": {
-   "mean_abs_delta": 0.18454,
+   "mean_abs_delta": 0.18263,
    "cf_lum_mean": 0.23225,
-   "sl_lum_mean": 0.04921,
-   "dark_retention": 0.1545,
-   "phong_hit_mean": 0.00492,
-   "env_hit_mean": 0.00535
+   "sl_lum_mean": 0.05134,
+   "dark_retention": 0.1563,
+   "phong_hit_mean": 0.00657,
+   "env_hit_mean": 0.00579
   },
   "view_dependence_neutral_vs_rotated": {
    "cf": 0.01586,
-   "source": 0.00376
+   "source": 0.00392
   }
  },
  "tags": {
@@ -133,8 +133,8 @@
  "slot_params": {
   "cf_mauser_libra_r0": {
    "strategy": "controlled_phong",
-   "exponent": 2,
-   "boost": 0.6266278238163459,
+   "exponent": 4,
+   "boost": 1.5666,
    "tint": [
     1.0,
     0.765,
@@ -144,23 +144,23 @@
   },
   "cf_mauser_libra_r1": {
    "strategy": "envmap_metal",
-   "exponent": 2,
-   "boost": 1.0026045181061534,
+   "exponent": 4,
+   "boost": 2.5065,
    "tint": [
     1.0,
     0.765,
     0.529
    ],
    "env_tint": [
-    0.8,
+    0.865,
     0.733,
     0.66
    ]
   },
   "cf_mauser_libra_r2": {
    "strategy": "warm_phong",
-   "exponent": 2,
-   "boost": 1.2532556476326917,
+   "exponent": 4,
+   "boost": 3.1331,
    "tint": [
     1.0,
     0.765,
@@ -170,8 +170,8 @@
   },
   "cf_mauser_libra_r3": {
    "strategy": "controlled_phong",
-   "exponent": 2,
-   "boost": 0.6266278238163459,
+   "exponent": 4,
+   "boost": 1.5666,
    "tint": [
     1.0,
     0.765,
@@ -181,22 +181,22 @@
   },
   "cf_mauser_libra_r4": {
    "strategy": "envmap_metal",
-   "exponent": 2,
-   "boost": 1.0026045181061534,
+   "exponent": 4,
+   "boost": 2.5065,
    "tint": [
     1.0,
     0.765,
     0.529
    ],
    "env_tint": [
-    0.8,
-    0.8,
-    0.72
+    1.0,
+    1.0,
+    0.9
    ]
   },
   "cf_mauser_libra_r5": {
    "strategy": "matte_dark",
-   "exponent": 2,
+   "exponent": 4,
    "boost": 0.0,
    "tint": [
     1.0,

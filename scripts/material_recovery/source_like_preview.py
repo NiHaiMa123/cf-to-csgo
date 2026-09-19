@@ -34,23 +34,14 @@ def strategy_params(cfg_flat: dict, tint: list[float],
 
 
 def slot_params_from_report(report: dict, cfg_flat: dict) -> dict:
-    """Derive per-slot shader constants identical to the emitted VMTs."""
-    spec_power = float(cfg_flat.get("SpecularPower", 1.0) or 1.0)
-    exponent = max(1, min(64, int(round(
-        spec_power * 0.25 * 8.0))))
-    tint = report["phong_tint"]
-    tint_lum = float(np.asarray(tint) @ LUM_WEIGHTS)
-    base_boost = max(0.5, min(8.0, 1.0 / max(0.25, tint_lum)))
-    mul = {"warm_phong": 1.0, "colored_phong": 0.8, "envmap_metal": 0.8,
-           "controlled_phong": 0.5, "matte_dark": 0.0}
+    """Read per-slot shader constants recorded by the translator."""
     params = {}
     for s in report["slots"]:
-        st = s["strategy"]
         params[s["material"]] = {
-            "strategy": st,
-            "exponent": exponent,
-            "boost": base_boost * mul[st],
-            "tint": tint,
+            "strategy": s["strategy"],
+            "exponent": s["phong_exponent"],
+            "boost": s["phong_boost"],
+            "tint": report["phong_tint"],
             "env_tint": s.get("envmap_tint"),
         }
     return params

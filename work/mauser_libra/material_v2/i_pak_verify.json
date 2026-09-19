@@ -1,0 +1,125 @@
+{
+ "pak": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_dir.vpk",
+ "checked": 29,
+ "missing": [],
+ "mismatch": [],
+ "bc_equal": true,
+ "entries": {
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vmt": {
+   "sha256": "a542a93d35ac6cb310adb83ccc496967da682e3a761abbe2bd4406f5a3079475",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vtf": {
+   "sha256": "1b6afa65454e549c1b029f047059e878c3d545888ed973d715ff935793bd180b",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_n.vtf": {
+   "sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": {
+   "sha256": "5232bad3b352b8aac5653d84118ae83615f454b10e53ba1a56ad81e900caba80",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+   "sha256": "0e8444e7b8aad0170b4f26ffa3dfcf64c57d46e1c666f86aa48586036b686ced",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": {
+   "sha256": "a1f316c3412cc0a550f202791dbafe48070fee380c291e34e9c93e1bb69430ab",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": {
+   "sha256": "5232bad3b352b8aac5653d84118ae83615f454b10e53ba1a56ad81e900caba80",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+   "sha256": "f5c78d404df5965aab1ae818ba1789c4f9d8f3682cbb99a967fe9d7ab73137c1",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": {
+   "sha256": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vmt": {
+   "sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vtf": {
+   "sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr_n.vtf": {
+   "sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vmt": {
+   "sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vtf": {
+   "sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr_n.vtf": {
+   "sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+   "match": true
+  },
+  "models/weapons/v_pist_glock18.ani": {
+   "sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834",
+   "match": true
+  },
+  "models/weapons/v_pist_glock18.dx80.vtx": {
+   "sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740",
+   "match": true
+  },
+  "models/weapons/v_pist_glock18.dx90.vtx": {
+   "sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b",
+   "match": true
+  },
+  "models/weapons/v_pist_glock18.mdl": {
+   "sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2",
+   "match": true
+  },
+  "models/weapons/v_pist_glock18.sw.vtx": {
+   "sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600",
+   "match": true
+  },
+  "models/weapons/v_pist_glock18.vvd": {
+   "sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6",
+   "match": true
+  },
+  "sound/weapons/glock18/glock18-1-distant.wav": {
+   "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+   "match": true
+  },
+  "sound/weapons/glock18/glock_01.wav": {
+   "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+   "match": true
+  },
+  "sound/weapons/glock18/glock_02.wav": {
+   "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+   "match": true
+  },
+  "sound/weapons/glock18/glock_clipin.wav": {
+   "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5",
+   "match": true
+  },
+  "sound/weapons/glock18/glock_clipout.wav": {
+   "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97",
+   "match": true
+  },
+  "sound/weapons/glock18/glock_draw.wav": {
+   "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131",
+   "match": true
+  },
+  "sound/weapons/glock18/glock_slideback.wav": {
+   "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c",
+   "match": true
+  },
+  "sound/weapons/glock18/glock_sliderelease.wav": {
+   "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6",
+   "match": true
+  }
+ }
+}

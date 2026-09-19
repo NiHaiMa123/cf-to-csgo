@@ -26,9 +26,23 @@ from PIL import Image, ImageFilter
 LUM_WEIGHTS = np.array((0.2126, 0.7152, 0.0722), dtype=np.float32)
 
 # uniform cross-engine calibration (not weapon-specific)
-SOURCE_EXPONENT_SCALE = 8.0
+SOURCE_EXPONENT_SCALE = 16.0
+PHONG_GAIN = 2.5
 PHONG_BOOST_FLOOR = 0.5
-ENVMAP_TINT_MAX = 0.8
+ENVMAP_TINT_MAX = 1.0
+STRATEGY_BOOST_MUL = {"warm_phong": 1.0, "colored_phong": 0.8,
+                      "envmap_metal": 0.8, "controlled_phong": 0.5,
+                      "matte_dark": 0.0}
+
+
+def phong_terms(cfg_flat: dict, tint: list[float],
+                strategy: str) -> tuple[int, float]:
+    spec_power = float(cfg_flat.get("SpecularPower", 1.0) or 1.0)
+    exponent = max(1, min(64, int(round(
+        spec_power * 0.25 * SOURCE_EXPONENT_SCALE))))
+    tint_lum = float(np.asarray(tint) @ LUM_WEIGHTS)
+    boost = max(PHONG_BOOST_FLOOR, min(8.0, 1.0 / max(0.25, tint_lum)))
+    return exponent, boost * PHONG_GAIN * STRATEGY_BOOST_MUL[strategy]
 
 
 def _lowpass(arr: np.ndarray, radius: float) -> np.ndarray:
@@ -103,11 +117,11 @@ def _fmt_vec(v: list[float]) -> str:
 
 def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
                   slot_name: str, strategy: str, cfg_flat: dict,
-                  tint: list[float], env_tint: list[float] | None) -> str:
-    spec_power = float(cfg_flat.get("SpecularPower", 1.0) or 1.0)
-    exponent = max(1, min(64, int(round(spec_power * 0.25 * SOURCE_EXPONENT_SCALE))))
-    tint_lum = float(np.asarray(tint) @ LUM_WEIGHTS)
-    boost = max(PHONG_BOOST_FLOOR, min(8.0, 1.0 / max(0.25, tint_lum)))
+                  tint: list[float], env_tint: list[float] | None,
+                  exponent: int | None = None,
+                  boost: float | None = None) -> str:
+    if exponent is None or boost is None:
+        exponent, boost = phong_terms(cfg_flat, tint, strategy)
     lines = [
         '"VertexLitGeneric"', "{",
         f'\t"$basetexture" "{material_root}/{base_name}"',
@@ -117,13 +131,11 @@ def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
     if strategy == "matte_dark":
         lines += ['\t"$phong" "0"']
     else:
-        boost_mul = {"warm_phong": 1.0, "colored_phong": 0.8,
-                     "envmap_metal": 0.8, "controlled_phong": 0.5}[strategy]
         lines += [
             '\t"$phong" "1"',
             '\t"$basemapalphaphongmask" "1"',
             f'\t"$phongexponent" "{exponent}"',
-            f'\t"$phongboost" "{boost * boost_mul:.3g}"',
+            f'\t"$phongboost" "{boost:.3g}"',
             '\t"$phongfresnelranges" "[1 1 1]"',
             f'\t"$phongtint" "{_fmt_vec(tint)}"',
         ]
@@ -165,8 +177,10 @@ def translate(ir: dict, regions_result: dict, maps: dict,
         slot = f"{base_name}_r{region['region_id']}"
         env_t = (env_tint_for_region(region, cfg_flat)
                  if s["strategy"] == "envmap_metal" else None)
+        exponent, boost = phong_terms(cfg_flat, tint, s["strategy"])
         vmt = vertexlit_vmt(material_root, base_name, normal_name, slot,
-                            s["strategy"], cfg_flat, tint, env_t)
+                            s["strategy"], cfg_flat, tint, env_t,
+                            exponent, boost)
         vmts[slot] = vmt
         slots.append({
             "region_id": region["region_id"],
@@ -175,6 +189,8 @@ def translate(ir: dict, regions_result: dict, maps: dict,
             "strategy": s["strategy"],
             "evidence": s["evidence"],
             "envmap_tint": env_t,
+            "phong_exponent": exponent,
+            "phong_boost": round(boost, 4),
             "triangles": region["triangles"],
         })
     report = {
