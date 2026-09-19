@@ -230,11 +230,12 @@ def write_qc(illum, seq_frames):
             extra = '\n\t{ event 5001 0 "21" }'
         elif seq == "draw":
             # CF select: Extra01SoundName@0ms, clip 400ms -> Draw@2
-            extra = '\n\t{ event 5004 2 "Weapon_glock18.Draw" }'
+            extra = '\n\t{ event 5004 2 "Weapon_Glock.Draw" }'
         elif seq == "reload":
             # CF reload: ClipOut@172ms, ClipIn@1084ms, WeaponReload@1281ms
-            extra = ('\n\t{ event 5004 17 "Weapon_glock18.Clipout" }'
-                     '\n\t{ event 5004 108 "Weapon_glock18.Clipin" }'
+            extra = ('\n\t{ event 5004 17 "Weapon_Glock.Clipout" }'
+                     '\n\t{ event 5004 108 "Weapon_Glock.Clipin" }'
+                     '\n\t{ event 5004 128 "Weapon_Glock.Sliderelease" }'
                      '\n\t{ event AE_WPN_COMPLETE_RELOAD 128 "" }')
         elif seq == "lookat01":
             extra = ('\n\t{ event 5004 2 "Weapon.WeaponMove1" }'

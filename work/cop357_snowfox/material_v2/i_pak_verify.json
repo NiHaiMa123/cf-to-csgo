@@ -1,0 +1,128 @@
+{
+ "pak": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_dir.vpk",
+ "checked": 28,
+ "missing": [],
+ "mismatch": [
+  "models/weapons/v_pist_glock18.ani",
+  "models/weapons/v_pist_glock18.dx80.vtx",
+  "models/weapons/v_pist_glock18.dx90.vtx",
+  "models/weapons/v_pist_glock18.mdl",
+  "models/weapons/v_pist_glock18.sw.vtx",
+  "models/weapons/v_pist_glock18.vvd"
+ ],
+ "bc_equal": false,
+ "entries": {
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox.vmt": {
+   "sha256": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox.vtf": {
+   "sha256": "393ab590cc02eb1259edadcb4badb77e5ba0c4a6cd5371e3779cafa99361f751",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r0.vmt": {
+   "sha256": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r1.vmt": {
+   "sha256": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r2.vmt": {
+   "sha256": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r3.vmt": {
+   "sha256": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r4.vmt": {
+   "sha256": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_snowfox_r5.vmt": {
+   "sha256": "90856845c2d9576533b5c3c33bf255f1e3b08d64b2eafe9c39da8f1155846703",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter.vmt": {
+   "sha256": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter.vtf": {
+   "sha256": "7bd8d684ed1a2c8b081390917c96b86c2223eb7e0febdd613f96353f9193e81a",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter_r0.vmt": {
+   "sha256": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter_r1.vmt": {
+   "sha256": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter_r2.vmt": {
+   "sha256": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter_r3.vmt": {
+   "sha256": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter_r4.vmt": {
+   "sha256": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_cop357_winter_r5.vmt": {
+   "sha256": "d878d7fdb7753ea7d26a5f125811deca918cabec3d6545c2d3ac4877d27d5fbe",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_nini_arm_gr.vmt": {
+   "sha256": "b3e05eabe7eb937a6c980dced1316d683ce732e9067159beaf4072e43c2bbdf4",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_nini_arm_gr.vtf": {
+   "sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_nini_arm_gr_n.vtf": {
+   "sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr.vmt": {
+   "sha256": "cd27c71b756bdeaeaf3ae8088fc997bff79f97eddd20984d6fb1e66a52e81148",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr.vtf": {
+   "sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+   "match": true
+  },
+  "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr_n.vtf": {
+   "sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+   "match": true
+  },
+  "models/weapons/v_pist_glock18.ani": {
+   "sha256": "23d1fb6ec28abf2db577e7a0ef74941a7b5262f3ea845130703c3e9d19cc4275",
+   "match": false
+  },
+  "models/weapons/v_pist_glock18.dx80.vtx": {
+   "sha256": "642970fda7b5cc8f6fae5e5bbd911737c369a1573747a681dd020c6f733e946a",
+   "match": false
+  },
+  "models/weapons/v_pist_glock18.dx90.vtx": {
+   "sha256": "e5463292a6f9106935d4c3df4ea92a71fd00a67286bff0337d7469575e284aad",
+   "match": false
+  },
+  "models/weapons/v_pist_glock18.mdl": {
+   "sha256": "c092cff1a1982f171c304e0a4fe91a3f4f3223e8ccf7c4a221be0ecba6692a46",
+   "match": false
+  },
+  "models/weapons/v_pist_glock18.sw.vtx": {
+   "sha256": "85957dff654dfaa10904c54dd25005dee52dce06f153b9d2706bf08a9338c287",
+   "match": false
+  },
+  "models/weapons/v_pist_glock18.vvd": {
+   "sha256": "6d4cee6d8f9af9be50088eb6e39a663d580d10b20e0399201ff27114f6ca7349",
+   "match": false
+  }
+ }
+}

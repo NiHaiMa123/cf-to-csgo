@@ -1,7 +1,7 @@
 {
  "staging": "D:\\project\\cf_to_csgo\\work\\cop357_snowfox\\addon_v2",
  "addon": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_cop357_snowfox_p1",
- "files": 28,
+ "files": 36,
  "removed_stale": [],
  "missing": [],
  "mismatch": [],
@@ -29,12 +29,20 @@
   "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr.vmt": "cd27c71b756bdeaeaf3ae8088fc997bff79f97eddd20984d6fb1e66a52e81148",
   "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr.vtf": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
   "materials/models/weapons/v_models/cf_cop357/cf_nini_hand_gr_n.vtf": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
-  "models/weapons/v_pist_glock18.ani": "ced16f00de753e7e50a8fb11f707425d5ac978851a5cf6170738d60f73053b8d",
-  "models/weapons/v_pist_glock18.dx80.vtx": "0d94048a00fe920fb76ec3597ca07ac08aca84ca5653d78e33ecf7fe9c5158d4",
-  "models/weapons/v_pist_glock18.dx90.vtx": "a7dd5f8f16ddb2a37274f3b39f2b56aa369c4ec31fd3cb524e52aa5249b41099",
-  "models/weapons/v_pist_glock18.mdl": "038ab40c925ec318d6ebb806a387f8e13fdf993295ad0bf13424df9721776e7e",
-  "models/weapons/v_pist_glock18.sw.vtx": "fb71ee802a0a64e167f2d9fce7565c87a4fd8ddc0455349dbda6aaa50c6783ff",
-  "models/weapons/v_pist_glock18.vvd": "49be746cd04729c8ed82ea076dfbf40a9a3660028e1664850a30a5b664c2dbc7"
+  "models/weapons/v_pist_glock18.ani": "0e31d416287c77a0a92b9c73d11aa6efca9a3b25169306bf910b0fdce5ec2e38",
+  "models/weapons/v_pist_glock18.dx80.vtx": "7e87230fb4fc547d652e6d46a68fb06f2775b6d819a1a7976eb6ab28782d4ac6",
+  "models/weapons/v_pist_glock18.dx90.vtx": "b6c63a562dd22308ae0c494d55b4f090416d5bc54454e64a0acde1ce90dbd34b",
+  "models/weapons/v_pist_glock18.mdl": "ab7780ffec787308f8c7f5a1f556e882c1e87ac32e10e7fbf85d36ed87c1eec4",
+  "models/weapons/v_pist_glock18.sw.vtx": "d9e199ae6da2017190d729023be8bc79df08ac327923979f1e2853ba5dc298d5",
+  "models/weapons/v_pist_glock18.vvd": "8984c2b33ed3965ce4fca6b3ba1d33e60b364a023c4a94534f40c36783022749",
+  "sound/weapons/glock18/glock18-1-distant.wav": "90fc836dc612b7284447697fa71c44e88b5cbbeaa50fadf82c3f1d9815bf1d9b",
+  "sound/weapons/glock18/glock_01.wav": "90fc836dc612b7284447697fa71c44e88b5cbbeaa50fadf82c3f1d9815bf1d9b",
+  "sound/weapons/glock18/glock_02.wav": "90fc836dc612b7284447697fa71c44e88b5cbbeaa50fadf82c3f1d9815bf1d9b",
+  "sound/weapons/glock18/glock_clipin.wav": "2410a779752876b66cd88f2077ebb953c31cfb6359d5ea8552fce2e380b4e173",
+  "sound/weapons/glock18/glock_clipout.wav": "b76039867c7fba21afb98e5c8f8fb9c93c301b96b9a31003003e2a0bd388ca2b",
+  "sound/weapons/glock18/glock_draw.wav": "fcbc2082b446a58449251a9808e5a65dc7666ff44dda9999201eedb7ced643ab",
+  "sound/weapons/glock18/glock_slideback.wav": "b76039867c7fba21afb98e5c8f8fb9c93c301b96b9a31003003e2a0bd388ca2b",
+  "sound/weapons/glock18/glock_sliderelease.wav": "17cf9c8665f561a86c16808124c0a13e17890c9a8353ad4480bcdff77794bdf2"
  },
  "next": "user runs MIGI REBUILD, then --verify-pak"
 }

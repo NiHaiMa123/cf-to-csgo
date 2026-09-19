@@ -134,26 +134,26 @@ $BoneSaveFrame "v_weapon.glock_Parent" rotation
 $BoneSaveFrame "v_weapon.glock_Slide" rotation
 $BoneSaveFrame "v_weapon.glock_Trigger" rotation
 $BoneSaveFrame "v_weapon.glock_Clip" rotation
-animations  139368 bytes (8 anims) (666 frames) [0:06]
-sequences     3204 bytes (8 seq) 
-hdr@057BF13C=78EE0200
+animations  138656 bytes (8 anims) (666 frames) [0:06]
+sequences     3284 bytes (8 seq) 
+hdr@057BF304=78850200
 ik/pose        164 bytes
 eyeballs         0 bytes (0 eyeballs)
 flexes           0 bytes (0 flexes)
-hdr@057BF13C=78EE0200
+hdr@057BF304=78850200
 textures       532 bytes
 keyvalues      120 bytes
-hdr@057BF134=78EE0398
-hdr@057BF13C=78EE0200
+hdr@057BF2FC=78850398
+hdr@057BF304=78850200
 bone transforms    14888 bytes
 bone flex driver       0 bytes
 bodygroup presets       0 bytes
 collision        0 bytes
-total       189648
+total       189016
 ---------------------
 writing models/weapons\v_pist_glock18.ani:
 blocks	         3
-total        53108
+total        52556
 ---------------------
 writing D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.vvd:
 vertices    706896 bytes (14727 vertices)
@@ -195,7 +195,7 @@ verts:         132543 bytes
 indices:        93060 bytes
 bone changes:     680 bytes
 everything:    226963 bytes
-Error opening D:\project\cf_to_csgo\work\cop357_snowfox\native_vm\isolated_game\csgo\models/weapons\v_pist_glock18.vvd! (Check for write enable)
+WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
+WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
 
-ERROR: 'EXCEPTION_ACCESS_VIOLATION' (assert: 1)
-ERROR: Aborted Processing on 'weapons\v_pist_glock18.mdl'
+Completed "v_pist_glock18.qc"

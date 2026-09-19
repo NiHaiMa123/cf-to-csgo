@@ -1,0 +1,76 @@
+{
+  "sources": {
+    "Shoot": {
+      "rez": "SND/WEAPON/COP357DERRINGER/COP357DERRINGER_SHOOT_1.WAV",
+      "bytes_packed": 75645,
+      "seconds": 1.182,
+      "sha256": "90fc836dc612b7284447697fa71c44e88b5cbbeaa50fadf82c3f1d9815bf1d9b"
+    },
+    "Reload": {
+      "rez": "SND/WEAPON/COP357DERRINGER/COP357DERRINGER_RELOAD.WAV",
+      "bytes_packed": 23825,
+      "seconds": 0.357,
+      "sha256": "17cf9c8665f561a86c16808124c0a13e17890c9a8353ad4480bcdff77794bdf2"
+    },
+    "ClipOut": {
+      "rez": "SND/WEAPON/COP357DERRINGER/COP357DERRINGER_CLIPOUT.WAV",
+      "bytes_packed": 36630,
+      "seconds": 0.912,
+      "sha256": "b76039867c7fba21afb98e5c8f8fb9c93c301b96b9a31003003e2a0bd388ca2b"
+    },
+    "ClipIn": {
+      "rez": "SND/WEAPON/COP357DERRINGER/COP357DERRINGER_CLIPIN.WAV",
+      "bytes_packed": 13159,
+      "seconds": 0.197,
+      "sha256": "2410a779752876b66cd88f2077ebb953c31cfb6359d5ea8552fce2e380b4e173"
+    },
+    "Select": {
+      "rez": "SND/WEAPON/COP357_DOMINATOR/COP357_DOMINATOR_SELECT.WAV",
+      "bytes_packed": 30555,
+      "seconds": 0.468,
+      "sha256": "fcbc2082b446a58449251a9808e5a65dc7666ff44dda9999201eedb7ced643ab"
+    }
+  },
+  "wired": [
+    {
+      "wave": "sound/weapons/glock18/glock_01.wav",
+      "from": "Shoot",
+      "sha256": "90fc836dc612b7284447697fa71c44e88b5cbbeaa50fadf82c3f1d9815bf1d9b"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_02.wav",
+      "from": "Shoot",
+      "sha256": "90fc836dc612b7284447697fa71c44e88b5cbbeaa50fadf82c3f1d9815bf1d9b"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock18-1-distant.wav",
+      "from": "Shoot",
+      "sha256": "90fc836dc612b7284447697fa71c44e88b5cbbeaa50fadf82c3f1d9815bf1d9b"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_clipout.wav",
+      "from": "ClipOut",
+      "sha256": "b76039867c7fba21afb98e5c8f8fb9c93c301b96b9a31003003e2a0bd388ca2b"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_clipin.wav",
+      "from": "ClipIn",
+      "sha256": "2410a779752876b66cd88f2077ebb953c31cfb6359d5ea8552fce2e380b4e173"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_draw.wav",
+      "from": "Select",
+      "sha256": "fcbc2082b446a58449251a9808e5a65dc7666ff44dda9999201eedb7ced643ab"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_slideback.wav",
+      "from": "ClipOut",
+      "sha256": "b76039867c7fba21afb98e5c8f8fb9c93c301b96b9a31003003e2a0bd388ca2b"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_sliderelease.wav",
+      "from": "Reload",
+      "sha256": "17cf9c8665f561a86c16808124c0a13e17890c9a8353ad4480bcdff77794bdf2"
+    }
+  ]
+}

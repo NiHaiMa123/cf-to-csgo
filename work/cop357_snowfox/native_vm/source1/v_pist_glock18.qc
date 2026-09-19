@@ -7,7 +7,7 @@ $bodygroup "studio"
 
 $surfaceprop "default"
 $contents "solid"
-$illumposition 2.356 -11.284 23.192
+$illumposition 0.356 -6.284 23.192
 $cdmaterials "models/weapons/v_models/cf_cop357\"
 
 $attachment "1" "v_weapon.flash" 0 0 0 rotate 0 0 0
@@ -131,8 +131,9 @@ $sequence "shoot_empty" {
 $sequence "reload" {
 	"v_pist_glock18_anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 17 "Weapon_glock18.Clipout" }
-	{ event 5004 108 "Weapon_glock18.Clipin" }
+	{ event 5004 17 "Weapon_Glock.Clipout" }
+	{ event 5004 108 "Weapon_Glock.Clipin" }
+	{ event 5004 128 "Weapon_Glock.Sliderelease" }
 	{ event AE_WPN_COMPLETE_RELOAD 128 "" }
 	fadein 0.2
 	fadeout 0.2
@@ -143,7 +144,7 @@ $sequence "reload" {
 $sequence "draw" {
 	"v_pist_glock18_anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
-	{ event 5004 2 "Weapon_glock18.Draw" }
+	{ event 5004 2 "Weapon_Glock.Draw" }
 	fadein 0.2
 	fadeout 0.2
 	snap
