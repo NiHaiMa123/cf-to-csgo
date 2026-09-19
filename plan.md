@@ -1132,7 +1132,7 @@ C2 directional cubemap        PASS (reflect/refract/rotY ray + DX face lookup on
 C3 Blender CF reference       PASS (5 fixed scenes + component decomposition; software-render equivalent, manifest records reason)
 Gate A                        PASS (6/6 behavioral checks: cube varies with normal 0.147, view-dependent corr -0.03, diffuse/spec/cube terms present and bounded, 3 UNKNOWNs declared)
 D material regions            PASS (6 regions: 2 env_reflective_metal, warm_metal_dark, 2 dark, mid_surface; island merge coherent; preview saved)
-E upscale v2                  PASS (diffuse AI 4x cache -> 2048; normal renormalized; spec/alpha resize-only; lum drift 0.0000 on masks, originals preserved)
+E upscale v2                  PASS (diffuse: AI 4x REJECTED — over-enhanced engraved pattern contrast (fish-scale artifact, user-verified in-game); non-generative LANCZOS preserves semantics, lum 0.0712->0.0712; normal renormalized; spec/alpha resize-only drift 0.0000)
 F Source translator           PASS (source1_material_translator.py: 6 slots, envmap_metal uses engine env_cubemap + normalmapalphaenvmapmask — CF lobby cube never bound; base BGRA8888 alpha=phong mask, normal DXT5 alpha=env mask; tags preserved/approximated/lost/unsupported)
 G material assignment         PASS (build_mauser_vm.py --v2: per-tri slot names in SMD, 2767 tris match regions exactly; MDL contains 6 material names; geometry/rig/anim untouched; staged addon_v2 29 files, MIGI deploy deferred to Phase I)
 H1 Blender Source-like A/B    PASS (software Source-like shader on same frame/camera/lights as CF ref — plan permits non-Principled equivalent; 5-scene sheet + per-scene deltas; structure/hue/region separation verified, brightness gap documented as lost ambient fill)

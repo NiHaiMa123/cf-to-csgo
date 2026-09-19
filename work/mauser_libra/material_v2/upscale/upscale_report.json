@@ -6,8 +6,9 @@
  "e1_diffuse": {
   "original_preserved": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\diffuse_original.png",
   "final": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\diffuse_2048.png",
-  "ai_upscale_used": true,
-  "source": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\texture\\up\\4x_PV-M1896_Libra.png",
+  "ai_upscale_used": false,
+  "ai_rejected_reason": "cached AI 4x over-enhanced engraved pattern contrast (fish-scale artifact); non-generative resize preserves semantics",
+  "ai_cache_checked": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\texture\\up\\4x_PV-M1896_Libra.png",
   "coverage": {
    "before": {
     "size": [
@@ -43,28 +44,94 @@
      2048,
      2048
     ],
-    "lum_mean": 0.0674,
+    "lum_mean": 0.0712,
     "histogram": [
-     2806822,
-     678773,
-     241125,
-     225574,
-     142874,
-     55159,
-     20556,
-     9863,
-     5893,
-     3898,
-     2118,
-     844,
-     665,
-     131,
-     9,
+     2806199,
+     624869,
+     260723,
+     234885,
+     146952,
+     72296,
+     24811,
+     11039,
+     5631,
+     3895,
+     2029,
+     655,
+     250,
+     67,
+     3,
      0
     ],
     "coverage": {
-     "0.05": 0.3751,
-     "0.5": 0.0032
+     "0.05": 0.3769,
+     "0.5": 0.003
+    }
+   }
+  },
+  "dst": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\diffuse_2048.png",
+  "size": [
+   2048,
+   2048
+  ],
+  "resample": "1",
+  "ai_cache_coverage": {
+   "before": {
+    "size": [
+     1024,
+     1024
+    ],
+    "lum_mean": 0.0712,
+    "histogram": [
+     701975,
+     156261,
+     64630,
+     58456,
+     36300,
+     18636,
+     6490,
+     2694,
+     1428,
+     886,
+     574,
+     179,
+     67,
+     0,
+     0,
+     0
+    ],
+    "coverage": {
+     "0.05": 0.3746,
+     "0.5": 0.003
+    }
+   },
+   "after": {
+    "size": [
+     4096,
+     4096
+    ],
+    "lum_mean": 0.0674,
+    "histogram": [
+     11233975,
+     2712713,
+     964333,
+     895736,
+     572340,
+     220232,
+     83832,
+     38899,
+     23793,
+     15933,
+     8559,
+     3604,
+     2873,
+     362,
+     32,
+     0
+    ],
+    "coverage": {
+     "0.05": 0.3747,
+     "0.5": 0.0033
     }
    }
   }

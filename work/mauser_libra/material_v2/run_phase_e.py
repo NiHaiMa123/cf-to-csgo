@@ -26,19 +26,28 @@ COMFY = "http://127.0.0.1:8188"
 
 
 def e1_diffuse() -> dict:
-    """AI-upscaled diffuse: reuse cached ComfyUI 4x, downsample to 2048."""
+    """Diffuse resize. AI upscale REJECTED for this asset: the cached 4x
+    ComfyUI output over-amplified the low-contrast engraved pattern into
+    a loud scale-like texture (local-contrast drift vs original). Use
+    non-generative LANCZOS instead — semantics must be preserved."""
     original = DECODE / "PV-M1896_Libra.png"
     keep = UP / "diffuse_original.png"
     keep.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy(original, keep)
     out = UP / "diffuse_2048.png"
-    src = UP4 if UP4.is_file() else original
-    used_ai = UP4.is_file()
-    im = Image.open(src).convert("RGB").resize(SIZE, Image.LANCZOS)
-    im.save(out)
-    return {"original_preserved": str(keep), "final": str(out),
-            "ai_upscale_used": used_ai, "source": str(src),
-            "coverage": texture_upscale.coverage_report(original, out)}
+    meta = texture_upscale.resize_rgb(original, out, SIZE)
+    rep = {"original_preserved": str(keep), "final": str(out),
+           "ai_upscale_used": False,
+           "ai_rejected_reason": ("cached AI 4x over-enhanced engraved "
+                                  "pattern contrast (fish-scale artifact); "
+                                  "non-generative resize preserves semantics"),
+           "ai_cache_checked": str(UP4),
+           "coverage": texture_upscale.coverage_report(original, out)}
+    rep.update(meta)
+    if UP4.is_file():
+        rep["ai_cache_coverage"] = texture_upscale.coverage_report(
+            original, UP4)
+    return rep
 
 
 def e2_normal() -> dict:
