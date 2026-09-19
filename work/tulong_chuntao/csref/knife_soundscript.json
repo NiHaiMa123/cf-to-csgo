@@ -1,0 +1,35 @@
+{
+ "Weapon_Knife.Deploy": {
+  "waves": [
+   ")weapons/knife/knife_deploy1.wav"
+  ]
+ },
+ "Weapon_Knife.Hit": {
+  "waves": [
+   ")weapons/knife/knife_hit1.wav",
+   ")weapons/knife/knife_hit2.wav",
+   ")weapons/knife/knife_hit3.wav",
+   ")weapons/knife/knife_hit4.wav"
+  ]
+ },
+ "Weapon_Knife.HitWall": {
+  "waves": [
+   ")weapons/knife/knife_hit_01.wav",
+   ")weapons/knife/knife_hit_02.wav",
+   ")weapons/knife/knife_hit_03.wav",
+   ")weapons/knife/knife_hit_04.wav",
+   ")weapons/knife/knife_hit_05.wav"
+  ]
+ },
+ "Weapon_Knife.Slash": {
+  "waves": [
+   ")weapons/knife/knife_slash1.wav",
+   ")weapons/knife/knife_slash2.wav"
+  ]
+ },
+ "Weapon_Knife.Stab": {
+  "waves": [
+   ")weapons/knife/knife_stab.wav"
+  ]
+ }
+}

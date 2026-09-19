@@ -12,16 +12,17 @@
 
 ```text
 README.md     项目介绍 + 协作方式 + Git 规则（本文件）
-pipeline.md   武器移植 pipeline：通用方法（附录 A）+ 资产图 + 阶段开关 + 当前执行状态
+pipeline.md   武器移植 pipeline：通用方法（附录 A）+ 天袭光效冻结（附录 B）+ 资产图 + 阶段开关 + 当前执行状态
 ```
 
 2026-09-14 文档清理：`AGENTS.md`（Git 规则并入本文件 §5）、`plan.md`/`task.md`（M4A1 修复期规划，旧状态见 git history）、`CF_NATIVE_PIPELINE.md`（通用方法并入 `pipeline.md` 附录 A）已删除。
+2026-09-16：天袭光效工作稿再次写入根目录 `plan.md` 后，并入 `pipeline.md` 附录 B；金属 Phong 参考值冻结于 A.8.1。根目录仍只保留本文件与 `pipeline.md`。
 
 归属约定：
 
 ```text
 入口 / 协作 / Git 规则       -> README.md
-移植方法 + 当前武器状态       -> pipeline.md（§4 活状态，§5 复现索引，附录 A 通用方法）
+移植方法 + 当前武器状态       -> pipeline.md（§4 活状态，§5 复现索引，附录 A 通用方法，附录 B 天袭光效冻结）
 运行细节 / evidence / 报告   -> work/<weapon>/
 历史逐轮过程                  -> Git history
 ```
@@ -37,7 +38,8 @@ pipeline.md   武器移植 pipeline：通用方法（附录 A）+ 资产图 + �
 ```text
 P4 Source 1 / MIGI baseline            PASS / FROZEN
 M4A1-雷神（v_rif_m4a1）                 模型+声音已部署并被用户验收；CF 动画改造 REJECTED，旧动画冻结
-Galil ACE-天袭（v_rif_galilar）         P0–P8 全部 PASS，2026-09-14 用户游戏内验收
+Galil ACE-天袭（v_rif_galilar）         P0–P8 PASS（2026-09-14）；金属 Phong boost=8 冻结；idle 光效冻结见 pipeline 附录 B；默认手膜=妮妮-保卫者（Nini GR，pipeline A.9）
+魂·屠龙-春桃（v_knife_default_ct/t）    P0–P6 PASS，A/B 29/29；addon `p_cf_tulong_chuntao_p1`；等用户 MIGI REBUILD（P7/P8）
 ```
 
 ---

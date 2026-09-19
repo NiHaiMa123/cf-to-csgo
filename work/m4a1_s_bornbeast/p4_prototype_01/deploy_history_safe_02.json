@@ -1,0 +1,10 @@
+{
+  "schema": "cf2.p4.deploy-history-summary.v1",
+  "status": "historical_superseded",
+  "source_report_commit_blob": "a931742e36f0dcb4c8b3c661c1ced02ad7798254",
+  "generated_at": "2026-08-19T14:50:47.730722+00:00",
+  "addon": "p_cf_bornbeast_m4a4_p4_inspect_safe_02",
+  "target": "D:/steam/steamapps/common/csgo legacy/migi/csgo/addons/p_cf_bornbeast_m4a4_p4_inspect_safe_02",
+  "run_id": "run_20260819_144941_648227",
+  "note": "Historical safe_02 deployment evidence retained separately before deploying the frozen/no-op addon. Not current P4 user-gate evidence."
+}

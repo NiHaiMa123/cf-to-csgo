@@ -1,0 +1,375 @@
+{
+ "generated_at_utc": "2026-09-15T12:41:46.676354+00:00",
+ "files": [
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_BODY_01.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_BODY_01.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "Body",
+     "verts": 11186,
+     "tris": 10452
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -4.7236151695251465,
+     -21.882417678833008,
+     -93.91078186035156
+    ],
+    [
+     4.613022804260254,
+     16.195545196533203,
+     7.966114044189453
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_BODY_01_SPEED.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_BODY_01_SPEED.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "Body",
+     "verts": 8483,
+     "tris": 7748
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -4.7236127853393555,
+     -0.15479999780654907,
+     -69.59466552734375
+    ],
+    [
+     4.613025188446045,
+     16.195545196533203,
+     7.492942810058594
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_GLITCH.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_GLITCH.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "Plane001",
+     "verts": 25,
+     "tris": 32
+    },
+    {
+     "name": "Plane002",
+     "verts": 25,
+     "tris": 32
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -1.9999999949504854e-06,
+     -40.39107894897461,
+     -24.761587142944336
+    ],
+    [
+     0.001193000003695488,
+     40.39107894897461,
+     24.761587142944336
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_BLUE.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_BLUE.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "blue_parts",
+     "verts": 68,
+     "tris": 34
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -3.9934089183807373,
+     2.281769037246704,
+     -57.32640075683594
+    ],
+    [
+     3.868169069290161,
+     14.246593475341797,
+     6.700634002685547
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_CORE.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_CORE.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy008"
+   ],
+   "meshes": [
+    {
+     "name": "Core01",
+     "verts": 52,
+     "tris": 64
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -16.45064926147461,
+     -30.633525848388672,
+     -49.80683517456055
+    ],
+    [
+     -13.66114616394043,
+     -27.669511795043945,
+     -42.7629508972168
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_RED.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_RED.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "red_parts",
+     "verts": 16,
+     "tris": 8
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -3.0144670009613037,
+     5.0149030685424805,
+     -26.65041732788086
+    ],
+    [
+     2.8857710361480713,
+     10.669711112976074,
+     1.4615479707717896
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_L.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_L.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "L",
+     "verts": 4,
+     "tris": 2
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     0.020031999796628952,
+     10.79580307006836,
+     4.479770183563232
+    ],
+    [
+     0.6609699726104736,
+     11.276338577270508,
+     4.903901100158691
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_R.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_R.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "R",
+     "verts": 4,
+     "tris": 2
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -0.6815170049667358,
+     10.79580307006836,
+     4.479770183563232
+    ],
+    [
+     -0.04057899862527847,
+     11.276338577270508,
+     4.903901100158691
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIDE_ELEC.LTB",
+   "dump": "SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIDE_ELEC.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "Plane002",
+     "verts": 25,
+     "tris": 32
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -40.1213493347168,
+     -0.0012000000569969416,
+     -63.17015838623047
+    ],
+    [
+     40.12134552001953,
+     -0.0011790000135079026,
+     115.40575408935547
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_PLANE_01.LTB",
+   "dump": "SGFX_BD_PLANE_01.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "Plane001",
+     "verts": 25,
+     "tris": 32
+    },
+    {
+     "name": "Plane002",
+     "verts": 25,
+     "tris": 32
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     -1.9999999949504854e-06,
+     -29.8358097076416,
+     -29.835813522338867
+    ],
+    [
+     0.001193000003695488,
+     29.8358097076416,
+     29.835813522338867
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_PLANE_02_4.LTB",
+   "dump": "SGFX_BD_PLANE_02_4.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "Plane002",
+     "verts": 8,
+     "tris": 6
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     0.001183000043965876,
+     -15.232271194458008,
+     -44.19524002075195
+    ],
+    [
+     0.0011869999580085278,
+     15.232257843017578,
+     96.4308090209961
+    ]
+   ]
+  },
+  {
+   "ltb": "SGFX_BD_PLANE_02_5.LTB",
+   "dump": "SGFX_BD_PLANE_02_5.skin.json",
+   "rc": 0,
+   "stderr": "",
+   "skeleton": [
+    "Scene Root",
+    "Dummy001"
+   ],
+   "meshes": [
+    {
+     "name": "Plane002",
+     "verts": 8,
+     "tris": 6
+    }
+   ],
+   "skinned": 0,
+   "bbox": [
+    [
+     0.001183000043965876,
+     -11.500736236572266,
+     -44.19523620605469
+    ],
+    [
+     0.0011869999580085278,
+     11.500728607177734,
+     96.43079376220703
+    ]
+   ]
+  }
+ ]
+}

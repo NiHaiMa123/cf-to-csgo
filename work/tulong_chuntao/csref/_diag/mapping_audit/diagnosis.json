@@ -1,0 +1,16 @@
+{
+  "raw_vertex_offset": 79076,
+  "stride": 32,
+  "flags": "0x13",
+  "rigid_node": 47,
+  "max_position_error": 0.0,
+  "max_uv_error": 0.0,
+  "verified_candidate": "PV-Kukri_Beast_GR.LTB / Object066",
+  "result": "Offline mapping fixed by selecting compatible mesh; production files not changed",
+  "lighting": "not yet reconstructed",
+  "protected_file_sha256": {
+    "work\\tulong_chuntao\\csref\\viewmodel_transform.json": "1ca992fea2e3cc07be41957dedd4f2cd00336036958bfff4745ffed2d083b90d",
+    "work\\tulong_chuntao\\native_vm\\build_tulong_vm.py": "8a9e647fe13d913579b126ab9ac611a8d509bdbc11e64259ed257ec5c72cd924",
+    "work\\tulong_chuntao\\addon\\materials\\models\\weapons\\v_models\\cf_tulong\\cf_kukri_beast.vmt": "41ace133e086d4a891f8d602bce53ad9dce126a798ce8c15aa7343de78e772eb"
+  }
+}

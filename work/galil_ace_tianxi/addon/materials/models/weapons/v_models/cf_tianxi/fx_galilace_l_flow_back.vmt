@@ -1,0 +1,19 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/cf_tianxi/cf_fx_aura55"
+	"$frame" "0"
+	"$additive" "1"
+	"$translucent" "1"
+	"$nocull" "1"
+	"$nofog" "1"
+	"$color" "[0.349020 0.274510 0.976471]"
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedTextureVar" "$basetexture"
+			"animatedTextureFrameNumVar" "$frame"
+			"animatedTextureFrameRate" "10"
+		}
+	}
+}

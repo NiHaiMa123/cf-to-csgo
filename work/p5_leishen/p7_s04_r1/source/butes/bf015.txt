@@ -1,0 +1,5 @@
+( Mission
+	( RankType 54 )
+	( Use1 0 )
+	( Use2 0 )
+)

@@ -1,0 +1,117 @@
+{
+  "H": {
+    "scale": 2.002474399572588,
+    "rotation": [
+      [
+        0.9999263033552656,
+        -0.009534592568835175,
+        0.007515277960254796
+      ],
+      [
+        0.007837684595862881,
+        0.034240237878156554,
+        -0.999382897997671
+      ],
+      [
+        0.009271383847590004,
+        0.999368149209586,
+        0.03431244361681477
+      ]
+    ],
+    "translation": [
+      -9.995624523505825,
+      -4.253519810638764,
+      4.859885673522589
+    ]
+  },
+  "gun_center_x": -2.8169401848268754,
+  "apply_mirror": true,
+  "view_push_x": -4.0,
+  "view_push_y": -11.0,
+  "view_push_z": -6.5,
+  "view_roll_deg": 0.0,
+  "view_tilt_deg": 0.0,
+  "view_axis_roll_deg": 20.06,
+  "view_axis": [
+    -0.6687,
+    0.3512,
+    -0.6554
+  ],
+  "view_pivot": [
+    -4.51,
+    -16.14,
+    -8.36
+  ],
+  "view_push2": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "arm_offset_l": [
+    6.0,
+    4.0,
+    -4.0
+  ],
+  "arm_offset_r": [
+    -1.0,
+    0.0,
+    -1.0
+  ],
+  "arm_pivot": [
+    -4.51,
+    -16.14,
+    -8.36
+  ],
+  "arm_rot_l_axis": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "arm_rot_l_deg": 20.0,
+  "arm_rot_r_axis": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "arm_rot_r_deg": 0.0,
+  "flip_knife_v": true,
+  "flip_knife_normals": false,
+  "icp": {
+    "method": "reuse verified CF-playerview H; preserve native pose; user-calibrated depth/Z offsets",
+    "src": "CF idle_0 posed Kukri_Beast spring rigid knife verts",
+    "dst": "shared CF playerview camera space with farther/lower review adjustment",
+    "depth_match": -7.079005736491299,
+    "view_push_y": -22.079005736491297,
+    "view_push_z": -3.5,
+    "view_roll_deg": 0.0
+  },
+  "attach_worlds_p6": {
+    "v_weapon.uid": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.6836420351091198
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -10.076987179530166
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.8494423433681275
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "note": "Round 4 (2026-09-17): ALL view corrections zeroed -> transform is pure MX@H, identical to the verified Galil-ACE Tianxi pipeline (CF playerview space is already first-person camera space). Base \u705e\u72bb\u7df3 texture (PV-Kukri_Beast.DTX), not spring. Knife V still flipped once (v_smd=1-v_raw, same as hands). flip_knife_normals stays false."
+}

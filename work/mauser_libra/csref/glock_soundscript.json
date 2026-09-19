@@ -1,0 +1,38 @@
+{
+ "Weapon_Glock.Single": {
+  "waves": [
+   "`)weapons/glock18/glock_01.wav",
+   "`)weapons/glock18/glock_02.wav"
+  ]
+ },
+ "Weapon_Glock.SingleDistant": {
+  "waves": [
+   "~weapons/glock18/glock18-1-distant.wav"
+  ]
+ },
+ "Weapon_Glock.Clipout": {
+  "waves": [
+   "~weapons/glock18/glock_clipout.wav"
+  ]
+ },
+ "Weapon_Glock.Clipin": {
+  "waves": [
+   "~weapons/glock18/glock_clipin.wav"
+  ]
+ },
+ "Weapon_Glock.Draw": {
+  "waves": [
+   "~weapons/glock18/glock_draw.wav"
+  ]
+ },
+ "Weapon_Glock.Sliderelease": {
+  "waves": [
+   "~weapons/glock18/glock_sliderelease.wav"
+  ]
+ },
+ "Weapon_Glock.Slideback": {
+  "waves": [
+   "~weapons/glock18/glock_slideback.wav"
+  ]
+ }
+}

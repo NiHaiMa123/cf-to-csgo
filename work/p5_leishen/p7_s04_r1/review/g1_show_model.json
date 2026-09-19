@@ -1,0 +1,24 @@
+{
+  "status": "MODEL_VIEW_READY",
+  "working_sha_unchanged": true,
+  "center": [
+    24.807674407958984,
+    -10.624868392944336,
+    34.91610336303711
+  ],
+  "size": 81.97088042895,
+  "parent_head": [
+    -0.7180137634277344,
+    -13.929824829101562,
+    0.40978050231933594
+  ],
+  "shot": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\view_model.png",
+  "shot_ok": true,
+  "objects": [
+    "R1A_VIEW_GUN",
+    "R1A_VIEW_GLOVE",
+    "R1A_VIEW_SLEEVE",
+    "R1A_CAM_STUDIO"
+  ],
+  "note": "Viewing preview only. Not a retarget accept. Sticks hidden."
+}

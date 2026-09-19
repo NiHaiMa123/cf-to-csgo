@@ -1,0 +1,21 @@
+( Debris
+	( DebrisIndex 0 )
+	( DebrisName "BreakLightDebris" )
+	( DebrisModelNum 3 )
+	( DebrisModelFileName1 "Models\M-motion.ltb" )
+	( DebrisModelFileName2 "Models\M-motion.ltb" )
+	( DebrisModelFileName3 "Models\M-motion.ltb" )
+	( DebrisSkinFileName "ModelTextures\ak47.dtx" )
+)
+
+( Debris
+	( DebrisIndex 1 )
+	( DebrisName "Bottle" )
+	( DebrisModelNum 5 )
+	( DebrisModelFileName1 "Models\Debris\DBottle1a.ltc" )
+	( DebrisModelFileName2 "Models\Debris\DBottle1b.ltc" )
+	( DebrisModelFileName3 "Models\Debris\DBottle1c.ltc" )
+	( DebrisModelFileName4 "Models\Debris\DBottle1d.ltc" )
+	( DebrisModelFileName5 "Models\Debris\DBottle1e.ltc" )
+	( DebrisSkinFileName "ModelTextures\Debris\SiBottle1.dtx" )
+)

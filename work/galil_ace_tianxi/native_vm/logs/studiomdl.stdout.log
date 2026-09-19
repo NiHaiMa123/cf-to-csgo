@@ -14,12 +14,38 @@ SMD MODEL v_rif_galilar_anims\draw.smd
 SMD MODEL v_rif_galilar_anims\lookat01.smd
 SMD MODEL v_rif_galilar_anims\lookat01_prepare.smd
 SMD MODEL v_rif_galilar_anims\lookat01_loop.smd
+WARNING: model has too many verts (23093/21845), cutting into multiple models
 Processing LOD for material: cf_galilace_pb
-Processing LOD for material: cf_foxhand_bl
-Processing LOD for material: cf_foxarm_bl
+Processing LOD for material: cf_nini_hand_gr
+Processing LOD for material: cf_nini_arm_gr
+Processing LOD for material: fx_galilace_l_flow_front
+Processing LOD for material: fx_galilace_l_flow_front_copy
+Processing LOD for material: fx_galilace_l_flow_back
+Processing LOD for material: fx_galilace_parts_blue
+Processing LOD for material: fx_galilace_parts_red
+Processing LOD for material: fx_galilace_tragl_l
+Processing LOD for material: fx_galilace_tragl_r
+Processing LOD for material: fx_galilace_simbol
+Processing LOD for material: fx_galilace_simbol_glow
+Processing LOD for material: fx_galilace_glitch
+Processing LOD for material: cf_galilace_pb
+Processing LOD for material: cf_nini_hand_gr
+Processing LOD for material: cf_nini_arm_gr
+Processing LOD for material: fx_galilace_l_flow_front
+Processing LOD for material: fx_galilace_l_flow_front_copy
+Processing LOD for material: fx_galilace_l_flow_back
+Processing LOD for material: fx_galilace_parts_blue
+Processing LOD for material: fx_galilace_parts_red
+Processing LOD for material: fx_galilace_tragl_l
+Processing LOD for material: fx_galilace_tragl_r
+Processing LOD for material: fx_galilace_simbol
+Processing LOD for material: fx_galilace_simbol_glow
+Processing LOD for material: fx_galilace_glitch
 ---------------------
 writing D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.mdl:
-bones        27812 bytes (108)
+Loading preexisting model: D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.mdl
+   Found 9 preexisting sequences.
+bones        30432 bytes (117)
    animation       x       y       ips    angle
 $BoneSaveFrame "v_weapon" position rotation
 $BoneSaveFrame "v_weapon.Bip01" rotation
@@ -129,67 +155,82 @@ $BoneSaveFrame "v_weapon.shelleject" rotation
 $BoneSaveFrame "v_weapon.stattrack" rotation
 $BoneSaveFrame "v_weapon.uid" rotation
 $BoneSaveFrame "v_weapon.galilar_parent" rotation
-animations  202192 bytes (9 anims) (1294 frames) [0:12]
-sequences     3976 bytes (9 seq) 
-hdr@0057EFB4=73710200
-ik/pose        164 bytes
+$BoneSaveFrame "fx_fix_effect_3" rotation
+$BoneSaveFrame "fx_fix_effect_5" rotation
+$BoneSaveFrame "fx_fix_effect_15" rotation
+$BoneSaveFrame "fx_fix_effect_16" rotation
+$BoneSaveFrame "fx_fix_effect_34" rotation
+$BoneSaveFrame "fx_fix_effect_9" rotation
+$BoneSaveFrame "fx_fix_effect_10" rotation
+$BoneSaveFrame "fx_fix_effect_11" rotation
+$BoneSaveFrame "fx_fix_effect_23" rotation
+animations  202400 bytes (9 anims) (1294 frames) [0:12]
+Building sequence index remapping table...
+No re-ordering required.
+sequences     4012 bytes (9 seq) 
+hdr@05F7F35C=77840200
+ik/pose        328 bytes
 eyeballs         0 bytes (0 eyeballs)
 flexes           0 bytes (0 flexes)
-hdr@0057EFB4=73710200
-textures       208 bytes
-keyvalues      120 bytes
-hdr@0057EFAC=73710398
-hdr@0057EFB4=73710200
-bone transforms    14752 bytes
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+hdr@05F7F35C=77840200
+textures       868 bytes
+keyvalues      236 bytes
+hdr@05F7F354=77840398
+hdr@05F7F35C=77840200
+bone transforms    15976 bytes
 bone flex driver       0 bytes
 bodygroup presets       0 bytes
 collision        0 bytes
-total       252460
+total       260568
 ---------------------
 writing models/weapons\v_rif_galilar.ani:
 blocks	        15
-total       352592
+total       352992
 ---------------------
 writing D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.vvd:
-vertices    846240 bytes (17630 vertices)
-tangents    282080 bytes (17630 vertices)
-total      1128384 bytes
+vertices   1048464 bytes (21843 vertices)
+vertices     62016 bytes (1292 vertices)
+tangents    349488 bytes (21843 vertices)
+tangents     20672 bytes (1292 vertices)
+total      1480704 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.sw.vtx":
-body parts:         8 bytes
-models:            20 bytes
-model LODs:        12 bytes
-meshes:            27 bytes
-strip groups:      99 bytes
-strips:           105 bytes
-verts:         158670 bytes
-indices:        98832 bytes
+body parts:        16 bytes
+models:            40 bytes
+model LODs:        24 bytes
+meshes:           234 bytes
+strip groups:     462 bytes
+strips:           490 bytes
+verts:         208215 bytes
+indices:       145008 bytes
 bone changes:       8 bytes
-everything:    257805 bytes
+everything:    354509 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.dx80.vtx":
-body parts:         8 bytes
-models:            20 bytes
-model LODs:        12 bytes
-meshes:            27 bytes
-strip groups:      99 bytes
-strips:           175 bytes
-verts:         158697 bytes
-indices:        98832 bytes
-bone changes:     488 bytes
-everything:    258382 bytes
+body parts:        16 bytes
+models:            40 bytes
+model LODs:        24 bytes
+meshes:           234 bytes
+strip groups:     462 bytes
+strips:           560 bytes
+verts:         208269 bytes
+indices:       145008 bytes
+bone changes:     600 bytes
+everything:    355225 bytes
 ---------------------
 Generating optimized mesh "D:\project\cf_to_csgo\work\galil_ace_tianxi\native_vm\isolated_game\csgo\models/weapons\v_rif_galilar.dx90.vtx":
-body parts:         8 bytes
-models:            20 bytes
-model LODs:        12 bytes
-meshes:            27 bytes
-strip groups:      99 bytes
-strips:           105 bytes
-verts:         158670 bytes
-indices:        98832 bytes
-bone changes:     424 bytes
-everything:    258221 bytes
+body parts:        16 bytes
+models:            40 bytes
+model LODs:        24 bytes
+meshes:           234 bytes
+strip groups:     462 bytes
+strips:           490 bytes
+verts:         208215 bytes
+indices:       145008 bytes
+bone changes:     552 bytes
+everything:    355053 bytes
 WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
 WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
 

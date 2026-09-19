@@ -1,0 +1,51 @@
+( BotNameInfo
+	( BotName "대마왕" )
+)
+( BotNameInfo
+	( BotName "예비군" )
+)
+( BotNameInfo
+	( BotName "단테" )
+)
+( BotNameInfo
+	( BotName "아무로" )
+)
+( BotNameInfo
+	( BotName "대간지" )
+)
+( BotNameInfo
+	( BotName "실미도" )
+)
+( BotNameInfo
+	( BotName "대간지" )
+)
+( BotNameInfo
+	( BotName "마루치" )
+)
+( BotNameInfo
+	( BotName "마사루" )
+)
+( BotNameInfo
+	( BotName "제우스" )
+)
+( BotNameInfo
+	( BotName "헤라" )
+)
+( BotNameInfo
+	( BotName "타이탄" )
+)
+( BotNameInfo
+	( BotName "요요" )
+)
+( BotNameInfo
+	( BotName "백수" )
+)
+( BotNameInfo
+	( BotName "황태자" )
+)
+( BotNameInfo
+	( BotName "신돈" )
+)
+( BotNameInfo
+	( BotName "오천원" )
+)

@@ -1,0 +1,286 @@
+{
+ "generated_at_utc": "2026-09-16T15:12:40.056153+00:00",
+ "character": "Roxana GR / 传说女帝-保卫者",
+ "files": [
+  {
+   "path": "Models/PLAYERVIEW/ArmModel/Arm_Roxana_GR.LTB",
+   "bytes": 96574,
+   "sha256": "96342d72e50c2b1f7a0955ccea86c2ed89b05cfdcba3de0be68867ac72870268",
+   "md5": "DDCFA10D2524D86D1C4AD2913E6151B2",
+   "archive": "rez4/RF016.REZ",
+   "provenance": {
+    "logical_path": "Models/PLAYERVIEW/ArmModel/Arm_Roxana_GR.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 283967979,
+    "size": 96574,
+    "directory_md5": "ddcfa10d2524d86d1c4ad2913e6151b2",
+    "sha256": "96342d72e50c2b1f7a0955ccea86c2ed89b05cfdcba3de0be68867ac72870268",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+      "length": 1519306913,
+      "range_ok": true,
+      "actual_bytes": 96574,
+      "md5": "ddcfa10d2524d86d1c4ad2913e6151b2",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/PLAYERVIEW/FVIEW_HAND_Roxana_GR.DTX",
+   "bytes": 131236,
+   "sha256": "6550b4caf43e2cbe063b5b9c3c3a8fc73481ceafae21a792bbc5ed105f18969c",
+   "md5": "E66F27B338F9B04458F81E2ED2C87037",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/PLAYERVIEW/FVIEW_HAND_Roxana_GR.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1040810723,
+    "size": 131236,
+    "directory_md5": "e66f27b338f9b04458f81e2ed2c87037",
+    "sha256": "6550b4caf43e2cbe063b5b9c3c3a8fc73481ceafae21a792bbc5ed105f18969c",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 131236,
+      "md5": "e66f27b338f9b04458f81e2ed2c87037",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/PLAYERVIEW/FVIEW_ARM_Roxana_GR.DTX",
+   "bytes": 131236,
+   "sha256": "e15e745b37c6f69a50290e775fcbb1b8238d046923f02f4bcdab2808606ec43c",
+   "md5": "2E89F6C4E797262FE8B023502DB7DC61",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/PLAYERVIEW/FVIEW_ARM_Roxana_GR.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1017683535,
+    "size": 131236,
+    "directory_md5": "2e89f6c4e797262fe8b023502db7dc61",
+    "sha256": "e15e745b37c6f69a50290e775fcbb1b8238d046923f02f4bcdab2808606ec43c",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 131236,
+      "md5": "2e89f6c4e797262fe8b023502db7dc61",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/NormalMap/FVIEW_HAND_Roxana_GR_N.PNG",
+   "bytes": 381600,
+   "sha256": "6155a32ee5b57e8096e131649fb5312e84b611d4966dd0c57c81fdc4d1c39c6b",
+   "md5": "4A7FB02DC2AD046C7C6A4D3AB6C0F3DD",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/NormalMap/FVIEW_HAND_Roxana_GR_N.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 608262412,
+    "size": 381600,
+    "directory_md5": "4a7fb02dc2ad046c7c6a4d3ab6c0f3dd",
+    "sha256": "6155a32ee5b57e8096e131649fb5312e84b611d4966dd0c57c81fdc4d1c39c6b",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 381600,
+      "md5": "4a7fb02dc2ad046c7c6a4d3ab6c0f3dd",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/NormalMap/FVIEW_ARM_Roxana_GR_N.PNG",
+   "bytes": 421317,
+   "sha256": "515c9915a521da04a041b36ad8bad46715f844654234b67221a76b9e2593af9c",
+   "md5": "5C89E61BB120C462F9A4E3C67C675D8C",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/NormalMap/FVIEW_ARM_Roxana_GR_N.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 576482954,
+    "size": 421317,
+    "directory_md5": "5c89e61bb120c462f9a4e3c67c675d8c",
+    "sha256": "515c9915a521da04a041b36ad8bad46715f844654234b67221a76b9e2593af9c",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 421317,
+      "md5": "5c89e61bb120c462f9a4e3c67c675d8c",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/SpecularMap/FVIEW_HAND_Roxana_GR_S.PNG",
+   "bytes": 129269,
+   "sha256": "867705cf9c757630056ea4c09a364d3d340dfe38760bc9ad1beb92cb8b33ca99",
+   "md5": "E11FBEF7AD831BE0955BE7704CB213AE",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/SpecularMap/FVIEW_HAND_Roxana_GR_S.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1541271974,
+    "size": 129269,
+    "directory_md5": "e11fbef7ad831be0955be7704cb213ae",
+    "sha256": "867705cf9c757630056ea4c09a364d3d340dfe38760bc9ad1beb92cb8b33ca99",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 129269,
+      "md5": "e11fbef7ad831be0955be7704cb213ae",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/SpecularMap/FVIEW_ARM_Roxana_GR_S.PNG",
+   "bytes": 125526,
+   "sha256": "ad92de29e5f9bf9bdf5bfd15ae3ff7323b806c50eb6855725cf25eaae5b09814",
+   "md5": "F1060482252731BF2AA06644B25A314A",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/SpecularMap/FVIEW_ARM_Roxana_GR_S.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1528850020,
+    "size": 125526,
+    "directory_md5": "f1060482252731bf2aa06644b25a314a",
+    "sha256": "ad92de29e5f9bf9bdf5bfd15ae3ff7323b806c50eb6855725cf25eaae5b09814",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 125526,
+      "md5": "f1060482252731bf2aa06644b25a314a",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/AlphaMap/FVIEW_HAND_Roxana_GR_A.PNG",
+   "bytes": 17363,
+   "sha256": "8f9853439ccdb1ef3a541ebc81dcf0bbd8b03d711fb6f8b7f3539f02fbf57fbf",
+   "md5": "371F985C7C8A22B065588C654D87D697",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/AlphaMap/FVIEW_HAND_Roxana_GR_A.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 96754918,
+    "size": 17363,
+    "directory_md5": "371f985c7c8a22b065588c654d87d697",
+    "sha256": "8f9853439ccdb1ef3a541ebc81dcf0bbd8b03d711fb6f8b7f3539f02fbf57fbf",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 17363,
+      "md5": "371f985c7c8a22b065588c654d87d697",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/AlphaMap/FVIEW_ARM_Roxana_GR_A.PNG",
+   "bytes": 55174,
+   "sha256": "62072f88fd1dbc6689de11cd6f7701aabd775077f74e3341435aba192909355c",
+   "md5": "6E54D3A544F8CCD8360C1B1D146274BA",
+   "archive": "rez3/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/AlphaMap/FVIEW_ARM_Roxana_GR_A.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 93025624,
+    "size": 55174,
+    "directory_md5": "6e54d3a544f8ccd8360c1b1d146274ba",
+    "sha256": "62072f88fd1dbc6689de11cd6f7701aabd775077f74e3341435aba192909355c",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 55174,
+      "md5": "6e54d3a544f8ccd8360c1b1d146274ba",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  }
+ ],
+ "missing": [],
+ "roxana_related": [
+  "ModelTextures/AlphaMap/FVIEW_ARM_Roxana_BL_A.PNG",
+  "ModelTextures/AlphaMap/FVIEW_ARM_Roxana_GR_A.PNG",
+  "ModelTextures/AlphaMap/FVIEW_HAND_Roxana_BL_A.PNG",
+  "ModelTextures/AlphaMap/FVIEW_HAND_Roxana_GR_A.PNG",
+  "ModelTextures/NormalMap/FVIEW_ARM_Roxana_BL_N.PNG",
+  "ModelTextures/NormalMap/FVIEW_ARM_Roxana_GR_N.PNG",
+  "ModelTextures/NormalMap/FVIEW_HAND_Roxana_BL_N.PNG",
+  "ModelTextures/NormalMap/FVIEW_HAND_Roxana_GR_N.PNG",
+  "ModelTextures/PLAYERVIEW/FVIEW_ARM_Roxana_BL.DTX",
+  "ModelTextures/PLAYERVIEW/FVIEW_ARM_Roxana_GR.DTX",
+  "ModelTextures/PLAYERVIEW/FVIEW_HAND_Roxana_BL.DTX",
+  "ModelTextures/PLAYERVIEW/FVIEW_HAND_Roxana_GR.DTX",
+  "ModelTextures/Shader/AdvancedShader/Arm_Roxana_BL_Piece0.CFG",
+  "ModelTextures/Shader/AdvancedShader/Arm_Roxana_BL_Piece1.CFG",
+  "ModelTextures/Shader/AdvancedShader/Arm_Roxana_GR_Piece0.CFG",
+  "ModelTextures/Shader/AdvancedShader/Arm_Roxana_GR_Piece1.CFG",
+  "ModelTextures/SpecularMap/FVIEW_ARM_Roxana_BL_S.PNG",
+  "ModelTextures/SpecularMap/FVIEW_ARM_Roxana_GR_S.PNG",
+  "ModelTextures/SpecularMap/FVIEW_HAND_Roxana_BL_S.PNG",
+  "ModelTextures/SpecularMap/FVIEW_HAND_Roxana_GR_S.PNG",
+  "ModelTextures/SpecularMap/Roxana_BODY_BL_S.PNG",
+  "ModelTextures/SpecularMap/Roxana_BODY_GR_S.PNG",
+  "ModelTextures/SpecularMap/Roxana_FACE_GR_S.PNG",
+  "Models/PLAYERVIEW/ArmModel/Arm_Roxana_BL.LTB",
+  "Models/PLAYERVIEW/ArmModel/Arm_Roxana_GR.LTB"
+ ]
+}

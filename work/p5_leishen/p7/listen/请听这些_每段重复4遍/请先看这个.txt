@@ -1,0 +1,64 @@
+雷神 FMOD 试听
+
+请听文件夹：请听这些_每段重复4遍
+00_从01到13连播.wav  从头放到尾，中间有空档。
+
+原声在 bank 里就是短层（0.2~1.2秒），不是整段换弹动画。
+Windows 对超短 wav 经常一闪就关，所以每段前面留空、重复4遍。
+原长_只播一遍 里是未经重复的原时长，不用这个听。
+
+没有 Qingchun / BB / Zeekr / BornBeast。
+
+听完回编号即可，例如：换弹=02  拉栓=08  切枪=11
+
+01_射击_SHOOT_1.wav
+  射击（你说过这段是对的）
+  bank名 M4A1-S-Beast_SHOOT_1  原长 0.24s
+
+02_切枪时那个_GasEjection.wav
+  上一版切枪听到的那段，你说是换弹
+  bank名 M4A1-S-Beast_GasEjection  原长 0.619s
+
+03_Beast_Reload.wav
+  名字带 Reload
+  bank名 M4A1-S-Beast_Reload  原长 0.437s
+
+04_Beast_ClipOut.wav
+  名字带 ClipOut
+  bank名 M4A1-S-Beast_ClipOut  原长 0.389s
+
+05_Beast_ClipIn.wav
+  名字带 ClipIn
+  bank名 M4A1-S-Beast_ClipIn  原长 0.277s
+
+06_Beast_knifeAttack.wav
+  近战
+  bank名 M4A1-S-Beast_knifeAttack  原长 0.715s
+
+07_BeastAir_远处尾音.wav
+  远处/尾音
+  bank名 M4A1SBeastAir  原长 2.171s
+
+08_同bank层_Reload_03.wav
+  同 bank 层 Reload_03
+  bank名 M4A1_S_Reload_03  原长 1.163s
+
+09_同bank层_ClipOut.wav
+  同 bank 层 ClipOut
+  bank名 M4A1_S_ClipOut  原长 0.587s
+
+10_同bank层_ClipIn_01.wav
+  同 bank 层 ClipIn
+  bank名 M4A1_S_ClipIn_01  原长 1.019s
+
+11_同bank层_Swish_02.wav
+  同 bank 层 Swish
+  bank名 M4A1_S_Swish_02  原长 1.024s
+
+12_同bank层_Shoot_02.wav
+  同 bank 层 Shoot_02
+  bank名 M4A1_S_Shoot_02  原长 1.189s
+
+13_同bank层_Shoot_03.wav
+  同 bank 层 Shoot_03
+  bank名 M4A1_S_Shoot_03  原长 0.512s

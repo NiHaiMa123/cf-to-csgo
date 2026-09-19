@@ -1,0 +1,13 @@
+decoding D:\Program Files\CF(2)\rez\FMODStudio\Weapon\Weapon.bank
+sample rate: 48000 Hz
+channels: 1
+stream total samples: 31665 (0:00.660 seconds)
+encoding: Custom Vorbis
+layout: flat
+metadata from: FMOD FSB5 header
+bitrate: 76 kbps
+stream count: 627
+stream index: 425
+stream name: GalilACEPhantomB_ClipIn
+sample type: float
+play duration: 31665 samples (0:00.660 seconds)

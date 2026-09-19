@@ -1,0 +1,24 @@
+( Head
+	( HeadIndex 0 )
+	( HeadName "백인" )
+	( HeadTextureTypes 0 1 2 )
+	( HeadTexFileName "Tex\head_texture\M_Face_1" )
+)
+( Head
+	( HeadIndex 1 )
+	( HeadName "중동" )
+	( HeadTextureTypes 3 4 5 )
+	( HeadTexFileName "Tex\head_texture\M_Face_2" )
+)
+( Head
+	( HeadIndex 2 )
+	( HeadName "흑인" )
+	( HeadTextureTypes 6 7 8 )
+	( HeadTexFileName "Tex\head_texture\M_Face_2" )
+)
+( Head
+	( HeadIndex 3 )
+	( HeadName "동양인" )
+	( HeadTextureTypes 9 10 11 )
+	( HeadTexFileName "Tex\head_texture\M_Face_2" )
+)

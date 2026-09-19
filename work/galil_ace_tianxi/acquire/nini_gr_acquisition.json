@@ -1,0 +1,347 @@
+{
+ "generated_at_utc": "2026-09-16T16:30:17.456135+00:00",
+ "character": "Nini GR / 妮妮-保卫者",
+ "files": [
+  {
+   "path": "Models/PLAYERVIEW/ArmModel/Arm_Nini_GR.LTB",
+   "bytes": 154738,
+   "sha256": "9c253cc647b1b770a319510c24a33c11ee7634125c7d37ee4cceb48bc36ebbbe",
+   "md5": "EAEE5E49F99DAA1DD4D4356EF6DF8643",
+   "archive": "rez4/RF016.REZ",
+   "provenance": {
+    "logical_path": "Models/PLAYERVIEW/ArmModel/Arm_Nini_GR.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 279480608,
+    "size": 154738,
+    "directory_md5": "eaee5e49f99daa1dd4d4356ef6df8643",
+    "sha256": "9c253cc647b1b770a319510c24a33c11ee7634125c7d37ee4cceb48bc36ebbbe",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+      "length": 1519306913,
+      "range_ok": true,
+      "actual_bytes": 154738,
+      "md5": "eaee5e49f99daa1dd4d4356ef6df8643",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/PLAYERVIEW/FVIEW_HAND_Nini_GR.DTX",
+   "bytes": 131236,
+   "sha256": "3002f3c549a85b51ac35b7b037788237a2952aa58621461eefdbae249c0c02e3",
+   "md5": "1C24DDC9EFAFB579A40E875F10D86F9C",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/PLAYERVIEW/FVIEW_HAND_Nini_GR.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1057641129,
+    "size": 131236,
+    "directory_md5": "1c24ddc9efafb579a40e875f10d86f9c",
+    "sha256": "3002f3c549a85b51ac35b7b037788237a2952aa58621461eefdbae249c0c02e3",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 131236,
+      "md5": "1c24ddc9efafb579a40e875f10d86f9c",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/PLAYERVIEW/FVIEW_ARM_Nini_GR.DTX",
+   "bytes": 131236,
+   "sha256": "dd5bb2d18d3e6a6945a1c1989cc5d64bde484b731312c28d22467d026a8168d9",
+   "md5": "DA560E2CA60E94DE6D42A96956FE8B45",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/PLAYERVIEW/FVIEW_ARM_Nini_GR.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1042769437,
+    "size": 131236,
+    "directory_md5": "da560e2ca60e94de6d42a96956fe8b45",
+    "sha256": "dd5bb2d18d3e6a6945a1c1989cc5d64bde484b731312c28d22467d026a8168d9",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 131236,
+      "md5": "da560e2ca60e94de6d42a96956fe8b45",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/NormalMap/FVIEW_HAND_Nini_GR_N.PNG",
+   "bytes": 577331,
+   "sha256": "349bee36e1d67c7cd645f5bab2aeec2b28ec1836c4d6414688c41e14b3483871",
+   "md5": "E4A49BD3EC5519D3B650E7DE5456A7F8",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/NormalMap/FVIEW_HAND_Nini_GR_N.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 628151216,
+    "size": 577331,
+    "directory_md5": "e4a49bd3ec5519d3b650e7de5456a7f8",
+    "sha256": "349bee36e1d67c7cd645f5bab2aeec2b28ec1836c4d6414688c41e14b3483871",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 577331,
+      "md5": "e4a49bd3ec5519d3b650e7de5456a7f8",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/NormalMap/FVIEW_ARM_Nini_GR_N.PNG",
+   "bytes": 452147,
+   "sha256": "b6f2206bdf2ba554dc7d4240db1e4de9707b9d5d7cdfed85d1d3277cc2d772ac",
+   "md5": "8D1313B8969900E23B856AD4A5AAA1EF",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/NormalMap/FVIEW_ARM_Nini_GR_N.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 481220122,
+    "size": 452147,
+    "directory_md5": "8d1313b8969900e23b856ad4a5aaa1ef",
+    "sha256": "b6f2206bdf2ba554dc7d4240db1e4de9707b9d5d7cdfed85d1d3277cc2d772ac",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 452147,
+      "md5": "8d1313b8969900e23b856ad4a5aaa1ef",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/SpecularMap/FVIEW_HAND_Nini_GR_S.PNG",
+   "bytes": 105786,
+   "sha256": "27fdb1470e807a0c36e5d9f62ddf69599b6c2e969c21335109eeb1b06f812718",
+   "md5": "D1FBBFD7D8C957D5BCFFA8C3973AEA3D",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/SpecularMap/FVIEW_HAND_Nini_GR_S.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1504659570,
+    "size": 105786,
+    "directory_md5": "d1fbbfd7d8c957d5bcffa8c3973aea3d",
+    "sha256": "27fdb1470e807a0c36e5d9f62ddf69599b6c2e969c21335109eeb1b06f812718",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 105786,
+      "md5": "d1fbbfd7d8c957d5bcffa8c3973aea3d",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/SpecularMap/FVIEW_ARM_Nini_GR_S.PNG",
+   "bytes": 112032,
+   "sha256": "ed8cf00b1fb69d776436d4137210f241b0e903e78bdc9b622e5b421e1d227133",
+   "md5": "9E2F85C8423C931CA4B8338BF8A7A8B6",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/SpecularMap/FVIEW_ARM_Nini_GR_S.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1485938087,
+    "size": 112032,
+    "directory_md5": "9e2f85c8423c931ca4b8338bf8a7a8b6",
+    "sha256": "ed8cf00b1fb69d776436d4137210f241b0e903e78bdc9b622e5b421e1d227133",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 112032,
+      "md5": "9e2f85c8423c931ca4b8338bf8a7a8b6",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/AlphaMap/FVIEW_HAND_Nini_GR_A.PNG",
+   "bytes": 72482,
+   "sha256": "806b837c15c6f84246fcc0a85a939de6480fe577ad7ba6754821b8f41f7068de",
+   "md5": "BAE176320D436F3BC31226FAF7A8936C",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/AlphaMap/FVIEW_HAND_Nini_GR_A.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 86899322,
+    "size": 72482,
+    "directory_md5": "bae176320d436f3bc31226faf7a8936c",
+    "sha256": "806b837c15c6f84246fcc0a85a939de6480fe577ad7ba6754821b8f41f7068de",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 72482,
+      "md5": "bae176320d436f3bc31226faf7a8936c",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/AlphaMap/FVIEW_ARM_Nini_GR_A.PNG",
+   "bytes": 88293,
+   "sha256": "2f3106093a3f45c3502fb4b785823583ebb45fa19a6b68d875eebf9953bd8bd1",
+   "md5": "0999517A061BB63364A8EF5E13F3805A",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/AlphaMap/FVIEW_ARM_Nini_GR_A.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 75389062,
+    "size": 88293,
+    "directory_md5": "0999517a061bb63364a8ef5e13f3805a",
+    "sha256": "2f3106093a3f45c3502fb4b785823583ebb45fa19a6b68d875eebf9953bd8bd1",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 88293,
+      "md5": "0999517a061bb63364a8ef5e13f3805a",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/Shader/AdvancedShader/Arm_Nini_GR_Piece0.CFG",
+   "bytes": 971,
+   "sha256": "26d41eeb3abd5d88c911d5df2a2411a52e39eca3f27fb004d3aa7ff7c59455be",
+   "md5": "F7092FD40C03041E7FA00E7D031FEBD4",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/Shader/AdvancedShader/Arm_Nini_GR_Piece0.CFG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1319694964,
+    "size": 971,
+    "directory_md5": "f7092fd40c03041e7fa00e7d031febd4",
+    "sha256": "26d41eeb3abd5d88c911d5df2a2411a52e39eca3f27fb004d3aa7ff7c59455be",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 971,
+      "md5": "f7092fd40c03041e7fa00e7d031febd4",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/Shader/AdvancedShader/Arm_Nini_GR_Piece1.CFG",
+   "bytes": 969,
+   "sha256": "2d72d61f6ea8a278bd23d2f481b41bc46f4fc6475bd337769942d16663a0fd36",
+   "md5": "464239A7CD00FD87BE86AA059965DF6F",
+   "archive": "rez6/RF017.REZ",
+   "provenance": {
+    "logical_path": "ModelTextures/Shader/AdvancedShader/Arm_Nini_GR_Piece1.CFG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1319695935,
+    "size": 969,
+    "directory_md5": "464239a7cd00fd87be86aa059965df6f",
+    "sha256": "2d72d61f6ea8a278bd23d2f481b41bc46f4fc6475bd337769942d16663a0fd36",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+      "length": 1883304165,
+      "range_ok": true,
+      "actual_bytes": 969,
+      "md5": "464239a7cd00fd87be86aa059965df6f",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  }
+ ],
+ "missing": [],
+ "nini_related": [
+  "ModelTextures/AlphaMap/FVIEW_ARM_Nini_BL_A.PNG",
+  "ModelTextures/AlphaMap/FVIEW_ARM_Nini_GR_A.PNG",
+  "ModelTextures/AlphaMap/FVIEW_HAND_Nini_BL_A.PNG",
+  "ModelTextures/AlphaMap/FVIEW_HAND_Nini_GR_A.PNG",
+  "ModelTextures/NormalMap/FVIEW_ARM_Nini_BL_N.PNG",
+  "ModelTextures/NormalMap/FVIEW_ARM_Nini_GR_N.PNG",
+  "ModelTextures/NormalMap/FVIEW_HAND_Nini_BL_N.PNG",
+  "ModelTextures/NormalMap/FVIEW_HAND_Nini_GR_N.PNG",
+  "ModelTextures/PLAYERVIEW/FVIEW_ARM_Nini_BL.DTX",
+  "ModelTextures/PLAYERVIEW/FVIEW_ARM_Nini_GR.DTX",
+  "ModelTextures/PLAYERVIEW/FVIEW_HAND_Nini_BL.DTX",
+  "ModelTextures/PLAYERVIEW/FVIEW_HAND_Nini_GR.DTX",
+  "ModelTextures/Shader/AdvancedShader/Arm_Nini_BL_Piece0.CFG",
+  "ModelTextures/Shader/AdvancedShader/Arm_Nini_BL_Piece1.CFG",
+  "ModelTextures/Shader/AdvancedShader/Arm_Nini_GR_Piece0.CFG",
+  "ModelTextures/Shader/AdvancedShader/Arm_Nini_GR_Piece1.CFG",
+  "ModelTextures/SpecularMap/FVIEW_ARM_Nini_BL_S.PNG",
+  "ModelTextures/SpecularMap/FVIEW_ARM_Nini_GR_S.PNG",
+  "ModelTextures/SpecularMap/FVIEW_HAND_Nini_BL_S.PNG",
+  "ModelTextures/SpecularMap/FVIEW_HAND_Nini_GR_S.PNG",
+  "ModelTextures/SpecularMap/Nini_BODY_BL_S.PNG",
+  "ModelTextures/SpecularMap/Nini_BODY_GR_S.PNG",
+  "ModelTextures/SpecularMap/Nini_FACE_BL_S.PNG",
+  "ModelTextures/SpecularMap/Nini_FACE_GR_S.PNG",
+  "ModelTextures/SpecularMap/Nini_HAIR2_BL_S.PNG",
+  "ModelTextures/SpecularMap/Nini_HAIR2_GR_S.PNG",
+  "ModelTextures/SpecularMap/Nini_HAIR_BL_S.PNG",
+  "ModelTextures/SpecularMap/Nini_HAIR_GR_S.PNG",
+  "Models/PLAYERVIEW/ArmModel/Arm_Nini_BL.LTB",
+  "Models/PLAYERVIEW/ArmModel/Arm_Nini_GR.LTB"
+ ]
+}

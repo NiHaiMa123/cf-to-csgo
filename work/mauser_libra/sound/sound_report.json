@@ -1,0 +1,82 @@
+{
+  "sources": {
+    "Mauser_Shoot_1": {
+      "rez": "SND/WEAPON/MAUSER/MAUSER_SHOOT_1.WAV",
+      "bytes_packed": 85530,
+      "seconds": 1.418,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4"
+    },
+    "Mauser_Select": {
+      "rez": "SND/WEAPON/MAUSER/MAUSER_SELECT.WAV",
+      "bytes_packed": 42919,
+      "seconds": 0.859,
+      "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131"
+    },
+    "Mauser_ClipOut": {
+      "rez": "SND/WEAPON/MAUSER/MAUSER_CLIPOUT.WAV",
+      "bytes_packed": 38521,
+      "seconds": 1.001,
+      "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97"
+    },
+    "Mauser_ClipIn": {
+      "rez": "SND/WEAPON/MAUSER/MAUSER_CLIPIN.WAV",
+      "bytes_packed": 99786,
+      "seconds": 2.006,
+      "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5"
+    },
+    "CoinSelect": {
+      "rez": "SND/WEAPON/M14EBR_TAURUS/M14EBR_TAURUS_COINSELECT.WAV",
+      "bytes_packed": 20778,
+      "seconds": 0.347,
+      "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c"
+    },
+    "CoinReload": {
+      "rez": "SND/WEAPON/M14EBR_TAURUS/M14EBR_TAURUS_COINRELOAD.WAV",
+      "bytes_packed": 46613,
+      "seconds": 0.973,
+      "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6"
+    }
+  },
+  "wired": [
+    {
+      "wave": "sound/weapons/glock18/glock_01.wav",
+      "from": "Mauser_Shoot_1",
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_02.wav",
+      "from": "Mauser_Shoot_1",
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock18-1-distant.wav",
+      "from": "Mauser_Shoot_1",
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_clipout.wav",
+      "from": "Mauser_ClipOut",
+      "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_clipin.wav",
+      "from": "Mauser_ClipIn",
+      "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_draw.wav",
+      "from": "Mauser_Select",
+      "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_slideback.wav",
+      "from": "CoinSelect",
+      "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c"
+    },
+    {
+      "wave": "sound/weapons/glock18/glock_sliderelease.wav",
+      "from": "CoinReload",
+      "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6"
+    }
+  ]
+}

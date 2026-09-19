@@ -1,0 +1,10 @@
+{
+ "diffuse_src": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\decode\\PV-Kukri_Beast_spring.png",
+ "upscaled": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\texture\\up\\kukri_spring_2048.png",
+ "up_size": [
+  2048,
+  2048
+ ],
+ "vmt": "phong 48/8 Half-Lambert no envmap/bumpmap",
+ "staging": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\addon\\materials\\models\\weapons\\v_models\\cf_tulong"
+}

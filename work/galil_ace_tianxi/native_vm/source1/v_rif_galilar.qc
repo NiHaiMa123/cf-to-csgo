@@ -7,7 +7,7 @@ $bodygroup "studio"
 
 $surfaceprop "default"
 $contents "solid"
-$illumposition -0.026 14.559 18.234
+$illumposition -0.024 14.545 18.345
 $cdmaterials "models\weapons\v_models\rif_galilar\"
 $cdmaterials "models/weapons/v_models/cf_tianxi\"
 
@@ -15,6 +15,11 @@ $attachment "1" "v_weapon.flash" 0 0 0 rotate 0 0 0
 $attachment "2" "v_weapon.shelleject" 0 0 0 rotate 0 0 0
 $attachment "stattrack" "v_weapon.stattrack" 0 0 0 rotate 0 0 0
 $attachment "uid" "v_weapon.uid" 0 0 0 rotate 0 0 0
+$attachment "fx3" "fx_fix_effect_3" 0 0 0 rotate 0 0 0
+$attachment "fx5" "fx_fix_effect_5" 0 0 0 rotate 0 0 0
+$attachment "fx15" "fx_fix_effect_15" 0 0 0 rotate 0 0 0
+$attachment "fx16" "fx_fix_effect_16" 0 0 0 rotate 0 0 0
+$attachment "fx34" "fx_fix_effect_34" 0 0 0 rotate 0 0 0
 
 $cbox 0 0 0 0 0 0
 $bbox -30 -30 -30 30 30 30
@@ -70,6 +75,19 @@ $bonemerge "v_weapon.Bip01_R_Finger42"
 $bonemerge "v_weapon.galilar_parent"
 $bonemerge "v_weapon.stattrack"
 $bonemerge "v_weapon.uid"
+
+$keyvalues
+{
+	"particles"
+	{
+		"effect"
+		{
+			"name" "cf_tianxi_eye"
+			"attachment_type" "follow_attachment"
+			"attachment_point" "fx16"
+		}
+	}
+}
 
 $animblocksize 32 nostall
 

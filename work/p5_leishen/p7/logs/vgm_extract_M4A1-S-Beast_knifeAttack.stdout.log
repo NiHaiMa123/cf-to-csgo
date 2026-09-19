@@ -1,0 +1,12 @@
+decoding D:\Program Files\CF(2)\rez\FMODStudio\Weapons\M4A1IronBeast.bank
+sample rate: 48000 Hz
+channels: 1
+stream total samples: 34304 (0:00.715 seconds)
+encoding: FMOD FADPCM 4-bit ADPCM
+layout: interleave
+metadata from: FMOD FSB5 header
+bitrate: 210 kbps
+stream count: 17
+stream index: 7
+stream name: M4A1-S-Beast_knifeAttack
+play duration: 34304 samples (0:00.715 seconds)

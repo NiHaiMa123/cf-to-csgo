@@ -1,0 +1,128 @@
+[
+  {
+    "logical_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GR.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 131607844,
+    "size": 48661,
+    "directory_md5": "6e4da0d86e273212624fe43f20de6c06",
+    "sha256": "a4e33a50cb45949e914f5712a29fd14662f09d189c83f38fac7a236523031243",
+    "candidate_checks": [
+      {
+        "path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "length": 255883357,
+        "range_ok": true,
+        "actual_bytes": 48661,
+        "md5": "6e4da0d86e273212624fe43f20de6c06",
+        "md5_match": true
+      }
+    ],
+    "routing": "main_file"
+  },
+  {
+    "logical_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BL.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 131561939,
+    "size": 45905,
+    "directory_md5": "4e3986677ad7939c179afd2196aaeffd",
+    "sha256": "dd1c995f32ada570fd11e00f686ba6b4f40633b637771eb3097c7408347bb1de",
+    "candidate_checks": [
+      {
+        "path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+        "length": 255883357,
+        "range_ok": true,
+        "actual_bytes": 45905,
+        "md5": "4e3986677ad7939c179afd2196aaeffd",
+        "md5_match": true
+      }
+    ],
+    "routing": "main_file"
+  },
+  {
+    "logical_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_GR.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 841682866,
+    "size": 42253,
+    "directory_md5": "fa918df5c9ed95d7828aae37e9f83664",
+    "sha256": "4b5fa9e17e7e8a248a4ea94e12770b59e32187bbff152d34bae5fa0f301339ec",
+    "candidate_checks": [
+      {
+        "path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+        "length": 1519306913,
+        "range_ok": true,
+        "actual_bytes": 42253,
+        "md5": "fa918df5c9ed95d7828aae37e9f83664",
+        "md5_match": true
+      }
+    ],
+    "routing": "main_file"
+  },
+  {
+    "logical_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_BL.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 841640613,
+    "size": 42253,
+    "directory_md5": "fa918df5c9ed95d7828aae37e9f83664",
+    "sha256": "4b5fa9e17e7e8a248a4ea94e12770b59e32187bbff152d34bae5fa0f301339ec",
+    "candidate_checks": [
+      {
+        "path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+        "length": 1519306913,
+        "range_ok": true,
+        "actual_bytes": 42253,
+        "md5": "fa918df5c9ed95d7828aae37e9f83664",
+        "md5_match": true
+      }
+    ],
+    "routing": "main_file"
+  },
+  {
+    "logical_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GR.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 840514953,
+    "size": 48661,
+    "directory_md5": "6e4da0d86e273212624fe43f20de6c06",
+    "sha256": "a4e33a50cb45949e914f5712a29fd14662f09d189c83f38fac7a236523031243",
+    "candidate_checks": [
+      {
+        "path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+        "length": 1519306913,
+        "range_ok": true,
+        "actual_bytes": 48661,
+        "md5": "6e4da0d86e273212624fe43f20de6c06",
+        "md5_match": true
+      }
+    ],
+    "routing": "main_file"
+  },
+  {
+    "logical_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BL.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 838045333,
+    "size": 45905,
+    "directory_md5": "4e3986677ad7939c179afd2196aaeffd",
+    "sha256": "dd1c995f32ada570fd11e00f686ba6b4f40633b637771eb3097c7408347bb1de",
+    "candidate_checks": [
+      {
+        "path": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+        "length": 1519306913,
+        "range_ok": true,
+        "actual_bytes": 45905,
+        "md5": "4e3986677ad7939c179afd2196aaeffd",
+        "md5_match": true
+      }
+    ],
+    "routing": "main_file"
+  }
+]

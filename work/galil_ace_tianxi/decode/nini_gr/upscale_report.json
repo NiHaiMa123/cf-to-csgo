@@ -1,0 +1,31 @@
+{
+ "character": "Nini GR",
+ "files": [
+  {
+   "src": "FVIEW_HAND_Nini_GR.png",
+   "src_sha256": "5aea552c3213afae36a1c54b874471f19eafe3e25a77088a3e60ffabafec35ec",
+   "src_size": [
+    512,
+    512
+   ],
+   "up_path": "4x_FVIEW_HAND_Nini_GR.png",
+   "up_size": [
+    2048,
+    2048
+   ]
+  },
+  {
+   "src": "FVIEW_ARM_Nini_GR.png",
+   "src_sha256": "cafcf076052f96aa2d20affc3a46499c7defe49b3d39a4a937eb365deb7c9722",
+   "src_size": [
+    512,
+    512
+   ],
+   "up_path": "4x_FVIEW_ARM_Nini_GR.png",
+   "up_size": [
+    2048,
+    2048
+   ]
+  }
+ ]
+}

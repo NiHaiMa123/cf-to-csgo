@@ -11,13 +11,16 @@
     "cf_foxhand_bl.vmt",
     "cf_foxhand_bl.vtf",
     "cf_foxhand_bl_n.vtf",
+    "cf_fx_glow02.vmt",
+    "cf_fx_glow02.vtf",
     "cf_galilace_pb.vmt",
     "cf_galilace_pb.vtf",
     "cf_galilace_pb_env.vtf",
     "cf_galilace_pb_m.vtf",
     "cf_galilace_pb_n.vtf",
     "cf_galilace_pb_s.vtf",
-    "cf_gold_cube.vtf"
+    "cf_gold_cube.vtf",
+    "fx_galilace_parts_blue.vmt"
   ],
   "diffuse_src": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\texture\\up\\4x_PV-GalilACE_PhantomBeast.png",
   "envmap": "disabled; albedo-tinted phong only",

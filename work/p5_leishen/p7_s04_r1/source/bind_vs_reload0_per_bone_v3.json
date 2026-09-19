@@ -1,0 +1,515 @@
+[
+  {
+    "index": 0,
+    "name": "Scene Root",
+    "parent": -1,
+    "local_vs_fromparent_pos": 0.0,
+    "local_vs_fromparent_ang_deg_polar": 180.0,
+    "world_vs_bind_pos": 0.0,
+    "world_vs_bind_ang_deg_polar": 180.0
+  },
+  {
+    "index": 1,
+    "name": "FvARM-bone",
+    "parent": 0,
+    "local_vs_fromparent_pos": 6.630272690845238,
+    "local_vs_fromparent_ang_deg_polar": 179.99997940298726,
+    "world_vs_bind_pos": 0.0,
+    "world_vs_bind_ang_deg_polar": 2.05970127328611e-05
+  },
+  {
+    "index": 2,
+    "name": "FvARM-bone Pelvis",
+    "parent": 1,
+    "local_vs_fromparent_pos": 25.328880071599723,
+    "local_vs_fromparent_ang_deg_polar": 5.881750689764436e-05,
+    "world_vs_bind_pos": 25.32888007159994,
+    "world_vs_bind_ang_deg_polar": 6.181462706686214e-05
+  },
+  {
+    "index": 3,
+    "name": "FvARM-bone Spine",
+    "parent": 2,
+    "local_vs_fromparent_pos": 1.923722611407204e-06,
+    "local_vs_fromparent_ang_deg_polar": 5.731104651187513e-05,
+    "world_vs_bind_pos": 25.328880630865015,
+    "world_vs_bind_ang_deg_polar": 1.9090959104164312e-05
+  },
+  {
+    "index": 4,
+    "name": "FvARM-bone Spine1",
+    "parent": 3,
+    "local_vs_fromparent_pos": 0.0017925376535319253,
+    "local_vs_fromparent_ang_deg_polar": 26.999967219652717,
+    "world_vs_bind_pos": 25.328850259372572,
+    "world_vs_bind_ang_deg_polar": 26.999986271977033
+  },
+  {
+    "index": 5,
+    "name": "FvARM-bone Neck",
+    "parent": 4,
+    "local_vs_fromparent_pos": 2.8198537096828902e-06,
+    "local_vs_fromparent_ang_deg_polar": 5.7221945441760714e-05,
+    "world_vs_bind_pos": 25.326233084907958,
+    "world_vs_bind_ang_deg_polar": 26.999986272113787
+  },
+  {
+    "index": 6,
+    "name": "FvARM-bone L Clavicle",
+    "parent": 5,
+    "local_vs_fromparent_pos": 2.533604143078547,
+    "local_vs_fromparent_ang_deg_polar": 8.247647861702179e-05,
+    "world_vs_bind_pos": 27.623181001612284,
+    "world_vs_bind_ang_deg_polar": 26.999992127389657
+  },
+  {
+    "index": 7,
+    "name": "FvARM-bone L UpperArm",
+    "parent": 6,
+    "local_vs_fromparent_pos": 8.435637129199533e-07,
+    "local_vs_fromparent_ang_deg_polar": 96.84919917447671,
+    "world_vs_bind_pos": 27.56230234746774,
+    "world_vs_bind_ang_deg_polar": 118.45612955664582
+  },
+  {
+    "index": 8,
+    "name": "FvARM-bone L ForeArm",
+    "parent": 7,
+    "local_vs_fromparent_pos": 4.211108898933351e-06,
+    "local_vs_fromparent_ang_deg_polar": 46.70894692728523,
+    "world_vs_bind_pos": 28.69515985219244,
+    "world_vs_bind_ang_deg_polar": 158.34486051684542
+  },
+  {
+    "index": 9,
+    "name": "FvARM-bone L Hand",
+    "parent": 8,
+    "local_vs_fromparent_pos": 2.552872731952194e-06,
+    "local_vs_fromparent_ang_deg_polar": 107.64754127592185,
+    "world_vs_bind_pos": 28.92449932613318,
+    "world_vs_bind_ang_deg_polar": 171.4517959317141
+  },
+  {
+    "index": 10,
+    "name": "FvARM-bone L Finger0",
+    "parent": 9,
+    "local_vs_fromparent_pos": 1.0007022494922337e-06,
+    "local_vs_fromparent_ang_deg_polar": 32.83008197136933,
+    "world_vs_bind_pos": 28.078712797109755,
+    "world_vs_bind_ang_deg_polar": 138.88537142353718
+  },
+  {
+    "index": 11,
+    "name": "FvARM-bone L Finger01",
+    "parent": 10,
+    "local_vs_fromparent_pos": 2.687256084156881e-07,
+    "local_vs_fromparent_ang_deg_polar": 1.0000162969471909,
+    "world_vs_bind_pos": 28.3484994338164,
+    "world_vs_bind_ang_deg_polar": 138.59932648233092
+  },
+  {
+    "index": 12,
+    "name": "FvARM-bone L Finger02",
+    "parent": 11,
+    "local_vs_fromparent_pos": 1.1214238273414274e-06,
+    "local_vs_fromparent_ang_deg_polar": 19.650284364368517,
+    "world_vs_bind_pos": 28.569139957633254,
+    "world_vs_bind_ang_deg_polar": 144.73880083148845
+  },
+  {
+    "index": 13,
+    "name": "FvARM-bone L Finger1",
+    "parent": 9,
+    "local_vs_fromparent_pos": 1.5072432825639518e-06,
+    "local_vs_fromparent_ang_deg_polar": 21.999922120018223,
+    "world_vs_bind_pos": 30.26127269086187,
+    "world_vs_bind_ang_deg_polar": 153.1418712469508
+  },
+  {
+    "index": 14,
+    "name": "FvARM-bone L Finger11",
+    "parent": 13,
+    "local_vs_fromparent_pos": 9.362287692926475e-07,
+    "local_vs_fromparent_ang_deg_polar": 6.351295549423865e-05,
+    "world_vs_bind_pos": 30.822798558111728,
+    "world_vs_bind_ang_deg_polar": 153.14183158488726
+  },
+  {
+    "index": 15,
+    "name": "FvARM-bone L Finger12",
+    "parent": 14,
+    "local_vs_fromparent_pos": 1.691324632995889e-06,
+    "local_vs_fromparent_ang_deg_polar": 2.5896236867758488e-05,
+    "world_vs_bind_pos": 31.37075089465372,
+    "world_vs_bind_ang_deg_polar": 153.14182770144816
+  },
+  {
+    "index": 16,
+    "name": "FvARM-bone L Finger2",
+    "parent": 9,
+    "local_vs_fromparent_pos": 1.0534245865812007e-06,
+    "local_vs_fromparent_ang_deg_polar": 4.753610481523206e-05,
+    "world_vs_bind_pos": 30.760861838949445,
+    "world_vs_bind_ang_deg_polar": 171.45182381263072
+  },
+  {
+    "index": 17,
+    "name": "FvARM-bone L Finger21",
+    "parent": 16,
+    "local_vs_fromparent_pos": 6.234432922004797e-07,
+    "local_vs_fromparent_ang_deg_polar": 9.60182250663952e-05,
+    "world_vs_bind_pos": 31.260076376434867,
+    "world_vs_bind_ang_deg_polar": 171.45175520475908
+  },
+  {
+    "index": 18,
+    "name": "FvARM-bone L Finger22",
+    "parent": 17,
+    "local_vs_fromparent_pos": 1.4416222884939655e-06,
+    "local_vs_fromparent_ang_deg_polar": 6.502146373618603e-05,
+    "world_vs_bind_pos": 31.72477691175403,
+    "world_vs_bind_ang_deg_polar": 171.45169853389123
+  },
+  {
+    "index": 19,
+    "name": "FvARM-bone L Finger3",
+    "parent": 9,
+    "local_vs_fromparent_pos": 5.039044302264713e-07,
+    "local_vs_fromparent_ang_deg_polar": 6.680199118113974e-05,
+    "world_vs_bind_pos": 30.967300481307635,
+    "world_vs_bind_ang_deg_polar": 171.45177750053327
+  },
+  {
+    "index": 20,
+    "name": "FvARM-bone L Finger31",
+    "parent": 19,
+    "local_vs_fromparent_pos": 1.448129965290103e-06,
+    "local_vs_fromparent_ang_deg_polar": 4.640320638604396e-05,
+    "world_vs_bind_pos": 31.453111169843666,
+    "world_vs_bind_ang_deg_polar": 171.45181699425095
+  },
+  {
+    "index": 21,
+    "name": "FvARM-bone L Finger32",
+    "parent": 20,
+    "local_vs_fromparent_pos": 2.2083789253240917e-06,
+    "local_vs_fromparent_ang_deg_polar": 6.683471854058545e-05,
+    "world_vs_bind_pos": 31.91258432587925,
+    "world_vs_bind_ang_deg_polar": 171.45187771379858
+  },
+  {
+    "index": 22,
+    "name": "FvARM-bone L Finger4",
+    "parent": 9,
+    "local_vs_fromparent_pos": 9.401606746997026e-07,
+    "local_vs_fromparent_ang_deg_polar": 8.047241226890634e-05,
+    "world_vs_bind_pos": 31.121389021231007,
+    "world_vs_bind_ang_deg_polar": 171.45185740159806
+  },
+  {
+    "index": 23,
+    "name": "FvARM-bone L Finger41",
+    "parent": 22,
+    "local_vs_fromparent_pos": 2.0292729709252003e-06,
+    "local_vs_fromparent_ang_deg_polar": 3.822008105464551e-05,
+    "world_vs_bind_pos": 31.53818226713467,
+    "world_vs_bind_ang_deg_polar": 171.45183545389864
+  },
+  {
+    "index": 24,
+    "name": "FvARM-bone L Finger42",
+    "parent": 23,
+    "local_vs_fromparent_pos": 1.6847787546182108e-06,
+    "local_vs_fromparent_ang_deg_polar": 2.5556227761041798e-05,
+    "world_vs_bind_pos": 31.95376328041617,
+    "world_vs_bind_ang_deg_polar": 171.45182908914046
+  },
+  {
+    "index": 25,
+    "name": "FvARM-bone L ForeTwist",
+    "parent": 7,
+    "local_vs_fromparent_pos": 4.211108898933351e-06,
+    "local_vs_fromparent_ang_deg_polar": 57.38038150521702,
+    "world_vs_bind_pos": 28.69515985219244,
+    "world_vs_bind_ang_deg_polar": 172.37180982536594
+  },
+  {
+    "index": 26,
+    "name": "FvARM-bone R Clavicle",
+    "parent": 5,
+    "local_vs_fromparent_pos": 1.1086309382159363e-06,
+    "local_vs_fromparent_ang_deg_polar": 6.526763088785778e-05,
+    "world_vs_bind_pos": 25.390805723643542,
+    "world_vs_bind_ang_deg_polar": 26.999958213813986
+  },
+  {
+    "index": 27,
+    "name": "FvARM-bone R UpperArm",
+    "parent": 26,
+    "local_vs_fromparent_pos": 7.523139445547826e-07,
+    "local_vs_fromparent_ang_deg_polar": 80.50310679461163,
+    "world_vs_bind_pos": 25.56738210573592,
+    "world_vs_bind_ang_deg_polar": 61.74875078027635
+  },
+  {
+    "index": 28,
+    "name": "FvARM-bone R ForeArm",
+    "parent": 27,
+    "local_vs_fromparent_pos": 3.7543937113222712e-06,
+    "local_vs_fromparent_ang_deg_polar": 99.73525770552321,
+    "world_vs_bind_pos": 28.546682538377762,
+    "world_vs_bind_ang_deg_polar": 142.7607223492184
+  },
+  {
+    "index": 29,
+    "name": "FvARM-bone R Hand",
+    "parent": 28,
+    "local_vs_fromparent_pos": 1.644282162700789e-06,
+    "local_vs_fromparent_ang_deg_polar": 55.29802705988715,
+    "world_vs_bind_pos": 29.04531167566955,
+    "world_vs_bind_ang_deg_polar": 131.59266454160797
+  },
+  {
+    "index": 30,
+    "name": "FvARM-bone R Finger0",
+    "parent": 29,
+    "local_vs_fromparent_pos": 1.504912694596856e-06,
+    "local_vs_fromparent_ang_deg_polar": 20.783265544031682,
+    "world_vs_bind_pos": 28.234580343688787,
+    "world_vs_bind_ang_deg_polar": 135.63516849686332
+  },
+  {
+    "index": 31,
+    "name": "FvARM-bone R Finger01",
+    "parent": 30,
+    "local_vs_fromparent_pos": 2.1194068887751753e-06,
+    "local_vs_fromparent_ang_deg_polar": 29.000028634771407,
+    "world_vs_bind_pos": 28.388269118241638,
+    "world_vs_bind_ang_deg_polar": 117.91609755718883
+  },
+  {
+    "index": 32,
+    "name": "FvARM-bone R Finger02",
+    "parent": 31,
+    "local_vs_fromparent_pos": 1.327121139740283e-06,
+    "local_vs_fromparent_ang_deg_polar": 53.00002381223718,
+    "world_vs_bind_pos": 28.73525898741139,
+    "world_vs_bind_ang_deg_polar": 94.57235576692385
+  },
+  {
+    "index": 33,
+    "name": "FvARM-bone R Finger1",
+    "parent": 29,
+    "local_vs_fromparent_pos": 1.4308111289399335e-06,
+    "local_vs_fromparent_ang_deg_polar": 9.000054207316886,
+    "world_vs_bind_pos": 29.447325618297175,
+    "world_vs_bind_ang_deg_polar": 126.67154214070972
+  },
+  {
+    "index": 34,
+    "name": "FvARM-bone R Finger11",
+    "parent": 33,
+    "local_vs_fromparent_pos": 1.0804198409363054e-06,
+    "local_vs_fromparent_ang_deg_polar": 42.99995904779748,
+    "world_vs_bind_pos": 29.774913194023892,
+    "world_vs_bind_ang_deg_polar": 157.67891602386712
+  },
+  {
+    "index": 35,
+    "name": "FvARM-bone R Finger12",
+    "parent": 34,
+    "local_vs_fromparent_pos": 5.31148475776363e-07,
+    "local_vs_fromparent_ang_deg_polar": 36.00008610130094,
+    "world_vs_bind_pos": 30.161947955689886,
+    "world_vs_bind_ang_deg_polar": 175.1345816745663
+  },
+  {
+    "index": 36,
+    "name": "FvARM-bone R Finger2",
+    "parent": 29,
+    "local_vs_fromparent_pos": 1.038751871305361e-06,
+    "local_vs_fromparent_ang_deg_polar": 41.45768949050592,
+    "world_vs_bind_pos": 29.96235280284109,
+    "world_vs_bind_ang_deg_polar": 132.63542576818705
+  },
+  {
+    "index": 37,
+    "name": "FvARM-bone R Finger21",
+    "parent": 36,
+    "local_vs_fromparent_pos": 5.790162753741285e-07,
+    "local_vs_fromparent_ang_deg_polar": 60.000000302469665,
+    "world_vs_bind_pos": 30.563805659681066,
+    "world_vs_bind_ang_deg_polar": 179.17642525638038
+  },
+  {
+    "index": 38,
+    "name": "FvARM-bone R Finger22",
+    "parent": 37,
+    "local_vs_fromparent_pos": 1.4396053518513088e-06,
+    "local_vs_fromparent_ang_deg_polar": 57.99997372337139,
+    "world_vs_bind_pos": 31.07593637688226,
+    "world_vs_bind_ang_deg_polar": 135.6866121498832
+  },
+  {
+    "index": 39,
+    "name": "FvARM-bone R Finger3",
+    "parent": 29,
+    "local_vs_fromparent_pos": 1.4971278904809766e-06,
+    "local_vs_fromparent_ang_deg_polar": 60.362323958559344,
+    "world_vs_bind_pos": 30.306353319897894,
+    "world_vs_bind_ang_deg_polar": 157.2915627962105
+  },
+  {
+    "index": 40,
+    "name": "FvARM-bone R Finger31",
+    "parent": 39,
+    "local_vs_fromparent_pos": 1.6264617121550966e-06,
+    "local_vs_fromparent_ang_deg_polar": 56.99999268937055,
+    "world_vs_bind_pos": 30.85735745867206,
+    "world_vs_bind_ang_deg_polar": 154.9338685568452
+  },
+  {
+    "index": 41,
+    "name": "FvARM-bone R Finger32",
+    "parent": 40,
+    "local_vs_fromparent_pos": 2.1314876290865475e-06,
+    "local_vs_fromparent_ang_deg_polar": 54.99994872531476,
+    "world_vs_bind_pos": 31.11401725404615,
+    "world_vs_bind_ang_deg_polar": 110.84137526943358
+  },
+  {
+    "index": 42,
+    "name": "FvARM-bone R Finger4",
+    "parent": 29,
+    "local_vs_fromparent_pos": 1.5416627617772028e-06,
+    "local_vs_fromparent_ang_deg_polar": 89.1048060309031,
+    "world_vs_bind_pos": 30.60663421760728,
+    "world_vs_bind_ang_deg_polar": 171.11494630572514
+  },
+  {
+    "index": 43,
+    "name": "FvARM-bone R Finger41",
+    "parent": 42,
+    "local_vs_fromparent_pos": 2.049353080820612e-06,
+    "local_vs_fromparent_ang_deg_polar": 29.999955796333374,
+    "world_vs_bind_pos": 30.946660085015743,
+    "world_vs_bind_ang_deg_polar": 147.3188842150549
+  },
+  {
+    "index": 44,
+    "name": "FvARM-bone R Finger42",
+    "parent": 43,
+    "local_vs_fromparent_pos": 2.300792917688483e-06,
+    "local_vs_fromparent_ang_deg_polar": 29.999948415423866,
+    "world_vs_bind_pos": 31.120970643458865,
+    "world_vs_bind_ang_deg_polar": 124.44234741426047
+  },
+  {
+    "index": 45,
+    "name": "FvARM-bone R ForeTwist",
+    "parent": 27,
+    "local_vs_fromparent_pos": 3.7543937113222712e-06,
+    "local_vs_fromparent_ang_deg_polar": 100.69955969411515,
+    "world_vs_bind_pos": 28.546682538377762,
+    "world_vs_bind_ang_deg_polar": 147.17527015940337
+  },
+  {
+    "index": 46,
+    "name": "FvARM-bone Prop1",
+    "parent": 1,
+    "local_vs_fromparent_pos": 1.770099499825486e-06,
+    "local_vs_fromparent_ang_deg_polar": 6.407285385120958e-05,
+    "world_vs_bind_pos": 4.4011050027387316e-06,
+    "world_vs_bind_ang_deg_polar": 8.113994511554623e-05
+  },
+  {
+    "index": 47,
+    "name": "Dummy01",
+    "parent": 46,
+    "local_vs_fromparent_pos": 1.7577575859438e-06,
+    "local_vs_fromparent_ang_deg_polar": 3.3066511133632515e-05,
+    "world_vs_bind_pos": 1.0609587594245563e-05,
+    "world_vs_bind_ang_deg_polar": 0.00010135123903961987
+  },
+  {
+    "index": 48,
+    "name": "Bone02",
+    "parent": 47,
+    "local_vs_fromparent_pos": 6.4426441521359674e-06,
+    "local_vs_fromparent_ang_deg_polar": 3.3547981368006765e-05,
+    "world_vs_bind_pos": 6.760159947348184e-06,
+    "world_vs_bind_ang_deg_polar": 9.930235370448641e-05
+  },
+  {
+    "index": 49,
+    "name": "Box001",
+    "parent": 48,
+    "local_vs_fromparent_pos": 2.7014205410212037e-06,
+    "local_vs_fromparent_ang_deg_polar": 9.725527441174645e-05,
+    "world_vs_bind_pos": 6.095033922668426e-06,
+    "world_vs_bind_ang_deg_polar": 0.00011060900372368481
+  },
+  {
+    "index": 50,
+    "name": "Box002",
+    "parent": 48,
+    "local_vs_fromparent_pos": 2.1021842637914512e-06,
+    "local_vs_fromparent_ang_deg_polar": 6.439060994605005e-05,
+    "world_vs_bind_pos": 5.285233424787244e-06,
+    "world_vs_bind_ang_deg_polar": 9.69399728080488e-05
+  },
+  {
+    "index": 51,
+    "name": "Box003",
+    "parent": 48,
+    "local_vs_fromparent_pos": 6.92968435665331e-06,
+    "local_vs_fromparent_ang_deg_polar": 6.39931682954672e-05,
+    "world_vs_bind_pos": 1.4408857752509633e-05,
+    "world_vs_bind_ang_deg_polar": 0.00011736826035544902
+  },
+  {
+    "index": 52,
+    "name": "Box005",
+    "parent": 48,
+    "local_vs_fromparent_pos": 5.369568705522465e-06,
+    "local_vs_fromparent_ang_deg_polar": 6.116261833114666e-05,
+    "world_vs_bind_pos": 1.2574441570407438e-05,
+    "world_vs_bind_ang_deg_polar": 0.00011402913370489218
+  },
+  {
+    "index": 53,
+    "name": "Box006",
+    "parent": 48,
+    "local_vs_fromparent_pos": 4.993887569040594e-06,
+    "local_vs_fromparent_ang_deg_polar": 8.125664808967165e-05,
+    "world_vs_bind_pos": 1.1162791575242644e-05,
+    "world_vs_bind_ang_deg_polar": 0.00013128140636252085
+  },
+  {
+    "index": 54,
+    "name": "Box004",
+    "parent": 48,
+    "local_vs_fromparent_pos": 5.121853790851653e-06,
+    "local_vs_fromparent_ang_deg_polar": 0.00010253817937054226,
+    "world_vs_bind_pos": 1.3469088678880156e-05,
+    "world_vs_bind_ang_deg_polar": 7.694390751601416e-05
+  },
+  {
+    "index": 55,
+    "name": "Bone04",
+    "parent": 47,
+    "local_vs_fromparent_pos": 3.747052604518603e-06,
+    "local_vs_fromparent_ang_deg_polar": 4.002732700288928e-05,
+    "world_vs_bind_pos": 5.31048911783097e-06,
+    "world_vs_bind_ang_deg_polar": 0.00010017934176575086
+  },
+  {
+    "index": 56,
+    "name": "Bone06",
+    "parent": 47,
+    "local_vs_fromparent_pos": 2.232135769354514e-06,
+    "local_vs_fromparent_ang_deg_polar": 2.05970127328611e-05,
+    "world_vs_bind_pos": 1.0374932563648453e-05,
+    "world_vs_bind_ang_deg_polar": 9.874289937265233e-05
+  }
+]

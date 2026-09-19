@@ -1,356 +1,328 @@
-# Galil ACE-天袭 → CS:GO Galil AR 移植 Pipeline
+# CF → CS:GO Legacy 第一人称武器移植 Pipeline
 
-> 用户 2026-09-14 任务：把 CS 里的 Galil（`v_rif_galilar`，Galil AR 槽位）替换为 CF 的 **加利尔ACE-天袭**。
-> 方法链沿用已验证的 CF 原生管线（**附录 A**，原 `CF_NATIVE_PIPELINE.md` 已并入本文；参考实现 `scripts/p5/p5_p7_s05_cf_native_vm.py`，成品 `work/p5_leishen/p7_s05/`）。本文件 = 通用方法 + GalilACE 具体化（资产图、阶段开关、坑位差异）。Git 规则看 `README.md` §5。
+> 本文件只记录可复用流程和硬规则，不记录单把武器的资产表、参数、试错历史或验收截图。
+> 精简前的完整项目记录备份：`pipeline.projects-backup-2026-09-19.md`。
+> 各武器证据、脚本和产物统一放在 `work/<weapon>/`。
 
----
+## 1. 目标与完成标准
 
-## 0. 身份确认（已查证 2026-09-14）
+把 CF 的第一人称武器、手臂、动画、贴图和声音转换为 CS:GO Legacy 的 stock 武器替换，并保持：
 
-Bute `rez/Butes/BF005.LTC` Weapon 记录 #6941/#6942（MD5 校验解码）：
+- stock 模型路径、武器槽位、序列名和声音事件兼容；
+- CF 枪、手和手臂的内部关系不被拆散；
+- 变换可由几何、骨架和蒙皮语义自动求得，不依赖逐武器手调；
+- 截图只用于验收，不作为拟合输入；
+- 只替换第一人称资源，除非任务明确要求第三人称；
+- staging、MIGI addon、游戏 pak 三层内容经过哈希验证。
+
+完成条件：
 
 ```text
-WeaponName    = 加利尔ACE-天袭
-StandardName  = GalilACE_PhantomBeast          <- VVIP 形态
-第二行同名    = 变换(Chg)形态 PV-GalilACE_PhantomBeast_Chg（后续增强，首轮不做）
+P0-P6 构建通过
+A/B SHA-256 一致
+用户执行 MIGI REBUILD
+B/C SHA-256 一致（可读取 pak 时）
+用户游戏内确认模型、位置、动画、材质和声音
 ```
 
-同族排除：`GalilACE`（普通版）、`GalilACE_Prototype`（原型）、`_GJZX`/`_WC25`（PhantomBeast 的其它皮肤，同名 CFG/贴图族，不是天袭本体）。
+## 2. 工作目录
 
-证据：`work/galil_ace_tianxi/scan/galil_index_hits.json`（464 索引 / 255257 条目）、`work/galil_ace_tianxi/scan/bute_galilace.json`。
+```text
+work/<weapon>/
+├─ scan/          # Bute、索引、身份和资源路径证据
+├─ acquire/       # 从 REZ 分片校验恢复的原始资产
+├─ decode/        # LTB/DTX/动画/手膜解码结果
+├─ csref/         # stock 反编译、变换、拟合诊断
+├─ texture/       # PNG、VTF、VMT
+├─ sound/         # 声音探测、解码和 overlay
+├─ native_vm/     # SMD、QC、studiomdl 与隔离编译目录
+├─ addon/         # 仓库 staging addon
+└─ deploy/        # 清单、哈希和 pak 验证证据
+```
 
-## 1. CF 资产图（全部走 MD5 分片校验读 `read_verified_payload`）
+项目专属参数只写入 `work/<weapon>/**/*.json`、脚本或报告，不追加到本文件。
 
-| 角色 | REZ 内路径 | 所在包 | 备注 |
-|---|---|---|---|
-| PV LTB（枪+手臂骨架+动画） | `Models/PLAYERVIEW/PV-GalilACE_PhantomBeast.LTB` | `rez4/RF016.REZ` | 518960B，LZMA 压缩 |
-| PV 贴图（diffuse atlas） | `ModelTextures/PLAYERVIEW/PV-GalilACE_PhantomBeast.DTX` | `rez6/RF017.REZ` | 524452B |
-| 材质 CFG | `ModelTextures/Shader/WeaponShader/GalilACE_PhantomBeast.CFG` | `rez6/RF017.REZ` | 4084B 明文 |
-| Specular（环境反射色图） | `ModelTextures/SpecularMap/GalilACE_PhantomBeast_S.PNG` | `rez6/RF017.REZ` | 直接 PNG |
-| Normal | `ModelTextures/NormalMap/GalilACE_PhantomBeast_N.PNG` | `rez6/RF017.REZ` | 直接 PNG |
-| Alpha | `ModelTextures/AlphaMap/GalilACE_PhantomBeast_A.PNG` | `rez6/RF017.REZ` | 直接 PNG |
-| 声音 WAV ×12 | `SND/WEAPON/GalilACE_PhantomBeast/GalilACEPhantomB[Chg]_*.WAV` | `rez4/RF018.REZ` | **是加密容器**（非 RIFF）；实际 PCM 走 `rez/FMODStudio/Weapon/Weapon.bank` 的 `GalilACEPhantomB_*` FSB 流（vgmstream 解码） |
-| QV（第三人称，可选） | `Models/WEAPONS/QV-GalilACE_PhantomBeast.ltb` + `.dtx` | `rez4/RF016` / `rez6/RF017` | 首轮只做第一人称 |
-| 手膜（同一 LTB 内嵌） | `Fview-hand2`/`Fview-arm2` mesh，蒙皮在同一套 56 节点 rig 上 | LTB 内 | 贴图复用 `work/p5_leishen/p7_s04_r1/source/armtex/`（Fview 族 UV 兼容） |
+## 3. 阶段流程
 
-Bute 声音名映射（记录 #6941）：Shoot=`GalilACEPhantomB_Shoot`，ClipOut=`GalilACEPhantomB_ClipOut`，ClipIn=`GalilACEPhantomB_ClipIn`，Select/换弹=`GalilACEPhantomB_Select`，变形=`GalilACEPhantomB_Chg`，观察=`GalilACEPhantomB_Obv`，近战=`GalilACEPhantomB_ATT`。
+| 阶段 | 内容 | 必须产物 |
+|---|---|---|
+| 身份 | Bute + REZ 索引确认唯一武器族、PV/QV、贴图、声音、特效 | `scan/*.json` |
+| P0 | 从正确 REZ 分片读取并做 MD5/SHA 校验 | `acquire/verified_root/`、清单 |
+| P1 | LTB skin、骨架动画、DTX/PNG、材质配置解码 | `decode/*skin*.json`、动画 payload |
+| P2 | 仅在身份、UV、节点或姿态存疑时做轻量预览 | 诊断图/报告，可跳过 |
+| P3 | stock 反编译；求 H、镜像 MX、残差 VIEW、挂点 | `csref/viewmodel_transform.json` |
+| P4 | diffuse 超分；构建 Source 材质 | VTF/VMT |
+| P5 | 生成 SMD/QC，映射序列和事件，studiomdl 编译 | `.mdl/.vvd/.vtx/.ani` |
+| P6 | 解码 CF 声音并覆盖 stock 声音路径 | PCM16 WAV overlay |
+| P7 | staging A → MIGI addon B → 用户 REBUILD → pak C | 哈希清单 |
+| P8 | 游戏内验收 | `USER_RUNTIME_ACCEPTED` |
 
-**与雷神的差异**：PhantomBeast PV LTB 是 VVIP 模型（~519KB vs 雷神 153KB），节点/件数/`PIECE_NODE` 映射都要重新算；有 `PVEffectName=pv_galilace_phantombeast_idle` 粒子特效（不可移植，记为已知回退）；`_Chg` 变换形态首轮不做。
+## 4. 身份与资产恢复
 
-## 2. CS 侧目标
+### 4.1 身份确认
 
-| 项 | 值 |
+1. 从 Bute/LTC 记录确认 `StandardName`、`PViewModelFileName`、`PViewSkinFileName`、动画族和声音名。
+2. 枚举同族皮肤、旧版模型、BL/GR/WOMAN/socket 变体，明确排除项。
+3. 用 REZ 索引确认模型、贴图、CFG、声音、QV 和特效真实存在。
+4. 记录索引条目、包路径、分片号、大小和摘要；不要只凭文件名猜资产。
+
+### 4.2 REZ 分片硬规则
+
+- 不使用 `data/` 等旧解包目录作为可信输入。
+- REZ 目录项的 `time` 字段可能是分片号，payload 位于 `RFxxx_<n>.REZ`。
+- 一律通过 `scripts/material_recovery/rez_verified_payload.read_verified_payload` 读取并校验 MD5。
+- `rez/`、`rez2/`…`rez6/` 都要纳入索引；新角色和新皮肤常在后续目录。
+- 无摘要校验的资产只能标记为候选，不能进入生产构建。
+
+## 5. LTB、动画与蒙皮
+
+### 5.1 LTB 事实
+
+- LTB 通常是 LZMA-alone 压缩的 Jupiter 模型。
+- 节点保存 bind 世界矩阵；动画轨道为 local position/quaternion，需沿父链组合为 world。
+- LTB mesh 通常不直接给出贴图路径；贴图绑定依赖命名约定和 CFG。
+- 刚性件与节点的归属若未显式给出，应在 bind/local 空间用距离、半径和层级约束分配，并保留审计结果。
+
+### 5.2 正确蒙皮
+
+```text
+v_anim = Σ weight_i · W_anim[i] · inverse(W_bind[i]) · v_bind
+```
+
+不得遗漏骨骼平移或 inverse bind。只应用 `W_anim` 会造成离线预览与游戏姿态不一致。
+
+外部手臂模型与武器 PV 使用不同 bind 时，先重姿态：
+
+```text
+v_weapon_bind = Σ weight_i · B_weapon[i] · inverse(B_arm[i]) · v_arm
+```
+
+然后由武器动画骨架驱动。只使用骨名确实匹配的节点；记录未匹配骨骼。
+
+### 5.3 默认手膜
+
+- 默认手膜为妮妮-保卫者 `Arm_Nini_GR`，除非用户明确指定其他角色或阵营。
+- 丢弃武器 LTB 内嵌的重复手/臂网格，避免双层手膜。
+- 只超分手/袖 diffuse；normal 保持原始分辨率并标记 `NORMAL`。
+- 手和枪必须经过同一个全局 VIEW；不得为修位置而逐骨锚到 stock 骨架。
+
+## 6. 坐标、UV 与全局变换
+
+### 6.1 UV
+
+- dump JSON 使用原始 UV；写入 Source/Blender 时执行一次 `v_source = 1 - v_raw`。
+- 只翻一次。判断 UV 时用 emission/无光照预览，不要让材质高光干扰。
+
+### 6.2 基础相似变换
+
+先在 idle 动画姿态下求 CF → Source 的相似变换：
+
+```text
+H = [sR | t]
+v' = H · v
+B' = H · B · inverse(H)
+W' = H · W · inverse(H)
+```
+
+规则：
+
+- 同一 FvARM playerview 空间可复用已验证的 rig-level H；新骨架必须重求。
+- H 是 rig 级映射，不保证每把武器最终取景正确；逐武器位置由残差 VIEW 处理。
+- 形状不同的武器不能直接全网格 ICP；优先使用枪管轴、握持区、挂点和相机侧点云等语义结构。
+
+### 6.3 镜像
+
+CF/Source 左右约定不一致时，在 H 后绕本武器枪身中心做镜像 `MX`：
+
+- 顶点、bind、动画、挂点同步处理；
+- 反射后反转三角绕序并重算法线；
+- 不得绕世界原点镜像；不同武器必须重新计算中心。
+
+### 6.4 残差 VIEW 拟合
+
+保持 CF 枪—手—臂整体刚性关系：
+
+```text
+VIEW = T(replace) · T(push_cloud) · T(grip) · R_fix · T(-grip)
+```
+
+推荐语义：
+
+| 分量 | 数据来源 |
 |---|---|
-| 槽位 | Galil AR（T 步枪） |
-| 模型 | `models/weapons/v_rif_galilar.{mdl,vvd,vtx,ani}` |
-| 参考 | 从 `csgo/pak01_dir.vpk` 抽 stock v_rif_galilar + QC/序列名/挂点 + `game_sounds_weapons` 的 `Weapon_GalilAR.*` 文件名 |
-| 声音路径 | `sound/weapons/galilar/*.wav`（以 stock manifest 为准） |
-| 部署 | 新 addon `p_cf_tianxi_galilar_p1`，只放第一人称资产；`w_rif_galilar*` 不动 |
+| `grip` | CF idle 下，右手蒙皮表面与枪身表面最近点对的稳定接触区质心 |
+| `R_fix` | 枪管/套筒方向与 stock 枪管方向；rig up 与 Source +Z |
+| `push_cloud.y` | 双方相机侧枪身点云的纵深统计量 |
+| `replace.z` | CF 与 stock 的真实蒙皮手—枪表面接触区高度 |
+| `replace.x` | 可验证的相机空间几何或 stock 语义锚；禁止从验收截图量像素手调 |
 
-## 3. 阶段流程（每步产 evidence，进 `work/galil_ace_tianxi/`）
+接触区算法：
 
-```text
-P0 资产恢复  verified_root 镜像 + SHA/provenance 记录      -> acquire/
-P1 解码      skin dump(顶点/UV/权重) + 动画 payload(100fps) + DTX->PNG -> decode/
-P2 身份      [默认 SKIP] Bute+资源路径+贴图证据确认；Blender 预览仅拟合存疑时跑轻量模式
-P3 CS 参考   stock galilar 反编译 -> H = sR+t ICP 拟合      -> csref/
-P4 贴图      diffuse 4x 超分(ComfyUI 127.0.0.1:8188) -> VTF/VMT -> materials/
-P5 模型      改编 s05 脚本 -> SMD/QC -> studiomdl           -> source1/
-P6 声音      CF WAV -> 44.1k PCM16 -> galilar 文件名 overlay -> sound/
-P7 部署      agent: addon 落盘到 migi addons -> 用户: MIGI UPDATE -> agent: pak hash 复核 -> deploy/
-P8 验收      用户游戏内确认第一人称/声音/动作                [GATE: USER_RUNTIME_ACCEPTED]
-```
+1. 分别把 CF 手 + 枪、Source 手 + stock 枪蒙皮到 idle 帧。
+2. 对右手表面每个点求最近枪身表面点。
+3. 取距离最小的稳定分位区间（默认 10%，并检查 5%/15% 敏感度）。
+4. 使用点对中点质心作为接触语义锚，而不是 `R_Hand` 骨原点。
 
-硬规则（继承 CF_NATIVE_PIPELINE）：
+禁止：
 
-- **REZ 分片**：一律 `read_verified_payload(index, entry)`，无 MD5 不算已验证；`data/` 老解包不用作输入。
-- **UV**：dump JSON 是原始 UV，进 Source/Blender 写 `v → 1-v`，只做一次。
-- **镜像**：CF 原始左右反；Source 1 侧在 H 之后绕**枪身中心**镜像（不是原点），顶点/rest/动画/挂点同步，三角绕序反转。
-- **CS 手臂隐藏**：47 根 `Bip01*` 骨全帧钉 `(0,+500,0)`（相机后方），不做 identity 塌陷。
-- **H 变换**：ICP 拟合 `CF idle-posed 枪顶点 → stock galilar idle-posed 顶点`，`v'=Hv`、`R'=H·B·H⁻¹`、`W'=H·W·H⁻¹`。
-- **超分**：只超 diffuse；normal/spec 不超。
-- **事件时序**：按 CF clip `times_ms` 投到 100fps 帧号；同 channel 后续事件会截断前音（BoltBack/BoltForward 坑）。
-- **MIGI UPDATE/REBUILD 由用户手动执行**：agent 只负责把 addon 落盘到 `migi/csgo/addons/` 并提醒用户点 REBUILD，不替用户操作 MIGI；以 pak 内 hash == MIGI addon hash 为最终验证，不看 UI 日期或仓库 staging 文件。
+- CF 骨点直接对齐 stock 骨点；两套 rig 的骨原点语义不同。
+- 用离腕骨最近的枪顶点冒充真实接触点。
+- 用整枪质心对齐不同拓扑武器；长机匣、低握把等会产生系统偏差。
+- 用整网格 PCA 代表枪管轴；握把和装饰件会污染主轴。
+- 根据截图绝对像素、截图尺寸或缩放比例反解最终位置。
 
-## 3.1 MIGI 三层产物链（强制检查，避免“REBUILD 后没变化”）
+截图只验证以下相对关系：手露出量、手—握把接触、枪口—机匣—握把顺序、腕—前臂轮廓和是否穿相机。
 
-MIGI 部署存在三个彼此独立的层级：
+## 7. Source 1 模型构建
 
-```text
-A. 仓库 staging
-   work/<weapon>/addon/**
-          ↓ agent 必须显式复制，并先做 hash 对比
-B. 实际 MIGI addon
-   <game>/migi/csgo/addons/<addon>/**
-          ↓ 用户手动点击 MIGI REBUILD
-C. 游戏实际读取的 pak
-   <game>/migi/csgo/pak01_dir.vpk + pak01_*.vpk
-```
+### 7.1 架构
 
-**重复出现“调了多版但游戏完全没变化”的根因**：材质脚本只更新了 A，未同步到 B。用户点击 REBUILD 时，MIGI 正确地从 B 重新打包，但 B 仍是旧版，所以 C 也仍是旧版。仓库产物变新、提交变更、甚至 REBUILD 成功，都不能证明游戏读取到了新文件。
+- 根骨 `v_weapon`。
+- 保留 stock 所需的序列名、activity、attachment 和兼容骨名。
+- CF 刚性枪件绑定对应 CF 节点；手/袖使用 LBS。
+- 动画直接映射 CF clip，统一采样率后写 SMD。
+- attachment 以 stock idle 世界位置或明确的 CF socket 为依据。
 
-强制执行顺序：
+### 7.2 隐藏 stock 手套/袖子
 
-1. 构建脚本先输出 A。
-2. agent 将本轮全部变更文件显式复制到 B；不能写 `migi/csgo/materials/` 松散目录代替 B（用户已验证松散文件不覆盖 pak）。
-3. **在要求用户 REBUILD 之前**，agent 必须比较 A 与 B 的关键文件 SHA-256；文件清单、大小和 hash 全部一致才可通知用户。新增文件（如 `_S.vtf`、`_M.vtf`、cubemap）也必须在 B 存在。
-4. agent 停止，通知用户打开 MIGI 点击 **REBUILD**；不得替用户执行。
-5. 用户完成 REBUILD 后，agent 再比较 C 内条目与 B 的 SHA-256；一致才可进入游戏视觉验收。若不能立即读取 C，状态保持 `PACK_VERIFY_PENDING`，不得声称新版本已生效。
-6. 若游戏画面“完全没变化”，**先查 A/B/C 哈希，不要继续调 shader 参数**。只有三层一致后仍无变化，才排查 VMT 参数、材质搜索路径或模型 material name。
-
-检查时不要依赖 MIGI 列表里的日期、addon 显示名或 REBUILD 成功提示；这些都不等价于文件内容一致。贴图脚本必须同时定义仓库 staging 路径和实际 MIGI addon 路径，例如本轮：
+CS 手套和袖子通过同名 `Bip01*` bonemerge：
 
 ```text
-A = work/galil_ace_tianxi/addon/materials/.../cf_tianxi/
-B = <game>/migi/csgo/addons/p_cf_tianxi_galilar_p1/materials/.../cf_tianxi/
+posed = W_weapon_bone · inverse(B_arm_bind) · v_arm
 ```
 
-本轮事故证据：实际 B 一直保留 v1（VMT 276B、diffuse 1.3MB DXT1），而 A 已是 v5（VMT 833B、diffuse 22MB BGRA8888，并新增 `_S`/`_M`/`cf_gold_cube.vtf`）。修复后 A/B 三个关键文件 SHA-256 已一致；修复提交 `b884090`。
+所有兼容 `Bip01*` 骨在 rest 和每帧动画中统一放到 `(0,+500,0)`，送至相机后方。不要设 identity，不要放到 `-Y` 前方，也不要修改共享手套材质。
 
-## 4. 当前状态（2026-09-14 晚，用户已验收）
+### 7.3 编译验证
+
+- QC 不应意外包含 `$origin`、`$upaxis` 或额外 `$scale`。
+- 编译后必须检查 `.mdl/.vvd/.dx90.vtx/.dx80.vtx/.sw.vtx`，使用动画块时还要检查 `.ani`。
+- 从最终生成的 reference SMD + animation SMD 重算一帧蒙皮，确认其与拟合器预测一致。
+- 检查枪身、左右手、前臂和动态装饰件的 bbox；远端装饰件不能污染枪身拟合。
+
+## 8. 贴图与材质
+
+### 8.1 贴图处理
+
+- 只对 diffuse 做 RealESRGAN 4x；4096 作为中间结果，通常降采样到 2048。
+- 最终 diffuse 优先 BGRA8888，并启用 `TRILINEAR`、`ANISOTROPIC`。
+- normal/spec/alpha 不盲目超分；逐通道确认真实含义。
+- `*_S` 可能是环境反射色图，不等于 Source 的普通 specular mask。
+
+### 8.2 材质语义恢复
+
+通用单位是 CF 的 shader family，不是武器名称，也不是一组固定 Phong 常量。先解析 CFG 的 Techniques/Properties 和全部贴图通道，再按目标引擎的表达能力转换：
+
+| CF shader family | Source 近似 |
+|---|---|
+| diffuse/normal | base + bump |
+| 普通 specular | 通道 mask + 受光照 Phong |
+| albedo 金属 | albedo-tinted Phong |
+| 标准 reflect cube | 仅在射线、朝向和 mip 均验证后使用 `$envmap` |
+| Alpha+Snell+TransformedCube | spec → 弱受光 Phong；cube → 稳定加法环境层（emissiveblend）；diffuse → lightwarp 压缩 |
+| 稀疏发光 | 仅验证过的通道 → selfillum mask |
+
+已验证的 PlayerView Alpha+Snell+TransformedCube 公式为：
 
 ```text
-P0: PASS   13/13 资产 MD5 分片校验恢复 -> acquire/verified_root/ (acquisition.json)
-P1: PASS   LTB 56 节点 / 12 mesh / 10 clip 解出 -> decode/ (reference_payload.json 100fps, cf_skin_galilace.json, DTX->PNG)
-P2: SKIP   Blender 预览脚本写好但渲染负载大导致 MCP 阻塞；用户已关 Blender。身份已由 Bute+资源路径+贴图确认。
-P3: PASS   stock v_rif_galilar 反编译；H 变换 ICP 拟合 s=2.0025 det=+1 sym_trimmed_mean=0.353
-           (csref/viewmodel_transform.json；锚点初始化改 PCA 主轴——3 点共线锚点会坍缩)
-P4: PASS   v7：ComfyUI 4x 后降采样到 2048 -> BGRA8888 无损 diffuse；
-           _M 只取稀疏 G/B 发光信息；禁用 envmap/rimlight（反射在阴影下仍叠加而泛白）；
-           金属表现只用 albedo-tinted Phong（exponent=48/boost=2），高光继承枪身
-           diffuse 本色并随 viewmodel 光照变化；VTF 加 TRILINEAR+ANISOTROPIC(+NORMAL)
-           (texture/build_textures_v2.py；v6 已确认 A/B/C hash 一致后才得出此材质结论)
-P5: PASS   work/galil_ace_tianxi/native_vm/build_galilace_vm.py
-           108 骨（1 root + 47 CS 塌陷 + 55 CF + 4 attach + galilar_parent）
-           8 序列：idle/fire1-3/reload/draw/lookat01(=observe 704f)/prepare/loop
-           事件用 LTB 权威 keyframe label：ClipOut@33 ClipIn@117 (100fps)
-           studiomdl 一次通过，6 文件齐全
-P6: PASS   Weapon.bank FSB 流 -> 44.1k PCM16 -> 8 个 galilar wave 路径
-           (fire×4=dry Shoot_1, distant=Shoot_1_R, clipout, clipin, draw=Select)
-           boltback/boltforward 保留 stock；WeaponMove*=stock 共享 foley 不动
-P7: PASS   pak01_dir.vpk 重建（vpk.exe -M），addons.json 加入 p_cf_tianxi_galilar_p1，
-           23 文件全部入 pak 并复核；旧 pak 备份在 deploy/pak01_backup/
-           注：本轮 pak 由 agent headless 重建（vpk -M）完成，仅作一次性验证；
-           正式流程定为用户手动 MIGI UPDATE，agent 不做此步。
-P8: PASS   用户游戏内确认：模型/手膜/动画/声音正常（2026-09-14）
+out.rgb = diffuse_lit
+        + SpecularMap.rgb × spec_term × AlphaMap.g
+        + CubeMap × EnvCubeMapBrightness × AlphaMap.b
+AlphaMap.r = opacity
+spec exponent = SpecularPower × 0.25
 ```
 
-### 4.1 M4A1-雷神同步整改（2026-09-15）
+Source `VertexLitGeneric` 不能表达 CF 的 transformed light direction、Snell 折射、`ReflectionIndex/RefractionIndex` 混合和 `CubeMapTransformY`。因此该 family 不得把原 cubemap 直接接到 `$envmap`：通道名称虽相同，采样射线不同，会造成错误亮斑、阴影洗白和无 mip 噪点。通用降级规则为三层模型——CF 原式中 cubemap 是不乘直射光的独立加法项，任何只重映射 diffuse 光照的方案（纯 lightwarp、selfillum 混合）都无法同时修复迎光高光爆亮与背光反射消失：
+
+1. `SpecularMap.rgb × AlphaMap.g` 单独低通后写入 base alpha，仅它驱动受光照的 Phong；从其 RGB 能量统计 `$phongtint`，不得用暗 diffuse 的 `$phongalbedotint` 代替独立 specular 颜色；`_S` 的高频纹理不得直接成为 Phong mask；
+2. cubemap 不得并入 Phong。`cubemap代表色 × EnvCubeMapBrightness × AlphaMap.b` 低通后作为 `$emissiveblendbasetexture` 的 RGB 层，用静态 `$emissiveblend`（dummy 白 texture/flow、scroll `[0 0]`）作为不随场景直射光变化的加法 pass 恢复环境反射；`$emissiveblendstrength` 由统一的受光份额推导（`1 - 受光份额`）；
+3. 用 `LightBrightness` 经过统一的跨引擎尺度和上下限推导 Source 受光份额，并生成中性 `$lightwarptexture` 曲线：暗端 `1 - 受光份额`，亮端 `1.0`；它只压缩 diffuse 光照对比，不承担反射项；
+4. `$phongboost` 只应用统一的目标引擎代理增益并按 specular tint 亮度归一化；已验证公式没有独立 Fresnel 衰减时使用中性 Fresnel；
+5. 用 `SpecularPower × 0.25` 判定高光宽窄，再通过统一的跨引擎宽度标定映射并限制到 Source 可用范围，禁止直接复制 CFG 数值；
+6. 原 cubemap、旋转和折射参数保留在审计报告中，不作为无法等价表达时的运行时贴图。
+
+同一张高频图不得同时驱动 Phong 与 envmap。只有标准反射 family 且六面朝向、完整 mip、动态明暗都验证通过时才允许直接 `$envmap`。selfillum 只来自验证过的稀疏发光 mask；弱受光 shader family 不使用 selfillum 做对比压缩，因为带 `$bumpmap/$phong` 的 `VertexLitGeneric` 对该组合支持不稳定。lightwarp 必须是 256px 级、未压缩 BGR888、UV clamp、无 mip 的中性曲线。emissiveblend 环境层必须低通、有界且强度由 CFG 推导，不得直接复制原 cubemap 像素。
+
+每次构建输出 shader family、转换策略、CFG 参数、通道 min/max/mean、滤波方式、VTF format/flags 和近似参数。游戏验收至少覆盖明暗两个环境，并检查噪点、洗白、底色保持和高光连续性。
+
+## 9. 声音与事件
+
+声音来源必须探测内容，不能按扩展名假设：
+
+1. 若首字节/头部符合 LZMA-alone，先解压并检查输出是否为 RIFF/WAV。
+2. 若 SND 只是容器或占位，检索 `FMODStudio/Weapon*.bank` 的 FSB5 流并用 vgmstream 解码。
+3. 输出统一为 44.1 kHz PCM16 WAV，再映射到 stock 武器声音路径。
+4. 事件时序优先使用 LTB keyframe label / clip `times_ms`，换算到 QC fps。
+
+注意：
+
+- `event 5004` 同 channel 的后续声音会截断前一个；静音事件也可能截断。
+- 同一 PCM 不要重复挂到同一 sequence 的多个事件。
+- 不改共享声音或第三人称声音，除非任务明确要求。
+
+## 10. MIGI 部署与哈希门禁
 
 ```text
-材质: STAGED  原 diffuse=1024 DXT1/699KB（未超分，RGB mean=12.9/16.4/16.6）；
-                 `scripts/p5/build_leishen_texture_v2.py` 已执行 ComfyUI RealESRGAN 4x，
-                 降采样到 2048，gamma=0.72/brightness=1.08/color=1.08/contrast=1.03，
-                 输出 2048 BGRA8888/22MB + TRILINEAR/ANISOTROPIC，A/B hash PASS；
-                 VMT 使用附录 A.8.1 本色 Phong，删除 envmap/envmapmask。
-合并: STAGED  p_cf_leishen_m4a4_p7_sound 的 9 个 WAV 已并入
-                 p_cf_leishen_m4a4_p6（现共 39 文件，无路径冲突，9/9 hash PASS）。
-退役: PASS    活动 addons 中已移除 p_cf_leishen_m4a4_p7_sound；同内容 parked 备份保留。
-脚本: PASS    scripts/p5/p5_p7_original_sound.py 后续直接 merge 到 P6，不再创建第二 addon；
-                 scripts/p5/merge_leishen_addons.py 负责旧双-addon 的一次性安全合并。
-打包: PACK_VERIFY_PENDING  等用户 MIGI REBUILD；agent 不执行。
+A. work/<weapon>/addon/**
+        ↓ 构建脚本同步 + SHA-256
+B. <game>/migi/csgo/addons/<addon>/**
+        ↓ 用户手动 MIGI REBUILD
+C. <game>/migi/csgo/pak01_dir.vpk + pak01_*.vpk
 ```
 
-合并证据：`work/p5_leishen/unified_addon.json`。canonical addon 固定为 `p_cf_leishen_m4a4_p6`。
+强制顺序：
 
-## 5. 复现索引（照此可重走全流程）
+1. 构建 staging A。
+2. 显式同步全部变更到 B，包括新增材质、声音和模型旁文件。
+3. 比较 A/B 文件清单、大小和 SHA-256；不一致不得通知用户 REBUILD。
+4. 用户手动执行 MIGI REBUILD；agent 不代替用户操作 MIGI。
+5. 可读取 pak 时比较 B/C；不能读取则保持 `PACK_VERIFY_PENDING`。
+6. 若游戏无变化，先查 A/B/C，不要继续改 shader 或 VIEW。
 
-前置依赖（`scripts/_paths.py` 提供）：CF 客户端目录、CS:GO 目录、
-`vgmstream-cli`、`ffmpeg`、Crowbar（stock 反编译）、Source SDK `studiomdl.exe`、`vpk.exe`。
+MIGI UI 日期、addon 显示名和“REBUILD 成功”提示都不能代替哈希验证。松散 `migi/csgo/materials/` 在本环境不作为覆盖方案。
 
-| 阶段 | 脚本 | 输入 → 输出 |
-|---|---|---|
-| 身份扫描 | `scan/scan_galil_index.py` `scan/find_bute_records.py` `scan/scan_fview_index.py` | REZ 索引 + Bute → `scan/*.json` |
-| P0 | `acquire/acquire_assets.py` | REZ 条目 → `acquire/verified_root/` + `acquisition.json` |
-| P1 | `decode/decode_assets.py` | verified_root LTB/DTX → `decode/`（payload/skin/audit/PNG） |
-| P2 | 默认跳过；存疑时 `preview/bpy_build_preview.py` | decode → Blender 预览（只建 mesh+单帧姿态，不烘焙不渲染） |
-| P3 | `csref/extract_galilar_ref.py` `csref/fit_transform.py` | pak01 stock mdl → `csref/decompiled_stock/` + `viewmodel_transform.json` |
-| P4 | `texture/build_textures_v2.py` | ComfyUI 超分 diffuse + 稀疏 `_M` 发光 mask + albedo-tinted Phong VMT → staging，并同步实际 MIGI addon |
-| P5 | `native_vm/build_galilace_vm.py` | decode+csref+armtex → `native_vm/source1/` → studiomdl → `addon/` |
-| P6 | `sound/build_sound_overlay.py` | `Weapon.bank` FSB（vgmstream+ffmpeg）→ `addon/sound/weapons/galilar/` |
-| P7 | agent: A→B 同步并校验；**用户: MIGI REBUILD**；agent: B→C 校验 | staging addon → `migi/csgo/addons/` → 用户 REBUILD → pak hash 复核；详见 §3.1 |
-| P8 | 用户游戏内验收 | — |
+## 11. 验收清单
 
-## 6. 已知回退 / 后续增强位
+### 离线
 
-- `BoltBack/BoltForward` 帧 140/160 是按副件运动估的（CF 无 bolt label）——换弹尾段机械声不对位就调 `build_galilace_vm.py` 这两个帧号。
-- `PV-GalilACE_PhantomBeast_Chg` 变换形态、QV 第三人称、`pv_galilace_phantombeast_idle` 粒子特效首轮未做。
-- diffuse 经 4x 超分后以 2048 BGRA8888 无损 VTF 输出；免重启路线弃用（`mat_reloadallmaterials` 闪退 + 用户实测松散文件不覆盖 pak）。迭代 = 改 `build_textures_v2.py` 参数重跑落 staging 并同步实际 addon → A/B hash Gate → 用户 MIGI REBUILD → B/C hash Gate → 上游戏验收。
-- **v5 黄绿噪点根因**：`GalilACE_PhantomBeast_M.PNG` 没有 alpha，R 通道全 255；直接作为 `$selfillummask` 等于整枪自发光。彩色高频 `_S` 同时驱动 phong exponent 与 envmap mask，再叠加只有一个 mip 的 Gold_map01 cubemap，进一步放大反射斑点。v6 只取 `_M` 的 `max(G,B)` 作为稀疏发光遮罩并移除高频驱动，噪点消失。
-- **v6 阴影下仍泛白根因**：`$envmap` 是环境反射加色，不等于枪身本色金属，暗处仍会叠加 cubemap；rimlight 也会继续抬亮边缘。用户要求的是贴图本色的金属高光，因此 v7 完全移除 envmap/rimlight，仅保留 `$phongalbedotint 1` 的 Phong，高光颜色继承 diffuse。
-- observe 的 6 个音效 cue 暂用 stock `WeaponMove*` 通用衣物音。
+- [ ] 资产均来自 MD5 校验后的 REZ payload
+- [ ] idle 蒙皮使用 `W_anim · inverse(W_bind)`
+- [ ] UV 只翻转一次
+- [ ] 镜像中心、三角绕序、法线一致
+- [ ] 枪、手、臂共享全局 VIEW
+- [ ] 手—枪真实表面接触关系保持
+- [ ] 无骨骼、顶点或动态件穿过相机
+- [ ] stock 序列、activity、attachment 和声音路径兼容
+- [ ] studiomdl 输出文件齐全
+- [ ] A/B SHA-256 一致
 
-### 执行中发现的差异（已处理）
+### 游戏内
 
-- **SND/*.WAV 是加密容器**（93B 头 + 无标准 magic）→ 声音实际取自 FMOD `Weapon.bank`，含 `_R` 混响尾变体（用作 distant 正好）。
-- **LTB 内嵌权威事件 label**：reload 有 `WeaponClipOut@kf10`/`WeaponClipIn@kf35`（30fps 帧号 ×100/30 → 33/117）；select 有 `WeaponReload@kf1`。bolt 无事件 → BoltBack/Forward 暂按副件运动窗估 140/160，runtime 后微调。
-- **观察动作**：`observe` clip 704f/7s，带 6 个音效 cue（observe1-5 label）→ 映射到 lookat01，暂用 stock WeaponMove 通用衣物音。
-- **手部**：Fview-hand2/arm2 与枪同 rig，无需像 M4A1 那样跨 rig 重摆姿态；权重直接写。
-- **附件**：flash/shelleject/stattrack/uid 挂在 Box001 下，idle f0 位置与镜像后 stock 完全一致（flash [-5.12,-36.43,-3.74]）。
-- **MIGI UPDATE 可headless 复刻**：解 pak01_dir.vpk → 叠加 addon → 更 addons.json → `vpk.exe -M` 重打（`deploy/rebuild_pak.py`）。
+- [ ] MIGI REBUILD 后加载的是本轮版本
+- [ ] idle 方向、远近和相对高度合理
+- [ ] 手露出量、握持关系和前臂轮廓合理
+- [ ] fire/draw/reload/inspect 无散架或跳变
+- [ ] 枪口、抛壳、弹匣和装饰件位置正确
+- [ ] 材质无洗白、噪点、反面或错误 UV
+- [ ] 近/远枪声、换弹和特殊声音时序正确
 
-详细执行记录追加在 `work/galil_ace_tianxi/` 各阶段目录的 report/json。
-
----
-
-# 附录 A. CF 原生资产 → CS:GO Legacy 通用管线（原 CF_NATIVE_PIPELINE.md，2026-09-14 并入）
-
-2026-09-13～14 走通的完整链路：CF LTB 解包 → 贴图恢复 → Source 1 SMD/QC → 第一人称 MIGI 替换。只记**可复用的结论和坑**；运行时成品与验证看 `work/p5_leishen/p7_s05/`。
-
-## A.1 数据通路总览
-
-```text
-REZ 包(分片) --read_verified_payload--> 原始字节
-  ├─ .LTB(LZMA) --LithTechModelDecoder--> 骨架节点+bind世界矩阵+local动画轨道+蒙皮网格
-  │     └─ --dump-ltb-skin (CFRezManager) --> skin JSON(顶点/三角/UV/权重/骨索引)
-  ├─ .DTX --decode_repo_pixels--> PNG   (DXT1 等)
-  ├─ .TGA/.PNG --> 直接可用
-  └─ .CFG --> 贴图清单+光照参数        (WeaponShader/AdvancedShader)
-```
-
-## A.2 REZ 分片坑（最大的一个）
-
-- `data/rf017` 等**老解包目录里的 DTX 全是坏字节**（0/3258 有效），别再直接用。
-- REZ 目录项的 `time` 字段实际是**分片号**：payload 在 `rfXXX_<n>.rez`。
-- 正确读法：`scripts/material_recovery/rez_verified_payload.read_verified_payload(index, entry)` —— 自动选分片、MD5 校验。
-- **新内容在 `rez2/`..`rez6/`**：Renewal 级资源在 `rez2/RF016.REZ`(模型) / `rez2/RF017.REZ`(贴图+CFG)，老 `rez/` 里没有。
-- 贴图索引读法：`n05a_decoder_provenance_audit.read_rez_index_mmap(rez)`。
-
-## A.3 LTB 结构事实
-
-- LTB = LZMA-alone 压缩的 Jupiter 二进制模型（首字节 0x5D）。
-- 骨架节点存的是 **bind 世界矩阵**（不是 local）。
-- 动画轨道是 **local pos/quat**，沿父链组合成 world。
-- **LTB 里没有贴图引用**。mesh 只有名字 + `advanced_shader` 命令行。贴图绑定 = 命名约定 + CFG 外挂。
-- 刚性件→节点归属 LTB 不直给：用 **bind 世界最近节点** 判定。
-
-## A.4 蒙皮/变换约定（全部数值验证过）
-
-```text
-v' = anim_world @ inv(bind_world) @ v        # 世界空间蒙皮
-```
-
-- idle 帧全节点 delta = 0° —— 约定正确的判据。
-- **Blender 骨骼 rest ≠ CF bind**：Blender 强制骨骼 Y 轴沿骨轴 → 普通 armature modifier 会逐骨错旋。解法 = 校正变形骨架：`pose_world = anim_world @ inv(bind_world) @ rest_world`。
-- 手臂模型 bind 与枪不同（手在体侧 vs 前伸）→ 手臂要自己的 DEFORM 骨架，同套 clip 数据双烘。
-
-## A.5 UV 约定（踩过两次）
-
-- dump JSON 给**原始解码 UV**；进 Source/Blender 写 `uv = (u, 1-v)`，**只做一次**（翻两次=没翻）。
-- 验证方法：贴图接 Emission 渲染，纯看 UV 落点。
-
-## A.6 镜像 + 坐标（Source 1 第一人称运行时）
-
-- 不得把 Blender 预览的 root 变换直接当 viewmodel 变换。
-- 拟合 **CF idle-posed 枪顶点 → stock idle-posed 枪顶点**：`H = sR+t`；整个场景统一 `v'=Hv`、`R'=H·B·H⁻¹`、`W'=H·W·H⁻¹`。只变顶点不共轭骨骼会散架。
-- 左右修正在 H 之后，**绕枪身中心镜像**（不是原点）；顶点、rest、动画、attachment 全部同步镜像，并反转三角绕序。
-- 不要用 decompiled 紧凑模型的 posed 网格拟合尺度；正确参考是官方正常 viewmodel（枪长约 35 单位）。
-- stock attachment 世界位可直接作拟合目标，镜像时 attachment 一起镜像。
-
-## A.7 贴图定位方法（命名约定）
-
-| 资产 | 贴图路径(rez 内) | 例子 |
-|---|---|---|
-| 武器 PV | `PLAYERVIEW/PV-<模型名>.DTX` | `PV-M4A1_S_Transformers.DTX` |
-| 角色手臂 | `PLAYERVIEW/FVIEW_{HAND,ARM}_<角色>_<BL|GR>.DTX` | `FVIEW_HAND_Foxhowl_Renewal_BL.DTX` |
-| 配套图 | `SpecularMap/*_S`、`NormalMap/*_N`、`AlphaMap/*_Alpha` | PNG/TGA |
-| 材质参数 | `WeaponShader/<枪>.CFG`、`AdvancedShader/Arm_<角色>_<阵营>_Piece<N>.CFG` | INI 文本 |
-
-CFG 里直接写着全部贴图名 + 光照参数（SpecularPower、EnvCubeUsage、EnvCubeMapBrightness 等）。
-
-## A.8 CF 材质的坑：specular map ≠ 高光图
-
-- `*_S` 打开常是**亮银色完整枪图** —— 它是**环境反射色图**（`EnvCubeUsage=2`，envcube 采样后乘它）。
-- alpha/mask 文件必须逐通道检查，不能按文件名假设 alpha 存在：天袭 `_M` 实际是 RGB，R=255 整面背景，发光信息在稀疏 G/B；直接用作 `$selfillummask` 会让整枪发光。
-- 同一张高频 `_S` 不要同时驱动 `$phongexponenttexture` 和 `$envmapmask`，否则细节会被重复放大成反射噪点。
-
-### A.8.1 默认第一人称金属参数（用户验收：天袭 v7）
-
-目标是“金属高光呈现枪身本色，并随 viewmodel 光照明暗变化”，默认使用 **albedo-tinted Phong**，不使用加色 envmap/rimlight：
-
-```vmt
-"VertexLitGeneric"
-{
-    "$basetexture" "<weapon_diffuse>"
-    "$bumpmap" "<weapon_normal>"
-    "$phong" "1"
-    "$phongexponent" "48"
-    "$phongboost" "2"
-    "$phongfresnelranges" "[0.05 0.45 1]"
-    "$phongalbedotint" "1"
-    "$nocull" "0"
-}
-```
-
-若武器有经过逐通道验证的稀疏能量遮罩，可额外加入 `$selfillum`，但不得把整面常量通道当 mask。`$envmap`/`$rimlight` 不是默认项：它们会在阴影中继续加亮并改变枪身本色；只有用户明确要求镜面/镀铬环境反射，且专用低频 mask 与完整 mip cubemap 都已验证时才启用。
-
-此参数已同步用于：
-
-- 天袭 `materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vmt`（另加稀疏蓝色 selfillum）。
-- 雷神 `materials/models/weapons/v_models/rif_m4a1/rif_m4a1.vmt`（纯本色 Phong）。
-
-## A.9 手膜/角色系统
-
-- CF 每角色第一人称手臂是独立 LTB：`Models/PLAYERVIEW/ArmModel/Arm_<角色>_<皮肤>_<BL|GR>.LTB`；也有武器 LTB 内嵌 Fview 手臂（GalilACE 如此）。
-- 灵狐者=FoxHowl，皮肤：Casual/Deneb/Flower/Seaside/Teacher/Veteran_CFPassS7/Renewal 等。
-- 手臂骨架 = FvARM 节点子集，**骨名与枪骨架完全一致** → 同套 clip 直接驱动，零重定向。
-
-## A.10 超分（ComfyUI）
-
-- 本地 ComfyUI `127.0.0.1:8188`，模型 `RealESRGAN_x4plus.pth`，输入 `D:\Comfy-Desktop\ComfyUI-Shared\input`。
-- 标准链：原生 1024 diffuse → RealESRGAN 4x 得 4096 → Lanczos 降到 2048 → 颜色校正 → `BGRA8888` 无损 VTF，并启用 `TRILINEAR`/`ANISOTROPIC`。4096 只作超分中间件；最终 2048 可减少显存和 VPK 体积，同时明显优于 1024 DXT1。
-- 暗色金属 atlas 可使用雷神验收前参数作为起点：gamma `0.72`、brightness `1.08`、color `1.08`、contrast `1.03`；黑色 UV gutter 在 gamma 曲线下仍保持 0，不做固定灰度抬底。
-- 雷神实现：`scripts/p5/build_leishen_texture_v2.py`；天袭实现：`work/galil_ace_tianxi/texture/build_textures_v2.py`。
-- **只超 diffuse**；normal/spec 超分会引入伪细节。normal 保留原生分辨率并正确标记 `NORMAL`。
-
-## A.11 Source 1 第一人称架构（P7-S05 / 本轮 Galil 同构）
-
-108 骨：`v_weapon` 根 + 47 根 CS `Bip01*` bonemerge 兼容骨 + CF 骨 + 4 根 attachment 骨。CF 枪件刚性绑定 CF 节点；CF 手/臂按逐顶点 LBS 烘到枪 bind 空间；idle/fire/reload/draw 直接使用 CF clip。
-
-只部署第一人称资产（`v_rif_*` 模型 + 材质 + 声音 overlay）；不得改 `w_rif_*` 或第三人称材料。每次部署后对 world 文件做 hash/时间戳复核。
-
-## A.12 隐藏 CS 手套/袖子的 bonemerge 坑
-
-CS 手套和袖子是独立模型，按同名 `Bip01*` 骨 bonemerge 到武器模型：
-
-```text
-posed = W_weapon_bone @ inv(B_arm_bind) @ v_arm
-```
-
-- 把 CS 骨设成 identity **不会透明**：顶点落在相机附近形成满屏碎片。
-- 钉到 `(0,-500,0)` 也不对：`-Y` 是枪口前方，远处仍能看到缩成一团的手膜。
-- **已验证**：所有 CS `Bip01*` rest 与每帧动画统一钉 `(0,+500,0)`，送到相机后方视锥外。
-- 不用透明材质：袖子/手套材料是共享 bonemerge 模型，替换会影响其他武器。
-
-## A.13 CF 声音映射与事件时序
-
-- CF 武器声音在 `rez/FMODStudio/Weapon(s)/*.bank`（FSB5），vgmstream 解出后转 44.1 kHz PCM16。`SND/**/*.WAV` 多为加密容器，不作输入。
-- 模型事件用 `event 5004`。
-- **同 channel 后续事件截断前音**：`BoltBack`/`BoltForward` 都是 `CHAN_ITEM`，即使后一个是静音 WAV 也会停掉前一个。静音事件必须放在有声事件**之前**，或干脆不发。
-- 同一 PCM 不要映射给同 sequence 的两个事件（会叠音）。
-
-## A.14 MIGI 更新与声音验证
-
-- 必须遵守 §3.1 的 **staging A → MIGI addon B → pak C** 三层校验；只更新仓库 staging 不会被 MIGI REBUILD 读取。
-- 改 `migi/csgo/addons/<addon>/` 后游戏不会自动读 addon 目录；必须由用户执行 **MIGI REBUILD** 写进 `pak01_dir.vpk`。
-- REBUILD 前验证 A hash == B hash；REBUILD 后验证 B hash == C hash。任一不一致都不得进入视觉调参。
-- `migi/csgo/materials/` 松散文件在本环境不覆盖 pak，不能作为迭代部署路线。
-- 控制台 `play weapons/<dir>/<file>.wav` 可验证运行时解析到的实际 WAV。
-- `snd_show 1` 在这套 Legacy/MIGI 环境无有用输出；`soundcache/*.cache` 不要未证明就删。
-
-## A.15 工具/脚本索引
+## 12. 工具索引
 
 | 用途 | 位置 |
 |---|---|
-| LTB→skin JSON | `CFRezManager --dump-ltb-skin --input X.LTB --output Y.json` |
-| LTB→骨架+动画 payload | `scripts/cf_ltb/p5_p7_s04_cf_animation.py` |
-| REZ 分片校验读 | `scripts/material_recovery/rez_verified_payload.py` |
-| REZ 索引 / DTX 解码 | `scripts/material_recovery/n05a_decoder_provenance_audit.py` |
-| LTC 解密（bf*.ltc） | `scripts/material_recovery/n02_butes_config_triage._decode_ltc_c_sharp`（16B XOR key `5483B2E1…` + LZ） |
-| CFT 表 | LZMA 解压后逐字节 XOR 0x10 |
-| CF 声音提取/overlay | `scripts/p5/p5_p7_original_sound.py` |
-| SMD/QC/编译/部署参考实现 | `scripts/p5/p5_p7_s05_cf_native_vm.py` |
+| REZ 分片校验 | `scripts/material_recovery/rez_verified_payload.py` |
+| REZ 索引 / DTX | `scripts/material_recovery/n05a_decoder_provenance_audit.py` |
+| LTC/Bute | `scripts/material_recovery/n02_butes_config_triage.py` |
+| LTB 动画 payload | `scripts/cf_ltb/p5_p7_s04_cf_animation.py` |
+| LTB skin JSON | `CFRezManager --dump-ltb-skin` |
+| Source 编译参考 | `scripts/p5/p5_p7_s05_cf_native_vm.py` |
+| 默认 Nini 手膜 | `work/galil_ace_tianxi/decode/nini_gr/` |
+| 项目历史与专属参数 | `pipeline.projects-backup-2026-09-19.md`、`work/<weapon>/` |
 
-## A.16 公网工具对比（搜过的）
+## 13. 维护规则
 
-`lxh251826/CFRezManager`（本仓库前身）、`no-lith/RezExtract`、RaGEZONE `CF-REZTOOL`、mpgh `LTB→SMD` —— 都能解包/转格式，但**都没有分片校验**（拿到坏字节不自知）、**动画基本丢**、没有材质恢复。
+- 本文件只更新通用、已验证且可跨武器复用的规则。
+- 单武器资产路径、常量、实验版本和用户验收记录只进入 `work/<weapon>/`。
+- 失败方案若具有通用警示价值，只保留一句“禁止项 + 根因”，不保留逐轮过程。
+- 新发现的构建、测试或部署命令应同步到项目规则文件或本工具索引。
+- 不删除历史证据；归档后用链接引用，避免再次把主 pipeline 膨胀成项目日志。

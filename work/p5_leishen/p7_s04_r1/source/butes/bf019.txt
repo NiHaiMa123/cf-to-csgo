@@ -1,0 +1,53 @@
+( BasicPlayerInfo
+
+	( MovementSpeed		4721.746 ) //이동속도<상대값>
+	( MovementWalkRate 	0.5908 ) //걷기이동속도 비율<최대 1.0>
+	( MovementDuckWalkRate	0.38028 )  //앉아이동속도 비율<최대 1.0>
+	( MovementSideMoveRate	0.93 ) //좌우이동속도 비율<최대 1.0>
+
+	( MovementLRRunAnimRate 1.24 )
+	( MovementFBRunAnimRate 1.22 )
+	( MovementLRWalkAnimRate 1.225 )
+	( MovementFBWalkAnimRate 1.23 )
+
+	( MovementAccelation	5650.0 )
+	( MovementFriction	5.75 )
+
+	( JumpTime		0.25 )	// 점프 상향시간<초단위>
+	( JumpVelocity		750.0 ) // 점프 가속
+
+	// 점프추가 속성
+	( JumpLandedWaitTime		0.15 )	// 점프착지후   영향시간<초단위>
+	( JumpLandedNoJumpTimeRate 	0.01 )   // 착지후 반복 점프안되는 시간<영향시간비율>
+	( JumpRepeatPenaltyMoveRate 	0.8 )	// 착지후 영향시간도중 반복점프할때 속도비율
+        ( JumpRepeatPenaltyHeightRate 	0.7 )	// 착지후 영향시간도중 반복점프할때 상승비율
+	( JumpLandedMovePenaltyTimeRate	0.15 )  // 점프 착지 일시적으로 이동속도 감소될 시간< 영향시간비율>
+	( JumpLandedMovePenaltyMoveRate	0.45 )  // 점프 착지 일시적으로 이동속도 감소비율
+
+
+	// PV의 위치 관련.. 
+	( PVPosDefault		0.49 	-0.13 	0.0 )	// 0.5 -0.65 0.6 / 0.0 -0.4 3.0 	
+	( PVRotationDefault       -0.027	 0.02	0.0 )	//0.2
+	( PVModelFOV		45)	// pv fov 결정 
+	( PVModelAspect		1.2) // pv aspect 결정.. 
+
+	// PV가 앞뒤로 왔다 갔다 하는것
+	( PVOnlyMoveFlipTime 	0.60 ) // 시간<초단위> 
+	( PVOnlyMoveGap	0.03	0.04 	0.18 )
+
+	( DamagePenaltyTime	0.035 ) // 데미지시움직임 페널티시간<초단위>
+	( DamagePenaltyMoveRate	0.035 ) // 데미지시움직임 비율<초단위>
+
+	( C4PlantTime		5.0 ) // C4장착시간<초단위>
+	( C4DefuseTime		7.0 ) // C4해체시간<초단위>
+	( C4DefuseTimeWithKit	5.0 ) // C4해체시간<kit소지중><초단위>
+	( MaxCanDefuseDistance	300.0 ) // C4 해체 가능한 반경<폭탄에서부터>
+	( CharacterHiddenAlpha 0.0 )//Hidden 정지 했을때 알파 수치
+	( CharacterHiddenWalkAlpha 0.05 ) // Hidden 걸었을 때 알파 수치
+	( CharacterHiddenRunAlpha 0.14 ) //Hidden  뛸 때 알파 수치
+	( MovementHiddenRate 1.17 )//Hidden Move Rate
+	
+	( CrossHairColor 1 )
+	( CrossHairColorRedChangeRate   500.0 )
+	( CrossHairColorGreenChangeRate 1000.0 )
+)

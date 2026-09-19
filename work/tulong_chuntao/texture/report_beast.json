@@ -1,0 +1,11 @@
+{
+ "diffuse_src": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\decode\\PV-Kukri_Beast_spring.png",
+ "upscaled": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\texture\\up\\kukri_beast_2048_rgb.png",
+ "up_size": [
+  2048,
+  2048
+ ],
+ "alpha": "spec-map luminance -> envmap/phong mask",
+ "vmt": "NobleGold recipe: env_cubemap+gold tint+rimlight+phong",
+ "staging": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\addon\\materials\\models\\weapons\\v_models\\cf_tulong"
+}

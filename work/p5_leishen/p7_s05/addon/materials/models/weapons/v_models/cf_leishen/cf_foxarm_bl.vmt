@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/cf_leishen/cf_foxarm_bl"
+	"$bumpmap" "models/weapons/v_models/cf_leishen/cf_foxarm_bl_n"
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "0.6"
+	"$phongfresnelranges" "[0.1 0.5 1]"
+	"$nocull" "0"
+}

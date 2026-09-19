@@ -1,13 +1,13 @@
 {
   "schema": "cf2.p4m01.n04e-vm-dump.v1",
-  "generated_at_utc": "2026-09-12T08:28:11.269+00:00",
-  "status": "STATIC_ONLY_NO_PROCESS",
+  "generated_at_utc": "2026-09-12T08:34:54.751+00:00",
+  "status": "DUMP_ACCESS_DENIED",
   "static": [
     {
       "relative": "x64/crossfirebase.dll",
       "present": true,
-      "size_bytes": 39815056,
-      "sha256": "4511b5af27fb509a9409668baf7e6619a8fde9ec2b5a0c377fe3a35abefef4f9",
+      "size_bytes": 41288080,
+      "sha256": "f00ae9823ae4d39b4f911d3edfcd17e436a0a2588609b54046d55c942a01ab7c",
       "head16_hex": "4d5a90000300000004000000ffff0000",
       "image_base": 6442450944,
       "machine": 34404,
@@ -15,40 +15,40 @@
         {
           "name": ".text",
           "va": 65536,
-          "vsize": 5790664,
-          "raw_size": 5790720,
+          "vsize": 5816136,
+          "raw_size": 5816320,
           "executable": true,
-          "entropy": 7.7793,
-          "ascii_strings": 1264,
+          "entropy": 7.7792,
+          "ascii_strings": 1234,
           "token_hits": 0
         },
         {
           "name": ".rdata",
           "va": 5898240,
-          "vsize": 1447242,
-          "raw_size": 1447424,
+          "vsize": 1448266,
+          "raw_size": 1448448,
           "executable": false,
-          "entropy": 5.5522,
+          "entropy": 5.5505,
           "ascii_strings": 10493,
           "token_hits": 0
         },
         {
           "name": ".data",
           "va": 7405568,
-          "vsize": 408688,
+          "vsize": 410896,
           "raw_size": 65536,
           "executable": false,
-          "entropy": 5.3729,
+          "entropy": 5.3712,
           "ascii_strings": 258,
           "token_hits": 0
         },
         {
           "name": ".pdata",
           "va": 7864320,
-          "vsize": 212004,
-          "raw_size": 212480,
+          "vsize": 211932,
+          "raw_size": 211968,
           "executable": false,
-          "entropy": 6.3954,
+          "entropy": 6.4242,
           "ascii_strings": 0,
           "token_hits": 0
         },
@@ -75,26 +75,26 @@
         {
           "name": ".reloc",
           "va": 8257536,
-          "vsize": 48744,
+          "vsize": 48736,
           "raw_size": 49152,
           "executable": false,
-          "entropy": 5.4434,
+          "entropy": 5.4439,
           "ascii_strings": 0,
           "token_hits": 0
         },
         {
           "name": ".tvm0",
           "va": 8323072,
-          "vsize": 32047104,
-          "raw_size": 32047104,
+          "vsize": 33488896,
+          "raw_size": 33488896,
           "executable": true,
-          "entropy": 7.558,
-          "ascii_strings": 1604,
+          "entropy": 7.5697,
+          "ascii_strings": 753,
           "token_hits": 0
         },
         {
-          "name": ".\"9t",
-          "va": 40370176,
+          "name": ".nOz",
+          "va": 41811968,
           "vsize": 160,
           "raw_size": 512,
           "executable": false,
@@ -103,12 +103,12 @@
           "token_hits": 0
         },
         {
-          "name": ".bS>",
-          "va": 40435712,
-          "vsize": 185188,
-          "raw_size": 185344,
+          "name": ".]zo",
+          "va": 41877504,
+          "vsize": 190328,
+          "raw_size": 190464,
           "executable": false,
-          "entropy": 6.4318,
+          "entropy": 6.4497,
           "ascii_strings": 0,
           "token_hits": 0
         }
@@ -118,7 +118,7 @@
       "imports": [
         "kernel32.dll"
       ],
-      "entry_rva": 2321728
+      "entry_rva": 2332496
     },
     {
       "relative": "x64/crossfire_x64base.dll",
@@ -259,8 +259,24 @@
     }
   ],
   "dump": {
-    "status": "PROCESS_NOT_RUNNING",
-    "pids": []
+    "status": "PROCESS_FOUND",
+    "pids": [
+      {
+        "pid": 33100,
+        "exe": "crossfire.exe"
+      }
+    ],
+    "attempts": [
+      {
+        "pid": 33100,
+        "exe": "crossfire.exe",
+        "ok": false,
+        "error": "OpenProcess failed last_error=5"
+      }
+    ],
+    "dumped": [],
+    "error": "OpenProcess failed last_error=5",
+    "ok": false
   },
   "note": "Dump files must not be git-added. ACE modules were not opened. CF was not launched."
 }

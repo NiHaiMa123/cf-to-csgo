@@ -1,0 +1,1745 @@
+{
+  "date": "2026-09-15",
+  "method": "MD5-verified REZ read, LZMA decode, bounded target-group probe using field layout inspected in upstream bin30_codec.cpp; not a full catalog validation or upstream executable test",
+  "source": "https://github.com/lokea2/clientfx_tool/blob/master/ConsoleApplication10/bin30_codec.cpp",
+  "files": [
+    {
+      "index": "D:\\Program Files\\CF(2)\\rez\\RF004.REZ",
+      "entry": "ClientFX/CLIENTFX.FCF",
+      "stored_bytes": 82421,
+      "decoded_bytes": 1399672,
+      "md5": "a5ef132331d737d148d20fe9ba742511",
+      "md5_verified": true,
+      "sha256": "00dc10580da40ba6dbb9f2d70e853affc8ec213bdf58aa32e9b473d9b97dc843",
+      "target_string_offset": 1142065
+    },
+    {
+      "index": "D:\\Program Files\\CF(2)\\rez\\RF004.REZ",
+      "entry": "ClientFX/CLIENTFX.FXF",
+      "stored_bytes": 3566418,
+      "decoded_bytes": 387672794,
+      "md5": "d29371905213266cb17afb9c8078a285",
+      "md5_verified": true,
+      "sha256": "6ff5bbbbb492c4906417d00625cfb347bd01ccb53e2200cb40e207c35c6b4c3a",
+      "target_string_offset": 301167898
+    }
+  ],
+  "fcf": {
+    "kind": "text tree",
+    "prefix": "Siblings: 1\r\n\tName: [All Fx]\r\n\t\tImage: 0\r\n\t\tS",
+    "target_context": "mage: 2\r\n\t\tSelectedImage: 2\r\n\t\tHasCildren: 0\r\n\t\tState: 0\r\n\tName: pv_galilace_phantombeast_idle\r\n\t\tImage: 2\r\n\t\tSelectedImage: 2\r\n\t\tHasCildren: 0\r\n\t\tState: 0\r\n\tName: pv_n_ghostblade_esports_combo_01\r\n\t\t"
+  },
+  "fxf": {
+    "declared_groups": 14047,
+    "group": "pv_galilace_phantombeast_idle",
+    "node_count": 29,
+    "phase_raw": 2000,
+    "offset": 301167894,
+    "end_offset": 301286792,
+    "next_group_fx_count": 3,
+    "next_group_name": "pv_n_ghostblade_esports_combo_01",
+    "types": {
+      "ParticleSystem": 7,
+      "LTBModel": 14,
+      "FlareSpriteFX": 3,
+      "Sprite": 5
+    },
+    "nodes": [
+      {
+        "fx_name": "ParticleSystem;core-glow;",
+        "fx_id": 44,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 0,
+        "min_scale": 0.0,
+        "max_scale": 0.5,
+        "property_count": 52,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_3"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Texture",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_GLOW_02.DTX"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;blue-parts;",
+        "fx_id": 46,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 1,
+        "min_scale": 0.0,
+        "max_scale": 0.15000000596046448,
+        "property_count": 43,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_5"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_BLUE.LTB"
+          },
+          {
+            "name": "Skin0",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_GLOW_02.DTX"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;L-flow-front-COPY;",
+        "fx_id": 181,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 2,
+        "min_scale": 0.0,
+        "max_scale": 0.05000000074505806,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_9"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_02_4.LTB"
+          },
+          {
+            "name": "SpriteSkin0",
+            "type_id": 7,
+            "value": "spr|FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "ParticleSystem;L-flow-p;",
+        "fx_id": 73,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 3,
+        "min_scale": 0.0,
+        "max_scale": 0.10000000149011612,
+        "property_count": 53,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_8"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Texture",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_PARTICLES_04.DTX"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;L-flow-front;",
+        "fx_id": 67,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 4,
+        "min_scale": 0.0,
+        "max_scale": 0.05000000074505806,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_9"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_02_4.LTB"
+          },
+          {
+            "name": "SpriteSkin0",
+            "type_id": 7,
+            "value": "spr|FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;L-flow-back;",
+        "fx_id": 72,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 5,
+        "min_scale": 0.0,
+        "max_scale": 0.05000000074505806,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_9"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_02_5.LTB"
+          },
+          {
+            "name": "SpriteSkin0",
+            "type_id": 7,
+            "value": "spr|FX\\SPRITES\\AURA_55\\SGFX_BD_AURA_55_V01.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;simbol-glitch;",
+        "fx_id": 184,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 6,
+        "min_scale": 0.0,
+        "max_scale": 0.004999999888241291,
+        "property_count": 46,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_10"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              2.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_GLITCH.LTB"
+          },
+          {
+            "name": "SpriteSkin0",
+            "type_id": 7,
+            "value": "spr|FX3\\SPRITES\\GLITCH_LINE03\\SGFX_JY_GLITCH_LINE_03_2.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;simbol-furfins;",
+        "fx_id": 78,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 7,
+        "min_scale": 0.0,
+        "max_scale": 0.004999999888241291,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_11"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              2.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_01.LTB"
+          },
+          {
+            "name": "Skin0",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_B.DTX"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|RS\\FURFINS.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;simbol-additive;",
+        "fx_id": 79,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 8,
+        "min_scale": 0.0,
+        "max_scale": 0.004999999888241291,
+        "property_count": 53,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_10"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              2.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_01.LTB"
+          },
+          {
+            "name": "Skin0",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_B.DTX"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;simbol-back-glow;",
+        "fx_id": 97,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 9,
+        "min_scale": 0.0,
+        "max_scale": 0.019999999552965164,
+        "property_count": 45,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_11"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              2.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_01.LTB"
+          },
+          {
+            "name": "Skin0",
+            "type_id": 7,
+            "value": "dtx|FX3\\FLR0030.DTX"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "ParticleSystem;ALL-p-big-BB;",
+        "fx_id": 109,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 10,
+        "min_scale": 0.0,
+        "max_scale": 0.07999999821186066,
+        "property_count": 53,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_12"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Texture",
+            "type_id": 7,
+            "value": "dtx|FX3\\SGFX_JY_SHINE_19_2.DTX"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "ParticleSystem;ALL-p-big-YY;",
+        "fx_id": 154,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 11,
+        "min_scale": 0.0,
+        "max_scale": 0.07999999821186066,
+        "property_count": 53,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_12"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Texture",
+            "type_id": 7,
+            "value": "dtx|FX3\\SGFX_JY_SHINE_19_2.DTX"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "FlareSpriteFX;EYE-main;",
+        "fx_id": 133,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 12,
+        "min_scale": 0.0,
+        "max_scale": 10.0,
+        "property_count": 43,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_16"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_WK_SHINE_06.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "0,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "FlareSpriteFX;EYE-CORE;",
+        "fx_id": 183,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 13,
+        "min_scale": 0.0,
+        "max_scale": 10.0,
+        "property_count": 40,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_15"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_JY_SHINE_03.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "0,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "FlareSpriteFX;EYE-rbw;",
+        "fx_id": 143,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 14,
+        "min_scale": 0.0,
+        "max_scale": 10.0,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_16"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_CY_KAR98_LIGHT_14.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "0,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "Sprite;EYE-prism;",
+        "fx_id": 146,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 15,
+        "min_scale": 0.0,
+        "max_scale": 0.004999999888241291,
+        "property_count": 33,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_16"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_CY_KAR98_LIGHT05_2.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "ParticleSystem;yellow-prism-TOP;",
+        "fx_id": 149,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 16,
+        "min_scale": 0.0,
+        "max_scale": 0.6000000238418579,
+        "property_count": 52,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_17"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Texture",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_AURA_02_2.DTX"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "ParticleSystem;yellow-prism-TAIL-L;",
+        "fx_id": 151,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 17,
+        "min_scale": 0.0,
+        "max_scale": 0.30000001192092896,
+        "property_count": 52,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_19"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Texture",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_AURA_02_2.DTX"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;red-parts-glow;",
+        "fx_id": 203,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 18,
+        "min_scale": 0.0,
+        "max_scale": 0.15000000596046448,
+        "property_count": 43,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_5"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_RED.LTB"
+          },
+          {
+            "name": "Skin0",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_GLOW_02.DTX"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "ParticleSystem;R-flow-p;",
+        "fx_id": 171,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 19,
+        "min_scale": 0.0,
+        "max_scale": 0.10000000149011612,
+        "property_count": 53,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_22"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Texture",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_PARTICLES_04.DTX"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;R-flow-front;",
+        "fx_id": 172,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 20,
+        "min_scale": 0.0,
+        "max_scale": 0.05000000074505806,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_23"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              1.0,
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_02_4.LTB"
+          },
+          {
+            "name": "SpriteSkin0",
+            "type_id": 7,
+            "value": "spr|FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;R-flow-front-COPY;",
+        "fx_id": 173,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 21,
+        "min_scale": 0.0,
+        "max_scale": 0.05000000074505806,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_23"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              1.0,
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_02_4.LTB"
+          },
+          {
+            "name": "SpriteSkin0",
+            "type_id": 7,
+            "value": "spr|FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;R-flow-back;",
+        "fx_id": 174,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 22,
+        "min_scale": 0.0,
+        "max_scale": 0.05000000074505806,
+        "property_count": 42,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_23"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              1.0,
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_PLANE_02_5.LTB"
+          },
+          {
+            "name": "SpriteSkin0",
+            "type_id": 7,
+            "value": "spr|FX\\SPRITES\\AURA_55\\SGFX_BD_AURA_55_V01.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;L-tragl;",
+        "fx_id": 199,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 23,
+        "min_scale": 0.0,
+        "max_scale": 0.15000000596046448,
+        "property_count": 43,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_5"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_L.LTB"
+          },
+          {
+            "name": "Skin0",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_GLOW_02.DTX"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "LTBModel;R-tragl;",
+        "fx_id": 201,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 24,
+        "min_scale": 0.0,
+        "max_scale": 0.15000000596046448,
+        "property_count": 43,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_5"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Model",
+            "type_id": 7,
+            "value": "ltb|FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_R.LTB"
+          },
+          {
+            "name": "Skin0",
+            "type_id": 7,
+            "value": "dtx|FX\\SGFX_BD_GLOW_02.DTX"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "AniName",
+            "type_id": 0,
+            "value": ""
+          },
+          {
+            "name": "RenderStyle0",
+            "type_id": 7,
+            "value": "ltb|FX\\RS\\ADDITIVE.LTB"
+          },
+          {
+            "name": "SyncToModelAnim",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          },
+          {
+            "name": "SyncToKey",
+            "type_id": 3,
+            "value": "0,No,Yes"
+          }
+        ]
+      },
+      {
+        "fx_name": "Sprite;round-prism;",
+        "fx_id": 206,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 25,
+        "min_scale": 0.0,
+        "max_scale": 0.003000000026077032,
+        "property_count": 33,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_34"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_CY_KAR98_LIGHT_14.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "Sprite;main;",
+        "fx_id": 208,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 26,
+        "min_scale": 0.0,
+        "max_scale": 0.004000000189989805,
+        "property_count": 34,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_34"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_WK_SHINE_06.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "Sprite;sharp-prism;",
+        "fx_id": 211,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 1.9910000562667847,
+        "repeat": 1,
+        "track_id": 27,
+        "min_scale": 0.0,
+        "max_scale": 0.0010000000474974513,
+        "property_count": 31,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_34"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_CY_KAR98_LIGHT05.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      },
+      {
+        "fx_name": "Sprite;core;",
+        "fx_id": 212,
+        "linked": 0,
+        "link_id": 0,
+        "link_node": "",
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "repeat": 1,
+        "track_id": 28,
+        "min_scale": 0.0,
+        "max_scale": 0.0010000000474974513,
+        "property_count": 31,
+        "selected_properties": [
+          {
+            "name": "UpdatePos",
+            "type_id": 3,
+            "value": "6,Fixed,Follow,PlayerView,NodeAttach,SocketAttach,PV_NodeAttach,PV_SocketAttach"
+          },
+          {
+            "name": "AttachName",
+            "type_id": 0,
+            "value": "fix_effect_35"
+          },
+          {
+            "name": "Offset",
+            "type_id": 4,
+            "value": [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Sprite",
+            "type_id": 7,
+            "value": "spr|FX\\SGFX_JY_SHINE_03.SPR"
+          },
+          {
+            "name": "Facing",
+            "type_id": 3,
+            "value": "2,CameraFacing,AlongNormal,ParentAlign"
+          },
+          {
+            "name": "BlendMode",
+            "type_id": 3,
+            "value": "1, None, Additive, Multiply"
+          }
+        ]
+      }
+    ]
+  }
+}

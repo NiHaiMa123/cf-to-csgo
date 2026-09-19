@@ -1,0 +1,310 @@
+{
+  "status": "SOURCE_REFERENCE_BUILT",
+  "reference_kind": "SKELETON_ONLY_REFERENCE",
+  "pre": {
+    "live_filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+    "is_dirty_before": false,
+    "working_disk_sha": "3982f71ec64e6d54b577a58250f4b4a974fb92253545b7b326d25ebe977b6ed1",
+    "frozen_ok": {
+      "work/p5_leishen/p7_s04/blender/p7_s04_current.blend": "64692eb850e101bcdc378525ac6dfb41f3b013f3a4cd664203139aacb61a700c",
+      "work/p5_leishen/p7_s04/smd/draw.smd": "5f8f90c53cfe4a790a6bac4eb5ea039a4b4e6aeaad07c12c04e57814278362ff",
+      "work/p5_leishen/p7_s04/smd/idle.smd": "38184548e7630b611ae6c98299ebb9959832363f735b5a35eb647b1a0dc14759",
+      "work/p5_leishen/p7_s04/smd/reload.smd": "0242d0bf6d05dc4eb7e717757233323a2c5ccaada0722b6f391b61a6af81e7f0",
+      "work/p5_leishen/p7_s04/smd/shoot1.smd": "5447db8d7ac92105188b3921e5f0497904a04406babde3291a33885d0da0806e",
+      "scripts/p5/p5_p7_s04_cf_animation.py": "d91d18503b16591ba2a5ba248c05e59fa36f581e6e2483176577c0e93d99994f",
+      "scripts/p5/p5_p7_s04_fix_retarget.py": "f9321edeaf418b9a6e2ee6f115fd177656338c3370086a600c7dd4ee779aa58f",
+      "work/p5_leishen/p7_s04/source1/cf_leishen_m4a4.smd": "77d36c94b9f0dedd57f34c9970203133579287aa58b0874f26380e9494bf8498",
+      "work/p5_leishen/p6/verified_root/Models/PLAYERVIEW/PV-M4A1_S_Transformers.LTB": "511dec8d2401a1886ddecd14b4f18e17ac0afbefd943f6dc11a3fd2f82ef6b49"
+    }
+  },
+  "dest": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\source_reference.blend",
+  "dest_sha256": "75f90f6666c7eab7555d1dedf379d04eba9fe69119d777a7506e0ee48d4db58b",
+  "working_sha_unchanged": true,
+  "working_sha_after": "3982f71ec64e6d54b577a58250f4b4a974fb92253545b7b326d25ebe977b6ed1",
+  "live_filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\source_reference.blend",
+  "scene": "CF_SOURCE_REFERENCE",
+  "objects": [
+    "R1A_CF_ANIM",
+    "R1A_CF_BIND",
+    "R1A_CAM_SIDE",
+    "R1A_CAM_TOP",
+    "R1A_CAM_FRONT",
+    "R1A_HUD"
+  ],
+  "actions": [
+    "reload",
+    "select",
+    "idle_0",
+    "knife-attack",
+    "postfire",
+    "run",
+    "fire",
+    "prefire"
+  ],
+  "switcher_text": "r1a_source_switcher.py",
+  "pose_error_select_f0": {
+    "max_pos": 17.239018339882637,
+    "bone": "Box004"
+  },
+  "pose_error_select_f28": {
+    "max_pos": 0.20501001737069716,
+    "bone": "FvARM-bone R Finger12"
+  },
+  "half_frame_vs_linear_neighbors": {
+    "max_pos": 14.589297675314448,
+    "bone": "FvARM-bone L Finger32",
+    "note": "subframe 3.15 vs linear mix of 30/40ms samples, not SLERP proof"
+  },
+  "rendered": [
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_select_t0000ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "select",
+      "time_ms": 0,
+      "frame": 0
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_select_t0000ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "select",
+      "time_ms": 0,
+      "frame": 0
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_select_t0277ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "select",
+      "time_ms": 277,
+      "frame": 28
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_select_t0277ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "select",
+      "time_ms": 277,
+      "frame": 28
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_select_t0640ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "select",
+      "time_ms": 640,
+      "frame": 64
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_select_t0640ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "select",
+      "time_ms": 640,
+      "frame": 64
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_reload_t0000ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 0,
+      "frame": 0
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_reload_t0000ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 0,
+      "frame": 0
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_reload_t0194ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 194,
+      "frame": 19
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_reload_t0194ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 194,
+      "frame": 19
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_reload_t0718ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 718,
+      "frame": 72
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_reload_t0718ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 718,
+      "frame": 72
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_reload_t1211ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 1211,
+      "frame": 121
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_reload_t1211ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 1211,
+      "frame": 121
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_reload_t1585ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 1585,
+      "frame": 158
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_reload_t1585ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 1585,
+      "frame": 158
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_reload_t1600ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 1600,
+      "frame": 160
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_reload_t1600ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "time_ms": 1600,
+      "frame": 160
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_idle_0_t0000ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "idle_0",
+      "time_ms": 0,
+      "frame": 0
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\top_idle_0_t0000ms.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "idle_0",
+      "time_ms": 0,
+      "frame": 0
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_reload_t0000ms_bind_and_anim.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "reload",
+      "compare": true
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_idle_0_t0000ms_bind_and_anim.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "idle_0",
+      "compare": true
+    },
+    {
+      "path": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\side_select_t0000ms_bind_and_anim.png",
+      "ok": true,
+      "ops": [
+        "FINISHED"
+      ],
+      "clip": "select",
+      "compare": true
+    }
+  ],
+  "videos": [
+    {
+      "mp4": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\select_side_100fps.mp4",
+      "ok": true,
+      "returncode": 0,
+      "stderr_tail": "40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  7% 23% 23% 27%  3%  2%  6%  2%  7%\n[libx264 @ 000001bde329e140] i8c dc,h,v,p: 97%  2%  1%  0%\n[libx264 @ 000001bde329e140] Weighted P-Frames: Y:0.0% UV:0.0%\n[libx264 @ 000001bde329e140] ref P L0: 98.6%  0.4%  0.8%  0.2%\n[libx264 @ 000001bde329e140] ref B L0:  0.0% 100.0%\n[libx264 @ 000001bde329e140] ref B L1: 96.8%  3.2%\n[libx264 @ 000001bde329e140] kb/s:428.27\n",
+      "note": "encoded at 25 fps display of 100 fps diagnostic frames (4x slow)"
+    },
+    {
+      "mp4": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\reload_side_100fps.mp4",
+      "ok": true,
+      "returncode": 0,
+      "stderr_tail": "00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  8% 23% 22% 27%  3%  2%  6%  2%  7%\n[libx264 @ 000002823f6e8a00] i8c dc,h,v,p: 97%  2%  1%  0%\n[libx264 @ 000002823f6e8a00] Weighted P-Frames: Y:0.0% UV:0.0%\n[libx264 @ 000002823f6e8a00] ref P L0: 99.4%  0.1%  0.4%  0.1%\n[libx264 @ 000002823f6e8a00] ref B L0:  0.0% 100.0%\n[libx264 @ 000002823f6e8a00] ref B L1: 96.7%  3.3%\n[libx264 @ 000002823f6e8a00] kb/s:178.16\n",
+      "note": "encoded at 25 fps display of 100 fps diagnostic frames (4x slow)"
+    }
+  ],
+  "compiled": false,
+  "deployed": false,
+  "user_accepted": false,
+  "cs_scene_preserved": true,
+  "save_as_ops": [
+    "FINISHED"
+  ]
+}

@@ -1,0 +1,33 @@
+[WEBVIEW] Close: [child] 	window: 0 | childWindow: 0
+[WEBVIEW] Open:  Exception! 	window: 0 | childWindow: 0
+	[WARNING] main window isn't initialized, main window is now the child window!
+[WEBVIEW] Opened:  Exception! 	window: 0 | childWindow: 0
+127.0.0.1 - - [14/Sep/2026 23:20:50] "GET /index.html HTTP/1.1" 200 727
+127.0.0.1 - - [14/Sep/2026 23:20:50] "GET /runtime.0e49e2b53282f40c8925.js HTTP/1.1" 200 1485
+127.0.0.1 - - [14/Sep/2026 23:20:50] "GET /polyfills.8c151b8375e767ff858f.js HTTP/1.1" 200 36864
+127.0.0.1 - - [14/Sep/2026 23:20:50] "GET /styles.a8516c79e6355f8aaf94.css HTTP/1.1" 200 148338
+127.0.0.1 - - [14/Sep/2026 23:20:50] "GET /main.38265fc7c0556932d747.js HTTP/1.1" 200 303443
+
++ WebView GUI Info:
+|
+|	- URL:		 http://localhost:22240/index.html
+|	- Is Chromium:	 False
+|	- Forced GUI:	 None
+|	- Engine:	 edgehtml
+|	- AddPixels:	 (0, 0)
++ ---
+
+127.0.0.1 - - [14/Sep/2026 23:20:50] "GET /assets/icon.png HTTP/1.1" 200 501
+127.0.0.1 - - [14/Sep/2026 23:20:50] "GET /assets/close.png HTTP/1.1" 200 254
+[WEBVIEW] Close: [exception] 	window: Exception! | childWindow: Exception!
+[WEBVIEW] Close: [main] 	window: Exception! | childWindow: Exception!
+Exception in thread Thread-17:
+Traceback (most recent call last):
+  File "threading.py", line 932, in _bootstrap_inner
+  File "threading.py", line 870, in run
+  File "webview\util.py", line 150, in _call
+  File "webview\window.py", line 34, in wrapper
+  File "webview\window.py", line 378, in evaluate_js
+  File "webview\platforms\winforms.py", line 676, in evaluate_js
+KeyError: 'master'
+[EXCEPTION!] Couldn't locate CS:GO, make sure MIGI is located inside CS:GO's main directory.

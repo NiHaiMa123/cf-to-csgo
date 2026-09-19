@@ -1,0 +1,58 @@
+
+// 탄창 추가
+(DistributionBox
+	(BoxType 0 ) //유닉숫자
+	(BonusType 2 ) //탄창 ?? ??
+	(NumberOfDistribution 23 )
+)
+
+// RPK
+(DistributionBox
+	(BoxType 1 )
+	(BonusType 1 ) //무기 ??
+	(NumberOfDistribution 12 )
+	(WeaponType 61 )
+)
+
+// M60a
+(DistributionBox
+	(BoxType 2 )
+	(BonusType 1 )
+	(NumberOfDistribution 12 )
+	(WeaponType 124 )
+)
+
+// NanoGrenade
+(DistributionBox
+	(BoxType 3 )
+	(BonusType 1 )
+	(NumberOfDistribution 25 )
+	(WeaponType 126 )
+)
+
+
+// M136 gatling gun
+(DistributionBox
+	(BoxType 4 )
+	(BonusType 1 )
+	(NumberOfDistribution 8 )
+	(WeaponType 166 )
+)
+
+
+// M4A1-S
+(DistributionBox
+	(BoxType 5 )
+	(BonusType 1 )
+	(NumberOfDistribution 10 )
+	(WeaponType 57 )
+)
+
+
+// thomson
+(DistributionBox
+	(BoxType 6 )
+	(BonusType 1 )
+	(NumberOfDistribution 10 )
+	(WeaponType 183 )
+)

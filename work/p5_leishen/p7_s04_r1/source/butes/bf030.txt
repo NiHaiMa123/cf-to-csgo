@@ -1,0 +1,11 @@
+( TPInfo
+	( GameStartTP 800 )
+	( MaxTP 16000 )
+	( MinTP 0 )
+	( WinTP 3250 )
+	( LoseTP 1400 1900 2400 2900 3400 )
+	( C4TP 300 )
+	( C4WinTP 800 )
+	( KillTP 300 )
+	( TeamKillTP 2500 )
+)

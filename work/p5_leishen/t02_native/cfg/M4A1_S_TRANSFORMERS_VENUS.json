@@ -1,0 +1,152 @@
+{
+  "Textures": {
+    "SpecularMapName2": "M4A1_S_Transformers_Venus_S.png",
+    "EnvCubeMapName2": "RED_crystal01.dds",
+    "NormalMapName2": "M4A1_S_Transformers_Venus_N.png",
+    "AlphaMapName2": "M4A1_S_Transformers_Venus_A.png"
+  },
+  "Techniques": {
+    "DiffuseMappingEnabled": "1",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1",
+    "TexturePanningEnabled": "0",
+    "SkelMeshEnabled": "0"
+  },
+  "Properties": {
+    "ForceNoAlpha": "1",
+    "IsTranslucent": "0",
+    "HightLightPower": "1",
+    "LightBrightness": "1.4",
+    "EnvCubeMapBrightness": "2",
+    "SpecularPower": "2.5",
+    "SpecularLength": "1.39",
+    "SpecularHighlight": "0.32",
+    "SpecularBacklighting": "1",
+    "DiffuseBoost": "0.42",
+    "AmbientLightColor": "0.01",
+    "ReflectionIndex": "0.6",
+    "RefractionIndex": "0.51",
+    "CubeMapTransformY": "124",
+    "RenderParam": "0",
+    "EnvCubeUsage": "2",
+    "NormalBoost": "1",
+    "HightLightR": "0",
+    "HightLightG": "0",
+    "HightLightB": "0",
+    "OutLineColorR": "0.4",
+    "OutLineColorG": "0.2",
+    "OutLineColorB": "0",
+    "OutLineColorLimitR": "0.4",
+    "OutLineColorLimitG": "0.14",
+    "OutLineColorLimitB": "0",
+    "IsCustomColor": "0",
+    "PearlRange": "1",
+    "PearlNp": "0.7",
+    "FresnelRange": "10",
+    "FresnelPower": "3"
+  },
+  "TexturePanning": {
+    "TexturePanningVelocityU": "0.01",
+    "TexturePanningVelocityV": "0.02"
+  },
+  "TextureTile": {
+    "TextureTileX": "1",
+    "TextureTileY": "1"
+  },
+  "HalfLambert": {
+    "Power": "1.7",
+    "Base": "0.06"
+  },
+  "Refraction": {
+    "RefractionEnable": "1",
+    "RefractionVisibility": "0",
+    "RefractionIntensity": "12",
+    "RefractionRimLightColorR": "0",
+    "RefractionRimLightColorG": "0",
+    "RefractionRimLightColorB": "0",
+    "RefractionRimLightWidth": "0",
+    "RefractionPieceState0": "0",
+    "RefractionPieceState1": "0",
+    "RefractionPieceState2": "0",
+    "RefractionPieceState3": "0",
+    "RefractionPieceState4": "0",
+    "RefractionPieceState5": "0",
+    "RefractionPieceState6": "0",
+    "RefractionPieceState7": "0",
+    "RefractionPieceState8": "0",
+    "RefractionPieceState9": "0"
+  },
+  "Techniques2": {
+    "DiffuseMappingEnabled": "1",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1",
+    "TexturePanningEnabled": "0",
+    "SkelMeshEnabled": "0"
+  },
+  "Properties2": {
+    "ForceNoAlpha": "1",
+    "IsTranslucent": "0",
+    "HightLightPower": "1",
+    "LightBrightness": "0.7",
+    "EnvCubeMapBrightness": "1",
+    "SpecularPower": "1",
+    "SpecularLength": "0.5",
+    "SpecularHighlight": "1",
+    "SpecularBacklighting": "0",
+    "DiffuseBoost": "0.2",
+    "AmbientLightColor": "0.01",
+    "ReflectionIndex": "0.1",
+    "RefractionIndex": "0.01",
+    "CubeMapTransformY": "0",
+    "RenderParam": "2",
+    "EnvCubeUsage": "2",
+    "NormalBoost": "1",
+    "HightLightR": "0",
+    "HightLightG": "0",
+    "HightLightB": "0",
+    "OutLineColorR": "0",
+    "OutLineColorG": "0",
+    "OutLineColorB": "0",
+    "OutLineColorLimitR": "0",
+    "OutLineColorLimitG": "0.15",
+    "OutLineColorLimitB": "0.8",
+    "IsCustomColor": "0",
+    "PearlRange": "1",
+    "PearlNp": "0.7",
+    "FresnelRange": "10",
+    "FresnelPower": "3"
+  },
+  "TexturePanning2": {
+    "TexturePanningVelocityU": "0.1",
+    "TexturePanningVelocityV": "0.03"
+  },
+  "TextureTile2": {
+    "TextureTileX": "1",
+    "TextureTileY": "1"
+  },
+  "HalfLambert2": {
+    "Power": "0.3",
+    "Base": "0.7"
+  },
+  "Refraction2": {
+    "RefractionEnable": "1",
+    "RefractionVisibility": "0",
+    "RefractionIntensity": "5",
+    "RefractionRimLightColorR": "0",
+    "RefractionRimLightColorG": "0",
+    "RefractionRimLightColorB": "0",
+    "RefractionRimLightWidth": "0",
+    "RefractionPieceState0": "0",
+    "RefractionPieceState1": "0",
+    "RefractionPieceState2": "0",
+    "RefractionPieceState3": "0",
+    "RefractionPieceState4": "0",
+    "RefractionPieceState5": "0",
+    "RefractionPieceState6": "0",
+    "RefractionPieceState7": "0",
+    "RefractionPieceState8": "0",
+    "RefractionPieceState9": "0"
+  }
+}

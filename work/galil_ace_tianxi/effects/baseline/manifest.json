@@ -1,0 +1,489 @@
+{
+ "generated_at_utc": "2026-09-15T15:35:56.118301+00:00",
+ "weapon": "galil_ace_tianxi",
+ "addon_name": "p_cf_tianxi_galilar_p1",
+ "accepted_state": "pipeline.md P8 PASS 2026-09-14 (model/hands/anim/sound user-verified); materials v7",
+ "staging_a": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\addon",
+ "migi_b": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_tianxi_galilar_p1",
+ "a_files": 31,
+ "b_files": 31,
+ "a_eq_b_count": 31,
+ "a_only": [],
+ "b_only": [],
+ "hash_mismatch": [],
+ "files": [
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vmt",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vmt",
+    "size": 295,
+    "sha256": "5283dfe6cc8e63852bea39480849336c68ec972993449ce9101cdcd62f6ae8e7"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vmt",
+    "size": 295,
+    "sha256": "5283dfe6cc8e63852bea39480849336c68ec972993449ce9101cdcd62f6ae8e7"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vtf",
+    "size": 2796440,
+    "sha256": "ab421a136bfef853dbbc659f92b7d162cf520fa30d67d71ef111f69fccd0e037"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vtf",
+    "size": 2796440,
+    "sha256": "ab421a136bfef853dbbc659f92b7d162cf520fa30d67d71ef111f69fccd0e037"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl_n.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl_n.vtf",
+    "size": 349776,
+    "sha256": "e60145a616b29b25b79e1b42abe121cdb02275f540d37552ebad289f440e698c"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl_n.vtf",
+    "size": 349776,
+    "sha256": "e60145a616b29b25b79e1b42abe121cdb02275f540d37552ebad289f440e698c"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vmt",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vmt",
+    "size": 297,
+    "sha256": "06fecdb1bb2fec92d427f8511550b6f425b85de17b21748bc97bec682f8621de"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vmt",
+    "size": 297,
+    "sha256": "06fecdb1bb2fec92d427f8511550b6f425b85de17b21748bc97bec682f8621de"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vtf",
+    "size": 2796440,
+    "sha256": "5102ba620089cd22c011aa3bd2bf3ddc925098624c7feff5d9db2dce97ecba7e"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vtf",
+    "size": 2796440,
+    "sha256": "5102ba620089cd22c011aa3bd2bf3ddc925098624c7feff5d9db2dce97ecba7e"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl_n.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl_n.vtf",
+    "size": 349776,
+    "sha256": "26e7fcb36902351026d2cb4d6965d7d41d81efd1c1413db98b313a7618c3c335"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl_n.vtf",
+    "size": 349776,
+    "sha256": "26e7fcb36902351026d2cb4d6965d7d41d81efd1c1413db98b313a7618c3c335"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vmt",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vmt",
+    "size": 200,
+    "sha256": "17391532be53afe9b54a688e7f630ce32ca9e5274c195ec7b8ff692322827463"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vmt",
+    "size": 200,
+    "sha256": "17391532be53afe9b54a688e7f630ce32ca9e5274c195ec7b8ff692322827463"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vtf",
+    "size": 22096,
+    "sha256": "4192c4c66bb24de3420d1ea4b54bdea6937ebc3df7e8f67b61ec224e360a4661"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vtf",
+    "size": 22096,
+    "sha256": "4192c4c66bb24de3420d1ea4b54bdea6937ebc3df7e8f67b61ec224e360a4661"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vmt",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vmt",
+    "size": 428,
+    "sha256": "7a5747da48e65dbcb44634079389220675d2c04c9eecef892026d2d9081c4919"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vmt",
+    "size": 428,
+    "sha256": "7a5747da48e65dbcb44634079389220675d2c04c9eecef892026d2d9081c4919"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vtf",
+    "size": 22369844,
+    "sha256": "39dc529b3dcbcbf5b5e3bb046731296e9e15a81917e6b7287c55e44b1224e4ae"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vtf",
+    "size": 22369844,
+    "sha256": "39dc529b3dcbcbf5b5e3bb046731296e9e15a81917e6b7287c55e44b1224e4ae"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_env.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_env.vtf",
+    "size": 5592628,
+    "sha256": "233e9786061db19fa5ef7bc2469e51f0d88e67e8513594eafb868d6e3fc17d5f"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_env.vtf",
+    "size": 5592628,
+    "sha256": "233e9786061db19fa5ef7bc2469e51f0d88e67e8513594eafb868d6e3fc17d5f"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_m.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_m.vtf",
+    "size": 5592628,
+    "sha256": "6418a52a7f90222ebc6c88a237e7f5eaea6d062690fdb6e45188f136b85f47fe"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_m.vtf",
+    "size": 5592628,
+    "sha256": "6418a52a7f90222ebc6c88a237e7f5eaea6d062690fdb6e45188f136b85f47fe"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_n.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_n.vtf",
+    "size": 1398352,
+    "sha256": "24aa4559c7882f2af2fb13dd6ce9f9d5e51fc79de97cd9a8d46bf2272c1a9876"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_n.vtf",
+    "size": 1398352,
+    "sha256": "24aa4559c7882f2af2fb13dd6ce9f9d5e51fc79de97cd9a8d46bf2272c1a9876"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_s.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_s.vtf",
+    "size": 1398352,
+    "sha256": "357bc1290be9c4389f0ca21ddbef57cb02f28ba1a6cd557df4b3f614b3d1f44a"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_s.vtf",
+    "size": 1398352,
+    "sha256": "357bc1290be9c4389f0ca21ddbef57cb02f28ba1a6cd557df4b3f614b3d1f44a"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/cf_gold_cube.vtf",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_gold_cube.vtf",
+    "size": 458960,
+    "sha256": "229ae867de6cc85777b87661379256c3b2c5dcfaaba77f9be2ce2db8d1109f87"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/cf_gold_cube.vtf",
+    "size": 458960,
+    "sha256": "229ae867de6cc85777b87661379256c3b2c5dcfaaba77f9be2ce2db8d1109f87"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "materials/models/weapons/v_models/cf_tianxi/fx_galilace_parts_blue.vmt",
+   "a": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/fx_galilace_parts_blue.vmt",
+    "size": 306,
+    "sha256": "4df1a9517b443f5ac230d950b258f877c8366f90f9faa3a6c1e9d4d4203147d8"
+   },
+   "b": {
+    "rel": "materials/models/weapons/v_models/cf_tianxi/fx_galilace_parts_blue.vmt",
+    "size": 306,
+    "sha256": "4df1a9517b443f5ac230d950b258f877c8366f90f9faa3a6c1e9d4d4203147d8"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "models/weapons/v_rif_galilar.ani",
+   "a": {
+    "rel": "models/weapons/v_rif_galilar.ani",
+    "size": 352720,
+    "sha256": "47f583773696637d5c6568734289b6ca98f4521147cab3446d7f2c073e48a6bf"
+   },
+   "b": {
+    "rel": "models/weapons/v_rif_galilar.ani",
+    "size": 352720,
+    "sha256": "47f583773696637d5c6568734289b6ca98f4521147cab3446d7f2c073e48a6bf"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "models/weapons/v_rif_galilar.dx80.vtx",
+   "a": {
+    "rel": "models/weapons/v_rif_galilar.dx80.vtx",
+    "size": 259283,
+    "sha256": "50f22bf767aa014742daac34d189e5ab56bb74525cf069ae44ad4b84de2e4156"
+   },
+   "b": {
+    "rel": "models/weapons/v_rif_galilar.dx80.vtx",
+    "size": 259283,
+    "sha256": "50f22bf767aa014742daac34d189e5ab56bb74525cf069ae44ad4b84de2e4156"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "models/weapons/v_rif_galilar.dx90.vtx",
+   "a": {
+    "rel": "models/weapons/v_rif_galilar.dx90.vtx",
+    "size": 259122,
+    "sha256": "27a97b863d5972cd0599871ca67c937b10e7b0307adf063c239b7670dcbde2f1"
+   },
+   "b": {
+    "rel": "models/weapons/v_rif_galilar.dx90.vtx",
+    "size": 259122,
+    "sha256": "27a97b863d5972cd0599871ca67c937b10e7b0307adf063c239b7670dcbde2f1"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "models/weapons/v_rif_galilar.mdl",
+   "a": {
+    "rel": "models/weapons/v_rif_galilar.mdl",
+    "size": 253848,
+    "sha256": "7382772b7914ac87b474ee2f94f450469d6ad88f835749bb8b8a727511a77fd4"
+   },
+   "b": {
+    "rel": "models/weapons/v_rif_galilar.mdl",
+    "size": 253848,
+    "sha256": "7382772b7914ac87b474ee2f94f450469d6ad88f835749bb8b8a727511a77fd4"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "models/weapons/v_rif_galilar.sw.vtx",
+   "a": {
+    "rel": "models/weapons/v_rif_galilar.sw.vtx",
+    "size": 258698,
+    "sha256": "caa9b46bf4f36f59cfd42f55aa4945821d37bec2ef5c4fff297a946fa834ce88"
+   },
+   "b": {
+    "rel": "models/weapons/v_rif_galilar.sw.vtx",
+    "size": 258698,
+    "sha256": "caa9b46bf4f36f59cfd42f55aa4945821d37bec2ef5c4fff297a946fa834ce88"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "models/weapons/v_rif_galilar.vvd",
+   "a": {
+    "rel": "models/weapons/v_rif_galilar.vvd",
+    "size": 1132736,
+    "sha256": "97d4b62bc9a506caabe32d1a5582e27cfea7084c84a980ee5df76a96a0d5909e"
+   },
+   "b": {
+    "rel": "models/weapons/v_rif_galilar.vvd",
+    "size": 1132736,
+    "sha256": "97d4b62bc9a506caabe32d1a5582e27cfea7084c84a980ee5df76a96a0d5909e"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "particles/cf_tianxi_galilar_p1.pcf",
+   "a": {
+    "rel": "particles/cf_tianxi_galilar_p1.pcf",
+    "size": 1979,
+    "sha256": "bc0f09e0041f943f83b27663b76a74518b9abbf415c6062403efa61f0214c3b6"
+   },
+   "b": {
+    "rel": "particles/cf_tianxi_galilar_p1.pcf",
+    "size": 1979,
+    "sha256": "bc0f09e0041f943f83b27663b76a74518b9abbf415c6062403efa61f0214c3b6"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_01.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_01.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_01.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_02.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_02.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_02.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_03.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_03.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_03.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_04.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_04.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_04.wav",
+    "size": 84530,
+    "sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_clipin.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_clipin.wav",
+    "size": 58264,
+    "sha256": "5b07733bad054e1db72a2249ee20a506b0f5e9484a2d3f6a6fccb2b1009eb4d0"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_clipin.wav",
+    "size": 58264,
+    "sha256": "5b07733bad054e1db72a2249ee20a506b0f5e9484a2d3f6a6fccb2b1009eb4d0"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_clipout.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_clipout.wav",
+    "size": 99584,
+    "sha256": "bec0d71774d7c3b8226f33648a21a72b4831259e657ab3623f59c17d21c20e6a"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_clipout.wav",
+    "size": 99584,
+    "sha256": "bec0d71774d7c3b8226f33648a21a72b4831259e657ab3623f59c17d21c20e6a"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_distant.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_distant.wav",
+    "size": 172730,
+    "sha256": "743ffa426bc1019c1f13d4efb375142f6f501b411253ececd14083c94116aa12"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_distant.wav",
+    "size": 172730,
+    "sha256": "743ffa426bc1019c1f13d4efb375142f6f501b411253ececd14083c94116aa12"
+   },
+   "a_eq_b": true
+  },
+  {
+   "rel": "sound/weapons/galilar/galil_draw.wav",
+   "a": {
+    "rel": "sound/weapons/galilar/galil_draw.wav",
+    "size": 84910,
+    "sha256": "6c1d4dfedfef24dbb5b13d56d7bd0836633fddb3601a136cc77391308aa6b149"
+   },
+   "b": {
+    "rel": "sound/weapons/galilar/galil_draw.wav",
+    "size": 84910,
+    "sha256": "6c1d4dfedfef24dbb5b13d56d7bd0836633fddb3601a136cc77391308aa6b149"
+   },
+   "a_eq_b": true
+  }
+ ],
+ "provenance_inputs": [
+  {
+   "path": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\acquire\\acquisition.json",
+   "exists": true,
+   "sha256": "5bbf853f4de3b9af75b7ae146397b20ce539ac8d0f08ab3b44311a7e289ca1b9"
+  },
+  {
+   "path": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\decode\\reference_payload.json",
+   "exists": true,
+   "sha256": "68d9435da3766fe6200fb69db6705837b8eeafd1aac8b543e296a14152e32603"
+  },
+  {
+   "path": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\decode\\cf_skin_galilace.json",
+   "exists": true,
+   "sha256": "86dd7399474a869afa24e0a760fc90612d3794cfbc8bcf50d845ec096f5c0b44"
+  },
+  {
+   "path": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\csref\\viewmodel_transform.json",
+   "exists": true,
+   "sha256": "68338e7a24645cafa57c5c368c05852588f6d1ced31013c784c4c29c5a2ac7b7"
+  },
+  {
+   "path": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\texture\\report_v2.json",
+   "exists": true,
+   "sha256": "000fbdcf9182b81578f194c01fa0f89e2b6410637bef0aa8b28985bd453774ac"
+  },
+  {
+   "path": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\native_vm\\build_galilace_vm.py",
+   "exists": true,
+   "sha256": "6e1531c8faf2a68458f95fd4fc805ce76538456082ec065a1f1dbcb8f673ca79"
+  },
+  {
+   "path": "D:\\project\\cf_to_csgo\\work\\galil_ace_tianxi\\texture\\build_textures_v2.py",
+   "exists": true,
+   "sha256": "3a17f3b8c9fbe479cff85e735d738a7d394c1c381ab703fa544a8996f8e0d9a1"
+  }
+ ],
+ "game_dir": "D:\\steam\\steamapps\\common\\csgo legacy",
+ "note": "E0 baseline per plan.md §5. C-layer pak hash check is a separate PACK_VERIFY step; this manifest covers A/B only."
+}

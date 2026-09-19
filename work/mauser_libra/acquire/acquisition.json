@@ -1,0 +1,373 @@
+{
+ "generated_at_utc": "2026-09-19T04:08:57.053394+00:00",
+ "weapon": "毛瑟-天秤座",
+ "standard_name": "M1896_Libra",
+ "bute": "rez/Butes/BF005.LTC #1462 / #1794",
+ "files": [
+  {
+   "path": "Models/PLAYERVIEW/PV-M1896_Libra.LTB",
+   "bytes": 166932,
+   "sha256": "d12518b3a3cc0036c9fdf7079a36b57b94bf7d625dcae187e60576a0f1b1b98a",
+   "md5": "26D6E4BC04188F799BD3F0B58C50B0AA",
+   "archive": "rez/RF016.REZ",
+   "provenance": {
+    "logical_path": "Models/PLAYERVIEW/PV-M1896_Libra.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 142872304,
+    "size": 166932,
+    "directory_md5": "26d6e4bc04188f799bd3f0b58c50b0aa",
+    "sha256": "d12518b3a3cc0036c9fdf7079a36b57b94bf7d625dcae187e60576a0f1b1b98a",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+      "length": 255883357,
+      "range_ok": true,
+      "actual_bytes": 166932,
+      "md5": "26d6e4bc04188f799bd3f0b58c50b0aa",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/PLAYERVIEW/PV-M1896_Libra.DTX",
+   "bytes": 524452,
+   "sha256": "76807587dcb2c4399fcf9c0780d78952db2bdb49239b9606c50b74e1754a8adc",
+   "md5": "8E1E0B447947E6227F3BFF0DC39E33D2",
+   "archive": "rez/rf017.rez",
+   "provenance": {
+    "logical_path": "ModelTextures/PLAYERVIEW/PV-M1896_Libra.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+    "legacy_time_field": 8,
+    "offset": 162276128,
+    "size": 524452,
+    "directory_md5": "8e1e0b447947e6227f3bff0dc39e33d2",
+    "sha256": "76807587dcb2c4399fcf9c0780d78952db2bdb49239b9606c50b74e1754a8adc",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 524452,
+      "md5": "4ba73886bb41f04acbaefeb45ceb4192",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "length": 209382768,
+      "range_ok": true,
+      "actual_bytes": 524452,
+      "md5": "8e1e0b447947e6227f3bff0dc39e33d2",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "ModelTextures/Shader/WeaponShader/M1896_Libra.CFG",
+   "bytes": 475,
+   "sha256": "2374a62d5d8d40db0d8de969c2099643823a47185ec9f593a19299bb2f415476",
+   "md5": "1E4B57BA064F5EC07CC9561876CA91E4",
+   "archive": "rez/rf017.rez",
+   "provenance": {
+    "logical_path": "ModelTextures/Shader/WeaponShader/M1896_Libra.CFG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+    "legacy_time_field": 9,
+    "offset": 129881495,
+    "size": 475,
+    "directory_md5": "1e4b57ba064f5ec07cc9561876ca91e4",
+    "sha256": "2374a62d5d8d40db0d8de969c2099643823a47185ec9f593a19299bb2f415476",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 475,
+      "md5": "85c02c4a854621ebed625ba341163bbd",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+      "length": 209427012,
+      "range_ok": true,
+      "actual_bytes": 475,
+      "md5": "1e4b57ba064f5ec07cc9561876ca91e4",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "ModelTextures/SpecularMap/M1896_Libra_S.TGA",
+   "bytes": 3145772,
+   "sha256": "22a8f8044ad2fa5e5cb3bf2bed238a66c4d7e1b093f9ec54a9b9083e5b218eee",
+   "md5": "69A072166B7D49B85183C344359D6904",
+   "archive": "rez/rf017.rez",
+   "provenance": {
+    "logical_path": "ModelTextures/SpecularMap/M1896_Libra_S.TGA",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_11.REZ",
+    "legacy_time_field": 11,
+    "offset": 179421048,
+    "size": 3145772,
+    "directory_md5": "69a072166b7d49b85183c344359d6904",
+    "sha256": "22a8f8044ad2fa5e5cb3bf2bed238a66c4d7e1b093f9ec54a9b9083e5b218eee",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 3145772,
+      "md5": "65bdec175a9f8f256af9a2210cabbaea",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\RF017_11.REZ",
+      "length": 209650022,
+      "range_ok": true,
+      "actual_bytes": 3145772,
+      "md5": "69a072166b7d49b85183c344359d6904",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "ModelTextures/NormalMap/M1896_Libra_N.TGA",
+   "bytes": 3145772,
+   "sha256": "d3077a1e9b41c3287c4ced04fda76cfc9f9f942a2abfc7cbc79f2ce665eb720f",
+   "md5": "60A9CAA1457EC2CFB47141DD22F654A5",
+   "archive": "rez/rf017.rez",
+   "provenance": {
+    "logical_path": "ModelTextures/NormalMap/M1896_Libra_N.TGA",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+    "legacy_time_field": 6,
+    "offset": 74712272,
+    "size": 3145772,
+    "directory_md5": "60a9caa1457ec2cfb47141dd22f654a5",
+    "sha256": "d3077a1e9b41c3287c4ced04fda76cfc9f9f942a2abfc7cbc79f2ce665eb720f",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 3145772,
+      "md5": "06eb43348fa65ebd94d113b235160fee",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+      "length": 209376906,
+      "range_ok": true,
+      "actual_bytes": 3145772,
+      "md5": "60a9caa1457ec2cfb47141dd22f654a5",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "ModelTextures/AlphaMap/M1896_Libra_alpha.TGA",
+   "bytes": 3145772,
+   "sha256": "7c2e91a7e9b81f32e34bcd1ec33cb4f3c696148299ea306ce933dfadda390186",
+   "md5": "976C170434CA92A3D45FB67FEF9F42C8",
+   "archive": "rez/rf017.rez",
+   "provenance": {
+    "logical_path": "ModelTextures/AlphaMap/M1896_Libra_alpha.TGA",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+    "legacy_time_field": 2,
+    "offset": 35652112,
+    "size": 3145772,
+    "directory_md5": "976c170434ca92a3d45fb67fef9f42c8",
+    "sha256": "7c2e91a7e9b81f32e34bcd1ec33cb4f3c696148299ea306ce933dfadda390186",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 3145772,
+      "md5": "896454dc1df5aca0edd2d419c52663c5",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+      "length": 206689673,
+      "range_ok": true,
+      "actual_bytes": 3145772,
+      "md5": "976c170434ca92a3d45fb67fef9f42c8",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+   "bytes": 196736,
+   "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+   "md5": "66B621E7818996F08A03C922E5E35681",
+   "archive": "rez/rf017.rez",
+   "provenance": {
+    "logical_path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_4.rez",
+    "legacy_time_field": 4,
+    "offset": 68901720,
+    "size": 196736,
+    "directory_md5": "66b621e7818996f08a03c922e5e35681",
+    "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 196736,
+      "md5": "bc83a663a797cfa17662554b8616ad42",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017_4.rez",
+      "length": 207690064,
+      "range_ok": true,
+      "actual_bytes": 196736,
+      "md5": "66b621e7818996f08a03c922e5e35681",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "Models/PLAYERVIEW/PV-M1896_Libra_BL.LTB",
+   "bytes": 61602,
+   "sha256": "079577780376e825e3a2090d2419ae9e1924d38834da342f82506f8a22469135",
+   "md5": "648C18D14B53DB57C80586211AEAD584",
+   "archive": "rez/RF016.REZ",
+   "provenance": {
+    "logical_path": "Models/PLAYERVIEW/PV-M1896_Libra_BL.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 143039236,
+    "size": 61602,
+    "directory_md5": "648c18d14b53db57c80586211aead584",
+    "sha256": "079577780376e825e3a2090d2419ae9e1924d38834da342f82506f8a22469135",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+      "length": 255883357,
+      "range_ok": true,
+      "actual_bytes": 61602,
+      "md5": "648c18d14b53db57c80586211aead584",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "Models/PLAYERVIEW/PV-M1896_Libra_GR.LTB",
+   "bytes": 65616,
+   "sha256": "77ab17d0f426b116a723eca04a47852d24e4cd8198a65c695dc296558d7e9533",
+   "md5": "4D33AA0286467E4129C02938674B2EB5",
+   "archive": "rez/RF016.REZ",
+   "provenance": {
+    "logical_path": "Models/PLAYERVIEW/PV-M1896_Libra_GR.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 143100838,
+    "size": 65616,
+    "directory_md5": "4d33aa0286467e4129c02938674b2eb5",
+    "sha256": "77ab17d0f426b116a723eca04a47852d24e4cd8198a65c695dc296558d7e9533",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+      "length": 255883357,
+      "range_ok": true,
+      "actual_bytes": 65616,
+      "md5": "4d33aa0286467e4129c02938674b2eb5",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "Models/WEAPONS/QV-M1896_Libra.LTB",
+   "bytes": 15780,
+   "sha256": "dca8b733f56cd31b6d249e992223feb17e9405b60d9fa3cdf612ae5a595cc0b4",
+   "md5": "2983FA2CADDA7F225FA9DA573921190F",
+   "archive": "rez/RF016.REZ",
+   "provenance": {
+    "logical_path": "Models/WEAPONS/QV-M1896_Libra.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "legacy_time_field": 0,
+    "offset": 247338149,
+    "size": 15780,
+    "directory_md5": "2983fa2cadda7f225fa9da573921190f",
+    "sha256": "dca8b733f56cd31b6d249e992223feb17e9405b60d9fa3cdf612ae5a595cc0b4",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+      "length": 255883357,
+      "range_ok": true,
+      "actual_bytes": 15780,
+      "md5": "2983fa2cadda7f225fa9da573921190f",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/WEAPONS/QV-M1896_Libra.DTX",
+   "bytes": 32932,
+   "sha256": "b86597550fc66ffd8c4c1fd8e69012e639048a334bccfb6187a1d2777bcffc92",
+   "md5": "D68DB07B9D5C61736C880E523E95E9B2",
+   "archive": "rez/rf017.rez",
+   "provenance": {
+    "logical_path": "ModelTextures/WEAPONS/QV-M1896_Libra.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+    "legacy_time_field": 13,
+    "offset": 96820884,
+    "size": 32932,
+    "directory_md5": "d68db07b9d5c61736c880e523e95e9b2",
+    "sha256": "b86597550fc66ffd8c4c1fd8e69012e639048a334bccfb6187a1d2777bcffc92",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 32932,
+      "md5": "4390d2486badcc7aea4b4a88d1ce5296",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\RF017_13.REZ",
+      "length": 125383036,
+      "range_ok": true,
+      "actual_bytes": 32932,
+      "md5": "d68db07b9d5c61736c880e523e95e9b2",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  }
+ ],
+ "missing": []
+}

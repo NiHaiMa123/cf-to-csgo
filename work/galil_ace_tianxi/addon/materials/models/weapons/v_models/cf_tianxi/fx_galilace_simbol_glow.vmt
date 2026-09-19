@@ -1,0 +1,20 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/weapons/v_models/cf_tianxi/cf_fx_flr0030"
+	"$additive" "1"
+	"$translucent" "1"
+	"$nocull" "1"
+	"$nofog" "1"
+	"$color" "[0.019608 0.192157 0.466667]"
+	"Proxies"
+	{
+		"Sine"
+		{
+			"sineperiod" "2"
+			"sinemin" "0.35"
+			"sinemax" "1.0"
+			"timeoffset" "0"
+			"resultvar" "$alpha"
+		}
+	}
+}

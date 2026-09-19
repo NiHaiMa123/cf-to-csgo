@@ -1,0 +1,201 @@
+{
+ "diffuse_src": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\PV-M1896_Libra.png",
+ "upscaled": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\texture\\up\\mauser_libra_2048.png",
+ "source_diffuse": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\texture\\up\\mauser_libra_rgba_2048.png",
+ "up_size": [
+  2048,
+  2048
+ ],
+ "cfg": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\maps\\M1896_Libra.CFG",
+ "shader_profile": {
+  "family": "player_view_alpha_snell_transformed_cube",
+  "strategy": "lit_specular_proxy",
+  "specular_enabled": true,
+  "envcube_enabled": true,
+  "normal_enabled": true,
+  "envcube_usage": 2,
+  "refraction_index": 0.8,
+  "reflection_index": 0.5,
+  "cubemap_transform_y": 220.0,
+  "light_brightness": 0.2,
+  "diffuse_boost": 0.01,
+  "ambient_light_color": 0.01,
+  "envcube_brightness": 3.0,
+  "specular_power_cfg": 1.0,
+  "specular_exponent_observed": 0.25,
+  "source_phong_exponent": 2,
+  "source_phong_boost": 0.939,
+  "source_phong_tint": [
+   1.0,
+   0.766,
+   0.531
+  ],
+  "source_phong_fresnel_ranges": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "source_lit_fraction": 0.4,
+  "source_lightwarp_floor": 0.6,
+  "source_emissive_strength": 0.6,
+  "source_stability_mean": 0.9375
+ },
+ "channel_mapping": {
+  "specular_rgb_x_alpha_g": "low-pass base alpha -> $basemapalphaphongmask",
+  "specular_chromaticity": "$phongtint",
+  "cubemap_rgb_x_alpha_b_x_env_brightness": "low-pass RGB -> $emissiveblendbasetexture (light-independent additive pass)",
+  "stable_divided_by_stable_plus_directional": "$lightwarptexture dark-floor calibration",
+  "lobby_cube_dds": "audited but not bound for transformed-Snell family"
+ },
+ "map_stats": {
+  "specular": {
+   "R": {
+    "min": 0,
+    "max": 255,
+    "mean": 43.34196376800537
+   },
+   "G": {
+    "min": 0,
+    "max": 255,
+    "mean": 33.76843547821045
+   },
+   "B": {
+    "min": 0,
+    "max": 213,
+    "mean": 23.13558864593506
+   }
+  },
+  "alpha": {
+   "R": {
+    "min": 255,
+    "max": 255,
+    "mean": 255.0
+   },
+   "G": {
+    "min": 255,
+    "max": 255,
+    "mean": 255.0
+   },
+   "B": {
+    "min": 0,
+    "max": 255,
+    "mean": 27.28109645843506
+   }
+  },
+  "source_response": {
+   "R": {
+    "min": 35,
+    "max": 245,
+    "mean": 51.38968324661255
+   },
+   "G": {
+    "min": 35,
+    "max": 245,
+    "mean": 51.38968324661255
+   },
+   "B": {
+    "min": 35,
+    "max": 245,
+    "mean": 51.38968324661255
+   }
+  },
+  "source_lightwarp": {
+   "R": {
+    "min": 153,
+    "max": 255,
+    "mean": 204.0
+   },
+   "G": {
+    "min": 153,
+    "max": 255,
+    "mean": 204.0
+   },
+   "B": {
+    "min": 153,
+    "max": 255,
+    "mean": 204.0
+   }
+  },
+  "source_env_overlay": {
+   "R": {
+    "min": 0,
+    "max": 255,
+    "mean": 58.16716718673706
+   },
+   "G": {
+    "min": 0,
+    "max": 255,
+    "mean": 59.613919734954834
+   },
+   "B": {
+    "min": 0,
+    "max": 255,
+    "mean": 60.100672483444214
+   }
+  },
+  "proxy": {
+   "cube_representative_rgb": [
+    0.4814,
+    0.4928,
+    0.4977
+   ],
+   "specular_energy_mean_rgb": [
+    0.1711,
+    0.1311,
+    0.0908
+   ],
+   "environment_energy_mean_rgb": [
+    0.1555,
+    0.1586,
+    0.1596
+   ],
+   "combined_energy_mean_rgb": [
+    0.3266,
+    0.2898,
+    0.2504
+   ],
+   "source_proxy_gain": 0.75,
+   "source_env_proxy_gain": 1.5,
+   "source_light_influence_scale": 2.0,
+   "source_lit_fraction": 0.4,
+   "source_lightwarp_floor": 0.6,
+   "filter": "gaussian",
+   "filter_radius": 4.0,
+   "phong_combination": "luma(specular_rgb_x_alpha_g)",
+   "stability_combination": "stable_environment_divided_by_stable_plus_directional_diffuse",
+   "lightwarp": "256x16 neutral ramp; floor=1-source_lit_fraction"
+  }
+ },
+ "source_approximation": {
+  "runtime_envmap": false,
+  "reason": "Source VertexLitGeneric cannot reproduce CF transformed reflect/refract cube rays",
+  "cubemap_sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+  "phong": {
+   "exponent": 2,
+   "boost": 0.939,
+   "tint": [
+    1.0,
+    0.766,
+    0.531
+   ],
+   "fresnel_ranges": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "albedo_tint": false
+  },
+  "lighting_stability": {
+   "mean": 0.9375,
+   "source_lit_fraction": 0.4,
+   "lightwarp_floor": 0.6,
+   "lightwarp": "cf_mauser_lightwarp",
+   "emissiveblend": {
+    "base_texture": "cf_mauser_env_overlay",
+    "strength": 0.6,
+    "role": "stable additive env-proxy pass; independent of scene direct light"
+   }
+  }
+ },
+ "staging": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon\\materials\\models\\weapons\\v_models\\cf_mauser"
+}

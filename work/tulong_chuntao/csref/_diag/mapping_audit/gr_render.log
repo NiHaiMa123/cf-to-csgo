@@ -1,0 +1,13 @@
+D:\project\cf_to_csgo\work\tulong_chuntao\csref\audit_texture_mapping.py:34: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mt.use_nodes = True
+00:01.063  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\u_v.png'
+00:01.656  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\u_flip_v.png'
+00:02.250  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\flip_u_v.png'
+00:02.813  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\flip_u_flip_v.png'
+00:03.375  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\swap_u_v.png'
+00:03.938  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\swap_u_flip_v.png'
+00:04.531  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\swap_flip_u_v.png'
+00:05.109  render           | Saved: 'D:\project\cf_to_csgo\work\tulong_chuntao\csref\_diag\mapping_audit\skin_gr\swap_flip_u_flip_v.png'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

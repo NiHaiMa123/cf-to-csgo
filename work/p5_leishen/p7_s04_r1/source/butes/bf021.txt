@@ -1,0 +1,7893 @@
+( Filter
+	( Abuse "暴力镇压:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陈水扁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陳水扁罗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "达赖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "达赖喇嘛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "地下教会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "地下天主教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "弟子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "68134451:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东方红时空:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "独裁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "杜润生:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "杜潤生:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "对华援助协会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "falun:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "f.l.g:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "flg:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "freenet:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法－輪－功:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法-轮-功:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法伦:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法輪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法輪功:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法轮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法轮功:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法一輪一功:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法一轮一功:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反革命暴乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反革命暴亂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反共:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反官倒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反人类:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "放光明:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "封从德:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "gcd:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "gfw:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "greatfirewall:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "隔离审查:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "公投:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共产党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共産黨:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共匪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国际公法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "國際公法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "國家領導人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "gamemaster:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "gm:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "hongzhi:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "洪志:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡錦濤:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡锦涛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "湖南湘阴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黄花岗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "贿赂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "活体解剖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "活体器官:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "活体移植:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "jiangyanyong:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "jzm:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江core:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江river:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江絕民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江绝民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江流氓:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江罗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江十泽十民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江泽民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江澤民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江贼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "疆独:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蒋彦士:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蒋彦永:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "九评:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "九评共产党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "开放杂志:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "6.4:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "6。4:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "liusi:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "雷洁琼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "雷潔瓊:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李登輝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李登辉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "连战:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "連戰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "流亡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六。四:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六?四:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六四:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六四學生愛國運動:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陆肆:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吕秀莲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "呂秀蓮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "轮大:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "轮功:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "minghui:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民进党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民运:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民主网:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "明慧:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "peacehall:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "平反:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "强权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "强制拆迁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "清心论坛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "全球公审:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "确吉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "确吉尼玛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "群体灭绝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "rfa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "rsf:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "仁-唯色:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "仁?唯色:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "仁唯色:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sixfour:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三年经济困难时期:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三年困难时期:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三年自然灾害:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚动的喜玛拉雅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "上访:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "世纪中国网:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "世界日报:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "世界通:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "世界之门:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "司徒华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "四大广场:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "苏家屯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "苏家屯集中营:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "苏贞昌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "太子党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台湾公投:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "讨伐中宣部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天安們母親:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天安门母亲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屠杀:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "退出共产党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "voa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "5-1204:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "5－1204:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "wjb:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "万寿路朱各庄26号:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "萬夀路朱各莊26號:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "为了中国的明天:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "生者与死者:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "為了中國的明天:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "生者與死者:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温（瘟）家宝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温家宝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "溫家寶:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "瘟家宝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "文革:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "文化大革命:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吾尔开希:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "无界:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "希望之声:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏论坛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏人权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏之页:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港明报:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港商台:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "学生爱国运动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "1989_6_4:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "言論自由:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "燕京大学:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鷰京大學:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "业主请愿:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "业主示威:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "移民冲突:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "英国广播公司:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "远华案:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏独:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏民冲击:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "贼民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赵紫阳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "趙紫陽:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "真善忍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "政治風波:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "政治风波:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "正见网:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中俄边界:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中顧委委員:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中顾委委员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国国情咨询网:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国劳工观察:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国民主同盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国民主正义党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国事务:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中时电子报:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央社:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "专政:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "追查国际:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "卓玛嘉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自由门:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自由圣火:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自由亚洲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自由亚洲电台:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宗教迫害:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宗教自由:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fuck:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "毛泽东:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "周恩来:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "马克思:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "恩格斯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "列宁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡耀邦:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "刘少奇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "邓小平:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吴邦国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "贾庆林:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曾国庆:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黄菊:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吴官正:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李长春:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "习近平:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李克强:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罗干:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "王乐泉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "张德江:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李鹏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "朱鎔基:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "尉健行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李岚清:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李洪治:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小泉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "萨达姆:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "拉登:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法轮大法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台独:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台湾独立:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "恐怖主义:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "钓鱼岛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "狗屁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大便:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "撒尿:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫秽:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屁股:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "军妓:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "卖淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚货:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸡鸡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爱滋:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫水:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "龟头:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乳房:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吹萧:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "包皮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "月经:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "荡妇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "婊子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日他娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "狗日的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你奶奶:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "傻逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴小撕大:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "弟大物勃:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "以茎至洞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "shit:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fuc:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fvc:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fu(:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fv(:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "dick:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "asshole:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "piss:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "cunt:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "damn:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "damm:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "bitch:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "bastard:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "butthole:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "butthead:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fag:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "phuc:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fuk:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "wtf:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "shyt:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sh!t:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "@sshole:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "a$$hole:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "as$hole:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "a$shole:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "suck:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "死gm:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "死gd:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "马的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妈的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干你娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干妳娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干拎娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "你马的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "他妈的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "他马的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "她妈的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "她马的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操妳娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操妳妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干你妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干妳妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸡叭:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸡芭:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干你老母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干妳老母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你老妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你老母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "塞你老母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "塞你娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "塞你爸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "塞你公:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "塞你母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "塞你老师:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驶你老母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驶你娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驶你爸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驶你母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驶你公:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驶你老师:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "懒叫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "懒教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你祖宗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操妳祖宗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干七八:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "靠腰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操妳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸠:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陷家铲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "含捻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "食捻屎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌西:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "老母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌你:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌妳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌鸠:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌七:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌7:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸠屎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "舔西:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "食屎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸡掰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日你娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "傻屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "傻比:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你大爷:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "二屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "二逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "笨逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "笨屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "别他妈的装:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "装逼呢:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "装屄呢:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日你妈啦逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日你妈啦屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "你以为你装逼就能:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "你以为你装屄就能:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "你呀的鸡巴长歪了吧:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "别以为你是太监我就:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "死全家:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "狂操你全家:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "太监:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你全家:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "装逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "装屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "傻b:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "董文华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "懂文华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屄毛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "逼毛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屌毛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫毛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大花b:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大血b:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你妈个b:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你妈个屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烂逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烂屌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烂屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "不得不内:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "比的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄙㄞ你老母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄙㄞ你爸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄙㄞ你妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄙㄞ你公:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄙㄞ你老师:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄐ掰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄐ巴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄐ八:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蔓ぺ:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暗稲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "管理员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "管理員:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "b博士:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "外挂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "私服:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "4f:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sf:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "瞳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "础:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蘖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "洱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ダ:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李洪志:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏喇嘛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "bnb:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "踢:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "滚:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "shengda:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄇㄞ:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "他ㄇㄞ:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "他ㄇ的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "admin:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "bt:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "cao:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fosaon:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "去死:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "瘸腿帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人民日报:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人民银行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "傻子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "kao:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "k粉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "k他命:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "nmd" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "nnd:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "orgasmus:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "penis:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sb:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "screw:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sega:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sex:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sm:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "snatch:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人事部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人体炸弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日本:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日本RING:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日本鬼子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "tmd:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "tnnd:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "wg:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄙㄞ你母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ㄙㄞ你娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿扁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿拉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿拉法特:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安非他命:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安拉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安理会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安眠酮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安南:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安全部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安全监管:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安全理事会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罢工:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "版署:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "办公厅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日你妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "早饭:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曾培炎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曾庆红:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "扎卡维:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "张立昌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "真理教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "证监会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "政变:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "指导员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "质检局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "致幻剂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共中央:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国共产党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中华人民共和国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中科院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中南海:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中宣部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央电视台:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央政治局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中医药局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赛你公:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赛你老师:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操你妈屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曹钢川:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "cctv:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "测绘局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "保钓:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "保监会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "保密局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸨:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暴动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "本?拉登:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "公安:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冰毒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "布莱尔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "布什:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "财政部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "参事室:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三陪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三去车仑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三唑仑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色情:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "外交部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "外专局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "朱德:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "主席:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "转法轮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国安局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安全局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自焚:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自治机关:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宗教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "总局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "总理:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "做爱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "插你:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "插妳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "产权局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "朝鲜:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "车臣:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陈良宇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陈至立:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吹喇叭:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蠢猪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "粗制吗啡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "催情药:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "杀人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "杀人犯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "杀手:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "文物局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "倭国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大麻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大麻树脂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大麻油:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大卫教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "代表大会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "党主席:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "档案局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "盗窃犯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "道教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "地震局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "帝国主义:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "电监会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "钓鱼台:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东条英机:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东突:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乡巴佬:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小泉纯一郎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小日本:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新华社:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新闻办:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新闻出版:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "独立:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东亚病夫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "二乙基酰胺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "发改委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "发展研究中心:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法西斯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法制办:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反恐委员会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "废物:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "佛教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "佛祖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干妳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干你:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烟草局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "摇头丸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "摇头玩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "耶和华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "叶剑英:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "夜情:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一贯道:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干你妈b:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干你妈逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肛交:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "港澳办:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "高丽棒子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "睾:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "膏药旗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "工程院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "工商局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "公安部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "公安局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共产主义:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "jb:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sb:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "挂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "观世音:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "管理人员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "光明日报:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "广电局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "龟儿子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "龟孙子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "郭伯雄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国防部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国防科工委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫荡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫娃:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "邮政局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "商务部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "上妳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "上你:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "社保基金会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "社会主义:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "社科院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "神经病:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "审计署:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "升天:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "生鸦片:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "圣母:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "圣战:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "老毛子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李宏志:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李瑞环:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李铁映:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "联大:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "联合国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "联合国大会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "粮食局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "林彪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "林业局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人民大会堂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "水利部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "水去车仑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "税务总局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "司法部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "斯大林:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "金日成:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "金正日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "经济社会理事会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "经社理事会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "朱总理:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "靖国神社:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "静坐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "军事委员会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "军委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抗日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "靠:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "科技部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "可待因:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宋楚瑜:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宋祖英:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "孙文:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "孙逸仙:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "孙中山:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台办:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台联:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "客户服务人员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "恐怖分子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "口交:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "快克:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "毛主席:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "美国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "美国佬:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "美利坚:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蒙古达子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "秘书长:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "密宗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民航局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "唐家璇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "体育总局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天安门:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天皇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "铁道部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "统计局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "托管理事会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "外　挂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "外汇局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "劳动保障局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "基地组织:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "基督:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "基督教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江八:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "计生委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妓女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妓院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "奸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "监察部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "刘淇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "王八蛋:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "王刚:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "王兆国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "网管:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "威而钢:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "威而柔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "卫生部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温总理:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "文化部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江核心:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江主席:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蒋介石:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蒋经国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蒋中正:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "交通部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "叫床:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "教官:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "教育部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "侨办:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "亲民党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "情色:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民政部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "拉姆斯菲尔德:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大会堂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "倭寇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "我操:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "我干:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "我妳老爸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吴　仪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吴仪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏独立:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "希拉克:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "希特勒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鲜族:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妈祖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "马英九:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吗啡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吗啡碱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吗啡片:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "麦角酸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国管局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国际法院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国家民委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国家主要部委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国民党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国土资源部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国务院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "监管局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "检察院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "建设部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新闻出版总署:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "信访局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "信息产业部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "兴奋剂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性无能:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "学潮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "丫的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "丫头养的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸦片:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸦片液:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸦片渣:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "花柳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "华国锋:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "华建敏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "环保总局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "回回:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "回教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "回良玉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "机八:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "机巴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸡八:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸡巴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烂b:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "刘云山:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大师:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "英雄纪念碑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自杀:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人大:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人代会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人大代表:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一国两制:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一夜情:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊拉克:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊朗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊斯兰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "以茎制洞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抑制剂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴唇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴道:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴茎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴毛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "虐待:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "彭真:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "屁眼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "嫖客:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "破坏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "仆街:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "普京:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "气象局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "强奸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "强奸犯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抢劫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乔石:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "旅游局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罗　干:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妈比:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妈卖妈屁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "马卖马屁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "客服:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "游戏管理员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "游行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "俞正声:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "原子能机构:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "圆满:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "摩门教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "穆罕默德:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "穆斯林:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "奶子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妳老母的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妳妈的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妳马的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妳娘的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "南联盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "南蛮子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "你姥:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "你姥姥的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "你妈的:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "捻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "农业部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国研室:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国资委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "海关总署:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "海洛因:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "海洋局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "贺国强:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黑手党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "可卡叶:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "可卡因:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "克林顿:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "耶稣:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蝬:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陳水扁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法　輪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法　轮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "G　M:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "Ｇ　Ｍ:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "雪山狮子旗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "哲蚌寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "金顶:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大昭寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小昭寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大召寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "拉卜楞寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "甘丹寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "八角街:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色拉寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "开枪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "向巴平措:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "达兰萨拉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "丹增嘉措:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "林芝野战军:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "52旅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "五十二旅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "圣母峰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸣枪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "焚烧:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烧毁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "催泪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "街垒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冲击:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "打砸抢:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暴乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "示威:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冲突:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "镇压:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "平叛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "投毒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "经塔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "唐达献:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "转经道:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自治区党委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新闻封锁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暴徒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自由西藏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "武警:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "军队:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "警察:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "班禅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黑教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黄教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏族:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日喀则:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏传:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "喇嘛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "活佛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "布达拉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "甘孜:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "那曲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏民:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "信众:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "昌都:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "边境:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "当雄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "贡嘎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "成都军区:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "统战部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "总参:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驻藏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "驻军:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十七条:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人民广场:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人民路:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "清真寺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "闹新疆:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "哲蚌市:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "武侯祠:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "仁波切:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏青会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大藏区:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "demonstrate:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "parade:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "chaosintibet:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "protestsspread:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "burningshop:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "burningcar:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "riot:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "rebellion:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "tromsikhangmarket:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "demonstration:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "jokhangtemple:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ramochetemple:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "clash:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "lhasa&fire:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "lhasa&smoke:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "violent:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "tensionintensifiesinlhasa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "throwingrocks:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "chaotic:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "monk:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "lama:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "buddist:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "nun:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "teargas:" )
+	( Alternation "???:" )
+)
+//*******************************************
+( Filter
+	( Abuse "系统公告:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "在线提示:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中奖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "领奖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "验证码:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "腾讯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "管理员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "功轮法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新唐人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "柴玲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大纪元:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "退党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "复兴党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十七大权斗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共高层斗争:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共高层内幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共高层权贵内幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共高层权力斗争:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共高层黑幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共高层军权斗争:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡锦涛嫡系大调动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曾庆红被迫写信十七大退:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曾庆红十七大下课:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曾庆红步江后尘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共十七大前明争暗斗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "推翻专制独裁的共产党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "亡共者胡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "致胡书记的公开信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共任用政治血缘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "传说的胡曾联手是一种假象:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "和平演变道路已被中共堵死:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡温借国际舆论造势:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡温暴政:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共独裁暴政:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共独裁制度必将灭亡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共粉饰太平:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共还在祖国横行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共激烈内斗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共近期权力斗争:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共军队黑幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共领导人黑幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共统治危机:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共伪政权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共邪党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央警卫局大换血:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央派系斗争:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央权力被架空:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共心中最大的恐惧:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共政坛腐败内幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共中南海高层内幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共中央黑幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国政坛清华帮盛极而衰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡江大斗法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡江曾内斗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡曾内斗公开:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中南海高层权力斗争:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中南海惊现东宫小朝廷:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共獨裁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共独裁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共黑帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中共黑幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抵制北京奥运:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "不要奥运要人权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "毛泽东复活:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国共产党操纵股市:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国在世界的不光彩排名:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "打倒共产党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "打倒中共:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "打倒毛泽东:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黄海暗杀:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡紧掏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "瘟家鸨:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "瘟假鸨:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "达赖喇嘛万岁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新闻小天使:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "九评:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "告全国网友书:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "八九民运:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黄海刺胡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "出售猎枪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "出售枪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "出售三唑仑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "出售海洛因:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "原子弹制作方法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "炸药制作方法:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉棒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉洞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "嫩穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "夫妻秀:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港惠泽社群:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "码中特:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六星合彩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一字解特码:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "报码聊天:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "最快报码室:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六合彩美女图库:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "惠澤社群:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港彩宝必中六肖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "激流中国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江湖淫娘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江楼绮梦:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骆冰淫传:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "夫妇乐园:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿里布达年代记:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爱神之传奇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "不良少女日记:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "沧澜曲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "创世之子猎艳之旅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东北风情熟女之惑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "风骚侍女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "海盗的悠闲生活:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黑天使:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黑星女侠:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "混蛋神风流史:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "狡猾的风水相师:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "俪影蝎心:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "秦青的幸福生活:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "四海龙女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "逃亡艳旅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "我的性启蒙老师:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "现代艳帝传奇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "星光伴我淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "倚天屠龙别记:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫术炼金士:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十景缎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "往事追忆录:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "舌战法庭:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "少妇白洁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "风月大陆:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "风尘劫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "美少妇的哀羞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿兵哥言语录:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "遥想当年春衫薄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "王子淫传:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "神雕外传之郭襄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "睡着的武神:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "少年阿宾:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "兽交:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "插进:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "插我:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "插穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吃精:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抽插:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黄色电影:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "激情电影:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "精液:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "轮暴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "迷奸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉欲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性爱图库:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴蒂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫亂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫蕩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫汁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "幼圖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中文搜性网:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鷄巴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "學生妹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "幹炮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "摸阴蒂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "金鳞岂是池中物:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "掰穴皮卡丘:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "白虎少妇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "白虎阴穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暴淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "逼痒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蕩妹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肥逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "粉穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "开苞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "风艳阁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "激情小说:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "兽欲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "秘唇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蜜穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "玉穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "菊花蕾:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大力抽送:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "干的爽:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉蒲团:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "后庭:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "男女交欢:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "极品波霸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "流淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "销魂洞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操烂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "成人网站:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫色:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一夜欢:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "姦淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "给你爽:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "偷窥图片:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性奴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大奶头:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "奸幼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中年美妇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "豪乳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "喷精:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "逼奸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉茎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "菊花洞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "成人自拍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自拍美穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抠穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "颜射:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉棍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫水爱液:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴核:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "母子奸情屏蔽:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "近親相姦:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "妹妹阴毛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "免费成人网站:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "免费偷窥网:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "摩洛客:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "父女乱伦:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "儿子干妈妈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爸爸干女儿:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "捏弄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚姐姐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色区:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色书库:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "射颜:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吸精少女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "下流地带:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性虎:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性饥渴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫妹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫图:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "幼交:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "欲火:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "援交妹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "嫩屄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "嫩女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "噴精:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "情色天崖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "情色文学:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "群交亂舞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日本骚货:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉唇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉沟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉棍干骚妇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉壶:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉淫器吞精:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚妹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚水:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "骚穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色狐狸网址:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色狼论坛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色狼小说:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "湿穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爽死我了:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "舔逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "舔屁眼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "好嫩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "亂倫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "做爱电影:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色诱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "秘裂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "采花堂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "含屌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "亚洲性虐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鸡吧:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "夫妻自拍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操穴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "裹本:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫妇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "嫩逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫贱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "欢乐性今宵:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "巨乳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性愛圖站点:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "炮友之家:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小姐打飞机:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "少女被插:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "口淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "按摩棒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "操我:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "被干:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "露逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "美女高潮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日逼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阴缔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "插暴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人妻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "内射:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肉具:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "欲仙欲浪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "玉乳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "被插:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吞精:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暴乳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "無碼電影:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抗议传播:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏恶劣形势:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西藏混乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "輥繻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "耟繴纍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "纊繴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "繿纁繼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "繹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "腂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "纀:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "羂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "興纊繿聏繼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "繽舎繳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "藏族同胞团结:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "臱繳纍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "脀繼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "臟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "纀軹繼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "軟纋:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "舎繳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天安门事件:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "丁子霖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "高智晟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "尖阁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "发轮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "发论:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "发伦:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "輪公:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "輪攻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "轮公:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "轮攻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "發輪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "發論:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法論:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "發倫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法倫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "氵去:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "退一党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "邪恶的党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十七大的一封信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "告全国网民书:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "那曲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烧商店:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烧汽车:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冲赛康:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "拉萨烟火缭绕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江胡之争:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国太子党名单:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国高干子女名单:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中央高干子弟名单:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "给胡温的一封信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宝的一封信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温的一封信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "总的一封信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国领导人最强阵容:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "刘德华和胡主席:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "两岸边才子对话:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "邓小平访美:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小平的预言:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "地下的先烈们:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "当今八大谎言:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡锦涛调虎离山:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "奥运会开幕式方案曝光:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡锦涛和刘德华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "毛主席临终前把小平:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "工资好比眉毛短:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡紧套:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "邓爷爷的预言:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国是全球唯一绝对不能惹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡哥对刘德华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡哥与华仔对话:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "毛主席复活:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中山领导流浪汉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大陆高干子弟名单:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿扁与老胡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡锦涛陈水扁对对联:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国家领导人最强组合:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十七大人大代表一封信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "邓小平讲英语:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "先烈对话:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "料事如神的邓小平:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "布什问锦涛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "剖腹一刀五千几:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "流泪的沈阳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蚁力神:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "谁用谁知道:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "沈阳蚂蚁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蚂蚁养殖户:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "养蚂蚁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蚂蚁事件:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蚂蚁的思考:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "气狗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "出售手:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "子弹制:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "气枪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "钢珠枪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "雷汞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "做原子弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "麻古:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "万里大造林:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东山:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "拉萨暴乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "扔石头:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爆动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "王丹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "周永康:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "集会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "请愿:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "声援:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "分裂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "堵路:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "维权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "进京:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "军转:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "转业军人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "转业干部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "军转干:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "复员军人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "复员军官:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "转业军官:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "糖仔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "丸仔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "笑脸一号:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "笑脸二号:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "可卡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "缅货:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "麻咕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "四仔:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "苯基丙酮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "麻黄素:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "缅古:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "仿缅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "白粉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "仿制枪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "窃听器:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赌博:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六合彩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赌球:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赌马:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "博彩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赌恒指:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抽水:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "曾道人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "肖特:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中特:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "二中二:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三中二:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一肖中特:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性交:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "信访:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自主择业军官:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自主择业人员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中越自卫反击战:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一军两策:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "唐山大地震老伤兵:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六合采:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六和采:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六合菜:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "氯胺酮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "空难黑匣子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "深圳飞成都:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "狂风暴雨:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "梦中的女孩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "调教:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大乳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "口活:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "狼友:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫叫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "轮奸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "脱内裤:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "发浪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "浪叫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "裤袜:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乱伦:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "女优:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "手淫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "花花公子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乳沟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "淫虫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "万利大造林:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民爆器材:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "硝化甘油:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "硝酸甘油:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "甲基安菲他明:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "羟丁酸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "度冷丁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "美沙酮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "盐酸二氢埃托菲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "安纳咖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "苯环已哌啶:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "麦司卡林:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "麦角酸二乙基酰胺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民主:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罢课:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "组织:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "物价:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "上交所:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "深交所:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "签名:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "做车:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "做牌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "孖牌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "套牌:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "广东工人联合会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "春风劳动争议:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民主黨總部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "公开信:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "封锁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "开奖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "专制:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "标语:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "起诉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "正念:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "讲真相:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "传单:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "同修:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "文化衫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "周群:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "泛蓝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三民主义:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "红海湾:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "横幅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "政治黑暗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "改制:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大秀:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "八一五:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "九一八:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "九月十八日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "开波:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "呼喊派:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李常受:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "相调会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "召会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "倪拆声:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "余洁麟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "卢沟桥:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "七七:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "七月七日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "事变:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "总政治部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "对越自卫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抗日老兵:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "两会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "房奴:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "不买房:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "政府:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "警民冲突:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "欠薪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "体制改革:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "纵火:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冰点:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乙肝维权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自主择业:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国统会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "打倒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "对冲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "推翻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "买断工龄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "八零二三部队:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "许万平:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "同盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "讨薪:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国耻:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抵制:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "委员会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阵线:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东亚:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日货:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "路线:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爆发:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暴发:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "同性恋:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "紀元:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三个代表:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "疑案:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国家安全局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反日联盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抗日联盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "八一:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "退役:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "退伍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抗战纪念:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "白小姐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "庄家:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "赔率:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "摇奖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "特码:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "博讯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爆炸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "手榴弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "绑架:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "保卫钓鱼岛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国企改革:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "工程兵:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "禽流感:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "市委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "涉日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爱国者同盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "集合:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "聚会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "聚集:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抗议:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "八九:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "勾结奸商:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "强拆当地居民房:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "暴力拆迁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "非法征用:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "霸占土地:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "买断职工:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "非法拆毁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "业主维权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "侵害业主正当权益:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "违反购房合同:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "征集业主意见:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "散散步:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反对磁悬浮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "就业歧视:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乙肝歧视:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "充当涉毒场所保护伞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罚款黑幕:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "黑恶势力保护伞:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中国民间保钓联合会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中华抗日同盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "制作炸药:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "拉萨北京路:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "拉萨江苏路:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "和尚:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "佛教徒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "尼姑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "代考:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "替考:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "枪手:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "党禁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "言禁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "报禁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "思潮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共和:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民权:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "言论自由:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宪政:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "统治:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "基国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "泄题:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罢考:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反对:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自由:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡温:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡瘟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "老江:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "瘟家:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温夫人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温公子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡公子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温宝宝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "温云松:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡海峰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江家帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江系:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡系:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江派:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "江胡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡主席:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "胡总书记:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "红色贵族:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "北京帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共铲党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共残党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "共惨党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "权斗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "腐败:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "内斗:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "布局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "引咎辞职:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "请愿书:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "权力分配:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李源潮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "孟建柱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陶驷驹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "白景富:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "张新枫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "孟宏伟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "刘金国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "刘德:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蔡安季:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "郑少东:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陈智敏:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "孙永波:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "田期玉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色猫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色欲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "亚情:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "子宫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "自慰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "日本妹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "全裸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "应召:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "熟女:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "作爱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "无码:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "法论:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "三公:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大庄:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "盘口:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "金三角:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "枪支:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "炸弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "炸药:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "火药:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "假币:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "嫖娼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "春宫:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "买春:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "性服务:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "色情服务:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "皮条客:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小鸡鸡:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大波:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "叫春:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "春药:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "原子弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "浓硫酸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爆轰:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "艳照门:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "柏芝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "张柏芝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿娇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "钟欣桐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冠希:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "艳照:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陈冠希:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "鲍鱼娇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "腊肠希:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陈腊肠:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冠西:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "不雅照:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "韩质洁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罢食:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "答复口径:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一个身份:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "两个待遇:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乙肝携带者:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "金戈铁马:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乙肝战友:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小阳:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乙肝检测:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乙肝筛选:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "合法财产:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "找农总行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "找建总行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "找工总行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "代办员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "遗留问题:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "出售:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "配方:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "迷药:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "麻醉药:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "制作工艺:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "网络封锁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "过滤:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "破网软件:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "答案:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民警:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港总彩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港赛马会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港黄大仙:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天线宝宝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港六星合彩:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "六星合彩公司:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "码报:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "马报:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "香港彩票:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "泛绿:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "蓝营:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "绿营:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抹黑:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抹红:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "入联:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大选:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "独派:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台军:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "立委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "谢长廷:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台商:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台海危机:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国语运动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "机要费:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "倒扁:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "马营:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "国民大会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "总统府:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "行政院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "立法院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "司法院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "考试院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "监察院:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "左营海军军官学校:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冈山空军官学校:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "风山陆军军官学校:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "工蜂六型多管火箭系统:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天剑二型飞弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "天剑一型飞弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宪兵司令部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "联合后:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "勤司领部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "参谋本部:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "彭湖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台北:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台中:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台南:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "竹联帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "四海帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "牛埔帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "大湖帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十三兄弟帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "七贤帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西北帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十二煞星帮:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "铁鹰帮竹林联盟:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台湾间谍:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "统独光谱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "二二八事件:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台独党纲:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "台独党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "立法委员:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "出海:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "李义强:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "王锦思:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "冯锦华:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "童增:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "汽车炸弹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "引爆:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "十字军:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "宗教极端主义:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "原教旨主义:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "基地:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "塔利班:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "本拉登:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "达杜拉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "扎瓦赫里:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "萨哈卜:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "炭疽病毒:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊斯兰运动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊斯兰军:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊斯兰马格里布基地组织:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊拉克伊斯兰国:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊斯兰解放组织:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "穆斯林兄弟会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "真主党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "伊斯兰团:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东伊运:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "热比娅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "世界维吾尔代表大会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "世维会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "东土耳其斯坦信息中心:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吾吉买买提:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "阿巴斯:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "西尔艾力:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "动乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "左派:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "右派:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "选举:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "意志:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民主党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反右运动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "吾尔凯西:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "白色恐怖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "五毛:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "愤青:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "和谐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "罢餐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "党:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "社:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "小组:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "砸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "烧:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "恐怖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "袭击:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "火炬:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "福娃:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "财力物力:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "团派:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人事:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "人马:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "珠宝:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "包二奶:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "学生妹:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "左翼:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "心水:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "一条龙:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "陪睡觉:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "雷管:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "爆炸物:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "波胆:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "开餐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "成品交易:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "四号:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "标会:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "会头:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "设局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "外圈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "忘我:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "咳药水:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "咖啡因:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "抵制食堂:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "食堂涨价:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "警民工作室:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "警务室:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "把网民的事:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "网监分局:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "网络警察:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "12590:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "dafa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fangong:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "tuidang:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "minyun:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fenlie:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "zhenxian:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "shiwei:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "jihui:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "chongtu:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "baofa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "youxing:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "rihuo:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "kangri:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fanri:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "kangrilianmeng:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "fanrilianmeng:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "jinjing:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "918:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "9.18:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "9月18日:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "815:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "代充:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "充值:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "直充:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "中奖:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "qb:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "rmb:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "csol:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "世纪天成:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反恐精英OL:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反恐OL:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "counter:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "strike:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "tiancity:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "穿越猪圈:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sjtc:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "反恐精英网络版:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "CS网络版:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新疆闹事:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新疆游行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新疆暴动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新疆暴乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌鲁木齐暴动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌鲁木齐暴乱:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌鲁木齐游行:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌鲁木齐闹事:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "namayix新疆时间:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌鲁木齐人民广场:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌鲁木齐7月5日晚上:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "&:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "闹事:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "namayixa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "namayish:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "namayix:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "Urumqidiki:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "二道桥:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "山西巷:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "uyhur:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "请大家转发维族朋友:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌-鲁-木-齐 暴-动:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "民族分裂分子:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "热-比-娅:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "维-吾-尔-自-治-区-党-委:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "打、烧、抢、砸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "打-烧-抢-砸:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "5000汉人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "强行拖入宿舍多人:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "汉人血迹冲洗净:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "hitay:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "kapir:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "heriket:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "harkat:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "duxman:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "allaha:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "musulman:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "buzghunqe:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "basturux:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "wazipa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "vazipa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "vaziyat:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "islam:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "xatarlik:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "bulax:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "katil:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "ocre:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "oghre:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "bomba:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "tapanqa:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "miltik:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "uygur:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "uyghur:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "namayix:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "namayish :" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "mandan :" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "zahar:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "zaher:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "nada:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "wakit:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "kuruxux:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "zulum:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "taxkilat:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "jiddi:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "sakqi:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "mustakil:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "mustaqil:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "yighilix:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "yicilish:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "millat:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "kisas :" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "adam bomba:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "duxman:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "bura:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "urumqi:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "www.uyghurcongress.org:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "www.uighur.org:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "www.rfa.org.uyghur:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "www.uhrp.org:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "www.eastturkistan_gov.org:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "halik maydani:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "xaliq meydani:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "Urumqidiki:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "新疆时间:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌-鲁-木-齐:" )
+	( Alternation "???:" )
+)
+( Filter
+	( Abuse "乌－鲁－木－齐:" )
+	( Alternation "???:" )
+)

@@ -1,0 +1,18 @@
+( Item
+	( ItemIndex 0 )
+	( ItemType 3 )
+	( SocketItemTargetType 0 )
+	( GRSocketItemModelFile "Models/SocketItem/CNSoldier/China_GR_Helmet.ltb" )
+	( BLSocketItemModelFile "Models/SocketItem/CNSoldier/China_BL_Helmet.ltb" )
+	( GRTexFile "ModelTextures/SocketItem/CNSoldier/China_GR_Helmet.dtx" )
+	( BLTexFile "ModelTextures/SocketItem/CNSoldier/China_BL_Helmet.dtx" )
+	( 1stRenderStyle "RS/NinjaTranslucent.ltb" )
+	( ItemName " CNSoldier Helmet " )
+)
+( Item
+	( ItemIndex 1 )
+	( ItemType 1 )
+	( GRTexFile "ModelTextures/Character/CNSoldier/China_GR_face.dtx" )
+	( BLTexFile "ModelTextures/Character/CNSoldier/China_BL_face.dtx" )
+	( ItemName " CNSoldier Face " )
+)

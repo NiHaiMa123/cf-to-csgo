@@ -1,0 +1,108 @@
+{
+ "sources": {
+  "Kucri_Attack_1": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\sound\\cf_raw\\Kucri_Attack_1.raw.wav",
+  "Kucri_Attack_2": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\sound\\cf_raw\\Kucri_Attack_2.raw.wav",
+  "Kucri_Attack_3": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\sound\\cf_raw\\Kucri_Attack_3.raw.wav",
+  "Kucri_Select": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\sound\\cf_raw\\Kucri_Select.raw.wav",
+  "KukriBeast_Hit": "D:\\project\\cf_to_csgo\\work\\tulong_chuntao\\sound\\cf_raw\\KukriBeast_Hit.raw.wav"
+ },
+ "files": [
+  {
+   "path": "sound/weapons/knife/knife_slash1.wav",
+   "src": "silence",
+   "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+   "bytes": 4488
+  },
+  {
+   "path": "sound/weapons/knife/knife_slash2.wav",
+   "src": "silence",
+   "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+   "bytes": 4488
+  },
+  {
+   "path": "sound/weapons/knife/knife_stab.wav",
+   "src": "silence",
+   "sha256": "da1f3391455accf95e8d1c2496c35903d19e1c965b89e8abe0f9f11455fcec30",
+   "bytes": 4488
+  },
+  {
+   "path": "sound/weapons/knife/knife_deploy1.wav",
+   "src": "Kucri_Select",
+   "sha256": "92b195f2ddc3bece2ef8ccaacf4e024dd01f0be57d578945cf35a0b92cd38ed0",
+   "bytes": 56124
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit1.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit2.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit3.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit4.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit_01.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit_02.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit_03.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit_04.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife/knife_hit_05.wav",
+   "src": "KukriBeast_Hit",
+   "sha256": "8abfa6b7dff552ae487bfe7346e79006ba411ddf8473a4207f6247702e998292",
+   "bytes": 15976
+  },
+  {
+   "path": "sound/weapons/knife_ursus/ursus_flip_01.wav",
+   "src": "Kucri_Attack_1",
+   "sha256": "80ae21efd0c52d1ef351c917a2495ff5069ef5868702feed1c3a886a417f89cd",
+   "bytes": 23732
+  },
+  {
+   "path": "sound/weapons/knife_ursus/ursus_flip_02.wav",
+   "src": "Kucri_Attack_2",
+   "sha256": "278acd6bcd6a9f614c59275eff734d8c65acda7e91c4a0109bd4cb3e94b77cb5",
+   "bytes": 26228
+  },
+  {
+   "path": "sound/weapons/knife_ursus/ursus_flip_03.wav",
+   "src": "Kucri_Attack_3",
+   "sha256": "35f6abcb2d3d4c6796150dc0f9e658ec0c4ae9ef5f71b77f36fa4995935812a2",
+   "bytes": 90386
+  }
+ ],
+ "note": "dry SND wavs; Hit/HitWall use KukriBeast_Hit"
+}

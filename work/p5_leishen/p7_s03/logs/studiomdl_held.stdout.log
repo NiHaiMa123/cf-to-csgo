@@ -1,0 +1,87 @@
+WARNING: AppFramework : Unable to load module p4lib.dll!
+qdir:    "d:\project\cf_to_csgo\work\p5_leishen\p7_s03\source1\held\"
+gamedir: "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\"
+g_path:  "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\source1\held\w_rif_m4a1.qc"
+Building binary model files...
+Working on "w_rif_m4a1.qc"
+SMD MODEL shared_player_skeleto.smd
+SMD MODEL w_rif_m4a1.smd
+SMD MODEL w_rif_m4a1_anims\@rifle_fire_corrective_animation.smd
+SMD MODEL w_rif_m4a1_anims\default.smd
+SMD MODEL w_rif_m4a1_anims\rifle_fire.smd
+SMD MODEL w_rif_m4a1_anims\rifle_reload.smd
+SMD MODEL w_rif_m4a1_anims\rifle_reload_moving.smd
+SMD MODEL w_rif_m4a1_anims\rifle_reload_crouch.smd
+SMD MODEL w_rif_m4a1_anims\rifle_reload_crouch_moving.smd
+Processing LOD for material: rif_m4a1
+---------------------
+writing D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1.mdl:
+bones        22636 bytes (94)
+   animation       x       y       ips    angle
+animations  150524 bytes (7 anims) (399 frames) [0:13]
+sequences     3384 bytes (6 seq) 
+hdr@05F7F394=79D70200
+ik/pose        892 bytes
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+hdr@05F7F394=79D70200
+textures        76 bytes
+keyvalues      200 bytes
+hdr@05F7F38C=79D70398
+hdr@05F7F394=79D70200
+bone transforms    12848 bytes
+bone flex driver       0 bytes
+bodygroup presets       0 bytes
+collision        0 bytes
+total       192548
+---------------------
+writing D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1.vvd:
+vertices         0 bytes (0 vertices)
+vertices     46608 bytes (971 vertices)
+tangents         0 bytes (0 vertices)
+tangents     15536 bytes (971 vertices)
+total        62208 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1.sw.vtx":
+body parts:        24 bytes
+models:            60 bytes
+model LODs:        36 bytes
+meshes:             9 bytes
+strip groups:      33 bytes
+strips:            35 bytes
+verts:           8739 bytes
+indices:         7080 bytes
+bone changes:       8 bytes
+everything:     16024 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1.dx80.vtx":
+body parts:        24 bytes
+models:            60 bytes
+model LODs:        36 bytes
+meshes:             9 bytes
+strip groups:      33 bytes
+strips:            35 bytes
+verts:           8739 bytes
+indices:         7080 bytes
+bone changes:      16 bytes
+everything:     16032 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1.dx90.vtx":
+body parts:        24 bytes
+models:            60 bytes
+model LODs:        36 bytes
+meshes:             9 bytes
+strip groups:      33 bytes
+strips:            35 bytes
+verts:           8739 bytes
+indices:         7080 bytes
+bone changes:      16 bytes
+everything:     16032 bytes
+WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
+WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
+
+Completed "w_rif_m4a1.qc"

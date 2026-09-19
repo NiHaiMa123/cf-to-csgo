@@ -1,0 +1,158 @@
+{
+ "generated_at_utc": "2026-09-17T13:34:15.699538+00:00",
+ "weapon": "屠龙 (base)",
+ "files": [
+  {
+   "path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast.DTX",
+   "bytes": 131236,
+   "sha256": "4ad3285f9e81f1ca1ffcdd23740827cd3c1d1a95395e1ea9c3d193391909faf8",
+   "md5": "58B67541B843F1315BA4C0418019FCCC",
+   "provenance": {
+    "logical_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+    "legacy_time_field": 8,
+    "offset": 140214736,
+    "size": 131236,
+    "directory_md5": "58b67541b843f1315ba4c0418019fccc",
+    "sha256": "4ad3285f9e81f1ca1ffcdd23740827cd3c1d1a95395e1ea9c3d193391909faf8",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 131236,
+      "md5": "126ca7d889e8fbdc7d63b1bbf4438a17",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+      "length": 209382768,
+      "range_ok": true,
+      "actual_bytes": 131236,
+      "md5": "58b67541b843f1315ba4c0418019fccc",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "ModelTextures/Shader/WeaponShader/Kukri_Beast.CFG",
+   "bytes": 481,
+   "sha256": "525c3e5a16390073d2bf79af9be83b308a659035fc9a4dabedf381f33a809aef",
+   "md5": "0FC02FBC29109A86DB6385189EA417B7",
+   "provenance": {
+    "logical_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast.CFG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+    "legacy_time_field": 9,
+    "offset": 129873344,
+    "size": 481,
+    "directory_md5": "0fc02fbc29109a86db6385189ea417b7",
+    "sha256": "525c3e5a16390073d2bf79af9be83b308a659035fc9a4dabedf381f33a809aef",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+      "length": 196985580,
+      "range_ok": true,
+      "actual_bytes": 481,
+      "md5": "63261525229e02d30baefc6463840158",
+      "md5_match": false
+     },
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+      "length": 209427012,
+      "range_ok": true,
+      "actual_bytes": 481,
+      "md5": "0fc02fbc29109a86db6385189ea417b7",
+      "md5_match": true
+     }
+    ],
+    "routing": "numbered_part"
+   }
+  },
+  {
+   "path": "ModelTextures/SpecularMap/Kukri_Beast_s.PNG",
+   "bytes": 639089,
+   "sha256": "9115949df5ca663d77c1a0ee558977eb1be497743b66930b5039a426ae422ff7",
+   "md5": "5147BDEB4C212542210D67ABE7730BC4",
+   "provenance": {
+    "logical_path": "ModelTextures/SpecularMap/Kukri_Beast_s.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 1615587930,
+    "size": 639089,
+    "directory_md5": "5147bdeb4c212542210d67abe7730bc4",
+    "sha256": "9115949df5ca663d77c1a0ee558977eb1be497743b66930b5039a426ae422ff7",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 639089,
+      "md5": "5147bdeb4c212542210d67abe7730bc4",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/NormalMap/Kukri_Beast_N.PNG",
+   "bytes": 302101,
+   "sha256": "82d800d615590fc4c91b1f6b7512160bd6bca8fe600fa85fed0d646336a0ca45",
+   "md5": "A6A9ED04CA3C217A5A0608F881D98C77",
+   "provenance": {
+    "logical_path": "ModelTextures/NormalMap/Kukri_Beast_N.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 785125104,
+    "size": 302101,
+    "directory_md5": "a6a9ed04ca3c217a5a0608f881d98c77",
+    "sha256": "82d800d615590fc4c91b1f6b7512160bd6bca8fe600fa85fed0d646336a0ca45",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+      "length": 2090174576,
+      "range_ok": true,
+      "actual_bytes": 302101,
+      "md5": "a6a9ed04ca3c217a5a0608f881d98c77",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  },
+  {
+   "path": "ModelTextures/AlphaMap/Kukri_Beast_alpha.PNG",
+   "bytes": 312201,
+   "sha256": "dfdb8eb92e3f463f3fcc56f244cb3d30a5ae4b76ce8408bef0b9d0b459c4cf52",
+   "md5": "1790545B6BF88F011486F5C2BD49641C",
+   "provenance": {
+    "logical_path": "ModelTextures/AlphaMap/Kukri_Beast_alpha.PNG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+    "legacy_time_field": 0,
+    "offset": 126777131,
+    "size": 312201,
+    "directory_md5": "1790545b6bf88f011486f5c2bd49641c",
+    "sha256": "dfdb8eb92e3f463f3fcc56f244cb3d30a5ae4b76ce8408bef0b9d0b459c4cf52",
+    "candidate_checks": [
+     {
+      "path": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+      "length": 1931848826,
+      "range_ok": true,
+      "actual_bytes": 312201,
+      "md5": "1790545b6bf88f011486f5c2bd49641c",
+      "md5_match": true
+     }
+    ],
+    "routing": "main_file"
+   }
+  }
+ ],
+ "missing": []
+}

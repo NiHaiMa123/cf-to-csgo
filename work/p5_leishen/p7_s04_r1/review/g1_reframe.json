@@ -1,0 +1,23 @@
+{
+  "center": [
+    0.3106708526611328,
+    -6.3802690505981445,
+    1.3859400749206543
+  ],
+  "dist": 18.678214359283448,
+  "working_sha_unchanged": true,
+  "rendered_ok": true,
+  "n_stills": 33,
+  "videos": [
+    {
+      "mp4": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\select_side_100fps.mp4",
+      "ok": true,
+      "returncode": 0
+    },
+    {
+      "mp4": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\reload_side_100fps.mp4",
+      "ok": true,
+      "returncode": 0
+    }
+  ]
+}

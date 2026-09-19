@@ -45,6 +45,14 @@ public partial class App : System.Windows.Application
             return;
         }
 
+        if (LithTechSkinDumpCommand.IsInvocation(e.Args))
+        {
+            ShutdownMode = System.Windows.ShutdownMode.OnExplicitShutdown;
+            int skinDumpCode = LithTechSkinDumpCommand.Run(e.Args);
+            Shutdown(skinDumpCode);
+            return;
+        }
+
         if (LithTechInspectCommand.IsInvocation(e.Args))
         {
             ShutdownMode = System.Windows.ShutdownMode.OnExplicitShutdown;

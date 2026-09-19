@@ -1,0 +1,116 @@
+{
+  "Textures": {
+    "SpecularMapName2": "M4A1_S_Transformers_HUYA_S.png",
+    "EnvCubeMapName2": "Black_Shader01.dds",
+    "NormalMapName2": "M4A1_S_Transformers_HUYA_N.png",
+    "AlphaMapName2": "M4A1_S_Transformers_HUYA_A.png",
+    "AlphaMapName0": "M4A1_S_Transformers_HUYA_B_a.png",
+    "OverlayMapName0": "Blue.png"
+  },
+  "Techniques": {
+    "DiffuseMappingEnabled": "1",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1",
+    "TexturePanningEnabled": "0",
+    "SkelMeshEnabled": "0"
+  },
+  "Properties": {
+    "ForceNoAlpha": "0",
+    "IsTranslucent": "0",
+    "HightLightPower": "1",
+    "LightBrightness": "1",
+    "EnvCubeMapBrightness": "3",
+    "SpecularPower": "2",
+    "SpecularLength": "0",
+    "SpecularHighlight": "1",
+    "SpecularBacklighting": "1",
+    "DiffuseBoost": "0.12",
+    "AmbientLightColor": "0.01",
+    "ReflectionIndex": "0.93",
+    "RefractionIndex": "0.19",
+    "CubeMapTransformY": "343",
+    "RenderParam": "2",
+    "EnvCubeUsage": "2",
+    "NormalBoost": "1",
+    "HightLightR": "0.98",
+    "HightLightG": "0.49",
+    "HightLightB": "0.49",
+    "OutLineColorR": "0.43",
+    "OutLineColorG": "0.05",
+    "OutLineColorB": "0",
+    "OutLineColorLimitR": "0.7",
+    "OutLineColorLimitG": "0.05",
+    "OutLineColorLimitB": "0",
+    "IsCustomColor": "0",
+    "PearlRange": "1",
+    "PearlNp": "0.7",
+    "FresnelRange": "10",
+    "FresnelPower": "3"
+  },
+  "TexturePanning": {
+    "TexturePanningVelocityU": "3",
+    "TexturePanningVelocityV": "0.2"
+  },
+  "TextureTile": {
+    "TextureTileX": "5",
+    "TextureTileY": "10"
+  },
+  "HalfLambert": {
+    "Power": "2",
+    "Base": "0.7"
+  },
+  "Techniques2": {
+    "DiffuseMappingEnabled": "0",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1",
+    "TexturePanningEnabled": "0",
+    "SkelMeshEnabled": "0"
+  },
+  "Properties2": {
+    "ForceNoAlpha": "0",
+    "IsTranslucent": "0",
+    "HightLightPower": "1",
+    "LightBrightness": "1",
+    "EnvCubeMapBrightness": "5",
+    "SpecularPower": "1",
+    "SpecularLength": "0",
+    "SpecularHighlight": "1",
+    "SpecularBacklighting": "1",
+    "DiffuseBoost": "0.01",
+    "AmbientLightColor": "0.01",
+    "ReflectionIndex": "0.8",
+    "RefractionIndex": "0.3",
+    "CubeMapTransformY": "-50",
+    "RenderParam": "2",
+    "EnvCubeUsage": "2",
+    "NormalBoost": "1",
+    "HightLightR": "0.98",
+    "HightLightG": "0.494",
+    "HightLightB": "0.494",
+    "OutLineColorR": "0.431373",
+    "OutLineColorG": "0.0509804",
+    "OutLineColorB": "0",
+    "OutLineColorLimitR": "0.7",
+    "OutLineColorLimitG": "0.05",
+    "OutLineColorLimitB": "0",
+    "IsCustomColor": "0",
+    "PearlRange": "1",
+    "PearlNp": "0.7",
+    "FresnelRange": "10",
+    "FresnelPower": "3"
+  },
+  "TexturePanning2": {
+    "TexturePanningVelocityU": "3",
+    "TexturePanningVelocityV": "0.2"
+  },
+  "TextureTile2": {
+    "TextureTileX": "5",
+    "TextureTileY": "10"
+  },
+  "HalfLambert2": {
+    "Power": "2",
+    "Base": "0.7"
+  }
+}

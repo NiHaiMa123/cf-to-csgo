@@ -1,0 +1,7 @@
+( ClanMark
+	( BackgroundLayerCounts 50 )
+	( OutlineLayerCounts 250 )
+	( SymbolLayerCounts 161 )
+	( EventLayerCounts 0 )
+	( DefaultLayerCounts 1 )
+)

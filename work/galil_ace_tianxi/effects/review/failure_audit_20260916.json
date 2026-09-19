@@ -1,0 +1,542 @@
+{
+  "scope": "Read-only current disk audit; not confirmation of files loaded by the running game or screenshot build",
+  "audited_utc": "2026-09-15T17:17:58.518040+00:00",
+  "vpk": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_dir.vpk",
+  "vpk_mtime": 1789492074.215604,
+  "files": [
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "5283dfe6cc8e63852bea39480849336c68ec972993449ce9101cdcd62f6ae8e7",
+      "c_sha256": "5283dfe6cc8e63852bea39480849336c68ec972993449ce9101cdcd62f6ae8e7"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "ab421a136bfef853dbbc659f92b7d162cf520fa30d67d71ef111f69fccd0e037",
+      "c_sha256": "ab421a136bfef853dbbc659f92b7d162cf520fa30d67d71ef111f69fccd0e037"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_foxarm_bl_n.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "e60145a616b29b25b79e1b42abe121cdb02275f540d37552ebad289f440e698c",
+      "c_sha256": "e60145a616b29b25b79e1b42abe121cdb02275f540d37552ebad289f440e698c"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "06fecdb1bb2fec92d427f8511550b6f425b85de17b21748bc97bec682f8621de",
+      "c_sha256": "06fecdb1bb2fec92d427f8511550b6f425b85de17b21748bc97bec682f8621de"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "5102ba620089cd22c011aa3bd2bf3ddc925098624c7feff5d9db2dce97ecba7e",
+      "c_sha256": "5102ba620089cd22c011aa3bd2bf3ddc925098624c7feff5d9db2dce97ecba7e"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_foxhand_bl_n.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "26e7fcb36902351026d2cb4d6965d7d41d81efd1c1413db98b313a7618c3c335",
+      "c_sha256": "26e7fcb36902351026d2cb4d6965d7d41d81efd1c1413db98b313a7618c3c335"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "17391532be53afe9b54a688e7f630ce32ca9e5274c195ec7b8ff692322827463",
+      "c_sha256": "17391532be53afe9b54a688e7f630ce32ca9e5274c195ec7b8ff692322827463"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_fx_glow02.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "4192c4c66bb24de3420d1ea4b54bdea6937ebc3df7e8f67b61ec224e360a4661",
+      "c_sha256": "4192c4c66bb24de3420d1ea4b54bdea6937ebc3df7e8f67b61ec224e360a4661"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_fx_jyshine03.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "496516e975bd8031e6b4b1a1f15c6f41e5850cf018d392b6ef704e9eceabc3c2",
+      "c_sha256": "496516e975bd8031e6b4b1a1f15c6f41e5850cf018d392b6ef704e9eceabc3c2"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_fx_jyshine03.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "110c1b5dadd7e01a791a43617f2bf026a16a47523580d192183a85305f8d761e",
+      "c_sha256": "110c1b5dadd7e01a791a43617f2bf026a16a47523580d192183a85305f8d761e"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_fx_shine06.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "754d248669626e8354fd3cb12eb589194e1c44276bb3ec4f6772139e7e1438c3",
+      "c_sha256": "754d248669626e8354fd3cb12eb589194e1c44276bb3ec4f6772139e7e1438c3"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_fx_shine06.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "30868869b199c0b7ddfb6a2fa50b279a6367ae9679d65a65cf6c0fd75f94ff4d",
+      "c_sha256": "30868869b199c0b7ddfb6a2fa50b279a6367ae9679d65a65cf6c0fd75f94ff4d"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "7a5747da48e65dbcb44634079389220675d2c04c9eecef892026d2d9081c4919",
+      "c_sha256": "7a5747da48e65dbcb44634079389220675d2c04c9eecef892026d2d9081c4919"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "39dc529b3dcbcbf5b5e3bb046731296e9e15a81917e6b7287c55e44b1224e4ae",
+      "c_sha256": "39dc529b3dcbcbf5b5e3bb046731296e9e15a81917e6b7287c55e44b1224e4ae"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_env.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "233e9786061db19fa5ef7bc2469e51f0d88e67e8513594eafb868d6e3fc17d5f",
+      "c_sha256": "233e9786061db19fa5ef7bc2469e51f0d88e67e8513594eafb868d6e3fc17d5f"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_m.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "6418a52a7f90222ebc6c88a237e7f5eaea6d062690fdb6e45188f136b85f47fe",
+      "c_sha256": "6418a52a7f90222ebc6c88a237e7f5eaea6d062690fdb6e45188f136b85f47fe"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_n.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "24aa4559c7882f2af2fb13dd6ce9f9d5e51fc79de97cd9a8d46bf2272c1a9876",
+      "c_sha256": "24aa4559c7882f2af2fb13dd6ce9f9d5e51fc79de97cd9a8d46bf2272c1a9876"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_galilace_pb_s.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "357bc1290be9c4389f0ca21ddbef57cb02f28ba1a6cd557df4b3f614b3d1f44a",
+      "c_sha256": "357bc1290be9c4389f0ca21ddbef57cb02f28ba1a6cd557df4b3f614b3d1f44a"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/cf_gold_cube.vtf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "229ae867de6cc85777b87661379256c3b2c5dcfaaba77f9be2ce2db8d1109f87",
+      "c_sha256": "229ae867de6cc85777b87661379256c3b2c5dcfaaba77f9be2ce2db8d1109f87"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/fx_galilace_eye.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "fb12d0544c419b67aaa46f37254cf4c188344e35c3f7656246165f0e997da5b9",
+      "c_sha256": "fb12d0544c419b67aaa46f37254cf4c188344e35c3f7656246165f0e997da5b9"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/fx_galilace_eye_core.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "3a06dd5892a6ae9bac229b77d6442c5980f47c3db9294c1e1d2b91c68872c1d6",
+      "c_sha256": "3a06dd5892a6ae9bac229b77d6442c5980f47c3db9294c1e1d2b91c68872c1d6"
+    },
+    {
+      "path": "materials/models/weapons/v_models/cf_tianxi/fx_galilace_parts_blue.vmt",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "4df1a9517b443f5ac230d950b258f877c8366f90f9faa3a6c1e9d4d4203147d8",
+      "c_sha256": "4df1a9517b443f5ac230d950b258f877c8366f90f9faa3a6c1e9d4d4203147d8"
+    },
+    {
+      "path": "models/weapons/v_rif_galilar.ani",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "47f583773696637d5c6568734289b6ca98f4521147cab3446d7f2c073e48a6bf",
+      "c_sha256": "47f583773696637d5c6568734289b6ca98f4521147cab3446d7f2c073e48a6bf"
+    },
+    {
+      "path": "models/weapons/v_rif_galilar.dx80.vtx",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "aa1d1df5fd426119bb3b99d94ebbb8064a1da64d0e77a5201c4097565383d81c",
+      "c_sha256": "aa1d1df5fd426119bb3b99d94ebbb8064a1da64d0e77a5201c4097565383d81c"
+    },
+    {
+      "path": "models/weapons/v_rif_galilar.dx90.vtx",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "75840ac95962a50f4c3d6f49ec92b8208d3db9d75fe67bdfc1be14485f7930fb",
+      "c_sha256": "75840ac95962a50f4c3d6f49ec92b8208d3db9d75fe67bdfc1be14485f7930fb"
+    },
+    {
+      "path": "models/weapons/v_rif_galilar.mdl",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "de7808cffff5505c81a94626789ea688e6ecaf0bc1b3001dfc8f740b486daa5a",
+      "c_sha256": "de7808cffff5505c81a94626789ea688e6ecaf0bc1b3001dfc8f740b486daa5a"
+    },
+    {
+      "path": "models/weapons/v_rif_galilar.sw.vtx",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "419404d08bb461c5ff55c210001539c1435a2e598cb527a02c6f35bc300d2f9f",
+      "c_sha256": "419404d08bb461c5ff55c210001539c1435a2e598cb527a02c6f35bc300d2f9f"
+    },
+    {
+      "path": "models/weapons/v_rif_galilar.vvd",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "ecf29fa9c901ab265461aa06aef2254cb32d4dc52d3bc96892a3ac0b8e9d0f1f",
+      "c_sha256": "ecf29fa9c901ab265461aa06aef2254cb32d4dc52d3bc96892a3ac0b8e9d0f1f"
+    },
+    {
+      "path": "particles/cf_tianxi_galilar_p1.pcf",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "39be63c8c193d4dbd7e7ada40298dca2c19d7f11defa4c8eab0bb4f555c91e55",
+      "c_sha256": "39be63c8c193d4dbd7e7ada40298dca2c19d7f11defa4c8eab0bb4f555c91e55"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_01.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c",
+      "c_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_02.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c",
+      "c_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_03.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c",
+      "c_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_04.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c",
+      "c_sha256": "0dfbfebd748ccd9789198d5986b0776178be31500f119a2f3b5ff0aac24bfa0c"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_clipin.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "5b07733bad054e1db72a2249ee20a506b0f5e9484a2d3f6a6fccb2b1009eb4d0",
+      "c_sha256": "5b07733bad054e1db72a2249ee20a506b0f5e9484a2d3f6a6fccb2b1009eb4d0"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_clipout.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "bec0d71774d7c3b8226f33648a21a72b4831259e657ab3623f59c17d21c20e6a",
+      "c_sha256": "bec0d71774d7c3b8226f33648a21a72b4831259e657ab3623f59c17d21c20e6a"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_distant.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "743ffa426bc1019c1f13d4efb375142f6f501b411253ececd14083c94116aa12",
+      "c_sha256": "743ffa426bc1019c1f13d4efb375142f6f501b411253ececd14083c94116aa12"
+    },
+    {
+      "path": "sound/weapons/galilar/galil_draw.wav",
+      "a_b_equal": true,
+      "b_c_equal": true,
+      "b_sha256": "6c1d4dfedfef24dbb5b13d56d7bd0836633fddb3601a136cc77391308aa6b149",
+      "c_sha256": "6c1d4dfedfef24dbb5b13d56d7bd0836633fddb3601a136cc77391308aa6b149"
+    }
+  ],
+  "a_b_all_equal": true,
+  "b_c_all_equal": true,
+  "smd_material_triangles": {
+    "cf_galilace_pb": 15140,
+    "cf_foxhand_bl": 1060,
+    "cf_foxarm_bl": 274,
+    "fx_galilace_parts_blue": 34,
+    "fx_galilace_eye": 6,
+    "fx_galilace_eye_core": 6
+  },
+  "source_nodes": [
+    {
+      "type": "ParticleSystem",
+      "label": "core-glow",
+      "socket": "fix_effect_3",
+      "resources": {
+        "Texture": "FX\\SGFX_BD_GLOW_02.DTX"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "blue-parts",
+      "socket": "fix_effect_5",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_BLUE.LTB",
+        "Skin0": "FX\\SGFX_BD_GLOW_02.DTX",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "L-flow-front-COPY",
+      "socket": "fix_effect_9",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_02_4.LTB",
+        "SpriteSkin0": "FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "ParticleSystem",
+      "label": "L-flow-p",
+      "socket": "fix_effect_8",
+      "resources": {
+        "Texture": "FX\\SGFX_BD_PARTICLES_04.DTX"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "L-flow-front",
+      "socket": "fix_effect_9",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_02_4.LTB",
+        "SpriteSkin0": "FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "L-flow-back",
+      "socket": "fix_effect_9",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_02_5.LTB",
+        "SpriteSkin0": "FX\\SPRITES\\AURA_55\\SGFX_BD_AURA_55_V01.SPR",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "simbol-glitch",
+      "socket": "fix_effect_10",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_GLITCH.LTB",
+        "SpriteSkin0": "FX3\\SPRITES\\GLITCH_LINE03\\SGFX_JY_GLITCH_LINE_03_2.SPR",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "simbol-furfins",
+      "socket": "fix_effect_11",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_01.LTB",
+        "Skin0": "FX\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_B.DTX",
+        "RenderStyle0": "RS\\FURFINS.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "simbol-additive",
+      "socket": "fix_effect_10",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_01.LTB",
+        "Skin0": "FX\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_B.DTX",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "simbol-back-glow",
+      "socket": "fix_effect_11",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_01.LTB",
+        "Skin0": "FX3\\FLR0030.DTX",
+        "RenderStyle0": "RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "ParticleSystem",
+      "label": "ALL-p-big-BB",
+      "socket": "fix_effect_12",
+      "resources": {
+        "Texture": "FX3\\SGFX_JY_SHINE_19_2.DTX"
+      }
+    },
+    {
+      "type": "ParticleSystem",
+      "label": "ALL-p-big-YY",
+      "socket": "fix_effect_12",
+      "resources": {
+        "Texture": "FX3\\SGFX_JY_SHINE_19_2.DTX"
+      }
+    },
+    {
+      "type": "FlareSpriteFX",
+      "label": "EYE-main",
+      "socket": "fix_effect_16",
+      "resources": {
+        "Sprite": "FX\\SGFX_WK_SHINE_06.SPR"
+      }
+    },
+    {
+      "type": "FlareSpriteFX",
+      "label": "EYE-CORE",
+      "socket": "fix_effect_15",
+      "resources": {
+        "Sprite": "FX\\SGFX_JY_SHINE_03.SPR"
+      }
+    },
+    {
+      "type": "FlareSpriteFX",
+      "label": "EYE-rbw",
+      "socket": "fix_effect_16",
+      "resources": {
+        "Sprite": "FX\\SGFX_CY_KAR98_LIGHT_14.SPR"
+      }
+    },
+    {
+      "type": "Sprite",
+      "label": "EYE-prism",
+      "socket": "fix_effect_16",
+      "resources": {
+        "Sprite": "FX\\SGFX_CY_KAR98_LIGHT05_2.SPR"
+      }
+    },
+    {
+      "type": "ParticleSystem",
+      "label": "yellow-prism-TOP",
+      "socket": "fix_effect_17",
+      "resources": {
+        "Texture": "FX\\SGFX_BD_AURA_02_2.DTX"
+      }
+    },
+    {
+      "type": "ParticleSystem",
+      "label": "yellow-prism-TAIL-L",
+      "socket": "fix_effect_19",
+      "resources": {
+        "Texture": "FX\\SGFX_BD_AURA_02_2.DTX"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "red-parts-glow",
+      "socket": "fix_effect_5",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_RED.LTB",
+        "Skin0": "FX\\SGFX_BD_GLOW_02.DTX",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "ParticleSystem",
+      "label": "R-flow-p",
+      "socket": "fix_effect_22",
+      "resources": {
+        "Texture": "FX\\SGFX_BD_PARTICLES_04.DTX"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "R-flow-front",
+      "socket": "fix_effect_23",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_02_4.LTB",
+        "SpriteSkin0": "FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "R-flow-front-COPY",
+      "socket": "fix_effect_23",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_02_4.LTB",
+        "SpriteSkin0": "FX\\SPRITES\\AURA_54\\SGFX_BD_AURA_54_V01.SPR",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "R-flow-back",
+      "socket": "fix_effect_23",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_PLANE_02_5.LTB",
+        "SpriteSkin0": "FX\\SPRITES\\AURA_55\\SGFX_BD_AURA_55_V01.SPR",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "L-tragl",
+      "socket": "fix_effect_5",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_L.LTB",
+        "Skin0": "FX\\SGFX_BD_GLOW_02.DTX",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "LTBModel",
+      "label": "R-tragl",
+      "socket": "fix_effect_5",
+      "resources": {
+        "Model": "FX\\LTB\\SGFX_BD_GUN_GALILACE_PHANTOMBEAST_PARTS_TRIANGLE_R.LTB",
+        "Skin0": "FX\\SGFX_BD_GLOW_02.DTX",
+        "RenderStyle0": "FX\\RS\\ADDITIVE.LTB"
+      }
+    },
+    {
+      "type": "Sprite",
+      "label": "round-prism",
+      "socket": "fix_effect_34",
+      "resources": {
+        "Sprite": "FX\\SGFX_CY_KAR98_LIGHT_14.SPR"
+      }
+    },
+    {
+      "type": "Sprite",
+      "label": "main",
+      "socket": "fix_effect_34",
+      "resources": {
+        "Sprite": "FX\\SGFX_WK_SHINE_06.SPR"
+      }
+    },
+    {
+      "type": "Sprite",
+      "label": "sharp-prism",
+      "socket": "fix_effect_34",
+      "resources": {
+        "Sprite": "FX\\SGFX_CY_KAR98_LIGHT05.SPR"
+      }
+    },
+    {
+      "type": "Sprite",
+      "label": "core",
+      "socket": "fix_effect_35",
+      "resources": {
+        "Sprite": "FX\\SGFX_JY_SHINE_03.SPR"
+      }
+    }
+  ],
+  "manifest_matching_lines": [
+    "\t\"file\"\t\"!particles/cf_tianxi_galilar_p1.pcf\""
+  ]
+}

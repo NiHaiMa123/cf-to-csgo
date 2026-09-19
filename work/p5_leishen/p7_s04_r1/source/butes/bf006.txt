@@ -1,0 +1,282 @@
+// 이 아래로 머리 --;;  ModelNodeType 1 머리
+( ModelNode
+	( ModelNodeName "M-bone Head" )
+	( DamageFactor 1.2 ) //신체 데미지 비율
+	( Priority 1.0 )
+	( Radius 8.0 )
+	( ObjectColor 1.0 0.0 0.0 1.0 )
+	( RelativePos 21.5 0.0 1.5 )
+	( ModelNodeType 1 )
+)
+( ModelNode
+	( ModelNodeName "M-bone Head" )
+	( DamageFactor 1.0 ) //신체 데미지 비율
+	( Priority 1.0 )
+	( Radius 17.0 )
+	( ObjectColor 1.0 0.0 0.0 1.0 )
+	( RelativePos 21.5 0.0 1.5 )
+	( ModelNodeType 2 )
+)
+// 이 아래로 상체(가슴) --;;  ModelNodeType 2 상체(가슴)
+( ModelNode
+	( ModelNodeName "M-bone Neck" )
+	( DamageFactor 0.6 )
+	( Priority 1.0 )
+	( Radius 9.25 )
+	( ObjectColor 0.0 1.0 0.0 1.0 )
+	( RelativePos 20.0 0.0 0.0 )
+	( ModelNodeType 2  )
+)
+
+( ModelNode
+	( ModelNodeName "M-bone L Clavicle" )
+	( DamageFactor 0.5 )
+	( Priority 1.0 )
+	( Radius 18.0 )
+	( ObjectColor 0.0 1.0 0.0 1.0 )
+	( RelativePos 8.0 -3.0 0.0 )// 전후 상하 우좌
+	( ModelNodeType 3 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Clavicle" )
+	( DamageFactor 0.5 )
+	( Priority 1.0 )
+	( Radius 18.0 )
+	( ObjectColor 0.0 1.0 0.0 1.0 )
+	( RelativePos 8.0 5.0 0.0 ) //좌우 하상 후전
+	( ModelNodeType 3 )
+)
+
+( ModelNode
+	( ModelNodeName "M-bone Spine1" ) //가슴께 우
+	( DamageFactor 0.50 )
+	( Priority 1.0 )
+	( Radius 15.0 )
+	( ObjectColor 0.0 1.0 0.0 1.0 )
+	( RelativePos 25.0 13.0 -10.0 ) //
+	( ModelNodeType 4 )
+)
+( ModelNode
+	( ModelNodeName "M-bone Spine1" ) //가슴께 좌
+	( DamageFactor 0.50 )
+	( Priority 1.0 )
+	( Radius 15.0 )
+	( ObjectColor 0.0 1.0 0.0 1.0 )
+	( RelativePos 25.0 -13.0 -10.0 ) //
+	( ModelNodeType 4 )
+)
+
+
+// 아 아래로 상체(배) ModelNodeType 3 상체(배)
+( ModelNode
+	( ModelNodeName "M-bone Spine" )//윗배 좌
+	( DamageFactor 0.6 )
+	( Priority 1.0 )
+	( Radius 20.0 )
+	( ObjectColor 0.0 0.0 1.0 1.0 )
+	( RelativePos 20.0 -12.0 0.0 ) //상하 우좌
+	( ModelNodeType 4 )
+)
+( ModelNode
+	( ModelNodeName "M-bone Spine" )//윗배 우
+	( DamageFactor 0.6 )
+	( Priority 1.0 )
+	( Radius 20.0 )
+	( ObjectColor 0.0 0.0 1.0 1.0 )
+	( RelativePos 20.0 13.0 0.0 ) //상하 우좌
+	( ModelNodeType 4 )
+)
+
+//팔
+( ModelNode
+	( ModelNodeName "M-bone L UpperArm" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 13.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos 10.0 0.0 0.0 )
+	( ModelNodeType 3 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R UpperArm" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 13.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos 10.0 0.0 0.0 )
+	( ModelNodeType 3 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L ForeArm" ) //왼팔 위
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos -5.0 5.0 -7.0 ) // 전후 좌우
+	( ModelNodeType 6 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R ForeArm" ) //오른팔 위
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos -5.0 5.0 -7.0 ) // 전후 좌우
+	( ModelNodeType 6 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L ForeArm" ) //왼팔 아래
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos 20.0 5.0 2.0 ) // 전후 좌우
+	( ModelNodeType 6 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R ForeArm" ) //오른팔 아래
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos 20.0 5.0 2.0 ) // 전후 좌우
+	( ModelNodeType 6 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L Hand" )
+	( DamageFactor 0.28 )
+	( Priority 1.0 )
+	( Radius 10.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos 0.0 0.0 0.0 ) // 
+	( ModelNodeType 6 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Hand" )
+	( DamageFactor 0.28 )
+	( Priority 1.0 )
+	( Radius 10.0 )
+	( ObjectColor 1.0 1.0 0.0 1.0 )
+	( RelativePos 0.0 0.0 0.0 ) // 
+	( ModelNodeType 6 )
+)
+
+// 이 아래로 하제~ --;; ModelNodeType 4 하체
+( ModelNode
+	( ModelNodeName "M-bone pelvis" )
+	( DamageFactor 0.43 )
+	( Priority 1.0 )
+	( Radius 23.0 )
+	( ObjectColor 1.0 1.0 1.0 1.0 )
+	( RelativePos 15.0 -2.0 5.0 ) // 상하 좌우 전후
+	( ModelNodeType 4 )
+)
+
+( ModelNode
+	( ModelNodeName "M-bone L Thigh" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 18.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 25.0 0.0 0.0 )
+	( ModelNodeType 5 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L Calf" ) //좌 무릎상
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos -13.0 0.0 -11.0 ) //하상 우좌 전후 
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L Calf" ) //좌 무릎하
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 16.0 0.0 -1.0 ) //하상 우좌 전후 
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L Calf" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 44.0 0.0 -1.0 ) //하상 우좌 전후 
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L Foot" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 3.0 0.0 0.0 ) // 하상
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone L Toe0" )
+	( DamageFactor 0.28 )
+	( Priority 1.0 )
+	( Radius 8.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 9.0 0.0 8.0 ) //전후 좌우 상하
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Thigh" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 18.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 25.0 0.0 0.0 )
+	( ModelNodeType 5 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Calf" ) //우 무릎상
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos -5.0 0.0 -15.0 ) //하상 우좌 전후 
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Calf" ) //우 무릎하
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 16.0 0.0 0.0 ) //하상 우좌 전후 
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Calf" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 44.0 0.0 -1.0 ) //하상 우좌 전후 
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Foot" )
+	( DamageFactor 0.33 )
+	( Priority 1.0 )
+	( Radius 12.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 3.0 0.0 0.0 ) // 하상
+	( ModelNodeType 7 )
+)
+( ModelNode
+	( ModelNodeName "M-bone R Toe0" )
+	( DamageFactor 0.28 )
+	( Priority 1.0 )
+	( Radius 8.0 )
+	( ObjectColor 0.0 1.0 1.0 1.0 )
+	( RelativePos 9.0 0.0 8.0 ) //전후 좌우 상하
+	( ModelNodeType 7 )
+)

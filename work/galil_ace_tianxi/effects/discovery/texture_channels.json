@@ -1,0 +1,2820 @@
+{
+ "generated_at_utc": "2026-09-15T12:36:23.950331+00:00",
+ "decoder": "CFRezManager --decode-image (DTX incl. DXT5)",
+ "textures": [
+  {
+   "rez_path": "FX/SGFX_BD_AURA_02_2.DTX",
+   "packed_bytes": 11124,
+   "body_bytes": 16548,
+   "preview": "previews/FX_SGFX_BD_AURA_02_2.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 23.33,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 69.2
+    },
+    "g": {
+     "mean": 21.48,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 76.1
+    },
+    "b": {
+     "mean": 19.13,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 68.1
+    },
+    "a": {
+     "mean": 16.36,
+     "min": 0,
+     "max": 239,
+     "nonzero_pct": 74.2
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SGFX_BD_GLOW_02.DTX",
+   "packed_bytes": 7589,
+   "body_bytes": 16548,
+   "preview": "previews/FX_SGFX_BD_GLOW_02.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 21.2,
+     "min": 0,
+     "max": 148,
+     "nonzero_pct": 57.8
+    },
+    "g": {
+     "mean": 21.27,
+     "min": 0,
+     "max": 145,
+     "nonzero_pct": 66.3
+    },
+    "b": {
+     "mean": 21.2,
+     "min": 0,
+     "max": 148,
+     "nonzero_pct": 57.6
+    },
+    "a": {
+     "mean": 16.06,
+     "min": 0,
+     "max": 125,
+     "nonzero_pct": 64.9
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_B.DTX",
+   "packed_bytes": 1387,
+   "body_bytes": 4260,
+   "preview": "previews/FX_SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_B.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     64,
+     64
+    ],
+    "r": {
+     "mean": 2.97,
+     "min": 0,
+     "max": 24,
+     "nonzero_pct": 20.1
+    },
+    "g": {
+     "mean": 26.33,
+     "min": 0,
+     "max": 238,
+     "nonzero_pct": 26.2
+    },
+    "b": {
+     "mean": 43.58,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 31.0
+    },
+    "a": {
+     "mean": 21.49,
+     "min": 0,
+     "max": 206,
+     "nonzero_pct": 25.1
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_G.DTX",
+   "packed_bytes": 1377,
+   "body_bytes": 4260,
+   "preview": "previews/FX_SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_G.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     64,
+     64
+    ],
+    "r": {
+     "mean": 1.37,
+     "min": 0,
+     "max": 16,
+     "nonzero_pct": 17.9
+    },
+    "g": {
+     "mean": 36.17,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 27.6
+    },
+    "b": {
+     "mean": 24.62,
+     "min": 0,
+     "max": 189,
+     "nonzero_pct": 20.9
+    },
+    "a": {
+     "mean": 29.01,
+     "min": 0,
+     "max": 207,
+     "nonzero_pct": 25.2
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_Y.DTX",
+   "packed_bytes": 1394,
+   "body_bytes": 4260,
+   "preview": "previews/FX_SGFX_BD_GUN_GALILACE_PHANTOMBEAST_SIMBOL_Y.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     64,
+     64
+    ],
+    "r": {
+     "mean": 43.02,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 31.0
+    },
+    "g": {
+     "mean": 34.52,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 31.0
+    },
+    "b": {
+     "mean": 2.95,
+     "min": 0,
+     "max": 24,
+     "nonzero_pct": 20.1
+    },
+    "a": {
+     "mean": 21.49,
+     "min": 0,
+     "max": 206,
+     "nonzero_pct": 25.1
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SGFX_BD_PARTICLES_04.DTX",
+   "packed_bytes": 1431,
+   "body_bytes": 4260,
+   "preview": "previews/FX_SGFX_BD_PARTICLES_04.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     64,
+     64
+    ],
+    "r": {
+     "mean": 3.16,
+     "min": 0,
+     "max": 246,
+     "nonzero_pct": 20.0
+    },
+    "g": {
+     "mean": 1.62,
+     "min": 0,
+     "max": 234,
+     "nonzero_pct": 9.0
+    },
+    "b": {
+     "mean": 3.56,
+     "min": 0,
+     "max": 246,
+     "nonzero_pct": 20.0
+    },
+    "a": {
+     "mean": 1.82,
+     "min": 0,
+     "max": 234,
+     "nonzero_pct": 17.9
+    }
+   }
+  },
+  {
+   "rez_path": "FX/sgfx_cy_kar98_light05.dtx",
+   "packed_bytes": 17699,
+   "body_bytes": 65700,
+   "preview": "previews/FX_sgfx_cy_kar98_light05.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     256
+    ],
+    "r": {
+     "mean": 9.15,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 20.9
+    },
+    "g": {
+     "mean": 7.78,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 21.5
+    },
+    "b": {
+     "mean": 7.41,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 19.0
+    },
+    "a": {
+     "mean": 5.6,
+     "min": 0,
+     "max": 252,
+     "nonzero_pct": 22.3
+    }
+   }
+  },
+  {
+   "rez_path": "FX/sgfx_cy_kar98_light05_2.dtx",
+   "packed_bytes": 17117,
+   "body_bytes": 65700,
+   "preview": "previews/FX_sgfx_cy_kar98_light05_2.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     256
+    ],
+    "r": {
+     "mean": 7.82,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 20.7
+    },
+    "g": {
+     "mean": 6.75,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 21.3
+    },
+    "b": {
+     "mean": 6.1,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 18.8
+    },
+    "a": {
+     "mean": 5.81,
+     "min": 0,
+     "max": 249,
+     "nonzero_pct": 22.9
+    }
+   }
+  },
+  {
+   "rez_path": "FX/sgfx_cy_kar98_light_14.DTX",
+   "packed_bytes": 5288,
+   "body_bytes": 16548,
+   "preview": "previews/FX_sgfx_cy_kar98_light_14.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 10.33,
+     "min": 0,
+     "max": 222,
+     "nonzero_pct": 24.7
+    },
+    "g": {
+     "mean": 10.65,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 30.4
+    },
+    "b": {
+     "mean": 10.9,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 30.3
+    },
+    "a": {
+     "mean": 6.99,
+     "min": 0,
+     "max": 188,
+     "nonzero_pct": 31.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SGFX_JY_SHINE_03.DTX",
+   "packed_bytes": 20900,
+   "body_bytes": 65700,
+   "preview": "previews/FX_SGFX_JY_SHINE_03.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     256
+    ],
+    "r": {
+     "mean": 30.2,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 60.9
+    },
+    "g": {
+     "mean": 30.32,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 72.4
+    },
+    "b": {
+     "mean": 30.19,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 60.8
+    },
+    "a": {
+     "mean": 30.15,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 61.9
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SGFX_wk_shine_06.dtx",
+   "packed_bytes": 21031,
+   "body_bytes": 65700,
+   "preview": "previews/FX_SGFX_wk_shine_06.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     256
+    ],
+    "r": {
+     "mean": 5.9,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 60.3
+    },
+    "g": {
+     "mean": 16.72,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 77.5
+    },
+    "b": {
+     "mean": 26.68,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 69.2
+    },
+    "a": {
+     "mean": 12.49,
+     "min": 0,
+     "max": 254,
+     "nonzero_pct": 56.7
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_00.dtx",
+   "packed_bytes": 4658,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_00.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.84,
+     "min": 0,
+     "max": 123,
+     "nonzero_pct": 19.0
+    },
+    "g": {
+     "mean": 7.1,
+     "min": 0,
+     "max": 182,
+     "nonzero_pct": 48.4
+    },
+    "b": {
+     "mean": 12.48,
+     "min": 0,
+     "max": 230,
+     "nonzero_pct": 46.4
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_01.dtx",
+   "packed_bytes": 4640,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_01.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.77,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 19.0
+    },
+    "g": {
+     "mean": 6.94,
+     "min": 0,
+     "max": 165,
+     "nonzero_pct": 48.5
+    },
+    "b": {
+     "mean": 12.29,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 46.3
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_02.dtx",
+   "packed_bytes": 4619,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_02.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.59,
+     "min": 0,
+     "max": 106,
+     "nonzero_pct": 19.1
+    },
+    "g": {
+     "mean": 6.71,
+     "min": 0,
+     "max": 153,
+     "nonzero_pct": 48.8
+    },
+    "b": {
+     "mean": 11.89,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 46.5
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_03.dtx",
+   "packed_bytes": 4668,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_03.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.43,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 19.6
+    },
+    "g": {
+     "mean": 6.38,
+     "min": 0,
+     "max": 149,
+     "nonzero_pct": 48.1
+    },
+    "b": {
+     "mean": 11.43,
+     "min": 0,
+     "max": 197,
+     "nonzero_pct": 46.4
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_04.dtx",
+   "packed_bytes": 4691,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_04.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.25,
+     "min": 0,
+     "max": 106,
+     "nonzero_pct": 19.9
+    },
+    "g": {
+     "mean": 6.09,
+     "min": 0,
+     "max": 141,
+     "nonzero_pct": 48.1
+    },
+    "b": {
+     "mean": 11.02,
+     "min": 0,
+     "max": 197,
+     "nonzero_pct": 46.8
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_05.dtx",
+   "packed_bytes": 4646,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_05.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.14,
+     "min": 0,
+     "max": 98,
+     "nonzero_pct": 20.3
+    },
+    "g": {
+     "mean": 5.88,
+     "min": 0,
+     "max": 137,
+     "nonzero_pct": 48.2
+    },
+    "b": {
+     "mean": 10.69,
+     "min": 0,
+     "max": 189,
+     "nonzero_pct": 47.1
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_06.dtx",
+   "packed_bytes": 4629,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_06.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.07,
+     "min": 0,
+     "max": 98,
+     "nonzero_pct": 20.6
+    },
+    "g": {
+     "mean": 5.77,
+     "min": 0,
+     "max": 129,
+     "nonzero_pct": 48.8
+    },
+    "b": {
+     "mean": 10.44,
+     "min": 0,
+     "max": 189,
+     "nonzero_pct": 47.6
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_07.dtx",
+   "packed_bytes": 4700,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_07.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.05,
+     "min": 0,
+     "max": 106,
+     "nonzero_pct": 20.2
+    },
+    "g": {
+     "mean": 5.69,
+     "min": 0,
+     "max": 137,
+     "nonzero_pct": 48.1
+    },
+    "b": {
+     "mean": 10.36,
+     "min": 0,
+     "max": 172,
+     "nonzero_pct": 47.3
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_08.dtx",
+   "packed_bytes": 4692,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_08.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.04,
+     "min": 0,
+     "max": 98,
+     "nonzero_pct": 20.2
+    },
+    "g": {
+     "mean": 5.69,
+     "min": 0,
+     "max": 125,
+     "nonzero_pct": 48.2
+    },
+    "b": {
+     "mean": 10.36,
+     "min": 0,
+     "max": 180,
+     "nonzero_pct": 47.3
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_09.dtx",
+   "packed_bytes": 4769,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_09.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.06,
+     "min": 0,
+     "max": 98,
+     "nonzero_pct": 19.9
+    },
+    "g": {
+     "mean": 5.71,
+     "min": 0,
+     "max": 125,
+     "nonzero_pct": 48.2
+    },
+    "b": {
+     "mean": 10.35,
+     "min": 0,
+     "max": 164,
+     "nonzero_pct": 47.4
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_10.dtx",
+   "packed_bytes": 4740,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_10.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.1,
+     "min": 0,
+     "max": 90,
+     "nonzero_pct": 20.3
+    },
+    "g": {
+     "mean": 5.76,
+     "min": 0,
+     "max": 121,
+     "nonzero_pct": 48.7
+    },
+    "b": {
+     "mean": 10.39,
+     "min": 0,
+     "max": 164,
+     "nonzero_pct": 47.7
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_11.dtx",
+   "packed_bytes": 4741,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_11.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.09,
+     "min": 0,
+     "max": 98,
+     "nonzero_pct": 20.1
+    },
+    "g": {
+     "mean": 5.74,
+     "min": 0,
+     "max": 125,
+     "nonzero_pct": 48.3
+    },
+    "b": {
+     "mean": 10.32,
+     "min": 0,
+     "max": 172,
+     "nonzero_pct": 47.3
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_12.dtx",
+   "packed_bytes": 4781,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_12.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.1,
+     "min": 0,
+     "max": 82,
+     "nonzero_pct": 20.1
+    },
+    "g": {
+     "mean": 5.74,
+     "min": 0,
+     "max": 117,
+     "nonzero_pct": 48.3
+    },
+    "b": {
+     "mean": 10.31,
+     "min": 0,
+     "max": 172,
+     "nonzero_pct": 47.2
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_13.dtx",
+   "packed_bytes": 4705,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_13.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.1,
+     "min": 0,
+     "max": 90,
+     "nonzero_pct": 19.9
+    },
+    "g": {
+     "mean": 5.77,
+     "min": 0,
+     "max": 133,
+     "nonzero_pct": 48.4
+    },
+    "b": {
+     "mean": 10.3,
+     "min": 0,
+     "max": 197,
+     "nonzero_pct": 47.1
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_14.dtx",
+   "packed_bytes": 4760,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_14.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.16,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 20.0
+    },
+    "g": {
+     "mean": 5.84,
+     "min": 0,
+     "max": 170,
+     "nonzero_pct": 48.8
+    },
+    "b": {
+     "mean": 10.35,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 47.5
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_15.dtx",
+   "packed_bytes": 4717,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_15.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.18,
+     "min": 0,
+     "max": 106,
+     "nonzero_pct": 19.9
+    },
+    "g": {
+     "mean": 5.88,
+     "min": 0,
+     "max": 153,
+     "nonzero_pct": 48.3
+    },
+    "b": {
+     "mean": 10.35,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 47.1
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_16.dtx",
+   "packed_bytes": 4628,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_16.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.24,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 19.5
+    },
+    "g": {
+     "mean": 5.98,
+     "min": 0,
+     "max": 161,
+     "nonzero_pct": 48.3
+    },
+    "b": {
+     "mean": 10.54,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 47.1
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_17.dtx",
+   "packed_bytes": 4625,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_17.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.35,
+     "min": 0,
+     "max": 123,
+     "nonzero_pct": 19.7
+    },
+    "g": {
+     "mean": 6.19,
+     "min": 0,
+     "max": 174,
+     "nonzero_pct": 48.4
+    },
+    "b": {
+     "mean": 10.79,
+     "min": 0,
+     "max": 230,
+     "nonzero_pct": 47.0
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_18.dtx",
+   "packed_bytes": 4549,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_18.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.51,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 19.8
+    },
+    "g": {
+     "mean": 6.42,
+     "min": 0,
+     "max": 174,
+     "nonzero_pct": 48.9
+    },
+    "b": {
+     "mean": 11.12,
+     "min": 0,
+     "max": 222,
+     "nonzero_pct": 47.6
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_19.dtx",
+   "packed_bytes": 4600,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_19.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.63,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 19.4
+    },
+    "g": {
+     "mean": 6.65,
+     "min": 0,
+     "max": 174,
+     "nonzero_pct": 48.4
+    },
+    "b": {
+     "mean": 11.49,
+     "min": 0,
+     "max": 222,
+     "nonzero_pct": 47.4
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_20.dtx",
+   "packed_bytes": 4625,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_20.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.76,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 18.9
+    },
+    "g": {
+     "mean": 6.86,
+     "min": 0,
+     "max": 170,
+     "nonzero_pct": 48.4
+    },
+    "b": {
+     "mean": 11.88,
+     "min": 0,
+     "max": 222,
+     "nonzero_pct": 47.1
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_21.dtx",
+   "packed_bytes": 4599,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_21.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.88,
+     "min": 0,
+     "max": 131,
+     "nonzero_pct": 19.5
+    },
+    "g": {
+     "mean": 7.07,
+     "min": 0,
+     "max": 190,
+     "nonzero_pct": 48.4
+    },
+    "b": {
+     "mean": 12.26,
+     "min": 0,
+     "max": 246,
+     "nonzero_pct": 46.8
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_22.dtx",
+   "packed_bytes": 4649,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_22.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.98,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 19.7
+    },
+    "g": {
+     "mean": 7.22,
+     "min": 0,
+     "max": 170,
+     "nonzero_pct": 48.9
+    },
+    "b": {
+     "mean": 12.54,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 46.7
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_54/sgfx_bd_aura_54_23.dtx",
+   "packed_bytes": 4715,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_54_sgfx_bd_aura_54_23.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 3.98,
+     "min": 0,
+     "max": 115,
+     "nonzero_pct": 19.8
+    },
+    "g": {
+     "mean": 7.23,
+     "min": 0,
+     "max": 165,
+     "nonzero_pct": 48.4
+    },
+    "b": {
+     "mean": 12.67,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 46.7
+    },
+    "a": {
+     "mean": 249.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 98.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_00.dtx",
+   "packed_bytes": 6542,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_00.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.5,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 14.71,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 81.8
+    },
+    "b": {
+     "mean": 14.49,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_01.dtx",
+   "packed_bytes": 6449,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_01.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.72,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 14.96,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 14.7,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_02.dtx",
+   "packed_bytes": 6520,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_02.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.99,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.8
+    },
+    "g": {
+     "mean": 15.24,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.4
+    },
+    "b": {
+     "mean": 14.97,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.3
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_03.dtx",
+   "packed_bytes": 6603,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_03.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.22,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 15.47,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 15.22,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_04.dtx",
+   "packed_bytes": 6551,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_04.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.33,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 66.7
+    },
+    "g": {
+     "mean": 15.57,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.1
+    },
+    "b": {
+     "mean": 15.32,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 66.2
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_05.dtx",
+   "packed_bytes": 6586,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_05.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.32,
+     "min": 0,
+     "max": 189,
+     "nonzero_pct": 67.5
+    },
+    "g": {
+     "mean": 15.51,
+     "min": 0,
+     "max": 190,
+     "nonzero_pct": 82.2
+    },
+    "b": {
+     "mean": 15.3,
+     "min": 0,
+     "max": 189,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_06.dtx",
+   "packed_bytes": 6491,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_06.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.12,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 15.32,
+     "min": 0,
+     "max": 206,
+     "nonzero_pct": 81.9
+    },
+    "b": {
+     "mean": 15.1,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.0
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_07.dtx",
+   "packed_bytes": 6491,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_07.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.78,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.8
+    },
+    "g": {
+     "mean": 15.04,
+     "min": 0,
+     "max": 210,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 14.76,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.0
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_08.dtx",
+   "packed_bytes": 6429,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_08.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.48,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.8
+    },
+    "g": {
+     "mean": 14.7,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.1
+    },
+    "b": {
+     "mean": 14.47,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.4
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_09.dtx",
+   "packed_bytes": 6412,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_09.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.26,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.6
+    },
+    "g": {
+     "mean": 14.48,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 81.9
+    },
+    "b": {
+     "mean": 14.25,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.2
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_10.dtx",
+   "packed_bytes": 6350,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_10.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.17,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.8
+    },
+    "g": {
+     "mean": 14.4,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 82.1
+    },
+    "b": {
+     "mean": 14.15,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.3
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_11.dtx",
+   "packed_bytes": 6411,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_11.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.27,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.0
+    },
+    "g": {
+     "mean": 14.49,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 14.25,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 66.5
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_12.dtx",
+   "packed_bytes": 6546,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_12.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.5,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 14.71,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 81.8
+    },
+    "b": {
+     "mean": 14.49,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_13.dtx",
+   "packed_bytes": 6424,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_13.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.72,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 14.96,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 14.7,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_14.dtx",
+   "packed_bytes": 6520,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_14.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.99,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.8
+    },
+    "g": {
+     "mean": 15.24,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.4
+    },
+    "b": {
+     "mean": 14.97,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.3
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_15.dtx",
+   "packed_bytes": 6603,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_15.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.22,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 15.47,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 15.22,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_16.dtx",
+   "packed_bytes": 6551,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_16.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.33,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 66.7
+    },
+    "g": {
+     "mean": 15.57,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.1
+    },
+    "b": {
+     "mean": 15.32,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 66.2
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_17.dtx",
+   "packed_bytes": 6579,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_17.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.32,
+     "min": 0,
+     "max": 189,
+     "nonzero_pct": 67.5
+    },
+    "g": {
+     "mean": 15.51,
+     "min": 0,
+     "max": 190,
+     "nonzero_pct": 82.2
+    },
+    "b": {
+     "mean": 15.3,
+     "min": 0,
+     "max": 189,
+     "nonzero_pct": 66.9
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_18.dtx",
+   "packed_bytes": 6514,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_18.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 15.12,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.4
+    },
+    "g": {
+     "mean": 15.32,
+     "min": 0,
+     "max": 206,
+     "nonzero_pct": 81.9
+    },
+    "b": {
+     "mean": 15.1,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.0
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_19.dtx",
+   "packed_bytes": 6491,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_19.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.78,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.8
+    },
+    "g": {
+     "mean": 15.04,
+     "min": 0,
+     "max": 210,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 14.76,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.0
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_20.dtx",
+   "packed_bytes": 6429,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_20.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.48,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.8
+    },
+    "g": {
+     "mean": 14.7,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.1
+    },
+    "b": {
+     "mean": 14.47,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.4
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_21.dtx",
+   "packed_bytes": 6431,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_21.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.26,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.6
+    },
+    "g": {
+     "mean": 14.48,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 81.9
+    },
+    "b": {
+     "mean": 14.25,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 67.2
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_22.dtx",
+   "packed_bytes": 6329,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_22.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.17,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.8
+    },
+    "g": {
+     "mean": 14.4,
+     "min": 0,
+     "max": 214,
+     "nonzero_pct": 82.1
+    },
+    "b": {
+     "mean": 14.15,
+     "min": 0,
+     "max": 213,
+     "nonzero_pct": 66.3
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX/SPRITES/AURA_55/sgfx_bd_aura_55_23.dtx",
+   "packed_bytes": 6416,
+   "body_bytes": 32932,
+   "preview": "previews/FX_SPRITES_AURA_55_sgfx_bd_aura_55_23.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     128
+    ],
+    "r": {
+     "mean": 14.27,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 67.0
+    },
+    "g": {
+     "mean": 14.49,
+     "min": 0,
+     "max": 202,
+     "nonzero_pct": 82.0
+    },
+    "b": {
+     "mean": 14.25,
+     "min": 0,
+     "max": 205,
+     "nonzero_pct": 66.5
+    },
+    "a": {
+     "mean": 255.0,
+     "min": 255,
+     "max": 255,
+     "nonzero_pct": 100.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/FLR0030.DTX",
+   "packed_bytes": 11566,
+   "body_bytes": 87204,
+   "preview": "previews/FX3_FLR0030.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     256,
+     256
+    ],
+    "r": {
+     "mean": 20.54,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 60.9
+    },
+    "g": {
+     "mean": 21.45,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 65.3
+    },
+    "b": {
+     "mean": 22.25,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 60.5
+    },
+    "a": {
+     "mean": 0.0,
+     "min": 0,
+     "max": 0,
+     "nonzero_pct": 0.0
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SGFX_JY_SHINE_19_2.DTX",
+   "packed_bytes": 4010,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SGFX_JY_SHINE_19_2.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 8.27,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 29.1
+    },
+    "g": {
+     "mean": 8.46,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 41.4
+    },
+    "b": {
+     "mean": 8.27,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 29.0
+    },
+    "a": {
+     "mean": 8.52,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 42.6
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_00.dtx",
+   "packed_bytes": 1169,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_00.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 7.92,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.9
+    },
+    "g": {
+     "mean": 8.58,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.7
+    },
+    "b": {
+     "mean": 8.57,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.0
+    },
+    "a": {
+     "mean": 12.32,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.4
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_01.dtx",
+   "packed_bytes": 1139,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_01.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 9.97,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 7.3
+    },
+    "g": {
+     "mean": 11.01,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.3
+    },
+    "b": {
+     "mean": 11.52,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 7.1
+    },
+    "a": {
+     "mean": 14.62,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.7
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_02.dtx",
+   "packed_bytes": 2284,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_02.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 15.72,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 14.2
+    },
+    "g": {
+     "mean": 16.47,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 12.2
+    },
+    "b": {
+     "mean": 17.12,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 13.3
+    },
+    "a": {
+     "mean": 26.38,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 12.7
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_03.dtx",
+   "packed_bytes": 1102,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_03.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 11.42,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.7
+    },
+    "g": {
+     "mean": 11.97,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.8
+    },
+    "b": {
+     "mean": 12.04,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 7.0
+    },
+    "a": {
+     "mean": 14.91,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.7
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_04.dtx",
+   "packed_bytes": 876,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_04.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 2.65,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 2.5
+    },
+    "g": {
+     "mean": 2.93,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 2.5
+    },
+    "b": {
+     "mean": 3.02,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 2.8
+    },
+    "a": {
+     "mean": 5.13,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 2.7
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_05.dtx",
+   "packed_bytes": 604,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_05.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 1.95,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 1.9
+    },
+    "g": {
+     "mean": 2.26,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 2.0
+    },
+    "b": {
+     "mean": 2.34,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 2.2
+    },
+    "a": {
+     "mean": 3.97,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 1.9
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_06.dtx",
+   "packed_bytes": 2269,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_06.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 12.17,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 10.6
+    },
+    "g": {
+     "mean": 14.41,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 12.5
+    },
+    "b": {
+     "mean": 14.38,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 12.2
+    },
+    "a": {
+     "mean": 23.49,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 11.9
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_07.dtx",
+   "packed_bytes": 1369,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_07.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 7.81,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.5
+    },
+    "g": {
+     "mean": 8.4,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.8
+    },
+    "b": {
+     "mean": 8.62,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.3
+    },
+    "a": {
+     "mean": 12.84,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.3
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_08.dtx",
+   "packed_bytes": 1234,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_08.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 7.94,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 7.0
+    },
+    "g": {
+     "mean": 6.31,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 4.9
+    },
+    "b": {
+     "mean": 6.73,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.7
+    },
+    "a": {
+     "mean": 11.88,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.7
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_09.dtx",
+   "packed_bytes": 865,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_09.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 4.96,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 4.2
+    },
+    "g": {
+     "mean": 6.77,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 4.2
+    },
+    "b": {
+     "mean": 6.78,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 4.2
+    },
+    "a": {
+     "mean": 8.74,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 4.6
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_10.dtx",
+   "packed_bytes": 1148,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_10.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 8.61,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.0
+    },
+    "g": {
+     "mean": 9.47,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.1
+    },
+    "b": {
+     "mean": 9.65,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 6.3
+    },
+    "a": {
+     "mean": 12.77,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.8
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_11.dtx",
+   "packed_bytes": 1209,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_11.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 7.64,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.7
+    },
+    "g": {
+     "mean": 6.73,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.3
+    },
+    "b": {
+     "mean": 7.26,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.5
+    },
+    "a": {
+     "mean": 11.47,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 5.5
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_12.dtx",
+   "packed_bytes": 817,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_12.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 0.86,
+     "min": 0,
+     "max": 246,
+     "nonzero_pct": 1.4
+    },
+    "g": {
+     "mean": 0.9,
+     "min": 0,
+     "max": 250,
+     "nonzero_pct": 1.6
+    },
+    "b": {
+     "mean": 1.0,
+     "min": 0,
+     "max": 246,
+     "nonzero_pct": 1.5
+    },
+    "a": {
+     "mean": 2.38,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 1.7
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_13.dtx",
+   "packed_bytes": 1562,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_13.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 0.08,
+     "min": 0,
+     "max": 10,
+     "nonzero_pct": 1.9
+    },
+    "g": {
+     "mean": 0.2,
+     "min": 0,
+     "max": 16,
+     "nonzero_pct": 3.4
+    },
+    "b": {
+     "mean": 0.14,
+     "min": 0,
+     "max": 16,
+     "nonzero_pct": 2.9
+    },
+    "a": {
+     "mean": 3.47,
+     "min": 0,
+     "max": 82,
+     "nonzero_pct": 7.2
+    }
+   }
+  },
+  {
+   "rez_path": "FX3/SPRITES/GLITCH_LINE03/sgfx_jy_glitch_line_03_14.dtx",
+   "packed_bytes": 794,
+   "body_bytes": 16548,
+   "preview": "previews/FX3_SPRITES_GLITCH_LINE03_sgfx_jy_glitch_line_03_14.png",
+   "ok": true,
+   "stats": {
+    "size": [
+     128,
+     128
+    ],
+    "r": {
+     "mean": 4.18,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 3.5
+    },
+    "g": {
+     "mean": 4.92,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 3.3
+    },
+    "b": {
+     "mean": 5.01,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 3.5
+    },
+    "a": {
+     "mean": 7.36,
+     "min": 0,
+     "max": 255,
+     "nonzero_pct": 3.2
+    }
+   }
+  }
+ ],
+ "ok": 76,
+ "total": 76
+}

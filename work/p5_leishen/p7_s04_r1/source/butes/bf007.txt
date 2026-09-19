@@ -1,0 +1,5035 @@
+( Sound
+	( SoundName "SniperZoom" ) // ½º³ªÀÌÆÛ ÁÜ ÇÒ ¶§
+	( FileName "snd/weapon/others/g_zoom.wav" )
+	( 3DSound 1 )
+	( InnerRadius 5.0 )
+	( OuterRadius 20.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 ) //0-none, 1-linear, 2-log, 3-linearOriginal
+)
+
+( Sound
+	( SoundName "KnifeDeploy" )
+	( FileName "snd/weapon/knife/k_out_knife.wav" )
+	( 3DSound 1 )
+	( InnerRadius 5.0 )
+	( OuterRadius 20.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipEmptyRifle" ) // ¶óÀÌÇÃ ´Ù ½èÀ»¶§ Çê ¹ß ³ª°¡´Â ¼Ò¸®
+	( FileName "snd/weapon/others/g_nobullet_Rifle.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 39.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipEmptyPistol" ) // ±ÇÃÑ ÃÑ¾Ë ´Ù ½èÀ»¶§ Çê ¹ß ³ª°¡´Â ¼Ò¸®
+	( FileName "snd/weapon/others/g_nobullet_Pistol.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 39.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipEmptyShotGun" ) // ¼¦°Ç ÃÑ¾Ë ´Ù ½èÀ»¶§ Çê ¹ß ³ª°¡´Â ¼Ò¸®
+	( FileName "snd/weapon/others/g_nobullet_shotgun.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 39.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipEmptyMachineGun" ) // ¸Ó½Å°Ç ÃÑ¾Ë ´Ù ½èÀ»¶§ Çê ¹ß ³ª°¡´Â ¼Ò¸®
+	( FileName "snd/weapon/others/g_nobullet_machinegun.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 39.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "KnifeWhip" ) // Ä® ÈÖµÎ¸¦¶§ ¼Ò¸® \rez\Snd @@
+	( FileName "snd/weapon/knife/k_shoot_knife.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileHeadshot" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸Ó¸®) \rez\Snd
+	( FileName "snd/gunhit/g_hit_chead.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileHelmet" ) // ÃÑ ¸Â´Â ¼Ò¸® (Çï¸ä) \rez\Snd @@
+	( FileName "snd/gunhit/g_hit_helmet.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileArmorHelmet" ) // ÃÑ ¸Â´Â ¼Ò¸® (¾Æ¸ðÇï¸ä) \rez\Snd @@
+	( FileName "snd/gunhit/g_hit_Armorhelmet.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileHit1" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸ö) \rez\Snd
+	( FileName "snd/gunhit/g_hit_cbody1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileHit2" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸ö) \rez\Snd
+	( FileName "snd/gunhit/g_hit_cbody2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileHit3" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸ö) \rez\Snd
+	( FileName "snd/gunhit/g_hit_cbody3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileHit4" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸ö) \rez\Snd
+	( FileName "snd/gunhit/g_hit_cbody4.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ProjectileHit5" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸ö) \rez\Snd
+	( FileName "snd/gunhit/g_hit_cbody5.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "KnifeHeadshot" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸Ó¸®) \rez\Snd
+	( FileName "snd/gunhit/g_hit_knife_chead.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "KnifeHelmet" ) // ÃÑ ¸Â´Â ¼Ò¸® (Çï¸ä) \rez\Snd @@
+	( FileName "snd/gunhit/g_hit_knife_helmet.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "KnifeHit" ) // ÃÑ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸ö) \rez\Snd
+	( FileName "snd/gunhit/g_hit_knife_cbody.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "KnifeKevlar" ) // ÃÑ ¸Â´Â ¼Ò¸® (ÄÉºí¶ó) \rez\Snd @@
+	( FileName "snd/gunhit/g_hit_knife_Kevlar.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "NanoKnifeHit" ) // ³ª³ë ³ªÀÌÇÁ ¸Â´Â ¼Ò¸® (»ç¶÷ ¸ö) \rez\Snd
+	( FileName "snd/gunhit/G_HIT_NANO_KNIFE_CBODY.WAV" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "PlayerDie" ) // ÇÃ·¹ÀÌ¾î Á×¾úÀ»¶§ ¼Ò¸® \rez\Snd @@
+	( FileName "snd/player/player_death_scream.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 35.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "PlayerDieWoman" ) 
+	( FileName "snd/player/player_death_scream_woman.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 35.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "FallDamage" ) // ¶³¾îÁ³À»¶§ µ¥¹ÌÁö ¼Ò¸®  \rez\Snd @@
+	( FileName "snd/player/player_drop_scream.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "FallDamageWoman" ) 
+	( FileName "snd/player/player_drop_scream_woman.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "FallDamageGhost" ) 
+	( FileName "snd2/ghost/etc/GHOST_DROP_SCREAM.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "FallDamageGhostWoman" ) 
+	( FileName "snd2/ghost/etc/GHOST_DROP_SCREAM_WOMAN.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DefuseStart" ) // ÆøÅº ÇØÃ¼ ½ÃÀÛ ¼Ò¸®  \rez\Snd
+	( FileName "snd/weapon/c4/c4_disarm.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 40.0 )
+	( MyLevelMultiply 1.33 )
+	( OtherLevelMultiply 1.33 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "KnifeWood_1" ) 
+	( FileName "snd/weapon/knife/Knife_Wood_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "KnifeWood_2" )
+	( FileName "snd/weapon/knife/Knife_Wood_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "KnifeStone_1" ) 
+	( FileName "snd/weapon/knife/Knife_Stone_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "KnifeStone_2" )
+	( FileName "snd/weapon/knife/Knife_Stone_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "KnifeMetal_1" ) 
+	( FileName "snd/weapon/knife/Knife_Metal_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "KnifeMetal_2" )
+	( FileName "snd/weapon/knife/Knife_Metal_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "KnifeHit" ) // Ä®À» ÈÖµÑ·¯¼­ ¸Â¾ÒÀ»¶§ ¼Ò¸® \rez\Snd @@
+	( FileName "snd/weapon/knife/k_shoot_knife_player.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "C4Click" ) // ÆøÅº ¼³Ä¡½Ã ¹öÆ° Å¬¸¯ »ç¿îµå
+	( FileName "snd/weapon/c4/c4_click.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 40.0 )
+	( MyLevelMultiply 1.33 )
+	( OtherLevelMultiply 1.33 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "C4Drop" ) // ÆøÅº ¼³Ä¡ ÈÄ ¶³¾î¶ß¸®´Â ¼Ò¸®
+	( FileName "snd/weapon/c4/c4_drop.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DefuseSuccess" ) // ÆøÅº ÇØÃ¼ ¼º°øÀÇ ¼Ò¸®  \rez\Snd
+	( FileName "snd/weapon/c4/c4_click.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "FlashbangBoom" ) // ÇÃ·¡½Ã¹ð ÅÍÁ³À»¶§ ¼Ò¸® \rez\Snd
+	( FileName "snd/weapon/flashbang/t_boom_flash.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 135.0 ) // [95]
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "SmokeBoom" ) // ½º¸ðÅ© ±×·¹³×ÀÌµå ÅÍÁ³À»¶§ ¼Ò¸® \rez\Snd
+	( FileName "snd/weapon/smokegrenade/t_boom_smoke.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 135.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "GrenadeBounce" ) // ¼ö·ùÅº·ù°¡ ¹Ù´Ú¿¡ Æ¥¶§ ¼Ò¸®  \rez\Snd
+	( FileName "snd/weapon/hegrenade/t_hegrenade_drop.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 40.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "GrenadeRemovePin" ) // ¼ö·ùÅº·ù°¡ ¾ÈÀüÇÉ Á¦°Å »ç¿îµå  \rez\Snd
+	( FileName "snd/weapon/hegrenade/t_hegrenade_pin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ThrowBounce" ) // ¼¶±¤Åº,¿¬¸·Åº·ù°¡ ¹Ù´Ú¿¡ Æ¥¶§ ¼Ò¸®  \rez\Snd
+	( FileName "snd/weapon/throw/t_throw_drop.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 40.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ThrowRemovePin" ) // ¼¶±¤Åº,¿¬¸·Åº·ù°¡ ¾ÈÀüÇÉ Á¦°Å »ç¿îµå  \rez\Snd
+	( FileName "snd/weapon/throw/t_throw_pin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "PickupSomething" ) // !!!!Ã¼Å© ¿ì¸® ÆÄÀÏ ¾Æ´Ô ÃÑÀÌ³ª ¹°°ÇÀ» ÁÞ¾úÀ»¶§ ¼Ò¸®  \rez\Snd @@
+	( FileName "snd/pickup.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 33.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "C4Explode" )
+	( FileName "snd/weapon/c4/c4_boom.wav"  )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 1000.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "C4Red" )
+	( FileName "snd/weapon/c4/c4_beep.wav"  )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 55.0 ) //[1] 55.0 
+	( MyLevelMultiply 1.5 )
+	( OtherLevelMultiply 1.5 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Explode01" )  // HE Grenade Æø¹ß¼Ò¸®
+	( FileName "snd/weapon/hegrenade/t_boom_he.wav"  )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 150.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ExplodeHeart" )  // HE Grenade Heart
+	( FileName "snd/weapon/HEHEARTGRENADE/T_BOOM_HE_HEART.WAV"  )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 150.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ExplodeNano" )  // HE Grenade Nano
+	( FileName "snd/weapon/HENANOGRENADE/T_BOOM_HE_NANO.WAV"  )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 150.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ShootColt1911" )
+	( FileName "snd/weapon/colt1911/g_shoot_colt1911" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1]40.0 [2] 80.0 [3] 60.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutColt1911" )
+	( FileName "snd/weapon/colt1911/g_mzc_colt1911_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInColt1911" )
+	( FileName "snd/weapon/colt1911/g_mzc_colt1911_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadColt1911" )
+	( FileName "snd/weapon/colt1911/g_reload_colt1911.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackColt1911" )
+	( FileName "snd/weapon/colt1911/g_mzc_colt1911_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackColt1911" )
+	( FileName "snd/weapon/colt1911/g_mzc_colt1911_bcback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootM4A1" )
+	( FileName "snd/weapon/m4a1/g_shoot_m4a1" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0  [4] 115.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ShootM4A1Silencer" )
+	( FileName "snd/weapon/m4a1/g_shoot_m4a1_silencer" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 41.0 ) 
+	( MyLevelMultiply 0.85 )
+	( OtherLevelMultiply 0.6 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutM4A1" )
+	( FileName "snd/weapon/m4a1/g_mzc_m4a1_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInM4A1" )
+	( FileName "snd/weapon/m4a1/g_mzc_m4a1_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadM4A1" )
+	( FileName "snd/weapon/m4a1/g_reload_m4a1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootM16" )
+	( FileName "snd/weapon/m16/g_shoot_m16" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutM16" )
+	( FileName "snd/weapon/m16/g_mzc_m16_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInM16" )
+	( FileName "snd/weapon/m16/g_mzc_m16_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadM16" )
+	( FileName "snd/weapon/m16/g_reload_m16.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootM700" )
+	( FileName "snd/weapon/m700/g_shoot_m700.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 140.0 ) //[1] 120.0 (90.0) [2] 240.0 [3] 180.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutM700" )
+	( FileName "snd/weapon/m700/g_mzc_m700_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInM700" )
+	( FileName "snd/weapon/m700/g_mzc_m700_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadM700" )
+	( FileName "snd/weapon/m700/g_reload_m700.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootM9" )
+	( FileName "snd/weapon/m9/g_shoot_m9" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1] 40.0 [2] 80.0 [3] 60.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutM9" )
+	( FileName "snd/weapon/m9/g_mzc_m9_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInM9" )
+	( FileName "snd/weapon/m9/g_mzc_m9_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadM9" )
+	( FileName "snd/weapon/m9/g_reload_m9.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackM9" )
+	( FileName "snd/weapon/m9/g_mzc_m9_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackM9" )
+	( FileName "snd/weapon/m9/g_mzc_m9_bcback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootMP5" )
+	( FileName "snd/weapon/mp5/g_shoot_mp5" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 125.0 ) //[1] 70.0 [2] 140.0 [3] 105.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutMP5" )
+	( FileName "snd/weapon/mp5/g_mzc_mp5_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInMP5" )
+	( FileName "snd/weapon/mp5/g_mzc_mp5_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadMP5" )
+	( FileName "snd/weapon/mp5/g_reload_mp5.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootMP7" )
+	( FileName "snd/weapon/mp7/g_shoot_mp7" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 125.0 ) //[1] 70.0 [2] 140.0 [3] 105.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutMP7" )
+	( FileName "snd/weapon/mp7/g_mzc_mp7_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInMP7" )
+	( FileName "snd/weapon/mp7/g_mzc_mp7_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadMP7" )
+	( FileName "snd/weapon/mp7/g_reload_mp7.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootAUG" )
+	( FileName "snd/weapon/aug/g_shoot_aug" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutAUG" )
+	( FileName "snd/weapon/aug/g_mzc_aug_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInAUG" )
+	( FileName "snd/weapon/aug/g_mzc_aug_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadAUG" )
+	( FileName "snd/weapon/aug/g_reload_aug.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackAUG" )
+	( FileName "snd/weapon/aug/g_mzc_aug_cy.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 23.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackAUG" )
+	( FileName "snd/weapon/aug/g_mzc_aug_bcy.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootAWM" )
+	( FileName "snd/weapon/awm/g_shoot_awm.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 160.0 ) //[1] 120.0 (90.0) [2] 240.0 [3] 180.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutAWM" )
+	( FileName "snd/weapon/awm/g_mzc_awm_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInAWM" )
+	( FileName "snd/weapon/awm/g_mzc_awm_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadAWM" )
+	( FileName "snd/weapon/awm/g_reload_awm.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootDEagle" )
+	( FileName "snd/weapon/deagle/g_shoot_deagle" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 120.0 ) //[1] 50.0 [2] 100.0 [3] 75.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutDEagle" )
+	( FileName "snd/weapon/deagle/g_mzc_deagle_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInDEagle" )
+	( FileName "snd/weapon/deagle/g_mzc_deagle_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadDEagle" )
+	( FileName "snd/weapon/deagle/g_reload_deagle.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackDEagle" )
+	( FileName "snd/weapon/deagle/g_mzc_deagle_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackDEagle" )
+	( FileName "snd/weapon/deagle/g_mzc_deagle_bcback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootM60" )
+	( FileName "snd/weapon/m60/g_shoot_m60" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 90.0 [2] 180.0 [3] 135.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutM60" )
+	( FileName "snd/weapon/m60/g_mzc_m60_open.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInM60" )
+	( FileName "snd/weapon/m60/g_mzc_m60_close.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "SelectM60" )
+	( FileName "snd/weapon/m60/g_out_m60.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadM60" )
+	( FileName "snd/weapon/m60/g_mzc_m60_bulletin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootP228" )
+	( FileName "snd/weapon/p228/g_shoot_p228" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1] 40.0 [2] 80.0 [3] 60.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutP228" )
+	( FileName "snd/weapon/p228/g_mzc_p228_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInP228" )
+	( FileName "snd/weapon/p228/g_mzc_p228_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+( Sound
+	( SoundName "ReloadP228" )
+	( FileName "snd/weapon/p228/g_reload_p228.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+( Sound
+	( SoundName "BlowBackP228" )
+	( FileName "snd/weapon/p228/g_mzc_p228_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+( Sound
+	( SoundName "DelBlowBackP228" )
+	( FileName "snd/weapon/p228/g_mzc_p228_bcback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootAK74" )
+	( FileName "snd/weapon/ak74/g_shoot_ak74" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 82.0 [2] 164.0 [3] 123.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ShootAK47" )
+	( FileName "snd/weapon/ak47/g_shoot_ak47" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 141.0 ) //[1] 82.0 [2] 164.0 [3] 123.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutAK47" )
+	( FileName "snd/weapon/ak47/g_mzc_ak47_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.5 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInAK47" )
+	( FileName "snd/weapon/ak47/g_mzc_ak47_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.5 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadAK47" )
+	( FileName "snd/weapon/ak47/g_reload_ak47.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.05 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "KnifeAttackAK47" )
+	( FileName "snd/weapon/ak47/knife_attack_ak47.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootP90" )
+	( FileName "snd/weapon/p90/g_shoot_p90" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 125.0 ) //[1] 70.0 [2] 140.0 [3] 105.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutP90" )
+	( FileName "snd/weapon/p90/g_mzc_p90_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInP90" )
+	( FileName "snd/weapon/p90/g_mzc_p90_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadP90" )
+	( FileName "snd/weapon/p90/g_reload_p90.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootPSG-1" )
+	( FileName "snd/weapon/psg1/g_shoot_psg1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 120.0 (90.0) [2] 240.0 [3] 180.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutPSG-1" )
+	( FileName "snd/weapon/psg1/g_mzc_psg1_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInPSG-1" )
+	( FileName "snd/weapon/psg1/g_mzc_psg1_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadPSG-1" )
+	( FileName "snd/weapon/psg1/g_reload_psg1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackPSG-1" )
+	( FileName "snd/weapon/psg1/g_mzc_psg1_cy.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackPSG-1" )
+	( FileName "snd/weapon/psg1/g_mzc_psg1_bcy.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootUSP" )
+	( FileName "snd/weapon/usp/g_shoot_usp" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1] 40.0 [2] 80.0 [3] 60.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutUSP" )
+	( FileName "snd/weapon/usp/g_mzc_usp_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInUSP" )
+	( FileName "snd/weapon/usp/g_mzc_usp_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadUSP" )
+	( FileName "snd/weapon/usp/g_reload_usp.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackUSP" )
+	( FileName "snd/weapon/usp/g_mzc_usp_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackUSP" )
+	( FileName "snd/weapon/usp/g_mzc_usp_bcback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootXM1014" )
+	( FileName "snd/weapon/xm1014/g_shoot_xm1014" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipInXM1014" )
+	( FileName "snd/weapon/xm1014/g_mzc_xm1014_bulletin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadXM1014" )
+	( FileName "snd/weapon/xm1014/g_reload_xm1014.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootUZI" )
+	( FileName "snd/weapon/uzi/g_shoot_uzi" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 125.0 ) //[1] 70.0 [2] 140.0 [3] 105.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutUZI" )
+	( FileName "snd/weapon/uzi/g_mzc_uzi_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInUZI" )
+	( FileName "snd/weapon/uzi/g_mzc_uzi_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadUZI" )
+	( FileName "snd/weapon/uzi/g_reload_uzi.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootK1A" )
+	( FileName "snd/weapon/k1a/g_shoot_k1a" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 125.0 ) //[1] 75.0 [2] 150.0 [3] 112.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutK1A" )
+	( FileName "snd/weapon/k1a/g_mzc_k1a_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInK1A" )
+	( FileName "snd/weapon/k1a/g_mzc_k1a_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)	
+
+( Sound
+	( SoundName "BlowBackK1A" )
+	( FileName "snd/weapon/k1a/g_blowback_k1a.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackK1A" )
+	( FileName "snd/weapon/k1a/g_del_blowback_k1a.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadK1A" )
+	( FileName "snd/weapon/k1a/g_reload_k1a.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootK-2" )
+	( FileName "snd/weapon/k2/g_shoot_k2" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutK-2" )
+	( FileName "snd/weapon/k2/g_mzc_k2_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInK-2" )
+	( FileName "snd/weapon/k2/g_mzc_k2_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)	
+
+( Sound
+	( SoundName "BlowBackK-2" )
+	( FileName "snd/weapon/k2/g_blowback_k2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackK-2" )
+	( FileName "snd/weapon/k2/g_del_blowback_k2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadK-2" )
+	( FileName "snd/weapon/k2/g_reload_k2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootDRAGUNOVSVD" )
+	( FileName "snd/weapon/dragunov/g_shoot_dragunov.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 140.0 ) //[1] 120.0 (90.0) [2] 240.0 [3] 180.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutDRAGUNOVSVD" )
+	( FileName "snd/weapon/dragunov/g_mzc_dragunov_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInDRAGUNOVSVD" )
+	( FileName "snd/weapon/dragunov/g_mzc_dragunov_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadDRAGUNOVSVD" )
+	( FileName "snd/weapon/dragunov/g_reload_dragunov.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootSG552" )
+	( FileName "snd/weapon/sg552/g_shoot_sg552" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutSG552" )
+	( FileName "snd/weapon/sg552/g_mzc_sg552_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInSG552" )
+	( FileName "snd/weapon/sg552/g_mzc_sg552_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadSG552" )
+	( FileName "snd/weapon/sg552/g_reload_sg552.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shell_Drop_MachineGun" )
+	( FileName "snd/weapon/drop/Shell_Drop_MachineGun" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shell_Drop_Pisol_SMG" )
+	( FileName "snd/weapon/drop/Shell_Drop_Pisol_SMG" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shell_Drop_Rifle" )
+	( FileName "snd/weapon/drop/Shell_Drop_Rifle" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shell_Drop_Shotgun" )
+	( FileName "snd/weapon/drop/Shell_Drop_Shotgun" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shell_Drop_Sniper" )
+	( FileName "snd/weapon/drop/Shell_Drop_Sniper" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepDirt" )
+	( FileName "snd/player/footsteps/c_run_left_dirt" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 ) // [1] 60.0
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepDirt" )
+	( FileName "snd/player/footsteps/c_run_right_dirt" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "LandingDirt" )
+	( FileName "snd/player/footsteps/c_run_drop_dirt.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.24 ) // [1] 0.18
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "JumpDirt" )
+	( FileName "snd/player/footsteps/c_run_jump_dirt.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.24 ) // [1] 0.18
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HitDirt1" )
+	( FileName "snd/gunhit/g_hit_dirt1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitDirt2" )
+	( FileName "snd/gunhit/g_hit_dirt2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitDirt3" )
+	( FileName "snd/gunhit/g_hit_dirt3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepMetal" )
+	( FileName "snd/player/footsteps/c_run_left_metal" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepMetal" )
+	( FileName "snd/player/footsteps/c_run_right_metal" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "LandingMetal" )
+	( FileName "snd/player/footsteps/c_run_drop_metal.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "JumpMetal" )
+	( FileName "snd/player/footsteps/c_run_jump_metal.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HitMetal1" )
+	( FileName "snd/gunhit/g_hit_metal1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitMetal2" )
+	( FileName "snd/gunhit/g_hit_metal2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitMetal3" )
+	( FileName "snd/gunhit/g_hit_metal3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepStone" )
+	( FileName "snd/player/footsteps/c_run_left_stone" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepStone" )
+	( FileName "snd/player/footsteps/c_run_right_stone" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "LandingStone" )
+	( FileName "snd/player/footsteps/c_run_drop_stone.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "JumpStone" )
+	( FileName "snd/player/footsteps/c_run_jump_stone.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HitStone1" )
+	( FileName "snd/gunhit/g_hit_stone1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitStone2" )
+	( FileName "snd/gunhit/g_hit_stone2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitStone3" )
+	( FileName "snd/gunhit/g_hit_stone3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepTree" )
+	( FileName "snd/player/footsteps/c_run_left_tree" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 ) // [1] 60.0
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepTree" )
+	( FileName "snd/player/footsteps/c_run_right_tree" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "LandingTree" )
+	( FileName "snd/player/footsteps/c_run_drop_tree.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "JumpTree" )
+	( FileName "snd/player/footsteps/c_run_jump_tree.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HitTree1" )
+	( FileName "snd/gunhit/g_hit_tree1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitTree2" )
+	( FileName "snd/gunhit/g_hit_tree2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitTree3" )
+	( FileName "snd/gunhit/g_hit_tree3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepWater" )
+	( FileName "snd/player/footsteps/c_run_left_water" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 ) // [1] 60.0
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepWater" )
+	( FileName "snd/player/footsteps/c_run_right_water" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "LandingWater" )
+	( FileName "snd/player/footsteps/c_run_drop_water.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "JumpWater" )
+	( FileName "snd/player/footsteps/c_run_jump_water.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HitWater" )
+	( FileName "snd/gunhit/g_hit_water.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepjar" )
+	( FileName "snd/player/footsteps/c_run_left_stone" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepjar" )
+	( FileName "snd/player/footsteps/c_run_right_stone" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Landingjar" )
+	( FileName "snd/player/footsteps/c_run_drop_stone.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Jumpjar" )
+	( FileName "snd/player/footsteps/c_run_jump_stone.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Hitjar1" )
+	( FileName "snd/gunhit/g_hit_jar1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hitjar2" )
+	( FileName "snd/gunhit/g_hit_jar2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hitjar3" )
+	( FileName "snd/gunhit/g_hit_jar3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepcushion" )
+	( FileName "snd/player/footsteps/c_run_left_cushion" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 ) // [1] 60.0
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepcushion" )
+	( FileName "snd/player/footsteps/c_run_right_cushion" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Landingcushion" )
+	( FileName "snd/player/footsteps/c_run_drop_cushion.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Jumpcushion" )
+	( FileName "snd/player/footsteps/c_run_jump_cushion.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Hitcushion" )
+	( FileName "snd/gunhit/g_hit_cushion.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootSteptire" )
+	( FileName "snd/player/footsteps/c_run_left_dirt" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 ) // [1] 60.0
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootSteptire" )
+	( FileName "snd/player/footsteps/c_run_right_dirt" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Landingtire" )
+	( FileName "snd/player/footsteps/c_run_drop_dirt.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Jumptire" )
+	( FileName "snd/player/footsteps/c_run_jump_dirt.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Hittire1" )
+	( FileName "snd/gunhit/g_hit_tire1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hittire2" )
+	( FileName "snd/gunhit/g_hit_tire2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hittire3" )
+	( FileName "snd/gunhit/g_hit_tire3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepPaper" )
+	( FileName "snd/player/footsteps/c_run_left_tree" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepPaper" )
+	( FileName "snd/player/footsteps/c_run_right_tree" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "LandingPaper" )
+	( FileName "snd/player/footsteps/c_run_drop_tree.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "JumpPaper" )
+	( FileName "snd/player/footsteps/c_run_jump_tree.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Hitpaper1" )
+	( FileName "snd/gunhit/g_hit_paper1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hitpaper2" )
+	( FileName "snd/gunhit/g_hit_paper2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hitpaper3" )
+	( FileName "snd/gunhit/g_hit_paper3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "LeftFootStepSnow" )
+	( FileName "snd/player/footsteps/c_run_left_snow" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "RightFootStepSnow" )
+	( FileName "snd/player/footsteps/c_run_right_snow" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "LandingSnow" )
+	( FileName "snd/player/footsteps/c_run_drop_snow.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "JumpSnow" )
+	( FileName "snd/player/footsteps/c_run_jump_snow.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HitSnow1" )
+	( FileName "snd/gunhit/g_hit_snow1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitSnow2" )
+	( FileName "snd/gunhit/g_hit_snow2.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HitSnow3" )
+	( FileName "snd/gunhit/g_hit_snow3.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 15.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "NanoLeftFootStepDirt" )
+	( FileName "snd/player/nanofootsteps/c_run_left_dirt" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 ) // [1] 60.0
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoRightFootStepDirt" )
+	( FileName "snd/player/nanofootsteps/c_run_right_dirt" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLandingDirt" )
+	( FileName "snd/player/nanofootsteps/c_run_drop_dirt.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.24 ) // [1] 0.18
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoJumpDirt" )
+	( FileName "snd/player/nanofootsteps/c_run_jump_dirt.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.24 ) // [1] 0.18
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLeftFootStepMetal" )
+	( FileName "snd/player/nanofootsteps/c_run_left_metal" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoRightFootStepMetal" )
+	( FileName "snd/player/nanofootsteps/c_run_right_metal" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLandingMetal" )
+	( FileName "snd/player/nanofootsteps/c_run_drop_metal.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoJumpMetal" )
+	( FileName "snd/player/nanofootsteps/c_run_jump_metal.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLeftFootStepStone" )
+	( FileName "snd/player/nanofootsteps/c_run_left_stone" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoRightFootStepStone" )
+	( FileName "snd/player/nanofootsteps/c_run_right_stone" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLandingStone" )
+	( FileName "snd/player/nanofootsteps/c_run_drop_stone.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoJumpStone" )
+	( FileName "snd/player/nanofootsteps/c_run_jump_stone.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLeftFootStepTree" )
+	( FileName "snd/player/nanofootsteps/c_run_left_tree" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 ) // [1] 60.0
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoRightFootStepTree" )
+	( FileName "snd/player/nanofootsteps/c_run_right_tree" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLandingTree" )
+	( FileName "snd/player/nanofootsteps/c_run_drop_tree.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoJumpTree" )
+	( FileName "snd/player/nanofootsteps/c_run_jump_tree.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLeftFootStepWater" )
+	( FileName "snd/player/nanofootsteps/c_run_left_water" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 ) // [1] 60.0
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoRightFootStepWater" )
+	( FileName "snd/player/nanofootsteps/c_run_right_water" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLandingWater" )
+	( FileName "snd/player/nanofootsteps/c_run_drop_water.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoJumpWater" )
+	( FileName "snd/player/nanofootsteps/c_run_jump_water.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 70.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLeftFootStepcushion" )
+	( FileName "snd/player/nanofootsteps/c_run_left_cushion" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 ) // [1] 60.0
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoRightFootStepcushion" )
+	( FileName "snd/player/nanofootsteps/c_run_right_cushion" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLandingcushion" )
+	( FileName "snd/player/nanofootsteps/c_run_drop_cushion.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoJumpcushion" )
+	( FileName "snd/player/nanofootsteps/c_run_jump_cushion.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 65.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLeftFootStepSnow" )
+	( FileName "snd/player/nanofootsteps/c_run_left_snow" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoRightFootStepSnow" )
+	( FileName "snd/player/nanofootsteps/c_run_right_snow" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.8 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoLandingSnow" )
+	( FileName "snd/player/nanofootsteps/c_run_drop_snow.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoJumpSnow" )
+	( FileName "snd/player/nanofootsteps/c_run_jump_snow.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.18 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+//ÀÚµ¿ À½¼º ¸Þ½ÃÁö
+( Sound
+	( SoundName "Stage_Start_TM_BL" )
+	( FileName "message/Stage_Start_TM_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Stage_Start_TM_GR" )
+	( FileName "message/Stage_Start_TM_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Stage_Start_GM_BL" )
+	( FileName "message/Stage_Start_GM_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Stage_Start_GM_GR" )
+	( FileName "message/Stage_Start_GM_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Stage_Start_DM_BL" )
+	( FileName "message/Stage_Start_DM_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Stage_Start_DM_GR" )
+	( FileName "message/Stage_Start_DM_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Stage_Start_TDM_BL" )
+	( FileName "message/Stage_Start_TDM_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Stage_Start_TDM_GR" )
+	( FileName "message/Stage_Start_TDM_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start_BL" )
+	( FileName "message/Round_Start_BL_1.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start2_BL" )
+	( FileName "message/Round_Start_BL_2.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start3_BL" )
+	( FileName "message/Round_Start_BL_3.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start4_BL" )
+	( FileName "message/Round_Start_BL_4.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start5_BL" )
+	( FileName "message/Round_Start_BL_5.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start_BL_GM" )
+	( FileName "message/Round_Start_BL_GM.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start_GR" )
+	( FileName "message/Round_Start_GR_1.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start2_GR" )
+	( FileName "message/Round_Start_GR_2.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start3_GR" )
+	( FileName "message/Round_Start_GR_3.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start4_GR" )
+	( FileName "message/Round_Start_GR_4.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start5_GR" )
+	( FileName "message/Round_Start_GR_5.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_Start6_GR" )
+	( FileName "message/Round_Start_GR_6.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Win_BL" )
+	( FileName "message/Round_End_Win_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Win_GR" )
+	( FileName "message/Round_End_Win_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Win_Ghost" )
+	( FileName "snd2/ghost/etc/GhostWin.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Win_Human" )
+	( FileName "snd2/ghost/etc/SodierWin.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_DM_BL" )
+	( FileName "message/Round_End_DM_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_DM_GR" )
+	( FileName "message/Round_End_DM_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Lose_BL" )
+	( FileName "message/Round_End_Lose_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Lose_GR" )
+	( FileName "message/Round_End_Lose_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Draw_BL" )
+	( FileName "message/Round_End_Draw_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Draw_GR" )
+	( FileName "message/Round_End_Draw_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_2_BL" )
+	( FileName "message/Multikill_2_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_3_BL" )
+	( FileName "message/Multikill_3_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_4_BL" )
+	( FileName "message/Multikill_4_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_5_BL" )
+	( FileName "message/Multikill_5_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_6_BL" )
+	( FileName "message/Multikill_6_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_7_BL" )
+	( FileName "message/Multikill_7_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_8_BL" )
+	( FileName "message/Multikill_8_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_1_GR" )
+	( FileName "message/Multikill_1_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_2_GR" )
+	( FileName "message/Multikill_2_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_3_GR" )
+	( FileName "message/Multikill_3_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_4_GR" )
+	( FileName "message/Multikill_4_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_5_GR" )
+	( FileName "message/Multikill_5_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_6_GR" )
+	( FileName "message/Multikill_6_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_7_GR" )
+	( FileName "message/Multikill_7_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Multikill_8_GR" )
+	( FileName "message/Multikill_8_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "GrenadeKill_BL" )
+	( FileName "message/GrenadeKill_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "GrenadeKill_GR" )
+	( FileName "message/GrenadeKill_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "KnifeKill_BL" )
+	( FileName "message/KnifeKill_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "KnifeKill_GR" )
+	( FileName "message/KnifeKill_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Headshot_BL" )
+	( FileName "message/Headshot_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Headshot_GR" )
+	( FileName "message/Headshot_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_A_1" )
+	( FileName "message/Bomb_Plant_BL_A_1.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_A_2" )
+	( FileName "message/Bomb_Plant_BL_A_2.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_B_1" )
+	( FileName "message/Bomb_Plant_BL_B_1.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_B_2" )
+	( FileName "message/Bomb_Plant_BL_B_2.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_A_1_C" )
+	( FileName "message/Bomb_Plant_BL_A_1_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_A_2_C" )
+	( FileName "message/Bomb_Plant_BL_A_2_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_B_1_C" )
+	( FileName "message/Bomb_Plant_BL_B_1_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_BL_B_2_C" )
+	( FileName "message/Bomb_Plant_BL_B_2_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Plant_GR" )
+	( FileName "message/Bomb_Plant_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Defuse_BL" )
+	( FileName "message/Round_End_Defuse_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Round_End_Defuse_GR" )
+	( FileName "message/Round_End_Defuse_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Grenade_BL" )
+	( FileName "message/Fireinthehole_Grenade_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Grenade_GR" )
+	( FileName "message/Fireinthehole_Grenade_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Grenade_BL_C" )
+	( FileName "message/Fireinthehole_Grenade_BL_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Grenade_GR_C" )
+	( FileName "message/Fireinthehole_Grenade_GR_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Flashbang_BL" )
+	( FileName "message/Fireinthehole_Flashbang_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Flashbang_GR" )
+	( FileName "message/Fireinthehole_Flashbang_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Flashbang_BL_C" )
+	( FileName "message/Fireinthehole_Flashbang_BL_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Flashbang_GR_C" )
+	( FileName "message/Fireinthehole_Flashbang_GR_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Smoke_BL" )
+	( FileName "message/Fireinthehole_Smoke_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Smoke_GR" )
+	( FileName "message/Fireinthehole_Smoke_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Smoke_BL_C" )
+	( FileName "message/Fireinthehole_Smoke_BL_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Fireinthehole_Smoke_GR_C" )
+	( FileName "message/Fireinthehole_Smoke_GR_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Die_LowDamage_BL" )
+	( FileName "message/Die_LowDamage_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Die_LowDamage_GR" )
+	( FileName "message/Die_LowDamage_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Die_HighDamage_BL" )
+	( FileName "message/Die_HighDamage_BL.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Die_HighDamage_GR" )
+	( FileName "message/Die_HighDamage_GR.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Found_A_Bomb_GR_1" )
+	( FileName "message/Found_A_Bomb_GR_1.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Found_B_Bomb_GR_1" )
+	( FileName "message/Found_B_Bomb_GR_1.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Found_A_Bomb_GR_1_C" )
+	( FileName "message/Found_A_Bomb_GR_1_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Found_B_Bomb_GR_1_C" )
+	( FileName "message/Found_B_Bomb_GR_1_C.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Congratulation" )
+	( FileName "snd/Congratulation.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "PickupC4" )
+	( FileName "snd/C4pickup.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "C4Out" )
+	( FileName "snd/weapon/c4/C4_Out.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Drop_Msg_BL_1" )
+	( FileName "snd/message/Bomb_Drop_Message_BL_1.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "Bomb_Drop_Msg_BL_2" )
+	( FileName "snd/message/Bomb_Drop_Message_BL_2.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "BreathSniper" )
+	( FileName "snd/player/Breath_Sniper.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "BreathSniperWoman" )
+	( FileName "snd/player/Breath_Sniper_Woman.wav" )
+	( 3DSound 0 )
+)
+
+( Sound
+	( SoundName "ShootFAMAS" )
+	( FileName "snd/weapon/famas/G_SHOOT_famas" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) 
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutFAMAS" )
+	( FileName "snd/weapon/famas/g_mzc_famas_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInFAMAS" )
+	( FileName "snd/weapon/famas/g_mzc_famas_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadFAMAS" )
+	( FileName "snd/weapon/famas/g_reload_famas.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackFAMAS" )
+	( FileName "snd/weapon/famas/g_mzc_famas_blowback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootXM8" )
+	( FileName "snd/weapon/xm8/G_SHOOT_xm8" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) 
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutXM8" )
+	( FileName "snd/weapon/xm8/g_mzc_xm8_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInXM8" )
+	( FileName "snd/weapon/xm8/g_mzc_xm8_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadXM8" )
+	( FileName "snd/weapon/xm8/g_reload_xm8.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "SelectXM8" )
+	( FileName "snd/weapon/xm8/g_mzc_xm8_select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+
+
+( Sound
+	( SoundName "ShootG36" )
+	( FileName "snd/weapon/g36/G_SHOOT_g36" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) 
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutG36" )
+	( FileName "snd/weapon/g36/g_mzc_g36_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInG36" )
+	( FileName "snd/weapon/g36/g_mzc_g36_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadG36" )
+	( FileName "snd/weapon/g36/g_reload_g36.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootGALIL" )
+	( FileName "snd/weapon/galil/G_SHOOT_galil" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) 
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutGALIL" )
+	( FileName "snd/weapon/galil/g_mzc_galil_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInGALIL" )
+	( FileName "snd/weapon/galil/g_mzc_galil_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadGALIL" )
+	( FileName "snd/weapon/galil/g_reload_galil.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootANACONDA" )
+	( FileName "snd/weapon/anaconda/G_SHOOT_anaconda" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipOutANACONDA" )
+	( FileName "snd/weapon/anaconda/g_mzc_anaconda_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 23.0 )
+)
+
+( Sound
+	( SoundName "ClipInANACONDA" )
+	( FileName "snd/weapon/anaconda/g_mzc_anaconda_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 23.0 )
+)
+
+( Sound
+	( SoundName "ReloadANACONDA" )
+	( FileName "snd/weapon/anaconda/g_reload_anaconda.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 23.0 )
+)
+
+( Sound
+	( SoundName "Reload2ANACONDA" )
+	( FileName "snd/weapon/anaconda/g_reload2_anaconda.wav" )
+	( 3DSound 1 )
+  ( InnerRadius 1.0 )
+	( OuterRadius 23.0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackANACONDA" )
+	( FileName "snd/weapon/anaconda/g_mzc_anaconda_bcback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 23.0 )
+)
+
+( Sound
+	( SoundName "ShootSCAR" )
+	( FileName "snd/weapon/scar/G_SHOOT_scar" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) 
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutSCAR" )
+	( FileName "snd/weapon/scar/g_mzc_scar_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInSCAR" )
+	( FileName "snd/weapon/scar/g_mzc_scar_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadSCAR" )
+	( FileName "snd/weapon/scar/g_reload_scar.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackSCAR" )
+	( FileName "snd/weapon/scar/g_mzc_scar_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootSpas12" )
+	( FileName "snd/weapon/spas12/g_shoot_spas12" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+( Sound
+	( SoundName "ClipInSpas12" )
+	( FileName "snd/weapon/spas12/g_mzc_spas12_bulletin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+( Sound
+	( SoundName "ReloadSpas12" )
+	( FileName "snd/weapon/spas12/g_reload_spas12.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+( Sound
+	( SoundName "BlowBackSpas12" )
+	( FileName "snd/weapon/spas12/g_mzc_spas12_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootGlock" )
+	( FileName "snd/weapon/glock/g_shoot_glock" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 120.0 ) //[1] 50.0 [2] 100.0 [3] 75.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutGlock" )
+	( FileName "snd/weapon/glock/g_mzc_glock_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInGlock" )
+	( FileName "snd/weapon/glock/g_mzc_glock_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadGlock" )
+	( FileName "snd/weapon/glock/g_reload_glock.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackGlock" )
+	( FileName "snd/weapon/glock/g_mzc_glock_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackGlock" )
+	( FileName "snd/weapon/glock/g_mzc_glock_bcback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+( Sound
+	( SoundName "ShootQBZ95" )
+	( FileName "snd/weapon/QBZ95/G_SHOOT_QBZ95" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 120.0 ) //[1] 50.0 [2] 100.0 [3] 75.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutQBZ95" )
+	( FileName "snd/weapon/QBZ95/g_mzc_QBZ95_ClipOut.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInQBZ95" )
+	( FileName "snd/weapon/QBZ95/g_mzc_QBZ95_ClipIn.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadQBZ95" )
+	( FileName "snd/weapon/QBZ95/g_reload_QBZ95.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackQBZ95" )
+	( FileName "snd/weapon/QBZ95/g_mzc_QBZ95_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "AxeWhip" ) 
+	( FileName "snd/weapon/axe/k_shoot_axe.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "AxeDeploy" )
+	( FileName "snd/weapon/axe/k_out_axe.wav" )
+	( 3DSound 1 )
+	( InnerRadius 5.0 )
+	( OuterRadius 20.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "AxeWood_1" ) 
+	( FileName "snd/weapon/axe/Axe_Wood_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "AxeWood_2" )
+	( FileName "snd/weapon/axe/Axe_Wood_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "AxeStone_1" ) 
+	( FileName "snd/weapon/axe/Axe_Stone_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "AxeStone_2" )
+	( FileName "snd/weapon/axe/Axe_Stone_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "AxeMetal_1" ) 
+	( FileName "snd/weapon/axe/Axe_Metal_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "AxeMetal_2" )
+	( FileName "snd/weapon/axe/Axe_Metal_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "AxeHit" ) 
+	( FileName "snd/weapon/axe/k_shoot_axe_player.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ShootKriss" )
+	( FileName "snd/weapon/Kriss/g_shoot_kriss" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 125.0 ) //[1] 70.0 [2] 140.0 [3] 105.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutKriss" )
+	( FileName "snd/weapon/kriss/g_mzc_kriss_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInKriss" )
+	( FileName "snd/weapon/kriss/g_mzc_kriss_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadKriss" )
+	( FileName "snd/weapon/kriss/g_reload_kriss.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "SelectKriss" )
+	( FileName "snd/weapon/kriss/g_mzc_kriss_select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootRPK" )
+	( FileName "snd/weapon/RPK/g_shoot_RPK" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 90.0 [2] 180.0 [3] 135.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutRPK" )
+	( FileName "snd/weapon/RPK/g_mzc_RPK_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInRPK" )
+	( FileName "snd/weapon/RPK/g_mzc_RPK_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadRPK" )
+	( FileName "snd/weapon/RPK/g_reload_RPK.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackRPK" )
+	( FileName "snd/weapon/RPK/g_mzc_RPK_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootAN94" )
+	( FileName "snd/weapon/AN94/g_shoot_an94" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0  [4] 115.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutAN94" )
+	( FileName "snd/weapon/AN94/g_mzc_an94_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInAN94" )
+	( FileName "snd/weapon/AN94/g_mzc_an94_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadAN94" )
+	( FileName "snd/weapon/AN94/g_reload_an94.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackAN94" )
+	( FileName "snd/weapon/AN94/an94_select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shovel_Attack" ) 
+	( FileName "snd/weapon/Shovel/Shovel_Attack.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shovel_Select" )
+	( FileName "snd/weapon/shovel/Shovel_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 5.0 )
+	( OuterRadius 20.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Shovel_Wood_1" ) 
+	( FileName "snd/weapon/axe/Axe_Wood_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Shovel_Wood_2" )
+	( FileName "snd/weapon/axe/Axe_Wood_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Shovel_Stone_1" ) 
+	( FileName "snd/weapon/axe/Axe_Stone_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Shovel_Stone_2" )
+	( FileName "snd/weapon/axe/Axe_Stone_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Shovel_Metal_1" ) 
+	( FileName "snd/weapon/axe/Axe_Metal_Stab.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Shovel_Metal_2" )
+	( FileName "snd/weapon/axe/Axe_Metal_Swing.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Shovel_Hit" ) 
+	( FileName "snd/weapon/axe/k_shoot_axe_player.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ShootBarret" )
+	( FileName "snd/weapon/barret/g_shoot_barret.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0  [4] 115.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutBarret" )
+	( FileName "snd/weapon/barret/g_mzc_barret_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInBarret" )
+	( FileName "snd/weapon/barret/g_mzc_barret_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadBarret" )
+	( FileName "snd/weapon/barret/g_reload_barret.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackBarret" )
+	( FileName "snd/weapon/barret/barret_select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootMP5-A" )
+	( FileName "snd/weapon/m4a1/G_SHOOT_M4A1_SILENCER" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 125.0 ) //[1] 70.0 [2] 140.0 [3] 105.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ShootSCARLIGHT" )
+	( FileName "snd/weapon/SCAR_LIght/G_shoot_scarlight" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) 
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutSCARLIGHT" )
+	( FileName "snd/weapon/SCAR_LIght/g_mzc_scarlight_clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInSCARLIGHT" )
+	( FileName "snd/weapon/SCAR_LIght/g_mzc_scarlight_clipin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackSCARLIGHT" )
+	( FileName "snd/weapon/SCAR_LIght/g_reload_scarlight.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadSCARLIGHT" )
+	( FileName "snd/weapon/SCAR_LIght/G_MZC_SCARlight_BBACK.WAV" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "NanoKnifeDeploy" )
+	( FileName "snd/weapon/NANOKNIFE/k_out_nanoknife.wav" )
+	( 3DSound 1 )
+	( InnerRadius 5.0 )
+	( OuterRadius 20.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "NanoKnifeShot" ) 
+	( FileName "snd/weapon/NANOKNIFE/K_SHOOT_NANOKNIFE.WAV" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "NanoKnifeWood_1" ) 
+	( FileName "snd/weapon/nanoknife/NANO_WOOD_STAB.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoKnifeWood_2" )
+	( FileName "snd/weapon/nanoknife/NANO_WOOD_SWING.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoKnifeStone_1" ) 
+	( FileName "snd/weapon/nanoknife/NANO_STONE_STAB.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoKnifeStone_2" )
+	( FileName "snd/weapon/nanoknife/NANO_STONE_SWING.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoKnifeMetal_1" ) 
+	( FileName "snd/weapon/nanoknife/NANO_METAL_STAB.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "NanoKnifeMetal_2" )
+	( FileName "snd/weapon/nanoknife/NANO_METAL_SWING.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "Katana_Whip" ) //  
+	( FileName "snd/weapon/Katana/Katana_Shoot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Hit" ) //  
+	( FileName "snd/weapon/Katana/Katana_Hit.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Metal_1" ) //  
+	( FileName "snd/weapon/Katana/Katana_MetalHit.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Metal_2" ) //  
+	( FileName "snd/weapon/Katana/Katana_MetalHit.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Stone_1" ) //  
+	( FileName "snd/weapon/Katana/Katana_StoneHit.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Stone_2" ) //  
+	( FileName "snd/weapon/Katana/Katana_StoneHit.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Wood_1" ) //  
+	( FileName "snd/weapon/Katana/Katana_WoodHit.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Wood_2" ) //  
+	( FileName "snd/weapon/Katana/Katana_WoodHit.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_putup" ) // Ä®Áý¿¡ Ä® ³ÖÀ»¶§ ¼Ò¸® 
+	( FileName "snd/weapon/Katana/Katana_putup.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Katana_Select" ) // Ä®Áý¿¡¼­ Ä® »¬¶§ ¼Ò¸®
+	( FileName "snd/weapon/Katana/Katana_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootWinchester" )
+	( FileName "snd/weapon/winchester/g_shoot_winchester" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipInWinchester" )
+	( FileName "snd/weapon/winchester/g_mzc_winchester_bulletin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadWinchester" )
+	( FileName "snd/weapon/winchester/g_reload_winchester.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "SelectWinchester" )
+	( FileName "snd/weapon/winchester/g_mzc_winchester_select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootM136" )
+	( FileName "snd/weapon/M136/M136_Shoot" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 115.0 ) //[1] 80.0 [2] 160.0 [3] 120.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipInM136" )
+	( FileName "snd/weapon/M136/M136_ClipIn.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadM136" )
+	( FileName "snd/weapon/M136/M136_Reload.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "SelectM136" )
+	( FileName "snd/weapon/M136/M136_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipOutM136" )
+	( FileName "snd/weapon/M136/M136_ClipOut.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackM136" )
+	( FileName "snd/weapon/M136/M136_ON.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackM136" )
+	( FileName "snd/weapon/M136/M136_OFF.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShotSoundStartM136" )
+	( FileName "snd/weapon/M136/M136_Spin.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootBerettaAR" )
+	( FileName "snd/weapon/BerettaAR/BerettaAR_Shoot" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) //[1] 80.0 [2] 160.0 [3] 120.0  [4] 115.0
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ShootM4A1Silencer" )
+	( FileName "snd/weapon/m4a1/g_shoot_m4a1_silencer" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 41.0 ) 
+	( MyLevelMultiply 0.85 )
+	( OtherLevelMultiply 0.6 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutBerettaAR" )
+	( FileName "snd/weapon/BerettaAR/BerettaAR_Clipout.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInBerettaAR" )
+	( FileName "snd/weapon/BerettaAR/BerettaAR_ClipIn.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackBerettaAR" )
+	( FileName "snd/weapon/BerettaAR/BerettaAR_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadBerettaAR" )
+	( FileName "snd/weapon/BerettaAR/BerettaAR_Reload.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipOutDualColt1911" )
+	( FileName "snd/weapon/Dual_Colt/Dual_Colt_ClipOut.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInDualColt1911" )
+	( FileName "snd/weapon/Dual_Colt/Dual_Colt_ClipIn.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadDualColt1911" )
+	( FileName "snd/weapon/Dual_Colt/Dual_Colt_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackDualColt1911" )
+	( FileName "snd/weapon/colt1911/g_mzc_colt1911_bback.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "DelBlowBackDualColt1911" )
+	( FileName "snd/weapon/Dual_Colt/Dual_Colt_Reload.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipOutDualUzi" )
+	( FileName "snd/weapon/Dual_Uzi/Dual_Uzi_ClipOut.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInDualUzi" )
+	( FileName "snd/weapon/Dual_Uzi/Dual_Uzi_ClipIn.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadDualUzi" )
+	( FileName "snd/weapon/Dual_Uzi/Dual_Uzi_Reload.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 0.2 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackDualUzi" )
+	( FileName "snd/weapon/Dual_Uzi/Dual_Uzi_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hulk_Select" )
+	( FileName "snd/weapon/HULKFIST/Hulk_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 5.0 )
+	( OuterRadius 20.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hulk_Whip" ) 
+	( FileName "snd/weapon/HULKFIST/Hulk_Shoot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "Hulk_Up_Select" )
+	( FileName "snd/weapon/HOSTHULKFIST/Hulk_Up_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 5.0 )
+	( OuterRadius 20.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HULK_UP_Whip" ) 
+	( FileName "snd/weapon/HOSTHULKFIST/Hulk_Up_Shoot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ReloadThompson_Drum" )
+	( FileName "snd/weapon/Thompson_Drum/Thompson_Drum_Reload.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ShootThompson_Drum" )
+	( FileName "snd/weapon/Thompson_Drum/Thompson_Drum_Shoot" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 138.0 ) 
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 0.9 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "ClipOutThompson_Drum" )
+	( FileName "snd/weapon/Thompson_Drum/Thompson_Drum_ClipOut.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "ClipInThompson_Drum" )
+	( FileName "snd/weapon/Thompson_Drum/Thompson_Drum_ClipIn.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "BlowBackThompson_Drum" )
+	( FileName "snd/weapon/Thompson_Drum/Thompson_Drum_Select.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 80.0 )
+	( MyLevelMultiply 0.5 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 0 )
+)
+
+( Sound
+	( SoundName "HulkFistWood_1" ) 
+	( FileName "snd/weapon/HULKFIST/Hulk_WoodHit_Combo1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HulkFistWood_2" )
+	( FileName "snd/weapon/HULKFIST/Hulk_WoodHit_BigShot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HulkFistStone_1" ) 
+	( FileName "snd/weapon/HULKFIST/Hulk_StoneHit_Combo1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HulkFistStone_2" )
+	( FileName "snd/weapon/HULKFIST/Hulk_StoneHit_BigShot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HulkFistMetal_1" ) 
+	( FileName "snd/weapon/HULKFIST/Hulk_MetalHit_Combo1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HulkFistMetal_2" )
+	( FileName "snd/weapon/HULKFIST/Hulk_MetalHit_BigShot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HostHulkFistWood_1" ) 
+	( FileName "snd/weapon/HULKFIST/Hulk_WoodHit_Combo1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HostHulkFistWood_2" )
+	( FileName "snd/weapon/HOSTHULKFIST/HulkUp_WoodHit_BigShot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HostHulkFistStone_1" ) 
+	( FileName "snd/weapon/HULKFIST/Hulk_StoneHit_Combo1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HostHulkFistStone_2" )
+	( FileName "snd/weapon/HOSTHULKFIST/HulkUp_StoneHit_BigShot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HostHulkFistMetal_1" ) 
+	( FileName "snd/weapon/HULKFIST/Hulk_MetalHit_Combo1.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)
+
+( Sound
+	( SoundName "HostHulkFistMetal_2" )
+	( FileName "snd/weapon/HOSTHULKFIST/HulkUp_MetalHit_BigShot.wav" )
+	( 3DSound 1 )
+	( InnerRadius 1.0 )
+	( OuterRadius 30.0 )
+	( MyLevelMultiply 1.0 )
+	( OtherLevelMultiply 1.0 )
+	( RollOff 1 )
+)

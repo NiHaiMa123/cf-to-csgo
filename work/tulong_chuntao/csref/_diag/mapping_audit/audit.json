@@ -1,0 +1,101 @@
+{
+  "skin_sha256": "26f1e9d63b640b60d54b00001de0ebb55d6f514e64e58b75c0070ef01d977e33",
+  "vertices": 1128,
+  "triangles": 896,
+  "mesh_name": "objObject03000",
+  "rebind_to_original_Box01": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -8.881784197001252e-16
+    ],
+    [
+      5.551115123125783e-17,
+      1.0,
+      5.551115123125783e-17,
+      -8.881784197001252e-16
+    ],
+    [
+      1.3877787807814457e-17,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_matrix": [
+    [
+      0.27487755177996026,
+      -0.3615729139682308,
+      0.8909025532638108,
+      21.326304639647553
+    ],
+    [
+      -0.12168234066650664,
+      0.9060629650600801,
+      0.40526943052302417,
+      7.929906098940098
+    ],
+    [
+      -0.9537482579262597,
+      -0.21980657686033525,
+      0.2050593311009427,
+      6.986443031663935
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "variants": {
+    "u_v": {
+      "swap": false,
+      "flip_u": false,
+      "flip_v": false
+    },
+    "u_flip_v": {
+      "swap": false,
+      "flip_u": false,
+      "flip_v": true
+    },
+    "flip_u_v": {
+      "swap": false,
+      "flip_u": true,
+      "flip_v": false
+    },
+    "flip_u_flip_v": {
+      "swap": false,
+      "flip_u": true,
+      "flip_v": true
+    },
+    "swap_u_v": {
+      "swap": true,
+      "flip_u": false,
+      "flip_v": false
+    },
+    "swap_u_flip_v": {
+      "swap": true,
+      "flip_u": false,
+      "flip_v": true
+    },
+    "swap_flip_u_v": {
+      "swap": true,
+      "flip_u": true,
+      "flip_v": false
+    },
+    "swap_flip_u_flip_v": {
+      "swap": true,
+      "flip_u": true,
+      "flip_v": true
+    }
+  },
+  "shader": "Emission; no lighting, no specular"
+}

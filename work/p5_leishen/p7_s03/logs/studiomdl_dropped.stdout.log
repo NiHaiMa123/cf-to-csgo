@@ -1,0 +1,89 @@
+WARNING: AppFramework : Unable to load module p4lib.dll!
+qdir:    "d:\project\cf_to_csgo\work\p5_leishen\p7_s03\source1\dropped\"
+gamedir: "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\"
+g_path:  "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\source1\dropped\w_rif_m4a1_dropped.qc"
+Building binary model files...
+Working on "w_rif_m4a1_dropped.qc"
+SMD MODEL w_rif_m4a1.smd
+SMD MODEL w_rif_m4a1_holsterstrap.smd
+SMD MODEL w_rif_m4a1_dropped_anims\dropped.smd
+SMD MODEL w_rif_m4a1_dropped_physics.smd
+Processing LOD for material: rif_m4a1
+Processing LOD for material: holsterstrap
+Model has 1 convex sub-parts
+Collision model completed.
+---------------------
+writing D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1_dropped.mdl:
+bones         3560 bytes (10)
+   animation       x       y       ips    angle
+animations     108 bytes (1 anims) (1 frames) [0:00]
+sequences      256 bytes (1 seq) 
+hdr@0097F504=79C10200
+ik/pose        640 bytes
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+hdr@0097F504=79C10200
+textures       144 bytes
+keyvalues      236 bytes
+hdr@0097F4FC=79C10398
+hdr@0097F504=79C10200
+bone transforms     1424 bytes
+bone flex driver       0 bytes
+bodygroup presets       0 bytes
+Collision model volume 572.76 in^3
+collision        0 bytes
+total         6940
+WARNING: Could not locate VMT for p4 add: d:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\materials\models\weapons\shared\holsterstrap\holsterstrap.vmt
+---------------------
+writing D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1_dropped.vvd:
+vertices     46608 bytes (971 vertices)
+vertices     18816 bytes (392 vertices)
+tangents     15536 bytes (971 vertices)
+tangents      6272 bytes (392 vertices)
+total        87296 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1_dropped.sw.vtx":
+body parts:        24 bytes
+models:            80 bytes
+model LODs:        48 bytes
+meshes:            18 bytes
+strip groups:      66 bytes
+strips:            70 bytes
+verts:          12267 bytes
+indices:         9288 bytes
+bone changes:       8 bytes
+everything:     21857 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1_dropped.dx80.vtx":
+body parts:        24 bytes
+models:            80 bytes
+model LODs:        48 bytes
+meshes:            18 bytes
+strip groups:      66 bytes
+strips:            70 bytes
+verts:          12267 bytes
+indices:         9288 bytes
+bone changes:      24 bytes
+everything:     21873 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s03\isolated_game\csgo\models/weapons\w_rif_m4a1_dropped.dx90.vtx":
+body parts:        24 bytes
+models:            80 bytes
+model LODs:        48 bytes
+meshes:            18 bytes
+strip groups:      66 bytes
+strips:            70 bytes
+verts:          12267 bytes
+indices:         9288 bytes
+bone changes:      24 bytes
+everything:     21873 bytes
+WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
+WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
+
+Completed "w_rif_m4a1_dropped.qc"

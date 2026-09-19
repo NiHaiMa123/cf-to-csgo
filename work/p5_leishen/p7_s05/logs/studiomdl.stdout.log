@@ -1,0 +1,200 @@
+WARNING: AppFramework : Unable to load module p4lib.dll!
+qdir:    "d:\project\cf_to_csgo\work\p5_leishen\p7_s05\source1\"
+gamedir: "D:\project\cf_to_csgo\work\p5_leishen\p7_s05\isolated_game\csgo\"
+g_path:  "D:\project\cf_to_csgo\work\p5_leishen\p7_s05\source1\v_rif_m4a1.qc"
+Building binary model files...
+Working on "v_rif_m4a1.qc"
+SMD MODEL cf_native_vm.smd
+SMD MODEL v_rif_m4a1_anims\idle.smd
+SMD MODEL v_rif_m4a1_anims\fire1.smd
+SMD MODEL v_rif_m4a1_anims\fire2.smd
+SMD MODEL v_rif_m4a1_anims\fire3.smd
+SMD MODEL v_rif_m4a1_anims\reload.smd
+SMD MODEL v_rif_m4a1_anims\draw.smd
+SMD MODEL v_rif_m4a1_anims\lookat01.smd
+SMD MODEL v_rif_m4a1_anims\lookat01_prepare.smd
+SMD MODEL v_rif_m4a1_anims\lookat01_loop.smd
+Processing LOD for material: rif_m4a1
+Processing LOD for material: cf_foxhand_bl
+Processing LOD for material: cf_foxarm_bl
+---------------------
+writing D:\project\cf_to_csgo\work\p5_leishen\p7_s05\isolated_game\csgo\models/weapons\v_rif_m4a1.mdl:
+Loading preexisting model: D:\project\cf_to_csgo\work\p5_leishen\p7_s05\isolated_game\csgo\models/weapons\v_rif_m4a1.mdl
+   Found 9 preexisting sequences.
+bones        27948 bytes (108)
+   animation       x       y       ips    angle
+$BoneSaveFrame "v_weapon" position rotation
+$BoneSaveFrame "v_weapon.Bip01" rotation
+$BoneSaveFrame "v_weapon.Bip01_Pelvis" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine1" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine2" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine3" rotation
+$BoneSaveFrame "v_weapon.Bip01_Neck" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Clavicle" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_UpperArm" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Forearm" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Hand" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_ForeTwist" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Clavicle" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_UpperArm" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Forearm" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Hand" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_ForeTwist" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger0" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger01" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger02" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger1" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger11" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger12" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger2" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger21" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger22" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger3" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger31" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger32" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger4" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger41" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger42" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger0" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger01" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger02" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger1" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger11" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger12" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger2" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger21" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger22" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger3" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger31" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger32" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger4" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger41" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger42" rotation
+$BoneSaveFrame "FvARM-bone" rotation // (0.97)
+$BoneSaveFrame "FvARM-bone Pelvis" position rotation
+$BoneSaveFrame "FvARM-bone Spine" rotation
+$BoneSaveFrame "FvARM-bone Spine1" position rotation
+$BoneSaveFrame "FvARM-bone Neck" rotation
+$BoneSaveFrame "FvARM-bone L Clavicle" position rotation
+$BoneSaveFrame "FvARM-bone L UpperArm" position rotation
+$BoneSaveFrame "FvARM-bone L ForeArm" position rotation
+$BoneSaveFrame "FvARM-bone L Hand" position rotation
+$BoneSaveFrame "FvARM-bone L Finger0" position rotation
+$BoneSaveFrame "FvARM-bone L Finger01" position rotation
+$BoneSaveFrame "FvARM-bone L Finger02" position rotation
+$BoneSaveFrame "FvARM-bone L Finger1" position rotation
+$BoneSaveFrame "FvARM-bone L Finger11" position rotation
+$BoneSaveFrame "FvARM-bone L Finger12" position rotation
+$BoneSaveFrame "FvARM-bone L Finger2" position rotation
+$BoneSaveFrame "FvARM-bone L Finger21" position rotation
+$BoneSaveFrame "FvARM-bone L Finger22" rotation // (1.91)
+$BoneSaveFrame "FvARM-bone L Finger3" position rotation
+$BoneSaveFrame "FvARM-bone L Finger31" position rotation
+$BoneSaveFrame "FvARM-bone L Finger32" position rotation
+$BoneSaveFrame "FvARM-bone L Finger4" position rotation
+$BoneSaveFrame "FvARM-bone L Finger41" rotation // (1.97)
+$BoneSaveFrame "FvARM-bone L Finger42" rotation // (1.25)
+$BoneSaveFrame "FvARM-bone L ForeTwist" position rotation
+$BoneSaveFrame "FvARM-bone R Clavicle" rotation
+$BoneSaveFrame "FvARM-bone R UpperArm" position rotation
+$BoneSaveFrame "FvARM-bone R ForeArm" position rotation
+$BoneSaveFrame "FvARM-bone R Hand" position rotation
+$BoneSaveFrame "FvARM-bone R Finger0" position rotation
+$BoneSaveFrame "FvARM-bone R Finger01" position rotation
+$BoneSaveFrame "FvARM-bone R Finger02" position rotation
+$BoneSaveFrame "FvARM-bone R Finger1" position rotation
+$BoneSaveFrame "FvARM-bone R Finger11" position rotation
+$BoneSaveFrame "FvARM-bone R Finger12" position rotation
+$BoneSaveFrame "FvARM-bone R Finger2" position rotation
+$BoneSaveFrame "FvARM-bone R Finger21" position rotation
+$BoneSaveFrame "FvARM-bone R Finger22" position rotation
+$BoneSaveFrame "FvARM-bone R Finger3" position rotation
+$BoneSaveFrame "FvARM-bone R Finger31" position rotation
+$BoneSaveFrame "FvARM-bone R Finger32" position rotation
+$BoneSaveFrame "FvARM-bone R Finger4" position rotation
+$BoneSaveFrame "FvARM-bone R Finger41" position rotation
+$BoneSaveFrame "FvARM-bone R Finger42" position rotation
+$BoneSaveFrame "FvARM-bone R ForeTwist" position rotation
+$BoneSaveFrame "FvARM-bone Prop1" position rotation
+$BoneSaveFrame "Dummy01" position rotation
+$BoneSaveFrame "Bone02" rotation
+$BoneSaveFrame "Box001" position rotation
+$BoneSaveFrame "Box002" rotation // (0.43)
+$BoneSaveFrame "Box003" position rotation
+$BoneSaveFrame "Box005" position rotation
+$BoneSaveFrame "Box006" position rotation
+$BoneSaveFrame "Box004" position rotation
+$BoneSaveFrame "Bone04" position rotation
+$BoneSaveFrame "Bone06" position rotation
+$BoneSaveFrame "v_weapon.flash" rotation
+$BoneSaveFrame "v_weapon.shelleject" rotation
+$BoneSaveFrame "v_weapon.stattrack" rotation
+$BoneSaveFrame "v_weapon.uid" rotation
+animations   81772 bytes (9 anims) (560 frames) [0:05]
+Building sequence index remapping table...
+No re-ordering required.
+sequences     3336 bytes (9 seq) 
+hdr@00DEF124=78DD0200
+ik/pose        164 bytes
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+hdr@00DEF124=78DD0200
+textures       208 bytes
+keyvalues      108 bytes
+hdr@00DEF11C=78DD0398
+hdr@00DEF124=78DD0200
+bone transforms    14752 bytes
+bone flex driver       0 bytes
+bodygroup presets       0 bytes
+collision        0 bytes
+total       131380
+---------------------
+writing models/weapons\v_rif_m4a1.ani:
+blocks	         2
+total        27952
+---------------------
+writing D:\project\cf_to_csgo\work\p5_leishen\p7_s05\isolated_game\csgo\models/weapons\v_rif_m4a1.vvd:
+vertices    360576 bytes (7512 vertices)
+tangents    120192 bytes (7512 vertices)
+total       480832 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s05\isolated_game\csgo\models/weapons\v_rif_m4a1.sw.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           105 bytes
+verts:          67608 bytes
+indices:        61560 bytes
+bone changes:       8 bytes
+everything:    129471 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s05\isolated_game\csgo\models/weapons\v_rif_m4a1.dx80.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           175 bytes
+verts:          67779 bytes
+indices:        61560 bytes
+bone changes:     504 bytes
+everything:    130208 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\p5_leishen\p7_s05\isolated_game\csgo\models/weapons\v_rif_m4a1.dx90.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           105 bytes
+verts:          67608 bytes
+indices:        61560 bytes
+bone changes:     432 bytes
+everything:    129895 bytes
+WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
+WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
+
+Completed "v_rif_m4a1.qc"

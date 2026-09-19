@@ -1,0 +1,4152 @@
+{
+ "kukri_beast_count": 573,
+ "spring_count": 19,
+ "spring": [
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_BL.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_GR.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_WOMAN_BL.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_WOMAN_GR.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_Spring_A.PNG",
+   "size": 480813,
+   "md5": "E1ECD144560E01A43654383844D4222D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_Spring_N.PNG",
+   "size": 806427,
+   "md5": "D3FAFA713914A0248CEC26D622E00B3C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_spring.DTX",
+   "size": 524452,
+   "md5": "035572323F9FB511C0EC11D5FA0ADED0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Spring.CFG",
+   "size": 2915,
+   "md5": "A27AE078823F03B50B9BCB2FBC38B2F9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Spring_S.PNG",
+   "size": 1183802,
+   "md5": "3ACBA03F33264874C8B5AAAE482C7D7D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Spring.DTX",
+   "size": 32932,
+   "md5": "271A1592BD277310E0F064E8BB43B8CF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Spring_BG.DTX",
+   "size": 1002,
+   "md5": "8DC6B32CC1D1EEA413C195544F5EE59B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Spring_EFFECT.DTX",
+   "size": 632,
+   "md5": "CE920E83529430BA87070C373CD5BDA9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Spring_LINE.DTX",
+   "size": 3962,
+   "md5": "3C27AC7229B09C24A127B07F03A6F7E4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_Spring.DTX",
+   "size": 720,
+   "md5": "CB73606F8A29C2FC40057714ED58568D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_Spring.DTX",
+   "size": 4033,
+   "md5": "E503C068D7E6E031A28DE871641A8917",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_Spring.BIN",
+   "size": 10921,
+   "md5": "F4CB53AA9425999B87F966B7DDDA7219",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_Spring.BIN",
+   "size": 5459,
+   "md5": "DA1DAA5C27DBD1C218CACF6EAA3A3DCC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_Spring.BIN",
+   "size": 36259,
+   "md5": "5A7767DE4FCCAE596C0AF8BB431C570C",
+   "md5_complete": true
+  }
+ ],
+ "hits": [
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_OBJ_KUKRI_BEAST_GC_GLOW.LTB",
+   "size": 318,
+   "md5": "757254262C0960DE92BC63238A039CB4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_OBJ_KUKRI_BEAST_GC_GLOW_2.LTB",
+   "size": 384,
+   "md5": "6B2E44F9D8B7DCB2A2EC716BF870BFE5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_OBJ_KUKRI_BEAST_GC_SHINE.LTB",
+   "size": 276,
+   "md5": "1C9F8C591101FAA489382D639358F697",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_BD_OBJ_KUKRI_BEAST_ICE_LINE_01.LTB",
+   "size": 1348,
+   "md5": "8DD8DAAEDB72A703A6C27F286AABA88E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_se_gun_Kukri_Beast_trail_01.LTB",
+   "size": 1621,
+   "md5": "27DE67546B6F65D24C0EBB622432D22E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_se_gun_Kukri_Beast_trail_02.LTB",
+   "size": 1601,
+   "md5": "80D5CEC949CA0024D43C6D8A79BDB7A3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_se_gun_Kukri_Beast_trail_03.LTB",
+   "size": 1592,
+   "md5": "28503A6CA55F27B6CB85EDE7DA2C0AA8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_GUN_KUKRI_BEAST_TRAIL_01.LTB",
+   "size": 1758,
+   "md5": "F8CAD3524BF3575D04A1F83DE35208A6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_GUN_KUKRI_BEAST_TRAIL_02.LTB",
+   "size": 1727,
+   "md5": "5F7A0612E269C3CCEEC532630671A3EC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_GUN_KUKRI_BEAST_TRAIL_03.LTB",
+   "size": 1713,
+   "md5": "5CC9C5F24373EFD9DBE5499CDDFF30AC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_KUKRI_BEAST_CFPASSS9_01.LTB",
+   "size": 538,
+   "md5": "426E19FA605EAC3E7180BD2B9A2D83B4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_KUKRI_BEAST_CFPASSS9_02.LTB",
+   "size": 514,
+   "md5": "CAE2FBD2E7E495696D3ED959C7FFA379",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_KUKRI_BEAST_GA_01.LTB",
+   "size": 11006,
+   "md5": "0E31A5DF51E67EAE2F47C4C3059E2B02",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_KUKRI_BEAST_GA_02.LTB",
+   "size": 1874,
+   "md5": "4299964605BAF18257800F739C2AA5A1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_KUKRI_BEAST_HWG_01.LTB",
+   "size": 11894,
+   "md5": "037FCD693B44C94EC9F37B861CDAEA3E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_KUKRI_BEAST_HWG_02.LTB",
+   "size": 17224,
+   "md5": "C352BF1405338E07D3D6DAA30C2C924C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_21WC.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_21WC_BL.LTB",
+   "size": 45911,
+   "md5": "DB4154D556B9FE3EE7D74A4463509253",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_21WC_GR.LTB",
+   "size": 48669,
+   "md5": "DFDCFA7A7774B4A1E9EFBA48EC67D737",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_21WC_WOMAN_BL.LTB",
+   "size": 44959,
+   "md5": "259D499F94610FBD8C63BAA150A2B5F3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_21WC_WOMAN_GR.LTB",
+   "size": 44265,
+   "md5": "393EB018C8DE6BCA467D3BFE31C874EC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_AD.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_AD_BL.LTB",
+   "size": 45899,
+   "md5": "647754920E5F0E3E52EEB6F088FD16B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_AD_GR.LTB",
+   "size": 45899,
+   "md5": "647754920E5F0E3E52EEB6F088FD16B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_AD_WOMAN_BL.LTB",
+   "size": 45899,
+   "md5": "647754920E5F0E3E52EEB6F088FD16B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_AD_WOMAN_GR.LTB",
+   "size": 45899,
+   "md5": "647754920E5F0E3E52EEB6F088FD16B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BL.LTB",
+   "size": 45905,
+   "md5": "4E3986677AD7939C179AFD2196AAEFFD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BL.LTB",
+   "size": 45905,
+   "md5": "4E3986677AD7939C179AFD2196AAEFFD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BO.LTB",
+   "size": 76124,
+   "md5": "7BD98660D924B676508E10AB6CBF8992",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BO_BL.LTB",
+   "size": 95236,
+   "md5": "36BB058ABDB489881337E670E93F7F97",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BO_GR.LTB",
+   "size": 95236,
+   "md5": "36BB058ABDB489881337E670E93F7F97",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BO_WOMAN_BL.LTB",
+   "size": 95236,
+   "md5": "36BB058ABDB489881337E670E93F7F97",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_BO_WOMAN_GR.LTB",
+   "size": 95236,
+   "md5": "36BB058ABDB489881337E670E93F7F97",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10.LTB",
+   "size": 76124,
+   "md5": "7BD98660D924B676508E10AB6CBF8992",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_BL.LTB",
+   "size": 55702,
+   "md5": "209CEA208533FF8A5E5E2786ECAAAF0A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_GP.LTB",
+   "size": 76124,
+   "md5": "7BD98660D924B676508E10AB6CBF8992",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_GP_BL.LTB",
+   "size": 55705,
+   "md5": "6BF080089BC4203893153C35E1B636B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_GP_GR.LTB",
+   "size": 55705,
+   "md5": "6BF080089BC4203893153C35E1B636B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_GP_WOMAN_BL.LTB",
+   "size": 55705,
+   "md5": "6BF080089BC4203893153C35E1B636B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_GP_WOMAN_GR.LTB",
+   "size": 55705,
+   "md5": "6BF080089BC4203893153C35E1B636B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_GR.LTB",
+   "size": 55702,
+   "md5": "209CEA208533FF8A5E5E2786ECAAAF0A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_WOMAN_BL.LTB",
+   "size": 55702,
+   "md5": "209CEA208533FF8A5E5E2786ECAAAF0A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_CFPassS10_WOMAN_GR.LTB",
+   "size": 55702,
+   "md5": "209CEA208533FF8A5E5E2786ECAAAF0A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Chimera.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Chimera_BL.LTB",
+   "size": 45960,
+   "md5": "6B8CE694665A2AF14AD55A967600C134",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Chimera_GR.LTB",
+   "size": 48755,
+   "md5": "A20A14122D3A54AEDD58CF876EF566EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Chimera_WOMAN_BL.LTB",
+   "size": 45248,
+   "md5": "6D0C6F2CB9C5E3AB9CA55DDE29AB84CA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Chimera_WOMAN_GR.LTB",
+   "size": 44230,
+   "md5": "097687B57A7E86137D6B332A17FDF005",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Dsc.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Dsc_BL.LTB",
+   "size": 46051,
+   "md5": "E807F779D23F5D271853B3543295AB37",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Dsc_GR.LTB",
+   "size": 48857,
+   "md5": "E4A942A37E6FAAB7D76A041A329E3CC9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Dsc_WOMAN_BL.LTB",
+   "size": 45192,
+   "md5": "E607742BA044A750184F1B1E24247CBF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Dsc_WOMAN_GR.LTB",
+   "size": 44394,
+   "md5": "919AA1CDCF37D3C04DD805447FF3FC7C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_FaLang.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_FaLang_BL.LTB",
+   "size": 127908,
+   "md5": "CFA120B6CB956CC0ED04048633E31158",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_FaLang_GR.LTB",
+   "size": 127908,
+   "md5": "CFA120B6CB956CC0ED04048633E31158",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_FaLang_WOMAN_BL.LTB",
+   "size": 127908,
+   "md5": "CFA120B6CB956CC0ED04048633E31158",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_FaLang_WOMAN_GR.LTB",
+   "size": 127908,
+   "md5": "CFA120B6CB956CC0ED04048633E31158",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GC.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GC_BL.LTB",
+   "size": 45912,
+   "md5": "06A1B294F966D184BC48A21971A35524",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GC_GR.LTB",
+   "size": 45912,
+   "md5": "06A1B294F966D184BC48A21971A35524",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GC_WOMAN_BL.LTB",
+   "size": 45912,
+   "md5": "06A1B294F966D184BC48A21971A35524",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GC_WOMAN_GR.LTB",
+   "size": 45912,
+   "md5": "06A1B294F966D184BC48A21971A35524",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GR.LTB",
+   "size": 48661,
+   "md5": "6E4DA0D86E273212624FE43F20DE6C06",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_GR.LTB",
+   "size": 48661,
+   "md5": "6E4DA0D86E273212624FE43F20DE6C06",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_HwG.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_HwG_BL.LTB",
+   "size": 73742,
+   "md5": "CED1D04E0880408B1BBD45B59C7ED620",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_HwG_GR.LTB",
+   "size": 73742,
+   "md5": "CED1D04E0880408B1BBD45B59C7ED620",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_HwG_WOMAN_BL.LTB",
+   "size": 73742,
+   "md5": "CED1D04E0880408B1BBD45B59C7ED620",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_HwG_WOMAN_GR.LTB",
+   "size": 73742,
+   "md5": "CED1D04E0880408B1BBD45B59C7ED620",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_LNY2026.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_LNY2026_BL.LTB",
+   "size": 53279,
+   "md5": "528DFE4E663F04481388BBB1FFD657C9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_LNY2026_GR.LTB",
+   "size": 53279,
+   "md5": "528DFE4E663F04481388BBB1FFD657C9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_LNY2026_WOMAN_BL.LTB",
+   "size": 53279,
+   "md5": "528DFE4E663F04481388BBB1FFD657C9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_LNY2026_WOMAN_GR.LTB",
+   "size": 53279,
+   "md5": "528DFE4E663F04481388BBB1FFD657C9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NG_Jade.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NG_Jade_BL.LTB",
+   "size": 45958,
+   "md5": "77D2E900955F42408777C2E91D53428A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NG_Jade_GR.LTB",
+   "size": 48672,
+   "md5": "015D6B13E8F1B610DF360E1224D0B325",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NG_Jade_WOMAN_BL.LTB",
+   "size": 45012,
+   "md5": "2C5FD9B5B6852BA97B2D676C14C8B2D1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NG_Jade_WOMAN_GR.LTB",
+   "size": 44084,
+   "md5": "756E89FB339A4DE9EA4EE3E106E6C4EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NobleGold_Ice.LTB",
+   "size": 76124,
+   "md5": "7BD98660D924B676508E10AB6CBF8992",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NobleGold_Ice_BL.LTB",
+   "size": 66047,
+   "md5": "BD208ECCDEF2CFC99501C54FE6051838",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NobleGold_Ice_GR.LTB",
+   "size": 66047,
+   "md5": "BD208ECCDEF2CFC99501C54FE6051838",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NobleGold_Ice_WOMAN_BL.LTB",
+   "size": 66047,
+   "md5": "BD208ECCDEF2CFC99501C54FE6051838",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_NobleGold_Ice_WOMAN_GR.LTB",
+   "size": 66047,
+   "md5": "BD208ECCDEF2CFC99501C54FE6051838",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_QQMBS.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_QQMBS_BL.LTB",
+   "size": 45912,
+   "md5": "942480ACCB6688D6822D7F8C8B5E68EE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_QQMBS_GR.LTB",
+   "size": 48668,
+   "md5": "D4997BA7C0336EF00F1B58FE24BF80ED",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_QQMBS_WOMAN_BL.LTB",
+   "size": 44962,
+   "md5": "03E75A57C507211429A60859B595D0F7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_QQMBS_WOMAN_GR.LTB",
+   "size": 44268,
+   "md5": "CF5143358F96345C50D8AA2C26E9487D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_BL.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_GR.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_WOMAN_BL.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Spring_WOMAN_GR.LTB",
+   "size": 42253,
+   "md5": "FA918DF5C9ED95D7828AAE37E9F83664",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_SS.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_SS_BL.LTB",
+   "size": 108191,
+   "md5": "8D7EF76DBE3738982A5C10A7D1863BF9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_SS_GR.LTB",
+   "size": 108191,
+   "md5": "8D7EF76DBE3738982A5C10A7D1863BF9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_SS_WOMAN_BL.LTB",
+   "size": 108191,
+   "md5": "8D7EF76DBE3738982A5C10A7D1863BF9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_SS_WOMAN_GR.LTB",
+   "size": 108191,
+   "md5": "8D7EF76DBE3738982A5C10A7D1863BF9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_WOMAN_BL.LTB",
+   "size": 44954,
+   "md5": "D56244740DD805307B18A6BC931E5859",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_WOMAN_BL.LTB",
+   "size": 44954,
+   "md5": "D56244740DD805307B18A6BC931E5859",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_WOMAN_GR.LTB",
+   "size": 44261,
+   "md5": "B53CEF324DC3DE12E5E215166B1825CF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_WOMAN_GR.LTB",
+   "size": 44261,
+   "md5": "B53CEF324DC3DE12E5E215166B1825CF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Xiaodingdang.LTB",
+   "size": 76201,
+   "md5": "FDB032AA1ACE332A704D84AE71CBBF04",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Xiaodingdang_BL.LTB",
+   "size": 45916,
+   "md5": "AB8B4612EF7075681B4B22495B1E8039",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Xiaodingdang_GR.LTB",
+   "size": 45916,
+   "md5": "AB8B4612EF7075681B4B22495B1E8039",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Xiaodingdang_WOMAN_BL.LTB",
+   "size": 45916,
+   "md5": "AB8B4612EF7075681B4B22495B1E8039",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-Kukri_Beast_Xiaodingdang_WOMAN_GR.LTB",
+   "size": 45916,
+   "md5": "AB8B4612EF7075681B4B22495B1E8039",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast.LTB",
+   "size": 14957,
+   "md5": "70E6AC67D9E127601DBE0136F2B01548",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_BO.LTB",
+   "size": 38412,
+   "md5": "FD77017B63CFC6C04DE6EF839343974D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_BO_Preview.LTB",
+   "size": 33284,
+   "md5": "FD306EF9711FDC17AF4236A867398B4E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_CFPassS10.LTB",
+   "size": 16335,
+   "md5": "692C983B2BC8A403018981CAF657D396",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_CFPassS10_Preview.LTB",
+   "size": 14955,
+   "md5": "CBAAA8E0968DE9D2D2E0C720EC25AB8C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_FaLang.LTB",
+   "size": 13990,
+   "md5": "E2D3B04751B6F8834F1D69C2C8C35AB7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_FaLang_preview.LTB",
+   "size": 13058,
+   "md5": "706C0DBCC8CBDB662D98DB4159B7F21E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_HwG.LTB",
+   "size": 17765,
+   "md5": "96FC477A70D40154E1353E0D2EE44E9C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_HWG_preview.LTB",
+   "size": 17272,
+   "md5": "F3BB579F1A899E32BAC2EED991B91406",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_NobleGold_Ice.LTB",
+   "size": 17696,
+   "md5": "61147310037A72DAC1CC0F1FE6476EFB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_NobleGold_Ice_preview.LTB",
+   "size": 16944,
+   "md5": "C888F933D431166AA15C13EA44B197DB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_preview.LTB",
+   "size": 14875,
+   "md5": "9C91E9CB284122260525178C0EA89CF9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_SS.LTB",
+   "size": 17408,
+   "md5": "EF40CA8617E8472179A5D229785E1D45",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-Kukri_Beast_SS_preview.LTB",
+   "size": 13233,
+   "md5": "FE42377846E017700306CA67A2C0D540",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Blaze_Kukri_Beast_silver.PNG",
+   "size": 144940,
+   "md5": "035B93DD58277E8203E65B91103A5A6A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_21WC_A.PNG",
+   "size": 360379,
+   "md5": "1C1EDCA8B0FE637901A97D07F109C9B5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_21WC_M.PNG",
+   "size": 31474,
+   "md5": "8EC2C2B2D771E89ADD64C88DEE328E43",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_AD_A.PNG",
+   "size": 123651,
+   "md5": "66C7178BB1D84C99D9355D535294E9E3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_alpha.PNG",
+   "size": 312201,
+   "md5": "1790545B6BF88F011486F5C2BD49641C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_alpha.TGA",
+   "size": 1572908,
+   "md5": "44705035B2BEFD109AE0EEC82A6CDC3A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_BO_A.PNG",
+   "size": 152589,
+   "md5": "178D98F39A40A2F07E178199D9FC49E6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_CFPassS10_A.PNG",
+   "size": 480846,
+   "md5": "8FFFD38D47ADD3201D491325F018D2F1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_CFPassS9_A.PNG",
+   "size": 482771,
+   "md5": "88E32C3E33AB18F255A540E7F9277747",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_CFS18_alpha.PNG",
+   "size": 256467,
+   "md5": "76FE948EA96853A038266C0D70F2CC28",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_CFS18_alpha.PNG",
+   "size": 256467,
+   "md5": "76FE948EA96853A038266C0D70F2CC28",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_Chimera_Alpha.PNG",
+   "size": 124176,
+   "md5": "C38461008C97520A5F742886605E0E03",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_Doushicfer_A.PNG",
+   "size": 106818,
+   "md5": "3CE92EA7170279FEA7697CBC889B2384",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_Dsc_A.PNG",
+   "size": 111757,
+   "md5": "D49CF758B5B05E7B2E9E49A0E0F1C9B4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_FaLang_A.PNG",
+   "size": 388158,
+   "md5": "EEB687BDD2DDB5692B491B8DE6546602",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_GA_A.PNG",
+   "size": 366313,
+   "md5": "A40604F2FEFDBFB06F689FFF198B4ABD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_GC_A.PNG",
+   "size": 143069,
+   "md5": "22D7785EC0666962216361A6ABC840F5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_GC_B.PNG",
+   "size": 28043,
+   "md5": "D1E8A0415D08107B12BBFEA2990CF3AD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_HWG_A.PNG",
+   "size": 194835,
+   "md5": "8FD4E6D0C6C21870BE80747927737BAF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_LNY2026_A.PNG",
+   "size": 448548,
+   "md5": "C7BB4ED44DDF78567FC3F8C3CE22E1FA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_Lucy_A.PNG",
+   "size": 108151,
+   "md5": "18CBED97AB5CF50A664F2307B814DD80",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_NobleGold_alpha.PNG",
+   "size": 312734,
+   "md5": "217BD2B41D237AB5AA8F83DF93F4A33F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_NobleGold_Ice_A.PNG",
+   "size": 413907,
+   "md5": "83BE16B9ED574049A50DA3FA496581F7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_NobleGold_Jade_a.PNG",
+   "size": 362032,
+   "md5": "335674EF81428106DA98E81BDA24D5BC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_PC_Alpha.PNG",
+   "size": 221228,
+   "md5": "F81F57F62800EB4C4E52451656B3339F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_QQMBS_A.PNG",
+   "size": 253655,
+   "md5": "4A1A3D76BAF66F137681F3CF40EDD340",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_RSL_a.PNG",
+   "size": 108582,
+   "md5": "5556AF85398DB664DC191957E072C7BA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_Spring_A.PNG",
+   "size": 480813,
+   "md5": "E1ECD144560E01A43654383844D4222D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_SS_A.PNG",
+   "size": 151445,
+   "md5": "1510C06B9B74894167D1F1F0187E0C22",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_TCG_A.PNG",
+   "size": 419765,
+   "md5": "353B251A9BAC00C63D81E39795DE8D91",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_TCG_M.PNG",
+   "size": 69813,
+   "md5": "57CAB25EBEBFAE2B5E40EF2C3E68862C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_XGDH_A.PNG",
+   "size": 461829,
+   "md5": "54CA3BD318A14C95C1CCF09F9998538F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/Kukri_Beast_Xiaodingdang_A.PNG",
+   "size": 116823,
+   "md5": "B65E6AE8D6FF133FA51061A9E3E81D64",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_21WC_N.PNG",
+   "size": 853523,
+   "md5": "88E8AE67C8AB13B3D8524DBCD42CD83F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_AD_N.PNG",
+   "size": 326984,
+   "md5": "5498A9970A759795373F3BF572F8D1E4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_BO_N.PNG",
+   "size": 493825,
+   "md5": "A72353FC4F0451257E3CA09D7F1CA2FE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_CFPassS10_N.PNG",
+   "size": 1133096,
+   "md5": "2BF4A1F7134909F576F09067D7879FE4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_CFPassS9_N.PNG",
+   "size": 806427,
+   "md5": "D3FAFA713914A0248CEC26D622E00B3C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_CFS18_N.PNG",
+   "size": 498242,
+   "md5": "09B996000A2753C4510AEE3700DD095A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_CFS18_N.PNG",
+   "size": 498242,
+   "md5": "09B996000A2753C4510AEE3700DD095A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_Chimera_N.PNG",
+   "size": 284884,
+   "md5": "0C7167E7958D381C354DB1BC5F603569",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_Doushicfer_N.PNG",
+   "size": 314192,
+   "md5": "0538A6AE7732B523383DC4BFABA52923",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_Dsc_N.PNG",
+   "size": 304700,
+   "md5": "01A05CC691389A3D404A036C8FF0A760",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_FaLang_N.PNG",
+   "size": 1219814,
+   "md5": "F4A90930C84240A3BB2A62D14D8DE489",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_GA_N.PNG",
+   "size": 806427,
+   "md5": "D3FAFA713914A0248CEC26D622E00B3C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_GC_N.PNG",
+   "size": 330467,
+   "md5": "C8DDBC4F7F629DAD111DD8A29F746B32",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_HwG_N.PNG",
+   "size": 395483,
+   "md5": "3D5D844E44E8828F16BAF93BDF8CC2B6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_LNY2026_N.PNG",
+   "size": 806427,
+   "md5": "D3FAFA713914A0248CEC26D622E00B3C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_Lucy_N.PNG",
+   "size": 304815,
+   "md5": "283160D8576DB812591A8B441987B158",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_n.PNG",
+   "size": 801074,
+   "md5": "823707D7D39718D83417813B57E3FDD7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_N.PNG",
+   "size": 302101,
+   "md5": "A6A9ED04CA3C217A5A0608F881D98C77",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_n.TGA",
+   "size": 1572908,
+   "md5": "E404E24A67B786F6F44C4D00B09A02B2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_NobleGold_Ice_N.PNG",
+   "size": 1187467,
+   "md5": "D78CC61F1190FA33B365BAED49C95C78",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_NobleGold_Jade_n.PNG",
+   "size": 871717,
+   "md5": "CFC6F613FFEFAB416FB8755374045DA6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_NobleGold_n.PNG",
+   "size": 760836,
+   "md5": "52E0FE279001520019F424C04C83E102",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_QQMBS_N.PNG",
+   "size": 3340914,
+   "md5": "0E3E8B392DD5B0B3C332EC91ADDA4E90",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_RSL_n.PNG",
+   "size": 304078,
+   "md5": "570436E4ED7EF0B1926809E9ACB477BE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_Spring_N.PNG",
+   "size": 806427,
+   "md5": "D3FAFA713914A0248CEC26D622E00B3C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_SS_N.PNG",
+   "size": 258318,
+   "md5": "8F55DED667F855409516ED96C4E7025C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_TCG_N.PNG",
+   "size": 806427,
+   "md5": "D3FAFA713914A0248CEC26D622E00B3C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_XGDH_N.PNG",
+   "size": 1054586,
+   "md5": "D22A8C94363E0E31626B27B153689F37",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/Kukri_Beast_Xiaodingdang_N.PNG",
+   "size": 301174,
+   "md5": "74387749358410D4BD074734ED571EBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast.DTX",
+   "size": 131236,
+   "md5": "58B67541B843F1315BA4C0418019FCCC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast.DTX",
+   "size": 131236,
+   "md5": "58B67541B843F1315BA4C0418019FCCC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_21WC.DTX",
+   "size": 524452,
+   "md5": "2EC9A55A9CDC9B5EBDFC7960BB372F4D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_AD.DTX",
+   "size": 131236,
+   "md5": "0EBFF6B3A58D49F4492615C68E9603A1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_BO.DTX",
+   "size": 131236,
+   "md5": "6740F28C20E7513A8489F27F325D75A4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_CFPassS10.DTX",
+   "size": 524452,
+   "md5": "B6AA104424F5D00AC4579B673E60EB41",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_CFPassS9.DTX",
+   "size": 524452,
+   "md5": "64C58F6A98E42795AB143406C4509AB3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_CFS18.DTX",
+   "size": 524452,
+   "md5": "BE7248DECCB6BD60CC1B798081F251BC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_Chimera.DTX",
+   "size": 131236,
+   "md5": "98FB285A68D218156E8F31A570A3F62E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_Doushicfer.DTX",
+   "size": 131236,
+   "md5": "6065CE8D170F49ED1ACD410BE62EF1EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_Dsc.DTX",
+   "size": 131236,
+   "md5": "E159B6227953401257CF4216B3981475",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_FaLang.DTX",
+   "size": 524452,
+   "md5": "A7E727DC0623377B8D504A76AB85C9F2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_GA.DTX",
+   "size": 524452,
+   "md5": "5EF07799F2324D9BA8D8E7D81D37F56C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_GC.DTX",
+   "size": 131236,
+   "md5": "0DCAA368797C3AF03138539E091E9A21",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_HwG.DTX",
+   "size": 131236,
+   "md5": "52B8B861B041444425A60140FCB7A9FB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_LNY2026.DTX",
+   "size": 524452,
+   "md5": "7C2BAE4CC0A63521714646BEDA45440B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_Lucy.DTX",
+   "size": 131236,
+   "md5": "223E159B14793FC1119EE198D462FBFE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_NobleGold.DTX",
+   "size": 524452,
+   "md5": "5CAE27BAD1199EDF0CA1ADF7126EF37D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_NobleGold_Ice.DTX",
+   "size": 524452,
+   "md5": "154624B0F068ABD68A5320DAF209D274",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/pv-Kukri_Beast_NobleGold_Jade.DTX",
+   "size": 524452,
+   "md5": "E02017BD6103D339FA81399A4C684F29",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_PC.DTX",
+   "size": 131236,
+   "md5": "C628E423949E26CB81415AB1A949D22A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_PC_CFS18_2.DTX",
+   "size": 524452,
+   "md5": "BE7248DECCB6BD60CC1B798081F251BC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_QQMBS.DTX",
+   "size": 524452,
+   "md5": "C910B0E36D78B033D695705EA41D5EBA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/pv-Kukri_Beast_RSL.DTX",
+   "size": 131236,
+   "md5": "4D30836E630FFCCA768F9AAD294658E8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_Silver.DTX",
+   "size": 131236,
+   "md5": "160A7FE4128DA622A8DB7E3EFD1778AF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_spring.DTX",
+   "size": 524452,
+   "md5": "035572323F9FB511C0EC11D5FA0ADED0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_SS.DTX",
+   "size": 131236,
+   "md5": "BEF110F9B6F190A84D2F79F0FB92B6F6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_TCG.DTX",
+   "size": 524452,
+   "md5": "BC5C0E5D472E2EF23AC9FA8C57B1320E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_XGDH.DTX",
+   "size": 524452,
+   "md5": "DC19450894B3F69A7E5A5F36DEFE6BA5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-Kukri_Beast_Xiaodingdang.DTX",
+   "size": 131236,
+   "md5": "8BDDB70D52B4FF11563730C6F74DA065",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast.CFG",
+   "size": 481,
+   "md5": "5946719C15082FC19BFFEDC97E4A1319",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast.CFG",
+   "size": 481,
+   "md5": "0FC02FBC29109A86DB6385189EA417B7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_21WC.CFG",
+   "size": 2265,
+   "md5": "5E56F3BCC0E4B095B648911E2DD308ED",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_AD.CFG",
+   "size": 2922,
+   "md5": "EBF093B1005C33388CE5BD8D59D2A90A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_BO.CFG",
+   "size": 4507,
+   "md5": "D189F96E6D6D2177AE1586B4F5D1C97F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_CFPassS10.CFG",
+   "size": 4525,
+   "md5": "3D2EE46DF264D42C08B0DA818521C8FB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_CFPassS9.CFG",
+   "size": 4525,
+   "md5": "A99AD042930A579F215726D58F5D882B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_CFS18.CFG",
+   "size": 2037,
+   "md5": "6D9D885EB2BC23A8E624801CA2FC05C6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Chimera.CFG",
+   "size": 2220,
+   "md5": "185CDE8817C03DD5A5EA7775FE77224E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Doushicfer.CFG",
+   "size": 2941,
+   "md5": "C3890FD732F2AAFA7119B9347B0839BB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Dsc.CFG",
+   "size": 2912,
+   "md5": "1886337C6A8D93365C244723B58BB018",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_FaLang.CFG",
+   "size": 3973,
+   "md5": "6CE18382A9EB13A1E3D13207AC000585",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_GA.CFG",
+   "size": 4511,
+   "md5": "3584EA86F0AF607E9368E844B0F4EC25",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_GC.CFG",
+   "size": 3655,
+   "md5": "5CCCC52B6438F8875AEB5521746B4E21",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_HWG.CFG",
+   "size": 3954,
+   "md5": "60375D7A9CB2D8ED2676DCDA62E85180",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_LNY2026.CFG",
+   "size": 4483,
+   "md5": "007443A40BE6CCB2A78F6F0F93D33D00",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Lucy.CFG",
+   "size": 4100,
+   "md5": "11AF6D052E1E3511904620C3188BCC72",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_NobleGold.CFG",
+   "size": 514,
+   "md5": "973C12D610D22801A9A59261FC433CA0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_NobleGold_Ice.CFG",
+   "size": 3984,
+   "md5": "715AEB9B7FE8740A6AA1BDEF20D73FA2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_NobleGold_Jade.CFG",
+   "size": 2068,
+   "md5": "282C7BBE76CBF2748C159F41D36C88DE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_PC.CFG",
+   "size": 487,
+   "md5": "BC8BF776525CCABCA25CD4E9C7C9E5B5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_PC_CFS18_2.CFG",
+   "size": 2037,
+   "md5": "6D9D885EB2BC23A8E624801CA2FC05C6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_QQMBS.CFG",
+   "size": 2035,
+   "md5": "4FBAE7A84ED5A0F1B51841C7BAC198B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_RSL.CFG",
+   "size": 4088,
+   "md5": "E3D837C4F033DA45B6D89D70C8BF9DA7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Silver.CFG",
+   "size": 1946,
+   "md5": "1F428E16A3C99B3CBBB9B42BD7BC22C8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Spring.CFG",
+   "size": 2915,
+   "md5": "A27AE078823F03B50B9BCB2FBC38B2F9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_SS.CFG",
+   "size": 2914,
+   "md5": "D81EC7CA83FA7B2AB4D002089F7D70D9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_TCG.CFG",
+   "size": 4178,
+   "md5": "F8A5543AEAB0C2735E0FBB7C35E80993",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_XGDH.CFG",
+   "size": 4512,
+   "md5": "4C3C063153E8FE0E27A2A23334B1C264",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/Kukri_Beast_Xiaodingdang.CFG",
+   "size": 4314,
+   "md5": "DA362F350DCBBDA5133C9A9557748286",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_21WC_S.PNG",
+   "size": 804015,
+   "md5": "AF8E530FA8B18AECDA6E3A7970E8D7BD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_AD_S.PNG",
+   "size": 321379,
+   "md5": "D9718A4F350F8DFF2FB1B15ED73EEF23",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_BO_S.PNG",
+   "size": 427539,
+   "md5": "40A19DC9E432D76DFA374D2C37B66BD1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_CFPassS10_S.PNG",
+   "size": 980926,
+   "md5": "F8EF9A228DF1F355853DC1CC733AAEB6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_CFPassS9_S.PNG",
+   "size": 1102580,
+   "md5": "2C3F14A925F67FCF36DB8B33EA5D470D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_CFS18_S.PNG",
+   "size": 440693,
+   "md5": "316542F3BBFF83F5812DF1B795D14107",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_CFS18_S.PNG",
+   "size": 440693,
+   "md5": "316542F3BBFF83F5812DF1B795D14107",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Chimera_S.PNG",
+   "size": 242847,
+   "md5": "18825A1A7406FE26D4CCD844E25C4E11",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Doushicfer_S.PNG",
+   "size": 384658,
+   "md5": "A02E68B6FFF73A2AB4788B5F7526083A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Dsc_S.PNG",
+   "size": 273688,
+   "md5": "411BE152C90031929895C17ED3ABB795",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_FaLang_S.PNG",
+   "size": 1518087,
+   "md5": "2BDD4C7CACEF58579D7AEA7AF3698476",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_GA_S.PNG",
+   "size": 826719,
+   "md5": "913E32716D59666FF29663D3CF1BD76C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_GC_S.PNG",
+   "size": 357687,
+   "md5": "FBE215512F4B56C89365784808AC1A32",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_HWG_S.PNG",
+   "size": 512924,
+   "md5": "71765D5F7D3AD84931159E648A5EAF98",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_LNY2026_S.PNG",
+   "size": 1258201,
+   "md5": "CDB849DC112C2FE6C30FE006EF9D7405",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Lucy_S.PNG",
+   "size": 325500,
+   "md5": "960873599F6B4AB51942C7E06F86EF58",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_NobleGold_Ice_S.PNG",
+   "size": 1380036,
+   "md5": "90FF45C2E4F2EFD331DCC86E990F88DC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_NobleGold_Jade_S.PNG",
+   "size": 1105786,
+   "md5": "3B391A199C1C8A01E037C26BBAAA7CDB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_NobleGold_s.PNG",
+   "size": 639570,
+   "md5": "83745664B050925F22715DFAF90143FA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_PC_S.PNG",
+   "size": 436066,
+   "md5": "A3158E52E7F505F30C4F59F5C25C0571",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_QQMBS_S.PNG",
+   "size": 898724,
+   "md5": "6D3C61C9D73940CDC06A63407B7A6F4C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_RSL_s.PNG",
+   "size": 289511,
+   "md5": "C3A594C6FFF971C9CA3F3971A3B16756",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_s.PNG",
+   "size": 639089,
+   "md5": "5147BDEB4C212542210D67ABE7730BC4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_s.TGA",
+   "size": 1572908,
+   "md5": "DF56C288E16CEBE930D77AA5B6CB3347",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Silver_s.PNG",
+   "size": 358561,
+   "md5": "443CA7835927A3484B58FFFCA817DEFD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Spring_S.PNG",
+   "size": 1183802,
+   "md5": "3ACBA03F33264874C8B5AAAE482C7D7D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_SS_S.PNG",
+   "size": 426790,
+   "md5": "A8A39360676E7BD822C098AA20B9E21E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_TCG_S.PNG",
+   "size": 1434606,
+   "md5": "26566321CD93407A2BA52A2BE24BFA24",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_XGDH_S.PNG",
+   "size": 400213,
+   "md5": "C1DA7A0557230056B8A5526B7C13BAB7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/Kukri_Beast_Xiaodingdang_S.PNG",
+   "size": 432855,
+   "md5": "68368D5CF67E68DFB91832CEDFCF2DF8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast.DTX",
+   "size": 524452,
+   "md5": "1C1739B2137C19D31EFFFF3DB46CF1FC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf017.rez",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast.DTX",
+   "size": 32932,
+   "md5": "924EA3556E666B2E5D7FB3823C9DECD1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_21WC.DTX",
+   "size": 32932,
+   "md5": "5C9BC8FC69950907793EDD16C2DEFC90",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_AD.DTX",
+   "size": 32932,
+   "md5": "D49FAAC0EDB63927EDEE9C121025DED4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_BO.DTX",
+   "size": 32932,
+   "md5": "BB4074455DD7D584BE938883DF4B0ACB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_CFPassS10.DTX",
+   "size": 32932,
+   "md5": "17680658457DB2797A23FF51E40309D1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_CFPassS9.DTX",
+   "size": 32932,
+   "md5": "1F035BA8BF989BC2D95B74AA7F23F5A3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_CFS18.DTX",
+   "size": 32932,
+   "md5": "E13120EEE46B99A340952EE21775E054",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Chimera.DTX",
+   "size": 32932,
+   "md5": "21C30D915E9C7F7A4172D279A5C3FEEE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Doushicfer.DTX",
+   "size": 32932,
+   "md5": "EF80922D539509FC6F49B7A465FCAF1E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Dsc.DTX",
+   "size": 32932,
+   "md5": "496D619DBAA243A9E270B4CF56A0ADA5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_FaLang.DTX",
+   "size": 32932,
+   "md5": "D3B007B172D68AE2127C8E2A53F4F6A5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_GA.DTX",
+   "size": 32932,
+   "md5": "E02E49BD6FC8D2923E5002177C411812",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_GC.DTX",
+   "size": 32932,
+   "md5": "C1AC1166C458EC78FCFBFCD7A767C4D5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_HwG.DTX",
+   "size": 32932,
+   "md5": "8B0CDCC6E8C95CC101D0FAEEE63D9F68",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_LNY2026.DTX",
+   "size": 32932,
+   "md5": "2DDB880334F2E246B7F6EBEF9F830697",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Lucy.DTX",
+   "size": 32932,
+   "md5": "AFAC796EC0F6DF99EF3DE23BB9084A06",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_NobleGold.DTX",
+   "size": 32932,
+   "md5": "63422B7A8DF4D5F886C412FDE61D7B2C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_NobleGold_Ice.DTX",
+   "size": 32932,
+   "md5": "C0C634495ED6D01209074218369E58CF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_NobleGold_Jade.DTX",
+   "size": 32932,
+   "md5": "6B42CDC783E0C187E26D322AD9CCE600",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_PC.DTX",
+   "size": 32932,
+   "md5": "0E3C61CB8D8285D27BE0BE612F381920",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_PC_CFS18_2.DTX",
+   "size": 32932,
+   "md5": "E13120EEE46B99A340952EE21775E054",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_QQMBS.DTX",
+   "size": 32932,
+   "md5": "DE2BC228F0C7C904B7D3C6531F9BFDC3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/Qv-Kukri_Beast_RSL.DTX",
+   "size": 32932,
+   "md5": "443215E19701559BEFECD45C40FDEEE7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Silver.DTX",
+   "size": 32932,
+   "md5": "4A6D25A25FEC7B7B6D38D5CC6665345E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Spring.DTX",
+   "size": 32932,
+   "md5": "271A1592BD277310E0F064E8BB43B8CF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_SS.DTX",
+   "size": 32932,
+   "md5": "AA0D399EA118A859A95B1F655320DA80",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_TCG.DTX",
+   "size": 32932,
+   "md5": "ACE12FB6382F3CA3EFDC74F7C9FA6E37",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_XGDH.DTX",
+   "size": 32932,
+   "md5": "3A6625AE3877DCCD5C520B5BC1795327",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-Kukri_Beast_Xiaodingdang.DTX",
+   "size": 32932,
+   "md5": "62D6A2B7119EA3356222520E2A54707B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "full_path": "SND/WEAPON/Kukri_Beast_NobleGold_Ice/KukriBeastNGIce_ATT_1.WAV",
+   "size": 64288,
+   "md5": "1E5106004AED944F898A218D79170407",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "full_path": "SND/WEAPON/Kukri_Beast_NobleGold_Ice/KukriBeastNGIce_ATT_2.WAV",
+   "size": 60161,
+   "md5": "83F576AC93875909C90407DF53D0FC96",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "full_path": "SND/WEAPON/Kukri_Beast_NobleGold_Ice/KukriBeastNGIce_ATT_3.WAV",
+   "size": 88183,
+   "md5": "66E1025D36607B0FE2842BEF9D115679",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "full_path": "SND/WEAPON/Kukri_Beast_NobleGold_Ice/KukriBeastNGIce_Select.WAV",
+   "size": 83349,
+   "md5": "5219283E902F6FE6D2E234486A49C20F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_AD_BG.DTX",
+   "size": 1193,
+   "md5": "FED76BC94F6AE0202ACF27A18119765C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_AD_EFFECT.DTX",
+   "size": 743,
+   "md5": "74AD17596CD9C03F6241E028636BFD51",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_AD_LINE.DTX",
+   "size": 6908,
+   "md5": "73D70ACFA7AAD5D7528623EBA214DDF7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_BG.DTX",
+   "size": 1006,
+   "md5": "D4A0ED5B7633EC23C5A1733C1DA29520",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_BO_BG.DTX",
+   "size": 1317,
+   "md5": "B499DD0D8D612EB347FA63F43B0F50E4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_BO_EFFECT.DTX",
+   "size": 836,
+   "md5": "8348296A4C0430287F8604949F40896F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_BO_LINE.DTX",
+   "size": 5578,
+   "md5": "1B95F4D753DB465CE2FC86B0C0105EC2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS10_BG.DTX",
+   "size": 1273,
+   "md5": "0EFA17B5DA5CDF503D0A50C146B4A99D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS10_EFFECT.DTX",
+   "size": 807,
+   "md5": "7804E9F5B06050AFCBC7E2A215EDD12B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS10_GP_BG.DTX",
+   "size": 1273,
+   "md5": "0EFA17B5DA5CDF503D0A50C146B4A99D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS10_GP_EFFECT.DTX",
+   "size": 807,
+   "md5": "7804E9F5B06050AFCBC7E2A215EDD12B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS10_GP_LINE.DTX",
+   "size": 1860,
+   "md5": "4E20BCF8432C65FE076BF50EAF2A54BA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS10_LINE.DTX",
+   "size": 7055,
+   "md5": "A4E312DCB1D51915EAD333509EB61E14",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS9_BG.DTX",
+   "size": 1243,
+   "md5": "0C4D80ED67874DC35FA496AD8F270465",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS9_EFFECT.DTX",
+   "size": 878,
+   "md5": "1CE7B87A9ABEDD1AC356BB7AF0C97F02",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_CFPassS9_LINE.DTX",
+   "size": 6058,
+   "md5": "878EE97E95D5B179F2F4F266CD6AB427",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Doushicfer_BG.DTX",
+   "size": 1121,
+   "md5": "078BCD84C6980C89851CD2C6ED284955",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Doushicfer_EFFECT.DTX",
+   "size": 728,
+   "md5": "38E659B1BF559C906C7F49B7A3CC1853",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Doushicfer_LINE.DTX",
+   "size": 5219,
+   "md5": "0F812E6F47B914230B47076EDA45730F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Dsc_BG.DTX",
+   "size": 1121,
+   "md5": "078BCD84C6980C89851CD2C6ED284955",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Dsc_EFFECT.DTX",
+   "size": 728,
+   "md5": "38E659B1BF559C906C7F49B7A3CC1853",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Dsc_LINE.DTX",
+   "size": 4728,
+   "md5": "FE457B060CA9CC0334DE5CA2F45BE927",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_EFFECT.DTX",
+   "size": 730,
+   "md5": "39FC617E6FB501FC80F6C15E4BA79DF1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_FaLang_BG.DTX",
+   "size": 1075,
+   "md5": "2853797D8A556FC6997CCE306424E939",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_FaLang_Effect.DTX",
+   "size": 1055,
+   "md5": "F3C2A4B797BA689CA711DF194A5CF8A1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_FaLang_LINE.DTX",
+   "size": 5204,
+   "md5": "F9C1FF1DCD61D042099BBD07E669EE13",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_GA_BG.DTX",
+   "size": 1029,
+   "md5": "9DB80790C12D6240C2464912FF61F416",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_GA_Effect.DTX",
+   "size": 1012,
+   "md5": "CDC33782CDB9ABA1E40097D6CB3BEFD4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_GA_LINE.DTX",
+   "size": 4845,
+   "md5": "83F7ED9B9481984B75C54420126B492E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_GC_BG.DTX",
+   "size": 1002,
+   "md5": "8DC6B32CC1D1EEA413C195544F5EE59B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_GC_EFFECT.DTX",
+   "size": 632,
+   "md5": "CE920E83529430BA87070C373CD5BDA9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_GC_LINE.DTX",
+   "size": 4150,
+   "md5": "1CBA1AF464B5C83EB91AB0359A0104E9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_HWG_BG.DTX",
+   "size": 1089,
+   "md5": "C72257E2A8F540F9D5F3495D99ABE1C8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_HWG_Effect.DTX",
+   "size": 1073,
+   "md5": "2D4032B5EE140A2216790E45D977E8EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_HWG_LINE.DTX",
+   "size": 4786,
+   "md5": "8599494F7F5487ED29C776C2850AE152",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_LINE.DTX",
+   "size": 6174,
+   "md5": "EF14E4BD8AE22BFC45F9E46EC94FB1A4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_LNY2026_BG.DTX",
+   "size": 1407,
+   "md5": "39980A0DB56F99B9085968DC4A327713",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_LNY2026_EFFECT.DTX",
+   "size": 966,
+   "md5": "F79A12EBA169D48B760099DACE9AEE08",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_LNY2026_LINE.DTX",
+   "size": 4833,
+   "md5": "9FA994066E1F6C97855E7D2200B6EE02",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Lucy_BG.DTX",
+   "size": 1206,
+   "md5": "97222C54F1EFAB1B034FFF41DE734D23",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Lucy_EFFECT.DTX",
+   "size": 750,
+   "md5": "89DFE7F3581A95095EC9D4D156A532C6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Lucy_LINE.DTX",
+   "size": 5880,
+   "md5": "D3835B355E003BB74C57A9FA1B27C252",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NGB_BG.DTX",
+   "size": 1006,
+   "md5": "D4A0ED5B7633EC23C5A1733C1DA29520",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NGB_EFFECT.DTX",
+   "size": 730,
+   "md5": "39FC617E6FB501FC80F6C15E4BA79DF1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NGB_LINE.DTX",
+   "size": 2951,
+   "md5": "5679339355D49166E211BFE696964F71",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_BG.DTX",
+   "size": 1006,
+   "md5": "D4A0ED5B7633EC23C5A1733C1DA29520",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_EFFECT.DTX",
+   "size": 730,
+   "md5": "39FC617E6FB501FC80F6C15E4BA79DF1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_Ice_BG.DTX",
+   "size": 1255,
+   "md5": "B74834AEEE945A3C4FFF7D1746336D17",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_Ice_EFFECT.DTX",
+   "size": 794,
+   "md5": "185CCC0082C5E53174778CA0FBFEF509",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_Ice_LINE.DTX",
+   "size": 2840,
+   "md5": "EE54741E42D7BDC6292A53561D214D9D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_Jade_BG.DTX",
+   "size": 1006,
+   "md5": "D4A0ED5B7633EC23C5A1733C1DA29520",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_Jade_EFFECT.DTX",
+   "size": 730,
+   "md5": "39FC617E6FB501FC80F6C15E4BA79DF1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_Jade_LINE.DTX",
+   "size": 3656,
+   "md5": "2A3B39CCDF25302D9E2E5FE9E4D3812F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NobleGold_LINE.DTX",
+   "size": 2951,
+   "md5": "5679339355D49166E211BFE696964F71",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NoMark_BG.DTX",
+   "size": 1006,
+   "md5": "D4A0ED5B7633EC23C5A1733C1DA29520",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NoMark_EFFECT.DTX",
+   "size": 730,
+   "md5": "39FC617E6FB501FC80F6C15E4BA79DF1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_NoMark_LINE.DTX",
+   "size": 1562,
+   "md5": "18D28A13DF5B227B592BAA14AC97747B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_PC_BG.DTX",
+   "size": 1155,
+   "md5": "CE61BB1A30F005E343B62B8091FDD9AE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_PC_Effect.DTX",
+   "size": 735,
+   "md5": "5D797BD7ADFBA7E88605E8FF5594E2D4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_PC_LINE.DTX",
+   "size": 4470,
+   "md5": "1025E8ECBD8F635E20F17462BBBDB8A0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_RSL_BG.DTX",
+   "size": 1002,
+   "md5": "8DC6B32CC1D1EEA413C195544F5EE59B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_RSL_EFFECT.DTX",
+   "size": 632,
+   "md5": "CE920E83529430BA87070C373CD5BDA9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_RSL_LINE.DTX",
+   "size": 4113,
+   "md5": "93A2CED442D535AC004B91CD4145CC30",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Silver_BG.DTX",
+   "size": 1092,
+   "md5": "E6933A28295138B43FC7491EDBB634A2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Silver_EFFECT.DTX",
+   "size": 993,
+   "md5": "6CCE8E03C9F8D94C28364EE8CBF1E132",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Silver_LINE.DTX",
+   "size": 2334,
+   "md5": "F917B1605666313513C33E4291294BBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Spring_BG.DTX",
+   "size": 1002,
+   "md5": "8DC6B32CC1D1EEA413C195544F5EE59B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Spring_EFFECT.DTX",
+   "size": 632,
+   "md5": "CE920E83529430BA87070C373CD5BDA9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_Spring_LINE.DTX",
+   "size": 3962,
+   "md5": "3C27AC7229B09C24A127B07F03A6F7E4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_SS_BG.DTX",
+   "size": 1398,
+   "md5": "4A8212E0CAF57C49FCF3912DBA9BD8E0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_SS_Effect.DTX",
+   "size": 938,
+   "md5": "C11F6E366FCF0A15C91A81E9ECE3FFF3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_SS_LINE.DTX",
+   "size": 3201,
+   "md5": "128DD21DDA25236CD48D052F223CAD53",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_TCG_BG.DTX",
+   "size": 1187,
+   "md5": "5B97064EE81934640F386AF0940CF9EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_TCG_EFFECT.DTX",
+   "size": 1252,
+   "md5": "8EE2596D8AC981233B6581EE9A0B5F42",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_TCG_LINE.DTX",
+   "size": 5762,
+   "md5": "A1361019D59400AF3DD679B5F2C6186B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_XGDH_BG.DTX",
+   "size": 971,
+   "md5": "A05F61F5D4651E40D5326BD621040359",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_XGDH_EFFECT.DTX",
+   "size": 612,
+   "md5": "31AECADFE97FEF6D3757B3B8B0DAB30D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/Kukri_Beast_XGDH_LINE.DTX",
+   "size": 4044,
+   "md5": "863F9889EC6833D2E7495D6F8C1F852F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast.DTX",
+   "size": 305,
+   "md5": "7ED226CE836B26D35C047A46A8132883",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_AD.DTX",
+   "size": 227,
+   "md5": "92BB7754FDC128276FA395A0BCBF94DD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_BO.DTX",
+   "size": 1404,
+   "md5": "FF8F88DB87F6935EEC45C8C782E27989",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_CFPassS10.DTX",
+   "size": 186,
+   "md5": "073DEAF00CD387C9A2A9FCE20CEDD7C1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_CFPassS10_GP.DTX",
+   "size": 186,
+   "md5": "073DEAF00CD387C9A2A9FCE20CEDD7C1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_CFPassS9.DTX",
+   "size": 171,
+   "md5": "D055B87F9C0D91FE5D95BE35AC4FDEB2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_Doushicfer.DTX",
+   "size": 536,
+   "md5": "2427F5C35609B6450FFEC4CF45AF1EB6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_Dsc.DTX",
+   "size": 535,
+   "md5": "2E6097139F1748DF7A93EB5029303BBB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_FaLang.DTX",
+   "size": 1183,
+   "md5": "01C0BB31FE6FFD220FE1D886DB5A031A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_GA.DTX",
+   "size": 1070,
+   "md5": "BA505AC87BAF8C5F4E0F7501F6519DE2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_GC.DTX",
+   "size": 458,
+   "md5": "9B7389280CA6409112E8A3A0F571D102",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_HWG.DTX",
+   "size": 1205,
+   "md5": "C0CD468AB96CF0EBBB30458ADB436BB3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_LNY2026.DTX",
+   "size": 224,
+   "md5": "A34B4FB68C782BD08534EAA010BF3525",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_Lucy.DTX",
+   "size": 1157,
+   "md5": "EF074130947133B067544090D9C632E8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_NGB.DTX",
+   "size": 317,
+   "md5": "04815A15097C918EC22B9CEED3C91B35",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_NobleGold.DTX",
+   "size": 317,
+   "md5": "04815A15097C918EC22B9CEED3C91B35",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_NobleGold_Ice.DTX",
+   "size": 335,
+   "md5": "B6BEBADA75CD7FC694A08485135A68F0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_NobleGold_Jade.DTX",
+   "size": 490,
+   "md5": "6959528767E91F0AFC243D5C52F4A44E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_NoMark.DTX",
+   "size": 305,
+   "md5": "7ED226CE836B26D35C047A46A8132883",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_PC.DTX",
+   "size": 311,
+   "md5": "972B85F75CCC445F316E102C87B79668",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_RSL.DTX",
+   "size": 449,
+   "md5": "9EC49F23B8B949CA346C831C7E0FA04F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_Silver.DTX",
+   "size": 360,
+   "md5": "27AB59F745C7D8FC956098BCF5B79C95",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_Spring.DTX",
+   "size": 720,
+   "md5": "CB73606F8A29C2FC40057714ED58568D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_SS.DTX",
+   "size": 841,
+   "md5": "ABB3C5EC8647A37B4A48B3E6E03B0651",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_TCG.DTX",
+   "size": 1207,
+   "md5": "594A1D0A2F62190540AF48980747D5C2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_Kukri_Beast_XGDH.DTX",
+   "size": 1099,
+   "md5": "D6CCF2755E2C8A3589A2B80974BC63F8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Kukri_Beast.DTX",
+   "size": 10687,
+   "md5": "1A8B1717CBF1E33FA9BE98942BCFBF00",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf019.rez",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Kukri_Beast.DTX",
+   "size": 10687,
+   "md5": "1A8B1717CBF1E33FA9BE98942BCFBF00",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Kukri_Beast_NGB.DTX",
+   "size": 10230,
+   "md5": "A94B7209B6729F0E886CB917C46E8026",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Kukri_Beast_NobleGold.DTX",
+   "size": 10230,
+   "md5": "A94B7209B6729F0E886CB917C46E8026",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Kukri_Beast_NobleGold_Jade.DTX",
+   "size": 10914,
+   "md5": "46978D25E1447C3DA907829926C7B1B1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Kukri_Beast_NoMark.DTX",
+   "size": 9137,
+   "md5": "52FB85CB218A4A64F51740320FB734F0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_Kukri_Beast_Silver.DTX",
+   "size": 9602,
+   "md5": "8DC2E5AB24CBC66BD8E6D297C6ACFAEA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_AD.DTX",
+   "size": 7760,
+   "md5": "6A9839CE5A61AEF065BBE7838D5DCE85",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_BO.DTX",
+   "size": 5561,
+   "md5": "61FE1848055D6022686BDC3F2F5E4B18",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_CFPassS10.DTX",
+   "size": 7761,
+   "md5": "A9E11577768812DEE64FCDEAC0D4D5A5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_CFPassS10_GP.DTX",
+   "size": 3550,
+   "md5": "D53563F405402A831AA41C0E34E468B8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_CFPassS9.DTX",
+   "size": 6661,
+   "md5": "BFE6EEA233063B7A9503A6E0131EB1C9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_Doushicfer.DTX",
+   "size": 5180,
+   "md5": "D4122814453E0B63BF30F303EEC951AF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_Dsc.DTX",
+   "size": 5012,
+   "md5": "3C12580F40D23EA260D1BD7BA0E49AB0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_FaLang.DTX",
+   "size": 5176,
+   "md5": "9B1DD2A6D44D80FFA218C3AB0F004BE8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_GA.DTX",
+   "size": 4903,
+   "md5": "762BF00B19E182FB51F72778D54E5CA7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_GC.DTX",
+   "size": 4092,
+   "md5": "E7FDF726A7D08E27FE4DC7C97D5C1AFD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_HWG.DTX",
+   "size": 4893,
+   "md5": "B33B271C72DAE8ACCF488B731E1B6D7A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_LNY2026.DTX",
+   "size": 5252,
+   "md5": "E52F12AA91EF8B29EAC0C19DF5925B8E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_Lucy.DTX",
+   "size": 5708,
+   "md5": "B4A75C2CA1A2793B126892ADF4524FAE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_NGB.DTX",
+   "size": 3638,
+   "md5": "8718EB7DCD7AFCF42CA72B5D0D6BC863",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_NobleGold.DTX",
+   "size": 3638,
+   "md5": "8718EB7DCD7AFCF42CA72B5D0D6BC863",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_NobleGold_Ice.DTX",
+   "size": 4122,
+   "md5": "3CDF0D9732BD27DFD2A001774E6C465C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_NobleGold_Jade.DTX",
+   "size": 3795,
+   "md5": "C6C8BBAEAAC4E73E210E83F1FD81EA77",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_NoMark.DTX",
+   "size": 2785,
+   "md5": "D02E2F1F6EDDE6FF80CBE34244BCEAF7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_PC.DTX",
+   "size": 4750,
+   "md5": "E92034715C07859B75A0A6342556ACA2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_RSL.DTX",
+   "size": 4114,
+   "md5": "B0683D8EF9C2CAFCFBE1A35E516A1079",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_Silver.DTX",
+   "size": 2872,
+   "md5": "9A01A5C450CA33E886B42B1F949A0A9A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_Spring.DTX",
+   "size": 4033,
+   "md5": "E503C068D7E6E031A28DE871641A8917",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_SS.DTX",
+   "size": 4412,
+   "md5": "3D8B746042E4B2671A845540249B00D6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_TCG.DTX",
+   "size": 5741,
+   "md5": "2D4001F4A5C3EA09B15995D47E66C5DC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_Kukri_Beast_XGDH.DTX",
+   "size": 4047,
+   "md5": "B167A0D80DDD7DCABD644703DEA92687",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BigItemIcon_Kukri_Beast_Redhorse VFX.BIN",
+   "size": 52510,
+   "md5": "B5C5A05AB235FD826B90291AA590ED9E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast.BIN",
+   "size": 10946,
+   "md5": "2FA9DAB5E8B76534A6CB6A5EA1573FBB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_21WC.BIN",
+   "size": 11143,
+   "md5": "752F72D4C01F15813B66BB489B62D04C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_AD.BIN",
+   "size": 11100,
+   "md5": "6188FADFB1DE54A375766767767105F7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_BO.BIN",
+   "size": 12489,
+   "md5": "8E249351EB852D8C67CC20F6DC86539A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_CFPassS10.BIN",
+   "size": 11054,
+   "md5": "E97BEF2828B7F0906CC3E01447450DC5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_CFPassS10_GP.BIN",
+   "size": 11054,
+   "md5": "E97BEF2828B7F0906CC3E01447450DC5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_CFPassS9.BIN",
+   "size": 10745,
+   "md5": "627BC76B83CFA01C7E4F91EBC32B9B29",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_CFS18.BIN",
+   "size": 11434,
+   "md5": "B17CD64E7B749DBAA39BE40EBB183B1F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_Chimera.BIN",
+   "size": 13229,
+   "md5": "EB10E34B82B2A71E3EE5518E70E722A7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_Doushicfer.BIN",
+   "size": 11637,
+   "md5": "49F7B5F9E3F68475B0A0666A8981ADC9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_Dsc.BIN",
+   "size": 11782,
+   "md5": "B6E038B12CA425F404FBB781D6B55235",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_FaLang.BIN",
+   "size": 14592,
+   "md5": "FE09A8D5D1236ABCB108B61F675EC570",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_GA.BIN",
+   "size": 11792,
+   "md5": "02E207FFFB6DBFEA08DAAD06A5EACFC7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_GC.BIN",
+   "size": 11128,
+   "md5": "3BC9A2F2D8EDC5EAA06268869974EB39",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_HWG.BIN",
+   "size": 13995,
+   "md5": "DAEBE132AF5DC9BDA166C2F39449E669",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_LNY2026.BIN",
+   "size": 10571,
+   "md5": "EECD9992B7A26D3266B8AEE408BE9F31",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_Lucy.BIN",
+   "size": 11075,
+   "md5": "659B170BD69DE4A775E187BCE3867B9B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_NobleGold.BIN",
+   "size": 12079,
+   "md5": "5F35C701AF15C6D3CA82CE679925D803",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_NobleGold_Ice.BIN",
+   "size": 11210,
+   "md5": "DBF11BA9C699E6F89563BD033573192D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_NobleGold_Jade.BIN",
+   "size": 12736,
+   "md5": "BF30451E0298D09884874775B511D911",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_NoMark.BIN",
+   "size": 10946,
+   "md5": "2FA9DAB5E8B76534A6CB6A5EA1573FBB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_PC.BIN",
+   "size": 11086,
+   "md5": "F145EE3ED029DEC8CEE140034B388CE0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_PC_CFS18_2.BIN",
+   "size": 11434,
+   "md5": "B17CD64E7B749DBAA39BE40EBB183B1F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_QQMBS.BIN",
+   "size": 12771,
+   "md5": "92DA64F9D619B0CC9902897C58C7C663",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_RSL.BIN",
+   "size": 10546,
+   "md5": "68A3D403540F407E7A5C8E76C47B959D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_Spring.BIN",
+   "size": 10921,
+   "md5": "F4CB53AA9425999B87F966B7DDDA7219",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_SS.BIN",
+   "size": 9916,
+   "md5": "29C36B1249D839A54EB568CBC3424FF3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_TCG.BIN",
+   "size": 10920,
+   "md5": "BE7C75CED9FD26C4A3B9E5F293D184BC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_XGDH.BIN",
+   "size": 10513,
+   "md5": "A35D3DD2B66F80BB4D95CA9A0D39BF60",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_Kukri_Beast_Xiaodingdang.BIN",
+   "size": 11095,
+   "md5": "819F0220B66F74DE7A69E759B45A2338",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/(Exchange Ticket) Kukri_Beast_21WC Skin.BIN",
+   "size": 13832,
+   "md5": "6977B499A797AAA2EEAC0F4D3EFF0310",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/(Exchange Ticket) Kukri_Beast_GC.BIN",
+   "size": 13087,
+   "md5": "58B7ADBF563BE1AB4FEED77431DF23FA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/(Exchange Ticket) Kukri_Beast_QQMBS Skin.BIN",
+   "size": 12401,
+   "md5": "537CCBF64DC864AB134D35E00F145D15",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/(Exchange Ticket) Kukri_Beast_RSL.BIN",
+   "size": 13117,
+   "md5": "81ECA441F713AFD783DAD5C054CD1E03",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/(Exchange Ticket) Kukri_Beast_SS.BIN",
+   "size": 12793,
+   "md5": "B33602D71D5D8C2AAE10BD06CAE434BF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/(Exchange Ticket) Kukri_Beast_TCG.BIN",
+   "size": 12585,
+   "md5": "EAB7FC9A52364FB8F77395FCA3899A1D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast.BIN",
+   "size": 3225,
+   "md5": "F1AA16BC5D31BA75AF0C14179F70698B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_AD.BIN",
+   "size": 3048,
+   "md5": "FD376E6877BC5C29C97BE5081C865DE0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_BO.BIN",
+   "size": 3538,
+   "md5": "2D1B7ABAFF7A26287F3064FB306FE553",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_BO_s.BIN",
+   "size": 1639,
+   "md5": "B03B7CE9683F383031B09843FE9E8159",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_CFPassS10.BIN",
+   "size": 3527,
+   "md5": "BDBF3A02FD754721160594D9690B1EE6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_CFPassS10_s.BIN",
+   "size": 1507,
+   "md5": "26009F2CC89D631E791FC5951EFDEC4A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_CFPassS9.BIN",
+   "size": 3800,
+   "md5": "29F243F13A36B55F9DAB50DD51AB7136",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_CFPassS9_s.BIN",
+   "size": 1673,
+   "md5": "88B05BA2E63A5A5010D3BA404DC7816F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_Classic VFX.BIN",
+   "size": 954,
+   "md5": "C9F7CA12F38CC4CF29A85F90734FE927",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_Esports VFX.BIN",
+   "size": 11281,
+   "md5": "171F3AAEC37DE913B597577FF46808A3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_FaLang.BIN",
+   "size": 4127,
+   "md5": "6FA47F4AAFBD8939C60689A3DE630ADB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_FaLang_s.BIN",
+   "size": 1857,
+   "md5": "D91A8D9504956A96C4F4D87E6FCA1F73",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_Fire VFX.BIN",
+   "size": 10192,
+   "md5": "60C6CA99A71C26FD2FD165D0C418045E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_GA.BIN",
+   "size": 3888,
+   "md5": "DC4A25D08F94CE3FF9BA1386DE205437",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_GA_s.BIN",
+   "size": 1741,
+   "md5": "9672B4A2571FBB1A4AD06582C63061D8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_GC.BIN",
+   "size": 3018,
+   "md5": "1BE2E43D586EEEB441813D9B6068A1D4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_GC_s.BIN",
+   "size": 1419,
+   "md5": "D158CE3CAA7CDD899CA6E201BA666BEC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_NobleGold_Ice.BIN",
+   "size": 3107,
+   "md5": "DA7138B441A0E1713D105D5E7E80185A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_NobleGold_Ice_s.BIN",
+   "size": 1454,
+   "md5": "6ADA580E6EDC0B3B245A1AE34D661E22",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_Redhorse VFX.BIN",
+   "size": 12364,
+   "md5": "1EA5FB04A6A6C3222DE2208F5BCDD454",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_RSL.BIN",
+   "size": 2931,
+   "md5": "8D22F96301739D08374AA58DD6BFA7D5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_RSL_s.BIN",
+   "size": 1397,
+   "md5": "E72511BEAEC0D63A709B320A676F6006",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_s.BIN",
+   "size": 1278,
+   "md5": "52FB420168EA1BD86B059D6A13ECC29E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_TCG.BIN",
+   "size": 2864,
+   "md5": "74BA23A26EB6453582EC1D2AD54BDB57",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_TCG_s.BIN",
+   "size": 1326,
+   "md5": "E231D8BC8E9B851CE755A59D0C00CCB3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_XGDH.BIN",
+   "size": 3547,
+   "md5": "FB5A569760780D3EEB745D4F12AC134E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/Kukri_Beast_XGDH_s.BIN",
+   "size": 1642,
+   "md5": "F1FA462FF60328B2E7BD1EBBC1443796",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_AD.BIN",
+   "size": 5472,
+   "md5": "191912F0976BAE2A7E30274E558F79FB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_BO.BIN",
+   "size": 6551,
+   "md5": "65620F18A35D564477448364272FC0FC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_CFPassS9.BIN",
+   "size": 5613,
+   "md5": "FF771D0E420BCFC172EDCE4CE43D107E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_Doushicfer.BIN",
+   "size": 5833,
+   "md5": "826F403BCDC855D19DC50B10945C6C3D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_Dsc.BIN",
+   "size": 5684,
+   "md5": "43C481A2A9C3BA72B69DA4F55EE5A145",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_FaLang.BIN",
+   "size": 5487,
+   "md5": "CAD82F26302BFB48DD8C954E193F9C4D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_GA.BIN",
+   "size": 5112,
+   "md5": "17DAFB06BCE9DC55F2AFD4345E04044E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_GC.BIN",
+   "size": 5480,
+   "md5": "C23D8293B01328C44E16CD720455794E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_Lucy.BIN",
+   "size": 4896,
+   "md5": "311F2F177411AF6F762A3E334E9528E3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_NobleGold.BIN",
+   "size": 7230,
+   "md5": "EB8EF62DE746EB32FF863CA480A24999",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_NobleGold_Ice.BIN",
+   "size": 6311,
+   "md5": "987D80CF56B30DB440575DD7472F9D58",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_NobleGold_Jade.BIN",
+   "size": 6767,
+   "md5": "61D016732176064EE41FCB9CE971FEF7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_PC.BIN",
+   "size": 4437,
+   "md5": "99603E9D34C9AB7F26929F38AC4FC45C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_RSL.BIN",
+   "size": 5344,
+   "md5": "5ABF8067E166AA3823A3B545F2C92480",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_Spring.BIN",
+   "size": 5459,
+   "md5": "DA1DAA5C27DBD1C218CACF6EAA3A3DCC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_SS.BIN",
+   "size": 4139,
+   "md5": "B3DEE1B003206D93B44CB2D70EE58624",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_TCG.BIN",
+   "size": 5032,
+   "md5": "C83CEB73965A97CE9FE7E1D15BD79E77",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_XGDH.BIN",
+   "size": 4948,
+   "md5": "322BD02D381F2BE3ED28B7A9065D7214",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/Kukri_Beast_Xiaodingdang.BIN",
+   "size": 5578,
+   "md5": "BDCD76477C95C4C7834D2DA13AFF9D23",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/NobleGoldName/Kukri_Beast_NobleGold/Name.BIN",
+   "size": 8083,
+   "md5": "FBA682A08AF6E3E3DF266AA4EB4E5DF3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/NobleGoldName/Kukri_Beast_NobleGold/NewName.BIN",
+   "size": 52085,
+   "md5": "A321813B9F9CB9DBCC5B5B31EA4486AD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/NobleGoldName/Kukri_Beast_NobleGold_Jade/Name.BIN",
+   "size": 8145,
+   "md5": "A91432ACAA6E0FFC6078038D99D2064B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/NobleGoldName/Kukri_Beast_NobleGold_Jade/NewName.BIN",
+   "size": 52299,
+   "md5": "94864A91D6434B81EDC1C5182EE6A0FE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_01.BIN",
+   "size": 10789,
+   "md5": "B8089EB9BFC031F04543711377B97DB3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_02.BIN",
+   "size": 16082,
+   "md5": "BB0B48270AE5EAC76420A9367C9E4000",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_03.BIN",
+   "size": 23577,
+   "md5": "FE5BEFF6A21281E9261C15CC63C21FAC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_04.BIN",
+   "size": 26052,
+   "md5": "036CE87F19BC9039FB0FF4A3B83398B6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_05.BIN",
+   "size": 26052,
+   "md5": "036CE87F19BC9039FB0FF4A3B83398B6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_06.BIN",
+   "size": 23577,
+   "md5": "FE5BEFF6A21281E9261C15CC63C21FAC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_07.BIN",
+   "size": 23577,
+   "md5": "FE5BEFF6A21281E9261C15CC63C21FAC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_08.BIN",
+   "size": 26052,
+   "md5": "036CE87F19BC9039FB0FF4A3B83398B6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_09.BIN",
+   "size": 26052,
+   "md5": "036CE87F19BC9039FB0FF4A3B83398B6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_10.BIN",
+   "size": 23577,
+   "md5": "FE5BEFF6A21281E9261C15CC63C21FAC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_11.BIN",
+   "size": 23577,
+   "md5": "FE5BEFF6A21281E9261C15CC63C21FAC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_12.BIN",
+   "size": 26052,
+   "md5": "036CE87F19BC9039FB0FF4A3B83398B6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_13.BIN",
+   "size": 26052,
+   "md5": "036CE87F19BC9039FB0FF4A3B83398B6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_14.BIN",
+   "size": 23577,
+   "md5": "FE5BEFF6A21281E9261C15CC63C21FAC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_Kukri_Beast/SGFX_se_vvip_Kukri_Beast_15.BIN",
+   "size": 16082,
+   "md5": "BB0B48270AE5EAC76420A9367C9E4000",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/Name/Kukri_Beast_21WC/NewName.BIN",
+   "size": 62288,
+   "md5": "B1D9892A763FF5EF516BC00A8AB59E8D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/Name/Kukri_Beast_CFS18/NewName.BIN",
+   "size": 59293,
+   "md5": "50A0B2980F3116C895B8B6FC4873293B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/Name/Kukri_Beast_Chimera/NewName.BIN",
+   "size": 59911,
+   "md5": "8845BB2B0A198DCF1A73C0CE33D4FE33",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/Name/Kukri_Beast_QQMBS/NewName.BIN",
+   "size": 60013,
+   "md5": "14EF391FD51E99C185CA97CCBC663463",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/Name/Kukri_Beast_SS/NewName.BIN",
+   "size": 53721,
+   "md5": "CFB535C5888FB6E0AB6A4D0007F63F63",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/Name/M4A1-S-IronBeast_Champion/Kukri_Beast_QQMBS/NewName.BIN",
+   "size": 60013,
+   "md5": "14EF391FD51E99C185CA97CCBC663463",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_21WC.BIN",
+   "size": 38263,
+   "md5": "E8CAEBC62FE3526AFFEEED7CA2EACE16",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_BO Skin.BIN",
+   "size": 43958,
+   "md5": "B96C34C3B611F189EA0DB449948B249E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_CFS18.BIN",
+   "size": 39650,
+   "md5": "63AC06A2F2F98D801BF5AEEA4789255E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_Chimera.BIN",
+   "size": 42086,
+   "md5": "746E5D6F8229436023E6B53EB1AAAA1E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_FaLang Skin.BIN",
+   "size": 38082,
+   "md5": "3DB0BAA6527E702E3FBE8F3DD72EA202",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_FaLang.BIN",
+   "size": 38082,
+   "md5": "3DB0BAA6527E702E3FBE8F3DD72EA202",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_GA.BIN",
+   "size": 39923,
+   "md5": "A91E0EEEF08A38324A9054F732F5CAD7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_GC.BIN",
+   "size": 38742,
+   "md5": "99F77D09E2A96818AE3BB0F2CA87E8A1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_HWG.BIN",
+   "size": 34818,
+   "md5": "03D812287FE033BAF92CB4FD25545716",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_PC.BIN",
+   "size": 40067,
+   "md5": "7B40141BCCC31F04D9D6D9E56B9C4658",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_PC_CFS18_2.BIN",
+   "size": 39650,
+   "md5": "63AC06A2F2F98D801BF5AEEA4789255E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_QQMBS.BIN",
+   "size": 44763,
+   "md5": "A555C53C6FCA22E24460FB35B7ACD2CF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_RSL.BIN",
+   "size": 36749,
+   "md5": "C70B7AB34550DF890E38C8D7940684BD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_Spring.BIN",
+   "size": 36259,
+   "md5": "5A7767DE4FCCAE596C0AF8BB431C570C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_SS.BIN",
+   "size": 25845,
+   "md5": "162109ABBE1EA11B1D8E67A03358735A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_TCG.BIN",
+   "size": 39411,
+   "md5": "33509A8142DA6E6854E6B060B01EB92F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_XGDH.BIN",
+   "size": 38778,
+   "md5": "B723A7667EAA0388B4143AB06844EFD4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/Kukri_Beast_Xiaodingdang.BIN",
+   "size": 38285,
+   "md5": "E1DF282FA748263442DC400E38BFE71A",
+   "md5_complete": true
+  }
+ ]
+}

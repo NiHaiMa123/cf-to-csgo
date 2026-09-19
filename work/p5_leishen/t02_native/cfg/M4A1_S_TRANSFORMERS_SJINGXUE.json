@@ -1,0 +1,224 @@
+{
+  "Textures": {
+    "SpecularMapName2": "M4A1_S_Transformers_Sjingxue_S.png",
+    "EnvCubeMapName2": "LobbyCube04.dds",
+    "NormalMapName2": "M4A1_S_Transformers_Sjingxue_N.png",
+    "AlphaMapName2": "M4A1_S_Transformers_Sjingxue_A.png",
+    "AlphaMapName0": "M4A1_S_Transformers_Sjingxue_M.png",
+    "OverlayMapName0": "Fire_Purple.png"
+  },
+  "Techniques": {
+    "DiffuseMappingEnabled": "1",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1",
+    "TexturePanningEnabled": "0",
+    "SkelMeshEnabled": "0"
+  },
+  "Properties": {
+    "ForceNoAlpha": "0",
+    "IsTranslucent": "0",
+    "HightLightPower": "1",
+    "LightBrightness": "0.4",
+    "EnvCubeMapBrightness": "1.5",
+    "SpecularPower": "3",
+    "SpecularLength": "0.4",
+    "SpecularHighlight": "0.5",
+    "SpecularBacklighting": "1",
+    "DiffuseBoost": "0.2",
+    "AmbientLightColor": "0.05",
+    "ReflectionIndex": "0.93",
+    "RefractionIndex": "0.19",
+    "CubeMapTransformY": "343",
+    "RenderParam": "2",
+    "EnvCubeUsage": "2",
+    "NormalBoost": "1",
+    "HightLightR": "0.48",
+    "HightLightG": "0.71",
+    "HightLightB": "0.54",
+    "OutLineColorR": "0.52",
+    "OutLineColorG": "0.63",
+    "OutLineColorB": "0.71",
+    "OutLineColorLimitR": "0.34",
+    "OutLineColorLimitG": "0.64",
+    "OutLineColorLimitB": "0.45",
+    "IsCustomColor": "0",
+    "PearlRange": "1",
+    "PearlNp": "0.7",
+    "FresnelRange": "10",
+    "FresnelPower": "3"
+  },
+  "TexturePanning": {
+    "TexturePanningVelocityU": "0.8",
+    "TexturePanningVelocityV": "0.2"
+  },
+  "TextureTile": {
+    "TextureTileX": "5",
+    "TextureTileY": "10"
+  },
+  "HalfLambert": {
+    "Power": "1",
+    "Base": "0.4"
+  },
+  "Techniques2": {
+    "DiffuseMappingEnabled": "0",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1",
+    "TexturePanningEnabled": "0",
+    "SkelMeshEnabled": "0"
+  },
+  "Properties2": {
+    "ForceNoAlpha": "0",
+    "IsTranslucent": "0",
+    "HightLightPower": "1",
+    "LightBrightness": "1",
+    "EnvCubeMapBrightness": "5",
+    "SpecularPower": "1",
+    "SpecularLength": "0",
+    "SpecularHighlight": "1",
+    "SpecularBacklighting": "1",
+    "DiffuseBoost": "0.01",
+    "AmbientLightColor": "0.01",
+    "ReflectionIndex": "0.8",
+    "RefractionIndex": "0.3",
+    "CubeMapTransformY": "-50",
+    "RenderParam": "2",
+    "EnvCubeUsage": "2",
+    "NormalBoost": "1",
+    "HightLightR": "0.98",
+    "HightLightG": "0.49",
+    "HightLightB": "0.49",
+    "OutLineColorR": "0.43",
+    "OutLineColorG": "0.05",
+    "OutLineColorB": "0",
+    "OutLineColorLimitR": "0.7",
+    "OutLineColorLimitG": "0.05",
+    "OutLineColorLimitB": "0",
+    "IsCustomColor": "0",
+    "PearlRange": "1",
+    "PearlNp": "0.7",
+    "FresnelRange": "10",
+    "FresnelPower": "3"
+  },
+  "TexturePanning2": {
+    "TexturePanningVelocityU": "3",
+    "TexturePanningVelocityV": "0.2"
+  },
+  "TextureTile2": {
+    "TextureTileX": "5",
+    "TextureTileY": "10"
+  },
+  "HalfLambert2": {
+    "Power": "2",
+    "Base": "0.7"
+  },
+  "Refraction": {
+    "RefractionEnable": "0",
+    "RefractionVisibility": "0",
+    "RefractionIntensity": "5",
+    "RefractionRimLightColorR": "0",
+    "RefractionRimLightColorG": "0",
+    "RefractionRimLightColorB": "0",
+    "RefractionRimLightWidth": "0"
+  },
+  "DynamicLight": {
+    "UseDynamicLight": "0",
+    "UseMaskMapAsExceptionArea": "0"
+  },
+  "Emissive": {
+    "EmissiveMapIntensity": "0",
+    "EmissiveMapTimer": "0",
+    "EmissiveMapThreshold": "0.5",
+    "NoiseMapFlowSpeedU": "0",
+    "NoiseMapFlowSpeedV": "0",
+    "EnabledOnAnimationKey": "0"
+  },
+  "Refraction2": {
+    "RefractionEnable": "0",
+    "RefractionVisibility": "0",
+    "RefractionIntensity": "5",
+    "RefractionRimLightColorR": "0",
+    "RefractionRimLightColorG": "0",
+    "RefractionRimLightColorB": "0",
+    "RefractionRimLightWidth": "0"
+  },
+  "Emissive2": {
+    "EmissiveMapIntensity": "0",
+    "EmissiveMapTimer": "0",
+    "EmissiveMapThreshold": "0.5",
+    "NoiseMapFlowSpeedU": "0",
+    "NoiseMapFlowSpeedV": "0",
+    "EnabledOnAnimationKey": "0"
+  },
+  "Techniques3": {
+    "DiffuseMappingEnabled": "1",
+    "SpecularMappingEnabled": "1",
+    "EnvCubeMappingEnabled": "1",
+    "NormalMappingEnabled": "1",
+    "TexturePanningEnabled": "0",
+    "SkelMeshEnabled": "0"
+  },
+  "Properties3": {
+    "ForceNoAlpha": "0",
+    "IsTranslucent": "0",
+    "HightLightPower": "1",
+    "LightBrightness": "1",
+    "EnvCubeMapBrightness": "3",
+    "SpecularPower": "2",
+    "SpecularLength": "0",
+    "SpecularHighlight": "1",
+    "SpecularBacklighting": "1",
+    "DiffuseBoost": "0.12",
+    "AmbientLightColor": "0.01",
+    "ReflectionIndex": "0.93",
+    "RefractionIndex": "0.19",
+    "CubeMapTransformY": "343",
+    "RenderParam": "2",
+    "EnvCubeUsage": "2",
+    "NormalBoost": "1",
+    "HightLightR": "0.98",
+    "HightLightG": "0.49",
+    "HightLightB": "0.49",
+    "OutLineColorR": "0.43",
+    "OutLineColorG": "0.05",
+    "OutLineColorB": "0",
+    "OutLineColorLimitR": "0.7",
+    "OutLineColorLimitG": "0.05",
+    "OutLineColorLimitB": "0",
+    "IsCustomColor": "0",
+    "PearlRange": "1",
+    "PearlNp": "0.7",
+    "FresnelRange": "10",
+    "FresnelPower": "3"
+  },
+  "TexturePanning3": {
+    "TexturePanningVelocityU": "3",
+    "TexturePanningVelocityV": "0.2"
+  },
+  "TextureTile3": {
+    "TextureTileX": "5",
+    "TextureTileY": "10"
+  },
+  "HalfLambert3": {
+    "Power": "2",
+    "Base": "0.7"
+  },
+  "Refraction3": {
+    "RefractionEnable": "0",
+    "RefractionVisibility": "0",
+    "RefractionIntensity": "5",
+    "RefractionRimLightColorR": "0",
+    "RefractionRimLightColorG": "0",
+    "RefractionRimLightColorB": "0",
+    "RefractionRimLightWidth": "0"
+  },
+  "Emissive3": {
+    "EmissiveMapIntensity": "0",
+    "EmissiveMapTimer": "0",
+    "EmissiveMapThreshold": "0.5",
+    "NoiseMapFlowSpeedU": "0",
+    "NoiseMapFlowSpeedV": "0",
+    "EnabledOnAnimationKey": "0"
+  }
+}

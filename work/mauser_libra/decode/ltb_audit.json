@@ -1,0 +1,194 @@
+{
+  "header": {
+    "file_type": 1,
+    "ltb_header_version": 9,
+    "model_file_version": 25,
+    "allocs": {
+      "nKeyFrames": 321,
+      "nParentAnims": 7,
+      "nNodes": 59,
+      "nPieces": 12,
+      "nChildModels": 1,
+      "nTris": 4101,
+      "nVerts": 2182,
+      "nVertexWeights": 2592,
+      "nLODs": 12,
+      "nSockets": 3,
+      "nWeightSets": 1,
+      "nStrings": 87,
+      "StringLengths": 1230,
+      "VertAnimDataSize": 0,
+      "nAnimData": 530292
+    }
+  },
+  "n_nodes": 59,
+  "n_clips": 7,
+  "clip_summary": [
+    {
+      "name": "prefire",
+      "n_keyframes": 16,
+      "duration_ms": 500,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "postfire",
+      "n_keyframes": 16,
+      "duration_ms": 500,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "run",
+      "n_keyframes": 31,
+      "duration_ms": 1000,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "fire",
+      "n_keyframes": 6,
+      "duration_ms": 150,
+      "fps": 33.333333333333336,
+      "compression": "NONE",
+      "events": []
+    },
+    {
+      "name": "select",
+      "n_keyframes": 31,
+      "duration_ms": 1000,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 3,
+          "time_ms": 100,
+          "label": "WeaponReload"
+        },
+        {
+          "frame": 24,
+          "time_ms": 800,
+          "label": "Extra01SoundName"
+        }
+      ]
+    },
+    {
+      "name": "reload",
+      "n_keyframes": 130,
+      "duration_ms": 3200,
+      "fps": 40.3125,
+      "compression": "NONE",
+      "events": [
+        {
+          "frame": 0,
+          "time_ms": 0,
+          "label": "WeaponClipIn"
+        },
+        {
+          "frame": 97,
+          "time_ms": 2406,
+          "label": "WeaponClipOut"
+        },
+        {
+          "frame": 107,
+          "time_ms": 2654,
+          "label": "Extra02SoundName"
+        },
+        {
+          "frame": 120,
+          "time_ms": 2977,
+          "label": "WeaponFinish"
+        },
+        {
+          "frame": 129,
+          "time_ms": 3200,
+          "label": "reload"
+        }
+      ]
+    },
+    {
+      "name": "idle_0",
+      "n_keyframes": 91,
+      "duration_ms": 3000,
+      "fps": 30.0,
+      "compression": "NONE",
+      "events": []
+    }
+  ],
+  "node_names": [
+    "Scene Root",
+    "FvARM-bone",
+    "FvARM-bone Pelvis",
+    "FvARM-bone Spine",
+    "FvARM-bone Spine1",
+    "FvARM-bone Neck",
+    "FvARM-bone L Clavicle",
+    "FvARM-bone L UpperArm",
+    "FvARM-bone L ForeArm",
+    "FvARM-bone L Hand",
+    "FvARM-bone L Finger0",
+    "FvARM-bone L Finger01",
+    "FvARM-bone L Finger02",
+    "FvARM-bone L Finger1",
+    "FvARM-bone L Finger11",
+    "FvARM-bone L Finger12",
+    "FvARM-bone L Finger2",
+    "FvARM-bone L Finger21",
+    "FvARM-bone L Finger22",
+    "FvARM-bone L Finger3",
+    "FvARM-bone L Finger31",
+    "FvARM-bone L Finger32",
+    "FvARM-bone L Finger4",
+    "FvARM-bone L Finger41",
+    "FvARM-bone L Finger42",
+    "FvARM-bone L ForeTwist",
+    "FvARM-bone R Clavicle",
+    "FvARM-bone R UpperArm",
+    "FvARM-bone R ForeArm",
+    "FvARM-bone R Hand",
+    "FvARM-bone R Finger0",
+    "FvARM-bone R Finger01",
+    "FvARM-bone R Finger02",
+    "FvARM-bone R Finger1",
+    "FvARM-bone R Finger11",
+    "FvARM-bone R Finger12",
+    "FvARM-bone R Finger2",
+    "FvARM-bone R Finger21",
+    "FvARM-bone R Finger22",
+    "FvARM-bone R Finger3",
+    "FvARM-bone R Finger31",
+    "FvARM-bone R Finger32",
+    "FvARM-bone R Finger4",
+    "FvARM-bone R Finger41",
+    "FvARM-bone R Finger42",
+    "FvARM-bone R ForeTwist",
+    "FvARM-bone Prop1",
+    "Dummy01",
+    "Box04",
+    "Box01",
+    "Box011",
+    "Box010",
+    "Box02",
+    "Box03",
+    "Box09",
+    "Box05",
+    "Box06",
+    "Box07",
+    "Box08"
+  ],
+  "weight_sets": [
+    {
+      "name": "BaseTracker",
+      "count": 59,
+      "nonzero": 59
+    }
+  ],
+  "child_models": [
+    "SELF"
+  ],
+  "stream_end_offset": 714909,
+  "body_bytes": 715302
+}

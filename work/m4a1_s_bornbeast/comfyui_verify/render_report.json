@@ -1,0 +1,17 @@
+{
+  "obj": "D:\\project\\cf_to_csgo\\work\\m4a1_s_bornbeast\\source_dump\\c1_split\\weapon_only\\PV-M4A1_S_BornBeast_Classic_weapon_only.obj",
+  "vertex_count": 3646,
+  "triangle_count": 4008,
+  "renders": [
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/native_dtx_side.png",
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/native_dtx_three_quarter.png",
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/cs16_atlas_side.png",
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/cs16_atlas_three_quarter.png",
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/shop_icon_side.png",
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/shop_icon_three_quarter.png",
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/comfy_atlas_side.png",
+    "work/m4a1_s_bornbeast/comfyui_verify/renders/comfy_atlas_three_quarter.png"
+  ],
+  "sheet": "work/m4a1_s_bornbeast/comfyui_verify/comparison_sheet.png",
+  "note": "visual experiment only; comfy/cs16/shop pixels are not P4-M01 native material"
+}

@@ -1,0 +1,73 @@
+CF Rez Manager OBJ texture report
+
+Sources: 1
+Meshes: 11
+Texture references: 11
+Missing textures: 11
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: Fview-hand2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: Fview-arm2
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast04
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast02
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast03
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast07
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast08
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast05
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast06
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+
+Source: Models\PLAYERVIEW\PV-M4A1_S_BornBeast_Classic.LTB
+Mesh: M4A1S_BornBeast01
+  Reference: <none>
+  Inferred candidates: Models/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, ModelTextures/PLAYERVIEW/PV-M4A1_S_BornBeast_Classic, PV-M4A1_S_BornBeast_Classic, M4A1_S_BornBeast_Classic
+  Exported: <missing>
+

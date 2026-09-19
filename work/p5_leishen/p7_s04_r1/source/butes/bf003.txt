@@ -1,0 +1,16 @@
+( Breakable
+	( BreakableName "BreakLightTest" )
+	( TargetDebrisName "BreakLightDebris" )
+	( ModelFileName "Models\M-motion.ltb" )
+	( MakeDebrisWhenHit 1 )
+	( SkinFileName "ModelTextures\ak47.dtx" )
+	( Health 20 )
+)
+
+( Breakable
+	( BreakableName "Bottle" )
+	( TargetDebrisName "BottleDebris" )
+	( ModelFileName "Model\Breakable\GenBottle.ltc" )
+	( SkinFileName "ModelTextures\Breakable\SiBottle1.dtx" )
+	( Health 20 )
+)

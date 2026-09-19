@@ -1,0 +1,105 @@
+{
+  "task_id": "P7-S04-R1-A",
+  "model": "grok-4.6",
+  "stage": "G1",
+  "status": "SOURCE_REFERENCE_READY_FOR_REVIEW",
+  "reference_kind": "SKELETON_ONLY_REFERENCE",
+  "compiled": false,
+  "deployed": false,
+  "user_accepted": false,
+  "anim_fixed": false,
+  "g2_opened": false,
+  "original_scene_sha_unchanged": true,
+  "unsaved_backup_path": "work/p5_leishen/p7_s04_r1/baseline/live_unsaved_20260913_113051.blend",
+  "working_path": "work/p5_leishen/p7_s04_r1/baseline/working_20260913_113051.blend",
+  "working_sha256": "3982f71ec64e6d54b577a58250f4b4a974fb92253545b7b326d25ebe977b6ed1",
+  "working_sha_unchanged": true,
+  "source_reference_blend": "work/p5_leishen/p7_s04_r1/source/source_reference.blend",
+  "source_hashes": {
+    "body_sha256": "511dec8d2401a1886ddecd14b4f18e17ac0afbefd943f6dc11a3fd2f82ef6b49",
+    "packed_sha256": "a0ccef5deed745f1731eb93295c630f531123288055f3c3790531b99b6e401b8",
+    "directory_md5": "7524a50ffd4a381479f647fdf04b6295",
+    "n_nodes": 57,
+    "n_clips": 8,
+    "flags_all_zero": true
+  },
+  "convention": {
+    "quat": "xyzw",
+    "translation": "col3",
+    "multiply": "parent_at_local",
+    "inferred_from_bind_equals_clip0": false,
+    "sdk_boundary": "jsj2008/lithtech documents the format; it is not the current CF runtime interpolator"
+  },
+  "v1_audit_kept_as_failed_evidence": "work/p5_leishen/p7_s04_r1/source/source_audit.json",
+  "time_mapping": {
+    "diagnostic_fps": 100,
+    "formula": "frame = time_ms * 100 / 1000",
+    "not_cf_native_sampling": true,
+    "draw_select_ms": 640,
+    "reload_ms": 1600,
+    "idle_0_ms": 3000,
+    "interpolation": {
+      "position": "linear in source milliseconds",
+      "rotation": "unit quaternion shortest-arc SLERP after q/-q continuity",
+      "blender_component_linear_not_claimed_equal": true,
+      "engine_runtime": "OPEN"
+    }
+  },
+  "source_end_vs_idle": {
+    "select_gun_first_vs_idle": 4.981884111601881,
+    "select_keeps_entry_motion": true,
+    "end_closure_pos_lt_1e4": {
+      "select_gun": true,
+      "select_rhand": true,
+      "select_lhand": true,
+      "reload_gun": true,
+      "reload_rhand": true,
+      "reload_lhand": true
+    }
+  },
+  "quaternion_findings": {
+    "reload_L_Hand_key96_norm": 0.9907410651756582,
+    "reload_L_Hand_key96_raw_det": 0.9276306730643128,
+    "reload_L_Hand_key96_raw_RTR_err": 0.0723688076126181,
+    "raw_vs_unit_world_max": {
+      "reload": {"distance": 0.048451956732605696, "key": 96, "bone": "FvARM-bone L Finger12"},
+      "select": {"distance": 3.5901666205131555e-05, "key": 15, "bone": "FvARM-bone L Finger12"}
+    },
+    "matches_planner_review_g1_numeric": true,
+    "angle_policy": "trace formula only on unit or polar-extracted rotations"
+  },
+  "bind_vs_clip0_recorded_not_gated": {
+    "reload_fromparent_pos_match": 53,
+    "reload_gun_subtree_world_pos_match": true,
+    "pelvis_compensation_applied": false
+  },
+  "visible_reference": {
+    "scene": "CF_SOURCE_REFERENCE",
+    "anim": "R1A_ANIM_* orange sampler worlds",
+    "bind": "R1A_BIND_* cyan static node.matrix",
+    "forced_overlay_compensation": false,
+    "armature_pose_matrix_not_used_for_display": true,
+    "reason": "Blender pose.matrix child bones drifted (Box004 ~17 CF units); joint meshes use sampler translations"
+  },
+  "artifacts": [
+    "work/p5_leishen/p7_s04_r1/scripts/g1_source_audit_v3.py",
+    "work/p5_leishen/p7_s04_r1/source/source_audit_v3.json",
+    "work/p5_leishen/p7_s04_r1/source/timeline_v3.json",
+    "work/p5_leishen/p7_s04_r1/source/reference_payload.json",
+    "work/p5_leishen/p7_s04_r1/source/source_reference.blend",
+    "work/p5_leishen/p7_s04_r1/source/shots/",
+    "work/p5_leishen/p7_s04_r1/source/shots/select_side_100fps.mp4",
+    "work/p5_leishen/p7_s04_r1/source/shots/reload_side_100fps.mp4",
+    "work/p5_leishen/p7_s04_r1/review/r1a_report.md",
+    "work/p5_leishen/p7_s04_r1/review/r1a_result.json"
+  ],
+  "failed_checks": [],
+  "limitations": [
+    "SKELETON_ONLY_REFERENCE; geometry.json has no weights/inverse bind",
+    "Public SDK Slerp is the diagnostic sampler intent, not a CF binary proof",
+    "HUD source_key is none when the 10ms grid does not land on a file key",
+    "Bind T-pose arms occupy a different region than clip idle; that difference is left visible"
+  ],
+  "next_review_question": "Is this source skeleton + 100fps timeline acceptable as G1, so G2 control-rig work can open on a new copy? Do not treat this as a fixed retarget.",
+  "cs_scene_preserved_in_reference_blend": true
+}

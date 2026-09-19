@@ -1,0 +1,24 @@
+{
+  "center": [
+    6.986173152923584,
+    0.5374270081520081,
+    -0.2552480101585388
+  ],
+  "cam": [
+    15.986173629760742,
+    -19.46257209777832,
+    6.744751930236816
+  ],
+  "uv": [
+    "Float2"
+  ],
+  "material": "rif_m4a1_p6",
+  "tex": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\_png\\normal_src.png",
+  "working_ok": true,
+  "shots": [
+    "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\view_model_idle.png",
+    "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\view_model.png",
+    "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\view_model_select_end.png",
+    "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\source\\shots\\view_model_reload.png"
+  ]
+}

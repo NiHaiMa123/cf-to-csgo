@@ -1,0 +1,89 @@
+
+// Nano Host
+(NanoCharacter 
+	(NanoType 1 )
+	(NanoAbility 0 )
+	(NanoSkill 1 )
+	(NanoAddHP 1000 )
+	(NanoDefaultWeaponIndex 120 )
+	(NextLevelNanoType 3 )
+	(ModelFileName "Models\Character\NANOGHOST.LTB" )
+	(ChildModelFileName "Models\Character\M-MOTION.LTB" )
+	(SkinFileName "ModelTextures\Character\Nano\NanoGhost_0.dtx" )
+	(SocketModelFileName1 "Models\SOCKETITEM\NANO\NANOGHOST_MASK.ltb" )
+	(SocketSkinFileName1 "ModelTextures\SOCKETITEM\NANO\\NANOGHOST_TAIL.dtx" )
+	(SocketModelFileName2 "Models\SOCKETITEM\NANO\NANOGHOST_TAIL.ltb" )
+	(SocketSkinFileName2 "ModelTextures\SOCKETITEM\NANO\\NANOGHOST_TAIL.dtx" )
+)
+
+// Nano Slave
+(NanoCharacter 
+	(NanoType 2 )
+	(NanoAbility 0 )
+	(NanoSkill 0 )
+	(NanoAddHP 0 )	
+	(NanoDefaultWeaponIndex 120 )
+	(NextLevelNanoType 1 )
+	(ModelFileName "Models\Character\NANOGHOST.LTB" )
+	(ChildModelFileName "Models\Character\M-MOTION.LTB" )
+	(SkinFileName "ModelTextures\Character\Nano\NanoGhost_0.dtx" )
+)
+
+// Nano Master
+(NanoCharacter 
+	(NanoType 3 )
+	(NanoAbility 0 )
+	(NanoSkill 1 )
+	(NanoAddHP 1000 )
+	(NanoDefaultWeaponIndex 182 )
+	(ModelFileName "Models\Character\NANOGHOST.LTB" )
+	(ChildModelFileName "Models\Character\M-MOTION.LTB" )
+	(SkinFileName "ModelTextures\Character\Nano\NanoGhost_1.dtx" )
+	(SocketModelFileName1 "Models\SOCKETITEM\NANO\NANOGHOST_MASK.ltb" )
+	(SocketSkinFileName1 "ModelTextures\SOCKETITEM\NANO\\NANOGHOST_UP_TAIL.dtx" )
+	(SocketModelFileName2 "Models\SOCKETITEM\NANO\NANOGHOST_TAIL.ltb" )
+	(SocketSkinFileName2 "ModelTextures\SOCKETITEM\NANO\\NANOGHOST_UP_TAIL.dtx" )
+)
+
+// Nano Hulk
+(NanoCharacter 
+	(NanoType 4 )
+	(NanoAbility 0 )
+	(NanoSkill 0 )
+	(NanoAddHP 2000 )	
+	(NanoDefaultWeaponIndex 176 )
+	(NanoDefaultWeaponInvisible 1 )
+	(NextLevelNanoType 5 )
+	(ModelFileName "MODELS\CHARACTER\NANOHULK\NANOHULK.ltb" )
+	(ChildModelFileName "MODELS\CHARACTER\NANOHULK\M-motion_HULK.ltb" )
+	(SkinFileName "MODELTEXTURES\CHARACTER\NANOHULK\NANOHULK.dtx" )
+)
+
+// Nano Hulk Host
+(NanoCharacter 
+	(NanoType 5 )
+	(NanoAbility 0 )
+	(NanoSkill 1 )
+	(NanoAddHP 1000 )	
+	(NanoDefaultWeaponIndex 177 )
+	(NanoDefaultWeaponInvisible 1 )
+	(NextLevelNanoType 6 )
+	(ModelFileName "MODELS\CHARACTER\NANOHULK\NANOHULK_UP.ltb" )
+	(ChildModelFileName "MODELS\CHARACTER\NANOHULK\M-motion_HULK.ltb" )
+	(SkinFileName "MODELTEXTURES\CHARACTER\NANOHULK\NANOHULK.dtx" )
+	(SkinFileName1 "MODELTEXTURES\CHARACTER\NANOHULK\NANOHULK_UP_1.dtx" )
+)
+
+// Nano Hulk Master
+(NanoCharacter 
+	(NanoType 6 )
+	(NanoAbility 0 )
+	(NanoSkill 1 )
+	(NanoAddHP 1000 )	
+	(NanoDefaultWeaponIndex 178 )
+	(NanoDefaultWeaponInvisible 1 )
+	(ModelFileName "MODELS\CHARACTER\NANOHULK\NANOHULK_UP.ltb" )
+	(ChildModelFileName "MODELS\CHARACTER\NANOHULK\M-motion_HULK.ltb" )
+	(SkinFileName "MODELTEXTURES\CHARACTER\NANOHULK\NANOHULK_UP.dtx" )
+	(SkinFileName1 "MODELTEXTURES\CHARACTER\NANOHULK\NANOHULK_UP_1.dtx" )
+)

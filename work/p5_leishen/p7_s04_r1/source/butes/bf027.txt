@@ -1,0 +1,93 @@
+( MatchItemInfo	
+	( MatchItemName	   "MATCHITEM_ADD_RADER" )
+	( UsedType			1 )	
+	( MaxUsedTime 		30000 )
+	( ItemValue         1.0 )
+	( ItemTypeGroup     2 2 2 2 2 2 2 2 2 2 )
+	( ItemTypeGroup2    0 0 0 0 0 0 0 0 0 0 )
+)
+
+( MatchItemInfo	
+	( MatchItemName	   "MATCHITEM_ADD_AMMO" )
+	( UsedType			0 )	
+	( MaxUsedTime 		1000 )
+	( ItemValue         30.0 )
+	( ItemTypeGroup     2 2 2 2 2 2 2 2 2 2 )
+	( ItemTypeGroup2    0 0 0 0 0 0 0 0 0 0 )
+)
+
+( MatchItemInfo
+	( MatchItemName	   "MATCHITEM_ADD_HEAL_50" )
+	( UsedType			0 )	
+	( MaxUsedTime 		1000 )
+	( ItemValue         50.0 )
+	( ItemTypeGroup     2 2 2 2 2 2 2 2 2 2 )
+	( ItemTypeGroup2    0 0 0 0 0 0 0 0 0 0 )
+)
+
+( MatchItemInfo
+	( MatchItemName	   "MATCHITEM_ADD_HEAL_100" )
+	( UsedType			0 )	
+	( MaxUsedTime 		1000 )
+	( ItemValue         100.0 )
+	( ItemTypeGroup     2 2 2 2 2 2 2 2 2 2 )
+	( ItemTypeGroup2    0 0 0 0 0 0 0 0 0 0 )
+)
+
+( MatchItemInfo	
+	( MatchItemName	   "MATCHITEM_ADD_JUMP" )
+	( UsedType			1 )	
+	( MaxUsedTime 		30000 )
+	( ItemValue         8.0 )
+	( ItemTypeGroup     5 5 3 3 2 2 1 1 1 1 )
+	( ItemTypeGroup2    5 5 4 4 3 3 2 2 1 1 )
+)
+
+( MatchItemInfo
+
+	( MatchItemName	   "MATCHITEM_ADD_SPEED" )
+	( UsedType			1 )	
+	( MaxUsedTime 		30000 )
+	( ItemValue         2.0 )
+	( ItemTypeGroup     1 1 2 2 3 3 5 5 5 5 )
+	( ItemTypeGroup2    1 1 1 1 3 3 4 4 5 5 )
+)
+
+( MatchItemInfo
+
+	( MatchItemName	   "MATCHITEM_ADD_POWERUP" )
+	( UsedType			1 )	
+	( MaxUsedTime 		30000 )
+	( ItemValue         5.0 )
+	( ItemTypeGroup     1 1 1 1 2 2 5 5 5 5 )
+	( ItemTypeGroup2    1 1 1 1 3 3 4 4 5 5 )
+)
+
+( MatchItemInfo
+
+	( MatchItemName	   "MATCHITEM_ADD_RECOILLESS" )
+	( UsedType			1 )	
+	( MaxUsedTime 		30000 )
+	( ItemValue         1.0 )
+	( ItemTypeGroup     1 1 2 2 3 3 5 5 5 5 )
+	( ItemTypeGroup2    1 1 2 2 3 3 4 4 5 5 )
+)
+
+( MatchItemInfo	
+	( MatchItemName	   "MATCHITEM_ADD_GHOST" )
+	( UsedType			1 )	
+	( MaxUsedTime 		30000 )
+	( ItemValue         2.0 )
+	( ItemTypeGroup     1 1 1 2 2 2 8 8 8 8 )
+	( ItemTypeGroup2    1 1 2 2 3 3 4 4 5 5 )
+)
+
+( MatchItemInfo	
+	( MatchItemName	   "MATCHITEM_ADD_SHIELD" )
+	( UsedType			1 )	
+	( MaxUsedTime 		20000 )
+	( ItemValue         2.0 )
+	( ItemTypeGroup     0 0 0 0 0 0 0 0 0 0 )
+	( ItemTypeGroup2    0 0 0 0 0 0 0 0 2 2 )
+)
+

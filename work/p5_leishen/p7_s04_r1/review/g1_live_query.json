@@ -1,0 +1,28 @@
+{
+  "filepath": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p7_s04_r1\\baseline\\working_20260913_113051.blend",
+  "is_dirty": false,
+  "blender": "5.2.1 LTS",
+  "numpy": "2.3.4",
+  "object_count": 14,
+  "objects": [
+    "CF_GUN_P6",
+    "CS_GLOVE",
+    "CS_GLOVE_Armature",
+    "CS_M4A4_Armature",
+    "CS_SLEEVE",
+    "CS_SLEEVE_Armature",
+    "Eye",
+    "Fill",
+    "Front",
+    "Key",
+    "P7S04_Cam",
+    "P7S04_Review",
+    "Rim",
+    "smd_bone_vis"
+  ],
+  "scenes": [
+    "Scene"
+  ],
+  "fps": 30,
+  "frame": 25
+}

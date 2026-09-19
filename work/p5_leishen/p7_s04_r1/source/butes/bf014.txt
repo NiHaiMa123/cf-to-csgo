@@ -1,0 +1,508 @@
+( CullWorldInfo
+	( MapIndex 0 )
+	//시티구석
+	( ViewBox 
+		( ViewBoxMin -6500 -2000 -5700)
+		( ViewBoxMax -2587 -1272 -3300)
+		( CullTargetBox
+			( CullTargetBoxMin -2000 -10000 -1700 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -4400 -1696 -480 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	//시티본진1
+	( ViewBox 
+		( ViewBoxMin -2587 -1736 -7247)
+		( ViewBoxMax 1129 -964 -1732 )
+		//돔
+		( CullTargetBox
+			( CullTargetBoxMin -6342 -10000 400 )
+			( CullTargetBoxMax 10000 10000 10000)
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -1091 -10000 -300 )
+			( CullTargetBoxMax 3000 -1560 3000 )
+		)
+	)
+	//시티본진2
+	( ViewBox 
+		( ViewBoxMin 1129 -1736 -7247 )
+		( ViewBoxMax 6120 -980 -732 )
+		//돔
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 2500 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	//수로 입구
+	( ViewBox 
+		( ViewBoxMin 822 -2624 -3097 )
+		( ViewBoxMax 2781 -1877 -763 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax -2000 10000 10000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 2630 -1811 -316 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	//수로
+	( ViewBox 
+		( ViewBoxMin -519 -2570 -2470 )
+		( ViewBoxMax 2673 -2025 2692 )
+		//시티구석 
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax -1500 10000 10000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 2630 -1811 -316 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	//지하로
+	( ViewBox 
+		( ViewBoxMin -5482 -2564 -3338 )
+		( ViewBoxMax -4002 -1700 4531 )  //-2000
+		( CullTargetBox
+			( CullTargetBoxMin -2170 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)	
+	//돔
+	( ViewBox 
+		( ViewBoxMin -4079 -1664 -162 )
+		( ViewBoxMax -500 -1075 3500 )
+		//시티구석
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 -2000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -1900 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 0 )
+		)
+		( CullTargetBox						// 수로
+			( CullTargetBoxMin -1091 -10000 -2700 )
+			( CullTargetBoxMax 3000 -1560 3000 )
+		)
+	)
+	//폭탄설치지점
+	( ViewBox 
+		( ViewBoxMin -4699 -1673 5000 )
+		( ViewBoxMax -1410 -975 6332 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax -10000 -10000 -2000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -2170 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 0 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -1091 -10000 -2700 )
+			( CullTargetBoxMax 3000 -1560 3000 )
+		)
+	)
+	//수레접전지점
+	( ViewBox 
+		( ViewBoxMin -1410 -1739 6000 )
+		( ViewBoxMax 2100 -1038 10000 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 -1700 )
+		)
+		
+	)	
+	//테러본진 샛길
+	( ViewBox 
+		( ViewBoxMin 2500 -10000 5000 )
+		( ViewBoxMax 10000 10000 10000 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax 3300 10000 3331 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -1091 -10000 -2700 )
+			( CullTargetBoxMax 3000 -1560 3000 )
+		)
+	)				
+	//테러본진
+	( ViewBox 
+		( ViewBoxMin -510 -1740 200 )
+		( ViewBoxMax 10000 -926 2464 )
+		//시티구석
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax 0 10000 -500 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -2170 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 0 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -1091 -10000 -2700 )
+			( CullTargetBoxMax 3000 -1560 3000 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -510 -1740 2464 )
+		( ViewBoxMax 10000 -926 4079 )
+		//시티구석
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax 0 0 -500 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -2170 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 0 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -1091 -10000 -2700 )
+			( CullTargetBoxMax 3000 -1560 900 )
+		)
+	)
+)
+	
+
+
+( CullWorldInfo
+	( MapIndex 1 )		// Colombia
+	// 지하중간
+	( ViewBox 
+		( ViewBoxMin -10000 -10000 -3753 )
+		( ViewBoxMax 10000 -2500 2405 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -2500 -10000 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	//지상
+	( ViewBox 
+		( ViewBoxMin -10000 -2500 -10000 )
+		( ViewBoxMax 10000 10000 10000 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -3753 )
+			( CullTargetBoxMax 10000 -2500 2405 )
+		)
+	)
+	//테러측 계단
+	( ViewBox 
+		( ViewBoxMin -933 -10000 -10000 )
+		( ViewBoxMax 10000 -2500 -3753 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -2500 -2500 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	//시티측 계단
+	( ViewBox 
+		( ViewBoxMin -10000 -10000 2405 )
+		( ViewBoxMax 529 -2500 10000 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -2500 -10000 )
+			( CullTargetBoxMax 10000 10000 2000 )
+		)
+	)
+)
+
+
+	
+	
+( CullWorldInfo		// Maxican D
+	( MapIndex 4 )
+	//시티본진
+	( ViewBox 
+		( ViewBoxMin -10000 -10000 -10000)
+		( ViewBoxMax -4731 10000 10000)
+		( CullTargetBox
+			( CullTargetBoxMin 3348 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	( ViewBox	// 1 
+		( ViewBoxMin -4731 -10000 -10000 )
+		( ViewBoxMax -2720 10000 674 )
+		( CullTargetBox
+			( CullTargetBoxMin -1642 -10000 228 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)
+	( ViewBox 	//2
+		( ViewBoxMin -4731 -10000 674 )
+		( ViewBoxMax -2720 10000 10000 )
+		( CullTargetBox
+			( CullTargetBoxMin -2426 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 1306 )
+		)
+	)
+	( ViewBox 	//3
+		( ViewBoxMin -2720 -10000 -10000 )
+		( ViewBoxMax 1314 10000 -1314 )
+		( CullTargetBox
+			( CullTargetBoxMin -3930 -10000 1572 )
+			( CullTargetBoxMax -1456 10000 10000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 500 -10000 1572 )
+			( CullTargetBoxMax 2174 10000 10000 )
+		)
+	)
+	//회의실
+	( ViewBox 	//4
+		( ViewBoxMin -2271 -1602 -613 )
+		( ViewBoxMax 808 10000 1866 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax -1456 10000 10000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 500 -10000 -10000 )
+			( CullTargetBoxMax 10000 10000 10000 )
+		)
+	)	
+	( ViewBox 	//5
+		( ViewBoxMin -2720 -10000 2521 )
+		( ViewBoxMax 1314 10000 10000 )
+		( CullTargetBox
+			( CullTargetBoxMin -3930 -10000 -10000 )
+			( CullTargetBoxMax -1456 10000 -300 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 500 -10000 -10000 )
+			( CullTargetBoxMax 2174 10000 -300 )
+		)
+	)
+	( ViewBox 	// 6
+		( ViewBoxMin 1314 -10000 -10000 )
+		( ViewBoxMax 3348 10000 674 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -260 )
+			( CullTargetBoxMax 1400 10000 10000 )
+		)
+	)
+	( ViewBox	// 7
+		( ViewBoxMin 1314 -10000 674 )
+		( ViewBoxMax 3348 10000 10000 )
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax 1400 10000 1737 )
+		)
+	)
+	//테러본진
+	( ViewBox	// 8
+		( ViewBoxMin 3348 -10000 -10000)
+		( ViewBoxMax 10000 10000 10000)
+		( CullTargetBox
+			( CullTargetBoxMin -10000 -10000 -10000 )
+			( CullTargetBoxMax -4731 10000 10000 )
+		)
+	)
+)
+( CullWorldInfo		// Temple D
+	( MapIndex 5 )	
+//테러 시작
+	( ViewBox 
+		( ViewBoxMin -14200 -7500 -800 )
+		( ViewBoxMax -7100 -6300 1000 )
+		( CullTargetBox
+			( CullTargetBoxMin -7000 -7500 -800 )
+			( CullTargetBoxMax -2800 -6300 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -7500 -800 )
+			( CullTargetBoxMax 2900 -5600 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 2900 -7500 -7000 )
+			( CullTargetBoxMax 14000 -5600 7200 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -14200 -7500 -7000 )
+		( ViewBoxMax -7100 -6300 -800 )
+		( CullTargetBox
+			( CullTargetBoxMin 2900 -7500 -7000 )
+			( CullTargetBoxMax 14000 -5600 7200 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -14200 -7500 1000 )
+		( ViewBoxMax -7100 -6300 7200 )
+		( CullTargetBox
+			( CullTargetBoxMin 2900 -7500 -7000 )
+			( CullTargetBoxMax 14000 -5600 7200 )
+		)
+	)
+//테러 시작 앞마당
+	( ViewBox 
+		( ViewBoxMin -7100 -7500 -800 )
+		( ViewBoxMax -2900 -6600 1000 )
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -800 )
+			( CullTargetBoxMax -7100 -6300 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -7500 -800 )
+			( CullTargetBoxMax 2900 -5600 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 2900 -7500 -7000 )
+			( CullTargetBoxMax 14000 -5600 7200 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -7100 -7500 -7000 )
+		( ViewBoxMax -2900 -6600 -800 )
+		( CullTargetBox
+			( CullTargetBoxMin 2900 -7500 -7000 )
+			( CullTargetBoxMax 14000 -5600 1000 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -7100 -7500 1000 )
+		( ViewBoxMax -2900 -6600 7200 )
+		( CullTargetBox
+			( CullTargetBoxMin 2900 -7500 -800 )
+			( CullTargetBoxMax 14000 -5600 7200 )
+		)
+	)
+//대테러 시작
+	( ViewBox 
+		( ViewBoxMin 7100 -7500 -800 )
+		( ViewBoxMax 14000 -6300 1000 )
+		( CullTargetBox
+			( CullTargetBoxMin 2900 -7500 -800 )
+			( CullTargetBoxMax 7000 -6300 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -7500 -800 )
+			( CullTargetBoxMax 2900 -5600 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -7000 )
+			( CullTargetBoxMax -2800 -5600 7200 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin 7100 -7500 -7000 )
+		( ViewBoxMax 14000 -6300 -800 )
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -7000 )
+			( CullTargetBoxMax -2800 -5600 7200 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin 7100 -7500 1000 )
+		( ViewBoxMax 14000 -6300 7200 )
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -7000 )
+			( CullTargetBoxMax -2800 -5600 7200 )
+		)
+	)
+//대테러 시작 앞마당
+	( ViewBox 
+		( ViewBoxMin 7100 -7500 -800 )
+		( ViewBoxMax 2900 -6600 1000 )
+		( CullTargetBox
+			( CullTargetBoxMin 1400 -7500 -800 )
+			( CullTargetBoxMax 7200 -6300 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -7500 -800 )
+			( CullTargetBoxMax 2900 -5600 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -7000 )
+			( CullTargetBoxMax -2800 -5600 7200 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin 7100 -7500 -7000 )
+		( ViewBoxMax 2900 -6600 -800 )
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -7000 )
+			( CullTargetBoxMax -2800 -5600 1000 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin 7100 -7500 1000 )
+		( ViewBoxMax 2900 -6600 7200 )
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -800 )
+			( CullTargetBoxMax -2800 -5600 7200 )
+		)
+	)
+//내부 1층
+	( ViewBox 
+		( ViewBoxMin -2800 -7500 -800 )
+		( ViewBoxMax 2900 -6300 1000 )
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -6200 -800 )
+			( CullTargetBoxMax 2900 -3100 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -800 )
+			( CullTargetBoxMax -3000 -5600 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 3000 -7500 -800 )
+			( CullTargetBoxMax 14000 -5600 1000 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -2800 -7500 -7100 )
+		( ViewBoxMax 2900 -6600 -800 )
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -6200 -800 )
+			( CullTargetBoxMax 2900 -3100 1000 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -2800 -7500 1000 )
+		( ViewBoxMax 2900 -6600 7000 )
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -6200 -800 )
+			( CullTargetBoxMax 2900 -3100 1000 )
+		)
+	)
+//내부 2층
+	( ViewBox 
+		( ViewBoxMin -3400 -6600 -800 )
+		( ViewBoxMax 3400 -5600 1000 )
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -7500 -800 )
+			( CullTargetBoxMax 2900 -6300 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin -14200 -7500 -800 )
+			( CullTargetBoxMax -3000 -5600 1000 )
+		)
+		( CullTargetBox
+			( CullTargetBoxMin 3000 -7500 -800 )
+			( CullTargetBoxMax 14000 -5600 1000 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -3400 -6600 -7100 )
+		( ViewBoxMax 3400 -5600 -800 )
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -7500 -800 )
+			( CullTargetBoxMax 2900 -5600 1000 )
+		)
+	)
+	( ViewBox 
+		( ViewBoxMin -3400 -6600 1000 )
+		( ViewBoxMax 3400 -5600 7000 )
+		( CullTargetBox
+			( CullTargetBoxMin -2800 -7500 -800 )
+			( CullTargetBoxMax 2900 -5600 1000 )
+		)
+	)
+)
+
+	

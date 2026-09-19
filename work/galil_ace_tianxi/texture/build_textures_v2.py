@@ -6,6 +6,10 @@ the weapon white. v7 disables envmap/rimlight completely: metallic response is
 albedo-tinted Phong, so gold/blue highlights inherit the weapon's own diffuse
 color and remain coupled to viewmodel lighting. Glow still uses sparse _M G/B.
 
+Frozen 2026-09-16 (pipeline.md A.8.1): $phongexponent 48 / $phongboost 8 /
+$phongfresnelranges [0.05 0.45 1] / $phongalbedotint 1. Do not reintroduce
+$envmap or $rimlight. A.8.2 oil is arms only.
+
 Iteration loop: rebuild into staging + real MIGI addon -> verify hashes -> user
 runs MIGI REBUILD -> verify packed hashes -> in-game check.
 """
@@ -213,32 +217,19 @@ def build_selfillum_mask(src: Path, dst: Path) -> Path:
 
 
 def gun_vmt() -> str:
+    # Frozen 2026-09-16: albedo-tinted Phong, boost=8. See pipeline.md A.8.1.
     return f'''"VertexLitGeneric"
 {{
 	"$basetexture" "{MAT}/cf_galilace_pb"
 	"$bumpmap" "{MAT}/cf_galilace_pb_n"
 	"$phong" "1"
 	"$phongexponent" "48"
-	"$phongboost" "2"
+	"$phongboost" "8"
 	"$phongfresnelranges" "[0.05 0.45 1]"
 	"$phongalbedotint" "1"
 	"$selfillum" "1"
 	"$selfillummask" "{MAT}/cf_galilace_pb_m"
 	"$selfillumtint" "[0.1 0.25 0.65]"
-	"$nocull" "0"
-}}
-'''
-
-
-ARM_VMT = '''"VertexLitGeneric"
-{{
-	"$basetexture" "{0}/{1}"
-	"$bumpmap" "{0}/{1}_n"
-	"$phong" "1"
-	"$phongexponent" "8"
-	"$phongboost" "0.6"
-	"$phongfresnelranges" "[0.1 0.5 1]"
-	"$phongalbedotint" "1"
 	"$nocull" "0"
 }}
 '''
@@ -277,8 +268,8 @@ def main():
     if not m_mask:  # no glow mask -> drop selfillum block
         vmt = "\n".join(l for l in vmt.splitlines() if "selfillum" not in l) + "\n"
     (ADDON / "cf_galilace_pb.vmt").write_text(vmt, encoding="utf-8")
-    for name in ("cf_foxhand_bl", "cf_foxarm_bl"):
-        (ADDON / f"{name}.vmt").write_text(ARM_VMT.format(MAT, name), encoding="utf-8")
+    # Arm VTFs/VMTs (A.8.2 Phong oil, currently Nini GR) are owned by
+    # native_vm/build_galilace_vm.py.
 
     MIGI_ADDON.mkdir(parents=True, exist_ok=True)
     for f in sorted(ADDON.iterdir()):

@@ -1,0 +1,155 @@
+<!-- dmx encoding keyvalues2 1 format pcf 2 -->
+"DmElement"
+{
+	"id" "elementid" "eda4803c-8cf3-423d-be94-4961962d1539"
+	"name" "string" "untitled"
+	"particleSystemDefinitions" "element_array"
+	[
+		"DmeParticleSystemDefinition"
+		{
+			"id" "elementid" "6fc28143-af2e-438f-8f88-194415387b7c"
+			"name" "string" "cf_tianxi_probe"
+			"renderers" "element_array"
+			[
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "1aca4524-f43e-4c02-be79-f71b40bc4df0"
+					"name" "string" "render_animated_sprites"
+					"functionName" "string" "render_animated_sprites"
+					"animation rate" "float" "0"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				}
+			]
+			"operators" "element_array"
+			[
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "8980607b-df9c-4ee4-b986-54763d35e550"
+					"name" "string" "Lifespan Decay"
+					"functionName" "string" "Lifespan Decay"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "d27a3b9a-fe6e-4ddb-b40c-9c28a2dbe3d2"
+					"name" "string" "Alpha Fade In Simple"
+					"functionName" "string" "Alpha Fade In Simple"
+					"proportional 0/1" "bool" "0"
+					"fade in time" "float" "0.2"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "a1b2c3d4-e5f6-4789-8abc-def012345678"
+					"name" "string" "Alpha Fade Out Simple"
+					"functionName" "string" "Alpha Fade Out Simple"
+					"proportional 0/1" "bool" "0"
+					"fade out time" "float" "0.3"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "bf9d86c0-a475-469a-bf5e-c93e6835c0b6"
+					"name" "string" "Movement Basic"
+					"functionName" "string" "Movement Basic"
+					"drag" "float" "0"
+					"gravity" "vector3" "0 0 12"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				}
+			]
+			"initializers" "element_array"
+			[
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "1a971f16-47ec-4554-94dd-1a5db29d7226"
+					"name" "string" "Lifetime Random"
+					"functionName" "string" "Lifetime Random"
+					"lifetime_max" "float" "1.2"
+					"lifetime_min" "float" "0.8"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "1f70e84d-6183-404a-85f8-36a090e94cd0"
+					"name" "string" "Position Within Sphere Random"
+					"functionName" "string" "Position Within Sphere Random"
+					"speed_in_local_coordinate_system_max" "vector3" "4 4 8"
+					"speed_in_local_coordinate_system_min" "vector3" "-4 -4 2"
+					"speed_max" "float" "6"
+					"distance_max" "float" "3"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "20b594b0-4275-4f1b-be07-cebcc01bca64"
+					"name" "string" "Alpha Random"
+					"functionName" "string" "Alpha Random"
+					"alpha_min" "int" "200"
+					"alpha_max" "int" "255"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "51d0a3f5-9e83-4a44-bf9a-44c29a6d5bc4"
+					"name" "string" "Radius Random"
+					"functionName" "string" "Radius Random"
+					"radius_min" "float" "2"
+					"radius_max" "float" "5"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "7d1f0f81-9f2b-40a9-bba5-3bb0e902b390"
+					"name" "string" "Color Random"
+					"functionName" "string" "Color Random"
+					"color1" "color" "0 94 251 255"
+					"color2" "color" "90 160 255 255"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				},
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "9e9e9e9e-1111-4222-8333-444455556666"
+					"name" "string" "Rotation Random"
+					"functionName" "string" "Rotation Random"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				}
+			]
+			"emitters" "element_array"
+			[
+				"DmeParticleOperator"
+				{
+					"id" "elementid" "253792dd-0bc3-4510-ab68-40a6f0fa4df7"
+					"name" "string" "emit_continuously"
+					"functionName" "string" "emit_continuously"
+					"emission_rate" "float" "12"
+					"operator time offset max" "float" "1"
+					"operator strength random scale min" "float" "0"
+				}
+			]
+			"children" "element_array"
+			[
+			]
+			"forces" "element_array"
+			[
+			]
+			"constraints" "element_array"
+			[
+			]
+			"preventNameBasedLookup" "bool" "0"
+			"max_particles" "int" "64"
+			"material" "string" "models\\weapons\\v_models\\cf_tianxi\\cf_fx_glow02.vmt"
+			"aggregation radius" "float" "32"
+		}
+		]
+}

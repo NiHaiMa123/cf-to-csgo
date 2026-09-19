@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "name": "\u6750\u8d28\u8f93\u51fa",
+      "type": "OUTPUT_MATERIAL"
+    },
+    {
+      "name": "\u539f\u7406\u5316 BSDF",
+      "type": "BSDF_PRINCIPLED",
+      "base_links": true
+    },
+    {
+      "name": "\u56fe\u50cf\u7eb9\u7406",
+      "type": "TEX_IMAGE",
+      "image": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\_png\\diffuse.png",
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "\u56fe\u50cf\u7eb9\u7406.001",
+      "type": "TEX_IMAGE",
+      "image": "D:\\project\\cf_to_csgo\\work\\p5_leishen\\p6\\_png\\normal_src.png",
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "\u6cd5\u7ebf\u8d34\u56fe",
+      "type": "NORMAL_MAP"
+    }
+  ],
+  "links": [
+    "\u56fe\u50cf\u7eb9\u7406.Color -> \u539f\u7406\u5316 BSDF.Base Color",
+    "\u539f\u7406\u5316 BSDF.BSDF -> \u6750\u8d28\u8f93\u51fa.Surface",
+    "\u56fe\u50cf\u7eb9\u7406.001.Color -> \u6cd5\u7ebf\u8d34\u56fe.Color",
+    "\u6cd5\u7ebf\u8d34\u56fe.Normal -> \u539f\u7406\u5316 BSDF.Normal"
+  ],
+  "uv": [
+    "Float2"
+  ],
+  "slot_link": "OBJECT",
+  "slot_mat": "rif_m4a1_p6"
+}

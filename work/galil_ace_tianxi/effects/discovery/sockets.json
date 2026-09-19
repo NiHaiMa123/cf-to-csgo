@@ -1,0 +1,1000 @@
+{
+ "generated_at_utc": "2026-09-15T12:31:15.471311+00:00",
+ "attach_names_used_by_group": [
+  "fix_effect_10",
+  "fix_effect_11",
+  "fix_effect_12",
+  "fix_effect_15",
+  "fix_effect_16",
+  "fix_effect_17",
+  "fix_effect_19",
+  "fix_effect_22",
+  "fix_effect_23",
+  "fix_effect_3",
+  "fix_effect_34",
+  "fix_effect_35",
+  "fix_effect_5",
+  "fix_effect_8",
+  "fix_effect_9"
+ ],
+ "sources": [
+  {
+   "rez_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_GR.LTB",
+   "archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "size": 283042,
+   "md5": "1e13bc85c1f1e0f79038b7860e8dd7f5",
+   "sha256": "129e159d090eb64a1cdd046bd0284a33f32028c353b51cecc5536a596f739171",
+   "body_sha256": "74e4fcfd9d1108890472efcda8433f23b7efb19ba15dd34c932ed1d8941ca738",
+   "body_bytes": 696605
+  },
+  {
+   "rez_path": "Models/PLAYERVIEW/PV-GalilACE_PhantomBeast_BL.LTB",
+   "archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "size": 283042,
+   "md5": "1e13bc85c1f1e0f79038b7860e8dd7f5",
+   "sha256": "129e159d090eb64a1cdd046bd0284a33f32028c353b51cecc5536a596f739171",
+   "body_sha256": "74e4fcfd9d1108890472efcda8433f23b7efb19ba15dd34c932ed1d8941ca738",
+   "body_bytes": 696605
+  }
+ ],
+ "sockets": [
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "gunfire",
+   "rot_quat": [
+    -0.0,
+    1.0,
+    -0.0,
+    -0.0
+   ],
+   "pos": [
+    13.5,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "ACC_SD",
+   "rot_quat": [
+    0.4385490119457245,
+    0.401856005191803,
+    0.5430780053138733,
+    0.5926650166511536
+   ],
+   "pos": [
+    -0.20000000298023224,
+    0.0,
+    2.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_1",
+   "rot_quat": [
+    -0.6644629836082458,
+    -0.2418449968099594,
+    0.6963639855384827,
+    0.12278799712657928
+   ],
+   "pos": [
+    -4.5,
+    -6.0,
+    -6.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_2",
+   "rot_quat": [
+    0.0,
+    0.0,
+    -0.3420200049877167,
+    0.9396929740905762
+   ],
+   "pos": [
+    4.0,
+    0.20000000298023224,
+    2.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_3",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    1.7999999523162842,
+    0.0,
+    1.25
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_4",
+   "rot_quat": [
+    0.0,
+    0.0,
+    -0.17364799976348877,
+    0.9848080277442932
+   ],
+   "pos": [
+    6.5,
+    -0.5,
+    1.899999976158142
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_5",
+   "rot_quat": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 55,
+   "node_name": "Dummy008",
+   "name": "fix_effect_7",
+   "rot_quat": [
+    -0.5,
+    0.5,
+    -0.5,
+    -0.5
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_8",
+   "rot_quat": [
+    0.47771400213241577,
+    0.47771400213241577,
+    0.5213339924812317,
+    0.5213339924812317
+   ],
+   "pos": [
+    1.899999976158142,
+    -0.6000000238418579,
+    1.2999999523162842
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_9",
+   "rot_quat": [
+    0.33233100175857544,
+    -0.6451939940452576,
+    -0.2652510106563568,
+    0.6347630023956299
+   ],
+   "pos": [
+    0.10000000149011612,
+    -0.5,
+    1.100000023841858
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_10",
+   "rot_quat": [
+    0.7372769713401794,
+    0.0,
+    0.0,
+    0.6755899786949158
+   ],
+   "pos": [
+    0.5,
+    0.009999999776482582,
+    2.240000009536743
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_11",
+   "rot_quat": [
+    0.7372769713401794,
+    0.0,
+    0.0,
+    0.6755899786949158
+   ],
+   "pos": [
+    0.5199999809265137,
+    0.009999999776482582,
+    2.240000009536743
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_12",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    7.0,
+    0.15000000596046448,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_15",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    7.75,
+    -0.5,
+    1.350000023841858
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_16",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    8.0,
+    -0.5,
+    1.350000023841858
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_17",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    1.2999999523162842,
+    -0.30000001192092896,
+    1.899999976158142
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_19",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -1.0,
+    -0.3700000047683716,
+    1.600000023841858
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_22",
+   "rot_quat": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "pos": [
+    2.4000000953674316,
+    0.5,
+    1.3300000429153442
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_23",
+   "rot_quat": [
+    0.5,
+    -0.5,
+    -0.5,
+    0.5
+   ],
+   "pos": [
+    -0.05000000074505806,
+    0.5,
+    1.3300000429153442
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_24",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    1.7999999523162842,
+    0.5,
+    1.2999999523162842
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_28",
+   "rot_quat": [
+    0.0,
+    0.3420200049877167,
+    0.0,
+    0.9396929740905762
+   ],
+   "pos": [
+    1.899999976158142,
+    0.44999998807907104,
+    1.2000000476837158
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_29",
+   "rot_quat": [
+    0.0,
+    0.3420200049877167,
+    0.0,
+    0.9396929740905762
+   ],
+   "pos": [
+    1.899999976158142,
+    -0.4000000059604645,
+    1.100000023841858
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_30",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -2.700000047683716,
+    -2.5999999046325684,
+    -6.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_32",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -0.699999988079071,
+    -5.0,
+    -6.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_31",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    2.0999999046325684,
+    0.20000000298023224,
+    1.25
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_21",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    3.5,
+    0.5,
+    -1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_27",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    0.3499999940395355,
+    -3.9000000953674316,
+    -5.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_26",
+   "rot_quat": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "pos": [
+    0.4000000059604645,
+    -4.0,
+    -5.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_25",
+   "rot_quat": [
+    -0.2126310020685196,
+    0.5963680148124695,
+    0.37992799282073975,
+    0.6743800044059753
+   ],
+   "pos": [
+    1.399999976158142,
+    -2.799999952316284,
+    -5.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_6",
+   "rot_quat": [
+    -0.08583199977874756,
+    -0.9810600280761719,
+    0.17298699915409088,
+    0.015134000219404697
+   ],
+   "pos": [
+    1.399999976158142,
+    -2.799999952316284,
+    -5.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_20",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -1.100000023841858,
+    0.0,
+    1.25
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_13",
+   "rot_quat": [
+    0.0,
+    0.7071070075035095,
+    0.0,
+    0.7071070075035095
+   ],
+   "pos": [
+    5.099999904632568,
+    -0.550000011920929,
+    1.2999999523162842
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_14",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -1.100000023841858,
+    -1.5,
+    -8.5
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_18",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -4.0,
+    -3.5,
+    -8.5
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 0,
+   "node_name": "Scene Root",
+   "name": "fix_effect_33",
+   "rot_quat": [
+    0.5792279839515686,
+    -0.4055800139904022,
+    -0.5792279839515686,
+    0.4055800139904022
+   ],
+   "pos": [
+    0.0,
+    -2.200000047683716,
+    -7.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_34",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -0.699999988079071,
+    -0.05000000074505806,
+    1.75
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_35",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    -0.7300000190734863,
+    -0.05000000074505806,
+    1.75
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_36",
+   "rot_quat": [
+    0.0,
+    0.3420200049877167,
+    0.0,
+    0.9396929740905762
+   ],
+   "pos": [
+    1.399999976158142,
+    -0.44999998807907104,
+    1.5
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "node_index": 46,
+   "node_name": "Box001",
+   "name": "fix_effect_37",
+   "rot_quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "pos": [
+    9.300000190734863,
+    0.15000000596046448,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "evidence": {
+  "base_pv_ltb": {
+   "allocs": {
+    "nKeyFrames": 561,
+    "nParentAnims": 10,
+    "nNodes": 56,
+    "nPieces": 12,
+    "nChildModels": 1,
+    "nTris": 16474,
+    "nVerts": 9488,
+    "nVertexWeights": 9898,
+    "nLODs": 12,
+    "nSockets": 0,
+    "nWeightSets": 1,
+    "nStrings": 93,
+    "StringLengths": 1303,
+    "VertAnimDataSize": 0,
+    "nAnimData": 879648
+   },
+   "n_nodes": 56,
+   "tail_first_u32": 0,
+   "tail_u32_1": 10,
+   "note": "tail = u32 nSockets(0) then u32 nAnimBindings(10); base PV LTB has no socket table"
+  }
+ },
+ "bl_header_allocs": {
+  "nKeyFrames": 0,
+  "nParentAnims": 0,
+  "nNodes": 56,
+  "nPieces": 12,
+  "nChildModels": 2,
+  "nTris": 16593,
+  "nVerts": 9549,
+  "nVertexWeights": 9959,
+  "nLODs": 12,
+  "nSockets": 39,
+  "nWeightSets": 1,
+  "nStrings": 109,
+  "StringLengths": 1593,
+  "VertAnimDataSize": 0,
+  "nAnimData": 0
+ },
+ "n_nodes": 56,
+ "child_models": [
+  "SELF",
+  "PV-GalilACE_PhantomBeast.ltb"
+ ],
+ "n_anims": 0,
+ "n_anim_bindings": 0,
+ "anim_binding_names": [],
+ "stream_end": 696601,
+ "body_bytes": 696605,
+ "coverage": {
+  "used": [
+   "fix_effect_10",
+   "fix_effect_11",
+   "fix_effect_12",
+   "fix_effect_15",
+   "fix_effect_16",
+   "fix_effect_17",
+   "fix_effect_19",
+   "fix_effect_22",
+   "fix_effect_23",
+   "fix_effect_3",
+   "fix_effect_34",
+   "fix_effect_35",
+   "fix_effect_5",
+   "fix_effect_8",
+   "fix_effect_9"
+  ],
+  "available": [
+   "ACC_SD",
+   "fix_effect_1",
+   "fix_effect_10",
+   "fix_effect_11",
+   "fix_effect_12",
+   "fix_effect_13",
+   "fix_effect_14",
+   "fix_effect_15",
+   "fix_effect_16",
+   "fix_effect_17",
+   "fix_effect_18",
+   "fix_effect_19",
+   "fix_effect_2",
+   "fix_effect_20",
+   "fix_effect_21",
+   "fix_effect_22",
+   "fix_effect_23",
+   "fix_effect_24",
+   "fix_effect_25",
+   "fix_effect_26",
+   "fix_effect_27",
+   "fix_effect_28",
+   "fix_effect_29",
+   "fix_effect_3",
+   "fix_effect_30",
+   "fix_effect_31",
+   "fix_effect_32",
+   "fix_effect_33",
+   "fix_effect_34",
+   "fix_effect_35",
+   "fix_effect_36",
+   "fix_effect_37",
+   "fix_effect_4",
+   "fix_effect_5",
+   "fix_effect_6",
+   "fix_effect_7",
+   "fix_effect_8",
+   "fix_effect_9",
+   "gunfire"
+  ],
+  "used_missing": [],
+  "available_unused": [
+   "ACC_SD",
+   "fix_effect_1",
+   "fix_effect_13",
+   "fix_effect_14",
+   "fix_effect_18",
+   "fix_effect_2",
+   "fix_effect_20",
+   "fix_effect_21",
+   "fix_effect_24",
+   "fix_effect_25",
+   "fix_effect_26",
+   "fix_effect_27",
+   "fix_effect_28",
+   "fix_effect_29",
+   "fix_effect_30",
+   "fix_effect_31",
+   "fix_effect_32",
+   "fix_effect_33",
+   "fix_effect_36",
+   "fix_effect_37",
+   "fix_effect_4",
+   "fix_effect_6",
+   "fix_effect_7",
+   "gunfire"
+  ]
+ }
+}

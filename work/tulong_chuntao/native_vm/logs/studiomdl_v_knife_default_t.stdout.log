@@ -1,0 +1,193 @@
+WARNING: AppFramework : Unable to load module p4lib.dll!
+qdir:    "d:\project\cf_to_csgo\work\tulong_chuntao\native_vm\source1\"
+gamedir: "D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\isolated_game\csgo\"
+g_path:  "D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\source1\v_knife_default_t.qc"
+Building binary model files...
+Working on "v_knife_default_t.qc"
+SMD MODEL cf_native_vm.smd
+SMD MODEL v_knife_anims\draw.smd
+SMD MODEL v_knife_anims\idle1.smd
+SMD MODEL v_knife_anims\idle2.smd
+SMD MODEL v_knife_anims\light_miss1.smd
+SMD MODEL v_knife_anims\light_miss2.smd
+SMD MODEL v_knife_anims\light_hit1.smd
+SMD MODEL v_knife_anims\light_hit2.smd
+SMD MODEL v_knife_anims\light_backstab.smd
+SMD MODEL v_knife_anims\light_backstab2.smd
+SMD MODEL v_knife_anims\heavy_miss1.smd
+SMD MODEL v_knife_anims\heavy_hit1.smd
+SMD MODEL v_knife_anims\heavy_backstab.smd
+SMD MODEL v_knife_anims\lookat01.smd
+Processing LOD for material: cf_kukri_spring
+Processing LOD for material: cf_nini_hand_gr
+Processing LOD for material: cf_nini_arm_gr
+---------------------
+writing D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\isolated_game\csgo\models/weapons\v_knife_default_t.mdl:
+Loading preexisting model: D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\isolated_game\csgo\models/weapons\v_knife_default_t.mdl
+   Found 13 preexisting sequences.
+bones        24744 bytes (97)
+   animation       x       y       ips    angle
+$BoneSaveFrame "v_weapon" position rotation
+$BoneSaveFrame "v_weapon.Bip01" rotation
+$BoneSaveFrame "v_weapon.Bip01_Pelvis" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine1" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine2" rotation
+$BoneSaveFrame "v_weapon.Bip01_Spine3" rotation
+$BoneSaveFrame "v_weapon.Bip01_Neck" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Clavicle" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_UpperArm" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Forearm" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Hand" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_ForeTwist" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Clavicle" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_UpperArm" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Forearm" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Hand" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_ForeTwist" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger0" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger01" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger02" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger1" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger11" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger12" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger2" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger21" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger22" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger3" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger31" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger32" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger4" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger41" rotation
+$BoneSaveFrame "v_weapon.Bip01_L_Finger42" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger0" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger01" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger02" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger1" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger11" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger12" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger2" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger21" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger22" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger3" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger31" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger32" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger4" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger41" rotation
+$BoneSaveFrame "v_weapon.Bip01_R_Finger42" rotation
+$BoneSaveFrame "FvARM-bone" rotation // (0.13)
+$BoneSaveFrame "FvARM-bone Pelvis" position rotation
+$BoneSaveFrame "FvARM-bone Spine" rotation // (1.57)
+$BoneSaveFrame "FvARM-bone Spine1" position rotation
+$BoneSaveFrame "FvARM-bone Neck" rotation // (1.82)
+$BoneSaveFrame "FvARM-bone L Clavicle" position rotation
+$BoneSaveFrame "FvARM-bone L UpperArm" position rotation
+$BoneSaveFrame "FvARM-bone L ForeArm" position rotation
+$BoneSaveFrame "FvARM-bone L Hand" position rotation
+$BoneSaveFrame "FvARM-bone L Finger0" position rotation
+$BoneSaveFrame "FvARM-bone L Finger01" position rotation
+$BoneSaveFrame "FvARM-bone L Finger02" position rotation
+$BoneSaveFrame "FvARM-bone L Finger1" position rotation
+$BoneSaveFrame "FvARM-bone L Finger11" position rotation
+$BoneSaveFrame "FvARM-bone L Finger12" position rotation
+$BoneSaveFrame "FvARM-bone L Finger2" position rotation
+$BoneSaveFrame "FvARM-bone L Finger21" position rotation
+$BoneSaveFrame "FvARM-bone L Finger22" position rotation
+$BoneSaveFrame "FvARM-bone L Finger3" position rotation
+$BoneSaveFrame "FvARM-bone L Finger31" position rotation
+$BoneSaveFrame "FvARM-bone L Finger32" position rotation
+$BoneSaveFrame "FvARM-bone L Finger4" position rotation
+$BoneSaveFrame "FvARM-bone L Finger41" position rotation
+$BoneSaveFrame "FvARM-bone L Finger42" position rotation
+$BoneSaveFrame "FvARM-bone L ForeTwist" position rotation
+$BoneSaveFrame "FvARM-bone R Clavicle" position rotation
+$BoneSaveFrame "FvARM-bone R UpperArm" position rotation
+$BoneSaveFrame "FvARM-bone R ForeArm" position rotation
+$BoneSaveFrame "FvARM-bone R Hand" position rotation
+$BoneSaveFrame "FvARM-bone R Finger0" position rotation
+$BoneSaveFrame "FvARM-bone R Finger01" position rotation
+$BoneSaveFrame "FvARM-bone R Finger02" position rotation
+$BoneSaveFrame "FvARM-bone R Finger1" position rotation
+$BoneSaveFrame "FvARM-bone R Finger11" position rotation
+$BoneSaveFrame "FvARM-bone R Finger12" position rotation
+$BoneSaveFrame "FvARM-bone R Finger2" position rotation
+$BoneSaveFrame "FvARM-bone R Finger21" position rotation
+$BoneSaveFrame "FvARM-bone R Finger22" position rotation
+$BoneSaveFrame "FvARM-bone R Finger3" position rotation
+$BoneSaveFrame "FvARM-bone R Finger31" position rotation
+$BoneSaveFrame "FvARM-bone R Finger32" position rotation
+$BoneSaveFrame "FvARM-bone R Finger4" position rotation
+$BoneSaveFrame "FvARM-bone R Finger41" position rotation
+$BoneSaveFrame "FvARM-bone R Finger42" position rotation
+$BoneSaveFrame "FvARM-bone R ForeTwist" position rotation
+$BoneSaveFrame "FvARM-bone Prop1" position rotation
+$BoneSaveFrame "Box01" position rotation
+$BoneSaveFrame "v_weapon.uid" rotation
+$BoneSaveFrame "v_weapon.knife" rotation
+animations  422080 bytes (13 anims) (1514 frames) [0:15]
+Building sequence index remapping table...
+No re-ordering required.
+sequences     4076 bytes (13 seq) 
+hdr@05B7F66C=78B60200
+ik/pose        164 bytes
+eyeballs         0 bytes (0 eyeballs)
+flexes           0 bytes (0 flexes)
+hdr@05B7F66C=78B60200
+textures       204 bytes
+keyvalues      120 bytes
+hdr@05B7F664=78B60398
+hdr@05B7F66C=78B60200
+bone transforms    13256 bytes
+bone flex driver       0 bytes
+bodygroup presets       0 bytes
+collision        0 bytes
+total       467812
+---------------------
+writing models/weapons\v_knife_default_t.ani:
+blocks	         7
+total       152048
+---------------------
+writing D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\isolated_game\csgo\models/weapons\v_knife_default_t.vvd:
+vertices    379536 bytes (7907 vertices)
+tangents    126512 bytes (7907 vertices)
+total       506112 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\isolated_game\csgo\models/weapons\v_knife_default_t.sw.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           105 bytes
+verts:          71163 bytes
+indices:        63876 bytes
+bone changes:       8 bytes
+everything:    135342 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\isolated_game\csgo\models/weapons\v_knife_default_t.dx80.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           175 bytes
+verts:          71217 bytes
+indices:        63876 bytes
+bone changes:     416 bytes
+everything:    135874 bytes
+---------------------
+Generating optimized mesh "D:\project\cf_to_csgo\work\tulong_chuntao\native_vm\isolated_game\csgo\models/weapons\v_knife_default_t.dx90.vtx":
+body parts:         8 bytes
+models:            20 bytes
+model LODs:        12 bytes
+meshes:            27 bytes
+strip groups:      99 bytes
+strips:           105 bytes
+verts:          71163 bytes
+indices:        63876 bytes
+bone changes:     368 bytes
+everything:    135702 bytes
+WARNING: ConVarRef r_staticlight_streams doesn't point to an existing ConVar
+WARNING: ConVarRef r_staticlight_streams_indirect_only doesn't point to an existing ConVar
+
+Completed "v_knife_default_t.qc"

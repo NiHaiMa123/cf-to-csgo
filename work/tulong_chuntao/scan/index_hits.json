@@ -1,0 +1,2802 @@
+{
+ "cf_dir": "D:\\Program Files\\CF(2)",
+ "index_archives": 464,
+ "total_entries": 255257,
+ "hit_count": 293,
+ "peach_melee_count": 17,
+ "errors": [],
+ "hits": [
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_JY_DRAGONBLADE_PFUXI_OBJ_01.LTB",
+   "size": 2635,
+   "time": 0,
+   "md5": "738A2AE3B542E4B9DC2993B8E664BA86",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_JY_DRAGONBLADE_PFUXI_OBJ_02.LTB",
+   "size": 2641,
+   "time": 0,
+   "md5": "74B95F7ACCA98AA1E82B698958491948",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_SE_DRAGONBLADE_FURYBEAST_LIGHT_01.LTB",
+   "size": 1611,
+   "time": 0,
+   "md5": "5236BC1577DC3B0186DEA62102A4B549",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_SE_DRAGON_BLADE_SWORD_OBJ_01.LTB",
+   "size": 34254,
+   "time": 0,
+   "md5": "3E8A46D3527F0CB00E2D3A953236668F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_SE_DRAGON_BLADE_SWORD_SPARK_01.LTB",
+   "size": 1523,
+   "time": 0,
+   "md5": "04B31C04C3D062BCCD52217EE832D0F9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_DRAGONBLADE_RM_01.LTB",
+   "size": 3157,
+   "time": 0,
+   "md5": "FBE3FD6F479660E3323E6B22DD88CA46",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_DRAGONBLADE_RM_02.LTB",
+   "size": 2756,
+   "time": 0,
+   "md5": "38B2D854EF4ECBEAD6DAED5071F4A3A8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_DRAGONBLADE_RM_03.LTB",
+   "size": 4340,
+   "time": 0,
+   "md5": "68390E7DAC3B9D082FB449282D706A6A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_DRAGONBLADE_RM_04.LTB",
+   "size": 571,
+   "time": 0,
+   "md5": "C49F1557EACF5544641795FD77CD2085",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_DRAGONBLADE_RM_05.LTB",
+   "size": 33906,
+   "time": 0,
+   "md5": "1D4D7E5340B6727A49F68349FB40D04F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_DRAGONBLADE_RM_06.LTB",
+   "size": 42051,
+   "time": 0,
+   "md5": "2652874380932F7731ED0C59705EE396",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/RF005.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF005.REZ",
+   "full_path": "FX/LTB/SGFX_YC_DRAGONBLADE_RM_07.LTB",
+   "size": 2560,
+   "time": 0,
+   "md5": "87727522DC9A7B33294F2CEBC5B8C808",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade.LTB",
+   "size": 195564,
+   "time": 0,
+   "md5": "402CB364ABE50D790820683B569D8695",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_BL.LTB",
+   "size": 79216,
+   "time": 0,
+   "md5": "6BF692FA5953314D697A4582D98AF0E1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_FuryBeast.LTB",
+   "size": 149207,
+   "time": 0,
+   "md5": "664F55B6F260E5F7D268B52C7D809B2A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_FuryBeast_BL.LTB",
+   "size": 83111,
+   "time": 0,
+   "md5": "E8B62E23E114195B29442968ECCF641C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_FuryBeast_GR.LTB",
+   "size": 86819,
+   "time": 0,
+   "md5": "3DBE3F6A688972BA668530EC694C6948",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_FuryBeast_WOMAN_BL.LTB",
+   "size": 83288,
+   "time": 0,
+   "md5": "55440B03494645334351C345E143A717",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_FuryBeast_WOMAN_GR.LTB",
+   "size": 82556,
+   "time": 0,
+   "md5": "2CE7FB54A21A8E7EB8DB54211CA09B48",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_GR.LTB",
+   "size": 82511,
+   "time": 0,
+   "md5": "3AAF4B58BABE2584DFACF824BDEDAFAB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_MetalRed.LTB",
+   "size": 156384,
+   "time": 0,
+   "md5": "FC100558E169F730AD4914B6CAC0A74A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_MetalRed_BL.LTB",
+   "size": 79224,
+   "time": 0,
+   "md5": "05017088FA2DAA3382A39D12838C3756",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_MetalRed_GR.LTB",
+   "size": 82520,
+   "time": 0,
+   "md5": "100E34170BEBF1F50ED7387A9CCD533A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_MetalRed_WOMAN_BL.LTB",
+   "size": 79121,
+   "time": 0,
+   "md5": "225E53BB46DD985F5D41C84DC5507DBD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_MetalRed_WOMAN_GR.LTB",
+   "size": 78056,
+   "time": 0,
+   "md5": "56DE46D60D8490DCFE2EF87186E692D6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_RM_WH.LTB",
+   "size": 211574,
+   "time": 0,
+   "md5": "64BE6DF385ED8E78F69AE1A7110C556D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_RM_WH_BL.LTB",
+   "size": 79210,
+   "time": 0,
+   "md5": "D65337368BC0FCA5D4EEB2188E8DD74F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_RM_WH_GR.LTB",
+   "size": 79210,
+   "time": 0,
+   "md5": "D65337368BC0FCA5D4EEB2188E8DD74F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_RM_WH_WOMAN_BL.LTB",
+   "size": 79210,
+   "time": 0,
+   "md5": "D65337368BC0FCA5D4EEB2188E8DD74F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_RM_WH_WOMAN_GR.LTB",
+   "size": 79210,
+   "time": 0,
+   "md5": "D65337368BC0FCA5D4EEB2188E8DD74F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_WOMAN_BL.LTB",
+   "size": 79120,
+   "time": 0,
+   "md5": "C7323E2099A1D5B5E36390844FE4EFC2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-DragonBlade_WOMAN_GR.LTB",
+   "size": 78049,
+   "time": 0,
+   "md5": "1A5798DAC7CE08439B8E6A791FD37223",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-DragonBlade_chain_F.LTB",
+   "size": 8383,
+   "time": 0,
+   "md5": "1EC13A800F64D0BA02F4564367C2A0BA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-DragonBlade_chain_M.LTB",
+   "size": 8387,
+   "time": 0,
+   "md5": "06ED7551C492D4FD8F19F6F80E370F7D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-DragonBlade_F.LTB",
+   "size": 7253,
+   "time": 0,
+   "md5": "282CB576C0408F1106A1E0F503D430B7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-DragonBlade_FuryBeast.LTB",
+   "size": 17210,
+   "time": 0,
+   "md5": "6EE7DC78356BCABD045AD026FE5293D2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-DragonBlade_FuryBeast_Chain.LTB",
+   "size": 18810,
+   "time": 0,
+   "md5": "F22898B269A03DA6E26B9437AF9776C3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-DragonBlade_FuryBeast_preview.LTB",
+   "size": 14287,
+   "time": 0,
+   "md5": "C666FC4768D117AC2C068B025A7734DA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-DragonBlade_M.LTB",
+   "size": 7253,
+   "time": 0,
+   "md5": "B64410E97E438B4BD92804DA30AD4B64",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_alpha.PNG",
+   "size": 799096,
+   "time": 0,
+   "md5": "7DFCD364D2893D090F2F9435B581ABD4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_FuryBeast_Alpha.PNG",
+   "size": 602423,
+   "time": 0,
+   "md5": "F70146315CA6657DE3E4DB4DE694FF7F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_FuryBeast_NG_Alpha.PNG",
+   "size": 357985,
+   "time": 0,
+   "md5": "AF162B88C6786A25FCC4C7D54E37C14B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_MetalRed_alpha.PNG",
+   "size": 603836,
+   "time": 0,
+   "md5": "27D7B099AFC92448203D1E2CA713275C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_NobleSilver_Alpha.PNG",
+   "size": 460845,
+   "time": 0,
+   "md5": "A7376FFE5B411281E9697B7A792C48EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_NobleSilver_Blaze_Alpha.PNG",
+   "size": 350971,
+   "time": 0,
+   "md5": "427FC47C67009DF0CC1A57BD116AEF90",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_RM_GR_A.PNG",
+   "size": 445931,
+   "time": 0,
+   "md5": "70470003A339B984D338D46FAB7BDA50",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_RM_PK_A.PNG",
+   "size": 446087,
+   "time": 0,
+   "md5": "CE9B59AAF6D3F2F77A41DB43FEA4B03E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_RM_PL_A.PNG",
+   "size": 372958,
+   "time": 0,
+   "md5": "5D1E04158A5546E46A7E1EB5E810BA2A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_RM_PP_A.PNG",
+   "size": 446139,
+   "time": 0,
+   "md5": "7CDB8FD6B33747D2B99FDE529687015F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_RM_RB_A.PNG",
+   "size": 459582,
+   "time": 0,
+   "md5": "B277A606DCF01335208A064AF9927BA6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_RM_WH_A.PNG",
+   "size": 445802,
+   "time": 0,
+   "md5": "155DB8842349F50405B32D2C407C60EF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_Silver_alpha.PNG",
+   "size": 799081,
+   "time": 0,
+   "md5": "9E0C5D9BD47BC1D9E859227DDC01704B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_Silver_Bailong_Alpha.PNG",
+   "size": 159155,
+   "time": 0,
+   "md5": "25969C019B789ACB28E927F7832804D8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_Silver_BlackDaSheng_A.PNG",
+   "size": 129819,
+   "time": 0,
+   "md5": "5BA9EBB523E7093612E3FF322DD76D31",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_Silver_HsiYuChi_alpha.PNG",
+   "size": 601031,
+   "time": 0,
+   "md5": "5EA57850394037DD5E5EDDC887DBEB05",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DRAGONBLADE_SILVER_PFUXI_A.PNG",
+   "size": 138888,
+   "time": 0,
+   "md5": "A7320FC29997ADF2F052C1A154D35509",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/AlphaMap/DragonBlade_Silver_RagingFire_A.PNG",
+   "size": 129819,
+   "time": 0,
+   "md5": "5BA9EBB523E7093612E3FF322DD76D31",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_FuryBeast_N.PNG",
+   "size": 1730422,
+   "time": 0,
+   "md5": "09FFBD5F18FD4FD585D94302D5466687",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_FuryBeast_NG_N.PNG",
+   "size": 1139782,
+   "time": 0,
+   "md5": "03B1EFAA35735142AF04C108445ABB1E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_MetalRed_N.PNG",
+   "size": 2065409,
+   "time": 0,
+   "md5": "819C7B4A78C2A98B4EA3567480F237F7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_N.PNG",
+   "size": 2012428,
+   "time": 0,
+   "md5": "9C1C9169DA02E623DB6702AA2CC5D9D6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_NobleSilver_N.PNG",
+   "size": 1405937,
+   "time": 0,
+   "md5": "10D74FF54CDBE9A48A0EBCCA1E0B0885",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_RM_GR_N.PNG",
+   "size": 1326946,
+   "time": 0,
+   "md5": "17E0F9D0F5015544BAE452DC97482E4C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_RM_PK_N.PNG",
+   "size": 1326946,
+   "time": 0,
+   "md5": "17E0F9D0F5015544BAE452DC97482E4C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_RM_PL_N.PNG",
+   "size": 1326946,
+   "time": 0,
+   "md5": "17E0F9D0F5015544BAE452DC97482E4C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_RM_PP_N.PNG",
+   "size": 1326946,
+   "time": 0,
+   "md5": "17E0F9D0F5015544BAE452DC97482E4C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_RM_RB_N.PNG",
+   "size": 1326946,
+   "time": 0,
+   "md5": "17E0F9D0F5015544BAE452DC97482E4C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_RM_WH_N.PNG",
+   "size": 1326946,
+   "time": 0,
+   "md5": "17E0F9D0F5015544BAE452DC97482E4C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_Silver_Bailong_N.PNG",
+   "size": 394765,
+   "time": 0,
+   "md5": "5B8E5EC18FB03209F3BAEDA43FA5ED09",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_Silver_BlackDaSheng_N.PNG",
+   "size": 412823,
+   "time": 0,
+   "md5": "3E3379A2FC0F53845B40D39F3BDE1C09",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_Silver_N.PNG",
+   "size": 2012428,
+   "time": 0,
+   "md5": "9C1C9169DA02E623DB6702AA2CC5D9D6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DRAGONBLADE_SILVER_PFUXI_N.PNG",
+   "size": 364747,
+   "time": 0,
+   "md5": "52D39CD02E4FB10DD8E12BD55BD88C44",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/NormalMap/DragonBlade_Silver_RagingFire_N.PNG",
+   "size": 412823,
+   "time": 0,
+   "md5": "3E3379A2FC0F53845B40D39F3BDE1C09",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "F6E26004383C2209A60B6AD272FA78D5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_FuryBeast.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "A0B440156339ECB03CC0D74F4795707B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_FuryBeast_NG.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "915539373ABB93891B09DDCD3BF76A19",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_MetalRed.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "9254A459A0F177CF2CF5A1820BAF1898",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_NobleSilver.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "91EA140733501B9CBC3D7C9A7FFD2514",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_RM_GR.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "EF173D338C518A45DD16B0B6224BA593",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_RM_PK.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "945C3CF1ED86E9EAB2D8E4BDA187F1B7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_RM_PL.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "04C0D673F649250526498DC6D1A9246C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_RM_PP.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "93EF92DC9B80614167694FCE7D3DF7C3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_RM_RB.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "A2C7DCCD1E87D97E18DEAA7C83C80662",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_RM_WH.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "71314AC2495A2DBB6E748693FECFB97B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_Silver.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "12226083AF25FD6E811FA7E89E1E3A39",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_Silver_Bailong.DTX",
+   "size": 131236,
+   "time": 0,
+   "md5": "DA3F200E032EC3EE287E7A7C05D11C33",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_Silver_BlackDaSheng.DTX",
+   "size": 131236,
+   "time": 0,
+   "md5": "37ECC5523A4367EEC4309DFD5E4A8D15",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_Silver_HsiYuChi.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "EAB5017E30BD6E3E982E9D2E7C779606",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DRAGONBLADE_SILVER_PFUXI.DTX",
+   "size": 131236,
+   "time": 0,
+   "md5": "71F1E010A527CC4BC495EEBE3636F728",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-DragonBlade_Silver_RagingFire.DTX",
+   "size": 131236,
+   "time": 0,
+   "md5": "0F39A38059682D1B3F6ADBF8391E519E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade.CFG",
+   "size": 484,
+   "time": 0,
+   "md5": "687D5CB4CDF001E5AC595170AB620747",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_FuryBeast.CFG",
+   "size": 2051,
+   "time": 0,
+   "md5": "C33080F3761E21A3DD16BBD5DE1E8D5F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_FuryBeast_NG.CFG",
+   "size": 2065,
+   "time": 0,
+   "md5": "5029D083A8F46C37DDA75C4C37766658",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_MetalRed.CFG",
+   "size": 2046,
+   "time": 0,
+   "md5": "8FFECA35A8F8657C6207B7A6A665C432",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_NobleSilver.CFG",
+   "size": 1117,
+   "time": 0,
+   "md5": "43F9AEB8AC5E1626E19705DA40315018",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_RM_GR.CFG",
+   "size": 3629,
+   "time": 0,
+   "md5": "8BDD8F809A49E8A903F1B20B699AE81F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_RM_PK.CFG",
+   "size": 3629,
+   "time": 0,
+   "md5": "B02DCC260B6FA753F121F2664B0A37BA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_RM_PL.CFG",
+   "size": 3629,
+   "time": 0,
+   "md5": "E14D099948F66931D6E8610081603513",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_RM_PP.CFG",
+   "size": 3629,
+   "time": 0,
+   "md5": "115E1CB97BF5A756252D223E14E8DA15",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_RM_RB.CFG",
+   "size": 3629,
+   "time": 0,
+   "md5": "87CD2AE089C514A04376EAB638267847",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_RM_WH.CFG",
+   "size": 3629,
+   "time": 0,
+   "md5": "67E299340503E7D2BB4E64E694E65E6D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_Silver.CFG",
+   "size": 509,
+   "time": 0,
+   "md5": "04C2466CF415742CEB1054BDA3D7B881",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_Silver_Bailong.CFG",
+   "size": 2069,
+   "time": 0,
+   "md5": "200B77255BF2F55747DA1CC8ECA25AE4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_Silver_BlackDaSheng.CFG",
+   "size": 2085,
+   "time": 0,
+   "md5": "B734AE7B6C0A05515F2CD3E1A7A2B683",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_Silver_HsiYuChi.CFG",
+   "size": 2047,
+   "time": 0,
+   "md5": "3C77525F8638E1CA38B617A320EF4785",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DRAGONBLADE_SILVER_PFUXI.CFG",
+   "size": 2061,
+   "time": 0,
+   "md5": "C950F90AD33EB2A4D87513E8F273F531",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/DragonBlade_Silver_RagingFire.CFG",
+   "size": 2079,
+   "time": 0,
+   "md5": "96A17FB5309ABA7BAEC1069AC1EDE453",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_FuryBeast_NG_S.PNG",
+   "size": 1352327,
+   "time": 0,
+   "md5": "86637D9B72D9550B757E8BAD586BFC2E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_FuryBeast_S.PNG",
+   "size": 1494320,
+   "time": 0,
+   "md5": "9197428F3B0A7130F1F1BE1C6FB863F1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_MetalRed_s.PNG",
+   "size": 995950,
+   "time": 0,
+   "md5": "1BA1064FDC1DFF3847D640D7B77CEEC4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_NobleSilver_S.PNG",
+   "size": 1289610,
+   "time": 0,
+   "md5": "5F5DD2853713C53AE4DEE2F0116A2CD7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_RM_GR_S.PNG",
+   "size": 1000136,
+   "time": 0,
+   "md5": "83207015069FAEFA9774CE007C83F0BC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_RM_PK_S.PNG",
+   "size": 1025009,
+   "time": 0,
+   "md5": "C9E8452D44E465FC1E8F1CF37FC35E28",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_RM_PL_S.PNG",
+   "size": 1001234,
+   "time": 0,
+   "md5": "B35153017D7B638D5F07DF268C7606D4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_RM_PP_S.PNG",
+   "size": 1006752,
+   "time": 0,
+   "md5": "19149398DB0CDC3FB499A28DAF301E7A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_RM_RB_S.PNG",
+   "size": 1068797,
+   "time": 0,
+   "md5": "72EE27414EE77F2717A3684EAEDEAB22",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_RM_WH_S.PNG",
+   "size": 1024556,
+   "time": 0,
+   "md5": "B0DC05F459912595E4DC44E5B67AADA1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_S.PNG",
+   "size": 1903507,
+   "time": 0,
+   "md5": "ECF99CD611B2948B334AC34B7167E13B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_Silver_Bailong_S.PNG",
+   "size": 352797,
+   "time": 0,
+   "md5": "8CA7A0098F80A92E8A1FA5B9597C9B64",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_Silver_BlackDaSheng_S.PNG",
+   "size": 365174,
+   "time": 0,
+   "md5": "14BB52BABC2985496E03E49F037C4D16",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_Silver_HsiYuChi_s.PNG",
+   "size": 1289673,
+   "time": 0,
+   "md5": "C6DB6C41BE8A57814A2A124D506D0E87",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DRAGONBLADE_SILVER_PFUXI_S.PNG",
+   "size": 308775,
+   "time": 0,
+   "md5": "4A19DBE9AD4A4248D28E3606BA4D3EEA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_Silver_RagingFire_S.PNG",
+   "size": 388614,
+   "time": 0,
+   "md5": "021580356EB537DE8222F3929488DD29",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/SpecularMap/DragonBlade_Silver_S.PNG",
+   "size": 1352212,
+   "time": 0,
+   "md5": "60AB2C06EC655FEFCB93D443E041617E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "16116A110BECE7D24B248731C75598C0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_FuryBeast.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "A5DBD7B2A2F460B9E68E8ED28DB999A1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_FuryBeast_NG.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "E99CE835931965A4D5B0D5CE85978B73",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_MetalRed.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "8941FFF69B5A065F966391EA080A448A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_NobleSilver.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "7FDBF5D339A246AC0F21605EBD93AF44",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_RM_GR.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "D5BED6246BFE33EF8867478E030C053F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_RM_PK.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "5AF17E2871393ED1D92F04402DEEE774",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_RM_PL.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "F05BBED679EEB4D90F337490819DAD4D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_RM_PP.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "C375CAE78FC6717B29B3E36543EDE879",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_RM_RB.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "A3967A151A3CE48355A147714A937E50",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez5/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez5\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_RM_WH.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "A39E0C5962B013F425839FD0BB6921C3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_Silver.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "FF6E8AF7338CBE3FFA8EAEBA8FBD509F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_Silver_Bailong.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "F50A64FC5876E7CA25BBC5BE9A1C9137",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_Silver_BlackDaSheng.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "9DCCB902E562AD09E56558B7F5DE2CE2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_Silver_HsiYuChi.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "0490ED7EA2BD13DC1391BF7A2FFC9E7E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DRAGONBLADE_SILVER_PFUXI.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "C16A3BCAFF7679948024316FC3702293",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-DragonBlade_Silver_RagingFire.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "617B4A1C4269923EAD2670925E57659E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade/DragonBlade_Attack_1.WAV",
+   "size": 50405,
+   "time": 0,
+   "md5": "C67DD004AD8E62E8C3DB105E17878D00",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade/DragonBlade_Attack_2.WAV",
+   "size": 36174,
+   "time": 0,
+   "md5": "D81E570709745BC017155CBA2717DBF3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade/DragonBlade_Attack_3.WAV",
+   "size": 182759,
+   "time": 0,
+   "md5": "B1CD9D194CAA9F95F2F7FB7266D22377",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade/DragonBlade_Select.WAV",
+   "size": 56753,
+   "time": 0,
+   "md5": "90C7C4698066F7C40BFFE9FC104DB4CB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade/DragonBlade_Select_pre.WAV",
+   "size": 59967,
+   "time": 0,
+   "md5": "89DCCD77A792CA580FD3E62B463F02AC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade/DragonBlade_Special_Bigshot.WAV",
+   "size": 289787,
+   "time": 0,
+   "md5": "0EEFCB62FEB122360ADA89B07F90EC54",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_FuryBeast/DragonBlade_FuryBeast_Attack_1.WAV",
+   "size": 50405,
+   "time": 0,
+   "md5": "C67DD004AD8E62E8C3DB105E17878D00",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_FuryBeast/DragonBlade_FuryBeast_Attack_2.WAV",
+   "size": 36174,
+   "time": 0,
+   "md5": "D81E570709745BC017155CBA2717DBF3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_FuryBeast/DragonBlade_FuryBeast_Attack_3.WAV",
+   "size": 458158,
+   "time": 0,
+   "md5": "1453D5451048666173F6BE896C9D13DA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_FuryBeast/DragonBlade_FuryBeast_Select_pre.WAV",
+   "size": 271408,
+   "time": 0,
+   "md5": "F771F1D5ADE81C02F0EBAC743DD0CDFE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_MetalRed/DragonBladeMetalRed_Attack_1.WAV",
+   "size": 50405,
+   "time": 0,
+   "md5": "C67DD004AD8E62E8C3DB105E17878D00",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_MetalRed/DragonBladeMetalRed_Attack_2.WAV",
+   "size": 36174,
+   "time": 0,
+   "md5": "D81E570709745BC017155CBA2717DBF3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_MetalRed/DragonBladeMetalRed_Attack_3.WAV",
+   "size": 122226,
+   "time": 0,
+   "md5": "6F5CA5D131F972E983173A892D353098",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMGR_Select.WAV",
+   "size": 106206,
+   "time": 0,
+   "md5": "A2AD36E3B65FF2E6D9B11A5B52F33B50",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMGR_SelectR1.WAV",
+   "size": 104157,
+   "time": 0,
+   "md5": "9487ECF2D4D564FE713F906BF207DCCB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMRB_ATT_1.WAV",
+   "size": 65506,
+   "time": 0,
+   "md5": "89BDAD80A4580B5A996E8621726714E3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMRB_ATT_2.WAV",
+   "size": 52050,
+   "time": 0,
+   "md5": "128E558D456256027AC15E5683623780",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMRB_ATT_3.WAV",
+   "size": 142308,
+   "time": 0,
+   "md5": "5EDD9E81F7BB05B41985593AFC099F81",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMRB_Hit.WAV",
+   "size": 65568,
+   "time": 0,
+   "md5": "3637D61597F76BDA21C1E5B1D2128FE8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMRB_SBigshot.WAV",
+   "size": 233711,
+   "time": 0,
+   "md5": "83CC4AF3A5E6FA673D3F60ABFDB28F0D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMRB_Select.WAV",
+   "size": 135272,
+   "time": 0,
+   "md5": "C62B0583C39A3F2D9C187C3B9FA2D9A0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRMRB_SelectR1.WAV",
+   "size": 136091,
+   "time": 0,
+   "md5": "B5F8F7778CFF29ABB0BB074C4057D36F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRM_ATT_1.WAV",
+   "size": 53843,
+   "time": 0,
+   "md5": "1378A8A3A56E6C9E55F74E9A3271562D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRM_ATT_2.WAV",
+   "size": 38332,
+   "time": 0,
+   "md5": "D5C55BAB86ECE5A0D2A81BDCB134081D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRM_ATT_3.WAV",
+   "size": 115917,
+   "time": 0,
+   "md5": "96595AA846020A0AAB61946A4471F800",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRM_SBigshot.WAV",
+   "size": 215933,
+   "time": 0,
+   "md5": "55B0E7A10AEC3D2644A375E9D5897495",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRM_Select.WAV",
+   "size": 104511,
+   "time": 0,
+   "md5": "036F826E044F30378E80D654AE9199D4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF018.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF018.REZ",
+   "full_path": "SND/WEAPON/DragonBlade_RM/DragonBladeRM_SelectR1.WAV",
+   "size": 102315,
+   "time": 0,
+   "md5": "A0673366DE237116F432A9A58BDEE1CA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_BG.DTX",
+   "size": 1442,
+   "time": 0,
+   "md5": "4E14957D67AA4CCE762B1EC8295FEFBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_EFFECT.DTX",
+   "size": 966,
+   "time": 0,
+   "md5": "CE5ABF607BF6CEEDC30FF380896966EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_FuryBeast_BG.DTX",
+   "size": 1516,
+   "time": 0,
+   "md5": "232AA8AE30A11C743C21732DB281C77F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_FuryBeast_EFFECT.DTX",
+   "size": 1418,
+   "time": 0,
+   "md5": "75C6B14AE8478C0049BF704113101C48",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_FuryBeast_LINE.DTX",
+   "size": 6709,
+   "time": 0,
+   "md5": "EEE0AEB2E33E7E211E93570F0487756B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_FuryBeast_NG_BG.DTX",
+   "size": 1605,
+   "time": 0,
+   "md5": "F5612B8B069C53F8D67ECAB6224D9274",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_FuryBeast_NG_EFFECT.DTX",
+   "size": 1018,
+   "time": 0,
+   "md5": "ECA8CF3E945329708D8CB2E445AF116A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_FuryBeast_NG_LINE.DTX",
+   "size": 5143,
+   "time": 0,
+   "md5": "1801374A1B3B57161792A1EE6ADF18A5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_LINE.DTX",
+   "size": 3361,
+   "time": 0,
+   "md5": "D99C31A637DB87925E70940D9EF68920",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_NobleSilver_BG.DTX",
+   "size": 1442,
+   "time": 0,
+   "md5": "4E14957D67AA4CCE762B1EC8295FEFBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_NobleSilver_EFFECT.DTX",
+   "size": 966,
+   "time": 0,
+   "md5": "CE5ABF607BF6CEEDC30FF380896966EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_NobleSilver_LINE.DTX",
+   "size": 5618,
+   "time": 0,
+   "md5": "308B63CC7DB6ED0802362A3D3E541050",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_GR_BG.DTX",
+   "size": 1255,
+   "time": 0,
+   "md5": "5B8DF7DA65A55B7D0AE3E386A82A0B06",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_GR_EFFECT.DTX",
+   "size": 933,
+   "time": 0,
+   "md5": "6BF7B71B99295E60C0C8AACE35597D99",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_GR_LINE.DTX",
+   "size": 5867,
+   "time": 0,
+   "md5": "FE6F079EAD04D66FE3B5F42335FD6ED3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PK_BG.DTX",
+   "size": 1297,
+   "time": 0,
+   "md5": "3DC0344AC02DC62F8930526DC8CB6959",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PK_EFFECT.DTX",
+   "size": 935,
+   "time": 0,
+   "md5": "233609FB67B420DF9A974C7968C96C30",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PK_LINE.DTX",
+   "size": 5781,
+   "time": 0,
+   "md5": "14F948F05F1609FB802E8D51B73E7468",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PL_BG.DTX",
+   "size": 1263,
+   "time": 0,
+   "md5": "C3B0C8AEC3EE8607D1945B05DB5A242C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PL_EFFECT.DTX",
+   "size": 1501,
+   "time": 0,
+   "md5": "69903C7D1E58781F4555772AED62D491",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PL_LINE.DTX",
+   "size": 5731,
+   "time": 0,
+   "md5": "E874671A2A797333DB3C08CF927E45DA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PP_BG.DTX",
+   "size": 1274,
+   "time": 0,
+   "md5": "DB8E8C98A63DB097722D11988F09643B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PP_EFFECT.DTX",
+   "size": 935,
+   "time": 0,
+   "md5": "BEE3A76A71CB3FDF3C1E08ACD1D23C94",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_PP_LINE.DTX",
+   "size": 5838,
+   "time": 0,
+   "md5": "FF6968C0F08628DD723FE0B0812F945A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_RB_BG.DTX",
+   "size": 1285,
+   "time": 0,
+   "md5": "B2D7BD9A659BF02EEADB1F27C95AB0B0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_RB_EFFECT.DTX",
+   "size": 915,
+   "time": 0,
+   "md5": "3F56F8BA2F27B656BCD42156C0AAB20B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_RB_LINE.DTX",
+   "size": 5793,
+   "time": 0,
+   "md5": "705391F7699A9BA07C2E17DC0665A4E1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_WH_BG.DTX",
+   "size": 1316,
+   "time": 0,
+   "md5": "71E5A64447621F4F9E035CD853E83643",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_WH_EFFECT.DTX",
+   "size": 954,
+   "time": 0,
+   "md5": "EA04A5C53739AB215CA248AB10D6F6A2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_RM_WH_LINE.DTX",
+   "size": 5729,
+   "time": 0,
+   "md5": "D78F8DC281BAE73BADBE27CE8BADF0DF",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_Bailong_BG.DTX",
+   "size": 1442,
+   "time": 0,
+   "md5": "4E14957D67AA4CCE762B1EC8295FEFBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_Bailong_EFFECT.DTX",
+   "size": 966,
+   "time": 0,
+   "md5": "CE5ABF607BF6CEEDC30FF380896966EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_Bailong_LINE.DTX",
+   "size": 4931,
+   "time": 0,
+   "md5": "4611844FD8282147E0E8484F0F9BBC1C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_BG.DTX",
+   "size": 1442,
+   "time": 0,
+   "md5": "4E14957D67AA4CCE762B1EC8295FEFBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_BlackDaSheng_BG.DTX",
+   "size": 1442,
+   "time": 0,
+   "md5": "4E14957D67AA4CCE762B1EC8295FEFBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_BlackDaSheng_EFFECT.DTX",
+   "size": 966,
+   "time": 0,
+   "md5": "CE5ABF607BF6CEEDC30FF380896966EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_BlackDaSheng_LINE.DTX",
+   "size": 4688,
+   "time": 0,
+   "md5": "7BAF98B5ACFF29919E07513373A9E71B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_EFFECT.DTX",
+   "size": 966,
+   "time": 0,
+   "md5": "CE5ABF607BF6CEEDC30FF380896966EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_HsiYuChi_BG.DTX",
+   "size": 1442,
+   "time": 0,
+   "md5": "4E14957D67AA4CCE762B1EC8295FEFBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_HsiYuChi_EFFECT.DTX",
+   "size": 966,
+   "time": 0,
+   "md5": "CE5ABF607BF6CEEDC30FF380896966EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_HsiYuChi_LINE.DTX",
+   "size": 6281,
+   "time": 0,
+   "md5": "2BBEBCC4909D6E22B27E2A603C4CBF40",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_LINE.DTX",
+   "size": 2190,
+   "time": 0,
+   "md5": "AB7DB8ADBFED4EE824529715A2590802",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DRAGONBLADE_SILVER_PFUXI_BG.DTX",
+   "size": 1632,
+   "time": 0,
+   "md5": "D5401CE6D34D1D4AE632D34562C9BB15",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DRAGONBLADE_SILVER_PFUXI_EFFECT.DTX",
+   "size": 1125,
+   "time": 0,
+   "md5": "81386B8D256602EDA1289C9847EA88A9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DRAGONBLADE_SILVER_PFUXI_LINE.DTX",
+   "size": 6138,
+   "time": 0,
+   "md5": "EA4496687ECE1099ABE9980D972737E2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_RagingFire_BG.DTX",
+   "size": 1442,
+   "time": 0,
+   "md5": "4E14957D67AA4CCE762B1EC8295FEFBC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_RagingFire_EFFECT.DTX",
+   "size": 966,
+   "time": 0,
+   "md5": "CE5ABF607BF6CEEDC30FF380896966EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/AMMOICON/DragonBlade_Silver_RagingFire_LINE.DTX",
+   "size": 4330,
+   "time": 0,
+   "md5": "4924B011D9C7053CFD88EDF71CEBF045",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade.DTX",
+   "size": 285,
+   "time": 0,
+   "md5": "D69D43A69D9FC938D1C34C3C06254D83",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_FuryBeast.DTX",
+   "size": 224,
+   "time": 0,
+   "md5": "8FB0BEC21EBA2A516D4317DDD389CAEC",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_FuryBeast_NG.DTX",
+   "size": 214,
+   "time": 0,
+   "md5": "93D510D0D1FE69BC94EE8D41DDDD050A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_NobleSilver.DTX",
+   "size": 416,
+   "time": 0,
+   "md5": "FB85B6CE8B3D0D3E89A133B05E2EF6D5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_RM_GR.DTX",
+   "size": 978,
+   "time": 0,
+   "md5": "185D62FA34206927A31EA79CB23949AE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_RM_PK.DTX",
+   "size": 1017,
+   "time": 0,
+   "md5": "367AC00C892FF88835647C9081081FCD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_RM_PL.DTX",
+   "size": 1015,
+   "time": 0,
+   "md5": "856EBA123D6E286F8CAF6AD04B029C17",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_RM_PP.DTX",
+   "size": 1038,
+   "time": 0,
+   "md5": "D163E0301341CB84673E1BFA3703A8A4",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_RM_RB.DTX",
+   "size": 981,
+   "time": 0,
+   "md5": "41E5B7B997B950470A7B5E643AE0342B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_RM_WH.DTX",
+   "size": 848,
+   "time": 0,
+   "md5": "5BCB9FA9A7AD555C7F556544C233AE43",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_Silver.DTX",
+   "size": 340,
+   "time": 0,
+   "md5": "7B63089C1F29BF508E3478A008833E18",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_Silver_Bailong.DTX",
+   "size": 403,
+   "time": 0,
+   "md5": "B82F2540E3805A3DF63FDB6E6ED3CA7E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_Silver_BlackDaSheng.DTX",
+   "size": 403,
+   "time": 0,
+   "md5": "170A9BF58B1EF0F29BBF25A881D6C1AB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_Silver_HsiYuChi.DTX",
+   "size": 566,
+   "time": 0,
+   "md5": "9F6129AEA092DC11388DF06CF075075B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DRAGONBLADE_SILVER_PFUXI.DTX",
+   "size": 513,
+   "time": 0,
+   "md5": "B372AD21D8D80C5CBA7B4CF69D3A2019",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_DragonBlade_Silver_RagingFire.DTX",
+   "size": 843,
+   "time": 0,
+   "md5": "97593F1106BC39E1A4FFA0F77F846C88",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade.DTX",
+   "size": 8927,
+   "time": 0,
+   "md5": "DE057A9AC369122EE7E0FEA40E7FB5AB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade_FuryBeast.DTX",
+   "size": 10683,
+   "time": 0,
+   "md5": "C866FA23181673F29DA578960005329B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade_NobleSilver.DTX",
+   "size": 9043,
+   "time": 0,
+   "md5": "70B6D38ACDA17F25A1F6633E1A781D65",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade_Silver.DTX",
+   "size": 9241,
+   "time": 0,
+   "md5": "F73CACD458BEE05EB7CA281DEE4E95F3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade_Silver_Bailong.DTX",
+   "size": 9376,
+   "time": 0,
+   "md5": "9936CF690F7616A9F9C553662B10F8AD",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade_Silver_BlackDaSheng.DTX",
+   "size": 8795,
+   "time": 0,
+   "md5": "5EE383356B9EEE66CD836538FD868CB1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade_Silver_HsiYuChi.DTX",
+   "size": 9095,
+   "time": 0,
+   "md5": "196D27A735EAD62A3E7154B2B091771F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DRAGONBLADE_SILVER_PFUXI.DTX",
+   "size": 9766,
+   "time": 0,
+   "md5": "4A1F483CEDBB8AFBDD6C383D08A7179E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/BUYWEAPON_INFO_DragonBlade_Silver_RagingFire.DTX",
+   "size": 8506,
+   "time": 0,
+   "md5": "2099ECF53C423A4FAE420D0311E88F1F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade.DTX",
+   "size": 4666,
+   "time": 0,
+   "md5": "5C4E3F6B06EA0252191B55AB1736C4DA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_FuryBeast.DTX",
+   "size": 8299,
+   "time": 0,
+   "md5": "FD3867B5583361F5C503C213592636D1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_FuryBeast_NG.DTX",
+   "size": 5660,
+   "time": 0,
+   "md5": "237C6CEC37C03A98B7A1014D5361B9BE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_NobleSilver.DTX",
+   "size": 6055,
+   "time": 0,
+   "md5": "8D9B9C531C59A4EFA83A3782EB88C14A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_RM_GR.DTX",
+   "size": 6471,
+   "time": 0,
+   "md5": "B498D5705D6C9B63B971414679D4D144",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_RM_PK.DTX",
+   "size": 6461,
+   "time": 0,
+   "md5": "7ED28AE50FB9EAB2A89A0E3A7C308A9E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_RM_PL.DTX",
+   "size": 6313,
+   "time": 0,
+   "md5": "A7BD27B7153523CAB6369F5C38223BE2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_RM_PP.DTX",
+   "size": 6453,
+   "time": 0,
+   "md5": "45D0708C5E08B1DEEAD408B5F2BBF8EA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_RM_RB.DTX",
+   "size": 6435,
+   "time": 0,
+   "md5": "B266B0A431EAA7C4F36744BB7EE6F98B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_RM_WH.DTX",
+   "size": 6394,
+   "time": 0,
+   "md5": "D28ED36409CE5BB6DBF5CBF479FC48F6",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_Silver.DTX",
+   "size": 4113,
+   "time": 0,
+   "md5": "EF8952468B6D704A21C12383FE4966B3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_Silver_Bailong.DTX",
+   "size": 5422,
+   "time": 0,
+   "md5": "D1DAFB3CF6E610B874A1E662A64A982E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_Silver_BlackDaSheng.DTX",
+   "size": 5178,
+   "time": 0,
+   "md5": "9FF12A9B3C42A5CA23BEBE805F730212",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_Silver_HsiYuChi.DTX",
+   "size": 6476,
+   "time": 0,
+   "md5": "4D9DA121C28D68A1BF2082FF958917D0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DRAGONBLADE_SILVER_PFUXI.DTX",
+   "size": 6782,
+   "time": 0,
+   "md5": "E0DE6BD708546409136851203012A972",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_DragonBlade_Silver_RagingFire.DTX",
+   "size": 5394,
+   "time": 0,
+   "md5": "B4A3570A893704BB49DFAA2B8C56F4F0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade.BIN",
+   "size": 10284,
+   "time": 0,
+   "md5": "9AA5B55BDB10574EBE0BEE936DB63D9F",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_FuryBeast.BIN",
+   "size": 9768,
+   "time": 0,
+   "md5": "30EC8425E0362BCD7C026F411F03FCF7",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_FuryBeast_NG.BIN",
+   "size": 9151,
+   "time": 0,
+   "md5": "A5572CA7C9382A87EB9269B7FAF5A72B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_RM_GR.BIN",
+   "size": 8386,
+   "time": 0,
+   "md5": "E6B711668AA51B70B625FACF6CE2C2B2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_RM_PK.BIN",
+   "size": 7748,
+   "time": 0,
+   "md5": "187A4BCF69C2D94D9BC86200355757D0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_RM_PL.BIN",
+   "size": 7809,
+   "time": 0,
+   "md5": "074D4E9FBBE7C1F00DBA06F647BD4AC8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_RM_PP.BIN",
+   "size": 7756,
+   "time": 0,
+   "md5": "3FA8C8AF1D32829BB58779696A9E1D2A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_RM_RB.BIN",
+   "size": 7776,
+   "time": 0,
+   "md5": "F3EA728EBC8C9078077EE51FCDA0FCE0",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_RM_WH.BIN",
+   "size": 7858,
+   "time": 0,
+   "md5": "0DCEEAC5E521EB9A723ABBF3E9F73699",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_Silver_Bailong.BIN",
+   "size": 9101,
+   "time": 0,
+   "md5": "25EE1A911FCA36FEFA498453D6CAE431",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_Silver_BlackDaSheng.BIN",
+   "size": 8647,
+   "time": 0,
+   "md5": "7FE5C33418E655ADF7EFAF8FC50957DE",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez2/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez2\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_Silver_HsiYuChi.BIN",
+   "size": 9680,
+   "time": 0,
+   "md5": "4173C91BC99195A74500259E58D784DB",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_Silver_PFuXi.BIN",
+   "size": 9225,
+   "time": 0,
+   "md5": "EDCCA12CDAB68E02503C6751733613AA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez3/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez3\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_DragonBlade_Silver_RagingFire.BIN",
+   "size": 9099,
+   "time": 0,
+   "md5": "41BE90A1999936B44491F4E2A1FB638C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/DragonBlade_RM.BIN",
+   "size": 3570,
+   "time": 0,
+   "md5": "3238D60B316938C9D08C9F8F8B75C5A8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/DragonBlade_FuryBeast_NG.BIN",
+   "size": 7651,
+   "time": 0,
+   "md5": "4525F8FAA28C76F9C77D8804E56A9CAA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/DragonBlade_RM.BIN",
+   "size": 5557,
+   "time": 0,
+   "md5": "F5815F3C917C5FB9D742392E3A4971F5",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF192.REZ",
+   "full_path": "UI/ItemIcon/S_Grade/DragonBlade_RM_s.BIN",
+   "size": 1600,
+   "time": 0,
+   "md5": "D1CFCC45822CD63E2CB4E042219F7C2C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/NobleGoldName/DragonBlade_FuryBeast_NG/Name.BIN",
+   "size": 13877,
+   "time": 0,
+   "md5": "297E762704EC82026982DFF17CC590F2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/NobleGoldName/DragonBlade_FuryBeast_NG/NewName.BIN",
+   "size": 60301,
+   "time": 0,
+   "md5": "8AD6FFA555593ACB6978BB2FAF0D8E74",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_01.BIN",
+   "size": 135468,
+   "time": 0,
+   "md5": "3AA80A475DC85A4BA228203E6DE7CAAA",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_02.BIN",
+   "size": 185508,
+   "time": 0,
+   "md5": "64A5168A36E2DA44B0A4E6EB900984E3",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_03.BIN",
+   "size": 193580,
+   "time": 0,
+   "md5": "83C61ED0EAAC91DBF9D0341D2F3E7738",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_04.BIN",
+   "size": 214647,
+   "time": 0,
+   "md5": "174C7D929DD86259F5D6FDC8A1A0D137",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_05.BIN",
+   "size": 204332,
+   "time": 0,
+   "md5": "422133C656D500719D186BEEAD23341C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_06.BIN",
+   "size": 203679,
+   "time": 0,
+   "md5": "9394148BF7534C8E5DBD8AC2290D35B8",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_07.BIN",
+   "size": 202724,
+   "time": 0,
+   "md5": "022B00735B574EE785ADAFE89E2A626A",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_08.BIN",
+   "size": 205428,
+   "time": 0,
+   "md5": "D9BC2D0E6818910ACCD7507FB49D3375",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_09.BIN",
+   "size": 205194,
+   "time": 0,
+   "md5": "9570DEC3320600730D4B0E8CDF0A50F1",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_10.BIN",
+   "size": 204083,
+   "time": 0,
+   "md5": "29707C025916877714A82D5AD7D0D793",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_11.BIN",
+   "size": 198067,
+   "time": 0,
+   "md5": "1223DF7B1B87329B8FF0937F02F27544",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_12.BIN",
+   "size": 187696,
+   "time": 0,
+   "md5": "262B69A5106981A49629BBFE738C6D3C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_13.BIN",
+   "size": 165516,
+   "time": 0,
+   "md5": "699ED8FA162142624871E6343CA8317D",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_14.BIN",
+   "size": 193009,
+   "time": 0,
+   "md5": "A8E7925CBC128D24C561746CC0C61A8E",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez/rf192.rez",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf192.rez",
+   "full_path": "UI/UI_Shop2/VVIP/SpriteImage/Effect/SGFX_se_vvip_set_DragonBlade_FuryBeast/SGFX_se_vvip_set_DragonBlade_FuryBeast_15.BIN",
+   "size": 185305,
+   "time": 0,
+   "md5": "52406161025C28FFF8CBA25F5923B4E5",
+   "md5_complete": true
+  }
+ ],
+ "peach_melee": [
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-QBZ03_Jewelry_JJ_Meihua.LTB",
+   "size": 274221,
+   "time": 0,
+   "md5": "9CD372B8EDAAFABADAEACEAFE8FD7F82",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-QBZ03_Jewelry_JJ_Meihua_BL.LTB",
+   "size": 187094,
+   "time": 0,
+   "md5": "AD2FDE133D5690D7C85647D03B93C15C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-QBZ03_Jewelry_JJ_Meihua_GR.LTB",
+   "size": 187094,
+   "time": 0,
+   "md5": "AD2FDE133D5690D7C85647D03B93C15C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-QBZ03_Jewelry_JJ_Meihua_WOMAN_BL.LTB",
+   "size": 187094,
+   "time": 0,
+   "md5": "AD2FDE133D5690D7C85647D03B93C15C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/PLAYERVIEW/PV-QBZ03_Jewelry_JJ_Meihua_WOMAN_GR.LTB",
+   "size": 187094,
+   "time": 0,
+   "md5": "AD2FDE133D5690D7C85647D03B93C15C",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-QBZ03_Jewelry_JJ_Meihua.LTB",
+   "size": 30679,
+   "time": 0,
+   "md5": "8A2B9F0092670D2E8F1B7EF84F31F818",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF016.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF016.REZ",
+   "full_path": "Models/WEAPONS/QV-QBZ03_Jewelry_JJ_Meihua_preview.LTB",
+   "size": 30542,
+   "time": 0,
+   "md5": "1FC39F7EA7B2B20937420301EA9EB5E9",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-QBZ03_Jewelry_JJ_Meihua.DTX",
+   "size": 524452,
+   "time": 0,
+   "md5": "01240413A7932893497BCABAE3977891",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/PLAYERVIEW/PV-QBZ03_Jewelry_JJ_Meihua_01.DTX",
+   "size": 131236,
+   "time": 0,
+   "md5": "77357BF0795BDFC0AD9F867682A2C862",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/Shader/WeaponShader/QBZ03_Jewelry_JJ_Meihua.CFG",
+   "size": 3989,
+   "time": 0,
+   "md5": "5FC941ADABA4485277580D4EEBD2D297",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-QBZ03_Jewelry_JJ_Meihua.DTX",
+   "size": 32932,
+   "time": 0,
+   "md5": "A601D447ECE856EE8E40C36C51B47A74",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF017.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF017.REZ",
+   "full_path": "ModelTextures/WEAPONS/QV-QBZ03_Jewelry_JJ_Meihua_01.DTX",
+   "size": 8356,
+   "time": 0,
+   "md5": "CCA2A5DCFC439F467DF18C491DC79D80",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/KILLMSG/SHOT_WEAPON_QBZ03_Jewelry_JJ_Meihua.DTX",
+   "size": 927,
+   "time": 0,
+   "md5": "DF602F1B93DE63877242400BB427AAE2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez4/RF019.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez4\\RF019.REZ",
+   "full_path": "TEX/UI/WEAPONICON/WEAPON_SELECT_QBZ03_Jewelry_JJ_Meihua.DTX",
+   "size": 6964,
+   "time": 0,
+   "md5": "49F41879207E4354C242EF34FC7D753B",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/BigItemIcon/BUYWEAPON_INFO/BUYWEAPON_INFO_QBZ03_Jewelry_JJ_Meihua.BIN",
+   "size": 21067,
+   "time": 0,
+   "md5": "CE6265D9FACF2B04F72F708FB29CC2D2",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/UI_ShopRenewal/VVIPSkin/WeaponIcon/QBZ03_Jewelry_JJ_Meihua.BIN",
+   "size": 61774,
+   "time": 0,
+   "md5": "23592CD107B6A0F9F3BFAE19B465FD94",
+   "md5_complete": true
+  },
+  {
+   "archive": "rez6/RF192.REZ",
+   "index_archive": "D:\\Program Files\\CF(2)\\rez6\\RF192.REZ",
+   "full_path": "UI/UI_VVIPWeaponCC/VVIPSkin/Skin/_JJ_Meihua.BIN",
+   "size": 2580,
+   "time": 0,
+   "md5": "93A8F7867ED8D004F0FAEC5F1DAB4873",
+   "md5_complete": true
+  }
+ ]
+}

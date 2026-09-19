@@ -1,0 +1,66 @@
+{
+ "generated_at_utc": "2026-09-16T16:55:34.237514+00:00",
+ "target": {
+  "weapon": "default knife CT+T"
+ },
+ "files": [
+  {
+   "vpk_path": "models/weapons/v_knife_default_ct.mdl",
+   "size": 16156,
+   "sha256": "7514966667d629e9f4b408115f86ad54c38f089ca7087c0ad7664b93c6c36427"
+  },
+  {
+   "vpk_path": "models/weapons/v_knife_default_ct.vvd",
+   "size": 303296,
+   "sha256": "4b374ec6f653bd4d296381dd369cbcb898380756b25a37c781fbe7ad19b8d72e"
+  },
+  {
+   "vpk_path": "models/weapons/v_knife_default_ct.dx90.vtx",
+   "size": 75547,
+   "sha256": "5d782949fc70d6fc6db5914eb16e22ab0e9ae422bcb78fcc3794d5b25feed077"
+  },
+  {
+   "vpk_path": "models/weapons/v_knife_default_ct.ani",
+   "size": 408,
+   "sha256": "8b3ea16f5cb320abd34434cc6c5473c5aa92f0523a3158f9d15c419ace61d0e2"
+  },
+  {
+   "vpk_path": "models/weapons/v_knife_default_t.mdl",
+   "size": 16052,
+   "sha256": "e7be22e2f24f0eefc20fb3db885b814f452e154ceb81bc7e478a335a0020b016"
+  },
+  {
+   "vpk_path": "models/weapons/v_knife_default_t.vvd",
+   "size": 113856,
+   "sha256": "b59ec134755423744fa7ff5b9613d35a7003915478859ae3ccecac0577e97305"
+  },
+  {
+   "vpk_path": "models/weapons/v_knife_default_t.dx90.vtx",
+   "size": 28315,
+   "sha256": "f710234e48c736901a4bbf22de63f2f9d4121d4c9597fbd7045652676738f321"
+  },
+  {
+   "vpk_path": "models/weapons/v_knife_default_t.ani",
+   "size": 408,
+   "sha256": "8b3ea16f5cb320abd34434cc6c5473c5aa92f0523a3158f9d15c419ace61d0e2"
+  },
+  {
+   "vpk_path": "scripts/game_sounds_weapons.txt",
+   "size": 219339,
+   "sha256": "24833a684bcc0908fe775db74b1dbda4815e6c7ed1a78a59237eab6d1cb34b4d"
+  }
+ ],
+ "missing": [
+  "models/weapons/v_knife_default_ct.dx80.vtx",
+  "models/weapons/v_knife_default_ct.sw.vtx",
+  "models/weapons/v_knife_default_t.dx80.vtx",
+  "models/weapons/v_knife_default_t.sw.vtx"
+ ],
+ "sounds": [
+  "Weapon_Knife.Deploy",
+  "Weapon_Knife.Hit",
+  "Weapon_Knife.HitWall",
+  "Weapon_Knife.Slash",
+  "Weapon_Knife.Stab"
+ ]
+}

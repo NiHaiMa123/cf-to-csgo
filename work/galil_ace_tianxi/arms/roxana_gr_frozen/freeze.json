@@ -1,0 +1,27 @@
+{
+  "saved_at_utc": "2026-09-17",
+  "character": "Roxana GR / 传说女帝-保卫者",
+  "status": "accepted_snapshot_before_nini_swap",
+  "oil": {
+    "phongexponent": 5,
+    "phongboost": 1.2,
+    "phongfresnelranges": [0.15, 0.55, 1],
+    "phongalbedotint": 1,
+    "envmap": false,
+    "note": "pipeline.md A.8.2"
+  },
+  "sources": {
+    "ltb": "ltb/Arm_Roxana_GR.LTB",
+    "skin_dump": "decode/cf_skin_roxana_gr.json",
+    "upscaled_diffuse": [
+      "decode/up/4x_FVIEW_HAND_Roxana_GR.png",
+      "decode/up/4x_FVIEW_ARM_Roxana_GR.png"
+    ],
+    "game_ready_vtf_vmt": "addon_materials/"
+  },
+  "restore": [
+    "copy decode/* back to work/galil_ace_tianxi/decode/roxana_gr/",
+    "point native_vm/build_galilace_vm.py ARMDUMP/ARMTEX at decode/roxana_gr and materials cf_roxana_{hand,arm}_gr",
+    "copy addon_materials/cf_roxana_* into staging+MIGI addon materials, rebuild mesh"
+  ]
+}

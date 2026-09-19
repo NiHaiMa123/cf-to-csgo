@@ -1,0 +1,15 @@
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.AssemblyInfoInputs.cache
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.AssemblyInfo.cs
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.csproj.CoreCompileInputs.cache
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.sourcelink.json
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\bin\Release\net8.0\P5T02ModelReader.exe
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\bin\Release\net8.0\P5T02ModelReader.deps.json
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\bin\Release\net8.0\P5T02ModelReader.runtimeconfig.json
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\bin\Release\net8.0\P5T02ModelReader.dll
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\bin\Release\net8.0\P5T02ModelReader.pdb
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.dll
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\refint\P5T02ModelReader.dll
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.pdb
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\P5T02ModelReader.genruntimeconfig.cache
+D:\project\cf_to_csgo\work\p5_leishen\t02\.runner\obj\Release\net8.0\ref\P5T02ModelReader.dll

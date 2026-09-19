@@ -1,0 +1,48 @@
+{
+  "skin_sha256": "c874591e42d7df9f5dfd06f657841e4e0679d7d548f0939359b38327efca466d",
+  "vertices": 1626,
+  "triangles": 1890,
+  "variants": {
+    "u_v": {
+      "swap": false,
+      "flip_u": false,
+      "flip_v": false
+    },
+    "u_flip_v": {
+      "swap": false,
+      "flip_u": false,
+      "flip_v": true
+    },
+    "flip_u_v": {
+      "swap": false,
+      "flip_u": true,
+      "flip_v": false
+    },
+    "flip_u_flip_v": {
+      "swap": false,
+      "flip_u": true,
+      "flip_v": true
+    },
+    "swap_u_v": {
+      "swap": true,
+      "flip_u": false,
+      "flip_v": false
+    },
+    "swap_u_flip_v": {
+      "swap": true,
+      "flip_u": false,
+      "flip_v": true
+    },
+    "swap_flip_u_v": {
+      "swap": true,
+      "flip_u": true,
+      "flip_v": false
+    },
+    "swap_flip_u_flip_v": {
+      "swap": true,
+      "flip_u": true,
+      "flip_v": true
+    }
+  },
+  "shader": "Emission; no lighting, no specular"
+}
