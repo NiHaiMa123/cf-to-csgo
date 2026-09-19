@@ -1118,11 +1118,13 @@ REJECTED
 # 21. 当前状态
 
 ```text
-Framework skeleton            TODO
+Framework skeleton            ACTIVE
+  material_ir.py              PASS
+  input_manifest.py           PASS
 
 Reference: M1896_Libra
-A1 input closure              TODO
-A2 mesh/UV/diffuse gate       TODO
+A1 input closure              PASS (11 assets, provenance+hashes, 0 problems)
+A2 mesh/UV/diffuse gate       PASS (2767 tris, 0 UV out-of-range; emission render + UV overlay visually verified: zodiac/barrel/engraving islands land correctly)
 B1 CFG parse                  TODO
 B2 channel audit              TODO
 C1 shader family              TODO

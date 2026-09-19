@@ -1,0 +1,74 @@
+{
+ "engine": "BLENDER_WORKBENCH",
+ "color_mode": "TEXTURE",
+ "diffuse": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\PV-M1896_Libra.png",
+ "meshes": [
+  {
+   "name": "PV-Mauser_Libra",
+   "verts": 1798,
+   "tris": 1475
+  },
+  {
+   "name": "reload",
+   "verts": 174,
+   "tris": 168
+  },
+  {
+   "name": "reload02",
+   "verts": 64,
+   "tris": 44
+  },
+  {
+   "name": "bull-set",
+   "verts": 218,
+   "tris": 376
+  },
+  {
+   "name": "coin",
+   "verts": 164,
+   "tris": 148
+  },
+  {
+   "name": "Line",
+   "verts": 234,
+   "tris": 216
+  },
+  {
+   "name": "bull01",
+   "verts": 55,
+   "tris": 80
+  },
+  {
+   "name": "bull002",
+   "verts": 55,
+   "tris": 80
+  },
+  {
+   "name": "bull003",
+   "verts": 55,
+   "tris": 80
+  },
+  {
+   "name": "Bull-C",
+   "verts": 132,
+   "tris": 100
+  }
+ ],
+ "bbox_min": [
+  -2.0153861045837402,
+  -14.970766067504883,
+  -17.178730010986328
+ ],
+ "bbox_max": [
+  1.8129750490188599,
+  -3.5505199432373047,
+  7.482054233551025
+ ],
+ "views": [
+  "emission_front.png",
+  "emission_back.png",
+  "emission_left.png",
+  "emission_right.png"
+ ],
+ "note": "unlit texture render = offline Emission(diffuse) equivalent"
+}

@@ -1,0 +1,117 @@
+{
+ "diffuse": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\PV-M1896_Libra.png",
+ "diffuse_size": [
+  1024,
+  1024
+ ],
+ "meshes": [
+  {
+   "name": "PV-Mauser_Libra",
+   "triangles": 1475,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 504,
+   "sampled_lum_mean": 19.39,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 158.28
+  },
+  {
+   "name": "reload",
+   "triangles": 168,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 44,
+   "sampled_lum_mean": 18.28,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 80.36
+  },
+  {
+   "name": "reload02",
+   "triangles": 44,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 10,
+   "sampled_lum_mean": 15.84,
+   "sampled_lum_min": 2.86,
+   "sampled_lum_max": 76.92
+  },
+  {
+   "name": "bull-set",
+   "triangles": 376,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 85,
+   "sampled_lum_mean": 40.34,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 143.4
+  },
+  {
+   "name": "coin",
+   "triangles": 148,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 28,
+   "sampled_lum_mean": 34.3,
+   "sampled_lum_min": 0.72,
+   "sampled_lum_max": 106.48
+  },
+  {
+   "name": "Line",
+   "triangles": 216,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 123,
+   "sampled_lum_mean": 12.88,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 93.99
+  },
+  {
+   "name": "bull01",
+   "triangles": 80,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 73,
+   "sampled_lum_mean": 2.31,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 11.49
+  },
+  {
+   "name": "bull002",
+   "triangles": 80,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 73,
+   "sampled_lum_mean": 2.31,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 11.49
+  },
+  {
+   "name": "bull003",
+   "triangles": 80,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 73,
+   "sampled_lum_mean": 2.31,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 11.49
+  },
+  {
+   "name": "Bull-C",
+   "triangles": 100,
+   "uv_out_of_range": 0,
+   "centroid_on_near_black": 45,
+   "sampled_lum_mean": 17.3,
+   "sampled_lum_min": 0.0,
+   "sampled_lum_max": 109.93
+  }
+ ],
+ "total": {
+  "triangles": 2767,
+  "uv_out_of_range": 0,
+  "centroid_on_near_black": 1058,
+  "near_black_fraction": 0.3824
+ },
+ "a2_gate": {
+  "passed": true,
+  "problems": [],
+  "requires_visual_review": true,
+  "visual_evidence": [
+   "emission_reference.png",
+   "uv_overlay.png"
+  ]
+ },
+ "artifacts": {
+  "uv_overlay": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\audit\\uv_overlay.png"
+ }
+}
