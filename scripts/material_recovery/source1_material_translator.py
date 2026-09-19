@@ -31,7 +31,11 @@ PHONG_GAIN = 2.5
 PHONG_MASK_GAIN = 4.0
 PHONG_BOOST_FLOOR = 0.5
 ENVMAP_TINT_MAX = 1.0
-ENV_STRENGTH_GAIN = 0.35
+ENV_STRENGTH_GAIN = 0.5
+# environment-independent materials: no light-dependent terms at all
+# (phong off; diffuse is ~unlit via lightwarp floor, gold sheen comes
+# from the static baked env cube only)
+PHONG_ENABLED = False
 # shared lightwarp: compress diffuse lit/unlit gap to the CFG-derived
 # lit fraction (CF viewmodel lighting is weakly directional)
 LIGHT_INFLUENCE_SCALE = 0.25
@@ -233,7 +237,7 @@ def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
     ]
     if lightwarp_name:
         lines.append(f'\t"$lightwarptexture" "{material_root}/{lightwarp_name}"')
-    if strategy == "matte_dark":
+    if strategy == "matte_dark" or not PHONG_ENABLED:
         lines += ['\t"$phong" "0"']
     else:
         lines += [
