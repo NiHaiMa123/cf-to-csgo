@@ -28,9 +28,15 @@ LUM_WEIGHTS = np.array((0.2126, 0.7152, 0.0722), dtype=np.float32)
 # uniform cross-engine calibration (not weapon-specific)
 SOURCE_EXPONENT_SCALE = 16.0
 PHONG_GAIN = 2.5
-PHONG_MASK_GAIN = 2.5
+PHONG_MASK_GAIN = 4.0
 PHONG_BOOST_FLOOR = 0.5
 ENVMAP_TINT_MAX = 1.0
+ENV_STRENGTH_GAIN = 1.4
+# shared lightwarp: compress diffuse lit/unlit gap to the CFG-derived
+# lit fraction (CF viewmodel lighting is weakly directional)
+LIGHT_INFLUENCE_SCALE = 2.0
+MIN_LIT_FRACTION = 0.2
+MAX_LIT_FRACTION = 0.8
 STRATEGY_BOOST_MUL = {"warm_phong": 1.0, "colored_phong": 0.8,
                       "envmap_metal": 0.8, "controlled_phong": 0.5,
                       "dim_phong": 0.25, "matte_dark": 0.0}
@@ -124,11 +130,24 @@ def _fmt_vec(v: list[float]) -> str:
     return "[" + " ".join(f"{x:g}" for x in v) + "]"
 
 
+def lightwarp_terms(cfg_flat: dict) -> tuple[Image.Image, float]:
+    """Shared 256x16 lightwarp ramp; dark floor = 1 - CFG lit fraction."""
+    lit = float(cfg_flat.get("LightBrightness", 0.5) or 0.5)
+    lit_fraction = max(MIN_LIT_FRACTION,
+                       min(MAX_LIT_FRACTION, lit * LIGHT_INFLUENCE_SCALE))
+    floor = 1.0 - lit_fraction
+    ramp = np.linspace(floor, 1.0, 256, dtype=np.float32)
+    arr = np.repeat(ramp[None, :, None], 16, axis=0).repeat(3, axis=2)
+    img = Image.fromarray(np.uint8(np.round(arr * 255.0)), "RGB")
+    return img, round(lit_fraction, 4)
+
+
 def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
                   slot_name: str, strategy: str, cfg_flat: dict,
                   tint: list[float], env_tint: list[float] | None,
                   exponent: int | None = None,
-                  boost: float | None = None) -> str:
+                  boost: float | None = None,
+                  lightwarp_name: str | None = None) -> str:
     if exponent is None or boost is None:
         exponent, boost = phong_terms(cfg_flat, tint, strategy)
     lines = [
@@ -137,6 +156,8 @@ def vertexlit_vmt(material_root: str, base_name: str, normal_name: str,
         f'\t"$bumpmap" "{material_root}/{normal_name}"',
         '\t"$halflambert" "1"',
     ]
+    if lightwarp_name:
+        lines.append(f'\t"$lightwarptexture" "{material_root}/{lightwarp_name}"')
     if strategy == "matte_dark":
         lines += ['\t"$phong" "0"']
     else:
@@ -167,7 +188,8 @@ def env_tint_for_region(region: dict, cfg_flat: dict,
     """
     f = region["feature_means"]
     env_b = float(cfg_flat.get("EnvCubeMapBrightness", 1.0) or 1.0)
-    strength = min(ENVMAP_TINT_MAX, f.get("alpha_b", 0.1) * env_b)
+    strength = min(ENVMAP_TINT_MAX,
+                   f.get("alpha_b", 0.1) * env_b * ENV_STRENGTH_GAIN)
     return [round(min(ENVMAP_TINT_MAX, strength * c), 3) for c in tint]
 
 
@@ -181,6 +203,9 @@ def translate(ir: dict, regions_result: dict, maps: dict,
     masks = build_masks(maps, cfg_flat, size)
     masks["phong_mask"].save(out_dir / "mask_phong.png")
     masks["env_mask"].save(out_dir / "mask_env.png")
+    lightwarp, lit_fraction = lightwarp_terms(cfg_flat)
+    lightwarp.save(out_dir / f"{base_name}_lightwarp.png")
+    lightwarp_name = f"{base_name}_lightwarp"
     tint = spec_tint(maps)
     slots = []
     vmts = {}
@@ -194,7 +219,7 @@ def translate(ir: dict, regions_result: dict, maps: dict,
             exponent = min(exponent, DARK_REGION_EXP_CAP)
         vmt = vertexlit_vmt(material_root, base_name, normal_name, slot,
                             s["strategy"], cfg_flat, tint, env_t,
-                            exponent, boost)
+                            exponent, boost, lightwarp_name)
         vmts[slot] = vmt
         slots.append({
             "region_id": region["region_id"],
@@ -214,6 +239,9 @@ def translate(ir: dict, regions_result: dict, maps: dict,
         "phong_tint": tint,
         "masks": {"phong_mean": masks["phong_mean"],
                   "env_mean": masks["env_mean"]},
+        "lightwarp": {"texture": lightwarp_name,
+                      "lit_fraction": lit_fraction,
+                      "dark_floor": round(1.0 - lit_fraction, 4)},
         "tags": {
             "preserved": ["diffuse base texture", "normal map", "specular->phong mask (low-pass)",
                           "alpha.B->envmap mask (low-pass)", "specular chroma->$phongtint",

@@ -38,10 +38,13 @@ NORMAL_NAME = "cf_mauser_libra_n"
 SIZE = (2048, 2048)
 
 
-def vtfcmd(png: Path, dest: Path, fmt: str, flags: tuple[str, ...] = ()) -> None:
+def vtfcmd(png: Path, dest: Path, fmt: str, flags: tuple[str, ...] = (),
+           nomip: bool = False) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     cmd = [str(VTFCMD), "-file", str(png), "-output", str(dest.parent),
            "-format", fmt, "-alphaformat", fmt, "-version", "7.4"]
+    if nomip:
+        cmd.append("-nomipmaps")
     for fl in flags:
         cmd += ["-flag", fl]
     proc = subprocess.run(cmd, capture_output=True, text=True,
@@ -97,13 +100,18 @@ def main() -> int:
            ("TRILINEAR", "ANISOTROPIC"))
     vtfcmd(nrm_png, OUT / f"{NORMAL_NAME}.vtf", "dxt5",
            ("TRILINEAR", "ANISOTROPIC", "NORMAL"))
+    lw_png = OUT / f"{BASE_NAME}_lightwarp.png"
+    vtfcmd(lw_png, OUT / f"{BASE_NAME}_lightwarp.vtf", "bgr888",
+           ("POINTSAMPLE", "CLAMPS", "CLAMPT", "NOMIP", "NOLOD"),
+           nomip=True)
     for slot, vmt in res["vmts"].items():
         (OUT / f"{slot}.vmt").write_text(vmt, encoding="utf-8")
     # fallback material for any triangle outside the region table
     (OUT / f"{BASE_NAME}.vmt").write_text(
         s1t.vertexlit_vmt(MATERIAL_ROOT, BASE_NAME, NORMAL_NAME, BASE_NAME,
                           "controlled_phong", ir["cfg"]["flat"],
-                          res["report"]["phong_tint"], None),
+                          res["report"]["phong_tint"], None,
+                          lightwarp_name=f"{BASE_NAME}_lightwarp"),
         encoding="utf-8")
 
     # Phase G assignment table: piece -> local tri -> slot material
@@ -116,7 +124,8 @@ def main() -> int:
 
     res["report"]["vtf"] = {
         "base": vtf_header(OUT / f"{BASE_NAME}.vtf"),
-        "normal": vtf_header(OUT / f"{NORMAL_NAME}.vtf")}
+        "normal": vtf_header(OUT / f"{NORMAL_NAME}.vtf"),
+        "lightwarp": vtf_header(OUT / f"{BASE_NAME}_lightwarp.vtf")}
     (OUT / "translation_report.json").write_text(
         json.dumps(res["report"], indent=1, ensure_ascii=False), encoding="utf-8")
 

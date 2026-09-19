@@ -3,6 +3,7 @@
 	"$basetexture" "models/weapons/v_models/cf_mauser/cf_mauser_libra"
 	"$bumpmap" "models/weapons/v_models/cf_mauser/cf_mauser_libra_n"
 	"$halflambert" "1"
+	"$lightwarptexture" "models/weapons/v_models/cf_mauser/cf_mauser_libra_lightwarp"
 	"$phong" "1"
 	"$basemapalphaphongmask" "1"
 	"$phongexponent" "2"
@@ -11,6 +12,6 @@
 	"$phongtint" "[1 0.765 0.529]"
 	"$envmap" "env_cubemap"
 	"$normalmapalphaenvmapmask" "1"
-	"$envmaptint" "[0.17 0.13 0.09]"
+	"$envmaptint" "[0.238 0.182 0.126]"
 	"$nocull" "0"
 }

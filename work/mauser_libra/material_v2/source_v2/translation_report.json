@@ -14,9 +14,9 @@
     "specular_r_minus_lum": 0.059
    },
    "envmap_tint": [
-    0.471,
-    0.36,
-    0.249
+    0.659,
+    0.504,
+    0.349
    ],
    "phong_exponent": 4,
    "phong_boost": 1.5666,
@@ -34,9 +34,9 @@
     "specular_r_minus_lum": 0.09
    },
    "envmap_tint": [
-    0.733,
-    0.561,
-    0.388
+    1.0,
+    0.765,
+    0.529
    ],
    "phong_exponent": 4,
    "phong_boost": 2.5065,
@@ -54,9 +54,9 @@
     "specular_r_minus_lum": 0.0502
    },
    "envmap_tint": [
-    0.488,
-    0.373,
-    0.258
+    0.683,
+    0.523,
+    0.361
    ],
    "phong_exponent": 2,
    "phong_boost": 3.1331,
@@ -74,9 +74,9 @@
     "specular_r_minus_lum": 0.0295
    },
    "envmap_tint": [
-    0.327,
-    0.25,
-    0.173
+    0.458,
+    0.351,
+    0.242
    ],
    "phong_exponent": 2,
    "phong_boost": 1.5666,
@@ -114,9 +114,9 @@
     "specular_r_minus_lum": 0.011
    },
    "envmap_tint": [
-    0.17,
-    0.13,
-    0.09
+    0.238,
+    0.182,
+    0.126
    ],
    "phong_exponent": 2,
    "phong_boost": 0.7833,
@@ -129,8 +129,13 @@
   0.529
  ],
  "masks": {
-  "phong_mean": 0.3257,
+  "phong_mean": 0.4487,
   "env_mean": 0.1069
+ },
+ "lightwarp": {
+  "texture": "cf_mauser_libra_lightwarp",
+  "lit_fraction": 0.4,
+  "dark_floor": 0.6
  },
  "tags": {
   "preserved": [
@@ -170,6 +175,14 @@
    "flags": "0x2092",
    "frames": 1,
    "mips": 12
+  },
+  "lightwarp": {
+   "w": 256,
+   "h": 16,
+   "fmt": 3,
+   "flags": "0x30d",
+   "frames": 1,
+   "mips": 1
   }
  }
 }
