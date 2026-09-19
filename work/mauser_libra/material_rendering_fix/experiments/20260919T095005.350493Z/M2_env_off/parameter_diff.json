@@ -1,0 +1,44 @@
+{
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+    "removed": {
+      "$envmap": "env_cubemap",
+      "$normalmapalphaenvmapmask": "1",
+      "$envmaptint": "[0.865 0.733 0.66]"
+    },
+    "added": {},
+    "changed": {},
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$nocull"
+    ]
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+    "removed": {
+      "$envmap": "env_cubemap",
+      "$normalmapalphaenvmapmask": "1",
+      "$envmaptint": "[1 1 0.9]"
+    },
+    "added": {},
+    "changed": {},
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$nocull"
+    ]
+  }
+}

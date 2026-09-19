@@ -1,0 +1,23 @@
+{
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+    "removed": {
+      "$normalmapalphaenvmapmask": "1"
+    },
+    "added": {},
+    "changed": {},
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$envmap",
+      "$envmaptint",
+      "$nocull"
+    ]
+  }
+}

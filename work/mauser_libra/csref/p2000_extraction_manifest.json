@@ -1,0 +1,38 @@
+{
+ "generated_at_utc": "2026-09-19T15:32:08.324313+00:00",
+ "target": {
+  "weapon": "p2000"
+ },
+ "files": [
+  {
+   "vpk_path": "models/weapons/v_pist_hkp2000.mdl",
+   "size": 27640,
+   "sha256": "d80a70ab506b0774558d04efaaaacedb79c0c081d1be2a61584ad1166e7f63c7"
+  },
+  {
+   "vpk_path": "models/weapons/v_pist_hkp2000.vvd",
+   "size": 899008,
+   "sha256": "c4e919232ad5f5ca91e6865f815de229027eba9dc02dfb89d1b694913f1e57d7"
+  },
+  {
+   "vpk_path": "models/weapons/v_pist_hkp2000.dx90.vtx",
+   "size": 187163,
+   "sha256": "ad712d1f7458604e64bcd4ae5579c7c520465b0e81b3789052ca2e4985389a0b"
+  },
+  {
+   "vpk_path": "models/weapons/v_pist_hkp2000.ani",
+   "size": 80888,
+   "sha256": "3d7666bab92b7a2d6d694d2da7ee2aa6e263b113035468966e04860792d7d215"
+  },
+  {
+   "vpk_path": "scripts/game_sounds_weapons.txt",
+   "size": 219339,
+   "sha256": "24833a684bcc0908fe775db74b1dbda4815e6c7ed1a78a59237eab6d1cb34b4d"
+  }
+ ],
+ "missing": [
+  "models/weapons/v_pist_hkp2000.dx80.vtx",
+  "models/weapons/v_pist_hkp2000.sw.vtx"
+ ],
+ "sounds": []
+}

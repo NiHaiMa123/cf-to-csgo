@@ -160,14 +160,14 @@
   "unsupported_by_source1": []
  },
  "unlit_bake": {
-  "baked_lum_mean": 0.1926,
-  "baked_lum_p90": 0.5351,
+  "baked_lum_mean": 0.2091,
+  "baked_lum_p90": 0.5874,
   "env_term_mean": 0.0804,
   "spec_term_mean": 0.0366,
   "gains": {
    "env": 0.5,
    "spec": 0.4,
-   "ambient": 0.85,
+   "ambient": 1.1,
    "shade": 0.3
   }
  },

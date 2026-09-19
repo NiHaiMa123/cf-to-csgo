@@ -1,0 +1,92 @@
+{
+ "engine": "CYCLES",
+ "samples": 48,
+ "device": "GPU",
+ "formula": "albedo*(ambient+Lb*N.L+boost) + spec*(N.H^0.25)*alpha.g + cube*3*alpha.b",
+ "cfg": {
+  "LightBrightness": 0.2,
+  "AmbientLightColor": 0.01,
+  "DiffuseBoost": 0.01,
+  "SpecularPower_x_0.25": 0.25,
+  "EnvCubeMapBrightness": 3.0
+ },
+ "meshes": [
+  {
+   "name": "PV-Mauser_Libra",
+   "verts": 1798,
+   "tris": 1475,
+   "framed": true
+  },
+  {
+   "name": "reload",
+   "verts": 174,
+   "tris": 168,
+   "framed": true
+  },
+  {
+   "name": "reload02",
+   "verts": 64,
+   "tris": 44,
+   "framed": true
+  },
+  {
+   "name": "bull-set",
+   "verts": 218,
+   "tris": 376,
+   "framed": false
+  },
+  {
+   "name": "coin",
+   "verts": 164,
+   "tris": 148,
+   "framed": true
+  },
+  {
+   "name": "Line",
+   "verts": 234,
+   "tris": 216,
+   "framed": true
+  },
+  {
+   "name": "bull01",
+   "verts": 55,
+   "tris": 80,
+   "framed": false
+  },
+  {
+   "name": "bull002",
+   "verts": 55,
+   "tris": 80,
+   "framed": false
+  },
+  {
+   "name": "bull003",
+   "verts": 55,
+   "tris": 80,
+   "framed": false
+  },
+  {
+   "name": "Bull-C",
+   "verts": 132,
+   "tris": 100,
+   "framed": false
+  }
+ ],
+ "bbox_min": [
+  0.8774620294570923,
+  -6.758171081542969,
+  0.5892590284347534
+ ],
+ "bbox_max": [
+  1.8129750490188599,
+  -3.5505199432373047,
+  7.482054233551025
+ ],
+ "outputs": [
+  "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_lookdev\\unlit_front.png",
+  "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_lookdev\\unlit_three_quarter.png",
+  "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_lookdev\\cf_additive_front.png",
+  "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_lookdev\\cf_additive_three_quarter.png"
+ ],
+ "note": "Blender look-dev of recovered CF additive formula. Not CS:GO runtime truth."
+}

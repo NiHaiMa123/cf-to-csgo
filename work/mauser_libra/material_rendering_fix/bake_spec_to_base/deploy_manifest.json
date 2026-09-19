@@ -1,0 +1,20 @@
+{
+  "changed": {
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vtf": "7d301c41b79bc341164205d0bc86e0ba352963123d3e57fa2507178aea2965f1",
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vmt": "8025f83f62bbe9c16458e672b7b773c2f01541bf1b9eb3af2348734cc3d1dd1c",
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": "8025f83f62bbe9c16458e672b7b773c2f01541bf1b9eb3af2348734cc3d1dd1c",
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": "8025f83f62bbe9c16458e672b7b773c2f01541bf1b9eb3af2348734cc3d1dd1c",
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": "8025f83f62bbe9c16458e672b7b773c2f01541bf1b9eb3af2348734cc3d1dd1c",
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": "8025f83f62bbe9c16458e672b7b773c2f01541bf1b9eb3af2348734cc3d1dd1c",
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": "8025f83f62bbe9c16458e672b7b773c2f01541bf1b9eb3af2348734cc3d1dd1c",
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": "8025f83f62bbe9c16458e672b7b773c2f01541bf1b9eb3af2348734cc3d1dd1c"
+  },
+  "files": 29,
+  "ab_equal": true,
+  "protected_match_frozen": true,
+  "vtf_bytes": 22369844,
+  "vtf_sha256": "7d301c41b79bc341164205d0bc86e0ba352963123d3e57fa2507178aea2965f1",
+  "bake": "clip(diffuse*0.25 + specular)",
+  "vmt": "Tianxi A.8.1 phong on all gun slots; no envmap; no alphamask; gold is in basetexture",
+  "next": "User MIGI REBUILD, then same three Mirage shots."
+}

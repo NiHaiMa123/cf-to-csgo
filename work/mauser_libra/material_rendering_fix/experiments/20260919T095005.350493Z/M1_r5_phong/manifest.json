@@ -1,0 +1,224 @@
+{
+  "id": "M1_r5_phong",
+  "parent_baseline": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\baseline\\20260919T094033.420908Z_ef5ce185\\addon_v2",
+  "generation_validation": "PASS",
+  "runtime_status": "PENDING",
+  "visual_status": "NOT_EVALUATED",
+  "hypothesis": "r5 (1516 triangles, strategy=matte_dark, $phong 0) is incorrectly treated as a non-specular surface. Restoring the same masked Phong keys currently used by r0 should reveal gold edges/patterns on the dark body without changing other slots or envmap.",
+  "changed_factor": "Only cf_mauser_libra_r5.vmt: replace $phong 0 with r0 Phong keys ($phong, $basemapalphaphongmask, $phongexponent, $phongboost, $phongfresnelranges, $phongtint). No envmap, no VTF rewrite, no global tint edit.",
+  "allowlist": [
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt"
+  ],
+  "changed_files": [
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt"
+  ],
+  "unchanged_count": 28,
+  "files": {
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vmt": {
+      "baseline_sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "candidate_sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "bytes": 358,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vtf": {
+      "baseline_sha256": "44e27a357b8a31de4fb5ff5cd58a34a0400808e7cac06cf51ab1c7acd05c8c8e",
+      "candidate_sha256": "44e27a357b8a31de4fb5ff5cd58a34a0400808e7cac06cf51ab1c7acd05c8c8e",
+      "bytes": 22369844,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_n.vtf": {
+      "baseline_sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc",
+      "candidate_sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc",
+      "bytes": 5592656,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": {
+      "baseline_sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "candidate_sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "bytes": 358,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+      "baseline_sha256": "ef88af8b7fb74b2221484b33073e1592238bb7f9f73b3284c5a4a1076bbefab9",
+      "candidate_sha256": "ef88af8b7fb74b2221484b33073e1592238bb7f9f73b3284c5a4a1076bbefab9",
+      "bytes": 455,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": {
+      "baseline_sha256": "338d87f696b835d543c5b36769e97967225f38f26a8359c70f3f0fe23ae5cd95",
+      "candidate_sha256": "338d87f696b835d543c5b36769e97967225f38f26a8359c70f3f0fe23ae5cd95",
+      "bytes": 358,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": {
+      "baseline_sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "candidate_sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "bytes": 358,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+      "baseline_sha256": "461fb9579e1c04cb80a52f6660d673ad551609c49fa462943457a71df5a8b3ad",
+      "candidate_sha256": "461fb9579e1c04cb80a52f6660d673ad551609c49fa462943457a71df5a8b3ad",
+      "bytes": 446,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": {
+      "baseline_sha256": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155",
+      "candidate_sha256": "58c40b9c37f7a77b891ae2e0b63882b2ba906b260e01dea8329e557e9175bf08",
+      "bytes": 345,
+      "changed": true
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vmt": {
+      "baseline_sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21",
+      "candidate_sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21",
+      "bytes": 301,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vtf": {
+      "baseline_sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+      "candidate_sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+      "bytes": 22369844,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr_n.vtf": {
+      "baseline_sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+      "candidate_sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+      "bytes": 349776,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vmt": {
+      "baseline_sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755",
+      "candidate_sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755",
+      "bytes": 303,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vtf": {
+      "baseline_sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+      "candidate_sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+      "bytes": 22369844,
+      "changed": false
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr_n.vtf": {
+      "baseline_sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+      "candidate_sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+      "bytes": 349776,
+      "changed": false
+    },
+    "models/weapons/v_pist_glock18.ani": {
+      "baseline_sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834",
+      "candidate_sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834",
+      "bytes": 184360,
+      "changed": false
+    },
+    "models/weapons/v_pist_glock18.dx80.vtx": {
+      "baseline_sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740",
+      "candidate_sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740",
+      "bytes": 159081,
+      "changed": false
+    },
+    "models/weapons/v_pist_glock18.dx90.vtx": {
+      "baseline_sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b",
+      "candidate_sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b",
+      "bytes": 158909,
+      "changed": false
+    },
+    "models/weapons/v_pist_glock18.mdl": {
+      "baseline_sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2",
+      "candidate_sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2",
+      "bytes": 235552,
+      "changed": false
+    },
+    "models/weapons/v_pist_glock18.sw.vtx": {
+      "baseline_sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600",
+      "candidate_sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600",
+      "bytes": 158269,
+      "changed": false
+    },
+    "models/weapons/v_pist_glock18.vvd": {
+      "baseline_sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6",
+      "candidate_sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6",
+      "bytes": 628992,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock18-1-distant.wav": {
+      "baseline_sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "candidate_sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "bytes": 133004,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock_01.wav": {
+      "baseline_sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "candidate_sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "bytes": 133004,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock_02.wav": {
+      "baseline_sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "candidate_sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "bytes": 133004,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock_clipin.wav": {
+      "baseline_sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5",
+      "candidate_sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5",
+      "bytes": 187240,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock_clipout.wav": {
+      "baseline_sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97",
+      "candidate_sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97",
+      "bytes": 94488,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock_draw.wav": {
+      "baseline_sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131",
+      "candidate_sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131",
+      "bytes": 81384,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock_slideback.wav": {
+      "baseline_sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c",
+      "candidate_sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c",
+      "bytes": 32464,
+      "changed": false
+    },
+    "sound/weapons/glock18/glock_sliderelease.wav": {
+      "baseline_sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6",
+      "candidate_sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6",
+      "bytes": 88336,
+      "changed": false
+    }
+  },
+  "parameter_diff": {
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": {
+      "removed": {},
+      "added": {
+        "$basemapalphaphongmask": "1",
+        "$phongexponent": "4",
+        "$phongboost": "1.57",
+        "$phongfresnelranges": "[1 1 1]",
+        "$phongtint": "[1 0.765 0.529]"
+      },
+      "changed": {
+        "$phong": [
+          "0",
+          "1"
+        ]
+      },
+      "order_after": [
+        "$basetexture",
+        "$bumpmap",
+        "$halflambert",
+        "$phong",
+        "$basemapalphaphongmask",
+        "$phongexponent",
+        "$phongboost",
+        "$phongfresnelranges",
+        "$phongtint",
+        "$nocull"
+      ]
+    }
+  },
+  "expected_observations": "Gold trim / bright edges on the dark body appear and move with lighting or view; the dark panels stay dark. No change: inspect whether r5 actually loads, whether the packed phong mask is empty, or whether VertexLitGeneric ignores this key combination. Washout / noise: reject this r0 preset, do not raise boost.",
+  "notes": "Ablation package only. Not a final material. Do not treat generation_validation as visual PASS. Use unchanged FOV, position, animation, and hands."
+}

@@ -1,0 +1,458 @@
+{
+  "material_snapshot.json": {
+    "bytes": 13999,
+    "sha256": "9fb74d80686ff44334c0a6de8d1aec79ac97e213828164809e609525a3cac606"
+  },
+  "snapshot.json": {
+    "bytes": 87505,
+    "sha256": "2ecba25afdfa8aab9ed1677db7758f9c75bd67e0ff1c3cb363d6f01bb0620dd0"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vmt": {
+    "bytes": 358,
+    "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vtf": {
+    "bytes": 22369844,
+    "sha256": "44e27a357b8a31de4fb5ff5cd58a34a0400808e7cac06cf51ab1c7acd05c8c8e"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_n.vtf": {
+    "bytes": 5592656,
+    "sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": {
+    "bytes": 358,
+    "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+    "bytes": 455,
+    "sha256": "ef88af8b7fb74b2221484b33073e1592238bb7f9f73b3284c5a4a1076bbefab9"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": {
+    "bytes": 358,
+    "sha256": "338d87f696b835d543c5b36769e97967225f38f26a8359c70f3f0fe23ae5cd95"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": {
+    "bytes": 358,
+    "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+    "bytes": 446,
+    "sha256": "461fb9579e1c04cb80a52f6660d673ad551609c49fa462943457a71df5a8b3ad"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": {
+    "bytes": 214,
+    "sha256": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vmt": {
+    "bytes": 301,
+    "sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vtf": {
+    "bytes": 22369844,
+    "sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr_n.vtf": {
+    "bytes": 349776,
+    "sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vmt": {
+    "bytes": 303,
+    "sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vtf": {
+    "bytes": 22369844,
+    "sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984"
+  },
+  "addon_v2/materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr_n.vtf": {
+    "bytes": 349776,
+    "sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6"
+  },
+  "addon_v2/models/weapons/v_pist_glock18.ani": {
+    "bytes": 184360,
+    "sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834"
+  },
+  "addon_v2/models/weapons/v_pist_glock18.dx80.vtx": {
+    "bytes": 159081,
+    "sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740"
+  },
+  "addon_v2/models/weapons/v_pist_glock18.dx90.vtx": {
+    "bytes": 158909,
+    "sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b"
+  },
+  "addon_v2/models/weapons/v_pist_glock18.mdl": {
+    "bytes": 235552,
+    "sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2"
+  },
+  "addon_v2/models/weapons/v_pist_glock18.sw.vtx": {
+    "bytes": 158269,
+    "sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600"
+  },
+  "addon_v2/models/weapons/v_pist_glock18.vvd": {
+    "bytes": 628992,
+    "sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6"
+  },
+  "addon_v2/sound/weapons/glock18/glock18-1-distant.wav": {
+    "bytes": 133004,
+    "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4"
+  },
+  "addon_v2/sound/weapons/glock18/glock_01.wav": {
+    "bytes": 133004,
+    "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4"
+  },
+  "addon_v2/sound/weapons/glock18/glock_02.wav": {
+    "bytes": 133004,
+    "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4"
+  },
+  "addon_v2/sound/weapons/glock18/glock_clipin.wav": {
+    "bytes": 187240,
+    "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5"
+  },
+  "addon_v2/sound/weapons/glock18/glock_clipout.wav": {
+    "bytes": 94488,
+    "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97"
+  },
+  "addon_v2/sound/weapons/glock18/glock_draw.wav": {
+    "bytes": 81384,
+    "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131"
+  },
+  "addon_v2/sound/weapons/glock18/glock_slideback.wav": {
+    "bytes": 32464,
+    "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c"
+  },
+  "addon_v2/sound/weapons/glock18/glock_sliderelease.wav": {
+    "bytes": 88336,
+    "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6"
+  },
+  "raw_reports/g_material_assignments.json": {
+    "bytes": 88229,
+    "sha256": "0f0a2b57f0fc3163ffb8cde95c72b1ae8e7b5120405c38d54d710f0123aba960"
+  },
+  "raw_reports/i_deploy_manifest.json": {
+    "bytes": 3998,
+    "sha256": "d402503244e06e999e4c0278cf77f036c0140275f97c695ac6a2fa5084e7c151"
+  },
+  "raw_reports/i_pak_verify.json": {
+    "bytes": 4996,
+    "sha256": "0a1f72edf7db3dcf3ba42921066ac5ea93e66cf23f94ad68d02b6706aa447672"
+  },
+  "raw_reports/audit/input_manifest.json": {
+    "bytes": 13175,
+    "sha256": "0386342acdf1803be640945328dab1fe39408b8e28e69b1466c6ab9cea0ec176"
+  },
+  "raw_reports/ir/cf_mauser_libra.material_ir.json": {
+    "bytes": 6841,
+    "sha256": "fb5b650fbb924bccacf1063753371730311c6b6c73130eecd9049474c60ef5b3"
+  },
+  "raw_reports/reports/channel_audit.json": {
+    "bytes": 31729,
+    "sha256": "17cc725354cb87f0165bcc7e47978cd0b92de562bdf83960a45fe1f447f33321"
+  },
+  "raw_reports/reports/source_translation_report.json": {
+    "bytes": 3850,
+    "sha256": "c21ee80dbf9e6fdbdefaaf985fda67840870ccbf5650ca870139a0dfc98dea13"
+  },
+  "raw_reports/segmentation/triangle_materials.json": {
+    "bytes": 42130,
+    "sha256": "6f2f3c8895b9bf71e90f02c066ccdf396ee565197848d11d552d61e8e307f974"
+  },
+  "raw_reports/source_v2/translation_report.json": {
+    "bytes": 3504,
+    "sha256": "bf6515eca4d174c2c452243405e44f7136d3afc414b986a9fdb59619f0c3efe4"
+  },
+  "references/current.png": {
+    "bytes": 2092515,
+    "sha256": "249fbc82105318f5d192742ba8050a55898db59915d3ef44e5771be1e9d6630a"
+  },
+  "references/target.png": {
+    "bytes": 569249,
+    "sha256": "df6b53c676fdcb65e4cc0293a42b3932856639e5bd4702d9653079a8aff20cc7"
+  },
+  "sources/pipeline.md": {
+    "bytes": 16370,
+    "sha256": "2afdfe5e1fd3fe39dfd8ec4b6d0522d9e2d46209920b2985985ee910b9a45faa"
+  },
+  "sources/plan.material-rendering.md": {
+    "bytes": 13455,
+    "sha256": "033b0ac043e73daa113ab043d3e78413717134253ac99d4e50e52734c1ca603e"
+  },
+  "sources/scripts/material_recovery/_gen_rez_keys.py": {
+    "bytes": 1576,
+    "sha256": "1938d74e81054a41047a0849103dd783f9a98822efff95b0f6bbc0e9b489594a"
+  },
+  "sources/scripts/material_recovery/cf_reference_renderer.py": {
+    "bytes": 18654,
+    "sha256": "062e969872d4bedaaa9f2625d1d2b6257dbc2697c112f62b432bab85df81dde0"
+  },
+  "sources/scripts/material_recovery/cf_source_material.py": {
+    "bytes": 9146,
+    "sha256": "bd7543616d471b570aa91619e12c7248623dcd3d38a91a2d950399ae94714023"
+  },
+  "sources/scripts/material_recovery/channel_audit.py": {
+    "bytes": 6859,
+    "sha256": "ce55c6132e38bf3c7690d7025be0ac64718a60aa86ac74cc34adb6ac58767cb8"
+  },
+  "sources/scripts/material_recovery/input_manifest.py": {
+    "bytes": 8727,
+    "sha256": "521f5d26607f399c2d382e49fba43c2dc9c82cbd8466ad31837ab68dcc104308"
+  },
+  "sources/scripts/material_recovery/material_ir.py": {
+    "bytes": 6320,
+    "sha256": "6bb100613e7e213a57e75c03340302266e54c8a599f7847ee9db9731090f8c22"
+  },
+  "sources/scripts/material_recovery/material_regions.py": {
+    "bytes": 8593,
+    "sha256": "c4aca15d3629a5fa03acb6d142d81e1fe2b407c230f9c8d16c2ee799b43eee1b"
+  },
+  "sources/scripts/material_recovery/n01_phase0_gate.py": {
+    "bytes": 4672,
+    "sha256": "50bc59beda8963896cc2554f0a1e16c920722b02f5c403e98f25bec543128d02"
+  },
+  "sources/scripts/material_recovery/n01_phase1_consumer_search.py": {
+    "bytes": 55117,
+    "sha256": "8b1529e4318204b3c94cf5b5bf8954aa6f1d3b64c0b3c4ba24baa7255e598663"
+  },
+  "sources/scripts/material_recovery/n01_phase1_to_phase5_runner.py": {
+    "bytes": 40629,
+    "sha256": "870473f50d4435d12e6e8e6d52a5a7425f973d1defc1493cb150b9b9f1ac2e6c"
+  },
+  "sources/scripts/material_recovery/n02_butes_config_triage.py": {
+    "bytes": 39157,
+    "sha256": "ffb8980d1ba22e2b31095c747ff00a61513458d12882cad64e4872ac2f08f0d4"
+  },
+  "sources/scripts/material_recovery/n02_runtime_artifact_acquire.py": {
+    "bytes": 28667,
+    "sha256": "149a09ec24ebce877dd081d0d7215fc3f2606f9fe6ca1b878680741216ed8894"
+  },
+  "sources/scripts/material_recovery/n02c_m4a1_weapon_correlation.py": {
+    "bytes": 26634,
+    "sha256": "b1184ceaef70fe4ab8da05fc2817cdd2c798526cf4977899b112785853d6eef4"
+  },
+  "sources/scripts/material_recovery/n02d_r1_path_aware_rez_binding.py": {
+    "bytes": 37435,
+    "sha256": "a52186e65efe57ae8ecc4ad901b8e4f879a9970d3012b636e93f8ddcc03660ad"
+  },
+  "sources/scripts/material_recovery/n02d_rez_asset_lookup.py": {
+    "bytes": 24915,
+    "sha256": "f783ccf392dd4eb3ce592983a3102611209d4b7faffe36621ec2bf2d6b01daa3"
+  },
+  "sources/scripts/material_recovery/n02e_payload_hash.py": {
+    "bytes": 20436,
+    "sha256": "5a80cfe291dabddc64208f7c74c16656c87bd9a335191221e9b080870aec6dfc"
+  },
+  "sources/scripts/material_recovery/n02e_r1_material_binding.py": {
+    "bytes": 38148,
+    "sha256": "5b864869f64991074705d23f0a34c61ee809e53a192fd3fd83a0d0390063193d"
+  },
+  "sources/scripts/material_recovery/n02e_r2_payload_hash.py": {
+    "bytes": 29273,
+    "sha256": "ee4cc3edd2ce35ee5823dc2c5b3af6c39309a1b0899e6a82e12916c4e10f35e5"
+  },
+  "sources/scripts/material_recovery/n03a_bornbeast_consumer.py": {
+    "bytes": 45483,
+    "sha256": "70fdb48be8ca3398acee012d28548aad2108bf88e126d45684c600fffb72588e"
+  },
+  "sources/scripts/material_recovery/n03b_rez_packed_config.py": {
+    "bytes": 26187,
+    "sha256": "9470e8509390e3d9ea9e26a60d022e7ed54d0897e1c5f574995b283822752a88"
+  },
+  "sources/scripts/material_recovery/n03c_material_graph.py": {
+    "bytes": 25556,
+    "sha256": "42773d2ee134bcebf660d6bf9364c881aaf6acd557f1f87ad98dafe4f9a48350"
+  },
+  "sources/scripts/material_recovery/n03d_ltb_piece_index.py": {
+    "bytes": 21729,
+    "sha256": "265ff5e376152ecdf98f434861640794423f59ccba891b0f921adaa4cdbbadf9"
+  },
+  "sources/scripts/material_recovery/n03e_renderstyle_ltb.py": {
+    "bytes": 19232,
+    "sha256": "7b12e90bacd02f8f6c7d7ffc2d5ec0dc99fd98c34f496f469bb8650ebfd2dbec"
+  },
+  "sources/scripts/material_recovery/n03f_shader_alphamap_lookup.py": {
+    "bytes": 15493,
+    "sha256": "3059c0776455fcd271520393fbf59a76e4b6bdbc5a691c5df8a0349af93f2223"
+  },
+  "sources/scripts/material_recovery/n03g_legacy_shader_fields.py": {
+    "bytes": 6598,
+    "sha256": "eb537f8987875998d009a0610e071b6195dcb4d2166f32b86314a150f6ed2548"
+  },
+  "sources/scripts/material_recovery/n03h_dtx_container_decode.py": {
+    "bytes": 15165,
+    "sha256": "611b54c5ec2502f14583adde3357b38cb2e94bb09397561b095f262e07b2b8c8"
+  },
+  "sources/scripts/material_recovery/n04a_pe_string_hits.py": {
+    "bytes": 12320,
+    "sha256": "cbdde20f1d4a6177f647227fa3297996119c3d37399f6aae33c5b7f34f4440ea"
+  },
+  "sources/scripts/material_recovery/n04b_pe_xref.py": {
+    "bytes": 12817,
+    "sha256": "3c6bc3c93a75ad729d93f725354845472e0e269761f81623c083ae1319a5150d"
+  },
+  "sources/scripts/material_recovery/n04c_playerviewmesh_fxo.py": {
+    "bytes": 8374,
+    "sha256": "72e5746263656116563f577c7ec204910a3da156862e4d6576a31348e7438916"
+  },
+  "sources/scripts/material_recovery/n04d_packed_crossfire_static.py": {
+    "bytes": 10174,
+    "sha256": "af7930e61e8971678948debbfe0fdf1dce0f017d6d061c16fb2282f4585792ae"
+  },
+  "sources/scripts/material_recovery/n04e_vm_dump.py": {
+    "bytes": 11189,
+    "sha256": "d2b8225d8b1963a0531ff47291dbdbbd44faaf78c2946b760d5463c68ce4d7bc"
+  },
+  "sources/scripts/material_recovery/n05a_decoder_provenance_audit.py": {
+    "bytes": 58971,
+    "sha256": "3961990f11a5e505b03350959391eb2028ccea0c683798d7eeb0d0649c4415ab"
+  },
+  "sources/scripts/material_recovery/n05b_shard_material_recovery.py": {
+    "bytes": 5387,
+    "sha256": "c2725b9f1cbde0fe729bbdcb240162781971d19a0fc4dcc5f75b01a5563bc716"
+  },
+  "sources/scripts/material_recovery/n05c_verified_reader_integration.py": {
+    "bytes": 14174,
+    "sha256": "a2a94543c258e3eef39dca5ebebe7577eaa91e1b6e49bd1aba94f1176f5a1324"
+  },
+  "sources/scripts/material_recovery/n05d_binding_uv_cube.py": {
+    "bytes": 19899,
+    "sha256": "c5964fc9787a37202ac582b6c1424b98eafe9e082905c6455b5f32953c5dd295"
+  },
+  "sources/scripts/material_recovery/n05e_fxo_offline_inspect.py": {
+    "bytes": 7812,
+    "sha256": "818ecd4e3ec44fa9de3d7338fb9827e6a5c2d7ff23e53f671d45392ec1a479ae"
+  },
+  "sources/scripts/material_recovery/n05f_source1_native_map.py": {
+    "bytes": 6133,
+    "sha256": "3931b52fedbb8612f90026f8b9d3762df8e0c9501c69c83382b6303ebc6b8248"
+  },
+  "sources/scripts/material_recovery/n05h_nonfrozen_native_addon.py": {
+    "bytes": 8876,
+    "sha256": "ed347b19874b6da8f57346f1b6fab2377263f529c02ee46e19740893fb1f0252"
+  },
+  "sources/scripts/material_recovery/n05i_fxo_formula.py": {
+    "bytes": 21622,
+    "sha256": "b3dc73295cc9262e03d2fd21fbbb76ba0f2538bcef96562ff21740353b080260"
+  },
+  "sources/scripts/material_recovery/n05j_formula_channel_addon.py": {
+    "bytes": 11542,
+    "sha256": "bff11f65dc2415ae1205b8db3373b68500a5c40fe509cdb13cfb0dec61d0a8f5"
+  },
+  "sources/scripts/material_recovery/n05k_fxo_cfg_preview.py": {
+    "bytes": 9893,
+    "sha256": "5311b9b2b3359cb59a170841156a7bf4f69e97683007266075e0baebbc367367"
+  },
+  "sources/scripts/material_recovery/p4m01_cfg_reverse.py": {
+    "bytes": 6520,
+    "sha256": "47c5782d24b2bcd564cfee90c29fd56fa463de71209a82891013f2c51eb68223"
+  },
+  "sources/scripts/material_recovery/p4m01_closure.py": {
+    "bytes": 7974,
+    "sha256": "4301820e6bfc3b6c35a85835c7517cf55b510a64c56d85cf2f3bd472408ad77c"
+  },
+  "sources/scripts/material_recovery/p4m01_dtx_validate.py": {
+    "bytes": 8657,
+    "sha256": "ef1b910a840017866663c3f0ac46aa39b1e49ec1bd7393fd6a266e4e5efd8627"
+  },
+  "sources/scripts/material_recovery/p4m01_inventory_binding.py": {
+    "bytes": 6349,
+    "sha256": "3b4653f7974da2e8819da5e6a779be3fe4545e20855e4317d4e3d22c15ba3029"
+  },
+  "sources/scripts/material_recovery/p4m01_shader_hypotheses.py": {
+    "bytes": 8934,
+    "sha256": "cd41021d3e594da53fed80cc19cb78077ff3c36fb790b6486035cf97cd8d888e"
+  },
+  "sources/scripts/material_recovery/p4m01_tga_decode.py": {
+    "bytes": 5764,
+    "sha256": "b42f55770212fd7dbb4ed7ae3ef421886ad532c20774b6f15e6685d23a18c23e"
+  },
+  "sources/scripts/material_recovery/p4m01_tga_validate.py": {
+    "bytes": 7770,
+    "sha256": "b62824929ae5af824b3de0b3189b0c669b2bd4e7ce3c38930deeb0217f08c18e"
+  },
+  "sources/scripts/material_recovery/p4m01_variant_diff.py": {
+    "bytes": 5495,
+    "sha256": "b62dc6e430ad8a6ed615546ac6b57c12e31384312d0a829cf5d33e5cf1bd56bd"
+  },
+  "sources/scripts/material_recovery/r1_cfg_reverse.py": {
+    "bytes": 13370,
+    "sha256": "5864b9ba73df8e79c7d6d0f1171744252db05da3e48c28bea4f8c5b0634494c6"
+  },
+  "sources/scripts/material_recovery/r1_dtx_revalidate.py": {
+    "bytes": 19007,
+    "sha256": "253723aa5d1f0c4f3da4c320f46800bcebd76c01c93fa01eaae7c9535a4eb582"
+  },
+  "sources/scripts/material_recovery/r1_material_binding.py": {
+    "bytes": 8340,
+    "sha256": "5331aea5f92ae7eb3b1b1a177e98352ef0098e00aa8ec62aa10a4742a2f93280"
+  },
+  "sources/scripts/material_recovery/r1_shader_closure.py": {
+    "bytes": 16985,
+    "sha256": "c84f893cb6747dbd3170e94c6b14f0dd248371e524034a916dfdf9c170d0c805"
+  },
+  "sources/scripts/material_recovery/r1_stage2_binding.py": {
+    "bytes": 11863,
+    "sha256": "a144098e3e8ab033f776829e84cf0fe049e261cf80f777ef705f28820f076a0d"
+  },
+  "sources/scripts/material_recovery/r1_tga_repair.py": {
+    "bytes": 13211,
+    "sha256": "7474aded7a74bb7d43c690a46253163498ce580f1a8672e310c5f73d57b5fee8"
+  },
+  "sources/scripts/material_recovery/rez_keys.py": {
+    "bytes": 6281,
+    "sha256": "8683f02213774f01e6643e29fc4f28d0e637323c904b78914f893929c89f6c3f"
+  },
+  "sources/scripts/material_recovery/rez_verified_payload.py": {
+    "bytes": 3563,
+    "sha256": "7a0f426c52b9b3f0450cfbe6e8c4a523e4ffdbc85c4a859e726bd298032afec6"
+  },
+  "sources/scripts/material_recovery/source1_material_translator.py": {
+    "bytes": 9201,
+    "sha256": "1889168f439993b5c6ad735c50dac6d2ff39db95c605f73262cc5d368f0c30dc"
+  },
+  "sources/scripts/material_recovery/source_like_preview.py": {
+    "bytes": 5861,
+    "sha256": "c4024c7cd1a66091a50c5f22d25d358dab95744964855e1e35c5d3d5f2aac9d4"
+  },
+  "sources/scripts/material_recovery/texture_upscale.py": {
+    "bytes": 3271,
+    "sha256": "dc77faede18aa32ab07e88f6b3240a41cffee7c57f0cb601cc5209cbd15068a5"
+  },
+  "sources/work/mauser_libra/material_rendering_fix/capture_baseline.py": {
+    "bytes": 13294,
+    "sha256": "045b7a252aefa14b3be856d5280fe685f050743e622ead75e98cbcb0d333d78e"
+  },
+  "sources/work/mauser_libra/material_v2/a2_blender_emission.py": {
+    "bytes": 4549,
+    "sha256": "c35330c958affe358f56470d4443d92d2617e3e78994b34a84c6b62921be8823"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_a.py": {
+    "bytes": 7379,
+    "sha256": "7208a6bb654e1ab411b6882eae33b39e7f68ccaf280285d18a886bc93f56806b"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_b.py": {
+    "bytes": 3981,
+    "sha256": "399bdbdb065d1bb4dfd9218e4ad8dec8717d71b0d3fc9f166e3d8b148589cc69"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_c.py": {
+    "bytes": 8529,
+    "sha256": "24a0b251e51c762c93568f0820a18abc7fcbc191516b780d353a1639ef4339ad"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_d.py": {
+    "bytes": 2724,
+    "sha256": "955f146371c53d86939c425da30fe64ec1e1cef7a5581803263b54da6adee65f"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_e.py": {
+    "bytes": 3439,
+    "sha256": "cf76b31304eff3440d327e4260b9a5935d27ba62178b4639515295331b55ab8c"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_f.py": {
+    "bytes": 6119,
+    "sha256": "d9a1a0458b72441c75c8122dcf8f52d14be432eb359110ec9e842d76e93cfe9c"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_h.py": {
+    "bytes": 6504,
+    "sha256": "0dd9436413da75cc7106ead15bbba9a712d8479e72f1216813c09945f315d4df"
+  },
+  "sources/work/mauser_libra/material_v2/run_phase_i.py": {
+    "bytes": 5235,
+    "sha256": "c6f370551a33c05e9f44e35b34ac0aed89cce4ea2068e2e45c9695b84041e3f2"
+  }
+}

@@ -1,0 +1,158 @@
+{
+ "material_root": "models/weapons/v_models/cf_mauser",
+ "base_name": "cf_mauser_libra",
+ "slots": [
+  {
+   "region_id": 0,
+   "region_label": "mid_surface",
+   "material": "cf_mauser_libra_r0",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.1569,
+    "specular_lum": 0.1966,
+    "diffuse_lum": 0.1052,
+    "specular_r_minus_lum": 0.059
+   },
+   "envmap_tint": null,
+   "phong_exponent": 4,
+   "phong_boost": 1.5666,
+   "triangles": 432
+  },
+  {
+   "region_id": 1,
+   "region_label": "env_reflective_warm_metal_light_surface",
+   "material": "cf_mauser_libra_r1",
+   "strategy": "envmap_metal",
+   "evidence": {
+    "alpha_b": 0.2444,
+    "specular_lum": 0.2954,
+    "diffuse_lum": 0.1866,
+    "specular_r_minus_lum": 0.09
+   },
+   "envmap_tint": [
+    0.865,
+    0.733,
+    0.66
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 2.5065,
+   "triangles": 278
+  },
+  {
+   "region_id": 2,
+   "region_label": "warm_metal_dark",
+   "material": "cf_mauser_libra_r2",
+   "strategy": "warm_phong",
+   "evidence": {
+    "alpha_b": 0.1627,
+    "specular_lum": 0.4578,
+    "diffuse_lum": 0.0,
+    "specular_r_minus_lum": 0.0502
+   },
+   "envmap_tint": null,
+   "phong_exponent": 4,
+   "phong_boost": 3.1331,
+   "triangles": 98
+  },
+  {
+   "region_id": 3,
+   "region_label": "dark",
+   "material": "cf_mauser_libra_r3",
+   "strategy": "controlled_phong",
+   "evidence": {
+    "alpha_b": 0.1091,
+    "specular_lum": 0.1399,
+    "diffuse_lum": 0.0724,
+    "specular_r_minus_lum": 0.0295
+   },
+   "envmap_tint": null,
+   "phong_exponent": 4,
+   "phong_boost": 1.5666,
+   "triangles": 155
+  },
+  {
+   "region_id": 4,
+   "region_label": "env_reflective_light_surface",
+   "material": "cf_mauser_libra_r4",
+   "strategy": "envmap_metal",
+   "evidence": {
+    "alpha_b": 0.3688,
+    "specular_lum": 0.2849,
+    "diffuse_lum": 0.2194,
+    "specular_r_minus_lum": 0.1638
+   },
+   "envmap_tint": [
+    1.0,
+    1.0,
+    0.9
+   ],
+   "phong_exponent": 4,
+   "phong_boost": 2.5065,
+   "triangles": 288
+  },
+  {
+   "region_id": 5,
+   "region_label": "dark",
+   "material": "cf_mauser_libra_r5",
+   "strategy": "matte_dark",
+   "evidence": {
+    "alpha_b": 0.0567,
+    "specular_lum": 0.078,
+    "diffuse_lum": 0.0359,
+    "specular_r_minus_lum": 0.011
+   },
+   "envmap_tint": null,
+   "phong_exponent": 4,
+   "phong_boost": 0.0,
+   "triangles": 1516
+  }
+ ],
+ "phong_tint": [
+  1.0,
+  0.765,
+  0.529
+ ],
+ "masks": {
+  "phong_mean": 0.1374,
+  "env_mean": 0.107
+ },
+ "tags": {
+  "preserved": [
+   "diffuse base texture",
+   "normal map",
+   "specular->phong mask (low-pass)",
+   "alpha.B->envmap mask (low-pass)",
+   "specular chroma->$phongtint",
+   "SpecularPower*0.25->exponent scale"
+  ],
+  "approximated": [
+   "CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
+   "CF transformed/refract ray->Source reflect ray (approximated)",
+   "per-region envmaptint from alpha.B energy (approximated)"
+  ],
+  "lost": [
+   "Snell refraction contribution",
+   "CubeMapTransformY orientation",
+   "exact CF diffuse-lit scale (ambient/boost terms)"
+  ],
+  "unsupported_by_source1": []
+ },
+ "vtf": {
+  "base": {
+   "w": 2048,
+   "h": 2048,
+   "fmt": 12,
+   "flags": "0x2012",
+   "frames": 1,
+   "mips": 12
+  },
+  "normal": {
+   "w": 2048,
+   "h": 2048,
+   "fmt": 15,
+   "flags": "0x2092",
+   "frames": 1,
+   "mips": 12
+  }
+ }
+}

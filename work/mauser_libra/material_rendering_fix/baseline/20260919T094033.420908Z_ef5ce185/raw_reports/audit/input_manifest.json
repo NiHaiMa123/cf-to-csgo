@@ -1,0 +1,460 @@
+{
+ "schema": "cf-material-input-manifest.v1",
+ "weapon": "M1896_Libra",
+ "material_id": "cf_mauser_libra",
+ "assets": [
+  {
+   "role": "mesh_ltb",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra.LTB",
+   "logical_path": "Models/PLAYERVIEW/PV-M1896_Libra.LTB",
+   "required": true,
+   "exists": true,
+   "bytes": 166932,
+   "sha256": "d12518b3a3cc0036c9fdf7079a36b57b94bf7d625dcae187e60576a0f1b1b98a",
+   "md5": "26d6e4bc04188f799bd3f0b58c50b0aa",
+   "provenance": {
+    "rez_path": "Models/PLAYERVIEW/PV-M1896_Libra.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "routing": "main_file",
+    "offset": 142872304,
+    "directory_md5": "26d6e4bc04188f799bd3f0b58c50b0aa",
+    "sha256": "d12518b3a3cc0036c9fdf7079a36b57b94bf7d625dcae187e60576a0f1b1b98a",
+    "md5": "26D6E4BC04188F799BD3F0B58C50B0AA"
+   },
+   "meta": {
+    "kind": "ltb"
+   }
+  },
+  {
+   "role": "diffuse_dtx",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\PLAYERVIEW\\PV-M1896_Libra.DTX",
+   "logical_path": "ModelTextures/PLAYERVIEW/PV-M1896_Libra.DTX",
+   "required": true,
+   "exists": true,
+   "bytes": 524452,
+   "sha256": "76807587dcb2c4399fcf9c0780d78952db2bdb49239b9606c50b74e1754a8adc",
+   "md5": "8e1e0b447947e6227f3bff0dc39e33d2",
+   "provenance": {
+    "rez_path": "ModelTextures/PLAYERVIEW/PV-M1896_Libra.DTX",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_8.rez",
+    "routing": "numbered_part",
+    "offset": 162276128,
+    "directory_md5": "8e1e0b447947e6227f3bff0dc39e33d2",
+    "sha256": "76807587dcb2c4399fcf9c0780d78952db2bdb49239b9606c50b74e1754a8adc",
+    "md5": "8E1E0B447947E6227F3BFF0DC39E33D2"
+   },
+   "meta": null
+  },
+  {
+   "role": "cfg",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\Shader\\WeaponShader\\M1896_Libra.CFG",
+   "logical_path": "ModelTextures/Shader/WeaponShader/M1896_Libra.CFG",
+   "required": true,
+   "exists": true,
+   "bytes": 475,
+   "sha256": "2374a62d5d8d40db0d8de969c2099643823a47185ec9f593a19299bb2f415476",
+   "md5": "1e4b57ba064f5ec07cc9561876ca91e4",
+   "provenance": {
+    "rez_path": "ModelTextures/Shader/WeaponShader/M1896_Libra.CFG",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_9.rez",
+    "routing": "numbered_part",
+    "offset": 129881495,
+    "directory_md5": "1e4b57ba064f5ec07cc9561876ca91e4",
+    "sha256": "2374a62d5d8d40db0d8de969c2099643823a47185ec9f593a19299bb2f415476",
+    "md5": "1E4B57BA064F5EC07CC9561876CA91E4"
+   },
+   "meta": {
+    "kind": "cfg",
+    "sections": {
+     "Textures": 4,
+     "Techniques": 4,
+     "Properties": 9
+    },
+    "keys": 17
+   }
+  },
+  {
+   "role": "specular",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\SpecularMap\\M1896_Libra_S.TGA",
+   "logical_path": "ModelTextures/SpecularMap/M1896_Libra_S.TGA",
+   "required": true,
+   "exists": true,
+   "bytes": 3145772,
+   "sha256": "22a8f8044ad2fa5e5cb3bf2bed238a66c4d7e1b093f9ec54a9b9083e5b218eee",
+   "md5": "69a072166b7d49b85183c344359d6904",
+   "provenance": {
+    "rez_path": "ModelTextures/SpecularMap/M1896_Libra_S.TGA",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF017_11.REZ",
+    "routing": "numbered_part",
+    "offset": 179421048,
+    "directory_md5": "69a072166b7d49b85183c344359d6904",
+    "sha256": "22a8f8044ad2fa5e5cb3bf2bed238a66c4d7e1b093f9ec54a9b9083e5b218eee",
+    "md5": "69A072166B7D49B85183C344359D6904"
+   },
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGB",
+    "format": "TGA",
+    "channels": 3,
+    "band_names": [
+     "R",
+     "G",
+     "B"
+    ],
+    "extrema": {
+     "R": [
+      0,
+      255
+     ],
+     "G": [
+      0,
+      255
+     ],
+     "B": [
+      0,
+      213
+     ]
+    }
+   }
+  },
+  {
+   "role": "normal",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\NormalMap\\M1896_Libra_N.TGA",
+   "logical_path": "ModelTextures/NormalMap/M1896_Libra_N.TGA",
+   "required": true,
+   "exists": true,
+   "bytes": 3145772,
+   "sha256": "d3077a1e9b41c3287c4ced04fda76cfc9f9f942a2abfc7cbc79f2ce665eb720f",
+   "md5": "60a9caa1457ec2cfb47141dd22f654a5",
+   "provenance": {
+    "rez_path": "ModelTextures/NormalMap/M1896_Libra_N.TGA",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_6.rez",
+    "routing": "numbered_part",
+    "offset": 74712272,
+    "directory_md5": "60a9caa1457ec2cfb47141dd22f654a5",
+    "sha256": "d3077a1e9b41c3287c4ced04fda76cfc9f9f942a2abfc7cbc79f2ce665eb720f",
+    "md5": "60A9CAA1457EC2CFB47141DD22F654A5"
+   },
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGB",
+    "format": "TGA",
+    "channels": 3,
+    "band_names": [
+     "R",
+     "G",
+     "B"
+    ],
+    "extrema": {
+     "R": [
+      0,
+      255
+     ],
+     "G": [
+      0,
+      255
+     ],
+     "B": [
+      24,
+      255
+     ]
+    }
+   }
+  },
+  {
+   "role": "alpha",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\AlphaMap\\M1896_Libra_alpha.TGA",
+   "logical_path": "ModelTextures/AlphaMap/M1896_Libra_alpha.TGA",
+   "required": true,
+   "exists": true,
+   "bytes": 3145772,
+   "sha256": "7c2e91a7e9b81f32e34bcd1ec33cb4f3c696148299ea306ce933dfadda390186",
+   "md5": "976c170434ca92a3d45fb67fef9f42c8",
+   "provenance": {
+    "rez_path": "ModelTextures/AlphaMap/M1896_Libra_alpha.TGA",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_2.rez",
+    "routing": "numbered_part",
+    "offset": 35652112,
+    "directory_md5": "976c170434ca92a3d45fb67fef9f42c8",
+    "sha256": "7c2e91a7e9b81f32e34bcd1ec33cb4f3c696148299ea306ce933dfadda390186",
+    "md5": "976C170434CA92A3D45FB67FEF9F42C8"
+   },
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGB",
+    "format": "TGA",
+    "channels": 3,
+    "band_names": [
+     "R",
+     "G",
+     "B"
+    ],
+    "extrema": {
+     "R": [
+      255,
+      255
+     ],
+     "G": [
+      255,
+      255
+     ],
+     "B": [
+      0,
+      255
+     ]
+    }
+   }
+  },
+  {
+   "role": "cubemap",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\EnvCubeMap\\LobbyCube.DDS",
+   "logical_path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+   "required": true,
+   "exists": true,
+   "bytes": 196736,
+   "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+   "md5": "66b621e7818996f08a03c922e5e35681",
+   "provenance": {
+    "rez_path": "ModelTextures/EnvCubeMap/LobbyCube.DDS",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\rf017.rez",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\rf017_4.rez",
+    "routing": "numbered_part",
+    "offset": 68901720,
+    "directory_md5": "66b621e7818996f08a03c922e5e35681",
+    "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+    "md5": "66B621E7818996F08A03C922E5E35681"
+   },
+   "meta": {
+    "kind": "dds",
+    "valid": true,
+    "width": 256,
+    "height": 256,
+    "mipmaps": 0,
+    "pixel_format_flags": 4,
+    "fourcc": "DXT1",
+    "is_cubemap": true,
+    "cubemap_faces": [
+     "+X",
+     "-X",
+     "+Y",
+     "-Y",
+     "+Z",
+     "-Z"
+    ],
+    "caps": 4104,
+    "caps2": 65024
+   }
+  },
+  {
+   "role": "diffuse_decoded",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\PV-M1896_Libra.png",
+   "logical_path": null,
+   "required": true,
+   "exists": true,
+   "bytes": 624020,
+   "sha256": "5455873c7d4e21920d68d2eec908232a60fc755438e671bc118f2638c3117ece",
+   "md5": "a6489876a00693862c61be44e1b01b9e",
+   "derived_from": "diffuse_dtx",
+   "provenance_kind": "decoded_output",
+   "meta": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA",
+    "format": "PNG",
+    "channels": 4,
+    "band_names": [
+     "R",
+     "G",
+     "B",
+     "A"
+    ],
+    "extrema": {
+     "R": [
+      0,
+      213
+     ],
+     "G": [
+      0,
+      210
+     ],
+     "B": [
+      0,
+      139
+     ],
+     "A": [
+      255,
+      255
+     ]
+    }
+   }
+  },
+  {
+   "role": "mesh_skin",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\cf_skin_m1896_libra.json",
+   "logical_path": null,
+   "required": true,
+   "exists": true,
+   "bytes": 511981,
+   "sha256": "2834608fb424bfda94cf31a6b5efbbe34344250bcb10d1b104e1a2684637792d",
+   "md5": "5d5634873dffd83138a394df7207046d",
+   "derived_from": "mesh_ltb",
+   "provenance_kind": "decoded_output",
+   "meta": {
+    "kind": "skin_dump",
+    "schema": "cf2.lithtech.skin-dump.v1",
+    "source": "PV-M1896_Libra.LTB",
+    "skeleton_nodes": 59,
+    "mesh_count": 12,
+    "meshes": [
+     {
+      "name": "Fview-hand2",
+      "vertex_count": 1090,
+      "triangle_count": 1060,
+      "has_uvs": true,
+      "has_weights": true
+     },
+     {
+      "name": "Fview-arm2",
+      "vertex_count": 190,
+      "triangle_count": 274,
+      "has_uvs": true,
+      "has_weights": true
+     },
+     {
+      "name": "PV-Mauser_Libra",
+      "vertex_count": 1798,
+      "triangle_count": 1475,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "reload",
+      "vertex_count": 174,
+      "triangle_count": 168,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "reload02",
+      "vertex_count": 64,
+      "triangle_count": 44,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "bull-set",
+      "vertex_count": 218,
+      "triangle_count": 376,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "coin",
+      "vertex_count": 164,
+      "triangle_count": 148,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "Line",
+      "vertex_count": 234,
+      "triangle_count": 216,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "bull01",
+      "vertex_count": 55,
+      "triangle_count": 80,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "bull002",
+      "vertex_count": 55,
+      "triangle_count": 80,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "bull003",
+      "vertex_count": 55,
+      "triangle_count": 80,
+      "has_uvs": true,
+      "has_weights": false
+     },
+     {
+      "name": "Bull-C",
+      "vertex_count": 132,
+      "triangle_count": 100,
+      "has_uvs": true,
+      "has_weights": false
+     }
+    ]
+   }
+  },
+  {
+   "role": "mesh_ltb_bl",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra_BL.LTB",
+   "logical_path": "Models/PLAYERVIEW/PV-M1896_Libra_BL.LTB",
+   "required": false,
+   "exists": true,
+   "bytes": 61602,
+   "sha256": "079577780376e825e3a2090d2419ae9e1924d38834da342f82506f8a22469135",
+   "md5": "648c18d14b53db57c80586211aead584",
+   "provenance": {
+    "rez_path": "Models/PLAYERVIEW/PV-M1896_Libra_BL.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "routing": "main_file",
+    "offset": 143039236,
+    "directory_md5": "648c18d14b53db57c80586211aead584",
+    "sha256": "079577780376e825e3a2090d2419ae9e1924d38834da342f82506f8a22469135",
+    "md5": "648C18D14B53DB57C80586211AEAD584"
+   },
+   "meta": {
+    "kind": "ltb"
+   }
+  },
+  {
+   "role": "mesh_ltb_gr",
+   "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra_GR.LTB",
+   "logical_path": "Models/PLAYERVIEW/PV-M1896_Libra_GR.LTB",
+   "required": false,
+   "exists": true,
+   "bytes": 65616,
+   "sha256": "77ab17d0f426b116a723eca04a47852d24e4cd8198a65c695dc296558d7e9533",
+   "md5": "4d33aa0286467e4129c02938674b2eb5",
+   "provenance": {
+    "rez_path": "Models/PLAYERVIEW/PV-M1896_Libra_GR.LTB",
+    "index_archive": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "payload_file": "D:\\Program Files\\CF(2)\\rez\\RF016.REZ",
+    "routing": "main_file",
+    "offset": 143100838,
+    "directory_md5": "4d33aa0286467e4129c02938674b2eb5",
+    "sha256": "77ab17d0f426b116a723eca04a47852d24e4cd8198a65c695dc296558d7e9533",
+    "md5": "4D33AA0286467E4129C02938674B2EB5"
+   },
+   "meta": {
+    "kind": "ltb"
+   }
+  }
+ ],
+ "a1_gate": {
+  "passed": true,
+  "problems": []
+ }
+}

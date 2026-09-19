@@ -1,0 +1,36 @@
+{
+  "experiment_id": "M6_r1_env_unmask",
+  "pak_c_equals_a_b": true,
+  "c_r1_sha256": "39cf0f81d5c836dc2cae1c5c86a912c3e122d33114480f2b0b8b2f7aabe42ede",
+  "runtime_loading": "PASS",
+  "visual_status": "NO_MATERIAL_CHANGE",
+  "scenes": {
+    "lit_front": {
+      "file": "lit_front.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-2b8ca995-285e-43da-887c-8874a6195307.jpg",
+      "hud_time": "9:43",
+      "bytes": 590104,
+      "sha256": "796cb7b30005f10ba387190c1bfeb9daad52212db985df13e47327a1739ecedc"
+    },
+    "lit_turn": {
+      "file": "lit_turn.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-059ae4b2-53a4-4461-943f-4aff37f1b543.jpg",
+      "hud_time": "9:30",
+      "bytes": 664181,
+      "sha256": "6b342b339e7320e885626e2e7148d1dfd1bebebd697b7afaed2801e6eeca0ea4"
+    },
+    "dark": {
+      "file": "dark.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-4ecc237c-263a-4ada-9158-965f08668a56.jpg",
+      "hud_time": "9:15",
+      "bytes": 530799,
+      "sha256": "3da750a1c9fc63b06a32c9d8a6156708afc450ff5e33b040685bb79c589708e3"
+    }
+  },
+  "observation": {
+    "lit_front": "No sky/map cubemap color on coin or gold frames. Still olive/brown.",
+    "lit_turn": "Turned view still no environment wash or sky tint on r1 metal.",
+    "dark": "Wall-shadow gold unchanged; no cubemap pickup."
+  },
+  "decision": "M6 loaded. Unmasking r1 envmap produced no visible cubemap. env_cubemap is inert on this viewmodel. Skip M3 and do not bind LobbyCube. Next: M4 exponent 4->48 on existing Phong slots r0-r4."
+}

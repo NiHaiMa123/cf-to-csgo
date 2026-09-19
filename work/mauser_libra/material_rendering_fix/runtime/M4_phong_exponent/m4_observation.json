@@ -1,0 +1,36 @@
+{
+  "experiment_id": "M4_phong_exponent",
+  "pak_c_equals_a_b": true,
+  "c_r0_sha256": "db3fa7f1db4ffe46e43857f3d2d4018eb907ec0a9a46b3a9bc753af9a461f428",
+  "runtime_loading": "PASS",
+  "visual_status": "WEAK_OR_NO_SHAPE_CHANGE",
+  "scenes": {
+    "lit_front": {
+      "file": "lit_front.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-2812f7be-2ed9-4e86-acf6-26c668c80553.jpg",
+      "hud_time": "9:49",
+      "bytes": 587332,
+      "sha256": "f8eccdf5e1d767f1da5c74f9a7143496aad1cee1a05aee9fdfee294825e18c54"
+    },
+    "lit_turn": {
+      "file": "lit_turn.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-ef901978-1a61-4ee0-9aaf-12ef8dde7315.jpg",
+      "hud_time": "9:34",
+      "bytes": 679657,
+      "sha256": "8a0122e8d6e24b1598e2df4d9284315b2d8f82cad076894265cbb178a3825486"
+    },
+    "dark": {
+      "file": "dark.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-2dc8f2e4-b068-48c4-87cd-0745322c7b16.jpg",
+      "hud_time": "9:21",
+      "bytes": 517192,
+      "sha256": "b706a6dc163a61c53634d6baa1fff5abe0f4e04c08419979a405e81f99f52f81"
+    }
+  },
+  "observation": {
+    "lit_front": "Gold remains olive/brown. No clear smaller/sharper specular hotspot vs baseline.",
+    "lit_turn": "Turned gold coverage similar; no washout.",
+    "dark": "Wall-shadow gold similar. Dark body still dark (r5 unchanged)."
+  },
+  "decision": "M4 loaded. Exponent 48 at current boost did not clearly reshape highlights and did not wash out. Keep 48 as named parent. Next: M4b double phongboost on r0-r4."
+}

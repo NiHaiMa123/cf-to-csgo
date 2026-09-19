@@ -1,0 +1,259 @@
+{
+ "schema": "cf-material-ir.v1",
+ "material_id": "cf_mauser_libra",
+ "shader_family": "unclassified",
+ "source_assets": {},
+ "cfg": {
+  "textures": {
+   "Textures": {
+    "SpecularMapName2": {
+     "raw": "M1896_Libra_S.tga",
+     "value": "M1896_Libra_S.tga"
+    },
+    "EnvCubeMapName2": {
+     "raw": "LobbyCube.dds",
+     "value": "LobbyCube.dds"
+    },
+    "NormalMapName2": {
+     "raw": "M1896_Libra_N.tga",
+     "value": "M1896_Libra_N.tga"
+    },
+    "AlphaMapName2": {
+     "raw": "M1896_Libra_alpha.tga",
+     "value": "M1896_Libra_alpha.tga"
+    }
+   }
+  },
+  "techniques": {
+   "Techniques": {
+    "DiffuseMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "SpecularMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "EnvCubeMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "NormalMappingEnabled": {
+     "raw": "1",
+     "value": 1.0
+    }
+   }
+  },
+  "properties": {
+   "Properties": {
+    "LightBrightness": {
+     "raw": "0.2",
+     "value": 0.2
+    },
+    "EnvCubeMapBrightness": {
+     "raw": "3",
+     "value": 3.0
+    },
+    "SpecularPower": {
+     "raw": "1",
+     "value": 1.0
+    },
+    "DiffuseBoost": {
+     "raw": "0.01",
+     "value": 0.01
+    },
+    "AmbientLightColor": {
+     "raw": "0.01",
+     "value": 0.01
+    },
+    "RefractionIndex": {
+     "raw": "0.8",
+     "value": 0.8
+    },
+    "ReflectionIndex": {
+     "raw": "0.5",
+     "value": 0.5
+    },
+    "EnvCubeUsage": {
+     "raw": "2",
+     "value": 2.0
+    },
+    "CubeMapTransformY": {
+     "raw": "220",
+     "value": 220.0
+    }
+   }
+  },
+  "extra_sections": {},
+  "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\Shader\\WeaponShader\\M1896_Libra.CFG",
+  "sha256": "2374a62d5d8d40db0d8de969c2099643823a47185ec9f593a19299bb2f415476",
+  "flat": {
+   "SpecularMapName2": "M1896_Libra_S.tga",
+   "EnvCubeMapName2": "LobbyCube.dds",
+   "NormalMapName2": "M1896_Libra_N.tga",
+   "AlphaMapName2": "M1896_Libra_alpha.tga",
+   "DiffuseMappingEnabled": 1.0,
+   "SpecularMappingEnabled": 1.0,
+   "EnvCubeMappingEnabled": 1.0,
+   "NormalMappingEnabled": 1.0,
+   "LightBrightness": 0.2,
+   "EnvCubeMapBrightness": 3.0,
+   "SpecularPower": 1.0,
+   "DiffuseBoost": 0.01,
+   "AmbientLightColor": 0.01,
+   "RefractionIndex": 0.8,
+   "ReflectionIndex": 0.5,
+   "EnvCubeUsage": 2.0,
+   "CubeMapTransformY": 220.0
+  }
+ },
+ "channel_semantics": {},
+ "sampling_semantics": {},
+ "observations": {
+  "cfg.SpecularMapName2": {
+   "status": "OBSERVED",
+   "value": "M1896_Libra_S.tga",
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeMapName2": {
+   "status": "OBSERVED",
+   "value": "LobbyCube.dds",
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.NormalMapName2": {
+   "status": "OBSERVED",
+   "value": "M1896_Libra_N.tga",
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.AlphaMapName2": {
+   "status": "OBSERVED",
+   "value": "M1896_Libra_alpha.tga",
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.DiffuseMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.SpecularMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.NormalMappingEnabled": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.LightBrightness": {
+   "status": "OBSERVED",
+   "value": 0.2,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeMapBrightness": {
+   "status": "OBSERVED",
+   "value": 3.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.SpecularPower": {
+   "status": "OBSERVED",
+   "value": 1.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.DiffuseBoost": {
+   "status": "OBSERVED",
+   "value": 0.01,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.AmbientLightColor": {
+   "status": "OBSERVED",
+   "value": 0.01,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.RefractionIndex": {
+   "status": "OBSERVED",
+   "value": 0.8,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.ReflectionIndex": {
+   "status": "OBSERVED",
+   "value": 0.5,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.EnvCubeUsage": {
+   "status": "OBSERVED",
+   "value": 2.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  },
+  "cfg.CubeMapTransformY": {
+   "status": "OBSERVED",
+   "value": 220.0,
+   "evidence": "CFG raw value, sha256=2374a62d5d8d40db",
+   "confidence": "high"
+  }
+ },
+ "inferences": {
+  "channel_semantics.alphamap.r": {
+   "status": "INFERRED",
+   "value": "opacity",
+   "basis": "prior shader-family research; needs Phase C re-verification",
+   "confidence": "medium"
+  },
+  "channel_semantics.alphamap.g": {
+   "status": "INFERRED",
+   "value": "specular intensity mask",
+   "basis": "prior shader-family research; needs Phase C re-verification",
+   "confidence": "medium"
+  },
+  "channel_semantics.alphamap.b": {
+   "status": "INFERRED",
+   "value": "env cubemap intensity mask",
+   "basis": "prior shader-family research; needs Phase C re-verification",
+   "confidence": "medium"
+  },
+  "sampling_semantics.spec_exponent": {
+   "status": "INFERRED",
+   "value": "SpecularPower * 0.25",
+   "basis": "prior compiled-shader formula; needs Phase C re-verification",
+   "confidence": "medium"
+  }
+ },
+ "approximations": {},
+ "unknowns": {
+  "sampling_semantics.cubemap_ray": {
+   "status": "UNKNOWN",
+   "reason": "exact reflect/refract ray construction and CubeMapTransformY=220 rotation semantics unproven"
+  },
+  "sampling_semantics.env_cube_usage_2": {
+   "status": "UNKNOWN",
+   "reason": "EnvCubeUsage=2 selects a shader variant; exact branch unproven"
+  },
+  "sampling_semantics.reflection_refraction_mix": {
+   "status": "UNKNOWN",
+   "reason": "ReflectionIndex=0.5 vs RefractionIndex=0.8 blend formula unproven"
+  }
+ },
+ "evidence": {},
+ "confidence": {}
+}

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""P5 — CF 毛瑟-天秤座 (M1896_Libra) first-person viewmodel for v_pist_glock18.
+"""P5 — CF 毛瑟-天秤座 (M1896_Libra) first-person viewmodel for v_pist_hkp2000.
 
 Same native recipe as tulong/galilace: CF skeleton + Nini GR LBS arms + MXH,
 CS Bip01* pinned (0,+500,0). 10 rigid CF pieces bound per PIECE_NODE
@@ -25,7 +25,7 @@ GAME = Path(_paths.game_dir())
 WORK = REPO / "work" / "mauser_libra"
 OUT = WORK / "native_vm"
 SOURCE1 = OUT / "source1"
-ANIMS = SOURCE1 / "v_pist_glock18_anims"
+ANIMS = SOURCE1 / "v_pist_hkp2000_anims"
 ISOLATED = OUT / "isolated_game" / "csgo"
 STAGING = WORK / "addon"
 LOG_DIR = OUT / "logs"
@@ -75,26 +75,30 @@ CS_BONES = (
     + [f"v_weapon.Bip01_{s}_Finger{f}{x}" for s in ("L", "R")
        for f in range(5) for x in ("", "1", "2")]
 )
-EXTRA_GUN_BONES = ("v_weapon.glock_parent", "v_weapon.glock_magazine",
-                   "v_weapon.glock_trigger", "v_weapon.glock_slide")
+EXTRA_GUN_BONES = ("v_weapon.HKP2000_Parent", "v_weapon.HKP2000_Slide",
+                   "v_weapon.HKP2000_Trigger", "v_weapon.HKP2000_Clip")
 ATTACH_BONES = ("v_weapon.flash", "v_weapon.shelleject",
                 "v_weapon.stattrack", "v_weapon.uid")
 
-# stock v_pist_glock18 sequence names -> CF clip
+# stock v_pist_hkp2000 sequence names -> CF clip
 CLIP_TO_SEQ = {
-    "glock_idle": "idle_0",
-    "glock_firesingle": "fire",
-    "glock_firelast": "postfire",
-    "glock_draw": "select",
-    "glock_reload": "reload",
+    "idle": "idle_0",
+    "shoot1": "fire",
+    "shoot2": "fire",
+    "shoot3": "fire",
+    "shoot_empty": "postfire",
+    "reload": "reload",
+    "draw": "select",
     "lookat01": "idle_0",
 }
 SEQ_ACT = {
-    "glock_idle": "ACT_VM_IDLE",
-    "glock_firesingle": "ACT_VM_PRIMARYATTACK",
-    "glock_firelast": "ACT_VM_DRYFIRE",
-    "glock_draw": "ACT_VM_DRAW",
-    "glock_reload": "ACT_VM_RELOAD",
+    "idle": "ACT_VM_IDLE",
+    "shoot1": "ACT_VM_PRIMARYATTACK",
+    "shoot2": "ACT_VM_PRIMARYATTACK",
+    "shoot3": "ACT_VM_PRIMARYATTACK",
+    "shoot_empty": "ACT_VM_DRYFIRE",
+    "reload": "ACT_VM_RELOAD",
+    "draw": "ACT_VM_DRAW",
 }
 
 
@@ -219,36 +223,36 @@ def write_qc(illum, seq_frames):
     for seq in CLIP_TO_SEQ:
         act = SEQ_ACT.get(seq)
         extra = ""
-        if seq == "glock_idle":
+        if seq == "idle":
             extra = "\n\tloop"
-        elif seq == "glock_firesingle":
+        elif seq in ("shoot1", "shoot2", "shoot3"):
             extra = ('\n\t{ event 5001 0 "1" }'
                      '\n\t{ event AE_CLIENT_EJECT_BRASS 0 "" }')
-        elif seq == "glock_firelast":
+        elif seq == "shoot_empty":
             extra = '\n\t{ event 5001 0 "21" }'
-        elif seq == "glock_draw":
+        elif seq == "draw":
             # CF select: WeaponReload@100ms, Extra01(coin)@800ms
-            extra = ('\n\t{ event 5004 10 "Weapon_Glock.Draw" }'
-                     '\n\t{ event 5004 80 "Weapon_Glock.Slideback" }')
-        elif seq == "glock_reload":
+            extra = ('\n\t{ event 5004 10 "Weapon_hkp2000.Draw" }'
+                     '\n\t{ event 5004 80 "Weapon_hkp2000.Slideback" }')
+        elif seq == "reload":
             # CF reload: ClipIn@0ms, ClipOut@2406ms, Extra02(coin)@2654ms
-            extra = ('\n\t{ event 5004 0 "Weapon_Glock.Clipin" }'
-                     '\n\t{ event 5004 241 "Weapon_Glock.Clipout" }'
-                     '\n\t{ event 5004 265 "Weapon_Glock.Slideback" }'
+            extra = ('\n\t{ event 5004 0 "Weapon_hkp2000.Clipin" }'
+                     '\n\t{ event 5004 241 "Weapon_hkp2000.Clipout" }'
+                     '\n\t{ event 5004 265 "Weapon_hkp2000.Slideback" }'
                      '\n\t{ event AE_WPN_COMPLETE_RELOAD 241 "" }')
         elif seq == "lookat01":
             extra = ('\n\t{ event 5004 2 "Weapon.WeaponMove1" }'
                      '\n\t{ event 5004 175 "Weapon.WeaponMove3" }')
         act_line = f'\n\tactivity "{act}" 1' if act else ""
         seq_blocks.append(f'''$sequence "{seq}" {{
-	"v_pist_glock18_anims\\{seq}.smd"{act_line}{extra}
+	"v_pist_hkp2000_anims\\{seq}.smd"{act_line}{extra}
 	fadein 0.2
 	fadeout 0.2
 	snap
 	fps 100
 }}
 ''')
-    qc = f'''$modelname "weapons\\v_pist_glock18.mdl"
+    qc = f'''$modelname "weapons\\v_pist_hkp2000.mdl"
 
 $bodygroup "studio"
 {{
@@ -274,7 +278,7 @@ $bonemerge "v_weapon"
 $animblocksize 32 nostall
 
 ''' + "\n".join(seq_blocks)
-    (SOURCE1 / "v_pist_glock18.qc").write_text(qc, encoding="utf-8")
+    (SOURCE1 / "v_pist_hkp2000.qc").write_text(qc, encoding="utf-8")
 
 
 def build_materials():
@@ -312,12 +316,12 @@ def build_materials():
 def compile_models():
     shutil.copy2(GAME / "csgo" / "gameinfo.txt", ISOLATED / "gameinfo.txt")
     proc = subprocess.run(
-        [str(STUDIOMDL), "-game", str(ISOLATED), str(SOURCE1 / "v_pist_glock18.qc")],
+        [str(STUDIOMDL), "-game", str(ISOLATED), str(SOURCE1 / "v_pist_hkp2000.qc")],
         cwd=str(SOURCE1), capture_output=True, text=True,
         encoding="utf-8", errors="replace", timeout=300)
-    (LOG_DIR / "studiomdl_v_pist_glock18.stdout.log").write_text(proc.stdout or "", encoding="utf-8")
-    (LOG_DIR / "studiomdl_v_pist_glock18.stderr.log").write_text(proc.stderr or "", encoding="utf-8")
-    compiled = ISOLATED / "models" / "weapons" / "v_pist_glock18.mdl"
+    (LOG_DIR / "studiomdl_v_pist_hkp2000.stdout.log").write_text(proc.stdout or "", encoding="utf-8")
+    (LOG_DIR / "studiomdl_v_pist_hkp2000.stderr.log").write_text(proc.stderr or "", encoding="utf-8")
+    compiled = ISOLATED / "models" / "weapons" / "v_pist_hkp2000.mdl"
     if proc.returncode != 0 or not compiled.is_file():
         raise RuntimeError(
             f"studiomdl failed: {(proc.stderr or proc.stdout or '')[-1500:]}")
@@ -330,7 +334,7 @@ def stage_and_deploy():
     mats_rel = Path("materials") / MAT_DIR_VMT
     stage_models = staging / models_rel
     stage_models.mkdir(parents=True, exist_ok=True)
-    for f in (ISOLATED / models_rel).glob("v_pist_glock18.*"):
+    for f in (ISOLATED / models_rel).glob("v_pist_hkp2000.*"):
         shutil.copy2(f, stage_models / f.name)
     stage_mats = staging / mats_rel
     stage_mats.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,48 @@
+{
+  "generator": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\build_experiments.py",
+  "parent_baseline": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\experiments\\20260919T104454.768572Z\\M4b_phong_boost\\addon",
+  "out": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\experiments\\20260919T105254.099066Z",
+  "ids": [
+    "M6_r1_phong_unmask"
+  ],
+  "generation_validation": "PASS",
+  "runtime_status": "PENDING",
+  "visual_status": "NOT_EVALUATED",
+  "note": "Selected experiments are derived directly from the same frozen baseline. They must not be stacked. Not a final material candidate.",
+  "experiments": [
+    {
+      "id": "M6_r1_phong_unmask",
+      "root": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\experiments\\20260919T105254.099066Z\\M6_r1_phong_unmask",
+      "changed_files": [
+        "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt"
+      ],
+      "unchanged_count": 28,
+      "generation_validation": "PASS",
+      "runtime_status": "PENDING",
+      "visual_status": "NOT_EVALUATED",
+      "parameter_diff": {
+        "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+          "removed": {
+            "$basemapalphaphongmask": "1"
+          },
+          "added": {},
+          "changed": {},
+          "order_after": [
+            "$basetexture",
+            "$bumpmap",
+            "$halflambert",
+            "$phong",
+            "$phongexponent",
+            "$phongboost",
+            "$phongfresnelranges",
+            "$phongtint",
+            "$envmap",
+            "$normalmapalphaenvmapmask",
+            "$envmaptint",
+            "$nocull"
+          ]
+        }
+      }
+    }
+  ]
+}

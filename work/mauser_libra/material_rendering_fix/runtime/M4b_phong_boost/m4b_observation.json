@@ -1,0 +1,36 @@
+{
+  "experiment_id": "M4b_phong_boost",
+  "pak_c_equals_a_b": true,
+  "c_r0_sha256": "546e33721a238f77ed81b7126066902caab8588a8d8172c31456464844b6739d",
+  "runtime_loading": "PASS",
+  "visual_status": "NO_CLEAR_ENERGY_CHANGE",
+  "scenes": {
+    "lit_front": {
+      "file": "lit_front.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-ca897a60-52b4-441a-95c5-5b22fb9c1b38.jpg",
+      "hud_time": "9:42",
+      "bytes": 579762,
+      "sha256": "0392c5bb202270abd475ca4b415295490266dbc3e5c94f054e74ff9ac74c60d8"
+    },
+    "lit_turn": {
+      "file": "lit_turn.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-8c661c9f-7f7d-4059-9716-625f5df429ba.jpg",
+      "hud_time": "9:29",
+      "bytes": 665984,
+      "sha256": "b9c78369f6ad517df6196d4ef62ad9be65d883cf56bc05202de793534bcc3cb7"
+    },
+    "dark": {
+      "file": "dark.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-3464a050-faa9-40c1-b20d-27c2f10adec0.jpg",
+      "hud_time": "9:18",
+      "bytes": 513890,
+      "sha256": "0cb4556ac0a0cc998557330f9b53e2b85aea0f67e133e426edbe9c71deb7af7d"
+    }
+  },
+  "observation": {
+    "lit_front": "Gold still olive/brown vs baseline. No obvious doubled specular. No washout.",
+    "lit_turn": "Turned gold similar. Dark body still dark.",
+    "dark": "Wall-shadow gold similar; boost x2 did not lift metal in shade."
+  },
+  "decision": "M4b loaded. Doubling r0-r4 phongboost did not clearly brighten gold and did not wash out. Phong energy is not the visible limiter (or Phong is masked/inert). Next: M6_r1_phong_unmask from this parent."
+}

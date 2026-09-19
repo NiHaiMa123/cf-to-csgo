@@ -1,0 +1,40 @@
+{
+  "captured_by": "user",
+  "map": "de_mirage",
+  "weapon_hud": "格洛克 18 型",
+  "ammo": "20/120",
+  "hp_armor": "100/100",
+  "fov_position": "user-confirmed unchanged; not modified this round",
+  "material_version": "frozen baseline 20260919T094033.420908Z_ef5ce185",
+  "r5_sha256_at_capture": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155",
+  "note": "User labeled these 明处正向 / 明处转向 / 暗处. The dark sample is outdoor wall-shadow on Mirage B palace, not an indoor room.",
+  "scenes": {
+    "lit_front": {
+      "user_label": "明处正向",
+      "hud_time": "9:54",
+      "notes": "Mirage mid toward wooden palace gate; gun in direct sun.",
+      "file": "lit_front.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-eb88ad9e-27c6-4035-9bca-c9d6a439fe93.jpg",
+      "bytes": 618984,
+      "sha256": "312a199facae3cf3f314d1423ff30aba590d20ba42e751bc36b1f27967776e91"
+    },
+    "lit_turn": {
+      "user_label": "明处转向",
+      "hud_time": "9:03",
+      "notes": "Turned to courtyard/arch with crates and truck; still sunlit.",
+      "file": "lit_turn.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-b4091dfc-6850-45e5-b256-9c7d45d4f5ff.jpg",
+      "bytes": 646316,
+      "sha256": "2604d76228806186a35ddbbdceac26af21eb5598388898ed6cc9f5c3de3cbb91"
+    },
+    "dark": {
+      "user_label": "暗处",
+      "hud_time": "8:48",
+      "notes": "B palace alley, PALAIS DE LA KASBAH sign. Outdoor shade, not indoor.",
+      "file": "dark.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-31f8956c-cc31-42d0-92c0-0c1bc0d4b76a.jpg",
+      "bytes": 524905,
+      "sha256": "5d0e7b6d4e8d3ed4ca9c1a3d1a2e02ca24b068edb7637efa3be74c8add188e85"
+    }
+  }
+}

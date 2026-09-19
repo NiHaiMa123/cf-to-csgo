@@ -110,10 +110,10 @@ nodes
   107 "v_weapon.shelleject" 94
   108 "v_weapon.stattrack" 94
   109 "v_weapon.uid" 94
-  110 "v_weapon.glock_parent" 94
-  111 "v_weapon.glock_magazine" 94
-  112 "v_weapon.glock_trigger" 94
-  113 "v_weapon.glock_slide" 94
+  110 "v_weapon.HKP2000_Parent" 94
+  111 "v_weapon.HKP2000_Slide" 94
+  112 "v_weapon.HKP2000_Trigger" 94
+  113 "v_weapon.HKP2000_Clip" 94
 end
 skeleton
   time 0

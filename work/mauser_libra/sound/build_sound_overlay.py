@@ -47,16 +47,17 @@ SOURCES = {
     "CoinReload": "SND/WEAPON/M14EBR_Taurus/M14EBR_Taurus_CoinReload.WAV",
 }
 
-# CS:GO wave path <- pcm source name
+# CS:GO wave path <- pcm source name (target: hkp2000)
 WIRE = [
-    ("sound/weapons/glock18/glock_01.wav", "Mauser_Shoot_1"),
-    ("sound/weapons/glock18/glock_02.wav", "Mauser_Shoot_1"),
-    ("sound/weapons/glock18/glock18-1-distant.wav", "Mauser_Shoot_1"),
-    ("sound/weapons/glock18/glock_clipout.wav", "Mauser_ClipOut"),
-    ("sound/weapons/glock18/glock_clipin.wav", "Mauser_ClipIn"),
-    ("sound/weapons/glock18/glock_draw.wav", "Mauser_Select"),
-    ("sound/weapons/glock18/glock_slideback.wav", "CoinSelect"),
-    ("sound/weapons/glock18/glock_sliderelease.wav", "CoinReload"),
+    ("sound/weapons/hkp2000/hkp2000_01.wav", "Mauser_Shoot_1"),
+    ("sound/weapons/hkp2000/hkp2000_02.wav", "Mauser_Shoot_1"),
+    ("sound/weapons/hkp2000/hkp2000_03.wav", "Mauser_Shoot_1"),
+    ("sound/weapons/hkp2000/hkp2000-1-distant.wav", "Mauser_Shoot_1"),
+    ("sound/weapons/hkp2000/hkp2000_clipout.wav", "Mauser_ClipOut"),
+    ("sound/weapons/hkp2000/hkp2000_clipin.wav", "Mauser_ClipIn"),
+    ("sound/weapons/hkp2000/hkp2000_draw.wav", "Mauser_Select"),
+    ("sound/weapons/hkp2000/hkp2000_slideback.wav", "CoinSelect"),
+    ("sound/weapons/hkp2000/hkp2000_sliderelease.wav", "CoinReload"),
 ]
 
 

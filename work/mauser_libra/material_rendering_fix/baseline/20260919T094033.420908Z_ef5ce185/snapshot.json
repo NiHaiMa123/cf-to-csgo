@@ -1,0 +1,2630 @@
+{
+  "file_integrity": "PASS",
+  "runtime_loading": "PENDING",
+  "runtime_scenes": "PENDING",
+  "visual_acceptance": "PENDING",
+  "baseline": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\baseline\\20260919T094033.420908Z_ef5ce185",
+  "addon_baseline": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\baseline\\20260919T094033.420908Z_ef5ce185\\addon_v2",
+  "immutability": "exclusive creation, no overwrite, read-only files, SHA-256 seal; not WORM",
+  "started_utc": "2026-09-19T09:40:33.421163+00:00",
+  "files": 29,
+  "a_root": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2",
+  "b_root": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\addons\\p_cf_mauser_libra_p1",
+  "c_root": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_dir.vpk",
+  "a": {
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809077233012900,
+        1789800985678296200,
+        11161635369050845456,
+        3377699720568662
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vtf": {
+      "bytes": 22369844,
+      "sha256": "44e27a357b8a31de4fb5ff5cd58a34a0400808e7cac06cf51ab1c7acd05c8c8e",
+      "stat": [
+        22369844,
+        1789809076793199900,
+        1789800985678819400,
+        11161635369050845456,
+        3377699720568663
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_n.vtf": {
+      "bytes": 5592656,
+      "sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc",
+      "stat": [
+        5592656,
+        1789809077230004000,
+        1789800985683829100,
+        11161635369050845456,
+        3377699720568664
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809077232012000,
+        1789800985685332700,
+        11161635369050845456,
+        3377699720568665
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+      "bytes": 455,
+      "sha256": "ef88af8b7fb74b2221484b33073e1592238bb7f9f73b3284c5a4a1076bbefab9",
+      "stat": [
+        455,
+        1789809077232511200,
+        1789800985685332700,
+        11161635369050845456,
+        3377699720568666
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": {
+      "bytes": 358,
+      "sha256": "338d87f696b835d543c5b36769e97967225f38f26a8359c70f3f0fe23ae5cd95",
+      "stat": [
+        358,
+        1789809077232511200,
+        1789800985686339600,
+        11161635369050845456,
+        3377699720568667
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809077232511200,
+        1789800985686843400,
+        11161635369050845456,
+        3377699720568668
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+      "bytes": 446,
+      "sha256": "461fb9579e1c04cb80a52f6660d673ad551609c49fa462943457a71df5a8b3ad",
+      "stat": [
+        446,
+        1789809077233012900,
+        1789800985686843400,
+        11161635369050845456,
+        3377699720568669
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": {
+      "bytes": 214,
+      "sha256": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155",
+      "stat": [
+        214,
+        1789809077233012900,
+        1789800985687345600,
+        11161635369050845456,
+        3377699720568670
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vmt": {
+      "bytes": 301,
+      "sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21",
+      "stat": [
+        301,
+        1789809084014253500,
+        1789800985687345600,
+        11161635369050845456,
+        3377699720568671
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vtf": {
+      "bytes": 22369844,
+      "sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+      "stat": [
+        22369844,
+        1789809083919206000,
+        1789800985687845600,
+        11161635369050845456,
+        3377699720568672
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr_n.vtf": {
+      "bytes": 349776,
+      "sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+      "stat": [
+        349776,
+        1789809084012253200,
+        1789800985693351100,
+        11161635369050845456,
+        3377699720568673
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vmt": {
+      "bytes": 303,
+      "sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755",
+      "stat": [
+        303,
+        1789809084014253500,
+        1789800985693850200,
+        11161635369050845456,
+        3377699720568674
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vtf": {
+      "bytes": 22369844,
+      "sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+      "stat": [
+        22369844,
+        1789809083755267800,
+        1789800985693850200,
+        11161635369050845456,
+        3377699720568675
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr_n.vtf": {
+      "bytes": 349776,
+      "sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+      "stat": [
+        349776,
+        1789809083971163700,
+        1789800985699359800,
+        11161635369050845456,
+        3377699720568676
+      ]
+    },
+    "models/weapons/v_pist_glock18.ani": {
+      "bytes": 184360,
+      "sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834",
+      "stat": [
+        184360,
+        1789809084610039800,
+        1789800985675795300,
+        11161635369050845456,
+        3377699720568651
+      ]
+    },
+    "models/weapons/v_pist_glock18.dx80.vtx": {
+      "bytes": 159081,
+      "sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740",
+      "stat": [
+        159081,
+        1789809084827937700,
+        1789800985676295100,
+        11161635369050845456,
+        3377699720568652
+      ]
+    },
+    "models/weapons/v_pist_glock18.dx90.vtx": {
+      "bytes": 158909,
+      "sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b",
+      "stat": [
+        158909,
+        1789809084827937700,
+        1789800985676295100,
+        11161635369050845456,
+        3377699720568653
+      ]
+    },
+    "models/weapons/v_pist_glock18.mdl": {
+      "bytes": 235552,
+      "sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2",
+      "stat": [
+        235552,
+        1789809084829440300,
+        1789800985676795300,
+        11161635369050845456,
+        3377699720568654
+      ]
+    },
+    "models/weapons/v_pist_glock18.sw.vtx": {
+      "bytes": 158269,
+      "sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600",
+      "stat": [
+        158269,
+        1789809084828937900,
+        1789800985677298400,
+        11161635369050845456,
+        3377699720568655
+      ]
+    },
+    "models/weapons/v_pist_glock18.vvd": {
+      "bytes": 628992,
+      "sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6",
+      "stat": [
+        628992,
+        1789809084825926800,
+        1789800985677798900,
+        11161635369050845456,
+        3377699720568656
+      ]
+    },
+    "sound/weapons/glock18/glock18-1-distant.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789752894221512100,
+        1789800985700360400,
+        11161635369050845456,
+        3377699720568680
+      ]
+    },
+    "sound/weapons/glock18/glock_01.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789752894221512100,
+        1789800985700360400,
+        11161635369050845456,
+        3377699720568681
+      ]
+    },
+    "sound/weapons/glock18/glock_02.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789752894221512100,
+        1789800985701869700,
+        11161635369050845456,
+        3377699720568682
+      ]
+    },
+    "sound/weapons/glock18/glock_clipin.wav": {
+      "bytes": 187240,
+      "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5",
+      "stat": [
+        187240,
+        1789752894243582900,
+        1789800985701869700,
+        11161635369050845456,
+        3377699720568683
+      ]
+    },
+    "sound/weapons/glock18/glock_clipout.wav": {
+      "bytes": 94488,
+      "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97",
+      "stat": [
+        94488,
+        1789752894235049500,
+        1789800985702872900,
+        11161635369050845456,
+        3377699720568684
+      ]
+    },
+    "sound/weapons/glock18/glock_draw.wav": {
+      "bytes": 81384,
+      "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131",
+      "stat": [
+        81384,
+        1789752894228532700,
+        1789800985703377200,
+        11161635369050845456,
+        3377699720568685
+      ]
+    },
+    "sound/weapons/glock18/glock_slideback.wav": {
+      "bytes": 32464,
+      "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c",
+      "stat": [
+        32464,
+        1789752894248602200,
+        1789800985704384500,
+        11161635369050845456,
+        3377699720568686
+      ]
+    },
+    "sound/weapons/glock18/glock_sliderelease.wav": {
+      "bytes": 88336,
+      "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6",
+      "stat": [
+        88336,
+        1789752894254149500,
+        1789800985704892500,
+        11161635369050845456,
+        3377699720568687
+      ]
+    }
+  },
+  "b": {
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809085185890400,
+        1789752794045738700,
+        11161635369050845456,
+        1407374883940818
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vtf": {
+      "bytes": 22369844,
+      "sha256": "44e27a357b8a31de4fb5ff5cd58a34a0400808e7cac06cf51ab1c7acd05c8c8e",
+      "stat": [
+        22369844,
+        1789809085199981200,
+        1789752794046240200,
+        11161635369050845456,
+        1407374883940819
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_n.vtf": {
+      "bytes": 5592656,
+      "sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc",
+      "stat": [
+        5592656,
+        1789809085203489300,
+        1789752794051757100,
+        11161635369050845456,
+        1407374883940820
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809085203489300,
+        1789801352998206600,
+        11161635369050845456,
+        3940649673990164
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+      "bytes": 455,
+      "sha256": "ef88af8b7fb74b2221484b33073e1592238bb7f9f73b3284c5a4a1076bbefab9",
+      "stat": [
+        455,
+        1789809085203489300,
+        1789801352998206600,
+        11161635369050845456,
+        3377699720568854
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": {
+      "bytes": 358,
+      "sha256": "338d87f696b835d543c5b36769e97967225f38f26a8359c70f3f0fe23ae5cd95",
+      "stat": [
+        358,
+        1789809085203489300,
+        1789801352998705600,
+        11161635369050845456,
+        3377699720568855
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809085204492300,
+        1789801352998705600,
+        11161635369050845456,
+        3377699720568856
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+      "bytes": 446,
+      "sha256": "461fb9579e1c04cb80a52f6660d673ad551609c49fa462943457a71df5a8b3ad",
+      "stat": [
+        446,
+        1789809085204492300,
+        1789801352999206100,
+        11161635369050845456,
+        3377699720568857
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": {
+      "bytes": 214,
+      "sha256": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155",
+      "stat": [
+        214,
+        1789809085204995200,
+        1789801352999206100,
+        11161635369050845456,
+        3377699720568858
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vmt": {
+      "bytes": 301,
+      "sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21",
+      "stat": [
+        301,
+        1789809085204995200,
+        1789752794052757000,
+        11161635369050845456,
+        1407374883940821
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vtf": {
+      "bytes": 22369844,
+      "sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+      "stat": [
+        22369844,
+        1789809085216011100,
+        1789752794053257900,
+        11161635369050845456,
+        1407374883940822
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr_n.vtf": {
+      "bytes": 349776,
+      "sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+      "stat": [
+        349776,
+        1789809085217011500,
+        1789752794058776500,
+        11161635369050845456,
+        1407374883940823
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vmt": {
+      "bytes": 303,
+      "sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755",
+      "stat": [
+        303,
+        1789809085217011500,
+        1789752794058776500,
+        11161635369050845456,
+        1407374883940824
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vtf": {
+      "bytes": 22369844,
+      "sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+      "stat": [
+        22369844,
+        1789809085228023400,
+        1789752794059779300,
+        11161635369050845456,
+        1407374883940825
+      ]
+    },
+    "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr_n.vtf": {
+      "bytes": 349776,
+      "sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+      "stat": [
+        349776,
+        1789809085228525100,
+        1789752794065285100,
+        11161635369050845456,
+        1407374883940826
+      ]
+    },
+    "models/weapons/v_pist_glock18.ani": {
+      "bytes": 184360,
+      "sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834",
+      "stat": [
+        184360,
+        1789809085184310100,
+        1789752794043235100,
+        11161635369050845456,
+        1407374883940807
+      ]
+    },
+    "models/weapons/v_pist_glock18.dx80.vtx": {
+      "bytes": 159081,
+      "sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740",
+      "stat": [
+        159081,
+        1789809085184310100,
+        1789752794043739500,
+        11161635369050845456,
+        1407374883940808
+      ]
+    },
+    "models/weapons/v_pist_glock18.dx90.vtx": {
+      "bytes": 158909,
+      "sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b",
+      "stat": [
+        158909,
+        1789809085184310100,
+        1789752794043739500,
+        11161635369050845456,
+        1407374883940809
+      ]
+    },
+    "models/weapons/v_pist_glock18.mdl": {
+      "bytes": 235552,
+      "sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2",
+      "stat": [
+        235552,
+        1789809085184310100,
+        1789752794044239700,
+        11161635369050845456,
+        1407374883940810
+      ]
+    },
+    "models/weapons/v_pist_glock18.sw.vtx": {
+      "bytes": 158269,
+      "sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600",
+      "stat": [
+        158269,
+        1789809085185384000,
+        1789752794044738700,
+        11161635369050845456,
+        1407374883940811
+      ]
+    },
+    "models/weapons/v_pist_glock18.vvd": {
+      "bytes": 628992,
+      "sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6",
+      "stat": [
+        628992,
+        1789809085185890400,
+        1789752794045239000,
+        11161635369050845456,
+        1407374883940812
+      ]
+    },
+    "sound/weapons/glock18/glock18-1-distant.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789809085164131700,
+        1789752894271215300,
+        11161635369050845456,
+        1407374883940849
+      ]
+    },
+    "sound/weapons/glock18/glock_01.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789809085167132000,
+        1789752894262706400,
+        11161635369050845456,
+        1407374883940845
+      ]
+    },
+    "sound/weapons/glock18/glock_02.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789809085170137500,
+        1789752894266204900,
+        11161635369050845456,
+        1407374883940847
+      ]
+    },
+    "sound/weapons/glock18/glock_clipin.wav": {
+      "bytes": 187240,
+      "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5",
+      "stat": [
+        187240,
+        1789809085173138800,
+        1789752894279342400,
+        11161635369050845456,
+        1407374883940853
+      ]
+    },
+    "sound/weapons/glock18/glock_clipout.wav": {
+      "bytes": 94488,
+      "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97",
+      "stat": [
+        94488,
+        1789809085175783800,
+        1789752894274728500,
+        11161635369050845456,
+        1407374883940851
+      ]
+    },
+    "sound/weapons/glock18/glock_draw.wav": {
+      "bytes": 81384,
+      "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131",
+      "stat": [
+        81384,
+        1789809085178783700,
+        1789752894283344900,
+        11161635369050845456,
+        1407374883940855
+      ]
+    },
+    "sound/weapons/glock18/glock_slideback.wav": {
+      "bytes": 32464,
+      "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c",
+      "stat": [
+        32464,
+        1789809085180805900,
+        1789752894286853200,
+        11161635369050845456,
+        1407374883940857
+      ]
+    },
+    "sound/weapons/glock18/glock_sliderelease.wav": {
+      "bytes": 88336,
+      "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6",
+      "stat": [
+        88336,
+        1789809085183810900,
+        1789752894291395900,
+        11161635369050845456,
+        1407374883940859
+      ]
+    }
+  },
+  "c": {
+    "entries": {
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vmt": {
+        "bytes": 358,
+        "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 6293210,
+        "absolute_data_offset": 6293210,
+        "data_bytes": 358,
+        "crc32": 3275469209
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra.vtf": {
+        "bytes": 22369844,
+        "sha256": "44e27a357b8a31de4fb5ff5cd58a34a0400808e7cac06cf51ab1c7acd05c8c8e",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 6293568,
+        "absolute_data_offset": 6293568,
+        "data_bytes": 22369844,
+        "crc32": 1054874694
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_n.vtf": {
+        "bytes": 5592656,
+        "sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 28663412,
+        "absolute_data_offset": 28663412,
+        "data_bytes": 5592656,
+        "crc32": 4087418766
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": {
+        "bytes": 358,
+        "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34256068,
+        "absolute_data_offset": 34256068,
+        "data_bytes": 358,
+        "crc32": 3275469209
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+        "bytes": 455,
+        "sha256": "ef88af8b7fb74b2221484b33073e1592238bb7f9f73b3284c5a4a1076bbefab9",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34256426,
+        "absolute_data_offset": 34256426,
+        "data_bytes": 455,
+        "crc32": 2686634943
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": {
+        "bytes": 358,
+        "sha256": "338d87f696b835d543c5b36769e97967225f38f26a8359c70f3f0fe23ae5cd95",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34256881,
+        "absolute_data_offset": 34256881,
+        "data_bytes": 358,
+        "crc32": 3990812223
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": {
+        "bytes": 358,
+        "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34257239,
+        "absolute_data_offset": 34257239,
+        "data_bytes": 358,
+        "crc32": 3275469209
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+        "bytes": 446,
+        "sha256": "461fb9579e1c04cb80a52f6660d673ad551609c49fa462943457a71df5a8b3ad",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34257597,
+        "absolute_data_offset": 34257597,
+        "data_bytes": 446,
+        "crc32": 1517566532
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r5.vmt": {
+        "bytes": 214,
+        "sha256": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34258043,
+        "absolute_data_offset": 34258043,
+        "data_bytes": 214,
+        "crc32": 1902812231
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vmt": {
+        "bytes": 301,
+        "sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34258257,
+        "absolute_data_offset": 34258257,
+        "data_bytes": 301,
+        "crc32": 3167084153
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr.vtf": {
+        "bytes": 22369844,
+        "sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 34258558,
+        "absolute_data_offset": 34258558,
+        "data_bytes": 22369844,
+        "crc32": 3642116001
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_nini_arm_gr_n.vtf": {
+        "bytes": 349776,
+        "sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 56628402,
+        "absolute_data_offset": 56628402,
+        "data_bytes": 349776,
+        "crc32": 366371065
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vmt": {
+        "bytes": 303,
+        "sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 56978178,
+        "absolute_data_offset": 56978178,
+        "data_bytes": 303,
+        "crc32": 1042843820
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr.vtf": {
+        "bytes": 22369844,
+        "sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 56978481,
+        "absolute_data_offset": 56978481,
+        "data_bytes": 22369844,
+        "crc32": 2669089750
+      },
+      "materials/models/weapons/v_models/cf_mauser/cf_nini_hand_gr_n.vtf": {
+        "bytes": 349776,
+        "sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk",
+        "archive_index": 0,
+        "preload_bytes": 0,
+        "entry_offset": 79348325,
+        "absolute_data_offset": 79348325,
+        "data_bytes": 349776,
+        "crc32": 4206811671
+      },
+      "models/weapons/v_pist_glock18.ani": {
+        "bytes": 184360,
+        "sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_001.vpk",
+        "archive_index": 1,
+        "preload_bytes": 0,
+        "entry_offset": 51354965,
+        "absolute_data_offset": 51354965,
+        "data_bytes": 184360,
+        "crc32": 2639154257
+      },
+      "models/weapons/v_pist_glock18.dx80.vtx": {
+        "bytes": 159081,
+        "sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_001.vpk",
+        "archive_index": 1,
+        "preload_bytes": 0,
+        "entry_offset": 51539325,
+        "absolute_data_offset": 51539325,
+        "data_bytes": 159081,
+        "crc32": 1270592836
+      },
+      "models/weapons/v_pist_glock18.dx90.vtx": {
+        "bytes": 158909,
+        "sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_001.vpk",
+        "archive_index": 1,
+        "preload_bytes": 0,
+        "entry_offset": 51698406,
+        "absolute_data_offset": 51698406,
+        "data_bytes": 158909,
+        "crc32": 3641563903
+      },
+      "models/weapons/v_pist_glock18.mdl": {
+        "bytes": 235552,
+        "sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_001.vpk",
+        "archive_index": 1,
+        "preload_bytes": 0,
+        "entry_offset": 51857315,
+        "absolute_data_offset": 51857315,
+        "data_bytes": 235552,
+        "crc32": 1250144740
+      },
+      "models/weapons/v_pist_glock18.sw.vtx": {
+        "bytes": 158269,
+        "sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_001.vpk",
+        "archive_index": 1,
+        "preload_bytes": 0,
+        "entry_offset": 52092867,
+        "absolute_data_offset": 52092867,
+        "data_bytes": 158269,
+        "crc32": 1943610269
+      },
+      "models/weapons/v_pist_glock18.vvd": {
+        "bytes": 628992,
+        "sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_001.vpk",
+        "archive_index": 1,
+        "preload_bytes": 0,
+        "entry_offset": 52251136,
+        "absolute_data_offset": 52251136,
+        "data_bytes": 628992,
+        "crc32": 2448807964
+      },
+      "sound/weapons/glock18/glock18-1-distant.wav": {
+        "bytes": 133004,
+        "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 36826592,
+        "absolute_data_offset": 36826592,
+        "data_bytes": 133004,
+        "crc32": 1832774759
+      },
+      "sound/weapons/glock18/glock_01.wav": {
+        "bytes": 133004,
+        "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 36959596,
+        "absolute_data_offset": 36959596,
+        "data_bytes": 133004,
+        "crc32": 1832774759
+      },
+      "sound/weapons/glock18/glock_02.wav": {
+        "bytes": 133004,
+        "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 37092600,
+        "absolute_data_offset": 37092600,
+        "data_bytes": 133004,
+        "crc32": 1832774759
+      },
+      "sound/weapons/glock18/glock_clipin.wav": {
+        "bytes": 187240,
+        "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 37225604,
+        "absolute_data_offset": 37225604,
+        "data_bytes": 187240,
+        "crc32": 3314616236
+      },
+      "sound/weapons/glock18/glock_clipout.wav": {
+        "bytes": 94488,
+        "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 37412844,
+        "absolute_data_offset": 37412844,
+        "data_bytes": 94488,
+        "crc32": 4236399561
+      },
+      "sound/weapons/glock18/glock_draw.wav": {
+        "bytes": 81384,
+        "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 37507332,
+        "absolute_data_offset": 37507332,
+        "data_bytes": 81384,
+        "crc32": 4263166571
+      },
+      "sound/weapons/glock18/glock_slideback.wav": {
+        "bytes": 32464,
+        "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 37588716,
+        "absolute_data_offset": 37588716,
+        "data_bytes": 32464,
+        "crc32": 2460055277
+      },
+      "sound/weapons/glock18/glock_sliderelease.wav": {
+        "bytes": 88336,
+        "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6",
+        "archive": "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk",
+        "archive_index": 3,
+        "preload_bytes": 0,
+        "entry_offset": 37621180,
+        "absolute_data_offset": 37621180,
+        "data_bytes": 88336,
+        "crc32": 514550725
+      }
+    },
+    "archive_stats": {
+      "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_dir.vpk": [
+        94755,
+        1789809351668149400,
+        1786546259569062300,
+        11161635369050845456,
+        2814749767452917
+      ],
+      "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_000.vpk": [
+        217166926,
+        1789809350386960200,
+        1786546258088855500,
+        11161635369050845456,
+        2814749767452912
+      ],
+      "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_001.vpk": [
+        209735730,
+        1789809350942727300,
+        1786553138085254700,
+        11161635369050845456,
+        2814749767452914
+      ],
+      "D:\\steam\\steamapps\\common\\csgo legacy\\migi\\csgo\\pak01_003.vpk": [
+        38355474,
+        1789809351667149600,
+        1789753178078910500,
+        11161635369050845456,
+        2814749767452916
+      ]
+    },
+    "header_tree_sha256": "601688016c165c2bed87210f1b7da4df3cc4fa9cd81974fdfb46954359391dc5",
+    "version": 2,
+    "header_bytes": 28,
+    "tree_bytes": 94679
+  },
+  "inputs": {
+    "mesh_ltb": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra.LTB",
+      "bytes": 166932,
+      "sha256": "d12518b3a3cc0036c9fdf7079a36b57b94bf7d625dcae187e60576a0f1b1b98a",
+      "stat": [
+        166932,
+        1789790937055062200,
+        1789751169007807800,
+        11161635369050845456,
+        16325548649604717
+      ]
+    },
+    "diffuse_dtx": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\PLAYERVIEW\\PV-M1896_Libra.DTX",
+      "bytes": 524452,
+      "sha256": "76807587dcb2c4399fcf9c0780d78952db2bdb49239b9606c50b74e1754a8adc",
+      "stat": [
+        524452,
+        1789790937064669500,
+        1789751169018317700,
+        11161635369050845456,
+        16325548649604720
+      ]
+    },
+    "cfg": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\Shader\\WeaponShader\\M1896_Libra.CFG",
+      "bytes": 475,
+      "sha256": "2374a62d5d8d40db0d8de969c2099643823a47185ec9f593a19299bb2f415476",
+      "stat": [
+        475,
+        1789790937071181600,
+        1789751169025825800,
+        11161635369050845456,
+        16325548649604723
+      ]
+    },
+    "specular": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\SpecularMap\\M1896_Libra_S.TGA",
+      "bytes": 3145772,
+      "sha256": "22a8f8044ad2fa5e5cb3bf2bed238a66c4d7e1b093f9ec54a9b9083e5b218eee",
+      "stat": [
+        3145772,
+        1789790937087672500,
+        1789751169042367300,
+        11161635369050845456,
+        16325548649604725
+      ]
+    },
+    "normal": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\NormalMap\\M1896_Libra_N.TGA",
+      "bytes": 3145772,
+      "sha256": "d3077a1e9b41c3287c4ced04fda76cfc9f9f942a2abfc7cbc79f2ce665eb720f",
+      "stat": [
+        3145772,
+        1789790937105700900,
+        1789751169060904500,
+        11161635369050845456,
+        16325548649604727
+      ]
+    },
+    "alpha": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\AlphaMap\\M1896_Libra_alpha.TGA",
+      "bytes": 3145772,
+      "sha256": "7c2e91a7e9b81f32e34bcd1ec33cb4f3c696148299ea306ce933dfadda390186",
+      "stat": [
+        3145772,
+        1789790937122825500,
+        1789751169080430900,
+        11161635369050845456,
+        16325548649604729
+      ]
+    },
+    "cubemap": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\EnvCubeMap\\LobbyCube.DDS",
+      "bytes": 196736,
+      "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+      "stat": [
+        196736,
+        1789790937130833500,
+        1789790937130833500,
+        11161635369050845456,
+        1125899907186246
+      ]
+    },
+    "diffuse_decoded": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\PV-M1896_Libra.png",
+      "bytes": 624020,
+      "sha256": "5455873c7d4e21920d68d2eec908232a60fc755438e671bc118f2638c3117ece",
+      "stat": [
+        624020,
+        1789790942934789300,
+        1789751205476607300,
+        11161635369050845456,
+        16325548649604744
+      ]
+    },
+    "mesh_skin": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\cf_skin_m1896_libra.json",
+      "bytes": 511981,
+      "sha256": "2834608fb424bfda94cf31a6b5efbbe34344250bcb10d1b104e1a2684637792d",
+      "stat": [
+        511981,
+        1789790942441311100,
+        1789751204991703100,
+        11161635369050845456,
+        16325548649604743
+      ]
+    },
+    "mesh_ltb_bl": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra_BL.LTB",
+      "bytes": 61602,
+      "sha256": "079577780376e825e3a2090d2419ae9e1924d38834da342f82506f8a22469135",
+      "stat": [
+        61602,
+        1789790937131339900,
+        1789751169082934300,
+        11161635369050845456,
+        16325548649604730
+      ]
+    },
+    "mesh_ltb_gr": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra_GR.LTB",
+      "bytes": 65616,
+      "sha256": "77ab17d0f426b116a723eca04a47852d24e4cd8198a65c695dc296558d7e9533",
+      "stat": [
+        65616,
+        1789790937131837900,
+        1789751169083940000,
+        11161635369050845456,
+        16325548649604731
+      ]
+    },
+    "upscale_diffuse": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\diffuse_2048.png",
+      "bytes": 2557745,
+      "sha256": "c154a066efbcc2c3283d20bd3227996bd35b975083d9db9697f829492a27172e",
+      "stat": [
+        2557745,
+        1789809063397160300,
+        1789800350791156700,
+        11161635369050845456,
+        3377699720568610
+      ]
+    },
+    "upscale_normal": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\normal_2048.png",
+      "bytes": 4573153,
+      "sha256": "4a3e87871f2c1313071d2a087d3169772b83015709de47f5cea297386f2b3fca",
+      "stat": [
+        4573153,
+        1789809064455257200,
+        1789800351403204600,
+        11161635369050845456,
+        3377699720568611
+      ]
+    },
+    "upscale_specular": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\specular_2048.png",
+      "bytes": 2858866,
+      "sha256": "4600ccf514c12b932049b7411c2e3ef5b340e62fb07fbd263b7915233e0284f5",
+      "stat": [
+        2858866,
+        1789809064827391700,
+        1789800351876537100,
+        11161635369050845456,
+        3377699720568612
+      ]
+    },
+    "upscale_alpha": {
+      "path": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\alpha_2048.png",
+      "bytes": 1341183,
+      "sha256": "27cdc8745a87a37351e55686db6aa4860e9b8814a89898d384e9284b977737c8",
+      "stat": [
+        1341183,
+        1789809065154548000,
+        1789800352243683200,
+        11161635369050845456,
+        3377699720568613
+      ]
+    }
+  },
+  "references": {
+    "current": {
+      "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-a278daac-b12b-4a31-af11-06a0f6de0257.png",
+      "present": true,
+      "bytes": 2092515,
+      "sha256": "249fbc82105318f5d192742ba8050a55898db59915d3ef44e5771be1e9d6630a",
+      "stat": [
+        2092515,
+        1789809477835546800,
+        1789809477834547100,
+        1491930182614154332,
+        6755399441671479
+      ]
+    },
+    "target": {
+      "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-8e9f670f-f7ac-41dc-ad62-515bfe046098.png",
+      "present": true,
+      "bytes": 569249,
+      "sha256": "df6b53c676fdcb65e4cc0293a42b3932856639e5bd4702d9653079a8aff20cc7",
+      "stat": [
+        569249,
+        1789809501949745500,
+        1789809501949245600,
+        1491930182614154332,
+        3096224744615465
+      ]
+    }
+  },
+  "tracked_sources": {
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809077233012900,
+        1789800985678296200,
+        11161635369050845456,
+        3377699720568662
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra.vtf": {
+      "bytes": 22369844,
+      "sha256": "44e27a357b8a31de4fb5ff5cd58a34a0400808e7cac06cf51ab1c7acd05c8c8e",
+      "stat": [
+        22369844,
+        1789809076793199900,
+        1789800985678819400,
+        11161635369050845456,
+        3377699720568663
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra_n.vtf": {
+      "bytes": 5592656,
+      "sha256": "5247359a55de244cfb95f4af262ab3a5a6ca1b3f3b45a5ca5c7e41e728acd6dc",
+      "stat": [
+        5592656,
+        1789809077230004000,
+        1789800985683829100,
+        11161635369050845456,
+        3377699720568664
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra_r0.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809077232012000,
+        1789800985685332700,
+        11161635369050845456,
+        3377699720568665
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra_r1.vmt": {
+      "bytes": 455,
+      "sha256": "ef88af8b7fb74b2221484b33073e1592238bb7f9f73b3284c5a4a1076bbefab9",
+      "stat": [
+        455,
+        1789809077232511200,
+        1789800985685332700,
+        11161635369050845456,
+        3377699720568666
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra_r2.vmt": {
+      "bytes": 358,
+      "sha256": "338d87f696b835d543c5b36769e97967225f38f26a8359c70f3f0fe23ae5cd95",
+      "stat": [
+        358,
+        1789809077232511200,
+        1789800985686339600,
+        11161635369050845456,
+        3377699720568667
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra_r3.vmt": {
+      "bytes": 358,
+      "sha256": "e9095f0da4fc5d7d0b25300e0a31629523f3bd254b340cd491ecf954b86c7fd5",
+      "stat": [
+        358,
+        1789809077232511200,
+        1789800985686843400,
+        11161635369050845456,
+        3377699720568668
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra_r4.vmt": {
+      "bytes": 446,
+      "sha256": "461fb9579e1c04cb80a52f6660d673ad551609c49fa462943457a71df5a8b3ad",
+      "stat": [
+        446,
+        1789809077233012900,
+        1789800985686843400,
+        11161635369050845456,
+        3377699720568669
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_mauser_libra_r5.vmt": {
+      "bytes": 214,
+      "sha256": "6f58785abc3b2811fe18e771a41f2dc3fc825e366bed81b59946256fd4146155",
+      "stat": [
+        214,
+        1789809077233012900,
+        1789800985687345600,
+        11161635369050845456,
+        3377699720568670
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_nini_arm_gr.vmt": {
+      "bytes": 301,
+      "sha256": "57f962f1bd953b875f37786afd4810cc12d2e786ef5549a7c46027ecef925e21",
+      "stat": [
+        301,
+        1789809084014253500,
+        1789800985687345600,
+        11161635369050845456,
+        3377699720568671
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_nini_arm_gr.vtf": {
+      "bytes": 22369844,
+      "sha256": "f7ea729d33526ec8558c29fa83e85d167cb065e2f8ed57aed429278d945534d2",
+      "stat": [
+        22369844,
+        1789809083919206000,
+        1789800985687845600,
+        11161635369050845456,
+        3377699720568672
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_nini_arm_gr_n.vtf": {
+      "bytes": 349776,
+      "sha256": "853680d4594183d3312bee92184640507ba80fd7144da9d16d389899f3964fa5",
+      "stat": [
+        349776,
+        1789809084012253200,
+        1789800985693351100,
+        11161635369050845456,
+        3377699720568673
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_nini_hand_gr.vmt": {
+      "bytes": 303,
+      "sha256": "2ad40ff8b3fbb26518bba26c5ff4dd37ff92e5974773496abbf71daae1974755",
+      "stat": [
+        303,
+        1789809084014253500,
+        1789800985693850200,
+        11161635369050845456,
+        3377699720568674
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_nini_hand_gr.vtf": {
+      "bytes": 22369844,
+      "sha256": "14ba037ed062948dbebab556d794f93513ce48f300253387ae6e7f9dd4f55984",
+      "stat": [
+        22369844,
+        1789809083755267800,
+        1789800985693850200,
+        11161635369050845456,
+        3377699720568675
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\materials\\models\\weapons\\v_models\\cf_mauser\\cf_nini_hand_gr_n.vtf": {
+      "bytes": 349776,
+      "sha256": "ecee6d589a9f4fc9bf99d7efe0f9323318a5e440539f174b2de742605efadaf6",
+      "stat": [
+        349776,
+        1789809083971163700,
+        1789800985699359800,
+        11161635369050845456,
+        3377699720568676
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\models\\weapons\\v_pist_glock18.ani": {
+      "bytes": 184360,
+      "sha256": "ac25f30e03e63cfd5bb404a41753ead6e59ecd6896e5d27f8308aade7df78834",
+      "stat": [
+        184360,
+        1789809084610039800,
+        1789800985675795300,
+        11161635369050845456,
+        3377699720568651
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\models\\weapons\\v_pist_glock18.dx80.vtx": {
+      "bytes": 159081,
+      "sha256": "47459c88ad5a62d959ec1324def7015255a02bdbb4e3835d8c97f4deac80a740",
+      "stat": [
+        159081,
+        1789809084827937700,
+        1789800985676295100,
+        11161635369050845456,
+        3377699720568652
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\models\\weapons\\v_pist_glock18.dx90.vtx": {
+      "bytes": 158909,
+      "sha256": "b9dd061ab979ef8884033c8da1e1531ed05b2778c849878f6ad6359bc3f53c8b",
+      "stat": [
+        158909,
+        1789809084827937700,
+        1789800985676295100,
+        11161635369050845456,
+        3377699720568653
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\models\\weapons\\v_pist_glock18.mdl": {
+      "bytes": 235552,
+      "sha256": "fec1139b0018d4a6b365373c676c0f55b504ca2fd9715f8ce989ede6e434b1d2",
+      "stat": [
+        235552,
+        1789809084829440300,
+        1789800985676795300,
+        11161635369050845456,
+        3377699720568654
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\models\\weapons\\v_pist_glock18.sw.vtx": {
+      "bytes": 158269,
+      "sha256": "a7d5336d91d4f471e804e8dc3f8b821b78418a0481d9164213905629e76b3600",
+      "stat": [
+        158269,
+        1789809084828937900,
+        1789800985677298400,
+        11161635369050845456,
+        3377699720568655
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\models\\weapons\\v_pist_glock18.vvd": {
+      "bytes": 628992,
+      "sha256": "ae641d15878f2fbb8543acca755bfbcd84c9da157ea716138c271c5f5fce9cc6",
+      "stat": [
+        628992,
+        1789809084825926800,
+        1789800985677798900,
+        11161635369050845456,
+        3377699720568656
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock18-1-distant.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789752894221512100,
+        1789800985700360400,
+        11161635369050845456,
+        3377699720568680
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock_01.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789752894221512100,
+        1789800985700360400,
+        11161635369050845456,
+        3377699720568681
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock_02.wav": {
+      "bytes": 133004,
+      "sha256": "58910e468f22acf3968c9dcad6d978ac24d56fc69120cbc57cf6353ba6ed54e4",
+      "stat": [
+        133004,
+        1789752894221512100,
+        1789800985701869700,
+        11161635369050845456,
+        3377699720568682
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock_clipin.wav": {
+      "bytes": 187240,
+      "sha256": "da2a0202ed838b3c2777d4e1c572c6812845da2da735f7cc2240fca5f67c59e5",
+      "stat": [
+        187240,
+        1789752894243582900,
+        1789800985701869700,
+        11161635369050845456,
+        3377699720568683
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock_clipout.wav": {
+      "bytes": 94488,
+      "sha256": "14683f2e88e91af949a0ec09642423f637959cdb76d0e20d494e061986c9df97",
+      "stat": [
+        94488,
+        1789752894235049500,
+        1789800985702872900,
+        11161635369050845456,
+        3377699720568684
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock_draw.wav": {
+      "bytes": 81384,
+      "sha256": "ec703805897b608932aff5760895677534aee7a3a512edbe497af2b61d42a131",
+      "stat": [
+        81384,
+        1789752894228532700,
+        1789800985703377200,
+        11161635369050845456,
+        3377699720568685
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock_slideback.wav": {
+      "bytes": 32464,
+      "sha256": "4855116016cbe9acbb801ca57cda7fbc77f1eebee84a20018b776bc5223f001c",
+      "stat": [
+        32464,
+        1789752894248602200,
+        1789800985704384500,
+        11161635369050845456,
+        3377699720568686
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\addon_v2\\sound\\weapons\\glock18\\glock_sliderelease.wav": {
+      "bytes": 88336,
+      "sha256": "efde75872396e72d1adf455c7635b98c245fc336aa58a37008067085dbf4bed6",
+      "stat": [
+        88336,
+        1789752894254149500,
+        1789800985704892500,
+        11161635369050845456,
+        3377699720568687
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\audit\\input_manifest.json": {
+      "bytes": 13175,
+      "sha256": "0386342acdf1803be640945328dab1fe39408b8e28e69b1466c6ab9cea0ec176",
+      "stat": [
+        13175,
+        1789798211667992600,
+        1789798159511953000,
+        11161635369050845456,
+        5348024557527598
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\source_v2\\translation_report.json": {
+      "bytes": 3504,
+      "sha256": "bf6515eca4d174c2c452243405e44f7136d3afc414b986a9fdb59619f0c3efe4",
+      "stat": [
+        3504,
+        1789809077239022700,
+        1789800767175926700,
+        11161635369050845456,
+        3377699720568633
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\segmentation\\triangle_materials.json": {
+      "bytes": 42130,
+      "sha256": "6f2f3c8895b9bf71e90f02c066ccdf396ee565197848d11d552d61e8e307f974",
+      "stat": [
+        42130,
+        1789800219844895200,
+        1789800219844895200,
+        11161635369050845456,
+        3659174697279258
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\ir\\cf_mauser_libra.material_ir.json": {
+      "bytes": 6841,
+      "sha256": "fb5b650fbb924bccacf1063753371730311c6b6c73130eecd9049474c60ef5b3",
+      "stat": [
+        6841,
+        1789798488332518800,
+        1789798488332518800,
+        11161635369050845456,
+        2533274790431642
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\reports\\source_translation_report.json": {
+      "bytes": 3850,
+      "sha256": "c21ee80dbf9e6fdbdefaaf985fda67840870ccbf5650ca870139a0dfc98dea13",
+      "stat": [
+        3850,
+        1789809078346757400,
+        1789801252094940900,
+        11161635369050845456,
+        3377699720568820
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\reports\\channel_audit.json": {
+      "bytes": 31729,
+      "sha256": "17cc725354cb87f0165bcc7e47978cd0b92de562bdf83960a45fe1f447f33321",
+      "stat": [
+        31729,
+        1789798489427955400,
+        1789798489426951700,
+        11161635369050845456,
+        5910974510959518
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\g_material_assignments.json": {
+      "bytes": 88229,
+      "sha256": "0f0a2b57f0fc3163ffb8cde95c72b1ae8e7b5120405c38d54d710f0123aba960",
+      "stat": [
+        88229,
+        1789809077233513000,
+        1789800767172920400,
+        11161635369050845456,
+        3377699720568632
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\i_deploy_manifest.json": {
+      "bytes": 3998,
+      "sha256": "d402503244e06e999e4c0278cf77f036c0140275f97c695ac6a2fa5084e7c151",
+      "stat": [
+        3998,
+        1789809085392005400,
+        1789801353190292000,
+        11161635369050845456,
+        3377699720568859
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\i_pak_verify.json": {
+      "bytes": 4996,
+      "sha256": "0a1f72edf7db3dcf3ba42921066ac5ea93e66cf23f94ad68d02b6706aa447672",
+      "stat": [
+        4996,
+        1789808819917783200,
+        1789808819917282500,
+        11161635369050845456,
+        9851624184913965
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra.LTB": {
+      "bytes": 166932,
+      "sha256": "d12518b3a3cc0036c9fdf7079a36b57b94bf7d625dcae187e60576a0f1b1b98a",
+      "stat": [
+        166932,
+        1789790937055062200,
+        1789751169007807800,
+        11161635369050845456,
+        16325548649604717
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\PLAYERVIEW\\PV-M1896_Libra.DTX": {
+      "bytes": 524452,
+      "sha256": "76807587dcb2c4399fcf9c0780d78952db2bdb49239b9606c50b74e1754a8adc",
+      "stat": [
+        524452,
+        1789790937064669500,
+        1789751169018317700,
+        11161635369050845456,
+        16325548649604720
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\Shader\\WeaponShader\\M1896_Libra.CFG": {
+      "bytes": 475,
+      "sha256": "2374a62d5d8d40db0d8de969c2099643823a47185ec9f593a19299bb2f415476",
+      "stat": [
+        475,
+        1789790937071181600,
+        1789751169025825800,
+        11161635369050845456,
+        16325548649604723
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\SpecularMap\\M1896_Libra_S.TGA": {
+      "bytes": 3145772,
+      "sha256": "22a8f8044ad2fa5e5cb3bf2bed238a66c4d7e1b093f9ec54a9b9083e5b218eee",
+      "stat": [
+        3145772,
+        1789790937087672500,
+        1789751169042367300,
+        11161635369050845456,
+        16325548649604725
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\NormalMap\\M1896_Libra_N.TGA": {
+      "bytes": 3145772,
+      "sha256": "d3077a1e9b41c3287c4ced04fda76cfc9f9f942a2abfc7cbc79f2ce665eb720f",
+      "stat": [
+        3145772,
+        1789790937105700900,
+        1789751169060904500,
+        11161635369050845456,
+        16325548649604727
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\AlphaMap\\M1896_Libra_alpha.TGA": {
+      "bytes": 3145772,
+      "sha256": "7c2e91a7e9b81f32e34bcd1ec33cb4f3c696148299ea306ce933dfadda390186",
+      "stat": [
+        3145772,
+        1789790937122825500,
+        1789751169080430900,
+        11161635369050845456,
+        16325548649604729
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\ModelTextures\\EnvCubeMap\\LobbyCube.DDS": {
+      "bytes": 196736,
+      "sha256": "c800496bb6f42046c3cf0390b40a7d3a3430521131cd19f40632433bb3cc80b4",
+      "stat": [
+        196736,
+        1789790937130833500,
+        1789790937130833500,
+        11161635369050845456,
+        1125899907186246
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\PV-M1896_Libra.png": {
+      "bytes": 624020,
+      "sha256": "5455873c7d4e21920d68d2eec908232a60fc755438e671bc118f2638c3117ece",
+      "stat": [
+        624020,
+        1789790942934789300,
+        1789751205476607300,
+        11161635369050845456,
+        16325548649604744
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\decode\\cf_skin_m1896_libra.json": {
+      "bytes": 511981,
+      "sha256": "2834608fb424bfda94cf31a6b5efbbe34344250bcb10d1b104e1a2684637792d",
+      "stat": [
+        511981,
+        1789790942441311100,
+        1789751204991703100,
+        11161635369050845456,
+        16325548649604743
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra_BL.LTB": {
+      "bytes": 61602,
+      "sha256": "079577780376e825e3a2090d2419ae9e1924d38834da342f82506f8a22469135",
+      "stat": [
+        61602,
+        1789790937131339900,
+        1789751169082934300,
+        11161635369050845456,
+        16325548649604730
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\acquire\\verified_root\\Models\\PLAYERVIEW\\PV-M1896_Libra_GR.LTB": {
+      "bytes": 65616,
+      "sha256": "77ab17d0f426b116a723eca04a47852d24e4cd8198a65c695dc296558d7e9533",
+      "stat": [
+        65616,
+        1789790937131837900,
+        1789751169083940000,
+        11161635369050845456,
+        16325548649604731
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\diffuse_2048.png": {
+      "bytes": 2557745,
+      "sha256": "c154a066efbcc2c3283d20bd3227996bd35b975083d9db9697f829492a27172e",
+      "stat": [
+        2557745,
+        1789809063397160300,
+        1789800350791156700,
+        11161635369050845456,
+        3377699720568610
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\normal_2048.png": {
+      "bytes": 4573153,
+      "sha256": "4a3e87871f2c1313071d2a087d3169772b83015709de47f5cea297386f2b3fca",
+      "stat": [
+        4573153,
+        1789809064455257200,
+        1789800351403204600,
+        11161635369050845456,
+        3377699720568611
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\specular_2048.png": {
+      "bytes": 2858866,
+      "sha256": "4600ccf514c12b932049b7411c2e3ef5b340e62fb07fbd263b7915233e0284f5",
+      "stat": [
+        2858866,
+        1789809064827391700,
+        1789800351876537100,
+        11161635369050845456,
+        3377699720568612
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\upscale\\alpha_2048.png": {
+      "bytes": 1341183,
+      "sha256": "27cdc8745a87a37351e55686db6aa4860e9b8814a89898d384e9284b977737c8",
+      "stat": [
+        1341183,
+        1789809065154548000,
+        1789800352243683200,
+        11161635369050845456,
+        3377699720568613
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\cf_reference_renderer.py": {
+      "bytes": 18654,
+      "sha256": "062e969872d4bedaaa9f2625d1d2b6257dbc2697c112f62b432bab85df81dde0",
+      "stat": [
+        18654,
+        1789799347187664400,
+        1789798960905631200,
+        11161635369050845456,
+        4785074604116895
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\cf_source_material.py": {
+      "bytes": 9146,
+      "sha256": "bd7543616d471b570aa91619e12c7248623dcd3d38a91a2d950399ae94714023",
+      "stat": [
+        9146,
+        1789795925691514000,
+        1789791807936547400,
+        11161635369050845456,
+        3096224744160862
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\channel_audit.py": {
+      "bytes": 6859,
+      "sha256": "ce55c6132e38bf3c7690d7025be0ac64718a60aa86ac74cc34adb6ac58767cb8",
+      "stat": [
+        6859,
+        1789798402424567300,
+        1789798402424068000,
+        11161635369050845456,
+        5066549580816941
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\input_manifest.py": {
+      "bytes": 8727,
+      "sha256": "521f5d26607f399c2d382e49fba43c2dc9c82cbd8466ad31837ab68dcc104308",
+      "stat": [
+        8727,
+        1789798190311716400,
+        1789798027720420300,
+        11161635369050845456,
+        5066549580804462
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\material_ir.py": {
+      "bytes": 6320,
+      "sha256": "6bb100613e7e213a57e75c03340302266e54c8a599f7847ee9db9731090f8c22",
+      "stat": [
+        6320,
+        1789797976055496400,
+        1789797976054998600,
+        11161635369050845456,
+        7036874417791520
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\material_regions.py": {
+      "bytes": 8593,
+      "sha256": "c4aca15d3629a5fa03acb6d142d81e1fe2b407c230f9c8d16c2ee799b43eee1b",
+      "stat": [
+        8593,
+        1789800154338578500,
+        1789800154338578500,
+        11161635369050845456,
+        4222124650700560
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n01_phase0_gate.py": {
+      "bytes": 4672,
+      "sha256": "50bc59beda8963896cc2554f0a1e16c920722b02f5c403e98f25bec543128d02",
+      "stat": [
+        4672,
+        1787384823201991300,
+        1787384823201991300,
+        11161635369050845456,
+        2814749767129979
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n01_phase1_consumer_search.py": {
+      "bytes": 55117,
+      "sha256": "8b1529e4318204b3c94cf5b5bf8954aa6f1d3b64c0b3c4ba24baa7255e598663",
+      "stat": [
+        55117,
+        1787401275977420000,
+        1787401275976920000,
+        11161635369050845456,
+        4785074604104934
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n01_phase1_to_phase5_runner.py": {
+      "bytes": 40629,
+      "sha256": "870473f50d4435d12e6e8e6d52a5a7425f973d1defc1493cb150b9b9f1ac2e6c",
+      "stat": [
+        40629,
+        1787399859989717300,
+        1787399859988714800,
+        11161635369050845456,
+        2533274790399965
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02c_m4a1_weapon_correlation.py": {
+      "bytes": 26634,
+      "sha256": "b1184ceaef70fe4ab8da05fc2817cdd2c798526cf4977899b112785853d6eef4",
+      "stat": [
+        26634,
+        1787409993353403000,
+        1787409993353403000,
+        11161635369050845456,
+        1125899906989207
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02d_r1_path_aware_rez_binding.py": {
+      "bytes": 37435,
+      "sha256": "a52186e65efe57ae8ecc4ad901b8e4f879a9970d3012b636e93f8ddcc03660ad",
+      "stat": [
+        37435,
+        1787418797584211600,
+        1787418797583800200,
+        11161635369050845456,
+        3377699720590118
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02d_rez_asset_lookup.py": {
+      "bytes": 24915,
+      "sha256": "f783ccf392dd4eb3ce592983a3102611209d4b7faffe36621ec2bf2d6b01daa3",
+      "stat": [
+        24915,
+        1789191746181520200,
+        1787417740506457800,
+        11161635369050845456,
+        562949953795181
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02e_payload_hash.py": {
+      "bytes": 20436,
+      "sha256": "5a80cfe291dabddc64208f7c74c16656c87bd9a335191221e9b080870aec6dfc",
+      "stat": [
+        20436,
+        1787411885056160300,
+        1787411885056160300,
+        11161635369050845456,
+        2533274790542502
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02e_r1_material_binding.py": {
+      "bytes": 38148,
+      "sha256": "5b864869f64991074705d23f0a34c61ee809e53a192fd3fd83a0d0390063193d",
+      "stat": [
+        38148,
+        1787421216358661800,
+        1787421216356464400,
+        11161635369050845456,
+        2533274791065206
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02e_r2_payload_hash.py": {
+      "bytes": 29273,
+      "sha256": "ee4cc3edd2ce35ee5823dc2c5b3af6c39309a1b0899e6a82e12916c4e10f35e5",
+      "stat": [
+        29273,
+        1789220451855455000,
+        1787468239738548200,
+        11161635369050845456,
+        4785074604104462
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02_butes_config_triage.py": {
+      "bytes": 39157,
+      "sha256": "ffb8980d1ba22e2b31095c747ff00a61513458d12882cad64e4872ac2f08f0d4",
+      "stat": [
+        39157,
+        1787409152614257700,
+        1787409152614257700,
+        11161635369050845456,
+        7881299347902431
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n02_runtime_artifact_acquire.py": {
+      "bytes": 28667,
+      "sha256": "149a09ec24ebce877dd081d0d7215fc3f2606f9fe6ca1b878680741216ed8894",
+      "stat": [
+        28667,
+        1787406014446305700,
+        1787406014445798200,
+        11161635369050845456,
+        562949953567801
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03a_bornbeast_consumer.py": {
+      "bytes": 45483,
+      "sha256": "70fdb48be8ca3398acee012d28548aad2108bf88e126d45684c600fffb72588e",
+      "stat": [
+        45483,
+        1789192228186393100,
+        1789192155665222700,
+        11161635369050845456,
+        2533274790430436
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03b_rez_packed_config.py": {
+      "bytes": 26187,
+      "sha256": "9470e8509390e3d9ea9e26a60d022e7ed54d0897e1c5f574995b283822752a88",
+      "stat": [
+        26187,
+        1789193071289074600,
+        1789192697035783300,
+        11161635369050845456,
+        2814749767480458
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03c_material_graph.py": {
+      "bytes": 25556,
+      "sha256": "42773d2ee134bcebf660d6bf9364c881aaf6acd557f1f87ad98dafe4f9a48350",
+      "stat": [
+        25556,
+        1789193658894695100,
+        1789193599168746700,
+        11161635369050845456,
+        3377699720901816
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03d_ltb_piece_index.py": {
+      "bytes": 21729,
+      "sha256": "265ff5e376152ecdf98f434861640794423f59ccba891b0f921adaa4cdbbadf9",
+      "stat": [
+        21729,
+        1789194281955702000,
+        1789194247552703700,
+        11161635369050845456,
+        1688849860637995
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03e_renderstyle_ltb.py": {
+      "bytes": 19232,
+      "sha256": "7b12e90bacd02f8f6c7d7ffc2d5ec0dc99fd98c34f496f469bb8650ebfd2dbec",
+      "stat": [
+        19232,
+        1789194737029506000,
+        1789194678038973900,
+        11161635369050845456,
+        1688849860638031
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03f_shader_alphamap_lookup.py": {
+      "bytes": 15493,
+      "sha256": "3059c0776455fcd271520393fbf59a76e4b6bdbc5a691c5df8a0349af93f2223",
+      "stat": [
+        15493,
+        1789195231813635500,
+        1789195149305634600,
+        11161635369050845456,
+        7881299348272144
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03g_legacy_shader_fields.py": {
+      "bytes": 6598,
+      "sha256": "eb537f8987875998d009a0610e071b6195dcb4d2166f32b86314a150f6ed2548",
+      "stat": [
+        6598,
+        1789195645761931900,
+        1789195614694013300,
+        11161635369050845456,
+        2814749767480662
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n03h_dtx_container_decode.py": {
+      "bytes": 15165,
+      "sha256": "611b54c5ec2502f14583adde3357b38cb2e94bb09397561b095f262e07b2b8c8",
+      "stat": [
+        15165,
+        1789198460864327600,
+        1789198432782475000,
+        11161635369050845456,
+        3659174697264674
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n04a_pe_string_hits.py": {
+      "bytes": 12320,
+      "sha256": "cbdde20f1d4a6177f647227fa3297996119c3d37399f6aae33c5b7f34f4440ea",
+      "stat": [
+        12320,
+        1789199392684901100,
+        1789199392684901100,
+        11161635369050845456,
+        3940649673975363
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n04b_pe_xref.py": {
+      "bytes": 12817,
+      "sha256": "3c6bc3c93a75ad729d93f725354845472e0e269761f81623c083ae1319a5150d",
+      "stat": [
+        12817,
+        1789200193857561600,
+        1789199975651485900,
+        11161635369050845456,
+        3377699720902044
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n04c_playerviewmesh_fxo.py": {
+      "bytes": 8374,
+      "sha256": "72e5746263656116563f577c7ec204910a3da156862e4d6576a31348e7438916",
+      "stat": [
+        8374,
+        1789200519664635500,
+        1789200519664635500,
+        11161635369050845456,
+        1125899907217017
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n04d_packed_crossfire_static.py": {
+      "bytes": 10174,
+      "sha256": "af7930e61e8971678948debbfe0fdf1dce0f017d6d061c16fb2282f4585792ae",
+      "stat": [
+        10174,
+        1789200805175462800,
+        1789200805174965800,
+        11161635369050845456,
+        3096224744191604
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n04e_vm_dump.py": {
+      "bytes": 11189,
+      "sha256": "d2b8225d8b1963a0531ff47291dbdbbd44faaf78c2946b760d5463c68ce4d7bc",
+      "stat": [
+        11189,
+        1789201673374564000,
+        1789201673374564000,
+        11161635369050845456,
+        1688849860638406
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05a_decoder_provenance_audit.py": {
+      "bytes": 58971,
+      "sha256": "3961990f11a5e505b03350959391eb2028ccea0c683798d7eeb0d0649c4415ab",
+      "stat": [
+        58971,
+        1789220487398526300,
+        1789204369234142400,
+        11161635369050845456,
+        5910974510949395
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05b_shard_material_recovery.py": {
+      "bytes": 5387,
+      "sha256": "c2725b9f1cbde0fe729bbdcb240162781971d19a0fc4dcc5f75b01a5563bc716",
+      "stat": [
+        5387,
+        1789219185110577900,
+        1789219094183098500,
+        11161635369050845456,
+        3096224743852706
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05c_verified_reader_integration.py": {
+      "bytes": 14174,
+      "sha256": "a2a94543c258e3eef39dca5ebebe7577eaa91e1b6e49bd1aba94f1176f5a1324",
+      "stat": [
+        14174,
+        1789221395438636900,
+        1789220952548450400,
+        11161635369050845456,
+        1407374883579417
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05d_binding_uv_cube.py": {
+      "bytes": 19899,
+      "sha256": "c5964fc9787a37202ac582b6c1424b98eafe9e082905c6455b5f32953c5dd295",
+      "stat": [
+        19899,
+        1789222493480873200,
+        1789222016101972600,
+        11161635369050845456,
+        4785074604116701
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05e_fxo_offline_inspect.py": {
+      "bytes": 7812,
+      "sha256": "818ecd4e3ec44fa9de3d7338fb9827e6a5c2d7ff23e53f671d45392ec1a479ae",
+      "stat": [
+        7812,
+        1789222973536743300,
+        1789222750490140200,
+        11161635369050845456,
+        1125899907218546
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05f_source1_native_map.py": {
+      "bytes": 6133,
+      "sha256": "3931b52fedbb8612f90026f8b9d3762df8e0c9501c69c83382b6303ebc6b8248",
+      "stat": [
+        6133,
+        1789223129367281000,
+        1789223129367281000,
+        11161635369050845456,
+        1688849860639855
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05h_nonfrozen_native_addon.py": {
+      "bytes": 8876,
+      "sha256": "ed347b19874b6da8f57346f1b6fab2377263f529c02ee46e19740893fb1f0252",
+      "stat": [
+        8876,
+        1789224390469757700,
+        1789224390469757700,
+        11161635369050845456,
+        1688849860639953
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05i_fxo_formula.py": {
+      "bytes": 21622,
+      "sha256": "b3dc73295cc9262e03d2fd21fbbb76ba0f2538bcef96562ff21740353b080260",
+      "stat": [
+        21622,
+        1789226070384470800,
+        1789225759770038800,
+        11161635369050845456,
+        6473924464375430
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05j_formula_channel_addon.py": {
+      "bytes": 11542,
+      "sha256": "bff11f65dc2415ae1205b8db3373b68500a5c40fe509cdb13cfb0dec61d0a8f5",
+      "stat": [
+        11542,
+        1789226169038724000,
+        1789226169038724000,
+        11161635369050845456,
+        1688849860638958
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\n05k_fxo_cfg_preview.py": {
+      "bytes": 9893,
+      "sha256": "5311b9b2b3359cb59a170841156a7bf4f69e97683007266075e0baebbc367367",
+      "stat": [
+        9893,
+        1789228370860952900,
+        1789227421746201600,
+        11161635369050845456,
+        3659174697242258
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_cfg_reverse.py": {
+      "bytes": 6520,
+      "sha256": "47c5782d24b2bcd564cfee90c29fd56fa463de71209a82891013f2c51eb68223",
+      "stat": [
+        6520,
+        1787331442339342700,
+        1787331442338843800,
+        11161635369050845456,
+        7881299348563870
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_closure.py": {
+      "bytes": 7974,
+      "sha256": "4301820e6bfc3b6c35a85835c7517cf55b510a64c56d85cf2f3bd472408ad77c",
+      "stat": [
+        7974,
+        1787332475822634900,
+        1787332475822137500,
+        11161635369050845456,
+        9851624185538884
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_dtx_validate.py": {
+      "bytes": 8657,
+      "sha256": "ef1b910a840017866663c3f0ac46aa39b1e49ec1bd7393fd6a266e4e5efd8627",
+      "stat": [
+        8657,
+        1787331059669330100,
+        1787331059669330100,
+        11161635369050845456,
+        12666373952644642
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_inventory_binding.py": {
+      "bytes": 6349,
+      "sha256": "3b4653f7974da2e8819da5e6a779be3fe4545e20855e4317d4e3d22c15ba3029",
+      "stat": [
+        6349,
+        1787332021020843000,
+        1787332021020407800,
+        11161635369050845456,
+        8444249301984923
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_shader_hypotheses.py": {
+      "bytes": 8934,
+      "sha256": "cd41021d3e594da53fed80cc19cb78077ff3c36fb790b6486035cf97cd8d888e",
+      "stat": [
+        8934,
+        1787332248293013700,
+        1787332248292512900,
+        11161635369050845456,
+        9851624185538880
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_tga_decode.py": {
+      "bytes": 5764,
+      "sha256": "b42f55770212fd7dbb4ed7ae3ef421886ad532c20774b6f15e6685d23a18c23e",
+      "stat": [
+        5764,
+        1787331222822124800,
+        1787331222822124800,
+        11161635369050845456,
+        12384898975933981
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_tga_validate.py": {
+      "bytes": 7770,
+      "sha256": "b62824929ae5af824b3de0b3189b0c669b2bd4e7ce3c38930deeb0217f08c18e",
+      "stat": [
+        7770,
+        1787331138508767400,
+        1787331138506762300,
+        11161635369050845456,
+        7599824371852986
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\p4m01_variant_diff.py": {
+      "bytes": 5495,
+      "sha256": "b62dc6e430ad8a6ed615546ac6b57c12e31384312d0a829cf5d33e5cf1bd56bd",
+      "stat": [
+        5495,
+        1787332059193003500,
+        1787332059192503400,
+        11161635369050845456,
+        6473924465010978
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\r1_cfg_reverse.py": {
+      "bytes": 13370,
+      "sha256": "5864b9ba73df8e79c7d6d0f1171744252db05da3e48c28bea4f8c5b0634494c6",
+      "stat": [
+        13370,
+        1787382487847613100,
+        1787382487847112900,
+        11161635369050845456,
+        3096224743840516
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\r1_dtx_revalidate.py": {
+      "bytes": 19007,
+      "sha256": "253723aa5d1f0c4f3da4c320f46800bcebd76c01c93fa01eaae7c9535a4eb582",
+      "stat": [
+        19007,
+        1787384736126404300,
+        1787384736120393800,
+        11161635369050845456,
+        1688849860287360
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\r1_material_binding.py": {
+      "bytes": 8340,
+      "sha256": "5331aea5f92ae7eb3b1b1a177e98352ef0098e00aa8ec62aa10a4742a2f93280",
+      "stat": [
+        8340,
+        1787365073819466000,
+        1787365073814450900,
+        11161635369050845456,
+        4503599627382527
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\r1_shader_closure.py": {
+      "bytes": 16985,
+      "sha256": "c84f893cb6747dbd3170e94c6b14f0dd248371e524034a916dfdf9c170d0c805",
+      "stat": [
+        16985,
+        1787384135359686600,
+        1787384135359185300,
+        11161635369050845456,
+        1970324836998008
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\r1_stage2_binding.py": {
+      "bytes": 11863,
+      "sha256": "a144098e3e8ab033f776829e84cf0fe049e261cf80f777ef705f28820f076a0d",
+      "stat": [
+        11863,
+        1787384302338318700,
+        1787384302333315100,
+        11161635369050845456,
+        3940649673972497
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\r1_tga_repair.py": {
+      "bytes": 13211,
+      "sha256": "7474aded7a74bb7d43c690a46253163498ce580f1a8672e310c5f73d57b5fee8",
+      "stat": [
+        13211,
+        1787364705565921600,
+        1787364705565426000,
+        11161635369050845456,
+        3377699720539935
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\rez_keys.py": {
+      "bytes": 6281,
+      "sha256": "8683f02213774f01e6643e29fc4f28d0e637323c904b78914f893929c89f6c3f",
+      "stat": [
+        6281,
+        1787410976390421800,
+        1787410655107690100,
+        11161635369050845456,
+        5348024557648982
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\rez_verified_payload.py": {
+      "bytes": 3563,
+      "sha256": "7a0f426c52b9b3f0450cfbe6e8c4a523e4ffdbc85c4a859e726bd298032afec6",
+      "stat": [
+        3563,
+        1789220423769052500,
+        1789219092671163900,
+        11161635369050845456,
+        3377699720563360
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\source1_material_translator.py": {
+      "bytes": 9201,
+      "sha256": "1889168f439993b5c6ad735c50dac6d2ff39db95c605f73262cc5d368f0c30dc",
+      "stat": [
+        9201,
+        1789808919049634100,
+        1789800575875267600,
+        11161635369050845456,
+        3940649673989927
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\source_like_preview.py": {
+      "bytes": 5861,
+      "sha256": "c4024c7cd1a66091a50c5f22d25d358dab95744964855e1e35c5d3d5f2aac9d4",
+      "stat": [
+        5861,
+        1789808872689161000,
+        1789801209506686800,
+        11161635369050845456,
+        4222124650695676
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\texture_upscale.py": {
+      "bytes": 3271,
+      "sha256": "dc77faede18aa32ab07e88f6b3240a41cffee7c57f0cb601cc5209cbd15068a5",
+      "stat": [
+        3271,
+        1789800288595420700,
+        1789800288595420700,
+        11161635369050845456,
+        4503599627411221
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\scripts\\material_recovery\\_gen_rez_keys.py": {
+      "bytes": 1576,
+      "sha256": "1938d74e81054a41047a0849103dd783f9a98822efff95b0f6bbc0e9b489594a",
+      "stat": [
+        1576,
+        1787410666087901300,
+        1787410666087901300,
+        11161635369050845456,
+        562949953567919
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\a2_blender_emission.py": {
+      "bytes": 4549,
+      "sha256": "c35330c958affe358f56470d4443d92d2617e3e78994b34a84c6b62921be8823",
+      "stat": [
+        4549,
+        1789798153182495700,
+        1789798153182495700,
+        11161635369050845456,
+        11821949021872671
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_a.py": {
+      "bytes": 7379,
+      "sha256": "7208a6bb654e1ab411b6882eae33b39e7f68ccaf280285d18a886bc93f56806b",
+      "stat": [
+        7379,
+        1789798199178718800,
+        1789798116133486700,
+        11161635369050845456,
+        5629499534238246
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_b.py": {
+      "bytes": 3981,
+      "sha256": "399bdbdb065d1bb4dfd9218e4ad8dec8717d71b0d3fc9f166e3d8b148589cc69",
+      "stat": [
+        3981,
+        1789798481337520100,
+        1789798454892463800,
+        11161635369050845456,
+        5066549580816960
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_c.py": {
+      "bytes": 8529,
+      "sha256": "24a0b251e51c762c93568f0820a18abc7fcbc191516b780d353a1639ef4339ad",
+      "stat": [
+        8529,
+        1789799811401635100,
+        1789799274875918500,
+        11161635369050845456,
+        7881299347923491
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_d.py": {
+      "bytes": 2724,
+      "sha256": "955f146371c53d86939c425da30fe64ec1e1cef7a5581803263b54da6adee65f",
+      "stat": [
+        2724,
+        1789800211906521600,
+        1789800211906521600,
+        11161635369050845456,
+        10977524091740482
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_e.py": {
+      "bytes": 3439,
+      "sha256": "cf76b31304eff3440d327e4260b9a5935d27ba62178b4639515295331b55ab8c",
+      "stat": [
+        3439,
+        1789809054785525900,
+        1789800342893714400,
+        11161635369050845456,
+        3940649673989916
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_f.py": {
+      "bytes": 6119,
+      "sha256": "d9a1a0458b72441c75c8122dcf8f52d14be432eb359110ec9e842d76e93cfe9c",
+      "stat": [
+        6119,
+        1789800907670482900,
+        1789800760764238200,
+        11161635369050845456,
+        4785074604121885
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_h.py": {
+      "bytes": 6504,
+      "sha256": "0dd9436413da75cc7106ead15bbba9a712d8479e72f1216813c09945f315d4df",
+      "stat": [
+        6504,
+        1789801246804129200,
+        1789801246804129200,
+        11161635369050845456,
+        3940649673990097
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_v2\\run_phase_i.py": {
+      "bytes": 5235,
+      "sha256": "c6f370551a33c05e9f44e35b34ac0aed89cce4ea2068e2e45c9695b84041e3f2",
+      "stat": [
+        5235,
+        1789808815176341300,
+        1789801347881631500,
+        11161635369050845456,
+        3659174697279477
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\capture_baseline.py": {
+      "bytes": 13294,
+      "sha256": "045b7a252aefa14b3be856d5280fe685f050743e622ead75e98cbcb0d333d78e",
+      "stat": [
+        13294,
+        1789810801118403400,
+        1789810801118403400,
+        11161635369050845456,
+        5910974510964903
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\plan.material-rendering.md": {
+      "bytes": 13455,
+      "sha256": "033b0ac043e73daa113ab043d3e78413717134253ac99d4e50e52734c1ca603e",
+      "stat": [
+        13455,
+        1789810630195172800,
+        1789810448835415200,
+        11161635369050845456,
+        12103423998598972
+      ]
+    },
+    "D:\\project\\cf_to_csgo\\pipeline.md": {
+      "bytes": 16370,
+      "sha256": "2afdfe5e1fd3fe39dfd8ec4b6d0522d9e2d46209920b2985985ee910b9a45faa",
+      "stat": [
+        16370,
+        1789796125156899000,
+        1789392693074399600,
+        11161635369050845456,
+        844424930762824
+      ]
+    },
+    "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-a278daac-b12b-4a31-af11-06a0f6de0257.png": {
+      "bytes": 2092515,
+      "sha256": "249fbc82105318f5d192742ba8050a55898db59915d3ef44e5771be1e9d6630a",
+      "stat": [
+        2092515,
+        1789809477835546800,
+        1789809477834547100,
+        1491930182614154332,
+        6755399441671479
+      ]
+    },
+    "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-8e9f670f-f7ac-41dc-ad62-515bfe046098.png": {
+      "bytes": 569249,
+      "sha256": "df6b53c676fdcb65e4cc0293a42b3932856639e5bd4702d9653079a8aff20cc7",
+      "stat": [
+        569249,
+        1789809501949745500,
+        1789809501949245600,
+        1491930182614154332,
+        3096224744615465
+      ]
+    }
+  },
+  "checks": {
+    "a_b": "PASS 29/29",
+    "a_c": "PASS 29/29",
+    "baseline_copy": "PASS 29/29",
+    "pre_post": "PASS",
+    "vpk_crc32": "PASS 29/29"
+  },
+  "finished_utc": "2026-09-19T09:40:35.134415+00:00"
+}

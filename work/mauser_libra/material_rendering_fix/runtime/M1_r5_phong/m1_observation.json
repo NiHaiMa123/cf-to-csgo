@@ -1,0 +1,47 @@
+{
+  "experiment_id": "M1_r5_phong",
+  "pak_c_equals_a_b": true,
+  "c_r5_sha256": "58c40b9c37f7a77b891ae2e0b63882b2ba906b260e01dea8329e557e9175bf08",
+  "expected_m1_r5": "58c40b9c37f7a77b891ae2e0b63882b2ba906b260e01dea8329e557e9175bf08",
+  "runtime_loading": "PASS",
+  "visual_status": "NO_MATERIAL_CHANGE",
+  "not_visual_pass": true,
+  "scenes": {
+    "lit_front": {
+      "file": "lit_front.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-0761774c-dd89-4d03-9e81-531ee5b22dab.jpg",
+      "hud_time": "9:48",
+      "ammo": "20/120",
+      "bytes": 591174,
+      "sha256": "77ff288ddcb76bd34e7eaedcf0a7d7796706ed75964b61f58d64b7a562f89fce"
+    },
+    "lit_turn": {
+      "file": "lit_turn.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-36922dcc-d13b-4471-a558-c952eb259e37.jpg",
+      "hud_time": "9:32",
+      "ammo": "20/120",
+      "bytes": 656068,
+      "sha256": "5011dce63865c826c58678515f91b92908e0f3cf14185a91a769f3403f5af0d3"
+    },
+    "dark": {
+      "file": "dark.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-942d7b66-db02-4f5e-9842-496b5e811056.jpg",
+      "hud_time": "9:10",
+      "ammo": "19/120",
+      "bytes": 522670,
+      "sha256": "eef2da9d59f3706497b5647e936575aba03231f9b344ff69c1ceb6519f57ea59"
+    }
+  },
+  "observation": {
+    "lit_front": "Same olive/brown gold and dark body as baseline. No new gold trim/edges on the black panel.",
+    "lit_turn": "Turned view still lacks view-dependent bright edges on the dark body. Coin/sight gold unchanged.",
+    "dark": "Wall-shadow still dark; no extra metal separation. Ammo 19/120 vs baseline 20/120."
+  },
+  "decision": "M1 loaded (C r5 matches M1). Restoring r0 masked Phong on r5 did not produce visible gold edges. Not washout. Do not raise boost. r5 spec_lum=0.078 vs r0=0.197; phong mask on r5 is weak. Next: roll back r5, run M2 from original baseline.",
+  "r5_region_means": {
+    "diffuse_lum": 0.0359,
+    "specular_lum": 0.078,
+    "alpha_b": 0.0567,
+    "triangles": 1516
+  }
+}

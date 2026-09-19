@@ -1,0 +1,38 @@
+{
+  "experiment_id": "M2_env_off",
+  "pak_c_equals_a_b": true,
+  "c_r1_sha256": "291927b121b0bbb5d9dc297df8ce3e820fd24785546d13815782c0360dc98896",
+  "c_r4_sha256": "291927b121b0bbb5d9dc297df8ce3e820fd24785546d13815782c0360dc98896",
+  "runtime_loading": "PASS",
+  "visual_status": "NO_MATERIAL_CHANGE",
+  "not_visual_pass": true,
+  "scenes": {
+    "lit_front": {
+      "file": "lit_front.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-324c2eca-b07e-4386-ba90-697e8042ddb7.jpg",
+      "hud_time": "9:34",
+      "bytes": 596426,
+      "sha256": "fc220ed074c9c8bf9b7481493ea8768562c68bcf342bddd8f24defcfb4946ec7"
+    },
+    "lit_turn": {
+      "file": "lit_turn.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-02e3c918-a5b3-44bb-b751-b451cdb67ffa.jpg",
+      "hud_time": "9:21",
+      "bytes": 697674,
+      "sha256": "53f5e596cb9ded4b70052a8066a2fe35bb9fd3b8ae96fef924f6fcd4d267b58e"
+    },
+    "dark": {
+      "file": "dark.jpg",
+      "source": "C:\\Users\\Administrator\\.grok\\sessions\\D%3A%5Cproject%5Ccf_to_csgo\\01a0b90b-2671-7162-817a-9fb4c4826d55\\assets\\image-af48c561-5b41-4f69-a7d6-769d746f9025.jpg",
+      "hud_time": "9:08",
+      "bytes": 527316,
+      "sha256": "18fe438d8725adef1cb258f0fe66df6517858ba51e629ff9dbbad0d18659cb5f"
+    }
+  },
+  "observation": {
+    "lit_front": "Coin, sight and gold trim remain the same olive/brown as baseline. No missing sky/map reflection.",
+    "lit_turn": "Turned view still has the same gold and dark body. No lost view-dependent env highlight.",
+    "dark": "Wall-shadow gold still present at similar brightness. Envmap off did not darken r1/r4."
+  },
+  "decision": "M2 loaded. Removing r1/r4 env_cubemap produced no visible reflection loss. Current envmap path is not contributing. Do not keep M2. Skip M3 intensity until envmap is shown to sample. Next: unmask envmap on r1 only (M6_r1_env_unmask)."
+}

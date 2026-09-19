@@ -1,0 +1,118 @@
+{
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r0.vmt": {
+    "removed": {},
+    "added": {},
+    "changed": {
+      "$phongboost": [
+        "1.57",
+        "3.14"
+      ]
+    },
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$nocull"
+    ]
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r1.vmt": {
+    "removed": {},
+    "added": {},
+    "changed": {
+      "$phongboost": [
+        "2.51",
+        "5.02"
+      ]
+    },
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$envmap",
+      "$normalmapalphaenvmapmask",
+      "$envmaptint",
+      "$nocull"
+    ]
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r2.vmt": {
+    "removed": {},
+    "added": {},
+    "changed": {
+      "$phongboost": [
+        "3.13",
+        "6.26"
+      ]
+    },
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$nocull"
+    ]
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r3.vmt": {
+    "removed": {},
+    "added": {},
+    "changed": {
+      "$phongboost": [
+        "1.57",
+        "3.14"
+      ]
+    },
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$nocull"
+    ]
+  },
+  "materials/models/weapons/v_models/cf_mauser/cf_mauser_libra_r4.vmt": {
+    "removed": {},
+    "added": {},
+    "changed": {
+      "$phongboost": [
+        "2.51",
+        "5.02"
+      ]
+    },
+    "order_after": [
+      "$basetexture",
+      "$bumpmap",
+      "$halflambert",
+      "$phong",
+      "$basemapalphaphongmask",
+      "$phongexponent",
+      "$phongboost",
+      "$phongfresnelranges",
+      "$phongtint",
+      "$envmap",
+      "$normalmapalphaenvmapmask",
+      "$envmaptint",
+      "$nocull"
+    ]
+  }
+}

@@ -40,7 +40,7 @@ PHONG_ENABLED = False
 # texture at build time - diffuse shading + env reflection + spec sheen
 UNLIT_BAKE = True
 BAKE_LIGHT_DIR = np.array((0.4, 0.6, 0.7), dtype=np.float32)
-BAKE_AMBIENT = 0.85          # flat diffuse multiplier floor
+BAKE_AMBIENT = 1.1           # flat diffuse multiplier floor
 BAKE_SHADE = 0.3             # extra N.L shading range on top of ambient
 ENV_BAKE_GAIN = 0.5          # env reflection energy folded into base
 SPEC_BAKE_GAIN = 0.4         # specular sheen energy folded into base

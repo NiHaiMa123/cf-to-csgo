@@ -1,0 +1,18 @@
+{
+ "purpose": "User review only. Not deployed to CS:GO.",
+ "shading": "baked CF spec albedo (diff*0.25+spec) + Principled metallic + studio area lights",
+ "target": "CF in-game champagne metal (user reference screenshot)",
+ "meshes": [
+  "PV-Mauser_Libra",
+  "reload",
+  "reload02",
+  "coin",
+  "Line"
+ ],
+ "outputs": [
+  "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_review\\side_panel.png",
+  "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_review\\side_coin.png",
+  "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_review\\fp_three_quarter.png"
+ ],
+ "blend": "D:\\project\\cf_to_csgo\\work\\mauser_libra\\material_rendering_fix\\blender_review\\review.blend"
+}

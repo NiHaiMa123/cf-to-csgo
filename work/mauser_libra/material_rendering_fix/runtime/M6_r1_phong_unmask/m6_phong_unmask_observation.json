@@ -1,0 +1,27 @@
+{
+  "experiment_id": "M6_r1_phong_unmask",
+  "runtime_loading": "PASS",
+  "c_r1": "edc9add32dbfc13e7989a4c67b11c2c059d13cd08b7777a9896014cfe18268b4",
+  "visual_status": "NO_MATERIAL_CHANGE",
+  "scenes": {
+    "lit_front": {
+      "file": "lit_front.jpg",
+      "hud_time": "9:40",
+      "bytes": 574962,
+      "sha256": "b6698bdf90886ce2f8f8338c78af2d920260034846d0e9e9b9aa615434d3bb04"
+    },
+    "lit_turn": {
+      "file": "lit_turn.jpg",
+      "hud_time": "9:25",
+      "bytes": 661774,
+      "sha256": "32063891335437d0b31642276ebc02848200eac8d10043ba28b128b6cbcdb6f3"
+    },
+    "dark": {
+      "file": "dark.jpg",
+      "hud_time": "9:13",
+      "bytes": 518924,
+      "sha256": "4766946820bbc7abbc072c3f858c86db00ff6960ed2e1afaf9487c935fcbd944"
+    }
+  },
+  "decision": "Unmasking r1 phong produced no washout/bright gold. Phong is inert on this viewmodel. Stop VMT knobs; Blender CF lookdev next."
+}

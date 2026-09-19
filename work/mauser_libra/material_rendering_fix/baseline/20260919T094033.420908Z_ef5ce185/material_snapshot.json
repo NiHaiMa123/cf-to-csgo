@@ -1,0 +1,422 @@
+{
+  "historical_translation": {
+    "material_root": "models/weapons/v_models/cf_mauser",
+    "base_name": "cf_mauser_libra",
+    "slots": [
+      {
+        "region_id": 0,
+        "region_label": "mid_surface",
+        "material": "cf_mauser_libra_r0",
+        "strategy": "controlled_phong",
+        "evidence": {
+          "alpha_b": 0.1569,
+          "specular_lum": 0.1966,
+          "diffuse_lum": 0.1052,
+          "specular_r_minus_lum": 0.059
+        },
+        "envmap_tint": null,
+        "phong_exponent": 4,
+        "phong_boost": 1.5666,
+        "triangles": 432,
+        "actual_vmt": "\"VertexLitGeneric\"\n{\n\t\"$basetexture\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra\"\n\t\"$bumpmap\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra_n\"\n\t\"$halflambert\" \"1\"\n\t\"$phong\" \"1\"\n\t\"$basemapalphaphongmask\" \"1\"\n\t\"$phongexponent\" \"4\"\n\t\"$phongboost\" \"1.57\"\n\t\"$phongfresnelranges\" \"[1 1 1]\"\n\t\"$phongtint\" \"[1 0.765 0.529]\"\n\t\"$nocull\" \"0\"\n}\n",
+        "actual_params": {
+          "$basetexture": "models/weapons/v_models/cf_mauser/cf_mauser_libra",
+          "$bumpmap": "models/weapons/v_models/cf_mauser/cf_mauser_libra_n",
+          "$halflambert": "1",
+          "$phong": "1",
+          "$basemapalphaphongmask": "1",
+          "$phongexponent": "4",
+          "$phongboost": "1.57",
+          "$phongfresnelranges": "[1 1 1]",
+          "$phongtint": "[1 0.765 0.529]",
+          "$nocull": "0"
+        }
+      },
+      {
+        "region_id": 1,
+        "region_label": "env_reflective_warm_metal_light_surface",
+        "material": "cf_mauser_libra_r1",
+        "strategy": "envmap_metal",
+        "evidence": {
+          "alpha_b": 0.2444,
+          "specular_lum": 0.2954,
+          "diffuse_lum": 0.1866,
+          "specular_r_minus_lum": 0.09
+        },
+        "envmap_tint": [
+          0.865,
+          0.733,
+          0.66
+        ],
+        "phong_exponent": 4,
+        "phong_boost": 2.5065,
+        "triangles": 278,
+        "actual_vmt": "\"VertexLitGeneric\"\n{\n\t\"$basetexture\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra\"\n\t\"$bumpmap\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra_n\"\n\t\"$halflambert\" \"1\"\n\t\"$phong\" \"1\"\n\t\"$basemapalphaphongmask\" \"1\"\n\t\"$phongexponent\" \"4\"\n\t\"$phongboost\" \"2.51\"\n\t\"$phongfresnelranges\" \"[1 1 1]\"\n\t\"$phongtint\" \"[1 0.765 0.529]\"\n\t\"$envmap\" \"env_cubemap\"\n\t\"$normalmapalphaenvmapmask\" \"1\"\n\t\"$envmaptint\" \"[0.865 0.733 0.66]\"\n\t\"$nocull\" \"0\"\n}\n",
+        "actual_params": {
+          "$basetexture": "models/weapons/v_models/cf_mauser/cf_mauser_libra",
+          "$bumpmap": "models/weapons/v_models/cf_mauser/cf_mauser_libra_n",
+          "$halflambert": "1",
+          "$phong": "1",
+          "$basemapalphaphongmask": "1",
+          "$phongexponent": "4",
+          "$phongboost": "2.51",
+          "$phongfresnelranges": "[1 1 1]",
+          "$phongtint": "[1 0.765 0.529]",
+          "$envmap": "env_cubemap",
+          "$normalmapalphaenvmapmask": "1",
+          "$envmaptint": "[0.865 0.733 0.66]",
+          "$nocull": "0"
+        }
+      },
+      {
+        "region_id": 2,
+        "region_label": "warm_metal_dark",
+        "material": "cf_mauser_libra_r2",
+        "strategy": "warm_phong",
+        "evidence": {
+          "alpha_b": 0.1627,
+          "specular_lum": 0.4578,
+          "diffuse_lum": 0.0,
+          "specular_r_minus_lum": 0.0502
+        },
+        "envmap_tint": null,
+        "phong_exponent": 4,
+        "phong_boost": 3.1331,
+        "triangles": 98,
+        "actual_vmt": "\"VertexLitGeneric\"\n{\n\t\"$basetexture\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra\"\n\t\"$bumpmap\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra_n\"\n\t\"$halflambert\" \"1\"\n\t\"$phong\" \"1\"\n\t\"$basemapalphaphongmask\" \"1\"\n\t\"$phongexponent\" \"4\"\n\t\"$phongboost\" \"3.13\"\n\t\"$phongfresnelranges\" \"[1 1 1]\"\n\t\"$phongtint\" \"[1 0.765 0.529]\"\n\t\"$nocull\" \"0\"\n}\n",
+        "actual_params": {
+          "$basetexture": "models/weapons/v_models/cf_mauser/cf_mauser_libra",
+          "$bumpmap": "models/weapons/v_models/cf_mauser/cf_mauser_libra_n",
+          "$halflambert": "1",
+          "$phong": "1",
+          "$basemapalphaphongmask": "1",
+          "$phongexponent": "4",
+          "$phongboost": "3.13",
+          "$phongfresnelranges": "[1 1 1]",
+          "$phongtint": "[1 0.765 0.529]",
+          "$nocull": "0"
+        }
+      },
+      {
+        "region_id": 3,
+        "region_label": "dark",
+        "material": "cf_mauser_libra_r3",
+        "strategy": "controlled_phong",
+        "evidence": {
+          "alpha_b": 0.1091,
+          "specular_lum": 0.1399,
+          "diffuse_lum": 0.0724,
+          "specular_r_minus_lum": 0.0295
+        },
+        "envmap_tint": null,
+        "phong_exponent": 4,
+        "phong_boost": 1.5666,
+        "triangles": 155,
+        "actual_vmt": "\"VertexLitGeneric\"\n{\n\t\"$basetexture\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra\"\n\t\"$bumpmap\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra_n\"\n\t\"$halflambert\" \"1\"\n\t\"$phong\" \"1\"\n\t\"$basemapalphaphongmask\" \"1\"\n\t\"$phongexponent\" \"4\"\n\t\"$phongboost\" \"1.57\"\n\t\"$phongfresnelranges\" \"[1 1 1]\"\n\t\"$phongtint\" \"[1 0.765 0.529]\"\n\t\"$nocull\" \"0\"\n}\n",
+        "actual_params": {
+          "$basetexture": "models/weapons/v_models/cf_mauser/cf_mauser_libra",
+          "$bumpmap": "models/weapons/v_models/cf_mauser/cf_mauser_libra_n",
+          "$halflambert": "1",
+          "$phong": "1",
+          "$basemapalphaphongmask": "1",
+          "$phongexponent": "4",
+          "$phongboost": "1.57",
+          "$phongfresnelranges": "[1 1 1]",
+          "$phongtint": "[1 0.765 0.529]",
+          "$nocull": "0"
+        }
+      },
+      {
+        "region_id": 4,
+        "region_label": "env_reflective_light_surface",
+        "material": "cf_mauser_libra_r4",
+        "strategy": "envmap_metal",
+        "evidence": {
+          "alpha_b": 0.3688,
+          "specular_lum": 0.2849,
+          "diffuse_lum": 0.2194,
+          "specular_r_minus_lum": 0.1638
+        },
+        "envmap_tint": [
+          1.0,
+          1.0,
+          0.9
+        ],
+        "phong_exponent": 4,
+        "phong_boost": 2.5065,
+        "triangles": 288,
+        "actual_vmt": "\"VertexLitGeneric\"\n{\n\t\"$basetexture\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra\"\n\t\"$bumpmap\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra_n\"\n\t\"$halflambert\" \"1\"\n\t\"$phong\" \"1\"\n\t\"$basemapalphaphongmask\" \"1\"\n\t\"$phongexponent\" \"4\"\n\t\"$phongboost\" \"2.51\"\n\t\"$phongfresnelranges\" \"[1 1 1]\"\n\t\"$phongtint\" \"[1 0.765 0.529]\"\n\t\"$envmap\" \"env_cubemap\"\n\t\"$normalmapalphaenvmapmask\" \"1\"\n\t\"$envmaptint\" \"[1 1 0.9]\"\n\t\"$nocull\" \"0\"\n}\n",
+        "actual_params": {
+          "$basetexture": "models/weapons/v_models/cf_mauser/cf_mauser_libra",
+          "$bumpmap": "models/weapons/v_models/cf_mauser/cf_mauser_libra_n",
+          "$halflambert": "1",
+          "$phong": "1",
+          "$basemapalphaphongmask": "1",
+          "$phongexponent": "4",
+          "$phongboost": "2.51",
+          "$phongfresnelranges": "[1 1 1]",
+          "$phongtint": "[1 0.765 0.529]",
+          "$envmap": "env_cubemap",
+          "$normalmapalphaenvmapmask": "1",
+          "$envmaptint": "[1 1 0.9]",
+          "$nocull": "0"
+        }
+      },
+      {
+        "region_id": 5,
+        "region_label": "dark",
+        "material": "cf_mauser_libra_r5",
+        "strategy": "matte_dark",
+        "evidence": {
+          "alpha_b": 0.0567,
+          "specular_lum": 0.078,
+          "diffuse_lum": 0.0359,
+          "specular_r_minus_lum": 0.011
+        },
+        "envmap_tint": null,
+        "phong_exponent": 4,
+        "phong_boost": 0.0,
+        "triangles": 1516,
+        "actual_vmt": "\"VertexLitGeneric\"\n{\n\t\"$basetexture\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra\"\n\t\"$bumpmap\" \"models/weapons/v_models/cf_mauser/cf_mauser_libra_n\"\n\t\"$halflambert\" \"1\"\n\t\"$phong\" \"0\"\n\t\"$nocull\" \"0\"\n}\n",
+        "actual_params": {
+          "$basetexture": "models/weapons/v_models/cf_mauser/cf_mauser_libra",
+          "$bumpmap": "models/weapons/v_models/cf_mauser/cf_mauser_libra_n",
+          "$halflambert": "1",
+          "$phong": "0",
+          "$nocull": "0"
+        }
+      }
+    ],
+    "phong_tint": [
+      1.0,
+      0.765,
+      0.529
+    ],
+    "masks": {
+      "phong_mean": 0.1374,
+      "env_mean": 0.107
+    },
+    "tags": {
+      "preserved": [
+        "diffuse base texture",
+        "normal map",
+        "specular->phong mask (low-pass)",
+        "alpha.B->envmap mask (low-pass)",
+        "specular chroma->$phongtint",
+        "SpecularPower*0.25->exponent scale"
+      ],
+      "approximated": [
+        "CF lobby cubemap->engine env_cubemap (content differs, sampling semantics preserved)",
+        "CF transformed/refract ray->Source reflect ray (approximated)",
+        "per-region envmaptint from alpha.B energy (approximated)"
+      ],
+      "lost": [
+        "Snell refraction contribution",
+        "CubeMapTransformY orientation",
+        "exact CF diffuse-lit scale (ambient/boost terms)"
+      ],
+      "unsupported_by_source1": []
+    },
+    "vtf": {
+      "base": {
+        "w": 2048,
+        "h": 2048,
+        "fmt": 12,
+        "flags": "0x2012",
+        "frames": 1,
+        "mips": 12
+      },
+      "normal": {
+        "w": 2048,
+        "h": 2048,
+        "fmt": 15,
+        "flags": "0x2092",
+        "frames": 1,
+        "mips": 12
+      }
+    }
+  },
+  "historical_regions": [
+    {
+      "region_id": 0,
+      "label": "mid_surface",
+      "triangles": 432,
+      "feature_means": {
+        "diffuse_lum": 0.1052,
+        "diffuse_r_minus_lum": 0.0284,
+        "diffuse_g_minus_lum": -0.0026,
+        "specular_lum": 0.1966,
+        "specular_r_minus_lum": 0.059,
+        "alpha_g": 1.0,
+        "alpha_b": 0.1569,
+        "cf_env_response": 0.1966,
+        "cf_cube_response": 0.1569,
+        "normalmap_b": 0.971
+      },
+      "pieces": {
+        "PV-Mauser_Libra": 359,
+        "reload": 16,
+        "coin": 14,
+        "reload02": 12,
+        "Bull-C": 12,
+        "bull-set": 11,
+        "Line": 8
+      }
+    },
+    {
+      "region_id": 1,
+      "label": "env_reflective_warm_metal_light_surface",
+      "triangles": 278,
+      "feature_means": {
+        "diffuse_lum": 0.1866,
+        "diffuse_r_minus_lum": 0.0518,
+        "diffuse_g_minus_lum": -0.0035,
+        "specular_lum": 0.2954,
+        "specular_r_minus_lum": 0.09,
+        "alpha_g": 1.0,
+        "alpha_b": 0.2444,
+        "cf_env_response": 0.2954,
+        "cf_cube_response": 0.2444,
+        "normalmap_b": 0.9708
+      },
+      "pieces": {
+        "PV-Mauser_Libra": 147,
+        "bull-set": 50,
+        "Bull-C": 40,
+        "reload": 24,
+        "coin": 11,
+        "reload02": 6
+      }
+    },
+    {
+      "region_id": 2,
+      "label": "warm_metal_dark",
+      "triangles": 98,
+      "feature_means": {
+        "diffuse_lum": 0.0,
+        "diffuse_r_minus_lum": 0.0,
+        "diffuse_g_minus_lum": 0.0,
+        "specular_lum": 0.4578,
+        "specular_r_minus_lum": 0.0502,
+        "alpha_g": 1.0,
+        "alpha_b": 0.1627,
+        "cf_env_response": 0.4578,
+        "cf_cube_response": 0.1627,
+        "normalmap_b": 1.0
+      },
+      "pieces": {
+        "bull-set": 24,
+        "bull01": 24,
+        "bull002": 24,
+        "bull003": 24,
+        "PV-Mauser_Libra": 2
+      }
+    },
+    {
+      "region_id": 3,
+      "label": "dark",
+      "triangles": 155,
+      "feature_means": {
+        "diffuse_lum": 0.0724,
+        "diffuse_r_minus_lum": 0.0094,
+        "diffuse_g_minus_lum": 0.0015,
+        "specular_lum": 0.1399,
+        "specular_r_minus_lum": 0.0295,
+        "alpha_g": 1.0,
+        "alpha_b": 0.1091,
+        "cf_env_response": 0.1399,
+        "cf_cube_response": 0.1091,
+        "normalmap_b": 0.935
+      },
+      "pieces": {
+        "PV-Mauser_Libra": 143,
+        "bull-set": 8,
+        "reload02": 2,
+        "coin": 2
+      }
+    },
+    {
+      "region_id": 4,
+      "label": "env_reflective_light_surface",
+      "triangles": 288,
+      "feature_means": {
+        "diffuse_lum": 0.2194,
+        "diffuse_r_minus_lum": 0.1121,
+        "diffuse_g_minus_lum": -0.0264,
+        "specular_lum": 0.2849,
+        "specular_r_minus_lum": 0.1638,
+        "alpha_g": 1.0,
+        "alpha_b": 0.3688,
+        "cf_env_response": 0.2849,
+        "cf_cube_response": 0.3688,
+        "normalmap_b": 0.9666
+      },
+      "pieces": {
+        "bull-set": 143,
+        "coin": 74,
+        "PV-Mauser_Libra": 58,
+        "Line": 13
+      }
+    },
+    {
+      "region_id": 5,
+      "label": "dark",
+      "triangles": 1516,
+      "feature_means": {
+        "diffuse_lum": 0.0359,
+        "diffuse_r_minus_lum": -0.0028,
+        "diffuse_g_minus_lum": 0.0025,
+        "specular_lum": 0.078,
+        "specular_r_minus_lum": 0.011,
+        "alpha_g": 1.0,
+        "alpha_b": 0.0567,
+        "cf_env_response": 0.078,
+        "cf_cube_response": 0.0567,
+        "normalmap_b": 0.9855
+      },
+      "pieces": {
+        "PV-Mauser_Libra": 766,
+        "Line": 195,
+        "bull-set": 140,
+        "reload": 128,
+        "bull01": 56,
+        "bull002": 56,
+        "bull003": 56,
+        "Bull-C": 48,
+        "coin": 47,
+        "reload02": 24
+      }
+    }
+  ],
+  "actual_vtf_headers": {
+    "cf_mauser_libra": {
+      "version": [
+        7,
+        4
+      ],
+      "size": [
+        2048,
+        2048
+      ],
+      "flags": "0x2012",
+      "frames": 1,
+      "format": 12,
+      "mips": 12
+    },
+    "cf_mauser_libra_n": {
+      "version": [
+        7,
+        4
+      ],
+      "size": [
+        2048,
+        2048
+      ],
+      "flags": "0x2092",
+      "frames": 1,
+      "format": 15,
+      "mips": 12
+    }
+  },
+  "note": "Historical reports preserved, not new runtime or shader validation."
+}
